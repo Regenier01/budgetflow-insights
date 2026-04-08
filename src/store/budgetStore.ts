@@ -19,29 +19,35 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-function mapAtividade(contaContabil: string, divisao?: string, grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
+function mapAtividade(
+  contaContabil: string, 
+  divisao?: string, 
+  grupoContabil?: string, 
+  nomeOrcamento?: string,
+  nomeDepto?: string
+): AtividadeKey {
   const conta = contaContabil.trim();
   const div = (divisao || '').toUpperCase();
   const grupo = (grupoContabil || '').trim().toUpperCase();
   const orcText = (nomeOrcamento || '').toUpperCase();
+  const depto = (nomeDepto || '').toUpperCase();
   
-  // Prioridade para a coluna DIVISAO
+  // TRAVA: Apenas NOMEDEPTO contendo "ADMINISTRA" vai para despesas administrativas
+  if (depto.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
+
+  // Prioridade para a coluna DIVISAO (removido ADM/TRIB para respeitar a trava)
   if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
   if (div.includes('SERING') || div.includes('LATEX')) return 'SERINGAL';
   if (div.includes('AGRIC') || div.includes('SOJA')) return 'AGRICOLA';
   if (div.includes('CANA')) return 'CANA';
-  if (div.includes('ADM') || div.includes('TRIB')) return 'DESP_ADM_TRIB';
   if (div.includes('ENCARGO')) return 'ENCARGOS';
 
-  // Fallback para lógica baseada em conta ou grupo contábil
-  if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) return 'DESP_ADM_TRIB';
-
+  // Fallback para lógica baseada em conta ou grupo contábil (removido ADM/TRIB)
   const combinedText = `${grupo} ${orcText}`;
   if (combinedText.includes('PECUA') || combinedText.includes('GADO')) return 'PECUARIA';
   if (combinedText.includes('SERING') || combinedText.includes('LATEX')) return 'SERINGAL';
   if (combinedText.includes('AGRIC') || combinedText.includes('SOJA')) return 'AGRICOLA';
   if (combinedText.includes('CANA')) return 'CANA';
-  if (combinedText.includes('ADM') || combinedText.includes('TRIB')) return 'DESP_ADM_TRIB';
   if (combinedText.includes('ENCARGO')) return 'ENCARGOS';
   
   return 'PECUARIA';
@@ -49,7 +55,6 @@ function mapAtividade(contaContabil: string, divisao?: string, grupoContabil?: s
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
   const conta = contaContabil.trim();
-  // Lógica simplificada: 3.1 = Receita, 3.3/4 = Custo, Outros 3 = Despesa
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
   if (conta.startsWith('3.3') || conta.startsWith('3.03') || conta.startsWith('4')) return 'C';
   return 'D';
@@ -107,6 +112,7 @@ export const useBudgetStore = create<BudgetState>()(
           const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
           const grupoContabil = row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined;
           const nomeOrcamento = row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined;
+          const nomeDepto = row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined;
 
           const existing = aggregated.get(conta);
           if (existing) {
@@ -115,12 +121,12 @@ export const useBudgetStore = create<BudgetState>()(
             aggregated.set(conta, {
               saldo: { [monthKey]: saldo },
               descricao: String(row.DESCRICAO_CONTABIL || conta),
-              departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
+              departamento: nomeDepto,
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
               divisao: divisao,
               grupoContabil: grupoContabil,
-              atividade: mapAtividade(conta, divisao, grupoContabil, nomeOrcamento),
+              atividade: mapAtividade(conta, divisao, grupoContabil, nomeOrcamento, nomeDepto),
               tipo: mapTipo(conta),
             });
           }
@@ -130,8 +136,6 @@ export const useBudgetStore = create<BudgetState>()(
         const currentAccounts = [...get().accounts];
         for (const [conta, data] of aggregated) {
           const idx = currentAccounts.findIndex((a) => a.codigo === conta);
-          
-          // Determinar código pai (ex: 3.1.01 -> 3.1)
           const parts = conta.split('.');
           const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
 
