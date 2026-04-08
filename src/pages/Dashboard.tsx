@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
+import { ActivityCards } from '@/components/dashboard/ActivityCards';
 import { AccountTable } from '@/components/dashboard/AccountTable';
-import { BudgetChart } from '@/components/dashboard/BudgetChart';
-import { MONTHS, TIPO_LABELS } from '@/types/budget';
-import type { MonthKey } from '@/types/budget';
+import { MONTHS, ATIVIDADES } from '@/types/budget';
+import type { MonthKey, AtividadeKey } from '@/types/budget';
 
 export default function Dashboard() {
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
-  const [tipoFilter, setTipoFilter] = useState<string>('all');
+  const [atividadeFilter, setAtividadeFilter] = useState<string>('all');
 
   return (
     <div className="space-y-6">
@@ -35,17 +35,17 @@ export default function Dashboard() {
 
       <SummaryCards selectedMonth={selectedMonth} />
 
-      <BudgetChart tipoFilter={tipoFilter} />
+      <ActivityCards />
 
-      <Tabs value={tipoFilter} onValueChange={setTipoFilter}>
-        <TabsList>
-          <TabsTrigger value="all">Todos</TabsTrigger>
-          {Object.entries(TIPO_LABELS).map(([k, v]) => (
-            <TabsTrigger key={k} value={k}>{v}</TabsTrigger>
+      <Tabs value={atividadeFilter} onValueChange={setAtividadeFilter}>
+        <TabsList className="flex-wrap h-auto gap-1">
+          <TabsTrigger value="all">Todas</TabsTrigger>
+          {ATIVIDADES.map((a) => (
+            <TabsTrigger key={a.key} value={a.key}>{a.label}</TabsTrigger>
           ))}
         </TabsList>
-        <TabsContent value={tipoFilter} className="mt-4">
-          <AccountTable tipoFilter={tipoFilter} selectedMonth={selectedMonth} />
+        <TabsContent value={atividadeFilter} className="mt-4">
+          <AccountTable tipoFilter="all" selectedMonth={selectedMonth} atividadeFilter={atividadeFilter} />
         </TabsContent>
       </Tabs>
     </div>
