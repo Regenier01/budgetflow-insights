@@ -2,10 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES, MONTHS } from '@/types/budget';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid } from 'recharts';
-import { TrendingUp, TrendingDown, Target } from 'lucide-react';
+import { TrendingUp, TrendingDown, Target, ArrowUpRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export function ActivityCards() {
   const accounts = useBudgetStore((s) => s.accounts);
+  const navigate = useNavigate();
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
@@ -40,10 +42,17 @@ export function ActivityCards() {
         const isGood = isRevenue ? variance >= 0 : variance <= 0;
 
         return (
-          <Card key={ativ.key} className="flex flex-col">
+          <Card 
+            key={ativ.key} 
+            className="flex flex-col cursor-pointer transition-all hover:ring-2 hover:ring-primary/50 hover:shadow-lg group"
+            onClick={() => navigate(`/atividade/${ativ.key}`)}
+          >
             <CardHeader className="pb-4">
               <CardTitle className="text-lg font-bold flex items-center justify-between">
-                {ativ.label}
+                <div className="flex items-center gap-2">
+                  {ativ.label}
+                  <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
+                </div>
                 <Target className="h-5 w-5 text-muted-foreground" />
               </CardTitle>
             </CardHeader>
