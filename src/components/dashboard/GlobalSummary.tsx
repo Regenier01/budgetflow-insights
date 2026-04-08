@@ -1,21 +1,6 @@
-import { useBudgetStore } from '@/store/budgetStore';
+import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
-import type { AtividadeKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
-
-function divisaoToAtividade(divisao?: string): AtividadeKey | null {
-  if (!divisao) return null;
-  const text = divisao.trim().toUpperCase();
-
-  if (text.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
-  if (text.includes('SERING') || text.includes('LATEX') || text.includes('BORRACHA')) return 'SERINGAL';
-  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO')) return 'AGRICOLA';
-  if (text.includes('CANA')) return 'CANA';
-  if (text.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
-  if (text.includes('ENCARGO')) return 'ENCARGOS';
-
-  return null;
-}
 
 export function GlobalSummary() {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -26,55 +11,6 @@ export function GlobalSummary() {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     }).format(v);
-
-  const calculateGlobalTotals = () => {
-    const rootAccounts = accounts.filter(a => {
-      return !accounts.some(parent => parent.codigo === a.codigoPai);
-    });
-
-    let orc = 0;
-    let real = 0;
-
-    rootAccounts.forEach(a => {
-      const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-      const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
-
-      if (a.tipo === 'R') {
-        orc += aOrc;
-        real += aReal;
-      } else {
-        orc -= aOrc;
-        real -= aReal;
-      }
-    });
-
-    return { orc, real, diff: real - orc };
-  };
-
-  const calculateTotalsByDivisao = (filterAtividade: AtividadeKey) => {
-    let orc = 0;
-    let real = 0;
-
-    accounts.forEach(a => {
-      const atividadeFromDivisao = divisaoToAtividade(a.divisao);
-      const atividadeEfetiva = atividadeFromDivisao ?? a.atividade;
-
-      if (atividadeEfetiva !== filterAtividade) return;
-
-      const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-      const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
-
-      if (a.tipo === 'R') {
-        orc += aOrc;
-        real += aReal;
-      } else {
-        orc -= aOrc;
-        real -= aReal;
-      }
-    });
-
-    return { orc, real, diff: real - orc };
-  };
 
   const SummaryTable = ({
     title,
@@ -117,7 +53,7 @@ export function GlobalSummary() {
     );
   };
 
-  const global = calculateGlobalTotals();
+  const global = calculateGlobalTotals(accounts);
 
   return (
     <div className="space-y-6">
@@ -131,7 +67,7 @@ export function GlobalSummary() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ATIVIDADES.map((ativ) => {
-          const stats = calculateTotalsByDivisao(ativ.key);
+          const stats = calculateTotalsByDivisao(accounts, ativ.key);
           return (
             <SummaryTable
               key={ativ.key}

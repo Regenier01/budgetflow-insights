@@ -84,6 +84,7 @@ function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
 }
 
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
+  // Filtramos apenas as contas que não possuem pai na lista (raízes reais) para evitar dupla contagem
   const rootAccounts = accounts.filter(a => {
     return !accounts.some(parent => parent.codigo === a.codigoPai);
   });
@@ -114,12 +115,14 @@ export function calculateTotalsByDivisao(
   let orc = 0;
   let real = 0;
 
-  accounts.forEach(a => {
-    const atividadeFromDivisao = mapAtividadeByDivisao(a.divisao);
-    const atividadeEfetiva = atividadeFromDivisao ?? a.atividade;
+  // Filtramos as contas pertencentes à atividade
+  const filtered = accounts.filter(a => a.atividade === filterAtividade);
+  
+  // Filtramos apenas as contas que são "raízes" dentro do subconjunto da atividade
+  // Isso evita somar o pai (grupo) e o filho (conta específica) simultaneamente
+  const roots = filtered.filter(a => !filtered.some(p => p.codigo === a.codigoPai));
 
-    if (atividadeEfetiva !== filterAtividade) return;
-
+  roots.forEach(a => {
     const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
