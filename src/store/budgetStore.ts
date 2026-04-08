@@ -19,11 +19,21 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-function mapAtividade(contaContabil: string, grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
+function mapAtividade(contaContabil: string, divisao?: string, grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
   const conta = contaContabil.trim();
+  const div = (divisao || '').toUpperCase();
   const grupo = (grupoContabil || '').trim();
   const orcText = (nomeOrcamento || '').toUpperCase();
   
+  // Prioridade para a coluna DIVISAO conforme solicitado
+  if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
+  if (div.includes('SERING') || div.includes('LATEX')) return 'SERINGAL';
+  if (div.includes('AGRIC') || div.includes('SOJA')) return 'AGRICOLA';
+  if (div.includes('CANA')) return 'CANA';
+  if (div.includes('ADM') || div.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (div.includes('ENCARGO')) return 'ENCARGOS';
+
+  // Fallback para lógica baseada em conta ou grupo contábil
   if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) {
     return 'DESP_ADM_TRIB';
   }
@@ -80,6 +90,7 @@ export const useBudgetStore = create<BudgetState>()(
           departamento?: string;
           centroCusto?: string;
           coligada?: string;
+          divisao?: string;
           grupoContabil?: string;
           atividade: AtividadeKey;
           tipo: 'R' | 'D' | 'C';
@@ -95,6 +106,7 @@ export const useBudgetStore = create<BudgetState>()(
           if (isNaN(saldo)) continue;
 
           const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
+          const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
           const grupoContabil = row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined;
           const nomeOrcamento = row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined;
 
@@ -108,8 +120,9 @@ export const useBudgetStore = create<BudgetState>()(
               departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
+              divisao: divisao,
               grupoContabil: grupoContabil,
-              atividade: mapAtividade(conta, grupoContabil, nomeOrcamento),
+              atividade: mapAtividade(conta, divisao, grupoContabil, nomeOrcamento),
               tipo: mapTipo(conta),
             });
           }

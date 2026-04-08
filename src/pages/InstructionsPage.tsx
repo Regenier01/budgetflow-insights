@@ -5,9 +5,9 @@ import { FileSpreadsheet, AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 export default function InstructionsPage() {
   const columns = [
-    { name: 'GRUPOCONTABIL', desc: 'Grupo contábil — identifica a atividade (Pecuária, Seringal, etc.)', required: false },
+    { name: 'GRUPOCONTABIL', desc: 'Grupo contábil — identificação secundária da atividade', required: false },
     { name: 'COLIGADA', desc: 'Empresa do grupo (ex: 1-VERA CRUZ AGROPECUARIA LTDA)', required: false },
-    { name: 'DIVISAO', desc: 'Divisão da empresa', required: false },
+    { name: 'DIVISAO', desc: 'Divisão da empresa — Principal identificador da atividade (Pecuária, Seringal, etc.)', required: true },
     { name: 'NOMEDEPTO', desc: 'Nome do departamento', required: false },
     { name: 'NOMECUSTO', desc: 'Nome do centro de custo', required: false },
     { name: 'CODFILIAL', desc: 'Código da filial', required: false },
@@ -99,7 +99,8 @@ export default function InstructionsPage() {
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
-            <li>As colunas obrigatórias são <strong className="text-foreground">CONTA_CONTABIL</strong> e <strong className="text-foreground">SALDO</strong>.</li>
+            <li>As colunas obrigatórias são <strong className="text-foreground">CONTA_CONTABIL</strong>, <strong className="text-foreground">SALDO</strong> e <strong className="text-foreground">DIVISAO</strong>.</li>
+            <li>A coluna <strong className="text-foreground">DIVISAO</strong> é usada para classificar os dados entre Pecuária, Seringal, Agrícola, etc.</li>
             <li>Se a coluna <strong className="text-foreground">DATA</strong> estiver preenchida, o mês é detectado automaticamente.</li>
             <li>Caso contrário, será usado o período selecionado manualmente.</li>
             <li>Valores de SALDO são agregados (somados) por conta contábil + mês.</li>
