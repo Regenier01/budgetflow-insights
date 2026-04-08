@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { AccountTable } from '@/components/dashboard/AccountTable';
+import { AnalyticalTable } from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, CULTURAS, type MonthKey, type CulturaKey } from '@/types/budget';
