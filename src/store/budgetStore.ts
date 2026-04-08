@@ -22,10 +22,10 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
 function mapAtividade(contaContabil: string, divisao?: string, grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
   const conta = contaContabil.trim();
   const div = (divisao || '').toUpperCase();
-  const grupo = (grupoContabil || '').trim();
+  const grupo = (grupoContabil || '').trim().toUpperCase();
   const orcText = (nomeOrcamento || '').toUpperCase();
   
-  // Prioridade para a coluna DIVISAO conforme solicitado
+  // Prioridade para a coluna DIVISAO
   if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
   if (div.includes('SERING') || div.includes('LATEX')) return 'SERINGAL';
   if (div.includes('AGRIC') || div.includes('SOJA')) return 'AGRICOLA';
@@ -34,26 +34,24 @@ function mapAtividade(contaContabil: string, divisao?: string, grupoContabil?: s
   if (div.includes('ENCARGO')) return 'ENCARGOS';
 
   // Fallback para lógica baseada em conta ou grupo contábil
-  if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) {
-    return 'DESP_ADM_TRIB';
-  }
+  if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) return 'DESP_ADM_TRIB';
 
-  const text = grupo.toUpperCase();
-  if (text.includes('PECUA') || orcText.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
-  if (text.includes('SERING') || orcText.includes('SERING') || text.includes('LATEX')) return 'SERINGAL';
-  if (text.includes('AGRIC') || orcText.includes('AGRIC') || text.includes('SOJA')) return 'AGRICOLA';
-  if (text.includes('CANA') || orcText.includes('CANA')) return 'CANA';
-  if (text.includes('ADM') || orcText.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
-  if (text.includes('ENCARGO') || orcText.includes('ENCARGO')) return 'ENCARGOS';
+  const combinedText = `${grupo} ${orcText}`;
+  if (combinedText.includes('PECUA') || combinedText.includes('GADO')) return 'PECUARIA';
+  if (combinedText.includes('SERING') || combinedText.includes('LATEX')) return 'SERINGAL';
+  if (combinedText.includes('AGRIC') || combinedText.includes('SOJA')) return 'AGRICOLA';
+  if (combinedText.includes('CANA')) return 'CANA';
+  if (combinedText.includes('ADM') || combinedText.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (combinedText.includes('ENCARGO')) return 'ENCARGOS';
   
   return 'PECUARIA';
 }
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
   const conta = contaContabil.trim();
-  if (conta.startsWith('4.') || conta.startsWith('4')) return 'C';
+  // Lógica simplificada: 3.1 = Receita, 3.3/4 = Custo, Outros 3 = Despesa
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
-  if (conta.startsWith('3.3') || conta.startsWith('3.03')) return 'C';
+  if (conta.startsWith('3.3') || conta.startsWith('3.03') || conta.startsWith('4')) return 'C';
   return 'D';
 }
 
@@ -132,6 +130,11 @@ export const useBudgetStore = create<BudgetState>()(
         const currentAccounts = [...get().accounts];
         for (const [conta, data] of aggregated) {
           const idx = currentAccounts.findIndex((a) => a.codigo === conta);
+          
+          // Determinar código pai (ex: 3.1.01 -> 3.1)
+          const parts = conta.split('.');
+          const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
+
           if (idx >= 0) {
             const merged = { ...currentAccounts[idx].realizado };
             for (const [mk, val] of Object.entries(data.saldo)) {
@@ -142,6 +145,8 @@ export const useBudgetStore = create<BudgetState>()(
               realizado: merged,
               tipo: data.tipo,
               atividade: data.atividade,
+              codigoPai: codigoPai,
+              nivel: parts.length,
               departamento: data.departamento || currentAccounts[idx].departamento,
               centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
               coligada: data.coligada || currentAccounts[idx].coligada,
@@ -153,8 +158,8 @@ export const useBudgetStore = create<BudgetState>()(
               codigo: conta,
               descricao: data.descricao,
               tipo: data.tipo,
-              codigoPai: null,
-              nivel: conta.split('.').length,
+              codigoPai: codigoPai,
+              nivel: parts.length,
               atividade: data.atividade,
               departamento: data.departamento,
               centroCusto: data.centroCusto,

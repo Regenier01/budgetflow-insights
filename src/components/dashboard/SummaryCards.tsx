@@ -10,10 +10,11 @@ interface Props {
 export function SummaryCards({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
-  const topLevel = accounts.filter((a) => a.nivel === 1);
+  // Pegamos apenas as contas que não têm pai na lista para evitar duplicidade
+  const rootAccounts = accounts.filter(a => !accounts.some(p => p.codigo === a.codigoPai));
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {
-    const items = topLevel.filter((a) => a.tipo === tipo);
+    const items = rootAccounts.filter((a) => a.tipo === tipo);
     return items.reduce((sum, a) => {
       if (selectedMonth === 'all') {
         return sum + Object.values(a[field]).reduce((s: number, v: number) => s + v, 0);

@@ -20,25 +20,26 @@ export function ActivityCards() {
   return (
     <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
       {ATIVIDADES.map((ativ) => {
-        const ativAccounts = accounts.filter(
-          (a) => a.atividade === ativ.key && a.nivel === 1
+        // Pegamos apenas as contas "raiz" desta atividade para evitar duplicidade
+        const ativRootAccounts = accounts.filter(
+          (a) => a.atividade === ativ.key && !accounts.some(p => p.codigo === a.codigoPai)
         );
 
         const chartData = MONTHS.map(({ key, label }) => {
-          const orc = ativAccounts.reduce((s, a) => s + (a.orcado[key] || 0), 0);
-          const real = ativAccounts.reduce((s, a) => s + (a.realizado[key] || 0), 0);
+          const orc = ativRootAccounts.reduce((s, a) => s + (a.orcado[key] || 0), 0);
+          const real = ativRootAccounts.reduce((s, a) => s + (a.realizado[key] || 0), 0);
           return { month: label, Orçado: orc, Realizado: real };
         });
 
-        const totalOrc = ativAccounts.reduce(
+        const totalOrc = ativRootAccounts.reduce(
           (s, a) => s + Object.values(a.orcado).reduce((x, v) => x + v, 0), 0
         );
-        const totalReal = ativAccounts.reduce(
+        const totalReal = ativRootAccounts.reduce(
           (s, a) => s + Object.values(a.realizado).reduce((x, v) => x + v, 0), 0
         );
         
         const variance = totalOrc === 0 ? 0 : ((totalReal - totalOrc) / Math.abs(totalOrc)) * 100;
-        const isRevenue = ativAccounts.some(a => a.tipo === 'R');
+        const isRevenue = ativRootAccounts.some(a => a.tipo === 'R');
         const isGood = isRevenue ? variance >= 0 : variance <= 0;
 
         return (
@@ -57,7 +58,6 @@ export function ActivityCards() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 flex-1">
-              {/* Mini Cards de Comparação */}
               <div className="grid grid-cols-3 gap-2">
                 <div className="rounded-lg bg-muted/50 p-3">
                   <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Orçado</p>
@@ -78,7 +78,6 @@ export function ActivityCards() {
                 </div>
               </div>
 
-              {/* Gráfico de Colunas */}
               <div className="h-[200px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>

@@ -1,4 +1,3 @@
-import { Card, CardContent } from '@/components/ui/card';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
@@ -14,14 +13,17 @@ export function GlobalSummary() {
     }).format(v);
 
   const calculateTotals = (filterAtividade?: string) => {
-    const filtered = filterAtividade 
-      ? accounts.filter(a => a.atividade === filterAtividade && a.nivel === 1)
-      : accounts.filter(a => a.nivel === 1);
+    // Filtramos apenas as contas que não possuem um pai presente na lista atual
+    // Isso evita dupla contagem se o arquivo tiver tanto a conta pai quanto a filha
+    const rootAccounts = accounts.filter(a => {
+      if (filterAtividade && a.atividade !== filterAtividade) return false;
+      return !accounts.some(parent => parent.codigo === a.codigoPai);
+    });
 
     let orc = 0;
     let real = 0;
 
-    filtered.forEach(a => {
+    rootAccounts.forEach(a => {
       const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
       
@@ -42,19 +44,14 @@ export function GlobalSummary() {
     
     return (
       <div className={cn("border border-border overflow-hidden rounded-sm", isMain ? "mb-6" : "")}>
-        {/* Título Principal */}
         <div className="bg-white border-b border-border py-1 text-center font-bold text-xs uppercase tracking-wider">
           {title}
         </div>
-        
-        {/* Cabeçalhos Amarelos */}
         <div className="grid grid-cols-3 text-center border-b border-border">
           <div className="bg-[#FFBF00] py-1 text-[10px] font-bold border-r border-border">ORÇADO</div>
           <div className="bg-[#FFBF00] py-1 text-[10px] font-bold border-r border-border">REALIZADO</div>
           <div className="bg-[#FFBF00] py-1 text-[10px] font-bold">DIFERENÇA</div>
         </div>
-        
-        {/* Valores */}
         <div className="grid grid-cols-3 text-center bg-white">
           <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(orc)}</div>
           <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(real)}</div>
@@ -73,7 +70,6 @@ export function GlobalSummary() {
 
   return (
     <div className="space-y-6">
-      {/* Total Geral */}
       <SummaryTable 
         title="TOTAL GERAL" 
         orc={global.orc} 
@@ -82,7 +78,6 @@ export function GlobalSummary() {
         isMain 
       />
 
-      {/* Grid de Atividades */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ATIVIDADES.map((ativ) => {
           const stats = calculateTotals(ativ.key);
