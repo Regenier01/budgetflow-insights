@@ -6,6 +6,7 @@ export interface AccountEntry {
   codigoPai: string | null;
   nivel: number;
   atividade: AtividadeKey;
+  cultura?: CulturaKey;
   departamento?: string;
   centroCusto?: string;
   coligada?: string;
@@ -81,3 +82,13 @@ export const ATIVIDADES = [
 ] as const;
 
 export type AtividadeKey = typeof ATIVIDADES[number]['key'];
+
+export const CULTURAS = [
+  { key: 'SOJA', label: 'Soja' },
+  { key: 'MILHO', label: 'Milho' },
+  { key: 'SORGO', label: 'Sorgo' },
+  { key: 'GERGELIM', label: 'Gergelim' },
+  { key: 'GIRASSOL', label: 'Girassol' },
+] as const;
+
+export type CulturaKey = typeof CULTURAS[number]['key'];

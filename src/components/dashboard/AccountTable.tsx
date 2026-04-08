@@ -3,21 +3,23 @@ import { ChevronRight, ChevronDown } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
-import type { AccountEntry, MonthKey } from '@/types/budget';
+import type { AccountEntry, MonthKey, CulturaKey } from '@/types/budget';
 
 interface Props {
   tipoFilter: string | 'all';
   selectedMonth: MonthKey | 'all';
   atividadeFilter?: string | 'all';
+  culturaFilter?: CulturaKey | 'all';
 }
 
-export function AccountTable({ tipoFilter, selectedMonth, atividadeFilter = 'all' }: Props) {
+export function AccountTable({ tipoFilter, selectedMonth, atividadeFilter = 'all', culturaFilter = 'all' }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
   const filtered = accounts.filter((a) => {
     if (tipoFilter !== 'all' && a.tipo !== tipoFilter) return false;
     if (atividadeFilter !== 'all' && a.atividade !== atividadeFilter) return false;
+    if (culturaFilter !== 'all' && a.cultura !== culturaFilter) return false;
     return true;
   });
 

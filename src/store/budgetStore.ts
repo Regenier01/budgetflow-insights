@@ -1,7 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey } from '@/types/budget';
-import { ATIVIDADES } from '@/types/budget';
+import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey, CulturaKey } from '@/types/budget';
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
@@ -19,6 +18,25 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
+const DEPTOS_AGRICOLA = [
+  'CANADÁ - SOJA',
+  'JÓIA - SOJA',
+  'LAGUNA - MILHO',
+  'LAGUNA - SOJA',
+  'LAGUNA - SORGO',
+  'LAVRINHA SLN - MILHO',
+  'LAVRINHA SLN - SOJA',
+  'UNIÃO - SOJA',
+  'VALE DO IMBÉ - GERGELIM',
+  'VALE DO IMBÉ - SORGO',
+  'VALE DO IMBÉ - SOJA',
+  'VERA CRUZ GOTEJO - SOJA',
+  'AROEIRA - SOJA',
+  'MONTE CARMELO - SOJA',
+  'SANTA MARIA - SOJA',
+  'LAGUNA - GIRASSOL'
+];
+
 function mapAtividade(
   contaContabil: string, 
   divisao?: string, 
@@ -34,7 +52,12 @@ function mapAtividade(
   // TRAVA 1: Despesas Administrativas
   if (depto.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
 
-  // TRAVA 2: Pecuária (Lista específica de departamentos)
+  // TRAVA 2: Agrícola (Lista específica de departamentos fornecida pelo usuário)
+  if (DEPTOS_AGRICOLA.some(d => depto === d.toUpperCase())) {
+    return 'AGRICOLA';
+  }
+
+  // TRAVA 3: Pecuária (Lista específica de departamentos)
   const deptoPecuaria = [
     'CONFINAMENTO', 
     'JÓIA PECUÁRIA', 
@@ -67,10 +90,19 @@ function mapAtividade(
   if (combinedText.includes('CANA')) return 'CANA';
   if (combinedText.includes('ENCARGO')) return 'ENCARGOS';
   
-  // Se não cair em nenhuma trava ou regra específica, mantemos Pecuária como padrão ou conforme a divisão
   if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
   
   return 'PECUARIA';
+}
+
+function mapCultura(nomeDepto?: string): CulturaKey | undefined {
+  const depto = (nomeDepto || '').toUpperCase();
+  if (depto.includes('SOJA')) return 'SOJA';
+  if (depto.includes('MILHO')) return 'MILHO';
+  if (depto.includes('SORGO')) return 'SORGO';
+  if (depto.includes('GERGELIM')) return 'GERGELIM';
+  if (depto.includes('GIRASSOL')) return 'GIRASSOL';
+  return undefined;
 }
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
@@ -116,6 +148,7 @@ export const useBudgetStore = create<BudgetState>()(
           divisao?: string;
           grupoContabil?: string;
           atividade: AtividadeKey;
+          cultura?: CulturaKey;
           tipo: 'R' | 'D' | 'C';
         }>();
 
@@ -147,6 +180,7 @@ export const useBudgetStore = create<BudgetState>()(
               divisao: divisao,
               grupoContabil: grupoContabil,
               atividade: mapAtividade(conta, divisao, grupoContabil, nomeOrcamento, nomeDepto),
+              cultura: mapCultura(nomeDepto),
               tipo: mapTipo(conta),
             });
           }
@@ -169,6 +203,7 @@ export const useBudgetStore = create<BudgetState>()(
               realizado: merged,
               tipo: data.tipo,
               atividade: data.atividade,
+              cultura: data.cultura || currentAccounts[idx].cultura,
               codigoPai: codigoPai,
               nivel: parts.length,
               departamento: data.departamento || currentAccounts[idx].departamento,
@@ -185,6 +220,7 @@ export const useBudgetStore = create<BudgetState>()(
               codigoPai: codigoPai,
               nivel: parts.length,
               atividade: data.atividade,
+              cultura: data.cultura,
               departamento: data.departamento,
               centroCusto: data.centroCusto,
               coligada: data.coligada,
