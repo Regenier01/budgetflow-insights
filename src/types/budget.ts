@@ -5,6 +5,9 @@ export interface AccountEntry {
   tipo: 'R' | 'D' | 'C'; // Receita, Despesa, Custo
   codigoPai: string | null;
   nivel: number;
+  atividade: AtividadeKey;
+  departamento?: string;
+  centroCusto?: string;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
 }
