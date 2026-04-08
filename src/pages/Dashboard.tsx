@@ -4,8 +4,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { ActivityCards } from '@/components/dashboard/ActivityCards';
 import { AccountTable } from '@/components/dashboard/AccountTable';
+import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
 import { MONTHS, ATIVIDADES } from '@/types/budget';
-import type { MonthKey, AtividadeKey } from '@/types/budget';
+import type { MonthKey } from '@/types/budget';
 
 export default function Dashboard() {
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
@@ -32,6 +33,9 @@ export default function Dashboard() {
           </Select>
         </div>
       </div>
+
+      {/* Novo Resumo Global no Topo */}
+      <GlobalSummary />
 
       <SummaryCards selectedMonth={selectedMonth} />
 
