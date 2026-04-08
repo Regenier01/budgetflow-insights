@@ -1,22 +1,34 @@
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
+import type { AtividadeKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
+
+function divisaoToAtividade(divisao?: string): AtividadeKey | null {
+  if (!divisao) return null;
+  const text = divisao.trim().toUpperCase();
+
+  if (text.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
+  if (text.includes('SERING') || text.includes('LATEX') || text.includes('BORRACHA')) return 'SERINGAL';
+  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO')) return 'AGRICOLA';
+  if (text.includes('CANA')) return 'CANA';
+  if (text.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (text.includes('ENCARGO')) return 'ENCARGOS';
+
+  return null;
+}
 
 export function GlobalSummary() {
   const accounts = useBudgetStore((s) => s.accounts);
 
   const fmt = (v: number) =>
-    new Intl.NumberFormat('pt-BR', { 
+    new Intl.NumberFormat('pt-BR', {
       style: 'decimal',
       minimumFractionDigits: 2,
-      maximumFractionDigits: 2 
+      maximumFractionDigits: 2
     }).format(v);
 
-  const calculateTotals = (filterAtividade?: string) => {
-    // Filtramos apenas as contas que não possuem um pai presente na lista atual
-    // Isso evita dupla contagem se o arquivo tiver tanto a conta pai quanto a filha
+  const calculateGlobalTotals = () => {
     const rootAccounts = accounts.filter(a => {
-      if (filterAtividade && a.atividade !== filterAtividade) return false;
       return !accounts.some(parent => parent.codigo === a.codigoPai);
     });
 
@@ -26,7 +38,7 @@ export function GlobalSummary() {
     rootAccounts.forEach(a => {
       const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
-      
+
       if (a.tipo === 'R') {
         orc += aOrc;
         real += aReal;
@@ -39,9 +51,46 @@ export function GlobalSummary() {
     return { orc, real, diff: real - orc };
   };
 
-  const SummaryTable = ({ title, orc, real, diff, isMain = false }: { title: string, orc: number, real: number, diff: number, isMain?: boolean }) => {
+  const calculateTotalsByDivisao = (filterAtividade: AtividadeKey) => {
+    let orc = 0;
+    let real = 0;
+
+    accounts.forEach(a => {
+      const atividadeFromDivisao = divisaoToAtividade(a.divisao);
+      const atividadeEfetiva = atividadeFromDivisao ?? a.atividade;
+
+      if (atividadeEfetiva !== filterAtividade) return;
+
+      const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+
+      if (a.tipo === 'R') {
+        orc += aOrc;
+        real += aReal;
+      } else {
+        orc -= aOrc;
+        real -= aReal;
+      }
+    });
+
+    return { orc, real, diff: real - orc };
+  };
+
+  const SummaryTable = ({
+    title,
+    orc,
+    real,
+    diff,
+    isMain = false
+  }: {
+    title: string;
+    orc: number;
+    real: number;
+    diff: number;
+    isMain?: boolean;
+  }) => {
     const isNegative = diff < 0;
-    
+
     return (
       <div className={cn("border border-border overflow-hidden rounded-sm", isMain ? "mb-6" : "")}>
         <div className="bg-white border-b border-border py-1 text-center font-bold text-xs uppercase tracking-wider">
@@ -55,10 +104,12 @@ export function GlobalSummary() {
         <div className="grid grid-cols-3 text-center bg-white">
           <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(orc)}</div>
           <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(real)}</div>
-          <div className={cn(
-            "py-2 text-xs font-bold tabular-nums",
-            isNegative ? "text-destructive bg-destructive/5" : "text-primary bg-primary/5"
-          )}>
+          <div
+            className={cn(
+              "py-2 text-xs font-bold tabular-nums",
+              isNegative ? "text-destructive bg-destructive/5" : "text-primary bg-primary/5"
+            )}
+          >
             {fmt(diff)}
           </div>
         </div>
@@ -66,23 +117,23 @@ export function GlobalSummary() {
     );
   };
 
-  const global = calculateTotals();
+  const global = calculateGlobalTotals();
 
   return (
     <div className="space-y-6">
-      <SummaryTable 
-        title="TOTAL GERAL" 
-        orc={global.orc} 
-        real={global.real} 
-        diff={global.diff} 
-        isMain 
+      <SummaryTable
+        title="TOTAL GERAL"
+        orc={global.orc}
+        real={global.real}
+        diff={global.diff}
+        isMain
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ATIVIDADES.map((ativ) => {
-          const stats = calculateTotals(ativ.key);
+          const stats = calculateTotalsByDivisao(ativ.key);
           return (
-            <SummaryTable 
+            <SummaryTable
               key={ativ.key}
               title={ativ.label}
               orc={stats.orc}

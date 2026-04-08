@@ -11,6 +11,7 @@ export interface AccountEntry {
   centroCusto?: string;
   coligada?: string;
   grupoContabil?: string;
+  divisao?: string;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
 }

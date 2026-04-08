@@ -1,10 +1,11 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey, CulturaKey } from '@/types/budget';
+import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey } from '@/types/budget';
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
   let d: Date;
+
   if (raw instanceof Date) {
     d = raw;
   } else if (typeof raw === 'number') {
@@ -12,117 +13,126 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   } else {
     d = new Date(raw);
   }
+
   if (isNaN(d.getTime())) return null;
+
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, '0');
   return `${y}-${m}` as MonthKey;
 }
 
-const DEPTOS_AGRICOLA = [
-  'CANADÁ - SOJA',
-  'JÓIA - SOJA',
-  'LAGUNA - MILHO',
-  'LAGUNA - SOJA',
-  'LAGUNA - SORGO',
-  'LAVRINHA SLN - MILHO',
-  'LAVRINHA SLN - SOJA',
-  'UNIÃO - SOJA',
-  'VALE DO IMBÉ - GERGELIM',
-  'VALE DO IMBÉ - SORGO',
-  'VALE DO IMBÉ - SOJA',
-  'VERA CRUZ GOTEJO - SOJA',
-  'AROEIRA - SOJA',
-  'MONTE CARMELO - SOJA',
-  'SANTA MARIA - SOJA',
-  'LAGUNA - GIRASSOL'
-];
-
-// New list for SerINGAL departments
-const DEPTOS_SERINGAL = [
-  'BANDEIRANTES SERINGAL',
-  'ESPLANADA SERINGAL',
-  'COVOÁ SERINGAL',
-  'PORTEIRAS SERINGAL',
-  'VERA CRUZ SERINGAL'
-];
-
-function mapAtividade(
-  contaContabil: string, 
-  divisao?: string, 
-  grupoContabil?: string, 
-  nomeOrcamento?: string,
-  nomeDepto?: string
-): AtividadeKey {
+export function isDepartamentoSeringalPermitido(nomeDepto?: string): boolean {
   const depto = (nomeDepto || '').toUpperCase().trim();
-  const div = (divisao || '').toUpperCase().trim();
-  const grupo = (grupoContabil || '').trim().toUpperCase();
-  const orcText = (nomeOrcamento || '').toUpperCase();
-  
-  // TRAVA 1: Despesas Administrativas
-  if (depto.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
 
-  // TRAVA 2: Agrícola
-  if (DEPTOS_AGRICOLA.some(d => depto === d.toUpperCase())) {
-    return 'AGRICOLA';
-  }
-
-  // TRAVA 3: SerINGAL (new)
-  if (DEPTOS_SERINGAL.some(d => depto === d.toUpperCase())) {
-    return 'SERINGAL';
-  }
-
-  // TRAVA 4: Pecuária
-  const deptoPecuaria = [
-    'CONFINAMENTO', 
-    'JÓIA PECUÁRIA', 
-    'BANDEIRANTES PECUÁRIA', 
-    'CENTRO COMERCIAL', 
-    'VERA CRUZ FURNAS', 
-    'UNIÃO PECUÁRIA', 
-    'GOTEJO PECUÁRIA', 
-    'COVOÁ PECUÁRIA', 
-    'CANADÁ PECUÁRIA', 
-    'PORTEIRAS PECUÁRIA', 
-    'CODORA', 
-    'LAGUNA PECUÁRIA'
+  const permitidos = [
+    'BANDEIRANTES SERINGAL',
+    'ESPLANADA SERINGAL',
+    'COVOÁ SERINGAL',
+    'PORTEIRAS SERINGAL',
+    'VERA CRUZ SERINGAL'
   ];
-  
-  if (deptoPecuaria.some(d => depto === d || depto.includes(d))) {
-    return 'PECUARIA';
-  }
 
-  // Outras atividades baseadas na DIVISAO
-  if (div.includes('SERING') || div.includes('LATEX')) return 'SERINGAL';
-  if (div.includes('AGRIC') || div.includes('SOJA')) return 'AGRICOLA';
-  if (div.includes('CANA')) return 'CANA';
-  if (div.includes('ENCARGO')) return 'ENCARGOS';
-
-  const combinedText = `${grupo} ${orcText}`;
-  if (combinedText.includes('SERING') || combinedText.includes('LATEX')) return 'SERINGAL';
-  if (combinedText.includes('AGRIC') || combinedText.includes('SOJA')) return 'AGRICOLA';
-  if (combinedText.includes('CANA')) return 'CANA';
-  if (combinedText.includes('ENCARGO')) return 'ENCARGOS';
-  
-  if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
-  
-  return 'PECUARIA';
+  return permitidos.includes(depto);
 }
 
-function mapCultura(nomeDepto?: string): CulturaKey | undefined {
-  const depto = (nomeDepto || '').toUpperCase();
-  if (depto.includes('SOJA')) return 'SOJA';
-  if (depto.includes('MILHO')) return 'MILHO';
-  if (depto.includes('SORGO')) return 'SORGO';
-  if (depto.includes('GERGELIM')) return 'GERGELIM';
-  if (depto.includes('GIRASSOL')) return 'GIRASSOL';
-  return undefined;
+export function mapAtividadeByDivisao(divisao?: string): AtividadeKey | null {
+  if (!divisao) return null;
+
+  const text = divisao.trim().toUpperCase();
+
+  if (text.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
+  if (text.includes('SERING') || text.includes('LATEX') || text.includes('BORRACHA')) return 'SERINGAL';
+  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO')) return 'AGRICOLA';
+  if (text.includes('CANA')) return 'CANA';
+  if (text.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (text.includes('ENCARGO')) return 'ENCARGOS';
+
+  return null;
+}
+
+export function mapAtividade(row: ExcelRow): AtividadeKey {
+  const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
+  const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined;
+
+  const fromDivisao = mapAtividadeByDivisao(divisao);
+
+  if (fromDivisao) {
+    if (fromDivisao === 'SERINGAL' && !isDepartamentoSeringalPermitido(depto)) {
+      return 'PECUARIA';
+    }
+    return fromDivisao;
+  }
+
+  const deptoUpper = (depto || '').toUpperCase().trim();
+
+  if (deptoUpper.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
+
+  if (deptoUpper.includes('SERINGAL')) {
+    return isDepartamentoSeringalPermitido(depto) ? 'SERINGAL' : 'PECUARIA';
+  }
+
+  return 'PECUARIA';
 }
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
   const conta = contaContabil.trim();
+
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
   if (conta.startsWith('3.3') || conta.startsWith('3.03') || conta.startsWith('4')) return 'C';
+
   return 'D';
+}
+
+export function calculateGlobalTotals(accounts: AccountEntry[]) {
+  const rootAccounts = accounts.filter(a => {
+    return !accounts.some(parent => parent.codigo === a.codigoPai);
+  });
+
+  let orc = 0;
+  let real = 0;
+
+  rootAccounts.forEach(a => {
+    const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+    const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+
+    if (a.tipo === 'R') {
+      orc += aOrc;
+      real += aReal;
+    } else {
+      orc -= aOrc;
+      real -= aReal;
+    }
+  });
+
+  return { orc, real, diff: real - orc };
+}
+
+export function calculateTotalsByDivisao(
+  accounts: AccountEntry[],
+  filterAtividade: AtividadeKey
+) {
+  let orc = 0;
+  let real = 0;
+
+  accounts.forEach(a => {
+    const atividadeFromDivisao = mapAtividadeByDivisao(a.divisao);
+    const atividadeEfetiva = atividadeFromDivisao ?? a.atividade;
+
+    if (atividadeEfetiva !== filterAtividade) return;
+
+    const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+    const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+
+    if (a.tipo === 'R') {
+      orc += aOrc;
+      real += aReal;
+    } else {
+      orc -= aOrc;
+      real -= aReal;
+    }
+  });
+
+  return { orc, real, diff: real - orc };
 }
 
 interface BudgetState {
@@ -140,9 +150,16 @@ export const useBudgetStore = create<BudgetState>()(
     (set, get) => ({
       accounts: [],
       uploads: [],
+
       setAccounts: (accounts) => set({ accounts }),
-      addUpload: (upload) => set((s) => ({ uploads: [...s.uploads, upload] })),
+
+      addUpload: (upload) =>
+        set((s) => ({
+          uploads: [...s.uploads, upload],
+        })),
+
       clearAllData: () => set({ accounts: [], uploads: [] }),
+
       updateRealizado: (codigo, month, value) =>
         set((s) => ({
           accounts: s.accounts.map((a) =>
@@ -151,19 +168,22 @@ export const useBudgetStore = create<BudgetState>()(
               : a
           ),
         })),
+
       importExcelRows: (rows, fallbackMonth) => {
-        const aggregated = new Map<string, {
-          saldo: Record<string, number>;
-          descricao: string;
-          departamento?: string;
-          centroCusto?: string;
-          coligada?: string;
-          divisao?: string;
-          grupoContabil?: string;
-          atividade: AtividadeKey;
-          cultura?: CulturaKey;
-          tipo: 'R' | 'D' | 'C';
-        }>();
+        const aggregated = new Map<
+          string,
+          {
+            saldo: Record<string, number>;
+            descricao: string;
+            departamento?: string;
+            centroCusto?: string;
+            coligada?: string;
+            divisao?: string;
+            grupoContabil?: string;
+            atividade: AtividadeKey;
+            tipo: 'R' | 'D' | 'C';
+          }
+        >();
 
         let processed = 0;
 
@@ -172,72 +192,76 @@ export const useBudgetStore = create<BudgetState>()(
           if (!conta) continue;
 
           const saldo = Number(row.SALDO ?? 0);
+          if (isNaN(saldo)) continue;
+
           const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
-          
-          const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
-          const grupoContabil = row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined;
-          const nomeOrcamento = row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined;
-          const nomeDepto = row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined;
 
           const existing = aggregated.get(conta);
+
           if (existing) {
             existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
           } else {
             aggregated.set(conta, {
               saldo: { [monthKey]: saldo },
               descricao: String(row.DESCRICAO_CONTABIL || conta),
-              departamento: nomeDepto,
+              departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
-              divisao: divisao,
-              grupoContabil: grupoContabil,
-              atividade: mapAtividade(conta, divisao, grupoContabil, nomeOrcamento, nomeDepto),
-              cultura: mapCultura(nomeDepto),
+              divisao: row.DIVISAO ? String(row.DIVISAO) : undefined,
+              grupoContabil: row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined,
+              atividade: mapAtividade(row),
               tipo: mapTipo(conta),
             });
           }
+
           processed++;
         }
 
         const currentAccounts = [...get().accounts];
 
-        // Função auxiliar para garantir que os pais existam na lista
-        const ensureParentExists = (codigo: string, data: any) => {
+        const ensureParentExists = (
+          codigo: string,
+          data: {
+            atividade: AtividadeKey;
+            tipo: 'R' | 'D' | 'C';
+          }
+        ) => {
           const parts = codigo.split('.');
           if (parts.length <= 1) return;
 
           const codigoPai = parts.slice(0, -1).join('.');
-          const parentIdx = currentAccounts.findIndex(a => a.codigo === codigoPai);
+          const parentIdx = currentAccounts.findIndex((a) => a.codigo === codigoPai);
 
           if (parentIdx === -1) {
-            // Cria conta pai "fantasma" se não existir, para manter a árvore
             currentAccounts.push({
               id: crypto.randomUUID(),
               codigo: codigoPai,
               descricao: `Grupo ${codigoPai}`,
               tipo: data.tipo,
-              codigoPai: codigoPai.includes('.') ? codigoPai.split('.').slice(0, -1).join('.') : null,
+              codigoPai: codigoPai.includes('.')
+                ? codigoPai.split('.').slice(0, -1).join('.')
+                : null,
               nivel: parts.length - 1,
               atividade: data.atividade,
               orcado: {},
               realizado: {},
             });
-            // Recursividade para garantir o avô, etc.
+
             ensureParentExists(codigoPai, data);
           }
         };
 
         for (const [conta, data] of aggregated) {
           const idx = currentAccounts.findIndex((a) => a.codigo === conta);
+
           const parts = conta.split('.');
           const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
 
-          // Garante que a hierarquia de pais exista
           ensureParentExists(conta, data);
 
           if (idx >= 0) {
-            // Atualiza realizado (mescla com o que já existe para outros meses)
             const mergedRealizado = { ...currentAccounts[idx].realizado };
+
             for (const [mk, val] of Object.entries(data.saldo)) {
               mergedRealizado[mk] = val;
             }
@@ -247,32 +271,45 @@ export const useBudgetStore = create<BudgetState>()(
               realizado: mergedRealizado,
               tipo: data.tipo,
               atividade: data.atividade,
-              cultura: data.cultura || currentAccounts[idx].cultura,
-              codigoPai: codigoPai,
+              codigoPai,
               nivel: parts.length,
-              descricao: data.descricao !== conta ? data.descricao : currentAccounts[idx].descricao,
+              descricao:
+                data.descricao !== conta
+                  ? data.descricao
+                  : currentAccounts[idx].descricao,
+              departamento: data.departamento || currentAccounts[idx].departamento,
+              centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
+              coligada: data.coligada || currentAccounts[idx].coligada,
+              grupoContabil:
+                data.grupoContabil || currentAccounts[idx].grupoContabil,
+              divisao: data.divisao || currentAccounts[idx].divisao,
             };
           } else {
-            // Adiciona nova conta
             currentAccounts.push({
               id: crypto.randomUUID(),
               codigo: conta,
               descricao: data.descricao,
               tipo: data.tipo,
-              codigoPai: codigoPai,
+              codigoPai,
               nivel: parts.length,
               atividade: data.atividade,
-              cultura: data.cultura,
+              departamento: data.departamento,
+              centroCusto: data.centroCusto,
+              coligada: data.coligada,
+              grupoContabil: data.grupoContabil,
+              divisao: data.divisao,
               orcado: {},
               realizado: data.saldo,
             });
           }
         }
 
-        // Ordena as contas por código para garantir que a árvore seja renderizada corretamente
-        currentAccounts.sort((a, b) => a.codigo.localeCompare(b.codigo, undefined, { numeric: true }));
+        currentAccounts.sort((a, b) =>
+          a.codigo.localeCompare(b.codigo, undefined, { numeric: true })
+        );
 
         set({ accounts: currentAccounts });
+
         return processed;
       },
     }),
