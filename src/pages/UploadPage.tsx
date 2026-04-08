@@ -8,31 +8,23 @@ import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import { useBudgetStore } from '@/store/budgetStore';
 import { MONTHS } from '@/types/budget';
-import type { MonthKey } from '@/types/budget';
+import type { MonthKey, ExcelRow } from '@/types/budget';
 import * as XLSX from 'xlsx';
 
 export default function UploadPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<MonthKey>(MONTHS[0].key);
   const [isDragging, setIsDragging] = useState(false);
-  const { uploads, addUpload, updateRealizado } = useBudgetStore();
+  const { uploads, addUpload, importExcelRows } = useBudgetStore();
 
   const processFile = useCallback(
     async (file: File) => {
       try {
         const buffer = await file.arrayBuffer();
-        const workbook = XLSX.read(buffer, { type: 'array' });
+        const workbook = XLSX.read(buffer, { type: 'array', cellDates: true });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json<Record<string, unknown>>(sheet);
+        const rows = XLSX.utils.sheet_to_json<ExcelRow>(sheet);
 
-        let processed = 0;
-        rows.forEach((row) => {
-          const codigo = String(row['Codigo'] || row['codigo'] || '');
-          const realizado = Number(row['Realizado'] || row['realizado'] || 0);
-          if (codigo && !isNaN(realizado)) {
-            updateRealizado(codigo, selectedPeriod, realizado);
-            processed++;
-          }
-        });
+        const processed = importExcelRows(rows, selectedPeriod);
 
         addUpload({
           id: crypto.randomUUID(),
@@ -56,7 +48,7 @@ export default function UploadPage() {
         toast.error('Erro ao processar o arquivo. Verifique o formato.');
       }
     },
-    [selectedPeriod, addUpload, updateRealizado]
+    [selectedPeriod, addUpload, importExcelRows]
   );
 
   const handleDrop = useCallback(
@@ -81,14 +73,14 @@ export default function UploadPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold">Upload de Dados</h1>
-        <p className="text-sm text-muted-foreground">Importe arquivos Excel com os dados realizados mensais</p>
+        <p className="text-sm text-muted-foreground">Importe arquivos Excel com os dados realizados mensais (formato padrão com 21 colunas)</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Importar Arquivo</CardTitle>
-            <CardDescription>Selecione o período e envie o arquivo Excel</CardDescription>
+            <CardDescription>Selecione o período e envie o arquivo Excel no formato padrão</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <Select value={selectedPeriod} onValueChange={(v) => setSelectedPeriod(v as MonthKey)}>
@@ -113,6 +105,9 @@ export default function UploadPage() {
               <Upload className="h-10 w-10 text-accent" />
               <p className="text-sm text-muted-foreground text-center">
                 Arraste o arquivo Excel aqui ou clique para selecionar
+              </p>
+              <p className="text-xs text-muted-foreground/70 text-center">
+                Colunas esperadas: CONTA_CONTABIL, SALDO, DATA, NOMEDEPTO, NOMECUSTO, GRUPOCONTABIL...
               </p>
               <Button variant="outline" size="sm" asChild>
                 <label className="cursor-pointer">
