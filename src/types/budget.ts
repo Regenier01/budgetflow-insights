@@ -8,8 +8,35 @@ export interface AccountEntry {
   atividade: AtividadeKey;
   departamento?: string;
   centroCusto?: string;
+  coligada?: string;
+  grupoContabil?: string;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
+}
+
+/** Raw row from the standard Excel upload */
+export interface ExcelRow {
+  GRUPOCONTABIL?: string;
+  COLIGADA?: string;
+  DIVISAO?: string;
+  NOMEDEPTO?: string;
+  NOMECUSTO?: string;
+  CODFILIAL?: string;
+  CODTMV?: string;
+  DOCUMENTO?: string;
+  GRUPOCONTABILN9?: string;
+  CONTA_CONTABIL?: string;
+  DESCRICAO_CONTABIL?: string;
+  NOMEPRODUTO?: string;
+  COMPLEMENTO?: string;
+  CODUND?: string;
+  QUANTIDADE?: number;
+  SALDOUNITARIO?: number;
+  SALDO?: number;
+  HISTFATURAMENTO?: string;
+  NOMEPRODUTO_ANTIGO?: string;
+  NOME_ORCAMENTO?: string;
+  DATA?: string | number | Date;
 }
 
 export interface UploadRecord {
