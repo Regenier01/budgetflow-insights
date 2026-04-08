@@ -28,11 +28,8 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
   const root = new Map<string, Node>();
 
   filtered.forEach(a => {
-    // Evitar duplicidade somando apenas as contas que não têm filhos em termos de código (raízes lógicas de valor)
-    // No entanto, para a visão de cascata por campos de texto, somamos os valores das "folhas" de importação.
-    const hasChildren = accounts.some(child => child.codigoPai === a.codigo);
-    if (hasChildren) return;
-
+    // Para a visão analítica, somamos os valores das folhas contábeis
+    // que possuem dados de GRUPOCONTABILN9, DESCRICAO e NOMEPRODUTO
     const orc = selectedMonth === 'all' 
       ? Object.values(a.orcado).reduce((sum, v) => sum + v, 0)
       : a.orcado[selectedMonth] || 0;
@@ -41,8 +38,8 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
       ? Object.values(a.realizado).reduce((sum, v) => sum + v, 0)
       : a.realizado[selectedMonth] || 0;
 
-    const n9 = a.grupoContabilN9 || '';
-    const desc = a.descricao || '';
+    const n9 = a.grupoContabilN9 || 'Sem Grupo';
+    const desc = a.descricao || 'Sem Descrição';
     const prod = a.nomeProduto || '';
 
     // Nível 1: GRUPOCONTABILN9
@@ -61,13 +58,15 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     nodeDesc.orc += orc;
     nodeDesc.real += real;
 
-    // Nível 3: NOMEPRODUTO
-    if (!nodeDesc.children.has(prod)) {
-      nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map(), isLeaf: true });
+    // Nível 3: NOMEPRODUTO (se existir)
+    if (prod) {
+      if (!nodeDesc.children.has(prod)) {
+        nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map(), isLeaf: true });
+      }
+      const nodeProd = nodeDesc.children.get(prod)!;
+      nodeProd.orc += orc;
+      nodeProd.real += real;
     }
-    const nodeProd = nodeDesc.children.get(prod)!;
-    nodeProd.orc += orc;
-    nodeProd.real += real;
   });
 
   const toggleExpand = (path: string) => {
@@ -90,40 +89,40 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
       const isExpanded = expanded.has(currentPath);
       const hasChildren = node.children.size > 0;
       
-      // Se o nome está em branco, mas não é folha, mostramos um indicador de "Sem Categoria/Nome" 
-      // ou apenas o espaço conforme pedido, mas com o ícone de expansão se houver filhos.
-      const displayName = node.name || (level === 2 ? "" : "(Vazio)");
+      const displayName = node.name;
 
       return (
         <Fragment key={currentPath}>
           <tr className={cn(
             "border-b border-[#d1d1d1] transition-colors",
-            level === 0 ? "bg-[#f2f2f2] font-semibold" : level === 1 ? "bg-white font-medium" : "bg-white/50 text-xs italic"
+            level === 0 ? "bg-[#f2f2f2] font-bold text-gray-800" : 
+            level === 1 ? "bg-[#f9f9f9] font-semibold text-gray-700" : 
+            "bg-white text-gray-600"
           )}>
-            <td className="py-1.5 px-3">
+            <td className="py-1 px-3">
               <div 
                 className="flex items-center gap-2 cursor-pointer"
-                style={{ paddingLeft: `${level * 24}px` }}
+                style={{ paddingLeft: `${level * 20}px` }}
                 onClick={() => hasChildren && toggleExpand(currentPath)}
               >
                 {hasChildren ? (
                   isExpanded ? (
-                    <MinusSquare className="h-4 w-4 text-gray-500" />
+                    <MinusSquare className="h-4 w-4 text-gray-400 shrink-0" />
                   ) : (
-                    <PlusSquare className="h-4 w-4 text-gray-500" />
+                    <PlusSquare className="h-4 w-4 text-gray-400 shrink-0" />
                   )
                 ) : (
-                  <span className="w-4" />
+                  <span className="w-4 shrink-0" />
                 )}
-                <span className={cn(level === 0 ? "text-gray-800" : "text-gray-600")}>
+                <span className={cn(level < 2 ? "uppercase tracking-tight text-[11px]" : "text-xs")}>
                   {displayName}
                 </span>
               </div>
             </td>
-            <td className="text-right py-1.5 px-3 border-l border-[#d1d1d1] tabular-nums">
+            <td className="text-right py-1 px-3 border-l border-[#d1d1d1] tabular-nums text-xs">
               {fmt(node.orc)}
             </td>
-            <td className="text-right py-1.5 px-3 border-l border-[#d1d1d1] tabular-nums">
+            <td className="text-right py-1 px-3 border-l border-[#d1d1d1] tabular-nums text-xs">
               {fmt(node.real)}
             </td>
           </tr>
@@ -134,13 +133,13 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
   };
 
   return (
-    <div className="overflow-hidden border border-[#d1d1d1] rounded-sm bg-white">
-      <table className="w-full border-collapse text-sm">
+    <div className="overflow-hidden border border-[#d1d1d1] rounded-sm bg-white shadow-sm">
+      <table className="w-full border-collapse">
         <thead>
-          <tr className="bg-[#ef810b] text-white uppercase text-[11px] font-bold">
-            <th className="text-left py-2 px-3 border-r border-orange-400/30">Abertura Cascata</th>
-            <th className="text-right py-2 px-3 border-r border-orange-400/30 w-[140px]">Orçado</th>
-            <th className="text-right py-2 px-3 w-[140px]">Realizado</th>
+          <tr className="bg-[#ef810b] text-white uppercase text-[10px] font-bold tracking-wider">
+            <th className="text-left py-2 px-3 border-r border-orange-400/30">Abertura Analítica (N9 &gt; Descrição &gt; Produto)</th>
+            <th className="text-right py-2 px-3 border-r border-orange-400/30 w-[150px]">Orçado</th>
+            <th className="text-right py-2 px-3 w-[150px]">Realizado</th>
           </tr>
         </thead>
         <tbody>
