@@ -5,12 +5,27 @@ import { FileSpreadsheet, AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 export default function InstructionsPage() {
   const columns = [
-    { name: 'Codigo', desc: 'Código contábil da conta (ex: 3.1.1)', required: true },
-    { name: 'Descricao', desc: 'Nome descritivo da conta', required: false },
-    { name: 'Tipo', desc: 'R = Receita, D = Despesa, C = Custo', required: false },
-    { name: 'CodigoPai', desc: 'Código da conta pai na hierarquia', required: false },
-    { name: 'Orcado', desc: 'Valor orçado (usado apenas no primeiro upload)', required: false },
-    { name: 'Realizado', desc: 'Valor realizado do mês selecionado', required: true },
+    { name: 'GRUPOCONTABIL', desc: 'Grupo contábil — identifica a atividade (Pecuária, Seringal, etc.)', required: false },
+    { name: 'COLIGADA', desc: 'Empresa do grupo (ex: 1-VERA CRUZ AGROPECUARIA LTDA)', required: false },
+    { name: 'DIVISAO', desc: 'Divisão da empresa', required: false },
+    { name: 'NOMEDEPTO', desc: 'Nome do departamento', required: false },
+    { name: 'NOMECUSTO', desc: 'Nome do centro de custo', required: false },
+    { name: 'CODFILIAL', desc: 'Código da filial', required: false },
+    { name: 'CODTMV', desc: 'Código do tipo de movimento', required: false },
+    { name: 'DOCUMENTO', desc: 'Número do documento', required: false },
+    { name: 'GRUPOCONTABILN9', desc: 'Grupo contábil nível 9', required: false },
+    { name: 'CONTA_CONTABIL', desc: 'Código da conta contábil (ex: 3.1.01)', required: true },
+    { name: 'DESCRICAO_CONTABIL', desc: 'Descrição da conta contábil', required: false },
+    { name: 'NOMEPRODUTO', desc: 'Nome do produto', required: false },
+    { name: 'COMPLEMENTO', desc: 'Complemento do lançamento', required: false },
+    { name: 'CODUND', desc: 'Código da unidade', required: false },
+    { name: 'QUANTIDADE', desc: 'Quantidade', required: false },
+    { name: 'SALDOUNITARIO', desc: 'Valor unitário (R$)', required: false },
+    { name: 'SALDO', desc: 'Valor total realizado (R$)', required: true },
+    { name: 'HISTFATURAMENTO', desc: 'Histórico de faturamento', required: false },
+    { name: 'NOMEPRODUTO_ANTIGO', desc: 'Nome do produto anterior', required: false },
+    { name: 'NOME_ORCAMENTO', desc: 'Nome do orçamento (alternativa para atividade)', required: false },
+    { name: 'DATA', desc: 'Data do lançamento — determina o mês do período', required: false },
   ];
 
   return (
@@ -24,7 +39,7 @@ export default function InstructionsPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-base">
             <FileSpreadsheet className="h-5 w-5 text-accent" />
-            Formato do Arquivo Excel
+            Formato do Arquivo Excel (21 colunas)
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -67,10 +82,10 @@ export default function InstructionsPage() {
         </CardHeader>
         <CardContent>
           <ol className="list-decimal list-inside space-y-2 text-sm text-muted-foreground">
-            <li><strong className="text-foreground">Primeiro upload:</strong> Inclua todas as colunas (Codigo, Descricao, Tipo, CodigoPai, Orcado, Realizado) para definir a estrutura e o orçamento.</li>
-            <li><strong className="text-foreground">Uploads mensais:</strong> Basta enviar Codigo e Realizado. O orçado já estará definido.</li>
-            <li><strong className="text-foreground">Selecione o período:</strong> Na tela de upload, escolha o mês correspondente antes de enviar o arquivo.</li>
-            <li><strong className="text-foreground">Visualize no Dashboard:</strong> Os dados são atualizados automaticamente nos gráficos e tabelas.</li>
+            <li><strong className="text-foreground">Exporte os dados</strong> do sistema contábil no formato padrão com as 21 colunas.</li>
+            <li><strong className="text-foreground">Selecione o período</strong> na tela de upload (usado quando a coluna DATA não estiver preenchida).</li>
+            <li><strong className="text-foreground">Envie o arquivo:</strong> O sistema agrega automaticamente os valores de SALDO por CONTA_CONTABIL e mês.</li>
+            <li><strong className="text-foreground">Visualize no Dashboard:</strong> Os dados são atualizados nos cards e tabelas por atividade.</li>
           </ol>
         </CardContent>
       </Card>
@@ -84,10 +99,12 @@ export default function InstructionsPage() {
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
-            <li>A hierarquia entre as contas será definida posteriormente conforme sua estrutura contábil.</li>
-            <li>Os nomes das colunas devem coincidir exatamente (sem acentos extras).</li>
-            <li>Valores numéricos devem estar sem formatação especial (sem R$, sem pontos de milhar).</li>
+            <li>As colunas obrigatórias são <strong className="text-foreground">CONTA_CONTABIL</strong> e <strong className="text-foreground">SALDO</strong>.</li>
+            <li>Se a coluna <strong className="text-foreground">DATA</strong> estiver preenchida, o mês é detectado automaticamente.</li>
+            <li>Caso contrário, será usado o período selecionado manualmente.</li>
+            <li>Valores de SALDO são agregados (somados) por conta contábil + mês.</li>
             <li>O sistema aceita formatos .xlsx, .xls e .csv.</li>
+            <li>Os nomes das colunas devem coincidir exatamente (maiúsculas, sem acentos).</li>
           </ul>
         </CardContent>
       </Card>
