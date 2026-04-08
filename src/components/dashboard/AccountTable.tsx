@@ -95,7 +95,6 @@ export function AccountTable({ tipoFilter, selectedMonth, atividadeFilter = 'all
                     ) : (
                       <span className="w-4 shrink-0" />
                     )}
-                    <span className="text-muted-foreground text-xs mr-2">{account.codigo}</span>
                     <span>{account.descricao}</span>
                   </div>
                 </TableCell>

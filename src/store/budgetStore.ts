@@ -217,6 +217,8 @@ export const useBudgetStore = create<BudgetState>()(
             coligada?: string;
             divisao?: string;
             grupoContabil?: string;
+            grupoContabilN9?: string;
+            nomeProduto?: string;
             atividade: AtividadeKey;
             tipo: 'R' | 'D' | 'C';
           }
@@ -231,14 +233,17 @@ export const useBudgetStore = create<BudgetState>()(
           const saldo = Number(row.SALDO ?? 0);
           if (isNaN(saldo)) continue;
 
+          const nomeProduto = row.NOMEPRODUTO ? String(row.NOMEPRODUTO).trim() : '';
+          const aggKey = `${conta}|${nomeProduto}`;
+
           const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
 
-          const existing = aggregated.get(conta);
+          const existing = aggregated.get(aggKey);
 
           if (existing) {
             existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
           } else {
-            aggregated.set(conta, {
+            aggregated.set(aggKey, {
               saldo: { [monthKey]: saldo },
               descricao: String(row.DESCRICAO_CONTABIL || conta),
               departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
@@ -246,6 +251,8 @@ export const useBudgetStore = create<BudgetState>()(
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
               divisao: row.DIVISAO ? String(row.DIVISAO) : undefined,
               grupoContabil: row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined,
+              grupoContabilN9: row.GRUPOCONTABILN9 ? String(row.GRUPOCONTABILN9) : undefined,
+              nomeProduto: nomeProduto || undefined,
               atividade: mapAtividade(row),
               tipo: mapTipo(conta),
             });
@@ -273,7 +280,7 @@ export const useBudgetStore = create<BudgetState>()(
             currentAccounts.push({
               id: crypto.randomUUID(),
               codigo: codigoPai,
-              descricao: `Grupo ${codigoPai}`,
+              descricao: codigoPai,
               tipo: data.tipo,
               codigoPai: codigoPai.includes('.')
                 ? codigoPai.split('.').slice(0, -1).join('.')
@@ -288,8 +295,9 @@ export const useBudgetStore = create<BudgetState>()(
           }
         };
 
-        for (const [conta, data] of aggregated) {
-          const idx = currentAccounts.findIndex((a) => a.codigo === conta);
+        for (const [aggKey, data] of aggregated) {
+          const [conta] = aggKey.split('|');
+          const idx = currentAccounts.findIndex((a) => a.codigo === conta && a.nomeProduto === data.nomeProduto);
 
           const parts = conta.split('.');
           const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
@@ -319,6 +327,9 @@ export const useBudgetStore = create<BudgetState>()(
               coligada: data.coligada || currentAccounts[idx].coligada,
               grupoContabil:
                 data.grupoContabil || currentAccounts[idx].grupoContabil,
+              grupoContabilN9:
+                data.grupoContabilN9 || currentAccounts[idx].grupoContabilN9,
+              nomeProduto: data.nomeProduto,
               divisao: data.divisao || currentAccounts[idx].divisao,
             };
           } else {
@@ -334,6 +345,8 @@ export const useBudgetStore = create<BudgetState>()(
               centroCusto: data.centroCusto,
               coligada: data.coligada,
               grupoContabil: data.grupoContabil,
+              grupoContabilN9: data.grupoContabilN9,
+              nomeProduto: data.nomeProduto,
               divisao: data.divisao,
               orcado: {},
               realizado: data.saldo,
