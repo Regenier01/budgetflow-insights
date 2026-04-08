@@ -3,29 +3,6 @@ import { persist } from 'zustand/middleware';
 import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey } from '@/types/budget';
 import { ATIVIDADES } from '@/types/budget';
 
-const demoData: AccountEntry[] = [
-  {
-    id: '1', codigo: '3', descricao: 'RECEITAS PECUÁRIA', tipo: 'R', codigoPai: null, nivel: 1, atividade: 'PECUARIA',
-    orcado: { '2026-04': 300000, '2026-05': 320000, '2026-06': 280000 },
-    realizado: { '2026-04': 290000, '2026-05': 335000 },
-  },
-  {
-    id: '2', codigo: '3.1', descricao: 'Venda de Gado', tipo: 'R', codigoPai: '3', nivel: 2, atividade: 'PECUARIA',
-    orcado: { '2026-04': 300000, '2026-05': 320000, '2026-06': 280000 },
-    realizado: { '2026-04': 290000, '2026-05': 335000 },
-  },
-  {
-    id: '3', codigo: '4', descricao: 'CUSTOS OPERACIONAIS', tipo: 'C', codigoPai: null, nivel: 1, atividade: 'AGRICOLA',
-    orcado: { '2026-04': 100000, '2026-05': 110000, '2026-06': 105000 },
-    realizado: { '2026-04': 98000, '2026-05': 112000 },
-  },
-  {
-    id: '6', codigo: '3.4.01', descricao: 'DESPESAS ADMINISTRATIVAS', tipo: 'D', codigoPai: null, nivel: 1, atividade: 'DESP_ADM_TRIB',
-    orcado: { '2026-04': 80000, '2026-05': 82000, '2026-06': 78000 },
-    realizado: { '2026-04': 79000, '2026-05': 84000 },
-  },
-];
-
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
   let d: Date;
@@ -47,7 +24,6 @@ function mapAtividade(contaContabil: string, grupoContabil?: string, nomeOrcamen
   const grupo = (grupoContabil || '').trim();
   const orcText = (nomeOrcamento || '').toUpperCase();
   
-  // Regra prioritária: Tudo que comece com 3.4.01 é Despesas Administrativas
   if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) {
     return 'DESP_ADM_TRIB';
   }
@@ -60,22 +36,15 @@ function mapAtividade(contaContabil: string, grupoContabil?: string, nomeOrcamen
   if (text.includes('ADM') || orcText.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
   if (text.includes('ENCARGO') || orcText.includes('ENCARGO')) return 'ENCARGOS';
   
-  return 'PECUARIA'; // fallback
+  return 'PECUARIA';
 }
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
   const conta = contaContabil.trim();
-  
-  // Regra: Tudo o que for 4. será custos
   if (conta.startsWith('4.') || conta.startsWith('4')) return 'C';
-  
-  // Receitas
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
-  
-  // Outros custos
   if (conta.startsWith('3.3') || conta.startsWith('3.03')) return 'C';
-  
-  return 'D'; // Despesas por padrão (inclui 3.4.01)
+  return 'D';
 }
 
 interface BudgetState {
@@ -83,6 +52,7 @@ interface BudgetState {
   uploads: UploadRecord[];
   setAccounts: (accounts: AccountEntry[]) => void;
   addUpload: (upload: UploadRecord) => void;
+  clearAllData: () => void;
   updateRealizado: (codigo: string, month: MonthKey, value: number) => void;
   importExcelRows: (rows: ExcelRow[], fallbackMonth: MonthKey) => number;
 }
@@ -90,10 +60,11 @@ interface BudgetState {
 export const useBudgetStore = create<BudgetState>()(
   persist(
     (set, get) => ({
-      accounts: demoData,
+      accounts: [],
       uploads: [],
       setAccounts: (accounts) => set({ accounts }),
       addUpload: (upload) => set((s) => ({ uploads: [...s.uploads, upload] })),
+      clearAllData: () => set({ accounts: [], uploads: [] }),
       updateRealizado: (codigo, month, value) =>
         set((s) => ({
           accounts: s.accounts.map((a) =>
