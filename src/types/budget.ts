@@ -10,7 +10,6 @@ export interface AccountEntry {
   departamento?: string;
   centroCusto?: string;
   coligada?: string;
-  grupoContabil?: string;
   grupoContabilN9?: string;
   nomeProduto?: string;
   divisao?: string;
@@ -20,7 +19,6 @@ export interface AccountEntry {
 
 /** Raw row from the standard Excel upload */
 export interface ExcelRow {
-  GRUPOCONTABIL?: string;
   COLIGADA?: string;
   DIVISAO?: string;
   NOMEDEPTO?: string;

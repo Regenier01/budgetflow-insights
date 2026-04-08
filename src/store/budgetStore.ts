@@ -216,7 +216,6 @@ export const useBudgetStore = create<BudgetState>()(
             centroCusto?: string;
             coligada?: string;
             divisao?: string;
-            grupoContabil?: string;
             grupoContabilN9?: string;
             nomeProduto?: string;
             atividade: AtividadeKey;
@@ -250,7 +249,6 @@ export const useBudgetStore = create<BudgetState>()(
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
               divisao: row.DIVISAO ? String(row.DIVISAO) : undefined,
-              grupoContabil: row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined,
               grupoContabilN9: row.GRUPOCONTABILN9 ? String(row.GRUPOCONTABILN9) : undefined,
               nomeProduto: nomeProduto || undefined,
               atividade: mapAtividade(row),
@@ -325,8 +323,6 @@ export const useBudgetStore = create<BudgetState>()(
               departamento: data.departamento || currentAccounts[idx].departamento,
               centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
               coligada: data.coligada || currentAccounts[idx].coligada,
-              grupoContabil:
-                data.grupoContabil || currentAccounts[idx].grupoContabil,
               grupoContabilN9:
                 data.grupoContabilN9 || currentAccounts[idx].grupoContabilN9,
               nomeProduto: data.nomeProduto,
@@ -344,7 +340,6 @@ export const useBudgetStore = create<BudgetState>()(
               departamento: data.departamento,
               centroCusto: data.centroCusto,
               coligada: data.coligada,
-              grupoContabil: data.grupoContabil,
               grupoContabilN9: data.grupoContabilN9,
               nomeProduto: data.nomeProduto,
               divisao: data.divisao,

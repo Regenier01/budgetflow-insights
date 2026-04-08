@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { PlusSquare, MinusSquare } from 'lucide-react';
+import { useState, Fragment } from 'react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
-import type { AccountEntry, MonthKey, AtividadeKey } from '@/types/budget';
+import type { MonthKey, AtividadeKey } from '@/types/budget';
 
 interface Props {
   atividadeFilter: AtividadeKey;
@@ -14,7 +14,6 @@ interface Node {
   orc: number;
   real: number;
   children: Map<string, Node>;
-  isLeaf?: boolean;
 }
 
 export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
@@ -28,8 +27,6 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
   const root = new Map<string, Node>();
 
   filtered.forEach(a => {
-    // Para a visão analítica, somamos os valores das folhas contábeis
-    // que possuem dados de GRUPOCONTABILN9, DESCRICAO e NOMEPRODUTO
     const orc = selectedMonth === 'all' 
       ? Object.values(a.orcado).reduce((sum, v) => sum + v, 0)
       : a.orcado[selectedMonth] || 0;
@@ -38,7 +35,10 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
       ? Object.values(a.realizado).reduce((sum, v) => sum + v, 0)
       : a.realizado[selectedMonth] || 0;
 
-    const n9 = a.grupoContabilN9 || 'Sem Grupo';
+    // Se não tiver valor em nenhum dos dois, ignora
+    if (orc === 0 && real === 0) return;
+
+    const n9 = a.grupoContabilN9 || 'Outras Despesas';
     const desc = a.descricao || 'Sem Descrição';
     const prod = a.nomeProduto || '';
 
@@ -61,7 +61,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     // Nível 3: NOMEPRODUTO (se existir)
     if (prod) {
       if (!nodeDesc.children.has(prod)) {
-        nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map(), isLeaf: true });
+        nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
       }
       const nodeProd = nodeDesc.children.get(prod)!;
       nodeProd.orc += orc;
@@ -78,8 +78,8 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     });
   };
 
-  const fmt = (v: number) =>
-    new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v);
+  const fmtCurrency = (v: number) =>
+    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
     const sorted = Array.from(nodes.values()).sort((a, b) => b.orc - a.orc);
@@ -89,41 +89,58 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
       const isExpanded = expanded.has(currentPath);
       const hasChildren = node.children.size > 0;
       
-      const displayName = node.name;
+      const diff = node.real - node.orc;
+      const isOverBudget = diff > 0;
 
       return (
         <Fragment key={currentPath}>
-          <tr className={cn(
-            "border-b border-[#d1d1d1] transition-colors",
-            level === 0 ? "bg-[#f2f2f2] font-bold text-gray-800" : 
-            level === 1 ? "bg-[#f9f9f9] font-semibold text-gray-700" : 
-            "bg-white text-gray-600"
-          )}>
-            <td className="py-1 px-3">
+          <tr 
+            className={cn(
+              "group transition-all duration-200 border-b border-gray-100 last:border-0",
+              level === 0 ? "bg-white hover:bg-orange-50/30" : 
+              level === 1 ? "bg-gray-50/40 hover:bg-orange-50/20" : 
+              "bg-white hover:bg-gray-50"
+            )}
+          >
+            <td className="py-2.5 px-4">
               <div 
-                className="flex items-center gap-2 cursor-pointer"
-                style={{ paddingLeft: `${level * 20}px` }}
+                className="flex items-center gap-2 cursor-pointer select-none"
+                style={{ paddingLeft: `${level * 24}px` }}
                 onClick={() => hasChildren && toggleExpand(currentPath)}
               >
                 {hasChildren ? (
                   isExpanded ? (
-                    <MinusSquare className="h-4 w-4 text-gray-400 shrink-0" />
+                    <ChevronDown className="h-4 w-4 text-orange-500 transition-transform duration-200" />
                   ) : (
-                    <PlusSquare className="h-4 w-4 text-gray-400 shrink-0" />
+                    <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-orange-400 transition-colors" />
                   )
                 ) : (
-                  <span className="w-4 shrink-0" />
+                  <div className="w-4" />
                 )}
-                <span className={cn(level < 2 ? "uppercase tracking-tight text-[11px]" : "text-xs")}>
-                  {displayName}
+                <span className={cn(
+                  "truncate transition-colors",
+                  level === 0 ? "text-[11px] font-bold uppercase tracking-wider text-slate-800" :
+                  level === 1 ? "text-xs font-semibold text-slate-600" :
+                  "text-[11px] text-slate-500"
+                )}>
+                  {node.name}
                 </span>
               </div>
             </td>
-            <td className="text-right py-1 px-3 border-l border-[#d1d1d1] tabular-nums text-xs">
-              {fmt(node.orc)}
+            
+            <td className="text-right py-2.5 px-4 font-mono text-[11px] text-slate-600 border-l border-gray-50">
+              {fmtCurrency(node.orc)}
             </td>
-            <td className="text-right py-1 px-3 border-l border-[#d1d1d1] tabular-nums text-xs">
-              {fmt(node.real)}
+            
+            <td className="text-right py-2.5 px-4 font-mono text-[11px] text-slate-800 border-l border-gray-50">
+              {fmtCurrency(node.real)}
+            </td>
+
+            <td className={cn(
+              "text-right py-2.5 px-4 font-mono text-[11px] border-l border-gray-50 font-medium",
+              isOverBudget ? "text-rose-500" : "text-emerald-500"
+            )}>
+              {diff > 0 ? "+" : ""}{fmtCurrency(diff)}
             </td>
           </tr>
           {isExpanded && hasChildren && renderNodes(node.children, currentPath, level + 1)}
@@ -133,22 +150,37 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
   };
 
   return (
-    <div className="overflow-hidden border border-[#d1d1d1] rounded-sm bg-white shadow-sm">
-      <table className="w-full border-collapse">
-        <thead>
-          <tr className="bg-[#ef810b] text-white uppercase text-[10px] font-bold tracking-wider">
-            <th className="text-left py-2 px-3 border-r border-orange-400/30">Abertura Analítica (N9 &gt; Descrição &gt; Produto)</th>
-            <th className="text-right py-2 px-3 border-r border-orange-400/30 w-[150px]">Orçado</th>
-            <th className="text-right py-2 px-3 w-[150px]">Realizado</th>
-          </tr>
-        </thead>
-        <tbody>
-          {renderNodes(root)}
-        </tbody>
-      </table>
+    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+      <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+        <h3 className="text-xs font-bold text-white uppercase tracking-widest">
+          Abertura Analítica <span className="text-orange-400 ml-2">(N9 &gt; Descrição &gt; Produto)</span>
+        </h3>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-slate-50/80 text-slate-500 uppercase text-[9px] font-bold tracking-widest border-b border-slate-200">
+              <th className="text-left py-3 px-4 font-bold">Item / Agrupamento</th>
+              <th className="text-right py-3 px-4 w-[140px] border-l border-slate-200">Orçado</th>
+              <th className="text-right py-3 px-4 w-[140px] border-l border-slate-200">Realizado</th>
+              <th className="text-right py-3 px-4 w-[140px] border-l border-slate-200">Variação</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-50">
+            {root.size > 0 ? (
+              renderNodes(root)
+            ) : (
+              <tr>
+                <td colSpan={4} className="py-12 text-center">
+                  <p className="text-sm text-slate-400">Nenhum dado encontrado para os filtros selecionados.</p>
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
 
-import { Fragment } from 'react';
 export default AnalyticalTable;
