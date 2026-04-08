@@ -42,13 +42,17 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-function mapAtividade(grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
-  const text = (grupoContabil || '').toUpperCase();
+function mapAtividade(contaContabil: string, grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
+  const conta = contaContabil.trim();
+  const grupo = (grupoContabil || '').trim();
   const orcText = (nomeOrcamento || '').toUpperCase();
   
-  // Regra: GRUPOCONTABIL 3.4.01 -> Despesas Administrativas
-  if (text.startsWith('3.4.01')) return 'DESP_ADM_TRIB';
+  // Regra prioritária: Tudo que comece com 3.4.01 é Despesas Administrativas
+  if (conta.startsWith('3.4.01') || grupo.startsWith('3.4.01')) {
+    return 'DESP_ADM_TRIB';
+  }
 
+  const text = grupo.toUpperCase();
   if (text.includes('PECUA') || orcText.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
   if (text.includes('SERING') || orcText.includes('SERING') || text.includes('LATEX')) return 'SERINGAL';
   if (text.includes('AGRIC') || orcText.includes('AGRIC') || text.includes('SOJA')) return 'AGRICOLA';
@@ -60,16 +64,18 @@ function mapAtividade(grupoContabil?: string, nomeOrcamento?: string): Atividade
 }
 
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
+  const conta = contaContabil.trim();
+  
   // Regra: Tudo o que for 4. será custos
-  if (contaContabil.startsWith('4.') || contaContabil.startsWith('4')) return 'C';
+  if (conta.startsWith('4.') || conta.startsWith('4')) return 'C';
   
   // Receitas
-  if (contaContabil.startsWith('3.1') || contaContabil.startsWith('3.01')) return 'R';
+  if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
   
-  // Outros custos (mantendo compatibilidade anterior se necessário)
-  if (contaContabil.startsWith('3.3') || contaContabil.startsWith('3.03')) return 'C';
+  // Outros custos
+  if (conta.startsWith('3.3') || conta.startsWith('3.03')) return 'C';
   
-  return 'D'; // Despesas por padrão
+  return 'D'; // Despesas por padrão (inclui 3.4.01)
 }
 
 interface BudgetState {
@@ -132,7 +138,7 @@ export const useBudgetStore = create<BudgetState>()(
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
               grupoContabil: grupoContabil,
-              atividade: mapAtividade(grupoContabil, nomeOrcamento),
+              atividade: mapAtividade(conta, grupoContabil, nomeOrcamento),
               tipo: mapTipo(conta),
             });
           }
@@ -150,8 +156,8 @@ export const useBudgetStore = create<BudgetState>()(
             currentAccounts[idx] = {
               ...currentAccounts[idx],
               realizado: merged,
-              tipo: data.tipo, // Atualiza o tipo conforme as novas regras
-              atividade: data.atividade, // Atualiza a atividade conforme as novas regras
+              tipo: data.tipo,
+              atividade: data.atividade,
               departamento: data.departamento || currentAccounts[idx].departamento,
               centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
               coligada: data.coligada || currentAccounts[idx].coligada,
