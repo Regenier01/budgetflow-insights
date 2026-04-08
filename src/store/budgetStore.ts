@@ -26,29 +26,49 @@ function mapAtividade(
   nomeOrcamento?: string,
   nomeDepto?: string
 ): AtividadeKey {
-  const conta = contaContabil.trim();
-  const div = (divisao || '').toUpperCase();
+  const depto = (nomeDepto || '').toUpperCase().trim();
+  const div = (divisao || '').toUpperCase().trim();
   const grupo = (grupoContabil || '').trim().toUpperCase();
   const orcText = (nomeOrcamento || '').toUpperCase();
-  const depto = (nomeDepto || '').toUpperCase();
   
-  // TRAVA: Apenas NOMEDEPTO contendo "ADMINISTRA" vai para despesas administrativas
+  // TRAVA 1: Despesas Administrativas
   if (depto.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
 
-  // Prioridade para a coluna DIVISAO (removido ADM/TRIB para respeitar a trava)
-  if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
+  // TRAVA 2: Pecuária (Lista específica de departamentos)
+  const deptoPecuaria = [
+    'CONFINAMENTO', 
+    'JÓIA PECUÁRIA', 
+    'BANDEIRANTES PECUÁRIA', 
+    'CENTRO COMERCIAL', 
+    'VERA CRUZ FURNAS', 
+    'UNIÃO PECUÁRIA', 
+    'GOTEJO PECUÁRIA', 
+    'COVOÁ PECUÁRIA', 
+    'CANADÁ PECUÁRIA', 
+    'PORTEIRAS PECUÁRIA', 
+    'CODORA', 
+    'LAGUNA PECUÁRIA'
+  ];
+  
+  if (deptoPecuaria.some(d => depto === d || depto.includes(d))) {
+    return 'PECUARIA';
+  }
+
+  // Outras atividades baseadas na DIVISAO
   if (div.includes('SERING') || div.includes('LATEX')) return 'SERINGAL';
   if (div.includes('AGRIC') || div.includes('SOJA')) return 'AGRICOLA';
   if (div.includes('CANA')) return 'CANA';
   if (div.includes('ENCARGO')) return 'ENCARGOS';
 
-  // Fallback para lógica baseada em conta ou grupo contábil (removido ADM/TRIB)
+  // Fallback para lógica baseada em grupo contábil ou orçamento
   const combinedText = `${grupo} ${orcText}`;
-  if (combinedText.includes('PECUA') || combinedText.includes('GADO')) return 'PECUARIA';
   if (combinedText.includes('SERING') || combinedText.includes('LATEX')) return 'SERINGAL';
   if (combinedText.includes('AGRIC') || combinedText.includes('SOJA')) return 'AGRICOLA';
   if (combinedText.includes('CANA')) return 'CANA';
   if (combinedText.includes('ENCARGO')) return 'ENCARGOS';
+  
+  // Se não cair em nenhuma trava ou regra específica, mantemos Pecuária como padrão ou conforme a divisão
+  if (div.includes('PECUA') || div.includes('GADO')) return 'PECUARIA';
   
   return 'PECUARIA';
 }
