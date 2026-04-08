@@ -40,3 +40,14 @@ export const TIPO_LABELS: Record<string, string> = {
   D: 'Despesas',
   C: 'Custos',
 };
+
+export const ATIVIDADES = [
+  { key: 'PECUARIA', label: 'Pecuária' },
+  { key: 'SERINGAL', label: 'Seringal' },
+  { key: 'AGRICOLA', label: 'Agrícola' },
+  { key: 'CANA', label: 'Cana' },
+  { key: 'DESP_ADM_TRIB', label: 'Desp. Adm. e Tributárias' },
+  { key: 'ENCARGOS', label: 'Encargos' },
+] as const;
+
+export type AtividadeKey = typeof ATIVIDADES[number]['key'];
