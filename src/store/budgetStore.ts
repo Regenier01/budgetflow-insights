@@ -37,6 +37,15 @@ const DEPTOS_AGRICOLA = [
   'LAGUNA - GIRASSOL'
 ];
 
+// New list for SerINGAL departments
+const DEPTOS_SERINGAL = [
+  'BANDEIRANTES SERINGAL',
+  'ESPLANADA SERINGAL',
+  'COVOÁ SERINGAL',
+  'PORTEIRAS SERINGAL',
+  'VERA CRUZ SERINGAL'
+];
+
 function mapAtividade(
   contaContabil: string, 
   divisao?: string, 
@@ -57,7 +66,12 @@ function mapAtividade(
     return 'AGRICOLA';
   }
 
-  // TRAVA 3: Pecuária
+  // TRAVA 3: SerINGAL (new)
+  if (DEPTOS_SERINGAL.some(d => depto === d.toUpperCase())) {
+    return 'SERINGAL';
+  }
+
+  // TRAVA 4: Pecuária
   const deptoPecuaria = [
     'CONFINAMENTO', 
     'JÓIA PECUÁRIA', 
