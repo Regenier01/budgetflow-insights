@@ -74,6 +74,40 @@ export function mapAtividade(row: ExcelRow): AtividadeKey {
   return 'PECUARIA';
 }
 
+export function getAccountCategory(descricao: string): string {
+  const desc = descricao.toUpperCase();
+  
+  if (desc.includes('PESSOAL') || desc.includes('ENCARGO') || desc.includes('FOLHA') || desc.includes('SALARIO') || desc.includes('OUTROS BENEF') || desc.includes('BENEFICIO') || desc.includes('VANTAGEM')) {
+    return 'Custo de Pessoal';
+  }
+  
+  if (desc.includes('DEPRECIA') || desc.includes('AMORTIZA')) {
+    return 'Depreciações';
+  }
+
+  if (desc.includes('MANUTEN') || desc.includes('REPARO')) {
+    return 'Manutenção e Reparos';
+  }
+
+  if (desc.includes('COMBUSTIVEL') || desc.includes('LUBRIFICANTE') || desc.includes('GASOLINA') || desc.includes('OLEO DIESEL')) {
+    return 'Combustíveis e Lubrificantes';
+  }
+
+  if (desc.includes('INSUMO') || desc.includes('ADUBO') || desc.includes('DEFENSIVO') || desc.includes('SEMENTE') || desc.includes('FERTILIZAN')) {
+    return 'Insumos e Materiais';
+  }
+
+  if (desc.includes('SERVICO') || desc.includes('FRETE') || desc.includes('CONTRATO')) {
+    return 'Serviços de Terceiros';
+  }
+
+  if (desc.includes('ENERGIA') || desc.includes('ELETRICA') || desc.includes('AGUA') || desc.includes('TELEFONE') || desc.includes('INTERNET')) {
+    return 'Energia e Utilidades';
+  }
+
+  return 'Outros Custos';
+}
+
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
   const conta = contaContabil.trim();
 

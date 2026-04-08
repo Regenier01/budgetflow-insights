@@ -55,8 +55,16 @@ export default function ActivityDetailPage() {
       <SummaryCards selectedMonth={selectedMonth} />
 
       <div className="space-y-4">
+        <h2 className="text-lg font-semibold">Abertura de Custos — {atividade.label}</h2>
+        <AnalyticalTable 
+          atividadeFilter={atividade.key}
+          selectedMonth={selectedMonth}
+        />
+      </div>
+
+      <div className="space-y-4">
         <h2 className="text-lg font-semibold">
-          Plano de Contas — {atividade.label} 
+          Plano de Contas Completo — {atividade.label} 
           {selectedCultura !== 'all' && ` (${CULTURAS.find(c => c.key === selectedCultura)?.label})`}
         </h2>
         <AccountTable 
