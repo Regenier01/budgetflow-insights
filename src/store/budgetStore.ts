@@ -15,40 +15,23 @@ const demoData: AccountEntry[] = [
     realizado: { '2026-04': 290000, '2026-05': 335000 },
   },
   {
-    id: '3', codigo: '4', descricao: 'RECEITAS SERINGAL', tipo: 'R', codigoPai: null, nivel: 1, atividade: 'SERINGAL',
+    id: '3', codigo: '4', descricao: 'CUSTOS OPERACIONAIS', tipo: 'C', codigoPai: null, nivel: 1, atividade: 'AGRICOLA',
     orcado: { '2026-04': 100000, '2026-05': 110000, '2026-06': 105000 },
     realizado: { '2026-04': 98000, '2026-05': 112000 },
   },
   {
-    id: '4', codigo: '5', descricao: 'RECEITAS AGRÍCOLA', tipo: 'R', codigoPai: null, nivel: 1, atividade: 'AGRICOLA',
-    orcado: { '2026-04': 150000, '2026-05': 160000, '2026-06': 140000 },
-    realizado: { '2026-04': 145000, '2026-05': 165000 },
-  },
-  {
-    id: '5', codigo: '6', descricao: 'RECEITAS CANA', tipo: 'R', codigoPai: null, nivel: 1, atividade: 'CANA',
-    orcado: { '2026-04': 200000, '2026-05': 210000, '2026-06': 190000 },
-    realizado: { '2026-04': 195000, '2026-05': 215000 },
-  },
-  {
-    id: '6', codigo: '7', descricao: 'DESPESAS ADM. E TRIBUTÁRIAS', tipo: 'D', codigoPai: null, nivel: 1, atividade: 'DESP_ADM_TRIB',
+    id: '6', codigo: '3.4.01', descricao: 'DESPESAS ADMINISTRATIVAS', tipo: 'D', codigoPai: null, nivel: 1, atividade: 'DESP_ADM_TRIB',
     orcado: { '2026-04': 80000, '2026-05': 82000, '2026-06': 78000 },
     realizado: { '2026-04': 79000, '2026-05': 84000 },
   },
-  {
-    id: '7', codigo: '8', descricao: 'ENCARGOS', tipo: 'D', codigoPai: null, nivel: 1, atividade: 'ENCARGOS',
-    orcado: { '2026-04': 60000, '2026-05': 63000, '2026-06': 57000 },
-    realizado: { '2026-04': 58000, '2026-05': 65000 },
-  },
 ];
 
-/** Derive month key (e.g. "2026-04") from a date value coming from Excel */
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
   let d: Date;
   if (raw instanceof Date) {
     d = raw;
   } else if (typeof raw === 'number') {
-    // Excel serial date: days since 1900-01-01 (with the 1900 bug)
     d = new Date((raw - 25569) * 86400000);
   } else {
     d = new Date(raw);
@@ -59,23 +42,34 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-/** Map GRUPOCONTABIL or NOME_ORCAMENTO text to an AtividadeKey */
 function mapAtividade(grupoContabil?: string, nomeOrcamento?: string): AtividadeKey {
-  const text = (grupoContabil || nomeOrcamento || '').toUpperCase();
-  if (text.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
-  if (text.includes('SERING') || text.includes('LATEX') || text.includes('BORRACHA')) return 'SERINGAL';
-  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO')) return 'AGRICOLA';
-  if (text.includes('CANA')) return 'CANA';
-  if (text.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
-  if (text.includes('ENCARGO')) return 'ENCARGOS';
+  const text = (grupoContabil || '').toUpperCase();
+  const orcText = (nomeOrcamento || '').toUpperCase();
+  
+  // Regra: GRUPOCONTABIL 3.4.01 -> Despesas Administrativas
+  if (text.startsWith('3.4.01')) return 'DESP_ADM_TRIB';
+
+  if (text.includes('PECUA') || orcText.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
+  if (text.includes('SERING') || orcText.includes('SERING') || text.includes('LATEX')) return 'SERINGAL';
+  if (text.includes('AGRIC') || orcText.includes('AGRIC') || text.includes('SOJA')) return 'AGRICOLA';
+  if (text.includes('CANA') || orcText.includes('CANA')) return 'CANA';
+  if (text.includes('ADM') || orcText.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (text.includes('ENCARGO') || orcText.includes('ENCARGO')) return 'ENCARGOS';
+  
   return 'PECUARIA'; // fallback
 }
 
-/** Determine account type from CONTA_CONTABIL code based on chart of accounts */
 function mapTipo(contaContabil: string): 'R' | 'D' | 'C' {
+  // Regra: Tudo o que for 4. será custos
+  if (contaContabil.startsWith('4.') || contaContabil.startsWith('4')) return 'C';
+  
+  // Receitas
   if (contaContabil.startsWith('3.1') || contaContabil.startsWith('3.01')) return 'R';
-  if (contaContabil.startsWith('3.3') || contaContabil.startsWith('3.03') || contaContabil.startsWith('4')) return 'C';
-  return 'D';
+  
+  // Outros custos (mantendo compatibilidade anterior se necessário)
+  if (contaContabil.startsWith('3.3') || contaContabil.startsWith('3.03')) return 'C';
+  
+  return 'D'; // Despesas por padrão
 }
 
 interface BudgetState {
@@ -103,7 +97,6 @@ export const useBudgetStore = create<BudgetState>()(
           ),
         })),
       importExcelRows: (rows, fallbackMonth) => {
-        // Aggregate SALDO by CONTA_CONTABIL + month
         const aggregated = new Map<string, {
           saldo: Record<string, number>;
           descricao: string;
@@ -125,6 +118,8 @@ export const useBudgetStore = create<BudgetState>()(
           if (isNaN(saldo)) continue;
 
           const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
+          const grupoContabil = row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined;
+          const nomeOrcamento = row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined;
 
           const existing = aggregated.get(conta);
           if (existing) {
@@ -136,20 +131,18 @@ export const useBudgetStore = create<BudgetState>()(
               departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
-              grupoContabil: row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined,
-              atividade: mapAtividade(row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined, row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined),
+              grupoContabil: grupoContabil,
+              atividade: mapAtividade(grupoContabil, nomeOrcamento),
               tipo: mapTipo(conta),
             });
           }
           processed++;
         }
 
-        // Merge into existing accounts
         const currentAccounts = [...get().accounts];
         for (const [conta, data] of aggregated) {
           const idx = currentAccounts.findIndex((a) => a.codigo === conta);
           if (idx >= 0) {
-            // Merge realizado values
             const merged = { ...currentAccounts[idx].realizado };
             for (const [mk, val] of Object.entries(data.saldo)) {
               merged[mk] = val;
@@ -157,13 +150,14 @@ export const useBudgetStore = create<BudgetState>()(
             currentAccounts[idx] = {
               ...currentAccounts[idx],
               realizado: merged,
+              tipo: data.tipo, // Atualiza o tipo conforme as novas regras
+              atividade: data.atividade, // Atualiza a atividade conforme as novas regras
               departamento: data.departamento || currentAccounts[idx].departamento,
               centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
               coligada: data.coligada || currentAccounts[idx].coligada,
               grupoContabil: data.grupoContabil || currentAccounts[idx].grupoContabil,
             };
           } else {
-            // Create new account entry
             currentAccounts.push({
               id: crypto.randomUUID(),
               codigo: conta,
