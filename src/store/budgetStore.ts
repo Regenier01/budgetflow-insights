@@ -52,12 +52,12 @@ function mapAtividade(
   // TRAVA 1: Despesas Administrativas
   if (depto.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
 
-  // TRAVA 2: Agrícola (Lista específica de departamentos fornecida pelo usuário)
+  // TRAVA 2: Agrícola
   if (DEPTOS_AGRICOLA.some(d => depto === d.toUpperCase())) {
     return 'AGRICOLA';
   }
 
-  // TRAVA 3: Pecuária (Lista específica de departamentos)
+  // TRAVA 3: Pecuária
   const deptoPecuaria = [
     'CONFINAMENTO', 
     'JÓIA PECUÁRIA', 
@@ -83,7 +83,6 @@ function mapAtividade(
   if (div.includes('CANA')) return 'CANA';
   if (div.includes('ENCARGO')) return 'ENCARGOS';
 
-  // Fallback para lógica baseada em grupo contábil ou orçamento
   const combinedText = `${grupo} ${orcText}`;
   if (combinedText.includes('SERING') || combinedText.includes('LATEX')) return 'SERINGAL';
   if (combinedText.includes('AGRIC') || combinedText.includes('SOJA')) return 'AGRICOLA';
@@ -159,9 +158,8 @@ export const useBudgetStore = create<BudgetState>()(
           if (!conta) continue;
 
           const saldo = Number(row.SALDO ?? 0);
-          if (isNaN(saldo)) continue;
-
           const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
+          
           const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
           const grupoContabil = row.GRUPOCONTABIL ? String(row.GRUPOCONTABIL) : undefined;
           const nomeOrcamento = row.NOME_ORCAMENTO ? String(row.NOME_ORCAMENTO) : undefined;
@@ -188,30 +186,60 @@ export const useBudgetStore = create<BudgetState>()(
         }
 
         const currentAccounts = [...get().accounts];
+
+        // Função auxiliar para garantir que os pais existam na lista
+        const ensureParentExists = (codigo: string, data: any) => {
+          const parts = codigo.split('.');
+          if (parts.length <= 1) return;
+
+          const codigoPai = parts.slice(0, -1).join('.');
+          const parentIdx = currentAccounts.findIndex(a => a.codigo === codigoPai);
+
+          if (parentIdx === -1) {
+            // Cria conta pai "fantasma" se não existir, para manter a árvore
+            currentAccounts.push({
+              id: crypto.randomUUID(),
+              codigo: codigoPai,
+              descricao: `Grupo ${codigoPai}`,
+              tipo: data.tipo,
+              codigoPai: codigoPai.includes('.') ? codigoPai.split('.').slice(0, -1).join('.') : null,
+              nivel: parts.length - 1,
+              atividade: data.atividade,
+              orcado: {},
+              realizado: {},
+            });
+            // Recursividade para garantir o avô, etc.
+            ensureParentExists(codigoPai, data);
+          }
+        };
+
         for (const [conta, data] of aggregated) {
           const idx = currentAccounts.findIndex((a) => a.codigo === conta);
           const parts = conta.split('.');
           const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
 
+          // Garante que a hierarquia de pais exista
+          ensureParentExists(conta, data);
+
           if (idx >= 0) {
-            const merged = { ...currentAccounts[idx].realizado };
+            // Atualiza realizado (mescla com o que já existe para outros meses)
+            const mergedRealizado = { ...currentAccounts[idx].realizado };
             for (const [mk, val] of Object.entries(data.saldo)) {
-              merged[mk] = val;
+              mergedRealizado[mk] = val;
             }
+
             currentAccounts[idx] = {
               ...currentAccounts[idx],
-              realizado: merged,
+              realizado: mergedRealizado,
               tipo: data.tipo,
               atividade: data.atividade,
               cultura: data.cultura || currentAccounts[idx].cultura,
               codigoPai: codigoPai,
               nivel: parts.length,
-              departamento: data.departamento || currentAccounts[idx].departamento,
-              centroCusto: data.centroCusto || currentAccounts[idx].centroCusto,
-              coligada: data.coligada || currentAccounts[idx].coligada,
-              grupoContabil: data.grupoContabil || currentAccounts[idx].grupoContabil,
+              descricao: data.descricao !== conta ? data.descricao : currentAccounts[idx].descricao,
             };
           } else {
+            // Adiciona nova conta
             currentAccounts.push({
               id: crypto.randomUUID(),
               codigo: conta,
@@ -221,15 +249,14 @@ export const useBudgetStore = create<BudgetState>()(
               nivel: parts.length,
               atividade: data.atividade,
               cultura: data.cultura,
-              departamento: data.departamento,
-              centroCusto: data.centroCusto,
-              coligada: data.coligada,
-              grupoContabil: data.grupoContabil,
               orcado: {},
               realizado: data.saldo,
             });
           }
         }
+
+        // Ordena as contas por código para garantir que a árvore seja renderizada corretamente
+        currentAccounts.sort((a, b) => a.codigo.localeCompare(b.codigo, undefined, { numeric: true }));
 
         set({ accounts: currentAccounts });
         return processed;
