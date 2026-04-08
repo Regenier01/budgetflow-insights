@@ -129,3 +129,5 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     </div>
   );
 }
+
+export default AnalyticalTable;
