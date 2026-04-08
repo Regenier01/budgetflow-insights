@@ -16,7 +16,7 @@ export function SummaryCards({ selectedMonth }: Props) {
     const items = topLevel.filter((a) => a.tipo === tipo);
     return items.reduce((sum, a) => {
       if (selectedMonth === 'all') {
-        return sum + Object.values(a[field]).reduce((s, v) => s + v, 0);
+        return sum + Object.values(a[field]).reduce((s: number, v: number) => s + v, 0);
       }
       return sum + (a[field][selectedMonth] || 0);
     }, 0);
