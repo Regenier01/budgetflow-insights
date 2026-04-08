@@ -5,6 +5,9 @@ export interface AccountEntry {
   tipo: 'R' | 'D' | 'C'; // Receita, Despesa, Custo
   codigoPai: string | null;
   nivel: number;
+  atividade: AtividadeKey;
+  departamento?: string;
+  centroCusto?: string;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
 }
@@ -40,3 +43,14 @@ export const TIPO_LABELS: Record<string, string> = {
   D: 'Despesas',
   C: 'Custos',
 };
+
+export const ATIVIDADES = [
+  { key: 'PECUARIA', label: 'Pecuária' },
+  { key: 'SERINGAL', label: 'Seringal' },
+  { key: 'AGRICOLA', label: 'Agrícola' },
+  { key: 'CANA', label: 'Cana' },
+  { key: 'DESP_ADM_TRIB', label: 'Desp. Adm. e Tributárias' },
+  { key: 'ENCARGOS', label: 'Encargos' },
+] as const;
+
+export type AtividadeKey = typeof ATIVIDADES[number]['key'];

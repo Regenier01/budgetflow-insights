@@ -8,13 +8,18 @@ import type { AccountEntry, MonthKey } from '@/types/budget';
 interface Props {
   tipoFilter: string | 'all';
   selectedMonth: MonthKey | 'all';
+  atividadeFilter?: string | 'all';
 }
 
-export function AccountTable({ tipoFilter, selectedMonth }: Props) {
+export function AccountTable({ tipoFilter, selectedMonth, atividadeFilter = 'all' }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
-  const filtered = tipoFilter === 'all' ? accounts : accounts.filter((a) => a.tipo === tipoFilter);
+  const filtered = accounts.filter((a) => {
+    if (tipoFilter !== 'all' && a.tipo !== tipoFilter) return false;
+    if (atividadeFilter !== 'all' && a.atividade !== atividadeFilter) return false;
+    return true;
+  });
 
   const toggleCollapse = (codigo: string) => {
     setCollapsed((prev) => {
