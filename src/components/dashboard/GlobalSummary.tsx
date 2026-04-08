@@ -1,7 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
-import { AlertCircle, CheckCircle2, TrendingDown, TrendingUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function GlobalSummary() {
@@ -9,9 +8,9 @@ export function GlobalSummary() {
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
-      style: 'currency', 
-      currency: 'BRL',
-      maximumFractionDigits: 0 
+      style: 'decimal',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2 
     }).format(v);
 
   const calculateTotals = (filterAtividade?: string) => {
@@ -38,72 +37,63 @@ export function GlobalSummary() {
     return { orc, real, diff: real - orc };
   };
 
+  const SummaryTable = ({ title, orc, real, diff, isMain = false }: { title: string, orc: number, real: number, diff: number, isMain?: boolean }) => {
+    const isNegative = diff < 0;
+    
+    return (
+      <div className={cn("border border-border overflow-hidden rounded-sm", isMain ? "mb-6" : "")}>
+        {/* Título Principal */}
+        <div className="bg-white border-b border-border py-1 text-center font-bold text-xs uppercase tracking-wider">
+          {title}
+        </div>
+        
+        {/* Cabeçalhos Amarelos */}
+        <div className="grid grid-cols-3 text-center border-b border-border">
+          <div className="bg-[#FFBF00] py-1 text-[10px] font-bold border-r border-border">ORÇADO</div>
+          <div className="bg-[#FFBF00] py-1 text-[10px] font-bold border-r border-border">REALIZADO</div>
+          <div className="bg-[#FFBF00] py-1 text-[10px] font-bold">DIFERENÇA</div>
+        </div>
+        
+        {/* Valores */}
+        <div className="grid grid-cols-3 text-center bg-white">
+          <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(orc)}</div>
+          <div className="py-2 text-xs font-medium border-r border-border tabular-nums">{fmt(real)}</div>
+          <div className={cn(
+            "py-2 text-xs font-bold tabular-nums",
+            isNegative ? "text-destructive bg-destructive/5" : "text-primary bg-primary/5"
+          )}>
+            {fmt(diff)}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const global = calculateTotals();
-  const isGlobalNegative = global.diff < 0;
 
   return (
-    <div className="space-y-4">
-      {/* Card Principal de Resultado Geral */}
-      <Card className={cn(
-        "border-l-4",
-        isGlobalNegative ? "border-l-destructive bg-destructive/5" : "border-l-primary bg-primary/5"
-      )}>
-        <CardContent className="pt-6">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className={cn(
-                "p-2 rounded-full",
-                isGlobalNegative ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"
-              )}>
-                {isGlobalNegative ? <AlertCircle className="h-6 w-6" /> : <CheckCircle2 className="h-6 w-6" />}
-              </div>
-              <div>
-                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Resultado Consolidado (EBITDA)</p>
-                <h2 className="text-3xl font-bold">{fmt(global.real)}</h2>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 md:flex gap-8">
-              <div>
-                <p className="text-xs text-muted-foreground">Orçado Total</p>
-                <p className="text-lg font-semibold">{fmt(global.orc)}</p>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Diferença</p>
-                <div className="flex items-center gap-1">
-                  <p className={cn("text-lg font-bold", isGlobalNegative ? "text-destructive" : "text-primary")}>
-                    {fmt(global.diff)}
-                  </p>
-                  {isGlobalNegative ? <TrendingDown className="h-4 w-4 text-destructive" /> : <TrendingUp className="h-4 w-4 text-primary" />}
-                </div>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+    <div className="space-y-6">
+      {/* Total Geral */}
+      <SummaryTable 
+        title="TOTAL GERAL" 
+        orc={global.orc} 
+        real={global.real} 
+        diff={global.diff} 
+        isMain 
+      />
 
       {/* Grid de Atividades */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ATIVIDADES.map((ativ) => {
           const stats = calculateTotals(ativ.key);
-          const isNegative = stats.diff < 0;
-          
           return (
-            <Card key={ativ.key} className="overflow-hidden">
-              <div className={cn("h-1 w-full", isNegative ? "bg-destructive" : "bg-primary")} />
-              <CardContent className="p-3">
-                <p className="text-[10px] font-bold text-muted-foreground uppercase truncate mb-1">{ativ.label}</p>
-                <div className="flex flex-col">
-                  <span className="text-sm font-bold">{fmt(stats.real)}</span>
-                  <div className="flex items-center justify-between mt-1">
-                    <span className="text-[10px] text-muted-foreground">Var:</span>
-                    <span className={cn("text-[10px] font-bold", isNegative ? "text-destructive" : "text-primary")}>
-                      {stats.diff > 0 ? '+' : ''}{fmt(stats.diff)}
-                    </span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <SummaryTable 
+              key={ativ.key}
+              title={ativ.label}
+              orc={stats.orc}
+              real={stats.real}
+              diff={stats.diff}
+            />
           );
         })}
       </div>
