@@ -11,6 +11,8 @@ import { MONTHS } from '@/types/budget';
 import type { MonthKey, ExcelRow } from '@/types/budget';
 import * as XLSX from 'xlsx';
 
+const MAX_FILE_SIZE_KB = 6500;
+
 export default function UploadPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<MonthKey>(MONTHS[0].key);
   const [isDragging, setIsDragging] = useState(false);
@@ -18,6 +20,12 @@ export default function UploadPage() {
 
   const processFile = useCallback(
     async (file: File) => {
+      // Validação de tamanho de arquivo
+      if (file.size > MAX_FILE_SIZE_KB * 1024) {
+        toast.error(`O arquivo excede o limite de ${MAX_FILE_SIZE_KB}KB.`);
+        return;
+      }
+
       try {
         const buffer = await file.arrayBuffer();
         const workbook = XLSX.read(buffer, { type: 'array', cellDates: true });
@@ -80,7 +88,7 @@ export default function UploadPage() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Importar Arquivo</CardTitle>
-            <CardDescription>Selecione o período e envie o arquivo Excel no formato padrão</CardDescription>
+            <CardDescription>Selecione o período e envie o arquivo Excel (máx. {MAX_FILE_SIZE_KB}KB)</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <Select value={selectedPeriod} onValueChange={(v) => setSelectedPeriod(v as MonthKey)}>
@@ -107,7 +115,7 @@ export default function UploadPage() {
                 Arraste o arquivo Excel aqui ou clique para selecionar
               </p>
               <p className="text-xs text-muted-foreground/70 text-center">
-                Colunas esperadas: CONTA_CONTABIL, SALDO, DATA, NOMEDEPTO, NOMECUSTO, GRUPOCONTABIL...
+                Limite de tamanho: {MAX_FILE_SIZE_KB}KB. Colunas: CONTA_CONTABIL, SALDO, DATA...
               </p>
               <Button variant="outline" size="sm" asChild>
                 <label className="cursor-pointer">
