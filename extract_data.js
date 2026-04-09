@@ -137,18 +137,25 @@ function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
     if (conta.startsWith('3.1.02.02')) return { atividade: 'CANA', divisao: 'CANA' };
   }
 
-  // 2. Tenta pela Divisão do Excel
-  const fromDivisao = mapAtividadeByDivisao(divisaoRaw);
-  if (fromDivisao) return { atividade: fromDivisao, divisao: divisaoRaw };
-
-  // 3. Tenta pelo Mapeamento de Departamento
+  // 2. Tenta pelo Mapeamento de Departamento (Mais específico)
   const mapping = departmentMapping[depto];
   if (mapping) {
     const fromDept = mapAtividadeByDivisao(mapping.divisao);
-    if (fromDept) return { atividade: fromDept, divisao: mapping.divisao };
+    if (fromDept && fromDept !== 'DESP_ADM_TRIB') return { atividade: fromDept, divisao: mapping.divisao };
   }
 
-  // 4. Fallback seguro (Administrativo se não identificado)
+  // 3. Tenta pelo Mapeamento de Centro de Custo
+  const ccMapping = costCenterMapping[centroCusto];
+  if (ccMapping) {
+    const fromCC = mapAtividadeByDivisao(ccMapping.unidadeNegocio);
+    if (fromCC && fromCC !== 'DESP_ADM_TRIB') return { atividade: fromCC, divisao: ccMapping.unidadeNegocio };
+  }
+
+  // 4. Tenta pela Divisão do Excel
+  const fromDivisao = mapAtividadeByDivisao(divisaoRaw);
+  if (fromDivisao) return { atividade: fromDivisao, divisao: divisaoRaw };
+
+  // 5. Fallback seguro
   return { atividade: 'DESP_ADM_TRIB', divisao: divisaoRaw || 'NÃO IDENTIFICADO' };
 }
 
@@ -176,8 +183,6 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     const nomeProduto = getValue(row, 'NOMEPRODUTO') ? String(getValue(row, 'NOMEPRODUTO')).trim() : '';
     const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
     
-    // A CHAVE DE AGREGAÇÃO AGORA INCLUI A ATIVIDADE
-    // Isso garante que "Custo de Pessoal" da Pecuária seja diferente do "Custo de Pessoal" do Seringal
     const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}`;
     const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
 
@@ -201,13 +206,11 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
   }
 
   const finalAccounts = [];
-  // Criar estrutura de pais para cada atividade separadamente
   const ensureParentExists = (codigo, data) => {
     const parts = codigo.split('.');
     if (parts.length <= 1) return;
     const codigoPai = parts.slice(0, -1).join('.');
     
-    // Busca pai específico para esta atividade
     const parent = finalAccounts.find((a) => a.codigo === codigoPai && a.atividade === data.atividade);
     if (!parent) {
       finalAccounts.push({

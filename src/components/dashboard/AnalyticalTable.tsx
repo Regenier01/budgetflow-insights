@@ -1,5 +1,5 @@
 import { useState, Fragment } from 'react';
-import { Plus, Minus } from 'lucide-react';
+import { Plus, Minus, AlertCircle } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey } from '@/types/budget';
@@ -37,7 +37,6 @@ export function AnalyticalTable({
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   // Filtramos apenas contas de nível 5 (folhas) para a agregação analítica
-  // Isso garante que não somaremos o valor de uma conta pai e de seus filhos simultaneamente
   let filtered = accounts.filter(a => a.atividade === atividadeFilter && a.nivel === 5);
   
   if (costCenterFilter) {
@@ -65,9 +64,12 @@ export function AnalyticalTable({
 
     if (orc === 0 && real === 0) return;
 
-    const n9 = a.grupoContabilN9 || 'Outras Categorias';
+    // Normalização do N9 para evitar quebras por pequenas variações de texto
+    const n9Raw = a.grupoContabilN9 || 'Outras Categorias';
+    const n9 = n9Raw.includes('-') ? n9Raw : `${a.codigo.split('.').slice(0,3).join('.')} - ${n9Raw}`;
+    
     const desc = a.descricao || 'Sem Descrição';
-    const prod = a.nomeProduto || '';
+    const prod = a.nomeProduto || 'Diversos';
 
     if (!root.has(n9)) {
       root.set(n9, { name: n9, orc: 0, real: 0, children: new Map() });
@@ -75,7 +77,6 @@ export function AnalyticalTable({
     const nodeN9 = root.get(n9)!;
     nodeN9.orc += orc;
     nodeN9.real += real;
-    if (a.isInvalidMapping) nodeN9.isInvalid = true;
 
     if (!nodeN9.children.has(desc)) {
       nodeN9.children.set(desc, { name: desc, orc: 0, real: 0, children: new Map() });
@@ -83,7 +84,6 @@ export function AnalyticalTable({
     const nodeDesc = nodeN9.children.get(desc)!;
     nodeDesc.orc += orc;
     nodeDesc.real += real;
-    if (a.isInvalidMapping) nodeDesc.isInvalid = true;
 
     if (prod) {
       if (!nodeDesc.children.has(prod)) {
@@ -92,7 +92,6 @@ export function AnalyticalTable({
       const nodeProd = nodeDesc.children.get(prod)!;
       nodeProd.orc += orc;
       nodeProd.real += real;
-      if (a.isInvalidMapping) nodeProd.isInvalid = true;
     }
   });
 
@@ -111,7 +110,7 @@ export function AnalyticalTable({
   const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
 
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
-    const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real) || Math.abs(b.orc) - Math.abs(a.orc));
+    const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real));
 
     return sorted.map(node => {
       const currentPath = `${pathPrefix}/${node.name}`;
@@ -171,7 +170,7 @@ export function AnalyticalTable({
             
             <td className={cn(
               "text-right py-2 px-3 font-mono text-[11px] border-l border-slate-100",
-              node.isInvalid ? "text-orange-500 font-bold" : (level === 0 ? "font-bold text-slate-800" : "text-slate-700")
+              level === 0 ? "font-bold text-slate-800" : "text-slate-700"
             )}>
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>

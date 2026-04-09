@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import type { AccountEntry, MonthKey, AtividadeKey, ExcelRow, UploadRecord } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
+import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 
 export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey | null {
   if (!divisao) return null;
@@ -19,25 +20,35 @@ export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey
 }
 
 export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
-  // 1. Regras de conta contábil
   const conta = String(row.CONTA_CONTABIL || '').trim();
+  const depto = String(row.NOMEDEPTO || '').trim();
+  const cc = String(row.NOMECUSTO || '').trim();
+  const divisao = String(row.DIVISAO || '').trim();
+
+  // 1. Regras de conta contábil (Prioridade Máxima - Receitas)
   if (conta.startsWith('3.1.01.01')) return 'PECUARIA';
   if (conta === '3.1.02.03.0001') return 'SERINGAL';
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
 
-  // 2. Try DIVISAO directly
-  const fromDivisao = mapDivisaoToAtividade(row.DIVISAO);
-  if (fromDivisao) return fromDivisao;
-
-  // 3. Try NOMEDEPTO via department mapping
-  const depto = String(row.NOMEDEPTO || '').trim();
+  // 2. Tenta pelo Mapeamento de Departamento (Mais específico que Divisão)
   if (depto && (DEPARTMENT_MAPPING as any)[depto]) {
     const mapped = mapDivisaoToAtividade((DEPARTMENT_MAPPING as any)[depto].divisao);
-    if (mapped) return mapped;
+    if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
-  return 'DESP_ADM_TRIB'; // Fallback para administrativo em vez de Pecuária
+  // 3. Tenta pelo Mapeamento de Centro de Custo
+  if (cc && (COST_CENTER_MAPPING as any)[cc]) {
+    const mapped = mapDivisaoToAtividade((COST_CENTER_MAPPING as any)[cc].unidadeNegocio);
+    if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
+  }
+
+  // 4. Tenta pela Divisão do Excel
+  const fromDivisao = mapDivisaoToAtividade(divisao);
+  if (fromDivisao) return fromDivisao;
+
+  // 5. Fallback para administrativo
+  return 'DESP_ADM_TRIB';
 }
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
@@ -55,7 +66,8 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
-  const leafAccounts = accounts.filter(a => !accounts.some(child => child.codigoPai === a.codigo && child.atividade === a.atividade));
+  // Somamos apenas as folhas (nível 5) para evitar duplicidade com totais de pais
+  const leafAccounts = accounts.filter(a => a.nivel === 5);
   leafAccounts.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
@@ -68,9 +80,8 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
 export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtividade: AtividadeKey) {
   let orc = 0;
   let real = 0;
-  const filtered = accounts.filter(a => a.atividade === filterAtividade);
-  const leafAccounts = filtered.filter(a => !accounts.some(child => child.codigoPai === a.codigo && child.atividade === a.atividade));
-  leafAccounts.forEach(a => {
+  const filtered = accounts.filter(a => a.atividade === filterAtividade && a.nivel === 5);
+  filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
@@ -106,7 +117,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const month = dateToMonthKey(row.DATA) || fallbackPeriod;
       const rowAtividade = resolveAtividadeFromRow(row);
 
-      // Busca estrita por CÓDIGO + ATIVIDADE
+      // Busca estrita por CÓDIGO + ATIVIDADE para garantir que o custo caia na "gaveta" certa
       const existing = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade);
 
       if (existing) {
