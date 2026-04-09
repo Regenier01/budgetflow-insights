@@ -8,6 +8,10 @@ interface Props {
   atividadeFilter: AtividadeKey;
   selectedMonth: MonthKey | 'all';
   costCenterFilter?: string;
+  tipoFilter?: ('R' | 'C' | 'D')[];
+  title?: string;
+  subtitle?: string;
+  accentColor?: string;
 }
 
 interface Node {
@@ -18,7 +22,15 @@ interface Node {
   children: Map<string, Node>;
 }
 
-export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilter }: Props) {
+export function AnalyticalTable({ 
+  atividadeFilter, 
+  selectedMonth, 
+  costCenterFilter, 
+  tipoFilter,
+  title = "Abertura Analítica",
+  subtitle = "N9 → Descrição → Produto",
+  accentColor = "orange"
+}: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
@@ -26,6 +38,10 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
   
   if (costCenterFilter) {
     filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
+  }
+
+  if (tipoFilter) {
+    filtered = filtered.filter(a => tipoFilter.includes(a.tipo));
   }
 
   const root = new Map<string, Node>();
@@ -41,7 +57,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
 
     if (orc === 0 && real === 0) return;
 
-    const n9 = a.grupoContabilN9 || 'Outras Despesas';
+    const n9 = a.grupoContabilN9 || 'Outras Categorias';
     const desc = a.descricao || 'Sem Descrição';
     const prod = a.nomeProduto || '';
 
@@ -85,7 +101,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
-    const sorted = Array.from(nodes.values()).sort((a, b) => b.real - a.real || b.orc - a.orc);
+    const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real) || Math.abs(b.orc) - Math.abs(a.orc));
 
     return sorted.map(node => {
       const currentPath = `${pathPrefix}/${node.name}`;
@@ -93,15 +109,17 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
       const hasChildren = node.children.size > 0;
       
       const diff = node.real - node.orc;
-      const isOverBudget = diff > 0;
+      // Para receitas, real > orçado é bom. Para custos, real > orçado é ruim.
+      const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
+      const isOverBudget = isRevenue ? diff < 0 : diff > 0;
 
       return (
         <Fragment key={currentPath}>
           <tr 
             className={cn(
               "group transition-all duration-150 border-b border-slate-100 last:border-0",
-              level === 0 ? "bg-slate-50/80 hover:bg-orange-50/40" : 
-              level === 1 ? "bg-white hover:bg-orange-50/20" : 
+              level === 0 ? "bg-slate-50/80 hover:bg-slate-100/50" : 
+              level === 1 ? "bg-white hover:bg-slate-50/40" : 
               "bg-white hover:bg-slate-50/60"
             )}
           >
@@ -116,8 +134,8 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
                     className={cn(
                       "flex items-center justify-center h-5 w-5 rounded border text-[10px] font-bold transition-all duration-150 shrink-0",
                       isExpanded 
-                        ? "bg-orange-500 border-orange-500 text-white shadow-sm" 
-                        : "bg-white border-slate-300 text-slate-500 hover:border-orange-400 hover:text-orange-500"
+                        ? `bg-${accentColor}-500 border-${accentColor}-500 text-white shadow-sm` 
+                        : `bg-white border-slate-300 text-slate-500 hover:border-${accentColor}-400 hover:text-${accentColor}-500`
                     )}
                   >
                     {isExpanded ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
@@ -169,10 +187,10 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
       <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
         <h3 className="text-xs font-bold text-white uppercase tracking-widest">
-          Abertura Analítica
+          {title}
         </h3>
-        <span className="text-[10px] text-orange-400 font-semibold tracking-wide">
-          N9 → Descrição → Produto
+        <span className={cn("text-[10px] font-semibold tracking-wide", `text-${accentColor}-400`)}>
+          {subtitle}
         </span>
       </div>
       <div className="overflow-x-auto">
@@ -191,7 +209,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilt
             ) : (
               <tr>
                 <td colSpan={4} className="py-12 text-center">
-                  <p className="text-sm text-slate-400">Nenhum dado encontrado. Faça upload de uma planilha para visualizar os valores.</p>
+                  <p className="text-sm text-slate-400">Nenhum dado encontrado para esta categoria.</p>
                 </td>
               </tr>
             )}

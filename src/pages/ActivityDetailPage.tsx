@@ -59,19 +59,43 @@ export default function ActivityDetailPage() {
 
       <SummaryCards selectedMonth={selectedMonth} />
 
-      <div className="space-y-4 pt-2">
-        <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
-          <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-100 px-2 py-1 rounded">
-            {atividade.label}
+      <div className="grid gap-8">
+        {/* Seção de Receitas */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
+            <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+              Entradas
+            </div>
           </div>
+          <AnalyticalTable 
+            atividadeFilter={atividade.key}
+            selectedMonth={selectedMonth}
+            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+            tipoFilter={['R']}
+            title="Detalhamento de Receitas"
+            accentColor="emerald"
+          />
         </div>
-        <AnalyticalTable 
-          atividadeFilter={atividade.key}
-          selectedMonth={selectedMonth}
-          costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-        />
+
+        {/* Seção de Custos e Despesas */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-bold text-slate-900">Abertura de Custos e Despesas</h2>
+            <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+              Saídas
+            </div>
+          </div>
+          <AnalyticalTable 
+            atividadeFilter={atividade.key}
+            selectedMonth={selectedMonth}
+            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+            tipoFilter={['C', 'D']}
+            title="Detalhamento de Custos e Despesas"
+            accentColor="orange"
+          />
+        </div>
       </div>
     </div>
   );
-}
+}
