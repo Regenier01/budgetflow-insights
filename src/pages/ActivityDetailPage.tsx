@@ -1,19 +1,34 @@
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
+import { useBudgetStore } from '@/store/budgetStore';
 import NotFound from './NotFound';
 
 export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
+  const accounts = useBudgetStore((s) => s.accounts);
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
+  const [selectedDept, setSelectedDept] = useState<string | 'all'>('all');
   
   const atividade = ATIVIDADES.find(a => a.key === id);
   
+  // Deriva os departamentos únicos para esta atividade a partir dos dados carregados
+  const availableDepts = useMemo(() => {
+    if (!id) return [];
+    const depts = new Set<string>();
+    accounts.forEach(a => {
+      if (a.atividade === id && a.departamento) {
+        depts.add(a.departamento);
+      }
+    });
+    return Array.from(depts).sort();
+  }, [accounts, id]);
+
   if (!atividade) return <NotFound />;
 
   return (
@@ -31,6 +46,18 @@ export default function ActivityDetailPage() {
         </div>
         
         <div className="flex flex-wrap gap-3">
+          <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
+            <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+              <SelectValue placeholder="Departamento" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
+              {availableDepts.map((dept) => (
+                <SelectItem key={dept} value={dept}>{dept}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+
           <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
             <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
               <SelectValue placeholder="Centro de Custo" />
@@ -72,6 +99,7 @@ export default function ActivityDetailPage() {
             atividadeFilter={atividade.key}
             selectedMonth={selectedMonth}
             costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
             tipoFilter={['R']}
             title="Detalhamento de Receitas"
             accentColor="emerald"
@@ -90,6 +118,7 @@ export default function ActivityDetailPage() {
             atividadeFilter={atividade.key}
             selectedMonth={selectedMonth}
             costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
             tipoFilter={['C', 'D']}
             title="Detalhamento de Custos e Despesas"
             accentColor="orange"

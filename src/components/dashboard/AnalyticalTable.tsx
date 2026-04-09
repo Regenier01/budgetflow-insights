@@ -8,6 +8,7 @@ interface Props {
   atividadeFilter: AtividadeKey;
   selectedMonth: MonthKey | 'all';
   costCenterFilter?: string;
+  departmentFilter?: string;
   tipoFilter?: ('R' | 'C' | 'D')[];
   title?: string;
   subtitle?: string;
@@ -25,7 +26,8 @@ interface Node {
 export function AnalyticalTable({ 
   atividadeFilter, 
   selectedMonth, 
-  costCenterFilter, 
+  costCenterFilter,
+  departmentFilter,
   tipoFilter,
   title = "Abertura Analítica",
   subtitle = "N9 → Descrição → Produto",
@@ -38,6 +40,10 @@ export function AnalyticalTable({
   
   if (costCenterFilter) {
     filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
+  }
+
+  if (departmentFilter) {
+    filtered = filtered.filter(a => a.departamento === departmentFilter);
   }
 
   if (tipoFilter) {
@@ -109,7 +115,6 @@ export function AnalyticalTable({
       const hasChildren = node.children.size > 0;
       
       const diff = node.real - node.orc;
-      // Para receitas, real > orçado é bom. Para custos, real > orçado é ruim.
       const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
       const isOverBudget = isRevenue ? diff < 0 : diff > 0;
 
