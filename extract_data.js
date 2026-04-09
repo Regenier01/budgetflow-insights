@@ -36,7 +36,6 @@ async function run() {
 export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringify(departmentMapping, null, 2)};
 `;
   writeFileSync('src/data/departmentMapping.ts', mappingOutput);
-  console.log('src/data/departmentMapping.ts gerado.');
 
   // 1.5. Mapeamento de Centros de Custo
   const ccMappingFile = 'data/C.c.xlsx';
@@ -56,7 +55,6 @@ export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringi
         };
       }
     });
-    console.log(`Mapeamento de centros de custo carregado: ${Object.keys(costCenterMapping).length} registros.`);
   }
 
   const ccMappingOutput = `export interface CostCenterInfo {
@@ -67,7 +65,6 @@ export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringi
 export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.stringify(costCenterMapping, null, 2)};
 `;
   writeFileSync('src/data/costCenterMapping.ts', ccMappingOutput);
-  console.log('src/data/costCenterMapping.ts gerado.');
 
   // 2. Extração de Realizado
   const realizadoDir = 'realizado';
@@ -75,10 +72,7 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
 
   if (existsSync(realizadoDir)) {
     const files = readdirSync(realizadoDir).filter(f => f.endsWith('.xlsx'));
-    console.log(`Arquivos encontrados na pasta realizado: ${files.length}`);
-
     for (const file of files) {
-      console.log(`Processando: ${file}`);
       const workbook = XLSX.readFile(join(realizadoDir, file), { cellDates: true });
       const sheet = workbook.Sheets[workbook.SheetNames[0]];
       const rows = XLSX.utils.sheet_to_json(sheet);
@@ -86,9 +80,7 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
     }
   }
 
-  console.log(`Total de linhas brutas extraídas: ${allRows.length}`);
-
-  // 3. Processamento e Agregação (Lógica do budgetStore)
+  // 3. Processamento e Agregação
   const accounts = processBudgetRows(allRows, departmentMapping, costCenterMapping);
 
   // 4. Gerar Mapeamento Atividade -> Centros de Custo
@@ -112,7 +104,6 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
 export const ACTIVITY_CC_MAPPING: Record<AtividadeKey, string[]> = ${JSON.stringify(finalCCMap, null, 2)};
 `;
   writeFileSync('src/data/activityCCMapping.ts', activityCCMappingOutput);
-  console.log('src/data/activityCCMapping.ts gerado.');
 
   const initialDataOutput = `import type { AccountEntry } from '@/types/budget';
 
@@ -126,15 +117,10 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null,
 
 function getValue(row, keyName) {
   if (!row) return undefined;
-  // Try direct match
   if (row[keyName] !== undefined) return row[keyName];
-  
-  // Try normalized match (trim and uppercase)
   const normalizedKey = keyName.trim().toUpperCase();
   for (const k in row) {
-    if (k.trim().toUpperCase() === normalizedKey) {
-      return row[k];
-    }
+    if (k.trim().toUpperCase() === normalizedKey) return row[k];
   }
   return undefined;
 }
@@ -142,13 +128,9 @@ function getValue(row, keyName) {
 function dateToMonthKey(raw) {
   if (!raw) return null;
   let d;
-  if (raw instanceof Date) {
-    d = raw;
-  } else if (typeof raw === 'number') {
-    d = new Date((raw - 25569) * 86400000);
-  } else {
-    d = new Date(raw);
-  }
+  if (raw instanceof Date) d = raw;
+  else if (typeof raw === 'number') d = new Date((raw - 25569) * 86400000);
+  else d = new Date(raw);
   if (isNaN(d.getTime())) return null;
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, '0');
@@ -173,29 +155,25 @@ function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
 
   const mapping = departmentMapping[depto];
   const ccMapping = costCenterMapping[centroCusto];
-
-  // Regra: Unidade de Negócio vem do Centro de Custo. Se não encontrar, null.
   const unidadeNegocio = ccMapping ? ccMapping.unidadeNegocio : null;
 
   let isInvalidMapping = false;
   if (mapping && ccMapping) {
     const deptUN = mapping.unidadeNegocio ? mapping.unidadeNegocio.trim().toUpperCase() : '';
     const ccUN = ccMapping.unidadeNegocio ? ccMapping.unidadeNegocio.trim().toUpperCase() : '';
-    
-    if (deptUN && ccUN && deptUN !== ccUN) {
-      isInvalidMapping = true;
-    }
+    if (deptUN && ccUN && deptUN !== ccUN) isInvalidMapping = true;
   }
 
   const divisaoFinal = mapping ? mapping.divisao : (getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined);
 
   // REGRAS DE RECEITAS ESPECÍFICAS
   if (conta) {
+    // REGRA SOLICITADA: 3.1.01.01 -> RECEITAS PECUÁRIA
+    if (conta.startsWith('3.1.01.01')) {
+      return { atividade: 'PECUARIA', divisao: divisaoFinal || 'PECUÁRIA', unidadeNegocio, isInvalidMapping };
+    }
     if (conta === '3.1.02.03.0001') {
       return { atividade: 'SERINGAL', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
-    }
-    if (conta.startsWith('3.1.01.01')) {
-      return { atividade: 'PECUARIA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
     }
     if (conta.startsWith('3.1.02.01')) {
       return { atividade: 'AGRICOLA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
@@ -208,9 +186,6 @@ function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
   if (mapping) {
     const divisao = mapping.divisao.trim().toUpperCase();
     const fromDivisao = mapAtividadeByDivisao(divisao);
-    if (divisao === 'SERINGAL') {
-      return { atividade: 'SERINGAL', divisao: mapping.divisao, unidadeNegocio, isInvalidMapping };
-    }
     return { 
       atividade: fromDivisao || 'PECUARIA', 
       divisao: mapping.divisao, 
@@ -221,11 +196,7 @@ function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
 
   const currentDivisao = divisaoFinal;
   const fromDivisao = mapAtividadeByDivisao(currentDivisao);
-  if (fromDivisao) {
-    if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-    return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-  }
-  return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+  return { atividade: fromDivisao || 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
 }
 
 function mapTipo(contaContabil) {
@@ -245,13 +216,8 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     const rawSaldo = getValue(row, 'SALDO');
     let saldo = 0;
-    if (typeof rawSaldo === 'number') {
-      saldo = rawSaldo;
-    } else if (typeof rawSaldo === 'string') {
-      // Handle Brazilian format: 1.234,56 -> 1234.56
-      saldo = Number(rawSaldo.replace(/\./g, '').replace(',', '.'));
-    }
-    
+    if (typeof rawSaldo === 'number') saldo = rawSaldo;
+    else if (typeof rawSaldo === 'string') saldo = Number(rawSaldo.replace(/\./g, '').replace(',', '.'));
     if (isNaN(saldo)) saldo = 0;
 
     const nomeProduto = getValue(row, 'NOMEPRODUTO') ? String(getValue(row, 'NOMEPRODUTO')).trim() : '';
@@ -259,7 +225,6 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
 
     const existing = aggregated.get(aggKey);
-
     if (existing) {
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
     } else {
@@ -284,14 +249,11 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
   }
 
   const finalAccounts = [];
-
   const ensureParentExists = (codigo, data) => {
     const parts = codigo.split('.');
     if (parts.length <= 1) return;
-
     const codigoPai = parts.slice(0, -1).join('.');
     const parent = finalAccounts.find((a) => a.codigo === codigoPai);
-
     if (!parent) {
       finalAccounts.push({
         id: randomUUID(),
@@ -312,9 +274,7 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     const [conta] = aggKey.split('|');
     const parts = conta.split('.');
     const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
-
     ensureParentExists(conta, data);
-
     finalAccounts.push({
       id: randomUUID(),
       codigo: conta,
@@ -336,9 +296,7 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     });
   }
 
-  return finalAccounts.sort((a, b) =>
-    a.codigo.localeCompare(b.codigo, undefined, { numeric: true })
-  );
+  return finalAccounts.sort((a, b) => a.codigo.localeCompare(b.codigo, undefined, { numeric: true }));
 }
 
 run().catch(console.error);
