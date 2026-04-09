@@ -24,18 +24,7 @@ async function run() {
         };
       }
     });
-    console.log(`Mapeamento de departamentos carregado: ${Object.keys(departmentMapping).length} registros.`);
   }
-
-  const mappingOutput = `export interface DepartmentInfo {
-  nomedepto: string;
-  unidadeNegocio: string;
-  divisao: string;
-}
-
-export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringify(departmentMapping, null, 2)};
-`;
-  writeFileSync('src/data/departmentMapping.ts', mappingOutput);
 
   // 1.5. Mapeamento de Centros de Custo
   const ccMappingFile = 'data/C.c.xlsx';
@@ -57,15 +46,6 @@ export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringi
     });
   }
 
-  const ccMappingOutput = `export interface CostCenterInfo {
-  centroCusto: string;
-  unidadeNegocio: string;
-}
-
-export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.stringify(costCenterMapping, null, 2)};
-`;
-  writeFileSync('src/data/costCenterMapping.ts', ccMappingOutput);
-
   // 2. Extração de Realizado
   const realizadoDir = 'realizado';
   let allRows = [];
@@ -78,9 +58,6 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
       const rows = XLSX.utils.sheet_to_json(sheet);
       allRows = allRows.concat(rows);
     }
-    console.log(`Arquivos de realizado carregados: ${files.length}. Registros encontrados: ${allRows.length}.`);
-  } else {
-    console.log(`Aviso: Pasta '${realizadoDir}' não encontrada na raiz do projeto.`);
   }
 
   // 3. Processamento e Agregação
@@ -102,17 +79,12 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
     finalCCMap[act] = Array.from(activityCCMap[act]).sort();
   }
 
-  const activityCCMappingOutput = `import type { AtividadeKey } from '@/types/budget';
-
-export const ACTIVITY_CC_MAPPING: Record<AtividadeKey, string[]> = ${JSON.stringify(finalCCMap, null, 2)};
-`;
-  writeFileSync('src/data/activityCCMapping.ts', activityCCMappingOutput);
-
-  const initialDataOutput = `import type { AccountEntry } from '@/types/budget';
-
-export const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null, 2)};
-`;
-  writeFileSync('src/data/initialData.ts', initialDataOutput);
+  // Escrita dos arquivos de saída
+  writeFileSync('src/data/departmentMapping.ts', `export const DEPARTMENT_MAPPING = ${JSON.stringify(departmentMapping, null, 2)};`);
+  writeFileSync('src/data/costCenterMapping.ts', `export const COST_CENTER_MAPPING = ${JSON.stringify(costCenterMapping, null, 2)};`);
+  writeFileSync('src/data/activityCCMapping.ts', `export const ACTIVITY_CC_MAPPING = ${JSON.stringify(finalCCMap, null, 2)};`);
+  writeFileSync('src/data/initialData.ts', `import type { AccountEntry } from '@/types/budget';\n\nexport const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null, 2)};`);
+  
   console.log('--- Extração finalizada com sucesso! ---');
 }
 
@@ -142,12 +114,12 @@ function dateToMonthKey(raw) {
 
 function mapAtividadeByDivisao(divisao) {
   if (!divisao) return null;
-  const text = divisao.trim().toUpperCase();
+  const text = divisao.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   if (text.includes('PECUA') || text.includes('GADO')) return 'PECUARIA';
   if (text.includes('SERING') || text.includes('LATEX') || text.includes('BORRACHA')) return 'SERINGAL';
-  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO')) return 'AGRICOLA';
+  if (text.includes('AGRIC') || text.includes('SOJA') || text.includes('MILHO') || text.includes('GRAO')) return 'AGRICOLA';
   if (text.includes('CANA')) return 'CANA';
-  if (text.includes('ADM') || text.includes('TRIB')) return 'DESP_ADM_TRIB';
+  if (text.includes('ADM') || text.includes('TRIB') || text.includes('LOGISTICA') || text.includes('ALMOXARIFADO')) return 'DESP_ADM_TRIB';
   if (text.includes('ENCARGO')) return 'ENCARGOS';
   return null;
 }
@@ -155,58 +127,35 @@ function mapAtividadeByDivisao(divisao) {
 function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
   const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
   const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
+  const divisaoRaw = getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')).trim() : '';
 
-  const mapping = departmentMapping[depto];
-  const ccMapping = costCenterMapping[centroCusto];
-  const unidadeNegocio = ccMapping ? ccMapping.unidadeNegocio : null;
-
-  let isInvalidMapping = false;
-  if (mapping && ccMapping) {
-    const deptUN = mapping.unidadeNegocio ? mapping.unidadeNegocio.trim().toUpperCase() : '';
-    const ccUN = ccMapping.unidadeNegocio ? ccMapping.unidadeNegocio.trim().toUpperCase() : '';
-    if (deptUN && ccUN && deptUN !== ccUN) isInvalidMapping = true;
-  }
-
-  const divisaoFinal = mapping ? mapping.divisao : (getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined);
-
-  // REGRAS DE RECEITAS ESPECÍFICAS
+  // 1. Regras de Receitas (Prioridade Máxima)
   if (conta) {
-    // REGRA SOLICITADA: 3.1.01.01 -> RECEITAS PECUÁRIA
-    if (conta.startsWith('3.1.01.01')) {
-      return { atividade: 'PECUARIA', divisao: divisaoFinal || 'PECUÁRIA', unidadeNegocio, isInvalidMapping };
-    }
-    if (conta === '3.1.02.03.0001') {
-      return { atividade: 'SERINGAL', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
-    }
-    if (conta.startsWith('3.1.02.01')) {
-      return { atividade: 'AGRICOLA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
-    }
-    if (conta.startsWith('3.1.02.02')) {
-      return { atividade: 'CANA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
-    }
+    if (conta.startsWith('3.1.01.01')) return { atividade: 'PECUARIA', divisao: 'PECUÁRIA' };
+    if (conta === '3.1.02.03.0001') return { atividade: 'SERINGAL', divisao: 'SERINGAL' };
+    if (conta.startsWith('3.1.02.01')) return { atividade: 'AGRICOLA', divisao: 'AGRÍCOLA' };
+    if (conta.startsWith('3.1.02.02')) return { atividade: 'CANA', divisao: 'CANA' };
   }
 
+  // 2. Tenta pela Divisão do Excel
+  const fromDivisao = mapAtividadeByDivisao(divisaoRaw);
+  if (fromDivisao) return { atividade: fromDivisao, divisao: divisaoRaw };
+
+  // 3. Tenta pelo Mapeamento de Departamento
+  const mapping = departmentMapping[depto];
   if (mapping) {
-    const divisao = mapping.divisao.trim().toUpperCase();
-    const fromDivisao = mapAtividadeByDivisao(divisao);
-    return { 
-      atividade: fromDivisao || 'PECUARIA', 
-      divisao: mapping.divisao, 
-      unidadeNegocio,
-      isInvalidMapping
-    };
+    const fromDept = mapAtividadeByDivisao(mapping.divisao);
+    if (fromDept) return { atividade: fromDept, divisao: mapping.divisao };
   }
 
-  const currentDivisao = divisaoFinal;
-  const fromDivisao = mapAtividadeByDivisao(currentDivisao);
-  return { atividade: fromDivisao || 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+  // 4. Fallback seguro (Administrativo se não identificado)
+  return { atividade: 'DESP_ADM_TRIB', divisao: divisaoRaw || 'NÃO IDENTIFICADO' };
 }
 
-function mapTipo(contaContabil, grupoContabil) {
+function mapTipo(contaContabil) {
   const conta = String(contaContabil || '').trim();
-  const grupo = String(grupoContabil || '').trim();
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
-  if (conta.startsWith('4.') || grupo === '4' || grupo.startsWith('4')) return 'C';
+  if (conta.startsWith('4.')) return 'C';
   return 'D';
 }
 
@@ -225,39 +174,41 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     if (isNaN(saldo)) saldo = 0;
 
     const nomeProduto = getValue(row, 'NOMEPRODUTO') ? String(getValue(row, 'NOMEPRODUTO')).trim() : '';
-    const aggKey = `${conta}|${nomeProduto}`;
+    const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
+    
+    // A CHAVE DE AGREGAÇÃO AGORA INCLUI A ATIVIDADE
+    // Isso garante que "Custo de Pessoal" da Pecuária seja diferente do "Custo de Pessoal" do Seringal
+    const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}`;
     const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
 
     const existing = aggregated.get(aggKey);
     if (existing) {
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
     } else {
-      const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
-      const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
-
       aggregated.set(aggKey, {
         saldo: { [monthKey]: saldo },
         descricao: String(getValue(row, 'DESCRICAO_CONTABIL') || conta),
-        departamento: depto || undefined,
-        centroCusto: getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')) : undefined,
+        departamento: getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : undefined,
+        centroCusto: getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : undefined,
         coligada: getValue(row, 'COLIGADA') ? String(getValue(row, 'COLIGADA')) : undefined,
-        divisao: mapped.divisao || (getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined),
-        unidadeNegocio: mapped.unidadeNegocio,
+        divisao: mapped.divisao,
         grupoContabilN9: getValue(row, 'GRUPOCONTABILN9') ? String(getValue(row, 'GRUPOCONTABILN9')) : undefined,
         nomeProduto: nomeProduto || undefined,
         atividade: mapped.atividade,
-        tipo: mapTipo(conta, getValue(row, 'GRUPOCONTABILN9') || getValue(row, 'GRUPO_CONTABIL') || getValue(row, 'GRUPOCONTABIL')),
-        isInvalidMapping: mapped.isInvalidMapping,
+        tipo: mapTipo(conta),
       });
     }
   }
 
   const finalAccounts = [];
+  // Criar estrutura de pais para cada atividade separadamente
   const ensureParentExists = (codigo, data) => {
     const parts = codigo.split('.');
     if (parts.length <= 1) return;
     const codigoPai = parts.slice(0, -1).join('.');
-    const parent = finalAccounts.find((a) => a.codigo === codigoPai);
+    
+    // Busca pai específico para esta atividade
+    const parent = finalAccounts.find((a) => a.codigo === codigoPai && a.atividade === data.atividade);
     if (!parent) {
       finalAccounts.push({
         id: randomUUID(),
@@ -278,7 +229,9 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
     const [conta] = aggKey.split('|');
     const parts = conta.split('.');
     const codigoPai = parts.length > 1 ? parts.slice(0, -1).join('.') : null;
+    
     ensureParentExists(conta, data);
+    
     finalAccounts.push({
       id: randomUUID(),
       codigo: conta,
@@ -293,8 +246,6 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
       grupoContabilN9: data.grupoContabilN9,
       nomeProduto: data.nomeProduto,
       divisao: data.divisao,
-      unidadeNegocio: data.unidadeNegocio,
-      isInvalidMapping: data.isInvalidMapping,
       orcado: {},
       realizado: data.saldo,
     });
