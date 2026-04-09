@@ -59,12 +59,10 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
 
-  // Para o Total Geral, somamos todas as contas que não têm filhos (folhas)
-  // ou simplesmente todas as contas que possuem valores, já que os pais são vazios.
-  // A abordagem de somar apenas "folhas" garante que não haverá duplicidade 
-  // caso algum dia os pais passem a ter a soma dos filhos.
+  // Filtramos as contas folha e excluímos as que começam com 3.1.01.01
   const leafAccounts = accounts.filter(a => 
-    !accounts.some(child => child.codigoPai === a.codigo)
+    !accounts.some(child => child.codigoPai === a.codigo) &&
+    !a.codigo.startsWith('3.1.01.01')
   );
 
   leafAccounts.forEach(a => {
@@ -90,11 +88,12 @@ export function calculateTotalsByDivisao(
   let orc = 0;
   let real = 0;
 
-  // Filtramos todas as contas da atividade
-  const filtered = accounts.filter(a => a.atividade === filterAtividade);
+  // Filtramos todas as contas da atividade, excluindo as que começam com 3.1.01.01
+  const filtered = accounts.filter(a => 
+    a.atividade === filterAtividade && 
+    !a.codigo.startsWith('3.1.01.01')
+  );
   
-  // Somamos apenas as contas que são "folhas" na árvore gerencial,
-  // ou seja, que não possuem filhos no conjunto total de contas.
   const leafAccounts = filtered.filter(a => 
     !accounts.some(child => child.codigoPai === a.codigo)
   );
@@ -139,4 +138,3 @@ export const useBudgetStore = create<BudgetState>((set) => ({
       ),
     })),
 }));
-

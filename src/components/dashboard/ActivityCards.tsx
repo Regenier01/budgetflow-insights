@@ -20,9 +20,11 @@ export function ActivityCards() {
   return (
     <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
       {ATIVIDADES.map((ativ) => {
-        // Pegamos apenas as contas "raiz" desta atividade para evitar duplicidade
+        // Pegamos apenas as contas "raiz" desta atividade e excluímos as 3.1.01.01
         const ativRootAccounts = accounts.filter(
-          (a) => a.atividade === ativ.key && !accounts.some(p => p.codigo === a.codigoPai)
+          (a) => a.atividade === ativ.key && 
+                 !accounts.some(p => p.codigo === a.codigoPai) &&
+                 !a.codigo.startsWith('3.1.01.01')
         );
 
         const chartData = MONTHS.map(({ key, label }) => {

@@ -10,8 +10,11 @@ interface Props {
 export function SummaryCards({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
-  // Pegamos apenas as contas que não têm pai na lista para evitar duplicidade
-  const rootAccounts = accounts.filter(a => !accounts.some(p => p.codigo === a.codigoPai));
+  // Pegamos apenas as contas que não têm pai na lista e excluímos as 3.1.01.01 para evitar duplicidade e cumprir a regra
+  const rootAccounts = accounts.filter(a => 
+    !accounts.some(p => p.codigo === a.codigoPai) &&
+    !a.codigo.startsWith('3.1.01.01')
+  );
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {
     const items = rootAccounts.filter((a) => a.tipo === tipo);
