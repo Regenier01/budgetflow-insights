@@ -1,23 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TrendingUp, TrendingDown, DollarSign, Target } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
-import type { MonthKey } from '@/types/budget';
+import type { MonthKey, AtividadeKey } from '@/types/budget';
 
 interface Props {
   selectedMonth: MonthKey | 'all';
+  atividadeFilter?: AtividadeKey;
 }
 
-export function SummaryCards({ selectedMonth }: Props) {
+export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
-  // Pegamos apenas as contas que não têm pai na lista e excluímos as 3.1.01.01 para evitar duplicidade e cumprir a regra
-  const rootAccounts = accounts.filter(a => 
-    !accounts.some(p => p.codigo === a.codigoPai) &&
-    !a.codigo.startsWith('3.1.01.01')
+  // Filtramos apenas as contas de nível 5 (folhas) para evitar somar pais e filhos
+  // E aplicamos o filtro de atividade se fornecido
+  const leafAccounts = accounts.filter(a => 
+    a.nivel === 5 && 
+    (!atividadeFilter || a.atividade === atividadeFilter)
   );
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {
-    const items = rootAccounts.filter((a) => a.tipo === tipo);
+    const items = leafAccounts.filter((a) => a.tipo === tipo);
     return items.reduce((sum, a) => {
       if (selectedMonth === 'all') {
         return sum + Object.values(a[field]).reduce((s: number, v: number) => s + v, 0);
@@ -33,11 +35,16 @@ export function SummaryCards({ selectedMonth }: Props) {
   const despesaOrc = sumByTipo('D', 'orcado');
   const despesaReal = sumByTipo('D', 'realizado');
 
-  const resultadoOrc = receitaOrc - custoOrc - despesaOrc;
-  const resultadoReal = receitaReal - custoReal - despesaReal;
+  // Resultado = Receitas - (Custos + Despesas)
+  const resultadoOrc = receitaOrc - (custoOrc + despesaOrc);
+  const resultadoReal = receitaReal - (custoReal + despesaReal);
 
   const fmt = (v: number) =>
-    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
+    new Intl.NumberFormat('pt-BR', { 
+      style: 'currency', 
+      currency: 'BRL', 
+      maximumFractionDigits: 0 
+    }).format(v);
 
   const pct = (real: number, orc: number) =>
     orc === 0 ? 0 : ((real - orc) / Math.abs(orc)) * 100;
@@ -55,16 +62,19 @@ export function SummaryCards({ selectedMonth }: Props) {
         const variance = pct(c.real, c.orc);
         const isGood = c.positive ? variance >= 0 : variance <= 0;
         return (
-          <Card key={c.title}>
+          <Card key={c.title} className="border-slate-200 shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">{c.title}</CardTitle>
-              <c.icon className="h-4 w-4 text-accent" />
+              <CardTitle className="text-xs font-bold uppercase tracking-wider text-slate-500">{c.title}</CardTitle>
+              <c.icon className="h-4 w-4 text-slate-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-xl font-bold">{fmt(c.real)}</div>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <span>Orçado: {fmt(c.orc)}</span>
-                <span className={isGood ? 'text-primary font-medium' : 'text-destructive font-medium'}>
+              <div className="text-2xl font-black text-slate-900">{fmt(c.real)}</div>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-[10px] font-medium text-slate-400">Orçado: {fmt(c.orc)}</span>
+                <span className={cn(
+                  "text-[10px] font-bold px-1.5 py-0.5 rounded",
+                  isGood ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'
+                )}>
                   {variance >= 0 ? '+' : ''}{variance.toFixed(1)}%
                 </span>
               </div>
@@ -75,3 +85,5 @@ export function SummaryCards({ selectedMonth }: Props) {
     </div>
   );
 }
+
+import { cn } from '@/lib/utils';

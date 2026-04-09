@@ -36,7 +36,9 @@ export function AnalyticalTable({
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
-  let filtered = accounts.filter(a => a.atividade === atividadeFilter);
+  // Filtramos apenas contas de nível 5 (folhas) para a agregação analítica
+  // Isso garante que não somaremos o valor de uma conta pai e de seus filhos simultaneamente
+  let filtered = accounts.filter(a => a.atividade === atividadeFilter && a.nivel === 5);
   
   if (costCenterFilter) {
     filtered = filtered.filter(a => a.centroCusto === costCenterFilter);

@@ -17,7 +17,6 @@ export default function ActivityDetailPage() {
   
   const atividade = ATIVIDADES.find(a => a.key === id);
   
-  // Deriva os departamentos únicos para esta atividade a partir dos dados carregados
   const availableDepts = useMemo(() => {
     if (!id) return [];
     const depts = new Set<string>();
@@ -84,10 +83,9 @@ export default function ActivityDetailPage() {
         </div>
       </div>
 
-      <SummaryCards selectedMonth={selectedMonth} />
+      <SummaryCards selectedMonth={selectedMonth} atividadeFilter={atividade.key} />
 
       <div className="grid gap-8">
-        {/* Seção de Receitas */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
@@ -106,7 +104,6 @@ export default function ActivityDetailPage() {
           />
         </div>
 
-        {/* Seção de Custos */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
@@ -125,7 +122,6 @@ export default function ActivityDetailPage() {
           />
         </div>
 
-        {/* Seção de Despesas */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
