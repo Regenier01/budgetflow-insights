@@ -93,11 +93,13 @@ export function calculateTotalsByDivisao(
   // Filtramos todas as contas da atividade
   const filtered = accounts.filter(a => a.atividade === filterAtividade);
   
-  // Somamos apenas as contas que são "folhas" DENTRO do conjunto da atividade
-  // ou que não possuem filhos no conjunto total para garantir a captura dos valores reais.
-  const roots = filtered.filter(a => !filtered.some(p => p.codigo === a.codigoPai));
+  // Somamos apenas as contas que são "folhas" na árvore gerencial,
+  // ou seja, que não possuem filhos no conjunto total de contas.
+  const leafAccounts = filtered.filter(a => 
+    !accounts.some(child => child.codigoPai === a.codigo)
+  );
 
-  roots.forEach(a => {
+  leafAccounts.forEach(a => {
     const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
