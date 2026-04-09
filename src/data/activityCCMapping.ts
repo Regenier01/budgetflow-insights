@@ -1,6 +1,6 @@
 import type { AtividadeKey } from '@/types/budget';
 
-export const ACTIVITY_CC_MAPPING: Record<AtividadeKey, string[]> = {
+export const ACTIVITY_CC_MAPPING: Partial<Record<AtividadeKey, string[]>> = {
   "PECUARIA": [
     "RATEIO CONFINAMENTO",
     "RATEIO SERINGAL "
