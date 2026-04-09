@@ -106,6 +106,8 @@ export function AnalyticalTable({
   const fmtCurrency = (v: number) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
+  const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
+
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
     const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real) || Math.abs(b.orc) - Math.abs(a.orc));
 
@@ -115,7 +117,6 @@ export function AnalyticalTable({
       const hasChildren = node.children.size > 0;
       
       const diff = node.real - node.orc;
-      const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
       const isOverBudget = isRevenue ? diff < 0 : diff > 0;
 
       return (
@@ -219,6 +220,36 @@ export function AnalyticalTable({
               </tr>
             )}
           </tbody>
+          {root.size > 0 && (() => {
+            const totalOrc = Array.from(root.values()).reduce((sum, n) => sum + n.orc, 0);
+            const totalReal = Array.from(root.values()).reduce((sum, n) => sum + n.real, 0);
+            const totalDiff = totalReal - totalOrc;
+            const isTotalOverBudget = isRevenue ? totalDiff < 0 : totalDiff > 0;
+
+            return (
+              <tfoot className="bg-slate-100/80 border-t-2 border-slate-300 font-bold">
+                <tr>
+                  <td className="py-3 px-3 text-[11px] uppercase tracking-wider text-slate-800 pl-4">
+                    Total
+                  </td>
+                  <td className="text-right py-3 px-3 font-mono text-[12px] text-slate-800 border-l border-slate-200">
+                    {totalOrc ? fmtCurrency(totalOrc) : '-'}
+                  </td>
+                  <td className="text-right py-3 px-3 font-mono text-[12px] text-slate-800 border-l border-slate-200">
+                    {totalReal ? fmtCurrency(totalReal) : '-'}
+                  </td>
+                  <td className={cn(
+                    "text-right py-3 px-3 font-mono text-[12px] border-l border-slate-200",
+                    isTotalOverBudget ? "text-rose-600" : "text-emerald-600"
+                  )}>
+                    {(totalOrc || totalReal) ? (
+                      <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</>
+                    ) : '-'}
+                  </td>
+                </tr>
+              </tfoot>
+            );
+          })()}
         </table>
       </div>
     </div>
