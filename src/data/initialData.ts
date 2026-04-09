@@ -2,7 +2,7 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "5e00f84c-91aa-4e09-bd2d-64d40c591522",
+    "id": "b79c0105-843b-4d4d-935d-8fe341e79955",
     "codigo": "3",
     "descricao": "3",
     "tipo": "D",
@@ -13,18 +13,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ffb63094-bf07-4b70-b7d4-b1c0cb7c78bd",
+    "id": "39e8c8f3-765f-40c8-a558-9da6848dab5f",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
     "codigoPai": "3",
     "nivel": 2,
-    "atividade": "PECUARIA",
+    "atividade": "SERINGAL",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "3a00f912-49e0-44d9-9e02-6b089c0b89f2",
+    "id": "a2c5c642-8c26-46fe-a3d1-047fb3215a79",
     "codigo": "3.1.01",
     "descricao": "3.1.01",
     "tipo": "R",
@@ -35,7 +35,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "301c1651-f19c-4946-89d2-deed70376725",
+    "id": "d769a98e-baa8-4edd-a157-689ea7a1d81e",
     "codigo": "3.1.01.01",
     "descricao": "3.1.01.01",
     "tipo": "R",
@@ -46,7 +46,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6d9046cf-29a8-4e62-8673-3c0e3c3679b8",
+    "id": "944132b5-13f5-4b98-a01f-f03fbfa6e8f5",
     "codigo": "3.1.01.01.0003",
     "descricao": "VENDA DE TOUROS REPRODUTORES",
     "tipo": "R",
@@ -67,9 +67,52 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "seringal-root-id",
+    "id": "720d7d33-a973-4f2e-9a91-4727c0431d60",
+    "codigo": "3.1.02",
+    "descricao": "3.1.02",
+    "tipo": "R",
+    "codigoPai": "3.1",
+    "nivel": 3,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "f6a54dfd-95ba-4b44-bb4e-acf79fbe3e70",
+    "codigo": "3.1.02.01",
+    "descricao": "3.1.02.01",
+    "tipo": "R",
+    "codigoPai": "3.1.02",
+    "nivel": 4,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "2afc543b-29b4-406e-b399-9df014d73c70",
+    "codigo": "3.1.02.01.0005",
+    "descricao": "VENDA DE SOJA",
+    "tipo": "R",
+    "codigoPai": "3.1.02.01",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA",
+    "centroCusto": "ÁREAS PRODUTIVAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabilN9": "3.1.02.01-VENDA DE GRAOS",
+    "nomeProduto": "SOJA EM GRAOS INDUSTRIAL",
+    "divisao": "AGRÍCOLA",
+    "unidadeNegocio": null,
+    "isInvalidMapping": false,
+    "orcado": {},
+    "realizado": {
+      "2026-02": -59166
+    }
+  },
+  {
+    "id": "85bdf24c-0b19-474d-a16e-18369e1ae582",
     "codigo": "3.1.02.03",
-    "descricao": "RECEITAS DE SERINGAL",
+    "descricao": "3.1.02.03",
     "tipo": "R",
     "codigoPai": "3.1.02",
     "nivel": 4,
@@ -78,28 +121,28 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "seringal-receita-id",
+    "id": "e440651c-32e3-4e54-8167-111d88cdf222",
     "codigo": "3.1.02.03.0001",
-    "descricao": "VENDA DE BORRACHA",
+    "descricao": "VENDA DE LATEX",
     "tipo": "R",
     "codigoPai": "3.1.02.03",
     "nivel": 5,
     "atividade": "SERINGAL",
     "departamento": "BANDEIRANTES SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabilN9": "3.1.02.03-VENDA DE PRODUTOS VEGETAIS",
-    "nomeProduto": "BORRACHA",
+    "centroCusto": "RATEIO SERINGAL ",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabilN9": "3.1.02.03-VENDA DE OUTROS PRODUTOS AGRICOLAS",
+    "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
     "unidadeNegocio": "VERA CRUZ - SERINGAL",
-    "isInvalidMapping": false,
+    "isInvalidMapping": true,
     "orcado": {},
     "realizado": {
-      "2026-04": 15000
+      "2026-02": -314452
     }
   },
   {
-    "id": "895b9cb8-ae18-493d-8baa-e65d4a1cbb36",
+    "id": "4b1c32c5-ee55-4448-897a-afc61b6d472e",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -110,7 +153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "892557e1-c95d-41e2-a7ec-0f505b5cc904",
+    "id": "aa6aa759-7645-448b-814f-62ce14ff82af",
     "codigo": "3.4.01",
     "descricao": "3.4.01",
     "tipo": "D",
@@ -121,7 +164,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "135be50f-a78d-4d56-bd59-515d27281069",
+    "id": "3da28299-8ecb-4095-84a9-917feb586d34",
     "codigo": "3.4.01.10",
     "descricao": "3.4.01.10",
     "tipo": "D",
@@ -132,7 +175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "282fcf09-18fd-4373-8063-1583e3ef9378",
+    "id": "e9746f4b-4d7d-4fc5-8824-01ae87e2482c",
     "codigo": "3.4.01.10.0060",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "D",
@@ -153,7 +196,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fdd41f0-a055-46fa-bcd8-07dfafb0f8ef",
+    "id": "d64e87c2-038f-4bbb-af2e-204ea9a2b783",
     "codigo": "3.4.01.10.0060",
     "descricao": "SALARIOS",
     "tipo": "D",
@@ -174,7 +217,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3e4b203-33f6-4650-8f04-b25555210b3a",
+    "id": "08ba0113-291a-4691-82cd-f8cdbf55be3f",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -185,7 +228,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "afe45afe-a7a9-48a8-b048-870328044ee8",
+    "id": "ef7a4cc9-afdc-463a-80dd-abd4925e1554",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -196,7 +239,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "dddee887-dbdd-4e15-b659-e7a75c97f7ff",
+    "id": "a814ce82-2909-45de-a35c-9be524c7f40f",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -207,7 +250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "be7b1b28-726c-4a68-9349-e2703da726e9",
+    "id": "02b252bb-c611-4c2f-a144-c024c1d4b025",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -218,7 +261,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "560b3469-3565-4f0f-9252-7979cafaca31",
+    "id": "0e1d7e54-1c83-40bd-bd1a-1f7f36068d77",
     "codigo": "4.1.01.01.0001",
     "descricao": "GRAOS REIDRATADOS",
     "tipo": "C",
@@ -239,7 +282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e957fdb9-38ae-4e19-8472-5bbe81dc2cba",
+    "id": "b6f020fa-4ca7-457a-91aa-03a6a8cd4c8b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS",
     "tipo": "C",
@@ -257,6 +300,102 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4000
+    }
+  },
+  {
+    "id": "ae11b9a6-c711-4bfc-ad1b-574d750794a5",
+    "codigo": "4.2",
+    "descricao": "4.2",
+    "tipo": "C",
+    "codigoPai": "4",
+    "nivel": 2,
+    "atividade": "PECUARIA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "e7054ce0-20a7-47ed-9f33-9dab6eba028d",
+    "codigo": "4.2.01",
+    "descricao": "4.2.01",
+    "tipo": "C",
+    "codigoPai": "4.2",
+    "nivel": 3,
+    "atividade": "PECUARIA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "249c67ec-9ea9-47eb-bd35-909ae59f8a47",
+    "codigo": "4.2.01.02",
+    "descricao": "4.2.01.02",
+    "tipo": "C",
+    "codigoPai": "4.2.01",
+    "nivel": 4,
+    "atividade": "PECUARIA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "a73dc102-b39b-4b7b-80f9-066cede9d33b",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "LAVRINHA SLN - MILHO",
+    "centroCusto": "F7T100 MILHO SEMENTE MILHO SEMENTE 03/2026 Ciclo:2490",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "unidadeNegocio": null,
+    "isInvalidMapping": false,
+    "orcado": {},
+    "realizado": {
+      "2026-02": 38317.13
+    }
+  },
+  {
+    "id": "63df797a-45c4-40b8-a490-d501ae7c6446",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL ",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "unidadeNegocio": "VERA CRUZ - SERINGAL",
+    "isInvalidMapping": true,
+    "orcado": {},
+    "realizado": {
+      "2026-02": 363.77
+    }
+  },
+  {
+    "id": "902a7282-ef03-44a9-9f1f-14beeee4a89d",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL ",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "unidadeNegocio": "VERA CRUZ - SERINGAL",
+    "isInvalidMapping": true,
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1859.89
     }
   }
 ];
