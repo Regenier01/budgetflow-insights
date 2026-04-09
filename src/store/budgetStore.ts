@@ -1,6 +1,45 @@
 import { create } from 'zustand';
 import type { AccountEntry, MonthKey, AtividadeKey, ExcelRow, UploadRecord } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
+import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
+
+/**
+ * Maps a DIVISAO string from Excel to an AtividadeKey.
+ * Uses normalized comparison to handle accents and casing.
+ */
+export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey | null {
+  if (!divisao) return null;
+  const norm = divisao.toUpperCase().trim()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, ''); // remove accents
+
+  if (norm === 'PECUARIA') return 'PECUARIA';
+  if (norm === 'SERINGAL') return 'SERINGAL';
+  if (norm === 'AGRICOLA') return 'AGRICOLA';
+  if (norm === 'CANA') return 'CANA';
+  if (norm === 'ADMINISTRACAO' || norm === 'ADMINISTRAÇÃO') return 'DESP_ADM_TRIB';
+  if (norm === 'LOGISTICA') return 'DESP_ADM_TRIB';
+  if (norm === 'ALMOXARIFADO') return 'DESP_ADM_TRIB';
+
+  return null;
+}
+
+/**
+ * Resolves the AtividadeKey for an Excel row using DIVISAO and NOMEDEPTO fields.
+ */
+export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey | null {
+  // 1. Try DIVISAO directly
+  const fromDivisao = mapDivisaoToAtividade(row.DIVISAO);
+  if (fromDivisao) return fromDivisao;
+
+  // 2. Try NOMEDEPTO via department mapping
+  const depto = String(row.NOMEDEPTO || '').trim();
+  if (depto && DEPARTMENT_MAPPING[depto]) {
+    const mapped = mapDivisaoToAtividade(DEPARTMENT_MAPPING[depto].divisao);
+    if (mapped) return mapped;
+  }
+
+  return null;
+}
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
