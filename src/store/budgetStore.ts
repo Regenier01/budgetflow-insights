@@ -43,19 +43,18 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   );
 
   leafAccounts.forEach(a => {
-    const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-    const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    // Soma apenas contas que pertencem ao GRUPO_CONTABIL 4 (Custos ou com código 4.)
+    if (a.tipo === 'C' || a.codigo.startsWith('4.')) {
+      const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
-    if (a.tipo === 'R') {
       orc += aOrc;
       real += aReal;
-    } else {
-      orc -= aOrc;
-      real -= aReal;
     }
   });
 
-  return { orc, real, diff: real - orc };
+  // Para despesas/custos, a diferença positiva é boa (orçado > realizado)
+  return { orc, real, diff: orc - real };
 }
 
 export function calculateTotalsByDivisao(
@@ -75,19 +74,18 @@ export function calculateTotalsByDivisao(
   );
 
   leafAccounts.forEach(a => {
-    const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-    const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    // Soma apenas contas que pertencem ao GRUPO_CONTABIL 4 (Custos ou com código 4.)
+    if (a.tipo === 'C' || a.codigo.startsWith('4.')) {
+      const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
-    if (a.tipo === 'R') {
       orc += aOrc;
       real += aReal;
-    } else {
-      orc -= aOrc;
-      real -= aReal;
     }
   });
 
-  return { orc, real, diff: real - orc };
+  // Para despesas/custos, a diferença positiva é boa (orçado > realizado)
+  return { orc, real, diff: orc - real };
 }
 
 interface BudgetState {
