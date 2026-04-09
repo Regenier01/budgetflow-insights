@@ -7,20 +7,26 @@ import type { MonthKey, AtividadeKey } from '@/types/budget';
 interface Props {
   atividadeFilter: AtividadeKey;
   selectedMonth: MonthKey | 'all';
+  costCenterFilter?: string;
 }
 
 interface Node {
   name: string;
   orc: number;
   real: number;
+  isInvalid?: boolean;
   children: Map<string, Node>;
 }
 
-export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
+export function AnalyticalTable({ atividadeFilter, selectedMonth, costCenterFilter }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
-  const filtered = accounts.filter(a => a.atividade === atividadeFilter);
+  let filtered = accounts.filter(a => a.atividade === atividadeFilter);
+  
+  if (costCenterFilter) {
+    filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
+  }
 
   const root = new Map<string, Node>();
 
@@ -45,6 +51,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     const nodeN9 = root.get(n9)!;
     nodeN9.orc += orc;
     nodeN9.real += real;
+    if (a.isInvalidMapping) nodeN9.isInvalid = true;
 
     if (!nodeN9.children.has(desc)) {
       nodeN9.children.set(desc, { name: desc, orc: 0, real: 0, children: new Map() });
@@ -52,6 +59,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
     const nodeDesc = nodeN9.children.get(desc)!;
     nodeDesc.orc += orc;
     nodeDesc.real += real;
+    if (a.isInvalidMapping) nodeDesc.isInvalid = true;
 
     if (prod) {
       if (!nodeDesc.children.has(prod)) {
@@ -60,6 +68,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
       const nodeProd = nodeDesc.children.get(prod)!;
       nodeProd.orc += orc;
       nodeProd.real += real;
+      if (a.isInvalidMapping) nodeProd.isInvalid = true;
     }
   });
 
@@ -136,7 +145,7 @@ export function AnalyticalTable({ atividadeFilter, selectedMonth }: Props) {
             
             <td className={cn(
               "text-right py-2 px-3 font-mono text-[11px] border-l border-slate-100",
-              level === 0 ? "font-bold text-slate-800" : "text-slate-700"
+              node.isInvalid ? "text-orange-500 font-bold" : (level === 0 ? "font-bold text-slate-800" : "text-slate-700")
             )}>
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>

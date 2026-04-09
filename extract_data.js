@@ -36,6 +36,38 @@ async function run() {
 export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringify(departmentMapping, null, 2)};
 `;
   writeFileSync('src/data/departmentMapping.ts', mappingOutput);
+  console.log('src/data/departmentMapping.ts gerado.');
+
+  // 1.5. Mapeamento de Centros de Custo
+  const ccMappingFile = 'data/C.c.xlsx';
+  let costCenterMapping = {};
+  
+  if (existsSync(ccMappingFile)) {
+    const workbook = XLSX.readFile(ccMappingFile);
+    const sheet = workbook.Sheets[workbook.SheetNames[0]];
+    const data = XLSX.utils.sheet_to_json(sheet);
+    
+    data.forEach(row => {
+      const cc = row['CENTRO DE CUSTO'];
+      if (cc) {
+        costCenterMapping[cc.trim()] = {
+          centroCusto: cc.trim(),
+          unidadeNegocio: row['UNIDADE DE NEGÓCIO'] || ''
+        };
+      }
+    });
+    console.log(`Mapeamento de centros de custo carregado: ${Object.keys(costCenterMapping).length} registros.`);
+  }
+
+  const ccMappingOutput = `export interface CostCenterInfo {
+  centroCusto: string;
+  unidadeNegocio: string;
+}
+
+export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.stringify(costCenterMapping, null, 2)};
+`;
+  writeFileSync('src/data/costCenterMapping.ts', ccMappingOutput);
+  console.log('src/data/costCenterMapping.ts gerado.');
 
   // 2. Extração de Realizado
   const realizadoDir = 'realizado';
@@ -57,7 +89,30 @@ export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = ${JSON.stringi
   console.log(`Total de linhas brutas extraídas: ${allRows.length}`);
 
   // 3. Processamento e Agregação (Lógica do budgetStore)
-  const accounts = processBudgetRows(allRows, departmentMapping);
+  const accounts = processBudgetRows(allRows, departmentMapping, costCenterMapping);
+
+  // 4. Gerar Mapeamento Atividade -> Centros de Custo
+  const activityCCMap = {};
+  accounts.forEach(acc => {
+    if (acc.centroCusto && acc.atividade) {
+      if (!activityCCMap[acc.atividade]) {
+        activityCCMap[acc.atividade] = new Set();
+      }
+      activityCCMap[acc.atividade].add(acc.centroCusto);
+    }
+  });
+
+  const finalCCMap = {};
+  for (const act in activityCCMap) {
+    finalCCMap[act] = Array.from(activityCCMap[act]).sort();
+  }
+
+  const activityCCMappingOutput = `import type { AtividadeKey } from '@/types/budget';
+
+export const ACTIVITY_CC_MAPPING: Record<AtividadeKey, string[]> = ${JSON.stringify(finalCCMap, null, 2)};
+`;
+  writeFileSync('src/data/activityCCMapping.ts', activityCCMappingOutput);
+  console.log('src/data/activityCCMapping.ts gerado.');
 
   const initialDataOutput = `import type { AccountEntry } from '@/types/budget';
 
@@ -67,7 +122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null,
   console.log('--- Extração finalizada com sucesso! ---');
 }
 
-// Funções Auxiliares (Replicadas do budgetStore)
+// Funções Auxiliares
 
 function dateToMonthKey(raw) {
   if (!raw) return null;
@@ -97,30 +152,47 @@ function mapAtividadeByDivisao(divisao) {
   return null;
 }
 
-function mapAtividade(row, departmentMapping) {
+function mapAtividade(row, departmentMapping, costCenterMapping) {
   const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
+  const centroCusto = row.NOMECUSTO ? String(row.NOMECUSTO).trim() : '';
+
   const mapping = departmentMapping[depto];
+  const ccMapping = costCenterMapping[centroCusto];
+
+  // Regra: Unidade de Negócio vem do Centro de Custo. Se não encontrar, null.
+  const unidadeNegocio = ccMapping ? ccMapping.unidadeNegocio : null;
+
+  let isInvalidMapping = false;
+  if (mapping && ccMapping) {
+    const deptUN = mapping.unidadeNegocio ? mapping.unidadeNegocio.trim().toUpperCase() : '';
+    const ccUN = ccMapping.unidadeNegocio ? ccMapping.unidadeNegocio.trim().toUpperCase() : '';
+    
+    if (deptUN && ccUN && deptUN !== ccUN) {
+      isInvalidMapping = true;
+    }
+  }
 
   if (mapping) {
     const divisao = mapping.divisao.trim().toUpperCase();
     const fromDivisao = mapAtividadeByDivisao(divisao);
     if (divisao === 'SERINGAL') {
-      return { atividade: 'SERINGAL', divisao: mapping.divisao, unidadeNegocio: mapping.unidadeNegocio };
+      return { atividade: 'SERINGAL', divisao: mapping.divisao, unidadeNegocio, isInvalidMapping };
     }
     return { 
       atividade: fromDivisao || 'PECUARIA', 
       divisao: mapping.divisao, 
-      unidadeNegocio: mapping.unidadeNegocio 
+      unidadeNegocio,
+      isInvalidMapping
     };
   }
 
   const currentDivisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
   const fromDivisao = mapAtividadeByDivisao(currentDivisao);
   if (fromDivisao) {
-    if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao };
-    return { atividade: fromDivisao, divisao: currentDivisao };
+    if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+    return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
   }
-  return { atividade: 'PECUARIA', divisao: currentDivisao };
+  return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
 }
 
 function mapTipo(contaContabil) {
@@ -130,9 +202,9 @@ function mapTipo(contaContabil) {
   return 'D';
 }
 
-function processBudgetRows(rows, departmentMapping) {
+function processBudgetRows(rows, departmentMapping, costCenterMapping) {
   const aggregated = new Map();
-  const fallbackMonth = '2027-01'; // Default em caso de erro na data
+  const fallbackMonth = '2027-01';
 
   for (const row of rows) {
     const conta = String(row.CONTA_CONTABIL || '').trim();
@@ -151,7 +223,7 @@ function processBudgetRows(rows, departmentMapping) {
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
     } else {
       const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
-      const { atividade, divisao: mappedDivisao, unidadeNegocio } = mapAtividade(row, departmentMapping);
+      const mapped = mapAtividade(row, departmentMapping, costCenterMapping);
 
       aggregated.set(aggKey, {
         saldo: { [monthKey]: saldo },
@@ -159,12 +231,13 @@ function processBudgetRows(rows, departmentMapping) {
         departamento: depto || undefined,
         centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
         coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
-        divisao: mappedDivisao || (row.DIVISAO ? String(row.DIVISAO) : undefined),
-        unidadeNegocio,
+        divisao: mapped.divisao || (row.DIVISAO ? String(row.DIVISAO) : undefined),
+        unidadeNegocio: mapped.unidadeNegocio,
         grupoContabilN9: row.GRUPOCONTABILN9 ? String(row.GRUPOCONTABILN9) : undefined,
         nomeProduto: nomeProduto || undefined,
-        atividade,
+        atividade: mapped.atividade,
         tipo: mapTipo(conta),
+        isInvalidMapping: mapped.isInvalidMapping,
       });
     }
   }
@@ -216,6 +289,7 @@ function processBudgetRows(rows, departmentMapping) {
       nomeProduto: data.nomeProduto,
       divisao: data.divisao,
       unidadeNegocio: data.unidadeNegocio,
+      isInvalidMapping: data.isInvalidMapping,
       orcado: {},
       realizado: data.saldo,
     });

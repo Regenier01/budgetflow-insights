@@ -1,0 +1,451 @@
+export interface CostCenterInfo {
+  centroCusto: string;
+  unidadeNegocio: string;
+}
+
+export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = {
+  "CONDOMINIO CAPELINHA": {
+    "centroCusto": "CONDOMINIO CAPELINHA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "COMPRAS": {
+    "centroCusto": "COMPRAS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "DEPARTAMENTO JURIDICO": {
+    "centroCusto": "DEPARTAMENTO JURIDICO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "F1T10 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T10 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T3 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T3 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T4 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T4 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T5 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T5 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T6 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T6 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T6 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2382": {
+    "centroCusto": "F1T6 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2382",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - SOJA"
+  },
+  "F1T8 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T8 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F1T8 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2397": {
+    "centroCusto": "F1T8 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2397",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - SOJA"
+  },
+  "F1T9 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393": {
+    "centroCusto": "F1T9 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2393",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F4T12 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T12 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T124 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T124 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T18 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T18 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T2 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T2 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T20 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2391": {
+    "centroCusto": "F4T20 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2391",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T20 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2402": {
+    "centroCusto": "F4T20 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2402",
+    "unidadeNegocio": "JÓIA - SOJA"
+  },
+  "F4T22 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T22 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T312 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T312 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T328 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398": {
+    "centroCusto": "F4T328 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F4T350 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2407": {
+    "centroCusto": "F4T350 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2407",
+    "unidadeNegocio": "JÓIA - SOJA"
+  },
+  "F50T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2392": {
+    "centroCusto": "F50T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2392",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T1 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2378": {
+    "centroCusto": "F50T1 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2378",
+    "unidadeNegocio": "UNIÃO - SOJA"
+  },
+  "F50T11 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2408": {
+    "centroCusto": "F50T11 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2408",
+    "unidadeNegocio": "UNIÃO - SOJA"
+  },
+  "F50T11 MILHO SEMENTE A DEFINIR MILHO 02/2022 Ciclo:2411": {
+    "centroCusto": "F50T11 MILHO SEMENTE A DEFINIR MILHO 02/2022 Ciclo:2411",
+    "unidadeNegocio": "UNIÃO - MILHO"
+  },
+  "F50T11 SORGO SEMENTE A DEFINIR SORGO 02/2022 Ciclo:2412": {
+    "centroCusto": "F50T11 SORGO SEMENTE A DEFINIR SORGO 02/2022 Ciclo:2412",
+    "unidadeNegocio": "UNIÃO - SORGO"
+  },
+  "F50T2 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T2 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T3 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T3 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T4 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T4 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T5 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T5 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T5 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2378": {
+    "centroCusto": "F50T5 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2020 CL:2378",
+    "unidadeNegocio": "UNIÃO - SOJA"
+  },
+  "F50T5 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2401": {
+    "centroCusto": "F50T5 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2401",
+    "unidadeNegocio": "UNIÃO - SOJA"
+  },
+  "F50T6 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T6 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T7 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T7 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T8 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T8 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F50T9 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399": {
+    "centroCusto": "F50T9 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2399",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F51T1 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2405": {
+    "centroCusto": "F51T1 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2405",
+    "unidadeNegocio": "CANADÁ - SOJA"
+  },
+  "F7T100 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2406": {
+    "centroCusto": "F7T100 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2406",
+    "unidadeNegocio": "LAVRINHA SLN - SOJA"
+  },
+  "F7T100 MILHO SEMENTE MILHO SEMENTE 02/2022 Ciclo:2410": {
+    "centroCusto": "F7T100 MILHO SEMENTE MILHO SEMENTE 02/2022 Ciclo:2410",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T101 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T101 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T102 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T102 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T103 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T103 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T201 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T201 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T202 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T202 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F7T203 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394": {
+    "centroCusto": "F7T203 - MILHO SEMENTE - MILHO SEMENTE - 02/2021 CL:2394",
+    "unidadeNegocio": "LAVRINHA SLN - MILHO"
+  },
+  "F9T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2390": {
+    "centroCusto": "F9T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2390",
+    "unidadeNegocio": "LAGUNA - PASTAGEM"
+  },
+  "F9T10 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395": {
+    "centroCusto": "F9T10 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395",
+    "unidadeNegocio": "LAGUNA - SORGO"
+  },
+  "F9T13 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395": {
+    "centroCusto": "F9T13 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395",
+    "unidadeNegocio": "LAGUNA - SORGO"
+  },
+  "F9T14 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395": {
+    "centroCusto": "F9T14 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395",
+    "unidadeNegocio": "LAGUNA - SORGO"
+  },
+  "F9T15 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T15 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T16 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T16 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T17 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T17 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T2 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395": {
+    "centroCusto": "F9T2 - SORGO COMERCIAL - COMERCIAL - 03/2021 CL:2395",
+    "unidadeNegocio": "LAGUNA - SORGO"
+  },
+  "F9T20 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2404": {
+    "centroCusto": "F9T20 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2404",
+    "unidadeNegocio": "LAGUNA - SOJA"
+  },
+  "F9T21 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T21 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T22 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T22 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T23 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T23 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T30 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2404": {
+    "centroCusto": "F9T30 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2021 CL:2404",
+    "unidadeNegocio": "LAGUNA - SOJA"
+  },
+  "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2022 Ciclo:2415": {
+    "centroCusto": "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2022 Ciclo:2415",
+    "unidadeNegocio": "LAGUNA - SORGO"
+  },
+  "F9T31 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T31 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T32 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T32 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T33 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T33 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T41 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T41 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T42 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396": {
+    "centroCusto": "F9T42 - MILHO SEMENTE - MILHO SEMENTE - 03/2021 CL:2396",
+    "unidadeNegocio": "LAGUNA - MILHO"
+  },
+  "F9T9 - PASTAGEM - A DEFINIR PASTAGEM - 03/2020 CL:2375": {
+    "centroCusto": "F9T9 - PASTAGEM - A DEFINIR PASTAGEM - 03/2020 CL:2375",
+    "unidadeNegocio": "LAGUNA - PASTAGEM"
+  },
+  "F9T9 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2400": {
+    "centroCusto": "F9T9 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2021 CL:2400",
+    "unidadeNegocio": "LAGUNA - SOJA"
+  },
+  "FATURAMENTO": {
+    "centroCusto": "FATURAMENTO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "GOVERNANCIA CORPORATIVA": {
+    "centroCusto": "GOVERNANCIA CORPORATIVA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "DIRETORIA": {
+    "centroCusto": "DIRETORIA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "LOGISTICA": {
+    "centroCusto": "LOGISTICA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "MARKETING INTERNO": {
+    "centroCusto": "MARKETING INTERNO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "ORGANIZACAO PREDIAL": {
+    "centroCusto": "ORGANIZACAO PREDIAL",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PESSOAL": {
+    "centroCusto": "PESSOAL",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETO DIGITALIZACAO DE DOCUMENTOS": {
+    "centroCusto": "PROJETO DIGITALIZACAO DE DOCUMENTOS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETO DIGITALIZAÇÃO DE DOCUMENTOS": {
+    "centroCusto": "PROJETO DIGITALIZAÇÃO DE DOCUMENTOS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETO DE COMBATE A INCENDIO NA CENTRAL": {
+    "centroCusto": "PROJETO DE COMBATE A INCENDIO NA CENTRAL",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "REFORMA GERAL PREDIOS ADMINISTRATIVO": {
+    "centroCusto": "REFORMA GERAL PREDIOS ADMINISTRATIVO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETO INTEGRADO AGRÍCOLA E PECUÁRIA": {
+    "centroCusto": "PROJETO INTEGRADO AGRÍCOLA E PECUÁRIA",
+    "unidadeNegocio": "Sementes e Grãos"
+  },
+  "RATEIO CONFINAMENTO": {
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "unidadeNegocio": "CONFINAMENTO"
+  },
+  "RATEIO DEPARTAMENTOS": {
+    "centroCusto": "RATEIO DEPARTAMENTOS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RATEIO DESENVOLVIMENTO HUMANO": {
+    "centroCusto": "RATEIO DESENVOLVIMENTO HUMANO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RATEIO FINANCEIRO": {
+    "centroCusto": "RATEIO FINANCEIRO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RATEIO GADO GERAL": {
+    "centroCusto": "RATEIO GADO GERAL",
+    "unidadeNegocio": "GOTEJO - PECUÁRIA"
+  },
+  "RATEIO GERENCIA DE DIVISAO": {
+    "centroCusto": "RATEIO GERENCIA DE DIVISAO",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RATEIO INFORMACAO E TECNOLOGIA": {
+    "centroCusto": "RATEIO INFORMACAO E TECNOLOGIA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETOS E INVESTIMENTOS": {
+    "centroCusto": "PROJETOS E INVESTIMENTOS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RATEIO SERINGAL": {
+    "centroCusto": "RATEIO SERINGAL",
+    "unidadeNegocio": "VERA CRUZ - SERINGAL"
+  },
+  "RATEIO TROPA GERAL": {
+    "centroCusto": "RATEIO TROPA GERAL",
+    "unidadeNegocio": "TROPA"
+  },
+  "F1T50 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2426": {
+    "centroCusto": "F1T50 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2426",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - SOJA"
+  },
+  "F1T50 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2418": {
+    "centroCusto": "F1T50 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2418",
+    "unidadeNegocio": "VERA CRUZ GOTEJO - PASTAGEM"
+  },
+  "F4T350 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2424": {
+    "centroCusto": "F4T350 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2424",
+    "unidadeNegocio": "JÓIA - SOJA"
+  },
+  "F4T350 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2421": {
+    "centroCusto": "F4T350 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2421",
+    "unidadeNegocio": "JÓIA - PASTAGEM"
+  },
+  "F9T30 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2417": {
+    "centroCusto": "F9T30 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2417",
+    "unidadeNegocio": "LAGUNA - PASTAGEM"
+  },
+  "F51T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2419": {
+    "centroCusto": "F51T1 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2419",
+    "unidadeNegocio": "CANADÁ - PASTAGEM"
+  },
+  "F50T11 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2420": {
+    "centroCusto": "F50T11 - PASTAGEM - A DEFINIR PASTAGEM - 02/2022 CL:2420",
+    "unidadeNegocio": "UNIÃO - PASTAGEM"
+  },
+  "F9T20 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2425": {
+    "centroCusto": "F9T20 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2425",
+    "unidadeNegocio": "LAGUNA - SOJA"
+  },
+  "F50T10 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2423": {
+    "centroCusto": "F50T10 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2423",
+    "unidadeNegocio": "UNIÃO - SOJA"
+  },
+  "F51T1 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2422": {
+    "centroCusto": "F51T1 - SOJA COMERCIAL - A DEFINIR SOJA - 10/2022 CL:2422",
+    "unidadeNegocio": "CANADÁ - SOJA"
+  },
+  "CONTROLADORIA": {
+    "centroCusto": "CONTROLADORIA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "FISCAL": {
+    "centroCusto": "FISCAL",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "RESIDENCIA ACIONISTAS": {
+    "centroCusto": "RESIDENCIA ACIONISTAS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "CONFRATERNIZACOES E EVENTOS COM COLABORADORES": {
+    "centroCusto": "CONFRATERNIZACOES E EVENTOS COM COLABORADORES",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "F55T1 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2023 CL:2449": {
+    "centroCusto": "F55T1 - SOJA COMERCIAL - A DEFINIR SOJA - 11/2023 CL:2449",
+    "unidadeNegocio": "SÃO JOSE - SOJA"
+  },
+  "REFORMA RESIDENCIA DOS ACIONISTAS": {
+    "centroCusto": "REFORMA RESIDENCIA DOS ACIONISTAS",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "F52T1 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2475": {
+    "centroCusto": "F52T1 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2475",
+    "unidadeNegocio": "VALE DO IMBÉ - SORGO"
+  },
+  "F52T1 GERGELIM GRAO GERGELIM GRAO 02/2025 Ciclo:2476": {
+    "centroCusto": "F52T1 GERGELIM GRAO GERGELIM GRAO 02/2025 Ciclo:2476",
+    "unidadeNegocio": "VALE DO IMBÉ - GERGELIM"
+  },
+  "GESTAO ADMINISTRATIVA": {
+    "centroCusto": "GESTAO ADMINISTRATIVA",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "PROJETO ACADEMIA DE LIDERES 2025/2026": {
+    "centroCusto": "PROJETO ACADEMIA DE LIDERES 2025/2026",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "APORTE PLANO DE SAUDE": {
+    "centroCusto": "APORTE PLANO DE SAUDE",
+    "unidadeNegocio": "ADMINISTRAÇÃO"
+  },
+  "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491": {
+    "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
+    "unidadeNegocio": "LAGUNA - GIRASSOL"
+  }
+};

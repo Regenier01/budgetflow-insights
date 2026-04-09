@@ -2,7 +2,7 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "a5861fcf-46c1-43ac-888e-73c8a46952a8",
+    "id": "8a7f8ca6-7a20-47bb-a054-d84eed2cc1e6",
     "codigo": "3",
     "descricao": "3",
     "tipo": "D",
@@ -13,7 +13,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "bff5f710-b54f-4012-bff0-07ccb38d2790",
+    "id": "ed19f9da-ea22-4007-9c3f-3dfb32911834",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -24,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "43d5dfb7-5e2b-457e-88a2-6599d48cc0cf",
+    "id": "9df59282-b984-40d5-95cd-f485a6372756",
     "codigo": "3.4.01",
     "descricao": "3.4.01",
     "tipo": "D",
@@ -35,7 +35,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e3a9bfee-2188-4de4-8ca8-5af3098bd4db",
+    "id": "9ce0f57c-6da3-4111-a9b9-eef968134923",
     "codigo": "3.4.01.10",
     "descricao": "3.4.01.10",
     "tipo": "D",
@@ -46,7 +46,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2c6b0c16-b06c-4b06-9467-b132a5d104b1",
+    "id": "507958b9-e25e-47d0-9853-ff4fb991a2f6",
     "codigo": "3.4.01.10.0060",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "D",
@@ -60,13 +60,14 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "XXXX",
     "divisao": "ADMINISTRAÇÃO",
     "unidadeNegocio": "ADMINISTRAÇÃO",
+    "isInvalidMapping": false,
     "orcado": {},
     "realizado": {
       "2026-04": 0
     }
   },
   {
-    "id": "2ae12617-41cc-4563-ac03-d74cb1840d32",
+    "id": "db433446-3ba6-4939-80ab-a12ad4751fa2",
     "codigo": "3.4.01.10.0060",
     "descricao": "SALARIOS",
     "tipo": "D",
@@ -80,13 +81,14 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SAL",
     "divisao": "ADMINISTRAÇÃO",
     "unidadeNegocio": "ADMINISTRAÇÃO",
+    "isInvalidMapping": false,
     "orcado": {},
     "realizado": {
       "2026-04": 0
     }
   },
   {
-    "id": "5ae0feb9-20a7-4bf4-bce6-1c883a6b124c",
+    "id": "48defb7d-8139-482f-9390-6246a8974bef",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -97,7 +99,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2134e111-88f7-4faa-896a-775c4c5302a9",
+    "id": "9d09de04-32d3-4adf-8618-1ac946a61f1a",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -108,7 +110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a439c7a8-3b53-4176-8dc9-cc8652ba31fb",
+    "id": "c6594328-dafe-4f0d-8d25-febafeca8b0d",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -119,7 +121,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5a55edc5-6e44-44c9-9565-696acca91f7a",
+    "id": "63991fc4-290c-4058-8f24-1ff714dd1e97",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -130,7 +132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5c76f2d0-9dee-4801-b405-028a54febdd9",
+    "id": "49918c24-e48f-4691-af56-5ee5ae91d50e",
     "codigo": "4.1.01.01.0001",
     "descricao": "GRAOS REIDRATADOS",
     "tipo": "C",
@@ -144,13 +146,14 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
     "unidadeNegocio": "CONFINAMENTO",
+    "isInvalidMapping": false,
     "orcado": {},
     "realizado": {
       "2026-04": 0
     }
   },
   {
-    "id": "55cc5d8a-30cc-4a50-b2e8-1fca66253179",
+    "id": "a17188aa-96fc-429f-aa8e-00e4a2dd2bd6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS",
     "tipo": "C",
@@ -163,7 +166,8 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "XXXX",
     "divisao": "SERINGAL",
-    "unidadeNegocio": "BANDEIRANTES - SERINGAL",
+    "unidadeNegocio": "VERA CRUZ - SERINGAL",
+    "isInvalidMapping": true,
     "orcado": {},
     "realizado": {
       "2026-04": 0

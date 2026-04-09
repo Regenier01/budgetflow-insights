@@ -14,6 +14,7 @@ export interface AccountEntry {
   nomeProduto?: string;
   divisao?: string;
   unidadeNegocio?: string;
+  isInvalidMapping?: boolean;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
 }

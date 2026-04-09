@@ -4,11 +4,13 @@ import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
+import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
 import NotFound from './NotFound';
 
 export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
+  const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
   
   const atividade = ATIVIDADES.find(a => a.key === id);
   
@@ -29,6 +31,18 @@ export default function ActivityDetailPage() {
         </div>
         
         <div className="flex flex-wrap gap-3">
+          <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
+            <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+              <SelectValue placeholder="Centro de Custo" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
+              {(ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || []).map((cc) => (
+                <SelectItem key={cc} value={cc}>{cc}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+
           <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
             <SelectTrigger className="w-[160px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
               <SelectValue placeholder="Período" />
@@ -55,6 +69,7 @@ export default function ActivityDetailPage() {
         <AnalyticalTable 
           atividadeFilter={atividade.key}
           selectedMonth={selectedMonth}
+          costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
         />
       </div>
     </div>
