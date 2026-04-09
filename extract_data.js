@@ -167,7 +167,7 @@ function mapAtividadeByDivisao(divisao) {
   return null;
 }
 
-function mapAtividade(row, departmentMapping, costCenterMapping) {
+function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
   const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
   const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
 
@@ -187,6 +187,24 @@ function mapAtividade(row, departmentMapping, costCenterMapping) {
     }
   }
 
+  const divisaoFinal = mapping ? mapping.divisao : (getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined);
+
+  // REGRAS DE RECEITAS ESPECÍFICAS
+  if (conta) {
+    if (conta === '3.1.02.03.0001') {
+      return { atividade: 'SERINGAL', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
+    }
+    if (conta.startsWith('3.1.01.01')) {
+      return { atividade: 'PECUARIA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
+    }
+    if (conta.startsWith('3.1.02.01')) {
+      return { atividade: 'AGRICOLA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
+    }
+    if (conta.startsWith('3.1.02.02')) {
+      return { atividade: 'CANA', divisao: divisaoFinal, unidadeNegocio, isInvalidMapping };
+    }
+  }
+
   if (mapping) {
     const divisao = mapping.divisao.trim().toUpperCase();
     const fromDivisao = mapAtividadeByDivisao(divisao);
@@ -201,14 +219,14 @@ function mapAtividade(row, departmentMapping, costCenterMapping) {
     };
   }
 
-    const currentDivisao = getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined;
-    const fromDivisao = mapAtividadeByDivisao(currentDivisao);
-    if (fromDivisao) {
-      if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-      return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-    }
-    return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+  const currentDivisao = divisaoFinal;
+  const fromDivisao = mapAtividadeByDivisao(currentDivisao);
+  if (fromDivisao) {
+    if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+    return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
   }
+  return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+}
 
 function mapTipo(contaContabil) {
   const conta = String(contaContabil || '').trim();
@@ -246,7 +264,7 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
     } else {
       const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
-      const mapped = mapAtividade(row, departmentMapping, costCenterMapping);
+      const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
 
       aggregated.set(aggKey, {
         saldo: { [monthKey]: saldo },
