@@ -106,10 +106,10 @@ export default function ActivityDetailPage() {
           />
         </div>
 
-        {/* Seção de Custos e Despesas */}
+        {/* Seção de Custos */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-slate-900">Abertura de Custos e Despesas</h2>
+            <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
             <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
               Saídas
             </div>
@@ -119,9 +119,28 @@ export default function ActivityDetailPage() {
             selectedMonth={selectedMonth}
             costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
             departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-            tipoFilter={['C', 'D']}
-            title="Detalhamento de Custos e Despesas"
+            tipoFilter={['C']}
+            title="Detalhamento de Custos"
             accentColor="orange"
+          />
+        </div>
+
+        {/* Seção de Despesas */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+            <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+              Saídas
+            </div>
+          </div>
+          <AnalyticalTable 
+            atividadeFilter={atividade.key}
+            selectedMonth={selectedMonth}
+            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+            tipoFilter={['D']}
+            title="Detalhamento de Despesas"
+            accentColor="red"
           />
         </div>
       </div>

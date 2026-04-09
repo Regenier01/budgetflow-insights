@@ -202,10 +202,11 @@ function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
   return { atividade: fromDivisao || 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
 }
 
-function mapTipo(contaContabil) {
+function mapTipo(contaContabil, grupoContabil) {
   const conta = String(contaContabil || '').trim();
+  const grupo = String(grupoContabil || '').trim();
   if (conta.startsWith('3.1') || conta.startsWith('3.01')) return 'R';
-  if (conta.startsWith('3.3') || conta.startsWith('3.03') || conta.startsWith('4')) return 'C';
+  if (conta.startsWith('4.') || grupo === '4' || grupo.startsWith('4')) return 'C';
   return 'D';
 }
 
@@ -245,7 +246,7 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
         grupoContabilN9: getValue(row, 'GRUPOCONTABILN9') ? String(getValue(row, 'GRUPOCONTABILN9')) : undefined,
         nomeProduto: nomeProduto || undefined,
         atividade: mapped.atividade,
-        tipo: mapTipo(conta),
+        tipo: mapTipo(conta, getValue(row, 'GRUPOCONTABILN9') || getValue(row, 'GRUPO_CONTABIL') || getValue(row, 'GRUPOCONTABIL')),
         isInvalidMapping: mapped.isInvalidMapping,
       });
     }
