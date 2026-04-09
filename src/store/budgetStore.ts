@@ -12,13 +12,12 @@ export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey
   const norm = divisao.toUpperCase().trim()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, ''); // remove accents
 
-  if (norm === 'PECUARIA') return 'PECUARIA';
-  if (norm === 'SERINGAL') return 'SERINGAL';
-  if (norm === 'AGRICOLA') return 'AGRICOLA';
-  if (norm === 'CANA') return 'CANA';
-  if (norm === 'ADMINISTRACAO' || norm === 'ADMINISTRAÇÃO') return 'DESP_ADM_TRIB';
-  if (norm === 'LOGISTICA') return 'DESP_ADM_TRIB';
-  if (norm === 'ALMOXARIFADO') return 'DESP_ADM_TRIB';
+  if (norm.includes('PECUA') || norm.includes('GADO')) return 'PECUARIA';
+  if (norm.includes('SERING') || norm.includes('LATEX') || norm.includes('BORRACHA')) return 'SERINGAL';
+  if (norm.includes('AGRIC') || norm.includes('SOJA') || norm.includes('MILHO') || norm.includes('GRAO')) return 'AGRICOLA';
+  if (norm.includes('CANA')) return 'CANA';
+  if (norm.includes('ADM') || norm.includes('TRIB') || norm.includes('LOGISTICA') || norm.includes('ALMOXARIFADO')) return 'DESP_ADM_TRIB';
+  if (norm.includes('ENCARGO')) return 'ENCARGOS';
 
   return null;
 }
@@ -63,11 +62,11 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
 export function mapAtividadeFromConta(conta: string): AtividadeKey | null {
   const c = String(conta || '').trim();
   
-  // Regras de mapeamento por prefixo de conta contábil
+  // Regras de mapeamento por prefixo de conta contábil (Receitas)
   if (c.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (c.startsWith('3.1.01.01')) return 'PECUARIA';
   if (c.startsWith('3.1.02.02')) return 'CANA';
-  if (c.startsWith('3.1.02.03')) return 'SERINGAL'; // Regra: 3.1.02.03 -> Receita de Seringal
+  if (c.startsWith('3.1.02.03')) return 'SERINGAL';
   
   return null;
 }
@@ -76,14 +75,14 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
 
+  // Somamos apenas as folhas (leaf nodes) para evitar duplicidade
   const leafAccounts = accounts.filter(a => 
-    !accounts.some(child => child.codigoPai === a.codigo) &&
-    !a.codigo.startsWith('3.1.01.01')
+    !accounts.some(child => child.codigoPai === a.codigo)
   );
 
   leafAccounts.forEach(a => {
-    // Soma apenas contas que pertencem ao GRUPO_CONTABIL 4 (Custos ou com código 4.)
-    if (a.tipo === 'C' || a.codigo.startsWith('4.')) {
+    // Consideramos apenas Custos (C) e Despesas (D) para o consolidado geral de gastos
+    if (a.tipo === 'C' || a.tipo === 'D') {
       const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
@@ -92,7 +91,6 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
     }
   });
 
-  // Para despesas/custos, a diferença positiva é boa (orçado > realizado)
   return { orc, real, diff: orc - real };
 }
 
@@ -103,18 +101,14 @@ export function calculateTotalsByDivisao(
   let orc = 0;
   let real = 0;
 
-  const filtered = accounts.filter(a => 
-    a.atividade === filterAtividade && 
-    !a.codigo.startsWith('3.1.01.01')
-  );
+  const filtered = accounts.filter(a => a.atividade === filterAtividade);
   
   const leafAccounts = filtered.filter(a => 
     !accounts.some(child => child.codigoPai === a.codigo)
   );
 
   leafAccounts.forEach(a => {
-    // Soma apenas contas que pertencem ao GRUPO_CONTABIL 4 (Custos ou com código 4.)
-    if (a.tipo === 'C' || a.codigo.startsWith('4.')) {
+    if (a.tipo === 'C' || a.tipo === 'D') {
       const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
@@ -123,7 +117,6 @@ export function calculateTotalsByDivisao(
     }
   });
 
-  // Para despesas/custos, a diferença positiva é boa (orçado > realizado)
   return { orc, real, diff: orc - real };
 }
 
@@ -168,37 +161,23 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
       const month = dateToMonthKey(row.DATA) || fallbackPeriod;
       
-      // Resolve atividade from row's DIVISAO/NOMEDEPTO
+      // Resolve atividade da linha
       const rowAtividade = resolveAtividadeFromRow(row);
-      
-      // Aplicar regra de mapeamento por conta
       const mappedAtividade = mapAtividadeFromConta(conta) || rowAtividade;
 
-      // Find matching account: prefer match by codigo + atividade, fallback to codigo only
+      // Busca estrita: código + atividade
+      // Isso evita que custos de 'Seringal' caiam em contas de 'Pecuária'
       let existing: AccountEntry | undefined;
       
       if (mappedAtividade) {
         existing = newAccounts.find(a => a.codigo === conta && a.atividade === mappedAtividade);
       }
-      
-      if (!existing && rowAtividade) {
-        existing = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade);
-      }
-      
-      if (!existing) {
-        // Fallback: match by codigo only (for unique codes)
-        const matches = newAccounts.filter(a => a.codigo === conta);
-        if (matches.length === 1) {
-          existing = matches[0];
-        }
-        // If multiple matches and no atividade resolved, skip to avoid cross-contamination
-      }
 
       if (existing) {
         existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
-        if (mappedAtividade) existing.atividade = mappedAtividade;
         count++;
       }
+      // Se não encontrar uma conta específica para aquela atividade, ignoramos para evitar poluição
     });
 
     set({ accounts: newAccounts });
