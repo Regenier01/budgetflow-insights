@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { AccountEntry, MonthKey, AtividadeKey } from '@/types/budget';
+import type { AccountEntry, MonthKey, AtividadeKey, ExcelRow, UploadRecord } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
@@ -21,45 +21,23 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-export function getAccountCategory(descricao: string): string {
-  const desc = descricao.toUpperCase();
+export function mapAtividadeFromConta(conta: string): AtividadeKey | null {
+  const c = String(conta || '').trim();
+  // Regra solicitada: 3.1.02.01 -> AGRÍCOLA
+  if (c.startsWith('3.1.02.01')) return 'AGRICOLA';
   
-  if (desc.includes('PESSOAL') || desc.includes('ENCARGO') || desc.includes('FOLHA') || desc.includes('SALARIO') || desc.includes('OUTROS BENEF') || desc.includes('BENEFICIO') || desc.includes('VANTAGEM')) {
-    return 'Custo de Pessoal';
-  }
+  // Outras regras padrão
+  if (c.startsWith('3.1.01.01')) return 'PECUARIA';
+  if (c.startsWith('3.1.02.02')) return 'CANA';
+  if (c === '3.1.02.03.0001') return 'SERINGAL';
   
-  if (desc.includes('DEPRECIA') || desc.includes('AMORTIZA')) {
-    return 'Depreciações';
-  }
-
-  if (desc.includes('MANUTEN') || desc.includes('REPARO')) {
-    return 'Manutenção e Reparos';
-  }
-
-  if (desc.includes('COMBUSTIVEL') || desc.includes('LUBRIFICANTE') || desc.includes('GASOLINA') || desc.includes('OLEO DIESEL')) {
-    return 'Combustíveis e Lubrificantes';
-  }
-
-  if (desc.includes('INSUMO') || desc.includes('ADUBO') || desc.includes('DEFENSIVO') || desc.includes('SEMENTE') || desc.includes('FERTILIZAN')) {
-    return 'Insumos e Materiais';
-  }
-
-  if (desc.includes('SERVICO') || desc.includes('FRETE') || desc.includes('CONTRATO')) {
-    return 'Serviços de Terceiros';
-  }
-
-  if (desc.includes('ENERGIA') || desc.includes('ELETRICA') || desc.includes('AGUA') || desc.includes('TELEFONE') || desc.includes('INTERNET')) {
-    return 'Energia e Utilidades';
-  }
-
-  return 'Outros Custos';
+  return null;
 }
 
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
 
-  // Filtramos as contas folha e excluímos as que começam com 3.1.01.01
   const leafAccounts = accounts.filter(a => 
     !accounts.some(child => child.codigoPai === a.codigo) &&
     !a.codigo.startsWith('3.1.01.01')
@@ -88,7 +66,6 @@ export function calculateTotalsByDivisao(
   let orc = 0;
   let real = 0;
 
-  // Filtramos todas as contas da atividade, excluindo as que começam com 3.1.01.01
   const filtered = accounts.filter(a => 
     a.atividade === filterAtividade && 
     !a.codigo.startsWith('3.1.01.01')
@@ -114,20 +91,25 @@ export function calculateTotalsByDivisao(
   return { orc, real, diff: real - orc };
 }
 
-
 interface BudgetState {
   accounts: AccountEntry[];
+  uploads: UploadRecord[];
   setAccounts: (accounts: AccountEntry[]) => void;
   clearAllData: () => void;
+  addUpload: (record: UploadRecord) => void;
   updateRealizado: (codigo: string, month: MonthKey, value: number) => void;
+  importExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey) => number;
 }
 
-export const useBudgetStore = create<BudgetState>((set) => ({
+export const useBudgetStore = create<BudgetState>((set, get) => ({
   accounts: INITIAL_ACCOUNTS,
+  uploads: [],
 
   setAccounts: (accounts) => set({ accounts }),
 
-  clearAllData: () => set({ accounts: [] }),
+  clearAllData: () => set({ accounts: [], uploads: [] }),
+
+  addUpload: (record) => set((s) => ({ uploads: [...s.uploads, record] })),
 
   updateRealizado: (codigo, month, value) =>
     set((s) => ({
@@ -137,4 +119,31 @@ export const useBudgetStore = create<BudgetState>((set) => ({
           : a
       ),
     })),
+
+  importExcelRows: (rows, fallbackPeriod) => {
+    const { accounts } = get();
+    const newAccounts = [...accounts];
+    let count = 0;
+
+    rows.forEach(row => {
+      const conta = String(row.CONTA_CONTABIL || '').trim();
+      if (!conta) return;
+
+      const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      
+      // Aplicar regra de mapeamento por conta
+      const mappedAtividade = mapAtividadeFromConta(conta);
+
+      const existing = newAccounts.find(a => a.codigo === conta);
+      if (existing) {
+        existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
+        if (mappedAtividade) existing.atividade = mappedAtividade;
+        count++;
+      }
+    });
+
+    set({ accounts: newAccounts });
+    return count;
+  }
 }));
