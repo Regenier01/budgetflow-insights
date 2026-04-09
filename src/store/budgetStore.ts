@@ -4,10 +4,13 @@ import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 
+// Função auxiliar para normalizar strings de busca
+const normalizeKey = (str: string) => 
+  str.toUpperCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
 export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey | null {
   if (!divisao) return null;
-  const norm = divisao.toUpperCase().trim()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const norm = normalizeKey(divisao);
 
   if (norm.includes('PECUA') || norm.includes('GADO')) return 'PECUARIA';
   if (norm.includes('SERING') || norm.includes('LATEX') || norm.includes('BORRACHA')) return 'SERINGAL';
@@ -21,8 +24,8 @@ export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey
 
 export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   const conta = String(row.CONTA_CONTABIL || '').trim();
-  const depto = String(row.NOMEDEPTO || '').trim();
-  const cc = String(row.NOMECUSTO || '').trim();
+  const depto = String(row.NOMEDEPTO || '').trim().toUpperCase();
+  const cc = String(row.NOMECUSTO || '').trim().toUpperCase();
   const divisao = String(row.DIVISAO || '').trim();
 
   // 1. Regras de conta contábil (Prioridade Máxima - Receitas)
@@ -31,15 +34,17 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
 
-  // 2. Tenta pelo Mapeamento de Departamento (Mais específico que Divisão)
-  if (depto && (DEPARTMENT_MAPPING as any)[depto]) {
-    const mapped = mapDivisaoToAtividade((DEPARTMENT_MAPPING as any)[depto].divisao);
+  // 2. Tenta pelo Mapeamento de Departamento
+  const deptInfo = (DEPARTMENT_MAPPING as any)[depto];
+  if (deptInfo) {
+    const mapped = mapDivisaoToAtividade(deptInfo.divisao);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
   // 3. Tenta pelo Mapeamento de Centro de Custo
-  if (cc && (COST_CENTER_MAPPING as any)[cc]) {
-    const mapped = mapDivisaoToAtividade((COST_CENTER_MAPPING as any)[cc].unidadeNegocio);
+  const ccInfo = (COST_CENTER_MAPPING as any)[cc];
+  if (ccInfo) {
+    const mapped = mapDivisaoToAtividade(ccInfo.unidadeNegocio);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
@@ -66,7 +71,6 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
-  // Somamos apenas as folhas (nível 5) para evitar duplicidade com totais de pais
   const leafAccounts = accounts.filter(a => a.nivel === 5);
   leafAccounts.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
@@ -117,7 +121,6 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const month = dateToMonthKey(row.DATA) || fallbackPeriod;
       const rowAtividade = resolveAtividadeFromRow(row);
 
-      // Busca estrita por CÓDIGO + ATIVIDADE para garantir que o custo caia na "gaveta" certa
       const existing = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade);
 
       if (existing) {
