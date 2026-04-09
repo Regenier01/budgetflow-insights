@@ -2,7 +2,7 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "509410bc-9a07-4ac7-87ed-a866e097203b",
+    "id": "9ca71d21-d3f7-412b-9b43-dce2100aab79",
     "codigo": "3",
     "descricao": "3",
     "tipo": "D",
@@ -13,7 +13,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "98bd8f5f-5ef2-4926-88a1-e4ccb2c023ca",
+    "id": "9253f683-8b69-4a2b-b503-841e8d53f754",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -24,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "65db15d4-99d3-4e36-b8bd-37f314e8264b",
+    "id": "f5a32a59-f04d-4112-b5e9-26941170fe0f",
     "codigo": "3.1.01",
     "descricao": "3.1.01",
     "tipo": "R",
@@ -35,7 +35,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0bf49e28-77bc-480e-9ab7-b614577ab078",
+    "id": "ac5c7498-bf4f-46e8-af6a-4231800990f5",
     "codigo": "3.1.01.01",
     "descricao": "3.1.01.01",
     "tipo": "R",
@@ -46,7 +46,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1d9c3f34-bd7b-44a6-89db-3703ffa3d75e",
+    "id": "7f7d2a72-40b4-4148-b2e9-2ea07abcf4b1",
     "codigo": "3.1.01.01.0003",
     "descricao": "VENDA DE TOUROS REPRODUTORES",
     "tipo": "R",
@@ -67,7 +67,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7e24c18-2c6d-4c05-b79c-cf32533d3c53",
+    "id": "15ab05bc-73f6-4d8f-aa4f-85faac7cc0e7",
     "codigo": "3.1.02",
     "descricao": "3.1.02",
     "tipo": "R",
@@ -78,7 +78,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ab79c170-5915-4d42-bd04-e39451e4e7f3",
+    "id": "e90773d4-5bdd-49aa-937e-d5c7c7e78875",
     "codigo": "3.1.02.01",
     "descricao": "3.1.02.01",
     "tipo": "R",
@@ -89,7 +89,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f565afe6-22f2-484a-b313-d54fae631841",
+    "id": "6b82e32b-ec70-4686-ada9-90a0aab60e35",
     "codigo": "3.1.02.01.0005",
     "descricao": "VENDA DE SOJA",
     "tipo": "R",
@@ -110,7 +110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "440f34c9-8524-42c3-b490-35e2838f4d5f",
+    "id": "0f045fc8-39f0-4bd3-93fa-3a7558155a3a",
     "codigo": "3.1.02.03",
     "descricao": "3.1.02.03",
     "tipo": "R",
@@ -121,7 +121,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "07ad7f5c-0c20-4267-a3df-844b5f323d84",
+    "id": "87c4df93-178e-4246-a82d-89b6784f7dd5",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -142,7 +142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d89daa18-28bf-48c6-b1fa-318692ca1dd9",
+    "id": "2a694617-a742-44ae-8654-2012895e2b0b",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -153,7 +153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f8ddbea0-2d22-4b33-9e02-31cbda87aafc",
+    "id": "cade1d1c-bfa8-47ab-9443-31de355da888",
     "codigo": "3.4.01",
     "descricao": "3.4.01",
     "tipo": "D",
@@ -164,7 +164,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "623de47b-726a-4c7c-ae52-66f23bf89569",
+    "id": "2a91f1da-5d5e-40c0-82e0-9341e2c9b7ae",
     "codigo": "3.4.01.10",
     "descricao": "3.4.01.10",
     "tipo": "D",
@@ -175,7 +175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6e83a247-ba2e-4acd-a18b-dc706a228f3c",
+    "id": "8db08f44-0627-4478-8cf2-4eae1927d09d",
     "codigo": "3.4.01.10.0060",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "D",
@@ -196,7 +196,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "339dc33b-a9e5-4c8f-bb31-eed2d2e93b81",
+    "id": "da070e86-7ed8-4a1d-9e3b-26999a90745a",
     "codigo": "3.4.01.10.0060",
     "descricao": "SALARIOS",
     "tipo": "D",
@@ -217,7 +217,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "672b9be4-ed43-488c-8e63-50c6a2b444b1",
+    "id": "d9626c5e-4f80-49fb-9a1c-2e3e544bee7b",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -228,7 +228,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fd697203-61b8-450e-909d-218bd8c08906",
+    "id": "4c5952ec-babd-4e80-89be-ecbf73210a61",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -239,7 +239,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ca842d96-1aef-45a7-8db6-75dae36cb168",
+    "id": "a786118b-6814-45cf-bafc-3250e0e655ed",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -250,7 +250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4b026b34-baff-4f45-8e74-8b6b585edbf6",
+    "id": "1a9ced7a-2600-464c-8f17-f9e32f369d94",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -261,7 +261,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "60a6fd28-ce64-45a6-93e5-70ce26d594e9",
+    "id": "4ce75c2c-80a6-4b92-9f03-1cbc414c5e7c",
     "codigo": "4.1.01.01.0001",
     "descricao": "GRAOS REIDRATADOS",
     "tipo": "C",
@@ -282,7 +282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54077626-9f30-4181-9e7a-e5d47cb8f538",
+    "id": "2ef0f527-5201-44b9-8551-b0e0965fb55f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS",
     "tipo": "C",
@@ -303,7 +303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ed320ee-aa45-4920-b6c3-6ee36207fb4e",
+    "id": "3ce48625-20a3-4ef8-96e0-305d6e4a3482",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -314,7 +314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9e367ad0-7633-4e13-968b-76418685b4df",
+    "id": "bc1e2744-a572-4f92-9a8f-541b0f4d3562",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -325,7 +325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "758a901d-d483-4333-8d87-5c0339502f62",
+    "id": "8ee68ea2-3ef2-4680-b4f5-3b7fb8d5a821",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -336,7 +336,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fd7ecb23-1cd0-453e-8537-b802a18fc78e",
+    "id": "a76a69e1-66bf-4968-9086-8eb25ff759e0",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -357,7 +357,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dbdb558c-e125-4383-b6d4-952bc0f5b8f6",
+    "id": "806d5699-40c7-4533-a52f-5dd49fbdd1af",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -378,7 +378,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72e4f376-8049-4a47-9a23-5c21928c20f0",
+    "id": "fb04a067-ad19-49d4-994a-6befff40b213",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",

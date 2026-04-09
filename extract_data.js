@@ -78,6 +78,9 @@ export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = ${JSON.string
       const rows = XLSX.utils.sheet_to_json(sheet);
       allRows = allRows.concat(rows);
     }
+    console.log(`Arquivos de realizado carregados: ${files.length}. Registros encontrados: ${allRows.length}.`);
+  } else {
+    console.log(`Aviso: Pasta '${realizadoDir}' não encontrada na raiz do projeto.`);
   }
 
   // 3. Processamento e Agregação
