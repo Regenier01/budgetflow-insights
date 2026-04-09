@@ -12,7 +12,6 @@ import {
 
 const navItems = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard },
-  { to: '/upload', label: 'Upload', icon: Upload },
   { to: '/instrucoes', label: 'Instruções', icon: BookOpen },
 ];
 

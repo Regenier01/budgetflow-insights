@@ -5,7 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
 import Index from "./pages/Index";
-import UploadPage from "./pages/UploadPage";
 import InstructionsPage from "./pages/InstructionsPage";
 import ActivityDetailPage from "./pages/ActivityDetailPage";
 import NotFound from "./pages/NotFound";
@@ -21,7 +20,6 @@ const App = () => (
         <AppLayout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/upload" element={<UploadPage />} />
             <Route path="/instrucoes" element={<InstructionsPage />} />
             <Route path="/atividade/:id" element={<ActivityDetailPage />} />
             <Route path="*" element={<NotFound />} />
