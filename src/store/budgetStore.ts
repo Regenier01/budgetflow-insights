@@ -27,8 +27,8 @@ export function mapAtividadeFromConta(conta: string): AtividadeKey | null {
   // Regras de mapeamento por prefixo de conta contábil
   if (c.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (c.startsWith('3.1.01.01')) return 'PECUARIA';
-  if (c.startsWith('3.1.02.02')) return 'CANA'; // Regra: 3.1.02.02 -> Receita de Cana
-  if (c === '3.1.02.03.0001') return 'SERINGAL';
+  if (c.startsWith('3.1.02.02')) return 'CANA';
+  if (c.startsWith('3.1.02.03')) return 'SERINGAL'; // Regra: 3.1.02.03 -> Receita de Seringal
   
   return null;
 }

@@ -67,6 +67,38 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "seringal-root-id",
+    "codigo": "3.1.02.03",
+    "descricao": "RECEITAS DE SERINGAL",
+    "tipo": "R",
+    "codigoPai": "3.1.02",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "seringal-receita-id",
+    "codigo": "3.1.02.03.0001",
+    "descricao": "VENDA DE BORRACHA",
+    "tipo": "R",
+    "codigoPai": "3.1.02.03",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabilN9": "3.1.02.03-VENDA DE PRODUTOS VEGETAIS",
+    "nomeProduto": "BORRACHA",
+    "divisao": "SERINGAL",
+    "unidadeNegocio": "VERA CRUZ - SERINGAL",
+    "isInvalidMapping": false,
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15000
+    }
+  },
+  {
     "id": "895b9cb8-ae18-493d-8baa-e65d4a1cbb36",
     "codigo": "3.4",
     "descricao": "3.4",
