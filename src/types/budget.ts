@@ -13,6 +13,7 @@ export interface AccountEntry {
   grupoContabilN9?: string;
   nomeProduto?: string;
   divisao?: string;
+  unidadeNegocio?: string;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
 }
@@ -39,6 +40,7 @@ export interface ExcelRow {
   NOMEPRODUTO_ANTIGO?: string;
   NOME_ORCAMENTO?: string;
   DATA?: string | number | Date;
+  UNIDADE_DE_NEGOCIO?: string;
 }
 
 export interface UploadRecord {

@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { AccountEntry, UploadRecord, MonthKey, ExcelRow, AtividadeKey } from '@/types/budget';
+import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 
 export function dateToMonthKey(raw: string | number | Date | undefined): MonthKey | null {
   if (!raw) return null;
@@ -21,20 +22,6 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
-export function isDepartamentoSeringalPermitido(nomeDepto?: string): boolean {
-  const depto = (nomeDepto || '').toUpperCase().trim();
-
-  const permitidos = [
-    'BANDEIRANTES SERINGAL',
-    'ESPLANADA SERINGAL',
-    'COVOÁ SERINGAL',
-    'PORTEIRAS SERINGAL',
-    'VERA CRUZ SERINGAL'
-  ];
-
-  return permitidos.includes(depto);
-}
-
 export function mapAtividadeByDivisao(divisao?: string): AtividadeKey | null {
   if (!divisao) return null;
 
@@ -50,28 +37,39 @@ export function mapAtividadeByDivisao(divisao?: string): AtividadeKey | null {
   return null;
 }
 
-export function mapAtividade(row: ExcelRow): AtividadeKey {
-  const divisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
-  const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined;
+export function mapAtividade(row: ExcelRow): { atividade: AtividadeKey; divisao?: string; unidadeNegocio?: string } {
+  const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
+  const mapping = DEPARTMENT_MAPPING[depto];
 
-  const fromDivisao = mapAtividadeByDivisao(divisao);
+  if (mapping) {
+    const divisao = mapping.divisao.trim().toUpperCase();
+    const fromDivisao = mapAtividadeByDivisao(divisao);
+    
+    // Strict Seringal check: only if division is exactly SERINGAL
+    if (divisao === 'SERINGAL') {
+      return { atividade: 'SERINGAL', divisao: mapping.divisao, unidadeNegocio: mapping.unidadeNegocio };
+    }
+
+    return { 
+      atividade: fromDivisao || 'PECUARIA', 
+      divisao: mapping.divisao, 
+      unidadeNegocio: mapping.unidadeNegocio 
+    };
+  }
+
+  // Fallback if department is not found in mapping
+  const currentDivisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
+  const fromDivisao = mapAtividadeByDivisao(currentDivisao);
 
   if (fromDivisao) {
-    if (fromDivisao === 'SERINGAL' && !isDepartamentoSeringalPermitido(depto)) {
-      return 'PECUARIA';
+    if (fromDivisao === 'SERINGAL') {
+      // If not in mapping, we never allow Seringal as a safety measure
+      return { atividade: 'PECUARIA', divisao: currentDivisao };
     }
-    return fromDivisao;
+    return { atividade: fromDivisao, divisao: currentDivisao };
   }
 
-  const deptoUpper = (depto || '').toUpperCase().trim();
-
-  if (deptoUpper.includes('ADMINISTRA')) return 'DESP_ADM_TRIB';
-
-  if (deptoUpper.includes('SERINGAL')) {
-    return isDepartamentoSeringalPermitido(depto) ? 'SERINGAL' : 'PECUARIA';
-  }
-
-  return 'PECUARIA';
+  return { atividade: 'PECUARIA', divisao: currentDivisao };
 }
 
 export function getAccountCategory(descricao: string): string {
@@ -216,6 +214,7 @@ export const useBudgetStore = create<BudgetState>()(
             centroCusto?: string;
             coligada?: string;
             divisao?: string;
+            unidadeNegocio?: string;
             grupoContabilN9?: string;
             nomeProduto?: string;
             atividade: AtividadeKey;
@@ -242,16 +241,20 @@ export const useBudgetStore = create<BudgetState>()(
           if (existing) {
             existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
           } else {
+            const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
+            const { atividade, divisao: mappedDivisao, unidadeNegocio } = mapAtividade(row);
+
             aggregated.set(aggKey, {
               saldo: { [monthKey]: saldo },
               descricao: String(row.DESCRICAO_CONTABIL || conta),
-              departamento: row.NOMEDEPTO ? String(row.NOMEDEPTO) : undefined,
+              departamento: depto || undefined,
               centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
               coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
-              divisao: row.DIVISAO ? String(row.DIVISAO) : undefined,
+              divisao: mappedDivisao || (row.DIVISAO ? String(row.DIVISAO) : undefined),
+              unidadeNegocio,
               grupoContabilN9: row.GRUPOCONTABILN9 ? String(row.GRUPOCONTABILN9) : undefined,
               nomeProduto: nomeProduto || undefined,
-              atividade: mapAtividade(row),
+              atividade,
               tipo: mapTipo(conta),
             });
           }
@@ -327,6 +330,7 @@ export const useBudgetStore = create<BudgetState>()(
                 data.grupoContabilN9 || currentAccounts[idx].grupoContabilN9,
               nomeProduto: data.nomeProduto,
               divisao: data.divisao || currentAccounts[idx].divisao,
+              unidadeNegocio: data.unidadeNegocio || currentAccounts[idx].unidadeNegocio,
             };
           } else {
             currentAccounts.push({
@@ -343,6 +347,7 @@ export const useBudgetStore = create<BudgetState>()(
               grupoContabilN9: data.grupoContabilN9,
               nomeProduto: data.nomeProduto,
               divisao: data.divisao,
+              unidadeNegocio: data.unidadeNegocio,
               orcado: {},
               realizado: data.saldo,
             });
