@@ -56,14 +56,18 @@ export function getAccountCategory(descricao: string): string {
 }
 
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
-  const rootAccounts = accounts.filter(a => {
-    return !accounts.some(parent => parent.codigo === a.codigoPai);
-  });
-
   let orc = 0;
   let real = 0;
 
-  rootAccounts.forEach(a => {
+  // Para o Total Geral, somamos todas as contas que não têm filhos (folhas)
+  // ou simplesmente todas as contas que possuem valores, já que os pais são vazios.
+  // A abordagem de somar apenas "folhas" garante que não haverá duplicidade 
+  // caso algum dia os pais passem a ter a soma dos filhos.
+  const leafAccounts = accounts.filter(a => 
+    !accounts.some(child => child.codigoPai === a.codigo)
+  );
+
+  leafAccounts.forEach(a => {
     const aOrc = Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     const aReal = Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
 
@@ -86,7 +90,11 @@ export function calculateTotalsByDivisao(
   let orc = 0;
   let real = 0;
 
+  // Filtramos todas as contas da atividade
   const filtered = accounts.filter(a => a.atividade === filterAtividade);
+  
+  // Somamos apenas as contas que são "folhas" DENTRO do conjunto da atividade
+  // ou que não possuem filhos no conjunto total para garantir a captura dos valores reais.
   const roots = filtered.filter(a => !filtered.some(p => p.codigo === a.codigoPai));
 
   roots.forEach(a => {
@@ -104,6 +112,7 @@ export function calculateTotalsByDivisao(
 
   return { orc, real, diff: real - orc };
 }
+
 
 interface BudgetState {
   accounts: AccountEntry[];
