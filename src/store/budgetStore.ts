@@ -168,10 +168,32 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
       const month = dateToMonthKey(row.DATA) || fallbackPeriod;
       
+      // Resolve atividade from row's DIVISAO/NOMEDEPTO
+      const rowAtividade = resolveAtividadeFromRow(row);
+      
       // Aplicar regra de mapeamento por conta
-      const mappedAtividade = mapAtividadeFromConta(conta);
+      const mappedAtividade = mapAtividadeFromConta(conta) || rowAtividade;
 
-      const existing = newAccounts.find(a => a.codigo === conta);
+      // Find matching account: prefer match by codigo + atividade, fallback to codigo only
+      let existing: AccountEntry | undefined;
+      
+      if (mappedAtividade) {
+        existing = newAccounts.find(a => a.codigo === conta && a.atividade === mappedAtividade);
+      }
+      
+      if (!existing && rowAtividade) {
+        existing = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade);
+      }
+      
+      if (!existing) {
+        // Fallback: match by codigo only (for unique codes)
+        const matches = newAccounts.filter(a => a.codigo === conta);
+        if (matches.length === 1) {
+          existing = matches[0];
+        }
+        // If multiple matches and no atividade resolved, skip to avoid cross-contamination
+      }
+
       if (existing) {
         existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
         if (mappedAtividade) existing.atividade = mappedAtividade;
