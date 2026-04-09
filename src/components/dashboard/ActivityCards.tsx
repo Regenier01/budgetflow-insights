@@ -2,12 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES, MONTHS } from '@/types/budget';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid } from 'recharts';
-import { TrendingUp, TrendingDown, Target, ArrowUpRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { TrendingUp, TrendingDown, Target } from 'lucide-react';
 
 export function ActivityCards() {
   const accounts = useBudgetStore((s) => s.accounts);
-  const navigate = useNavigate();
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
@@ -20,7 +18,6 @@ export function ActivityCards() {
   return (
     <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
       {ATIVIDADES.map((ativ) => {
-        // Pegamos apenas as contas "raiz" desta atividade e excluímos as 3.1.01.01
         const ativRootAccounts = accounts.filter(
           (a) => a.atividade === ativ.key && 
                  !accounts.some(p => p.codigo === a.codigoPai) &&
@@ -47,69 +44,76 @@ export function ActivityCards() {
         return (
           <Card 
             key={ativ.key} 
-            className="flex flex-col cursor-pointer transition-all hover:ring-2 hover:ring-primary/50 hover:shadow-lg group"
-            onClick={() => navigate(`/atividade/${ativ.key}`)}
+            className="flex flex-col border-slate-200 shadow-sm overflow-hidden"
           >
-            <CardHeader className="pb-4">
-              <CardTitle className="text-lg font-bold flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  {ativ.label}
-                  <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
-                </div>
-                <Target className="h-5 w-5 text-muted-foreground" />
+            <CardHeader className="pb-4 bg-slate-50/50 border-b border-slate-100">
+              <CardTitle className="text-sm font-bold flex items-center justify-between text-slate-700">
+                <span>Evolução Mensal: {ativ.label}</span>
+                <Target className="h-4 w-4 text-slate-400" />
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 flex-1">
-              <div className="grid grid-cols-3 gap-2">
-                <div className="rounded-lg bg-muted/50 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Orçado</p>
-                  <p className="text-sm font-bold">{fmt(totalOrc)}</p>
+            <CardContent className="space-y-6 pt-6 flex-1">
+              <div className="grid grid-cols-3 gap-3">
+                <div className="rounded-xl bg-slate-50 p-3 border border-slate-100">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Orçado</p>
+                  <p className="text-sm font-mono font-bold text-slate-900">{fmt(totalOrc)}</p>
                 </div>
-                <div className="rounded-lg bg-muted/50 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Realizado</p>
-                  <p className="text-sm font-bold">{fmt(totalReal)}</p>
+                <div className="rounded-xl bg-slate-50 p-3 border border-slate-100">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Realizado</p>
+                  <p className="text-sm font-mono font-bold text-slate-900">{fmt(totalReal)}</p>
                 </div>
-                <div className={`rounded-lg p-3 ${isGood ? 'bg-primary/10' : 'bg-destructive/10'}`}>
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Variação</p>
+                <div className={cn(
+                  "rounded-xl p-3 border",
+                  isGood ? 'bg-emerald-50 border-emerald-100' : 'bg-rose-50 border-rose-100'
+                )}>
+                  <p className={cn(
+                    "text-[9px] uppercase tracking-widest font-bold mb-1",
+                    isGood ? 'text-emerald-600' : 'text-rose-600'
+                  )}>Variação</p>
                   <div className="flex items-center gap-1">
-                    {isGood ? <TrendingUp className="h-3 w-3 text-primary" /> : <TrendingDown className="h-3 w-3 text-destructive" />}
-                    <p className={`text-sm font-bold ${isGood ? 'text-primary' : 'text-destructive'}`}>
+                    {isGood ? <TrendingUp className="h-3 w-3 text-emerald-600" /> : <TrendingDown className="h-3 w-3 text-rose-600" />}
+                    <p className={cn(
+                      "text-sm font-mono font-bold",
+                      isGood ? 'text-emerald-700' : 'text-rose-700'
+                    )}>
                       {variance >= 0 ? '+' : ''}{variance.toFixed(1)}%
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="h-[200px] w-full">
+              <div className="h-[220px] w-full pt-2">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                     <XAxis 
                       dataKey="month" 
                       axisLine={false} 
                       tickLine={false} 
-                      tick={{ fontSize: 10 }} 
-                      stroke="hsl(var(--muted-foreground))" 
+                      tick={{ fontSize: 10, fontWeight: 600 }} 
+                      stroke="#94a3b8" 
                     />
                     <YAxis 
                       axisLine={false} 
                       tickLine={false} 
                       tickFormatter={fmt} 
-                      tick={{ fontSize: 10 }} 
-                      stroke="hsl(var(--muted-foreground))" 
+                      tick={{ fontSize: 10, fontWeight: 600 }} 
+                      stroke="#94a3b8" 
                     />
                     <Tooltip
-                      cursor={{ fill: 'hsl(var(--muted))', opacity: 0.4 }}
-                      formatter={(value: number) => fmt(value)}
+                      cursor={{ fill: '#f8fafc' }}
+                      formatter={(value: number) => [fmt(value), '']}
                       contentStyle={{
-                        background: 'hsl(var(--card))',
-                        border: '1px solid hsl(var(--border))',
-                        borderRadius: '8px',
+                        background: '#ffffff',
+                        border: '1px solid #e2e8f0',
+                        borderRadius: '12px',
+                        boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
                         fontSize: 12,
+                        fontWeight: 600
                       }}
                     />
-                    <Bar dataKey="Orçado" fill="hsl(var(--primary))" radius={[2, 2, 0, 0]} barSize={12} />
-                    <Bar dataKey="Realizado" fill="hsl(var(--accent))" radius={[2, 2, 0, 0]} barSize={12} />
+                    <Bar dataKey="Orçado" fill="#1e293b" radius={[4, 4, 0, 0]} barSize={14} />
+                    <Bar dataKey="Realizado" fill="#f97316" radius={[4, 4, 0, 0]} barSize={14} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
