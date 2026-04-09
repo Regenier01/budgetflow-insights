@@ -124,6 +124,21 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null,
 
 // Funções Auxiliares
 
+function getValue(row, keyName) {
+  if (!row) return undefined;
+  // Try direct match
+  if (row[keyName] !== undefined) return row[keyName];
+  
+  // Try normalized match (trim and uppercase)
+  const normalizedKey = keyName.trim().toUpperCase();
+  for (const k in row) {
+    if (k.trim().toUpperCase() === normalizedKey) {
+      return row[k];
+    }
+  }
+  return undefined;
+}
+
 function dateToMonthKey(raw) {
   if (!raw) return null;
   let d;
@@ -153,8 +168,8 @@ function mapAtividadeByDivisao(divisao) {
 }
 
 function mapAtividade(row, departmentMapping, costCenterMapping) {
-  const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
-  const centroCusto = row.NOMECUSTO ? String(row.NOMECUSTO).trim() : '';
+  const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
+  const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
 
   const mapping = departmentMapping[depto];
   const ccMapping = costCenterMapping[centroCusto];
@@ -186,14 +201,14 @@ function mapAtividade(row, departmentMapping, costCenterMapping) {
     };
   }
 
-  const currentDivisao = row.DIVISAO ? String(row.DIVISAO) : undefined;
-  const fromDivisao = mapAtividadeByDivisao(currentDivisao);
-  if (fromDivisao) {
-    if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-    return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+    const currentDivisao = getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined;
+    const fromDivisao = mapAtividadeByDivisao(currentDivisao);
+    if (fromDivisao) {
+      if (fromDivisao === 'SERINGAL') return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+      return { atividade: fromDivisao, divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
+    }
+    return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
   }
-  return { atividade: 'PECUARIA', divisao: currentDivisao, unidadeNegocio, isInvalidMapping };
-}
 
 function mapTipo(contaContabil) {
   const conta = String(contaContabil || '').trim();
@@ -207,33 +222,41 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
   const fallbackMonth = '2027-01';
 
   for (const row of rows) {
-    const conta = String(row.CONTA_CONTABIL || '').trim();
+    const conta = String(getValue(row, 'CONTA_CONTABIL') || '').trim();
     if (!conta) continue;
 
-    const saldo = Number(row.SALDO ?? 0);
-    if (isNaN(saldo)) continue;
+    const rawSaldo = getValue(row, 'SALDO');
+    let saldo = 0;
+    if (typeof rawSaldo === 'number') {
+      saldo = rawSaldo;
+    } else if (typeof rawSaldo === 'string') {
+      // Handle Brazilian format: 1.234,56 -> 1234.56
+      saldo = Number(rawSaldo.replace(/\./g, '').replace(',', '.'));
+    }
+    
+    if (isNaN(saldo)) saldo = 0;
 
-    const nomeProduto = row.NOMEPRODUTO ? String(row.NOMEPRODUTO).trim() : '';
+    const nomeProduto = getValue(row, 'NOMEPRODUTO') ? String(getValue(row, 'NOMEPRODUTO')).trim() : '';
     const aggKey = `${conta}|${nomeProduto}`;
-    const monthKey = dateToMonthKey(row.DATA) || fallbackMonth;
+    const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
 
     const existing = aggregated.get(aggKey);
 
     if (existing) {
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
     } else {
-      const depto = row.NOMEDEPTO ? String(row.NOMEDEPTO).trim() : '';
+      const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
       const mapped = mapAtividade(row, departmentMapping, costCenterMapping);
 
       aggregated.set(aggKey, {
         saldo: { [monthKey]: saldo },
-        descricao: String(row.DESCRICAO_CONTABIL || conta),
+        descricao: String(getValue(row, 'DESCRICAO_CONTABIL') || conta),
         departamento: depto || undefined,
-        centroCusto: row.NOMECUSTO ? String(row.NOMECUSTO) : undefined,
-        coligada: row.COLIGADA ? String(row.COLIGADA) : undefined,
-        divisao: mapped.divisao || (row.DIVISAO ? String(row.DIVISAO) : undefined),
+        centroCusto: getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')) : undefined,
+        coligada: getValue(row, 'COLIGADA') ? String(getValue(row, 'COLIGADA')) : undefined,
+        divisao: mapped.divisao || (getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')) : undefined),
         unidadeNegocio: mapped.unidadeNegocio,
-        grupoContabilN9: row.GRUPOCONTABILN9 ? String(row.GRUPOCONTABILN9) : undefined,
+        grupoContabilN9: getValue(row, 'GRUPOCONTABILN9') ? String(getValue(row, 'GRUPOCONTABILN9')) : undefined,
         nomeProduto: nomeProduto || undefined,
         atividade: mapped.atividade,
         tipo: mapTipo(conta),
