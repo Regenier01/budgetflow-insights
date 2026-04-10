@@ -33,6 +33,7 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   if (conta === '3.1.02.03.0001') return 'SERINGAL';
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
+  if (conta.startsWith('3.4.03.02')) return 'DESP_ADM_TRIB';
 
   // 2. Tenta pelo Mapeamento de Departamento
   const deptInfo = (DEPARTMENT_MAPPING as any)[depto];
