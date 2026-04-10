@@ -69,6 +69,11 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
+const rowValue = (value: unknown): string | undefined => {
+  const parsed = String(value || '').trim();
+  return parsed || undefined;
+};
+
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
@@ -121,13 +126,57 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
       const month = dateToMonthKey(row.DATA) || fallbackPeriod;
       const rowAtividade = resolveAtividadeFromRow(row);
+      const rowDept = rowValue(row.NOMEDEPTO);
+      const rowCC = rowValue(row.NOMECUSTO);
+      const rowGrupo = rowValue(row.GRUPOCONTABILN9);
+      const rowProduto = rowValue(row.NOMEPRODUTO);
+      const rowDivisao = rowValue(row.DIVISAO);
+      const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
+      const rowColigada = rowValue(row.COLIGADA);
+      const rowDescricao = rowValue(row.DESCRICAO_CONTABIL);
 
-      const existing = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade);
+      const existing = newAccounts.find(
+        (a) =>
+          a.codigo === conta &&
+          a.atividade === rowAtividade &&
+          (a.departamento || '') === (rowDept || '') &&
+          (a.centroCusto || '') === (rowCC || '') &&
+          (a.grupoContabilN9 || '') === (rowGrupo || '') &&
+          (a.nomeProduto || '') === (rowProduto || '')
+      );
 
       if (existing) {
         existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
+        if (!existing.departamento) existing.departamento = rowDept;
+        if (!existing.centroCusto) existing.centroCusto = rowCC;
+        if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupo;
+        if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
+        if (!existing.divisao) existing.divisao = rowDivisao;
+        if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
+        if (!existing.coligada) existing.coligada = rowColigada;
         count++;
+        return;
       }
+
+      const base = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade && a.nivel === 5);
+      if (!base) return;
+
+      const newEntry: AccountEntry = {
+        ...base,
+        id: `${base.id}-${count}-${newAccounts.length}`,
+        descricao: rowDescricao || base.descricao,
+        departamento: rowDept,
+        centroCusto: rowCC,
+        grupoContabilN9: rowGrupo,
+        nomeProduto: rowProduto,
+        divisao: rowDivisao,
+        unidadeNegocio: rowUnidadeNegocio,
+        coligada: rowColigada,
+        realizado: { ...base.realizado, [month]: (base.realizado[month] || 0) + saldo },
+      };
+
+      newAccounts.push(newEntry);
+      count++;
     });
 
     set({ accounts: newAccounts });

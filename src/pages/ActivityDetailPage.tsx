@@ -54,6 +54,20 @@ export default function ActivityDetailPage() {
     return Array.from(depts).sort();
   }, [accounts, id]);
 
+  const availableCostCenters = useMemo(() => {
+    if (!id) return [];
+    const dynamic = new Set<string>();
+    accounts.forEach((a) => {
+      if (a.atividade === id && a.centroCusto) {
+        dynamic.add(a.centroCusto);
+      }
+    });
+
+    const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
+    fallback.forEach((cc) => dynamic.add(cc));
+    return Array.from(dynamic).sort();
+  }, [accounts, id]);
+
   if (!atividade) return <NotFound />;
 
   return (
@@ -89,7 +103,7 @@ export default function ActivityDetailPage() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
-              {(ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || []).map((cc) => (
+              {availableCostCenters.map((cc) => (
                 <SelectItem key={cc} value={cc}>{cc}</SelectItem>
               ))}
             </SelectContent>
