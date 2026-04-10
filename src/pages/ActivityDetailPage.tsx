@@ -16,6 +16,32 @@ export default function ActivityDetailPage() {
   const [selectedDept, setSelectedDept] = useState<string | 'all'>('all');
   
   const atividade = ATIVIDADES.find(a => a.key === id);
+  const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
+
+  const isTributariaEntry = (entry: {
+    descricao?: string;
+    departamento?: string;
+    centroCusto?: string;
+    grupoContabilN9?: string;
+    divisao?: string;
+    unidadeNegocio?: string;
+  }) => {
+    const haystack = [
+      entry.descricao,
+      entry.departamento,
+      entry.centroCusto,
+      entry.grupoContabilN9,
+      entry.divisao,
+      entry.unidadeNegocio,
+    ]
+      .filter(Boolean)
+      .join(' ')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toUpperCase();
+
+    return haystack.includes('TRIBUT');
+  };
   
   const availableDepts = useMemo(() => {
     if (!id) return [];
@@ -129,15 +155,42 @@ export default function ActivityDetailPage() {
               Saídas
             </div>
           </div>
-          <AnalyticalTable 
-            atividadeFilter={atividade.key}
-            selectedMonth={selectedMonth}
-            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-            tipoFilter={['D']}
-            title="Detalhamento de Despesas"
-            accentColor="red"
-          />
+          {isAdmTrib ? (
+            <div className="space-y-6">
+              <AnalyticalTable
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                tipoFilter={['D']}
+                entryFilter={(entry) => !isTributariaEntry(entry)}
+                title="Abertura de Despesas ADM"
+                subtitle="Despesas administrativas"
+                accentColor="red"
+              />
+              <AnalyticalTable
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                tipoFilter={['D']}
+                entryFilter={(entry) => isTributariaEntry(entry)}
+                title="Abertura de Despesas Tributárias"
+                subtitle="Despesas tributárias"
+                accentColor="red"
+              />
+            </div>
+          ) : (
+            <AnalyticalTable 
+              atividadeFilter={atividade.key}
+              selectedMonth={selectedMonth}
+              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+              tipoFilter={['D']}
+              title="Detalhamento de Despesas"
+              accentColor="red"
+            />
+          )}
         </div>
       </div>
     </div>

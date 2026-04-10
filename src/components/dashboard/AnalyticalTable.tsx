@@ -1,8 +1,8 @@
 import { useState, Fragment } from 'react';
-import { Plus, Minus, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
-import type { MonthKey, AtividadeKey } from '@/types/budget';
+import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
 interface Props {
   atividadeFilter: AtividadeKey;
@@ -10,6 +10,7 @@ interface Props {
   costCenterFilter?: string;
   departmentFilter?: string;
   tipoFilter?: ('R' | 'C' | 'D')[];
+  entryFilter?: (entry: AccountEntry) => boolean;
   title?: string;
   subtitle?: string;
   accentColor?: string;
@@ -28,6 +29,7 @@ export function AnalyticalTable({
   costCenterFilter,
   departmentFilter,
   tipoFilter,
+  entryFilter,
   title = "Abertura Analítica",
   subtitle = "N9 → Descrição → Produto",
   accentColor = "orange"
@@ -40,6 +42,7 @@ export function AnalyticalTable({
   if (costCenterFilter) filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
   if (departmentFilter) filtered = filtered.filter(a => a.departamento === departmentFilter);
   if (tipoFilter) filtered = filtered.filter(a => tipoFilter.includes(a.tipo));
+  if (entryFilter) filtered = filtered.filter(entryFilter);
 
   const root = new Map<string, Node>();
 
