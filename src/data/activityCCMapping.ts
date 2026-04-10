@@ -1,4 +1,7 @@
 export const ACTIVITY_CC_MAPPING = {
+  "DESP_ADM_TRIB": [
+    "RATEIO DESENVOLVIMENTO HUMANO"
+  ],
   "SERINGAL": [
     "RATEIO SERINGAL"
   ],
