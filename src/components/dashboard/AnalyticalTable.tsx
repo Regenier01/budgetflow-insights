@@ -1,5 +1,5 @@
 import { useState, Fragment } from 'react';
-import { Plus, Minus } from 'lucide-react';
+import { Plus, Minus, ChevronRight } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey } from '@/types/budget';
@@ -54,7 +54,6 @@ export function AnalyticalTable({
 
     if (orc === 0 && real === 0) return;
 
-    // Normalização do N9: Garante que o código da conta pai nível 3 esteja presente para agrupamento correto
     let n9 = a.grupoContabilN9 || 'Outras Categorias';
     if (!n9.match(/^\d+\.\d+\.\d+/)) {
       const prefix = a.codigo.split('.').slice(0, 3).join('.');
@@ -92,8 +91,6 @@ export function AnalyticalTable({
   const fmtCurrency = (v: number) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
-  const isRevenue = tipoFilter?.includes('R') && !tipoFilter?.includes('C') && !tipoFilter?.includes('D');
-
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
     const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real));
 
@@ -103,48 +100,46 @@ export function AnalyticalTable({
       const hasChildren = node.children.size > 0;
       
       const diff = node.real - node.orc;
-      const isOverBudget = isRevenue ? diff < 0 : diff > 0;
+      const isHigher = node.real > node.orc;
 
       return (
         <Fragment key={currentPath}>
           <tr className={cn(
-            "group transition-all duration-150 border-b border-slate-100 last:border-0",
-            level === 0 ? "bg-slate-50/80 hover:bg-slate-100/50" : "bg-white hover:bg-slate-50/40"
+            "group transition-all duration-150 border-b border-slate-50 last:border-0",
+            level === 0 ? "bg-white hover:bg-slate-50" : "bg-slate-50/30 hover:bg-slate-50/60"
           )}>
-            <td className="py-2 px-3">
+            <td className="py-3 px-4">
               <div 
-                className={cn("flex items-center gap-2", hasChildren && "cursor-pointer select-none")}
-                style={{ paddingLeft: `${level * 20}px` }}
+                className={cn("flex items-center gap-3", hasChildren && "cursor-pointer select-none")}
+                style={{ paddingLeft: `${level * 24}px` }}
                 onClick={() => hasChildren && toggleExpand(currentPath)}
               >
                 {hasChildren ? (
-                  <button className={cn(
-                    "flex items-center justify-center h-5 w-5 rounded border text-[10px] font-bold transition-all duration-150 shrink-0",
-                    isExpanded 
-                      ? `bg-${accentColor}-500 border-${accentColor}-500 text-white` 
-                      : `bg-white border-slate-300 text-slate-500`
+                  <div className={cn(
+                    "flex items-center justify-center h-5 w-5 rounded-md transition-all duration-200",
+                    isExpanded ? "bg-orange-500 text-white rotate-90" : "bg-slate-100 text-slate-400"
                   )}>
-                    {isExpanded ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-                  </button>
+                    <ChevronRight className="h-3 w-3" />
+                  </div>
                 ) : <div className="w-5 shrink-0" />}
                 <span className={cn(
-                  "truncate",
-                  level === 0 ? "text-[11px] font-bold uppercase text-slate-800" :
-                  level === 1 ? "text-[11px] font-semibold text-slate-600" : "text-[11px] text-slate-500 italic"
+                  "truncate tracking-tight",
+                  level === 0 ? "text-[12px] font-black uppercase text-primary" :
+                  level === 1 ? "text-[12px] font-bold text-slate-700" : "text-[11px] text-slate-500 font-medium"
                 )}>
                   {node.name}
                 </span>
               </div>
             </td>
-            <td className="text-right py-2 px-3 font-mono text-[11px] border-l border-slate-100 text-slate-500">
+            <td className="text-right py-3 px-4 font-mono text-[11px] text-slate-400">
               {node.orc ? fmtCurrency(node.orc) : '-'}
             </td>
-            <td className="text-right py-2 px-3 font-mono text-[11px] border-l border-slate-100 font-bold text-slate-800">
+            <td className="text-right py-3 px-4 font-mono text-[12px] font-bold text-slate-900">
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>
             <td className={cn(
-              "text-right py-2 px-3 font-mono text-[11px] border-l border-slate-100 font-medium",
-              isOverBudget ? "text-rose-500" : "text-emerald-500"
+              "text-right py-3 px-4 font-mono text-[12px] font-black",
+              isHigher ? "text-emerald-600" : "text-rose-600"
             )}>
               {(node.orc || node.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
             </td>
@@ -156,38 +151,38 @@ export function AnalyticalTable({
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-      <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-        <h3 className="text-xs font-bold text-white uppercase tracking-widest">{title}</h3>
-        <span className={cn("text-[10px] font-semibold", `text-${accentColor}-400`)}>{subtitle}</span>
+    <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+      <div className="bg-primary px-6 py-4 flex items-center justify-between">
+        <h3 className="text-sm font-black text-white uppercase tracking-[0.2em]">{title}</h3>
+        <span className="text-[10px] font-bold text-orange-400 uppercase tracking-widest">{subtitle}</span>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-slate-50/80 text-slate-500 uppercase text-[9px] font-bold tracking-widest border-b border-slate-200">
-              <th className="text-left py-2.5 px-3">Item / Agrupamento</th>
-              <th className="text-right py-2.5 px-3 w-[130px] border-l border-slate-200">Orçado</th>
-              <th className="text-right py-2.5 px-3 w-[130px] border-l border-slate-200">Realizado</th>
-              <th className="text-right py-2.5 px-3 w-[130px] border-l border-slate-200">Variação</th>
+            <tr className="bg-slate-50 text-slate-400 uppercase text-[10px] font-black tracking-widest border-b border-slate-100">
+              <th className="text-left py-4 px-6">Classificação Contábil</th>
+              <th className="text-right py-4 px-6 w-[150px]">Orçado</th>
+              <th className="text-right py-4 px-6 w-[150px]">Realizado</th>
+              <th className="text-right py-4 px-6 w-[150px]">Variação</th>
             </tr>
           </thead>
           <tbody>
             {root.size > 0 ? renderNodes(root) : (
-              <tr><td colSpan={4} className="py-12 text-center text-sm text-slate-400">Nenhum dado encontrado.</td></tr>
+              <tr><td colSpan={4} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
             )}
           </tbody>
           {root.size > 0 && (() => {
             const totalOrc = Array.from(root.values()).reduce((sum, n) => sum + n.orc, 0);
             const totalReal = Array.from(root.values()).reduce((sum, n) => sum + n.real, 0);
             const totalDiff = totalReal - totalOrc;
-            const isTotalOverBudget = isRevenue ? totalDiff < 0 : totalDiff > 0;
+            const isTotalHigher = totalReal > totalOrc;
             return (
-              <tfoot className="bg-slate-100/80 border-t-2 border-slate-300 font-bold">
+              <tfoot className="bg-primary/5 border-t-2 border-primary/10 font-bold">
                 <tr>
-                  <td className="py-3 px-3 text-[11px] uppercase text-slate-800 pl-4">Total</td>
-                  <td className="text-right py-3 px-3 font-mono text-[12px] text-slate-800 border-l border-slate-200">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
-                  <td className="text-right py-3 px-3 font-mono text-[12px] text-slate-800 border-l border-slate-200">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
-                  <td className={cn("text-right py-3 px-3 font-mono text-[12px] border-l border-slate-200", isTotalOverBudget ? "text-rose-600" : "text-emerald-600")}>
+                  <td className="py-5 px-6 text-[12px] uppercase text-primary font-black">Total Consolidado</td>
+                  <td className="text-right py-5 px-6 font-mono text-[13px] text-slate-500">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                  <td className="text-right py-5 px-6 font-mono text-[14px] text-primary font-black">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                  <td className={cn("text-right py-5 px-6 font-mono text-[14px] font-black", isTotalHigher ? "text-emerald-600" : "text-rose-600")}>
                     {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                   </td>
                 </tr>

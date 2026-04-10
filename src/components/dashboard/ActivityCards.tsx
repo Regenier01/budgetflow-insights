@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES, MONTHS } from '@/types/budget';
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid, Cell } from 'recharts';
 import { TrendingUp, TrendingDown, Target } from 'lucide-react';
 
 export function ActivityCards() {
@@ -38,44 +38,43 @@ export function ActivityCards() {
           (s, a) => s + Object.values(a.realizado).reduce((x, v) => x + v, 0), 0
         );
         
+        const isHigher = totalReal > totalOrc;
         const variance = totalOrc === 0 ? 0 : ((totalReal - totalOrc) / Math.abs(totalOrc)) * 100;
-        const isRevenue = ativRootAccounts.some(a => a.tipo === 'R');
-        const isGood = isRevenue ? variance >= 0 : variance <= 0;
 
         return (
           <Card 
             key={ativ.key} 
-            className="flex flex-col border-slate-200 shadow-sm overflow-hidden"
+            className="flex flex-col border-none shadow-lg overflow-hidden bg-white rounded-2xl"
           >
-            <CardHeader className="pb-4 bg-slate-50/50 border-b border-slate-100">
-              <CardTitle className="text-sm font-bold flex items-center justify-between text-slate-700">
-                <span>Evolução Mensal: {ativ.label}</span>
-                <Target className="h-4 w-4 text-slate-400" />
+            <CardHeader className="pb-4 bg-primary text-white">
+              <CardTitle className="text-[11px] font-black uppercase tracking-[0.2em] flex items-center justify-between">
+                <span>Evolução: {ativ.label}</span>
+                <Target className="h-4 w-4 text-orange-400" />
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 pt-6 flex-1">
-              <div className="grid grid-cols-3 gap-3">
-                <div className="rounded-xl bg-slate-50 p-3 border border-slate-100">
-                  <p className="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Orçado</p>
-                  <p className="text-sm font-mono font-bold text-slate-900">{fmt(totalOrc)}</p>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="rounded-xl bg-slate-50 p-4 border border-slate-100">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-400 font-black mb-1">Orçado</p>
+                  <p className="text-sm font-mono font-bold text-slate-600">{fmt(totalOrc)}</p>
                 </div>
-                <div className="rounded-xl bg-slate-50 p-3 border border-slate-100">
-                  <p className="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Realizado</p>
+                <div className="rounded-xl bg-slate-50 p-4 border border-slate-100">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-400 font-black mb-1">Realizado</p>
                   <p className="text-sm font-mono font-bold text-slate-900">{fmt(totalReal)}</p>
                 </div>
                 <div className={cn(
-                  "rounded-xl p-3 border",
-                  isGood ? 'bg-emerald-50 border-emerald-100' : 'bg-rose-50 border-rose-100'
+                  "rounded-xl p-4 border",
+                  isHigher ? 'bg-emerald-50 border-emerald-100' : 'bg-rose-50 border-rose-100'
                 )}>
                   <p className={cn(
-                    "text-[9px] uppercase tracking-widest font-bold mb-1",
-                    isGood ? 'text-emerald-600' : 'text-rose-600'
+                    "text-[9px] uppercase tracking-widest font-black mb-1",
+                    isHigher ? 'text-emerald-600' : 'text-rose-600'
                   )}>Variação</p>
                   <div className="flex items-center gap-1">
-                    {isGood ? <TrendingUp className="h-3 w-3 text-emerald-600" /> : <TrendingDown className="h-3 w-3 text-rose-600" />}
+                    {isHigher ? <TrendingUp className="h-3.5 w-3.5 text-emerald-600" /> : <TrendingDown className="h-3.5 w-3.5 text-rose-600" />}
                     <p className={cn(
-                      "text-sm font-mono font-bold",
-                      isGood ? 'text-emerald-700' : 'text-rose-700'
+                      "text-sm font-mono font-black",
+                      isHigher ? 'text-emerald-700' : 'text-rose-700'
                     )}>
                       {variance >= 0 ? '+' : ''}{variance.toFixed(1)}%
                     </p>
@@ -83,38 +82,35 @@ export function ActivityCards() {
                 </div>
               </div>
 
-              <div className="h-[220px] w-full pt-2">
+              <div className="h-[240px] w-full pt-2">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f8fafc" />
                     <XAxis 
                       dataKey="month" 
                       axisLine={false} 
                       tickLine={false} 
-                      tick={{ fontSize: 10, fontWeight: 600 }} 
-                      stroke="#94a3b8" 
+                      tick={{ fontSize: 10, fontWeight: 700, fill: '#94a3b8' }} 
                     />
                     <YAxis 
                       axisLine={false} 
                       tickLine={false} 
                       tickFormatter={fmt} 
-                      tick={{ fontSize: 10, fontWeight: 600 }} 
-                      stroke="#94a3b8" 
+                      tick={{ fontSize: 10, fontWeight: 700, fill: '#94a3b8' }} 
                     />
                     <Tooltip
-                      cursor={{ fill: '#f8fafc' }}
-                      formatter={(value: number) => [fmt(value), '']}
+                      cursor={{ fill: '#fff7ed' }}
                       contentStyle={{
                         background: '#ffffff',
-                        border: '1px solid #e2e8f0',
+                        border: 'none',
                         borderRadius: '12px',
-                        boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                        boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
                         fontSize: 12,
-                        fontWeight: 600
+                        fontWeight: 800
                       }}
                     />
-                    <Bar dataKey="Orçado" fill="#1e293b" radius={[4, 4, 0, 0]} barSize={14} />
-                    <Bar dataKey="Realizado" fill="#f97316" radius={[4, 4, 0, 0]} barSize={14} />
+                    <Bar dataKey="Orçado" fill="#062d24" radius={[4, 4, 0, 0]} barSize={12} />
+                    <Bar dataKey="Realizado" fill="#f97316" radius={[4, 4, 0, 0]} barSize={12} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

@@ -30,51 +30,58 @@ export function GlobalSummary() {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    const isNegative = diff < 0;
+    const isHigher = real > orc;
     const isClickable = !!activityKey;
 
     return (
       <div 
         onClick={() => isClickable && navigate(`/atividade/${activityKey}`)}
         className={cn(
-          "border border-slate-200 overflow-hidden rounded-xl transition-all duration-200 bg-white shadow-sm",
-          isMain ? "mb-8 border-slate-300 shadow-md" : "hover:border-primary/40 hover:shadow-md group",
-          isClickable && "cursor-pointer active:scale-[0.98]"
+          "border overflow-hidden rounded-2xl transition-all duration-300 bg-white",
+          isMain 
+            ? "mb-10 border-primary/20 shadow-xl ring-1 ring-primary/5" 
+            : "border-slate-100 shadow-sm hover:shadow-md hover:border-orange-200 group",
+          isClickable && "cursor-pointer active:scale-[0.99]"
         )}
       >
         <div className={cn(
-          "py-3 px-4 flex items-center justify-between",
-          isMain ? "bg-slate-900 text-white" : "bg-slate-50 group-hover:bg-primary/5"
+          "py-4 px-5 flex items-center justify-between",
+          isMain ? "bg-primary text-white" : "bg-slate-50 group-hover:bg-orange-50/50"
         )}>
-          <span className="font-bold text-xs uppercase tracking-widest">
+          <span className={cn(
+            "font-black text-[11px] uppercase tracking-[0.15em]",
+            !isMain && "text-primary"
+          )}>
             {title}
           </span>
           {isClickable && (
-            <ArrowRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-primary transition-transform group-hover:translate-x-1" />
+            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+              <ArrowRight className="h-4 w-4" />
+            </div>
           )}
         </div>
         
-        <div className="grid grid-cols-3 text-center border-y border-slate-100">
-          <div className="bg-amber-400/10 py-2 text-[9px] font-black text-amber-700 border-r border-slate-100 uppercase tracking-tighter">Orçado</div>
-          <div className="bg-amber-400/10 py-2 text-[9px] font-black text-amber-700 border-r border-slate-100 uppercase tracking-tighter">Realizado</div>
-          <div className="bg-amber-400/10 py-2 text-[9px] font-black text-amber-700 uppercase tracking-tighter">Diferença</div>
+        <div className="grid grid-cols-3 text-center border-y border-slate-50">
+          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Orçado</div>
+          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Realizado</div>
+          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Diferença</div>
         </div>
 
-        <div className="grid grid-cols-3 text-center">
-          <div className="py-4 text-[13px] font-mono font-semibold border-r border-slate-100 tabular-nums text-slate-600">
+        <div className="grid grid-cols-3 text-center items-center">
+          <div className="py-5 text-[14px] font-mono font-medium border-r border-slate-50 tabular-nums text-slate-500">
             {fmt(orc)}
           </div>
-          <div className="py-4 text-[13px] font-mono font-semibold border-r border-slate-100 tabular-nums text-slate-900">
+          <div className="py-5 text-[14px] font-mono font-bold border-r border-slate-50 tabular-nums text-slate-900">
             {fmt(real)}
           </div>
           <div
             className={cn(
-              "py-4 text-[13px] font-mono font-bold tabular-nums flex items-center justify-center gap-1",
-              isNegative ? "text-rose-600 bg-rose-50/30" : "text-emerald-600 bg-emerald-50/30"
+              "py-5 text-[14px] font-mono font-black tabular-nums flex items-center justify-center gap-1",
+              isHigher ? "text-emerald-600 bg-emerald-50/30" : "text-rose-600 bg-rose-50/30"
             )}
           >
-            {isNegative ? <TrendingDown className="h-3 w-3" /> : <TrendingUp className="h-3 w-3" />}
-            {fmt(diff)}
+            {isHigher ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+            {fmt(real - orc)}
           </div>
         </div>
       </div>
@@ -86,14 +93,14 @@ export function GlobalSummary() {
   return (
     <div className="space-y-6">
       <SummaryTable
-        title="Consolidado Geral (Custos e Despesas)"
+        title="Consolidado Geral de Operações"
         orc={global.orc}
         real={global.real}
-        diff={global.diff}
+        diff={global.real - global.orc}
         isMain
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {ATIVIDADES.map((ativ) => {
           const stats = calculateTotalsByDivisao(accounts, ativ.key);
           return (
@@ -103,7 +110,7 @@ export function GlobalSummary() {
               activityKey={ativ.key}
               orc={stats.orc}
               real={stats.real}
-              diff={stats.diff}
+              diff={stats.real - stats.orc}
             />
           );
         })}

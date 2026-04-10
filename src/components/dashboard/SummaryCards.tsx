@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { TrendingUp, TrendingDown, DollarSign, Target } from 'lucide-react';
+import { TrendingUp, TrendingDown, DollarSign, Target, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
+import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey } from '@/types/budget';
 
 interface Props {
@@ -11,8 +12,6 @@ interface Props {
 export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
-  // Filtramos apenas as contas de nível 5 (folhas) para evitar somar pais e filhos
-  // E aplicamos o filtro de atividade se fornecido
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
     (!atividadeFilter || a.atividade === atividadeFilter)
@@ -35,7 +34,6 @@ export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
   const despesaOrc = sumByTipo('D', 'orcado');
   const despesaReal = sumByTipo('D', 'realizado');
 
-  // Resultado = Receitas - (Custos + Despesas)
   const resultadoOrc = receitaOrc - (custoOrc + despesaOrc);
   const resultadoReal = receitaReal - (custoReal + despesaReal);
 
@@ -46,37 +44,49 @@ export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
       maximumFractionDigits: 0 
     }).format(v);
 
-  const pct = (real: number, orc: number) =>
-    orc === 0 ? 0 : ((real - orc) / Math.abs(orc)) * 100;
-
   const cards = [
-    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, positive: true },
-    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, positive: false },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, positive: false },
-    { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, positive: true },
+    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald' },
+    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange' },
+    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange' },
+    { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary' },
   ];
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((c) => {
-        const variance = pct(c.real, c.orc);
-        const isGood = c.positive ? variance >= 0 : variance <= 0;
+        const isHigher = c.real > c.orc;
+        const diffPct = c.orc === 0 ? 0 : ((c.real - c.orc) / Math.abs(c.orc)) * 100;
+
         return (
-          <Card key={c.title} className="border-slate-200 shadow-sm">
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-xs font-bold uppercase tracking-wider text-slate-500">{c.title}</CardTitle>
-              <c.icon className="h-4 w-4 text-slate-400" />
+          <Card key={c.title} className="relative overflow-hidden border-none shadow-md bg-white group">
+            <div className={cn(
+              "absolute top-0 left-0 w-1 h-full transition-all group-hover:w-2",
+              c.color === 'emerald' ? "bg-emerald-600" : 
+              c.color === 'orange' ? "bg-orange-500" : "bg-primary"
+            )} />
+            <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
+              <CardTitle className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+                {c.title}
+              </CardTitle>
+              <div className={cn(
+                "p-2 rounded-lg",
+                c.color === 'emerald' ? "bg-emerald-50 text-emerald-600" : 
+                c.color === 'orange' ? "bg-orange-50 text-orange-500" : "bg-slate-100 text-primary"
+              )}>
+                <c.icon className="h-4 w-4" />
+              </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-black text-slate-900">{fmt(c.real)}</div>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-[10px] font-medium text-slate-400">Orçado: {fmt(c.orc)}</span>
-                <span className={cn(
-                  "text-[10px] font-bold px-1.5 py-0.5 rounded",
-                  isGood ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'
+              <div className="text-2xl font-black text-slate-900 tracking-tight">{fmt(c.real)}</div>
+              <div className="flex items-center gap-2 mt-2">
+                <div className={cn(
+                  "flex items-center gap-0.5 text-[11px] font-bold px-1.5 py-0.5 rounded-full",
+                  isHigher ? "bg-emerald-50 text-emerald-600" : "bg-rose-50 text-rose-600"
                 )}>
-                  {variance >= 0 ? '+' : ''}{variance.toFixed(1)}%
-                </span>
+                  {isHigher ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
+                  {Math.abs(diffPct).toFixed(1)}%
+                </div>
+                <span className="text-[10px] font-medium text-slate-400">vs Orçado</span>
               </div>
             </CardContent>
           </Card>
@@ -85,5 +95,3 @@ export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
     </div>
   );
 }
-
-import { cn } from '@/lib/utils';
