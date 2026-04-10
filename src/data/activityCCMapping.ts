@@ -1,13 +1,1 @@
-export const ACTIVITY_CC_MAPPING = {
-  "DESP_ADM_TRIB": [
-    "ALMOXARIFADO",
-    "CONTROLDORIA",
-    "RATEIO DESENVOLVIMENTO HUMANO"
-  ],
-  "SERINGAL": [
-    "RATEIO SERINGAL"
-  ],
-  "PECUARIA": [
-    "RATEIO CONFINAMENTO"
-  ]
-};
+export const ACTIVITY_CC_MAPPING = {};
