@@ -1,9 +1,4 @@
-export interface CostCenterInfo {
-  centroCusto: string;
-  unidadeNegocio: string;
-}
-
-export const COST_CENTER_MAPPING: Record<string, CostCenterInfo> = {
+export const COST_CENTER_MAPPING = {
   "CONDOMINIO CAPELINHA": {
     "centroCusto": "CONDOMINIO CAPELINHA",
     "unidadeNegocio": "ADMINISTRAÇÃO"
