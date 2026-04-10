@@ -72,17 +72,17 @@ export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
               </div>
             </CardHeader>
             <CardContent className="bg-slate-100/70 border-t border-slate-200 py-4">
-              <div className="text-[12px] font-semibold text-slate-700 mb-1">Realizado</div>
-              <div className="text-[22px] font-semibold text-slate-800 tracking-tight leading-none">{fmt(c.real)}</div>
+              <div className="text-[13px] font-semibold text-slate-700 mb-1">Realizado</div>
+              <div className="text-[13px] font-semibold text-slate-800 tabular-nums">{fmt(c.real)}</div>
               <div className="flex items-center gap-2 mt-3">
                 <div className={cn(
-                  "flex items-center gap-0.5 text-[12px] font-semibold px-2 py-0.5 rounded-full",
+                  "flex items-center gap-0.5 text-[13px] font-semibold px-2 py-0.5 rounded-full",
                   isHigher ? "bg-emerald-50/80 text-emerald-600" : "bg-rose-50/80 text-rose-600"
                 )}>
                   {isHigher ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
                   {Math.abs(diffPct).toFixed(1)}%
                 </div>
-                <span className="text-[12px] font-medium text-slate-600">vs Orçado</span>
+                <span className="text-[13px] font-medium text-slate-600">vs Orçado</span>
               </div>
             </CardContent>
           </Card>
