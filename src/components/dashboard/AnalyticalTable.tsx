@@ -105,8 +105,8 @@ export function AnalyticalTable({
       return (
         <Fragment key={currentPath}>
           <tr className={cn(
-            "group transition-all duration-150 border-b border-slate-50 last:border-0",
-            level === 0 ? "bg-white hover:bg-slate-50" : "bg-slate-50/30 hover:bg-slate-50/60"
+            "group transition-all duration-150 border-b border-slate-200 last:border-0",
+            level === 0 ? "bg-white hover:bg-orange-50/40" : "bg-slate-100/70 hover:bg-orange-50/70"
           )}>
             <td className="py-3 px-4">
               <div 
@@ -124,21 +124,21 @@ export function AnalyticalTable({
                 ) : <div className="w-5 shrink-0" />}
                 <span className={cn(
                   "truncate tracking-tight",
-                  level === 0 ? "text-[12px] font-black uppercase text-primary" :
-                  level === 1 ? "text-[12px] font-bold text-slate-700" : "text-[11px] text-slate-500 font-medium"
+                  level === 0 ? "text-[13px] font-semibold text-slate-700" :
+                  level === 1 ? "text-[12px] font-medium text-slate-700" : "text-[12px] text-slate-500 font-medium"
                 )}>
                   {node.name}
                 </span>
               </div>
             </td>
-            <td className="text-right py-3 px-4 font-mono text-[11px] text-slate-400">
+            <td className="text-right py-3 px-4 text-[13px] text-slate-600 tabular-nums">
               {node.orc ? fmtCurrency(node.orc) : '-'}
             </td>
-            <td className="text-right py-3 px-4 font-mono text-[12px] font-bold text-slate-900">
+            <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>
             <td className={cn(
-              "text-right py-3 px-4 font-mono text-[12px] font-black",
+              "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
               isHigher ? "text-emerald-600" : "text-rose-600"
             )}>
               {(node.orc || node.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
@@ -159,11 +159,11 @@ export function AnalyticalTable({
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-slate-50 text-slate-400 uppercase text-[10px] font-black tracking-widest border-b border-slate-100">
-              <th className="text-left py-4 px-6">Classificação Contábil</th>
-              <th className="text-right py-4 px-6 w-[150px]">Orçado</th>
-              <th className="text-right py-4 px-6 w-[150px]">Realizado</th>
-              <th className="text-right py-4 px-6 w-[150px]">Variação</th>
+            <tr className="bg-orange-500 text-white text-[13px] font-semibold border-b border-orange-600">
+              <th className="text-left py-3 px-4">Classificação Contábil</th>
+              <th className="text-right py-3 px-4 w-[150px]">Orçado</th>
+              <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
+              <th className="text-right py-3 px-4 w-[150px]">Variação</th>
             </tr>
           </thead>
           <tbody>
@@ -177,12 +177,12 @@ export function AnalyticalTable({
             const totalDiff = totalReal - totalOrc;
             const isTotalHigher = totalReal > totalOrc;
             return (
-              <tfoot className="bg-primary/5 border-t-2 border-primary/10 font-bold">
+              <tfoot className="bg-orange-50 border-t-2 border-orange-200 font-semibold">
                 <tr>
-                  <td className="py-5 px-6 text-[12px] uppercase text-primary font-black">Total Consolidado</td>
-                  <td className="text-right py-5 px-6 font-mono text-[13px] text-slate-500">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
-                  <td className="text-right py-5 px-6 font-mono text-[14px] text-primary font-black">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
-                  <td className={cn("text-right py-5 px-6 font-mono text-[14px] font-black", isTotalHigher ? "text-emerald-600" : "text-rose-600")}>
+                  <td className="py-4 px-4 text-[13px] text-slate-700">Total Consolidado</td>
+                  <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                  <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                  <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalHigher ? "text-emerald-600" : "text-rose-600")}>
                     {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                   </td>
                 </tr>
