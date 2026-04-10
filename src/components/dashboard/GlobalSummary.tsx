@@ -46,38 +46,37 @@ export function GlobalSummary() {
       >
         <div className={cn(
           "py-4 px-5 flex items-center justify-between",
-          isMain ? "bg-primary text-white" : "bg-slate-50 group-hover:bg-orange-50/50"
+          isMain ? "bg-orange-500 text-white" : "bg-orange-500 text-white"
         )}>
           <span className={cn(
-            "font-black text-[11px] uppercase tracking-[0.15em]",
-            !isMain && "text-primary"
+            "font-semibold text-[13px]"
           )}>
             {title}
           </span>
           {isClickable && (
-            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-100 transition-colors">
               <ArrowRight className="h-4 w-4" />
             </div>
           )}
         </div>
         
-        <div className="grid grid-cols-3 text-center border-y border-slate-50">
-          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Orçado</div>
-          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Realizado</div>
-          <div className="py-2 text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Diferença</div>
+        <div className="grid grid-cols-3 text-center border-y border-slate-200 bg-slate-100/70">
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Orçado</div>
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Realizado</div>
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
         </div>
 
         <div className="grid grid-cols-3 text-center items-center">
-          <div className="py-5 text-[14px] font-mono font-medium border-r border-slate-50 tabular-nums text-slate-500">
+          <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
             {fmt(orc)}
           </div>
-          <div className="py-5 text-[14px] font-mono font-bold border-r border-slate-50 tabular-nums text-slate-900">
+          <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
             {fmt(real)}
           </div>
           <div
             className={cn(
-              "py-5 text-[14px] font-mono font-black tabular-nums flex items-center justify-center gap-1",
-              isHigher ? "text-emerald-600 bg-emerald-50/30" : "text-rose-600 bg-rose-50/30"
+              "py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1",
+              isHigher ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
             {isHigher ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}

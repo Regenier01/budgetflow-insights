@@ -58,35 +58,31 @@ export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
         const diffPct = c.orc === 0 ? 0 : ((c.real - c.orc) / Math.abs(c.orc)) * 100;
 
         return (
-          <Card key={c.title} className="relative overflow-hidden border-none shadow-md bg-white group">
-            <div className={cn(
-              "absolute top-0 left-0 w-1 h-full transition-all group-hover:w-2",
-              c.color === 'emerald' ? "bg-emerald-600" : 
-              c.color === 'orange' ? "bg-orange-500" : "bg-primary"
-            )} />
-            <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-              <CardTitle className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+          <Card key={c.title} className="overflow-hidden border border-slate-200 shadow-sm bg-white group">
+            <CardHeader className="flex flex-row items-center justify-between pb-3 space-y-0 bg-orange-500 text-white">
+              <CardTitle className="text-[13px] font-semibold">
                 {c.title}
               </CardTitle>
               <div className={cn(
-                "p-2 rounded-lg",
-                c.color === 'emerald' ? "bg-emerald-50 text-emerald-600" : 
-                c.color === 'orange' ? "bg-orange-50 text-orange-500" : "bg-slate-100 text-primary"
+                "p-2 rounded-lg bg-white/90",
+                c.color === 'emerald' ? "text-emerald-600" : 
+                c.color === 'orange' ? "text-orange-500" : "text-primary"
               )}>
                 <c.icon className="h-4 w-4" />
               </div>
             </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-black text-slate-900 tracking-tight">{fmt(c.real)}</div>
-              <div className="flex items-center gap-2 mt-2">
+            <CardContent className="bg-slate-100/70 border-t border-slate-200 py-4">
+              <div className="text-[12px] font-semibold text-slate-700 mb-1">Realizado</div>
+              <div className="text-[22px] font-semibold text-slate-800 tracking-tight leading-none">{fmt(c.real)}</div>
+              <div className="flex items-center gap-2 mt-3">
                 <div className={cn(
-                  "flex items-center gap-0.5 text-[11px] font-bold px-1.5 py-0.5 rounded-full",
-                  isHigher ? "bg-emerald-50 text-emerald-600" : "bg-rose-50 text-rose-600"
+                  "flex items-center gap-0.5 text-[12px] font-semibold px-2 py-0.5 rounded-full",
+                  isHigher ? "bg-emerald-50/80 text-emerald-600" : "bg-rose-50/80 text-rose-600"
                 )}>
                   {isHigher ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
                   {Math.abs(diffPct).toFixed(1)}%
                 </div>
-                <span className="text-[10px] font-medium text-slate-400">vs Orçado</span>
+                <span className="text-[12px] font-medium text-slate-600">vs Orçado</span>
               </div>
             </CardContent>
           </Card>
