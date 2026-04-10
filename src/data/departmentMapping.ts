@@ -1,10 +1,4 @@
-export interface DepartmentInfo {
-  nomedepto: string;
-  unidadeNegocio: string;
-  divisao: string;
-}
-
-export const DEPARTMENT_MAPPING: Record<string, DepartmentInfo> = {
+export const DEPARTMENT_MAPPING = {
   "ADMINISTRACAO": {
     "nomedepto": "ADMINISTRACAO",
     "unidadeNegocio": "ADMINISTRAÇÃO",
