@@ -2,7 +2,7 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "2428e800-d365-447e-8ec1-df5222fcbd06",
+    "id": "9b794a13-1802-4837-b9c4-c25fc6c2c06d",
     "codigo": "1",
     "descricao": "1",
     "tipo": "D",
@@ -13,7 +13,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "bb05c26f-98ba-41e8-9622-4660b2e45410",
+    "id": "269b86c8-37fe-4dc0-843f-851e1cacfde5",
     "codigo": "1",
     "descricao": "1",
     "tipo": "D",
@@ -24,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2e91a48a-5270-48c0-8113-e9831b8b38b1",
+    "id": "57e3c329-21a5-4fa0-984c-f8c714c20585",
     "codigo": "1.1",
     "descricao": "1.1",
     "tipo": "D",
@@ -35,7 +35,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "10a470eb-2ed3-48aa-8292-2aeda800dcbf",
+    "id": "52d7d45a-c89e-4c44-9a1e-c6bdbbe60b84",
     "codigo": "1.1",
     "descricao": "1.1",
     "tipo": "D",
@@ -46,7 +46,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fdb9f393-d5d9-424e-b217-9a37760477e4",
+    "id": "5b7b4c0e-eeac-47fd-9e2e-ea639479eff0",
     "codigo": "1.1.08",
     "descricao": "1.1.08",
     "tipo": "D",
@@ -57,7 +57,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9b747d61-46af-4fa0-95b4-79245a2e4f6c",
+    "id": "d70e3727-f93c-4fa9-9671-70fa9a251bac",
     "codigo": "1.1.08.02",
     "descricao": "1.1.08.02",
     "tipo": "D",
@@ -68,7 +68,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a4a23e84-db98-49af-852d-cf16b10a7edc",
+    "id": "4f00085d-520d-4542-bcfc-0788b2b74b1c",
     "codigo": "1.1.08.02.0003",
     "descricao": "GRAOS REIDRATADOS",
     "tipo": "D",
@@ -83,11 +83,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7ec3da03-7bfe-4474-81db-80763eb6d360",
+    "id": "15ec1a80-6d52-4fab-b97c-3d61cd9171b4",
     "codigo": "1.1.55",
     "descricao": "1.1.55",
     "tipo": "D",
@@ -98,7 +98,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e7bc74e5-82e9-430d-99cf-0ecbe98376f8",
+    "id": "7e5e97e8-be55-4321-aa22-a94da1404cf5",
     "codigo": "1.1.55.01",
     "descricao": "1.1.55.01",
     "tipo": "D",
@@ -109,7 +109,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c029ab55-0fa0-46c7-87bd-68f303f19572",
+    "id": "50d001ca-4312-4bf4-85ed-5007bc1038a0",
     "codigo": "1.1.55.01.0003",
     "descricao": "CUSTOS A APROPRIAR",
     "tipo": "D",
@@ -124,11 +124,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "6765af37-8d19-49b3-911f-49df41cbaada",
+    "id": "70a50233-ac7b-43e1-a4a6-c764e3a80120",
     "codigo": "1.3",
     "descricao": "1.3",
     "tipo": "D",
@@ -139,7 +139,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6261a827-af92-473d-b4eb-3a35ceb8399e",
+    "id": "e295ab32-e6ea-402e-8502-46dc48d43046",
     "codigo": "1.3",
     "descricao": "1.3",
     "tipo": "D",
@@ -150,7 +150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "725fe8e1-ecf6-46d3-b0a8-75f615f86e99",
+    "id": "a05132ab-642b-48e6-bb5d-eec143a9d8f9",
     "codigo": "1.3.02",
     "descricao": "1.3.02",
     "tipo": "D",
@@ -161,7 +161,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d0dadc42-5899-44f1-9ea6-d59623f0d550",
+    "id": "2f30809c-bcb5-461c-ad9c-fbebc71f4116",
     "codigo": "1.3.02",
     "descricao": "1.3.02",
     "tipo": "D",
@@ -172,7 +172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "08562a28-ef4c-4409-87ab-3476bf3635ef",
+    "id": "7a42ac73-6fe6-4588-8f6d-e0493d3a1087",
     "codigo": "1.3.02.23",
     "descricao": "1.3.02.23",
     "tipo": "D",
@@ -183,7 +183,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "bcf7df64-d151-40b6-935b-14460f670d94",
+    "id": "08cdbfb2-1f3f-49e4-95d3-5ac89b627f95",
     "codigo": "1.3.02.23",
     "descricao": "1.3.02.23",
     "tipo": "D",
@@ -194,7 +194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "43b6372d-c4e2-4f9b-9d37-b21bf13be555",
+    "id": "0e5d58bc-fd71-4c23-b91e-1a38dc7397b0",
     "codigo": "1.3.02.23.0001",
     "descricao": "MOVEIS",
     "tipo": "D",
@@ -209,11 +209,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3174b587-867a-46c1-8799-bdfbd5d55572",
+    "id": "22d33165-aeab-4462-a1eb-1098d9c87b28",
     "codigo": "1.3.02.23.0001",
     "descricao": "MOVEIS",
     "tipo": "D",
@@ -228,11 +228,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "cfb4868a-7b3e-4442-aec8-11d5d13c5faf",
+    "id": "be87b730-f69e-4dc8-bbfa-54f52f715433",
     "codigo": "1.3.02.23.0002",
     "descricao": "EQUIPAMENTOS DE INFORMATICA",
     "tipo": "D",
@@ -247,11 +247,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "400e4b60-c7e8-48e4-8801-89e047daee74",
+    "id": "3a5e966b-da2f-437f-8b00-28b476db2523",
     "codigo": "1.3.02.24",
     "descricao": "1.3.02.24",
     "tipo": "D",
@@ -262,7 +262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9da94706-8596-4c6f-85d1-fe793e885572",
+    "id": "5ebce995-e3f6-4872-8d24-b81aefbd8df7",
     "codigo": "1.3.02.24.0004",
     "descricao": "ONIBUS",
     "tipo": "D",
@@ -277,11 +277,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6ad6d617-2f15-419f-ba76-cc95fa04d628",
+    "id": "72353e54-23a7-49fe-a89e-b1f43115e983",
     "codigo": "1.3.02.34",
     "descricao": "1.3.02.34",
     "tipo": "D",
@@ -292,7 +292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c1c52bb7-c82e-4be9-a38e-25ecd91261b8",
+    "id": "a1c6b017-7cea-4730-b59a-5e67379c7862",
     "codigo": "1.3.02.34.0005",
     "descricao": "FERRAMENTARIA",
     "tipo": "D",
@@ -307,11 +307,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "989f19f0-782f-40ef-bd79-e912a0e005c3",
+    "id": "66e3b53b-4317-415e-aad7-444b5fd6e5ee",
     "codigo": "3",
     "descricao": "3",
     "tipo": "D",
@@ -322,7 +322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "48a2f6d0-804e-4be3-9697-67a1ba880aab",
+    "id": "16827a0d-7119-44bc-9152-dfa8845b02d3",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -333,7 +333,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0e0318c0-0435-4528-90a6-745635c419d7",
+    "id": "e9a9fe4d-9c44-48d5-8931-286249221be7",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -344,7 +344,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9df0aebc-2121-4259-a41e-0e23392646f2",
+    "id": "9d414e34-0a6d-42fb-a01c-bc90f2217d57",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -355,7 +355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "35700c89-cb52-427c-b5e1-1aeda7f127df",
+    "id": "6664b92c-dd37-4c8a-89e8-d32b80047d0c",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -366,7 +366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "13c7bc03-fd46-4cdb-829e-b5e7f3e766f3",
+    "id": "82b34006-dfa3-4fdb-bc0f-92c9e26fb8d6",
     "codigo": "3.1.01",
     "descricao": "3.1.01",
     "tipo": "R",
@@ -377,7 +377,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "37eace43-b9a7-4f08-8a4c-f2a3d2857842",
+    "id": "acc75daa-35fe-43f5-887d-c10c45bd0081",
     "codigo": "3.1.01.01",
     "descricao": "3.1.01.01",
     "tipo": "R",
@@ -388,7 +388,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1c8f5f40-3bd6-4017-b56b-e8b364885d2b",
+    "id": "4d094893-5d04-47ad-87bd-c44773cc3b0d",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -403,11 +403,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 240
+      "2026-02": 0
     }
   },
   {
-    "id": "11866260-cfef-491a-b744-f79b0240de3f",
+    "id": "a28d46a5-6f41-4d5d-b47d-a57cab1c3fd7",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -422,11 +422,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 0
     }
   },
   {
-    "id": "18482033-f03e-42b9-affb-a210ea3432fb",
+    "id": "233d4928-ab0f-406e-a31b-406d41449d51",
     "codigo": "3.1.02",
     "descricao": "3.1.02",
     "tipo": "R",
@@ -437,7 +437,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "736fe31d-73c5-4b76-9343-67452fb6b092",
+    "id": "b44dc5fe-e640-402e-95d2-69f708775b84",
     "codigo": "3.1.02.03",
     "descricao": "3.1.02.03",
     "tipo": "R",
@@ -448,7 +448,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8f436846-85cd-4764-89e6-207914b5fec0",
+    "id": "39af076a-e572-4f5f-97ff-2fb94d874aae",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -463,11 +463,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 0
     }
   },
   {
-    "id": "322c4714-4952-4c3d-9e2a-0fac695e40d8",
+    "id": "47bf8764-79b4-479e-b9ee-d8c75e9f82f3",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -482,11 +482,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "3263c4e5-bc24-4702-a341-913bdb53b05f",
+    "id": "c4d6ea98-4c0a-4f93-ba0e-e73db0d74f48",
     "codigo": "3.2",
     "descricao": "3.2",
     "tipo": "D",
@@ -497,7 +497,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4c2748e3-26fd-4507-a241-c0447022b596",
+    "id": "a0c9af22-b031-435a-bf22-24099346674d",
     "codigo": "3.2",
     "descricao": "3.2",
     "tipo": "D",
@@ -508,7 +508,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c067bc8a-5223-4fe2-828d-8951bb779dd6",
+    "id": "4ea1f6e6-5b4f-430f-869d-b5da728dd8cf",
     "codigo": "3.2.01",
     "descricao": "3.2.01",
     "tipo": "D",
@@ -519,7 +519,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ec41c8a9-ccd7-4dc7-b86d-01613e151d61",
+    "id": "1e464302-647e-44c1-bc67-1b4fe64e6104",
     "codigo": "3.2.01.01",
     "descricao": "3.2.01.01",
     "tipo": "D",
@@ -530,7 +530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d09d7f94-2728-44fa-87ac-68618ffe2222",
+    "id": "a05781ea-b77b-4c13-9824-4b33e5264731",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -545,11 +545,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 0
     }
   },
   {
-    "id": "f375d343-465f-45ba-b881-c85dd73be8fb",
+    "id": "3c7971c1-c7f8-4172-8531-386af3e3f5fe",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -564,11 +564,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "0c299376-8d5f-407d-93fa-5b2daec13a92",
+    "id": "6baa555f-842f-476d-b965-e882159be8ee",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -583,11 +583,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "e3ee76b5-040b-42d4-97f8-664226026382",
+    "id": "2b4c3864-0431-4103-afa2-382371d90dfe",
     "codigo": "3.2.01.01.0002",
     "descricao": "INSS",
     "tipo": "D",
@@ -602,11 +602,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 0
     }
   },
   {
-    "id": "95734435-3e09-4297-bcff-6e015aefe686",
+    "id": "dffe423d-e742-437b-b0a4-45de4aceea3e",
     "codigo": "3.2.01.01.0002",
     "descricao": "INSS",
     "tipo": "D",
@@ -621,11 +621,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "2326ab7a-753b-46b6-b0ce-91c32be13e04",
+    "id": "ebb33079-e5a7-47a0-b619-0137e69fb287",
     "codigo": "3.2.01.01.0003",
     "descricao": "COFINS S/ FATURAMENTO",
     "tipo": "D",
@@ -640,11 +640,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 0
     }
   },
   {
-    "id": "72d107a9-8eab-4c80-8aeb-6657aee8d307",
+    "id": "9e61543c-0102-4734-8115-90098ad19606",
     "codigo": "3.2.01.01.0003",
     "descricao": "COFINS S/ FATURAMENTO",
     "tipo": "D",
@@ -659,11 +659,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "161b47c0-cdd4-482e-99fc-b9fd8ec57517",
+    "id": "b98f48f6-8040-4f8f-a6a7-5b4e477c2194",
     "codigo": "3.2.01.01.0004",
     "descricao": "PIS S/ FATURAMENTO",
     "tipo": "D",
@@ -678,11 +678,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 0
     }
   },
   {
-    "id": "dbb15c69-b556-4d39-8fe1-b7cd0c690268",
+    "id": "1b48b666-bb1e-4850-a8dd-c2fdca149c11",
     "codigo": "3.2.01.01.0004",
     "descricao": "PIS S/ FATURAMENTO",
     "tipo": "D",
@@ -697,11 +697,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "5398cd07-0daa-4ef4-9e43-989c5fce7dbc",
+    "id": "772647f0-9398-4189-8d79-6d748f09055a",
     "codigo": "3.2.03",
     "descricao": "3.2.03",
     "tipo": "D",
@@ -712,7 +712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "05ac6636-9687-40ab-88bf-f3469739c23d",
+    "id": "c732e1f2-e4f9-4a68-81ae-7d2852e28948",
     "codigo": "3.2.03.01",
     "descricao": "3.2.03.01",
     "tipo": "D",
@@ -723,7 +723,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ad7ffe92-fd72-4ee9-b80d-f6506e8fe348",
+    "id": "289555be-3bb3-4495-9b9a-b782e8857a67",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -738,11 +738,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "3ff0dd0f-b68f-4305-93dd-0d59891d2977",
+    "id": "95b13159-5d40-499e-bf45-28f07641af3e",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -757,11 +757,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "57029a16-a65a-4b1a-bdd2-52b0764baaa7",
+    "id": "722f5665-1cb8-4ce9-ac3d-abe92898d133",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -776,11 +776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "193c0a17-03e5-4b91-8509-87adc0f846b4",
+    "id": "4b1b22a3-2b1e-415e-9c71-d258e742805c",
     "codigo": "3.3",
     "descricao": "3.3",
     "tipo": "D",
@@ -791,7 +791,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "3facb2d8-1e03-4c27-9427-b32ea8449cb5",
+    "id": "826e0a27-e3cd-4e8f-943e-524b44c8df8f",
     "codigo": "3.3",
     "descricao": "3.3",
     "tipo": "D",
@@ -802,7 +802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8767a6fb-b969-4fa6-8042-63198862590b",
+    "id": "68798dd1-662c-4edc-833d-e61034066878",
     "codigo": "3.3.01",
     "descricao": "3.3.01",
     "tipo": "D",
@@ -813,7 +813,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "35d14181-97e8-4517-b0c5-8d37a0960ae6",
+    "id": "42a73485-b3aa-4f6a-ae8e-d0a28166fa49",
     "codigo": "3.3.01",
     "descricao": "3.3.01",
     "tipo": "D",
@@ -824,7 +824,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8810f1dc-c519-4b72-909f-6252cb224d2e",
+    "id": "b066a626-4f4f-42ad-aa2c-32cac1f62be0",
     "codigo": "3.3.01.01",
     "descricao": "3.3.01.01",
     "tipo": "D",
@@ -835,7 +835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ce52bd8f-c59a-47b9-9105-569607c3db38",
+    "id": "6a6e3d3b-6534-4ef8-8e73-184c93e84553",
     "codigo": "3.3.01.01.0001",
     "descricao": "PRODUTOS ANIMAIS",
     "tipo": "D",
@@ -850,11 +850,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "77d4a5c7-4bf4-4e80-9bfb-94e738ae14fc",
+    "id": "de4b3f7a-9e5a-4e7c-b6ca-fa42f4d5e10b",
     "codigo": "3.3.01.02",
     "descricao": "3.3.01.02",
     "tipo": "D",
@@ -865,7 +865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c10cf8cf-ef53-44a3-9558-5f4dcd0971a6",
+    "id": "bf704ade-f9d4-4a26-9c46-5538890a8bd1",
     "codigo": "3.3.01.02.0003",
     "descricao": "LATEX",
     "tipo": "D",
@@ -880,11 +880,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 280
+      "2026-02": 0
     }
   },
   {
-    "id": "4e353a16-2929-4a68-813d-6837ff870ae4",
+    "id": "1ac6e89b-0ca1-4038-a1e3-1c2da069c5c9",
     "codigo": "3.3.01.02.0080",
     "descricao": "VJUSTO SERINGAL - DEPREC, EXAUST E AMORT",
     "tipo": "D",
@@ -899,11 +899,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "c047a254-5de2-4927-a33a-b8a3a7233ad2",
+    "id": "9f23de3e-2d0d-427e-93f0-299db950d133",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -914,7 +914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2af2e352-7c75-47c4-82f8-00d53946290b",
+    "id": "ec9b9642-b1e3-44ea-9acd-52da4c92e02a",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -925,7 +925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "12aa0cbe-be5d-41a1-9e07-3657b4bf444b",
+    "id": "9cde0d3d-ba16-4a73-a153-6edf79a72b56",
     "codigo": "3.4.01",
     "descricao": "3.4.01",
     "tipo": "D",
@@ -936,7 +936,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "401552f3-39be-4bca-954e-0d135b6f477c",
+    "id": "7476250b-e44d-4ae3-950b-479fe0b21ec8",
     "codigo": "3.4.01.01",
     "descricao": "3.4.01.01",
     "tipo": "D",
@@ -947,7 +947,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d7c86aef-cd37-4413-8be7-5b1fe65b7571",
+    "id": "21af4f42-3a4c-48a9-96f2-fb22053c2212",
     "codigo": "3.4.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "D",
@@ -962,11 +962,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "626503de-8726-4360-9077-461857377317",
+    "id": "164e143c-bbec-4177-8c34-00461deb992a",
     "codigo": "3.4.01.10",
     "descricao": "3.4.01.10",
     "tipo": "D",
@@ -977,7 +977,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "acec2344-b048-4b10-9bac-85748c11dfe0",
+    "id": "6b2ff933-7c41-4071-8e7e-597854c0e26c",
     "codigo": "3.4.01.10.0061",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "D",
@@ -992,11 +992,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "73c23713-2f14-48ea-beca-811046d2edee",
+    "id": "cfceafac-fbe4-40cb-9a73-394181c8e8a0",
     "codigo": "3.4.01.20",
     "descricao": "3.4.01.20",
     "tipo": "D",
@@ -1007,7 +1007,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "43bba99a-b582-4d5b-85eb-d04899c6df8a",
+    "id": "3e4b27ef-bb0f-476d-ba1d-12d794579f47",
     "codigo": "3.4.01.20.0020",
     "descricao": "PEDAGIOS",
     "tipo": "D",
@@ -1022,11 +1022,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "01d52579-e928-4ed6-b367-e4ec3e5db2d4",
+    "id": "47300a97-1390-4717-aa56-831a69e226ef",
     "codigo": "3.4.03",
     "descricao": "3.4.03",
     "tipo": "D",
@@ -1037,7 +1037,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a1de197b-464d-48b1-abee-716e184fe6b8",
+    "id": "57031d7e-6b67-4df5-bd6e-0cf7df1088ab",
     "codigo": "3.4.03.01",
     "descricao": "3.4.03.01",
     "tipo": "D",
@@ -1048,7 +1048,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fcc30b38-f098-47f9-bdef-408b9f7c191d",
+    "id": "2efaba2d-146e-4dca-a9fa-f4a726f4bd21",
     "codigo": "3.4.03.01.0006",
     "descricao": "IOF",
     "tipo": "D",
@@ -1063,11 +1063,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 500
+      "2026-02": 0
     }
   },
   {
-    "id": "980fb265-6212-4221-a893-ca24b3156345",
+    "id": "11c007bc-0b50-4096-a486-5d26d23cb29d",
     "codigo": "3.4.03.02",
     "descricao": "3.4.03.02",
     "tipo": "D",
@@ -1078,7 +1078,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7a66dd75-b5c9-438a-b627-593b8922745c",
+    "id": "cdcf9dac-5754-4188-a53a-e0c5bc0348fa",
     "codigo": "3.4.03.02.0005",
     "descricao": "TAXAS DIVERSAS",
     "tipo": "D",
@@ -1093,11 +1093,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 600
+      "2026-02": 0
     }
   },
   {
-    "id": "987d36c9-1660-488a-a187-d57c63f0d4f3",
+    "id": "e41c4096-6b9f-4757-8e47-c9724823c7f8",
     "codigo": "3.4.03.02.0007",
     "descricao": "PIS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1112,11 +1112,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 700
+      "2026-02": 0
     }
   },
   {
-    "id": "0c299ff3-0a7f-41a2-9504-0ee92a93f7b1",
+    "id": "cf59ab3d-6788-44bd-bc45-795a6cc360ec",
     "codigo": "3.4.03.02.0007",
     "descricao": "PIS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1131,11 +1131,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 800
+      "2026-02": 0
     }
   },
   {
-    "id": "e36b9b53-890d-41b4-adc9-cb908c4f173a",
+    "id": "54298425-1b08-4dd0-b615-191ca4a02958",
     "codigo": "3.4.03.02.0008",
     "descricao": "COFINS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1150,11 +1150,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 900
+      "2026-02": 0
     }
   },
   {
-    "id": "8163f05f-5934-4c29-98fe-9cf1032f178c",
+    "id": "aa19437f-fa06-4a23-9673-4c5d06d8f0b1",
     "codigo": "3.4.03.02.0008",
     "descricao": "COFINS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1169,11 +1169,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 1000
+      "2026-02": 0
     }
   },
   {
-    "id": "8ed7a6ed-7103-40f5-91c9-6011f32bbc0f",
+    "id": "10051e82-215d-40a1-aa53-963ba582d905",
     "codigo": "3.4.04",
     "descricao": "3.4.04",
     "tipo": "D",
@@ -1184,7 +1184,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "48756f54-e3f2-465b-b2ef-4d4cc4558da7",
+    "id": "d6981ca0-9313-441a-9438-6147756ebc63",
     "codigo": "3.4.04",
     "descricao": "3.4.04",
     "tipo": "D",
@@ -1195,7 +1195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "add88e49-99a3-4f4f-bb5f-4a5b3a276160",
+    "id": "ddae1a5b-e1d3-4686-8424-0405209cca96",
     "codigo": "3.4.04.01",
     "descricao": "3.4.04.01",
     "tipo": "D",
@@ -1206,7 +1206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8a8c8f86-8fe8-4d34-8d77-bb3463b73cc9",
+    "id": "3c94beee-beb3-417f-814b-d552b3dde5cf",
     "codigo": "3.4.04.01.0004",
     "descricao": "JUROS DE MORA",
     "tipo": "D",
@@ -1221,11 +1221,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SEM_DIVISAO",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "0eb0ec3a-2f41-4ab4-ba7c-d33b8a8fe4e7",
+    "id": "acf2a9a9-6610-4abf-930b-89356f06ef33",
     "codigo": "3.4.04.05",
     "descricao": "3.4.04.05",
     "tipo": "D",
@@ -1236,7 +1236,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c4a7c8ba-449a-4c28-885a-f5e3efadd868",
+    "id": "da9ed03a-2a1c-41db-a576-f3f3f32298b6",
     "codigo": "3.4.04.05.0001",
     "descricao": "JUROS ATIVOS",
     "tipo": "D",
@@ -1251,11 +1251,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "VERA CRUZ - SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7fed776a-2d36-407b-bcfb-1dffc92233eb",
+    "id": "30c09db2-e52c-4c3f-bad0-10e81a151d51",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -1266,7 +1266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b1495286-c26f-41f9-bd65-81329ce0145b",
+    "id": "9e2536ff-7e8c-471f-a9b9-8f4085d791a2",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -1277,7 +1277,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "03eb5cad-ab11-4742-91d8-5f47027e4689",
+    "id": "75a8e7ad-2ced-4dff-a927-600071e9608f",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -1288,7 +1288,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "645e9738-0d5f-482c-b385-3f8e3410272d",
+    "id": "76cea128-e0b0-4110-b254-a76326943a3f",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -1299,7 +1299,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f7a6ab38-2095-431f-8741-6d132806950e",
+    "id": "86133549-3d76-41fe-ba75-cc7fc12c2b00",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -1310,7 +1310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "44955383-5af0-48ac-8a79-3a20dce19906",
+    "id": "c49a9b45-b055-4770-9474-22101effb8ac",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -1321,7 +1321,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "779b8b11-4136-48f8-befd-5d867016d31f",
+    "id": "27a1ab16-ce86-425a-9c8e-da9a7cc77fd4",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -1332,7 +1332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fba5def4-5257-49d1-bbd3-840c25f11fe1",
+    "id": "a4972002-3374-4833-9495-d392ece5d8e9",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -1343,7 +1343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "245770e6-aec3-441f-a1b5-764bd87a5388",
+    "id": "a470df3b-f9aa-415c-9442-220ff0bf522b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1358,11 +1358,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "9de895ba-ac1b-47c8-bfa0-3f80ba71ddd2",
+    "id": "89019480-320c-400f-bcef-a8043b1c4eba",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1377,11 +1377,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "a762abdb-a9a8-4176-919f-dab26e972dbf",
+    "id": "21308555-c9d4-47a6-ab8c-efdb03d86b02",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1396,11 +1396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "ece0d30e-b29f-49c6-9747-56d114bae86b",
+    "id": "c4936ab9-7575-4cfd-8045-a109c1301d60",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1415,11 +1415,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "32830c6c-ff27-45bc-bce0-f57d6b954faf",
+    "id": "1fd5d532-10f4-4bab-945e-d6a7e6e2c3dd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1434,11 +1434,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "b8ceebaa-5770-4d19-a232-7c1429c79336",
+    "id": "1b109f05-6489-46c7-8882-3c097471ec37",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1453,11 +1453,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "6af7e0bb-b67d-447c-9297-0a0e6f966eb7",
+    "id": "91da45cb-835a-44e8-a7e9-6f94beb1eab5",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1472,11 +1472,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "5fa8f49d-180d-412a-bff5-bfd7feac9d2c",
+    "id": "bdd7f0b6-81cb-46a5-beac-19664ea7a9f7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1491,11 +1491,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8338bb4a-ec38-4989-a010-6d95ee0099cf",
+    "id": "9fa9a931-3663-4940-a396-4a1d890892d2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1510,11 +1510,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a3023a8d-81aa-4ab2-a94a-367a9fd2c8be",
+    "id": "aed1a2b7-de3b-443f-8447-b118bf549eed",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1529,11 +1529,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "06964c7e-3558-4b51-ba46-3c34b40805cb",
+    "id": "0b423ea9-f594-425b-ab47-97ce2c5ed94c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1548,11 +1548,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e7283f4d-b5f2-4a09-ba8c-e164bc187348",
+    "id": "8ef0f835-e841-4937-b598-cc729b0c8d6a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1567,11 +1567,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "1e64c2b5-14ed-406d-a42f-88d96ef1b717",
+    "id": "553ffc26-b495-462c-86e1-38b513ba216a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1586,11 +1586,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e4b1de97-a244-452f-a96d-f3947467e0f2",
+    "id": "f0ee5953-deaa-434a-846a-18bc24b4ca64",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1605,11 +1605,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "ccbc5b84-67ad-4ab3-a5dd-706a3c283d65",
+    "id": "d8ec0798-37b6-4bcb-8524-9c97c200b3ba",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1624,11 +1624,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "07727687-a0f0-4100-90e4-70770075b3f3",
+    "id": "d4155279-9922-461b-b633-fb65a4bba2db",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1643,11 +1643,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "d57b25a9-22df-4b53-8aa8-366ace895214",
+    "id": "d2df883e-91c5-4db3-a9b6-288667aebff8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1662,11 +1662,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "5e707e0e-bd3c-4e03-a057-8e29e2a5618b",
+    "id": "6bd52145-2a64-45fa-9c2d-fd512b2abe5f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1681,11 +1681,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "764473e1-0356-420b-a9a2-52ca86f96ab6",
+    "id": "6a5f1871-6d0e-4106-baf0-3b7cbd8c9f18",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1700,11 +1700,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "15c44385-d46b-4011-9116-4a64fca4e62c",
+    "id": "ea8f5db5-4d8e-4512-b7cf-962174aadea4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1719,11 +1719,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "b65abd03-0ff5-46b2-b09e-394fdbc56a79",
+    "id": "6bfd1e2d-6d4e-4de5-a722-18b9d5d205e8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1738,11 +1738,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "6baad607-094d-48eb-b773-279ca359a128",
+    "id": "52eba213-dd37-44c9-970b-51d580de7082",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1757,11 +1757,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "182492cf-3aa1-46d7-b474-829fcfdebaf6",
+    "id": "da10518e-9480-4290-ab6a-9ccceffd033a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1776,11 +1776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "875b74e6-f55e-41ed-b561-0e6f87ce0a2a",
+    "id": "58118428-5441-46fc-8da7-abb36d9b18c7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1795,11 +1795,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "88c89ba2-1625-415b-b0a0-e863784f4b5a",
+    "id": "a68ed62c-8d80-4b97-9036-63a5568dfa25",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1814,11 +1814,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "c3737fff-22ec-4084-ab7d-5fc67c24d1d1",
+    "id": "647de92d-65c9-4cef-bbe6-c4b75a3c5daa",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1833,11 +1833,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ab3e97b6-200b-49cf-aa84-d3a8ed40b7ea",
+    "id": "d9c36fef-1222-48b6-8a18-69864ada3368",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1852,11 +1852,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e3f6b575-869b-4e7d-9346-6cb1432b8d25",
+    "id": "39843859-7c3d-4cf0-9fc6-90a89219851f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1871,11 +1871,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "0af100b0-1695-40de-a871-ceffb01e7d98",
+    "id": "98fe862b-073c-4be1-8954-bdbbb4f09df3",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1890,11 +1890,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "677ff6ae-984f-43e4-ac35-72985c62cb9a",
+    "id": "5023031d-a770-42f9-aed8-8ce7fed64329",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1909,11 +1909,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "87459eb4-6ff7-4fa1-9f46-2f674d2764ae",
+    "id": "32ad73b5-8af5-4b92-a04d-1ce04e1f2a43",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1928,11 +1928,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "29e2765b-8f2d-4402-a5b9-f0edc24f9ebe",
+    "id": "c1140b10-2cdd-4c76-bbf8-b8e632ae39ca",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1947,11 +1947,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fbe85e35-617b-4453-b728-8ec535447a71",
+    "id": "c08e1630-8843-4717-a58f-6837be62272c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1966,11 +1966,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6ff69f08-94fd-4813-be06-dc930effd657",
+    "id": "610d8478-f28a-4e6a-afec-afb5dc362fb1",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1985,11 +1985,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d1b9234e-5080-4e1a-8406-7596c9ea1e3d",
+    "id": "dfc33c51-4cb0-4ec2-b459-2b8dd66edc91",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2004,11 +2004,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "da4d0d11-dfd2-4d71-9717-ed8df60c0568",
+    "id": "4e3078d8-57ec-4ad3-a908-0dea3d8b7616",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2023,11 +2023,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8080db4e-5603-4986-a5f5-b0060ac876fd",
+    "id": "e121aeed-e640-4552-99f0-d1e91fa2b00b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2042,11 +2042,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c6607bf7-2dfb-44a7-8739-5ffea96dc00b",
+    "id": "8db03585-798d-4b57-92a8-33e134364c48",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2061,11 +2061,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8c967735-0358-4bb4-bbfb-487f01d30dcd",
+    "id": "9d276be1-a34c-4930-90ff-bf23712e1be6",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2080,11 +2080,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "99dd4e48-73a4-4d11-be77-9613775f10dc",
+    "id": "aab267d3-4cda-4907-b2ac-9780c7110736",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2099,11 +2099,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "a40b10de-c87f-42f6-8cf6-20903628626e",
+    "id": "f7b3cde1-fa95-4289-998d-987eeceebbf8",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2118,11 +2118,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "601c883e-9051-44a7-8005-a23de70c6bf8",
+    "id": "5a500455-98da-43c6-8b49-cff565abf4ca",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2137,11 +2137,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "cfa48182-bc20-47ba-9ba1-ea24d5a76cd8",
+    "id": "7a591cd7-5bf6-481a-9d6b-ffb0dfd6f9ee",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2156,11 +2156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "00df36cf-c888-4ce6-bd06-b3dee41a3477",
+    "id": "baa8a5b0-3758-40d6-b6c8-e64a85233aa4",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2175,11 +2175,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3b2f2923-9d21-4698-9ed6-94cae4f4237a",
+    "id": "15f2303f-bbee-4f3f-802c-c44829d639ae",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2194,11 +2194,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "d4a3735d-6de2-4f10-999c-eaeac238f60c",
+    "id": "e5ea52e6-d70a-4029-ab04-49f3e5ab8c5d",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2213,11 +2213,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "6b6c2070-349b-4f4f-a9ce-1c083afd6f23",
+    "id": "edfc9512-3ff1-44b8-bd25-1c8ed370853c",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2232,11 +2232,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "ec8d927c-9688-47b5-a53f-d58d05b4ac94",
+    "id": "e27499b4-edd2-4746-a790-eebb85e4790b",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2251,11 +2251,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "2863f75a-291a-494a-95a5-9e3de4c8ac9f",
+    "id": "7611f401-6c94-4379-a8ef-2d130bc9cc01",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2270,11 +2270,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4afae9b4-e076-434a-a07c-b499a27bc591",
+    "id": "ec6fa6f5-82ec-4b93-858a-0fac476c60a8",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2289,11 +2289,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "500ff1c0-3b1c-47aa-b0a5-8b045cd4c7fd",
+    "id": "47998769-63ec-482a-85b1-68751f6a27ba",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2308,11 +2308,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "9be320e1-14eb-44f9-a26c-3a154734d76b",
+    "id": "73886ba0-1ac2-4af2-bce7-84a493b653ab",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2327,11 +2327,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a3fb72f4-2c9c-4306-a631-78bf1b20b0a4",
+    "id": "a8d4b6c7-96ec-4092-b361-818652a5a45d",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2346,11 +2346,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "a38a59ce-d7e2-41d1-a541-22409fa56707",
+    "id": "aa2c5d61-167c-4aa0-9b03-a633ed02c838",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2365,11 +2365,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "c769889b-e62b-4c78-ab2a-50c6a27c2890",
+    "id": "536872b1-a1ec-42c6-9b36-30801c59cb1b",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2384,11 +2384,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3c17d8a3-f2e2-481e-904a-c44749b85c4b",
+    "id": "0e29a148-7ca9-4539-ad25-9703580537d2",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -2403,11 +2403,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "44e54afd-2378-43d4-876b-e77169e4e1f9",
+    "id": "fb2bc47f-1228-4b43-a126-b582629abd7d",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -2422,11 +2422,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0b296353-4524-4ce3-9150-0e845b18a046",
+    "id": "20960b13-2124-4ef1-8aab-b7ffc352fef4",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -2441,11 +2441,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "8d84bc1c-fc75-40c9-bf74-c3cf2d65c743",
+    "id": "e460652b-3c56-42b7-8486-5214c4a379da",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -2460,11 +2460,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "62e0c633-3c21-4ee3-b06a-f5466d88a4ed",
+    "id": "be3cc9ab-1faf-4667-a17d-03bf0c2ee7b8",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2479,11 +2479,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7c9f5f0e-4c72-49cd-83cc-6f5e98bde151",
+    "id": "f532caba-aa0c-42dd-b02f-272a27f6316b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2498,11 +2498,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0fc387d9-aa99-43a4-9a51-6e75629cf478",
+    "id": "7ec3f527-bc5c-4780-b9fb-25c2e33a919a",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2517,11 +2517,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "51e01918-6b33-4e2b-a3ee-544a1d96458e",
+    "id": "8d89eddd-069d-4351-a969-b6ba1873f218",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2536,11 +2536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "21e869c9-7fbd-47b9-8185-b79e71930c9e",
+    "id": "6bb801c1-d072-4d23-bf61-e4ce5d92d3f0",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2555,11 +2555,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fac469b2-6dbe-4a72-9a37-bb0528ff43b8",
+    "id": "d7796e32-df42-493f-b479-cfd13d5d514e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2574,11 +2574,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "bc371953-0ff3-4839-ae70-e365721c3e34",
+    "id": "b95db8f7-f9bf-4d0e-8195-104d2fe3fe40",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2593,11 +2593,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "8769994f-e1d7-4783-a593-3c6f600ce9bd",
+    "id": "993de1bb-ebb5-4423-a49b-eb68e4935973",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2612,11 +2612,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "7a05f26c-bf2f-4dfa-ba03-2ef69a6997a1",
+    "id": "a255b30d-8834-45ad-b982-21e5a1df8f07",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2631,11 +2631,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5bcbfb2b-52f8-431f-aec6-6ada8b61f209",
+    "id": "a9db8fb2-ed5e-4549-94dc-6aff3242b061",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2650,11 +2650,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "a91b39ab-6039-46ae-a272-972f003de890",
+    "id": "06f6178e-7a56-44ad-9210-f0768f97ba03",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2669,11 +2669,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1d31d9fd-c4e2-4201-8004-0449de7bbd83",
+    "id": "86491005-8742-4136-8103-b23005d7e5a3",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2688,11 +2688,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8637a623-b955-4d51-bdff-8df8c7667a0d",
+    "id": "58eeb994-68de-4430-b813-c23d4e09e49e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2707,11 +2707,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e5d31509-1dc4-4855-a9b5-e4347fca9b91",
+    "id": "4a9c5198-77f0-4a18-9213-c55d170ecdd2",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2726,11 +2726,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "363582a8-27ba-4320-ae69-00eb51bd65fe",
+    "id": "06b509c8-e0a7-4e58-97dd-d2f3948c8aa0",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2745,11 +2745,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "bd6a6b6b-65fe-4dff-843a-57710cd4e932",
+    "id": "cdc3468d-4f99-4ea0-8ede-f03dec33ac85",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2764,11 +2764,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "d0d924e8-b927-41bf-a487-1c9ecceb38af",
+    "id": "bde8702a-40f0-4d7b-9454-a7a3f3709b71",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2783,11 +2783,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1bacb0b7-9df8-4869-a3e6-5c9217c76003",
+    "id": "cdcf4aba-cf7e-4908-a24b-5ff86d25ffc4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2802,11 +2802,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b19eb692-f1e7-4edf-a31b-7128c0cf65cf",
+    "id": "048806ce-f1d1-4a13-a2ae-891678ba0fe6",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2821,11 +2821,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "98eb92c0-fcbf-449c-8b65-8f222f3e5a5f",
+    "id": "a80fe570-9e68-4f26-99a9-e13feaaf909d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2840,11 +2840,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9f635042-e2fb-46b6-8587-6fb3740058a9",
+    "id": "b8347993-8392-46ee-b4f7-46ef717eb896",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2859,11 +2859,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1b9e4fef-7595-4ce1-b93b-1a97934807f6",
+    "id": "6d535c6b-77f1-4a5a-bdeb-a80c59f4e28f",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2878,11 +2878,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "af1f564c-8f3c-4bc2-8bf1-6a5b7a8c003c",
+    "id": "fd6cdc9d-2609-48d4-a184-3e8d4d888fdb",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2897,11 +2897,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "baaad34b-ee2a-4aa6-ad98-aeb90f897094",
+    "id": "db1d3e76-f8f6-484a-a24d-89ee6f61656b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2916,11 +2916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ca91b1d8-ffe9-4760-bb5a-7f2da4a5046e",
+    "id": "61b905dc-2a2c-48f6-9a68-22d8fe62de3d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2935,11 +2935,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "cafbadd0-616b-4255-9d73-634f50063ca4",
+    "id": "806d1599-3a01-48bc-97cf-6cef125c90dc",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2954,11 +2954,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "e4fb9779-e887-43fc-91b7-4ee5293d47bb",
+    "id": "89d79571-98fe-411a-8d07-e587169d5373",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2973,11 +2973,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "408f66ed-0950-45f7-afa7-ccc882443095",
+    "id": "8a649bc4-d660-4b06-9769-e020f3b94969",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2992,11 +2992,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "50a8a3d6-222e-400c-b666-13af47b4172b",
+    "id": "f327f384-0bf0-4643-8f7c-5cd5b118c53e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3011,11 +3011,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a6c19197-d9b1-482b-9823-2805e484d48b",
+    "id": "7ecf5cc1-c1a7-4977-b44f-265357ac8fb4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3030,11 +3030,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a943c448-ca43-4743-8834-3afb812f4adb",
+    "id": "44232c8a-d86b-4ecd-9d3e-08a40f0e7972",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3049,11 +3049,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b3054cc3-0658-492b-836b-1186726866fa",
+    "id": "2cdc6b24-508a-4960-b9a3-7f1ac311ef64",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3068,11 +3068,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dd0796b1-708c-46e3-ab5d-f20cd8c291e7",
+    "id": "66301874-41d0-46e3-a746-378ab8e773d2",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3087,11 +3087,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2f7250c0-ff64-4196-b8b3-a3994ac36d32",
+    "id": "ee5025ba-6d7e-4b3f-9794-7aaf4e60739e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3106,11 +3106,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ece808ed-535c-44c6-89ea-38d3fb67db0a",
+    "id": "b718aac0-664a-485d-a391-4f93f93ec058",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3125,11 +3125,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "39dffb90-1dbd-4275-877e-af03b8e5d29c",
+    "id": "73484600-1612-41fd-8bb1-ee94496877eb",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3144,11 +3144,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e903bfd4-2586-42ed-8d0f-1d09a049813b",
+    "id": "f36d3a40-d9b8-4edd-a11d-8870b7bd4794",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -3163,11 +3163,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "afdd67c6-fd8c-462c-9e3d-c6b9978c8fb8",
+    "id": "9cfd0c30-5b84-49d4-8db3-7a4383d06e9d",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -3182,11 +3182,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "67de6589-b881-4bc1-a8ed-146133500a94",
+    "id": "f14af9ef-dbfd-4a0b-ba70-9d5ee19b1d28",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -3201,11 +3201,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "eb46adcf-1257-42a4-94e2-c741a2a6473c",
+    "id": "1fff6c18-4a7e-423e-82bc-0ec6a253d725",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -3220,11 +3220,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "68e8f7dc-ef86-44b5-ab5f-a6aa7ad4e2d5",
+    "id": "c434ff1b-47f4-4343-9bda-6b59ad42eb60",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -3239,11 +3239,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "f37c7d75-21b9-477f-a3bb-f00279a2e8f2",
+    "id": "d4b63722-026e-42d7-a8f8-40fdac5293dc",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3258,11 +3258,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "8c013806-1375-4a96-a1d4-a719d97a140a",
+    "id": "33ac1ebf-2b58-44c6-833a-8f6f7db89979",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3277,11 +3277,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "fa050c0e-9b62-41b3-a6a1-4784fdd1b7bc",
+    "id": "17179fb9-0dc2-41c5-9586-0fa8ea7fc113",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3296,11 +3296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "2cb8e1aa-d321-45ea-9cf3-24cef2205110",
+    "id": "04cbc1c3-4ea1-4d4c-84ec-a59f1e96da9e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3315,11 +3315,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 220
+      "2026-02": 0
     }
   },
   {
-    "id": "518aa227-ffc2-4978-b67c-5279673dde12",
+    "id": "bc5c31fe-97ab-46ce-8f4b-39c5ca4b6b7a",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3334,11 +3334,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "9e012cf4-ca88-4bac-af01-f26794fd355a",
+    "id": "8a3cf8bc-4b57-4eaf-90c6-988e2cd53a86",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3353,11 +3353,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "86d3d92c-0817-4580-be53-16ec799371c9",
+    "id": "02aad4c3-9652-4ba1-8eb1-138c9a191113",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3372,11 +3372,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f872b8d0-08b1-4e22-b99f-320c370a99d2",
+    "id": "1251b546-a772-436a-93ea-cc434596656a",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3391,11 +3391,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "a49c0b4e-64a3-4bdc-bcf9-089bbdd4d70d",
+    "id": "cd2da7a8-d58c-4d4c-8420-c924e89a37cf",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3410,11 +3410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "565329d3-fdbf-4fd8-9ee1-a2cb3d65630f",
+    "id": "af9bbff6-43e3-4e09-9511-72f9d60daafb",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3429,11 +3429,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5a563d15-ed6d-4e25-8bc4-330dc0fc9d95",
+    "id": "193ecce1-a53c-4fa9-9442-2e654a17a9b1",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3448,11 +3448,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "35474f1b-46d5-446f-96cb-9243e6983af8",
+    "id": "140f1eb7-a1f3-4c2f-81dd-e90a5f72777e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3467,11 +3467,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "16a9b300-9b4d-438c-9ceb-e8b8d6bb77b1",
+    "id": "103f8a3f-d5be-4259-90a4-23de921a62a9",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3486,11 +3486,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "61b67e5e-1894-4a77-bcc7-375819013fb4",
+    "id": "a55df170-f66f-48c1-b7a5-135069554866",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3505,11 +3505,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9ad8ae75-c0a4-4b86-9648-16d1390bafe3",
+    "id": "2698d8e2-668c-4e79-8692-1ac962591b77",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3524,11 +3524,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "e0ac7147-82dd-4f99-946f-145de44630b9",
+    "id": "0080753c-e7c6-487b-bea3-884eabb80a5f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3543,11 +3543,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c98ed459-f49d-4f04-b6a7-8af68d6fbeb5",
+    "id": "3bb50dae-d7ad-464f-a4f9-2983081ae233",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3562,11 +3562,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "edda17b1-b3a8-496a-a81f-9a85ff140be2",
+    "id": "1bc7f93b-4c26-4eaf-a907-dcf82d285f48",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3581,11 +3581,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "5ebd895e-e101-4a94-8dc7-09c440f979db",
+    "id": "1beecfe4-63da-45dd-be22-2705dce1de81",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3600,11 +3600,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "147b650e-df4d-4e0f-bbe9-381d54735972",
+    "id": "067a5791-80c4-4da2-bb7e-81899bf31638",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3619,11 +3619,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "517d8f1d-1bc6-4622-a5a7-9967492c0a95",
+    "id": "ef2b9998-c1f8-434b-938b-c67ee6812aa0",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3638,11 +3638,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "9f3c6e65-c647-435a-b7de-eedf6d2f12bf",
+    "id": "ea4cc339-c24d-4269-9b29-acca902b7f4c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3657,11 +3657,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "9ee745ee-9fdd-4c0b-9e1b-07d2b395e173",
+    "id": "9864dfe3-17e3-4e6b-b344-505bb9d65bea",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3676,11 +3676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "08fb2bf8-b5df-48e6-9e7a-f8fb45ed843d",
+    "id": "8801e944-db15-4ee1-886a-425078b8d10f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3695,11 +3695,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 220
+      "2026-02": 0
     }
   },
   {
-    "id": "62da56a6-3ae2-434b-9499-0225f7105d6b",
+    "id": "ad68c7a4-e54f-4f9e-a6c5-56e8fb3ed522",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3714,11 +3714,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "9f14c1c3-457d-4a96-a794-f125fe266f3f",
+    "id": "56a3236b-b628-401c-a301-d413937e1fc7",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3733,11 +3733,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "93feb428-02db-47e4-97bb-430f60525bf8",
+    "id": "4c229eb4-20ef-4857-8f93-290eaddcd5ea",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3752,11 +3752,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6cb7bdee-99a5-4167-a00c-420fa4cc9255",
+    "id": "27fc7c4b-2cf7-49bf-8c2d-94d4e7902c2e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3771,11 +3771,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "378205ee-5b4f-4643-b10d-03c9637b6086",
+    "id": "d7e714ee-4034-44dc-97e7-9c643cfeb4b3",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3790,11 +3790,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e2922924-f953-490b-8fb0-7becf7cd7d5c",
+    "id": "fda16a4e-1617-4d3f-9f8d-0f243ed494dd",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3809,11 +3809,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6d99919e-7762-4572-9d69-8d47c5f80181",
+    "id": "cd3a30e0-714c-4876-a092-1e42b10e5dcc",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -3824,7 +3824,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c9b53e78-3a69-403f-877f-c2ecda85592d",
+    "id": "4df67954-fee6-4a76-86cd-1898d1635741",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -3835,7 +3835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "67375091-8a09-4ff0-9297-71f48235afe4",
+    "id": "63667c0e-6992-4416-a395-27c8feb3c8fe",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3850,11 +3850,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "bfea0c29-53b1-4a81-9244-5eae055a8dda",
+    "id": "96372953-0a1b-4a75-8195-d129043473f5",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3869,11 +3869,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 300
+      "2026-02": 0
     }
   },
   {
-    "id": "5e857843-ccb0-47ff-a942-a0dbffd45b5d",
+    "id": "71b5be49-cb89-4d21-95b8-cded39ecb314",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3888,11 +3888,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7420af4e-4abb-45d8-bdbf-8fa8ba4df36f",
+    "id": "a3e7534e-5871-48f7-8050-cdafabf42261",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3907,11 +3907,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "b84ef415-e90d-4547-b278-cf64823e96b3",
+    "id": "e72e6d29-4215-4fca-928f-dddef6561747",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3926,11 +3926,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "b474009d-b862-49ff-a494-7fdfd7b018de",
+    "id": "9ab25b4a-3db7-4de5-8409-99344e5e7681",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3945,11 +3945,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "e79928e5-21bf-4f48-a249-ed7dfcdd656d",
+    "id": "00e20a3f-8630-4263-ad07-9ec53e23feb2",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3964,11 +3964,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a84b39c2-60f0-4941-8a15-853932640d7a",
+    "id": "6171521d-4ce2-4397-9348-ddaf2c1e3973",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3983,11 +3983,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "32a7248e-96fe-4ea6-a196-e2ee4933b212",
+    "id": "35515db9-4004-4e01-b216-195621a998a8",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4002,11 +4002,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "5269df06-5e57-431b-975d-e4f96a535f1c",
+    "id": "05689815-9952-472a-a5d3-797513863f24",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4021,11 +4021,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "b9aa175e-468f-4a16-ae1f-0f308713c4ae",
+    "id": "c6cf9952-5452-464a-acef-71f9d58898e3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4040,11 +4040,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "df052100-892e-41b0-b7b4-f7e26517615d",
+    "id": "b38eded4-207c-45c1-844a-548fc39e3aa9",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4059,11 +4059,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "6d4c08d6-9ebe-4c67-86a3-a93124e0e1bf",
+    "id": "b37c4b1e-4078-4d3e-b1bb-fcbffbf105af",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4078,11 +4078,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "4e7f4556-f149-4db9-baed-4d68527f7a9d",
+    "id": "06fab74b-2d8b-45f3-8016-1f6afa44ee65",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4097,11 +4097,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 310
+      "2026-02": 0
     }
   },
   {
-    "id": "68ce0929-aeac-4d3d-9aff-85d30b9a0639",
+    "id": "e91c9338-e723-446b-b5a3-3522f845809f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4116,11 +4116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2ac88ba7-24e9-4a3d-8fa2-13b63171ff8a",
+    "id": "5fa284be-6c30-4d1c-afc4-16e70f0b634d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4135,11 +4135,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7285505c-ce00-4f6d-8726-e2f216266223",
+    "id": "cda6d435-be8b-4c86-ae24-93bd4895cdd6",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4154,11 +4154,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "658501d9-c2be-4f3f-b726-5f83e735c49d",
+    "id": "b67b5a2a-a967-42cb-8bde-6cb51233ae8a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4173,11 +4173,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1757bbe7-d5d9-4fcb-aa3d-826db1704342",
+    "id": "8d9f343f-2595-4913-942f-d574c3d99d29",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4192,11 +4192,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4327fd86-b281-43a8-97d3-2a294a7d2dba",
+    "id": "2e0981e4-ec42-49c5-9967-2f7dce358a30",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4211,11 +4211,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "29a62189-5acf-4b96-b25f-edb883d9dcdf",
+    "id": "8fb26bd9-0afc-4210-8174-f1b038bb8c59",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4230,11 +4230,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "32c05b74-63ce-4f61-8747-14abd9608dd1",
+    "id": "6a04baf3-f7bf-495b-8eaa-2b85484fe704",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4249,11 +4249,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a074b62c-0080-4a59-b437-8ff30dd4ba5a",
+    "id": "eafd415d-88e6-45a4-bb7c-d40295f4dc7f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4268,11 +4268,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "aa2cf0ba-00b5-457e-b01e-dd8d5a935661",
+    "id": "ff4f12a9-6042-4077-a17c-f0a5f0089f6b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4287,11 +4287,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "484f3350-3a88-48af-9b98-5a8be7f71de2",
+    "id": "01eb5308-2bab-49db-a409-7431e25404cf",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -4306,11 +4306,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "22abeaf7-2032-472f-ad58-8e6df14f9150",
+    "id": "8d8a3101-628b-4fce-8f01-7cbb2d2ac4d2",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -4325,11 +4325,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5478bb7a-066a-4612-bab4-9c8c8b09ad18",
+    "id": "b0611fb9-2ce8-4c83-a1a7-8aced797b085",
     "codigo": "4.1.01.03",
     "descricao": "4.1.01.03",
     "tipo": "C",
@@ -4340,7 +4340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "48243b5e-3f20-4aa9-a442-46bc34932032",
+    "id": "a8e864fe-9c67-416c-aaec-e38161d7483a",
     "codigo": "4.1.01.03.0002",
     "descricao": "LOCACOES DE MAQUINAS AGRICOLAS",
     "tipo": "C",
@@ -4355,11 +4355,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "174db538-d32b-4555-8ba6-e68dbf3e1f85",
+    "id": "02c28cf2-be80-488e-8cc6-742724973474",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -4370,7 +4370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8bf8f70f-0659-4699-baae-8dde182af45a",
+    "id": "8d4e8cd0-558e-4115-840d-e39396932760",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -4381,7 +4381,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c23b57d6-278e-4f46-b352-7937daba626b",
+    "id": "c65775b7-5359-416f-b370-316719c9a1c0",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4396,11 +4396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "81edbc0b-461b-4feb-92fe-8252fb8ffc4d",
+    "id": "d36247c0-7026-4d82-917d-f0ca4ab61b3c",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4415,11 +4415,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "43c4dcd3-34b6-4db2-9d93-25253b2cae5f",
+    "id": "7fd8b743-6f51-4aea-92f8-40ac4cf26983",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4434,11 +4434,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "8001f543-2fc8-43d7-a687-3a0c0f448105",
+    "id": "51a2e37d-544f-4c3e-b6e0-4126c238c893",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4453,11 +4453,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dcfd8dfa-9158-48e0-89d8-abf415329952",
+    "id": "76683c81-7ddd-49f1-941f-044356fca570",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4472,11 +4472,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "52e9d312-82a6-4c10-96a8-ef0df28d1ad5",
+    "id": "a4a5a9f6-aa3c-4573-adca-769ac3d8e383",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4491,11 +4491,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9c385cd2-5462-49bf-a875-6ea2f52653be",
+    "id": "a56e3aef-b63d-4948-9d22-628da662b8fc",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4510,11 +4510,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 230
+      "2026-02": 0
     }
   },
   {
-    "id": "13ed8f55-a63d-4667-985f-12930976aacf",
+    "id": "52bde81b-b64b-4a53-bfb1-291b09406bd0",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4529,11 +4529,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "18e34bf3-78f5-49d9-ba14-6ca504300762",
+    "id": "9e5997a5-76fa-45d4-af8f-59db1b3962e0",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4548,11 +4548,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "5eea341c-b560-4c3d-8785-9be1171848e7",
+    "id": "bdb09710-1791-4f4a-abae-44ee7c7ec19d",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4567,11 +4567,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4f74ab36-ece2-4693-b8dd-d459f399cbb2",
+    "id": "d00c7d3d-7852-4529-892b-bff59599bd2e",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4586,11 +4586,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "18efe50e-4451-4280-b03b-c985b434f20d",
+    "id": "74b0524c-5e81-4479-a0c1-0029a9a2396a",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4605,11 +4605,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e6da2546-3e4d-4318-8350-1f947080d076",
+    "id": "56425952-4b09-4b6b-a132-e5bdf466e5fa",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4624,11 +4624,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "dc5ed5c2-fe7c-4b1f-92c9-b8b3cb248aed",
+    "id": "920a4f3d-c796-404e-b199-6a3306f76de9",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4643,11 +4643,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "511e6d25-8160-41bf-bd39-324661025e35",
+    "id": "eddbea21-3153-4132-9c07-8c9257aab7ef",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4662,11 +4662,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "17c566ee-5a63-4399-b1a4-4875f676edb5",
+    "id": "f5cb9c7d-16af-4415-92e0-846b5d2c5fbb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4681,11 +4681,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "417e1425-930f-4164-9ca8-036e95b96662",
+    "id": "eddcb91d-376d-4c26-9b55-cef9a6d20584",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4700,11 +4700,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "d22af451-fffa-4cc5-ab61-2a8a21bf9d92",
+    "id": "9d418797-72a8-49b0-b645-a51f1b27533e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4719,11 +4719,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2fcd8529-0a72-45c9-916f-2df68899a8ba",
+    "id": "69d07980-dbd2-47ce-9b00-1d37294be4a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4738,11 +4738,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c497f9ef-efc0-426f-a99d-a18ebe75dd04",
+    "id": "18ac99e6-3dbb-4e87-9f83-d253469d641a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4757,11 +4757,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "559646c6-e853-49dc-af39-5edabcac1550",
+    "id": "fe22f720-326b-4bb8-be98-1848ee88e7a3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4776,11 +4776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "025bb1e9-695c-4896-ab45-bdbe9031901f",
+    "id": "049bf226-b216-4e98-b6ef-6ec073fdc5cf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4795,11 +4795,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "1ff36ab7-880c-4a78-8c84-0bcd71a00200",
+    "id": "3b920a5a-d7c2-42ff-bb5e-00d10a8dd1a2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4814,11 +4814,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "aaa263e7-272b-43f4-b231-0bb330afa304",
+    "id": "da5f5815-4bc4-4de1-92fa-437c539d96f8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4833,11 +4833,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8dd7647a-6ed5-4220-a87f-1d64473c6468",
+    "id": "dac6a5dc-d817-4288-bc51-4f533a2771ed",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4852,11 +4852,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "fd3866c3-6abc-4ee6-b6f2-968b29bf9cd3",
+    "id": "39230cc5-745b-43e5-ba58-05ba55772750",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4871,11 +4871,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "87d6efea-0cde-4c9f-81e1-e23569523699",
+    "id": "254ec164-3531-44f7-8cc2-25a2d2554935",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4890,11 +4890,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "24f917f6-403a-473b-8b64-a433d00a1c18",
+    "id": "897d0810-a111-473d-ad61-929771bdb71b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4909,11 +4909,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "90a8757f-5245-4a96-bc4e-cc71a39be2a6",
+    "id": "3075a78f-b432-4f1a-bc12-2f7a8376b2e5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4928,11 +4928,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c70b0b2f-297f-446f-857c-bf923d53686f",
+    "id": "c48c5656-b5f3-49bf-93ea-ed7095de2248",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4947,11 +4947,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "69bc9e16-b869-49af-9a9e-3d6b827c1357",
+    "id": "7c5bc91e-22c3-4de4-9559-77242e81eee6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4966,11 +4966,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1e4d2a75-9a1e-499e-b138-50dd29084df0",
+    "id": "779fe840-bd17-4bc6-acf0-ebc30df6039e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4985,11 +4985,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e18e6ed1-09f7-461b-9418-ddc59af012e0",
+    "id": "b322d4cf-d078-4b25-bb90-7e0ba916aa8a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5004,11 +5004,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "56afccdd-bbe5-40d9-969e-5c0ae5a6540d",
+    "id": "5ddccdd1-2a06-4aba-98e1-6951aa596ab1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5023,11 +5023,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e6fa22fb-0f54-428e-b227-6a9b334eb2ad",
+    "id": "604661ba-c296-44dc-94c3-c9e9c20679c2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5042,11 +5042,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a308df78-8a0d-4f67-a977-c2869aa855f0",
+    "id": "951cbdda-ddc2-4b94-aca6-b02bf9aa8729",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5061,11 +5061,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e882a064-023a-41de-8a94-4b7c23ca9785",
+    "id": "8488ecf1-52c8-4e5b-b856-17ffcef5f0e1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5080,11 +5080,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5819b2e7-6664-4b81-ac55-bd748c0b49a5",
+    "id": "cde2c8b5-32c3-40d1-a804-2ebd9562eb8f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5099,11 +5099,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "282a834b-47f7-4882-8315-9ee69f160d36",
+    "id": "860d85af-eead-47aa-95e9-2b9c4b902dba",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5118,11 +5118,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c680b657-30a9-46ce-985a-b4e945358653",
+    "id": "84898880-cda3-453f-bbb7-1f0cbe7bafac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5137,11 +5137,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "27fed598-5b56-4f02-ac88-cca1e940c353",
+    "id": "121f579f-47ef-49c2-aed0-ac035fa6c200",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5156,11 +5156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4325b63a-67e6-4f70-b163-027fe5e4f2c7",
+    "id": "7354f2b3-8686-4764-9697-c3d2eb99ec23",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5175,11 +5175,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9515a340-a727-4cc6-bcc4-5ef8221f462b",
+    "id": "70709466-60dd-42ad-a26e-082dfc234093",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5194,11 +5194,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "64b48435-481e-4f75-97e3-5c4ddb0955cc",
+    "id": "200e81d3-da86-4d19-9e54-095d417b2e3f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5213,11 +5213,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "81e5160e-3dcf-42d1-9a44-97ca3db0d77e",
+    "id": "b858bda4-3c70-4852-931d-671868b534f8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5232,11 +5232,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "be8a668d-1ac1-46cb-b729-410511a70610",
+    "id": "dc92d36a-b4e4-408d-92b4-c1cbec1717ca",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5251,11 +5251,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ff23942a-648f-4140-b278-8eea3765cb39",
+    "id": "fdc7c5ee-36e5-4192-9659-5ecf445e12c5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5270,11 +5270,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9eb47250-3187-4a93-9ad7-7a71f26a5b86",
+    "id": "85457867-ce8f-488b-943b-21ed2dd4cb04",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5289,11 +5289,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "149d087c-9f1e-409e-8d89-42d0899da412",
+    "id": "a7bda2e4-444e-46d6-8d0e-a3cc676b9885",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5308,11 +5308,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e1c71e94-ae5a-4ebb-8d21-548fe15ec2cd",
+    "id": "96d777d1-7a23-42a4-8fdf-4269cd3c8c08",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5327,11 +5327,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "11f9670c-a5a5-4eea-9382-15505f06d35c",
+    "id": "4dd0a69b-5690-430f-a1f6-bef39ec8827f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5346,11 +5346,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "59b45349-3770-426d-8485-4cd266fc9fcc",
+    "id": "5b97b228-f800-4b78-887d-a9bd46eced8e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5365,11 +5365,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9ea254b8-8266-4dfa-8b61-ac9ac22b5ccd",
+    "id": "06fe62d6-38be-4f43-8939-5a754f0dda96",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5384,11 +5384,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0dcfa9dc-071b-4f9c-a18c-63dde628e048",
+    "id": "315f5507-66f7-4fb5-8816-da7efe959027",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5403,11 +5403,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f2544c95-a5ca-4ac5-8af3-188739bc45f1",
+    "id": "ef7b49f8-7afd-4837-9f6b-dbac54846f0b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5422,11 +5422,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "54e3ca14-33e5-4681-8581-2d39de039991",
+    "id": "18763e9c-5e5f-42fe-aaaa-0f323c5c1d11",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5441,11 +5441,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ca38ac2b-abe5-4a24-a0df-9359b9344034",
+    "id": "81f150a1-4d01-449e-8df3-77a61ea287b9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5460,11 +5460,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "82f57b6e-32ff-4a91-b4fc-b7762d63a20b",
+    "id": "eba1e6ba-6f67-4721-b3d2-d33033c70161",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5479,11 +5479,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "35ad63c7-e310-41af-947e-b8cbc9f230df",
+    "id": "0ff42652-ea1a-4df6-ac8c-149536a26f16",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5498,11 +5498,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "363984ad-c480-4170-a742-814f5ffd86c1",
+    "id": "a8743fed-b180-4c99-9b2c-b64ea1f281d8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5517,11 +5517,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "eb3aaa6a-b2e3-4b67-821e-769cf02c62ab",
+    "id": "c93b65c8-a6ad-4d08-ba1c-a7aca673ec5c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5536,11 +5536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "210c5634-1b74-4967-89ca-572f65a606f4",
+    "id": "6483a393-564b-4f35-85a8-461ead0e1969",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5555,11 +5555,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a4b3ad29-d28e-43db-8477-a5afb07219c3",
+    "id": "13376f26-c219-4819-ae9e-7473481703ac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5574,11 +5574,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "11a4bd70-5f98-4919-bd32-18e94bfbea20",
+    "id": "2285e53c-6e12-46e4-b10a-184a1ceb9ca8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5593,11 +5593,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "792515b2-0ea5-4c50-ae03-bb742538f7ed",
+    "id": "1f23874c-20e4-4986-8705-00a0647b2847",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5612,11 +5612,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "635d37d9-1239-4094-963f-62454d6ac9cb",
+    "id": "bc523f4c-64fa-4887-a5af-bbdf4bac1724",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5631,11 +5631,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "9fe801a9-276c-4d6a-80ca-017e766098dd",
+    "id": "91b43b09-d3e4-49da-a9b8-3f1cbb888aec",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5650,11 +5650,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "00c1db5b-1db8-4cac-985c-1312c4b85756",
+    "id": "ac54ab47-fd3e-4050-a21f-a55cfe3f3870",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5669,11 +5669,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2158a7e2-6065-4610-bc9e-d059174aba24",
+    "id": "f4406ab2-ee9b-4729-a804-7bd599172876",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5688,11 +5688,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7102856e-7047-4a6c-a11b-16ec6b98beca",
+    "id": "8dd74a72-8d5b-4a56-abe3-2afb7eb7e2da",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5707,11 +5707,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4107382b-4ee2-4b28-ae74-a7c9300d01a3",
+    "id": "8dc85afb-74f5-4685-865e-a6c5bf0dccd0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5726,11 +5726,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7c3afc61-27cf-4a07-aa2f-591707b4cc95",
+    "id": "0c99e6f1-6978-4b50-ac72-754f75f54e0e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5745,11 +5745,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "45d8ee51-7405-49e3-838e-a7dee3e88667",
+    "id": "42499033-ade7-44a6-9599-d0084b06036e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5764,11 +5764,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "81cd9428-55ba-41da-a8d7-8468269697fc",
+    "id": "1d31f4c5-b8c0-4d6f-8fd9-b85f86953dab",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5783,11 +5783,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "25227ea0-2103-4bf3-af43-75ca33fb3dec",
+    "id": "b145d4c7-119d-41b6-a8cb-242c46f516dd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5802,11 +5802,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "6c02b40e-6eaf-4baa-9b6c-b4c0f24a6671",
+    "id": "4a018c1a-f4cf-44e6-8d44-56fc5d303d3c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5821,11 +5821,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4f1b7596-0958-4ab5-83ed-98656c29194b",
+    "id": "60a2283e-dcd0-4f22-be94-dea7ce630595",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5840,11 +5840,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9e8dd25a-a608-42c9-9965-dc28d1359bed",
+    "id": "7386f75e-ddf2-40ec-a8c0-caab757762a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5859,11 +5859,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fba2fe95-834d-4b07-9dfd-aba88c0fbdb8",
+    "id": "a33fcfbd-b874-4840-8e4a-7f0d52bc3308",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5878,11 +5878,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "cc92aa74-eb5f-4a39-87b2-815f356779e6",
+    "id": "50c55399-ade0-446f-bc15-8764a145a5ff",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5897,11 +5897,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7a225a27-22e4-4030-abf2-af313381d6c0",
+    "id": "8f0e80a4-3d81-44db-b3fd-2e365978edbb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5916,11 +5916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5a11b82e-d733-4014-8fab-a530f49ac37e",
+    "id": "634c265e-0be1-4168-9812-fdfa5a44dc09",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5935,11 +5935,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4968a8cb-00d5-4444-ae0f-9db5aaa998a7",
+    "id": "4bf8a900-f31d-41ab-afd9-0dd0a9798a27",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5954,11 +5954,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3d826d78-bccf-448f-b2d7-9c5fa39a1ad9",
+    "id": "583e6010-8783-4cb4-96ec-c133a76e3537",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5973,11 +5973,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9674a384-1e35-460e-81fd-e4885495b893",
+    "id": "b6170de3-9aef-4101-af13-edaa0e6c1e4e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5992,11 +5992,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "93c8ffc0-51c9-4acb-9c3b-9693de2719d0",
+    "id": "092a2c3d-207a-4aea-b5b7-f2d64c4ceb48",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6011,11 +6011,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7382df71-0aff-42d4-972e-d7531493ca52",
+    "id": "45fad546-987a-4805-ac5c-25aa368fbc2f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6030,11 +6030,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6c890f7c-c18b-4c45-9116-dfadbabc9851",
+    "id": "86acf2f3-1721-41d0-aa30-e1100aa17f8e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6049,11 +6049,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "45efd268-f4ee-4e53-8b6a-218bdaae5cd5",
+    "id": "d09d2930-5943-46b2-980b-17c28f5f1379",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6068,11 +6068,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0bc779ed-f600-4e97-a128-50ca4a4cf954",
+    "id": "75e35429-1c3c-4d1f-b71e-6826498e26e2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6087,11 +6087,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "ed3eff72-47da-4a56-9147-f514084ac4b8",
+    "id": "06eb66e1-3d26-4281-96f8-865f7ae4f4fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6106,11 +6106,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "8daf73ba-84de-45ef-9f2b-8f27c179fd6e",
+    "id": "5340b434-a2bf-4968-8225-312bc53863bc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6125,11 +6125,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1ba1f7a6-c0d4-4a24-84fb-a5065bc3699b",
+    "id": "8eb22cf4-9171-42a3-b14c-696b3aa94cbe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6144,11 +6144,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9f4f3d5b-7fe1-4a2f-8636-375de8f27d5f",
+    "id": "ec6826fe-1126-41d8-959b-154410ad0e85",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6163,11 +6163,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d654f5fa-7215-4dd6-bcc8-4a2403763b2d",
+    "id": "dfb8c66f-24f7-4a62-8a83-0ff26c4317cd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6182,11 +6182,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "edbc93f6-bc62-4d56-b0d1-e81988cb549b",
+    "id": "0f8558ea-77bf-4963-972f-37f65b407022",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6201,11 +6201,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "603d937b-86ef-4590-aca0-5920a5ea09f7",
+    "id": "fdfead79-4cd9-4f6f-b251-d3786e309dfe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6220,11 +6220,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "493bffc1-6075-4641-bd4b-6f28300f21ad",
+    "id": "f6feaf6a-4be9-4fe1-8f9b-15d9621883ff",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6239,11 +6239,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b1c48188-f2c7-4275-a2e4-3017cec3a1bc",
+    "id": "27df318a-58f7-460a-9f1f-847c5a60fb3d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6258,11 +6258,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "053b0ab1-dac4-4086-b480-96b6b4cfae69",
+    "id": "345c0c71-2492-448a-a02a-b438c34a6a24",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6277,11 +6277,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "09470695-f093-4fc8-88f1-daaf1cfb4676",
+    "id": "274245d9-2f10-4457-bba0-205c1b6b9413",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6296,11 +6296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "840ca69e-a2fa-4840-9121-8a3cb93ae464",
+    "id": "bb390c10-83c4-486d-a2ab-1b2ae82f0016",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6315,11 +6315,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6f8dbea5-f745-4361-8c0d-f6332ecbc2f8",
+    "id": "dbb12d26-a61d-4406-b637-efc04d331118",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6334,11 +6334,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "912449d2-99a9-448b-9ffc-ca1e142c1636",
+    "id": "f7940d28-56db-4c6f-b4bc-3617074eb084",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6353,11 +6353,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "9822f32b-5c9d-4ae3-a545-2bab1f9d23b3",
+    "id": "55e2e537-1bb2-4bc2-a575-c99015006b99",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6372,11 +6372,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2e7447f4-01f9-4069-ba24-6b3470ec9540",
+    "id": "6f334ad4-fc80-42cb-b03c-79e25a62a981",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6391,11 +6391,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "27f6549b-49a5-4bed-8947-6688ddbbeac1",
+    "id": "2b1c2786-a0b4-4424-a6c7-6e4514224b23",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6410,11 +6410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b662f4f8-782f-4f38-80d7-c8d77d575288",
+    "id": "50e73509-f667-4752-8e25-94f370908757",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6429,11 +6429,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "583e3d30-3fd2-41c2-9887-b29dbf61c70d",
+    "id": "400086e1-a1b6-40bb-9580-bfc1a81224db",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6448,11 +6448,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9987d3ee-f3d9-4c7c-a185-5dd28245d0f4",
+    "id": "d9bc5661-e8cc-4ea0-b26b-98d4dc4c8e2b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6467,11 +6467,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "94a5c92c-d4d9-426b-b71c-0771eaed7d43",
+    "id": "0d0e114e-2899-4be1-afc7-086740d22a0b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6486,11 +6486,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e9c717b9-3bc3-439f-baca-0ffc5fea5688",
+    "id": "100faca9-8bbf-4fed-b868-000f6c59cecf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6505,11 +6505,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5d4cb3f6-234f-4bb7-ae82-826600966d56",
+    "id": "a757c1fe-ebe9-454d-8e2c-46dca07a2726",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6524,11 +6524,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b78aec27-8a31-4751-9f25-06a6fadab667",
+    "id": "5f16037a-f003-4a39-b4a4-a70e6bde78f3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6543,11 +6543,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "19a787d1-58b8-4698-8264-ffa5e1edac05",
+    "id": "c1f275f1-f2b6-48f2-8531-f7b9068074c6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6562,11 +6562,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "13bede98-1b1c-4a0d-bb25-9ef8647dc30a",
+    "id": "ed84a610-d1c0-4309-b720-3d99c0453b3d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6581,11 +6581,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5c80fac6-76e0-4dec-9f8e-dc8ad4bde953",
+    "id": "4b3a149f-d351-4361-9db9-047d66cbe379",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6600,11 +6600,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7e7b75b4-97a3-4c87-8539-fee53f4c251c",
+    "id": "55268aec-7368-4958-aab5-d70c2c7d78f3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6619,11 +6619,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "04be026c-ff6f-4e7c-93df-0769735809a1",
+    "id": "714b44b1-6d6f-4128-9d30-6748391211bd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6638,11 +6638,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "32583063-5c15-4e86-93dd-5e0c5f535f17",
+    "id": "e5951e08-09c1-4493-b5ed-6f2476a4c1ae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6657,11 +6657,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "99401b25-c3bd-45e9-b65b-f9bb26aa03a4",
+    "id": "b86bc7fc-a271-4971-ac91-862f612e106e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6676,11 +6676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6a07a35f-1a03-4beb-b6f5-eda874a8f96f",
+    "id": "574c2401-f76a-4007-9ee7-f191b3f57eef",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6695,11 +6695,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "07ce1acf-bcb0-49ff-813e-071dc31ed2bf",
+    "id": "6c3c752e-1654-490c-b0fb-1c22d9ef4864",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6714,11 +6714,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c3e72a85-e5d7-4162-a2ae-7b5961cb6eab",
+    "id": "42af8413-a617-4ef4-869c-f550100b7bbd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6733,11 +6733,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "05e7d4f1-92cd-411b-8056-bc1bf59acdc3",
+    "id": "7314f4fe-d56d-445e-a484-6539187821d6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6752,11 +6752,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a5543793-e189-4cb3-b5fc-5216fa78fb46",
+    "id": "af60a3ab-17e9-456f-9e40-6e5d44a5b945",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6771,11 +6771,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "aa5af0c4-f86b-44b3-b2bc-473d0e268775",
+    "id": "47bb06fa-152d-40ba-b37c-5d9b7fdbbeb3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6790,11 +6790,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "15d438e2-9f3c-4f27-ac25-0aba5fef816f",
+    "id": "c1322bde-075f-409d-9cc5-724e5daa1b09",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6809,11 +6809,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "eba1dcac-02e4-4171-be4f-54cf7f5beba1",
+    "id": "507e61ba-0af7-4f27-b693-f481314ace11",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6828,11 +6828,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2b417a42-c8b0-48e2-a9f3-983517be237f",
+    "id": "ab5233c3-7fb7-470f-89e6-f138d26489ec",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6847,11 +6847,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6cc6068e-8b42-4b55-9ba0-dba90c2d521b",
+    "id": "414fce24-1e95-49e1-b595-a78bab3d1111",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6866,11 +6866,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "80697e62-5758-48b6-953b-2e0b9245c553",
+    "id": "b7347348-559b-475f-b83d-0ad7842e2715",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6885,11 +6885,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8a0fa721-7124-4290-b8ac-02ef5c93579a",
+    "id": "ca2129fc-a69f-4a43-b979-6330b23bc94d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6904,11 +6904,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "577eb944-6d61-4bd5-985d-2e22f285f98a",
+    "id": "bf25a226-961c-4d8c-9af2-4954e6886f73",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6923,11 +6923,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 0
     }
   },
   {
-    "id": "66c72cde-7e61-4fbc-a4bc-53cf7cf2f79b",
+    "id": "90892d9a-d890-42ce-b71d-822ebfb18b9d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6942,11 +6942,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8b762356-addd-483b-8d2a-4c71cb4b2ada",
+    "id": "c97538c2-2c06-4945-beb6-914bc08fd622",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6961,11 +6961,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a2bf5e04-a560-42d0-9b75-41b57af10314",
+    "id": "42af211c-a978-4a55-b7f5-0bb875d435b7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6980,11 +6980,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "97731c63-a280-4fd2-8114-f43842f1fc2b",
+    "id": "f6fb9a51-f34c-4980-80a4-d7812b611c27",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6999,11 +6999,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "68b84671-e366-40de-9e00-e3869a018d52",
+    "id": "e04e2f88-0419-4e81-a101-f80842a57a7e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7018,11 +7018,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "35f5c55a-f157-4c39-a198-772cccfd26a3",
+    "id": "cc202dcf-e93b-4d41-a501-d3d05ceed7eb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7037,11 +7037,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "352d006c-1526-439f-b7ba-72e567143dbf",
+    "id": "a88bbb12-bb9b-4d82-8495-d6f1ef392059",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7056,11 +7056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "b508bd81-56e8-4b86-9dce-dbb46506273f",
+    "id": "0fa471c0-170b-4396-9190-ac63cc35f962",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7075,11 +7075,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "74ba0a26-3fb4-4c40-9643-bd96aedbacc4",
+    "id": "685b8ae0-d68e-440a-82c3-3f533adfb3ed",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7094,11 +7094,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fd16e016-ea57-484d-8130-6ff9f8cffe1e",
+    "id": "6cce811d-b7ea-4060-97ae-c035db23b5a9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7113,11 +7113,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "becf7f88-06c9-48f3-9329-d87fb4f36554",
+    "id": "167c601d-378a-44df-aea4-7e99942eed9a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7132,11 +7132,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "17bc61c0-6254-434e-8f5e-8f7dbdba63c6",
+    "id": "7fd5ab97-54d7-4147-ba84-8640c88f6d5b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7151,11 +7151,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "eabe600c-4d46-4aee-888e-9270f5e0beed",
+    "id": "a75940e2-3251-4ee0-8172-9b4e0b2cdbda",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7170,11 +7170,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f8ee177a-0985-4e96-aab9-de08e68c4be8",
+    "id": "398396a8-0eaf-40fb-822d-2520b8232bac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7189,11 +7189,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4d4f8388-f796-49c4-8acc-cd2e91997701",
+    "id": "f1b7fa27-1cf1-4802-9bfd-09b7c3047a06",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7208,11 +7208,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e9687fa2-2ae8-4f3c-8acb-39655303ec5a",
+    "id": "d8fe9f7b-31eb-479c-99d9-905ef4b6eac3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7227,11 +7227,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6d2b261e-58fc-466d-8f7f-77cab975f219",
+    "id": "8c5bfdac-0fbb-47ea-a446-acad60a31287",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7246,11 +7246,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c4b0b9b3-35d0-471a-adac-9cdc84fb734f",
+    "id": "f780752a-026c-428d-af12-2f3841347711",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7265,11 +7265,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "327a6b94-fdf8-41d0-8d79-4e023d4cd7d4",
+    "id": "a75e3a5d-e473-4871-ac27-04cfc4660921",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7284,11 +7284,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8f1d3cd9-13c3-4bf0-b95e-990fcd2dfa1e",
+    "id": "b8f7aaf1-3e89-4970-9b92-753becdec47f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7303,11 +7303,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a6be93ba-9748-4e74-9f7d-6a988171f5ec",
+    "id": "597bb8e2-c36e-45ca-a60a-c1b34be285fd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7322,11 +7322,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0a2449c8-4e19-4fca-9fe7-2c804110ec1a",
+    "id": "2e720d1a-6d3c-4d43-8c24-f4efab215691",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7341,11 +7341,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dc54b6a0-42cb-40db-b501-88bee8fd8df1",
+    "id": "0af4ef8e-f4bf-4b52-8f3f-0490d40a9d50",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7360,11 +7360,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "feda18b7-ff55-4a20-804e-c026975e5e11",
+    "id": "3244afbb-2bbe-4e51-a978-7ec806eefe7e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7379,11 +7379,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2a99bb82-e088-40e3-872b-98cf6450ff02",
+    "id": "8bb9b443-48fe-43da-aab5-534b62b42544",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7398,11 +7398,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "71189cc7-0fad-4ee1-ae08-bf4fd09de278",
+    "id": "f1c4ea2e-4dd8-42ea-8b0a-bd04b1232f41",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7417,11 +7417,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4d2a03f1-528e-4b89-9aa6-78df2cf98087",
+    "id": "e9ecef02-8fd5-437d-b8bd-da4423096b85",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7436,11 +7436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a65a8f9c-652b-4d01-96a9-9d53a348d062",
+    "id": "25eb3b02-c9c8-4f1b-8ddd-990d9501b935",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7455,11 +7455,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c02b4dac-43a2-489b-a827-fcf1d22585c6",
+    "id": "aaa15c2f-8771-4ad7-a22c-933069a19e70",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7474,11 +7474,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9b293b2d-f63f-4cfc-9d12-650c1a7c0832",
+    "id": "a29a90ff-bd9e-4891-9347-a96e2d7c1824",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7493,11 +7493,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "57a3743e-8d68-45cb-96a1-bf32a03aa148",
+    "id": "b4b3652a-3822-42ca-a337-fc20fb446fe1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7512,11 +7512,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6d448d05-6025-4866-ac33-b8936caa4ef9",
+    "id": "e4af2023-3cb0-4aec-a659-7484602da4ca",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7531,11 +7531,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b8e87868-b9c2-4247-bd38-68d84f6e5cb2",
+    "id": "107fa286-be94-4f70-af7e-fd7d6eecc9e8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7550,11 +7550,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c9d59b09-bb36-4b40-865d-ad85a5d3c91c",
+    "id": "e686ad65-9eb5-438a-b906-6bbcec2657b3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7569,11 +7569,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a0a3c529-6c6d-4b28-bdfd-99e6f8b40c19",
+    "id": "babd94fa-09fe-40e0-9f15-0176fb79b25c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7588,11 +7588,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "14badde8-628a-4c56-bde0-f9f3676d3351",
+    "id": "2f61a459-e549-41a2-8047-c6710f8c97f7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7607,11 +7607,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "cb73c9c2-6ca7-4628-971d-cf2466c7250d",
+    "id": "d8f43233-5be2-4481-833d-3436f7a4d1df",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7626,11 +7626,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6f742eaf-7609-4df2-babf-224b29383a52",
+    "id": "fef2dba8-f31d-451c-84d3-884e12e43c81",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7645,11 +7645,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3471b6db-c18c-4509-a346-71af441581e1",
+    "id": "54bdb330-784e-4964-aeea-0b6a0c9b57ca",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7664,11 +7664,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f15ba11d-88f5-45aa-81e4-62f1c88ee84d",
+    "id": "5b8d4185-c3c4-4ec5-b84b-b1b5d149cfae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7683,11 +7683,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ee69736d-416b-4ba7-8f37-2ab2b3bfb692",
+    "id": "822f1889-61cf-4db2-83c4-0c94a1eb0595",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7702,11 +7702,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4a11a058-037a-41b2-9d09-40730d2922c0",
+    "id": "68b4d187-a3fc-42d5-bae3-9f8bf2c72a09",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7721,11 +7721,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4035010d-dec4-4e22-a2b3-3a54c36036bd",
+    "id": "e269eba6-caf5-4ffe-84b3-0ee3c9a25b21",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7740,11 +7740,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dcdfb295-f8b3-47d7-973a-d1a2a8e15a60",
+    "id": "6dddfdf1-516c-4c11-9242-ec0fe54fd2b1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7759,11 +7759,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "693588c2-f68c-45ee-bb35-6577d2cbba6d",
+    "id": "9653d16d-68d1-43ad-8ed0-1d92e9f026dc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7778,11 +7778,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "87798ddb-f5e2-4e4d-9388-9f74e7a8d284",
+    "id": "b6cb6fa0-8969-4f97-82c2-e603734e41b5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7797,11 +7797,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fc4eeb73-8b7b-43fa-9b03-3da287310915",
+    "id": "ec0f3977-7792-4c46-af1e-95c7d5c35c9c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7816,11 +7816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9528e38f-a1a7-4716-8e98-0fa44bd2af7a",
+    "id": "1e6c7edd-b66c-4eb1-95cd-2dc21f64075d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7835,11 +7835,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f22efbd9-21ea-445b-8d35-7aed81980bf8",
+    "id": "7278415b-c6ba-409d-a37f-4c49c7db8ef5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7854,11 +7854,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "be5fbc1d-8bac-4f43-b9d5-f24935922746",
+    "id": "fb957021-070e-4714-8a97-3e07af14cf43",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7873,11 +7873,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f82b63a4-54ca-45f6-b900-3a21f6fc3f41",
+    "id": "835307eb-7620-4bb3-8e51-9f912824295a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7892,11 +7892,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fb58ee9c-b463-4b5b-9049-8337fce9c9a1",
+    "id": "477aa233-265d-4710-8981-77f8a9097d65",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7911,11 +7911,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0c7829a2-afea-4266-b00f-4bc3f7e60a24",
+    "id": "07fc1cdf-df7e-42f4-9499-99e33c1ccdb6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7930,11 +7930,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6f316e19-41a7-45a3-ba3a-cd736e8d47b8",
+    "id": "bb660655-f6ed-46a0-bf12-984683aec54d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7949,11 +7949,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0b91fe41-8265-4f87-a5cf-ba927e8a5e40",
+    "id": "401f5024-e710-4e58-a844-a577cf8ead42",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7968,11 +7968,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "cf364adf-0f06-4aee-b0f9-e0de81707d4a",
+    "id": "e54a9d1c-228e-44d1-ac11-93c7eb712485",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7987,11 +7987,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "eaa37a82-f026-45f3-8d52-aaef0e46573d",
+    "id": "caa9dcb5-d535-430f-b4f3-738b2b7370a0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8006,11 +8006,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c3d8e8fd-feb0-43e8-affe-e907fdc38245",
+    "id": "bd2db23a-fcec-4c21-b244-710f20e81a72",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8025,11 +8025,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "92d96f29-236d-4b2d-bb4a-e5c5b4597f2a",
+    "id": "d279633b-30ba-46c2-bcd9-bf781299f45b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8044,11 +8044,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ed64db7a-8f91-498f-89a4-ae9aa113dfee",
+    "id": "081e3b4b-836a-42b2-9509-a7665ad28e0a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8063,11 +8063,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c2c0fc3c-dafc-41c6-aa89-3eb54326572f",
+    "id": "f343d0ba-6afa-4efc-8c95-d5e64c85c6f7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8082,11 +8082,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "577d68dc-8c13-44d1-8a86-cc8e3d5f9abd",
+    "id": "c619a0fa-a15e-4bae-b32c-fc181aef7e5c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8101,11 +8101,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ff82e8f7-a212-4d2a-85f8-a383326aad9f",
+    "id": "397353b7-42ae-4614-8ea2-e4722bc426d6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8120,11 +8120,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "610f6229-9e2c-401d-b946-9b03936d2ba2",
+    "id": "79db2df2-f6c6-4202-8475-026aadf9d19b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8139,11 +8139,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "617a8acf-dec6-48c4-aa43-614dcd85c1d7",
+    "id": "9e409db4-7340-4861-9556-16737e90afdc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8158,11 +8158,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "df88bad3-33c2-4fd8-8aee-a0bf0f851531",
+    "id": "51a3e260-b8de-4839-aa1c-ecb95e396573",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8177,11 +8177,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "47f655d2-10e3-482d-bd6d-6415753e1082",
+    "id": "874efbc8-23db-4272-bfb6-185272df2a2f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8196,11 +8196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "593d59f0-1d7b-4bd9-9f68-97d0145cc61c",
+    "id": "40f352a0-4b70-4401-b9a8-d72eacac49fd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8215,11 +8215,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "919924e6-0a99-4184-9047-0aa0e0e2705b",
+    "id": "e256ed02-af24-475c-a507-dd7925aa2794",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8234,11 +8234,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2ade442b-938f-4ced-949c-ea7066da681f",
+    "id": "c162af44-0a2a-4104-9830-88e9b97ea06e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8253,11 +8253,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6fd3af5d-0095-4ce0-b422-cacc675118cb",
+    "id": "34aec1f6-88ed-42cb-a7ac-99aff4cedf18",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8272,11 +8272,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "eaa99b83-b3b8-41c1-9e20-3e9b2fe6ee4a",
+    "id": "d80bd3b2-6254-4a5b-802a-69090aa3c807",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8291,11 +8291,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8e4acecf-1fa4-4e4c-9fe7-946a52889736",
+    "id": "8a6dd0ac-e66d-4fa9-95c2-c82b2cf48256",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8310,11 +8310,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fa2e5cb8-729f-4c02-a0f6-03b2347cb314",
+    "id": "32251e8b-4638-45d7-b6ea-8bb1d7fd98bd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8329,11 +8329,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "432d593e-02fc-4bb1-8deb-95b5579772d3",
+    "id": "3788802d-5f15-49e6-b015-bfbe03d43d84",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8348,11 +8348,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a23ea48d-60e7-42a9-ad70-d47d345507fc",
+    "id": "eb2522e9-3e1d-4c22-9400-e76c42676555",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8367,11 +8367,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "60345079-f148-4b0d-a0a4-f93b85c2b28b",
+    "id": "d387f419-7083-4a52-b9fe-bdaa6e0e52d1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8386,11 +8386,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "28f5c2bc-8c21-4b7f-9be2-398b9b310295",
+    "id": "8a7f431c-ad82-44cc-9332-55f649a90a31",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8405,11 +8405,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f38a86a4-bff5-4071-bb53-6b46e2f567de",
+    "id": "670aed40-21a9-44fa-a445-283edb46b6cf",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8424,11 +8424,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9d2300f0-9584-4ba3-a1f0-8dba22b7c8a5",
+    "id": "2b53bd1f-1919-4a1f-9970-69ab4827e130",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8443,11 +8443,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "714132cc-3445-4cc8-861a-07ffb3ded255",
+    "id": "e2b2339c-3a81-4910-99a6-2006b43d8c16",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8462,11 +8462,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "fa0edf44-7e7f-4bac-ae0b-c31b0ef74bb8",
+    "id": "dcbaef6d-4d2c-4b28-bc32-5a8e15bfe194",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8481,11 +8481,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4ba8f926-efff-4111-af3e-0ac22f064d99",
+    "id": "6cf37942-42ba-43f4-9607-e0b2194a3c00",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8500,11 +8500,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0962d432-9ffc-4a10-a7f5-8328f36e81be",
+    "id": "ad6f32ca-8008-4d59-a7b3-b70e5a3106ab",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8519,11 +8519,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "918fd41e-6de3-4744-9de8-dc8978922b49",
+    "id": "028d2455-6752-4378-a0d8-1a912433c94e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8538,11 +8538,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7ea66250-d37c-4f82-afab-7485adb424ce",
+    "id": "0ca25f78-b487-4196-967e-d29631db0d0b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8557,11 +8557,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f4c6de1e-fad3-4d49-935c-dfbc95b6e1fe",
+    "id": "93c7e9b3-3cf7-4a92-b7e0-73722e39dfda",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8576,11 +8576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "be5e8f7f-36b7-49c9-b33a-940fcc985db8",
+    "id": "568a53f6-595f-44fc-8e44-50c882715aed",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8595,11 +8595,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2061b2fc-00de-4438-b595-65427c9c6238",
+    "id": "1e747056-8383-4355-9b80-dc833cf9fe49",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8614,11 +8614,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4f827e69-3099-4c3e-a516-35e370ae1002",
+    "id": "5d7f2135-172a-4567-ae06-0ee151f2b990",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8633,11 +8633,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8ed2751e-7ce1-4bfb-83fc-9004de7e8481",
+    "id": "cba0f74d-e219-4edb-bc54-082832260b02",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8652,11 +8652,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "adab217a-8c8f-433c-be32-de33f953962b",
+    "id": "11d1e7e9-18de-4265-b3ee-d37b93ee05dc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8671,11 +8671,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "155d1eab-464d-4eac-91f9-19709a95847d",
+    "id": "03881b1f-3712-474c-9711-e2b4a820e152",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8690,11 +8690,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "02c01c4e-1f8c-4553-92b3-7c9323a51cb8",
+    "id": "5fdf19ba-2035-4a09-aed4-67f7eef59852",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8709,11 +8709,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "94a76612-9326-47ec-99cb-608e63a98c0a",
+    "id": "cc949d92-70bd-4354-be71-24d237a976d8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8728,11 +8728,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "008dba4d-ad72-4303-9771-3d0085009c8c",
+    "id": "5fd51eeb-3c6c-404c-a051-0a9549ad5345",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8747,11 +8747,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "52e027dc-b5ea-44df-8349-5c5398a43147",
+    "id": "d3edaeb0-ade3-4a4b-8911-3796d52da43b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8766,11 +8766,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "00ec5ada-2b7f-4877-a53b-d330ec47ee32",
+    "id": "209321c1-446b-46f3-9f5e-4bd4343611af",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8785,11 +8785,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7f6f4d46-9c1b-4ca0-8d43-b5e1192c0f21",
+    "id": "856226dd-a5c2-47a3-81f6-e986fb230436",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8804,11 +8804,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d38a7d27-01a7-43a1-9ed5-fe3e9b358848",
+    "id": "4f1ec4bb-39f2-413a-b621-b8d872322555",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8823,11 +8823,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "184ec0d5-00f7-47e8-a89a-33e94477371a",
+    "id": "891913e1-32b9-4327-b99c-d1d43a7153ab",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8842,11 +8842,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "007274f8-8e6f-407f-a733-46d47f205838",
+    "id": "210b3bf7-3ee8-400f-93d9-e291ccfc5afe",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8861,11 +8861,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4ed443dc-57db-457e-b163-3d55805e6027",
+    "id": "b8cfc294-fa34-4891-ac35-e3d789a829c4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8880,11 +8880,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c4410f90-3cf3-426e-ba49-a0a92e711d95",
+    "id": "57d0c312-405d-431d-9ffc-560c762c9364",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8899,11 +8899,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7c1f0fad-e9b1-4bd6-88e4-d11229d9070e",
+    "id": "180bfb86-2840-4c01-99e5-6fe617c77567",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8918,11 +8918,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "775937c0-63c8-45e7-ba43-7de44df13a05",
+    "id": "9f927fb7-f3b6-4491-af70-6502308c7949",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8937,11 +8937,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "791976a2-f698-4efc-bc5d-4b399d3112ac",
+    "id": "e1d924ad-aac2-45ce-a2c3-a64226b2e059",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8956,11 +8956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2c9e5569-3141-43fb-a1ba-e73ad960c897",
+    "id": "0091342e-577c-47ae-8088-a88ce1adfacc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8975,11 +8975,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3622e19e-a02c-4360-a36c-6dc5829e16be",
+    "id": "164f6895-fc0e-495e-88b1-5fdf3b608ba2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8994,11 +8994,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a489a2ce-1904-4037-ab7f-105d2c5ee99b",
+    "id": "b7ec6fae-ca5d-4eb7-af92-22e4d44de3e5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9013,11 +9013,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3cd9aae3-ca0a-413d-bed3-c29cbcce1f1e",
+    "id": "5b768cee-e69f-4587-894a-af7cdaed9df1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9032,11 +9032,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "a2a8a98d-812a-4ff9-83c8-2985a269a01b",
+    "id": "ebdc955b-3541-468d-9bf3-2f4bf3a38632",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9051,11 +9051,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f088afa3-cba7-4627-9578-8b975de5dbe0",
+    "id": "3da7d58d-9a0c-445d-8874-009cb35cef7c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9070,11 +9070,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "604f00da-2ca0-4528-a83b-c6d005c93582",
+    "id": "45ce20b8-2b7b-44f4-8210-c62346d81a60",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9089,11 +9089,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4d9702f8-891f-4c0f-897e-68df3181acda",
+    "id": "6d8d1c69-072f-42c7-8184-92ca9da93845",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9108,11 +9108,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8bf04300-abee-4224-9264-cefe1403e74d",
+    "id": "9e791ca1-cc99-4b15-a162-99ac7e8a55c9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9127,11 +9127,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "61bccecb-0104-45ad-a2da-0b0b3c0d23c0",
+    "id": "cd859329-0f5d-4e55-a7fa-91d164d35413",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9146,11 +9146,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e7bbbf92-bd04-408d-b972-a21110dba00a",
+    "id": "a2291788-25fa-412b-bdfc-33cdf423464b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9165,11 +9165,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5094ebcb-5847-4345-85de-0477629898ad",
+    "id": "cda42ed6-3d03-4f4b-bec9-89b99b2180ae",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9184,11 +9184,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "29542516-9281-491a-b0df-958ab3a9222d",
+    "id": "10d0c339-0602-4b65-949e-68e69ae89be9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9203,11 +9203,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "109bd4fd-5e39-4a50-a977-0bf7e1bdf6da",
+    "id": "01dd046c-8a52-454a-8f95-8a438ef5354d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9222,11 +9222,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "21922d31-ffdb-4192-90c7-3be8569c17c3",
+    "id": "00458c30-2158-443b-b711-d66365e002ed",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9241,11 +9241,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0165ed7d-094d-4c09-b217-b921c6c9cad3",
+    "id": "5cabc523-0dfb-4e86-9576-7c8035f71cc2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9260,11 +9260,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a7578f18-47f8-4065-86ad-6212793e6728",
+    "id": "deb4b258-0813-4afc-a340-534f70f04c8e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9279,11 +9279,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ae405ca0-97da-42fb-91e4-2f9c662aae0b",
+    "id": "910bd9a0-266a-46de-b554-25bd89a45950",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9298,11 +9298,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "46bd3d22-8a1b-40b6-8395-785941b4e0ad",
+    "id": "adce0e26-20dd-4d8a-b3fd-264f48eddc7b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9317,11 +9317,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c33ca817-7a7c-4848-b731-2acfbec77d23",
+    "id": "7030ad14-44e9-45a5-841f-28156477c03d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9336,11 +9336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d4a714c8-b88c-4e44-93b8-7f2cdbbf4a0f",
+    "id": "5162d435-f373-4ee8-aca3-9926905f1465",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9355,11 +9355,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b7b801eb-e4a2-4c66-8cc8-ee7bbe402738",
+    "id": "977cbd04-6899-465d-9b41-f17ce17b14ab",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9374,11 +9374,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "477f4018-63d6-4584-a6b3-bef7a057af38",
+    "id": "b9b7b206-07f8-41ab-a7b3-3b3af7cb4b12",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9393,11 +9393,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "054c4c16-8353-426a-9f71-36e46404c4f0",
+    "id": "e84d8fc7-66ae-46ba-b12d-7f3f28d3253f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9412,11 +9412,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "12879546-bf2e-44cc-b966-fd3d7b540363",
+    "id": "b78e9217-42a2-4e49-884a-a79edf21074b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9431,11 +9431,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e5a94953-79e7-4770-a759-d3a1b7ebb193",
+    "id": "21ec3241-218e-40e9-941e-47d2fa8d5267",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9450,11 +9450,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "30aadc41-420b-4178-a424-0656d6b4b2c2",
+    "id": "418878c9-f563-4a86-91a2-e3b0e94622f7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9469,11 +9469,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c966f24b-7cbd-4af9-a3c9-7167b3a1212f",
+    "id": "d2278c35-9422-44e6-a580-010f4a30a7b4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9488,11 +9488,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a2bbee6f-1c7f-4f96-8bb1-f57e8b138559",
+    "id": "3fae75c9-82be-4dfe-a9fa-4f0f750f79f5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9507,11 +9507,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9fc0ae7d-b69c-44d4-a988-c5a24b268047",
+    "id": "0653cbc1-e52b-4ecd-a090-84417f1ba35d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9526,11 +9526,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "34ec2cbe-6551-4c1c-9a6c-4b94a739e975",
+    "id": "18e0e208-bd0a-4629-b728-09d4b5ca674e",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9545,11 +9545,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "dd393f65-747a-46a8-9ab4-385f13133510",
+    "id": "1fc3e479-37c9-4d24-8356-e696c91f4008",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9564,11 +9564,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b7ebe66c-2264-481c-abb6-8d302f0dc5ff",
+    "id": "1b900792-cf06-48e9-92e0-b1bbab6cbd8b",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9583,11 +9583,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "13104c9d-8557-4fa0-974e-83cf55161825",
+    "id": "dd3bc347-b2ed-44c6-816e-8fcad74d0500",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9602,11 +9602,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "3416083a-67b8-45fa-8ddd-0b75034a57cd",
+    "id": "b8a93111-ca89-432e-b128-4ba3f9bdfd8c",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9621,11 +9621,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a23acb48-0029-4b9e-b8b8-ca4e608e6758",
+    "id": "9114fa16-6b79-49be-99eb-7a2d3545f779",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9640,11 +9640,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "61fa7bd7-0f8a-4835-980c-903b017a54ea",
+    "id": "fcaea484-439b-4d0b-a489-1c60b2745706",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9659,11 +9659,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 0
     }
   },
   {
-    "id": "4edbe896-9d12-44fa-b20f-4c785276f556",
+    "id": "5d878af0-8e58-4f24-932e-0b2912967d02",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9678,11 +9678,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ca00d1d2-6fe5-4ba6-9c6e-baa4a53ca7ab",
+    "id": "6d013e3c-b108-4556-bd7a-900b9628e4b1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9697,11 +9697,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "1de774d8-12ae-40c1-82eb-77a8dbcd5ac2",
+    "id": "1f447c4a-542d-4672-86df-1bb8f1311795",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9716,11 +9716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "27148bd6-affa-463e-a954-165b4bd42e64",
+    "id": "27320903-b8f7-43ef-abf8-b0091f6059af",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9735,11 +9735,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "50f120cd-98d7-4157-96d9-d308b8619b60",
+    "id": "3395997a-6087-4610-981e-022c2a34320f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9754,11 +9754,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "91e71fce-8de8-4a11-aeb8-d2d7a81fd964",
+    "id": "d7768ca0-1a4d-4282-b6cd-958e3961933a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9773,11 +9773,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3e006022-4f0d-4596-87da-5a2ef75efeee",
+    "id": "ad22525b-121d-4b9b-9c51-db65b39669df",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9792,11 +9792,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "baf53dae-d55a-4eac-ba06-c6e56662679b",
+    "id": "c3e6dc87-0bd8-4c2d-849c-fefa38957e18",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9811,11 +9811,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fe67525d-a06d-430d-94eb-20576b29b22c",
+    "id": "4e5ae9d8-c90e-4be2-88c0-abf45c62e1d8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9830,11 +9830,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e7018d77-5fdc-438c-91ab-ae0cfc985f81",
+    "id": "2ef65750-9d2e-463c-9118-7b434ef94b24",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9849,11 +9849,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c92082e7-827d-4370-abf4-d1f8b6760114",
+    "id": "95bb4097-e630-413a-add9-2e9e0e71f42a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9868,11 +9868,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "71a336b8-61c6-4713-b95e-177aece11ec1",
+    "id": "779e7e66-ef03-4d64-a5a5-2366a4f7ad9e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9887,11 +9887,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4af22fe6-d36e-42af-b68a-71e9d90f053e",
+    "id": "95266cbd-9a41-4a60-b22c-1eba7964d373",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9906,11 +9906,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "cce4936b-f5f4-4626-b763-2141d45c5f92",
+    "id": "9a22229d-b475-49b5-89fc-bcfcbf01d659",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9925,11 +9925,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "82b7f6ce-6dd9-429e-914e-54f7647c88a6",
+    "id": "30fc5228-252b-417f-b554-9c02753f6653",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9944,11 +9944,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a1a4595f-9168-4731-9e4f-dac1aa7912cb",
+    "id": "0ccdd683-13b2-4e45-bdee-477ec4938411",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9963,11 +9963,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5c4a7c14-d375-448b-9b9c-cf7d71b95070",
+    "id": "73b215aa-2fd3-4578-ad08-8fd9432ab156",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9982,11 +9982,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7b752061-31c0-4355-91d5-765a620be7d6",
+    "id": "a27542a3-b89a-43d3-8709-9005b32f0d79",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10001,11 +10001,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "841fc897-0dfe-4b83-b15c-d1c932a842ce",
+    "id": "a9861421-700c-44b5-9c6e-ac8d8e800ec7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10020,11 +10020,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "bb1d7e19-465f-4a51-98b5-dd5ec71f712a",
+    "id": "77df97b2-b762-43cd-9c0b-25a7ac89b66e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10039,11 +10039,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "500cb2dc-2973-446a-ab57-dc11692fb31a",
+    "id": "e101e763-2265-442c-a813-81dbdaf90b68",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10058,11 +10058,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "6c161929-ccdd-423a-beb3-0ee052bc22df",
+    "id": "45bbae5c-1285-43df-8cea-c71d186c402c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10077,11 +10077,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "6917e827-df06-458c-8bb8-a6412e8ce753",
+    "id": "5fd11995-a1f6-424e-99e5-088d03ef601f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10096,11 +10096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "eabd043a-1bdb-4a44-b214-d8429a30dcab",
+    "id": "d9927053-7451-415d-9f8c-b8cf7a3356e0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10115,11 +10115,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "1ea7cad7-715d-47a3-a932-d6b134a5160d",
+    "id": "a08b7900-78dd-4f03-aabf-1c9964ab9407",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10134,11 +10134,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "aa1572b6-e014-441d-9573-c4df455f9600",
+    "id": "8e72ff7d-c1df-4ecb-b986-d53f06a1754b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10153,11 +10153,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "4a76ef99-58eb-47e8-ad65-12a08d438619",
+    "id": "10dda02b-5087-43dc-a220-4330c8357bfa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10172,11 +10172,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "f9051c8c-1c6c-430e-91c2-baef31dda720",
+    "id": "7bd89b1f-9505-4f37-a63f-fa9c15011cf5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10191,11 +10191,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "df120570-2df5-4ada-96fd-4b1f9f043d8e",
+    "id": "fd2e47af-53a7-4ec4-b33a-089d8699e708",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10210,11 +10210,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c65f53f7-b541-4a6f-80f0-73d877658238",
+    "id": "e5ce898c-d246-4620-9b21-2db4e390846e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10229,11 +10229,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "1493036e-33e6-46f2-9eb0-aa119a9c0943",
+    "id": "63778c82-4731-40be-b73b-c073aea44dff",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10248,11 +10248,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9d135296-0cc7-41f7-a41c-f22e524a2111",
+    "id": "407e358e-64e0-4f6e-837e-7e5ce3a570c2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10267,11 +10267,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a77e204f-0c5f-4bab-8346-98572e66cdab",
+    "id": "7dd42ac7-f18e-42a8-807e-15329566e05f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10286,11 +10286,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e6c745b6-8c20-4f68-aec7-09bc2fbdeda1",
+    "id": "30f50a45-b9b4-4d3f-8e06-048a504bc100",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10305,11 +10305,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "5c115884-d7cf-4eac-9d2b-fcd6946a4558",
+    "id": "e4e7de04-ec0b-4ee4-ad0b-d7b33b52fcbd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10324,11 +10324,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "35e09d3a-7af1-4b9e-9fb3-2d25fefa64ab",
+    "id": "bbf54d8c-4543-4cde-a244-fb4622c246ff",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10343,11 +10343,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "aa19dda6-6a28-4099-9778-5cfcbf5b3193",
+    "id": "be71d28a-85a6-4cc7-a31d-9eaf35911a6e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10362,11 +10362,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "b1cad96b-255a-47ce-a2b5-69f1116e0835",
+    "id": "b9d8042e-52e1-4128-811c-737d2a51a673",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10381,11 +10381,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c10ae309-d09f-4c3a-b0ba-d86407da1086",
+    "id": "7bdf09e0-5c68-4a05-b4d8-b01889606e15",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10400,11 +10400,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a2ae1a91-7d1e-4a48-b710-8da740f34bc6",
+    "id": "23a4b6f3-5d04-4823-a88b-75c7c742ed7d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10419,11 +10419,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7c2e8ffb-7ec6-41c7-9a65-a338ca5ea51f",
+    "id": "d9ecb563-abe2-4b60-bd5a-f19cb71245f6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10438,11 +10438,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ab76a762-c7a7-4c72-b930-69b6b1912d10",
+    "id": "7d08ba29-e46a-4945-9483-afcb08ff7cec",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10457,11 +10457,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "af506cb7-cde3-4d6d-8b69-3033cba611d1",
+    "id": "dd222060-5068-47ff-badf-c351a03d5ec5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10476,11 +10476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8847aa51-17bb-44ad-af8b-29bd35b00c40",
+    "id": "a40e4b65-5e38-4402-b8af-6712ec0f36cb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10495,11 +10495,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "1540d040-aa56-4665-8efe-313941ecf117",
+    "id": "946ad16a-9a8c-47f4-b560-4bbaa04df986",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10514,11 +10514,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9f1b3dc6-de58-4d81-ac4e-005563afba34",
+    "id": "307b34dc-dd46-49e0-be23-35bf97a3696c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10533,11 +10533,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "db997593-9b52-4d0e-b47c-33dd5cbfc8d3",
+    "id": "b7946295-d56d-43e6-b574-097709867fc8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10552,11 +10552,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c446dcbc-25c8-4995-97ad-c657b50e58f2",
+    "id": "9a90179a-e3e1-4cfc-9b10-e599b48b86de",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10571,11 +10571,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "1a2fade6-64dc-48ca-97ee-d0b77904421f",
+    "id": "4206e478-bbd7-4cf3-b019-3f097a18aa7a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10590,11 +10590,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f86e2bbc-ea55-4498-81ca-6eeedbc86869",
+    "id": "0ae43be2-85fa-4b94-b8d8-45ea5d74fbed",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10609,11 +10609,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f093874c-ecea-4382-b662-4393efa6a957",
+    "id": "cdc3283c-40df-4b17-8afd-c06becf6fe83",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10628,11 +10628,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d601ed57-103e-41d5-b7c9-eb7ef3d6a6ee",
+    "id": "0907e0be-8638-4951-ba2a-d6dab7c97d46",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10647,11 +10647,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "43deff68-75a7-41f2-8250-41f3dd8e61ea",
+    "id": "fadaea7a-e29b-4d0b-8989-373c671e09bd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10666,11 +10666,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "900309ff-401e-4864-a1f3-67019504d25e",
+    "id": "2352d548-2485-4a29-82b0-bc180b0d99b5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10685,11 +10685,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "529e6ae4-b92a-433d-94ed-9751461f8f64",
+    "id": "19dbf7e9-b31f-4156-9e1b-e2f35604d7a7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10704,11 +10704,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "1b8e648b-16d0-4c04-88e1-3f8cf621ef30",
+    "id": "37beceed-e17b-486e-8385-43085ebed4e7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10723,11 +10723,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2990cf04-03e2-454b-a6f2-32e5ae9420b2",
+    "id": "d830472c-a9b6-43b3-acf7-36228fb6da7c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10742,11 +10742,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fc8cb550-c929-49bf-8e9c-8f4fa490d492",
+    "id": "344eb788-5106-4d7f-97d3-baeade6709f2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10761,11 +10761,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5e470783-baa1-4abf-a921-8c6c2acdb259",
+    "id": "3ab9d192-894b-4953-acac-f9871c986dab",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10780,11 +10780,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "846f909e-bfed-4c4c-a787-e1a0169e4622",
+    "id": "95edcee4-ae96-476e-b40f-96d5f337480c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10799,11 +10799,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "acd57d7c-30af-4127-a0db-edd187a01360",
+    "id": "054d6eed-fa22-4b68-9811-74db370f2779",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10818,11 +10818,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "991a1be2-ca21-4341-ab1e-4eac1d653422",
+    "id": "716e0b39-167c-408c-88d4-d7f3f430ec8c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10837,11 +10837,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b24353fd-c9d1-4d6b-814c-4d44572ac116",
+    "id": "525947c9-0e1c-469a-a111-7a87b84280dc",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10856,11 +10856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ca474b4b-9dca-4201-96b3-236a89ede8ce",
+    "id": "2ecc3b5c-2ea7-4745-8ab2-11ddc1026026",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10875,11 +10875,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "00dc8d7d-32fd-4e86-ab54-373945945c18",
+    "id": "58358fc0-8195-4df0-84eb-56f47d0296bc",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10894,11 +10894,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a0235273-4a54-4d2d-8a49-f63d95f7d8d1",
+    "id": "fdd75c59-3b31-4c77-8e76-801fd3a33ac9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10913,11 +10913,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8a977060-bdc9-4f82-b098-e8ab2792a266",
+    "id": "e8c22fcd-0f62-4e9e-90a4-0b776dc202e6",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10932,11 +10932,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "43bc2996-7227-4aa4-8951-8551eb1d0df5",
+    "id": "374667ac-298c-4e65-9531-12b6b1ae4770",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10951,11 +10951,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "bce1e9ed-5596-4325-bbbb-56023f1bbc99",
+    "id": "6866ffac-2f1d-4d6a-b71d-d83e289ad42f",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10970,11 +10970,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0229300b-4354-4ed2-975f-443105f90690",
+    "id": "ce077c5c-dfcc-4b01-8890-3c348a1222b8",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10989,11 +10989,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8c111c0f-8052-4077-a376-8fad03ad13ea",
+    "id": "5a95d0cf-d57f-4179-a000-6a8f1650a382",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11008,11 +11008,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "aa617565-8fd4-48df-b420-2cf7b1662420",
+    "id": "a701aa19-c3ae-4254-88d4-e5ec1313a2f5",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11027,11 +11027,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4479fe19-c4dd-44ed-8cd5-aeb1812ebfa3",
+    "id": "4da3904a-87c2-45a7-923f-cd17b261e2a3",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11046,11 +11046,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b71596c9-711e-4634-967c-d237867bdce0",
+    "id": "5a29014d-be9d-4d3a-ac1b-327de666b35b",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11065,11 +11065,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2e830e1b-53b9-40e0-a07f-0b9812859819",
+    "id": "7ce9e524-980e-4f6b-9b89-43258b48f6f6",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11084,11 +11084,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "97c99311-48db-4487-b34d-5462a28b4d7b",
+    "id": "e59cb44f-ceaa-4dbe-82bf-2c3bec23d31f",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11103,11 +11103,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "de1698b3-e1b4-4bc2-8212-3e30bccb5641",
+    "id": "2b51061b-ea91-4e68-9615-d16f2d46a571",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11122,11 +11122,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "bcec72bf-79b3-4e77-bb57-0f85062351d0",
+    "id": "4d20462e-d5b4-41b6-a0dc-0d26f8c5eb6e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11141,11 +11141,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2fc62833-b672-4d00-ac64-2a7262bfb5c0",
+    "id": "be4d1294-a0fd-4ceb-b70c-6c1a9645f5f5",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11160,11 +11160,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "88982b6c-af67-4840-a68c-bc87845ad2b7",
+    "id": "99927aa7-1e89-451f-8eaa-ad0607b60b30",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11179,11 +11179,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "edec2224-38fb-4cf4-8383-2619ae8df78d",
+    "id": "9a5c1d07-2b24-426c-b3fa-29aaa6d37d1e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11198,11 +11198,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a4d6dc07-4572-49be-9dc2-ae13fd4f8fed",
+    "id": "dc8d9470-83ae-435c-a3b6-2f7e85e17a63",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11217,11 +11217,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3dba9637-46d5-4875-99e1-97ea72014f53",
+    "id": "83105fe5-dee0-4fcc-994d-d9a989c9d4ae",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11236,11 +11236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "36386995-b1c2-43fd-af66-996ebdc9ca2c",
+    "id": "e8fdde2b-1327-4282-add5-0169893d3723",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11255,11 +11255,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f9a0d4d5-9836-41e6-b4d3-e0eb9693c674",
+    "id": "4bce654e-d9f3-43be-b294-a3afe336ba6a",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11274,11 +11274,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "37d91838-dbb9-417d-8143-984be76d9435",
+    "id": "40e61405-7861-45f4-9f65-83fe8c7a17e6",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11293,11 +11293,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c760d89e-b6fb-4e8e-a3ac-a90d8dd7cc47",
+    "id": "d1a82cda-6ca2-4d96-8b98-4642352f2153",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11312,11 +11312,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e92d8f7a-b0fb-4095-ac21-fcd4958ba55d",
+    "id": "aceaf55f-44c0-42e8-950f-7b2871aad3e6",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -11327,7 +11327,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e6990a58-9bc8-4d30-a4fc-7dff535ce7ed",
+    "id": "c4ac51d0-5152-4813-8154-be511d4fd145",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -11338,7 +11338,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "712eae1a-fab9-4a58-9b6d-0c3697caab9c",
+    "id": "0a4012ed-0dab-4531-a242-3b8bd80a5872",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11353,11 +11353,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 21660
+      "2026-02": 0
     }
   },
   {
-    "id": "fcac5715-fdc0-4ef7-9bf8-510b551d816e",
+    "id": "8352c162-ea99-4d4a-a339-f52f59e6eed9",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11372,11 +11372,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "be560a7d-7e77-407c-a6be-9d9514c7811d",
+    "id": "41083848-96bc-45d1-9cda-6053c094b15c",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11391,11 +11391,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 15880
+      "2026-02": 0
     }
   },
   {
-    "id": "f61b63ea-8f60-4f90-83ed-97b78a285956",
+    "id": "2bdc2a9d-fcfd-4ea4-8c51-fa773e7712ab",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11410,11 +11410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3634c5cf-d79a-444d-b06c-13c1fd108b8c",
+    "id": "abefd80d-0206-4cfc-9e47-159f6d346ffe",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -11425,7 +11425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "07c2695a-d87e-463f-b455-f4da447180e1",
+    "id": "5568f59f-ff6f-4170-a28c-609173ff6422",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -11436,7 +11436,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c3cf15f7-0a00-4510-a6b6-f2665c8bff5b",
+    "id": "034063e3-0130-4693-8fcc-4bfd935e2cf6",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -11451,11 +11451,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "9178f8a6-8ad9-4770-95b8-d0d0619914a8",
+    "id": "edd9a1a1-52b8-4f18-a98d-86af6fac7925",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -11470,11 +11470,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "16b293ac-77e3-4262-9f20-bc17233f23a5",
+    "id": "e1fc92c8-9f8f-402a-ae8d-7bc0f5e37489",
     "codigo": "4.1.01.06.0003",
     "descricao": "QUILOMETRAGENS",
     "tipo": "C",
@@ -11489,11 +11489,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a9019469-79f4-4a40-98a0-a3a12213bc43",
+    "id": "d1f7af84-25ae-4c70-b8e6-ac24c0f2855f",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11508,11 +11508,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "f05d3827-39ba-4656-b321-176c03e9ec97",
+    "id": "01bb4680-270a-4560-bc56-2c7474b48ce6",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11527,11 +11527,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "f23eda9a-026c-447c-9321-06aa976b2a00",
+    "id": "8f3e3d01-5a6c-401a-a8b0-a78282d5921a",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11546,11 +11546,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "ce4d59c3-33e4-40c2-b442-e8a0418872fa",
+    "id": "10256412-cf9f-43b7-a72e-b726cf938349",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -11561,7 +11561,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "60da8e51-4cb5-4f78-8a1b-79cb95b6c018",
+    "id": "10832374-3890-49ff-977b-f271317f40a2",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -11572,7 +11572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6dbf6e82-8d24-456d-86cc-9640b3877895",
+    "id": "1e5682a1-a461-4dd9-b949-b366da29b0ee",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -11587,11 +11587,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "a639a032-75c4-4cfe-8c85-9d70dfb21d29",
+    "id": "d5a413c9-8c3b-4198-967f-a7c2836ed554",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -11606,11 +11606,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 0
     }
   },
   {
-    "id": "d098d43d-6bc7-47d5-817c-1e21885a69c7",
+    "id": "491b13e3-d4a1-468c-aec5-7f4f67017adb",
     "codigo": "4.1.01.07.0003",
     "descricao": "CORREIOS",
     "tipo": "C",
@@ -11625,11 +11625,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "86cce6b9-7f7e-41c5-8852-0322e9636c6a",
+    "id": "ed041d63-758e-4ac3-ab7c-24cf75d7db91",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -11640,7 +11640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "86f5be99-90f9-43bc-84fe-e5867bbe11ac",
+    "id": "8cd135fb-30f3-4f13-adbd-422381509c61",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -11651,7 +11651,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "89d1cc51-f8f1-4fe8-94e3-1d6b8d5cc81c",
+    "id": "890ead48-f77a-47a2-ac04-2465cf372e95",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11666,11 +11666,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "bfad73a0-5905-4ecc-9d0b-adec2c08ad26",
+    "id": "ec650592-546d-44ea-aaed-0d917384e5fe",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11685,11 +11685,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5b441705-72c7-4f6f-b083-d0ed687d3e1c",
+    "id": "8b014237-3454-471d-95f1-829677a68ec0",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11704,11 +11704,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "588693d3-494c-43eb-b554-6cad3baa1838",
+    "id": "aae24e3c-de57-4ff8-b6c8-88b4eafc28a3",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11723,11 +11723,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5223a659-28bc-478c-b520-d05f52413aa6",
+    "id": "77958a9f-71e3-4769-ae08-70f2afcef15f",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11742,11 +11742,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "d438f6bb-fc86-446e-9bad-69ed5bc67bc4",
+    "id": "4855cd54-c78e-429b-8570-e61afeb206ee",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11761,11 +11761,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "fbe4c92d-8785-44ed-a906-03c67dbd0e59",
+    "id": "f4640ecb-4f13-410e-963c-9dd00150b8e0",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11780,11 +11780,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0d07b2fd-dca7-49ce-96aa-eaad8e437c46",
+    "id": "7e2c06f1-c8bf-4991-8be6-d742e8f71ba6",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11799,11 +11799,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9548ac37-eedd-4d8f-af8e-e48857ac0b57",
+    "id": "c75d4484-ebb7-4f31-900d-3abb98e74e9e",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11818,11 +11818,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e6469bf7-80a7-43f1-b46b-3aeab938fa3d",
+    "id": "bcd5fb3e-7294-429d-b31c-0f818bc69c48",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11837,11 +11837,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b5f33107-a538-4c8d-b894-37fe8c4a297d",
+    "id": "c486b881-9162-4c3e-b701-8699aa44cd5f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11856,11 +11856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0835c47d-0b51-46e7-a8a2-b24c2427a107",
+    "id": "d848b199-9469-43b2-a6b4-0c4d067f52a2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11875,11 +11875,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7b28f33a-7edd-4e72-8f1f-cf0ad2797bf5",
+    "id": "ee48a638-152b-4857-972b-534b0ad12041",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11894,11 +11894,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7f4abe84-40a1-498a-93f8-7f2167143520",
+    "id": "b2f36c2e-07d2-4f25-af08-8a8fa9a957c1",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11913,11 +11913,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "6f989505-1fc8-4b99-bd76-eb2df1e59581",
+    "id": "92ac78f4-a66e-4666-9044-0ce4fe3a3b51",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11932,11 +11932,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a7c1eb0b-91fe-4bf4-8c0a-13923fb30ecf",
+    "id": "3a86091e-9e09-4382-8547-df5b290789a0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11951,11 +11951,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "03334446-4481-4d02-855f-bbe6883b2425",
+    "id": "b2197cb2-31d7-4ac5-b931-911af2501420",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11970,11 +11970,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f0f12bb1-b60b-4689-be41-7c078c9cfa20",
+    "id": "d2ab36b3-9cf2-4ecf-ba66-675dbdd43040",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11989,11 +11989,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b59f566b-b79b-4e40-ad7f-b4a8891c3e69",
+    "id": "a2f4b363-3d88-49e8-9945-a0d288a6a5c5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12008,11 +12008,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4f0f2dcb-64c8-4f41-a274-5a1109ec9859",
+    "id": "f1d490ad-1c79-42e0-8602-100df3f80587",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12027,11 +12027,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "71d99278-7529-4d2f-ab69-26dae0a05765",
+    "id": "3082355c-d027-4edc-a975-6d663e0d29fe",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12046,11 +12046,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a29d899a-5134-4613-a1b3-e5a56f3dda6a",
+    "id": "8629e752-8ac1-4c12-ae5b-bc92647914c4",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -12065,11 +12065,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3856629b-8cf3-4bfd-9eb2-086b02116cb1",
+    "id": "bd4f5a32-15c1-4329-96cb-1d096ef1dea0",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -12084,11 +12084,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d287eaeb-5313-4e22-9583-d934ee3d4dc9",
+    "id": "5031709d-47d8-46ed-b8b4-7cd17f3e38c8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12103,11 +12103,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "25885e59-94d4-4766-8101-bbfb4f112897",
+    "id": "0e00dd1a-bdb7-4134-9116-fe89d716ef82",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12122,11 +12122,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 280
+      "2026-02": 0
     }
   },
   {
-    "id": "50878be3-ee51-4c31-86ca-51c68b3545d1",
+    "id": "695dd6b5-8261-4ad7-9a6a-5f89c1069987",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12141,11 +12141,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "070a59d6-46b1-4288-b3f6-9266e77946b7",
+    "id": "c58d3fb3-0578-45b0-9f46-4b0880ca713b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12160,11 +12160,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "032f77d0-64ed-4489-a8f4-ec63df65076b",
+    "id": "1e7a98ca-b3e3-4e73-9958-2e962e50941d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12179,11 +12179,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 300
+      "2026-02": 0
     }
   },
   {
-    "id": "cf30027b-4ad6-4901-b6ec-da5c7fde7baf",
+    "id": "ca2fed1e-f799-49f9-95b6-163edeadce80",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12198,11 +12198,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "055aa691-1b94-43f0-b55f-58b1dd576eec",
+    "id": "aa781178-f038-4bb9-a80a-697d398eba4a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12217,11 +12217,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "7cecccbf-3bd4-4091-96c8-7c32f89c02d9",
+    "id": "61920b03-4983-4d6b-b9ec-8602b4c2fe74",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12236,11 +12236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "99a978a2-0cc7-4ec6-8355-8a8de749cf2d",
+    "id": "1c66eb8d-42fb-46cc-9570-aa63ce48cc46",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12255,11 +12255,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "34554acb-c2bf-4755-9aab-1bf08041ef86",
+    "id": "5f868e7c-580f-47b0-b062-8568b6e49555",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12274,11 +12274,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d8c83cbe-77c5-4a88-9693-93208cfbcfbf",
+    "id": "18a6bf69-8c7a-4f5e-8636-7b82d79c5839",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12293,11 +12293,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "83e20dac-d3a9-42bc-b5d7-77296c4f47b7",
+    "id": "a56f6fc0-f4ae-4d67-aaae-fb9dd5f4e16b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12312,11 +12312,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b04728e4-e74e-4a33-9b2e-95c3ba57cf53",
+    "id": "c7bce10c-e933-479e-ab1b-be7072ea6ec1",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -12327,7 +12327,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "db0020e8-9fb1-4c85-82c0-0534404954d1",
+    "id": "74d24690-c06e-4ad8-ae97-acb170a19fe8",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -12338,7 +12338,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9a0da063-3a50-4d89-9e7b-531644b83a6d",
+    "id": "57f813ca-29ab-4153-9108-2b2b3eaa0ba2",
     "codigo": "4.1.01.21.0001",
     "descricao": "SEGUROS",
     "tipo": "C",
@@ -12353,11 +12353,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "79f18a97-2c7b-4d44-a809-ae5cb6d1e3e0",
+    "id": "4d7e32dc-641f-4f5e-8430-54c27ffc963a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12372,11 +12372,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 660
+      "2026-02": 0
     }
   },
   {
-    "id": "c484b7c9-46fe-498c-a136-84ee59338e41",
+    "id": "5b51ee73-0b37-419e-9a86-e1f3dac530e5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12391,11 +12391,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a7e745ae-8167-4913-9fda-70255a5c71e5",
+    "id": "23f0c22d-178e-491d-a018-3b9332156f31",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12410,11 +12410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 160
+      "2026-02": 0
     }
   },
   {
-    "id": "5eb56da2-4a4d-4906-9b56-1361def5096f",
+    "id": "f6a80fd7-78c3-4790-9e52-7af4a839dfec",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12429,11 +12429,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 740
+      "2026-02": 0
     }
   },
   {
-    "id": "f8920754-fb2c-45fb-bf1d-47677fce62d3",
+    "id": "8e95c164-d751-4870-8946-b286abfb3057",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12448,11 +12448,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 520
+      "2026-02": 0
     }
   },
   {
-    "id": "c6283a4a-e28e-466b-ac6d-fc64106732b9",
+    "id": "fb5a974d-2ce8-4c99-9a35-e86c477b9db0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12467,11 +12467,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 760
+      "2026-02": 0
     }
   },
   {
-    "id": "6f4936dc-198d-49a7-b7df-e5e4d321ae4c",
+    "id": "74b19a67-9634-4c2d-86e3-f6aea704e41e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12486,11 +12486,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 720
+      "2026-02": 0
     }
   },
   {
-    "id": "2a156735-4b1a-4795-bd46-c03247e53d69",
+    "id": "a8d2ae02-3126-4977-8c22-66101d819e5b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12505,11 +12505,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 740
+      "2026-02": 0
     }
   },
   {
-    "id": "dcef0a15-c173-494e-856c-be44156afecd",
+    "id": "4852d42f-265b-4c96-9d8e-9ef33914fc54",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12524,11 +12524,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "eaef77e4-9651-4bd5-bbfb-eba944ccabe3",
+    "id": "bdb6c426-009f-475d-a70c-713e0af2e258",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12543,11 +12543,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "f36f2a60-1fdf-4b8e-9f35-984b52bd876b",
+    "id": "f9f8f566-3bac-4596-8310-38b05190b8f2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12562,11 +12562,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fc4816b8-e7ce-4ee2-ab0e-2eedfe4cae66",
+    "id": "5e21899a-64a9-4465-ab81-8ff6eed369a1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12581,11 +12581,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d5a0a93d-2568-4f52-a1d4-ea838846dc3c",
+    "id": "c493d59c-fc1c-43c0-88e8-44a17800f925",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12600,11 +12600,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "00910ac9-e2fd-4638-a6a9-85bb24de7e68",
+    "id": "b713c194-9908-4cb2-9436-37036653e99c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12619,11 +12619,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "82f9841a-7805-439a-b4f9-5872c4b32c9c",
+    "id": "7700629f-4955-43af-8268-5173cb1fb050",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12638,11 +12638,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "6608eae1-5e2d-45ef-8760-bc975fc2d244",
+    "id": "17b4ea38-5c21-4eab-bf47-32655e28af59",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12657,11 +12657,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "49050391-e245-46a8-a9b5-2a5023ca8f73",
+    "id": "18407c81-d091-4c0f-a219-9eb1f7f8f411",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12676,11 +12676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 1620
+      "2026-02": 0
     }
   },
   {
-    "id": "3ade6e1f-6bac-4e9d-90f2-be76faf81752",
+    "id": "8c8861c1-4bbd-4a10-b10d-cbe88afeb18f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12695,11 +12695,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 740
+      "2026-02": 0
     }
   },
   {
-    "id": "b5a4a1bd-0a68-4f22-a809-23c8968210d3",
+    "id": "5fec32d5-cf8e-495e-b65f-5392449016e6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12714,11 +12714,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 680
+      "2026-02": 0
     }
   },
   {
-    "id": "8dd5ef76-73e4-4d76-a96d-2e9191ad1181",
+    "id": "e916e240-950b-4804-8574-0c6e489769b5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12733,11 +12733,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 980
+      "2026-02": 0
     }
   },
   {
-    "id": "da010fb8-2447-4fd9-8f54-70d72074731e",
+    "id": "5a6e3fa1-c153-4cb1-b20d-b407f3219b6e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12752,11 +12752,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "e4d5b34c-51a0-499f-a8a9-c7f59ea0613e",
+    "id": "f3ed111e-fa87-4525-9cb4-34edf0a05edd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12771,11 +12771,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "8182f5d9-f7fe-4bc0-a506-880686ae62b9",
+    "id": "0024e61e-0e0a-495d-9dd6-7c9374fe3c99",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12790,11 +12790,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "a037f01b-24ea-4864-a362-866f3a0e399b",
+    "id": "65b2aca2-e606-4b3d-ba82-95cc7144b6c9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12809,11 +12809,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "8592e1ca-9212-4d32-88d1-7a2803d8d017",
+    "id": "81bb03e4-67a1-4883-a6f0-b16ed443a813",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12828,11 +12828,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 260
+      "2026-02": 0
     }
   },
   {
-    "id": "7e24927f-f061-42b2-afd9-ab71ab1b3568",
+    "id": "e84d3902-523a-4fdc-83e2-d83e65b5f1ea",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12847,11 +12847,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 540
+      "2026-02": 0
     }
   },
   {
-    "id": "026addc2-9d63-40d3-a2b5-7a2bc61c77dd",
+    "id": "5937dee7-86c3-4da1-8669-5328f2a72899",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12866,11 +12866,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "a6c38893-730d-4076-b27d-800e820dbbf7",
+    "id": "edc00057-0155-4679-ae3b-ccb96cd66c9e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12885,11 +12885,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "e24d03a5-a463-4f87-9a62-694e958ea983",
+    "id": "38ad310e-d862-4f97-ae73-8768cf59eed5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12904,11 +12904,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "ca0bedc4-dd97-4223-b795-9eeaa0f5d9e0",
+    "id": "9da30bb0-e65c-45ec-bd10-430e7d0f5cff",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12923,11 +12923,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "c8cc690a-ec0b-479c-8844-e3ba791e2614",
+    "id": "0779b34d-06a0-4e8d-92bf-f88b16b94861",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12942,11 +12942,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "4a070869-29de-4b38-8c26-d0b16da93de6",
+    "id": "6f4dddc2-f6b7-40e3-acf6-9df6a04750ee",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12961,11 +12961,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "5167fdad-0fa7-4514-b3e6-cddf01b53bc3",
+    "id": "c0c4d889-6d84-4182-819b-167fe679bfa1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12980,11 +12980,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "eee32f2a-fee0-4249-8f34-b82c60675997",
+    "id": "b2c3749c-6e50-4862-b821-dd2892d92fa9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12999,11 +12999,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "a57f460d-fcc7-4ef9-b96e-57d8382f04ac",
+    "id": "5fa7fd75-74c2-43ff-b8dd-a6ce310de6f6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13018,11 +13018,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a411e546-94a7-45a8-9cb7-285983dfa6f0",
+    "id": "77cf5008-ac82-4324-9d83-dbf625ae395d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13037,11 +13037,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a2899684-6719-4b4c-b221-f0ef8e5cddf0",
+    "id": "9a06533c-5b56-4939-a8d3-e4a34cc94e4b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13056,11 +13056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "fdd84cc6-67b9-4bc2-862c-7344cdf5e7fb",
+    "id": "4c9cc233-3eb8-4b31-80f7-f094265e0c6e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13075,11 +13075,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "a8faea3e-1ba4-4582-be4e-ea927e1642ce",
+    "id": "b2159ecc-4844-4c22-a2aa-ed29ae98f4d3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13094,11 +13094,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "39eba5d7-a231-41ae-b291-383ec92f767d",
+    "id": "cf6ea796-e667-4b6c-a681-e492814d5dcd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13113,11 +13113,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "e6404d3a-c44e-41bc-b4c6-72235bd51597",
+    "id": "df1a0020-41e5-4562-8299-245b3fb1d133",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13132,11 +13132,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "d7dfb76c-7922-4a8c-a051-6ac56f855501",
+    "id": "3bfe0d2f-0938-4072-9984-a0a09b771f8e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13151,11 +13151,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6e927cd9-9e78-449d-8474-96d3afba312c",
+    "id": "67d5a4f4-4059-4a02-9e62-9fa88953e9e6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13170,11 +13170,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "83a80432-5f5b-423f-8736-17bab923053d",
+    "id": "79510532-e0e4-4e34-8767-0b3e7897f661",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13189,11 +13189,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 420
+      "2026-02": 0
     }
   },
   {
-    "id": "b127a481-b318-40b6-ac81-2d93a08b3112",
+    "id": "f4579394-e9fa-4bca-a6f2-02b50824c62a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13208,11 +13208,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "563c2fe3-28e9-4718-aa2e-6cd177abf8e3",
+    "id": "76e80a74-61c4-496e-84e2-9421ff776245",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13227,11 +13227,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "f81ce604-3bf6-4fd5-978d-25396a479219",
+    "id": "977232bf-c483-4bc2-b7e3-ff1e2b8f6bc1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13246,11 +13246,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "7d1b559f-698c-4cff-87e9-07a39e53b5be",
+    "id": "08855c2c-275e-4952-9b3b-5bd9bc0f808c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13265,11 +13265,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "0e8afd92-cd48-4b08-bb44-f01873be3dd2",
+    "id": "0255436f-019f-46c3-8a4a-7b7d3fa47ed1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13284,11 +13284,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "202fe5ed-988c-442e-8720-6af61856892a",
+    "id": "9fad5499-d870-456f-9af0-a4ee611414bb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13303,11 +13303,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "230780e9-25e9-4e62-9859-3571110df055",
+    "id": "63935ecd-67ec-4f14-9855-a1507b9ac672",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13322,11 +13322,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3365ce86-3557-4c85-b627-5f298dab0d22",
+    "id": "281d3230-a212-4e5b-9624-6f7cf22d9978",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13341,11 +13341,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 0
     }
   },
   {
-    "id": "869d186b-c85b-40f2-aa03-77eac72cce93",
+    "id": "37351d77-1eda-4346-9b18-bb59b80824a9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13360,11 +13360,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dffc662c-dafa-47eb-8fc2-dc65447c5c28",
+    "id": "c163f74f-4e38-4561-a426-4ac9a561b77b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13379,11 +13379,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "711dca3e-827a-4b02-8ba7-d82563cc1c71",
+    "id": "a4fa2062-0c59-4f8a-b713-43a2ebaced40",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13398,11 +13398,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 130
+      "2026-02": 0
     }
   },
   {
-    "id": "ce4a0c85-80d8-43d6-a295-1fdb86546dd4",
+    "id": "57c66924-227a-4e36-9284-a64bb8f96e15",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13417,11 +13417,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e9a7121c-4e6d-4594-8945-1f2c00ae4669",
+    "id": "41728c4b-5774-4453-a535-beb4fb358338",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13436,11 +13436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "4f21ad9a-3f85-493c-8fa9-4294348cdade",
+    "id": "6e7ec1b1-6029-418b-aa80-f37ad48ed42e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13455,11 +13455,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f055801a-1caf-46fb-a04a-a688f8d0e5e4",
+    "id": "5b9171c9-21a8-4efa-bcb5-8167c9401cbb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13474,11 +13474,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b51d62b9-e723-4f07-9a3e-8e41fd922fa1",
+    "id": "0e3c198b-40be-4972-a24a-d0a85207634c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13493,11 +13493,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "01adf739-7d06-4461-bae3-11958efdcaef",
+    "id": "2994fc60-1e50-47fb-aede-c992609b058d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13512,11 +13512,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "aab7c090-0b4a-492d-bb60-3ddc24b4caf7",
+    "id": "2c1e0edc-84eb-470d-80e7-d4b2f7a0ce1f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13531,11 +13531,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "967d1115-5ad7-460a-8e09-095aefdd6f1b",
+    "id": "3d9a3e96-f735-4e44-88f2-3cb34eb2d849",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13550,11 +13550,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a4e5c5ca-2c31-46c9-86a0-b3320b734f0e",
+    "id": "727a525b-9e3d-4ea3-8218-ebf296a00e99",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13569,11 +13569,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2f8c5499-660c-473a-a4c5-c3fcd426aafa",
+    "id": "11c50808-31e2-4047-adc3-e63f4189df35",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13588,11 +13588,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "3ec6e856-5ee0-454a-a845-9d19435a6266",
+    "id": "cc3fc73c-230c-4279-b33c-b4f20a29ab71",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13607,11 +13607,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4e830ccb-c8e3-4cf2-b838-7495103a8db9",
+    "id": "70273fe5-cbc3-4cb8-8529-acc999002288",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13626,11 +13626,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "ec2776f6-d51c-4e15-8728-bea83696bc35",
+    "id": "d089e707-7eb2-4359-90c2-13ef9ea8031c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13645,11 +13645,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e7d939c2-09c0-4e0b-a5b5-be204bb8bc42",
+    "id": "b05260cf-b434-4666-978e-ba418bb32cf9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13664,11 +13664,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0a158050-db32-4f7f-b117-743572a4a0f7",
+    "id": "b5a3f54a-43f7-4452-b4ba-b0a247b88bf3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13683,11 +13683,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "07f53c19-2ca8-4547-bf50-6930f1d66df4",
+    "id": "e4f95a2b-ba0e-4c68-804f-fd32966858ab",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13702,11 +13702,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "7dd1e6f8-059a-486c-b99a-aec907985fa6",
+    "id": "72517f27-b264-49da-b554-c55142f65621",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13721,11 +13721,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "964b6cf1-0661-4784-9b9b-e4e8c630e469",
+    "id": "b8574578-7b49-4e23-ac41-bd14ebfe1bbd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13740,11 +13740,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "63457af9-4fa4-4d76-81fc-048c74b59efe",
+    "id": "f7afa711-1d9b-4c38-93ba-50d1a26cfced",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13759,11 +13759,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c680b273-25f9-4e6c-8862-b6b1fd549af9",
+    "id": "c7539686-9568-4972-a63d-0b688d815c87",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13778,11 +13778,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e36d2e2b-cdc7-4dfa-b2fa-2b5d932df60b",
+    "id": "22f2dbd7-fd02-4452-8d74-ad8e7305f9ae",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -13797,11 +13797,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "73c9212d-e2d9-4aed-83f8-b3cc12413397",
+    "id": "947f21da-f2f9-4959-a233-0babee2e274e",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -13816,11 +13816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a64af18b-68e1-4b29-8c97-bb6f3832a07d",
+    "id": "59172db1-ed1b-429f-ad3f-08b8f8da2a4a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13835,11 +13835,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 0
     }
   },
   {
-    "id": "f73ba442-f4b6-4507-9cba-606f9c84adb8",
+    "id": "62f61c30-a0b0-4535-a8cc-4c76a0f16053",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13854,11 +13854,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "7f30b8db-d6b6-4aae-8928-c1eaab922c61",
+    "id": "28a001e7-9d47-41dc-8b80-bcd77ae30f72",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13873,11 +13873,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "aeb572aa-2b37-4691-ab70-12e2b9ea1488",
+    "id": "81f50007-afdc-4107-bdca-10290dd5034b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13892,11 +13892,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9abbf2a1-d188-462e-b665-8e3611a8e9a6",
+    "id": "77d5cd20-0242-4615-ad82-1172caa68536",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13911,11 +13911,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "8229d22c-c8be-4fe8-8040-8872228d143f",
+    "id": "de0e043d-1e43-4405-bc32-74175f9f0864",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13930,11 +13930,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "ab9bcf6b-7b41-4ae3-9444-4a0608f0d319",
+    "id": "bc758bfd-0948-4238-a27e-d3924fbb0367",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13949,11 +13949,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "de98aa1d-8fba-4ef6-9a3e-6fb460d8ea0d",
+    "id": "7b8ebe0a-9e56-4fc5-95da-601e169a0604",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13968,11 +13968,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "90c3e8e8-7000-4992-b1d6-2c8583394178",
+    "id": "3b474685-5619-4616-893a-0fab24173036",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13987,11 +13987,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "0b512ff5-4fa6-4aa0-8e02-cfc213e7d869",
+    "id": "3b150892-e43a-48d3-90b7-ba25bd5d7fa0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14006,11 +14006,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f231fe96-a693-48f4-a4c3-d337f5288e85",
+    "id": "5de0303f-5c98-49e4-9335-7ac8abba91b7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14025,11 +14025,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fbd33764-fd1b-4b71-910d-69b11733b869",
+    "id": "b1041ce0-19bc-4466-82d4-e275df098d40",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14044,11 +14044,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "9444cc10-4b8c-40b8-aace-57c7e2d7ad44",
+    "id": "b31d8e05-ab3e-4e84-b56d-a60802d8d043",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14063,11 +14063,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c5a45a2b-1786-4abc-b51c-597687260933",
+    "id": "2817d08c-f72b-4dfb-95ee-afcd04939152",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14082,11 +14082,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "56db9d62-245d-46a3-8ffd-04746ddb42f3",
+    "id": "9c5a8934-2cdf-4127-9335-c27fc8914c57",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14101,11 +14101,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "c05143ab-ca1f-4a28-bfe4-b8467ec3eb02",
+    "id": "d373c303-a294-41d5-9889-271f8d9dbb63",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14120,11 +14120,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8e8ddf35-8e71-4019-ae01-f3f82d2d04a4",
+    "id": "44fa99fe-9ab1-41ea-9742-ab64f51577b4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14139,11 +14139,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "af5f68e0-a8d2-498d-b6ba-163c57822a7a",
+    "id": "95e8edc9-ac9b-4e45-a316-ed5b18237ba0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14158,11 +14158,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "5244c481-a046-44f3-bdf2-a72840ff78d3",
+    "id": "27eefb0e-94c0-41ee-9678-40b56b778964",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14177,11 +14177,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a0f146b3-8caa-4e12-9bfd-e5452683b84b",
+    "id": "1d88f6df-80af-4958-9358-0ef0c569b463",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14196,11 +14196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a6e8ebc4-53ae-43d4-bfdb-725b83774ba2",
+    "id": "c509746b-934b-4ff3-ae44-413120cf7d65",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14215,11 +14215,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "16622384-938a-4665-bddf-b0710a8393bd",
+    "id": "04ec1fa4-1353-4228-bf33-42bc1bedc847",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14234,11 +14234,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b0b19e52-a64d-4e17-9400-d3d3d3606ddb",
+    "id": "36a0d4ed-90c2-4db1-b504-078d3501146f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14253,11 +14253,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "36de28ea-32dc-4bf4-966f-36765384e76c",
+    "id": "523951cf-9142-43b1-a741-791216b9154b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14272,11 +14272,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "b9249b23-5683-4f3c-aea2-8903fc52541e",
+    "id": "1c12c32b-dabb-4e0f-816a-a3e862e0a440",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14291,11 +14291,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "aab30450-11fd-47cf-9376-67f1378f1a49",
+    "id": "f0bcb58c-0804-437d-b274-5dec9e9270f9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14310,11 +14310,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "fed00b85-0cb9-4a9d-8fb0-2d788e554cf9",
+    "id": "ad475ca1-e634-47b9-870c-4ca5afcc8568",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14329,11 +14329,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "67e3e520-2d55-4ea6-93c3-b466b13c9666",
+    "id": "647e7da9-97a3-4798-b060-3b865c17f5a2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14348,11 +14348,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "23808f77-f83a-4c17-9376-3db248448772",
+    "id": "c8a2c3e4-af2c-4734-9d43-7feb0bcba012",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14367,11 +14367,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "a98c1fe4-dc50-44cb-89c7-a1b73e2fe898",
+    "id": "d9e47795-6094-4d78-8d64-12948f7de587",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14386,11 +14386,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "7d315ecd-dd92-4b93-bb49-5400508e29f6",
+    "id": "37e084d7-70b0-440b-b93b-f1e738be1459",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14405,11 +14405,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "222fba29-aaa4-4d0b-80d4-fb3f1a7d02cc",
+    "id": "20af62c6-bc00-4bbd-b617-e4c067ee0fff",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14424,11 +14424,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "8808971f-dadf-41c4-964c-4d4a135ff169",
+    "id": "e63ff425-fdfa-43df-9367-ef9a11e5a4a1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14443,11 +14443,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "a252cc3e-669d-46b3-8ebb-d785710ea21f",
+    "id": "5df6fbad-ab1b-4414-9fab-758b9bbf01c6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14462,11 +14462,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "a34bfe7d-60bd-4c0f-a491-5cf2e9031e8e",
+    "id": "a530068d-7af6-4a86-9276-f6df5a243f14",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14481,11 +14481,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "eaa14e23-9382-4445-b294-7a94492829cb",
+    "id": "aaaff2b8-c83e-4b48-a2db-0133b9d139ac",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14500,11 +14500,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2a45c557-94b9-487f-9103-194044c0c1f0",
+    "id": "21f980de-da6f-4bb4-b9bc-9e8d1834d510",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14519,11 +14519,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "312166a8-1bc1-4d57-aba7-b6b7d46f6a36",
+    "id": "9bb56bd0-9a24-46e7-a7f8-07cc9cc03dbf",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14538,11 +14538,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "9ac73f30-95d6-43d4-bb3c-f67965e1fa8f",
+    "id": "b472092c-74cd-4c6b-b9bf-f6397cf5312a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14557,11 +14557,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "9b18fca6-ac61-4d88-9e09-73b6339db82f",
+    "id": "5e773b09-21ba-472c-8c87-a5969748f8e5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14576,11 +14576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 220
+      "2026-02": 0
     }
   },
   {
-    "id": "34ae1d1f-2dcd-4173-a20b-a273e4a1fece",
+    "id": "6a5d45f1-f8a4-4fb2-8964-8f839dd6cbb7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14595,11 +14595,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "0ba76c6a-a023-4b64-b492-0b08ebd6dfa8",
+    "id": "de97f6f4-77af-4be6-a46f-df7b73bb7bbb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14614,11 +14614,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "18b1e1ec-095d-473c-a5bb-5b08215c4b32",
+    "id": "c3c23509-43be-4a06-bd48-c2afc1d90828",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14633,11 +14633,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "b4c2d5b9-003b-489f-949e-5b780bb6a497",
+    "id": "90d89738-0023-4d72-b02e-8f91776530ba",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14652,11 +14652,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "d28b4973-6356-495a-8066-54b111e78a0a",
+    "id": "2cbfb48a-5e0b-46c5-a66e-e056a3b05368",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14671,11 +14671,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "74f6b1bc-9754-4719-a896-55abb1b15450",
+    "id": "45b5c78f-dfcf-413d-887b-b39729c4c6f0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14690,11 +14690,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "421e4d9e-5fa9-418e-9f46-968bd2b2bdf0",
+    "id": "9b76c3ab-7bc1-4be4-8b1c-2df57330f769",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14709,11 +14709,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "099c98b1-4729-4b68-8f48-9fdaec43cbdb",
+    "id": "6f88df6d-988d-423e-82d4-5fbb131e4d95",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14728,11 +14728,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "df5267d2-ecb4-4a39-982d-d5ecdf45c68c",
+    "id": "26f5a606-314b-4acf-9ea0-64f546809ebb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14747,11 +14747,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "e16ef6d0-6b46-410a-84ae-17d7ead140a0",
+    "id": "0bf59a02-5199-4684-89a9-9f7c552770bd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14766,11 +14766,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "8898779d-8288-4527-a65d-0adb4a4483f4",
+    "id": "fb267695-86f1-4311-bd11-c1949bef5c72",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14785,11 +14785,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "302b3a2a-712c-42de-85b2-1c8ff6351812",
+    "id": "1c3cf97c-f9ae-4f51-8cb9-b205879fa170",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14804,11 +14804,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "d451dc21-fceb-4cbe-9cd3-7fd070f0c12c",
+    "id": "6a2ed244-771e-4bcb-821e-dab2cd2754fd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14823,11 +14823,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "85f8f1fe-ef4b-4bf0-be30-caf8e23e272e",
+    "id": "91c70419-7a1d-4121-8f98-a4d8a2a4eb9c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14842,11 +14842,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "23d00c31-9497-4c80-a687-d1af92b13fc2",
+    "id": "5b1b9bbf-679e-4ab1-8cdd-ebf8c2aaa3a3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14861,11 +14861,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "bcc4340b-9062-4932-9b09-84a99cabde7b",
+    "id": "b7337c29-0361-49b5-aeed-7a412fd38da8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14880,11 +14880,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "a62564d3-d588-4687-997a-e786d83f1986",
+    "id": "bdb00936-ee9e-453e-a307-2251b034d0cd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14899,11 +14899,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "7c84c7f8-2ea3-479b-a064-396811cf9664",
+    "id": "321036c3-482d-4a9b-aa98-3e7ac1e2f6c1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14918,11 +14918,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "61b589c5-6615-4f7f-94b8-7dbcbe1e09e1",
+    "id": "60df2a07-49b0-4d41-82c3-629640138d65",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14937,11 +14937,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 0
     }
   },
   {
-    "id": "58c4067c-1e5c-446d-bd85-cc4b1ca753c6",
+    "id": "6fccda41-abfa-438b-844f-021b0437a001",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14956,11 +14956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "fd10611d-f0a9-4978-9c50-5ebe5441323a",
+    "id": "1ba75c66-558e-400e-be2e-18cd5d35299f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14975,11 +14975,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 220
+      "2026-02": 0
     }
   },
   {
-    "id": "13268712-81c8-430f-a084-7905ec86ea19",
+    "id": "299b8e62-35c6-49c2-b629-c942b199e77a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14994,11 +14994,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2838dda2-10be-4e98-8b6c-79fa69f9337a",
+    "id": "737729a6-d37c-4b0a-a23d-4339872a57ff",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15013,11 +15013,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "9240796d-d9ef-4286-b1bd-0b518c2849d2",
+    "id": "56097db4-384d-4368-987e-461dc8cf7c34",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15032,11 +15032,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "232b99af-4810-4684-af1a-28d983aa7359",
+    "id": "344ad9e3-683e-4819-b2cb-645430362559",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -15051,11 +15051,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "303fce7e-bc70-4be0-ba6d-93267efda21c",
+    "id": "502ae532-b6da-4829-847c-bb64c3fcdaec",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15070,11 +15070,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "2a4d63b8-18a8-4359-97a2-5a9d52fef352",
+    "id": "8637d0f8-fd7e-4707-a446-59e5ba82abf4",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15089,11 +15089,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "dbef52fa-ffde-44d0-ae2a-d4fcdd6aca46",
+    "id": "1b661ac5-1300-4d48-95c8-b95f17cf6f6a",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15108,11 +15108,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "f0d97d77-2f0b-4e0b-8a95-b1f1dde25a0f",
+    "id": "72c4bd80-6791-409f-a014-9f8adc36dc4b",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15127,11 +15127,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "28c6dad9-33a2-4e81-80ce-105ad6e0d10a",
+    "id": "561dcbda-88a7-4edf-95dc-11675948316c",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15146,11 +15146,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "7232b7be-7fca-4b19-bad0-64c129dbc804",
+    "id": "8cabba11-17b2-4a4a-a63d-2668d598d9b5",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15165,11 +15165,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "5788bcc8-ab2c-42f6-952c-6d9e1f23eadc",
+    "id": "62d6441c-fd5c-4934-8e56-d0a68f3ebeea",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15184,11 +15184,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "4c368c17-23b6-4e84-9bd3-f44178d24744",
+    "id": "bf0bacb3-7eeb-4ff7-813d-c86e530994af",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15203,11 +15203,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "46924610-1a19-4d83-94b1-7ab134acd583",
+    "id": "3872352b-004a-4e7e-a1ed-66de85a4bf40",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15222,11 +15222,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "c2b7b42f-f8bb-4b86-a7ff-4c432ab8a998",
+    "id": "6da0d799-3503-416e-ac8b-b97fdefbe67f",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15241,11 +15241,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 0
     }
   },
   {
-    "id": "87d0ff8b-2841-40a6-a0b5-ff1ff2eed4bf",
+    "id": "79b6d3fe-5406-4ae5-882e-ba7fa02cafe1",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15260,11 +15260,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "4070f2e9-7e54-4a73-9eb2-fec34b6bbe10",
+    "id": "e4d0d042-1c37-405b-aa32-c05ce9b3c916",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -15275,7 +15275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b2fa513e-4241-4d3e-868d-020028798284",
+    "id": "8f48d94d-2cee-4386-a538-b715f9a47c0d",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -15286,7 +15286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "cff4a164-120a-416a-be8b-bfd17e5a8fa1",
+    "id": "8cb691d2-72b2-4c48-89ea-2c56b5b1c12c",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -15297,7 +15297,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "417aeda7-5bd9-425e-a679-b1b4e97caa46",
+    "id": "969eb460-85af-4672-a392-86b573524a20",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -15308,7 +15308,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "87128bdd-7288-43ec-80c8-09c1c9d208d3",
+    "id": "49a8f3ef-a497-49be-918e-f71ec0158bb8",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -15319,7 +15319,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9fa0d10a-34d0-4aa3-82f3-aa28cf9588b6",
+    "id": "fdae4c7f-be1b-4240-a667-acf5a918e67f",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -15330,7 +15330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "44304624-0010-434a-a22e-4541ce8d9549",
+    "id": "f6f1ef69-f5ea-47d3-b417-6daa06e68b20",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -15345,11 +15345,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "3dd75189-d21c-4bbd-bee3-2b21cb58f356",
+    "id": "33f66680-1816-4b7e-9776-2cfa0073c6c8",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -15364,11 +15364,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "8960d0b2-5c25-473a-8cce-dc2c883b2929",
+    "id": "c3802ce8-3d1b-437c-b8ef-b7e0c15f6c57",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -15383,11 +15383,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "99ac83ec-2f5e-466f-956b-5e7bdb465c09",
+    "id": "08134827-f126-466e-8bb6-8a60e4d132ae",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -15402,11 +15402,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "dfffb571-3e63-4a01-85a2-f0f8d72fa566",
+    "id": "8a5dc1be-307c-4843-8805-9a971119ad9a",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -15421,11 +15421,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "752a631b-e96b-442d-aea7-437e1d1529b1",
+    "id": "89b7678e-5907-4259-8519-53119d096ef5",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -15440,11 +15440,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "aeb2eea1-cafe-4c6e-9df6-db9e30a5925a",
+    "id": "2fe52075-8367-48a5-820b-5e271c6b2ea8",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -15459,11 +15459,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "64ffa8f9-6ef6-406d-b3a5-1d7609ad8490",
+    "id": "2973e8bc-4e71-415b-9190-2221979cb932",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -15478,11 +15478,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "0d3f1bd4-fc59-4c02-9db4-d768caafb307",
+    "id": "442e1a6f-a9b5-4763-aa9c-674810aad2ab",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -15497,11 +15497,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 460
+      "2026-02": 0
     }
   },
   {
-    "id": "484e9139-8730-4f52-bff8-4767169324a2",
+    "id": "0a2eddcd-19f3-4ec6-b438-77c0b36ba49c",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -15516,11 +15516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "9294ee38-db10-4c1b-a330-230b3edee6b1",
+    "id": "c9d4fb45-5bfb-49de-8448-84f7883ba049",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -15535,11 +15535,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "a97694ed-7856-4127-a090-eb30082eb191",
+    "id": "ef43bf52-3f2d-4d11-95f8-79e76fa87461",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
     "tipo": "C",
@@ -15554,11 +15554,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "c2a87043-3b73-4350-bb51-a4ef26171f55",
+    "id": "8080e174-9c60-45cc-aca5-a369962b4343",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -15573,11 +15573,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "1d891bc6-235c-49f7-bd23-591633576031",
+    "id": "0fb4a38d-6826-4fb1-afa0-66f2d60706cf",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -15592,11 +15592,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "2f44e5c6-af65-4e42-bda9-b60215725291",
+    "id": "91541f22-da48-4b90-904e-8f579487bf0a",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -15611,11 +15611,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 220
+      "2026-02": 0
     }
   },
   {
-    "id": "b95b3d05-4c54-4d11-ae4f-c3ee61b1b4d3",
+    "id": "5c80a405-d58d-4a5c-ac95-5912c99fcd4d",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -15630,11 +15630,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "17ee7754-781d-49b2-88d1-d96b1048ba13",
+    "id": "4e74ea23-a3b2-496a-ad04-b53905e1b05a",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -15649,11 +15649,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "74362296-c888-4eb4-b2a5-99f7d2912625",
+    "id": "3eeb543d-0391-455e-830d-28b0ec778aaa",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -15668,11 +15668,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 180
+      "2026-02": 0
     }
   },
   {
-    "id": "2476ae0b-c5fd-42ba-a113-ae07bed041ca",
+    "id": "18f104c9-d3d6-49e5-826a-0f6c367721e3",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -15687,11 +15687,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "658bdacd-a175-47d2-ab3b-04859da0a56f",
+    "id": "cff109ea-6423-4e4a-972d-08aa9be1f227",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -15706,11 +15706,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "aac36be1-230f-49e7-b041-cd055067df13",
+    "id": "bd30711b-21bf-4701-9051-71cb2ef6d0e6",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -15725,11 +15725,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 0
     }
   },
   {
-    "id": "8104d31d-b69e-4abf-b9be-7e000201db9e",
+    "id": "15b41edb-ce81-488c-89ad-2ec76a923fb7",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -15744,11 +15744,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 200
+      "2026-02": 0
     }
   },
   {
-    "id": "14ae43ad-268c-4dd5-8e16-ff5fdb089255",
+    "id": "350ca303-fd21-4a74-9174-d19afa3ae256",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -15763,11 +15763,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "24b3bcb1-67d4-466d-a501-b97db822b173",
+    "id": "6e9a09ce-a002-4fc5-9fbb-e1725ccc84c5",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -15782,11 +15782,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "317ee390-9ad8-4f2d-be35-e9584b7f5469",
+    "id": "e4bb3ead-6fbb-47fe-a587-83f33e2c8429",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -15801,11 +15801,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b74dcf02-f63b-4bb9-9e24-c5fa0ce234b3",
+    "id": "8dd80dc7-0131-4d54-b33d-eed8a0bec012",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -15820,11 +15820,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "4b7b8ba2-8093-4544-a3f3-4c1d55cdcc7d",
+    "id": "312c85c2-f5c1-4dbe-8f68-427272fd0916",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -15839,11 +15839,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "46e145b9-0a66-49e1-b92b-624365d1c326",
+    "id": "9f091a98-fa43-4c9a-b290-be254a961215",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -15858,11 +15858,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "b410d850-82e2-451f-9479-32f37fc8da3e",
+    "id": "223f4ba4-d48b-4676-a953-c6ef343f4241",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -15877,11 +15877,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 0
     }
   },
   {
-    "id": "4112bde9-9d6f-406c-895d-6ae787297811",
+    "id": "9bfb3909-b1cd-4fc8-aa97-b13ffcd90ca2",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -15896,11 +15896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "5d9c718a-ead3-4f3b-ba6e-7d7836cf9a2d",
+    "id": "97ff82bb-44a4-4966-a7d6-2e93b6085c44",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -15915,11 +15915,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "f79190de-b0db-4a73-ac15-d46e06658b0b",
+    "id": "a15be13d-ea9c-4c92-bb0f-94b127000c73",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -15934,11 +15934,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "300ab473-e244-472f-8c8c-f5dfd5d45d5a",
+    "id": "939045a8-0572-4f78-a004-18279bc3a633",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -15953,11 +15953,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "485ed35b-d1bc-47e4-911c-9ef4724fa037",
+    "id": "b4048173-e0d0-414f-975a-98ea55c7ad2c",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -15972,11 +15972,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "37faca1f-85a1-4295-86c0-b26117e9c5a2",
+    "id": "5fd9e11f-96e3-4e8e-bca1-564b9c4c6898",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -15991,11 +15991,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   },
   {
-    "id": "c63d4630-bafb-45ba-b84b-d4380ef77583",
+    "id": "672b9ac8-d51e-43ec-a1c4-dc27e86606f1",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -16010,11 +16010,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 580
+      "2026-02": 0
     }
   },
   {
-    "id": "db4156b7-6ca0-4fab-bf7e-3aa3e176a70a",
+    "id": "334838a2-cb87-4c24-8c8b-9bb58b45dc7d",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -16029,11 +16029,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 0
     }
   },
   {
-    "id": "ac875d3d-7cd4-4dfa-a3cb-f828a18a3e66",
+    "id": "a6e70579-2e3c-425a-b581-a93bdcbd277f",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -16048,11 +16048,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "6ce50626-b926-4574-ab1a-a85409dcfa8c",
+    "id": "22b828e0-5b2b-427e-858f-bd062a7cb556",
     "codigo": "4.2.01.02.0054",
     "descricao": "RATEIO MANUTENCAO PREDIAL",
     "tipo": "C",
@@ -16067,11 +16067,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "0a8f8ba8-a653-4605-b6d5-b47415f3fd11",
+    "id": "d354309d-ee0d-4595-bbfc-b874ae499328",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -16086,11 +16086,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 0
     }
   },
   {
-    "id": "35a7dd28-fa7b-4a96-9e82-424d12f8cca3",
+    "id": "02931292-3561-4600-9827-552cb4ff2d76",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -16105,11 +16105,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "e045b718-ea3f-4c82-8ac1-5a2798bf30ce",
+    "id": "a037edf0-9139-4313-9f50-32f0134603b3",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -16124,11 +16124,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 0
     }
   },
   {
-    "id": "de0b013f-90ef-4d35-b78e-b3501292ff57",
+    "id": "bf7ac290-134d-46b4-bc1d-d1dc2e5f2d5c",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -16143,11 +16143,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "de0adf96-bc3b-4f23-9cf0-6e166daa1e72",
+    "id": "349ecc28-d118-4a5c-a958-6f946e84a00b",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -16162,11 +16162,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "4854679b-952b-4954-a337-297ad4cce329",
+    "id": "8d9cdda5-915a-49c3-b6d8-631a792cddfa",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -16181,11 +16181,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0
     }
   },
   {
-    "id": "03050497-b65f-432a-8705-21a03bebe335",
+    "id": "311665ce-b064-4f67-985b-c5e161c77b25",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16200,11 +16200,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 0
     }
   },
   {
-    "id": "d6170c99-b56b-4ce4-b7ea-d0e304727a19",
+    "id": "1284df1c-0706-4e93-8ff1-ab6c59688a2b",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16219,11 +16219,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 480
+      "2026-02": 0
     }
   },
   {
-    "id": "4ffdd5d2-eee3-4015-9124-111aa64269da",
+    "id": "3edc3f71-943f-432b-8d40-24e83c633004",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16238,7 +16238,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 120
+      "2026-02": 0
     }
   }
 ];
