@@ -1,4 +1,4 @@
-import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao, calculateTotalsByDivisaoGrupo4, calculateTotalsByDivisaoOutrosGrupos } from '@/store/budgetStore';
+import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
@@ -89,40 +89,6 @@ export function GlobalSummary() {
 
   const global = calculateGlobalTotals(accounts);
 
-  // Calcular totais para GRUPOCONTABIL = 4 (resumo por atividade consolidado)
-  const totalsGrupo4 = ATIVIDADES.map(ativ => ({
-    key: ativ.key,
-    label: ativ.label,
-    stats: calculateTotalsByDivisaoGrupo4(accounts, ativ.key)
-  }));
-
-  // Calcular totais para demais atividades (resumo totalizador de custos)
-  const totalsOutrosGrupos = ATIVIDADES.map(ativ => ({
-    key: ativ.key,
-    label: ativ.label,
-    stats: calculateTotalsByDivisaoOutrosGrupos(accounts, ativ.key)
-  }));
-
-  // Calcular consolidado geral para GRUPOCONTABIL = 4
-  const consolidadoGrupo4 = totalsGrupo4.reduce(
-    (acc, curr) => ({
-      orc: acc.orc + curr.stats.orc,
-      real: acc.real + curr.stats.real,
-      diff: acc.diff + curr.stats.diff
-    }),
-    { orc: 0, real: 0, diff: 0 }
-  );
-
-  // Calcular consolidado geral para demais grupos
-  const consolidadoOutrosGrupos = totalsOutrosGrupos.reduce(
-    (acc, curr) => ({
-      orc: acc.orc + curr.stats.orc,
-      real: acc.real + curr.stats.real,
-      diff: acc.diff + curr.stats.diff
-    }),
-    { orc: 0, real: 0, diff: 0 }
-  );
-
   return (
     <div className="space-y-6">
       <SummaryTable
@@ -133,62 +99,20 @@ export function GlobalSummary() {
         isMain
       />
 
-      <div className="space-y-8">
-        <div className="space-y-4">
-          <div className="flex items-center gap-3 px-1">
-            <div className="h-6 w-1.5 bg-blue-500 rounded-full" />
-            <h3 className="text-lg font-bold text-primary uppercase tracking-tight">Resumo por Atividade (GRUPOCONTABIL = 4)</h3>
-          </div>
-          
-          <SummaryTable
-            title="Consolidado Grupo 4"
-            orc={consolidadoGrupo4.orc}
-            real={consolidadoGrupo4.real}
-            diff={consolidadoGrupo4.real - consolidadoGrupo4.orc}
-            isMain={false}
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {totalsGrupo4.map((ativ) => (
-              <SummaryTable
-                key={ativ.key}
-                title={ativ.label}
-                activityKey={ativ.key}
-                orc={ativ.stats.orc}
-                real={ativ.stats.real}
-                diff={ativ.stats.real - ativ.stats.orc}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="space-y-4">
-          <div className="flex items-center gap-3 px-1">
-            <div className="h-6 w-1.5 bg-purple-500 rounded-full" />
-            <h3 className="text-lg font-bold text-primary uppercase tracking-tight">Resumo Totalizador - Demais Atividades (GRUPOCONTABIL &ne; 4)</h3>
-          </div>
-          
-          <SummaryTable
-            title="Consolidado Demais Grupos"
-            orc={consolidadoOutrosGrupos.orc}
-            real={consolidadoOutrosGrupos.real}
-            diff={consolidadoOutrosGrupos.real - consolidadoOutrosGrupos.orc}
-            isMain={false}
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {totalsOutrosGrupos.map((ativ) => (
-              <SummaryTable
-                key={ativ.key}
-                title={ativ.label}
-                activityKey={ativ.key}
-                orc={ativ.stats.orc}
-                real={ativ.stats.real}
-                diff={ativ.stats.real - ativ.stats.orc}
-              />
-            ))}
-          </div>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {ATIVIDADES.map((ativ) => {
+          const stats = calculateTotalsByDivisao(accounts, ativ.key);
+          return (
+            <SummaryTable
+              key={ativ.key}
+              title={ativ.label}
+              activityKey={ativ.key}
+              orc={stats.orc}
+              real={stats.real}
+              diff={stats.real - stats.orc}
+            />
+          );
+        })}
       </div>
     </div>
   );
