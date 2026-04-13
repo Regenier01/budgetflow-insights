@@ -518,13 +518,37 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     if (isNaN(saldo)) saldo = 0;
 
+    // Ignorar valores zerados para evitar criar contas vazias
+
+    if (saldo === 0) continue;
+
 
 
     const nomeProduto = getValue(row, 'NOMEPRODUTO') ? String(getValue(row, 'NOMEPRODUTO')).trim() : '';
 
+    const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
+
+    const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
+
+    // Verificar se o departamento existe no mapeamento (se fornecido)
+
+    if (depto && !departmentMapping[depto]) {
+
+      console.warn(`Departamento não encontrado no mapeamento: ${depto}`);
+
+    }
+
+    // Verificar se o centro de custo existe no mapeamento (se fornecido)
+
+    if (centroCusto && !costCenterMapping[centroCusto]) {
+
+      console.warn(`Centro de custo não encontrado no mapeamento: ${centroCusto}`);
+
+    }
+
     const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
 
-    
+
 
     const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}`;
 
