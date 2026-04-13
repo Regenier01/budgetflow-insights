@@ -3,6 +3,7 @@ import type { AccountEntry, MonthKey, AtividadeKey, ExcelRow, UploadRecord } fro
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
+import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 
 // Função auxiliar para normalizar strings de busca
 const normalizeKey = (str: string) => 
@@ -28,32 +29,35 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   const cc = String(row.NOMECUSTO || '').trim().toUpperCase();
   const divisao = String(row.DIVISAO || '').trim();
 
-  // 1. Regras de conta contábil (Prioridade Máxima - Receitas)
+  // 1. Verificação de Encargos Financeiros (Prioridade Máxima)
+  if (isEncargo(conta)) return 'ENCARGOS';
+
+  // 2. Regras de conta contábil (Receitas)
   if (conta.startsWith('3.1.01.01')) return 'PECUARIA';
   if (conta === '3.1.02.03.0001') return 'SERINGAL';
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
   if (conta.startsWith('3.4.03.02')) return 'DESP_ADM_TRIB';
 
-  // 2. Tenta pelo Mapeamento de Departamento
+  // 3. Tenta pelo Mapeamento de Departamento
   const deptInfo = (DEPARTMENT_MAPPING as any)[depto];
   if (deptInfo) {
     const mapped = mapDivisaoToAtividade(deptInfo.divisao);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
-  // 3. Tenta pelo Mapeamento de Centro de Custo
+  // 4. Tenta pelo Mapeamento de Centro de Custo
   const ccInfo = (COST_CENTER_MAPPING as any)[cc];
   if (ccInfo) {
     const mapped = mapDivisaoToAtividade(ccInfo.unidadeNegocio);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
-  // 4. Tenta pela Divisão do Excel
+  // 5. Tenta pela Divisão do Excel
   const fromDivisao = mapDivisaoToAtividade(divisao);
   if (fromDivisao) return fromDivisao;
 
-  // 5. Fallback para administrativo
+  // 6. Fallback para administrativo
   return 'DESP_ADM_TRIB';
 }
 
@@ -105,6 +109,58 @@ export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtivida
     }
   });
   return { orc, real, diff: orc - real };
+}
+
+// Função para calcular totais de Despesas Financeiras
+export function calculateDespesasFinanceirasTotals(accounts: AccountEntry[]) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a => 
+    a.atividade === 'ENCARGOS' && 
+    a.nivel === 5 &&
+    isDespesaFinanceira(a.codigo)
+  );
+  filtered.forEach(a => {
+    if (a.tipo === 'C' || a.tipo === 'D') {
+      orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    }
+  });
+  return { orc, real, diff: orc - real };
+}
+
+// Função para calcular totais de Receitas Financeiras
+export function calculateReceitasFinanceirasTotals(accounts: AccountEntry[]) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a => 
+    a.atividade === 'ENCARGOS' && 
+    a.nivel === 5 &&
+    isReceitaFinanceira(a.codigo)
+  );
+  filtered.forEach(a => {
+    if (a.tipo === 'C' || a.tipo === 'D') {
+      orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    }
+  });
+  return { orc, real, diff: orc - real };
+}
+
+// Função para calcular totais gerais de Encargos (Despesas - Receitas)
+export function calculateEncargosTotals(accounts: AccountEntry[]) {
+  const despesas = calculateDespesasFinanceirasTotals(accounts);
+  const receitas = calculateReceitasFinanceirasTotals(accounts);
+  
+  return {
+    despesas,
+    receitas,
+    total: {
+      orc: despesas.orc - receitas.orc,
+      real: despesas.real - receitas.real,
+      diff: (despesas.orc - receitas.orc) - (despesas.real - receitas.real)
+    }
+  };
 }
 
 interface BudgetState {
