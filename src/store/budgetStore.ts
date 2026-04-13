@@ -79,7 +79,7 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let real = 0;
   const leafAccounts = accounts.filter(a => a.nivel === 5);
   leafAccounts.forEach(a => {
-    if (a.tipo === 'C' || a.tipo === 'D') {
+    if (a.tipo === 'C' || a.tipo === 'D' || a.tipo === 'R') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
     }
@@ -92,8 +92,7 @@ export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtivida
   let real = 0;
   const filtered = accounts.filter(a => 
     a.atividade === filterAtividade && 
-    a.nivel === 5 && 
-    a.grupoContabilN9 === '4'
+    a.nivel === 5
   );
   filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
