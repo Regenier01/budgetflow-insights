@@ -2,10 +2,10 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "0301ba83-8a70-4504-bf10-2d0859713745",
-    "codigo": "1",
-    "descricao": "1",
-    "tipo": "D",
+    "id": "ee5ab6c6-3af5-4b94-8053-d314273411e9",
+    "codigo": "4",
+    "descricao": "4",
+    "tipo": "C",
     "codigoPai": null,
     "nivel": 1,
     "atividade": "PECUARIA",
@@ -13,370 +13,10 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c7dd6b25-a0b2-4dd6-8e78-b418ae7125da",
-    "codigo": "1",
-    "descricao": "1",
-    "tipo": "D",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "b15aa42c-6110-45bc-ad91-08b3b90b497e",
-    "codigo": "1.1",
-    "descricao": "1.1",
-    "tipo": "D",
-    "codigoPai": "1",
-    "nivel": 2,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "b24f3b12-23b0-4f58-8734-db6bd74b22c2",
-    "codigo": "1.1",
-    "descricao": "1.1",
-    "tipo": "D",
-    "codigoPai": "1",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "82a80480-4885-4a4a-9221-46b1bacdacab",
-    "codigo": "1.1.08",
-    "descricao": "1.1.08",
-    "tipo": "D",
-    "codigoPai": "1.1",
-    "nivel": 3,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "46187190-d067-4df3-b94e-431fb48cd0fa",
-    "codigo": "1.1.08.02",
-    "descricao": "1.1.08.02",
-    "tipo": "D",
-    "codigoPai": "1.1.08",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "b389358e-4a29-436c-ba64-995920482bd9",
-    "codigo": "1.1.08.02.0003",
-    "descricao": "GRAOS REIDRATADOS",
-    "tipo": "D",
-    "codigoPai": "1.1.08.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.1.08.02-OUTROS PRODUTOS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "558425c2-3371-4c3f-8998-99be9efbfce8",
-    "codigo": "1.1.55",
-    "descricao": "1.1.55",
-    "tipo": "D",
-    "codigoPai": "1.1",
-    "nivel": 3,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "32f0c1a5-31e6-48c5-853b-dccc1a6cc236",
-    "codigo": "1.1.55.01",
-    "descricao": "1.1.55.01",
-    "tipo": "D",
-    "codigoPai": "1.1.55",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "d26eba3b-4c64-4216-865d-e6b7073c4849",
-    "codigo": "1.1.55.01.0003",
-    "descricao": "CUSTOS A APROPRIAR",
-    "tipo": "D",
-    "codigoPai": "1.1.55.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.1.55.01-DESPESAS ANTECIPADAS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "2271dceb-7bfa-4b96-b6c9-e11ba061df98",
-    "codigo": "1.3",
-    "descricao": "1.3",
-    "tipo": "D",
-    "codigoPai": "1",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "556508db-1125-48c8-ad2d-7651f64f968d",
-    "codigo": "1.3",
-    "descricao": "1.3",
-    "tipo": "D",
-    "codigoPai": "1",
-    "nivel": 2,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "fcecf396-8073-4889-80ab-2f11c8933c9a",
-    "codigo": "1.3.02",
-    "descricao": "1.3.02",
-    "tipo": "D",
-    "codigoPai": "1.3",
-    "nivel": 3,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "67bc4c54-1805-497f-b1f3-ca0cb9d402e8",
-    "codigo": "1.3.02",
-    "descricao": "1.3.02",
-    "tipo": "D",
-    "codigoPai": "1.3",
-    "nivel": 3,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "30728f99-0153-4128-b0fb-220b0aa0b575",
-    "codigo": "1.3.02.23",
-    "descricao": "1.3.02.23",
-    "tipo": "D",
-    "codigoPai": "1.3.02",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "6c5a729f-6b3d-4e13-8d09-c072dce961d2",
-    "codigo": "1.3.02.23",
-    "descricao": "1.3.02.23",
-    "tipo": "D",
-    "codigoPai": "1.3.02",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "cd96ceca-1bc4-4b4c-9dca-d1282300a00d",
-    "codigo": "1.3.02.23.0001",
-    "descricao": "MOVEIS",
-    "tipo": "D",
-    "codigoPai": "1.3.02.23",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
-    "nomeProduto": "PURIFICADOR DE AGUA SOFT PLUS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "a69196a9-deaa-45f2-bf1f-004bbfce7ef8",
-    "codigo": "1.3.02.23.0001",
-    "descricao": "MOVEIS",
-    "tipo": "D",
-    "codigoPai": "1.3.02.23",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
-    "nomeProduto": "PURIFICADOR DE AGUA SOFT PLUS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "f7aafbd0-d9a8-4422-9942-d8fb63669a32",
-    "codigo": "1.3.02.23.0002",
-    "descricao": "EQUIPAMENTOS DE INFORMATICA",
-    "tipo": "D",
-    "codigoPai": "1.3.02.23",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
-    "nomeProduto": "TABLET",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "aeb3e30e-07bf-48d9-98b6-0e06c7e0b588",
-    "codigo": "1.3.02.24",
-    "descricao": "1.3.02.24",
-    "tipo": "D",
-    "codigoPai": "1.3.02",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "9e970ec9-92fc-4501-a5cd-6fec97e166be",
-    "codigo": "1.3.02.24.0004",
-    "descricao": "ONIBUS",
-    "tipo": "D",
-    "codigoPai": "1.3.02.24",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.3.02.24-VEICULOS",
-    "nomeProduto": "M6985 - ÔNIBUS VOLKSWAGEN COMIL CAMPIONE R",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "26e35b9a-abd6-4943-bd56-eab65657853e",
-    "codigo": "1.3.02.34",
-    "descricao": "1.3.02.34",
-    "tipo": "D",
-    "codigoPai": "1.3.02",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "61232ea1-dbe9-463e-a8b3-bbf04ad2f402",
-    "codigo": "1.3.02.34.0005",
-    "descricao": "FERRAMENTARIA",
-    "tipo": "D",
-    "codigoPai": "1.3.02.34",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "1",
-    "grupoContabilN9": "1.3.02.34-OUTRAS IMOBILIZACOES",
-    "nomeProduto": "FURADEIRA IMPACTO 5/8 1100W 220V ID11002",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "c17c834b-e95e-40a0-987c-fa3d0de8e501",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "D",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "735a842f-91c8-4843-8f21-f8bcb85a09a2",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "R",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "53669dda-41a2-418b-b194-2e0802547728",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "R",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "6b0c4fca-f95d-4f77-8bd7-dccb0887bfec",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "R",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c6fc5db2-d1ba-4605-8906-847e3c7d11f8",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "D",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "ENCARGOS",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "e48bcf3d-9d3b-47c5-b5a4-8977bfb718ad",
-    "codigo": "3",
-    "descricao": "3",
-    "tipo": "R",
+    "id": "73978817-2835-40e3-bcf7-cda4fe319ae7",
+    "codigo": "4",
+    "descricao": "4",
+    "tipo": "C",
     "codigoPai": null,
     "nivel": 1,
     "atividade": "AGRICOLA",
@@ -384,1550 +24,366 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "acd4c459-cf42-4bb4-ba8d-bc976f291f13",
-    "codigo": "3.1",
-    "descricao": "3.1",
-    "tipo": "R",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "CANA",
+    "id": "ae10f7d1-091f-46ca-81a0-cc71cd9792de",
+    "codigo": "4",
+    "descricao": "4",
+    "tipo": "C",
+    "codigoPai": null,
+    "nivel": 1,
+    "atividade": "SERINGAL",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "79f2d17a-8ebd-45aa-9172-6a9426cf1462",
-    "codigo": "3.1",
-    "descricao": "3.1",
-    "tipo": "R",
-    "codigoPai": "3",
+    "id": "cac1caef-f672-473d-becf-443e62069788",
+    "codigo": "4.1",
+    "descricao": "4.1",
+    "tipo": "C",
+    "codigoPai": "4",
     "nivel": 2,
     "atividade": "PECUARIA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "66cc37ce-c6cf-41ed-acc5-31e895f107a8",
-    "codigo": "3.1",
-    "descricao": "3.1",
-    "tipo": "R",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c5ae9f97-27d5-4484-a346-dbefb10b094b",
-    "codigo": "3.1",
-    "descricao": "3.1",
-    "tipo": "R",
-    "codigoPai": "3",
+    "id": "e74ba1c1-dc1e-47a6-be6d-be8f45fff71d",
+    "codigo": "4.1",
+    "descricao": "4.1",
+    "tipo": "C",
+    "codigoPai": "4",
     "nivel": 2,
     "atividade": "AGRICOLA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "23fe60ca-7672-4074-98c2-7dbd450df0b0",
-    "codigo": "3.1.01",
-    "descricao": "3.1.01",
-    "tipo": "R",
-    "codigoPai": "3.1",
-    "nivel": 3,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "4efac12c-1d34-4b1b-9765-ce637d8e4fb7",
-    "codigo": "3.1.01.01",
-    "descricao": "3.1.01.01",
-    "tipo": "R",
-    "codigoPai": "3.1.01",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "315b0160-aefe-42fd-93e9-49426ddf1350",
-    "codigo": "3.1.01.01.0001",
-    "descricao": "VENDA DE BOVINOS",
-    "tipo": "R",
-    "codigoPai": "3.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.01.01-VENDA DE PRODUTOS ANIMAIS",
-    "nomeProduto": "BOVINO MACHO 12 A 24 MESES",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "14385d47-6209-48b9-8fe3-0fa78344861f",
-    "codigo": "3.1.01.01.0001",
-    "descricao": "VENDA DE BOVINOS",
-    "tipo": "R",
-    "codigoPai": "3.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.01.01-VENDA DE PRODUTOS ANIMAIS",
-    "nomeProduto": "BOVINO MACHO 24 A 36 MESES",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "0c17a82f-7b6f-45cf-9800-3e50f13621f4",
-    "codigo": "3.1.02",
-    "descricao": "3.1.02",
-    "tipo": "R",
-    "codigoPai": "3.1",
-    "nivel": 3,
+    "id": "612dc638-b5a6-4e99-9dff-f3d06b82a297",
+    "codigo": "4.1",
+    "descricao": "4.1",
+    "tipo": "C",
+    "codigoPai": "4",
+    "nivel": 2,
     "atividade": "SERINGAL",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "99ef682a-2dc1-45e0-a27c-fb7603201432",
-    "codigo": "3.1.02",
-    "descricao": "3.1.02",
-    "tipo": "R",
-    "codigoPai": "3.1",
+    "id": "b1b08756-fb6f-43ac-97f9-b883aac834d8",
+    "codigo": "4.1.01",
+    "descricao": "4.1.01",
+    "tipo": "C",
+    "codigoPai": "4.1",
+    "nivel": 3,
+    "atividade": "PECUARIA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "23bfb762-69dc-4065-8227-d8ffb5582512",
+    "codigo": "4.1.01",
+    "descricao": "4.1.01",
+    "tipo": "C",
+    "codigoPai": "4.1",
     "nivel": 3,
     "atividade": "AGRICOLA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "8fb4160a-030d-4c18-a54a-300e6b575218",
-    "codigo": "3.1.02.01",
-    "descricao": "3.1.02.01",
-    "tipo": "R",
-    "codigoPai": "3.1.02",
-    "nivel": 4,
-    "atividade": "AGRICOLA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "a31d02f3-1fa1-463c-a921-3e0a94b39ab2",
-    "codigo": "3.1.02.01.0005",
-    "descricao": "VENDA DE SOJA",
-    "tipo": "R",
-    "codigoPai": "3.1.02.01",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "LAGUNA",
-    "centroCusto": "ÁREAS PRODUTIVAS",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.02.01-VENDA DE GRAOS",
-    "nomeProduto": "SOJA EM GRAOS INDUSTRIAL",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": -1768244.0000000002
-    }
-  },
-  {
-    "id": "34d789bc-ae13-48b3-aece-9f7a3eaf038f",
-    "codigo": "3.1.02.03",
-    "descricao": "3.1.02.03",
-    "tipo": "R",
-    "codigoPai": "3.1.02",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "a0be451f-e819-402e-a904-202453a78da4",
-    "codigo": "3.1.02.03.0001",
-    "descricao": "VENDA DE LATEX",
-    "tipo": "R",
-    "codigoPai": "3.1.02.03",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.02.03-VENDA DE OUTROS PRODUTOS AGRICOLAS",
-    "nomeProduto": "COAGULO VIRGEM A GRANEL",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "0b98c030-f9ea-4541-97a0-0adc741c607e",
-    "codigo": "3.1.02.03.0001",
-    "descricao": "VENDA DE LATEX",
-    "tipo": "R",
-    "codigoPai": "3.1.02.03",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.02.03-VENDA DE OUTROS PRODUTOS AGRICOLAS",
-    "nomeProduto": "CERNAMBY VIRGEM",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "8062cd10-6fe2-4e88-8c1b-713e2628d9bd",
-    "codigo": "3.1.20",
-    "descricao": "3.1.20",
-    "tipo": "R",
-    "codigoPai": "3.1",
-    "nivel": 3,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "7a2b7603-03cd-4cd2-9067-e92a920302e8",
-    "codigo": "3.1.20.02",
-    "descricao": "3.1.20.02",
-    "tipo": "R",
-    "codigoPai": "3.1.20",
-    "nivel": 4,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "9f5c5d9d-fbb0-4f0e-a92f-bd9acb12d843",
-    "codigo": "3.1.20.02.0001",
-    "descricao": "RECEITAS DE LOCACOES DE IMOVEIS",
-    "tipo": "R",
-    "codigoPai": "3.1.20.02",
-    "nivel": 5,
-    "atividade": "CANA",
-    "departamento": "CANA",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.1.20.02-RECEITA DE LOCACOES DE IMOVEIS",
-    "nomeProduto": "LOCACOES DIVERSAS",
-    "divisao": "CANA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": -38424.72
-    }
-  },
-  {
-    "id": "510b51a8-c6ff-47e6-a083-018d01bb47e5",
-    "codigo": "3.2",
-    "descricao": "3.2",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c6f84be7-765b-4073-a968-15866cbc4783",
-    "codigo": "3.2",
-    "descricao": "3.2",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "05079d41-cdcd-4f06-a989-f694a3c8d216",
-    "codigo": "3.2",
-    "descricao": "3.2",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "94a8417e-25f1-44e9-8e4d-657f355c312d",
-    "codigo": "3.2.01",
-    "descricao": "3.2.01",
-    "tipo": "D",
-    "codigoPai": "3.2",
-    "nivel": 3,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "a63bd050-8186-4037-a7c5-2e16d6d5ae2b",
-    "codigo": "3.2.01",
-    "descricao": "3.2.01",
-    "tipo": "D",
-    "codigoPai": "3.2",
+    "id": "7f07139d-ed7f-4b32-a7cb-6427efd0431a",
+    "codigo": "4.1.01",
+    "descricao": "4.1.01",
+    "tipo": "C",
+    "codigoPai": "4.1",
     "nivel": 3,
     "atividade": "SERINGAL",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "a7f18a76-2a36-47a8-9bf2-244518c495c2",
-    "codigo": "3.2.01.01",
-    "descricao": "3.2.01.01",
-    "tipo": "D",
-    "codigoPai": "3.2.01",
-    "nivel": 4,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "fba13490-898c-4e7b-a633-f7f796ad2620",
-    "codigo": "3.2.01.01",
-    "descricao": "3.2.01.01",
-    "tipo": "D",
-    "codigoPai": "3.2.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "37f05782-1180-4a8d-b245-0e3ecfb796e2",
-    "codigo": "3.2.01.01.0001",
-    "descricao": "ICMS",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "BANDEIRANTES SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "34-OL LATEX TOCANTINS LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "COAGULO VIRGEM A GRANEL",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "17ef2f9f-7180-4c06-86d8-bb223be37cda",
-    "codigo": "3.2.01.01.0001",
-    "descricao": "ICMS",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "ESPLANADA SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "CERNAMBY VIRGEM",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "1513dcda-28df-4831-a658-be869405f792",
-    "codigo": "3.2.01.01.0001",
-    "descricao": "ICMS",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "0ec3b54d-cc2e-4b42-b7ef-55cbdd33151f",
-    "codigo": "3.2.01.01.0002",
-    "descricao": "INSS",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "COAGULO VIRGEM A GRANEL",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "0efd90df-8dce-4900-b05c-f49025c9d5ed",
-    "codigo": "3.2.01.01.0002",
-    "descricao": "INSS",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "CERNAMBY VIRGEM",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "3deddda5-5276-4ce9-a0a3-e20ff9574e75",
-    "codigo": "3.2.01.01.0003",
-    "descricao": "COFINS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "CANA",
-    "departamento": "CANA",
-    "centroCusto": "RATEIO DEPARTAMENTOS",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "COFINS SOBRE FATURAMENTO  039393",
-    "divisao": "CANA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 2920.28
-    }
-  },
-  {
-    "id": "44207ff5-cfe1-42d7-b8b8-57431aa9e6b8",
-    "codigo": "3.2.01.01.0003",
-    "descricao": "COFINS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "BANDEIRANTES SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "34-OL LATEX TOCANTINS LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "COAGULO VIRGEM A GRANEL",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "2ab8685c-6f98-4922-b16e-b4686c9a8b78",
-    "codigo": "3.2.01.01.0003",
-    "descricao": "COFINS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "CERNAMBY VIRGEM",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "c50abba3-1f3e-4f0d-9dfb-0df4800c7479",
-    "codigo": "3.2.01.01.0004",
-    "descricao": "PIS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "CANA",
-    "departamento": "CANA",
-    "centroCusto": "RATEIO DEPARTAMENTOS",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "PIS SOBRE FATURAMENTO  039391",
-    "divisao": "CANA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 634
-    }
-  },
-  {
-    "id": "5f30927a-453d-4a92-84bd-0f772399d732",
-    "codigo": "3.2.01.01.0004",
-    "descricao": "PIS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "COAGULO VIRGEM A GRANEL",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "a8757cfa-a78c-45a4-83d3-41e1b746f94a",
-    "codigo": "3.2.01.01.0004",
-    "descricao": "PIS S/ FATURAMENTO",
-    "tipo": "D",
-    "codigoPai": "3.2.01.01",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
-    "nomeProduto": "CERNAMBY VIRGEM",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "df3c9402-8c22-462f-a14f-8b70922c50f9",
-    "codigo": "3.2.03",
-    "descricao": "3.2.03",
-    "tipo": "D",
-    "codigoPai": "3.2",
-    "nivel": 3,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "9521651a-cc54-45a6-bf07-c59ff8d605ed",
-    "codigo": "3.2.03.01",
-    "descricao": "3.2.03.01",
-    "tipo": "D",
-    "codigoPai": "3.2.03",
+    "id": "03d059a3-d242-4de9-9d29-cded804d8ec3",
+    "codigo": "4.1.01.01",
+    "descricao": "4.1.01.01",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
     "nivel": 4,
     "atividade": "PECUARIA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "00306064-cf6f-46b1-811f-9920623ec74b",
-    "codigo": "3.2.03.01.0003",
-    "descricao": "OUTROS ABATIMENTOS",
-    "tipo": "D",
-    "codigoPai": "3.2.03.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
-    "nomeProduto": "BOVINO MACHO 24 A 36 MESES",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "01dc5161-1e84-4aeb-92aa-0ae176fbd35e",
-    "codigo": "3.2.03.01.0003",
-    "descricao": "OUTROS ABATIMENTOS",
-    "tipo": "D",
-    "codigoPai": "3.2.03.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
-    "nomeProduto": "BOVINO MACHO 12 A 24 MESES",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "0b6553a4-79ac-44f6-be2d-36faa61f82a9",
-    "codigo": "3.2.03.01.0003",
-    "descricao": "OUTROS ABATIMENTOS",
-    "tipo": "D",
-    "codigoPai": "3.2.03.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
-    "nomeProduto": "OUTRAS DESPESAS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "28e429cb-edcf-43f3-a303-9e4a0cb5efdd",
-    "codigo": "3.3",
-    "descricao": "3.3",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "445cf5c4-af8c-4d21-8124-0802e27819e7",
-    "codigo": "3.3",
-    "descricao": "3.3",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "f662a157-1fba-4595-ad9d-3b450f758f3b",
-    "codigo": "3.3",
-    "descricao": "3.3",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "fb4dd0dd-329e-4ba6-b28a-9a38effd0e15",
-    "codigo": "3.3.01",
-    "descricao": "3.3.01",
-    "tipo": "D",
-    "codigoPai": "3.3",
-    "nivel": 3,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "9c41da44-826a-4c65-8b86-88631f972157",
-    "codigo": "3.3.01",
-    "descricao": "3.3.01",
-    "tipo": "D",
-    "codigoPai": "3.3",
-    "nivel": 3,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c1bf1512-cf30-465f-9dec-d064e2659ff3",
-    "codigo": "3.3.01",
-    "descricao": "3.3.01",
-    "tipo": "D",
-    "codigoPai": "3.3",
-    "nivel": 3,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "4c809e90-277b-4fe2-9593-a1ac08347322",
-    "codigo": "3.3.01.01",
-    "descricao": "3.3.01.01",
-    "tipo": "D",
-    "codigoPai": "3.3.01",
-    "nivel": 4,
-    "atividade": "PECUARIA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "0afb449b-dec6-492c-a1df-2871f04762b8",
-    "codigo": "3.3.01.01.0001",
-    "descricao": "PRODUTOS ANIMAIS",
-    "tipo": "D",
-    "codigoPai": "3.3.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.3.01.01-CUSTO DOS PRODUTOS PECUARIOS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "83dc31f6-f225-49c9-a256-2a1c6ecaaf03",
-    "codigo": "3.3.01.02",
-    "descricao": "3.3.01.02",
-    "tipo": "D",
-    "codigoPai": "3.3.01",
-    "nivel": 4,
-    "atividade": "CANA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "cffc3e30-6d83-4031-ae49-e9213d160dd1",
-    "codigo": "3.3.01.02",
-    "descricao": "3.3.01.02",
-    "tipo": "D",
-    "codigoPai": "3.3.01",
+    "id": "9c815bf9-b09b-41fd-a6d2-586e3851d7ea",
+    "codigo": "4.1.01.01",
+    "descricao": "4.1.01.01",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
     "nivel": 4,
     "atividade": "SERINGAL",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "b47b1c26-08e3-4b79-8ef0-64cba15053cc",
-    "codigo": "3.3.01.02.0002",
-    "descricao": "CANA-DE-ACUCAR",
-    "tipo": "D",
-    "codigoPai": "3.3.01.02",
-    "nivel": 5,
-    "atividade": "CANA",
-    "departamento": "CANA",
-    "centroCusto": "RATEIO CANA",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.3.01.02-CUSTO DOS PRODUTOS AGRICOLAS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "CANA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 2783.56
-    }
-  },
-  {
-    "id": "4b6c4511-226e-4b40-a1d0-6c3fc17e8ff4",
-    "codigo": "3.3.01.02.0003",
-    "descricao": "LATEX",
-    "tipo": "D",
-    "codigoPai": "3.3.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "34-OL LATEX TOCANTINS LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.3.01.02-CUSTO DOS PRODUTOS AGRICOLAS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "2e6f8d65-72ea-490a-864b-cf1ca06b53f9",
-    "codigo": "3.3.01.02.0080",
-    "descricao": "VJUSTO SERINGAL - DEPREC, EXAUST E AMORT",
-    "tipo": "D",
-    "codigoPai": "3.3.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.3.01.02-CUSTO DOS PRODUTOS AGRICOLAS",
-    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 0
-    }
-  },
-  {
-    "id": "221b7448-f82c-4040-a258-39a603d669a9",
-    "codigo": "3.4",
-    "descricao": "3.4",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "6b7291c8-46be-4b1f-a610-011698b06efe",
-    "codigo": "3.4",
-    "descricao": "3.4",
-    "tipo": "D",
-    "codigoPai": "3",
-    "nivel": 2,
-    "atividade": "ENCARGOS",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "bbcb22fc-e43d-4761-9f4c-041fdad50bb9",
-    "codigo": "3.4.01",
-    "descricao": "3.4.01",
-    "tipo": "D",
-    "codigoPai": "3.4",
-    "nivel": 3,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "206a8102-edd1-4d79-9287-e5057e82ea4a",
-    "codigo": "3.4.01.01",
-    "descricao": "3.4.01.01",
-    "tipo": "D",
-    "codigoPai": "3.4.01",
-    "nivel": 4,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "ddcf6139-b241-4978-825b-e9215e333e48",
-    "codigo": "3.4.01.01.0001",
+    "id": "b898f59f-1ae5-462d-aaae-4415555ea952",
+    "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "D",
-    "codigoPai": "3.4.01.01",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
     "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "GOVERNANCIA CORPORATIVA",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "ASSIDUIDADE/VALOR",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c949f947-e3d5-417c-996e-20171aa1110f",
-    "codigo": "3.4.01.10",
-    "descricao": "3.4.01.10",
-    "tipo": "D",
-    "codigoPai": "3.4.01",
-    "nivel": 4,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "238077b5-ebd0-4244-81b6-aacf16830539",
-    "codigo": "3.4.01.10.0061",
-    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
-    "tipo": "D",
-    "codigoPai": "3.4.01.10",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "CONTROLADORIA",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.01.10-OUTRAS DESPESAS ADMINISTRATIVAS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "626fdd82-723a-4d1d-8091-fe8152c4bcd3",
-    "codigo": "3.4.01.20",
-    "descricao": "3.4.01.20",
-    "tipo": "D",
-    "codigoPai": "3.4.01",
-    "nivel": 4,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "e9139aa0-a198-4945-b6b1-9d4dec45a861",
-    "codigo": "3.4.01.20.0020",
-    "descricao": "PEDAGIOS",
-    "tipo": "D",
-    "codigoPai": "3.4.01.20",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO INFORMACAO E TECNOLOGIA",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.01.20-OUTROS CUSTOS",
-    "nomeProduto": "PEDAGIO",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "68f5a44b-2de7-4f02-9e0d-9778100b5529",
-    "codigo": "3.4.03",
-    "descricao": "3.4.03",
-    "tipo": "D",
-    "codigoPai": "3.4",
-    "nivel": 3,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "bde9132e-4d7f-4840-9982-45b7ffa077cb",
-    "codigo": "3.4.03.01",
-    "descricao": "3.4.03.01",
-    "tipo": "D",
-    "codigoPai": "3.4.03",
-    "nivel": 4,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "0a3c34c4-a0fa-46f9-aefd-eee6012d90d3",
-    "codigo": "3.4.03.01.0006",
-    "descricao": "IOF",
-    "tipo": "D",
-    "codigoPai": "3.4.03.01",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.01-IMPOSTOS INDIRETOS",
-    "nomeProduto": "IOF",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "dd61757a-ddc0-4719-9756-9be29ab00b20",
-    "codigo": "3.4.03.02",
-    "descricao": "3.4.03.02",
-    "tipo": "D",
-    "codigoPai": "3.4.03",
-    "nivel": 4,
-    "atividade": "DESP_ADM_TRIB",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "5654cd4c-f4e7-4ffa-9f59-b56817e41885",
-    "codigo": "3.4.03.02.0005",
-    "descricao": "TAXAS DIVERSAS",
-    "tipo": "D",
-    "codigoPai": "3.4.03.02",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "DIRETORIA",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
-    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "4bd951a7-31ca-406e-836e-d1368e48944e",
-    "codigo": "3.4.03.02.0007",
-    "descricao": "PIS S/ OUTRAS RECEITAS",
-    "tipo": "D",
-    "codigoPai": "3.4.03.02",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO DEPARTAMENTOS",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
-    "nomeProduto": "PIS SOBRE FATURAMENTO  039391",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "954add94-a112-472b-a0b5-9353701705d9",
-    "codigo": "3.4.03.02.0007",
-    "descricao": "PIS S/ OUTRAS RECEITAS",
-    "tipo": "D",
-    "codigoPai": "3.4.03.02",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ALMOXARIFADO",
-    "centroCusto": "ALMOXARIFADO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
-    "nomeProduto": "SUCATA DE PAPELAO",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "f473602c-b634-42f4-bd3c-0e8c62cbf1e3",
-    "codigo": "3.4.03.02.0008",
-    "descricao": "COFINS S/ OUTRAS RECEITAS",
-    "tipo": "D",
-    "codigoPai": "3.4.03.02",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ALMOXARIFADO",
-    "centroCusto": "ALMOXARIFADO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
-    "nomeProduto": "SUCATA DE FERRO",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "ff922eea-c967-4be7-9956-2b279e2e3f0e",
-    "codigo": "3.4.03.02.0008",
-    "descricao": "COFINS S/ OUTRAS RECEITAS",
-    "tipo": "D",
-    "codigoPai": "3.4.03.02",
-    "nivel": 5,
-    "atividade": "DESP_ADM_TRIB",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO DEPARTAMENTOS",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
-    "nomeProduto": "COFINS SOBRE FATURAMENTO  039393",
-    "divisao": "ADMINISTRACAO",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "0269cc24-152a-4047-842b-0e835cd6a911",
-    "codigo": "3.4.04",
-    "descricao": "3.4.04",
-    "tipo": "D",
-    "codigoPai": "3.4",
-    "nivel": 3,
-    "atividade": "ENCARGOS",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "a653ded9-bc20-4203-854f-174f12b994eb",
-    "codigo": "3.4.04.01",
-    "descricao": "3.4.04.01",
-    "tipo": "D",
-    "codigoPai": "3.4.04",
-    "nivel": 4,
-    "atividade": "ENCARGOS",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "b92ba644-e40b-4599-8f00-db7969992ee0",
-    "codigo": "3.4.04.01.0001",
-    "descricao": "JUROS S/ EMPRESTIMOS E FINACIAMENTOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "JUROS S/ EMPRESTIMOS E FINANCIAMENTOS  0",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 7983.2300000000005
-    }
-  },
-  {
-    "id": "f7cdd365-fb64-428a-9bb5-d1deab9ec316",
-    "codigo": "3.4.04.01.0004",
-    "descricao": "JUROS DE MORA",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "JUROS DE MORA  039483",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 3361.36
-    }
-  },
-  {
-    "id": "72884f96-1ab0-4801-b5fa-5f5abbf61347",
-    "codigo": "3.4.04.01.0004",
-    "descricao": "JUROS DE MORA",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "SEM_CODCCUTO",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "JUROS ATIVOS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 420.17
-    }
-  },
-  {
-    "id": "8b7e45ce-0545-4eae-bf42-6770bc33caac",
-    "codigo": "3.4.04.01.0005",
-    "descricao": "DESCONTOS CONCEDIDOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "DESCONTOS CONCEDIDOS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 1260.51
-    }
-  },
-  {
-    "id": "8c983fcf-b828-4d3c-932f-baebd006a55b",
-    "codigo": "3.4.04.01.0006",
-    "descricao": "DESPESAS BANCARIAS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "TARIFAS BANCARIAS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 24369.859999999968
-    }
-  },
-  {
-    "id": "a42ec093-2950-4cdb-af52-336413c04331",
-    "codigo": "3.4.04.01.0006",
-    "descricao": "DESPESAS BANCARIAS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "DESPESAS BANCARIAS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 840.34
-    }
-  },
-  {
-    "id": "54cddaec-3af5-465a-8f76-d0de34230030",
-    "codigo": "3.4.04.01.0008",
-    "descricao": "JUROS S/ PARCELAMENTOS DE IMPOSTOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "JUROS SOBRE PARCELAMENTOS DE TRIBUTOS  0",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 1680.68
-    }
-  },
-  {
-    "id": "3645baf6-bbbf-498c-a8ce-230ce12797b8",
-    "codigo": "3.4.04.01.0020",
-    "descricao": "OUTRAS DESPESAS FINANCEIRAS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "SEM_CODCCUTO",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "OUTRAS DESPESAS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 1260.51
-    }
-  },
-  {
-    "id": "4d3cb431-0853-4ccf-a2b6-ba1aa20dafb4",
-    "codigo": "3.4.04.01.0020",
-    "descricao": "AJUSTES OP SWAP - IN RFB 1700 ART. 103",
-    "tipo": "D",
-    "codigoPai": "3.4.04.01",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
-    "coligada": "2-PLANAGRI S.A.",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
-    "nomeProduto": "GANHOS DE APLICACOES FINANCEIRAS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 840.34
-    }
-  },
-  {
-    "id": "a660c655-41f6-454f-9abf-cc0d621f5e0a",
-    "codigo": "3.4.04.05",
-    "descricao": "3.4.04.05",
-    "tipo": "D",
-    "codigoPai": "3.4.04",
-    "nivel": 4,
-    "atividade": "ENCARGOS",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "cd6887ea-c07c-4b22-87d7-a8db4ebc73a8",
-    "codigo": "3.4.04.05.0001",
-    "descricao": "JUROS ATIVOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "JUROS ATIVOS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 33193.429999999935
-    }
-  },
-  {
-    "id": "9de2da6f-7630-4b4b-885c-50a974997918",
-    "codigo": "3.4.04.05.0004",
-    "descricao": "GANHOS DE APLICACOES FINANCEIRAS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "SEM_CODCCUTO",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "GANHOS DE APLICACOES FINANCEIRAS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 16806.8
-    }
-  },
-  {
-    "id": "5246affc-deb0-4e77-89ee-3eeaf4408756",
-    "codigo": "3.4.04.05.0005",
-    "descricao": "DESCONTOS OBTIDOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
     "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "DESCONTOS OBTIDOS",
-    "divisao": "ENCARGOS FINANCEIROS",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 4621.87
+      "2026-02": 39991.74999999999
     }
   },
   {
-    "id": "d2382b52-7b9c-4eb7-80b6-5e363155a300",
-    "codigo": "3.4.04.05.0005",
-    "descricao": "DESCONTOS OBTIDOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
+    "id": "91f28361-0ad3-4dd2-8411-3dd8f7942595",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
     "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "SEM_CODCCUTO",
-    "coligada": "34-OL LATEX TOCANTINS LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "DESCONTOS CONCEDIDOS",
-    "divisao": "ENCARGOS FINANCEIROS",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 420.17
-    }
-  },
-  {
-    "id": "06c74dc9-92d3-4afb-9fdd-e6fddf3cca4f",
-    "codigo": "3.4.04.05.0005",
-    "descricao": "DESCONTOS OBTIDOS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
-    "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "SEM_DEPTO",
-    "centroCusto": "SEM_CODCCUTO",
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "ENCARGOS FINANCEIROS",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 420.17
+      "2026-02": 39615.829999999994
     }
   },
   {
-    "id": "93fe8576-2fd7-4e3b-b2d1-eb34d612aba1",
-    "codigo": "3.4.04.05.0020",
-    "descricao": "OUTRAS RECEITAS FINANCEIRAS",
-    "tipo": "D",
-    "codigoPai": "3.4.04.05",
+    "id": "68b27203-5bc8-4905-872e-7290cd07aa52",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
     "nivel": 5,
-    "atividade": "ENCARGOS",
-    "departamento": "ADMINISTRACAO",
-    "centroCusto": "RATEIO FINANCEIRO",
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "3",
-    "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
-    "nomeProduto": "RECEITAS FINANCEIRAS",
-    "divisao": "ENCARGOS FINANCEIROS",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 2521.02
+      "2026-02": 206997.09000000003
     }
   },
   {
-    "id": "0000398e-1d03-4e8a-94af-a2775576544d",
-    "codigo": "4",
-    "descricao": "4",
+    "id": "3f314923-8e4d-4603-9434-03905674f5d7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "b6dd875c-5f94-4950-a8bd-3717562f5cfa",
-    "codigo": "4",
-    "descricao": "4",
-    "tipo": "C",
-    "codigoPai": null,
-    "nivel": 1,
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
     "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CONDOMINIO CAPELINHA",
+    "divisao": "PECUÁRIA",
     "orcado": {},
-    "realizado": {}
+    "realizado": {
+      "2026-02": -920
+    }
   },
   {
-    "id": "b1e9f564-8331-4065-a613-6b7f76527c58",
-    "codigo": "4",
-    "descricao": "4",
+    "id": "afba5510-25aa-436e-8f83-ba5e8719a4fa",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
-    "codigoPai": null,
-    "nivel": 1,
-    "atividade": "AGRICOLA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "90192b68-b77a-4a91-8232-92600bda9c2e",
-    "codigo": "4.1",
-    "descricao": "4.1",
-    "tipo": "C",
-    "codigoPai": "4",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "3a96e9d0-eeba-4c86-b704-bf3f07052156",
-    "codigo": "4.1",
-    "descricao": "4.1",
-    "tipo": "C",
-    "codigoPai": "4",
-    "nivel": 2,
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
     "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "PECUÁRIA",
     "orcado": {},
-    "realizado": {}
+    "realizado": {
+      "2026-02": 1000.5
+    }
   },
   {
-    "id": "d1db2194-a7e7-456d-a8dc-4f993c24d842",
-    "codigo": "4.1",
-    "descricao": "4.1",
+    "id": "78f8eeeb-e0b0-42c1-afd4-87a6cfbecd43",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
-    "codigoPai": "4",
-    "nivel": 2,
-    "atividade": "AGRICOLA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "4d6250d5-28d7-4c3e-a75f-62a61709b168",
-    "codigo": "4.1.01",
-    "descricao": "4.1.01",
-    "tipo": "C",
-    "codigoPai": "4.1",
-    "nivel": 3,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "29e21c3b-fea6-4964-a1b1-e49c6a7defd5",
-    "codigo": "4.1.01",
-    "descricao": "4.1.01",
-    "tipo": "C",
-    "codigoPai": "4.1",
-    "nivel": 3,
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
     "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
-    "realizado": {}
+    "realizado": {
+      "2026-02": -57.76
+    }
   },
   {
-    "id": "1cdc381b-c869-473a-9524-9e5369e1bffb",
-    "codigo": "4.1.01",
-    "descricao": "4.1.01",
+    "id": "38ae239c-2fbe-481e-a8de-59e9b54a5477",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
-    "codigoPai": "4.1",
-    "nivel": 3,
-    "atividade": "AGRICOLA",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "cc649ac7-089f-47ec-bb3b-351897b0f05e",
-    "codigo": "4.1.01.01",
-    "descricao": "4.1.01.01",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "bc1fabc8-0272-4d39-ad5b-2df4a6740459",
-    "codigo": "4.1.01.01",
-    "descricao": "4.1.01.01",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
     "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATRASOS",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
-    "realizado": {}
+    "realizado": {
+      "2026-02": -496.62
+    }
   },
   {
-    "id": "64e790a9-e326-4dae-9fb5-3e5120f7e379",
+    "id": "0be73578-5880-4579-904e-ab9241ba1050",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -57.76
+    }
+  },
+  {
+    "id": "f1f8ddc8-d701-4a9a-a02e-cb60d7f8084b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ADICIONAL NOTURNO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 642.71
+    }
+  },
+  {
+    "id": "2aa9f4d4-4dcd-4ef8-9e60-f934b3680793",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 218.32
+    }
+  },
+  {
+    "id": "d8fdfebe-6ba5-451e-a3d2-f460cfe686e9",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3951.2200000000003
+    }
+  },
+  {
+    "id": "cb2191ad-e722-4dab-83ab-6a3486b2a167",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO BANCO DE HORAS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -36.85
+    }
+  },
+  {
+    "id": "bd21a400-366d-42ee-a4e1-72ab73882c52",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "OUTROS DESCONTOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -52.4
+    }
+  },
+  {
+    "id": "301dd64a-0dc5-4f0d-83bf-c56c84006acb",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1943,11 +399,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 862465.04
     }
   },
   {
-    "id": "9ea03572-0540-44a4-9718-8be0697f630c",
+    "id": "64afe0a3-85c7-46f5-89d9-3a3aaad0e7ef",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1963,11 +419,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": -33765.11
     }
   },
   {
-    "id": "dc60ac3a-2207-42b5-aa0a-315eb97a1f3c",
+    "id": "72ca272e-bcfb-4916-a2a3-19eeb6b71f8d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1983,11 +439,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -9808.53
     }
   },
   {
-    "id": "b4f5979a-8251-47a6-81d4-ea30d58997fd",
+    "id": "f1971d4d-deb2-4815-89aa-6fa9a816840a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2003,11 +459,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 1264.2
     }
   },
   {
-    "id": "15dc6b62-5fc5-4abf-a556-9e75157a629b",
+    "id": "5ecbdd3c-c6f5-4647-b1ac-7a5dcf65636b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2023,11 +479,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -6205
     }
   },
   {
-    "id": "70da9a43-ca8b-44af-a48a-fb13c8991344",
+    "id": "753a0ca8-10e6-41b7-9075-40950c893470",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2043,11 +499,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -1674.33
     }
   },
   {
-    "id": "cd0443e4-f5d0-48d6-b562-7974877ce8d5",
+    "id": "ea4eeb30-ce3f-4b50-8a72-2dd207faf9d9",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2063,11 +519,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": -872.73
     }
   },
   {
-    "id": "feced9e7-7420-41e1-8793-c4beb87b2d73",
+    "id": "e3b7a364-a2ff-4aa9-bdd5-6add531e47e8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2083,11 +539,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -126.94
     }
   },
   {
-    "id": "452c8172-5058-4b3b-9d65-fa256fbbfdd1",
+    "id": "545635c0-a2a0-412d-a057-576b23b4c157",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2103,11 +559,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 265.91
     }
   },
   {
-    "id": "0c6f199d-c676-4d21-8758-c1643c094e72",
+    "id": "51e5620e-6145-4d20-b05a-07a8a35921cc",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2123,11 +579,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 5120.07
     }
   },
   {
-    "id": "05091a3b-3bba-4eac-b099-5d49eb88f438",
+    "id": "56d5d16d-4ed6-442c-97e1-8b3215709522",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2143,11 +599,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 567.5
     }
   },
   {
-    "id": "fadc8dae-0467-40bf-afa1-cee591332e89",
+    "id": "1b956add-8b87-4a0d-b856-7eb34138b977",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2163,11 +619,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 2380.04
     }
   },
   {
-    "id": "c41907d7-cb74-48a3-9487-6dfee5f248ea",
+    "id": "33d18a4d-ad0f-437a-b718-08a6860051f7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2183,11 +639,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 630.55
     }
   },
   {
-    "id": "f0ca50bc-61b0-4b00-8123-210c8289866a",
+    "id": "19ba7419-d679-401c-a176-6a4df09675b4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2203,11 +659,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 1167.73
     }
   },
   {
-    "id": "e61ec5fb-a6cf-4cbe-bce5-239338abe40e",
+    "id": "652aea59-dc56-41bc-8a7c-5eab0ebef7a2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2223,11 +679,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 2199.83
     }
   },
   {
-    "id": "c9da7113-285f-4575-9e7b-6a7501fba1c4",
+    "id": "b6a339cf-bc34-4aa7-bd6e-f0b3c26e4377",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2243,11 +699,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 14768.78
     }
   },
   {
-    "id": "ad309b96-d629-495b-8efb-23469e055916",
+    "id": "a251051d-98e2-4012-ae45-fb648585c7db",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2263,11 +719,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 52620.92
     }
   },
   {
-    "id": "b79bc1da-1b67-4bfc-87ab-99c085eb1145",
+    "id": "7e44f5d5-b4eb-4c81-b6ed-df5f0cfbf185",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2283,11 +739,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 198368.11
     }
   },
   {
-    "id": "092748c3-7ceb-4d3f-abca-6fdd1c69336e",
+    "id": "d58ba51c-c170-41b6-8280-8a9e42588ab0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2303,11 +759,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 9.24
     }
   },
   {
-    "id": "3ad46dc4-a84a-4421-b299-cbdaf9f96f10",
+    "id": "eaed665b-e65f-4d31-a8e6-4d20cf5d1979",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2323,11 +779,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 325.14
     }
   },
   {
-    "id": "e4a06d8f-7b50-4df5-98ee-ed9b61f154fc",
+    "id": "4c7242e4-ba44-4fd1-bb7f-c075ce0c6387",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2343,11 +799,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 761.64
     }
   },
   {
-    "id": "c2abcae0-0331-4cb5-b01a-b8cad17df967",
+    "id": "af254904-8b78-44cf-8ea2-10a19c85ca99",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2363,11 +819,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 658.1800000000001
     }
   },
   {
-    "id": "fa3eec04-2970-41fc-b219-5317a5340f0a",
+    "id": "4cf64035-4cf2-4f6e-8154-529233fd3e22",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2383,11 +839,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1408.97
     }
   },
   {
-    "id": "c9bc466a-905e-4987-b160-a486a1bb15e9",
+    "id": "892f697d-ff1a-474b-8668-d2003e08265c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2403,11 +859,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2.3000000000000003
     }
   },
   {
-    "id": "7d8badf1-df1d-42ae-bbe3-9d43acb2b625",
+    "id": "4d5521a8-6d14-4c96-a6f1-3ffdc4e79d74",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2423,31 +879,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 325.14
     }
   },
   {
-    "id": "fb63274f-44e7-4dd3-bc8b-9635ef827f09",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "PERICULOSIDADE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "63fcb67f-5746-4395-aa8c-10c6fec5908b",
+    "id": "12b790f4-c67f-4ae6-8ded-af8047be5b71",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2463,11 +899,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 192.53
     }
   },
   {
-    "id": "9ad65b18-7136-425b-a0bd-4f7cf4c79545",
+    "id": "6651a800-bec4-4fd8-8569-ad138de67ea4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2483,151 +919,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": -460
     }
   },
   {
-    "id": "bd632c0c-4758-4518-8290-52f83ca821bd",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "ATRASOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "5615adcc-c2b7-426b-b9dc-d10a99842c41",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "DIARIA - VIAGEM",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "7e56999b-1203-4538-a1a3-c6c577d90751",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "ADICIONAL NOTURNO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "a886b579-b3d7-4f83-863d-c3501a1ecf66",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "ASSIDUIDADE/VALOR",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "b59e2f6f-bfaf-4e99-b765-015442a59ff2",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "GRATIFICACAO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "a9306f97-986b-4846-9feb-cb71dab336e6",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "DIAS TRABALHADOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "019a9063-1f98-4850-aecf-3706a88ab8de",
-    "codigo": "4.1.01.01.0001",
-    "descricao": "SALARIOS E ORDENADOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "CONDOMINIO CAPELINHA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "1c4f51f8-32a3-423a-8e9e-996258b326e8",
+    "id": "ba3b22ff-8232-4ac7-8806-ace4f98e8e4c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2643,59 +939,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 192.53
     }
   },
   {
-    "id": "f8e9e210-f3dc-48c1-8d65-5383f06a30f4",
+    "id": "3d9746b0-3d29-4feb-b721-0ed17b668d8b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "D.S.R. - HORA EXTRA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "fa28774f-cd24-43c0-98f4-6735d5b8a1a3",
-    "codigo": "4.1.01.01.0002",
-    "descricao": "HORAS EXTRAS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "HORA EXTRA100%",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "432b6e18-ad5e-4b11-8312-3cd6a1518dcc",
-    "codigo": "4.1.01.01.0002",
-    "descricao": "HORAS EXTRAS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
@@ -2703,11 +959,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30060.9
     }
   },
   {
-    "id": "21a4b2b6-1161-438e-9057-6e981f9007d6",
+    "id": "1a865d60-738a-4422-9c6d-8c96caf14cfb",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6002.37
+    }
+  },
+  {
+    "id": "d34ccd80-12fe-4c02-8b41-cd707bad1f37",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1224.38
+    }
+  },
+  {
+    "id": "eb4d3cff-2354-4749-8857-616b0b123c82",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2723,11 +1019,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 139918.15999999997
     }
   },
   {
-    "id": "f0985c89-b1d1-48b7-94e8-2eb7e9797480",
+    "id": "661c7286-f5c7-46b0-b61c-8af21c95dfb3",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2743,11 +1039,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 26863.420000000002
     }
   },
   {
-    "id": "9bf8dcec-6da5-423d-9167-92e5551a7362",
+    "id": "f0138a51-2a52-41aa-886f-b50e68320592",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2763,11 +1059,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 196.23
     }
   },
   {
-    "id": "3bc5d02c-b205-4dd9-ad9a-e2a310cd2c51",
+    "id": "56a1838e-a397-4782-9a4e-64ade6682ae4",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2783,11 +1079,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 1020.38
     }
   },
   {
-    "id": "d92af6a7-50aa-4dcd-8f91-2eca351485ec",
+    "id": "83886f04-513e-41d9-a8d6-da411c5806e4",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2803,11 +1099,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 225.04
     }
   },
   {
-    "id": "6804f08f-2ac6-4468-8bf8-b52612f23ff6",
+    "id": "d1bacf0e-b086-461d-91f6-8062c1d29ecd",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 22409.410000000003
+    }
+  },
+  {
+    "id": "5f050303-110e-4c8a-bd8a-086664746078",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2823,11 +1139,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 25895.71
     }
   },
   {
-    "id": "484062ce-65f1-47fb-b1a0-f04afc3bebac",
+    "id": "312e9dcb-e24e-4586-865b-2346d8130244",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2843,11 +1159,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 61371.56
     }
   },
   {
-    "id": "9c0870a4-779f-401e-b1a3-be9f98f40344",
+    "id": "ffcfc148-9bcd-469c-802b-fbf6116d2698",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2863,11 +1179,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 366.63
     }
   },
   {
-    "id": "7dfd1912-97bd-47fe-b1f2-53a4c920ed03",
+    "id": "14afe0f0-73c0-4b75-aa82-884a33324a7e",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2883,11 +1199,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 367642.29
     }
   },
   {
-    "id": "7060d89d-4223-4a8d-a55d-289066368b79",
+    "id": "21bdf37f-f879-444d-8c98-7f9acc0a2e7d",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2903,39 +1219,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 720.12
     }
   },
   {
-    "id": "2ceb079d-8431-485f-9787-fdb48fb94db4",
-    "codigo": "4.1.01.01.0004",
-    "descricao": "COMISSOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "CARGO DE CONFIANCA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c7435959-4d73-4233-b737-fbb3851537c6",
+    "id": "446fbb1d-5195-434a-8c14-94a94dd12e8d",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
@@ -2943,31 +1239,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 35615.11
     }
   },
   {
-    "id": "fa550617-1372-4a86-bfaf-16e3ecd6c7d7",
+    "id": "34d3bf68-dd5f-4960-ba86-55120e759045",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
-    "divisao": "PECUÁRIA",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 452.15999999999985
     }
   },
   {
-    "id": "d4505505-d69d-4abb-bd6c-e51cc699a28b",
+    "id": "7fa6fd6d-cad2-4d27-89ff-c8f5490f6de0",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2983,11 +1279,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 167176.82
     }
   },
   {
-    "id": "c8dfb270-54fa-4929-88ae-f66aafb0878a",
+    "id": "24805182-5530-4ee5-936d-eaec2264fa76",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -3003,11 +1299,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 164.98999999999995
     }
   },
   {
-    "id": "232f0bd5-1139-498e-92f1-9a03fba3110b",
+    "id": "8672ee9a-4f3d-4f92-a4c7-2f664ad2858f",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -3023,11 +1319,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 16.22
     }
   },
   {
-    "id": "7b148521-10c1-4265-b6d0-373d8a76a5ba",
+    "id": "fedd1dfe-4abd-45b7-bf4f-6b159be9a3be",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 27468.079999999994
+    }
+  },
+  {
+    "id": "5480eb36-01cf-4421-8793-86d42d722da1",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISOES 13 SALARIO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -157.55
+    }
+  },
+  {
+    "id": "997350b6-d576-436a-886a-986f8026330e",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -3043,31 +1379,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 130065.88
     }
   },
   {
-    "id": "a8c4bb56-58d4-4fce-9462-6b0db13e4968",
-    "codigo": "4.1.01.01.0006",
-    "descricao": "13o SALARIO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "PROVISAO 13 SALARIO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "e3e9b62a-c0ce-42a6-891a-2ad2b6e7d341",
+    "id": "26ca047d-8d08-4bba-86c1-e53850f046b4",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -3083,11 +1399,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 7360.619999999999
     }
   },
   {
-    "id": "94fc1674-62d3-4800-8435-c69f9a4dc881",
+    "id": "6bc50759-1ae5-4f6b-bf8e-677d472ed6c1",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -3103,11 +1419,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 292.03
     }
   },
   {
-    "id": "234dae0d-5f32-4437-a0ea-ddd403c14933",
+    "id": "38b90352-8778-445b-a0f5-d12c4f7742a1",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "MEDICAMENTOS FARMACIA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 687.78
+    }
+  },
+  {
+    "id": "fb5d71b5-e31f-470a-a9cd-d2cd1fe6d8a5",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "LUVA PARA PROCEDIMENTO CIRURGICO TAMANHO (G)",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 195
+    }
+  },
+  {
+    "id": "1f759707-30eb-4035-ade0-e22518da9951",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3123,11 +1479,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 10.9
     }
   },
   {
-    "id": "0ff87db9-8dd9-4385-8270-26f6234f0afc",
+    "id": "c2037096-02a0-4bb6-a0f4-3eb0e33d8100",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3143,11 +1499,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 13.9
     }
   },
   {
-    "id": "0de2f5e5-6b4a-4fbe-8e26-6aa87bb4cd0c",
+    "id": "0acf8256-c86c-4a13-a975-9bfc491366dd",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3163,11 +1519,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15.9
     }
   },
   {
-    "id": "08484248-adfd-4bfe-b9ae-a96fb30ebd14",
+    "id": "f19b45fc-7eb2-4083-b7b5-57debdcc27f4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3183,11 +1539,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15.9
     }
   },
   {
-    "id": "79dffbab-c26a-4dc3-a111-6429c3da2f4d",
+    "id": "590c8fcf-8110-4aa0-b573-c6c73b387f31",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3203,11 +1559,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25
     }
   },
   {
-    "id": "0f9a2ea9-fcd1-41e0-8e6e-745e5d56d04d",
+    "id": "cd15fcf8-7e6d-492d-b127-67a0bd1607de",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3223,11 +1579,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25.9
     }
   },
   {
-    "id": "726a288c-4b78-4fe4-88d1-4d880a3a2ecf",
+    "id": "a02472f3-e474-48ed-8e71-32ee7fcce77b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3243,11 +1599,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 46.629999999999995
     }
   },
   {
-    "id": "055f82c4-e98b-4c0b-a3d5-05c510cda024",
+    "id": "9d05e40f-251b-4457-af67-0e4b72a51fb4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3263,11 +1619,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 113.87
     }
   },
   {
-    "id": "1a8709db-0265-4b29-96df-42588e8fa677",
+    "id": "6e52f25a-a36c-4290-ab43-39d978eeac3c",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3283,11 +1639,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 28.9
     }
   },
   {
-    "id": "cff6d8a7-ed0d-417c-ad23-b29bfe291059",
+    "id": "b32047f5-c65b-4ebb-8252-341bf4683080",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3303,11 +1659,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 46.34
     }
   },
   {
-    "id": "31f320f2-b68e-4962-bdf2-ccfcfa9dbce8",
+    "id": "ab771ead-f613-4df9-8e8a-576df6b34f7b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3323,11 +1679,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.8
     }
   },
   {
-    "id": "2eb5f7f8-b2e7-4e3c-99a3-ecca5a68c7bf",
+    "id": "60268a26-60c9-4d96-8c76-2f8ea4a6571d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3343,11 +1699,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.9
     }
   },
   {
-    "id": "aac4284d-4902-48dc-8e75-2541eec71aab",
+    "id": "9c9a3b37-04b7-4695-9d6f-c5878c984724",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3363,11 +1719,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 41.8
     }
   },
   {
-    "id": "19d178d7-d206-4128-9831-fbe9a4616bfa",
+    "id": "96cb822d-d4fc-4d9c-a53c-adc5fe35da89",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3383,11 +1739,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6.6
     }
   },
   {
-    "id": "ea4007d0-3109-4f91-acbb-e3bb5598ff73",
+    "id": "6c44d8f3-04ec-4ff5-a934-12b63ca025a7",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3403,11 +1759,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 792.33
     }
   },
   {
-    "id": "83f1615d-d9c8-40b7-8215-78326242fdb5",
+    "id": "4589901b-0f15-4deb-b899-6623483a1884",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3423,11 +1779,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 27.59
     }
   },
   {
-    "id": "c20d46aa-e3b7-4ca1-9029-1f2a974d76a7",
+    "id": "7e67fbed-b511-4c60-98b7-0d6bbd95c336",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3443,11 +1799,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11.88
     }
   },
   {
-    "id": "554a2c8c-55dc-4fa4-987c-44ee22faa629",
+    "id": "80c7a0bb-9a6c-43db-9d74-368386d40a82",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3463,11 +1819,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30.47
     }
   },
   {
-    "id": "8e6018a8-6875-47b3-83f3-b89fb4ba31d5",
+    "id": "825972d4-97f8-48d6-8d23-9aa9ab4ca540",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3483,11 +1839,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 17.06
     }
   },
   {
-    "id": "9f7f7953-4a0e-45d4-9edb-15ad351bbdac",
+    "id": "88576517-e64c-42ef-bf00-27f8bdbd96a1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3503,11 +1859,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12.58
     }
   },
   {
-    "id": "0a19b5b7-d4ff-46ee-bb3c-4f2672480f8f",
+    "id": "dd32f299-cbc3-4939-9626-08c18fa2fd07",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3523,11 +1879,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 16.19
     }
   },
   {
-    "id": "0b1beb12-f060-47ae-af80-9e91229be824",
+    "id": "822e25d2-d1ae-4948-8f11-db0f8ce201ab",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3543,11 +1899,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 20.73
     }
   },
   {
-    "id": "afff37a9-4ef8-46c0-a68f-9d74ae7bf3ea",
+    "id": "b8704177-40cf-41a4-acd5-93af38cbb092",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3563,11 +1919,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 49.79
     }
   },
   {
-    "id": "3ceef411-6f3d-4843-a284-c5c4a6036da5",
+    "id": "a35db928-57f3-4d43-9a8c-ffee64126604",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3583,11 +1939,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 26.8
     }
   },
   {
-    "id": "6f348f62-32e5-4b43-a4b7-62df0a69ff37",
+    "id": "a290bf08-c7c3-4c78-9152-72b80214e9c6",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3603,31 +1959,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 42.67
     }
   },
   {
-    "id": "c5d11a76-e97f-48b5-b856-96e93139a733",
-    "codigo": "4.1.01.01.0008",
-    "descricao": "ASSISTENCIA MEDICA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "MEDICAMENTOS FARMACIA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 60
-    }
-  },
-  {
-    "id": "33fb544d-945e-42b7-861f-9b8271a90918",
+    "id": "004faaa0-93f6-4db3-ba86-895236d3ba32",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3643,11 +1979,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12.71
     }
   },
   {
-    "id": "c34d65df-a31f-40a1-b5ba-7fb1730878a1",
+    "id": "e591609e-fe3c-4f5c-a2b9-87e3f4af8c12",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3663,11 +1999,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22.56
     }
   },
   {
-    "id": "3c270d11-3bc9-49d8-aa89-7046e3406827",
+    "id": "0b4a6db8-be31-4c69-9597-fd3db46c52c9",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3683,11 +2019,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 23.35
     }
   },
   {
-    "id": "a2e5065c-697a-4c2e-a75e-579da9ff79bd",
+    "id": "4892e367-527c-4c97-94ad-ef24e7111526",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3703,11 +2039,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 27.24
     }
   },
   {
-    "id": "9ea22ea2-549f-4bbf-95ab-c2e3fb0e36c2",
+    "id": "9ee3a854-b020-4929-870c-d1caa20c7919",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3723,11 +2059,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 27.48
     }
   },
   {
-    "id": "b422d6e1-af36-4c60-98cf-ac3e95d6c526",
+    "id": "0504b02b-7890-405d-a82c-0601d3836c29",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3743,11 +2079,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45.12
     }
   },
   {
-    "id": "d3b271e9-7f75-4b4b-a911-5a1fd40d96a5",
+    "id": "70d6d073-4943-473c-813e-5262ee93f4d7",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3763,11 +2099,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 65.65
     }
   },
   {
-    "id": "5964ae89-9ef9-44b7-9c46-29d07b5de7cd",
+    "id": "c9f0fd4b-ae31-471e-ac87-8f8476fb8285",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3783,11 +2119,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 65.9
     }
   },
   {
-    "id": "65dc9eac-17c6-4a7f-b913-5e3dcbf160cf",
+    "id": "9053559d-09ae-4394-a34f-5c393e48ccc7",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3803,11 +2139,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 76.92
     }
   },
   {
-    "id": "a8996ce6-4801-4950-b2fb-5e355974ccc6",
+    "id": "8d203dc5-c9ae-40e4-8cf5-7ead037c9d3b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3823,11 +2159,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 164.31
     }
   },
   {
-    "id": "19d348cf-9b08-4668-93e0-87bc624a35de",
+    "id": "65423861-5be6-4594-920c-caebdbd5fab4",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 505.93
+    }
+  },
+  {
+    "id": "46069c4c-a928-46b7-b64a-c93a67fea336",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -3843,39 +2199,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 1957.37
     }
   },
   {
-    "id": "eb06cb0d-6a40-4648-936f-61104c86b93f",
-    "codigo": "4.1.01.01.0009",
-    "descricao": "SEGURO DE VIDA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "SEGURO VIDA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "fcc306ed-7176-4c43-bb9e-acdf637664df",
+    "id": "2ed4022a-9bdd-47a4-beae-f211ab079be7",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
@@ -3883,11 +2219,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 8811.77
     }
   },
   {
-    "id": "2911f393-645c-4f5e-b71c-fd7633afc23e",
+    "id": "785a5da3-c241-4b3e-8bc1-02202ce46fbf",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -3903,11 +2239,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 32648.069999999996
     }
   },
   {
-    "id": "a0fac1bb-085b-4de5-91fc-09b3d828ca05",
+    "id": "5a714825-d00a-4188-931d-e8893781b637",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -3923,11 +2259,151 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 8885.46
     }
   },
   {
-    "id": "2f132d37-2231-4528-a625-cdd5cafa0e21",
+    "id": "3531dad7-bb8e-4fd0-bff5-f0557c445aff",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3034.99
+    }
+  },
+  {
+    "id": "02dc7b59-45c5-47a9-b821-9bd2027b7058",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7746.02
+    }
+  },
+  {
+    "id": "837e125c-5f6b-443b-a886-613d0640fa66",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10829.5
+    }
+  },
+  {
+    "id": "e68fce03-9d73-4919-93f8-094ffe90d3be",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 87722.51
+    }
+  },
+  {
+    "id": "44c33960-7c7c-4dcb-9d0a-47404f9d7d52",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -44.48
+    }
+  },
+  {
+    "id": "dd912dcb-c8b8-4de8-9bbe-12a7f8f32720",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1556.6100000000001
+    }
+  },
+  {
+    "id": "f4e629fb-6e82-4fd7-8740-c5a75ad66bf2",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -516.61
+    }
+  },
+  {
+    "id": "d32f70d5-3c5e-46f5-89e9-c990dfd70b23",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3943,11 +2419,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 41778.26
     }
   },
   {
-    "id": "11457630-b406-4513-aa8c-ee92c927d43d",
+    "id": "2ffda726-3872-4fd0-b53b-c4cbbceff6cf",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3963,11 +2439,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 3511.8299999999995
     }
   },
   {
-    "id": "7544d954-8820-42a3-94a6-6d51a5cb96a5",
+    "id": "46caf8e8-fb75-4bf6-b50f-7f2cc83e4483",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3983,11 +2459,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 4513.849999999999
     }
   },
   {
-    "id": "41336433-3929-4505-bb5e-7fa1bc35bfce",
+    "id": "e67e4b8f-d9a2-43c9-8fe4-368a77f2bb62",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -4003,11 +2479,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 110
+      "2026-02": -16.669999999999998
     }
   },
   {
-    "id": "9769a563-2b26-41cf-9f58-e9b9ebd29249",
+    "id": "2a4df9e1-9878-48d0-a890-8ec29eaa0dcd",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -4023,11 +2499,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 60.97999999999999
     }
   },
   {
-    "id": "d8d5e10c-1a37-4ea1-8c2c-e6927e5e47ec",
+    "id": "bad70b9d-26f8-4c10-ae05-1154d6f1cf3c",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -4043,219 +2519,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -1320.65
     }
   },
   {
-    "id": "46805faf-e6ab-4057-8f5a-b25e203fd54d",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "14682970-21f5-40ec-abb2-4a7720cf5bfd",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 30
-    }
-  },
-  {
-    "id": "5702857b-fe3d-411a-af41-419e578b7278",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "9e36ee3c-3d5a-4c22-8813-9f233da57239",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "adb61886-2724-4f52-a280-e2c02b9e9099",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "784ab3b1-5909-43e3-a525-8a7f9f38154b",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "d379a5d9-1199-4438-9e1f-30df7d7f03ff",
-    "codigo": "4.1.01.01.0030",
-    "descricao": "ENCARGOS INSS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "FAP",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 40
-    }
-  },
-  {
-    "id": "dca1ed9d-0135-4e05-bac4-ac169ae75157",
+    "id": "8c6f2cad-27f0-4c04-8a44-f9cbd866ade4",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "9e27c1ab-8d33-4118-9250-a16f11d33853",
-    "codigo": "4.1.01.01.0031",
-    "descricao": "ENCARGOS FGTS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 100
-    }
-  },
-  {
-    "id": "c2e4bd91-7af8-4a45-9007-79360ee997b3",
-    "codigo": "4.1.01.01.0031",
-    "descricao": "ENCARGOS FGTS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "7bb0a7b3-76c1-4812-9e37-216bd7ffaa17",
-    "codigo": "4.1.01.01.0031",
-    "descricao": "ENCARGOS FGTS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.01",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
@@ -4263,39 +2539,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -12.709999999999999
     }
   },
   {
-    "id": "626a433d-b30e-4ca2-a601-cd9dc9a353c2",
+    "id": "3d7f0188-a023-499e-81ac-bf444d6fc5f6",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
-    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": -146.56
     }
   },
   {
-    "id": "928a0016-6a57-4f97-8907-41c8b8c81f18",
+    "id": "5faaa2f2-84f8-4bce-b1db-9c18d934a9a4",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
     "codigoPai": "4.1.01.01",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
@@ -4303,11 +2579,71 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2197.46
     }
   },
   {
-    "id": "81c1b806-a0f0-4314-95e0-1ed8741be10d",
+    "id": "4a788790-f04b-455f-a758-21062ed9cc39",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2849.1800000000003
+    }
+  },
+  {
+    "id": "72056c60-ac8a-45bc-bf09-2b5c24e93fed",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24622.08
+    }
+  },
+  {
+    "id": "e72b6c72-bb93-4d43-b4fc-c4fd63eb9291",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -218.59999999999997
+    }
+  },
+  {
+    "id": "b6026aa3-3377-48d8-8257-ad29602e199e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4323,11 +2659,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 13374.070000000002
     }
   },
   {
-    "id": "0a4c6e31-8cff-4e82-9584-ba30d72f1882",
+    "id": "be039e66-5abb-4301-b7f4-f2352261d5b6",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4343,11 +2679,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -3913.14
     }
   },
   {
-    "id": "ea6f28f1-0054-47e8-b08e-f50005175684",
+    "id": "55391674-3b3a-4332-a8cf-1fc14913bcda",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4363,11 +2699,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 0.06999999999999998
     }
   },
   {
-    "id": "702470c5-38fe-4754-bdf4-0d176a2d33ed",
+    "id": "bfe15d21-5df8-40f4-829f-7ec063113e15",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4383,11 +2719,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 10405.230000000001
     }
   },
   {
-    "id": "9a4e0449-0e61-4ff8-8eae-10c69a9e842a",
+    "id": "a52d0abe-180e-4078-8a07-214da7121d60",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4403,11 +2739,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 110
+      "2026-02": 181
     }
   },
   {
-    "id": "84c5e8d9-d2e0-46b6-b3e9-02519aad3382",
+    "id": "835802ea-cecb-4c58-bce9-bac2a5b2c433",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4423,11 +2759,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 124080.18999999999
     }
   },
   {
-    "id": "9936dd2e-17fa-4a6d-ba0d-31f955ebe326",
+    "id": "fe3ba0b7-7c22-4ae2-8c20-9178470f22ea",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4443,11 +2779,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 10955.53
     }
   },
   {
-    "id": "af2f2025-0a6a-4c8c-9432-776bfcd13b59",
+    "id": "e61c536b-740b-4c5e-b87b-493a114b7256",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4463,11 +2799,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 140.35
     }
   },
   {
-    "id": "efcce0b8-29f6-4861-b3cd-3eb91674e30d",
+    "id": "a2cde8c5-7ef7-4d42-9d59-8a9629e9f72d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4483,11 +2819,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": -54.64
     }
   },
   {
-    "id": "fccc9849-b4f0-45da-9b4c-9143ce2837da",
+    "id": "5acbcf9e-e51b-4156-84b6-cdd435b46023",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4503,11 +2839,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -225.44
     }
   },
   {
-    "id": "891f5420-b085-44de-adad-83d08c040908",
+    "id": "6b85fdbc-a3ea-49e3-aca5-f0dbe7fac3e3",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4523,22 +2859,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -159.62
     }
   },
   {
-    "id": "95d9f142-25c1-449b-b0e1-50b31c5b7e98",
-    "codigo": "4.1.01.02",
-    "descricao": "4.1.01.02",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "a79815df-6245-42e0-ae41-3e3332fb0b0f",
+    "id": "bbd4cbd4-c3c5-42bf-bf36-017aa264ec77",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -4549,7 +2874,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e3d5e398-4d21-42ac-87fb-0e6ef6af523d",
+    "id": "45f64698-e83b-4550-b8f4-727603e295a5",
+    "codigo": "4.1.01.02",
+    "descricao": "4.1.01.02",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "e60b25d5-0c9d-431f-ad32-e435dbd92af5",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -4560,7 +2896,347 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6b9efb25-7ab9-4857-8742-92bb599d0e81",
+    "id": "63195fb1-e7f0-4014-b0ee-67d7882d38ee",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2268.75
+    }
+  },
+  {
+    "id": "178af348-22bf-4bce-ae6b-8f80bc0ef1b1",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE MANUTENCAO DE VEICULOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24.5
+    }
+  },
+  {
+    "id": "136b697a-fb91-49d4-8197-00e48d7cd556",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 209910.93
+    }
+  },
+  {
+    "id": "b92189fa-060c-46c4-a535-bd5091dc77e1",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 32531.02
+    }
+  },
+  {
+    "id": "894905c1-ab2a-4eaa-b523-eaa65bfb4750",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6848.15
+    }
+  },
+  {
+    "id": "b4d16cec-4c54-4347-b426-f0ff46557938",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16782.73
+    }
+  },
+  {
+    "id": "f818ad87-1af9-406c-b078-9d72bc63c12c",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE HOSPEDAGEM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 240
+    }
+  },
+  {
+    "id": "355e62c6-2868-4e3f-9883-e67d05a95d00",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "OLEO DIESEL S10 CLASSE B 8% BIODIESEL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1438.25
+    }
+  },
+  {
+    "id": "bcacf8dc-0452-475b-b559-c6322d33b205",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "EXAMES OCUPACIONAIS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 473.25
+    }
+  },
+  {
+    "id": "0a37bf29-eea2-48b4-9b3e-18286822888e",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "COVOA - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE REPRESENTACAO COMERCIAL / COMISSOES",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2386.09
+    }
+  },
+  {
+    "id": "1c8ee55f-aae5-4451-9811-54337c25e2d4",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 26316.04
+    }
+  },
+  {
+    "id": "879337b9-3b9f-4a37-a576-87ba9d08e5ed",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE CONSTRUCOES E EDIFICACOES",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54150
+    }
+  },
+  {
+    "id": "877b7149-5bb6-49e2-8b3e-b08e130ed1e7",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE ASSISTENCIA SOCIAL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1479.67
+    }
+  },
+  {
+    "id": "097ec59c-fb74-4a8d-bdae-e37c5651e07d",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE CONSULTORIA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50599.71
+    }
+  },
+  {
+    "id": "e8cd8a1d-0719-418e-88e4-e7ced6200b6c",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO MANUTENCAO DE MAQUINAS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2717.28
+    }
+  },
+  {
+    "id": "cf186e02-bfa6-4928-a31b-bdd3c1a64d37",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE APOIO AGRICOLA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 37676.44
+    }
+  },
+  {
+    "id": "0f7d51b0-3d84-48ba-b734-d06b09566104",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PULVERIZACAO E IRRIGACAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54683.729999999996
+    }
+  },
+  {
+    "id": "9ad711c5-b59d-4d3b-aa47-9d135e06febb",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4576,11 +3252,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 2144.9
     }
   },
   {
-    "id": "938e1c7c-16b5-4eac-b3c5-3c01c4da7646",
+    "id": "02b4df0f-0428-407f-ae5c-a729e75d374d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4596,11 +3272,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 150
+      "2026-02": 16949.8
     }
   },
   {
-    "id": "2eab1762-be98-4a9b-a8fa-8b0795b4c418",
+    "id": "6cdec7a0-6b9c-4b23-bf72-136ec8bdba50",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4616,11 +3292,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3041.41
     }
   },
   {
-    "id": "c171d3ef-1eea-42ac-b1be-d9d420f5e34f",
+    "id": "b4096324-d840-4300-bbb4-380b6de3d07e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4636,11 +3312,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 2321.25
     }
   },
   {
-    "id": "e1d9dca8-1209-46a1-9032-1942b8e2815f",
+    "id": "416fd502-a5ff-46c7-a7db-2bcdaa819a4c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4656,11 +3332,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 100
+      "2026-02": 10365.39
     }
   },
   {
-    "id": "ebb66a97-3b54-42c7-bea4-8f92363aab00",
+    "id": "d9bf71bf-a439-42b5-b075-b391d0b0b9e7",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4676,11 +3352,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 1153
     }
   },
   {
-    "id": "5c7f5203-db83-4872-97ab-299c09fce1e3",
+    "id": "d2493462-c151-4c3b-8de7-b6235651f373",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4696,11 +3372,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 127.56
     }
   },
   {
-    "id": "64c58e99-c7ec-4b65-a71c-0a5c84f61813",
+    "id": "990040ee-8443-4596-9f78-73f705610d9e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4716,11 +3392,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 80
     }
   },
   {
-    "id": "4d66a7f3-c740-4dec-bbd1-b22771f7aaae",
+    "id": "77e21a1c-331e-4a63-b8ce-fe400f6b10e3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4736,11 +3412,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2979.92
     }
   },
   {
-    "id": "a9d10235-c9e3-47d1-9304-0a21541e32da",
+    "id": "e6150e6b-70b8-4e34-83de-dd50c6e690ee",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4756,11 +3432,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 3187.5
     }
   },
   {
-    "id": "36f02faa-424c-4f4a-9832-bcf8c0edc390",
+    "id": "f6a7634e-9c83-49e9-9e44-0a30ed5eab1b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4776,11 +3452,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 672.58
     }
   },
   {
-    "id": "2174f758-a831-4886-a23b-1578d7e3f88f",
+    "id": "c9912393-7180-4f83-93ba-4ff86e3569f4",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4796,11 +3472,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 3200
     }
   },
   {
-    "id": "ebe89d1e-6049-43f7-b7de-dae130164a04",
+    "id": "aaaff410-f6f5-463a-9a12-b4741afaea4e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4816,111 +3492,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 22950
     }
   },
   {
-    "id": "c79bc567-ff5c-4d17-bd13-c276054f971f",
+    "id": "a4488d06-ea2a-4e2e-97ee-0c9650b8eb7b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
     "codigoPai": "4.1.01.02",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 310
-    }
-  },
-  {
-    "id": "d3e60a9b-0f02-46d6-bc2d-6a4fa2b601b5",
-    "codigo": "4.1.01.02.0002",
-    "descricao": "SERVICOS DE TERCEIROS PJ",
-    "tipo": "C",
-    "codigoPai": "4.1.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "EXAMES OCUPACIONAIS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c17a6a47-a958-411a-a7fb-0ace1f821bc9",
-    "codigo": "4.1.01.02.0002",
-    "descricao": "SERVICOS DE TERCEIROS PJ",
-    "tipo": "C",
-    "codigoPai": "4.1.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
-    "divisao": "PECUÁRIA",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 450
     }
   },
   {
-    "id": "a602be21-eeba-4ca8-8d96-b9741303f0f8",
-    "codigo": "4.1.01.02.0002",
-    "descricao": "SERVICOS DE TERCEIROS PJ",
-    "tipo": "C",
-    "codigoPai": "4.1.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 80
-    }
-  },
-  {
-    "id": "0bb55dc5-480c-4e89-b767-6f302467c4bf",
-    "codigo": "4.1.01.02.0002",
-    "descricao": "SERVICOS DE TERCEIROS PJ",
-    "tipo": "C",
-    "codigoPai": "4.1.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "OLEO DIESEL S10 CLASSE B 8% BIODIESEL",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "03afc099-72ad-4533-86e0-098fe606ed87",
+    "id": "acc91ce7-25e9-4ccd-a706-045c629feef0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4936,51 +3532,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1090
     }
   },
   {
-    "id": "11ba7944-dac0-4f23-8073-de448457e0e9",
+    "id": "4d3fb971-8052-4cf3-af9e-7cd9b16bab54",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
     "codigoPai": "4.1.01.02",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICO DE CONSULTORIA",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 11260.84
     }
   },
   {
-    "id": "d40e6105-21b2-4c95-bad4-d7aae2bbad48",
+    "id": "da07af39-7b2d-4164-b062-c429d9a55cbc",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
     "codigoPai": "4.1.01.02",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "SANTA MARIA - SOJA",
+    "centroCusto": "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICO DE CONSTRUCOES E EDIFICACOES",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3165.36
     }
   },
   {
-    "id": "5662c581-e5a7-4fa9-8601-3841fc404207",
+    "id": "d37a360c-a32f-4236-b572-d5c55dbdd8b1",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4996,31 +3592,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15780
     }
   },
   {
-    "id": "50bb9e34-2dc9-485b-b058-c4edb7a06f41",
-    "codigo": "4.1.01.02.0002",
-    "descricao": "SERVICOS DE TERCEIROS PJ",
-    "tipo": "C",
-    "codigoPai": "4.1.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "9771e043-8a70-4208-a0bd-fdd52eb8b6ed",
+    "id": "62dc990d-7d51-4155-9ae5-974e691cb5fb",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5036,31 +3612,111 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 16398.52
     }
   },
   {
-    "id": "c77b040b-cde2-4e8e-bad6-7c46a90df6b4",
+    "id": "c3ad99f1-88be-4d2e-ba5b-8715232aa50d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
     "codigoPai": "4.1.01.02",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
-    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "nomeProduto": "SERVICOS DE APOIO AGRICOLA",
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 4165.42
+      "2026-02": 179015.27000000002
     }
   },
   {
-    "id": "281cca4a-11a0-4d1c-a45e-4ad611291788",
+    "id": "6400e73a-7491-4018-b015-44cba9a9dbdc",
+    "codigo": "4.1.01.02.0003",
+    "descricao": "FRETES E CARRETOS PF",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -23049.6
+    }
+  },
+  {
+    "id": "965ea7dc-e27c-4d19-b8dd-c872167d2813",
+    "codigo": "4.1.01.02.0004",
+    "descricao": "FRETES E CARRETOS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -9505.89
+    }
+  },
+  {
+    "id": "9c74857c-0986-4308-b27d-ebe154007ef4",
+    "codigo": "4.1.01.02.0004",
+    "descricao": "FRETES E CARRETOS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "FRETES E CARRETOS PJ 000013",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96101.41000000003
+    }
+  },
+  {
+    "id": "c6bd6693-f33b-4800-95bd-3a6d1d50864c",
+    "codigo": "4.1.01.02.0004",
+    "descricao": "FRETES E CARRETOS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAVRINHA SLN - SOJA",
+    "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2486",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "FRETES E CARRETOS PJ 000013",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50155.100000000006
+    }
+  },
+  {
+    "id": "806b0c0a-9845-461a-847b-8983ee279179",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -5076,31 +3732,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 119644.23
     }
   },
   {
-    "id": "b4a8a817-4418-4e63-8cd4-e1c973e24bde",
+    "id": "bd2a5dc9-3099-4964-84c7-eca0f66a6107",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
     "codigoPai": "4.1.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "BOLSA COMPLEM. EDUCACIONAL",
-    "divisao": "PECUÁRIA",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6365.09
     }
   },
   {
-    "id": "1a488ec6-0282-479b-883e-1e949a5d0812",
+    "id": "49c6bc68-934a-46ce-bc31-d3677e0b2f22",
+    "codigo": "4.1.01.02.0012",
+    "descricao": "COMISSOES E CORRETAGENS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "COMISSOES 000006",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14380
+    }
+  },
+  {
+    "id": "e9eef949-39d4-46cc-8392-dfec7b64bc59",
     "codigo": "4.1.01.03",
     "descricao": "4.1.01.03",
     "tipo": "C",
@@ -5111,7 +3787,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "fe6a2061-ee4a-4bfc-baef-1d3663399a7e",
+    "id": "fa4bb212-27b2-4b87-8877-2ca6dd765908",
     "codigo": "4.1.01.03.0002",
     "descricao": "LOCACOES DE MAQUINAS AGRICOLAS",
     "tipo": "C",
@@ -5127,22 +3803,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6522.96
     }
   },
   {
-    "id": "fd87946c-ee15-436e-b8e2-99d1188a87fc",
-    "codigo": "4.1.01.04",
-    "descricao": "4.1.01.04",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c8c0ec1c-f96e-4c86-b23f-e4891e110573",
+    "id": "1136f272-d4bf-488b-ae1e-98baeec77843",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -5153,7 +3818,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d2e8481b-835f-48a6-9c9f-39a74f13546e",
+    "id": "bbfcedfd-2afe-4609-95f1-6ade169d09ba",
+    "codigo": "4.1.01.04",
+    "descricao": "4.1.01.04",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "93b334a7-037b-45fd-92fb-35d7a0b06cd4",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -5164,7 +3840,167 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b4d2353a-a726-4cbc-8ba1-3a65682830a9",
+    "id": "7fa0b231-0289-4a31-965e-bc3da759231d",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADITIVO LIMPEZA RADIADOR BARDAHL PROMAX FLUSH - FR 500ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.99
+    }
+  },
+  {
+    "id": "6b2e3b97-baf9-49a0-97a4-dcea52fb797d",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GASOLINA COMUM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2571.07
+    }
+  },
+  {
+    "id": "4193a5d6-e226-460c-a791-48dea4dc8695",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3684.94
+    }
+  },
+  {
+    "id": "6f8af8fc-c7f2-41bb-9427-3b0df84e8166",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.84999999999999
+    }
+  },
+  {
+    "id": "1b0a24a5-2e71-4243-a70b-24eff38ff294",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIFICANTE HOPPNER - FR 35ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.67
+    }
+  },
+  {
+    "id": "fd6ef4f0-f55f-4c3a-9ad1-339918bb5717",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S10 CLASSE B 8% BIODIESEL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 261
+    }
+  },
+  {
+    "id": "f20b6f98-17f2-41e8-ab92-3de229de8373",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20021.989999999998
+    }
+  },
+  {
+    "id": "77a1170b-400c-43f8-88f0-68b5acb7e4c4",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3005.35
+    }
+  },
+  {
+    "id": "ef8f7140-6352-424f-94a0-bd7fbef40751",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5180,71 +4016,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 870.6800000000001
     }
   },
   {
-    "id": "a69b8a7e-0abd-4669-91e7-2605caacb926",
+    "id": "6322baf0-7572-41e5-b9c6-3352aa6f08c7",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "LAVRINHA SLN - SOJA",
+    "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2486",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 18862.890000000003
     }
   },
   {
-    "id": "6e4b8a56-8cf1-465c-bc24-aa4e319a7602",
-    "codigo": "4.1.01.04.0001",
-    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "GASOLINA COMUM",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 120
-    }
-  },
-  {
-    "id": "890266bd-1528-44e3-9bb5-e7d52f4a9875",
-    "codigo": "4.1.01.04.0001",
-    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "d618e737-c22a-4202-9d7c-5a400a8a8408",
+    "id": "5fb7e9a3-3e69-4fb2-be1e-7fda1196546e",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5260,11 +4056,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 340
     }
   },
   {
-    "id": "58b60a49-bf21-474f-a10d-467cf441fb79",
+    "id": "5e4079bf-64b6-435c-a971-9709f9736caa",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GASOLINA COMUM",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 238.8
+    }
+  },
+  {
+    "id": "ccda6fca-844b-4317-b1de-66e3cfe4fd6e",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5280,31 +4096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 9.86
     }
   },
   {
-    "id": "0d48c66c-ff2c-47c4-84de-bf6045ef0ece",
-    "codigo": "4.1.01.04.0001",
-    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 230
-    }
-  },
-  {
-    "id": "7a83d316-e6dc-4d36-a1e6-491dbfc63bb4",
+    "id": "6a0c2c32-7adc-4957-9e67-202bdfc115b4",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5320,11 +4116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 426.6
     }
   },
   {
-    "id": "fe495e7b-8df0-4ca5-9851-fd4d8bce6591",
+    "id": "9fd26607-4a1d-40bc-a0bb-6be8718573b1",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5340,11 +4136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 544.94
     }
   },
   {
-    "id": "fe3091c5-540c-4274-b56b-fb1b386b5a85",
+    "id": "13f646eb-b2b5-4a9c-9872-14f8ca8c2767",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5360,11 +4156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 92.9
     }
   },
   {
-    "id": "68902a22-6910-4ea6-8569-c702bd0ccc76",
+    "id": "d05ef39c-3ec8-469a-9a5f-0929d42516ca",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5380,11 +4176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -15156.22
     }
   },
   {
-    "id": "29cb96e4-f8b0-4986-a2b1-85d2bfe15a96",
+    "id": "dba9e50c-06b3-4f36-b406-dfcdc5929047",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5400,11 +4196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 895
     }
   },
   {
-    "id": "e771999e-b7ff-434d-8595-ed2accfb1291",
+    "id": "e62d282c-4530-4b1b-b0ce-a41fee420cc9",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5420,19 +4216,1099 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.22
     }
   },
   {
-    "id": "5479ae17-2126-431c-b88a-a01b3c8029c6",
-    "codigo": "4.1.01.04.0001",
-    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "id": "9130f2c0-0e57-4496-8061-d75b49666f0b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 1/4",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.9000000000000004
+    }
+  },
+  {
+    "id": "aebac4df-dad9-4f31-a9f2-73d09a0c06a9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA ALUMINIO 13,0 X 20,0 X 1,5MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.14
+    }
+  },
+  {
+    "id": "12977154-4068-433d-9ce9-b8ceaa520fec",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.72
+    }
+  },
+  {
+    "id": "da83edaf-58f6-42ff-a630-934243c4479b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TOMADA 2P+T 10A 250V ARIA BRANCA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.01
+    }
+  },
+  {
+    "id": "a2693d34-f087-4b78-a484-83af643ff512",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXT FERRO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.58
+    }
+  },
+  {
+    "id": "748665cf-5981-4bf8-aaac-59d46352d4e9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISJUNTOR UNIPOLAR 220V 20A",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.87
+    }
+  },
+  {
+    "id": "d554b59d-3437-424e-a42f-33a71eca4761",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TOMADA 2P+T 20A 250V ARIA BRANCO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.06
+    }
+  },
+  {
+    "id": "0134ebf2-de05-4b8c-ab7f-869cdf3674c3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ANEL JACTO 010769",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.26
+    }
+  },
+  {
+    "id": "2cf220ee-2bf7-4b59-84d5-1cecad238d53",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FITA ISOLANTE 18MM X 20M 3M",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.24
+    }
+  },
+  {
+    "id": "ede1124b-34dd-4bd9-8c33-cc17db97c9fb",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JUNTA TUBO SILENCIOSO MF 3145184",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.07
+    }
+  },
+  {
+    "id": "36cb4f5a-13ab-45d9-9f55-b242a52f16b8",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESCARBONIZANTE CAR 80",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9.07
+    }
+  },
+  {
+    "id": "b7aa21dc-0abe-4178-948d-76562d8e1f7e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA SAE 1020 POL 3/8",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 294.90000000000003
+    }
+  },
+  {
+    "id": "591fa555-fb80-4d34-86b0-46bbd84770dd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JUNTA TAMPA LATERAL 4 CILINDROS BOSCH 1411015084",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9.9
+    }
+  },
+  {
+    "id": "ccaecdba-61a4-47c2-9800-5b1a14d064c2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO DE CABECA SEXT 4655",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.509999999999998
+    }
+  },
+  {
+    "id": "88d528ce-8f42-461e-a917-3e6a511a3881",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 16F 3/8",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 312.04
+    }
+  },
+  {
+    "id": "d48524d7-7519-4a4b-a84c-e0177a78a72f",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA PINHAO MS 10X24X2,7",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.8
+    }
+  },
+  {
+    "id": "2c4f3b32-70d4-4b1c-9f9f-ab6b8946f688",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMATAO REDONDO 5,5X200MM STIHL 56057735506",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 56.59
+    }
+  },
+  {
+    "id": "5a65f786-8fdf-41d9-ac1d-ddee73ebef6e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RASPADOR FIXO LD DMB 81057048",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.43
+    }
+  },
+  {
+    "id": "61fdf17b-9622-4924-bb3c-3451e502ea20",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA NYLON 200 X 3,50",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12
+    }
+  },
+  {
+    "id": "6cc0c321-7c6d-4881-b8a5-06f0aacf5dbb",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAPA PARA MANGUEIRA  1/2    212.08",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.07
+    }
+  },
+  {
+    "id": "e3d8845c-7ecf-4637-b0a4-b5229963f7f4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONJUNTO PECAS ENGATE MAIOR MEPEL 13153",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14.51
+    }
+  },
+  {
+    "id": "b9b96c0f-8d2e-4767-a6ab-676217296dcf",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CABECOTE DE CORTE TRIMCUT 31-2 STHIL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17.16
+    }
+  },
+  {
+    "id": "e54440f8-3d63-4978-a6da-5a58ffb5dce4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PREGO 17X27",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18
+    }
+  },
+  {
+    "id": "a6bc2c9a-ccd0-46b5-b16e-662d016ea506",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAXETA 1/2 FIBRA ACRILICA/TEFLON (2019)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21.23
+    }
+  },
+  {
+    "id": "22393242-411a-42fd-a803-a53cc63841ad",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL CURVO FJ90 08-06",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21.6
+    }
+  },
+  {
+    "id": "530e1ae5-34fd-43ba-9e0f-ece913d37aba",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO COMBUSTIVEL AUTOMOTIVO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23.14
+    }
+  },
+  {
+    "id": "038e28a0-f72b-4164-94a8-84c78d08e27e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "QUADRO DISTRIBUICAO EMBUTIR 3/4",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24
+    }
+  },
+  {
+    "id": "60df40c8-7a7e-4590-b5b4-60d47b3596b7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "POLIA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 29.44
+    }
+  },
+  {
+    "id": "2bca1996-e684-4cfd-bbd1-2ff47c0c4459",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TOMADA DUPLA  2R+T 10A TABLET",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 31.95
+    }
+  },
+  {
+    "id": "fe42a8f8-3d4d-47cb-8f9e-d6b0e87b39e7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PINO QUEBRA DEDO 7/16X2 1/4 POL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75.32
+    }
+  },
+  {
+    "id": "603fa0d9-627f-4ef3-bbee-ceb78ce0b85d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CRUZETA 5 - 13400X CZ101",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 121.5
+    }
+  },
+  {
+    "id": "33aab782-fe74-49b5-b387-b4a9d4ca963a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CABO FLEXIVEL 4,00MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 40.95
+    }
+  },
+  {
+    "id": "fddcc487-325e-4b87-842c-26d87c5bd61c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL QUADRANTE 22 MM CC11",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.65
+    }
+  },
+  {
+    "id": "e96dbfe0-32cc-46fc-9c84-d7fc1290e5ff",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLETE BOSCH 2460300005",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 43.15
+    }
+  },
+  {
+    "id": "ac565f8a-9b12-461b-a5c1-3372304f22ab",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL 1 FURO 1 COMPRESSAO 10MM2",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 128.7
+    }
+  },
+  {
+    "id": "5d8d4ca5-97e4-4729-a610-3d05b97c4e4a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO DA BOMBA INJETORA MF 70992081",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 47.99
+    }
+  },
+  {
+    "id": "37e03c4f-856b-45b3-b9da-b605df106a1c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO 6210 TIMKEN",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49.01
+    }
+  },
+  {
+    "id": "fe87b1e0-2a1e-4827-9526-09b690110383",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO DE LUBRIFICANTE TECFIL PEL2003",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49.91
+    }
+  },
+  {
+    "id": "2a94712a-be20-4ac8-b1c8-ae54e8db63cd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL 1 FURO 1 COMPRESSAO 120MM2",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 55.8
+    }
+  },
+  {
+    "id": "bd6ca666-04fd-43a2-bdc6-85dd106c96fb",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL FURO REDONDO 30MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 59.05
+    }
+  },
+  {
+    "id": "964baf73-a210-4b04-92d8-acf48d3469f9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL 6 ESTRIAS PI10836",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 129.6
+    }
+  },
+  {
+    "id": "20441987-63e7-4124-94a3-59b73842dfcf",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMPA BOMBA DEFENSIVO JACTO 110338",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 68.46
+    }
+  },
+  {
+    "id": "0ad7de5d-edce-4e8f-adea-9421460faf56",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ROSCADA SAE 1020 UNC 16F 3/8X1M",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 771.42
+    }
+  },
+  {
+    "id": "e48204a7-f47a-4fd3-baa3-67bf08a6c8f2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAP SOLDAVEL AZUL 32MM IRRIGACAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 71.6
+    }
+  },
+  {
+    "id": "d316a362-0fd1-487c-908a-c89a55be1917",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA CONICA 9/16",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75.6
+    }
+  },
+  {
+    "id": "c3f3b9e8-eb0a-4133-9237-35811bd4e692",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 76.45
+    }
+  },
+  {
+    "id": "e3d2bc4b-4ced-497d-9391-9f32c0959f04",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PINO-TRAVA QUEBRA DEDO 3/8X2",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 82.58
+    }
+  },
+  {
+    "id": "bc201480-994f-4c22-8f6a-acc3a83aff59",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FLEXIVEL FILTRO COMBUSTIVEL MF 2802600M1",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 92.84
+    }
+  },
+  {
+    "id": "96a55c8e-6874-4373-8df2-851d4b28f260",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL CARDAN FURO QUADRADO MAIOR 28MM AEMCO CC12",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 101.64
+    }
+  },
+  {
+    "id": "41377428-4907-4e23-a09d-81e8a22a6174",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORRENTE FINA 3/8 X 1,60MM 36 DENTES",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 101.93
+    }
+  },
+  {
+    "id": "47a046c4-fcb3-4eea-8d49-118da17474cd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VEDADOR SEDE BOMBA CENTRIF JACTO 918763",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 104.36
+    }
+  },
+  {
+    "id": "f823f68b-fa4e-4a2c-ba36-8ddf5363ec64",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CRUZETA TRANSMISSAO AEMCO CC04",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 113.61
+    }
+  },
+  {
+    "id": "b64a5dae-36d7-480e-a3ef-e784f6c86ce7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PROTETOR INTERNO JACTO 712661",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 164.98
+    }
+  },
+  {
+    "id": "c46f092a-0c78-4fd9-9b1c-767c371c222f",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO FIXO JACTO 001156",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 211.81
+    }
+  },
+  {
+    "id": "53e29ee5-80e9-4c61-bac1-cd7c8bc6fb5a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
@@ -5440,31 +5316,211 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7653.73
     }
   },
   {
-    "id": "25c11e54-495b-4dda-ab8a-2543045f112f",
-    "codigo": "4.1.01.04.0001",
-    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "id": "767fa34d-a045-48bc-b269-c37a05a95668",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
-    "divisao": "AGRÍCOLA",
+    "nomeProduto": "REFLETOR LED 100W 127/220V",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 627.3
+      "2026-02": 328.2
     }
   },
   {
-    "id": "b47dbab1-1403-463d-ba20-a6cb9bf98196",
+    "id": "f310e4a0-5da2-4b9f-88af-51ad97abbee1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO FERRO FUNDIDO LIMAVEL 22-24 3,25 XYRON",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 319.44
+    }
+  },
+  {
+    "id": "f1ab0bca-9e5e-45d8-b08d-5f594984dbfe",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VALVULA COMPLETA JACTO 834051",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 331.24
+    }
+  },
+  {
+    "id": "d1379707-1110-48d5-bdf3-54c6dab5600d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SERINGA FLUXO CONTINUO 12ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 340.31
+    }
+  },
+  {
+    "id": "728c5f69-b0df-4a41-b659-0eaba9b68699",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACO CAMPEIRO 12M CORDAVILLE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 820.0699999999999
+    }
+  },
+  {
+    "id": "ce924a76-24e6-4433-a19e-30c39591f851",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V C96 V-16",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 457.38
+    }
+  },
+  {
+    "id": "62c543bf-2f25-4491-b967-36fa0239ab2d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAPA CALHA GALVANIZADA N26 LARGURA 1000MM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 480
+    }
+  },
+  {
+    "id": "e9b26bc1-f051-4f70-8375-04463c5637c9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "APARAS DE BUCHAS DE FERRO 2ª",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 527.46
+    }
+  },
+  {
+    "id": "597db839-c185-468d-8f9c-83802a045b78",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VALVULA REGULADORA VW 2S0115327",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 607.25
+    }
+  },
+  {
+    "id": "99b6f2a8-d0d7-4a32-91f2-1d106b0984bd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VALVULA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 971.48
+    }
+  },
+  {
+    "id": "aa7ba793-2cd0-4aa7-925e-a8ed2f835ec2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5480,11 +5536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 3037.45
     }
   },
   {
-    "id": "fae63d65-fa2c-4f87-b3a2-030b437c0eef",
+    "id": "ead557ce-35a3-4651-8b4c-f05d12c62b18",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5500,11 +5556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 13.61
     }
   },
   {
-    "id": "8506c1de-9cf0-468f-be6a-3b18fc5117b5",
+    "id": "4ad4eb41-3ae4-4c8f-98a1-1c3cfe70e241",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5520,31 +5576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.62
     }
   },
   {
-    "id": "13b566ea-c93e-4dfc-af3d-b03e3bb9f1df",
-    "codigo": "4.1.01.04.0002",
-    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "PORCA SX 8.8 UNC 16F 3/8",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "1808b36c-4770-4097-b5ec-75ff1887fa86",
+    "id": "fe52522f-f68b-41ce-a491-ab806bd313b4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5560,31 +5596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 1.4
     }
   },
   {
-    "id": "2b78ed4e-0125-4aa5-90a2-a10a58745ddf",
-    "codigo": "4.1.01.04.0002",
-    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "ARRUELA LISA SAE 1020 POL 3/8",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 30
-    }
-  },
-  {
-    "id": "68eacd39-8ca6-4d76-b525-d1b18e712d9f",
+    "id": "c66ff8f6-0aac-433c-b51c-84bc9a435f34",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5600,11 +5616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.82
     }
   },
   {
-    "id": "1dc90759-486e-4529-bdb9-2707bdb37602",
+    "id": "fb195fa0-d0a0-442d-9c2f-f7606047bb6c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5620,11 +5636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.27
     }
   },
   {
-    "id": "5bfceae9-2712-4d7a-9aed-43d67a5d2fd6",
+    "id": "31b86c0b-7f05-4eba-8a03-6ef38b78678b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5640,11 +5656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.27
     }
   },
   {
-    "id": "97d23dc3-7ccc-426c-8f3b-18e26aaeec7a",
+    "id": "09f5eee5-c349-40d8-abb1-60d7a6305a42",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5660,11 +5676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.27
     }
   },
   {
-    "id": "8c99f01e-e4d0-4189-b64b-30544412a29f",
+    "id": "91c6959a-0574-4e28-b2e1-0b21b0862bfd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5680,11 +5696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 8.55
     }
   },
   {
-    "id": "a47b3a89-11d2-43b8-bb82-f225ad1617e7",
+    "id": "2d69c39e-c1bc-46a3-a95d-bdaaf968c83b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5700,11 +5716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 8.4
     }
   },
   {
-    "id": "0c750aa8-d185-4d3c-9275-998f019049a8",
+    "id": "240bffc3-c37d-42fa-a505-194c32bc68ee",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5720,11 +5736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 600
     }
   },
   {
-    "id": "49b7de83-bcfd-47f2-a1bf-4a8263e81a14",
+    "id": "c9c07c15-a618-4b4b-a575-38f39151cceb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5740,11 +5756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.4
     }
   },
   {
-    "id": "34d3ee34-95e3-4239-8b96-70d3704257d0",
+    "id": "974d1bcf-7c8d-4ff1-992a-4445ed3151df",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5760,11 +5776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.4
     }
   },
   {
-    "id": "2e002746-639d-4a1f-ba2a-f74cee5cc625",
+    "id": "7a046c1b-8cf1-49c9-afc4-85bc7d53b4f8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5780,11 +5796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4902.68
     }
   },
   {
-    "id": "ebb43eca-458d-47b8-a886-e94251c3b6d7",
+    "id": "d1eeb960-3fdc-49fe-bf04-44d5b606acf5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5800,11 +5816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 28.38
     }
   },
   {
-    "id": "dc9754c8-a4a1-4a51-be5c-8d9385261344",
+    "id": "4e4d83c6-00b1-44ce-9fdc-0ecaf2c58dab",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5820,11 +5836,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 35.02
     }
   },
   {
-    "id": "8119e253-8aa8-4d20-8bc3-67e888cf8b95",
+    "id": "aa4c2fd1-c775-41c2-b909-a4acc3df10b3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5840,11 +5856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 43.56
     }
   },
   {
-    "id": "30726d54-f127-4a23-bc9a-4551af2af9c3",
+    "id": "1fb2bd98-3929-4ce4-a240-48c7a3944a7c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5860,11 +5876,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 43.56
     }
   },
   {
-    "id": "cde5eb5f-04b8-4f53-a912-11485cf5134e",
+    "id": "3eb9fa8e-72f0-477c-ae61-69c4e0533640",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5880,11 +5896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 60.64
     }
   },
   {
-    "id": "ea105218-f5b5-43e6-8147-8cb978075cdf",
+    "id": "4cf76843-9ffd-4b30-a454-8f5a7458b0d3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5900,11 +5916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 101.45
     }
   },
   {
-    "id": "54b6741c-b4c3-4569-901c-ec4d8c2337f2",
+    "id": "6949c0c7-1416-4021-830b-9b533570aeeb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5920,11 +5936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 177.29
     }
   },
   {
-    "id": "9edb93ff-1657-42da-b233-58cca743282c",
+    "id": "651a2b3e-3682-4e5f-950b-9fa8f67419d4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5944,7 +5960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fc7aeb2-9758-401e-a48d-39d178be1be4",
+    "id": "5e310ce1-3977-4e2d-81ee-8ab82d44273d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5960,11 +5976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15
     }
   },
   {
-    "id": "93b109b0-50f4-429e-8097-81d9e1a90286",
+    "id": "15d51b0e-01c4-45ae-bc4e-902919dc2a4a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5980,11 +5996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 20
     }
   },
   {
-    "id": "4565c1b3-4e78-43c8-abde-b5d6d8e77bdb",
+    "id": "59525053-b5a4-4a94-a85f-da184926ce82",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6000,11 +6016,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25
     }
   },
   {
-    "id": "a14e0ccd-11d5-4240-9ce7-56b4ada17221",
+    "id": "428ac297-87f0-4c3b-8074-6768acd7494e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6020,11 +6036,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "948018b7-ca36-4ddb-a6ff-7a7136f36b29",
+    "id": "7aaeafa9-f773-4123-aaab-14b5daf65b4a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6040,11 +6056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "f51999ec-1996-4543-9857-b6e0e1353cf9",
+    "id": "1846be49-4aa0-4114-a114-13c5378a1fa5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6060,11 +6076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "cade8bc9-e069-4705-a3b6-f11849c540af",
+    "id": "3bca814b-df1f-4780-8694-3e051203346b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6080,11 +6096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "0302d939-9dbf-4970-a792-ea702d47aac4",
+    "id": "d667ca3a-8a01-4975-8ea1-9d9ef659ba1f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6100,11 +6116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 105
     }
   },
   {
-    "id": "33248a76-08c1-4b0b-af9d-0631f36c3792",
+    "id": "bf736472-2ad3-4d23-953a-d5dbcce21803",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6120,11 +6136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 150
     }
   },
   {
-    "id": "fa037848-afbf-4533-a937-aa9e4b75a1c6",
+    "id": "b615e959-91af-4b9d-ae57-ac3787192ae8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6140,11 +6156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 20.88
     }
   },
   {
-    "id": "52dbe59a-fd34-48c5-9c63-5785879d3558",
+    "id": "271818a2-bcef-44fd-a9cc-24d51b1cd6ce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6160,11 +6176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 41.76
     }
   },
   {
-    "id": "5011f297-4ecb-4a59-a8e5-6c6d2626bd26",
+    "id": "4607b937-564d-4fee-941e-2b0b63c7f4c8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6180,11 +6196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 115
     }
   },
   {
-    "id": "222bbeca-be4e-443f-b81d-cb7cfc12ba0d",
+    "id": "c0534376-a284-43a4-b363-323e13cdb406",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6200,11 +6216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 10.5
     }
   },
   {
-    "id": "ffd6a0d1-e0ee-4190-be26-f3b93574b42c",
+    "id": "30631d2f-f5e5-448d-af28-c4f1a3b8ab51",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6220,11 +6236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 9
     }
   },
   {
-    "id": "493fd8ed-5836-4dbb-a09e-d2f2d30b0fbc",
+    "id": "37b9d94d-675f-4f33-b18f-64d9bcaa65c4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6240,11 +6256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34
     }
   },
   {
-    "id": "4a365619-0c94-448e-a0f4-5a7bc1ef0815",
+    "id": "df6659aa-c14a-42b8-8811-00a97ec1561f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6260,11 +6276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6
     }
   },
   {
-    "id": "0ca0e974-6255-480a-928e-b53266b7362c",
+    "id": "7c35f99a-c71f-49a0-b949-a2f6bab2d969",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6280,11 +6296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7.5
     }
   },
   {
-    "id": "4b2d4a2c-6699-4378-a65a-c785b1d2cabe",
+    "id": "f6bab1c4-5492-420d-b392-90c5b18f4e9c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6300,11 +6316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8
     }
   },
   {
-    "id": "6e8b8abf-8fb2-4315-845b-1ab0abb1921c",
+    "id": "0dc6ae0f-6164-43d6-a081-9a240a63d1bb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6324,7 +6340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8748d9ca-26a6-4741-959a-102824371828",
+    "id": "0a7fa3b0-f889-4c56-a6e8-fd1bb47eabf4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6344,7 +6360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe9228b7-c89a-441a-9bce-f7358b2b88e4",
+    "id": "694369d8-56ae-4bcc-aca9-766897dde3e0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6360,11 +6376,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 28
     }
   },
   {
-    "id": "ccf13bb2-47a7-46c1-9225-01aaf5d6ecd5",
+    "id": "24ba1994-1092-4752-a2fe-6ac92df30137",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6380,11 +6396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 44
     }
   },
   {
-    "id": "351ca4c0-f89b-4ad1-86be-5560bbbba237",
+    "id": "3c66777e-74b0-49f8-9332-f95a08cb7e33",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6400,11 +6416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 221.2
     }
   },
   {
-    "id": "01c9e613-c986-44b7-a47b-f891ce2123cf",
+    "id": "244cf43b-5ab1-4a12-ac12-440d5b6d4588",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6420,11 +6436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 230.8
     }
   },
   {
-    "id": "9b4a7fda-cb28-4ae7-bd1c-a2a8ea43061f",
+    "id": "6ec378f8-54a5-4c1b-afe2-fb35577ae266",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6440,11 +6456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 309.6
     }
   },
   {
-    "id": "e52470b4-0c20-4f37-a34e-6d038b3f42fe",
+    "id": "4be063d9-2039-4f21-8054-78a0231c272f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6460,11 +6476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4
     }
   },
   {
-    "id": "f6ae8fe6-8594-418b-9a2f-00a21465fb47",
+    "id": "3d3f1e10-0950-470e-87d7-d8eae39ceff5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6480,11 +6496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8
     }
   },
   {
-    "id": "bc5ff20f-7e11-48c9-b39a-f1916d406a43",
+    "id": "25750b42-f715-4b6d-8e69-a2e0902a8e83",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6500,11 +6516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 12.75
     }
   },
   {
-    "id": "ab0e5e3a-919a-412f-845a-a33f1017bf66",
+    "id": "7b64e47b-5b4f-4657-848d-35ea4a072b82",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6520,11 +6536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11.7
     }
   },
   {
-    "id": "50cd4f4a-3ffd-41fb-87f9-00692453badb",
+    "id": "a3fa6c8c-efdd-4ede-b643-aa6fd2bde992",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6540,11 +6556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15
     }
   },
   {
-    "id": "8845c7e4-1a80-432c-802c-2c6812e2b256",
+    "id": "333ae001-b2fb-42f5-9ec4-20c5fb8f2f07",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6560,11 +6576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "68217e3b-5a4c-42f2-b6af-60b799ceb9cf",
+    "id": "b12db1e0-1469-47fe-b1d5-7f2faf5e4156",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6580,11 +6596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 60
     }
   },
   {
-    "id": "9addd2f0-f85a-40e1-8d29-4dbdf03c2062",
+    "id": "ad54b9b2-154f-433a-8ce7-1967c02876dc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6600,11 +6616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.24
     }
   },
   {
-    "id": "6d4dca57-1405-4e25-b4b6-2f1298df0daf",
+    "id": "a4e2edeb-df97-4eac-9565-dfe645e3d743",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6620,11 +6636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.3
     }
   },
   {
-    "id": "d40dd3a7-b104-49ed-876f-d16b95fac0a0",
+    "id": "178ab7b7-bbf7-4fdd-988d-65a7398c05d9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6640,11 +6656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.3
     }
   },
   {
-    "id": "6b801a7f-043f-4f03-ad21-1a9809242a91",
+    "id": "3b670ff4-ccda-457c-8454-7e8f1517a03b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6660,11 +6676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 0.7
     }
   },
   {
-    "id": "242f6ca0-4548-46ae-82f0-fd672918be8b",
+    "id": "8f037ff6-443f-41f0-8985-2b640e6377a0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6680,11 +6696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 30
     }
   },
   {
-    "id": "834a509c-f69e-4e7d-8151-61f7b5d51f51",
+    "id": "8b261fed-94db-4dbd-8bb4-49b796420c48",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6700,11 +6716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8
     }
   },
   {
-    "id": "70434da0-df60-40b1-9ce7-7e5ac81db324",
+    "id": "e88505e7-c8f4-4b82-920d-9340764326f9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6720,11 +6736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8
     }
   },
   {
-    "id": "865b9a61-8a38-44e4-b4b7-3f538b89b756",
+    "id": "cd8411f7-86cb-4a89-a183-e49bbe739780",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6740,11 +6756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11
     }
   },
   {
-    "id": "5c6eb893-d1b3-40fc-8644-b7c0d23ee74c",
+    "id": "570631be-ae0d-4dd6-8f79-8e83aaf857ec",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6760,11 +6776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12.1
     }
   },
   {
-    "id": "b181eebf-2cb3-4f8b-af5a-23049fc3455a",
+    "id": "bbf0c596-8a18-4f06-a48b-c2bec83d3763",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6780,11 +6796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "1b2745c8-20b9-4046-b4dc-8ddefd76472f",
+    "id": "e77149f6-e835-4029-adbd-e2d13d11e588",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6800,11 +6816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "6227a2a7-1ff3-472d-862a-73198ce0455c",
+    "id": "ae752afc-5f7e-4e7b-bd71-38b982c0633e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6820,11 +6836,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 517
     }
   },
   {
-    "id": "09c59f1b-72fa-4aea-b0be-7d19511ff6cc",
+    "id": "dc7c5933-d916-4a86-a7b5-f521a5d931f7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6840,11 +6856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4
     }
   },
   {
-    "id": "554b2033-b943-433f-818b-d49643e3368a",
+    "id": "12d3fa12-6ea0-49ef-a48b-3c86776d5996",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6860,11 +6876,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.5
     }
   },
   {
-    "id": "8b900524-14d0-4471-8d6e-f08e50ed5e1b",
+    "id": "8819219c-2a16-4693-a51d-ee3cb1cd76af",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6880,11 +6896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 13.2
     }
   },
   {
-    "id": "c1f52ffa-557b-480c-bba9-2c942d8ca0e8",
+    "id": "ec200511-048b-4a07-9714-540fa551c86d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6900,11 +6916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 79.8
     }
   },
   {
-    "id": "063fbb43-f990-4047-aae5-944a3f3e71c1",
+    "id": "d3112979-0e51-47df-b037-f559a0b83a68",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6920,11 +6936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 143.2
     }
   },
   {
-    "id": "05f3c977-f9d2-4562-9d48-993116992660",
+    "id": "baed16c2-b5a0-4605-aacc-3609232064b5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6940,11 +6956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 120
     }
   },
   {
-    "id": "f31d4524-e938-4ba4-9c4c-5cb0855c61ae",
+    "id": "a1107939-00b3-4fe8-9b6e-e9aa17b6b82b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6960,11 +6976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 124
     }
   },
   {
-    "id": "db0316a8-9418-4250-920d-a14ff47dd0c7",
+    "id": "69a8a815-d05a-41b3-a9f3-1372bd4ec820",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6980,11 +6996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 19.2
     }
   },
   {
-    "id": "71cb0007-5e01-4c7a-9724-63dff672dbc3",
+    "id": "210362c3-de74-4c05-886c-aafb06bc70d5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7000,11 +7016,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 19.2
     }
   },
   {
-    "id": "d6ec9ff1-ecae-47b6-9fc4-87faff0e9965",
+    "id": "198bbc02-7e4c-4f86-969e-db24b318abb0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7020,11 +7036,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 13
     }
   },
   {
-    "id": "1246f916-2b53-4106-a9d4-115cd1049365",
+    "id": "2d24d605-43fa-473f-94f4-74047d75ea4a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7040,11 +7056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 20.5
     }
   },
   {
-    "id": "11e63f6f-5b36-47fc-86c1-6fce18a5a93b",
+    "id": "291e146d-dbdb-4f6b-a53d-39fa0477f683",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7060,11 +7076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 50.3
     }
   },
   {
-    "id": "f82fbc8a-f05b-4532-93ee-be3cb3da5667",
+    "id": "76823eab-05ee-414e-90d5-e68a90dececb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7080,11 +7096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1
     }
   },
   {
-    "id": "8b639eef-d987-4771-9e84-ea01b2bc8554",
+    "id": "74fd79df-1370-4955-9ff4-1b0b2a936176",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7100,11 +7116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.8
     }
   },
   {
-    "id": "847a78c1-3013-4ea9-a910-878713c7916e",
+    "id": "ca4135c8-2793-4a49-9a3b-e1493b45fd5d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7120,11 +7136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 5.4
     }
   },
   {
-    "id": "02250dc9-5391-4c74-a41d-37dd6565d910",
+    "id": "f1a143c9-8927-457a-943c-58397bc24eae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7140,11 +7156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3
     }
   },
   {
-    "id": "c751e2e9-db07-4a61-8ade-113a06d5fc6a",
+    "id": "c2b58dfc-e649-412f-b243-07a55d49f012",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7160,11 +7176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.2
     }
   },
   {
-    "id": "ad424a13-776a-43de-b69a-25cd1820f4b0",
+    "id": "b4990c1f-e8f4-466a-bcf2-1b875ad287ed",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7180,11 +7196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.6
     }
   },
   {
-    "id": "c4335daa-4fdf-4746-bd8b-36c0e4a04373",
+    "id": "12e05abf-ca43-42c0-b8c0-b895f1042b55",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7200,11 +7216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.6
     }
   },
   {
-    "id": "22f63135-1d70-40b9-b70f-a8c0acbabd7a",
+    "id": "ad2fe4e9-a966-41d1-803f-a3e10a2d8ca8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7220,11 +7236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 9
     }
   },
   {
-    "id": "85b79f5f-7780-4497-a398-466f05ad3972",
+    "id": "b4422642-2d20-4031-8850-017066a72461",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7240,11 +7256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 171.68
     }
   },
   {
-    "id": "129db19b-9fb4-406b-9a39-e8515823d8aa",
+    "id": "4b39a91a-7edd-42b8-86e6-89051c5feff1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7260,11 +7276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 245.5
     }
   },
   {
-    "id": "e1302937-3770-4405-8a1f-efc443132e4a",
+    "id": "3af9adf2-ac12-44c6-b0eb-193d2de4e3db",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7280,11 +7296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1800
     }
   },
   {
-    "id": "dd957953-9c8d-4f7d-a481-5fe665772977",
+    "id": "3ec45c49-c7c6-4e75-b329-895bb66b9182",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7300,11 +7316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2100
     }
   },
   {
-    "id": "c95275e1-e6ce-45ce-97ad-bc23cac62ffc",
+    "id": "86025397-2933-4b86-ba6e-b186f9bc8a3e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7320,11 +7336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.6
     }
   },
   {
-    "id": "0a35061b-b0fc-4b9b-b254-5833fc0c2bb2",
+    "id": "410f9dc0-a2f0-467d-a417-901788aa1c64",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7340,11 +7356,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2
     }
   },
   {
-    "id": "b59ea359-e8a3-47a0-836e-b02b8317e405",
+    "id": "e4e1bab3-8cb8-43d6-8a40-2402a1787336",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7360,11 +7376,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.8
     }
   },
   {
-    "id": "45f89fa7-e829-4bc1-80e9-9dfc6b07af96",
+    "id": "a6703983-d52d-40ef-8cba-3ff82443a347",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7380,11 +7396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.8
     }
   },
   {
-    "id": "5d945bb9-cd96-42c7-b6c5-9ab33ff1e51b",
+    "id": "cbac7f67-414b-4287-94d0-784b3646d924",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7400,11 +7416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.6
     }
   },
   {
-    "id": "673c86e0-159e-454f-af43-83dd1c9b5841",
+    "id": "c3670938-945b-4c65-bc1f-196f64b030f2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7420,11 +7436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.26
     }
   },
   {
-    "id": "bda2d8de-b521-4e3d-96c5-107de5eba1f9",
+    "id": "afc33262-1313-4a75-ab69-334ae1449f49",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7440,11 +7456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.27
     }
   },
   {
-    "id": "64098838-2014-41c7-868d-1dfd342484b3",
+    "id": "7d63d7c5-1c90-4345-bf28-ae4715590e60",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7460,31 +7476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.7
     }
   },
   {
-    "id": "f460f1bc-5f41-41cd-bdce-603a7a080444",
-    "codigo": "4.1.01.04.0002",
-    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "BARRA ROSCADA SAE 1020 UNC 16F 3/8X1M",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 30
-    }
-  },
-  {
-    "id": "bdfb258f-c447-4e50-80dd-cd218e1ed61f",
+    "id": "5a55aaaf-385e-4e28-93ff-15d46ab6ee2b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7500,11 +7496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.8
     }
   },
   {
-    "id": "2779bebb-e681-4add-870f-8f93237ee98e",
+    "id": "2dd502b0-b193-4edb-9996-96b0f6c8befe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7520,11 +7516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4.14
     }
   },
   {
-    "id": "c18fc08a-7b88-4407-ac31-c04be8a8eb7c",
+    "id": "52bdacea-5418-4b93-b04f-0f2e91af53a7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7540,11 +7536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4.4
     }
   },
   {
-    "id": "8d86628e-012b-44e2-a805-c8001a757e84",
+    "id": "da8ae7df-1d33-4e78-a0c2-9eb03b87484f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7560,11 +7556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4.96
     }
   },
   {
-    "id": "3d78de0f-9cb8-4691-873a-033aaac93e5a",
+    "id": "70aef5d1-4175-49ab-82e5-a8d5dbbaf176",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7580,11 +7576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.04
     }
   },
   {
-    "id": "938dc7ad-5045-4958-a59d-0be2e0ed0057",
+    "id": "d8a4daee-3280-436f-a4e4-4bef55c028a9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7600,11 +7596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 41.72
     }
   },
   {
-    "id": "34968e45-922e-47ed-9549-f06afabdf04f",
+    "id": "004164b5-25b3-4f7e-a191-e786860c977a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7620,11 +7616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6
     }
   },
   {
-    "id": "d060fa36-23ee-446e-adde-8b95bf053839",
+    "id": "5e1a90c0-b4cc-40c7-8114-d7d6b6a4bd43",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7640,11 +7636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6.58
     }
   },
   {
-    "id": "d6df233d-5385-4f35-8b91-bde6b4d652e3",
+    "id": "f0bb2bdc-3bd9-4d85-a98c-69829e5954e4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7660,11 +7656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6.95
     }
   },
   {
-    "id": "aa2c91ca-caa3-43b5-81bf-ffe3eeee8801",
+    "id": "3933b31b-6546-4423-9a68-d71b248f8dc4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7680,11 +7676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7.5
     }
   },
   {
-    "id": "4fb1e561-09f9-46fb-8455-2a228eb5c438",
+    "id": "145035bc-6df1-4e45-b569-67b51531c50c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7700,11 +7696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.07
     }
   },
   {
-    "id": "aee65849-621d-4615-8731-ac4d2397c027",
+    "id": "0f7b2fcb-23af-4e6d-84d1-0b9016ae86fe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7720,11 +7716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.2
     }
   },
   {
-    "id": "c35395be-2bdb-4720-9548-088264972c31",
+    "id": "e320a965-21c4-46e7-b306-d047d0740147",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7740,11 +7736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.46
     }
   },
   {
-    "id": "6091e579-3c2f-4c6b-a268-ae46612909c1",
+    "id": "f916824a-612b-4934-bf0a-ccbcff4fff9d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7760,11 +7756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.9
     }
   },
   {
-    "id": "c52b583d-b362-4c29-9d72-b3e6614b9b74",
+    "id": "787b7687-1638-43c6-a176-7b19938ee0c3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7780,11 +7776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.95
     }
   },
   {
-    "id": "e2f104d2-fd96-4f0b-9b72-6d90d502fd3e",
+    "id": "24d21123-d5a0-4c0e-b6e5-5758b0db62ae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7800,11 +7796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 9.44
     }
   },
   {
-    "id": "9abecb8d-f53d-4171-ad4f-6a9774b0f2c6",
+    "id": "1639c93d-850f-441f-b674-6703b9390456",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7820,11 +7816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 10.26
     }
   },
   {
-    "id": "2e413b2b-3c43-4ed3-8e9f-0f488eca86a7",
+    "id": "71d3c865-fba8-4ed2-a615-1f7e8a531dca",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7840,11 +7836,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 34.03
     }
   },
   {
-    "id": "ca82bb57-8e65-4d8c-89d7-5946f7832605",
+    "id": "70cf5b17-8f56-4179-bdba-47e4e03f1dc1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7860,11 +7856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 487.48999999999995
     }
   },
   {
-    "id": "4da3cf2e-fea0-4db6-9990-248643635b8f",
+    "id": "7e6c9a80-f31f-4a28-a607-ef1a8f6ee6e9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7880,31 +7876,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11.1
     }
   },
   {
-    "id": "b614c0a8-6109-449c-88f3-393bd971f0d8",
-    "codigo": "4.1.01.04.0002",
-    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LIMATAO REDONDO 5,5X200MM STIHL 56057735506",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "024e10f4-dae8-4be2-892f-fc53f0170057",
+    "id": "67b60c3d-b795-4f37-8d31-82e6d098d55b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7920,11 +7896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12
     }
   },
   {
-    "id": "934bbc6a-479c-4a96-b1b2-f64c479d9305",
+    "id": "90d82d6c-601b-4749-abff-8aaf38c31cc7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7940,11 +7916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12.25
     }
   },
   {
-    "id": "6f28ce3e-a9ab-47a3-b0af-5b4b2fea84fa",
+    "id": "22876a02-2bd3-46ac-8128-2bb703949563",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7960,11 +7936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 14.7
     }
   },
   {
-    "id": "42cd91b8-5d97-4427-925b-c86f1f602ead",
+    "id": "d58f363d-ed05-4a36-b126-edd571150934",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7980,11 +7956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 16.2
     }
   },
   {
-    "id": "959eef19-7a0b-4be3-9384-20a4927d2293",
+    "id": "ec8c4737-19ee-43b0-ad46-8e92bb8ffc27",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8000,11 +7976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 55.800000000000004
     }
   },
   {
-    "id": "7db59d31-f1fc-4376-9645-b15fcf433477",
+    "id": "da37bcbc-0c37-4d81-a351-59ef1ce4d07d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8020,11 +7996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 66.16
     }
   },
   {
-    "id": "ecf4b085-9ee7-44c8-800b-5449fe44818b",
+    "id": "096879e9-9569-4e9c-a484-32af44b05818",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8040,11 +8016,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 19.97
     }
   },
   {
-    "id": "6378d9dd-0f67-4fae-8ca2-dad02f3b7036",
+    "id": "fa07a8ec-c74c-424f-bce4-71cb050b0812",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8060,11 +8036,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 20.42
     }
   },
   {
-    "id": "22942602-8c8e-4562-a053-b9e70921a105",
+    "id": "9cf37176-af32-413b-bc9d-2879fa82bc22",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8080,11 +8056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 21.69
     }
   },
   {
-    "id": "9da0ac8d-ebcf-4ba7-bba4-d030446ee5c5",
+    "id": "93b94733-a047-46db-9aa7-d68026e9786a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8100,11 +8076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22.25
     }
   },
   {
-    "id": "094096d3-35d3-4ca9-8a3f-1b270983f8ba",
+    "id": "106d3b76-f8f6-425d-9985-69bd12f0265f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8120,11 +8096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22.64
     }
   },
   {
-    "id": "dc803fcb-7732-423b-9cc0-7f4ed084933f",
+    "id": "a973ee41-ee1d-4435-93e2-44a7a3949fad",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8140,11 +8116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 24.15
     }
   },
   {
-    "id": "5de6f239-3b5c-4ea7-9077-9bb973d2ba2d",
+    "id": "091daaa1-a693-49f5-b640-b0ed83b59ab6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8160,11 +8136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25.92
     }
   },
   {
-    "id": "0ca82d6b-90dd-427f-a5f8-bdeb0a9f4484",
+    "id": "039461d8-1921-4d1a-b1d2-881bc145d70f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8180,31 +8156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 27.22
     }
   },
   {
-    "id": "6a275ff7-f9ff-4715-82c0-0cb9b954b08b",
-    "codigo": "4.1.01.04.0002",
-    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "REFLETOR LED 100W 127/220V",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "3f798d9a-2421-4e14-ab1c-30da9f710ac2",
+    "id": "7c1fa119-21bd-4c63-b480-55ee0734c008",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8220,11 +8176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30.86
     }
   },
   {
-    "id": "cb958ec6-2b4f-45cf-8d8d-197cf27f3817",
+    "id": "ee1a9142-0d64-4cfa-adee-686ee2f7140c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8240,11 +8196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.1
     }
   },
   {
-    "id": "a2167e59-2570-4338-87c2-1ca4ac067441",
+    "id": "7277f95e-2fc9-4662-b430-9aa670010909",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8260,11 +8216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.76
     }
   },
   {
-    "id": "21f126b0-95bc-4e13-ad4c-6a65c105d442",
+    "id": "9a5f30e5-e893-4eb4-9b61-72b250868ed8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8280,11 +8236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 32.49
     }
   },
   {
-    "id": "2e6e3d8a-8b07-4d40-840a-82743e220689",
+    "id": "bf3e2e03-8b7e-4379-8e3c-797059f8edf9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8300,11 +8256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 32.67
     }
   },
   {
-    "id": "3bd63ea1-298a-443a-bba8-d51a2a2a690e",
+    "id": "a34b40db-a5eb-4d0d-9f1d-886afd3cf9bb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8320,11 +8276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.56
     }
   },
   {
-    "id": "d0d3d8b0-a5d7-4196-bee6-b9fb773435bd",
+    "id": "c4c824c6-d9c8-43a1-8344-857fcd1dbc4d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8340,11 +8296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.8
     }
   },
   {
-    "id": "4cf4a213-a5cb-4d5d-91d5-d8bb5c26d77a",
+    "id": "b80440c9-86d1-47d8-8b73-40c939c4c578",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8360,11 +8316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 36.09
     }
   },
   {
-    "id": "459d3c95-4c64-45ca-9e0b-f87e9526c2bd",
+    "id": "09a677a3-d9f1-41ea-912c-2d6dcc51dfbf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8380,11 +8336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 39.6
     }
   },
   {
-    "id": "06214d25-11d4-4898-b77d-d58d525b280e",
+    "id": "bb7c3cfd-e55a-4e52-8607-007411494fa1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8400,11 +8356,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 209.14
     }
   },
   {
-    "id": "22e2273a-1b1b-46ea-b3c9-57b01180f458",
+    "id": "93607baa-5259-4484-adc9-525529212de7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8420,11 +8376,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 46.19
     }
   },
   {
-    "id": "58741ce5-86b9-48d7-8610-f3ca722571d0",
+    "id": "c6483366-4c82-4116-85b9-5a09021e2e6b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8440,11 +8396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 46.28
     }
   },
   {
-    "id": "588075ae-697b-466c-90e7-840d359a1c64",
+    "id": "c62210fe-89bd-4654-b597-dfd2bc9eb9be",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8460,11 +8416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 51.8
     }
   },
   {
-    "id": "f538dbd0-e8f3-45da-81ac-68b67b7db897",
+    "id": "2c9e2fad-2624-4025-9f1f-1d0b06074691",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8480,11 +8436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 64.75
     }
   },
   {
-    "id": "74d18c36-a620-47aa-a6d9-9f94125c0eac",
+    "id": "191d6754-69ee-409c-9e46-beefd94b8bad",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8500,11 +8456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 67.32
     }
   },
   {
-    "id": "56e2b67b-26fa-4157-a256-3225888f0db8",
+    "id": "7b060379-d42a-46dd-9f2f-f26381f4fc1f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8520,11 +8476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 68.97
     }
   },
   {
-    "id": "e8668e3a-42ce-4f76-85cd-2035ecd39934",
+    "id": "d2f5d459-7952-4739-b7d3-03a6235d28c8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8540,11 +8496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 70.05
     }
   },
   {
-    "id": "2478abc4-36ba-478c-a2c7-f965e1b1cca6",
+    "id": "5c8c6315-99f0-43f5-8497-ed53bc4df9b6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8560,11 +8516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 85.5
     }
   },
   {
-    "id": "080b531d-1240-4088-b902-a5eeb3ac6945",
+    "id": "184832e7-e421-420e-9ba1-ab2c2eb8d51b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8580,11 +8536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 87
     }
   },
   {
-    "id": "023b6591-385f-4f32-aafb-63b800032d5c",
+    "id": "dddb088f-317e-4010-bb8c-a98820d8875e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8600,11 +8556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 87.58
     }
   },
   {
-    "id": "71402cc3-ebef-46d3-b139-d55e8215a755",
+    "id": "73dbcf62-1287-4309-bd9b-419c20117fdf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8620,11 +8576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 89
     }
   },
   {
-    "id": "52dede0f-7e75-40ef-bcd3-b739286c15f3",
+    "id": "fdd2c3ba-47f7-4302-bd4f-cef81a52abba",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8640,11 +8596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 95.84
     }
   },
   {
-    "id": "bb362da5-f71a-44de-a5bb-4bb308478a56",
+    "id": "b3403a08-7fbc-4da9-9531-c3ab539020de",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8660,11 +8616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 99.5
     }
   },
   {
-    "id": "3f38d9dc-cf0f-4ae0-b05a-b89f5f41c023",
+    "id": "2358efb0-f309-47a2-9117-01af7a204589",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8680,11 +8636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 101.64
     }
   },
   {
-    "id": "3e16fb1c-e589-4e3b-950d-fcd3562738cf",
+    "id": "2f1b8365-2a10-4d0c-96a5-dcfe31dd7103",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8700,11 +8656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 109.76
     }
   },
   {
-    "id": "4b9008e2-cd01-4612-9c3f-4c9768b3b58f",
+    "id": "478f19b1-a84f-4c6d-996c-aeb57dd1bdfb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8720,11 +8676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 111.93
     }
   },
   {
-    "id": "34734f17-dbce-4434-80ba-5d7bd07848b3",
+    "id": "ceea4f16-fd6c-49c8-ad2f-dce571c2618d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8740,11 +8696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 115
     }
   },
   {
-    "id": "c96bc97c-b740-491f-ab4c-912522ceac13",
+    "id": "36008461-49fa-4d28-a524-a9eb90098bb1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8760,11 +8716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 239.44
     }
   },
   {
-    "id": "0641f281-34f8-42ee-90d0-00236f927844",
+    "id": "eb16aeb2-c110-436c-a2ab-5d976763310c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8780,11 +8736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 130.52
     }
   },
   {
-    "id": "a72df1a1-7b7c-4458-9828-cd5943a27bb6",
+    "id": "47a79922-13fe-45d1-ae7c-7384f11abfa8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8800,11 +8756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 133.2
     }
   },
   {
-    "id": "5cbcf89b-789b-49ec-a04e-51b6daa38491",
+    "id": "b351a677-3ef7-4d6d-952f-320c90950c55",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8820,11 +8776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 150.96
     }
   },
   {
-    "id": "ae87091f-9e4b-41f8-aa25-e0e9de489c94",
+    "id": "faa36d46-8b06-4e7d-ac9e-42870109a704",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8840,11 +8796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 156.52
     }
   },
   {
-    "id": "3b3baf07-9f8d-4725-8b16-830424e65831",
+    "id": "ffbb6afc-dfbe-4f2f-9040-13ad0a4cd7fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8860,11 +8816,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 226.67
     }
   },
   {
-    "id": "f499c2f1-1024-4e26-ba17-51948b0af169",
+    "id": "27207c6e-319f-4c65-a125-d1bdd33f1f3c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REFLETOR LED 200W 127/220V",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 260
+    }
+  },
+  {
+    "id": "1d8f36e0-e4cd-4f9a-b935-715508972d87",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8880,11 +8856,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 275.4
     }
   },
   {
-    "id": "105538f1-f950-4578-a282-69b10ac6892a",
+    "id": "664cf785-1c29-4abe-a42b-a7f5e666d65d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REFLETOR TR LED 50W 6500K BRANCO",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 290
+    }
+  },
+  {
+    "id": "871cce66-640b-4b15-a268-4a7a2632bc84",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8900,11 +8896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 302.2
     }
   },
   {
-    "id": "40ddd275-484f-40b9-b71d-2c175067dc6d",
+    "id": "21d743c4-acd5-4785-ac49-e6c937db4487",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8920,11 +8916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 528.12
     }
   },
   {
-    "id": "8f74db7f-c759-43eb-b207-aeef36d49940",
+    "id": "d480ea36-c0c7-485c-8281-7190b0285493",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8940,11 +8936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 600
     }
   },
   {
-    "id": "0eba4c03-bb2c-43f6-b03e-0b97996fcee3",
+    "id": "54717f0b-579a-4025-ab19-c7ffeb7e82ce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8960,11 +8956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 900
     }
   },
   {
-    "id": "652cf4ae-7a54-4b0f-be55-43bd5334c517",
+    "id": "c5f1dcdc-c79c-4828-87d7-90291dedc9a0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8980,11 +8976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1127.85
     }
   },
   {
-    "id": "fc0db46d-7c3d-46ce-b2dd-0f485584cb6a",
+    "id": "7b1a4832-f328-47bc-9607-e2ca582cd365",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9000,11 +8996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1179.57
     }
   },
   {
-    "id": "56f7b8b8-0d9a-4428-935a-e1160145fadb",
+    "id": "97365b55-e463-48ce-a109-8b5a0d79abe1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9020,11 +9016,871 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1584.36
     }
   },
   {
-    "id": "efca988f-17f7-4ba3-af56-a73126d68542",
+    "id": "9f4c35b8-5add-44f7-9f6e-6c5720cbb3c7",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLO EM LA DE CARNEIRO 9CM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24.78
+    }
+  },
+  {
+    "id": "4eb70530-1b33-4989-b984-a2bfe7fde1a9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADESIVO PLASTICO CPVC FR 175G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 276.04
+    }
+  },
+  {
+    "id": "fc367c5d-48b4-4cd7-9ee2-9893b24b4686",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHUVEIRO ELETRICO 5500W 220V BRANCO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75
+    }
+  },
+  {
+    "id": "b488245f-97f1-43c9-886b-5e5aa1589781",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADAPTADOR SOL/ROSCA 32X1",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.52
+    }
+  },
+  {
+    "id": "8aeaea95-3850-463a-801a-a5719693a5c5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA LR SOLD 25X3/4",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 27
+    }
+  },
+  {
+    "id": "c42cd5b0-8b5e-482f-a515-074d250088d0",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JOELHO DE MANGUEIRA 3/4 PT",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.1
+    }
+  },
+  {
+    "id": "95cc2d09-43b6-41f8-b082-afcba2802db6",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA SOLDAVEL PVC AZUL 32MMX1",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.4
+    }
+  },
+  {
+    "id": "8a2fd29c-255a-4a36-8301-484ba38d87c1",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA SOLDAVEL 25MM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2
+    }
+  },
+  {
+    "id": "3960058c-498e-4f51-bcac-e501bb0e8919",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "COVOA - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 4 MTS 14 X 3 CUMARU",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1344
+    }
+  },
+  {
+    "id": "f8223df6-3300-4dff-a24d-3df6b7598b90",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LASCA DE AMARU 10/12 CMX2,20M",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5400
+    }
+  },
+  {
+    "id": "86611472-3aea-48c8-bf77-026f076f8bd7",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BOIA BEBEDOURO KRONA 1/2",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.2
+    }
+  },
+  {
+    "id": "4932e9c4-0a7e-40e4-95c4-67a6afde25a5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TORNEIRA PARA TANQUE CANO LONGO PVC 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50.4
+    }
+  },
+  {
+    "id": "f3f2bcb9-fad9-4fbb-8833-2a820198eaa5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TIJOLO COMUM MACICO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 240
+    }
+  },
+  {
+    "id": "c1752a65-ae19-4b93-ad09-e92b2f19cd2d",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DOBRADICA FERRO 11401",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 117.97
+    }
+  },
+  {
+    "id": "a3be3a6b-4626-47ce-b649-aaa48ecabdb4",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DOBRADICA QUADRADA 140X140MM NR 3",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 328.28
+    }
+  },
+  {
+    "id": "c4181553-2bee-4b04-9b24-b6cd6cbb3856",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TERMINAL FGR.1 BSP-BOL X 1 PR 8075-16-16 S/C",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34.2
+    }
+  },
+  {
+    "id": "4057f02a-b32a-4807-a737-7e718f39c64f",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PREGO COM CABECA LISO ACO POLIDO 17X27MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.03
+    }
+  },
+  {
+    "id": "6737bf7c-6f56-4e3a-8bae-69a9513f77cb",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TELHA PORTUGUESA CERAMICA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2932.5
+    }
+  },
+  {
+    "id": "44500983-545d-4347-88ae-ac3b20b6979a",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TELHAO P/ CUMIEEIRA BARRO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 180
+    }
+  },
+  {
+    "id": "89655ea5-e3c2-44c8-b4ef-89f526a55664",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO PVC IRRIG LF PN 60 LF DEFOFO 32MM AZUL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 59.36
+    }
+  },
+  {
+    "id": "bd9df1c1-47ec-4bfb-b1f4-2398d71211d9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MADEIRA SERRADA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1196
+    }
+  },
+  {
+    "id": "62a086fe-e975-45b4-a5ed-81cd1a8ace07",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MANTA ASFALTICA 30CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "215760f8-47f3-4ed6-95e5-dd8dc1a7fc9f",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TRINCO DE PORTEIRA 3/4",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 210
+    }
+  },
+  {
+    "id": "f89ff43e-14d8-41d0-b51e-a1d047cc104a",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARAME FARPADO 16MM (16 BWG) 500M",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 613.4
+    }
+  },
+  {
+    "id": "043a7eee-37eb-44ee-ab72-9c55cf2eee88",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CIMENTO 50KG TODAS OBRAS TOCANTINS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 37
+    }
+  },
+  {
+    "id": "595a4aab-e405-48e4-9a57-357aa0cb4503",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAL HIDRATADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 65.25
+    }
+  },
+  {
+    "id": "dcf26901-14d7-4930-8cbf-f347d7a77f77",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 2,50 MTS 3 X 10",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 222.24
+    }
+  },
+  {
+    "id": "c7b9d546-5082-4e95-86c5-e733fda061cd",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 2,20 MTS 10 X 3 CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 464.48
+    }
+  },
+  {
+    "id": "db4f591e-9fd9-4d87-ac32-9f763d5ea229",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARESTE LONGA PARA CERCA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 48.910000000000004
+    }
+  },
+  {
+    "id": "f5003b1b-f2c1-46ab-a2e3-d39ee38c8e63",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO DE ESGOTO 100MM KRONA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 148.8
+    }
+  },
+  {
+    "id": "64399fb3-307e-4d35-9f96-4b6ff7b8257e",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 3 MTS 10 X 3",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1632
+    }
+  },
+  {
+    "id": "bef7e705-8041-446f-ac2d-e2c354de907e",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VIGOTA ANGELIM VERMELHO 11CMX5CMX4,5M",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6323.5
+    }
+  },
+  {
+    "id": "0950eba7-05c9-4a1d-903a-5d8b8aede669",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 3 MTS 15 X 3",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3024
+    }
+  },
+  {
+    "id": "6c18bddc-3ff5-4cf1-8e7b-75b5da4467f7",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA SOLDAVEL PVC AZUL 50MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 64.25
+    }
+  },
+  {
+    "id": "90fa45b2-5a7e-4f50-bc41-b94081c843e9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 2,00 MT 3X15CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 768
+    }
+  },
+  {
+    "id": "aec305c2-fbf0-4dce-b8a6-8236ed2242c3",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TABUA 2,00 MT 3X10CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 320
+    }
+  },
+  {
+    "id": "0c26a9d2-0b41-4a1b-be14-0fdd1d20adc3",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PREGO 19X36",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.77
+    }
+  },
+  {
+    "id": "bb40edd2-f8fd-4c70-b91f-8681800eb54a",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAIXA DE EMBUTIR PVC 4X2 RETANGULAR",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.6
+    }
+  },
+  {
+    "id": "9636ce77-1dbf-400a-a67b-f8169dc8798d",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAIXA DE DESCARGA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 72
+    }
+  },
+  {
+    "id": "8d1bfa5a-21d6-4105-977d-49d34879ed3c",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAL VIRGEM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 166.65
+    }
+  },
+  {
+    "id": "4274519e-244d-4153-9384-3a770d6af497",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORANTE LIQUIDO XADREZ VERMELHO BISNAGA 50ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 46.9
+    }
+  },
+  {
+    "id": "6c528e58-58b0-4d62-880d-8845b418bca3",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FORRO RIGIDO PVC FRISADO BRANCO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 900
+    }
+  },
+  {
+    "id": "7bd9b8a1-13ef-4e14-92c1-9fbfa12b46a7",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA SOLDAVEL PVC MARROM 25MM NBR 5648",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.8499999999999996
+    }
+  },
+  {
+    "id": "73be8f36-b82b-403d-9f0e-ce0ca7468881",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9040,31 +9896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 33.6
     }
   },
   {
-    "id": "5c11554b-5d60-410c-a7b4-a58fd6b1a7e3",
-    "codigo": "4.1.01.04.0003",
-    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "ADESIVO PLASTICO CPVC FR 175G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "49b89fcc-4577-4c75-897d-81db1eaf0f86",
+    "id": "01f2b11f-9ffa-47a3-a921-7be482e65933",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9080,11 +9916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 263.41
     }
   },
   {
-    "id": "d5747204-9ea3-44d7-8935-8165b1c5cc1e",
+    "id": "ca34edcc-fa6c-4efb-a79e-0c03b0e308e3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9100,31 +9936,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 360
     }
   },
   {
-    "id": "0552d968-c9af-4868-b21c-d4c2fa3c2dce",
+    "id": "bbcc7ef3-6d1c-49d5-9e61-fce34e63867a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LUVA SOLDAVEL PVC MARROM 25MM NBR 5648",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "TRENA 5 METROS LUFKIN L516CMED",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 54
     }
   },
   {
-    "id": "94f3fead-3de8-4fbf-b17d-54ad42173115",
+    "id": "35ddfd11-a023-48c0-b8b3-6279b5a28eb1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9140,11 +9976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 455.48
     }
   },
   {
-    "id": "2fc72c5f-abf3-4dbc-9553-091e3eb3bed7",
+    "id": "423af07e-0b83-46a5-b2bf-cf31f0e13e73",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9160,11 +9996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 84.96
     }
   },
   {
-    "id": "c421900c-786c-44e3-9611-19b687f90349",
+    "id": "fe09668b-bade-41bf-92bf-053dec3b8918",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9180,11 +10016,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 15.51
     }
   },
   {
-    "id": "62857c55-5dc9-406a-9647-fdb06b4d7a3f",
+    "id": "b73db768-8ab6-4e94-abbe-6773973dd0bd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9200,11 +10036,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2.9800000000000004
     }
   },
   {
-    "id": "b18a5737-536f-47c4-978f-f0b2fb08f357",
+    "id": "c376f25c-ce26-4794-99f4-c928f86d2cd9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9220,11 +10056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 214.9
     }
   },
   {
-    "id": "1815d650-6157-4d1c-9038-e22de3660362",
+    "id": "6122c76c-d230-4150-b3f7-e8fd9a982160",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9240,11 +10076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 340
     }
   },
   {
-    "id": "de310f34-9f07-4989-adef-28f44f383963",
+    "id": "7ee09131-0866-408f-87b6-164d14f82a00",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9260,11 +10096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 370
     }
   },
   {
-    "id": "b96ba9ea-09fa-4ced-8fe6-f15803390091",
+    "id": "eb8208d0-ffc7-4c9b-8545-ab882958357b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9280,11 +10116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4.2
     }
   },
   {
-    "id": "55e9d630-f23d-44e9-8ee8-9fb9c5f2c855",
+    "id": "d9ec5733-9106-4c82-9f6f-3956070a53f4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9300,31 +10136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.62
     }
   },
   {
-    "id": "91cae873-9d05-4500-80a0-791191d60143",
-    "codigo": "4.1.01.04.0003",
-    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "ARESTE LONGA PARA CERCA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "44fdc915-b3b8-488a-a9cc-6a44f17431fd",
+    "id": "91f8177d-88f5-4d2f-8e7b-e339b02d062d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9340,31 +10156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 18.72
     }
   },
   {
-    "id": "7b775619-808c-4bd7-a7c4-f290dcd1559d",
-    "codigo": "4.1.01.04.0003",
-    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LUVA SOLDAVEL PVC AZUL 50MM",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "853c926c-b059-47fc-9897-10341772527d",
+    "id": "7d1f1752-a3a4-468d-95de-bbab1fe36d2a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9380,11 +10176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 28.76
     }
   },
   {
-    "id": "cbd6e3c6-b009-4818-aac8-ade168194ed8",
+    "id": "0f847e18-bad7-4e39-befe-793597e5b062",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9400,51 +10196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 186
     }
   },
   {
-    "id": "6af6523f-39b0-4241-8fba-0a2541a539ae",
-    "codigo": "4.1.01.04.0003",
-    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "TIJOLO COMUM MACICO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "8ea9a49c-74de-449b-ba7d-e9a4cb0bc4cc",
-    "codigo": "4.1.01.04.0003",
-    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "DOBRADICA QUADRADA 140X140MM NR 3",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "78cbd6e5-72b2-46ce-8632-73685356213a",
+    "id": "c9c01f9e-7f6c-41ba-8ec2-53d7c0fb44bd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9460,11 +10216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 738.36
     }
   },
   {
-    "id": "293587cf-b738-4fba-b740-43ccfe87bd27",
+    "id": "7de73a33-fd16-43b6-9a21-25d8c61ff536",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9480,11 +10236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 1286.5
     }
   },
   {
-    "id": "0fd128c0-2380-4bc2-9d45-a37944eb7fbf",
+    "id": "bb0abede-e281-4423-9548-a925b7c8b138",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9500,11 +10256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 491.29
     }
   },
   {
-    "id": "6f2cf35d-11a6-4c36-bc50-4fe8e255e4f6",
+    "id": "2ebccaae-4cc5-42c7-8c91-021df76540d7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9520,11 +10276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 1066.72
     }
   },
   {
-    "id": "6ca7d7eb-ec8a-4a2c-a08a-f2b6760c80b6",
+    "id": "3d4ad4c6-d17f-456b-9b01-dcc0cf40a46c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9540,11 +10296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2850
     }
   },
   {
-    "id": "aa94a0f1-25b9-4769-8f4d-06e0e951b6f1",
+    "id": "9b89da91-14d5-420c-b55e-63074da4a14e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9560,11 +10316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3000
     }
   },
   {
-    "id": "2434aa3e-75ad-4cc9-b78a-8c8e83bfb1b9",
+    "id": "adad4e6d-f739-4443-a48d-be8a3d38b838",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9580,11 +10336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 524.25
     }
   },
   {
-    "id": "f616b0d2-0e16-46ba-b5e3-b5e7caaf9412",
+    "id": "feb4395a-c331-4f90-801a-95db71258945",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9600,11 +10356,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4145.66
     }
   },
   {
-    "id": "a48adc29-3a15-4496-8946-7d0d09cc74bb",
+    "id": "b20cbf8a-64bc-4230-b1d1-f55c85ef412f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9620,11 +10376,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7.03
     }
   },
   {
-    "id": "5615ede4-affb-45d4-9f89-9dbd69fa5b0f",
+    "id": "f37c778a-129d-46ee-b009-7cbb3ba1d3ef",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9640,11 +10396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 120
     }
   },
   {
-    "id": "80bee85e-d10c-4336-8a7b-cef42e07b565",
+    "id": "dce64483-25d2-42b2-9bc2-7fed3955330c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9660,11 +10416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 4.010000000000002
     }
   },
   {
-    "id": "cb8a5bfe-438a-487c-b4e3-26a2580f31bd",
+    "id": "c465d529-7cd1-4850-bde8-d5d82cc4b076",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9680,11 +10436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4.5
     }
   },
   {
-    "id": "781f7fd7-7cd0-4481-ab09-4a7dc1d19ebf",
+    "id": "2d2978b2-aa11-4aba-b467-af335dc5031f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9700,11 +10456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.32
     }
   },
   {
-    "id": "db8f86df-f239-4e4b-94b6-5dc794e06e75",
+    "id": "e8579f15-0e52-45af-aec5-c3ba0c7d670f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9720,11 +10476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 36.59
     }
   },
   {
-    "id": "9b544e64-0e1d-44af-9325-12f04d053103",
+    "id": "27a7c12b-ebca-41f9-9840-0771965194ab",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9740,11 +10496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11.15
     }
   },
   {
-    "id": "4d632a1b-1481-4205-8580-5f6e033de161",
+    "id": "10df9e85-f527-424a-a3a9-1775764cf70e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9760,11 +10516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 120
     }
   },
   {
-    "id": "9c9ac6dd-9875-4182-bde6-1842b515594a",
+    "id": "c52c683a-3e60-437d-9661-89ab418ada41",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9780,11 +10536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 900.1200000000001
     }
   },
   {
-    "id": "0229ccb2-c86f-4922-859c-6f3509848cb2",
+    "id": "40a2da85-fd27-407a-b770-4c48f445166a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9800,11 +10556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 900
     }
   },
   {
-    "id": "f890550f-3b6b-4736-a221-6203eb0bd7a7",
+    "id": "64ffd8b9-c798-4539-ae56-6a7eb1a82f5a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9820,11 +10576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1050
     }
   },
   {
-    "id": "05260641-765a-454f-8d20-ee868cd3aadf",
+    "id": "5a438ba4-96c1-4860-9100-3865e37c261a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9840,11 +10596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 450
     }
   },
   {
-    "id": "30aeb117-418d-4fc4-98e4-a532e121a85b",
+    "id": "6238c6c0-c51e-4f51-b438-90cfc7fcc880",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9860,11 +10616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.35
     }
   },
   {
-    "id": "1cc63355-4841-4ed1-a3bb-3d59325ef393",
+    "id": "5ac98eb1-407f-433e-bddc-3412d04bd9b4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9880,11 +10636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8.84
     }
   },
   {
-    "id": "40cb94fa-d0c9-497c-90f3-a4e044fd25c1",
+    "id": "197eaa82-5028-402e-8770-786d5cb0bcb7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9900,11 +10656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22.54
     }
   },
   {
-    "id": "ed69b1a9-d25b-4925-9793-8a7031fbfea5",
+    "id": "8becb59c-87c2-4dd8-9653-7aacc5e3d7d8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9920,11 +10676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.92
     }
   },
   {
-    "id": "2f027538-b7dc-44b5-9043-96784cb1efb3",
+    "id": "09b45199-42cb-4abd-bbc7-de4a8bc0c8f7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9940,11 +10696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 44.18
     }
   },
   {
-    "id": "4ba03b7a-de57-4f4d-88f2-0c2f796408af",
+    "id": "712396aa-786b-40bc-bfbb-234d8eabb0cc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9960,11 +10716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 44.18
     }
   },
   {
-    "id": "277d2576-aeef-49a6-bf78-5995c88d06bd",
+    "id": "216c8bfe-5c08-44e5-8300-bb2d26dc9075",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9980,11 +10736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45.09
     }
   },
   {
-    "id": "3beb6315-ecbc-4cee-9955-3ddee4fc3dea",
+    "id": "b350e21d-2029-4354-95c5-08b7cbc51b93",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10000,11 +10756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 71.15
     }
   },
   {
-    "id": "afc40bfd-77fd-44b3-85bc-246e570f813a",
+    "id": "6af21f8a-1ab5-48df-8e72-f4ae705b42f7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10020,11 +10776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 80.61
     }
   },
   {
-    "id": "544e8275-b0c6-4f6f-b874-748829392800",
+    "id": "9f665b78-6e8e-43b7-b3aa-9eeefd2ccff6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10040,11 +10796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 96.85
     }
   },
   {
-    "id": "7038f125-bc94-45d1-9f3c-3fb0922cdddd",
+    "id": "e724f7a4-9d2d-408f-aa2d-069dcc394c37",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10060,11 +10816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 243.01
     }
   },
   {
-    "id": "9e452a35-e0a2-43ef-b8aa-706c88b7d7ca",
+    "id": "f5271eaf-2aad-4253-8fda-14a649464e87",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10080,11 +10836,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 1035.57
     }
   },
   {
-    "id": "110a4e63-9921-4fba-831c-325a8701a8a4",
+    "id": "f6efa27c-109c-4239-bc2a-a72449415d56",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10100,11 +10856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 493.96
     }
   },
   {
-    "id": "b7cc8882-ced6-4252-a80e-f78efd64b2fe",
+    "id": "5eec7e82-ce8b-4523-9a86-3490be9a1da5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10120,11 +10876,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 987.93
     }
   },
   {
-    "id": "2f86c4d2-78f8-457b-8bec-24f1ae4e9e06",
+    "id": "f362744b-f8ff-4897-8d04-a53b9ca3270d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10140,11 +10896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 179
     }
   },
   {
-    "id": "54fd5ebf-dc78-49b5-aea6-7f898269ec4d",
+    "id": "53097efb-5dea-4bdc-bc81-a8146a380953",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10160,11 +10916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15.75
     }
   },
   {
-    "id": "bf3d57ba-c5cf-417c-a55f-71b60e8f3242",
+    "id": "dea01e99-89b8-4ad7-91d8-6a02b352163a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10180,11 +10936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.2
     }
   },
   {
-    "id": "3b33baea-b5ff-427e-b3f3-f40342615b7f",
+    "id": "0f67aefc-3962-4d28-b691-b50e19a29ca4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10200,11 +10956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22
     }
   },
   {
-    "id": "4b26863f-fa89-4ee6-a2e5-3a024a2186a2",
+    "id": "231b9318-c13f-4012-aa0c-c7fe6d8a952f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10220,11 +10976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 26
     }
   },
   {
-    "id": "dc83980d-0065-4754-95da-8747b1dad1bf",
+    "id": "b61f8db0-c711-4558-9432-82101f633ab4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10240,11 +10996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 44
     }
   },
   {
-    "id": "7c4927b8-01d5-430b-bb4c-f35b7d770e0a",
+    "id": "ca3eaaab-dd6c-4fd5-8e3e-ae5953e965bf",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10260,11 +11016,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 100
     }
   },
   {
-    "id": "4544aaac-68ab-4bfa-9b40-e5a3dd1685a3",
+    "id": "9b1f1c2b-ef4f-4d9d-82a3-953aa28e9005",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10280,11 +11036,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 21
     }
   },
   {
-    "id": "1af7260f-bfcb-4b0d-8d64-6383b41d0d43",
+    "id": "7d7376de-da1d-43ec-bde4-952078bfc2b6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10300,11 +11056,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25.3
     }
   },
   {
-    "id": "7c777846-2155-4fb0-b8c9-40a2789cefbf",
+    "id": "c8b94028-1552-4031-93a0-8e9d9ac13820",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10320,11 +11076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 26
     }
   },
   {
-    "id": "82dc3d2f-88f7-41ea-8a12-a13ae55cc560",
+    "id": "40056871-ca19-4af4-8203-2ac0472286eb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10340,11 +11096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 25
     }
   },
   {
-    "id": "902e47c5-7398-4d66-bab8-22bb40e69afd",
+    "id": "4e9c1721-88fc-40de-a8ed-23c4d2447b8b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10360,11 +11116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 330.75
     }
   },
   {
-    "id": "6daeeafe-d324-4fee-9616-f81d060d0885",
+    "id": "e4e6ccdd-c417-405c-94e5-a3d5072aa38a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10380,11 +11136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 50
     }
   },
   {
-    "id": "d8a62542-9641-4636-80af-6485ca31b29a",
+    "id": "86136acd-6f7f-415d-adab-091b0373541d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10400,11 +11156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 90.21
     }
   },
   {
-    "id": "7d68e58c-f04d-4d33-829e-f47d4d187569",
+    "id": "adddc8cb-0153-45a5-a9e3-e8d9fed934b3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10420,11 +11176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 119.8
     }
   },
   {
-    "id": "7ed489ff-5c03-4388-8e8b-0b30c464853b",
+    "id": "258c398e-aa41-4026-b6bf-08f083c77edf",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10440,11 +11196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4500
     }
   },
   {
-    "id": "1c81f624-58d0-40a5-9ce0-86e1594c03df",
+    "id": "1afe6d15-9dc7-44ca-876c-b5265e8f342e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10460,11 +11216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 16
     }
   },
   {
-    "id": "2a86a6f5-5c5b-4104-a7da-bb8f2a49ed2c",
+    "id": "73fe6e89-0ffa-42ed-9979-65ef11e9b163",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10480,11 +11236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 500
     }
   },
   {
-    "id": "61337605-8e8d-4f8c-ab34-816ab3b1e852",
+    "id": "60a331d5-5cf3-436b-85fa-c10c4341f3e3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10500,11 +11256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -5.12
     }
   },
   {
-    "id": "8952b787-9f35-4d21-a780-70581b7e0f9b",
+    "id": "f4d274da-fbd7-4d67-b3fc-246366b08f7c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10520,11 +11276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.06
     }
   },
   {
-    "id": "038528b9-d5c8-4089-b4ae-c254c4675597",
+    "id": "681c3f4c-bf33-40ea-a92e-01f82e1820fb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10540,11 +11296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6.55
     }
   },
   {
-    "id": "b8ed2180-2a95-4993-b3a6-a95b211f1c1f",
+    "id": "f2022faf-85f9-4666-872a-baa447499d1e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10560,11 +11316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.03
     }
   },
   {
-    "id": "66ba95d0-5155-45ac-8958-e9e2c3f602fc",
+    "id": "7cb0482d-39c2-4627-876d-7b177304f4a5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10580,11 +11336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.36
     }
   },
   {
-    "id": "dc9e982e-c8d3-41f1-85a7-2f616103e428",
+    "id": "5f57344c-f821-4429-9326-57060c05f27c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10600,11 +11356,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -3375
     }
   },
   {
-    "id": "35465f57-970a-4b99-bd7a-b8b6a0ef2d8b",
+    "id": "d86cb279-699e-4db8-9f34-cc6f9aa4fa39",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BASTAO MARCADOR VERMELHO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 345.48
+    }
+  },
+  {
+    "id": "6d773ecc-1efd-4a42-a515-f3caf253e074",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 88.78
+    }
+  },
+  {
+    "id": "3d4ce128-3454-47b9-b926-0f05dc3eee3f",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -10620,11 +11416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 67.16
     }
   },
   {
-    "id": "394d7893-bc6b-46e3-b412-e6de7ba04208",
+    "id": "5f9ab958-83d8-40eb-b417-4e03d0196187",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -10640,11 +11436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 86
     }
   },
   {
-    "id": "8c68ec9f-092f-4058-9801-13eb6373bd2e",
+    "id": "34413d40-e426-4ccf-9723-34ed251619e6",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -10660,11 +11456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 85
     }
   },
   {
-    "id": "f55a959a-93f6-4b90-a2a1-1dc02be04af0",
+    "id": "e09d7e6f-bae9-47bd-8b2e-58fb63d5825f",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -10680,79 +11476,259 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 80.73
     }
   },
   {
-    "id": "bd4c46db-db90-4e8e-b659-7b40aea554ca",
-    "codigo": "4.1.01.04.0004",
-    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c4c57b89-908a-485c-89d2-4731ad9e5db9",
-    "codigo": "4.1.01.04.0004",
-    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "BASTAO MARCADOR VERMELHO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "75b36faf-b7ef-4a51-8a12-d540876a166c",
+    "id": "3f9f7d53-2f50-49f2-837f-43cc0bd79738",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "ESTOPA MALHA COSTURADA",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 86.9
     }
   },
   {
-    "id": "2247b8c2-a731-4c21-8c88-d146d39f1c3b",
+    "id": "7da235d2-e6ea-48ca-9030-e10d9d9679cd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 197.5
+    }
+  },
+  {
+    "id": "19a38a7a-1c44-4c2c-a9e3-441ef4585073",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 221.2
+    }
+  },
+  {
+    "id": "546d0d4c-6d5a-4810-a2f3-e964b61d262a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTOPA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.86
+    }
+  },
+  {
+    "id": "7acf319c-d888-45bc-8d5e-217bc48b6de1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 276.5
+    }
+  },
+  {
+    "id": "5d89fae3-e752-4061-89d7-baa2dd2785b3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 276.5
+    }
+  },
+  {
+    "id": "24529c96-f479-4f36-831a-2304105fbf43",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 331.79999999999995
+    }
+  },
+  {
+    "id": "234ac152-5057-4ecf-9efb-914ba79a7dad",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 331.79999999999995
+    }
+  },
+  {
+    "id": "46a18e4e-0d4b-4297-adf3-92a31809857a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 861.2000000000002
+    }
+  },
+  {
+    "id": "fe94d19b-f6a0-4068-8103-d3e6eed7de2d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTOPA BRANCA PCT",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 112.97999999999999
+    }
+  },
+  {
+    "id": "3f566758-3965-4215-97cf-67a08c82b959",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SUPORTE DE ISOPOR P/ MARMITEX N 8 4X1 STYROCORTE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.99
+    }
+  },
+  {
+    "id": "48de03a2-55a9-4c5c-aca3-59eaece78ade",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMPA CONTATO SPRAY",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 47.699999999999996
+    }
+  },
+  {
+    "id": "0809c7ec-6cf7-4546-9e86-bace93439421",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
@@ -10760,11 +11736,331 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 148.16
     }
   },
   {
-    "id": "6a2493f8-a27e-4583-9a2c-fd896d81fa60",
+    "id": "169b5cb9-8c51-4f41-b161-6fe0b392e854",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RODO MADEIRA 60 CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.9
+    }
+  },
+  {
+    "id": "33c3b85e-50bc-4bcd-b17d-0eccf52b98f5",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTOPA MALHA COSTURADA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49.519999999999996
+    }
+  },
+  {
+    "id": "eb84b222-43af-4237-a73c-933fb99849aa",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA PARA LIMPEZA DUPLA FACE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21.5
+    }
+  },
+  {
+    "id": "5e599a12-0a7b-403f-93d7-c58bb2d12929",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SOLUPAN",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23.3
+    }
+  },
+  {
+    "id": "044d9893-485f-4765-a6c6-8591c6b27d81",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PILHA AA DURACELL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 67.5
+    }
+  },
+  {
+    "id": "a7947082-3196-4358-9b82-6c9f0b975f61",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PASTA DESENGRAXANTE TO BLACK 2KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 57.2
+    }
+  },
+  {
+    "id": "008f493f-7b04-4bb3-8846-9d39731b6d44",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CADEADO HASTE CURTA 35 MM PAPAIZ",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 94.3
+    }
+  },
+  {
+    "id": "310fab75-fb00-472c-a6d5-84ede22919f2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RODO MADEIRA BORRACHA SILICONE 50 CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 32.74
+    }
+  },
+  {
+    "id": "f790b5ba-3a97-45ab-b5ab-795ccff8d44f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO PERSONAL 4 X 1",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 73
+    }
+  },
+  {
+    "id": "2905a7a3-bd03-499a-9413-b5cd1c00e4a2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AGUA SANITARIA Q-BOA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 86.28000000000002
+    }
+  },
+  {
+    "id": "f71d5ab4-9dd4-44d9-bc43-f41a829901fc",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ODORIZADOR DE AMBIENTE FRASCO DE 360ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 104.4
+    }
+  },
+  {
+    "id": "780dd2d4-3708-42c7-babf-ffe0dafc8e3a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CERA LIQUIDA VERMELHA 750 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 115.68
+    }
+  },
+  {
+    "id": "77cbee7a-6ecb-49df-b32a-099154dc4359",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JARRA GRADUADA 4 LTS ALTO RELEVO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 163.36
+    }
+  },
+  {
+    "id": "c01aac6c-9be3-44b9-93db-b76c2bee1535",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 326.8
+    }
+  },
+  {
+    "id": "4aba8d28-bba6-4ce7-a826-07ea308170e3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VEJA LIMPEZA PESADA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 229.07
+    }
+  },
+  {
+    "id": "5a1ff4b9-e5a7-446b-910a-5b9003e77174",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CB 30 T.A",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 447
+    }
+  },
+  {
+    "id": "77b77bf4-03b3-4898-9c8e-e18bc47950f0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10780,51 +12076,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2.69
     }
   },
   {
-    "id": "0993eeac-2c85-489c-81e8-26c2e584775c",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "AGUA SANITARIA Q-BOA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "3ee11c57-87a5-4cc5-b93c-db62cdb24cf6",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "fadb4d4b-7905-4049-aa00-55d558b4a2af",
+    "id": "ec230a34-13ba-4875-bbca-77563458f1e4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10840,51 +12096,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 14.580000000000002
     }
   },
   {
-    "id": "6f192951-8884-4068-ba41-20c01ac77694",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "VEJA LIMPEZA PESADA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "39a76a4f-8ca7-4d3a-8569-0284c5ea4d02",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "SABONETE 90GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "8e060540-9468-4be7-9b57-6862994ee23d",
+    "id": "60ac8736-e9ee-4f48-bc1d-6eba5c58d6e0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10900,91 +12116,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7.64
     }
   },
   {
-    "id": "dafca1a9-8845-42cd-a21d-5097924b181d",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "f636382c-dda4-46f7-9497-ac707ecc520a",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LIMPA CONTATO SPRAY",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "ec8cf265-b808-4fe9-ae0c-c1a2496b1cf1",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "CREME DENTAL 90G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "3bf32ee6-b0e5-40cf-8912-053bf1564136",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "DESINFETANTE 2 L",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "b9d33d7b-17c1-4d83-ac42-1777b4fba1ed",
+    "id": "86a7b147-82bb-4b4e-b6a0-f4f874ae47bf",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11000,11 +12136,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 43.4
     }
   },
   {
-    "id": "618314a0-5bd3-44be-a399-a7bc13dafeae",
+    "id": "c8f805e0-a488-48af-88e6-9a6c33d9adde",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11020,51 +12156,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 23.78
     }
   },
   {
-    "id": "8819da11-4a8e-42f1-b471-de259b027a43",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "SABAO EM BARRA 5 X 1",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "1a9a34a7-ce6f-42d2-904f-110a43146061",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "AMACIANTE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "37d215d9-532a-43c4-b305-7a20e50477c8",
+    "id": "afb4dc87-6592-41c5-a29e-377a9fa2c65b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11080,11 +12176,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 346.2
     }
   },
   {
-    "id": "f33a1de6-e0f2-4e0a-93e3-b368ed8c543a",
+    "id": "7300c2ac-441f-473e-a9c5-19fcafb06dfb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11100,11 +12196,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 422.40000000000003
     }
   },
   {
-    "id": "b01676ed-9fd3-4c28-a3b7-6bfda90bd57f",
+    "id": "4eeb6e4c-b966-4e7c-bc14-f6d0fac72cdf",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11120,11 +12216,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1.8
     }
   },
   {
-    "id": "53443b33-d434-4abb-a12a-85f4a2685e08",
+    "id": "6af7e823-02b4-49c5-82b5-e9efb9789d43",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11140,11 +12236,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 476.24
     }
   },
   {
-    "id": "e61f8827-ef3d-4529-8a11-f9c7dc035b94",
+    "id": "abee591b-2050-427d-ac55-4d12a52fe041",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11160,11 +12256,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 960
     }
   },
   {
-    "id": "653d7d17-4817-4788-b474-d0c1a7c441d6",
+    "id": "9e4e8c0b-18c1-436a-b92c-844275df2a42",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11180,11 +12276,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 82.46
     }
   },
   {
-    "id": "9aad1f13-3877-4370-8ca2-0581bd6c0bb9",
+    "id": "54b07015-74ad-4513-bf0f-0467f8282ebc",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11200,11 +12296,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1075.1999999999998
     }
   },
   {
-    "id": "fe7b8c28-6c1e-4e69-8f08-ca3278351783",
+    "id": "1123a21d-75b8-47ad-aca3-64294b41cf71",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11220,11 +12316,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1344
     }
   },
   {
-    "id": "784608ff-eb39-48a6-bf0f-dcbbc205ed37",
+    "id": "f1ed37b5-a18f-4793-ac97-23b0f8fef056",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11240,11 +12336,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1344
     }
   },
   {
-    "id": "2ee50901-68e2-43e7-95c8-a22d6f6aff44",
+    "id": "08e30c43-6ddb-458b-9bdc-f85bbb82bfe8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11260,11 +12356,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1612.8
     }
   },
   {
-    "id": "bfa7e643-3a4b-4d81-83a6-dbe6f92cd9ff",
+    "id": "fc7d3d4e-1354-4e8c-a069-8a31b5d31448",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11280,11 +12376,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1612.8
     }
   },
   {
-    "id": "bb420d9d-a6bd-4367-a7c4-32b7be104397",
+    "id": "ac4c5831-3999-4269-982c-4c3a15001a75",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11300,11 +12396,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 2265.6
     }
   },
   {
-    "id": "0ea37253-12ca-4e4a-93b6-f4d1e999e8d1",
+    "id": "21b4865b-5fba-4443-847d-b63409d1f0f5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11320,11 +12416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 10.5
     }
   },
   {
-    "id": "b034ad30-49c2-4511-acf0-37ec3d164a58",
+    "id": "56cdc69f-ca20-4c44-8a9f-6365589f3138",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11340,11 +12436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 302.87
     }
   },
   {
-    "id": "5abb49d0-7f4d-4b6d-bc39-b1d0b5256156",
+    "id": "eb1012b7-634c-4861-a76b-fa0876e86093",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11360,11 +12456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 17.42
     }
   },
   {
-    "id": "8e14838d-0237-4c4e-b038-52c447235f30",
+    "id": "7a112cef-a887-46a6-bf61-393265b1fd5d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11380,11 +12476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 19.42
     }
   },
   {
-    "id": "9ed3b45b-4b4e-4686-b5bc-fcfd7036aa5d",
+    "id": "59c7b543-ed0e-480d-a76a-c82ddce074c8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11400,11 +12496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 21
     }
   },
   {
-    "id": "bd2acb36-87e7-428e-8f47-82e8be131e55",
+    "id": "d72e6683-cd5f-4877-91fa-0c7ddb15030d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11420,11 +12516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 596.45
     }
   },
   {
-    "id": "7ed41111-7b80-4ffd-b246-28b0c36526f6",
+    "id": "ca512e7a-d534-4ab0-867f-b8a37f156a6d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11440,11 +12536,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 32.73
     }
   },
   {
-    "id": "bf0ec588-1bd5-4751-9c35-dd4b589cf033",
+    "id": "ef85ee88-274c-481d-aace-39e6a2564229",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11460,11 +12556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 44.3
     }
   },
   {
-    "id": "c3b9c133-7f17-4729-a820-a86b887602ca",
+    "id": "9c90e152-0d0d-4485-baa3-ef502fbbef01",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11480,11 +12576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 926
     }
   },
   {
-    "id": "960865f4-52d8-43dc-9ade-aea521a4ae00",
+    "id": "34f85872-aff0-4aa5-8e7f-38a34f425e53",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11500,11 +12596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 54
     }
   },
   {
-    "id": "e6e5342b-b826-407d-a9d8-19725a6bf097",
+    "id": "4f336372-c24f-4635-a4ea-036dc72d798c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11520,11 +12616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 58.65
     }
   },
   {
-    "id": "f4049716-444a-448c-b406-ffcfb85a078f",
+    "id": "a5fb8250-9d18-4d9c-9045-80426bda40fa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11540,11 +12636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 60
     }
   },
   {
-    "id": "f1bd4274-6988-498e-a12c-5f0d3ae97bb6",
+    "id": "928987cf-5917-44a9-95a5-0b6d10756d5e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11560,11 +12656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 83.25
     }
   },
   {
-    "id": "61bdb7ce-6b6f-4f13-bf86-87d915d679ec",
+    "id": "3febad67-e547-47ea-9289-e72e15bb9d01",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11580,11 +12676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 499.21000000000004
     }
   },
   {
-    "id": "9478e50e-e962-4fef-90c9-1c6287f41c7e",
+    "id": "69654d7a-34ca-495a-9dea-52d3343af483",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11600,11 +12696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 142.2
     }
   },
   {
-    "id": "8546b106-be20-49f6-9acc-4f0a95d26ed5",
+    "id": "d6062cbe-54b1-4bc7-bafe-4f83085ab2b3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11620,11 +12716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 160
     }
   },
   {
-    "id": "01e35c44-6031-4dee-8206-b99b4418821f",
+    "id": "9b2ef581-b414-4988-b336-5065be1e6f1b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11640,11 +12736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 180
     }
   },
   {
-    "id": "3fcbdb80-e26f-46de-97ad-f5e84ff1343e",
+    "id": "5df81713-0dc2-409b-be1c-056a26ba99ca",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11660,11 +12756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 182.91
     }
   },
   {
-    "id": "ccf652a2-e673-4487-86b4-646489c69e3f",
+    "id": "c6661263-63da-4619-b828-c89a1ffd0c90",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11680,11 +12776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "5278f32c-a98e-4ab4-b59c-bc91c081c456",
+    "id": "4802aa22-932a-4fed-8a53-e2335c18392f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11700,11 +12796,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12.76
     }
   },
   {
-    "id": "b32a2e8a-4dec-480f-bcaa-633399f80e2c",
+    "id": "fd6ce26f-f80d-456f-9318-5a20ce9c2eb2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11720,11 +12816,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15
     }
   },
   {
-    "id": "7d35e241-1cec-471d-b6a8-fb64789b1d57",
+    "id": "d122034a-9762-4067-9728-2942cb799bdf",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11740,11 +12836,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15.51
     }
   },
   {
-    "id": "a0d6bfa5-b35d-43a3-a7f7-ce7b20220138",
+    "id": "71b4ddf4-1c68-4db2-b94b-0d14aa5d6384",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11760,31 +12856,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 43.75
     }
   },
   {
-    "id": "4720f52c-201e-44b2-9e37-953a55d343a6",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "SABAO EM PO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "8bbedd2f-31e3-4c19-8ac1-a09a9e791b8f",
+    "id": "3f2312cf-eda4-4a3b-b5b4-bd0e153a2122",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11800,31 +12876,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 17.92
     }
   },
   {
-    "id": "a9dd640e-3aa3-4623-968d-542ef10f786b",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "CADEADO HASTE CURTA 35 MM PAPAIZ",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "1368770b-3ebf-451e-ad09-dc0f460841e9",
+    "id": "086916c2-d5ab-4169-b48c-c881dbe6e7c2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11840,11 +12896,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 21.48
     }
   },
   {
-    "id": "02bbc095-f86b-4937-8bee-5660a93e55af",
+    "id": "57c5357b-e332-40f8-aa78-785c8d6a54b8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11860,11 +12916,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 22.05
     }
   },
   {
-    "id": "e70248dd-7d31-4a95-a475-5d0e9eced4a6",
+    "id": "fcc4cb73-d72f-498d-bbf0-bd704eac0fc3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11880,11 +12936,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 23.4
     }
   },
   {
-    "id": "e8057489-d51b-46e3-91f6-0ae187c3ec06",
+    "id": "a5cd43fe-d3a6-40ea-9272-060a9d4cabd8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11900,31 +12956,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 23.94
     }
   },
   {
-    "id": "e6ff95da-c488-4110-a5f7-6555a8e8514d",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "PASTA DESENGRAXANTE TO BLACK 2KG",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "8a97b983-9ad1-4571-b08d-49a49fc47abc",
+    "id": "2036bb23-bdf9-4289-b4db-c280916bfdd7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11940,31 +12976,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.43
     }
   },
   {
-    "id": "817df329-7f6c-4387-8f92-9c90c4194bad",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "PILHA AA DURACELL",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "799dfd5e-410a-499c-a92a-ec308a9a4ede",
+    "id": "427e92d4-368f-4112-b9ea-049fae2ee408",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11980,11 +12996,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45.54
     }
   },
   {
-    "id": "2c0ee0ce-36de-463b-a8d5-95792cc3d1e8",
+    "id": "db6b1d1c-6a28-4378-9aa4-c3fd77cba74a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12000,11 +13016,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 48.97
     }
   },
   {
-    "id": "6fbe3f44-a510-46b1-891f-a7fce2a2f8fa",
+    "id": "7c6042d3-88fc-4e1f-944e-c3ae4db6f804",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JARRA MEDIDORA 5L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 163.36
+    }
+  },
+  {
+    "id": "81965084-f189-4225-9222-637d27c96999",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12020,31 +13056,351 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 105.65
     }
   },
   {
-    "id": "32331ae6-9e34-43de-8ae6-e99369c11cb5",
-    "codigo": "4.1.01.04.0005",
-    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "id": "64028b2f-1475-498d-b4c5-a026ca5da70e",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
     "codigoPai": "4.1.01.04",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "ALICATE ALLFLEX PARA BRINCO",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 106.33
     }
   },
   {
-    "id": "c367a249-f71e-435b-9f84-0c68304f4f87",
+    "id": "0a270f28-b2d5-4ed9-8dd6-c8a12dc80c3e",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LONA PLASTICA 8 X 50 160 MICRAS POLICILO BRANCA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2151.6
+    }
+  },
+  {
+    "id": "2a14ca4e-76f4-4507-8f38-5c03573dabd8",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTICADOR PARA CORDOALHA 1/2X50CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 744
+    }
+  },
+  {
+    "id": "7861a719-81e6-4420-bb91-85f3a19cb1f1",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LAMINA SEGUETA STARRET 14796",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 38.39
+    }
+  },
+  {
+    "id": "4d29542f-1fb2-403a-9e6b-aecd168bd64d",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMA CHATA MURCA 8 SEM CABO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 139.45999999999998
+    }
+  },
+  {
+    "id": "a9db9928-bcd1-4c36-adc8-0ff8164e4747",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "EXTRATOR BRINCO FORMATO GANCHO ALLFLEX",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 122.25
+    }
+  },
+  {
+    "id": "62f129d8-4051-4386-90a9-e744d45b5cd9",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SOQUETE 24 ST13315SC",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.83
+    }
+  },
+  {
+    "id": "981dd955-aea4-4bb9-a41a-e2dfe64328fe",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACO AMERICANO ESPECIAL 15M CORDAVILLE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 190.25
+    }
+  },
+  {
+    "id": "eb4922af-50e6-4d11-9ff5-5d41b64d9ab6",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "APLICADOR CIDR BOVINO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34.27
+    }
+  },
+  {
+    "id": "07e6aba4-ebd1-4fe2-82bd-6aa3c82f4c8a",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GARFO GAIOLA PARA ROLO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20
+    }
+  },
+  {
+    "id": "45c39931-683b-42a4-a2cf-52036c44b9ca",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLO DE PINTURA N.23 OU 23CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 56
+    }
+  },
+  {
+    "id": "981066ba-3c43-4b2f-be7d-3af129fc77b7",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABRE MOTOSERRA 66 STHIL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 389.55
+    }
+  },
+  {
+    "id": "16538d0a-d88a-42dc-be4a-f50230c67259",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BOBS ZINCADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 90
+    }
+  },
+  {
+    "id": "6b73b1ff-2ff1-4f11-b729-509ff1766714",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORDAO DE ARRANQUE 2,7X1010MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 317.8
+    }
+  },
+  {
+    "id": "af07ceec-b2bb-416d-8548-e8e6eef1a566",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LONA PLASTICA 8 X 50 200 MICRAS DUPLA FACE POLICILO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 310
+    }
+  },
+  {
+    "id": "b6581295-ddae-47e9-8fa0-b4dd8e165f6e",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TRINCHA 2 1/2",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60
+    }
+  },
+  {
+    "id": "3ab65cf9-5334-414d-a9d9-ee0487ce9406",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LONA PLASTICA 8 X 50 200 MICRAS DUPLA FACE POLICILO",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 775
+    }
+  },
+  {
+    "id": "00646852-af93-4e80-a139-bfb6b520f544",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12060,11 +13416,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "e7cef0a0-e135-4766-85c5-32c24bc3a07b",
+    "id": "113b8ef0-e0ca-47ff-88ad-3ed38dfb8e8c",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12080,11 +13436,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8
     }
   },
   {
-    "id": "cfb64d8c-912a-4a61-9b3f-ed3253e9264d",
+    "id": "0d135f83-c3cb-478c-9f64-4764a940fe38",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12100,11 +13456,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5
     }
   },
   {
-    "id": "f64213a1-3881-46a6-8f26-aaab3dddc03b",
+    "id": "ebc9a0ce-10bc-4734-a2e8-4e118270f5ec",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12120,11 +13476,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 15
     }
   },
   {
-    "id": "0b392b15-968e-4ecd-9849-b15ce48e1fab",
+    "id": "f3a76087-7e15-43ac-9b47-45aea6d4f930",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12140,11 +13496,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 150
     }
   },
   {
-    "id": "ee16f3cb-20de-4c03-acf5-b0d8faf0f8ee",
+    "id": "c0c7fa61-0a23-4e95-ad9e-cc954253f3be",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12160,11 +13516,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 19.14
     }
   },
   {
-    "id": "265b3afb-5ff4-411b-8cb1-7ccfe33b4ef2",
+    "id": "f52a21d6-9403-4dbb-90c2-438a412d45aa",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12184,7 +13540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ec35eba-4148-4a4a-ad36-149b3d1d5d2f",
+    "id": "474b9555-7e37-4ecb-90d5-113795e576ab",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12200,11 +13556,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1800
     }
   },
   {
-    "id": "8dce9a0c-40e5-42eb-a440-5400f3b945b9",
+    "id": "4cb9accf-0313-4a15-8b09-45b4d8aac84a",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12220,51 +13576,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 349.75
     }
   },
   {
-    "id": "45e3a95f-7301-4f4c-8f74-4379192b5864",
-    "codigo": "4.1.01.04.0006",
-    "descricao": "FERRAMENTAS DE TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "TRINCHA 2 1/2",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "53043f62-a911-44fa-8546-1fb4ce61cfad",
-    "codigo": "4.1.01.04.0006",
-    "descricao": "FERRAMENTAS DE TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LIMA CHATA MURCA 8 SEM CABO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 40
-    }
-  },
-  {
-    "id": "76e57fff-a81b-4dff-bea7-44ce3d2fc256",
+    "id": "d40772a9-ccb0-4e3d-bfec-2ffe29e26197",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12280,11 +13596,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 38.56
     }
   },
   {
-    "id": "974874c1-c6c9-4ae3-b6a9-127930468441",
+    "id": "7983e5d7-e56e-4345-9a1f-5f68b88ae1f0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12300,11 +13616,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 79.72
     }
   },
   {
-    "id": "f8bfbae8-9551-4872-867d-b2164ffd1e1b",
+    "id": "35a6bfb0-b66f-489f-ac52-da7936402914",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12320,11 +13636,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 24.54
     }
   },
   {
-    "id": "92a9230d-1605-4bc3-a2bc-36f6d75db52d",
+    "id": "851b53fb-de53-475a-b130-d5231378c0f2",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12340,11 +13656,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 111.6
     }
   },
   {
-    "id": "949c3d94-f93b-4935-9079-3ad06ac8b893",
+    "id": "a7207244-55c1-4c43-82b4-6b301b23d0e8",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12360,11 +13676,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 13.69
     }
   },
   {
-    "id": "bf3c57d7-d5a2-4201-a17a-d2db3f902a6c",
+    "id": "517419e2-457d-4530-8c02-da448fa62621",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12380,11 +13696,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 69
     }
   },
   {
-    "id": "77dfcec0-3178-4351-8a03-d7086701a88a",
+    "id": "6d4621d4-d5e0-4d4b-b722-9c9a3a8ae4ba",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12400,11 +13716,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 47.82
     }
   },
   {
-    "id": "092e0b52-93ce-4a11-a6e6-88b1fafda5d7",
+    "id": "243f9bd0-e6a9-42b2-bc34-ca478c89fed6",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12420,31 +13736,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 61.8
     }
   },
   {
-    "id": "6189aca9-610c-4406-9b50-40caed9755e3",
-    "codigo": "4.1.01.04.0006",
-    "descricao": "FERRAMENTAS DE TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.04",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
-    "nomeProduto": "LAMINA SEGUETA STARRET 14796",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c929e129-840f-4ae5-a4c4-efb0736c09fb",
+    "id": "5652d093-8841-4b20-911a-214f4a0fd135",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12460,11 +13756,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 79.9
     }
   },
   {
-    "id": "51dd322f-2a3c-4da6-9f8e-2ba2ff990b0b",
+    "id": "9a07108f-3a9d-4971-a217-6a9cc56d228a",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -12480,22 +13776,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 297
     }
   },
   {
-    "id": "da1def97-8a7e-4772-a557-cdbbeee1b86c",
-    "codigo": "4.1.01.05",
-    "descricao": "4.1.01.05",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "c84812cc-942d-4965-ac30-072d1fc4606a",
+    "id": "33ea31fe-c8c6-4c6a-9186-0a0313f1e38a",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -12506,7 +13791,58 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5e70a8fb-6045-4d73-ba7f-fcb8c1432aee",
+    "id": "ed56581f-6947-46c0-b034-a2adfb7c367c",
+    "codigo": "4.1.01.05",
+    "descricao": "4.1.01.05",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "13a9b1b7-4a7a-4f8a-b1eb-6601e06ac6b3",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "GOTEJO - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 177917.15999999983
+    }
+  },
+  {
+    "id": "b6e0b6f0-a363-4621-a191-10552dec39cc",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 56647.91
+    }
+  },
+  {
+    "id": "37b7623c-a875-4c94-ac44-e59dbdeb37eb",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -12522,11 +13858,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10830
+      "2026-02": 288807.30999999936
     }
   },
   {
-    "id": "6183e972-c6b5-423e-b1df-de27b1a756f3",
+    "id": "ae91edbd-10fd-46fa-9633-3d797e52d62f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -12542,51 +13878,22 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 751.56
     }
   },
   {
-    "id": "45a922ef-c8c4-44d2-9295-4cc6a01c7dff",
-    "codigo": "4.1.01.05.0001",
-    "descricao": "DEPRECIACOES",
+    "id": "16dbd774-9a73-4a63-ac00-f0c324612a4a",
+    "codigo": "4.1.01.06",
+    "descricao": "4.1.01.06",
     "tipo": "C",
-    "codigoPai": "4.1.01.05",
-    "nivel": 5,
+    "codigoPai": "4.1.01",
+    "nivel": 4,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
-    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
-    "divisao": "PECUÁRIA",
     "orcado": {},
-    "realizado": {
-      "2026-02": 15880
-    }
+    "realizado": {}
   },
   {
-    "id": "e39aa754-eab4-48ec-84be-dcff8769fa66",
-    "codigo": "4.1.01.05.0001",
-    "descricao": "DEPRECIACOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.05",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "64e6b46c-e119-4344-bcb5-04838ffc09fc",
+    "id": "84501552-1d76-4d47-8730-f6b4cf68c051",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -12597,18 +13904,38 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a6f7a86f-7cc6-4598-a2b3-ac71358d8db2",
+    "id": "6794537f-9791-407d-8092-40e02c97aa66",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
     "codigoPai": "4.1.01",
     "nivel": 4,
-    "atividade": "PECUARIA",
+    "atividade": "AGRICOLA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "8f64966e-21a2-4d02-8049-892804c54bad",
+    "id": "0b6de118-4cd7-4024-86f3-1c093095fcd7",
+    "codigo": "4.1.01.06.0002",
+    "descricao": "REFEICOES E ESTADIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "DESPESAS COM HOSPEDAGEM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5235
+    }
+  },
+  {
+    "id": "96160676-960e-4ce1-81eb-5c73869b4bac",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -12624,31 +13951,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 1183
     }
   },
   {
-    "id": "4e69a0b9-2e8d-4c82-8ca7-d80654f0a775",
+    "id": "60354ed5-65fc-47e3-b44a-ae6b955688ec",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
     "codigoPai": "4.1.01.06",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "DESPESAS COM HOSPEDAGEM",
-    "divisao": "PECUÁRIA",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 275
     }
   },
   {
-    "id": "44f08d9b-1797-421a-b723-5e0cfb252b5a",
+    "id": "4696227d-2d2d-4ddc-a499-f88e2135ec63",
     "codigo": "4.1.01.06.0003",
     "descricao": "QUILOMETRAGENS",
     "tipo": "C",
@@ -12664,11 +13991,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2340.78
     }
   },
   {
-    "id": "c898c588-2d19-413c-ab7e-b15ea42813e9",
+    "id": "4630b13c-d7d2-4776-963c-454a8dbd950d",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -12684,11 +14011,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 2262.7
     }
   },
   {
-    "id": "3924ef9e-8a0c-4e24-a282-766891982ba1",
+    "id": "1676f029-47c7-49f1-b1ac-27b97b0d0db1",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -12704,11 +14031,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 240
     }
   },
   {
-    "id": "b1a9f84f-c447-405f-be0a-a4c08d3c59ce",
+    "id": "c144c7b6-0b0f-4276-9eae-9e169c37e07e",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -12724,22 +14051,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 2670
     }
   },
   {
-    "id": "329b798a-e0e5-4762-bc05-97d1c947b83d",
-    "codigo": "4.1.01.07",
-    "descricao": "4.1.01.07",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "67577cfb-6616-4739-85cb-7d08b5cadcad",
+    "id": "2d7eb7a6-f5fa-4044-a902-86195b541f02",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -12750,7 +14066,38 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5d55ed2a-6079-4610-a8c7-cbefece56123",
+    "id": "58cf15aa-7f5f-4d5d-811e-e37cca16ffa9",
+    "codigo": "4.1.01.07",
+    "descricao": "4.1.01.07",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "84f79bfc-835b-4d20-a181-13bf23f3209e",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30303.879999999994
+    }
+  },
+  {
+    "id": "587eb6ff-7799-4b98-bf9e-28fa576c516b",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -12766,31 +14113,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 5806.65
     }
   },
   {
-    "id": "c42f4faa-949d-498f-868a-462a5ce2d659",
-    "codigo": "4.1.01.07.0001",
-    "descricao": "ENERGIA ELETRICA",
-    "tipo": "C",
-    "codigoPai": "4.1.01.07",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
-    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 50
-    }
-  },
-  {
-    "id": "cd02fcb3-e23b-491e-892f-eb32535db286",
+    "id": "988f6bbb-5e7d-4d68-bc75-6939d7bb4d5b",
     "codigo": "4.1.01.07.0003",
     "descricao": "CORREIOS",
     "tipo": "C",
@@ -12806,11 +14133,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 361.18
     }
   },
   {
-    "id": "de7fcfac-7ac7-4fbf-929c-5650aaa3cb79",
+    "id": "25e3d6a6-3326-42bb-87b1-eadc3e115b01",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -12821,18 +14148,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a9f77a18-279d-4f38-bc37-815b1d914cd2",
-    "codigo": "4.1.01.11",
-    "descricao": "4.1.01.11",
-    "tipo": "C",
-    "codigoPai": "4.1.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "86699c91-a7c6-48e0-87e4-5c73672a7589",
+    "id": "82540103-af9d-43da-a5b1-f09850c02e10",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -12843,15 +14159,206 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "953b532e-ed46-4c8f-8b81-aee2fb076821",
+    "id": "9da89d7f-6dff-4b76-b221-af5e82b5ca2f",
+    "codigo": "4.1.01.11",
+    "descricao": "4.1.01.11",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "b77c30af-ad26-40b9-9821-ef2b285bfd6b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "UREIA SUPER N PRO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 74955.75
+    }
+  },
+  {
+    "id": "bef646bb-d303-4e79-baa2-d2e0cf54be6a",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "RACAO EQUINOS TROPA 13 - REG. 06267 00003 010713",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1781.2699999999998
+    }
+  },
+  {
+    "id": "c6089ca6-43aa-41ab-8e38-80b72ccca2fd",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MIN. MULTIPLAN BEZERRAO 30KG REG. 06267 00048",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 205537.82000000004
+    }
+  },
+  {
+    "id": "e2e3b9a7-6001-4198-99c3-aa7ae1c86b1b",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MIN MULTIPLAN LAC -30KG REG.06267 00054 820",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 73909.90000000002
+    }
+  },
+  {
+    "id": "64a1de89-48fe-4cb8-af94-32fabc201da8",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "RACAO MINERAL PROTEICO ENGORDA 1125",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 153261.02
+    }
+  },
+  {
+    "id": "65ff12b0-d962-49a1-af9d-b30ac06f8e77",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MINERAL MULTIPLAN LAC 920",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19806.57
+    }
+  },
+  {
+    "id": "f1a70a0a-a901-4a81-ad9f-88b7e4cd8901",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MINERAL P-80 REG. 06267 00035 030580",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 35319.9
+    }
+  },
+  {
+    "id": "f630915d-0175-4a04-b1d2-17da5fe7e43f",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MINERAL MULTIPLAN AGUAAS MA 30KG REG. 00050",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 33290.6
+    }
+  },
+  {
+    "id": "7c2eecb2-841b-48cf-9c11-c6630c518984",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SUPLEMENTO MIN MULTIPLAN BEZERRAO-S 30KG REG. 06267 00049",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 691.55
+    }
+  },
+  {
+    "id": "bda516f3-7fa7-442b-8f85-de2e9a8d1fef",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
@@ -12859,11 +14366,111 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 11139.15
     }
   },
   {
-    "id": "646e9894-f558-424b-8a1b-fa9cbf172018",
+    "id": "4470b6f3-509e-47c9-b877-32a34ddba1d6",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FARELO DE ARROZ",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41709.01
+    }
+  },
+  {
+    "id": "926f46a1-eb8d-4e8a-bd40-2d3739d24996",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TORTA DE ALGODAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 48327.49
+    }
+  },
+  {
+    "id": "ff77e876-507f-4512-b122-1ee740f322e5",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "GERMEM DE MILHO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54755.19
+    }
+  },
+  {
+    "id": "edfc998a-ff1d-42a4-8805-4c35fa3d0450",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "CONCENTRADO CRESCIMENTO 9/18",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 40987.27
+    }
+  },
+  {
+    "id": "3d756006-2e51-4eaa-ab35-e28f5c5fbbfa",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SULFATO DE MAGNESIO",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 748.8
+    }
+  },
+  {
+    "id": "92bf94e1-d9c2-46c3-b6f7-f75fb7602d57",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -12879,71 +14486,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7765.8
     }
   },
   {
-    "id": "06cb895f-b0a4-44d5-a570-52d5fd7d8705",
-    "codigo": "4.1.01.11.0001",
-    "descricao": "ALIMENTACAO ANIMAL",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FARELO DE ARROZ",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "afc95cb4-71d6-48bc-a6d6-d7088f3d05c1",
-    "codigo": "4.1.01.11.0001",
-    "descricao": "ALIMENTACAO ANIMAL",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "TORTA DE ALGODAO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "8b0d7e81-1b69-4757-986c-c540b5c3a813",
-    "codigo": "4.1.01.11.0001",
-    "descricao": "ALIMENTACAO ANIMAL",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "GERMEM DE MILHO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "8bdebb6f-a7f0-449f-a124-fecdcd01dc30",
+    "id": "fc7a8dbc-9c1c-4581-8c3a-9c173aeaf89d",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -12959,11 +14506,91 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1071421.98
     }
   },
   {
-    "id": "d86339e9-a37c-4967-82ac-5db80e044e8c",
+    "id": "7de55114-ae71-49e9-90ef-65e33d070ae5",
+    "codigo": "4.1.01.11.0002",
+    "descricao": "VACINAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VACINA BOVI-SHIELD GOLD",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 53381
+    }
+  },
+  {
+    "id": "aedbf6d5-51ec-4bbb-9b40-a456d3efed41",
+    "codigo": "4.1.01.11.0002",
+    "descricao": "VACINAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VACINA BRUCELOSE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 434
+    }
+  },
+  {
+    "id": "3039fa22-d35d-48b0-8cd1-429caf46d1f3",
+    "codigo": "4.1.01.11.0002",
+    "descricao": "VACINAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VACINA CATTLE MASTER GOLD",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1396.5
+    }
+  },
+  {
+    "id": "5b4871f8-9e9d-4614-a4d1-9511d72fcb4f",
+    "codigo": "4.1.01.11.0002",
+    "descricao": "VACINAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VACINA STARVAC 12",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9443
+    }
+  },
+  {
+    "id": "5dc6bef4-477b-4577-9045-d9bc3b7a0218",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -12979,51 +14606,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 123
     }
   },
   {
-    "id": "f458ed5a-0e3c-4a02-80b2-25b4b7c40c09",
-    "codigo": "4.1.01.11.0002",
-    "descricao": "VACINAS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "VACINA STARVAC 12",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "9912016d-51c7-4580-bf81-55c48564b102",
-    "codigo": "4.1.01.11.0002",
-    "descricao": "VACINAS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "VACINA BOVI-SHIELD GOLD",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "57ba3af0-41f0-4a00-b7f8-5bb9a5d70596",
+    "id": "5848e501-fa4c-4cc8-82ae-e251070497f3",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -13039,11 +14626,871 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 279
     }
   },
   {
-    "id": "8a3e97a9-bef4-48cc-8025-4498bc94f039",
+    "id": "831f0e7a-646a-4282-a9e8-3cf3b707da12",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "MATABICHEIRA CYDENTAL 250ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1227.3799999999999
+    }
+  },
+  {
+    "id": "6b7af2b8-c290-4575-88fb-42c8d761ff9d",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TANICID  200G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44.28
+    }
+  },
+  {
+    "id": "549fb589-13f5-4a23-ac66-78e27595f1f1",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TOP LINE POUR-ON",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13573.949999999999
+    }
+  },
+  {
+    "id": "745e87ef-49e3-4367-bbf2-d0c219d10601",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "AGULHA METAL 25 X 15MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 38.400000000000006
+    }
+  },
+  {
+    "id": "983c0d15-24ca-48dc-b03a-6b72c23ed932",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "AGULHA METAL 15 X 18MM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 460.64000000000004
+    }
+  },
+  {
+    "id": "1a7098fc-d0a2-418e-a663-56283d1b02dc",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "AMINOFORT 250ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 315.41
+    }
+  },
+  {
+    "id": "f9cf3f75-b9e2-471b-bd82-5745349bd3d7",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "AGULHA DESCARTAVEL 40 X 12MM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39.5
+    }
+  },
+  {
+    "id": "3f00fa16-6f18-45e9-af17-d941c0a5a87a",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "CICLASE 50ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3174.13
+    }
+  },
+  {
+    "id": "c235564a-62c0-415d-a243-3420d6c343d8",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BORGAL 50 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 270.9
+    }
+  },
+  {
+    "id": "1f3acf98-5023-4130-9dff-c7711b96a19b",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "LARCIVIDA REPELENTE DE ALTA ADERENCIA BACTROVET 500ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 928.57
+    }
+  },
+  {
+    "id": "09a1f25b-61eb-4a60-9042-744735ceb7ac",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "CYDECTIM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12113.16
+    }
+  },
+  {
+    "id": "ebf1e497-1240-494e-9189-b41bc18a5ee1",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "NOVORMON 20.000 UI 100 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 48587.63
+    }
+  },
+  {
+    "id": "5151656e-992f-4053-8d3f-070227894112",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TERRACOTRIL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1141.8200000000002
+    }
+  },
+  {
+    "id": "9c318943-3969-4c9b-805a-61af1a24b7c7",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "RIPERCOL L 150F INJETAVEL 250 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2406.3800000000006
+    }
+  },
+  {
+    "id": "8383165f-e680-460e-9449-a3f0ce8c167c",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TIGUVON POURON 1000ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 140.66
+    }
+  },
+  {
+    "id": "eed5e44e-a1f7-4850-9b7e-9124b7a2c43c",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "DECTOMAX 500 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5313.71
+    }
+  },
+  {
+    "id": "62f0df5d-4f74-4d1a-a3aa-beb8b523d376",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "PARTOMICINA 20 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39.86
+    }
+  },
+  {
+    "id": "7a6d58c8-829e-4296-9f88-6d73ad25f07f",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "TERRAMICINA MAIS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 399.2
+    }
+  },
+  {
+    "id": "c9e3c012-9818-4f48-a809-d4d464c6b7a0",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "KINETOMAX 100 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96.77
+    }
+  },
+  {
+    "id": "d4cd6e8c-8cd3-4402-8c12-cb605aae892d",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BRINCO DE ANIMAIS PARA NASCIMENTO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 221.76
+    }
+  },
+  {
+    "id": "1b48813d-b602-4f35-97c7-b1b5d36d75ac",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SERINGA DESCARTAVEL 10 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.15
+    }
+  },
+  {
+    "id": "c926a0b9-9273-4222-a7ff-f1b1b9be7017",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "PINCA ANATOMICA DE DISSECCAO EM ACO INOX 18CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23.59
+    }
+  },
+  {
+    "id": "27a93b5f-7976-4098-b83a-310f0e4048b7",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SERINGA DESCARTAVEL 20 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.459999999999999
+    }
+  },
+  {
+    "id": "61b4a780-98f9-46bd-b376-bf1323f7daf8",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SERINGA DESCARTAVEL 3 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.58
+    }
+  },
+  {
+    "id": "523d08b3-716d-44c2-a665-b1a34083f23f",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "DRAXXIN KP 50 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1419.87
+    }
+  },
+  {
+    "id": "4e4077d0-9002-4e37-b617-ed71adb95a4b",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "DECTOMAX 50 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 370.89
+    }
+  },
+  {
+    "id": "f1ee4455-abef-45a5-8aa2-f48e1db2d68a",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SOLUTION LA 3,5%",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 670.54
+    }
+  },
+  {
+    "id": "e1fdef47-aa0d-42ae-b0d9-583ab97c868a",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "PENCIVET PPU 50ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 106.2
+    }
+  },
+  {
+    "id": "190dde0b-44f0-4421-9983-accd060a8b08",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ISACORT 10 ML ( CORTVET)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 141.44
+    }
+  },
+  {
+    "id": "ca3b895b-139f-459a-99a8-906d93c0c43c",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BANAMINE INJ. 50ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2175.85
+    }
+  },
+  {
+    "id": "be458fd1-d535-4cc9-9a7c-2323ee650092",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "DRAXXIM 100 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2081.8500000000004
+    }
+  },
+  {
+    "id": "150c9d18-7aa7-4b41-801a-2648ff38bf93",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BRINCO DE ANIMAIS PARA COMPRA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6741
+    }
+  },
+  {
+    "id": "12341f4d-a784-4850-ab6a-cabc63eaffb9",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BRINCO FRIPOTAG 210",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9168
+    }
+  },
+  {
+    "id": "2356df55-9ed1-45b1-9be2-000b6c67ba17",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HEPATOXAN 100 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 43.84
+    }
+  },
+  {
+    "id": "b8ddb666-0fd5-49be-b8c7-b281846ce294",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VIDRO PARA SERINGA HOPNER 50ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 46.92
+    }
+  },
+  {
+    "id": "c7e8cab9-7de3-4f8d-a487-9b81654eb859",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "GONADIOL 100ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 625.78
+    }
+  },
+  {
+    "id": "5bad8f24-8e8f-4a90-9472-6240c43d1c72",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BANAMINE INJ. 100ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 539.0699999999999
+    }
+  },
+  {
+    "id": "c4c3c9aa-6558-4852-97b6-7cb29efdd5cc",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ECP 10 ML",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1262.21
+    }
+  },
+  {
+    "id": "710a61bc-e004-4a12-99d1-0b6251869367",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "VERRUTRAT 20 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.62
+    }
+  },
+  {
+    "id": "3ba538be-a254-4a9c-9692-bb52381466f8",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "LUVA PARA PROCEDIMENTO CIRURGICO TAMANHO (M)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "58741fc9-8b5d-45df-a278-4fc78dc9aa35",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "IMIZOL 15 ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.56
+    }
+  },
+  {
+    "id": "f616b18d-68c7-4859-a0c3-025d4104f938",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "CICLASE 100ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1501.92
+    }
+  },
+  {
+    "id": "1513b5b3-b190-4d6a-9400-5dc6485a5cbd",
+    "codigo": "4.1.01.11.0003",
+    "descricao": "MEDICAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BRINCO PARA IDENTIFICACAO ANIMAL",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 82
+    }
+  },
+  {
+    "id": "0f3c5aec-2223-4332-8eee-47cce7323000",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13059,31 +15506,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 40.08
     }
   },
   {
-    "id": "6a6879b0-4258-4d77-a597-69f1f655deb6",
-    "codigo": "4.1.01.11.0003",
-    "descricao": "MEDICAMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "PENCIVET PPU 50ML",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "d1b307b6-3ba1-4365-ad7d-d91c6f7668e8",
+    "id": "afc3a26a-5f50-47b9-8a27-e17d0fe9dfac",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13099,91 +15526,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 13716
     }
   },
   {
-    "id": "3c5cd9b0-5009-44cc-adfe-bfc49c60edeb",
-    "codigo": "4.1.01.11.0003",
-    "descricao": "MEDICAMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "TERRAMICINA MAIS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "4e315e13-65ba-49fe-b5d0-b76a04973e20",
-    "codigo": "4.1.01.11.0003",
-    "descricao": "MEDICAMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "ISACORT 10 ML ( CORTVET)",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "4623e3dc-8e5a-484e-9e9c-3ae783185f1d",
-    "codigo": "4.1.01.11.0003",
-    "descricao": "MEDICAMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "BANAMINE INJ. 50ML",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "aa3aa3d7-3006-4c51-824d-62aa0aba5b17",
-    "codigo": "4.1.01.11.0003",
-    "descricao": "MEDICAMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "AGULHA METAL 15 X 18MM",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "121ddbc6-e578-43a0-b209-f5562ff2ad52",
+    "id": "578edadf-912d-4164-aa58-0d78160bf376",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13199,11 +15546,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2054.3999999999996
     }
   },
   {
-    "id": "427e5359-30a0-4f4c-aa1d-cd5d4f516088",
+    "id": "a232606e-017a-4b31-9607-0b192d5fdb27",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13219,11 +15566,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2531.88
     }
   },
   {
-    "id": "f68add78-7fe8-49df-bfee-87cf0b180e2b",
+    "id": "5268faeb-972f-4001-ae1b-afde3d011ffa",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13239,11 +15586,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 464
     }
   },
   {
-    "id": "c8fa9f33-dbf4-4100-9f58-180ab12799ef",
+    "id": "9867079a-e135-46e3-808b-ea189421fe60",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -13259,51 +15606,551 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 19
     }
   },
   {
-    "id": "7a0df282-0a23-49a4-9891-f9776e66a0f8",
+    "id": "5f44837a-75f1-4abb-a72c-ee086874d961",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "LUVA PARA INSEMINACAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 193.05
+    }
+  },
+  {
+    "id": "754f8131-df48-487d-9807-89db260333e5",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN OTIMISTA FIV KATISPERA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.8
+    }
+  },
+  {
+    "id": "029c9715-7059-4755-b576-5080e9deb9b9",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN D8 EAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 61.71
+    }
+  },
+  {
+    "id": "363dd488-cb9f-4123-a5fb-1a2e16d07e77",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN REM CH LIDER",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 148.36
+    }
+  },
+  {
+    "id": "5397ddd7-899a-4244-b728-18f9fb77c494",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN FERRARI DA EAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 277.71
+    }
+  },
+  {
+    "id": "59f26303-2f3a-4425-94a2-6c5f83ee583a",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN QUISCO DO MORRO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 478.92
+    }
+  },
+  {
+    "id": "f181587b-2c11-449f-a362-04944744d7e4",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN CODIGO FIV JMP",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 580.8
+    }
+  },
+  {
+    "id": "86491cbc-eac7-4b7f-9fbf-685b012f4788",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN EROS ANP",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 672.7
+    }
+  },
+  {
+    "id": "4eb08226-3302-4d5b-a8e9-772feba58555",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN JAMBU DA GAROUPA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 707.85
+    }
+  },
+  {
+    "id": "b6af47c0-94ff-4df1-aebd-f0439bc9511d",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN GANADEIRO EAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1198.3
+    }
+  },
+  {
+    "id": "af39a9c9-7e84-4ff1-94d2-d955fca158a2",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN JEEP GUADALUPE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1267.35
+    }
+  },
+  {
+    "id": "a833f89a-3a73-4e77-9905-5413f95be485",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN BOND CONFIANCA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1276.13
+    }
+  },
+  {
+    "id": "4dfc0ff3-e135-4197-9494-6dd1e273b0dd",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN GOVERNO DA AGRONOVA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1560.66
+    }
+  },
+  {
+    "id": "a00fadb5-5d37-4c28-bafe-6df461452c45",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN DOMINATOR",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1739.52
+    }
+  },
+  {
+    "id": "1de26617-7551-4e67-9c57-ef9c9058c4ec",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN GREGO CACHOEIRÃO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1755
+    }
+  },
+  {
+    "id": "b6ac895f-dd54-481b-a9e7-1a56b673bda6",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN ALAGOANO CATARINA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1778.56
+    }
+  },
+  {
+    "id": "d315e5fb-1aa9-4c5c-b9e1-21e5461d80ac",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN IVANOV",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2128.16
+    }
+  },
+  {
+    "id": "d9a8e63b-95fd-4898-a157-b1ac27214c2c",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN REM NORTE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2921.36
+    }
+  },
+  {
+    "id": "9509da5f-4c75-4e05-a8bd-720d20ed1138",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN DELTA DA EAO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3506.58
+    }
+  },
+  {
+    "id": "09925f08-82bd-48cf-8111-78b79431951b",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN URCO FIV DE NAV",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3947.4
+    }
+  },
+  {
+    "id": "fb097f6b-7305-4252-a622-95ebdcd88d90",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SEMEN D50 ALO BRASIL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6143.8
+    }
+  },
+  {
+    "id": "a673a9d9-78b5-41b4-a341-0fc221648764",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "BAINHA PLAST.FRANCESA PCT C/50",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 713.92
+    }
+  },
+  {
+    "id": "79986c41-75cf-4075-bc9c-22f6e69ab646",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "SINCROGEST INJETAVEL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 417
+    }
+  },
+  {
+    "id": "73480749-e158-4c6e-b629-ba414b5b5f57",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "NITROGENIO LIQUIDO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 907
+    }
+  },
+  {
+    "id": "57847c38-28ba-448c-9265-27796c3123b0",
+    "codigo": "4.1.01.11.0004",
+    "descricao": "MATERIAIS DE INSEMINACAO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "EMBRIAO FIV VITRIFICADO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 180104
+    }
+  },
+  {
+    "id": "35c4c24e-7015-4fc0-aaad-581e8b2ec490",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "BANDEIRANTES SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR N 1% + P205 30% + MG 1,5%",
-    "divisao": "SERINGAL",
+    "nomeProduto": "FERTILIZANTE (ADUBO) GRANULADO SULFATO AMONIA",
+    "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 47722.5
     }
   },
   {
-    "id": "a5e945b4-e42d-40f5-b8dc-06fbbca7a6ef",
+    "id": "575b3ea2-2a0a-4e2e-a7e0-2a99d6eb9590",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "COVOA - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FERTILIZANTE (ADUBO) FORM 20.05.20",
-    "divisao": "SERINGAL",
+    "nomeProduto": "FERTILIZANTE FOLIAR QUIMIFOL PREMIUM 20L",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3180.1
     }
   },
   {
-    "id": "6697be92-9d09-4bac-9fe8-6c36c594bc8e",
+    "id": "925836c2-7730-4aa2-9523-a8a4a1549f9e",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -13319,11 +16166,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 985.32
+      "2026-02": 10181.64
     }
   },
   {
-    "id": "30deece5-140c-49e0-b760-1117282a5511",
+    "id": "8bc28eb4-d159-4a42-a6f7-59671047c6de",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE FOLIAR QUIMIFOL PREMIUM 20L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3612.9599999999996
+    }
+  },
+  {
+    "id": "d0e18786-3163-4171-a2a9-e3a3bb27a1c3",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -13339,31 +16206,291 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 1823.8
+      "2026-02": 2321.2
     }
   },
   {
-    "id": "21dc2edc-041c-4910-a0f7-5f68e2ae88b2",
+    "id": "a357037e-32ee-4f8b-a8cd-2a675c989264",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FERTILIZANTE FOLIAR QUIMIFOL PREMIUM 20L",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR QUIMIFOL CERRADO 20L",
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 231.6
+      "2026-02": 147.9
     }
   },
   {
-    "id": "e72f7034-b087-456b-9aac-44b05e1c1c45",
+    "id": "13ab0f1e-bb1a-4fb7-8d6b-aa13360fc866",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR N 1% + P205 30% + MG 1,5%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 81.3
+    }
+  },
+  {
+    "id": "0462d34a-bd53-45ad-8c68-d24f1dae55cf",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FORM 20.05.20",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 187.98
+    }
+  },
+  {
+    "id": "36489a4f-90a5-4b20-883a-4ad855395ba1",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - GIRASSOL",
+    "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR QUIMIFOL BORO",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 387.29
+    }
+  },
+  {
+    "id": "5893891b-135a-4125-8660-5ecc429728ca",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA AMINOPIRALIDE 59,17 G/L + PICLORAN 50 G/L + FLUROXIPIR 100 G/L",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25220
+    }
+  },
+  {
+    "id": "dc1ac962-c007-4bb2-bea6-3d072b2d5a13",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA FLUROX + PICLORAN 80 + 80G/L",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 111687.20999999999
+    }
+  },
+  {
+    "id": "3387e799-1ccd-4b05-acbd-4b6d545dd92a",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1245.19
+    }
+  },
+  {
+    "id": "d9408bc7-19e0-49c6-9415-20eff81a2de4",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA ACETAMIPRIDO 250 G/KG + BIFENTRINA 250 G/KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5350
+    }
+  },
+  {
+    "id": "0a018eaa-1bae-4d59-913e-80fa9899644c",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA METARHIZIUM ANISOPLIAEO IBCB 425 300 G/KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14350
+    }
+  },
+  {
+    "id": "70d1a61b-fa97-493c-85eb-8b707fd7848d",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ADJUVANTE ESTER METILICO 720 G/L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 786.8
+    }
+  },
+  {
+    "id": "7f4902dc-9683-45b9-805c-e7e04602b157",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA 2,4D DIMETILAMINA 806 G/L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 302.4
+    }
+  },
+  {
+    "id": "7089cfa9-fa06-4332-8be1-22553a06dd55",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ADJUVANTE OLEO MINERAL 428G/L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3604.3500000000004
+    }
+  },
+  {
+    "id": "c98b6200-f7d7-42a5-bca3-21144f3d8561",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SORGO",
+    "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ADJUVANTE OLEO MINERAL 428G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2507.75
+    }
+  },
+  {
+    "id": "852a85d9-9ada-4bc6-bf39-836cc1ca40b5",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SORGO",
+    "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA METOLACLORO 960 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1650.89
+    }
+  },
+  {
+    "id": "2a61b4f7-f80b-4003-a906-4bf7f19d6e8d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13379,11 +16506,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 27667.589999999997
     }
   },
   {
-    "id": "29326594-fe73-4117-bc7b-10a40043c9ce",
+    "id": "2c39ff4e-ff1f-49a6-896f-b5e2aef92272",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13399,11 +16526,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 140
+      "2026-02": 3638.32
     }
   },
   {
-    "id": "0999f8b8-4377-43a0-9c23-f5aac868428f",
+    "id": "2d574700-888a-4b94-8da9-888d2bd23887",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13419,11 +16546,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 464.64
     }
   },
   {
-    "id": "01f2e609-1161-430c-b1df-0379bf8abac5",
+    "id": "d15651f1-4442-4c38-875e-cd02a1a6fa7a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13439,11 +16566,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3061.5
     }
   },
   {
-    "id": "313c8462-8fc0-43ec-80ce-c3a1ab0b98e6",
+    "id": "9fad56b0-fcc5-4e56-a128-f42fa19652fc",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13459,11 +16586,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 150
+      "2026-02": 24497
     }
   },
   {
-    "id": "043bc169-eac1-4445-ac61-fcf184bae681",
+    "id": "26c8a9cd-c229-4115-a045-5339e27abc4b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13479,11 +16606,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 288.23
     }
   },
   {
-    "id": "9d875839-f009-4711-bccd-0e52d7b176da",
+    "id": "8a1f2545-e053-4b14-8d2f-56119040b6ec",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13499,11 +16626,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 13287.199999999999
     }
   },
   {
-    "id": "1894e15c-9aff-461e-84b4-9d70907f5c63",
+    "id": "0c951fe9-06a9-401f-9f17-eeeac73f16d8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13519,51 +16646,71 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 2920
     }
   },
   {
-    "id": "af0b0e05-9eb9-4295-ae09-af5c305e8ab2",
+    "id": "76dcfad5-74e2-47eb-8c05-86df842571c7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "ADJUVANTE OLEO MINERAL 428G/L",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "CLORFENAPIR",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 79538.06
     }
   },
   {
-    "id": "edb31efe-0980-440e-aa1d-d2953942761c",
+    "id": "a4914a02-dd71-4b55-a5e2-1509e30d6e4c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "INSETICIDA ISOCICLOSERAM + LAMBDA-CIALOTRINA 100 G/L + 150 G/L",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 2449.2
     }
   },
   {
-    "id": "13415a1a-cb97-49cf-bbf9-25f892406386",
+    "id": "a7f2d49e-8219-4972-a31f-8efa6eb8889a",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ADJUVANTE ESTER METILICO 720 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14168.04
+    }
+  },
+  {
+    "id": "00bb9b67-5d80-4b5f-9c0e-bbdd6485f3f9",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13579,99 +16726,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 358.93
     }
   },
   {
-    "id": "ec02dcbf-6896-4166-aded-581576a15511",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "HERBICIDA FLUROX + PICLORAN 80 + 80G/L",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "ff842965-44f8-4729-be2e-bed633980fa5",
+    "id": "dc922962-5c93-45bb-8948-9fc6dc5c5ba8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "HERBICIDA DIBROM DIQUATE 200 G/L",
+    "nomeProduto": "FUNGICIDA CLOROTALONIL 720 G/L",
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 1625.51
+      "2026-02": 9313.619999999999
     }
   },
   {
-    "id": "6028e505-453c-4a73-b6f2-13f4f9aac6cf",
+    "id": "94c2c88a-6134-4713-a3eb-83c752564f1a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "ADJUVANTE OLEO MINERAL 428G/L",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 507.15
-    }
-  },
-  {
-    "id": "7cd7d090-90ea-41d3-886c-67ab43d56e9e",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "ADJUVANTE ESTER METILICO 720 G/L",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 1347.99
-    }
-  },
-  {
-    "id": "7e9100ce-5615-4d18-ad8c-11877893d1fc",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
@@ -13679,19 +16766,79 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 4841.58
+      "2026-02": 10708.2
     }
   },
   {
-    "id": "fb5939fb-8068-48dd-bda9-90181128f073",
+    "id": "75ae9348-61e5-40c9-bf52-22f3cbb2a997",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA ACEFATO 970 G/KG",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2492.43
+    }
+  },
+  {
+    "id": "fdc0e120-e6a2-4b79-b9e4-d638039327ba",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FUNGICIDA MEFENTRIFLUCONAZOL 133,30 G/L + PIRACLOSTROBINA 177,8 G/L + FLUXAPIROXADE 88,9 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4750
+    }
+  },
+  {
+    "id": "16a7a68c-f1ce-4198-903f-2d200781b1e5",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA CLETODIM 240 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3106.3799999999997
+    }
+  },
+  {
+    "id": "36ae1e8f-c2fa-479e-81bb-2c51be75fcad",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
@@ -13699,19 +16846,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 8281
+      "2026-02": 33323.55
     }
   },
   {
-    "id": "5b486f87-6d5a-4a7d-b980-b495b3425446",
+    "id": "8a78d7af-6ece-4359-95ac-2505d6efafa1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA CLORPIRIFOS 480 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 37204.4
+    }
+  },
+  {
+    "id": "f5f5e009-5352-4838-830e-cff9de01ca15",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
@@ -13719,19 +16886,119 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 16460.15
+      "2026-02": 93608.20000000001
     }
   },
   {
-    "id": "cfd08d5f-2a5a-459f-b4ee-931bc2a6af7d",
+    "id": "f7e028ca-a1a3-4262-bbc1-7b6f7bc53a5f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FUNGICIDA CIPROCONAZOL 80 G/L + PICOXISTROBINA 200 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16143.75
+    }
+  },
+  {
+    "id": "0d47e367-455a-4a73-94f1-c1e0a869a951",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INOCULANTE CONCENTRADO LIQUIDO",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3052.8
+    }
+  },
+  {
+    "id": "8598cc24-f635-4f0b-a133-a82c5702c4df",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FUNGICIDA TEBUCONAZOL 90 G/L + TRIFLOXISTROBINA 75 G/L + OXICLORETO DE COBRE 420 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 154836
+    }
+  },
+  {
+    "id": "ab40cc62-4fd4-49c1-ac3d-f17fc6c0c86f",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA LUFENURON 100 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2184
+    }
+  },
+  {
+    "id": "f485f44c-bcb1-465d-a3c6-c06c201592fa",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA CLORANTRANILIPROLE 100 G/L + LAMBDA-CIALOTRINA 50 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8177.6
+    }
+  },
+  {
+    "id": "5de14362-3dbb-4c4b-9ef3-5304ea59a352",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
@@ -13739,11 +17006,211 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 9174
+      "2026-02": 72349.5
     }
   },
   {
-    "id": "e7e7146f-141a-48c4-abaa-acca608c232d",
+    "id": "9cd21f61-d318-4e0f-94b2-0cae0be3a060",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FUNGICIDA IMPIRFLUXAM 60 G/L + TEBUCONAZOL 200 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 146366.5
+    }
+  },
+  {
+    "id": "4a8be9e3-e2a9-4728-8733-fce028aa8327",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA EBIFENTRINA 50 G/L + IMIDACLOPRIDO 250 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7089.14
+    }
+  },
+  {
+    "id": "a1951db0-b77c-41da-854b-bde10e6af164",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA PIRIPROXIFEM 100 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16261.310000000001
+    }
+  },
+  {
+    "id": "3e8c80c0-61a3-43d5-a4f3-1da211ae2e27",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ACARICIDA PROFENOFOS 400 G/L + CIPERMETRINA 40 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44888.84
+    }
+  },
+  {
+    "id": "cb36f26d-74b9-486b-846b-e6b805a835eb",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA ACETAMIPRIDO 250 G/KG + BIFENTRINA 250 G/KG",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 72835.73999999999
+    }
+  },
+  {
+    "id": "9c47a066-518a-4ac0-9013-64c247507e3a",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAVRINHA SLN - SOJA",
+    "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2486",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA DIBROM DIQUATE 200 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13304.149999999998
+    }
+  },
+  {
+    "id": "b2a88a85-6da9-418f-aaf0-5a443a6d5a6e",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA ATRAZINA 500 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 418.8
+    }
+  },
+  {
+    "id": "ee88ee1e-e500-44ab-8093-3490c6cb0387",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "SANTA MARIA - SOJA",
+    "centroCusto": "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "INSETICIDA PIRIPROXIFEM 200 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 918.75
+    }
+  },
+  {
+    "id": "43849987-c8aa-4e16-a0ad-3dd074c5ac4e",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA FLUMIOXAZINA 500 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1488.08
+    }
+  },
+  {
+    "id": "ff65d262-f143-4e9b-b715-afde616581a5",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA GLUFOSINATO SAL DE AMONIO 200 G/L",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7005.009999999999
+    }
+  },
+  {
+    "id": "b6e2c1f0-7796-4b11-9e7e-b7e748d1802a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13759,91 +17226,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 28789.2
+      "2026-02": 49334.22
     }
   },
   {
-    "id": "5c98b1ff-f55b-4ee0-8e68-c8897dd1c86a",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "CLORFENAPIR",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 13656.74
-    }
-  },
-  {
-    "id": "f9e82dcb-6d14-43d1-b1ea-e49b024632ba",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "INSETICIDA ACETAMIPRIDO 250 G/KG + BIFENTRINA 250 G/KG",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 4772.1
-    }
-  },
-  {
-    "id": "d82b6c71-c58a-4c07-8e13-586050324d5a",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FUNGICIDA CIPROCONAZOL 80 G/L + PICOXISTROBINA 200 G/L",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 7955.25
-    }
-  },
-  {
-    "id": "06d62ac8-bb29-46f3-b7c8-9c9afe779269",
-    "codigo": "4.1.01.11.0019",
-    "descricao": "HERBICIDAS E DEFENSIVOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.11",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "INSETICIDA PIRIPROXIFEM 100 G/L",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 1570.86
-    }
-  },
-  {
-    "id": "ddafe71f-d866-47f8-921b-21954e900d95",
+    "id": "fa50c488-45f5-4920-b988-cef7ab702969",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -13859,42 +17246,82 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 6435.72
+      "2026-02": 12513.900000000001
     }
   },
   {
-    "id": "a616e0a2-5804-4a9c-b898-95ac660c68d1",
+    "id": "519e60e9-3bf7-4871-85d3-ca0fbe56d67e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
     "codigoPai": "4.1.01.11",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
-    "nomeProduto": "FUNGICIDA IMPIRFLUXAM 60 G/L + TEBUCONAZOL 200 G/L",
+    "nomeProduto": "FUNGICIDA DIFENOCONAZOL 250 G/L + CIPROCONAZOL 150 G/L",
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 22470.35
+      "2026-02": 15871.27
     }
   },
   {
-    "id": "41d114b8-390e-4437-90b3-5b39e5d0b307",
-    "codigo": "4.1.01.21",
-    "descricao": "4.1.01.21",
+    "id": "51a2e8ab-157f-47c1-bca6-3cde47be1ec4",
+    "codigo": "4.1.01.11.0021",
+    "descricao": "PARCERIAS RURAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "PARCERIA DE AREAS AGRICOLAS CF 0001",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 46781.56
+    }
+  },
+  {
+    "id": "213590b8-2db0-4fae-ae20-0697a20f3eb8",
+    "codigo": "4.1.01.13",
+    "descricao": "4.1.01.13",
     "tipo": "C",
     "codigoPai": "4.1.01",
     "nivel": 4,
-    "atividade": "SERINGAL",
+    "atividade": "PECUARIA",
     "orcado": {},
     "realizado": {}
   },
   {
-    "id": "fc169810-64b9-400f-ba45-53ef17dcae11",
+    "id": "46b7ba69-cf9d-43bf-8bd4-d16710759a72",
+    "codigo": "4.1.01.13.0003",
+    "descricao": "CONSUMO DE EMBALAGENS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.13",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.13-CUSTOS INDUSTRIAIS",
+    "nomeProduto": "EMBALAGEM PLASTICA TRANSPARENTE 50X80CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39.76
+    }
+  },
+  {
+    "id": "26b81ad4-919e-4e2e-a904-4e42a4facfbf",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -13905,7 +17332,29 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5e793651-2d53-4b3d-9c2c-4bd7594bd487",
+    "id": "6d450475-e3ee-47f6-8bcf-bb9a0780d5d9",
+    "codigo": "4.1.01.21",
+    "descricao": "4.1.01.21",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "ba8252ba-2005-4a4b-8cbf-c0e5f48a4abe",
+    "codigo": "4.1.01.21",
+    "descricao": "4.1.01.21",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "eaa30940-f744-4d04-a9f3-73f646bd1d2a",
     "codigo": "4.1.01.21.0001",
     "descricao": "SEGUROS",
     "tipo": "C",
@@ -13921,11 +17370,551 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 348.15
     }
   },
   {
-    "id": "7a1a496c-7e76-4497-92e9-5b8dbffdb1fc",
+    "id": "7abcc57e-b24c-4bfb-ac66-76b563105bf8",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 43",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 181.29
+    }
+  },
+  {
+    "id": "8f23d0d6-17c8-4799-94f2-105349bba07f",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 58.28
+    }
+  },
+  {
+    "id": "945e10fe-bfb1-4fef-b835-e853d792d2d1",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 252.62
+    }
+  },
+  {
+    "id": "3fb209e8-9d77-48cc-ba2d-87bee54c8d57",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 271.73
+    }
+  },
+  {
+    "id": "f8eb1543-a478-4008-9f18-25189f8ddae5",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 39",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 275.35
+    }
+  },
+  {
+    "id": "01c61328-353b-4fc1-b188-5c8c3dab2350",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA MISTA VAQUETA/RASPA PUNHO 20CM",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 27.09
+    }
+  },
+  {
+    "id": "f2758880-3bd2-4e5d-809f-12cf977491e6",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA PVC SEM FORRO 35CM",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 87.85
+    }
+  },
+  {
+    "id": "1fb51dd2-81d0-457d-8e2d-2f42f9178eee",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 42",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -88.48
+    }
+  },
+  {
+    "id": "c48f8c4f-6077-49dc-ba9c-d47686fc4c6a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 10",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 57.33
+    }
+  },
+  {
+    "id": "5521239b-8591-46f5-ba61-d0c37b931ac3",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63.41
+    }
+  },
+  {
+    "id": "db1ab6e7-8e17-4535-9fc7-f4fc09e897f5",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 40",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 180.35
+    }
+  },
+  {
+    "id": "ad2c218d-903e-4d1e-ae66-4c108975b072",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS C VELCRO TAM G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34.42
+    }
+  },
+  {
+    "id": "616bcba9-48ef-445c-bd4f-fdf06d770bba",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SOLADO DE PNEU Nº41",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.37
+    }
+  },
+  {
+    "id": "33b568e0-4277-48b7-8872-105237ca9f5b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17.76
+    }
+  },
+  {
+    "id": "29384d03-0139-4d73-9735-dfce52f6efee",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SOLADO DE PNEU Nº40",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.37
+    }
+  },
+  {
+    "id": "3e8c7dbc-e332-421b-a6e5-1509d7300a99",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SOLADO DE PNEU Nº42",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.37
+    }
+  },
+  {
+    "id": "af552cce-5715-4bf6-a6f0-598ec46aa8b2",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPA BOIADERO C FORRO C TORNA",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 145.78
+    }
+  },
+  {
+    "id": "dc09c18a-0daf-4fec-9d99-96a734fcbdd0",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO CURTO  PRETA FLEX NR 37",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 70.78
+    }
+  },
+  {
+    "id": "017a3cc8-f62d-420b-ab41-41247fa3b8c8",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RESPIRADOR PURIF AR TP SEMIFACIAL TAM M",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 112.63
+    }
+  },
+  {
+    "id": "938098b2-5b0b-4ee7-9ad7-5cb11cbc944d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CONJUNTO DE APLICAÇÃO DEFENSIVOS  MARRON TAM G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 138.76
+    }
+  },
+  {
+    "id": "07e2afdf-7e3f-4ab2-bcef-f1d6a832fdbc",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTUCHO VAPOR ORGANICO 3MM 6001",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 72.6
+    }
+  },
+  {
+    "id": "89aa579c-f4a4-4e20-8252-516d0762e363",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RETENTOR FILTRO 5N11 3M EPI",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.76
+    }
+  },
+  {
+    "id": "fb8d8605-c8c5-4be6-967f-1ff475f3aff8",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FILTRO MECANICO CLASSE P2 3M 5N11",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.62
+    }
+  },
+  {
+    "id": "91b94ba8-38c3-48cb-8545-62ac2352ed70",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RECARGA PARA EXTINTOR CO2 6 KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 200
+    }
+  },
+  {
+    "id": "784d4f7c-e9c4-4dd0-81cc-3bd3196bb17a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RECARGA PARA EXTINTOR PQS 6 KG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.89999999999999
+    }
+  },
+  {
+    "id": "d0701efb-0755-4d93-a18c-aea2c21d3e42",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "DIFUSOR PARA EXTINTOR CO2 6 KG",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.61
+    }
+  },
+  {
+    "id": "b69e1d51-60e0-454a-8a28-c6ce42819a4d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 42",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.9
+    }
+  },
+  {
+    "id": "42b2f8e9-2806-4722-bed9-29bf76c4dc51",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13941,11 +17930,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 330
+      "2026-02": 148.62000000000006
     }
   },
   {
-    "id": "d5b2447e-3f23-42fa-bcce-bc02eeeb21af",
+    "id": "1be95d55-ff06-4ef3-906c-024b0616c7be",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13961,11 +17950,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 127.15
     }
   },
   {
-    "id": "3552facd-f6a3-451a-9ccb-362096720f63",
+    "id": "e98217fd-cbd4-4d94-a264-5eca996b9f64",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13981,11 +17970,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 80
+      "2026-02": 32.56
     }
   },
   {
-    "id": "a7c6619e-87f4-4707-a96c-2578e5d916ca",
+    "id": "29b2178d-97ed-4ef0-b9dd-e2f63de2bd82",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14001,11 +17990,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 370
+      "2026-02": 326.72000000000014
     }
   },
   {
-    "id": "4d252782-3029-4fe8-97e2-77652aae336b",
+    "id": "dfc0e690-9aa8-4506-aca7-7b428f5b8dbd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14021,11 +18010,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 260
+      "2026-02": 543.7000000000003
     }
   },
   {
-    "id": "6b6ed94a-4886-417b-bd2d-9c52c0946b2d",
+    "id": "167f1078-0c29-450b-99ac-f40ad12ee536",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14041,11 +18030,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 380
+      "2026-02": 1207.3599999999992
     }
   },
   {
-    "id": "29c5d5a7-99f8-450e-817f-29ba72a1b4d0",
+    "id": "9429a380-a9e0-42ab-a386-498e884ae42f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14061,11 +18050,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 360
+      "2026-02": 1314.4199999999998
     }
   },
   {
-    "id": "0405afb5-4c52-4cd4-a305-60f2a4dafe25",
+    "id": "5d276dad-7b30-4859-ad40-340d6f74f3f5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14081,11 +18070,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 370
+      "2026-02": 1636.4
     }
   },
   {
-    "id": "e85e3226-3a3c-4eb0-a157-f7c1ff3d392f",
+    "id": "5dfbebb5-1427-4226-af31-5b100d6badfb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14101,11 +18090,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 231.45
     }
   },
   {
-    "id": "29396228-da19-4103-9078-8593fd57998e",
+    "id": "60061ace-0ace-48ca-962d-900bcf0788ed",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14121,11 +18110,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 140.06
     }
   },
   {
-    "id": "091da657-8206-4892-abcf-6dcbacf8db89",
+    "id": "c0aa7385-4a02-4a49-839e-8dff67d320dd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14141,11 +18130,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45.5
     }
   },
   {
-    "id": "191714df-bc50-4a5e-8bbb-8c438838af0e",
+    "id": "ad91f354-4b48-49bb-bc09-2c4d634d4b71",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14161,11 +18150,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 119
     }
   },
   {
-    "id": "fd62a4a2-5610-4b9e-a5ed-e3271d9a8411",
+    "id": "745df4ac-f067-469b-81b5-95789799e9bb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14181,11 +18170,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 344
     }
   },
   {
-    "id": "9484a9eb-3ce1-43da-ae7b-c1907e39be33",
+    "id": "804c7fd2-6f37-4e33-95b5-a05ae2220e2a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14201,11 +18190,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 289
     }
   },
   {
-    "id": "14f7f4c5-d9b1-42ff-aa72-9e8f2b0b675b",
+    "id": "5c277a74-fbf0-4564-9130-f145c2ac53f8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14221,11 +18210,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 320.81
     }
   },
   {
-    "id": "cf708e70-bc6a-49c3-8be6-4112e94d176d",
+    "id": "26024fcc-8fec-4d5e-9b8a-f2ee52bb4e77",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14241,11 +18230,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 552.8100000000001
     }
   },
   {
-    "id": "321ce5fe-af40-4a73-bab5-07acaab56299",
+    "id": "4e9c6994-7495-41b8-867a-9280d3878de4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14261,11 +18250,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 810
+      "2026-02": 1426.5099999999986
     }
   },
   {
-    "id": "6c01276e-8330-431a-a856-51534181d23b",
+    "id": "f669d5a8-d5bb-4e6f-9640-0c510a7bc0ad",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14281,11 +18270,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 370
+      "2026-02": 198.04000000000005
     }
   },
   {
-    "id": "07c6b263-15f6-42af-b220-76f2a148ba0d",
+    "id": "619726ef-2b3a-4803-b79d-8e87e22a6c52",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14301,11 +18290,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 340
+      "2026-02": 258.69999999999993
     }
   },
   {
-    "id": "6a1458a0-60d9-492b-a978-839328dd6bfb",
+    "id": "499dc0bc-1861-4380-893f-7d9762c6622d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14321,11 +18310,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 490
+      "2026-02": 368.2300000000001
     }
   },
   {
-    "id": "f2b0de15-284c-4f0b-94dd-02cbf80e1b9d",
+    "id": "aa30d28f-db34-4922-a019-28209b3da949",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14341,11 +18330,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 269.41
     }
   },
   {
-    "id": "004864b2-db73-4825-bd76-e4ea99131842",
+    "id": "b64c5dac-3e04-45c6-a44b-20bcdc67d16a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14361,11 +18350,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 292.7
     }
   },
   {
-    "id": "d4853ec8-e3b3-4932-b7e9-1bd89019ca65",
+    "id": "f5fb6de3-56b5-46fe-98f5-8d9d9dbfb776",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14381,11 +18370,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 380.96
     }
   },
   {
-    "id": "13157c1f-3d54-4da4-86f2-ffe84428d6a3",
+    "id": "fe475ff7-729d-4186-bfa5-1bc1991a6375",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14401,11 +18390,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 648.24
     }
   },
   {
-    "id": "5f1e110f-97d2-4ffb-805c-e02f439084cf",
+    "id": "ebfe722a-1a20-4d4c-b3f4-7b52081b7842",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14421,11 +18410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 130
+      "2026-02": 1195.4999999999995
     }
   },
   {
-    "id": "3a17e036-179e-4164-b611-ba9bce4b8923",
+    "id": "47cec73e-204e-4127-b2ca-e0b28e491a29",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14441,11 +18430,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 270
+      "2026-02": 163.71000000000004
     }
   },
   {
-    "id": "f4362512-c6ab-47d1-9ddf-b7ec79b26917",
+    "id": "7b8243cd-5ab8-4de3-a730-d9e13a12e155",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14461,11 +18450,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 226.83
     }
   },
   {
-    "id": "509feab7-6cfd-4765-9148-c10ed4a73a66",
+    "id": "b0f19a38-e9cd-4dd6-a295-54bf3575d888",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14481,11 +18470,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 54.99
     }
   },
   {
-    "id": "9a1b0953-94a5-4f03-af88-e54c86985be9",
+    "id": "45532aac-e11c-4d51-9a26-b68be3dcf676",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14501,11 +18490,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.72
     }
   },
   {
-    "id": "6956d0ab-c12a-453e-9255-5cde4631eb7d",
+    "id": "2784c034-3066-4596-a5e0-b1db5d497934",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14521,11 +18510,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 451.9
     }
   },
   {
-    "id": "26f9fcd3-b68c-4ff1-a2bd-bfb56bbb3be0",
+    "id": "d490dee5-d024-4bec-bf1a-4630ac4e2daf",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14541,11 +18530,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 295.5
     }
   },
   {
-    "id": "8f06a340-944f-439b-b309-79448dc220db",
+    "id": "d9bd308f-937f-4496-8356-55cf13a300e7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14561,11 +18550,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 170.4
     }
   },
   {
-    "id": "99611a63-0fbd-4fff-8f9b-701ff127a08e",
+    "id": "a9818180-14fb-41ef-ba7c-96086833296b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14581,11 +18570,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 386.42
     }
   },
   {
-    "id": "23676002-dab8-40b8-b68d-7dcddaa16f7c",
+    "id": "22527a8e-8de1-4822-908d-50f853acc3a7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14601,11 +18590,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 908.7199999999999
     }
   },
   {
-    "id": "512b97f6-e92e-4757-8399-fac8afbf20f3",
+    "id": "74090dfd-4a1a-4d47-991c-bbfc2ee9c55e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14621,31 +18610,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 38.08
     }
   },
   {
-    "id": "80b07e29-92bd-4430-ad71-45319408bb5b",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 39",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "2dff4be2-ac5c-48bb-aeae-b0b445f9dde7",
+    "id": "51e93038-8a3d-45d1-91a4-d934f8194de7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14661,11 +18630,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 140.7
     }
   },
   {
-    "id": "2250b6a7-c8d7-4f9b-9a89-a0f9e7d2569e",
+    "id": "73d6d287-507b-4e5c-bd8a-377995359c62",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14681,11 +18650,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 134.73000000000002
     }
   },
   {
-    "id": "770b4207-63b3-4c97-a2ba-908ab8d729b7",
+    "id": "22b3d4c4-427c-4723-8a1b-523be01f2abf",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14701,11 +18670,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "e1be2976-b615-4053-83a0-0dc077a6dcae",
+    "id": "09bf96fd-0199-4af4-a322-54bdb2c551dd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14721,11 +18690,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 75
     }
   },
   {
-    "id": "b47927a2-e702-465d-95ae-ce24218c837c",
+    "id": "4cf2c062-47e9-4bfc-b239-c5ed9fb5a996",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14741,11 +18710,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 36
     }
   },
   {
-    "id": "52dcdf5c-5ebb-447c-98d0-f8b7d6e29951",
+    "id": "81f73ba2-34ac-40a9-be43-8ffe081862be",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14761,11 +18730,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 36
     }
   },
   {
-    "id": "040d0389-f7bd-4516-9027-1f5e57cf0666",
+    "id": "339ec8db-ae86-4806-ad52-3409f173a97f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14781,11 +18750,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 5.2
     }
   },
   {
-    "id": "f8f4864a-fce7-4bc5-8d79-4f3416c73617",
+    "id": "ea9f678f-6883-4276-8bd8-ee431f1c312a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14801,11 +18770,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 210
+      "2026-02": 129.57000000000002
     }
   },
   {
-    "id": "18ff26c0-4c06-475c-be19-ca691179ff8b",
+    "id": "33819f14-8d46-4e53-8053-dba5a79f37c9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14821,11 +18790,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.57
     }
   },
   {
-    "id": "36676bbf-e53c-420a-a495-217af81a71b9",
+    "id": "6aa1ac07-7724-4ece-9206-2e5dc4380462",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14841,11 +18810,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 21.299999999999997
     }
   },
   {
-    "id": "08b20149-dd39-4386-90b0-a351e1e666ba",
+    "id": "ec2c74fc-aa62-401e-b5a8-b1ccb4e1bbd6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14861,11 +18830,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 483
     }
   },
   {
-    "id": "1a84192b-4c8a-4df7-9292-aa372a894d71",
+    "id": "4d0730da-de4a-44c1-87a0-b94bd2808f86",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14881,11 +18850,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 53.8
     }
   },
   {
-    "id": "4e4db6c7-b8bc-4f21-9cc6-29463da4f6cd",
+    "id": "f5f23f2f-b445-4495-8095-37b8071e6aab",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14901,11 +18870,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 81.68
     }
   },
   {
-    "id": "a7af509c-4f87-47e7-9c17-f819db6cd922",
+    "id": "79827d57-92b2-4f12-b1a6-dfe124aedf89",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14921,11 +18890,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31.79
     }
   },
   {
-    "id": "64e4688b-df2b-4280-b74b-ad3d015aac58",
+    "id": "be67ee63-746d-40e7-ab11-104ebb9856ca",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14941,11 +18910,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 91.23
     }
   },
   {
-    "id": "2ac5da9e-d296-471e-9b61-96c69c201d22",
+    "id": "f45ff67e-3e23-4db5-815c-1b83128373a8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14961,11 +18930,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 14.25
     }
   },
   {
-    "id": "4b05a053-3df2-4f75-9b7f-0716ad2a33bc",
+    "id": "9ccd40c7-f9ae-4661-86f6-693cc8679929",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -14981,11 +18950,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3.25
     }
   },
   {
-    "id": "64df191f-710a-448e-b65f-115b705a5a73",
+    "id": "e60e047d-36a0-41ad-a970-a601836ffc9c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15001,31 +18970,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 26.64
     }
   },
   {
-    "id": "2ea322b0-c957-4f98-b67f-b4f582da680c",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 130
-    }
-  },
-  {
-    "id": "b56c20a5-9bdb-4af5-8a69-48b637e47471",
+    "id": "79a92828-a0ea-4d2a-a468-1e94d4f21bb2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15041,11 +18990,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 21.99
     }
   },
   {
-    "id": "338894bc-7dbf-48e9-a006-b1bce9fd4d42",
+    "id": "ba4a337f-759e-4ab2-b913-98b4a475a090",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15061,11 +19010,111 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 87.12
     }
   },
   {
-    "id": "efc02d4f-a8b4-48b7-a8c8-fe35264f3dcd",
+    "id": "5860c72d-22a4-43b0-8d95-910b01af4cb6",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.4
+    }
+  },
+  {
+    "id": "227ff5e1-d0a4-49d2-979c-f1ffa58d0581",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 40.56
+    }
+  },
+  {
+    "id": "656c7245-38f7-4c91-8bf2-6cae0635d441",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 41",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36.28
+    }
+  },
+  {
+    "id": "6c802150-4635-43e2-a1ac-f49db911b5dd",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTUCHO VAPOR ORGANICO 3MM 6001",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 79.5
+    }
+  },
+  {
+    "id": "34dc6856-018d-43b5-b5ac-92022058d3ba",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 40",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.25
+    }
+  },
+  {
+    "id": "a714b697-3b2b-4758-aed1-d675d2f7f4bf",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15081,11 +19130,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -87.41
     }
   },
   {
-    "id": "32c51587-e900-4ef9-8baf-9a0f13f750b0",
+    "id": "b63ed84e-2f73-43de-b93f-589fd18a2037",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15101,71 +19150,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -45.36
     }
   },
   {
-    "id": "ed463c43-d0fe-4145-8b95-a40de02b9ba3",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "a7724fe0-73a8-4791-83bb-0e552d5c8c3e",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "dbe9c35f-df1a-4417-840d-095da10dc955",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "081f7aee-0fc9-4feb-a9c4-391080869e01",
+    "id": "f10fba39-9124-4364-b898-b8265e6d8f48",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15181,11 +19170,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 73.54
     }
   },
   {
-    "id": "8d0cff3c-4841-4b13-ac16-1b7524105936",
+    "id": "39788583-6997-4773-819a-a0af06107c15",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15201,31 +19190,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 39.94
     }
   },
   {
-    "id": "fb12a0a9-ff0f-4fd0-8add-a14adaf70bb1",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 40",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "33d58ad8-62c8-4449-8837-a47a673410af",
+    "id": "f7701db2-1fdb-42bd-a228-e8d91d886b8f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15241,11 +19210,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 4.53
     }
   },
   {
-    "id": "dcbb672f-7824-4155-a56d-804c134e8164",
+    "id": "f8827ce3-82d9-435a-91ec-7a8b1116ed76",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15261,11 +19230,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 7.75
     }
   },
   {
-    "id": "73fa4e93-96f9-4425-ba1f-6fc46ac48342",
+    "id": "7d61013a-12c7-482f-852e-bf73cc6cac03",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15281,11 +19250,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 34.49
     }
   },
   {
-    "id": "753e8732-7d99-4e62-a6d5-68fd09b9d94c",
+    "id": "f80b4b41-e519-490e-8f08-38ba36118ec8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15301,11 +19270,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 39.84
     }
   },
   {
-    "id": "5b8d2a6e-be4a-46e6-bacc-8d3a434f3c27",
+    "id": "1b5dab25-476f-4753-beed-c410f51bd530",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15321,11 +19290,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 134.7
     }
   },
   {
-    "id": "6b25c4f4-fecf-45e7-9787-99a7ead4389c",
+    "id": "425fb47b-37e9-46c0-b18d-a9b39a7fbced",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -15341,91 +19310,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 45
     }
   },
   {
-    "id": "8a881332-eb74-457b-bb08-6bba81f418c9",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "id": "f16f2315-789a-4272-8b1e-289c17210bf1",
+    "codigo": "4.1.01.21.0003",
+    "descricao": "CONTRIBUICOES E DOACOES",
     "tipo": "C",
     "codigoPai": "4.1.01.21",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - MUTUNOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "RECARGA PARA EXTINTOR PQS 6 KG",
+    "nomeProduto": "DOACOES CURSOS E FACULDADES FUNCIONARIOS 039409",
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 282.27
     }
   },
   {
-    "id": "8a7d4bb6-674f-4c62-99c1-922dd8920d79",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "id": "6ab83e5e-2918-4125-aeb7-dd9aca48d14c",
+    "codigo": "4.1.01.21.0005",
+    "descricao": "PEDAGIOS",
     "tipo": "C",
     "codigoPai": "4.1.01.21",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "nomeProduto": "PEDAGIO",
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 187.8
     }
   },
   {
-    "id": "f8416699-3bc2-4747-9bf8-a2f1cb228c29",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOTA BORRACHA PVC CANO CURTO  PRETA FLEX NR 37",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "acdd79b0-cac6-4fc4-bd07-29f167ee0854",
-    "codigo": "4.1.01.21.0002",
-    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 43",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "4693e477-569c-49c6-9373-a259a566c473",
+    "id": "ba4c89cf-c2bf-4046-b64b-134c697690d2",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -15441,39 +19370,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 54.9
     }
   },
   {
-    "id": "19f769cc-3bb4-42d3-8fb0-ca73a16b061e",
-    "codigo": "4.1.01.21.0005",
-    "descricao": "PEDAGIOS",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PEDAGIO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "91a351bf-d365-45af-89c6-af3fb65dd2ab",
+    "id": "07454b39-3406-487d-b31f-5b4d6412808c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
     "codigoPai": "4.1.01.21",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
@@ -15481,19 +19390,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 5030.420000000001
     }
   },
   {
-    "id": "3ab7b09e-82f0-4394-b06d-176021c19433",
+    "id": "34bd874a-33ce-4f55-9aed-05c776ce980b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
     "codigoPai": "4.1.01.21",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARNE BOVINA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 422.5
+    }
+  },
+  {
+    "id": "669eb50a-4c10-48ec-94b4-92a681acc7ef",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
@@ -15501,11 +19430,631 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 1248.9199999999998
     }
   },
   {
-    "id": "9a64fc07-8810-4db7-9f7f-70a38d5e07a8",
+    "id": "c460e867-1904-41db-9e14-05bd7fdaede3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO KG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 693.27
+    }
+  },
+  {
+    "id": "43a2a435-17b6-4d41-87de-577754415e82",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7005
+    }
+  },
+  {
+    "id": "4f576190-d142-4863-aac4-0806d1687609",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO COM MARGARINA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2668.2
+    }
+  },
+  {
+    "id": "f336228d-8b40-41b0-a26c-f9ae2e2bcc9d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO FRANCES",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 714
+    }
+  },
+  {
+    "id": "b37c5520-3366-48e3-a2b5-114d8b5a29bc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE CACHORRO QUENTE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 756
+    }
+  },
+  {
+    "id": "fe8c61f5-6bc1-40cf-8af9-7700c72ca04c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 521.4
+    }
+  },
+  {
+    "id": "5c826c35-018a-44cb-8995-de03e40b1f8e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 679.4
+    }
+  },
+  {
+    "id": "d589813c-cf7b-4f6c-b949-1a6e0837099a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1706.4
+    }
+  },
+  {
+    "id": "19ae4be9-9f1a-4b54-88e5-7f974880fd45",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2480.6
+    }
+  },
+  {
+    "id": "e8344da3-3671-4397-9783-2399f5063c59",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2528
+    }
+  },
+  {
+    "id": "2352b7ce-932b-4c88-8f53-c68f6f3f305f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4266
+    }
+  },
+  {
+    "id": "e8f06fe1-e846-414d-8e7a-079fe1f83318",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 363.4
+    }
+  },
+  {
+    "id": "b0ec5e87-fee6-4e09-8536-b770aacef3ae",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 395
+    }
+  },
+  {
+    "id": "0f3c5bc3-a340-428c-937e-90b4bb2cb2de",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 288.35
+    }
+  },
+  {
+    "id": "e3539094-d734-4915-ba45-3a1d86c8bb55",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 300.2
+    }
+  },
+  {
+    "id": "fac49628-f7db-4abf-a4b7-c37f4958f90b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 316
+    }
+  },
+  {
+    "id": "7120a30b-fd84-4569-8b51-d336dcfb1fed",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 252.8
+    }
+  },
+  {
+    "id": "32724779-9269-4e48-a1b3-184125d319b2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 264.65
+    }
+  },
+  {
+    "id": "dfb5da71-7120-4d88-8bd8-0270fdb2e066",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 110.6
+    }
+  },
+  {
+    "id": "3c73541c-c12f-4301-9595-2ab92553253f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 126.4
+    }
+  },
+  {
+    "id": "cd1b19cb-d440-4f6b-9612-3370da9b0f9c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 126.4
+    }
+  },
+  {
+    "id": "1e12d05d-022d-4fdc-b817-ebedd86c5317",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 158
+    }
+  },
+  {
+    "id": "20ca1d64-f213-484c-bd8b-c5dc3a6d0ad1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 173.8
+    }
+  },
+  {
+    "id": "7d80c4a9-8169-4964-b22b-c60cf98098d8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 181.7
+    }
+  },
+  {
+    "id": "70a47421-c586-4315-abe0-a6bc916cc499",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 79
+    }
+  },
+  {
+    "id": "0f092aeb-de64-46c7-888c-7cd7ad8f1b43",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SALGADO ASSADO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 159.6
+    }
+  },
+  {
+    "id": "2c50182d-6c56-456d-83f1-3f73dc2e272d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAOZINHO COM PATE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 261.9
+    }
+  },
+  {
+    "id": "cc01fa55-94d7-4516-9f7e-ba532b687266",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PASTEL DE CARNE",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 240
+    }
+  },
+  {
+    "id": "5c1c28a0-a940-4847-88d7-37bf72aa1467",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE QUEIJO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 280
+    }
+  },
+  {
+    "id": "2b639c25-5169-4e72-ab24-e554a949e3dc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE MILHO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 747
+    }
+  },
+  {
+    "id": "522ae209-e690-4a17-8c83-4c5fd8b15c5e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BISCOITO ROSQUINHA COCO RANCHEIRO",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 90
+    }
+  },
+  {
+    "id": "d05006f1-3a36-42ec-ad07-6169994cd24f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15521,31 +20070,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 12
     }
   },
   {
-    "id": "4b241ca8-511d-414a-b4b1-2eee54b0c1de",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PAO DE QUEIJO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "0c4029e7-70e7-4d93-ae48-68164d055d24",
+    "id": "4cd80a76-0cf4-4e9d-894c-abc6ea2f7af8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15561,11 +20090,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 31
     }
   },
   {
-    "id": "b95970e5-c314-48db-b811-aff72ef0ec3c",
+    "id": "c94fb388-a364-41f8-8650-08c4f642a5f2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15581,451 +20110,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 40.5
     }
   },
   {
-    "id": "da19317a-2d4b-4808-85ca-972abb4b9c68",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PAOZINHO COM PATE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "0f2fdf0f-bf48-4e54-92b0-f2386feba5c4",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "7493fc4b-e744-4181-8213-18b4ec9bc4ac",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "EXTRATO DE TOMATE 340G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "26ee42f3-6447-4dc1-b6d7-c4fb8cf806df",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "FEIJAO TIPO 1",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "4528702f-bc86-441d-9029-86c99beb57d9",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "1db07c87-8089-434f-9479-20c23c52c1c0",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "OLEO DE SOJA 900ML",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "423a86ed-f39b-464d-9ea0-94ec50614657",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "3a1d38e2-c4d1-4fb0-874a-41b2dd7f6d30",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "TAPIOCA 500 GR",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "da441444-f014-43ed-b004-b543aa033801",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "96288ea6-c54a-463f-bdd6-dd5d5c27e00d",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOLACHA DE DOCE 400GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "c999f7da-5340-4306-aba9-f1ebcdbe96bf",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "89e1e5e3-c805-4d53-bcb4-2d3bdc24235b",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "d430fc5f-ea1a-4e85-b175-04765999f858",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "TEMPERO COMPLETO 300G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "02b6d661-edc3-4de0-8249-032fef452475",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "BOLACHA DE DOCE 115GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "57057c19-516b-4254-9cee-883771e7287e",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "abbed164-bb82-439e-897f-b4afaa1dcca9",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "ACHOCOLATADO EM PO 200G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "d7521d29-eaba-480d-824a-b0a04e663e20",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "GELATINA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "4cb3eb9a-288e-4368-a8e8-6c2e6cb9c285",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "GOIABADA 300 G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "e894f781-7fe3-473d-98b8-f038b260c9aa",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "586c4aab-b889-4fc5-9057-ac5c734d44db",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "SUCO ADOÇADO 140G",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "7942e573-8cf0-43ff-8832-7ed5290af7a3",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "MACARRAO 500 GRS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "e4bb46d2-df5d-484e-acb5-9d91ae724a0a",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "CARTAO ALIMENTACAO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "c1940831-ef01-4ddb-92d7-d2bbd575931c",
+    "id": "ff14aac1-95c0-44c6-b05d-7aff8d871a80",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16041,11 +20130,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 3840.1
     }
   },
   {
-    "id": "08473cec-4bae-423f-936d-30b5faf21e08",
+    "id": "f5f24458-c023-4ea4-86ea-6076c43cfdbe",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16061,11 +20150,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 384
     }
   },
   {
-    "id": "cd7fbddf-d097-4230-8b63-d2d69d67e3dd",
+    "id": "bfbfe45e-d501-495f-b5a7-3532f3e9ceff",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16081,11 +20170,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1680
     }
   },
   {
-    "id": "35001aaa-ee8c-4c01-9cab-c06b1e89095f",
+    "id": "debd35dc-1e57-4dd3-94f7-2ca2a1cf01ee",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16101,11 +20190,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 3510
     }
   },
   {
-    "id": "e4e20a06-dcca-4eba-a980-b10a47f3266d",
+    "id": "3877a671-919e-489f-affd-329499f391f6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16121,11 +20210,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 3975
     }
   },
   {
-    "id": "842026a8-ad47-42f7-88a8-62b45a8f9092",
+    "id": "233bcbcc-9f74-4ea7-9760-1351a258216e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16141,11 +20230,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3672
     }
   },
   {
-    "id": "896c3b2b-0824-40a0-b3c5-89217defa5c3",
+    "id": "f6d44f2e-11fd-4a3e-8716-37eeb069e3d2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16161,11 +20250,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 28
     }
   },
   {
-    "id": "3a550edd-1a6d-444d-af50-9fc6178d20a1",
+    "id": "e2baf72d-a16a-4425-8da3-9b8f2379a2ea",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16181,11 +20270,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 28
     }
   },
   {
-    "id": "7f3a1d00-34ff-479d-a8b8-17d09572c0bc",
+    "id": "c42c685a-0656-4752-8c1b-0dc1910969d4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16201,11 +20290,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 30
     }
   },
   {
-    "id": "a6c77309-0412-4a75-8922-1ef69ac8e9e3",
+    "id": "603f4c19-a178-4823-88b8-217c129ab4e0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16221,11 +20310,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 2534.4
     }
   },
   {
-    "id": "a254758b-9234-4033-b84c-0a7cc8b11140",
+    "id": "c10301b9-ae67-40e4-a660-b5ad88d8f6ed",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16241,11 +20330,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 3302.4
     }
   },
   {
-    "id": "75f74ca2-4fd6-4441-a88b-7bcd2b66b3b1",
+    "id": "f2885837-15f0-4ea5-8cd9-9f5e4d490007",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16261,11 +20350,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 110
+      "2026-02": 5665.679999999999
     }
   },
   {
-    "id": "11db4495-97fe-4332-9b1f-8173ba5b9851",
+    "id": "512b080d-78e1-4117-b011-fe11c3cba154",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16281,11 +20370,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 8294.400000000001
     }
   },
   {
-    "id": "a3110c57-bb4b-4256-8d9e-b90c61cf47cb",
+    "id": "21dd7b6f-69b6-4d0c-9147-24afb88f8286",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16301,11 +20390,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 12057.6
     }
   },
   {
-    "id": "3359528d-8472-455c-b2d1-01087b4b6dfc",
+    "id": "c238fbb6-52b6-47fd-ba9c-2422caca0514",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16321,11 +20410,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 12288
     }
   },
   {
-    "id": "1092a358-fc96-45ae-82b7-ee020362d627",
+    "id": "22e32689-493a-4de5-babe-f2dd90cf4cb5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16341,11 +20430,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 20736
     }
   },
   {
-    "id": "c0e648fd-6188-4b88-924f-fa6b44e581e6",
+    "id": "c0924b8e-214b-4d4c-b0e9-ddb1fc3f6a56",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16361,11 +20450,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1766.3999999999999
     }
   },
   {
-    "id": "7c41b20b-d16c-4771-949a-000d4e62b9dd",
+    "id": "53cf4688-5f1b-4cfa-a585-f0866f1dac3b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16381,11 +20470,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1920
     }
   },
   {
-    "id": "8ffedeb3-a0cb-4673-a181-6a6c4c1d82fd",
+    "id": "a7b1e435-dc8f-4fb8-82c4-97db71329a95",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16401,11 +20490,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1401.6000000000001
     }
   },
   {
-    "id": "3528cb37-49d4-4323-a927-9d93effe7b4b",
+    "id": "4f7da1c4-6874-4854-a3ab-01a7504a160e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16421,11 +20510,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1459.2
     }
   },
   {
-    "id": "2896f096-0d05-4fe0-81f9-7152e312ec0c",
+    "id": "d3967ce5-a216-408f-99fc-01f5ce0afcfa",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16441,11 +20530,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1536
     }
   },
   {
-    "id": "5663f408-c980-46ea-8d73-343b1087db72",
+    "id": "9c35b0e3-d3cc-4c3f-8b07-2189a699acd1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16461,11 +20550,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1228.8
     }
   },
   {
-    "id": "b0cc89da-1fba-4e0f-a06c-f5e12c1f39b0",
+    "id": "0ab3b323-327a-48cf-9505-7403bfefa171",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16481,11 +20570,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 1286.3999999999999
     }
   },
   {
-    "id": "58abf1e8-c1bf-4fbf-a056-960e9e98866e",
+    "id": "cbb3a5c1-f2ec-491d-9a6a-df7bfe885aea",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16501,11 +20590,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 537.6
     }
   },
   {
-    "id": "d864f9b9-4dfe-4026-8564-8093692ab0da",
+    "id": "0939620a-8bd0-4fe4-ae04-d6cc4785a01e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16521,11 +20610,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 614.4
     }
   },
   {
-    "id": "26d692e2-6ed7-4369-9a5e-79489b3899af",
+    "id": "51fd41fd-2d3c-4964-ba33-d033cf8c6ec7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16541,11 +20630,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 614.4
     }
   },
   {
-    "id": "2f63a3cc-9922-47fa-bab4-bff51af848b0",
+    "id": "e17fee17-65bd-46a3-85d4-461772e3920a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16561,11 +20650,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 768
     }
   },
   {
-    "id": "4f8d8d42-323a-4dc7-802b-29fb5cbf9e73",
+    "id": "d604605d-8fa0-4c08-85fd-080b068dc800",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16581,11 +20670,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 844.8000000000001
     }
   },
   {
-    "id": "69ed05fd-0d76-42f6-931a-8375353f935f",
+    "id": "3c131104-cb01-4adf-8c18-88334a88d94b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16601,11 +20690,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 883.1999999999999
     }
   },
   {
-    "id": "b86de15c-e07a-40c3-8e59-b7394dc4c712",
+    "id": "8e15d914-2607-4838-ad5f-c6d68b3709f1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16621,11 +20710,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 4356
     }
   },
   {
-    "id": "4adb37bc-8ce7-4f74-a32b-68de0e483266",
+    "id": "4d60c477-8291-4c21-b67f-35bb4c16c819",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16641,11 +20730,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 6318.400000000001
     }
   },
   {
-    "id": "a3d4e096-c747-4669-b52f-c000a8352456",
+    "id": "8755dd9a-d285-408a-bf4b-4e11c86552b0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16661,11 +20750,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 4306.88
     }
   },
   {
-    "id": "98a967da-7729-42ce-bd77-b3db27ddcaff",
+    "id": "ef63f937-1392-499b-9f48-e192db270117",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -16681,91 +20770,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 110
+      "2026-02": 27944
     }
   },
   {
-    "id": "5d8c8f10-d7e0-449f-acf4-654e8c214048",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "CAFE MOIDO KG",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "2d9d1277-d8f9-4a89-a5af-4ff283c867c9",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PAO DE MILHO",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "9ab2f345-3cd6-4216-b2e2-9bb68f7280f5",
-    "codigo": "4.1.01.21.0012",
-    "descricao": "LANCHES E REFEICOES",
-    "tipo": "C",
-    "codigoPai": "4.1.01.21",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
-    "nomeProduto": "PAO COM MARGARINA",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "012e9778-b9b9-4628-82d2-9dc63b7c8c73",
+    "id": "389100b7-2c81-4882-bd91-782ee10bf589",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
     "codigoPai": "4.1.01.21",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
-    "divisao": "PECUÁRIA",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 21846.25
     }
   },
   {
-    "id": "f58e25e4-eeb8-411b-abb0-a2cbec0f86b4",
+    "id": "d7400c5d-940f-42d8-ab80-3e8f8533480b",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16781,11 +20810,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 80.78
     }
   },
   {
-    "id": "4e97cf76-6236-4e8c-beda-455774510f95",
+    "id": "2b975f63-8d3c-460b-ae10-f52535c300e9",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16801,11 +20830,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 49.77
     }
   },
   {
-    "id": "eb678930-09ed-4cb5-ba1b-f1d1f46eb519",
+    "id": "f75b748f-33e3-45ff-a1b1-ded400e1143f",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16821,11 +20850,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 57.45
     }
   },
   {
-    "id": "3cd8c5d5-35ec-4620-a869-16c922eaf0a6",
+    "id": "764958b5-4f2a-4e1d-9232-e0cb8e8239c0",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16841,11 +20870,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 236.88
     }
   },
   {
-    "id": "f907573f-a665-43ca-9980-75a30c1bbebd",
+    "id": "1b9f86d0-eeee-40b6-bf5a-2ec067a5cc12",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16861,11 +20890,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 265.8
     }
   },
   {
-    "id": "eacf91b8-3751-4ac3-a049-13d0619b5b96",
+    "id": "4f05fe11-038c-4b75-9c6f-c465d428d8ef",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16881,11 +20910,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 420.6300000000001
     }
   },
   {
-    "id": "17a4d220-b1db-476e-ae3c-24e7b65111ba",
+    "id": "02e6ae47-2e80-43b8-8903-e7df2be0df8e",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16901,11 +20930,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 381.6
     }
   },
   {
-    "id": "f6a4cff3-0d1a-44d6-9b8b-5e1758d6c16d",
+    "id": "d77814a0-dd0f-4aa8-8c86-3b39079e37ba",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16921,11 +20950,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 41.9
     }
   },
   {
-    "id": "465b34b6-a16c-41a7-a916-cffcf5c2cea9",
+    "id": "e9a1f77c-333f-4111-9e8e-9ddeee5b435b",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16941,11 +20970,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 365.4
     }
   },
   {
-    "id": "c7d44a62-a29b-448a-84b0-72f911e14c4e",
+    "id": "44c71f70-906a-4a41-9227-5b947d7d92e8",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16961,11 +20990,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 70
+      "2026-02": 444.99
     }
   },
   {
-    "id": "abab24f8-8d40-401e-ba67-35fc512d5f74",
+    "id": "39f97464-81c6-422b-bd4b-8f3fac8517cc",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -16981,11 +21010,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 221.4
     }
   },
   {
-    "id": "60e5c353-803f-4885-bc49-d63926b3257b",
+    "id": "1a857e75-436d-481b-bf19-3a974afaadd8",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -16996,18 +21025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9f24edba-4a98-4952-be6a-33c19923bb8c",
-    "codigo": "4.2",
-    "descricao": "4.2",
-    "tipo": "C",
-    "codigoPai": "4",
-    "nivel": 2,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "f6ff6708-d586-48ad-a2ed-1355f6d3f9b5",
+    "id": "e2f85adc-4a25-468f-b6ab-38308be60f78",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -17018,7 +21036,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "bc5d1210-48ab-40ee-9c0b-9127a49321b9",
+    "id": "22b8798a-0873-4ef8-b869-88132a9be561",
+    "codigo": "4.2",
+    "descricao": "4.2",
+    "tipo": "C",
+    "codigoPai": "4",
+    "nivel": 2,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "07b32356-1578-4291-90fa-fc44fe4691de",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -17029,18 +21058,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c18a8dc0-3290-48ff-8999-443931a0d960",
-    "codigo": "4.2.01",
-    "descricao": "4.2.01",
-    "tipo": "C",
-    "codigoPai": "4.2",
-    "nivel": 3,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "8452aae4-2a9d-4fa4-a4aa-5c6ad0e58419",
+    "id": "36f422d1-4bd0-4939-ab8d-36c335a52633",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -17051,7 +21069,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f31ebc68-42e9-448d-83bc-671bb4ddc26b",
+    "id": "d243cf5d-e121-4564-8ddd-b81d87fae676",
+    "codigo": "4.2.01",
+    "descricao": "4.2.01",
+    "tipo": "C",
+    "codigoPai": "4.2",
+    "nivel": 3,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "73a5fc91-f730-4b32-a861-24f930b8c708",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -17062,18 +21091,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e8fc5c20-b1b1-4662-99ae-7db0ee27960c",
-    "codigo": "4.2.01.02",
-    "descricao": "4.2.01.02",
-    "tipo": "C",
-    "codigoPai": "4.2.01",
-    "nivel": 4,
-    "atividade": "SERINGAL",
-    "orcado": {},
-    "realizado": {}
-  },
-  {
-    "id": "9ef05242-e5cc-4834-9de9-dd7f4b900ea3",
+    "id": "d6ce855d-1b0a-433d-9bfa-2da16d5982a5",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -17084,15 +21102,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e8219176-6bb6-4247-9e92-ff9c89d7d288",
+    "id": "65089bf7-438c-4660-b054-bd3143b0b64f",
+    "codigo": "4.2.01.02",
+    "descricao": "4.2.01.02",
+    "tipo": "C",
+    "codigoPai": "4.2.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "379096f7-f6c9-419d-8d39-ce151b04ee44",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17100,11 +21129,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 42243.97
     }
   },
   {
-    "id": "140ae38e-0c9a-4ed2-b6fa-39af21a408eb",
+    "id": "01916757-1665-4e83-8ce8-5846d0d23ae4",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -17120,19 +21149,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 1566.7
     }
   },
   {
-    "id": "3eaea8cb-a52e-4247-9108-2859d6515843",
-    "codigo": "4.2.01.02.0007",
-    "descricao": "RATEIO CUSTO DE PESSOAL",
+    "id": "fa04dc88-f135-4156-af3d-ff11e572af5f",
+    "codigo": "4.2.01.02.0001",
+    "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17140,19 +21169,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 2951.18
+      "2026-02": 37023.78
     }
   },
   {
-    "id": "2e401be5-1010-4b6f-9f4d-5f1a407aeb7b",
-    "codigo": "4.2.01.02.0010",
-    "descricao": "RATEIO CERQUEIROS",
+    "id": "c9ff927a-65ec-4805-840a-4417fa403155",
+    "codigo": "4.2.01.02.0007",
+    "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17160,11 +21189,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 92071.81
     }
   },
   {
-    "id": "dca2ce7d-a090-4ee1-87ce-ab5f2100af2b",
+    "id": "6f33ea3b-7a42-4875-bcaa-39fb8bc1d852",
+    "codigo": "4.2.01.02.0007",
+    "descricao": "RATEIO CUSTO DE PESSOAL",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "SANTA MARIA - SOJA",
+    "centroCusto": "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 46091.520000000004
+    }
+  },
+  {
+    "id": "de114731-c5d4-43e9-9b8d-6fe49eb5b8ec",
+    "codigo": "4.2.01.02.0010",
+    "descricao": "RATEIO CERQUEIROS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 69630.26
+    }
+  },
+  {
+    "id": "de2dd551-6766-4550-a0fe-6fcaf1d96199",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -17180,11 +21249,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 372.8
     }
   },
   {
-    "id": "8b80e9c1-f18a-4682-85b6-03df85f92943",
+    "id": "d6615ad1-23d9-4dc7-bd32-d22707d97d46",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1573.0900000000001
+    }
+  },
+  {
+    "id": "a1802fab-1b68-45c8-aa95-f722c351b6dd",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -17200,39 +21289,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 9778.85
     }
   },
   {
-    "id": "a9766fb3-f60a-4e08-a88e-a28fc4ffd64f",
-    "codigo": "4.2.01.02.0018",
-    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS TRANSFERIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "97d09680-3627-40a1-bf37-1ba89af6053f",
+    "id": "ab44192a-b13c-47df-8397-37c6cc18cbb2",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17240,19 +21309,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 9435.539999999999
     }
   },
   {
-    "id": "71c9e236-9f49-43aa-bc76-13480da4c0a7",
+    "id": "baef30dd-9cf5-4795-8f40-8103102a05fb",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17260,11 +21329,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 30
+      "2026-02": 6729.92
     }
   },
   {
-    "id": "646dff36-6c09-44e2-8e2c-920461cf20e3",
+    "id": "1ce488ff-8525-4d62-b97b-f597c7f85cbf",
+    "codigo": "4.2.01.02.0020",
+    "descricao": "RATEIO MOTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1717.59
+    }
+  },
+  {
+    "id": "219c4b80-de15-4e94-8d23-c6abe5f9b86f",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -17280,11 +21369,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 230
+      "2026-02": 9699.41
     }
   },
   {
-    "id": "27725a5f-b82e-463b-a00c-7207c3881bca",
+    "id": "23e6aa80-5359-4eec-88ad-2241544bb5b9",
+    "codigo": "4.2.01.02.0021",
+    "descricao": "RATEIO VEICULOS MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25012.199999999997
+    }
+  },
+  {
+    "id": "972091da-09d9-4cb6-9f6a-77a5d2b8001b",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -17300,31 +21409,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 186675.79
     }
   },
   {
-    "id": "92efc554-d066-4a9c-bf7e-f5cc02c1bd7f",
+    "id": "4db2dab9-cfc5-467c-8c8e-4327e11ca9cd",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 3038.4
     }
   },
   {
-    "id": "b5bfed68-6564-4ae4-924f-4138e473c044",
+    "id": "ade90b8d-45f1-4e38-94b8-79f135f68fa0",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
     "tipo": "C",
@@ -17340,39 +21449,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8713.55
     }
   },
   {
-    "id": "4725777c-f4b8-4ac6-bd95-4a67d5e45022",
+    "id": "de496c4a-41ad-47bd-b2b1-69c4c4ec7295",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
+    "divisao": "GOTEJO - PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 4801.469999999999
     }
   },
   {
-    "id": "bf043a7b-4785-4b66-b1d3-0721d9ca64e7",
+    "id": "36803498-d299-4495-ac47-f6b591dcdc5b",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17380,11 +21489,71 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 727.96
+      "2026-02": 11508.09
     }
   },
   {
-    "id": "00bbe648-a016-49f0-97bd-1042e48e5faa",
+    "id": "2802e16b-46d4-4737-89a2-81f653803085",
+    "codigo": "4.2.01.02.0030",
+    "descricao": "RATEIO TRATORES PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 31857.559999999998
+    }
+  },
+  {
+    "id": "1c69453d-2077-450f-a23b-2c483cfdb875",
+    "codigo": "4.2.01.02.0030",
+    "descricao": "RATEIO TRATORES PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SOJA",
+    "centroCusto": "F9T20 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2485",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8864.68
+    }
+  },
+  {
+    "id": "99eca64f-6901-4750-9585-df0fc3b036bb",
+    "codigo": "4.2.01.02.0033",
+    "descricao": "RATEIO ROCADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 173.94
+    }
+  },
+  {
+    "id": "56732c71-6f07-4a81-a7b2-3b77c3bd91f5",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -17400,11 +21569,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 364.6
     }
   },
   {
-    "id": "e170bf00-6751-4c51-a309-4c03a48f22e9",
+    "id": "a099aac1-ad13-4448-9b4d-a5f978c87235",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3439.4399999999996
+    }
+  },
+  {
+    "id": "e5ee0758-57d8-4e29-bf51-4a941720cdef",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 416.77
+    }
+  },
+  {
+    "id": "ad1b0dbd-6871-4938-8b1b-9589df418629",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -17420,39 +21629,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 110
+      "2026-02": 1267.9100000000003
     }
   },
   {
-    "id": "c141a05e-2297-4370-8326-736eb8866387",
-    "codigo": "4.2.01.02.0034",
-    "descricao": "RATEIO CARRETAS AGRICOLAS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "c80f38bf-1c99-4020-a1b2-a797dbc98956",
+    "id": "5de860c8-e6eb-4f15-8a58-9880ba2e597d",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17460,11 +21649,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 132298.73
     }
   },
   {
-    "id": "b8e641db-d9fd-448d-8d45-4c79a2ed4b2d",
+    "id": "1cc3e257-5f69-480b-b4d8-248adf6a6ec4",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -17480,99 +21669,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 90
+      "2026-02": 84483.67
     }
   },
   {
-    "id": "b6ec9755-9892-4063-b8d0-b481f1370d28",
-    "codigo": "4.2.01.02.0036",
-    "descricao": "RATEIO TRATORES MEDIOS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 40
-    }
-  },
-  {
-    "id": "9ffe0d87-d48b-4729-a2eb-b3bc86b212a1",
-    "codigo": "4.2.01.02.0036",
-    "descricao": "RATEIO TRATORES MEDIOS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "25301284-2f01-445d-956c-868a3a89c9fa",
-    "codigo": "4.2.01.02.0037",
-    "descricao": "RATEIO VEICULOS LEVES",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 30
-    }
-  },
-  {
-    "id": "c3ba35e7-cb34-4e0c-a865-5225c29d0b58",
-    "codigo": "4.2.01.02.0037",
-    "descricao": "RATEIO VEICULOS LEVES",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 100
-    }
-  },
-  {
-    "id": "cc53569e-ad39-486f-a36e-ef962098dbda",
-    "codigo": "4.2.01.02.0037",
-    "descricao": "RATEIO VEICULOS LEVES",
+    "id": "25e255f5-bc37-4354-9a50-ae126cb07dc7",
+    "codigo": "4.2.01.02.0035",
+    "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "AROEIRA - SOJA",
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17580,11 +21689,151 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 3693.25
+      "2026-02": 36328.05
     }
   },
   {
-    "id": "b7cb8cec-8064-42c4-ae2d-40273fea31df",
+    "id": "d4b9e37d-ab94-406c-a674-b6712c5b6684",
+    "codigo": "4.2.01.02.0036",
+    "descricao": "RATEIO TRATORES MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 62255.39999999999
+    }
+  },
+  {
+    "id": "068051b3-b27f-4471-a228-e21d428ae782",
+    "codigo": "4.2.01.02.0036",
+    "descricao": "RATEIO TRATORES MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4396.3099999999995
+    }
+  },
+  {
+    "id": "b7e7fbf2-887a-4a8d-bedf-5fc904517889",
+    "codigo": "4.2.01.02.0036",
+    "descricao": "RATEIO TRATORES MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 57581.32
+    }
+  },
+  {
+    "id": "9b506dc5-a0b9-4476-8503-6a4c8dcaa526",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CODORA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44419.53
+    }
+  },
+  {
+    "id": "3b9578b1-c12d-4d72-8e02-3dd3c2a4e01b",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30304.989999999998
+    }
+  },
+  {
+    "id": "3d30af98-0871-41a7-add4-22183b9d92d3",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "UNIÃO - SOJA",
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 22983.819999999992
+    }
+  },
+  {
+    "id": "24cfa3f7-f80f-4347-b6f3-181482b42ef8",
+    "codigo": "4.2.01.02.0038",
+    "descricao": "RATEIO VEICULOS PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 65687.95
+    }
+  },
+  {
+    "id": "f0b26ae4-a290-4c59-a071-eb83f249ada8",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -17600,39 +21849,39 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 4133.04
     }
   },
   {
-    "id": "e515988d-e030-4e97-9439-add52fa0fa3d",
+    "id": "0d0fda2d-fca7-4ed9-a093-a094e5c89186",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": -2711.26
     }
   },
   {
-    "id": "55da882f-0dae-4b58-bf64-9d962098bf22",
+    "id": "460190f2-369d-418a-b1b6-eadc3097834d",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CANADÁ - PECUÁRIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17640,11 +21889,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 6958.4400000000005
     }
   },
   {
-    "id": "f1c46957-58ac-445e-a7b9-1b38ea1099cf",
+    "id": "3d5d7078-4803-433d-b810-8d05d47b2377",
+    "codigo": "4.2.01.02.0039",
+    "descricao": "RATEIO REBOQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "CANADÁ - SOJA",
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -744.84
+    }
+  },
+  {
+    "id": "d0a860a3-4eef-41d1-8d0a-c54dfc0f055f",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -17660,19 +21929,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 437.80999999999995
     }
   },
   {
-    "id": "0c6b15c7-966e-4209-bf27-2928307d0a3c",
+    "id": "26ddf35d-5f31-4c89-9aff-823442c99284",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17680,19 +21949,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 165786.17
     }
   },
   {
-    "id": "258aaa95-de0e-404a-af91-b66fe9b2da02",
+    "id": "db36cb79-1df8-48db-8736-6201dd28fa6b",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17700,139 +21969,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 249640.71000000002
     }
   },
   {
-    "id": "798900a0-0cd3-48a5-b8bb-bd5a4a2cb4ac",
+    "id": "434045a5-9dc9-4797-87a2-a3b585a3a2a5",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "fa1f249e-e86e-484c-84be-f04a89bfd02c",
-    "codigo": "4.2.01.02.0045",
-    "descricao": "RATEIO CARRETAS TANQUE",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "07836e47-643b-41e3-95a6-c3c7027c6732",
-    "codigo": "4.2.01.02.0046",
-    "descricao": "RATEIO PA CARREGADEIRAS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "32a87ba4-d232-442a-a3d1-9d2125a55b55",
-    "codigo": "4.2.01.02.0046",
-    "descricao": "RATEIO PA CARREGADEIRAS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 10
-    }
-  },
-  {
-    "id": "46a93e74-8c55-462d-b3d1-7e154864b9a8",
-    "codigo": "4.2.01.02.0047",
-    "descricao": "RATEIO PULVERIZADORES",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "SERINGAL",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "centroCusto": "RATEIO SERINGAL",
-    "coligada": "18-OL LATEX LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "SERINGAL",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 60
-    }
-  },
-  {
-    "id": "f4559352-8a7e-4f87-9f00-68fb272c5d2b",
-    "codigo": "4.2.01.02.0047",
-    "descricao": "RATEIO PULVERIZADORES",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 20
-    }
-  },
-  {
-    "id": "6b99e6bd-c981-491b-b418-d40ebd000f2a",
-    "codigo": "4.2.01.02.0047",
-    "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "AGRICOLA",
-    "departamento": "LAGUNA - SOJA",
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
+    "departamento": "MONTE CARMELO - SOJA",
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17840,11 +21989,211 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "AGRÍCOLA",
     "orcado": {},
     "realizado": {
-      "2026-02": 23749.51
+      "2026-02": 2636.46
     }
   },
   {
-    "id": "23ccc093-731c-408d-95d5-4965ca3da2fc",
+    "id": "f7f870fb-e789-4c68-a1c3-563ad24c2638",
+    "codigo": "4.2.01.02.0045",
+    "descricao": "RATEIO CARRETAS TANQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 84.85
+    }
+  },
+  {
+    "id": "4afb226e-0aab-49e4-8fd7-7b2b9f5d975a",
+    "codigo": "4.2.01.02.0045",
+    "descricao": "RATEIO CARRETAS TANQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 73.24
+    }
+  },
+  {
+    "id": "075726e1-0aed-40fd-9092-861708396d1f",
+    "codigo": "4.2.01.02.0046",
+    "descricao": "RATEIO PA CARREGADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 48759.34
+    }
+  },
+  {
+    "id": "64861ede-adfc-4c15-9cfb-a39b070e8d77",
+    "codigo": "4.2.01.02.0046",
+    "descricao": "RATEIO PA CARREGADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9739.02
+    }
+  },
+  {
+    "id": "c8252916-ed28-4719-85da-3d8e66c61fdd",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 625.6
+    }
+  },
+  {
+    "id": "fe95009d-5125-4b66-a189-d74170483a32",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "VALE DO IMBÉ - SOJA",
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 228482.84999999998
+    }
+  },
+  {
+    "id": "374c81a9-b28f-451b-91fb-f1bd1e542c40",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1701.24
+    }
+  },
+  {
+    "id": "bcc0d562-03c1-4a90-8a87-6a7b89f57ff8",
+    "codigo": "4.2.01.02.0048",
+    "descricao": "RATEIO SEMEADORAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3454.1800000000003
+    }
+  },
+  {
+    "id": "3b511bb2-9a75-4e2a-8bcf-04632d16be51",
+    "codigo": "4.2.01.02.0048",
+    "descricao": "RATEIO SEMEADORAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2277.49
+    }
+  },
+  {
+    "id": "0cf74f7a-a1a5-492c-ae8c-11be880889bd",
+    "codigo": "4.2.01.02.0050",
+    "descricao": "RATEIO PLANTADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - MILHO",
+    "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23178.23
+    }
+  },
+  {
+    "id": "3bac10d8-02e0-498a-b980-e0f8805b978e",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -17860,11 +22209,51 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 60
+      "2026-02": 87186.26
     }
   },
   {
-    "id": "c7a0d0f6-a54b-446c-9124-85a416e63c77",
+    "id": "2bd951fb-10ef-49bd-b607-33991a0a920b",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "UNIÃO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49378.62999999999
+    }
+  },
+  {
+    "id": "b743aa6f-7738-49c2-a8d8-d31684006ab4",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SORGO",
+    "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 634127.9600000001
+    }
+  },
+  {
+    "id": "8a013dd8-717b-419a-a433-379cff17d360",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -17880,59 +22269,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 290
+      "2026-02": 9380.69
     }
   },
   {
-    "id": "dc620eb4-41c6-4597-88b4-9b1c63364b92",
-    "codigo": "4.2.01.02.0052",
-    "descricao": "RATEIO OUTROS IMPLEMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 50
-    }
-  },
-  {
-    "id": "5b49cbd9-0668-4c2d-baeb-b866a7707acd",
-    "codigo": "4.2.01.02.0052",
-    "descricao": "RATEIO OUTROS IMPLEMENTOS",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "AGRICOLA",
-    "departamento": "LAVRINHA SLN - MILHO",
-    "centroCusto": "F7T100 MILHO SEMENTE MILHO SEMENTE 03/2026 Ciclo:2490",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "AGRÍCOLA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 105611.76000000001
-    }
-  },
-  {
-    "id": "0e4e5b81-a801-40d9-b759-0d93e870a1ff",
+    "id": "06248236-d63c-4e3f-93e7-8883232b7e94",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "CENTRO COMERCIAL DE TOUROS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -17940,11 +22289,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 20
+      "2026-02": 81124.06
     }
   },
   {
-    "id": "48c05162-b1ba-4531-9d7c-809d6c1057de",
+    "id": "265ac320-7c53-492a-a16a-584986c72289",
     "codigo": "4.2.01.02.0054",
     "descricao": "RATEIO MANUTENCAO PREDIAL",
     "tipo": "C",
@@ -17960,11 +22309,31 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 7163.03
     }
   },
   {
-    "id": "8a6b4ad8-68a6-4bde-977a-b11e74a2c635",
+    "id": "9a180f96-af1f-4adf-9dbb-1adbab2ddd68",
+    "codigo": "4.2.01.02.0055",
+    "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "VERA CRUZ - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1927.91
+    }
+  },
+  {
+    "id": "14d1864a-e836-4cc4-be67-a5a4545fc479",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -17980,19 +22349,59 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 83.87
     }
   },
   {
-    "id": "b0126acc-ef8a-4ba6-87e9-791c87e221ce",
-    "codigo": "4.2.01.02.0055",
-    "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
+    "id": "f3acb0a8-3d82-4f32-8707-f0abd8182358",
+    "codigo": "4.2.01.02.0058",
+    "descricao": "RATEIO COLHEITADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SOJA",
+    "centroCusto": "F9T20 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2485",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 88746.73
+    }
+  },
+  {
+    "id": "96a69843-5ef6-4f65-bd3c-0afd45b0e32a",
+    "codigo": "4.2.01.02.0059",
+    "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA - SORGO",
+    "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7468.91
+    }
+  },
+  {
+    "id": "19900b6a-43b6-4c15-aff0-90a4465ffd61",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -18000,11 +22409,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 240.45
     }
   },
   {
-    "id": "df3ab7e1-d6a5-4597-9419-c9b6502ec305",
+    "id": "72274eab-bdc8-4f41-806b-4e26a8f3059a",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -18020,19 +22429,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 50
+      "2026-02": 2208.5699999999997
     }
   },
   {
-    "id": "e75aaefe-b3c4-4971-ba96-df5bfc03b100",
-    "codigo": "4.2.01.02.0064",
-    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "id": "ac0f27e3-1567-46b2-bda3-5b120d3792e6",
+    "codigo": "4.2.01.02.0065",
+    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "JOIA - BONOPOLIS",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -18040,11 +22449,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 55995.51
     }
   },
   {
-    "id": "b9ad0b77-5f88-479d-8fd6-aa4f0247051f",
+    "id": "816e4138-6fb0-41fd-86aa-ac15ed9252d5",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -18060,19 +22469,19 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": 166956.3
     }
   },
   {
-    "id": "501d5259-00f4-4018-98d9-73d734457916",
-    "codigo": "4.2.01.02.0065",
-    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
+    "id": "26eb6c30-98c4-4081-8e4c-f142049f47ae",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
     "codigoPai": "4.2.01.02",
     "nivel": 5,
     "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
+    "departamento": "PORTEIRAS - PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
     "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
@@ -18080,11 +22489,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
-      "2026-02": 10
+      "2026-02": 8468.329999999998
     }
   },
   {
-    "id": "eced3422-3209-4d77-ac37-ff58108453bb",
+    "id": "a0f22889-2da4-4205-bd59-d85626cb0d8f",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -18100,11 +22509,11 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 40
+      "2026-02": -22764.620000000003
     }
   },
   {
-    "id": "e7004b78-7625-4359-a748-1bb1e4670d7b",
+    "id": "1c08d503-8457-4a43-b81e-6a5650c86a98",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -18120,27 +22529,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
-      "2026-02": 240
-    }
-  },
-  {
-    "id": "38e1c27d-00de-4263-854c-06101923ec40",
-    "codigo": "4.2.01.02.0066",
-    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
-    "tipo": "C",
-    "codigoPai": "4.2.01.02",
-    "nivel": 5,
-    "atividade": "PECUARIA",
-    "departamento": "CONFINAMENTO",
-    "centroCusto": "RATEIO CONFINAMENTO",
-    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
-    "grupoContabil": "4",
-    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
-    "nomeProduto": "CUSTOS RECEBIDOS",
-    "divisao": "PECUÁRIA",
-    "orcado": {},
-    "realizado": {
-      "2026-02": 120
+      "2026-02": 14915.400000000001
     }
   }
 ];
