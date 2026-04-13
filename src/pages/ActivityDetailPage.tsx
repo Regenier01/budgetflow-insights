@@ -5,7 +5,8 @@ import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
-import { useBudgetStore } from '@/store/budgetStore';
+import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
+import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import NotFound from './NotFound';
 
 export default function ActivityDetailPage() {
@@ -17,6 +18,7 @@ export default function ActivityDetailPage() {
   
   const atividade = ATIVIDADES.find(a => a.key === id);
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
+  const isEncargos = atividade?.key === 'ENCARGOS';
 
   const isTributariaEntry = (entry: {
     descricao?: string;
@@ -126,86 +128,132 @@ export default function ActivityDetailPage() {
       <SummaryCards selectedMonth={selectedMonth} atividadeFilter={atividade.key} />
 
       <div className="grid gap-8">
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
-            <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
-              Entradas
-            </div>
-          </div>
-          <AnalyticalTable 
-            atividadeFilter={atividade.key}
-            selectedMonth={selectedMonth}
-            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-            tipoFilter={['R']}
-            title="Detalhamento de Receitas"
-            accentColor="emerald"
-          />
-        </div>
-
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
-            <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-              Saídas
-            </div>
-          </div>
-          <AnalyticalTable 
-            atividadeFilter={atividade.key}
-            selectedMonth={selectedMonth}
-            costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-            tipoFilter={['C']}
-            title="Detalhamento de Custos"
-            accentColor="orange"
-          />
-        </div>
-
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-            <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
-              Saídas
-            </div>
-          </div>
-          {isAdmTrib ? (
-            <div className="space-y-6">
-              <AnalyticalTable
+        {isEncargos ? (
+          // Special handling for ENCARGOS activity
+          <>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Despesas Financeiras</h2>
+                <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                  Saídas
+                </div>
+              </div>
+              <AnalyticalTable 
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                 departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-                tipoFilter={['D']}
-                entryFilter={(entry) => !isTributariaEntry(entry)}
-                title="Abertura de Despesas ADM"
-                subtitle="Despesas administrativas"
+                entryFilter={(entry) => isDespesaFinanceira(entry.codigo)}
+                title="Detalhamento de Despesas Financeiras"
+                subtitle="Contas 3.4.04.01"
                 accentColor="red"
               />
-              <AnalyticalTable
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Receitas Financeiras</h2>
+                <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+                  Entradas
+                </div>
+              </div>
+              <AnalyticalTable 
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                 departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-                tipoFilter={['D']}
-                entryFilter={(entry) => isTributariaEntry(entry)}
-                title="Abertura de Despesas Tributárias"
-                subtitle="Despesas tributárias"
-                accentColor="red"
+                entryFilter={(entry) => isReceitaFinanceira(entry.codigo)}
+                title="Detalhamento de Receitas Financeiras"
+                subtitle="Contas 3.4.04.05"
+                accentColor="emerald"
               />
             </div>
-          ) : (
-            <AnalyticalTable 
-              atividadeFilter={atividade.key}
-              selectedMonth={selectedMonth}
-              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-              tipoFilter={['D']}
-              title="Detalhamento de Despesas"
-              accentColor="red"
-            />
-          )}
-        </div>
+          </>
+        ) : (
+          // Regular handling for other activities
+          <>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
+                <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+                  Entradas
+                </div>
+              </div>
+              <AnalyticalTable 
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                tipoFilter={['R']}
+                title="Detalhamento de Receitas"
+                accentColor="emerald"
+              />
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
+                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                  Saídas
+                </div>
+              </div>
+              <AnalyticalTable 
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                tipoFilter={['C']}
+                title="Detalhamento de Custos"
+                accentColor="orange"
+              />
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+                <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                  Saídas
+                </div>
+              </div>
+              {isAdmTrib ? (
+                <div className="space-y-6">
+                  <AnalyticalTable
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    tipoFilter={['D']}
+                    entryFilter={(entry) => !isTributariaEntry(entry)}
+                    title="Abertura de Despesas ADM"
+                    subtitle="Despesas administrativas"
+                    accentColor="red"
+                  />
+                  <AnalyticalTable
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    tipoFilter={['D']}
+                    entryFilter={(entry) => isTributariaEntry(entry)}
+                    title="Abertura de Despesas Tributárias"
+                    subtitle="Despesas tributárias"
+                    accentColor="red"
+                  />
+                </div>
+              ) : (
+                <AnalyticalTable 
+                  atividadeFilter={atividade.key}
+                  selectedMonth={selectedMonth}
+                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  tipoFilter={['D']}
+                  title="Detalhamento de Despesas"
+                  accentColor="red"
+                />
+              )}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

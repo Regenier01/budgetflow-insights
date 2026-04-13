@@ -83,6 +83,7 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let real = 0;
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
+    a.atividade !== 'ENCARGOS' &&
     (a.grupoContabil === '4' || (a.grupoContabil === '3' && a.atividade === 'DESP_ADM_TRIB'))
   );
   leafAccounts.forEach(a => {

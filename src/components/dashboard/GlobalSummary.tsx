@@ -1,4 +1,4 @@
-import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao } from '@/store/budgetStore';
+import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao, calculateEncargosTotals } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
@@ -101,7 +101,13 @@ export function GlobalSummary() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {ATIVIDADES.map((ativ) => {
-          const stats = calculateTotalsByDivisao(accounts, ativ.key);
+          let stats;
+          if (ativ.key === 'ENCARGOS') {
+            const encargosData = calculateEncargosTotals(accounts);
+            stats = encargosData.total;
+          } else {
+            stats = calculateTotalsByDivisao(accounts, ativ.key);
+          }
           return (
             <SummaryTable
               key={ativ.key}
