@@ -77,7 +77,7 @@ const rowValue = (value: unknown): string | undefined => {
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
-  const leafAccounts = accounts.filter(a => a.nivel === 5);
+  const leafAccounts = accounts.filter(a => a.nivel === 5 && a.grupoContabil === '4');
   leafAccounts.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D' || a.tipo === 'R') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
@@ -92,7 +92,8 @@ export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtivida
   let real = 0;
   const filtered = accounts.filter(a => 
     a.atividade === filterAtividade && 
-    a.nivel === 5
+    a.nivel === 5 &&
+    a.grupoContabil === '4'
   );
   filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
@@ -131,7 +132,8 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       const rowAtividade = resolveAtividadeFromRow(row);
       const rowDept = rowValue(row.NOMEDEPTO);
       const rowCC = rowValue(row.NOMECUSTO);
-      const rowGrupo = rowValue(row.GRUPOCONTABILN9);
+      const rowGrupo = rowValue(row.GRUPOCONTABIL);
+      const rowGrupoN9 = rowValue(row.GRUPOCONTABILN9);
       const rowProduto = rowValue(row.NOMEPRODUTO);
       const rowDivisao = rowValue(row.DIVISAO);
       const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
@@ -144,7 +146,8 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
           a.atividade === rowAtividade &&
           (a.departamento || '') === (rowDept || '') &&
           (a.centroCusto || '') === (rowCC || '') &&
-          (a.grupoContabilN9 || '') === (rowGrupo || '') &&
+          (a.grupoContabil || '') === (rowGrupo || '') &&
+          (a.grupoContabilN9 || '') === (rowGrupoN9 || '') &&
           (a.nomeProduto || '') === (rowProduto || '')
       );
 
@@ -152,7 +155,8 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
         existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
         if (!existing.departamento) existing.departamento = rowDept;
         if (!existing.centroCusto) existing.centroCusto = rowCC;
-        if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupo;
+        if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
+        if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9;
         if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
         if (!existing.divisao) existing.divisao = rowDivisao;
         if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
@@ -170,7 +174,8 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
         descricao: rowDescricao || base.descricao,
         departamento: rowDept,
         centroCusto: rowCC,
-        grupoContabilN9: rowGrupo,
+        grupoContabil: rowGrupo,
+        grupoContabilN9: rowGrupoN9,
         nomeProduto: rowProduto,
         divisao: rowDivisao,
         unidadeNegocio: rowUnidadeNegocio,

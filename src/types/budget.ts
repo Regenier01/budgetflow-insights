@@ -10,6 +10,7 @@ export interface AccountEntry {
   departamento?: string;
   centroCusto?: string;
   coligada?: string;
+  grupoContabil?: string;
   grupoContabilN9?: string;
   nomeProduto?: string;
   divisao?: string;
@@ -28,6 +29,7 @@ export interface ExcelRow {
   CODFILIAL?: string;
   CODTMV?: string;
   DOCUMENTO?: string;
+  GRUPOCONTABIL?: string;
   GRUPOCONTABILN9?: string;
   CONTA_CONTABIL?: string;
   DESCRICAO_CONTABIL?: string;
