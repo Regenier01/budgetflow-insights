@@ -160,7 +160,7 @@ async function run() {
 
           } else {
 
-            rowData[header] = cell.value ? String(cell.value).trim() : '';
+            rowData[header] = cell.value ? String(cell.value).replace(/\n/g, '').trim() : '';
 
           }
 
@@ -218,7 +218,16 @@ async function run() {
 
         const rows = XLSX.utils.sheet_to_json(sheet);
 
-        allRows = allRows.concat(rows);
+        // Limpar quebras de linha em todos os campos string
+        const cleanedRows = rows.map(row => {
+          const cleanedRow = {};
+          for (const [key, value] of Object.entries(row)) {
+            cleanedRow[key] = typeof value === 'string' ? value.replace(/\n/g, '').trim() : value;
+          }
+          return cleanedRow;
+        });
+
+        allRows = allRows.concat(cleanedRows);
 
       }
 
@@ -292,13 +301,19 @@ function getValue(row, keyName) {
 
   if (!row) return undefined;
 
-  if (row[keyName] !== undefined) return row[keyName];
+  if (row[keyName] !== undefined) {
+    const value = row[keyName];
+    return typeof value === 'string' ? value.replace(/\n/g, '').trim() : value;
+  }
 
   const normalizedKey = keyName.trim().toUpperCase();
 
   for (const k in row) {
 
-    if (k.trim().toUpperCase() === normalizedKey) return row[k];
+    if (k.trim().toUpperCase() === normalizedKey) {
+      const value = row[k];
+      return typeof value === 'string' ? value.replace(/\n/g, '').trim() : value;
+    }
 
   }
 
@@ -530,20 +545,30 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
 
-    // Verificar se o departamento existe no mapeamento (se fornecido)
-
+    // Adicionar automaticamente departamentos e centros de custo ausentes ao mapeamento
     if (depto && !departmentMapping[depto]) {
-
-      console.warn(`Departamento não encontrado no mapeamento: ${depto}`);
-
+      departmentMapping[depto] = {
+        nomedepto: depto,
+        unidadeNegocio: divisaoRaw || 'NÃO IDENTIFICADO',
+        divisao: divisaoRaw || 'NÃO IDENTIFICADO'
+      };
     }
 
-    // Verificar se o centro de custo existe no mapeamento (se fornecido)
-
     if (centroCusto && !costCenterMapping[centroCusto]) {
-
-      console.warn(`Centro de custo não encontrado no mapeamento: ${centroCusto}`);
-
+      // Tentar inferir a unidade de negócio a partir do nome do centro de custo
+      let unidadeNegocio = 'NÃO IDENTIFICADO';
+      if (centroCusto.includes('SOJA')) unidadeNegocio = 'AGRÍCOLA - SOJA';
+      else if (centroCusto.includes('MILHO')) unidadeNegocio = 'AGRÍCOLA - MILHO';
+      else if (centroCusto.includes('SORGO')) unidadeNegocio = 'AGRÍCOLA - SORGO';
+      else if (centroCusto.includes('GIRASSOL')) unidadeNegocio = 'AGRÍCOLA - GIRASSOL';
+      else if (centroCusto.includes('PECUARIA') || centroCusto.includes('GADO')) unidadeNegocio = 'PECUÁRIA';
+      else if (centroCusto.includes('SERING')) unidadeNegocio = 'SERINGAL';
+      else if (centroCusto.includes('CANA')) unidadeNegocio = 'CANA';
+      
+      costCenterMapping[centroCusto] = {
+        centroCusto: centroCusto,
+        unidadeNegocio: unidadeNegocio
+      };
     }
 
     const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
