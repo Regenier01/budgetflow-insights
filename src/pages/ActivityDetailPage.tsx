@@ -125,7 +125,12 @@ export default function ActivityDetailPage() {
         </div>
       </div>
 
-      <SummaryCards selectedMonth={selectedMonth} atividadeFilter={atividade.key} />
+      <SummaryCards 
+        selectedMonth={selectedMonth} 
+        atividadeFilter={atividade.key} 
+        costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+        departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+      />
 
       <div className="grid gap-8">
         {isEncargos ? (

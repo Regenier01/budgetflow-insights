@@ -7,14 +7,18 @@ import type { MonthKey, AtividadeKey } from '@/types/budget';
 interface Props {
   selectedMonth: MonthKey | 'all';
   atividadeFilter?: AtividadeKey;
+  costCenterFilter?: string;
+  departmentFilter?: string;
 }
 
-export function SummaryCards({ selectedMonth, atividadeFilter }: Props) {
+export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter, departmentFilter }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
-    (!atividadeFilter || a.atividade === atividadeFilter)
+    (!atividadeFilter || a.atividade === atividadeFilter) &&
+    (!costCenterFilter || a.centroCusto === costCenterFilter) &&
+    (!departmentFilter || a.departamento === departmentFilter)
   );
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {
