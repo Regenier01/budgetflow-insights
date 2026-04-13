@@ -240,7 +240,8 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
         divisao: rowDivisao,
         unidadeNegocio: rowUnidadeNegocio,
         coligada: rowColigada,
-        realizado: { ...base.realizado, [month]: (base.realizado[month] || 0) + saldo },
+        orcado: {},
+        realizado: { [month]: saldo },
       };
 
       newAccounts.push(newEntry);
