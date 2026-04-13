@@ -77,7 +77,7 @@ const rowValue = (value: unknown): string | undefined => {
 export function calculateGlobalTotals(accounts: AccountEntry[]) {
   let orc = 0;
   let real = 0;
-  const leafAccounts = accounts.filter(a => a.nivel === 5);
+  const leafAccounts = accounts.filter(a => a.nivel === 5 && a.grupoContabilN9 === '4');
   leafAccounts.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
@@ -91,6 +91,40 @@ export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtivida
   let orc = 0;
   let real = 0;
   const filtered = accounts.filter(a => a.atividade === filterAtividade && a.nivel === 5);
+  filtered.forEach(a => {
+    if (a.tipo === 'C' || a.tipo === 'D') {
+      orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    }
+  });
+  return { orc, real, diff: orc - real };
+}
+
+export function calculateTotalsByDivisaoGrupo4(accounts: AccountEntry[], filterAtividade: AtividadeKey) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a => 
+    a.atividade === filterAtividade && 
+    a.nivel === 5 && 
+    a.grupoContabilN9 === '4'
+  );
+  filtered.forEach(a => {
+    if (a.tipo === 'C' || a.tipo === 'D') {
+      orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+      real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+    }
+  });
+  return { orc, real, diff: orc - real };
+}
+
+export function calculateTotalsByDivisaoOutrosGrupos(accounts: AccountEntry[], filterAtividade: AtividadeKey) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a => 
+    a.atividade === filterAtividade && 
+    a.nivel === 5 && 
+    a.grupoContabilN9 !== '4'
+  );
   filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
       orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
