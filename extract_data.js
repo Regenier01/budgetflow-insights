@@ -2,7 +2,7 @@ import XLSX from 'xlsx';
 
 import ExcelJS from 'exceljs';
 
-import { writeFileSync, readdirSync, existsSync, createReadStream } from 'fs';
+import { writeFileSync, readdirSync, existsSync, createReadStream, statSync } from 'fs';
 
 import { join } from 'path';
 

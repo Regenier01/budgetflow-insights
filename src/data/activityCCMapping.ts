@@ -1,1 +1,5 @@
-export const ACTIVITY_CC_MAPPING = {};
+export const ACTIVITY_CC_MAPPING = {
+  "PECUARIA": [
+    "RATEIO CONFINAMENTO"
+  ]
+};
