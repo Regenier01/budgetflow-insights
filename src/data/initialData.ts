@@ -2,7 +2,7 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "3b3e5088-52bb-4920-b01e-d16f14e73848",
+    "id": "c6b0d648-c36e-4e20-8997-9dd3cea5c20c",
     "codigo": "1",
     "descricao": "1",
     "tipo": "D",
@@ -13,7 +13,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "62c3258a-2a16-472f-bf80-5ef87fb80698",
+    "id": "7dcf7046-38b4-4f45-bd24-0a3d9240249e",
     "codigo": "1",
     "descricao": "1",
     "tipo": "D",
@@ -24,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "541cda9f-dccf-48ed-8078-ec00e19b7114",
+    "id": "f518219a-ec62-4f4c-8509-b11b04ab9d34",
     "codigo": "1.1",
     "descricao": "1.1",
     "tipo": "D",
@@ -35,7 +35,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "dacff313-ef47-4042-ad1f-3c0bc066df3d",
+    "id": "0e6c56f6-6bdd-4197-8a65-b48b166fe053",
     "codigo": "1.1",
     "descricao": "1.1",
     "tipo": "D",
@@ -46,7 +46,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "22948910-7d8a-445e-9938-dccb42b08170",
+    "id": "11aa79c4-893a-41f2-b3c6-3e340072697c",
     "codigo": "1.1.08",
     "descricao": "1.1.08",
     "tipo": "D",
@@ -57,7 +57,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6c3b93c6-6f80-42d1-a67b-221e3cabd305",
+    "id": "ffa5db6c-8b7b-4b12-bbdc-a625f732339c",
     "codigo": "1.1.08.02",
     "descricao": "1.1.08.02",
     "tipo": "D",
@@ -68,7 +68,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4fb9aad3-4cda-4fe1-9f45-40ae09a3b7f3",
+    "id": "71067b67-72f8-42cd-9f55-2b212ec08783",
     "codigo": "1.1.08.02.0003",
     "descricao": "GRAOS REIDRATADOS",
     "tipo": "D",
@@ -78,6 +78,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.1.08.02-OUTROS PRODUTOS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -87,7 +88,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e256b33e-cd00-4175-b521-6afb90cb6864",
+    "id": "0b8b2850-7e01-41e3-9136-e5d632660b0a",
     "codigo": "1.1.55",
     "descricao": "1.1.55",
     "tipo": "D",
@@ -98,7 +99,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5848dbe6-3318-4577-8544-df1afd33b84e",
+    "id": "70344d87-25bd-4819-bcda-5c7e39ef17d2",
     "codigo": "1.1.55.01",
     "descricao": "1.1.55.01",
     "tipo": "D",
@@ -109,7 +110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8f8c05c0-5464-438a-8457-83f62d0a62a9",
+    "id": "ebab5d97-e0da-4e4c-b5e9-51220970e22e",
     "codigo": "1.1.55.01.0003",
     "descricao": "CUSTOS A APROPRIAR",
     "tipo": "D",
@@ -119,6 +120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.1.55.01-DESPESAS ANTECIPADAS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -128,7 +130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24934d16-0818-44ca-b4a4-8389368c815f",
+    "id": "e4e45fde-72bf-4d8f-a33c-66f799821fc3",
     "codigo": "1.3",
     "descricao": "1.3",
     "tipo": "D",
@@ -139,7 +141,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "66b57e23-1ee4-4760-a130-b1079d78f9fe",
+    "id": "6e20d10b-93e1-45c1-9af6-1ba2ba04df4e",
     "codigo": "1.3",
     "descricao": "1.3",
     "tipo": "D",
@@ -150,7 +152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "114feabb-ae4c-4914-b661-7d60221d0f89",
+    "id": "8e0f1d4f-4eb7-4788-a227-32dcdf7dd001",
     "codigo": "1.3.02",
     "descricao": "1.3.02",
     "tipo": "D",
@@ -161,7 +163,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "09266023-ca4d-48c9-8305-c237c32141c0",
+    "id": "db43b7c6-f33e-42b0-a745-eb7ecbe372b0",
     "codigo": "1.3.02",
     "descricao": "1.3.02",
     "tipo": "D",
@@ -172,7 +174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2e3b2ff9-8a6a-4230-b3ae-87d11f83bf03",
+    "id": "790fd30d-624b-4a5d-9508-f0f9956b81de",
     "codigo": "1.3.02.23",
     "descricao": "1.3.02.23",
     "tipo": "D",
@@ -183,7 +185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ef43cb35-30f3-4643-9dd6-cc9b1df9a19c",
+    "id": "4a6e77d5-a5cc-47d7-9cc8-adb9cd03542d",
     "codigo": "1.3.02.23",
     "descricao": "1.3.02.23",
     "tipo": "D",
@@ -194,7 +196,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "561fef38-779e-4113-9cc4-6366aad31cba",
+    "id": "3554e794-3358-4483-8a64-4fbc8c3d555d",
     "codigo": "1.3.02.23.0001",
     "descricao": "MOVEIS",
     "tipo": "D",
@@ -204,6 +206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
     "nomeProduto": "PURIFICADOR DE AGUA SOFT PLUS",
     "divisao": "SERINGAL",
@@ -213,7 +216,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "636949f5-9909-475e-9b23-edbec6a4a880",
+    "id": "f7ecd353-5a1b-4125-a3b9-ca95666c2a3b",
     "codigo": "1.3.02.23.0001",
     "descricao": "MOVEIS",
     "tipo": "D",
@@ -223,6 +226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
     "nomeProduto": "PURIFICADOR DE AGUA SOFT PLUS",
     "divisao": "PECUÁRIA",
@@ -232,7 +236,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b75410f1-8ca5-4cac-825e-2443f32a406f",
+    "id": "7093e2f7-d64c-4d48-a874-0494d70f435f",
     "codigo": "1.3.02.23.0002",
     "descricao": "EQUIPAMENTOS DE INFORMATICA",
     "tipo": "D",
@@ -242,6 +246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.3.02.23-MOVEIS, UTENSILIOS E INSTALACOES",
     "nomeProduto": "TABLET",
     "divisao": "SERINGAL",
@@ -251,7 +256,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "588ea81f-e9c3-43fd-8a93-e5d59b1a458e",
+    "id": "4e749073-ca10-4045-8fe2-7d6afc174377",
     "codigo": "1.3.02.24",
     "descricao": "1.3.02.24",
     "tipo": "D",
@@ -262,7 +267,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "654eee4d-56f7-4e60-b801-d66754ec3a55",
+    "id": "c55d5033-5b61-4b1d-95ef-c416e458b525",
     "codigo": "1.3.02.24.0004",
     "descricao": "ONIBUS",
     "tipo": "D",
@@ -272,6 +277,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.3.02.24-VEICULOS",
     "nomeProduto": "M6985 - ÔNIBUS VOLKSWAGEN COMIL CAMPIONE R",
     "divisao": "PECUÁRIA",
@@ -281,7 +287,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb4fa452-7a05-4177-8c33-06157915d912",
+    "id": "6cbac3bb-19fc-44e0-8766-f6c71506de69",
     "codigo": "1.3.02.34",
     "descricao": "1.3.02.34",
     "tipo": "D",
@@ -292,7 +298,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "38275754-764e-48b3-b588-d4092a11d5de",
+    "id": "95ddf4da-1909-4c20-a575-10dea64f9d41",
     "codigo": "1.3.02.34.0005",
     "descricao": "FERRAMENTARIA",
     "tipo": "D",
@@ -302,6 +308,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "1",
     "grupoContabilN9": "1.3.02.34-OUTRAS IMOBILIZACOES",
     "nomeProduto": "FURADEIRA IMPACTO 5/8 1100W 220V ID11002",
     "divisao": "PECUÁRIA",
@@ -311,7 +318,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68c8b634-c165-49e2-ace8-f394ccb03b03",
+    "id": "d172a5ff-141f-41e1-93f0-63ff2691198c",
     "codigo": "3",
     "descricao": "3",
     "tipo": "D",
@@ -322,7 +329,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7736a874-d1a2-4eed-b86f-1b44d58cad03",
+    "id": "85bde5bd-19ac-49bd-8376-c51ec4b563cb",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -333,7 +340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "eb082dd7-d5ea-408a-8bbd-83a05bd78a7b",
+    "id": "fbce8a65-b024-4519-8bd1-30c000d0e3a1",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -344,7 +351,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6ad91007-242c-4554-9ec2-65b640aaabfc",
+    "id": "6ac638a7-a324-4d1b-942e-d4488d935089",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -355,7 +362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "40ee233f-1de8-483c-9a36-1a534b38f25d",
+    "id": "b70ce396-8a04-4e35-a85c-1756bf3d4dea",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -366,7 +373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "938498ac-da28-407f-b592-e57bb6ab6b99",
+    "id": "9d97ff0d-a6be-45fc-b3ae-29d37622c916",
     "codigo": "3.1.01",
     "descricao": "3.1.01",
     "tipo": "R",
@@ -377,7 +384,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7c217217-724b-4cc6-b030-880da7d501aa",
+    "id": "58275ac0-0225-41a1-9545-ba951a3a69bc",
     "codigo": "3.1.01.01",
     "descricao": "3.1.01.01",
     "tipo": "R",
@@ -388,7 +395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2631d38c-04cd-4238-abf6-b8cd41145528",
+    "id": "5256b769-5175-45aa-b2db-40a471aeebe6",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -398,6 +405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.1.01.01-VENDA DE PRODUTOS ANIMAIS",
     "nomeProduto": "BOVINO MACHO 12 A 24 MESES",
     "divisao": "PECUÁRIA",
@@ -407,7 +415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c916942d-dc2e-47bb-b9df-7fbe7239fe17",
+    "id": "4b93f5a6-9b1e-48b8-9242-10399b371bc7",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -417,6 +425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.1.01.01-VENDA DE PRODUTOS ANIMAIS",
     "nomeProduto": "BOVINO MACHO 24 A 36 MESES",
     "divisao": "PECUÁRIA",
@@ -426,7 +435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d98665a-bc21-4906-a687-cbf02ef8c354",
+    "id": "b976088c-2677-4b59-b847-9b8c7485196b",
     "codigo": "3.1.02",
     "descricao": "3.1.02",
     "tipo": "R",
@@ -437,7 +446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a91d02c1-c1f5-4694-a3df-7bda97037b2f",
+    "id": "952bf64e-b876-4f14-92a6-630e210ee451",
     "codigo": "3.1.02.03",
     "descricao": "3.1.02.03",
     "tipo": "R",
@@ -448,7 +457,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "283c30c3-ca25-4205-9920-ba52fd9cf59b",
+    "id": "abd6a862-54c0-4a19-92e2-7e96d7192da5",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -458,6 +467,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.1.02.03-VENDA DE OUTROS PRODUTOS AGRICOLAS",
     "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
@@ -467,7 +477,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b321facc-a19a-456a-96c0-4bb3706f563d",
+    "id": "3841eaa8-b5b0-4011-8b67-80c60f4f3291",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -477,6 +487,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.1.02.03-VENDA DE OUTROS PRODUTOS AGRICOLAS",
     "nomeProduto": "CERNAMBY VIRGEM",
     "divisao": "SERINGAL",
@@ -486,7 +497,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41189c35-03b9-4355-b132-a8e7d5de66a8",
+    "id": "886f0e2b-aaa2-42c2-9c86-6617dc9606f6",
     "codigo": "3.2",
     "descricao": "3.2",
     "tipo": "D",
@@ -497,7 +508,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "989bbbf0-857c-4879-ad58-e91bf75b5027",
+    "id": "a2cc7cac-1b8c-4ad4-b1a6-0e31b9e80ad0",
     "codigo": "3.2",
     "descricao": "3.2",
     "tipo": "D",
@@ -508,7 +519,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e8468fa7-106c-4cce-86a3-b4b84b14fe83",
+    "id": "2fc815e3-6cfa-40cf-95cd-77797239a222",
     "codigo": "3.2.01",
     "descricao": "3.2.01",
     "tipo": "D",
@@ -519,7 +530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "40aae0f9-6aab-4dec-b171-3afe20168c1a",
+    "id": "46527df7-6000-4db8-817a-d15194515f46",
     "codigo": "3.2.01.01",
     "descricao": "3.2.01.01",
     "tipo": "D",
@@ -530,7 +541,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "823356a0-5926-4a82-b3a0-bd2a858adf84",
+    "id": "43f7604a-48c2-4571-bd8d-41919f9b2585",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -540,6 +551,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
@@ -549,7 +561,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fb83ebd-d6a5-4a33-adda-cb95fd184d0c",
+    "id": "efa7a26b-551e-49ab-9664-35598e4e9ebd",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -559,6 +571,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "CERNAMBY VIRGEM",
     "divisao": "SERINGAL",
@@ -568,7 +581,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f730b3f6-17cf-44c1-bca7-4e98d6d44116",
+    "id": "7d929f54-f810-4918-a92a-f2301db77d5b",
     "codigo": "3.2.01.01.0001",
     "descricao": "ICMS",
     "tipo": "D",
@@ -578,6 +591,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -587,7 +601,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11aea53b-7f59-4b3e-8b46-90de357abcd3",
+    "id": "3b14a1eb-1ca2-41e9-8259-e78c9c1003b1",
     "codigo": "3.2.01.01.0002",
     "descricao": "INSS",
     "tipo": "D",
@@ -597,6 +611,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
@@ -606,7 +621,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74a52ffe-cc04-4801-a2c6-2328f0ab8565",
+    "id": "2fde3767-e57b-4505-9598-818cc4d080b2",
     "codigo": "3.2.01.01.0002",
     "descricao": "INSS",
     "tipo": "D",
@@ -616,6 +631,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "CERNAMBY VIRGEM",
     "divisao": "SERINGAL",
@@ -625,7 +641,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6b03936-7ddd-422f-9832-e9c096196754",
+    "id": "7d873d32-d63d-4e29-a4d8-d74585e001e2",
     "codigo": "3.2.01.01.0003",
     "descricao": "COFINS S/ FATURAMENTO",
     "tipo": "D",
@@ -635,6 +651,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
@@ -644,7 +661,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45dc3684-f580-48fd-a140-e9c32049d5f3",
+    "id": "f59ffe90-1d71-4176-8f81-afe9bbc847d5",
     "codigo": "3.2.01.01.0003",
     "descricao": "COFINS S/ FATURAMENTO",
     "tipo": "D",
@@ -654,6 +671,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "CERNAMBY VIRGEM",
     "divisao": "SERINGAL",
@@ -663,7 +681,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9163d2e1-ee6c-40b7-b25f-de1fe22a8fee",
+    "id": "bbe75f2a-3fbe-4928-88b3-fac6a4b741af",
     "codigo": "3.2.01.01.0004",
     "descricao": "PIS S/ FATURAMENTO",
     "tipo": "D",
@@ -673,6 +691,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "COAGULO VIRGEM A GRANEL",
     "divisao": "SERINGAL",
@@ -682,7 +701,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd70be74-007c-4b76-9e92-97b38da1c1c4",
+    "id": "1083d0f9-ae34-4d8d-9391-43e082565b26",
     "codigo": "3.2.01.01.0004",
     "descricao": "PIS S/ FATURAMENTO",
     "tipo": "D",
@@ -692,6 +711,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA",
     "nomeProduto": "CERNAMBY VIRGEM",
     "divisao": "SERINGAL",
@@ -701,7 +721,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "867a28cd-d6e8-45e2-8dbf-3ecca73e8216",
+    "id": "94db2130-464c-463d-b8e7-720779424c35",
     "codigo": "3.2.03",
     "descricao": "3.2.03",
     "tipo": "D",
@@ -712,7 +732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "3be12475-bddf-42a7-9084-1a92755d2325",
+    "id": "96fd277c-5fbb-40e3-b5d1-80599a3b6042",
     "codigo": "3.2.03.01",
     "descricao": "3.2.03.01",
     "tipo": "D",
@@ -723,7 +743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ceae908f-27ee-4ef9-8ae4-105af2cdb84c",
+    "id": "b88d1f30-6c9c-4aef-a71b-a64a16c865db",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -733,6 +753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
     "nomeProduto": "BOVINO MACHO 24 A 36 MESES",
     "divisao": "PECUÁRIA",
@@ -742,7 +763,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f10fc22-785a-45ad-9a46-c46efc515a72",
+    "id": "d3d5a7e6-a7d5-4a13-b6d5-f2434d0cc5de",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -752,6 +773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
     "nomeProduto": "BOVINO MACHO 12 A 24 MESES",
     "divisao": "PECUÁRIA",
@@ -761,7 +783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84227b0c-8f8e-4eb8-86f3-8c986727095c",
+    "id": "67e127d6-e710-4ea7-ae96-5f584d3bb035",
     "codigo": "3.2.03.01.0003",
     "descricao": "OUTROS ABATIMENTOS",
     "tipo": "D",
@@ -771,6 +793,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.2.03.01-ABATIMENTOS S/ VENDAS",
     "nomeProduto": "OUTRAS DESPESAS",
     "divisao": "PECUÁRIA",
@@ -780,7 +803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9ba3d03-c36e-4111-8ea7-7a04442ef3e3",
+    "id": "508166a9-e620-4a38-a427-be857ac6062b",
     "codigo": "3.3",
     "descricao": "3.3",
     "tipo": "D",
@@ -791,7 +814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "527d2ca2-1a07-4d76-83f3-13b3dd0d22d1",
+    "id": "c212d784-522a-478d-99a2-78fa152dcfe5",
     "codigo": "3.3",
     "descricao": "3.3",
     "tipo": "D",
@@ -802,7 +825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9943a3f5-ab31-4929-a8f2-a0b83893d1ec",
+    "id": "0c714797-7fae-445d-a523-88540cb26a34",
     "codigo": "3.3.01",
     "descricao": "3.3.01",
     "tipo": "D",
@@ -813,7 +836,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "313e10ad-d298-4949-82e5-672e01100263",
+    "id": "d4c6449b-03a1-4013-b8dc-15bfacc78d6f",
     "codigo": "3.3.01",
     "descricao": "3.3.01",
     "tipo": "D",
@@ -824,7 +847,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f6292859-c5cd-4407-b164-bac957eaeef1",
+    "id": "31283058-001d-4139-a614-daee8d66cc17",
     "codigo": "3.3.01.01",
     "descricao": "3.3.01.01",
     "tipo": "D",
@@ -835,7 +858,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ffe801e0-ea3b-442e-8d73-f24305fc1d46",
+    "id": "fef1947a-952c-46b6-9d27-701210e7cb07",
     "codigo": "3.3.01.01.0001",
     "descricao": "PRODUTOS ANIMAIS",
     "tipo": "D",
@@ -845,6 +868,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.3.01.01-CUSTO DOS PRODUTOS PECUARIOS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -854,7 +878,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "748072dc-a8b5-4127-929f-6b38e51ae2e1",
+    "id": "cd984d10-5ce2-4a16-b81c-3c586827ec5d",
     "codigo": "3.3.01.02",
     "descricao": "3.3.01.02",
     "tipo": "D",
@@ -865,7 +889,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "efe3fca3-aba4-48c4-920c-9582aca01a2d",
+    "id": "696b3e83-d38f-4e44-bf6c-e12202255850",
     "codigo": "3.3.01.02.0003",
     "descricao": "LATEX",
     "tipo": "D",
@@ -875,6 +899,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.3.01.02-CUSTO DOS PRODUTOS AGRICOLAS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -884,7 +909,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f7cd7af-0d16-4466-a4f0-f1ccac74cb1b",
+    "id": "efd830df-8f1b-46c2-98fa-ecb07e78f88e",
     "codigo": "3.3.01.02.0080",
     "descricao": "VJUSTO SERINGAL - DEPREC, EXAUST E AMORT",
     "tipo": "D",
@@ -894,6 +919,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.3.01.02-CUSTO DOS PRODUTOS AGRICOLAS",
     "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
     "divisao": "SERINGAL",
@@ -903,7 +929,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c6f31496-b5e8-43b4-bbb4-2ec3fe09c36b",
+    "id": "c6054ad6-fdbf-4e24-9e83-f611af6cbfd2",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -914,7 +940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1b128cb2-3056-4bda-830b-a2bb1e081ebb",
+    "id": "924dfa20-005a-41c9-a088-fdea4dc8f354",
     "codigo": "3.4",
     "descricao": "3.4",
     "tipo": "D",
@@ -925,7 +951,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5921cb17-a5d2-471a-826e-86a39b12114d",
+    "id": "b77755db-655a-4aca-a583-1a440f60f8e0",
     "codigo": "3.4.01",
     "descricao": "3.4.01",
     "tipo": "D",
@@ -936,7 +962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8606e1f9-f4db-4d6e-b256-66ae9467591f",
+    "id": "66dbaf32-3c9d-4650-9b60-1f669ca25885",
     "codigo": "3.4.01.01",
     "descricao": "3.4.01.01",
     "tipo": "D",
@@ -947,7 +973,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "089fb8b4-c8f1-4cb1-9ee0-8a95882adba4",
+    "id": "cb127c7e-883a-43a8-9e4a-cbfd14da91aa",
     "codigo": "3.4.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "D",
@@ -957,6 +983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "GOVERNANCIA CORPORATIVA",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ASSIDUIDADE/VALOR",
     "divisao": "ADMINISTRACAO",
@@ -966,7 +993,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea9ca20f-fa5e-4958-8741-4f857b9b2991",
+    "id": "66b40bff-755c-4ade-aba1-ce226453efee",
     "codigo": "3.4.01.10",
     "descricao": "3.4.01.10",
     "tipo": "D",
@@ -977,7 +1004,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "16d0ed49-bad4-433f-adcc-9c4ed50a719a",
+    "id": "003f0e76-74e2-4b71-aa22-eebcea75ae68",
     "codigo": "3.4.01.10.0061",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "D",
@@ -987,6 +1014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "CONTROLADORIA",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.01.10-OUTRAS DESPESAS ADMINISTRATIVAS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
@@ -996,7 +1024,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bd70e21-226c-4d43-9eb3-0c75c2bea99e",
+    "id": "3bd5dfbd-cc14-4714-bd1b-142cf9e305eb",
     "codigo": "3.4.01.20",
     "descricao": "3.4.01.20",
     "tipo": "D",
@@ -1007,7 +1035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "87d0231d-3028-4e4f-aec3-9b7c20967972",
+    "id": "efe06fbf-53a4-47ec-8750-0cc7370c9594",
     "codigo": "3.4.01.20.0020",
     "descricao": "PEDAGIOS",
     "tipo": "D",
@@ -1017,6 +1045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "RATEIO INFORMACAO E TECNOLOGIA",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.01.20-OUTROS CUSTOS",
     "nomeProduto": "PEDAGIO",
     "divisao": "ADMINISTRACAO",
@@ -1026,7 +1055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "341097e2-fa9e-4466-8316-41c2c0cfe6e1",
+    "id": "10faddbe-9bf6-49c4-a3ae-d8d173a7df66",
     "codigo": "3.4.03",
     "descricao": "3.4.03",
     "tipo": "D",
@@ -1037,7 +1066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "de0d7a21-a80c-4438-9438-11f7397cb6a5",
+    "id": "9c10b754-5d41-4b52-944d-7e5a31e65e50",
     "codigo": "3.4.03.01",
     "descricao": "3.4.03.01",
     "tipo": "D",
@@ -1048,7 +1077,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "70c52b24-8474-431a-8c39-9e675f95bc7e",
+    "id": "381a37e8-cae6-4430-8d77-1907fd80fb31",
     "codigo": "3.4.03.01.0006",
     "descricao": "IOF",
     "tipo": "D",
@@ -1058,6 +1087,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "RATEIO FINANCEIRO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.01-IMPOSTOS INDIRETOS",
     "nomeProduto": "IOF",
     "divisao": "ADMINISTRACAO",
@@ -1067,7 +1097,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35711a67-6702-4a70-b98d-f54bea549bad",
+    "id": "df0bac73-dfcb-43cd-a3a1-f6ac891d5e2e",
     "codigo": "3.4.03.02",
     "descricao": "3.4.03.02",
     "tipo": "D",
@@ -1078,7 +1108,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "3d1667f5-de65-4cbe-8d97-e2ecadca9986",
+    "id": "e9ed7b21-d815-4c5f-b6d5-8fc5a3875149",
     "codigo": "3.4.03.02.0005",
     "descricao": "TAXAS DIVERSAS",
     "tipo": "D",
@@ -1088,6 +1118,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "DIRETORIA",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
     "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
     "divisao": "ADMINISTRACAO",
@@ -1097,7 +1128,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2aec04aa-cbc1-4dc6-970c-80084a874ca8",
+    "id": "93d3ab49-fd93-4205-b0d9-d36d6e8d649e",
     "codigo": "3.4.03.02.0007",
     "descricao": "PIS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1107,6 +1138,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "RATEIO DEPARTAMENTOS",
     "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
     "nomeProduto": "PIS SOBRE FATURAMENTO  039391",
     "divisao": "ADMINISTRACAO",
@@ -1116,7 +1148,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "22a646c5-ceda-400c-9517-7fb091814e87",
+    "id": "2f7238b9-fc5e-4a1b-a4e2-da3ecf859e46",
     "codigo": "3.4.03.02.0007",
     "descricao": "PIS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1126,6 +1158,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ALMOXARIFADO",
     "centroCusto": "ALMOXARIFADO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
     "nomeProduto": "SUCATA DE PAPELAO",
     "divisao": "ADMINISTRACAO",
@@ -1135,7 +1168,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80b105de-b2fd-4e86-a651-569547fecb50",
+    "id": "040325df-b9be-4a9f-934d-d45f8b789a30",
     "codigo": "3.4.03.02.0008",
     "descricao": "COFINS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1145,6 +1178,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ALMOXARIFADO",
     "centroCusto": "ALMOXARIFADO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
     "nomeProduto": "SUCATA DE FERRO",
     "divisao": "ADMINISTRACAO",
@@ -1154,7 +1188,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4eb1debd-89db-4b05-8932-9722c794a12b",
+    "id": "906c0eee-498f-487f-9522-e12f3f4ba79c",
     "codigo": "3.4.03.02.0008",
     "descricao": "COFINS S/ OUTRAS RECEITAS",
     "tipo": "D",
@@ -1164,6 +1198,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ADMINISTRACAO",
     "centroCusto": "RATEIO DEPARTAMENTOS",
     "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
     "nomeProduto": "COFINS SOBRE FATURAMENTO  039393",
     "divisao": "ADMINISTRACAO",
@@ -1173,7 +1208,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4262cde6-a662-48d0-9292-11009ce579ab",
+    "id": "3caa23ae-19ee-44cc-8954-02f96aaef449",
     "codigo": "3.4.04",
     "descricao": "3.4.04",
     "tipo": "D",
@@ -1184,7 +1219,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6ab48900-fdf6-42d7-aaa4-fa7b7501e729",
+    "id": "590a0f5f-c156-4ca6-94f0-d6b9e06bc20b",
     "codigo": "3.4.04",
     "descricao": "3.4.04",
     "tipo": "D",
@@ -1195,7 +1230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a1763358-f34a-42c2-bc94-bca848209307",
+    "id": "6ed2381c-36b4-496b-bd96-2890d9b62a98",
     "codigo": "3.4.04.01",
     "descricao": "3.4.04.01",
     "tipo": "D",
@@ -1206,7 +1241,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b7080bd2-322f-4ba6-b702-1f28d505ad0b",
+    "id": "b0ad5478-e9cd-47b5-873c-921b82cd844e",
     "codigo": "3.4.04.01.0004",
     "descricao": "JUROS DE MORA",
     "tipo": "D",
@@ -1216,6 +1251,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "SEM_DEPTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.04.01-DESPESAS FINANCEIRAS",
     "nomeProduto": "JUROS DE MORA  039483",
     "divisao": "SEM_DIVISAO",
@@ -1225,7 +1261,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2a57ea9-4299-46d3-b4e7-58b719bed822",
+    "id": "ad697c4d-0dca-4582-bf9b-0c927b1e6b9e",
     "codigo": "3.4.04.05",
     "descricao": "3.4.04.05",
     "tipo": "D",
@@ -1236,7 +1272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "838ef882-06ca-421f-b4f6-c6206687c260",
+    "id": "d75399ed-6942-4c15-9c9d-8a755e1a44d3",
     "codigo": "3.4.04.05.0001",
     "descricao": "JUROS ATIVOS",
     "tipo": "D",
@@ -1246,6 +1282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "SEM_DEPTO",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
     "grupoContabilN9": "3.4.04.05-RECEITAS FINANCEIRAS",
     "nomeProduto": "JUROS ATIVOS",
     "divisao": "VERA CRUZ - SERINGAL",
@@ -1255,7 +1292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a319e15-bb82-4ed1-af22-787a4f9b8a82",
+    "id": "0bfb86ff-fba7-4f74-a501-ffb2fd7b4d51",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -1266,7 +1303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1b765079-5f64-437c-b1e9-da9c5c92d64f",
+    "id": "424eb746-cc1a-409d-9131-aa881ca15aa9",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -1277,7 +1314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c7cdd449-a4e7-4509-8936-f60f27ea442f",
+    "id": "4e2a8d61-727d-4145-88f6-2925fca26023",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -1288,7 +1325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6dc967fb-6303-45cc-83df-a81de755ab90",
+    "id": "d47c8e60-7ba3-4afd-a4be-bb5bd987ce8a",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -1299,7 +1336,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6882a4cd-2d78-4321-b72d-b5fa3269ae6b",
+    "id": "8c168f77-deea-439f-8d8d-69493331d9ce",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -1310,7 +1347,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d5b96af5-1307-4c26-becd-12db9e5bc21d",
+    "id": "81a7e23a-8c1d-4e85-9e79-6395ef05faa4",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -1321,7 +1358,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "92ea2f48-768f-4b50-8de3-defb1693f044",
+    "id": "69209229-4358-4987-ae10-102409984d9e",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -1332,7 +1369,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b0b9f8ae-ba79-4d65-be0e-ceae5534483f",
+    "id": "019dce4c-87e3-4b07-a8aa-751d66fc9e18",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -1343,7 +1380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "31c02342-b049-4973-9748-93b5755cfe44",
+    "id": "5e1e8e58-5b71-4b2a-8ff0-29267a4909eb",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1353,6 +1390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIAS TRABALHADOS",
     "divisao": "SERINGAL",
@@ -1362,7 +1400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "693db5e0-aa93-45e9-8266-2a5d2672b7b5",
+    "id": "a7e528fc-0ff8-43a8-b7c4-9c295fded708",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1372,6 +1410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DESCONTO - AVISO PREVIO",
     "divisao": "SERINGAL",
@@ -1381,7 +1420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92d372cb-cbdb-4d24-82d2-48923eee12e6",
+    "id": "4fbf070b-0892-4412-8ac5-a9f6f9015436",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1391,6 +1430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "FALTAS",
     "divisao": "SERINGAL",
@@ -1400,7 +1440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "827a6b46-8b2d-4261-83ca-ccda17846c89",
+    "id": "390945ff-a088-4418-9e12-d9f744ec26e5",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1410,6 +1450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIARIA - VIAGEM",
     "divisao": "SERINGAL",
@@ -1419,7 +1460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edb3e754-21b0-4823-9ed5-0e4968047cda",
+    "id": "1cd3544d-bcb0-479b-ae79-01748e862f2c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1429,6 +1470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "D.S.R. - PERDIDO",
     "divisao": "SERINGAL",
@@ -1438,7 +1480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1091f05b-2d56-4e23-a04b-6c1fa45bf887",
+    "id": "46b86bae-4cfd-4b8f-adeb-184af67170d2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1448,6 +1490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ATRASOS",
     "divisao": "SERINGAL",
@@ -1457,7 +1500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52e5f318-b472-4659-84d1-8fc83636d65e",
+    "id": "8e8cbb98-a551-4bb6-9f0a-d101357fd9b6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1467,6 +1510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DESCONTO BANCO DE HORAS",
     "divisao": "SERINGAL",
@@ -1476,7 +1520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45b88d3d-a962-426a-8c31-ce35f261800e",
+    "id": "414530fd-3779-457f-80a4-b0f50ae5059d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1486,6 +1530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REMUNERACAO PAGO A MAIOR",
     "divisao": "SERINGAL",
@@ -1495,7 +1540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a66a3a0f-b0a9-4080-9ac0-46cf4a262ac6",
+    "id": "27d8f25b-e336-42b1-a626-db8f946ac98e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1505,6 +1550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO SALARIAL",
     "divisao": "SERINGAL",
@@ -1514,7 +1560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45ed753e-4afe-4cf2-8da1-0efd713ee682",
+    "id": "395b97ca-1dac-4384-83f1-6e11644aadeb",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1524,6 +1570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PERICULOSIDADE",
     "divisao": "SERINGAL",
@@ -1533,7 +1580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83f7c32e-47d0-48dc-b74c-4d824ec150e1",
+    "id": "1e39b90e-2c92-42a2-a036-caab4c73eb0f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1543,6 +1590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PERICULOSIDADE (C)",
     "divisao": "SERINGAL",
@@ -1552,7 +1600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7084b6f-55d3-4242-8852-ac64f54894d1",
+    "id": "cfc8c8c0-3b4a-4061-b04a-c49e35be8d6b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1562,6 +1610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "LIQUIDO - NEGATIVO RESCISAO",
     "divisao": "SERINGAL",
@@ -1571,7 +1620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0663c58-9f87-4eab-b797-3d003f0cfd8a",
+    "id": "f83b0a9b-f940-42f7-837d-4e69f5126a34",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1581,6 +1630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO - GRATIFICACAO",
     "divisao": "SERINGAL",
@@ -1590,7 +1640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3e84606-f4b6-4d39-a066-96332699ca77",
+    "id": "1f6d56c8-8e56-43f0-ac1c-237b36bdc873",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1600,6 +1650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PREMIO HORA EXTRA",
     "divisao": "SERINGAL",
@@ -1609,7 +1660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0f5da91-439f-4e08-b199-3668036d96c8",
+    "id": "b50c9345-1574-4a53-8c35-4fe01b6eab55",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1619,6 +1670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO - COMISSAO",
     "divisao": "SERINGAL",
@@ -1628,7 +1680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d9b0141-7b2d-443c-becb-9672181e4d9b",
+    "id": "a99a7563-7662-402f-a794-af518e361c7a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1638,6 +1690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "GRATIFICACAO",
     "divisao": "SERINGAL",
@@ -1647,7 +1700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3587e93-754f-4130-8888-7aa27edfee78",
+    "id": "6b527723-dbca-4923-8c1b-bc2e8a963911",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1657,6 +1710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ASSIDUIDADE/VALOR",
     "divisao": "SERINGAL",
@@ -1666,7 +1720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c09c9541-4760-42f0-bcc0-7b659870ec53",
+    "id": "dd0f51f7-03c6-4529-9bed-570e129073b0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1676,6 +1730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUDA DE CUSTO",
     "divisao": "SERINGAL",
@@ -1685,7 +1740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09d966c7-de6f-49f4-a978-95dd3f2816ba",
+    "id": "5a966d16-775a-4741-b391-edcea239f0d6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1695,6 +1750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO - HORA EXTRA",
     "divisao": "SERINGAL",
@@ -1704,7 +1760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5ea4eba-176c-44bc-8b0e-f8e7ab14cf85",
+    "id": "fb3e6ebb-5d03-46a5-8ad8-9f5dc322b29a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1714,6 +1770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO D.S.R",
     "divisao": "SERINGAL",
@@ -1723,7 +1780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "295518ac-707d-45a5-b4c2-e17317364b2c",
+    "id": "5ae4f9e3-28f5-4c66-bab2-a4b4489f9fde",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1733,6 +1790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO ASSIDUIDADE",
     "divisao": "SERINGAL",
@@ -1742,7 +1800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "176a3b76-cdea-4028-bc4d-8d8f4bb9ee1e",
+    "id": "1e8fc439-6157-4c3a-9620-5e4f87c7000f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1752,6 +1810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ADICIONAL NOTURNO",
     "divisao": "SERINGAL",
@@ -1761,7 +1820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cd15182-fb18-4884-95a4-4bb3e742f81f",
+    "id": "850cc714-7583-43e9-bc60-cbbc74fe5666",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1771,6 +1830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ATESTADO MEDICO",
     "divisao": "SERINGAL",
@@ -1780,7 +1840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8f802c4-0a1d-4976-a3ab-bdb6e08535cb",
+    "id": "351f7ebc-0949-4b1b-9460-61cfacc06c0e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1790,6 +1850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO DSR HORA EXTRA",
     "divisao": "SERINGAL",
@@ -1799,7 +1860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d11c5876-cc5c-4560-bd05-bf23f9c8bc44",
+    "id": "37a06bbe-24df-40e1-892c-dcdb15a2bd45",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1809,6 +1870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO FALTAS",
     "divisao": "SERINGAL",
@@ -1818,7 +1880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f9f443f-7547-4c57-b343-c0e846d73273",
+    "id": "51787578-68f7-496b-bf3a-5ac58ea80fb0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1828,6 +1890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PERICULOSIDADE",
     "divisao": "PECUÁRIA",
@@ -1837,7 +1900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65160be7-dc05-45e3-982f-4363446ca2bb",
+    "id": "313e7af0-e51e-48b7-b8bc-1d1948a8711f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1847,6 +1910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO FALTAS",
     "divisao": "PECUÁRIA",
@@ -1856,7 +1920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29583ef1-8a3d-48c2-9b7c-0244db2e3847",
+    "id": "6a8564dc-4dc6-48ef-ad00-6506dd771110",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1866,6 +1930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CONDOMINIO CAPELINHA",
     "divisao": "SERINGAL",
@@ -1875,7 +1940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fa32134-7559-4840-99ab-de71d6830c57",
+    "id": "b70a8a4f-bfc0-4325-b2a4-0f9b7a48a470",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1885,6 +1950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ATRASOS",
     "divisao": "PECUÁRIA",
@@ -1894,7 +1960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97d44ba9-24c4-47b9-bd2f-4cfb0e52e3d7",
+    "id": "e3222818-ec50-41eb-8df9-d0ee65ef664b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1904,6 +1970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIARIA - VIAGEM",
     "divisao": "PECUÁRIA",
@@ -1913,7 +1980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d66dc373-e857-4e94-a420-686ba1fbc02e",
+    "id": "4ec47f6d-6d26-41c0-aa9f-fad9af514c93",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1923,6 +1990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ADICIONAL NOTURNO",
     "divisao": "PECUÁRIA",
@@ -1932,7 +2000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d687b569-1414-49f8-a26e-2743bb522530",
+    "id": "eb35be3f-38a4-4fa9-8b8e-b5a2c854616b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1942,6 +2010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ASSIDUIDADE/VALOR",
     "divisao": "PECUÁRIA",
@@ -1951,7 +2020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6da053fa-e8a3-4fb8-820f-4748e59a4126",
+    "id": "08c50c98-d481-45f6-b55c-2951ca67f681",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1961,6 +2030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "GRATIFICACAO",
     "divisao": "PECUÁRIA",
@@ -1970,7 +2040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9ec79db-491a-46dd-8583-be75d963a2a9",
+    "id": "6b4e17e9-c60c-4fb0-9025-4f8ea38457fe",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1980,6 +2050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIAS TRABALHADOS",
     "divisao": "PECUÁRIA",
@@ -1989,7 +2060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2f25060-2f51-4dfd-9e39-e0d62582ce00",
+    "id": "ae8daed9-4064-41c3-9f2f-8f2165f37d0c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1999,6 +2070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CONDOMINIO CAPELINHA",
     "divisao": "PECUÁRIA",
@@ -2008,7 +2080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b9a5b12-f8fd-4f92-9fed-53f462e06c5d",
+    "id": "b30cce83-0629-4700-8a65-789e0b069dc4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2018,6 +2090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO D.S.R",
     "divisao": "PECUÁRIA",
@@ -2027,7 +2100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d559c65-f065-4c48-9fa9-e0b35438152d",
+    "id": "1ab67c73-b881-4871-91b4-770d2db52c94",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2037,6 +2110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "D.S.R. - HORA EXTRA",
     "divisao": "PECUÁRIA",
@@ -2046,7 +2120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e88b7dcc-027c-400e-9ace-0999fdc422da",
+    "id": "13b4f68a-cc42-4873-88a0-5550d514de99",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2056,6 +2130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "HORA EXTRA100%",
     "divisao": "PECUÁRIA",
@@ -2065,7 +2140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "024400e2-ae00-4400-945b-502a6b126b7f",
+    "id": "14a7f728-3715-4ea7-b884-866db29b8121",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2075,6 +2150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "HORA EXTRA 50%",
     "divisao": "PECUÁRIA",
@@ -2084,7 +2160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7798a5f0-1163-4280-9adb-0326f686ed68",
+    "id": "8b0a652a-5ade-4bc8-aa94-d4c38732b3cf",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2094,6 +2170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "HORA EXTRA 50%",
     "divisao": "SERINGAL",
@@ -2103,7 +2180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b2ce926-f457-4f1b-a75b-ccc77c436e8e",
+    "id": "f2346124-87b4-4dd2-85b0-b1b54b596064",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2113,6 +2190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "D.S.R. - HORA EXTRA",
     "divisao": "SERINGAL",
@@ -2122,7 +2200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b455d87a-e62a-4a72-883e-2e1148f06418",
+    "id": "49a68dae-88e3-4730-903e-861e552dc5bf",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2132,6 +2210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "D.S.R S/ INTERVALO INTRAJORNADA INDENIZA",
     "divisao": "SERINGAL",
@@ -2141,7 +2220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "431074fc-4a74-4fd6-99b1-3ca975fe7e8b",
+    "id": "dbdde8c9-bca4-4c68-a347-6d4893dab74a",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2151,6 +2230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "INTERVALO INTRAJORNADA INDENIZADA",
     "divisao": "SERINGAL",
@@ -2160,7 +2240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88b1cfcf-6feb-4588-a596-85ac44576432",
+    "id": "6e4aa947-42ab-436b-84e9-6b266950e91d",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2170,6 +2250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "HORA EXTRA100%",
     "divisao": "SERINGAL",
@@ -2179,7 +2260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "443874f4-f64d-46c0-9f73-c55c07269ebb",
+    "id": "ec6b5b4f-e80f-47ce-bc2f-f7c8bfbe22eb",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2189,6 +2270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CARGO DE CONFIANCA",
     "divisao": "SERINGAL",
@@ -2198,7 +2280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e943b962-144b-43dc-93fb-01f81ed7dec7",
+    "id": "d8f6a88e-b64c-4335-a888-506abb09d684",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2208,6 +2290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "D.S.R. - COMISSOES",
     "divisao": "SERINGAL",
@@ -2217,7 +2300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d8a3df6-0aa4-441e-8de3-8a7585c11306",
+    "id": "0d006a2a-6621-4d4b-ada0-fdb27d6d05c6",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2227,6 +2310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "REPOSICAO DSR COMISSAO",
     "divisao": "SERINGAL",
@@ -2236,7 +2320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79a47b0a-f0e5-4060-9ce1-7990a50d032d",
+    "id": "252cf8f1-affa-455c-80a6-405b8fc48ea8",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2246,6 +2330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "COMISSAO",
     "divisao": "SERINGAL",
@@ -2255,7 +2340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8294d12a-961a-474c-b9fb-08bfdef008bb",
+    "id": "8e22e635-6cf6-4a42-8002-98fe8b16d7d6",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2265,6 +2350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "COMISSAO - HORIMETRO",
     "divisao": "SERINGAL",
@@ -2274,7 +2360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f5fda34-766c-43c4-8936-1c3dc0f2f2bc",
+    "id": "8bc4033d-b0ed-45c3-84ca-e648b8f90179",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -2284,6 +2370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CARGO DE CONFIANCA",
     "divisao": "PECUÁRIA",
@@ -2293,7 +2380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc0f766f-b252-4ac5-877c-81448224460a",
+    "id": "6ebf435a-0bcb-42e5-8ce1-6cd6c9926da9",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2303,6 +2390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO FERIAS",
     "divisao": "PECUÁRIA",
@@ -2312,7 +2400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c698b84c-13fd-4bf9-a036-ac30acb57199",
+    "id": "e2607f15-6d45-46c9-b648-c9a1c8bf2926",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2322,6 +2410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
     "divisao": "PECUÁRIA",
@@ -2331,7 +2420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e92928b-75c5-4d08-9fb9-dd40cc3bb52c",
+    "id": "4dcf1b38-7b04-45b8-a69e-9e30219c70b4",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2341,6 +2430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO FERIAS",
     "divisao": "SERINGAL",
@@ -2350,7 +2440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b26ecc96-99bf-4e67-bcde-6541b4c36903",
+    "id": "e05090ce-7360-488c-83f4-9ae8a2697ac6",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2360,6 +2450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
     "divisao": "SERINGAL",
@@ -2369,7 +2460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ebfa8ef-fc43-43c0-aa76-e2157f29b65c",
+    "id": "796bf625-11f6-4ca5-bcb6-f85803099fa3",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -2379,6 +2470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "FERIAS",
     "divisao": "SERINGAL",
@@ -2388,7 +2480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d12f4c5-f7d0-462a-9c3a-58292cc4dd0c",
+    "id": "4ac59b25-2f50-4344-a94d-cefb05f782b9",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -2398,6 +2490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO",
     "divisao": "SERINGAL",
@@ -2407,7 +2500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7270042-fb6e-452d-af48-bba4306eba43",
+    "id": "8563dad9-dd5d-4c8f-b17b-577cf119636a",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -2417,6 +2510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO",
     "divisao": "PECUÁRIA",
@@ -2426,7 +2520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b211d9ac-6a03-46ed-a333-f14fc307169f",
+    "id": "8491d280-d63b-4721-b620-45107c265fbf",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -2436,6 +2530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AVISO PREVIO - INDENIZADO",
     "divisao": "SERINGAL",
@@ -2445,7 +2540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16068ab3-0cb7-42be-9ce6-75add6628d52",
+    "id": "4e624c6d-9850-4e25-b768-83a06f09de84",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -2455,6 +2550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PENSAO JUDICIAL",
     "divisao": "SERINGAL",
@@ -2464,7 +2560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9de6ba1-0819-48ea-96c8-6586bac52e7b",
+    "id": "32b72f82-9ff8-4a0e-b87e-45a6b188fcee",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2474,6 +2570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "LORATADINA 1MG XPE 100ML(GEN)",
     "divisao": "SERINGAL",
@@ -2483,7 +2580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58ace617-8f00-49a0-93f8-ff842c7924c8",
+    "id": "352e748f-b664-41c5-b1d4-ac9e95bc6c4c",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2493,6 +2590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIPIRONA 1G 10CPR PRATI DONA",
     "divisao": "SERINGAL",
@@ -2502,7 +2600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8ab0ee7-f82c-417e-af3e-f0d413049fdc",
+    "id": "0cd06d1d-90d0-41fc-8ae0-5fba063c4a9e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2512,6 +2610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PREDNISOLONA SOL 60 ML",
     "divisao": "SERINGAL",
@@ -2521,7 +2620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be9fdee9-ed42-45d8-960d-c2084ece55e7",
+    "id": "2e5b2671-416b-462c-8431-40f7222180bd",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2531,6 +2630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PARACETAMOL GTS 15ML",
     "divisao": "SERINGAL",
@@ -2540,7 +2640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c74a707-4d7b-462a-bcee-415c5ae6e716",
+    "id": "f574feca-7045-4e95-9428-3543e637382e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2550,6 +2650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIPIRONA 1G C/10 COMP(GEN",
     "divisao": "SERINGAL",
@@ -2559,7 +2660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd7a7fa1-a429-479e-8b13-324a6a3887fb",
+    "id": "88529cbf-c93e-4298-bb12-9fb94984d46a",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2569,6 +2670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PARACETAMOL 750",
     "divisao": "SERINGAL",
@@ -2578,7 +2680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1585cf58-bf79-454d-aa39-22ec1a9d4d84",
+    "id": "1d5723ca-c251-4757-bf1e-257e7c9f19b6",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2588,6 +2690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CETOPROFENO LEGRAND GEN 150MG",
     "divisao": "SERINGAL",
@@ -2597,7 +2700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90332ac1-26c1-4c06-8b5e-070290b13fbc",
+    "id": "758c6db3-ea93-4693-bf9e-359208e02689",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2607,6 +2710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "MEDICAMENTOS FARMACIA",
     "divisao": "SERINGAL",
@@ -2616,7 +2720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3438b5b-ce51-4b47-91e5-42aea228d5bc",
+    "id": "444bc40c-2af0-4fda-9326-409da1d85903",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2626,6 +2730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "TENOXICAN",
     "divisao": "SERINGAL",
@@ -2635,7 +2740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee089f45-f4c9-496c-85f9-62bb75e7460e",
+    "id": "25a4dce0-85c8-4cb8-8b74-ab90202f5b47",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2645,6 +2750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CICLOBENZAPRINA 10MG C/10",
     "divisao": "SERINGAL",
@@ -2654,7 +2760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aea61e58-1a58-4fcb-bb41-2c3bfcb46f02",
+    "id": "28c26bfb-b1cd-459f-bb6a-b89806573b74",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2664,6 +2770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "MELOXICAM INICOX DP 15MG C/5 CP",
     "divisao": "SERINGAL",
@@ -2673,7 +2780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3508cc0-ad8b-4cea-bfe3-0cb861f8199d",
+    "id": "548d89c4-c3d1-4a8c-b470-ea4c73322eca",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2683,6 +2790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "TYLENOL SINUS C/24 COMP REV",
     "divisao": "SERINGAL",
@@ -2692,7 +2800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48a4b0c6-5b54-4173-95b8-2f79f7798c0a",
+    "id": "932185ec-0958-4668-97ae-95ec168639ec",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2702,6 +2810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CEFALEXINA 500 MG",
     "divisao": "SERINGAL",
@@ -2711,7 +2820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "494665d3-2e0a-4656-89fb-15a3113f4b45",
+    "id": "68892fb7-c868-4ab7-a811-1066ed36ae03",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2721,6 +2830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PARAFUSO 10X30 MA",
     "divisao": "SERINGAL",
@@ -2730,7 +2840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "59366e91-d543-48f1-8f9e-b3990f3d61ad",
+    "id": "4ed6b35d-63ec-4d9e-9816-173ff2273ae4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2740,6 +2850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "GOMA XANTANA",
     "divisao": "SERINGAL",
@@ -2749,7 +2860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3846cb1-dbb8-440a-81f5-f3d1939dd35d",
+    "id": "6f144813-f633-49b9-a134-51e2a541c43b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2759,6 +2870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ALGODAO",
     "divisao": "SERINGAL",
@@ -2768,7 +2880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b265b93-73df-4c1e-bd7a-6efd3285034a",
+    "id": "a6b8d3ca-a5f5-45a7-8c34-c8eef01f0713",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2778,6 +2890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ESPARADRAPO CREMER 2,5CMX4,5M",
     "divisao": "SERINGAL",
@@ -2787,7 +2900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8494db3-b7bb-470b-b7e2-4cb2c81a3cf9",
+    "id": "d7636a85-dd71-452b-b2f9-0d4c82a7f754",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2797,6 +2910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BAND-AID",
     "divisao": "SERINGAL",
@@ -2806,7 +2920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30301cad-8b93-48d5-9d50-cd28c50b98fe",
+    "id": "8f5a8ca6-ebda-48ba-8ed1-76ceba24341d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2816,6 +2930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "SORO FISIOLOGICO 250ML",
     "divisao": "SERINGAL",
@@ -2825,7 +2940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df2b99d7-e308-45e8-8b39-047aa0afad80",
+    "id": "a77d899e-7fe2-4f61-a946-5fdf268cddc5",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2835,6 +2950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DIPIRONA 1G C/10 COMP",
     "divisao": "SERINGAL",
@@ -2844,7 +2960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5c0daebe-8345-436c-bcb6-0aa43d8f4104",
+    "id": "3e88dbe7-04f8-4ab4-949f-af9859841a13",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2854,6 +2970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "FENAFLAN ICE MASSAGEADOR AEROS",
     "divisao": "SERINGAL",
@@ -2863,7 +2980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7822eb0-4a36-4bd8-8031-0d3e0df33430",
+    "id": "d3507368-16bc-4f45-8a60-e4cefd65d42d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2873,6 +2990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CETOPROFENO 20MG GTS 20ML(GEN",
     "divisao": "SERINGAL",
@@ -2882,7 +3000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90f52147-3195-486b-a4d3-7ba2004db010",
+    "id": "3eaabba1-8923-4a32-828e-c28ea3260783",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2892,6 +3010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "XEFO 8 MG 20 COMPRIMIDOS",
     "divisao": "SERINGAL",
@@ -2901,7 +3020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7215deb8-e3fe-40f6-b1d6-a62985d93cd5",
+    "id": "f649db6b-daf9-499d-bcb8-e20c81379c2d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2911,6 +3030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "MIOFLEX A C/12 COMP",
     "divisao": "PECUÁRIA",
@@ -2920,7 +3040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f8da9e8-fce7-48e1-874a-d93d015b12de",
+    "id": "8370e355-f38b-42ce-b8cd-8a7d0d242a0a",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2930,6 +3050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BIOFENAC SPRAY",
     "divisao": "PECUÁRIA",
@@ -2939,7 +3060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a966e3f-8bcc-41ec-a905-b4fcdf20b7d4",
+    "id": "cb83db9e-cc0f-405e-9f2e-1338cc098043",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2949,6 +3070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "MEDICAMENTOS FARMACIA",
     "divisao": "PECUÁRIA",
@@ -2958,7 +3080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d448044-25b4-4aff-ad56-7bf3cd84ee51",
+    "id": "7171e6ca-68c9-47fb-b469-629bb00e3a76",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2968,6 +3090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ESPARADRAPO 10 X 4.5M",
     "divisao": "PECUÁRIA",
@@ -2977,7 +3100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "421d404c-64eb-4758-997b-c962017d96db",
+    "id": "3dd933a1-742c-466b-bd77-f2ce398aef80",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2987,6 +3110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CETOPROFENO 20MG GTS 20ML(GEN",
     "divisao": "PECUÁRIA",
@@ -2996,7 +3120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "491a35b6-3e3c-4ca2-8398-9ddb8273c91b",
+    "id": "9ca4d718-f856-4ab6-b7b0-2495f0a8834a",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3006,6 +3130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "SORO FISIOLOGICO 100ML (ARBORE",
     "divisao": "PECUÁRIA",
@@ -3015,7 +3140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e74ee37-d4f4-4679-84a4-5e81d5e24a45",
+    "id": "a02754da-5f9c-4e94-939a-5c7adf6907b0",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3025,6 +3150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PREDNISOLONA 20MG C/10 COMP",
     "divisao": "PECUÁRIA",
@@ -3034,7 +3160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fd731c9-eddf-4e67-b740-488429712c24",
+    "id": "6e0faca2-ba87-4120-ae3b-2a53bf95a278",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3044,6 +3170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DERMA NUTRI OLEO CICATRIZANTE 100ML",
     "divisao": "PECUÁRIA",
@@ -3053,7 +3180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f61b079e-0042-4e8e-a4eb-13ebf85fa98a",
+    "id": "445ea167-cfdd-47a9-8bd8-bc001ba91866",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3063,6 +3190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CIPROFLOXACINO 500MG C/ 14 CPR",
     "divisao": "PECUÁRIA",
@@ -3072,7 +3200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dafdddbc-3959-4ae4-b173-844da91bb060",
+    "id": "2f5654dd-8c7e-4d36-a030-ecef74a0527e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3082,6 +3210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PARACETAMOL 750MG 20CPR TEUTO",
     "divisao": "PECUÁRIA",
@@ -3091,7 +3220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8d42786-5c96-4b84-a314-704936956782",
+    "id": "970a57a0-3b71-4f49-80a2-5362f848f35f",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3101,6 +3230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "COMPRESSA DE GAZE 5X7",
     "divisao": "PECUÁRIA",
@@ -3110,7 +3240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d9482ef-3e35-42dd-bf3f-acbc87f83de7",
+    "id": "5eb52357-4885-4e1e-b7b4-34af5263cc3f",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3120,6 +3250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BELFAREN 50 MG 20 CPR",
     "divisao": "PECUÁRIA",
@@ -3129,7 +3260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3df11cd-ed17-4c5e-83dd-20340ee93913",
+    "id": "8eadae27-5e1d-4bd2-8dfe-aea48287ebdc",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -3139,6 +3270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ATADURA 15CM X 1,80 CREMER",
     "divisao": "PECUÁRIA",
@@ -3148,7 +3280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84ec2aa8-cce4-44a1-b2a1-5d6af22d2617",
+    "id": "24329498-4269-40c2-8c5b-e6ef83ae49ae",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -3158,6 +3290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "SEGURO VIDA",
     "divisao": "SERINGAL",
@@ -3167,7 +3300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c4c7795-0703-4d73-9230-18610d555854",
+    "id": "aea89be8-3495-442a-8352-9ec321adf493",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -3177,6 +3310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "SEGURO VIDA",
     "divisao": "PECUÁRIA",
@@ -3186,7 +3320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "120e7458-58bf-4c0a-a037-350b8f57bc57",
+    "id": "1f8f723d-b4f0-4e80-9621-14261dfa8520",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -3196,6 +3330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
     "divisao": "PECUÁRIA",
@@ -3205,7 +3340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6090da8-7344-4400-804c-222ad19d953a",
+    "id": "b91905bb-c407-4739-9add-ef8334624a54",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -3215,6 +3350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
     "divisao": "SERINGAL",
@@ -3224,7 +3360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ffa3309-624d-4771-b1d8-888679eb43fc",
+    "id": "32315059-6689-4c21-b853-e70ed2ff8d2e",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -3234,6 +3370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
     "divisao": "SERINGAL",
@@ -3243,7 +3380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9e6a0f6-1b01-45f8-afe6-48d9276796e5",
+    "id": "ddfb83fb-7313-4f9a-92fc-98f914bf9f3e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3253,6 +3390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
     "divisao": "SERINGAL",
@@ -3262,7 +3400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ccfcc591-a11d-45ec-8b84-2f0a0b7850da",
+    "id": "5c1268b3-690e-4f31-9862-4cb6efa3d6eb",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3272,6 +3410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
     "divisao": "SERINGAL",
@@ -3281,7 +3420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e27d492e-c963-4b34-8d2b-fa1a3472532d",
+    "id": "cea8b3e5-b97f-4236-930e-cc355d576894",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3291,6 +3430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "SERINGAL",
@@ -3300,7 +3440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19af0d25-9350-4b13-9a8e-5b9a53642dad",
+    "id": "52d2ac03-bd34-4ab1-9100-3fe8b608807f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3310,6 +3450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
     "divisao": "SERINGAL",
@@ -3319,7 +3460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14756218-6a21-4c39-a90b-539f32108b17",
+    "id": "ec46e2ed-aaee-4cb2-b2ea-71ca29ca7678",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3329,6 +3470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
     "divisao": "SERINGAL",
@@ -3338,7 +3480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16da4d74-ed14-4fca-b2b9-086e62ca46ea",
+    "id": "9c89283b-1097-4762-94e7-5766baeef6db",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3348,6 +3490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BAIXA INSS S/ FERIAS RESCISAO",
     "divisao": "SERINGAL",
@@ -3357,7 +3500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45b77440-e56f-4e1c-a620-5baf7063ef4d",
+    "id": "ac7bcc55-e9a3-4d6b-a67c-5226ed6c45bb",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3367,6 +3510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
     "divisao": "PECUÁRIA",
@@ -3376,7 +3520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b593a746-de78-4de0-9924-b15d8b4b17d2",
+    "id": "4e9174d1-dbc8-4c50-8587-b619cc76c8c6",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3386,6 +3530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
     "divisao": "PECUÁRIA",
@@ -3395,7 +3540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d4a4f9c-16ab-4496-a14c-21ee2455c9ca",
+    "id": "158e2389-21c6-4ffe-b4a0-b6177292e703",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3405,6 +3550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
     "divisao": "PECUÁRIA",
@@ -3414,7 +3560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e9f0652-1787-4281-a825-00f98d7869a2",
+    "id": "7b827a60-97d1-4e2b-a23b-d9e22bffc92f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3424,6 +3570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
     "divisao": "PECUÁRIA",
@@ -3433,7 +3580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34f908bb-e0ab-4689-8f35-9b5e0f59950a",
+    "id": "5f9292e1-72f9-4ccc-b433-c3049c89cde9",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3443,6 +3590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
     "divisao": "PECUÁRIA",
@@ -3452,7 +3600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b957205b-0342-4940-9987-cd87fcaf1dd2",
+    "id": "d5343ecd-22e3-4b08-a1e3-4e8343d0da8f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3462,6 +3610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "PECUÁRIA",
@@ -3471,7 +3620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33d902a1-104d-4919-9739-ecf857774c37",
+    "id": "9c3abe0f-2f86-4e8b-a581-08e8a338617e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3481,6 +3630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "FAP",
     "divisao": "PECUÁRIA",
@@ -3490,7 +3640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1dcbc2ad-1f09-4b41-afc1-f5b196bc024a",
+    "id": "9f32db61-b321-4291-b775-452061b6100e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3500,6 +3650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
     "divisao": "PECUÁRIA",
@@ -3509,7 +3660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3b33df8-d3ac-4c48-bddd-7ac7b64d05ee",
+    "id": "4af71370-f31e-4fee-be5d-0f9b89dcee80",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3519,6 +3670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
     "divisao": "PECUÁRIA",
@@ -3528,7 +3680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ad75d4b-73ce-4da0-9345-3ba827ef7526",
+    "id": "c0ab6b7f-bebb-4fdc-a4e5-9c5567326c34",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3538,6 +3690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "PECUÁRIA",
@@ -3547,7 +3700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a2b77316-0f68-4dab-952e-93e0d9796fd4",
+    "id": "c7e65a84-7fca-4e70-98ed-7c8695f708a1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3557,6 +3710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
     "divisao": "PECUÁRIA",
@@ -3566,7 +3720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41c870c0-9952-4b61-895b-3ebbefefb51f",
+    "id": "b21e9c7c-8da5-4661-8b04-4f9de241a964",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3576,6 +3730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
     "divisao": "PECUÁRIA",
@@ -3585,7 +3740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1fbd832e-ea3c-485f-8315-6d5cbf61766e",
+    "id": "e577b5e1-13d8-4a10-a693-c7437d29f40e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3595,6 +3750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
     "divisao": "PECUÁRIA",
@@ -3604,7 +3760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "414b96cf-8d42-46ed-8d9e-348b6bf75be0",
+    "id": "c1dbdcc6-adf5-47c6-9abf-706f5776fded",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3614,6 +3770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
     "divisao": "SERINGAL",
@@ -3623,7 +3780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63b4475c-a73a-492a-a97d-99bc16035eee",
+    "id": "0705c2d9-54d2-460a-b94b-c6045d8a0332",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3633,6 +3790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "SERINGAL",
@@ -3642,7 +3800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d7a27ec-1a84-44d9-84a3-3c926e575a09",
+    "id": "2efcdc07-5326-45f5-b922-b13d583ffb5e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3652,6 +3810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
     "divisao": "SERINGAL",
@@ -3661,7 +3820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13a70b49-59e1-4014-a944-f44960ed5c03",
+    "id": "6972232c-3caa-4c5e-aa53-07b2de818aed",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3671,6 +3830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
     "divisao": "SERINGAL",
@@ -3680,7 +3840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8c18163-2b15-4465-a952-5d2bbdcbf34f",
+    "id": "0f638762-440f-429c-95d6-ad65dd3a61be",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3690,6 +3850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
     "divisao": "SERINGAL",
@@ -3699,7 +3860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e874894-3c80-4583-9062-86ed3febea6b",
+    "id": "21426c08-9916-4269-8188-a877e55892b9",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3709,6 +3870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
     "divisao": "SERINGAL",
@@ -3718,7 +3880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00bc6358-098d-4229-9430-56b702db0b30",
+    "id": "b93c4706-eeef-487e-9c87-e5e6de32e7fc",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3728,6 +3890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ENCARGOS FGTS",
     "divisao": "SERINGAL",
@@ -3737,7 +3900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23fc941b-52b5-4a01-9a0d-e32f72a413f6",
+    "id": "cd104292-e100-4b55-9409-62094ac3346e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3747,6 +3910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ENCARGOS FGTS",
     "divisao": "PECUÁRIA",
@@ -3756,7 +3920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b999d41-c675-4f4b-b279-e6f3b1788167",
+    "id": "e24aab29-1f83-46bf-9312-74c7ecf2ffb7",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3766,6 +3930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "ENCARGOS FGTS  039251",
     "divisao": "SERINGAL",
@@ -3775,7 +3940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "acacf6c7-bf6d-40b7-84f6-e0994cb33efa",
+    "id": "c6fc074a-132e-49d3-b7d5-8f7b3aa4dc63",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3785,6 +3950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -3794,7 +3960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e65737d9-f1c9-4477-b224-c5c02a582c6e",
+    "id": "99464f22-ad87-4720-ac89-de78d6c2340d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3804,6 +3970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -3813,7 +3980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20705264-f759-4c3d-ac09-3b29c5ef4d64",
+    "id": "30965d50-b1cf-49d7-83a9-069b648bf5c2",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -3824,7 +3991,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "af7d7f28-7929-452d-94bf-e4a6d66301e3",
+    "id": "0beeb798-8dae-433b-bb48-a369725c90e0",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -3835,7 +4002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "566189ac-08ae-4d04-ab9e-642a6b80f554",
+    "id": "d9d8d92f-4ac7-49f2-a45f-3e20cc906182",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3845,6 +4012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -3854,7 +4022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17f6489d-aa9e-4f11-b350-44747682b10b",
+    "id": "00c243f1-ab1a-4c4f-b91a-06117921a03b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3864,6 +4032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
     "divisao": "SERINGAL",
@@ -3873,7 +4042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8462700e-2367-4528-9082-6ce1e8d72b80",
+    "id": "7dc3bb75-8f9f-42ae-9148-c94408c7f602",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3883,6 +4052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS DE ACESSORIA",
     "divisao": "SERINGAL",
@@ -3892,7 +4062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "162dea56-1041-42a6-951a-0da7f8b0b301",
+    "id": "14df92f7-8404-4468-be01-b41d7eeeaf75",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3902,6 +4072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "EXAMES OCUPACIONAIS",
     "divisao": "SERINGAL",
@@ -3911,7 +4082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b8fa53b-a373-4a8e-ac1a-1e9c7036a6a8",
+    "id": "839bf199-f475-406f-b2b3-fe611a7c1356",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3921,6 +4092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
     "divisao": "SERINGAL",
@@ -3930,7 +4102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d022b4f-e91f-4e61-81f6-a8581c1d7f64",
+    "id": "3d4263f4-492f-4659-8ea8-27223d8154d5",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3940,6 +4112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
     "divisao": "SERINGAL",
@@ -3949,7 +4122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "beb57adf-a608-4fd7-80a9-e5e487c8552f",
+    "id": "36451520-69c4-4b37-ac52-d8dced525d3f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3959,6 +4132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "ALCOOL ETILICO HIDRATADO CARBURANTE",
     "divisao": "SERINGAL",
@@ -3968,7 +4142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3713f33-7240-4639-822b-489d98ef56c8",
+    "id": "3b7f2ce8-1bfa-4977-bc2e-b352db3d0c74",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3978,6 +4152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "XXX",
     "divisao": "SERINGAL",
@@ -3987,7 +4162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "124f03e3-5a40-4b60-ae40-8f5d6f094296",
+    "id": "3fe853cb-ebc3-4392-af66-22ceadf3b4e0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -3997,6 +4172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
     "divisao": "SERINGAL",
@@ -4006,7 +4182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "711df462-f975-4f2d-a85e-abea1b20d97c",
+    "id": "c6505d0b-964f-4328-9882-546c0f16c42a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4016,6 +4192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS MANUTENCAO GERAL",
     "divisao": "SERINGAL",
@@ -4025,7 +4202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13ecc1b2-664a-4707-ab7e-5a5ae203f99d",
+    "id": "ed0da2ee-f554-435a-8f5a-5b503e4132aa",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4035,6 +4212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE ASSISTENCIA SOCIAL",
     "divisao": "SERINGAL",
@@ -4044,7 +4222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a2ff6e31-8650-4a97-9be2-facfb510e536",
+    "id": "4dc63018-c212-4c94-a920-9f51423f7c29",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4054,6 +4232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
     "divisao": "SERINGAL",
@@ -4063,7 +4242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f70b412-e8c0-4822-9a0d-d2defbb01190",
+    "id": "595948eb-d9f9-4377-9ed2-2fdde5b9f32d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4073,6 +4252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE CONSTRUCOES E EDIFICACOES",
     "divisao": "SERINGAL",
@@ -4082,7 +4262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f74cf3c-d3d7-4f23-8196-add509e7d278",
+    "id": "b9dc8468-0fd3-4d27-9e53-0b5a9c33408c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4092,6 +4272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
     "divisao": "PECUÁRIA",
@@ -4101,7 +4282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6db0d4ac-f723-4edb-a9b9-f04afeb6b949",
+    "id": "3412918d-8185-4e38-879f-0417446a9fdc",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4111,6 +4292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "EXAMES OCUPACIONAIS",
     "divisao": "PECUÁRIA",
@@ -4120,7 +4302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83334a41-a61e-40b7-8a17-272086fd2875",
+    "id": "30618aab-a13a-428f-86ab-3ab9fdf99674",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4130,6 +4312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
     "divisao": "PECUÁRIA",
@@ -4139,7 +4322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b207fabb-2d99-4431-9213-2c8576aa6257",
+    "id": "ad65da96-d731-49df-be1c-9e5d3b55c85a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4149,6 +4332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS MANUTENCAO GERAL",
     "divisao": "PECUÁRIA",
@@ -4158,7 +4342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9ce1fa1-d4bb-4e16-9fbb-9097e8dfc6df",
+    "id": "f319bfc4-9d52-43f9-81e5-fb2b9bcad1aa",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4168,6 +4352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "OLEO DIESEL S10 CLASSE B 8% BIODIESEL",
     "divisao": "PECUÁRIA",
@@ -4177,7 +4362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "976222c8-18fe-4e22-b357-ce0d6ce9c06e",
+    "id": "552e67f8-cdb9-4040-b285-02ca4e7f95ed",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4187,6 +4372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE DEDETIZACAO",
     "divisao": "PECUÁRIA",
@@ -4196,7 +4382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8504cab9-ebe0-4832-8e1a-74dfffedfb62",
+    "id": "38bac006-d0ea-4fda-8fe5-05bbd8de0131",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4206,6 +4392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE CONSULTORIA",
     "divisao": "PECUÁRIA",
@@ -4215,7 +4402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58bf7eb8-123a-42a1-819e-83e7463d26f3",
+    "id": "4ad890fc-264d-4119-8b4f-02cae07853c4",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4225,6 +4412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE CONSTRUCOES E EDIFICACOES",
     "divisao": "PECUÁRIA",
@@ -4234,7 +4422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9276f6ed-963b-4f5c-a079-c5a29cdd6ac6",
+    "id": "9fdbc871-c23d-4416-bee8-703af386bd93",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4244,6 +4432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICOS DE ACESSORIA",
     "divisao": "PECUÁRIA",
@@ -4253,7 +4442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bac45c2c-c572-43e1-8a36-7ecf5b7e07f2",
+    "id": "1aedf7ce-466f-4cc0-958a-7a9884f19f3d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4263,6 +4452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
     "divisao": "PECUÁRIA",
@@ -4272,7 +4462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9813bc5c-e64f-44d7-a155-7b99c3c0fa58",
+    "id": "5c13ee9c-03e8-40d7-a408-85ae5b6a8e9b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4282,6 +4472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "SERVICO DE MANUTENCAO DE CERCA",
     "divisao": "PECUÁRIA",
@@ -4291,7 +4482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6a821a4-29f1-47e4-b7de-7dfeccd92bed",
+    "id": "fb732a5b-4c50-4be1-83cf-b8ba5c9778da",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -4301,6 +4492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "FRETES E CARRETOS PJ 000013",
     "divisao": "SERINGAL",
@@ -4310,7 +4502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89ea950f-710d-4ddf-8a30-3948bbee1341",
+    "id": "61dcb970-6a56-452b-8071-a5528696a235",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -4320,6 +4512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
     "nomeProduto": "BOLSA COMPLEM. EDUCACIONAL",
     "divisao": "PECUÁRIA",
@@ -4329,7 +4522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13c2e782-458f-4618-8ad1-477fe9c14956",
+    "id": "9689ae6b-5e7d-48fa-a49c-82f37feeca14",
     "codigo": "4.1.01.03",
     "descricao": "4.1.01.03",
     "tipo": "C",
@@ -4340,7 +4533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4e91a3a9-a6ad-40bb-867c-2c02acdf9d9f",
+    "id": "5817834b-705f-4056-94ef-82f89e68c163",
     "codigo": "4.1.01.03.0002",
     "descricao": "LOCACOES DE MAQUINAS AGRICOLAS",
     "tipo": "C",
@@ -4350,6 +4543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.03-LOCACOES",
     "nomeProduto": "LOCACOES DE MAQUINAS 0001",
     "divisao": "SERINGAL",
@@ -4359,7 +4553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0589808-ab4d-4cdf-906a-7bf0f8651a79",
+    "id": "e8b84594-ca27-415c-81ab-586c5672a47a",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -4370,7 +4564,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7fb2b209-b01d-46b1-8383-3c9fb91cb01c",
+    "id": "a3919bb9-857b-443a-a7ee-96a0bd7d0ae0",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -4381,7 +4575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c887ba6f-908d-4d2f-9f80-52d2a8c85a53",
+    "id": "defd570d-c332-4274-b47f-e35a07d26e5c",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4391,6 +4585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -4400,7 +4595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1799deaa-8e9b-4d5b-92a2-582dd4b14591",
+    "id": "de2c05bb-041f-468a-bb17-683b8fc22370",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4410,6 +4605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
     "divisao": "PECUÁRIA",
@@ -4419,7 +4615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2652150c-27d4-496e-a3f5-539c7753270e",
+    "id": "ff44fac8-83a1-4fe0-a6cb-2a4ffc06c0c7",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4429,6 +4625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GASOLINA COMUM",
     "divisao": "PECUÁRIA",
@@ -4438,7 +4635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2cf25200-699f-40f6-82d8-702c15941bd9",
+    "id": "e9c0caf4-4f2e-4af0-a6e4-cf916fd45a58",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4448,6 +4645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
     "divisao": "PECUÁRIA",
@@ -4457,7 +4655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bab289f-e044-4120-b356-47e22a5a10d0",
+    "id": "de0d30d7-9354-40e1-9654-c93ef38d54e6",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4467,6 +4665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO LUBRIF SAE 90 API GL-5",
     "divisao": "PECUÁRIA",
@@ -4476,7 +4675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5687e97-3ca1-4164-9d96-fb6321e863f3",
+    "id": "e1d40b1a-b160-4090-b1d2-bb9b632bcfc4",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4486,6 +4685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO LUBRIF SAE 30 API TC FR 500ML 2T",
     "divisao": "PECUÁRIA",
@@ -4495,7 +4695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fdc50f6f-3763-427f-9462-9fc8b05a3449",
+    "id": "cd886b61-468e-4b91-ad1c-4a9574108f56",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4505,6 +4705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
     "divisao": "PECUÁRIA",
@@ -4514,7 +4715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "867b9a07-81f1-4759-8e5d-3b050f455c02",
+    "id": "ccf1f9f2-f8a0-43dd-b9dd-0acb37ab5b79",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4524,6 +4725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAXA LUBRIF SABAO LITIO NLGI-2 BALDE DE 20 KG",
     "divisao": "PECUÁRIA",
@@ -4533,7 +4735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3baf27a-40c7-4aff-b49d-ec562360a896",
+    "id": "996f8f28-b82b-4b80-9cd7-dfb6734dbd02",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4543,6 +4745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
     "divisao": "SERINGAL",
@@ -4552,7 +4755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9770322-cf55-48c6-9a94-4ab8b0a9ecbe",
+    "id": "281ec72b-9bb4-4506-9250-f7dd1c3f98c9",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4562,6 +4765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO LUBRIFICANTE 2T 8017H 500ML",
     "divisao": "SERINGAL",
@@ -4571,7 +4775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "975eeae7-7452-4a1a-a675-bb0002e8b5af",
+    "id": "903962d9-a056-4e0d-b4ae-20840bb45fba",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4581,6 +4785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
     "divisao": "SERINGAL",
@@ -4590,7 +4795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec70f719-643a-45e0-98bd-900b0e290a85",
+    "id": "4f972a02-daf8-44f3-be55-7a3e39049334",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4600,6 +4805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAXA LUBRIF SABAO LITIO NLGI-2 BALDE DE 20 KG",
     "divisao": "SERINGAL",
@@ -4609,7 +4815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb708355-d3ae-462d-9da8-7825b4e7c885",
+    "id": "b7efa972-fae0-49d6-aee2-0e6f82a2c119",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4619,6 +4825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
     "divisao": "SERINGAL",
@@ -4628,7 +4835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "661734a4-0fe6-4e89-806b-9dd7310f0f45",
+    "id": "ca7a2b08-819e-4262-ab6b-1a021f818838",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -4638,6 +4845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -4647,7 +4855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34618c96-1fd0-4b73-b662-81ba8bc886f8",
+    "id": "62ac6622-5c59-4488-a8d9-e647f83e31e7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4657,6 +4865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -4666,7 +4875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ecf68cf3-0234-4d2b-9856-6d33f0a8f1a5",
+    "id": "4c6ea909-c9c4-46ba-8788-79ffb459422c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4676,6 +4885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ABRACADEIRA MANGOTE REFORCADA 1 1/2",
     "divisao": "PECUÁRIA",
@@ -4685,7 +4895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2734704c-8c82-4e2a-abe1-81c21cb81323",
+    "id": "dcd1e536-e1f0-4707-b46e-23093ff95c18",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4695,6 +4905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA 3/4",
     "divisao": "PECUÁRIA",
@@ -4704,7 +4915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a440133-a25e-4bb1-8ffa-21e5161aa152",
+    "id": "6d0bcf9b-d627-47e4-920c-f999c067c323",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4714,6 +4925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SX 8.8 UNC 16F 3/8",
     "divisao": "PECUÁRIA",
@@ -4723,7 +4935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a031370a-5c34-4390-96f2-ce9ae5892eb9",
+    "id": "d520bb61-2037-45ef-b7b2-35a11cbfa116",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4733,6 +4945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ABRACADEIRA INSULOK NYLON PRETA M4,8X300",
     "divisao": "PECUÁRIA",
@@ -4742,7 +4955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee9c0fcc-913b-43e8-8ff5-956e0f8c3974",
+    "id": "3cd510c3-731c-4a30-b741-2c076b8686a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4752,6 +4965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA SAE 1020 POL 3/8",
     "divisao": "PECUÁRIA",
@@ -4761,7 +4975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b6fd1e1-759a-46a3-95a6-30c998c5c941",
+    "id": "4127c6fd-b0e0-4bca-a205-6281cbe9969e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4771,6 +4985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA",
     "divisao": "PECUÁRIA",
@@ -4780,7 +4995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5963e771-24b6-4219-926b-97d20a5ee7e3",
+    "id": "a3d7842d-6a7d-47ec-9b5b-48100d97cf61",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4790,6 +5005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO 3,5X35 PA",
     "divisao": "PECUÁRIA",
@@ -4799,7 +5015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d122a34-35af-4f50-8029-b2e848bba63c",
+    "id": "345d9580-7905-4a24-8460-4bf421112228",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4809,6 +5025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO ALLEN HC9966",
     "divisao": "PECUÁRIA",
@@ -4818,7 +5035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bc35ce0-66e9-4ef7-825d-923c675ec89e",
+    "id": "396339a6-e7d4-4d72-a16b-ddaec4c0b14e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4828,6 +5045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA   R219255",
     "divisao": "PECUÁRIA",
@@ -4837,7 +5055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a3e293a-9dd8-42c6-992a-d55449c226a6",
+    "id": "300f7f76-cbee-4b86-a373-5ee63ffa23a4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4847,6 +5065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA SAE 1020 POL 3/4",
     "divisao": "PECUÁRIA",
@@ -4856,7 +5075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3df5f5b-9ed7-4959-a340-d08478680b3d",
+    "id": "66f8dcb4-215f-4064-a5b7-d790f36ef396",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4866,6 +5085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ABRACADEIRA INSULOK NYLON PRETA 7,6X450MM",
     "divisao": "PECUÁRIA",
@@ -4875,7 +5095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "211e91d0-75c2-41fc-966e-4f7600874fd8",
+    "id": "b23fdb05-4755-4a13-a113-61bd64099f5b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4885,6 +5105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TAMBOR PLASTICO 30 LITROS SEM TAMPA PARA COLETA BORRACHA",
     "divisao": "SERINGAL",
@@ -4894,7 +5115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e0064df-30f9-44fe-8167-881256b34cfa",
+    "id": "8798e057-b72d-46ea-84b9-8ce216ae991b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4904,6 +5125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA DE NYLON 05 06 08 MM",
     "divisao": "SERINGAL",
@@ -4913,7 +5135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e14f071d-5959-4bdf-8068-a33c639b3239",
+    "id": "30a932fa-ca74-4c9b-b1d4-e938a44894e5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4923,6 +5145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO MADEIRA CHIPBOARD CABECA CHATA PHILIPS 4,5X45",
     "divisao": "SERINGAL",
@@ -4932,7 +5155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3f71c2b-8526-4066-ba29-04697214062a",
+    "id": "a2abe387-e434-4453-870c-7db7f57a8a0d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4942,6 +5165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CONJUNTO COROA 15Z-DESTR DUPLO EG-1939 0503060607",
     "divisao": "SERINGAL",
@@ -4951,7 +5175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e74f4d88-d530-4fa2-92ba-4d64d370b367",
+    "id": "ff9c173a-e69f-40ee-a622-fb07b9b77d08",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4961,6 +5185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE EM BARRA MAMAE BEBE 100G",
     "divisao": "SERINGAL",
@@ -4970,7 +5195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a225347a-1f33-4604-bab6-1c6bd0f6388f",
+    "id": "fdc10438-17ef-44fb-93f5-42aa173d8f0c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4980,6 +5205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LENCO UMEDECIDO MAMAE BEBE 50 UND",
     "divisao": "SERINGAL",
@@ -4989,7 +5215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68073834-e7f3-407e-99e9-39e8b5a9e882",
+    "id": "06a625fa-9748-4242-9ece-90cd09e06d3f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -4999,6 +5225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SHAMPOO MAMAE BEBE 200 ML",
     "divisao": "SERINGAL",
@@ -5008,7 +5235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d8ac603-9186-41dd-9213-4b60eeeb3122",
+    "id": "a1e1a979-4283-4384-9055-ca04f320477a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5018,6 +5245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CONDICIONADOR MAMAE BEBE 200 ML",
     "divisao": "SERINGAL",
@@ -5027,7 +5255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "573cf90b-ae56-43cd-8fb1-2cf2b926bd36",
+    "id": "ffe13588-b283-4885-8c7b-251161a79efe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5037,6 +5265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "OLEO HIDRATANTE MAMAE BEBE 200 ML",
     "divisao": "SERINGAL",
@@ -5046,7 +5275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "21164e62-55c1-4e7b-9694-29640391f390",
+    "id": "0b399fbd-a728-4803-ac4e-ee3364eace71",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5056,6 +5285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AGUA DE COLONIA MAMAE BEBE 100 ML",
     "divisao": "SERINGAL",
@@ -5065,7 +5295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a6c0c3a-b6c8-4004-810e-c0ad4bf118f4",
+    "id": "1217661e-ba0b-4f43-8e4a-055d57ee35f0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5075,6 +5305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BOLSA MATERNIDADE MAMAE BEBE",
     "divisao": "SERINGAL",
@@ -5084,7 +5315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86489079-0813-4823-98a1-f1b533862f9e",
+    "id": "1b9cce8c-4c46-4e07-b61d-310e7cea8ba4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5094,6 +5325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAMPO ELASTICO",
     "divisao": "SERINGAL",
@@ -5103,7 +5335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9f6e30d-c0f3-4f1e-8ed1-2ab8b57197bf",
+    "id": "5ab06cef-915d-44cc-a154-8bd006d16f8a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5113,6 +5345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MANGUEIRA GASOLINA 5,0MM X 2,50",
     "divisao": "SERINGAL",
@@ -5122,7 +5355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f848079c-0082-423f-8909-caec7c5204fe",
+    "id": "b5726286-8523-45bf-88d7-cff5cc7159f9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5132,6 +5365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REPARO CARBURADOR 0 66",
     "divisao": "SERINGAL",
@@ -5141,7 +5375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6640504-b623-48d1-bf9f-f5da7249aa5e",
+    "id": "05bec45c-a1bc-4f02-93f6-b94c4e5fcceb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5151,6 +5385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA DE ENCOSTO 8X15X75X1,3MM",
     "divisao": "SERINGAL",
@@ -5160,7 +5395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8216008d-8075-46a1-99f1-f9f911d0b25d",
+    "id": "5002844d-e3e3-481d-a523-5958e958c42c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5170,6 +5405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEX MA 08",
     "divisao": "SERINGAL",
@@ -5179,7 +5415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f34f612-0a31-4757-a871-4463c7469968",
+    "id": "e018e080-bfca-45e3-9c36-2143293a9529",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5189,6 +5425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TAMPA PARTIDA BRIGGS E STRATTON 594062",
     "divisao": "SERINGAL",
@@ -5198,7 +5435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "501933da-68d1-46a8-a6ee-7b8785dab81b",
+    "id": "97f2dc25-9090-42d3-a2bc-40af06bc139e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5208,6 +5445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VELA DE IGNICAO NGK BPMR7A",
     "divisao": "SERINGAL",
@@ -5217,7 +5455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ec002be-ee19-4dc9-ac13-5afa5d1e8fed",
+    "id": "cd184829-f9fb-4ab3-80b3-f2ac28971696",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5227,6 +5465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FILTRO DE COMBUSTIVEL 98439682",
     "divisao": "SERINGAL",
@@ -5236,7 +5475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff3761af-4c49-4df7-a06c-77a5508d83ab",
+    "id": "5852211f-6a7e-4f38-93ab-8e34d07566e9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5246,6 +5485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TAMPA 87577690",
     "divisao": "SERINGAL",
@@ -5255,7 +5495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6762961e-a28e-4f4a-bd35-62e9c899afa2",
+    "id": "e5770a78-7a2f-4618-86aa-e37aa61f4e4b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5265,6 +5505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "POLIA",
     "divisao": "SERINGAL",
@@ -5274,7 +5515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8caf5e0-2082-40db-9df5-1c00fea295be",
+    "id": "c5a62bf3-0f02-4eb1-8033-1d476e8f1654",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5284,6 +5525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE 2 TELAS INOX 4 1/2X1/8X7/8",
     "divisao": "SERINGAL",
@@ -5293,7 +5535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d949f4d8-34a3-4ec9-94e5-4326cbcac4b6",
+    "id": "f257b5a5-a385-4a50-bc86-49b41dd1fb1c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5303,6 +5545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO 46 X 2,5MM",
     "divisao": "SERINGAL",
@@ -5312,7 +5555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec70e0c2-79a4-45be-9803-7812fc9238ef",
+    "id": "6fecaeda-3608-4cfc-ba6d-9772f17e0556",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5322,6 +5565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MANTA ASFALTICA ALUMINIZADA 150MMX10M",
     "divisao": "SERINGAL",
@@ -5331,7 +5575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "814934f0-7d85-412c-84bc-4d0bd616d6cc",
+    "id": "d064547e-eb67-4960-9613-289ac1fc281b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5341,6 +5585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REBITE REPUXO (POP) ALUMINIO 4.0X22MM",
     "divisao": "SERINGAL",
@@ -5350,7 +5595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01b9502b-9496-410f-9d8d-b265b80163af",
+    "id": "14976379-9769-4fbd-80af-7588f061d3b5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5360,6 +5605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE 2 TELAS INOX 1.0MM 4.1/2X0,39X7/8",
     "divisao": "SERINGAL",
@@ -5369,7 +5615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dba90bce-7d70-4b76-8183-1e8fb357be30",
+    "id": "9975cf55-f3d8-47c4-9eed-d4aad3faa2af",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5379,6 +5625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO SOLDA 2,50MM AWS E 308-17",
     "divisao": "SERINGAL",
@@ -5388,7 +5635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08afef40-e323-4ef6-a4e3-ab3d8843617f",
+    "id": "1adadbdd-8e41-48f3-93ce-0e2d6a47420b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5398,6 +5645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO 6MM",
     "divisao": "SERINGAL",
@@ -5407,7 +5655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c624e89-eadf-446f-96e4-82c98c839a36",
+    "id": "57019df0-4040-4be1-8370-3b6cfa5740e1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5417,6 +5665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO AUTO BROCANTE CABECA FLANGEADA PHILIPS 4.2X13MM",
     "divisao": "SERINGAL",
@@ -5426,7 +5675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b377811e-ad1c-4c54-a805-6043532be932",
+    "id": "7c58b2c9-7a93-46de-8dba-024fde33ec4b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5436,6 +5685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO 4MM",
     "divisao": "SERINGAL",
@@ -5445,7 +5695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48e3c6a6-8cf4-49d2-851d-6d084006b3b4",
+    "id": "e9037424-5597-45a0-a4c6-8d3f8f4d2366",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5455,6 +5705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO DORMER 7MM",
     "divisao": "SERINGAL",
@@ -5464,7 +5715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "37ac3f48-8f2d-4d71-93c3-5f578bea9bd5",
+    "id": "6c4ab7b5-8188-4adb-be38-ccf352b6c83a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5474,6 +5725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FITA ISOLANTE 18MM X 20M 3M",
     "divisao": "SERINGAL",
@@ -5483,7 +5735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3e90b9e-1d59-4e49-a7f1-4827ac2b133c",
+    "id": "c16c635e-3978-4050-861d-7759f8c4c70b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5493,6 +5745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SEXT ROSCA SOBERBA 1/4X70 CISER",
     "divisao": "SERINGAL",
@@ -5502,7 +5755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b52544d-d20a-4d81-b111-a32b30f2d6c8",
+    "id": "c4b81acc-7605-4dc1-99b4-db01ea1cd13b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5512,6 +5765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE INOX EHT 7X5/64X7/8",
     "divisao": "SERINGAL",
@@ -5521,7 +5775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e903d5b4-22e9-466d-9808-5f4e620c2552",
+    "id": "546a51cd-a1df-49ca-b80b-afe519f36d37",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5531,6 +5785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FILTRO OLEO LUBRIFICANTE TECFIL PSL339",
     "divisao": "SERINGAL",
@@ -5540,7 +5795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b77372d-a040-4b78-bc51-57888ceddbad",
+    "id": "324b781d-a66d-4550-b16a-dbe868d03dd7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5550,6 +5805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FILTRO COMBUSTIVEL MOTOR MANN WK1060/1",
     "divisao": "SERINGAL",
@@ -5559,7 +5815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7af6c4c0-861a-4046-a12e-e4a3d8b09cd9",
+    "id": "d2b3fc35-f0b7-4223-b9bd-e69eb72f1eea",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5569,6 +5825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FILTRO DE COMBUSTIVEL MANN WK962/13",
     "divisao": "SERINGAL",
@@ -5578,7 +5835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "255b51be-0475-4cd7-8362-7b4985160a8c",
+    "id": "f70a6667-2e76-4abe-bb89-3350aba12119",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5588,6 +5845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA 10 C/ ANEL BRANCA",
     "divisao": "SERINGAL",
@@ -5597,7 +5855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "074d3bb6-b085-4ef0-8d4d-602d977b5b47",
+    "id": "f70b0f4d-d464-4007-be2d-1b14d804f109",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5607,6 +5865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO CHIPBOARD CABECA CHATA 5,0X60",
     "divisao": "SERINGAL",
@@ -5616,7 +5875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86a52ff6-ed2f-435c-852e-ba391d7c0122",
+    "id": "56de0b8d-d791-458a-96fe-637fca113122",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5626,6 +5885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO CHIP 5,0 X 35MM",
     "divisao": "SERINGAL",
@@ -5635,7 +5895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef340da8-3fa5-4140-b35f-3d625729ea13",
+    "id": "795dd6bc-7814-45b3-a8f2-eca4baf964fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5645,6 +5905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REBITE REPUXO (POP) ALUMINIO 6X30MM",
     "divisao": "SERINGAL",
@@ -5654,7 +5915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b130485-a714-449c-b5f9-c990ebe6aed8",
+    "id": "d189108e-4225-42f8-a9b9-ea3319750b51",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5664,6 +5925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE ACO INOX 4,1/2X0 40X7/8 TYROLIT",
     "divisao": "SERINGAL",
@@ -5673,7 +5935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10c8f530-a275-41bc-ad23-ab349d89e6bc",
+    "id": "0a28e965-a109-4d17-917b-d7cf8809a1a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5683,6 +5945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORTA ELETRODO SOLDAGEM 500A",
     "divisao": "SERINGAL",
@@ -5692,7 +5955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69ba53b5-64fc-40ce-9b8c-eecbd15eca30",
+    "id": "838d7529-1428-4258-851e-88e417373fe6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5702,6 +5965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LENTE INCOLOR RETANGULAR PARA MASCARA DE SOLDA 105MMX115MM",
     "divisao": "SERINGAL",
@@ -5711,7 +5975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73595a24-1611-4e16-8011-03147d62055a",
+    "id": "f6ace5fd-18f2-499e-8ac4-08ac6a5bbe15",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5721,6 +5985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA AE 5/16",
     "divisao": "SERINGAL",
@@ -5730,7 +5995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb458c2b-2376-4f6c-9710-9ede50d7d111",
+    "id": "32450d75-51bc-47ab-a85a-410731fcb77f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5740,6 +6005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA 1/4 X 1,2",
     "divisao": "SERINGAL",
@@ -5749,7 +6015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f8a2b34-8bb9-4b07-88a7-8a1f26335f9e",
+    "id": "b4102dcc-a384-46c1-9cd8-0a23b013155c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5759,6 +6025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEX NC D 1/4",
     "divisao": "SERINGAL",
@@ -5768,7 +6035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "673fd599-33cf-4f6f-b443-82a905b7d2f7",
+    "id": "77a9b2c6-c357-49ed-947b-bdeb6c310b2e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5778,6 +6045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FRANCES 1/4X5",
     "divisao": "SERINGAL",
@@ -5787,7 +6055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20c1b939-33fb-406a-8a1a-247af12a4f91",
+    "id": "0498f0b5-d7a7-4e00-b205-8eb5910082be",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5797,6 +6065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO DORMER 4,5MM",
     "divisao": "SERINGAL",
@@ -5806,7 +6075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e784cca8-933c-47e5-b28c-7ede33d2586c",
+    "id": "26fd6e97-e314-48b5-8339-e075e867e053",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5816,6 +6085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO DORMER 06MM",
     "divisao": "SERINGAL",
@@ -5825,7 +6095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67789afc-ea22-4f83-8a72-b77d9e72a04f",
+    "id": "9db84e29-9719-4a35-b91c-a56153ead921",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5835,6 +6105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO DORMER 5,5MM",
     "divisao": "SERINGAL",
@@ -5844,7 +6115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c341be31-54e0-4806-82b1-db1891cbe3d4",
+    "id": "03510bfe-b345-4de3-ba5c-ca68d1e97a24",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5854,6 +6125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO SOLDA 3,25MM 48.04 ESAB",
     "divisao": "SERINGAL",
@@ -5863,7 +6135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d50d36b-d4a7-4c29-9c85-f0e5a1acefe6",
+    "id": "3e7e0ab9-e5a6-4010-becd-dbab97702227",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5873,6 +6145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO AUTO BROCANTE 5.5X1",
     "divisao": "SERINGAL",
@@ -5882,7 +6155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "533cb047-a046-4450-a3c1-201eaea055c0",
+    "id": "ce87be57-4de8-49e6-9de2-357eb72ef9ea",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5892,6 +6165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADESIVO COLA INSTANTANEA TEK BOND 793 100GR",
     "divisao": "SERINGAL",
@@ -5901,7 +6175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "673dbcd3-7f78-458c-bf97-639cbd866a79",
+    "id": "f79d9409-a70e-4857-8956-e31cf9d5ec7f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5911,6 +6185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO 03,5MM IRWIN",
     "divisao": "SERINGAL",
@@ -5920,7 +6195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ef58d15-3a90-4f1d-a1d8-3b437d5cef20",
+    "id": "dac93de4-8829-4199-a07b-162ea57450f8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5930,6 +6205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CORRENTE ZINCADA ELO CURTO 5/16\" (8MM)",
     "divisao": "SERINGAL",
@@ -5939,7 +6215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71d12417-2cc2-409a-86cd-1529a5c5cfb4",
+    "id": "98d45f75-95b7-4093-b858-0f2dcb09414c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5949,6 +6225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA FIXACAO NYLON FU10",
     "divisao": "SERINGAL",
@@ -5958,7 +6235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6ddb264-ea7c-4150-bf4c-2cbb040c3a08",
+    "id": "e0f9b23e-bf88-4de1-8405-9c6730a28ddc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5968,6 +6245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO DORMER 05 MM",
     "divisao": "SERINGAL",
@@ -5977,7 +6255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3f6e071-1edf-40a5-916a-d2818b5d97d6",
+    "id": "3ef17594-c1f3-4eef-9fd5-f13e05a2d792",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5987,6 +6265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REBITE REPUXO (POP) ALUM 6X19MM",
     "divisao": "SERINGAL",
@@ -5996,7 +6275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b436a1eb-de37-42d2-8bb2-2a179033960a",
+    "id": "3de893e4-391e-4bb9-a0fb-3a7c2265b59e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6006,6 +6285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE DIAMANTADO SECO 110X22,2MM SPARTA",
     "divisao": "SERINGAL",
@@ -6015,7 +6295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ceaf512f-3688-497a-bdca-762505f76369",
+    "id": "0ed92bab-a240-4d9e-acc8-9644b0b6d1cf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6025,6 +6305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO DIAGRAMA TACOGRAFO 125KM/H 24 HORAS",
     "divisao": "SERINGAL",
@@ -6034,7 +6315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1053296-4333-4e62-9386-bbdb00c800e2",
+    "id": "9b823096-ca37-4354-9542-11ad87275573",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6044,6 +6325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FRANCES 3/8X7.1/2 ACO 5.8 POLIDO",
     "divisao": "SERINGAL",
@@ -6053,7 +6335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52998692-5863-42e5-9ae9-4f4f115ed3a9",
+    "id": "1ecd76d5-3897-48de-81d2-dba5875ebc23",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6063,6 +6345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DENTE CORRENTE MOTO SERRA",
     "divisao": "SERINGAL",
@@ -6072,7 +6355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bce9be7-cced-419b-b13f-6639951827ec",
+    "id": "2f464450-5fc8-4804-b3c8-e074c16d584b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6082,6 +6365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SEXTAVADO 10X30 ACO 8.8 FOSFATIZADO",
     "divisao": "SERINGAL",
@@ -6091,7 +6375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9fb1128-8aca-425c-8035-21c33854efd8",
+    "id": "0145782f-d9ec-42a0-b155-fb1f763accd5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6101,6 +6385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA 3/8L",
     "divisao": "SERINGAL",
@@ -6110,7 +6395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f22e3f6-c816-4633-a403-c69219a0af71",
+    "id": "eb5eae88-4fb2-4da3-8a54-88f1e98acead",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6120,6 +6405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BARRA ROSCADA D 3/8",
     "divisao": "SERINGAL",
@@ -6129,7 +6415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35cbcdde-1788-4c67-b18e-366e447e6830",
+    "id": "bc5ec3c5-4e38-4cb3-89dd-f60530d3e763",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6139,6 +6425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BARRA ROSCADA 5/8 POLIDA",
     "divisao": "SERINGAL",
@@ -6148,7 +6435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d59046cb-90a0-428f-b0d9-52bfdcfce381",
+    "id": "19b8194e-5b9f-42a6-b867-b2fee949faf8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6158,6 +6445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CALIBRADOR AR E AGUA 06 A 50 LIBRAS",
     "divisao": "SERINGAL",
@@ -6167,7 +6455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77b47bc3-32fd-4d16-9b2a-9fbb1c5f3836",
+    "id": "7785b104-585b-4beb-a0ac-27a194764fcc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6177,6 +6465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEXTAVADA 1/4",
     "divisao": "SERINGAL",
@@ -6186,7 +6475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bcf2806-8d2e-4b16-b6d3-8bca35ef8d07",
+    "id": "97624c8d-bd3e-4031-a2ae-b62a0f0def26",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6196,6 +6485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEXTAVADA 5/8",
     "divisao": "SERINGAL",
@@ -6205,7 +6495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ecc54259-761e-4dcc-88eb-4dee1bb7e696",
+    "id": "5c727c71-f545-4c25-ad00-8e0cfc4a4a29",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6215,6 +6505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEXTAVADA 3/8",
     "divisao": "SERINGAL",
@@ -6224,7 +6515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac844d16-e970-41cf-927a-fda62d15a943",
+    "id": "4b068efc-e099-4607-80a3-545b070d54ef",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6234,6 +6525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SEXTAVADO 1/4X2 ACO 8.8 FOSFATIZADO",
     "divisao": "SERINGAL",
@@ -6243,7 +6535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2b3193f-f7cb-44bc-8cc9-b3357214770e",
+    "id": "b2688cf1-187b-44b0-8840-2b817633d6ed",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6253,6 +6545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA 5/16 POLIDA",
     "divisao": "SERINGAL",
@@ -6262,7 +6555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e796b6ed-e19e-44ee-a84a-50343667fbe4",
+    "id": "726752af-adfb-49e0-a4aa-758904af9c89",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6272,6 +6565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEXTAVADA 10MM",
     "divisao": "SERINGAL",
@@ -6281,7 +6575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad5365d1-07e8-4a7a-ac0b-a689f1df03c7",
+    "id": "45fed5e9-5dac-49d1-90d8-b82cc11b41c1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6291,6 +6585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA FUNIL 3/8",
     "divisao": "SERINGAL",
@@ -6300,7 +6595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50443db9-475f-463e-b9df-f98eee778fdc",
+    "id": "a6ff85b7-e526-4f5b-a60d-588dc1b9314d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6310,6 +6605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BARRA ROSCADA INOX 304 5/16 UNF 24F 1M",
     "divisao": "SERINGAL",
@@ -6319,7 +6615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80807a90-4497-4685-9c6a-43b3dfbdd928",
+    "id": "d57530eb-af9d-4031-b9ca-9de1eb36ef4f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6329,6 +6625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LACRE SSB LOK  1,71MM ZAMAC CABO GALVANIZADO 20 CM",
     "divisao": "SERINGAL",
@@ -6338,7 +6635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b22ce80-2505-4ff8-909d-41ac6e939946",
+    "id": "fecf91e3-b4f5-4009-9122-10c1924af850",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6348,6 +6645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIXA D'AGUA FOLHA GRANA 240",
     "divisao": "SERINGAL",
@@ -6357,7 +6655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "567845c7-cacb-42a3-b967-835d6080dad4",
+    "id": "234c75df-0e10-431d-8d98-27b143bcb1e4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6367,6 +6665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MODULO BIFACIAL 545W CABO 1.3M MAXEON",
     "divisao": "SERINGAL",
@@ -6376,7 +6675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb29f740-5200-49df-a9b6-68867531e2db",
+    "id": "2f422ec8-98c3-4fc7-8b19-5ab114889ee6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6386,6 +6685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MB RUGGI 3SC8 123 110 1100W",
     "divisao": "SERINGAL",
@@ -6395,7 +6695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1dce4cdb-0c21-4650-8f64-ed190e37fcb3",
+    "id": "92fd6e02-546a-4bde-8ade-ac4d6ee33ff2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6405,6 +6705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SX 8.8 UNC 14F 7/16",
     "divisao": "SERINGAL",
@@ -6414,7 +6715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3aa7440-2e4d-46f8-9cbf-5eac41a51273",
+    "id": "9f763aaf-2528-4b5e-9aca-48be1e446ecb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6424,6 +6725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA 7/16",
     "divisao": "SERINGAL",
@@ -6433,7 +6735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d160803-951a-40cc-8e53-c60ecb989e0d",
+    "id": "7bbf53a8-c31f-4a43-b7b4-5353b00374a9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6443,6 +6745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA 3/8 CAP00003",
     "divisao": "SERINGAL",
@@ -6452,7 +6755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abb44d15-97d8-4083-b008-2d06306eda74",
+    "id": "8b1fd60f-f8cd-43cd-a1fd-91b0b107b29b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6462,6 +6765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA AUTO TRAV MA 06",
     "divisao": "SERINGAL",
@@ -6471,7 +6775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5bb1a44-edfa-4dec-a53a-14e616daf339",
+    "id": "93400e99-8f23-420e-8550-30f71e415da0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6481,6 +6785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "26376-PARAFUSO 9/16 X 2 UNF P TIPO CRAVO",
     "divisao": "SERINGAL",
@@ -6490,7 +6795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "067bbb5d-9157-4f1f-9629-ac1ec85b0e10",
+    "id": "13e98bce-dbf4-4038-9e39-f419ee27d53c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6500,6 +6805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FR RT 8.8 UNC 16F 3/8X4.1/2",
     "divisao": "PECUÁRIA",
@@ -6509,7 +6815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20dd5e74-fd3b-4021-a5f8-c5ae65eb8db4",
+    "id": "9ff1cf86-d309-4838-abfa-10c12005bf0f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6519,6 +6825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA PARA PARAFUSO CASALE 7500113",
     "divisao": "PECUÁRIA",
@@ -6528,7 +6835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ea84b61-0e9c-43e2-9d29-d3e7fd05ce8f",
+    "id": "fb1f7a0b-ac01-47c0-9f4b-cd77419e93bb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6538,6 +6845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIXA D'AGUA FOLHA GRANA 220",
     "divisao": "PECUÁRIA",
@@ -6547,7 +6855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ace91f3f-def0-4f2b-ac86-e68020f72fbc",
+    "id": "3ae32f22-0b41-4c2b-9210-0c5fa4feab45",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6557,6 +6865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BARRA ROSCADA SAE 1020 UNC 16F 3/8X1M",
     "divisao": "PECUÁRIA",
@@ -6566,7 +6875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62712449-8f02-4b9d-96e3-d9227d306cc8",
+    "id": "982ccf21-5088-48da-b4e8-34d631d861d4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6576,6 +6885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA PRESSAO MEDIA ACO MOLA 1/2 DIN 127",
     "divisao": "PECUÁRIA",
@@ -6585,7 +6895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "786127d6-32ae-44af-bd03-12cf802618c2",
+    "id": "916a2dc1-5644-469e-8c27-f936fd1cd56d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6595,6 +6905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIXA FERRO FOLHA GRANA 80",
     "divisao": "PECUÁRIA",
@@ -6604,7 +6915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d75881ff-17a3-4294-a4da-c909e68cce2f",
+    "id": "e240db34-eba5-4b7b-ba8e-728461a1e858",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6614,6 +6925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIXA FERRO FOLHA GRANA 100",
     "divisao": "PECUÁRIA",
@@ -6623,7 +6935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10c83035-73a3-4044-a054-60292d99e264",
+    "id": "2a11920d-ec88-479a-9de3-4e522126c6f5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6633,6 +6945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA SAE 1020 POL 7/8",
     "divisao": "PECUÁRIA",
@@ -6642,7 +6955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd7f78e9-e10c-42fa-957e-605ebef019e3",
+    "id": "cdafda90-f2ef-428a-89bb-c889ecb05d56",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6652,6 +6965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PLUG FEMEA SOBR 2P 10A 250V BR",
     "divisao": "PECUÁRIA",
@@ -6661,7 +6975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e43a545-2251-475a-90cf-93a0d36f22a1",
+    "id": "940b54e0-4533-408f-bd98-c6c74f5a4732",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6671,6 +6985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SX PARLOCK ALTA 8.8 UNC 10F 3/4",
     "divisao": "PECUÁRIA",
@@ -6680,7 +6995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27dd1168-da5a-40ed-a0bd-601992bfe92d",
+    "id": "26dc2640-b231-4d1a-b943-f66b950e4592",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6690,6 +7005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA - 900035004",
     "divisao": "PECUÁRIA",
@@ -6699,7 +7015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "390f2fa7-94f3-4e87-b479-7a7dcd30fb41",
+    "id": "b7f84e1f-bf80-4f77-bff5-9fd0ff6e0098",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6709,6 +7025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PLUG MACHO SOBR 2P 10A 250V BR",
     "divisao": "PECUÁRIA",
@@ -6718,7 +7035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b4e35e5-abc1-4d97-bf35-7609d237b852",
+    "id": "0ac1e368-25b0-4905-a1fd-fe55f11cb14e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6728,6 +7045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PLUG MACHO SOBR 2P 20A 250V BR",
     "divisao": "PECUÁRIA",
@@ -6737,7 +7055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13104bf8-a4a5-4470-acf2-2e102924b844",
+    "id": "7714eb1d-d86d-45dc-a63c-ce9ddf129ca7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6747,6 +7065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA LISA AE 5/16 2MM",
     "divisao": "PECUÁRIA",
@@ -6756,7 +7075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fcee4428-47cc-4b6b-a795-3fcde6598a13",
+    "id": "1665f479-ff3e-4da7-a378-4ec0b0e13008",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6766,6 +7085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CURVA 90°  PTA/BSA SOLD IRRIGA - LF 50 CB",
     "divisao": "PECUÁRIA",
@@ -6775,7 +7095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e05a6a3c-b78f-4d0b-811d-984d55e286a8",
+    "id": "8213576f-c4ed-4247-b2bc-80c97fd38e10",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6785,6 +7105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PLUG FEMEA SOBR 2P 20A 250V BR",
     "divisao": "PECUÁRIA",
@@ -6794,7 +7115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27a53ab5-0a88-4f1a-ad32-22d47bf47ced",
+    "id": "b3229778-e513-45af-af03-1cdf30f975f6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6804,6 +7125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SX 8.8 UNC 24F 3/16",
     "divisao": "PECUÁRIA",
@@ -6813,7 +7135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76719bb3-d5c3-4637-988e-03b5c296b0a9",
+    "id": "f97af493-9850-4310-be9f-61ebabc655ce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6823,6 +7145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELO FUSIVEL ALTA TENSAO 8K",
     "divisao": "PECUÁRIA",
@@ -6832,7 +7155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd6ecc68-a0e0-4841-90c6-2e1f3f5edd43",
+    "id": "b0815b81-4eaa-43bf-abc4-b864575cef2f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6842,6 +7165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RT 8.8 UNF 24F 5/16X1",
     "divisao": "PECUÁRIA",
@@ -6851,7 +7175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99d66d79-2a01-43ce-9b2a-fe8871c30ef2",
+    "id": "88114cbe-3aae-4e8f-9165-537eb316cc79",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6861,6 +7185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO DORMER 06MM",
     "divisao": "PECUÁRIA",
@@ -6870,7 +7195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1177df05-ae1e-45aa-8dd2-e1b471429821",
+    "id": "0df5f036-8403-4486-b20a-130236a63ae5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6880,6 +7205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FR RT 8.8 UNC 16F 3/8X9",
     "divisao": "PECUÁRIA",
@@ -6889,7 +7215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d4bae5c-a68c-4301-82f5-f836f26ee20f",
+    "id": "7f2257c7-0d85-4417-92f3-d19eeece0c6b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6899,6 +7225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE 2 TELAS INOX 1.0MM 4.1/2X0,39X7/8",
     "divisao": "PECUÁRIA",
@@ -6908,7 +7235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c03b72a6-a149-40d3-b178-9178b53f3891",
+    "id": "f5c3432c-47a3-433b-89a0-8b58156a5ac6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6918,6 +7245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO CORTE INOX EHT 7X5/64X7/8",
     "divisao": "PECUÁRIA",
@@ -6927,7 +7255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31eb1ca9-4697-459a-87cd-205df16def34",
+    "id": "a9f76a5f-7290-4aa0-b6e2-b37f49e70537",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6937,6 +7265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "COLA 3M 50 GRS",
     "divisao": "PECUÁRIA",
@@ -6946,7 +7275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dba5366-d623-4c28-a8f8-501f52693561",
+    "id": "bc414feb-dc9c-42d2-9f1b-d763b087e1a8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6956,6 +7285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMATAO REDONDO 5,5X200MM STIHL 56057735506",
     "divisao": "PECUÁRIA",
@@ -6965,7 +7295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6290fc59-3bc2-4dd6-a7dc-eda8c15a1129",
+    "id": "b194a88f-aeb4-4d67-9982-9b9bcd083f13",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6975,6 +7305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "179914-PARAFUSO P/ VASO BUCHA S-10 75MM PAR",
     "divisao": "PECUÁRIA",
@@ -6984,7 +7315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0b31653-7074-42d1-92e2-5523ee737b7b",
+    "id": "454529f1-12a1-45e4-8d2c-032d1555ebda",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6994,6 +7325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TERMINAL ENCAIXE",
     "divisao": "PECUÁRIA",
@@ -7003,7 +7335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ed8def8-4bb0-4dff-a488-cbc5275f786b",
+    "id": "ffcb5af9-67ca-4222-815d-0cb0626fad6a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7013,6 +7345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FITA ISOLANTE ALTA FUSAO 10MT 3M",
     "divisao": "PECUÁRIA",
@@ -7022,7 +7355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe18ac69-07e5-4036-b43c-15951b27f7b2",
+    "id": "50f6abfd-fae3-4cf3-b016-1f68a8ab81f4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7032,6 +7365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RP 8.8 UNC 12F 9/16X4",
     "divisao": "PECUÁRIA",
@@ -7041,7 +7375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf4ecb45-66b8-41a7-904d-228e6bc21588",
+    "id": "d325f27e-317a-4aa8-9e10-834bde14f52b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7051,6 +7385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BARRA ROSCADA SAE 1020 UNC 3/4X1M",
     "divisao": "PECUÁRIA",
@@ -7060,7 +7395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e1bb063-4474-418e-9de3-729cfb8e4832",
+    "id": "632f396d-db12-4ad9-accc-593a39e9e9e4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7070,6 +7405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FITA ISOLANTE PVC 0,18MM PT 19MMX20M",
     "divisao": "PECUÁRIA",
@@ -7079,7 +7415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec6f6d55-f06e-43ef-b439-5ea20ca3f62f",
+    "id": "fff6329d-39ea-4051-a5de-9a4f44fcecee",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7089,6 +7425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CONJ. PARAFUSO, ARRUELAS E PORCA BALDAN 54200100908",
     "divisao": "PECUÁRIA",
@@ -7098,7 +7435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "913f93d8-4af6-484e-b6c3-5fa5b2219eb0",
+    "id": "fbb570ce-2cf9-4ee7-85ec-7b6f68722f89",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7108,6 +7445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TERMINAL 222.02.04",
     "divisao": "PECUÁRIA",
@@ -7117,7 +7455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b78f3a1-da91-49c6-9fe5-0eec5fe89284",
+    "id": "9b6d9423-5649-49fa-8263-87bc2b147ff1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7127,6 +7465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO 10MM",
     "divisao": "PECUÁRIA",
@@ -7136,7 +7475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b18e57a6-0000-4099-8205-925ba08f26a6",
+    "id": "045e70e7-8c11-4b26-b952-e93e9392027c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7146,6 +7485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RP 8.8 UNC 10F 3/4X4.1/2",
     "divisao": "PECUÁRIA",
@@ -7155,7 +7495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9264c0cc-8c11-46a0-82c1-c72be3c660fb",
+    "id": "4bf76c1d-44ad-4733-81e1-f224117e6aea",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7165,6 +7505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FILTRO DE COMBUSTIVEL BOSCH 0986450704",
     "divisao": "PECUÁRIA",
@@ -7174,7 +7515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41d8403f-5571-4d40-9133-044f5b703733",
+    "id": "22c63f9e-af88-497c-8d20-c0e8455c406a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7184,6 +7525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO DESBASTE 4.1/2X3/16X7/8",
     "divisao": "PECUÁRIA",
@@ -7193,7 +7535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba538e65-0772-4981-b7e3-6dc983f32443",
+    "id": "d2b595a5-725c-4990-8379-4d96dc79bb85",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7203,6 +7545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISCO DESBASTE 7X1/4X7/8",
     "divisao": "PECUÁRIA",
@@ -7212,7 +7555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28302682-a545-429a-806f-c3860e932c6c",
+    "id": "ce6943d4-04b5-4944-b0f8-4a52270798d1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7222,6 +7565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "RETENTOR VEDACAO ARCA 6121BRG",
     "divisao": "PECUÁRIA",
@@ -7231,7 +7575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b421fcb-340f-48db-b2af-18b2fb1e6d8c",
+    "id": "fc7d444f-6f3d-4941-909b-313aa4ebd934",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7241,6 +7585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REFLETOR LED 100W 127/220V",
     "divisao": "PECUÁRIA",
@@ -7250,7 +7595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39f388be-051d-4c22-ba0b-d8f6cc9d6611",
+    "id": "6761b122-ff43-4240-8f54-9a2cdf828e68",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7260,6 +7605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "RETENTOR VEDACAO ARCA 6739BRG",
     "divisao": "PECUÁRIA",
@@ -7269,7 +7615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f1ee97e-8067-4a28-8f30-0a45100ca179",
+    "id": "b94f04eb-3a0d-46e3-b5ef-fcd850e48467",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7279,6 +7625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO 46 X 2,5MM",
     "divisao": "PECUÁRIA",
@@ -7288,7 +7635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4323aa61-8345-4347-a5e8-f906a229d22e",
+    "id": "3a85b9eb-3247-41e1-b703-934492b1a32a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7298,6 +7645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TERMINAL 1 FURO 1 COMPRESSAO 50MM2",
     "divisao": "PECUÁRIA",
@@ -7307,7 +7655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cebf2f3d-ce8e-4c13-9eec-ea09f57d652a",
+    "id": "71a86a2f-db74-4e9a-991b-0173f30ebf45",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7317,6 +7665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO RAPIDO 8MM",
     "divisao": "PECUÁRIA",
@@ -7326,7 +7675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f64b099f-ef99-4124-8d30-ea59ccfeb204",
+    "id": "2bdef5a4-5081-47dc-a4ed-93f592447a69",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7336,6 +7685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARRUELA 3/8",
     "divisao": "PECUÁRIA",
@@ -7345,7 +7695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fab53fcd-913b-4ecf-9856-49f7fe5521fa",
+    "id": "b9bd1b59-4d21-409c-95ad-03ed0019a58f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7355,6 +7705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TRENA IRWIN 5MT",
     "divisao": "PECUÁRIA",
@@ -7364,7 +7715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2706e8d-f99a-425e-bc8b-574426c1059f",
+    "id": "09648aeb-4960-4785-846c-ae59871e09c1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7374,6 +7725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RP 8.8 UNC 11F 5/8X7",
     "divisao": "PECUÁRIA",
@@ -7383,7 +7735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "661daa2c-6826-4acb-ab5a-8804fd830e8a",
+    "id": "92314e3f-1d5c-445a-b57b-c0cf12f02014",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7393,6 +7745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RT 8.8 UNC 14F 7/16X1",
     "divisao": "PECUÁRIA",
@@ -7402,7 +7755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "883e6cfe-c719-479c-9a9c-6bdfd51ca681",
+    "id": "c1433bb6-ff64-467a-8ab8-21aa53ff4b28",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7412,6 +7765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SX 8.8 UNF 14F 7/8",
     "divisao": "PECUÁRIA",
@@ -7421,7 +7775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5b48c61-dc1b-49a9-b60f-e92491fdcb6f",
+    "id": "13b2c9d6-0aae-4625-8d08-9547e961f8e3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7431,6 +7785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "22220 E/C3 SKF ROLAMENTO",
     "divisao": "PECUÁRIA",
@@ -7440,7 +7795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a44f43ac-4989-433e-8790-68c805903869",
+    "id": "826fe293-c5e2-407d-b589-19fdfdda7006",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7450,6 +7805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUJAO GALVANIZADO 2.1/2\"",
     "divisao": "PECUÁRIA",
@@ -7459,7 +7815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d77f8060-2ffe-4ac3-8154-ebea63387c99",
+    "id": "16e22159-65a7-4f27-8565-731047e08a5a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7469,6 +7825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADESIVO EPOXI 1KG SIKADUR-32",
     "divisao": "PECUÁRIA",
@@ -7478,7 +7835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f344d5d3-321d-4300-a90e-900e36f1a021",
+    "id": "ba8cdb92-6580-4dd5-9bcf-237157d60de3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7488,6 +7845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAINEL LED QD SOBR 28X28 6500K 24W BIV PC",
     "divisao": "PECUÁRIA",
@@ -7497,7 +7855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d7b3a1c-7ff7-49b0-86cc-88c9195123c5",
+    "id": "661141e6-32f3-4a93-812b-91eed48a4cbd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7507,6 +7865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FR RT 8.8 UNC 16F 3/8X11",
     "divisao": "PECUÁRIA",
@@ -7516,7 +7875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d151d7d1-cd87-4a26-b2b8-c4b0d2c6e30f",
+    "id": "24807501-6301-420c-bbcb-7a14605d8317",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7526,6 +7885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO AL CC CIL 12.9 RT MA 1,75 M12X35",
     "divisao": "PECUÁRIA",
@@ -7535,7 +7895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "710953f4-63e3-49d7-8f47-fd291d53e809",
+    "id": "4bd52b53-f7e3-42c0-9659-d15f1420403a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7545,6 +7905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CRUZETA CARDAN SPICER 5160X",
     "divisao": "PECUÁRIA",
@@ -7554,7 +7915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f536fdab-c2dd-4436-9312-c224b35871db",
+    "id": "93ee6634-93e7-434a-99bc-a3c2b8afea96",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7564,6 +7925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "RELE FOTOELETRICO 1000W",
     "divisao": "PECUÁRIA",
@@ -7573,7 +7935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1040f8d-2024-4b82-94a1-f65eec3aef27",
+    "id": "91c1c1d5-3e2f-4ee3-a55b-96568f93efa3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7583,6 +7945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SELO MECANICO 1 INPACOM",
     "divisao": "PECUÁRIA",
@@ -7592,7 +7955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2dd41840-da42-4db8-8eb3-1d0515c28809",
+    "id": "f87687b9-1836-4c2f-9c2d-8251a5200fd5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7602,6 +7965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FR RT 8.8 UNC 16F 3/8X8",
     "divisao": "PECUÁRIA",
@@ -7611,7 +7975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abbd75e9-39a7-40a1-964e-865299bcd24c",
+    "id": "a9faaba6-b9ca-4f00-a820-860420885809",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7621,6 +7985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA GALVANIZADA 2.1/2",
     "divisao": "PECUÁRIA",
@@ -7630,7 +7995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4284c4b-21fe-46ec-9d47-12064cddbbd4",
+    "id": "a0be4d07-2d0c-484c-8827-68883fcf1721",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7640,6 +8005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PECAS, ACESSORIOS E MATERIAIS",
     "divisao": "PECUÁRIA",
@@ -7649,7 +8015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd2da754-c94b-4808-b32f-7e75c73b2187",
+    "id": "21c68f8d-2917-4bfc-97c3-b515fa81b33d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7659,6 +8025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RP 8.8 UNC 10F 3/4X6",
     "divisao": "PECUÁRIA",
@@ -7668,7 +8035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1026547-aaf6-494b-b0e0-f53bcd5df164",
+    "id": "cbe88edb-dbf6-458c-bca9-987dc049af93",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7678,6 +8045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO FR RT 8.8 UNC 16F 3/8X10",
     "divisao": "PECUÁRIA",
@@ -7687,7 +8055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8611c2cb-b57a-4ba2-93da-b30e7a615260",
+    "id": "10548686-3a1c-491a-ad84-eccbe3983d6e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7697,6 +8065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TERMINAL CARDAN 30MM AEMCO CC106",
     "divisao": "PECUÁRIA",
@@ -7706,7 +8075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3c4f539-e147-4fe8-9daf-a1c4300cdfd7",
+    "id": "d23dd802-67cf-4015-9267-0ad0345a5863",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7716,6 +8085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAINEL LED LLUM SOB 24W 30X30 6500K",
     "divisao": "PECUÁRIA",
@@ -7725,7 +8095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97658804-860f-4c71-abd5-46c72564a06a",
+    "id": "72ead20f-8d2c-46d8-bba7-590851ed987d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7735,6 +8105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA CARTER MF 0576101",
     "divisao": "PECUÁRIA",
@@ -7744,7 +8115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39e48954-5010-4757-adfd-6d4816abc48e",
+    "id": "bc52da44-7476-4a11-9c45-445fbfc0adaf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7754,6 +8125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "X4 SUPRA- /BB 5,0 L",
     "divisao": "PECUÁRIA",
@@ -7763,7 +8135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b569169-af43-4412-8aa0-9bd4f248a06a",
+    "id": "93c08dc4-4292-4834-8d31-63ef1a8db969",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7773,6 +8145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BATERIA RECARREGAVEL DE LI-ION 9800MAH SD 18650 3.7V - 4,2V",
     "divisao": "PECUÁRIA",
@@ -7782,7 +8155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d021b45b-172f-4e01-a21c-025443fd4b7d",
+    "id": "4a12af26-afe7-4a5e-8a38-db6fd8790955",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7792,6 +8165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REFLETOR LED 300W 127/220V",
     "divisao": "PECUÁRIA",
@@ -7801,7 +8175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc3b998e-6323-4cd0-b887-d0243c81fb98",
+    "id": "07ec7e1b-1199-4279-8652-ba85dee68d54",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7811,6 +8185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CORRENTE MOTOSSERRA 36 DENTES",
     "divisao": "PECUÁRIA",
@@ -7820,7 +8195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62e7808a-8cae-46dd-aa26-e86663e695d8",
+    "id": "980d39a6-7866-424d-a10e-5e44d54c1bec",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7830,6 +8205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ROLAMENTO ROLOS CONICOS SKF 32211 J2/Q",
     "divisao": "PECUÁRIA",
@@ -7839,7 +8215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "996004d7-1634-4f82-8f0f-68e6d8c8c47e",
+    "id": "2636693c-c5c1-4f69-92a1-92bb3f007cca",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7849,6 +8225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PARAFUSO SX RP 8.8 UNC 11F 5/8X4.1/2",
     "divisao": "PECUÁRIA",
@@ -7858,7 +8235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75279e55-eb19-46f0-9bbd-5cfcb243dea8",
+    "id": "e9d7b02e-4c71-4aa8-98bb-5765c875f707",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7868,6 +8245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TERMINAL CARDAN FURO QUADRADO MENOR 30MM AEMCO CC251",
     "divisao": "PECUÁRIA",
@@ -7877,7 +8255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c980a2ae-96f0-41f3-b8d1-0df72e14d8bf",
+    "id": "e07c714a-073c-4bcb-a991-c28e3e5706f9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7887,6 +8265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "KIT CAIXA DE LIGACAO 63 W22",
     "divisao": "PECUÁRIA",
@@ -7896,7 +8275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e3472b7-f30a-400c-8463-d4562701dbfa",
+    "id": "af59da49-871a-47bf-8f56-be1863f7b320",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7906,6 +8285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "344CC59/1000 BARRA MACHO QUADRADA",
     "divisao": "PECUÁRIA",
@@ -7915,7 +8295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62e3186a-20ef-4c0e-82bf-87617ba94d3f",
+    "id": "ddd66a09-4718-494b-a026-e4c97a3e8ed3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7925,6 +8305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CABO FLEX 50MM AZUL",
     "divisao": "PECUÁRIA",
@@ -7934,7 +8315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f6001a0-c41b-466e-b1f6-0eae6eef2c61",
+    "id": "1916b223-4e73-42d0-b190-219fb4c13ed6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7944,6 +8325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "RESINA POLIESTER",
     "divisao": "PECUÁRIA",
@@ -7953,7 +8335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15f8c2cd-a506-4397-b404-2da18ebc857c",
+    "id": "60403dd5-1260-4598-8d24-83fcb05ac81e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7963,6 +8345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ROTOR BRONZE 134MM THEBE P-15",
     "divisao": "PECUÁRIA",
@@ -7972,7 +8355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d94cbcc2-fa72-4273-966e-845fabd4210e",
+    "id": "406c877f-032f-4cb4-8fe0-51d81dcf2909",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7982,6 +8365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CORRENTE ROLO SIMPLES 5/8 ASA 50",
     "divisao": "PECUÁRIA",
@@ -7991,7 +8375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dfa44fb-0751-4a22-9aab-ae154ec29c13",
+    "id": "89e2202c-b3ba-41e6-89a3-1454c60cab1a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8001,6 +8385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BATERIA AUTOMOTIVA 12V 180A",
     "divisao": "PECUÁRIA",
@@ -8010,7 +8395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27564296-7ebb-48b9-a5f7-1c79d2f15450",
+    "id": "479d6ff1-eb78-4361-a9cb-eaaa491fd0b5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8020,6 +8405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CABO FLEX 50MM PRETO",
     "divisao": "PECUÁRIA",
@@ -8029,7 +8415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24993c82-4c4e-4fd1-a162-b762417ed269",
+    "id": "30eed855-2ef2-48c5-bdb0-882aa24d02e6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8039,6 +8425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PREGO COM CABECA LISO ACO POLIDO 17X21MM",
     "divisao": "PECUÁRIA",
@@ -8048,7 +8435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2369d955-834c-4cd0-a0f3-ea4180889ed7",
+    "id": "5376c8ac-039e-45ec-aad3-c219032745e0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8058,6 +8445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADESIVO PLASTICO CPVC FR 175G",
     "divisao": "PECUÁRIA",
@@ -8067,7 +8455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d64b0d49-0802-4288-85ab-a0e14fda88a3",
+    "id": "fd13851d-140b-475b-8871-a12f24bf98ae",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8077,6 +8465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PE PARA COCHO DE CIMENTO",
     "divisao": "PECUÁRIA",
@@ -8086,7 +8475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b9dc1e2-006f-4b67-988c-7fc261a23fee",
+    "id": "dd92d622-cbb9-46f7-83cf-451aff01917f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8096,6 +8485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "COCHO DE CIMENTO MEIA MANILHA 1M",
     "divisao": "PECUÁRIA",
@@ -8105,7 +8495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c68fc36-db4f-4eea-88d9-d2d585ebf001",
+    "id": "af168b97-7e62-4740-aa8d-737d7d13163b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8115,6 +8505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA SOLDAVEL PVC MARROM 25MM NBR 5648",
     "divisao": "PECUÁRIA",
@@ -8124,7 +8515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afe2dfc0-3904-4986-baa5-cf14e638909f",
+    "id": "4067d343-6f5c-4d4b-86df-d72f7acc248d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8134,6 +8525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADAPTADOR PARA MAGUEIRA METAL 1",
     "divisao": "PECUÁRIA",
@@ -8143,7 +8535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78d0fd66-2d85-4a36-8d65-a1119f8fff24",
+    "id": "2abbb61b-1e2d-43af-9f17-a02c6033af76",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8153,6 +8545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CAP SOLDÁVEL 25MM PLASTUBOS",
     "divisao": "PECUÁRIA",
@@ -8162,7 +8555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3b55646-b4b1-473b-b264-d7fd2883cce0",
+    "id": "b2a418c2-e5f3-429d-8803-fd249661f6fb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8172,6 +8565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA PVC SOLDAVEL MARRON COM ROSCA LR 32MM",
     "divisao": "PECUÁRIA",
@@ -8181,7 +8575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0f5c0ac-9dde-49d3-8a32-1ba0c82e6b1d",
+    "id": "6eef57ec-5c51-455d-b29d-a7377ff7313a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8191,6 +8585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA SOLDAVEL 32MM",
     "divisao": "PECUÁRIA",
@@ -8200,7 +8595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e17279c6-7636-4cce-8f3f-b9a4ae210ac5",
+    "id": "1a386350-756d-4de5-bd15-ffecf18a226e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8210,6 +8605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "THINNER 5 LITROS",
     "divisao": "PECUÁRIA",
@@ -8219,7 +8615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc7f5aab-7657-4711-8d60-e4f9f6f088f3",
+    "id": "62dc10fa-fd56-40e1-a648-2fe6c16ed9ed",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8229,6 +8625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA ESMALTE SINTETICO VERMELHO GOYA LT 3600ML",
     "divisao": "PECUÁRIA",
@@ -8238,7 +8635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c495f2c7-1dfc-4efa-842c-00d68b3338b8",
+    "id": "ffc364f4-1bf8-4ba2-8635-629b8ecdf239",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8248,6 +8645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA BASE D'AGUA AMARELO TERRA 20 LTS",
     "divisao": "PECUÁRIA",
@@ -8257,7 +8655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d0fa264-8876-4172-9b99-f4522bf04d03",
+    "id": "8c2ab6df-df8f-422f-acaf-7e39820f3292",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8267,6 +8665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA PLASTICA PAREDE OCA 10X60",
     "divisao": "PECUÁRIA",
@@ -8276,7 +8675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0ddb697-4a8f-4c0e-bd56-cef691b60775",
+    "id": "4eb8c226-5583-468f-b4d3-06b2073e2f1b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8286,6 +8685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAMPO CERCA GERDAU 1 X 9 POLIDO 1KG",
     "divisao": "PECUÁRIA",
@@ -8295,7 +8695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3dcc790-9ba4-4c32-bfa8-8e759751dbfc",
+    "id": "adb05138-2d44-4f91-8e74-130262635181",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8305,6 +8705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARESTE LONGA PARA CERCA",
     "divisao": "PECUÁRIA",
@@ -8314,7 +8715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8887fd6-e31a-477a-9684-470499641ef0",
+    "id": "4770ae18-6c1e-43a8-a25f-18a7251f702b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8324,6 +8725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA PVC SOLDAVEL MARRON COM ROSCA LR 50MM",
     "divisao": "PECUÁRIA",
@@ -8333,7 +8735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9af44626-b9a5-42da-9dfc-eeac369e59fc",
+    "id": "f93645b3-99fc-4c9d-ab8d-db87bc3c8e00",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8343,6 +8745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA SOLDAVEL PVC AZUL 50MM",
     "divisao": "PECUÁRIA",
@@ -8352,7 +8755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8682e63-57bd-4030-816c-45a16b894ecb",
+    "id": "a32fd45f-9488-4479-9b65-cef6c8905b54",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8362,6 +8765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA SPRAY PRETO FOSCO 400ML",
     "divisao": "PECUÁRIA",
@@ -8371,7 +8775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ed8285b-22a6-4731-865a-b2e1a25403ee",
+    "id": "ae4094c9-602b-4d82-9ec6-4340a4d74cc3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8381,6 +8785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LASCA DE AMARU 2,20",
     "divisao": "PECUÁRIA",
@@ -8390,7 +8795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57aaca44-31a1-418d-b1da-97aaee7dd529",
+    "id": "bd6178f4-418b-4d5f-9ead-e0f870ccd36d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8400,6 +8805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TIJOLO COMUM MACICO",
     "divisao": "PECUÁRIA",
@@ -8409,7 +8815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4794696a-e409-4b59-be4b-711dafaf4921",
+    "id": "adbfcd71-494d-4a6c-ab91-9b7c2db1c5e5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8419,6 +8825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DOBRADICA QUADRADA 140X140MM NR 3",
     "divisao": "PECUÁRIA",
@@ -8428,7 +8835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61d6b2ab-3430-46e0-b6d0-b70eab796611",
+    "id": "d129c75e-78c5-4e87-a75a-5d9a087bb6ab",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8438,6 +8845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CIMENTO  CP II-E-32 50KG",
     "divisao": "PECUÁRIA",
@@ -8447,7 +8855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c097af42-0a94-4c7d-a857-e0323c5452f4",
+    "id": "b6cfca54-989c-4082-bb78-6c312cd4a7a2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8457,6 +8865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BRITA 0 - TON",
     "divisao": "PECUÁRIA",
@@ -8466,7 +8875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8b3ade8-c557-439a-97c7-3213c98d8641",
+    "id": "4abf4c22-8c37-4def-963c-ed5b9be61bbb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8476,6 +8885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARAME LISO BELGO Z-700",
     "divisao": "PECUÁRIA",
@@ -8485,7 +8895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b56a306b-867d-4ace-86e8-7750c541d2e3",
+    "id": "f197cf05-678b-4a13-96e1-529ca4fa3d80",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8495,6 +8905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "KIT COMPLETO P/ BANHEIRO C/ TAMPA",
     "divisao": "PECUÁRIA",
@@ -8504,7 +8915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1cd17688-a5ef-4dcd-b1de-e438297faedf",
+    "id": "9af88dc0-368e-4272-9038-d5fd15f224fc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8514,6 +8925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BRITA 00 - M3",
     "divisao": "PECUÁRIA",
@@ -8523,7 +8935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74bc221c-21a9-40a8-b99a-376e024a11be",
+    "id": "3b4796e7-d385-46d6-bf88-39bf511e7f6d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8533,6 +8945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AREIA GROSSA - M3",
     "divisao": "PECUÁRIA",
@@ -8542,7 +8955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8041bf4a-8bb0-436b-9b3b-fb338b3f7185",
+    "id": "c94b1ebc-59fd-4f24-bcaa-e61846d58ad8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8552,6 +8965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BOIA METALICA ROSCA EXTERNA 1.1/2",
     "divisao": "PECUÁRIA",
@@ -8561,7 +8975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66431819-e3b1-42cd-9610-d43964ecfab4",
+    "id": "754092bf-e154-4b91-beb0-eea53a01e93d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8571,6 +8985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LASCA DE ACAPU 14CMX2,20M",
     "divisao": "PECUÁRIA",
@@ -8580,7 +8995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2ba8753-bc71-433f-be5c-b84f43dd516a",
+    "id": "7219daff-a5ca-47c4-a76a-7ad4094f10d5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8590,6 +9005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA 1 C/ROSCA TIGRE BR",
     "divisao": "PECUÁRIA",
@@ -8599,7 +9015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26c30b48-537e-4419-a1a7-d0e25c59af19",
+    "id": "dcc87bd2-855b-456d-8df3-145667aec7e7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8609,6 +9025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DILUENTE PARA PU 900ML",
     "divisao": "PECUÁRIA",
@@ -8618,7 +9035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c6b2a72-643d-4ab6-8925-20437b8d4f6e",
+    "id": "783e2023-a560-40cb-a4d9-dc5169d39854",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8628,6 +9045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "UNIAO 1.1/2\" INTERNA",
     "divisao": "PECUÁRIA",
@@ -8637,7 +9055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e582e128-62e3-4904-be7a-9f24b96b8cec",
+    "id": "1e1084f9-d961-4e08-8438-4c07b4cc7249",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8647,6 +9065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PINCEL MEDIO CERDAS BRANCA CABO PLASTICO 1 1/2",
     "divisao": "PECUÁRIA",
@@ -8656,7 +9075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b3f9a75-1a48-449b-ba13-e2131b87c71b",
+    "id": "137c9c0b-8a04-421a-9075-79a4288fa44d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8666,6 +9085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ENGATE FLEXIVEL PVC 1/2X60CM",
     "divisao": "PECUÁRIA",
@@ -8675,7 +9095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50e7d621-96fa-474b-bcaa-ccb666af0e99",
+    "id": "a5fae308-e6c7-4228-b535-7c2be4a42400",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8685,6 +9105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "UNIAO SOLDAVEL PVC MARROM 50MM NBR 5648",
     "divisao": "PECUÁRIA",
@@ -8694,7 +9115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a3a8f9d-0522-4df9-b2d6-64341581f4fc",
+    "id": "ab53e583-4f2c-4b71-ac1f-60cf7275f3a1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8704,6 +9125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PREGO COM CABECA LISO ACO POLIDO 18X24MM",
     "divisao": "PECUÁRIA",
@@ -8713,7 +9135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8819ac0-647e-4389-83e0-8d954be515d0",
+    "id": "0e9aacfa-d712-473b-b962-13f9b062a3f5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8723,6 +9145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ROLO PARA RESINA LA 23 CM",
     "divisao": "PECUÁRIA",
@@ -8732,7 +9155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "668b5465-65d0-472d-829e-6cbc6fb6e5d0",
+    "id": "775c41f3-0b6c-46b4-9302-dd4d6c867b0e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8742,6 +9165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AREIA NATURAL GROSSA LAVADA",
     "divisao": "PECUÁRIA",
@@ -8751,7 +9175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87a9a82e-de05-4efa-b09a-a11c999e8620",
+    "id": "7c246c8c-186c-461e-b420-5cda489771d0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8761,6 +9185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA EPOXI BT 03 2880 ML + ENDURECEDOR PARA EPOXI 720 ML",
     "divisao": "PECUÁRIA",
@@ -8770,7 +9195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "21130999-e819-431e-a027-4671bac9c4dc",
+    "id": "f27b2852-1efa-4ca9-8126-bd51bed4b09e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8780,6 +9205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "KIT PISCINA AZUL (1 GL TINTA PU + 1 UND CATAL + 1 LT DILUENTE PU 900ML)",
     "divisao": "PECUÁRIA",
@@ -8789,7 +9215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38746c21-d836-4736-86d5-09c516d64616",
+    "id": "b8d1f43e-77ef-461a-a58f-de15306c905b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8799,6 +9225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MADEIRA SERRADA 5,0X2,5CMX2M",
     "divisao": "SERINGAL",
@@ -8808,7 +9235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e8b1b91-e3a0-4e24-ac39-f354fa1bedda",
+    "id": "833bd45a-76dd-47c1-a26e-b7f0d9ff7e14",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8818,6 +9245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADAPTADOR INTERNO 1\" ROSCA EXTERNA",
     "divisao": "SERINGAL",
@@ -8827,7 +9255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "854524f7-b06e-4c1a-b4da-c2d543feab06",
+    "id": "8208cd86-34da-4a39-9f49-dc0381b0bbb8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8837,6 +9265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADAPTADOR INTERNO 2 POL TIPO ROSCA EXTERNA PT",
     "divisao": "SERINGAL",
@@ -8846,7 +9275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c11c0067-a76e-4ccb-b395-7f1bce8e0c99",
+    "id": "3e2e74d0-980e-4fc7-9162-cbdfbd16ef86",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8856,6 +9285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA SOLDAVEL LR 25MM X 1/2",
     "divisao": "SERINGAL",
@@ -8865,7 +9295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e0fde30-931d-4abb-90a4-70c262277969",
+    "id": "f8bbfaa5-104b-46f5-bcd0-cbd615285fde",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8875,6 +9305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TUBO SOLDAVEL 25MM 6M - TIGRE",
     "divisao": "SERINGAL",
@@ -8884,7 +9315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f91c23c-eb55-4574-8b88-20ee20e070a7",
+    "id": "00a7f6c8-69aa-4ffa-9874-1a2fccf91907",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8894,6 +9325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BUCHA REDUCAO SOLDAVEL PVC 50X25MM",
     "divisao": "SERINGAL",
@@ -8903,7 +9335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7db9ddd-42dc-458f-b4d8-4ca4a020705c",
+    "id": "1e734fc3-156a-4e9d-8c91-cc690efcfcdc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8913,6 +9345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "JOELHO SOLDÁVEL 50MM",
     "divisao": "SERINGAL",
@@ -8922,7 +9355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f05b02a4-0270-49fa-b2d8-eaeefa159198",
+    "id": "336ed758-1afb-4341-819c-4fbcf4a5fa2b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8932,6 +9365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TORNEIRA JARDIM 1/2 E 3/4 HERC",
     "divisao": "SERINGAL",
@@ -8941,7 +9375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5459dc1-4abd-40de-9a6c-1f159bd6dbb0",
+    "id": "22b0d849-1191-4ec7-93c8-e62eb56242e4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8951,6 +9385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADESIVO PVC FRASCO 175G",
     "divisao": "SERINGAL",
@@ -8960,7 +9395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc8f472d-b190-4799-8bb5-82a27e719326",
+    "id": "d2c1060e-0d3e-4eb2-b407-a4a406391ea3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8970,6 +9405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CHUVEIRO FRIO C/BRA S/REG",
     "divisao": "SERINGAL",
@@ -8979,7 +9415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c4e15af-d397-492a-80ed-ca0d0ceaf5a1",
+    "id": "07a88b4e-e180-4b62-9778-22505204fe99",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -8989,6 +9425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TUBO SOLDÁVEL 50MM MT",
     "divisao": "SERINGAL",
@@ -8998,7 +9435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90ea778f-17f7-44b4-8945-ad8c0c2db59f",
+    "id": "6da0355a-7fde-40c3-a18c-bce03e2d1fba",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9008,6 +9445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CAIXA DESCARGA 9LT ASTRA BRANCA",
     "divisao": "SERINGAL",
@@ -9017,7 +9455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e733b3f0-0268-4093-9938-5ae631b5dce9",
+    "id": "8d4514c9-100a-495b-84de-fa49c88bdd39",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9027,6 +9465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CIMENTO 50KG TODAS OBRAS TOCANTINS",
     "divisao": "SERINGAL",
@@ -9036,7 +9475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbf57c5b-56c3-4ae0-8f24-7c8573e6377e",
+    "id": "2ca7778b-a314-4d08-9255-8848feff15c4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9046,6 +9485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORTA VENEZIANA 60 ZEMA PLUS (GALVANIZADA) DIREITA",
     "divisao": "SERINGAL",
@@ -9055,7 +9495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a1849e0-63bc-4e35-a9bd-857e4c016a4b",
+    "id": "22b83c59-2187-4b8e-8eda-cbbd9b831cad",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9065,6 +9505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORTA VENEZIANA 60 ZEMA PLUS (GALVANIZADA) ESQUERDA",
     "divisao": "SERINGAL",
@@ -9074,7 +9515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2295aed2-9c61-45a3-96dc-d661d2b52593",
+    "id": "b267a77f-87ff-4360-b168-bfc2e4763d63",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9084,6 +9525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TRINCHA PLUMATEC 3/4 ''315",
     "divisao": "SERINGAL",
@@ -9093,7 +9535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2a0adeb-48fe-471c-ade5-89f9f03c9e85",
+    "id": "1e1fc056-4113-43de-8c37-d93e81217731",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9103,6 +9545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PINCEL MEDIO CERDAS BRANCA CABO PLASTICO 3/4",
     "divisao": "SERINGAL",
@@ -9112,7 +9555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45975dc9-9eed-4d7d-8a39-146420255efd",
+    "id": "b5681f90-afdb-444a-a01c-25f693e9fc99",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9122,6 +9565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PORCA SEXTAVADA 5/16",
     "divisao": "SERINGAL",
@@ -9131,7 +9575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1539cf1a-b877-4673-87c0-712f8dfd8f34",
+    "id": "3de02a4f-1732-43bc-bb4a-8b0ee239dace",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9141,6 +9585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA SPRAY CHEMI 350 ML ALT. TEMP.",
     "divisao": "SERINGAL",
@@ -9150,7 +9595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6835d52-c5d7-40d5-9d45-e5d8c1544dd1",
+    "id": "a3136f12-e6a8-42f1-b940-3c0cbdf78458",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9160,6 +9605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA SPRAY USO GERAL 400ML/250 GRAMASPRETO BRI",
     "divisao": "SERINGAL",
@@ -9169,7 +9615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3283c841-c543-406a-9048-2dcc5cdc049d",
+    "id": "810b886e-0a29-4b62-bbcd-ceea1dace44a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9179,6 +9625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA SPRAY ESMALTE SINT PRETO BRILHANTE 350 ML",
     "divisao": "SERINGAL",
@@ -9188,7 +9635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "385e9e9d-0570-464a-84aa-bdd958a2bfbd",
+    "id": "681ff69a-98c1-4339-bb56-11ddc2927e44",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9198,6 +9645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MANTA ASFALTICA ALUMINIZADA AUTO ADESIVA 30CM X 10MT",
     "divisao": "SERINGAL",
@@ -9207,7 +9655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5de96338-0c21-44bc-ad5f-2102a982e86e",
+    "id": "e59d7d13-fc39-4571-bf0c-26afadbf5852",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9217,6 +9665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO 2.5 ESAB O.K 6013",
     "divisao": "SERINGAL",
@@ -9226,7 +9675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "988338f8-5e29-4ec1-b0f1-10bc3f425ab0",
+    "id": "ae54d8ab-ad95-4fa8-9ee2-3c639c883b89",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9236,6 +9685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO 3.25 ESAB O.K 7018",
     "divisao": "SERINGAL",
@@ -9245,7 +9695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fceafcf0-bb82-46dd-a162-7027da4866b5",
+    "id": "75c9d8f4-2f70-44c3-8b94-df9e31848078",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9255,6 +9705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TINTA SPRAY PRETO PARA METAL",
     "divisao": "SERINGAL",
@@ -9264,7 +9715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6047df1b-82f9-4af0-a157-1da2ae36d7fd",
+    "id": "6c372892-6e88-4adf-85e0-26ae120ed089",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9274,6 +9725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAMPO CB ACO 3/8\"",
     "divisao": "SERINGAL",
@@ -9283,7 +9735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c57700a-ec61-4a96-af50-a205635b48fd",
+    "id": "9df4c402-c6e2-4824-bdf3-6c8e3f12e4e3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9293,6 +9745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VIGOTA DE MADEIRA 3,5 MTS X 0,05 X 0,11 CM",
     "divisao": "SERINGAL",
@@ -9302,7 +9755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d56ee3e-0b88-4c7f-a093-4491681fe1d5",
+    "id": "891c4000-9f13-4109-b3f9-73abc6b6b803",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9312,6 +9765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VEDALIT  3,600",
     "divisao": "SERINGAL",
@@ -9321,7 +9775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4ffdffc-0fa4-4055-aaf2-abad21d4e5f3",
+    "id": "cb0e4d12-6f78-4864-8600-1474e51b11c9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9331,6 +9785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ELETRODO WELD 2,50 X46",
     "divisao": "SERINGAL",
@@ -9340,7 +9795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f3c5649-53fd-4426-b994-4d6d0f42ad61",
+    "id": "28834254-ed9c-4b6d-8028-26277346e151",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9350,6 +9805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FECHADURA ALIANCA INOX PREMIUM EXTERNA",
     "divisao": "SERINGAL",
@@ -9359,7 +9815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "413b9a9f-ca9f-45df-85f9-7245485a297b",
+    "id": "4ae56416-0b63-4686-ae34-c67811bf19b7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9369,6 +9825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TUBO DE CONCRETO PS-1 DN 1000MM X 1M",
     "divisao": "SERINGAL",
@@ -9378,7 +9835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b8c7999-06bf-4a73-a370-64dbc387a2c3",
+    "id": "42b67a46-b59f-4de3-816f-dbfea1f88ef4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9388,6 +9845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ARAME RECOZIDO 14 - 1KG ARCELON MITTAL",
     "divisao": "SERINGAL",
@@ -9397,7 +9855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c62dfb43-d0e4-4d81-adc8-65fecc4c329c",
+    "id": "110a225d-eac1-40e5-81e7-ef88fe472aac",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9407,6 +9865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TIJOLO FURADO 6 FUROS 14X09X24 (NORMAL)",
     "divisao": "SERINGAL",
@@ -9416,7 +9875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8e0266e-3b5d-4529-91e3-12a10067cdb4",
+    "id": "7051008b-12a1-474a-870d-ae46ed382d5a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9426,6 +9885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ADAPTADOR SOLDAVEL CURTO 32 X 1\" TIGRE",
     "divisao": "PECUÁRIA",
@@ -9435,7 +9895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89253319-1eb5-472a-9d0b-4e9b4274c487",
+    "id": "0f0d3ec6-b79d-4989-a9f8-2dbae2f14c10",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9445,6 +9905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "JOELHO 90° PVC MARROM SOLDAVEL 50MM",
     "divisao": "PECUÁRIA",
@@ -9454,7 +9915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ea3e00a-f020-4674-8a4d-c40fbbecc0af",
+    "id": "1063260b-7e07-4b20-b099-20856567da1b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9464,6 +9925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "JOELHO 90° PVC AZUL 50MM NBR 5648",
     "divisao": "PECUÁRIA",
@@ -9473,7 +9935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15ae4e19-dc8a-470a-9387-bd400cf0c9be",
+    "id": "feb34596-906a-42b7-96ff-fe9690851c55",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9483,6 +9945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VEDA ROSCA 18MMX50M TIGRE",
     "divisao": "PECUÁRIA",
@@ -9492,7 +9955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fec7a77-f4ea-4d72-b0aa-dad014ac4e9d",
+    "id": "b27dfaba-1fdc-49dc-a5b7-aac4959541dd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9502,6 +9965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LUVA SOLDAVEL PVC MARROM 50MM NBR 5648",
     "divisao": "PECUÁRIA",
@@ -9511,7 +9975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3b011fa-4bda-4b3d-8b7a-1b3c4e4fa859",
+    "id": "d85af2cb-16f2-411c-8ac5-8da6163e7512",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9521,6 +9985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -9530,7 +9995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f90d1d2-655f-47eb-a94a-37d76300ed77",
+    "id": "be269665-fb1a-472b-92d2-a52e0e8563aa",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9540,6 +10005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DISPLAY ACRILICO A4 PORTA FOLHA EXPOSITOR VERTICAL PAREDE",
     "divisao": "SERINGAL",
@@ -9549,7 +10015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "395b064d-db1e-4bbb-8d51-edf1002783b2",
+    "id": "b2d6e3f5-a989-43c4-8728-357622cd0b08",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9559,6 +10025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PASTA EXPOSITOR ACRILICO A4 TRIPLO VERTICAL",
     "divisao": "SERINGAL",
@@ -9568,7 +10035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "953cd45a-eb5f-4a8e-b0a6-cf77bdb9dc34",
+    "id": "2f331f0c-83e9-4d22-ba48-475eb0a42054",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9578,6 +10045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CARIMBO AUTOMATICO PERSONALIZADO",
     "divisao": "SERINGAL",
@@ -9587,7 +10055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3b8605b-91f3-41c8-af06-236a41637a5e",
+    "id": "db5483ed-33b1-4d98-9caa-61a56edcec5b",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9597,6 +10065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LACRE FIX 30 CM BRANCO COM CODIGO DE BARRAS",
     "divisao": "SERINGAL",
@@ -9606,7 +10075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6876a3a-c4c0-4675-b935-4c8d78640953",
+    "id": "b322ba80-e8ac-45b3-a06a-f9e96e8f6346",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9616,6 +10085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
     "divisao": "PECUÁRIA",
@@ -9625,7 +10095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5804d55e-1919-44ab-a023-15ad6b3abc2b",
+    "id": "7dfbe715-e72a-48ab-8652-f06369b2508f",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -9635,6 +10105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BASTAO MARCADOR VERMELHO",
     "divisao": "PECUÁRIA",
@@ -9644,7 +10115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb17d4f6-c578-4e62-ba41-eb1589e817bf",
+    "id": "94635a8c-2dd8-43dc-b538-28b92df6039c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9654,6 +10125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ESTOPA MALHA COSTURADA",
     "divisao": "PECUÁRIA",
@@ -9663,7 +10135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e611c61-e688-4dc7-bda8-b74b0cf256cd",
+    "id": "76a1b5eb-de79-4cb8-a8ea-60863dbaa08e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9673,6 +10145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DETERGENTE LIQUIDO",
     "divisao": "PECUÁRIA",
@@ -9682,7 +10155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0b136dc-76d3-4cf5-b01b-90f494d37ed2",
+    "id": "75de7d3c-b89f-4670-a552-9c4405c7b53f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9692,6 +10165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMPA ALUMINIO 500ML",
     "divisao": "PECUÁRIA",
@@ -9701,7 +10175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8915e8f4-8c71-4720-adbc-1137810d24c0",
+    "id": "74c842f0-d67d-4a2b-80c9-261dfb2ccf0f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9711,6 +10185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AGUA SANITARIA Q-BOA",
     "divisao": "PECUÁRIA",
@@ -9720,7 +10195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07ff6489-f391-4556-9bc2-9d5bfe7807df",
+    "id": "3ee90e96-eb93-440e-a489-266f1ed41b9d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9730,6 +10205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
     "divisao": "PECUÁRIA",
@@ -9739,7 +10215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6da9306c-0212-433d-b4a7-f39709d92181",
+    "id": "43efb18a-c39a-47aa-9f77-78718e77d0df",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9749,6 +10225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALCOOL ETILICO ITAJA 70 1L",
     "divisao": "PECUÁRIA",
@@ -9758,7 +10235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29ee11e4-3d6a-47c2-969d-fb60191d0f5d",
+    "id": "9efa7607-8472-4864-b494-802b2d280c55",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9768,6 +10245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VEJA LIMPEZA PESADA",
     "divisao": "PECUÁRIA",
@@ -9777,7 +10255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ad3c9e0-4f1a-458e-94b1-5c82f2bdc275",
+    "id": "5c2df051-9cef-46f3-9e48-cea5182ed3eb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9787,6 +10265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE 90GRS",
     "divisao": "PECUÁRIA",
@@ -9796,7 +10275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6cae3c52-5a6b-4261-bdb9-933fb00d215f",
+    "id": "e8861923-b660-4df0-b342-48b83ca00688",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9806,6 +10285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -9815,7 +10295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c6752d8-76f2-477f-9d33-6b24b2eb044a",
+    "id": "31f7ff01-3b9d-430d-9449-1d996ad0db79",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9825,6 +10305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
     "divisao": "PECUÁRIA",
@@ -9834,7 +10315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f5d7cd6-3d0d-45f8-855d-1bb8de91eff1",
+    "id": "ebd93b24-5610-4bf4-acf1-d05d67aa233c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9844,6 +10325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMPA CONTATO SPRAY",
     "divisao": "PECUÁRIA",
@@ -9853,7 +10335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7fa61b9-0cc1-4ce1-87d2-f9805c77a3a4",
+    "id": "6681c2f2-48d7-4bec-971c-f63e737d7529",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9863,6 +10345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CREME DENTAL 90G",
     "divisao": "PECUÁRIA",
@@ -9872,7 +10355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e41e87f2-9712-4146-a6a6-2c4889f37558",
+    "id": "172648a8-ebd0-4713-8f36-c990184453de",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9882,6 +10365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESINFETANTE 2 L",
     "divisao": "PECUÁRIA",
@@ -9891,7 +10375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8795c04f-d082-4cdb-b30e-bf226b86a9f7",
+    "id": "21250112-7a96-4fa0-b530-75f2240072b5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9901,6 +10385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESINFETANTE 5L",
     "divisao": "PECUÁRIA",
@@ -9910,7 +10395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30cb5636-53c1-488f-b2ea-b0bb68e2c6dd",
+    "id": "ea3a896e-cdf7-4e45-b2fb-49fdb243d044",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9920,6 +10405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "FITA PARA EMPACOTAMENTO TRANSPARENTE SCOTCH 3M",
     "divisao": "PECUÁRIA",
@@ -9929,7 +10415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "362eef50-64c7-4198-9132-2dba6366dee3",
+    "id": "961405b2-5d96-4cf8-aecf-03d81b5056fa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9939,6 +10425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABAO EM BARRA 5 X 1",
     "divisao": "PECUÁRIA",
@@ -9948,7 +10435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a35a2d0-1987-4080-a4e1-dec314731730",
+    "id": "708ca802-716c-4abb-a231-98039be09527",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9958,6 +10445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AMACIANTE",
     "divisao": "PECUÁRIA",
@@ -9967,7 +10455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36a04fd3-7676-4bdf-bdd1-84de5d72f405",
+    "id": "7e10421e-400f-4abb-a53c-9afd739162ef",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9977,6 +10465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "XXXX",
     "divisao": "SERINGAL",
@@ -9986,7 +10475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1770f8f-be8d-43aa-bf7e-57c8113bee53",
+    "id": "5955822e-49ac-473b-931d-b52d53156e22",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -9996,6 +10485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
     "divisao": "SERINGAL",
@@ -10005,7 +10495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1fcf61b-f91e-403a-8254-bbc821c02179",
+    "id": "91ad1846-49f2-443e-96a7-341b2f29ce50",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10015,6 +10505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ESCOVA P LAVAR MULTIUSO CORPO MADEIRA CERDAS POLIPROPILENO",
     "divisao": "SERINGAL",
@@ -10024,7 +10515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9da936b7-4e18-44e9-a22c-5f7a0612f3c3",
+    "id": "6d6573aa-b28c-4cd3-89a0-542b1f192b4f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10034,6 +10525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CORANTE VERMELHO RESIN",
     "divisao": "SERINGAL",
@@ -10043,7 +10535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b55e789-65c1-44a9-8e56-367b68983f2f",
+    "id": "b64feef3-e57c-4807-a840-7a5cd293c166",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10053,6 +10545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE 90GRS",
     "divisao": "SERINGAL",
@@ -10062,7 +10555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1b59961-3a68-442f-873e-dfebd4acb748",
+    "id": "86120723-3328-4326-9146-3a1ba2ddce72",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10072,6 +10565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AGUA SANITARIA 1L",
     "divisao": "SERINGAL",
@@ -10081,7 +10575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3afa09d-2b0e-4dd8-9a92-94458fe788d0",
+    "id": "f01b643d-963b-4c56-9346-e45881c69b95",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10091,6 +10585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
     "divisao": "SERINGAL",
@@ -10100,7 +10595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31e8895c-b5e6-451b-b523-b0a53b301305",
+    "id": "43e2551d-563b-422b-b575-c55a615412c6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10110,6 +10605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CREME DENTAL 90G",
     "divisao": "SERINGAL",
@@ -10119,7 +10615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a181bd54-72ed-43e3-ae98-3518157268ce",
+    "id": "f89a197f-11b0-4c80-936b-4520c73e442e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10129,6 +10625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESINFETANTE 2 L",
     "divisao": "SERINGAL",
@@ -10138,7 +10635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2629bfca-fc3d-48d4-8a3f-f44449e7aee9",
+    "id": "add815bc-ffce-4015-8df7-5a66be07bfcf",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10148,6 +10645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABAO EM BARRA 5 X 1",
     "divisao": "SERINGAL",
@@ -10157,7 +10655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48569d36-72c0-4cc9-8a41-d7485964beaf",
+    "id": "d13bfc8d-17b7-42d8-a962-6fbb5942bb9c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10167,6 +10665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "AMACIANTE",
     "divisao": "SERINGAL",
@@ -10176,7 +10675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d327bc0e-f4f9-4e63-b2b2-1b11d1ac8ddc",
+    "id": "95563a04-f14b-4be8-a0f0-cba66bebda00",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10186,6 +10685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABAO EM PO",
     "divisao": "SERINGAL",
@@ -10195,7 +10695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d03a50c-0216-4631-b997-b0c0c7544deb",
+    "id": "46cd9353-f264-4fd6-981a-dcad289674b2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10205,6 +10705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ESPONJA BRILHUS MULTIUSO L4 P3",
     "divisao": "SERINGAL",
@@ -10214,7 +10715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a17160d1-2b6b-4e65-b449-a32d764e466a",
+    "id": "e2e07eed-5045-4cae-bda7-d5cad4ebce24",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10224,6 +10725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CERA LIQUIDA VERMELHA 750 ML",
     "divisao": "SERINGAL",
@@ -10233,7 +10735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9f582fa-df9e-4ad3-b465-48d4ead0bcaa",
+    "id": "f098f60b-a96d-4f3c-84e1-74b629c73d6f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10243,6 +10745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABAO EM BARRA 5X1 MINUANO",
     "divisao": "SERINGAL",
@@ -10252,7 +10755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "362a0c13-367d-44a7-ab08-f8a1766146b5",
+    "id": "ccd0aef4-a5c0-4060-9350-2481d5b81563",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10262,6 +10765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SACO PARA LIXO 40 LT PLASFIL 100X1 PT",
     "divisao": "SERINGAL",
@@ -10271,7 +10775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c94ffcba-6cb6-4ac0-b8ab-b281043e5012",
+    "id": "57e252de-e52d-41ea-a3b9-5769bdfa7700",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10281,6 +10785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DUREPOX",
     "divisao": "SERINGAL",
@@ -10290,7 +10795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b22dcf76-02e2-43c6-a696-b0f3b871eab4",
+    "id": "53ab61ce-c78c-4931-a89b-4da40fd1f8f2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10300,6 +10805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DESINFETANTE 5L",
     "divisao": "SERINGAL",
@@ -10309,7 +10815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aca3ed6b-ced7-47c7-a457-2e9e9f3c8608",
+    "id": "b0674aa0-2d11-4f02-919c-1440269f040e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10319,6 +10825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VASSOURA LIMPEZA PELO CONDOR V9",
     "divisao": "SERINGAL",
@@ -10328,7 +10835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b1ec202-931b-4426-9f75-7594ebac869f",
+    "id": "40928b68-f143-474a-bd71-4eb728fc1b7f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10338,6 +10845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE LIQUIDO MAGIC",
     "divisao": "SERINGAL",
@@ -10347,7 +10855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a980fcd-982f-4077-9c54-0c5d2c9b4e78",
+    "id": "eeccf4eb-853c-488b-9059-dfb493a751c0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10357,6 +10865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "DETERGENTE LIQUIDO",
     "divisao": "SERINGAL",
@@ -10366,7 +10875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2da91acc-db56-4e29-9cb3-614614807462",
+    "id": "bd6e7875-f477-473b-ac9d-f1d673e50027",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10376,6 +10885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALCOOL 70% LT",
     "divisao": "SERINGAL",
@@ -10385,7 +10895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f008380-4263-492b-a89a-01eefab3c8ce",
+    "id": "5392720f-d89d-43b2-bd48-e0a7367bf0c0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10395,6 +10905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SACO P/ LIXO 30 LTS BOM LIXO",
     "divisao": "SERINGAL",
@@ -10404,7 +10915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25e162ca-94a4-4b78-8b36-4d24079a93c3",
+    "id": "07d0158b-0e9a-4e7d-86dd-488cff41c7bb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10414,6 +10925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VEJA LIMPEZA PESADA",
     "divisao": "SERINGAL",
@@ -10423,7 +10935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82419747-e976-46b2-8cdf-0d17dbb2ff1c",
+    "id": "aa9ced2c-6f5a-463d-8cc9-7da912027ba4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10433,6 +10945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PANO CHÃO 68X48 LIMPAR LAR ATOALHADO",
     "divisao": "SERINGAL",
@@ -10442,7 +10955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4592f62-c46b-44e1-96e5-064e00cbf999",
+    "id": "15abb466-d3fe-47af-9e98-648cfc6a7ea6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10452,6 +10965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
     "divisao": "SERINGAL",
@@ -10461,7 +10975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a45e0684-2161-493f-adb2-18e263371583",
+    "id": "58008abc-d61c-4ea3-953b-0abb02bf52c6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10471,6 +10985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL HIGIENICO SCOTT 300 MT 3 DOBRAS( JOFEL)",
     "divisao": "SERINGAL",
@@ -10480,7 +10995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b303a0b0-d62a-4d60-abbc-06b47dcaa743",
+    "id": "0a93d66a-1ff2-489c-982d-f49c9a00d5f1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10490,6 +11005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SACO BRANCO PARA LIMPEZA ALVEJADO",
     "divisao": "SERINGAL",
@@ -10499,7 +11015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba5c6076-88b4-42bb-848b-7ce69da5d45e",
+    "id": "58a4a77d-7ef5-4b9d-a60a-2362556f1655",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10509,6 +11025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "JARRA MEDIDORA 5L",
     "divisao": "SERINGAL",
@@ -10518,7 +11035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b59c2edd-2d29-4a36-9f1f-283c0deed781",
+    "id": "c1d28d4a-dd5f-4ad2-8fb5-0a76f5686b12",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10528,6 +11045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SACO P/ LIXO 100LTS 100 X 1",
     "divisao": "SERINGAL",
@@ -10537,7 +11055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "424ab054-a42b-4b30-8400-24cc0bad4052",
+    "id": "4bc4e61d-0e4c-4b6e-882c-3e39fff2f54a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10547,6 +11065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ORGANIZADOR",
     "divisao": "SERINGAL",
@@ -10556,7 +11075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9028e315-d55d-4b13-b0c2-c7cf00bed209",
+    "id": "dca2fb33-4479-4872-8edd-3ab5bce63804",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10566,6 +11085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE LIQUIDO DESENGRAXANTE",
     "divisao": "PECUÁRIA",
@@ -10575,7 +11095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2dd3928b-a37f-4136-9ea9-fa7ba44fb75c",
+    "id": "dfd74e91-0cde-4ce1-b232-9e332cb39bdc",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10585,6 +11105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "INSETICIDA AEROSOL BAYGON ACAO TOTAL 395ML",
     "divisao": "PECUÁRIA",
@@ -10594,7 +11115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fb1c1f41-4959-4df3-a328-cd5076b5838a",
+    "id": "0fc40d5a-a9d9-449a-a3e4-b7dd72b938d0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10604,6 +11125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALCOOL 70% LT",
     "divisao": "PECUÁRIA",
@@ -10613,7 +11135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3b10c94-f21d-4805-a83e-77d808459223",
+    "id": "105bf9ce-b0a5-4ad4-899e-a4aad4b21e73",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10623,6 +11145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL HIGIENICO SCOTT 300 MT 3 DOBRAS( JOFEL)",
     "divisao": "PECUÁRIA",
@@ -10632,7 +11155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a510746c-10b6-408d-9c99-5468c8a25e55",
+    "id": "213e3839-e60b-4b83-af0f-8c86dc8c686c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10642,6 +11165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABAO EM PO",
     "divisao": "PECUÁRIA",
@@ -10651,7 +11175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bade46a2-b7ce-4f71-ae1f-8f2f13a47a06",
+    "id": "b176e6b4-b362-4de9-b0e2-7c3e71a04a65",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10661,6 +11185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "COPO DESCARTAVEL 50ML TRANSPARENTE",
     "divisao": "PECUÁRIA",
@@ -10670,7 +11195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3857da56-2e32-468d-854b-76f2589f4910",
+    "id": "0bb0fafd-04d0-48d3-bec5-1ce01c241261",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10680,6 +11205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CADEADO HASTE CURTA 35 MM PAPAIZ",
     "divisao": "PECUÁRIA",
@@ -10689,7 +11215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92624b7a-6426-4980-982e-0ca6223f4d75",
+    "id": "6aa961df-18b3-48b9-8d29-1b151472bbd4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10699,6 +11225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PURIFICADOR BOM AR LAVANDA 360ML",
     "divisao": "PECUÁRIA",
@@ -10708,7 +11235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c375c4c-f6d5-4b94-a9df-0fc1f50db50a",
+    "id": "24bec18d-6f8c-4628-8f43-90aa6d94b497",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10718,6 +11245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SABONETE LIQUIDO MAGIC",
     "divisao": "PECUÁRIA",
@@ -10727,7 +11255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79b177da-4527-4e84-940c-eb92515bf507",
+    "id": "cab90bf5-79f1-4deb-ac56-d2ef0c0d7aeb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10737,6 +11265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SACO P/ LIXO 30 LTS BOM LIXO",
     "divisao": "PECUÁRIA",
@@ -10746,7 +11275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0b98c57-d2d9-444f-b1af-24a7a5cc2102",
+    "id": "e7a6f0ff-102d-4b45-941c-5a62268b8626",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10756,6 +11285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PANO CHÃO 68X48 LIMPAR LAR ATOALHADO",
     "divisao": "PECUÁRIA",
@@ -10765,7 +11295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "381d99b6-d34e-4fcf-885e-d7054b7b9520",
+    "id": "8d2d6597-ce6b-46b0-ac1e-876075c89408",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10775,6 +11305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PASTA DESENGRAXANTE TO BLACK 2KG",
     "divisao": "PECUÁRIA",
@@ -10784,7 +11315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba27e889-dc01-4084-af48-1d1fb46e9b7e",
+    "id": "47768db8-4b07-4a4f-90e0-2101c1927705",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10794,6 +11325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "VASSOURA TIPO GARI 40CMX6CM 1,40MT",
     "divisao": "PECUÁRIA",
@@ -10803,7 +11335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e61507e2-9bc9-44e2-ae3f-71e56d0fcdae",
+    "id": "8c09b7a5-8421-4f92-9745-a0adf370e934",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10813,6 +11345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PILHA AA DURACELL",
     "divisao": "PECUÁRIA",
@@ -10822,7 +11355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3fb90524-7559-480d-807f-928f3ed07823",
+    "id": "91b35309-62a3-4af4-a13f-c77266c30271",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10832,6 +11365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PAPEL TOALHA 2D INTERFOLHADO 22X21CM 1000FL",
     "divisao": "PECUÁRIA",
@@ -10841,7 +11375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f101ba10-145f-4eb8-852c-d113a71b6919",
+    "id": "bff75ebc-b94b-4e8e-aa85-b716aee90dea",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10851,6 +11385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "EBULIDOR FERVEDOR AQUECEDOR INOX 2000W 220V",
     "divisao": "PECUÁRIA",
@@ -10860,7 +11395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4eb3dff5-ede1-40ac-8b5b-090eb605c06b",
+    "id": "42899002-bedf-43c8-a2f2-d08f67e39019",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10870,6 +11405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "XXXX",
     "divisao": "PECUÁRIA",
@@ -10879,7 +11415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c74d33e6-5567-4296-b104-c2ca1ce94825",
+    "id": "7316bc2c-e0cc-4171-ace3-a64b52c995f9",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -10889,6 +11425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
     "divisao": "PECUÁRIA",
@@ -10898,7 +11435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "883d4ae4-5149-4fd3-b4a7-796645983636",
+    "id": "818a0f25-cc72-4861-a376-3190163f6952",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10908,6 +11445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMA REDONDA 5,5X200",
     "divisao": "SERINGAL",
@@ -10917,7 +11455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "923e5d5b-3c2f-4bd3-ba8b-24e9f663277b",
+    "id": "197a671b-8995-4261-a1fe-16c2b5262c52",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10927,6 +11465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BITS PONTA PHILLIPS PH1 1\" IRWIN",
     "divisao": "SERINGAL",
@@ -10936,7 +11475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f5a54b4-8a7b-4a1c-b22e-30ef514df990",
+    "id": "b1b7008f-261c-4463-9748-8218ebd1d0f9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10946,6 +11485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "PINO MACHO 2P+T 10 AMP",
     "divisao": "SERINGAL",
@@ -10955,7 +11495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bf5eb25-68e2-407c-a6ba-3917f85ad6d5",
+    "id": "61c7bd2a-11de-4543-b540-f63f3ba1d2c8",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10965,6 +11505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA ACO DORMER 08 MM",
     "divisao": "SERINGAL",
@@ -10974,7 +11515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6903b5ed-5f7c-4491-a432-522f347a6a35",
+    "id": "2cf8f8c9-1f45-4212-985c-e9b2552478f0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -10984,6 +11525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "GRAMPEADOR ALICATE S150 CIS 26/6 P/25 FL",
     "divisao": "SERINGAL",
@@ -10993,7 +11535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e663bf6-3ea9-4931-bfa1-7cbc97f62940",
+    "id": "d6f9c6be-dd3e-4d69-948b-4cae72e06368",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11003,6 +11545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "SERRA COPO 16MM - 5/8",
     "divisao": "SERINGAL",
@@ -11012,7 +11555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c3e10f3-3f90-425a-b18d-4b359a856872",
+    "id": "ba5fe151-dfd0-44dc-b3da-0d2ad4c7a3b0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11022,6 +11565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMA REDONDA 4.8X200",
     "divisao": "SERINGAL",
@@ -11031,7 +11575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "063e721d-00ae-42f4-8c37-c2b5c9c37d0b",
+    "id": "72c9dcdc-aec7-4fa5-ae91-4d6f6e0c60f5",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11041,6 +11585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "REFIL PARA FACA DE SANGRIA  18",
     "divisao": "SERINGAL",
@@ -11050,7 +11595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbbb329c-6a6b-4478-b45a-b98df04616a2",
+    "id": "0d3fd3f3-8370-4770-8eee-d6bea1b61bdc",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11060,6 +11605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMA CHATA MURCA 8 SEM CABO",
     "divisao": "SERINGAL",
@@ -11069,7 +11615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ab04b61-485e-4d5c-8b14-f452ded50c41",
+    "id": "f08720bc-f440-4fc1-ac29-4751ad54f604",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11079,6 +11625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TRINCHA 2 1/2",
     "divisao": "PECUÁRIA",
@@ -11088,7 +11635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77116b58-010b-4d80-818f-c9bea3864010",
+    "id": "7488f13f-419d-4763-91bd-3384a27c1fb8",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11098,6 +11645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LIMA CHATA MURCA 8 SEM CABO",
     "divisao": "PECUÁRIA",
@@ -11107,7 +11655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1b378c8-1073-4146-a25d-21fb0ec82559",
+    "id": "94fa8ae0-0df4-47ce-8af8-bd6a22caa4eb",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11117,6 +11665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CHAVE COMBINADA MAYLE 24",
     "divisao": "PECUÁRIA",
@@ -11126,7 +11675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00aa039c-1ed1-41ac-a815-0526638e9cba",
+    "id": "5f259b12-fdda-4a6f-a246-24fcd44e7aef",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11136,6 +11685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALICATE UNIVERSAL 8 POLEGADAS",
     "divisao": "PECUÁRIA",
@@ -11145,7 +11695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "129fe87b-0bc8-4260-a999-0ae293edfc41",
+    "id": "95882c56-811a-45aa-bd02-a91dbd1a087e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11155,6 +11705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "CHAVE COMBINADA MAYLE 19",
     "divisao": "PECUÁRIA",
@@ -11164,7 +11715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e994bf6c-d830-4950-97bc-6abf50c1205b",
+    "id": "b14c50cd-0506-4ab7-b0d6-fb075fa54cfd",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11174,6 +11725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ENXADA LARGA 2.1/2 LIBRAS",
     "divisao": "PECUÁRIA",
@@ -11183,7 +11735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf0d6987-67af-48dd-8dd5-275d1d611b1f",
+    "id": "e0fc824f-eccb-412a-a06c-bfbcce770f1b",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11193,6 +11745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALMOTOLIA 500ML BICO FLEXIVEL VONDER",
     "divisao": "PECUÁRIA",
@@ -11202,7 +11755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca25f501-25b4-4160-bf30-167bb0ea85f4",
+    "id": "f315354e-f6ac-4656-b99a-d0139b2cc969",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11212,6 +11765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "ALICATE FAZENDEIRO 10.1/2 POL",
     "divisao": "PECUÁRIA",
@@ -11221,7 +11775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26e2050f-2c1b-48df-9bd7-50cc718a9c83",
+    "id": "e678c838-edc1-424d-8f23-d468045db61d",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11231,6 +11785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MARTELO 27MM TRAMONTINA",
     "divisao": "PECUÁRIA",
@@ -11240,7 +11795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23cbd3ec-d8d9-4e2a-a030-6edfb2e6d7c2",
+    "id": "9bee61fd-373a-448b-b4ff-1214439a7b02",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11250,6 +11805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "MAÇARICO LANÇA CHAMAS A GAS 65 CM 2 REGISTROS",
     "divisao": "PECUÁRIA",
@@ -11259,7 +11815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09c8e8c5-5cbb-4d97-81bb-e74df941ce2a",
+    "id": "ff8e4ddb-f618-4962-a3f0-912acc32b397",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11269,6 +11825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "LAMINA SEGUETA STARRET 14796",
     "divisao": "PECUÁRIA",
@@ -11278,7 +11835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d817c77b-0493-4e34-aedc-6636ef34a7c3",
+    "id": "5fc17f87-fa27-4224-bb02-12ff9c66cd02",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11288,6 +11845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "BROCA CHATA PARA MADEIRA 1\"1/4 X 150MM TRAMONTINA",
     "divisao": "PECUÁRIA",
@@ -11297,7 +11855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8211a733-4059-45bd-af70-1fd6413de2e5",
+    "id": "f786b929-3b5b-492d-92e6-e5506647edc0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -11307,6 +11865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
     "nomeProduto": "TUBO QUADRADO 45,25 X 45,25 FEMEA L",
     "divisao": "PECUÁRIA",
@@ -11316,7 +11875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63a1aff1-a0de-4413-b8d5-03b3e88ba1f1",
+    "id": "4f126b95-0386-48df-801a-1ab0e313284b",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -11327,7 +11886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0a37f66d-61fc-4684-958b-d2665866de79",
+    "id": "7e26b28f-61c3-4bc6-98a5-8aa4cc6ea94b",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -11338,7 +11897,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b0373225-ef8e-427d-9c23-d149d92fa483",
+    "id": "562af8a2-e0ed-40fd-81f7-493672f4170c",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11348,6 +11907,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
     "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
     "divisao": "SERINGAL",
@@ -11357,7 +11917,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e9d4201-8d76-4e07-bc1c-74b4797b1a1a",
+    "id": "59aa1ddd-ceba-4e19-971c-a7ff6d960fec",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11367,6 +11927,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -11376,7 +11937,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fcf9009d-00f7-4a1f-a9ae-64f53663eabb",
+    "id": "edad9b73-de34-4ea1-9b47-a1a84835ae8f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11386,6 +11947,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
     "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
     "divisao": "PECUÁRIA",
@@ -11395,7 +11957,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c35d184-8e4e-4798-9264-7cc86c4ff787",
+    "id": "f7e84b4c-8389-422c-b74e-b4de821b416e",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -11405,6 +11967,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -11414,7 +11977,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a6de405-d2b3-4cd6-a0f0-8424a05664e6",
+    "id": "d3afdaa4-0cd4-4d2d-9036-f597bf8e18a6",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -11425,7 +11988,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8ac81dab-b439-40eb-957e-ed73abefc29c",
+    "id": "ba4dff86-cbc0-45bb-90f4-492807876589",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -11436,7 +11999,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7c75b197-2db6-4790-8a36-b63cec16659c",
+    "id": "581c35a7-04de-4705-9faf-85b6a0e513f4",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -11446,6 +12009,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "DESPESAS COM HOSPEDAGEM",
     "divisao": "SERINGAL",
@@ -11455,7 +12019,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "024bd89b-fea8-4c8f-b39f-9fbabe3303d4",
+    "id": "6a78c75c-88e3-48be-b66a-77003021b0c6",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -11465,6 +12029,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "DESPESAS COM HOSPEDAGEM",
     "divisao": "PECUÁRIA",
@@ -11474,7 +12039,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eace0da2-7a12-4eb8-9dca-09c300649d40",
+    "id": "7beba5f6-7f47-453b-b74c-8711dea60c2e",
     "codigo": "4.1.01.06.0003",
     "descricao": "QUILOMETRAGENS",
     "tipo": "C",
@@ -11484,6 +12049,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "DESPESAS COM QUILOMETRAGEM",
     "divisao": "PECUÁRIA",
@@ -11493,7 +12059,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e417129-294b-4d97-b421-79e15e11554e",
+    "id": "e140f51c-be6c-485b-9f31-f7ea85e60b14",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11503,6 +12069,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "PEDAGIO",
     "divisao": "SERINGAL",
@@ -11512,7 +12079,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0d71d1a-308c-47a8-98cd-647812a65f79",
+    "id": "5342cc6e-7fa2-4a12-9065-3411a247ac13",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11522,6 +12089,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "GASTOS COM TAXI",
     "divisao": "SERINGAL",
@@ -11531,7 +12099,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13b0247d-f851-4142-94d3-7fd0b6f88b4a",
+    "id": "9cd7da1b-d4cc-436a-bba3-5f7aacef1afd",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -11541,6 +12109,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
     "nomeProduto": "GASTOS COM TAXI",
     "divisao": "PECUÁRIA",
@@ -11550,7 +12119,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90e93aa3-048b-49c9-bc57-f79ae6e7c58c",
+    "id": "f53f91c5-a3db-443a-a5cf-88249ecc89c4",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -11561,7 +12130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "3b041f56-d22f-4bab-b98d-9166fbb2b8a3",
+    "id": "32c35160-8fad-47b0-8eba-a6a08a179dfa",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -11572,7 +12141,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2bc7fb6f-4a93-4ebd-9a0c-9cedfa9b07f9",
+    "id": "c44ee54e-c314-440f-a052-f1b27bcc9d97",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -11582,6 +12151,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
     "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
     "divisao": "SERINGAL",
@@ -11591,7 +12161,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "21b30dc8-11b8-4985-a2a5-7eec2389da1d",
+    "id": "d19564b2-9938-4fa6-b29a-9e2a6e5905da",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -11601,6 +12171,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
     "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
     "divisao": "PECUÁRIA",
@@ -11610,7 +12181,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99dd9a95-8255-4f37-bdbf-85d8d7eb1fc7",
+    "id": "cdde1ea0-184d-42e6-b9e6-9b282e04bc96",
     "codigo": "4.1.01.07.0003",
     "descricao": "CORREIOS",
     "tipo": "C",
@@ -11620,6 +12191,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
     "nomeProduto": "CORREIOS 039431",
     "divisao": "SERINGAL",
@@ -11629,7 +12201,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b80c31c-5cf2-469a-ad8d-c30f17b4eb7a",
+    "id": "45d60eeb-edbc-4107-9527-6ea136092189",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -11640,7 +12212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a4758951-3014-426d-b00e-9f895a7d54d2",
+    "id": "16ecf17c-55f6-4223-8b0b-81bdc08fb9cc",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -11651,7 +12223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0feab6a5-2681-4e5b-a1d8-d68715d2177e",
+    "id": "cfe04889-3c4c-4015-898e-425b44d2f7c6",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11661,6 +12233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "BAGACO DE CANA",
     "divisao": "PECUÁRIA",
@@ -11670,7 +12243,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d222ec4b-5250-402f-bbd2-e7f38f6c6839",
+    "id": "99958c97-8d2a-4fc8-94f1-f4c9b66aa333",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11680,6 +12253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "CASCA DE SOJA MOIDA",
     "divisao": "PECUÁRIA",
@@ -11689,7 +12263,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dab7e134-452a-4385-a8d1-06389bd47db3",
+    "id": "b9497fa0-bd3a-487a-86b7-a7aaf6c8f2a4",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11699,6 +12273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "FARELO DE ARROZ",
     "divisao": "PECUÁRIA",
@@ -11708,7 +12283,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e70b73a-3a09-4a48-a974-dafae5f7ee7e",
+    "id": "b7f9bec9-6639-49ed-a1ed-7828da97b587",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11718,6 +12293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "TORTA DE ALGODAO",
     "divisao": "PECUÁRIA",
@@ -11727,7 +12303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "010a118b-7b33-4ca4-91c3-b0d250049e88",
+    "id": "3f1d09f1-b398-46bf-b559-6fc843e74cd6",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11737,6 +12313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "GERMEM DE MILHO",
     "divisao": "PECUÁRIA",
@@ -11746,7 +12323,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "602bcdcd-e7d1-4877-9e61-3f2b32f31d13",
+    "id": "4f011778-e032-4f0a-82d0-4cc163b888b3",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -11756,6 +12333,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -11765,7 +12343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47d99305-5d52-435c-a618-b1e4f38def0e",
+    "id": "3603e9be-d3ec-45fc-a7c2-a28463a51c9c",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11775,6 +12353,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "VACINA GARROTILHO",
     "divisao": "PECUÁRIA",
@@ -11784,7 +12363,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42ba082d-bf48-4db6-a11d-52a3745b862c",
+    "id": "4f427af5-0e22-417b-82fc-9710cb183bea",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11794,6 +12373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "VACINA STARVAC 12",
     "divisao": "PECUÁRIA",
@@ -11803,7 +12383,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "891d3c84-2874-4da2-873b-7d9722bc64d3",
+    "id": "ae08e052-9486-4012-b746-43a987b25459",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11813,6 +12393,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "VACINA BOVI-SHIELD GOLD",
     "divisao": "PECUÁRIA",
@@ -11822,7 +12403,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea03c297-ad84-43b3-8305-97cb29ff3dd7",
+    "id": "e01157f2-0e82-4f39-979d-9c604eb3d64f",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -11832,6 +12413,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "VACINA RAIVACEL",
     "divisao": "PECUÁRIA",
@@ -11841,7 +12423,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e716a747-d3f0-46d2-9221-91ac3ca97917",
+    "id": "57a5fe56-99f9-4ad5-977d-07d6469cffdb",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11851,6 +12433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "BIOXAN 500 ML",
     "divisao": "PECUÁRIA",
@@ -11860,7 +12443,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9acb3d00-c32f-4be1-a10d-9c2c03770fc1",
+    "id": "20fd373f-e151-465e-9494-0f1bb37827d4",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11870,6 +12453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "PENCIVET PPU 50ML",
     "divisao": "PECUÁRIA",
@@ -11879,7 +12463,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "438c9f91-8358-48df-a818-5de47f1b12a2",
+    "id": "4b7a1298-598a-4f49-996b-f6f357716714",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11889,6 +12473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "SECURECATTLE",
     "divisao": "PECUÁRIA",
@@ -11898,7 +12483,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b851be1-ce9b-4a28-b208-7aa6ec790192",
+    "id": "36c9e9fb-0e40-4402-b3b5-e149c383c880",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11908,6 +12493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "TERRAMICINA MAIS",
     "divisao": "PECUÁRIA",
@@ -11917,7 +12503,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36fa9229-93fe-4daa-9869-82d49d7a88e5",
+    "id": "8807b477-80b0-4629-a659-13cffd0c4a05",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11927,6 +12513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "ISACORT 10 ML ( CORTVET)",
     "divisao": "PECUÁRIA",
@@ -11936,7 +12523,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0baa157-f616-41c0-aba3-ae1f920cb45b",
+    "id": "3d8dea74-3718-4050-942e-cf2507f34c23",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11946,6 +12533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "BANAMINE INJ. 50ML",
     "divisao": "PECUÁRIA",
@@ -11955,7 +12543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f384c24-5491-4ed9-8fa5-8cde540a8db9",
+    "id": "b2a68c40-380b-4ac0-874c-46f49b099fc6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11965,6 +12553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "AGULHA METAL 15 X 18MM",
     "divisao": "PECUÁRIA",
@@ -11974,7 +12563,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2a8d5e9-6f4b-4c25-bf89-87ad85802ab6",
+    "id": "8dc6acd7-871c-4eb3-b497-dc75b081906c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -11984,6 +12573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "BRINCO ALLFLEX RASTREADO C/ BOTOM",
     "divisao": "PECUÁRIA",
@@ -11993,7 +12583,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16dec6b6-37c2-4e7c-9600-e3df3ab9e81b",
+    "id": "d247207b-78ba-4cc2-a68a-8b3d8293e35a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12003,6 +12593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "AGEBENDAZOL 15% (AGENER)",
     "divisao": "PECUÁRIA",
@@ -12012,7 +12603,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b6b206f-1514-4cd7-ba16-06dd0f651072",
+    "id": "5825e539-22b8-4da4-aa87-04c0fc73b934",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12022,6 +12613,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "PE DE BRINCO P/ RASTREAMENTO",
     "divisao": "PECUÁRIA",
@@ -12031,7 +12623,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fdfffd5-8842-490f-aa63-f0f640fc49da",
+    "id": "63d6327c-f7a2-4fe9-aaa9-5b8e5a39faf0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -12041,6 +12633,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "LUVA PARA PROCEDIMENTO CIRURGICO TAMANHO (P)",
     "divisao": "PECUÁRIA",
@@ -12050,7 +12643,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07852470-d252-4207-8ebb-1fa9386dc051",
+    "id": "07f14e20-60bf-46ce-bc06-12a50e0de817",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -12060,6 +12653,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR N 1% + P205 30% + MG 1,5%",
     "divisao": "SERINGAL",
@@ -12069,7 +12663,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4cfe43aa-dcfd-45c3-ab37-73cc64a6eb74",
+    "id": "16264e47-94c6-4186-90a7-cba03b0b9daf",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -12079,6 +12673,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "FERTILIZANTE (ADUBO) FORM 20.05.20",
     "divisao": "SERINGAL",
@@ -12088,7 +12683,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0f14b6d-a49e-43ca-925c-1b07be6e3c2f",
+    "id": "6905b56b-065a-4d46-a2a3-beb26a364838",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12098,6 +12693,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "REGULADOR ETHEPHON 720 G/L",
     "divisao": "SERINGAL",
@@ -12107,7 +12703,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03df1561-5cc2-460d-8405-07de8d7312fa",
+    "id": "5084b11e-c642-4171-a357-8a2219facdf6",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12117,6 +12713,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA CLORIMURON-ETIL 250 G/KG",
     "divisao": "SERINGAL",
@@ -12126,7 +12723,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66663ccb-3f7a-4c1e-9653-bbfaad57c210",
+    "id": "2df4f2ec-26f6-445e-b5e9-57560bacb361",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12136,6 +12733,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "ADJUVANTE ESTER METILICO 720 G/L",
     "divisao": "SERINGAL",
@@ -12145,7 +12743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f37fa03a-9484-401b-bfc7-e54939d09bf4",
+    "id": "bfb1ec89-583d-4d89-86bf-e7ae01a50ad1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12155,6 +12753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA 2,4D DIMETILAMINA 806 G/L",
     "divisao": "SERINGAL",
@@ -12164,7 +12763,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d4735be-51e4-459e-9bd6-b5c16ca8c130",
+    "id": "fb05619a-f497-4b06-9548-a4023b1c83f0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12174,6 +12773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
     "divisao": "SERINGAL",
@@ -12183,7 +12783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3172bf31-5ff4-4056-9da1-ef1347edfd7f",
+    "id": "833a4c78-2c8b-4d41-96a8-5997a931aff1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12193,6 +12793,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "FORMICIDA ISCA FIPRONIL 0,03 G/KG",
     "divisao": "SERINGAL",
@@ -12202,7 +12803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b1dd59d-f45e-4cf7-b754-96bb5cf655d2",
+    "id": "8bacc458-8bb8-4121-b63c-8fb7a2e24ff8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12212,6 +12813,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA CLETODIM 240 G/L",
     "divisao": "SERINGAL",
@@ -12221,7 +12823,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a97350ea-aa0a-4c87-961c-09affb6169e7",
+    "id": "c3c5ffba-19ad-4045-917b-fd5f68b8da1d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12231,6 +12833,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "REGULADOR ETHEPHON 100 G/KG",
     "divisao": "SERINGAL",
@@ -12240,7 +12843,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98acc7e0-8559-4402-9686-57e80da87ab2",
+    "id": "c3318ac4-e2bf-405c-ac3d-4968f0bea1fd",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12250,6 +12853,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "ADJUVANTE OLEO MINERAL 428G/L",
     "divisao": "PECUÁRIA",
@@ -12259,7 +12863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e400289-6eab-44cf-b338-ae66709bf9d9",
+    "id": "44f80e3a-c7f3-435e-8b02-1fea2260bd56",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12269,6 +12873,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
     "divisao": "PECUÁRIA",
@@ -12278,7 +12883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e8ba7b8-651d-4d2a-9106-4d5ef0b4ea19",
+    "id": "478b8fb0-3c10-48cd-8bda-a37128dc2cea",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12288,6 +12893,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA CLETODIM 240 G/L",
     "divisao": "PECUÁRIA",
@@ -12297,7 +12903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4399785-25f0-4945-aeda-684cbdab7dd1",
+    "id": "024e02e9-5d99-486d-8e39-5efd599982c7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -12307,6 +12913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
     "nomeProduto": "HERBICIDA FLUROX + PICLORAN 80 + 80G/L",
     "divisao": "PECUÁRIA",
@@ -12316,7 +12923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "776f91dd-d167-43ff-ba82-82b1a223b81c",
+    "id": "5e802086-d907-4866-bb43-bbc44b862243",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -12327,7 +12934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "153ad60f-937d-465e-b3cb-1425fac87f9e",
+    "id": "c67174f3-bb9b-4452-b7eb-8a1df5326be3",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -12338,7 +12945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7160c9ac-b4bd-4155-af5a-ac6ba4a6fb2f",
+    "id": "88d1b5b5-0a62-4dd8-ae19-3883ed4d065b",
     "codigo": "4.1.01.21.0001",
     "descricao": "SEGUROS",
     "tipo": "C",
@@ -12348,6 +12955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -12357,7 +12965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55abdda9-ccbc-4bf3-85d9-1d2f44545b38",
+    "id": "522f480b-e7e1-4012-85fc-9bdc95db467d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12367,6 +12975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
     "divisao": "SERINGAL",
@@ -12376,7 +12985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e9e56a0-7e66-4ac9-a53b-feb6f1d845ef",
+    "id": "8600257f-6275-4191-83b9-c9ab52a71ba4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12386,6 +12995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 34",
     "divisao": "SERINGAL",
@@ -12395,7 +13005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e71cf52e-57a6-4935-97fc-5e0deb98306d",
+    "id": "44af679f-d9f4-473e-89df-adb427ccb80e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12405,6 +13015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
     "divisao": "SERINGAL",
@@ -12414,7 +13025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5528d6f6-8874-48a9-b64c-1fb26c206f6f",
+    "id": "d0c7f14e-76e8-41d6-8237-4117ddeed831",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12424,6 +13035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
     "divisao": "SERINGAL",
@@ -12433,7 +13045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5e06637-76fe-4ff8-9bfa-9732e478e195",
+    "id": "ea709f52-07e9-4c2c-b4f7-a623e893df23",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12443,6 +13055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
     "divisao": "SERINGAL",
@@ -12452,7 +13065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a986df80-e105-4b08-8670-1ba27fadaad7",
+    "id": "cdd5f23c-3269-4691-818d-e6dde5e796ea",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12462,6 +13075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
     "divisao": "SERINGAL",
@@ -12471,7 +13085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f16f051-a347-4106-93f3-d62f40f59c7f",
+    "id": "26996c02-c53e-4a3c-8cf0-5e960f9224ef",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12481,6 +13095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAPA DE CHUVA PVC MANGAS LONGAS TAM EXG",
     "divisao": "SERINGAL",
@@ -12490,7 +13105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7695341b-6f7c-4ef8-a7b7-91c0856579ef",
+    "id": "600dcd50-f981-4653-a8bd-f8a98c3eebb1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12500,6 +13115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GARRAFAO TERMICO 5L  6915",
     "divisao": "SERINGAL",
@@ -12509,7 +13125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c2facb4-24ee-40da-8a13-200b933d7e8e",
+    "id": "b388414a-89e0-489a-a5ed-30ed98135b5d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12519,6 +13135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 36",
     "divisao": "SERINGAL",
@@ -12528,7 +13145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "771cf0d2-5398-402e-9664-0144c7ac2d2f",
+    "id": "3054a02d-5f1b-40c9-8f4c-dc467297197a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12538,6 +13155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 36",
     "divisao": "SERINGAL",
@@ -12547,7 +13165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd5008ed-6f42-4b1d-86e4-a3d79fa21756",
+    "id": "943faf2c-557c-416c-9d17-892dee46a612",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12557,6 +13175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA DE SEGURANCA OPERADOR DE MOTOSSERRA 5 DEDOS Nº 9,5",
     "divisao": "SERINGAL",
@@ -12566,7 +13185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b4db359-ded5-46f2-b094-cec5f9cfd823",
+    "id": "808c0cf5-68d1-4c82-85ef-03b1f1ab911c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12576,6 +13195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAPACETE SEGURANCA ACOPLADO PROTETOR AUDITIVO E TELA 6",
     "divisao": "SERINGAL",
@@ -12585,7 +13205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abd97c25-61bb-47c7-986f-d3805189aa1c",
+    "id": "b0fe6305-e9b6-43d8-9d8d-b56792846416",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12595,6 +13215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAPACETE FECHADO Nº 58",
     "divisao": "SERINGAL",
@@ -12604,7 +13225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3491e551-58ce-485b-a216-fb4fb96ec45b",
+    "id": "bb4f8cda-3b5e-484d-80c7-1a2de9fd49ef",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12614,6 +13235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BLUSAO OPERADOR DE MOTOSSERRA TAM. XG",
     "divisao": "SERINGAL",
@@ -12623,7 +13245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f923d21-4f81-42bd-ac9a-802035971fe4",
+    "id": "160d2768-fca7-4354-b86f-eb38cd6aed51",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12633,6 +13255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 43",
     "divisao": "SERINGAL",
@@ -12642,7 +13265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80cef807-4744-46cd-a2c0-6f9d498e2bbf",
+    "id": "a02a2a03-5e23-43c1-b7d8-e9d0bd15af5a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12652,6 +13275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 43",
     "divisao": "SERINGAL",
@@ -12661,7 +13285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15a462ae-93dd-45e9-be3c-aa08f6460edc",
+    "id": "0724f95b-22ad-49be-a317-097fc52de59e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12671,6 +13295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA SEGURANCA PVC SEM FORRO 35CM",
     "divisao": "SERINGAL",
@@ -12680,7 +13305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14b8683c-6687-475f-b3af-09ca4949281d",
+    "id": "5deaca3c-34f3-4ba4-8fb2-d6938cc4c0d6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12690,6 +13315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR JAGUAR",
     "divisao": "SERINGAL",
@@ -12699,7 +13325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db187882-3e50-4798-bf99-85aa23124999",
+    "id": "090e9910-4eb9-4da6-b713-3ffb8798d224",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12709,6 +13335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 10",
     "divisao": "SERINGAL",
@@ -12718,7 +13345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31537515-d043-43b6-922f-cede3d2678ab",
+    "id": "2096b120-9fac-4302-b3d3-326964c4e68d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12728,6 +13355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
     "divisao": "SERINGAL",
@@ -12737,7 +13365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1db46c7-8cd3-47e7-bd63-e52d4339ab60",
+    "id": "dc2685a9-e520-4f8e-b28e-769d95fba214",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12747,6 +13375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 42",
     "divisao": "SERINGAL",
@@ -12756,7 +13385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00e475c3-3348-4ecc-ba74-48002adb793d",
+    "id": "a7c0e8bc-34e1-49be-b59e-d2a4bf6bd438",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12766,6 +13395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 37",
     "divisao": "SERINGAL",
@@ -12775,7 +13405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "736d6c9a-598f-4aa4-8b01-248e0c4d4b77",
+    "id": "09970816-e1e2-4758-9ae0-b9dbba611610",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12785,6 +13415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 41",
     "divisao": "SERINGAL",
@@ -12794,7 +13425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c170ef8-69c7-4826-a44c-b17b76f4d72c",
+    "id": "f41de08b-8cc2-4000-b1e6-a36a2f18008c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12804,6 +13435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 39",
     "divisao": "SERINGAL",
@@ -12813,7 +13445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c3cf28d-10e9-43f2-b449-69ffab560962",
+    "id": "97d4151e-eb03-4bbe-9a06-23c2a73c2a0d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12823,6 +13455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 40",
     "divisao": "SERINGAL",
@@ -12832,7 +13465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d59e254b-1855-4405-9465-4e0c91ef12ac",
+    "id": "21caf166-2e66-4187-ac32-15cd8c83a029",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12842,6 +13475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
     "divisao": "SERINGAL",
@@ -12851,7 +13485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a65d3385-36d4-4a72-ab47-2f07eea88b56",
+    "id": "a8a539ea-da8b-4cfc-96d3-0e444ac0a5d2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12861,6 +13495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 39",
     "divisao": "SERINGAL",
@@ -12870,7 +13505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "693332bc-4959-4677-a78a-6256804c46ec",
+    "id": "e8652eb3-9916-4c94-9658-c4b17d77fd96",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12880,6 +13515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
     "divisao": "SERINGAL",
@@ -12889,7 +13525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc08b876-79dc-41a0-b65d-7b4ab22181bb",
+    "id": "0933824e-b7e7-4c76-b6d5-1e2a4e998adc",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12899,6 +13535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PERNEIRA SEG SINT 3 TALAS C VELCRO TAM G",
     "divisao": "SERINGAL",
@@ -12908,7 +13545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f44f58c-5d70-4c97-9ef6-be9ee9cd03d5",
+    "id": "edb09644-70be-4534-833a-65885d9f512b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12918,6 +13555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 42",
     "divisao": "SERINGAL",
@@ -12927,7 +13565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb231ef9-4f35-4d31-b694-b9895bc7c0f1",
+    "id": "ae7d5b63-5ad8-4f6d-a1d3-dceef7336494",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12937,6 +13575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 40",
     "divisao": "SERINGAL",
@@ -12946,7 +13585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "999fa07a-2582-4166-825b-caeaac8344b0",
+    "id": "ad86537a-f758-4e5b-97d9-4267bb283442",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12956,6 +13595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 38",
     "divisao": "SERINGAL",
@@ -12965,7 +13605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c82e2c5c-4cf8-4ca1-9fcb-c7bc7e5b8e01",
+    "id": "11b7894d-be60-49d9-9a6f-c5e492578a86",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12975,6 +13615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 38",
     "divisao": "SERINGAL",
@@ -12984,7 +13625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e5afc95-8c35-4f2c-a74c-cc33fd645502",
+    "id": "e6ff6373-c7cc-48a0-861d-150cf916d454",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -12994,6 +13635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 41",
     "divisao": "SERINGAL",
@@ -13003,7 +13645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dcb05d81-e0cf-42ca-b7ae-cf211187ccc9",
+    "id": "4fee5a02-c670-4c6c-9419-d421811bfbc4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13013,6 +13655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 39",
     "divisao": "PECUÁRIA",
@@ -13022,7 +13665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a1cb5ec-ba00-4c19-936d-615ed587ea5a",
+    "id": "f5d1063b-4332-4ee2-893f-14ef9b3e8870",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13032,6 +13675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 39",
     "divisao": "PECUÁRIA",
@@ -13041,7 +13685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5373ba56-ab36-4279-abd2-a67745a56653",
+    "id": "dc458172-9fc9-40c8-9f06-316d916d1bd9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13051,6 +13695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 37",
     "divisao": "SERINGAL",
@@ -13060,7 +13705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "197eb2b1-19ee-416c-be35-0ed203b29278",
+    "id": "846eb4c0-2381-4d26-834d-3455e9d06237",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13070,6 +13715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 44",
     "divisao": "SERINGAL",
@@ -13079,7 +13725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2928ca4a-3e1f-42f5-8b50-b00f0f97c4a6",
+    "id": "c5aa8a60-3ae3-47cf-935b-39104f8374ed",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13089,6 +13735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RECARGA PARA EXTINTOR PQS 8 KG",
     "divisao": "SERINGAL",
@@ -13098,7 +13745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39891838-118d-47b6-ba13-54d66122c811",
+    "id": "50f22aaa-edb9-429a-ab1c-22fc6eae7ffd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13108,6 +13755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RECARGA PARA EXTINTOR ABC 6 KG",
     "divisao": "SERINGAL",
@@ -13117,7 +13765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9fcb253-a6f6-4bb3-b6d4-836085aac636",
+    "id": "eec23c7a-3ee1-4e72-84d8-9c281483798f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13127,6 +13775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CINTA ERGONOMICA LOMBAR PARA PROTECAO DE COLUNA TAM - M",
     "divisao": "SERINGAL",
@@ -13136,7 +13785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0e54093-c65c-4c16-96c3-83ba70b2f9e6",
+    "id": "f17795c4-f219-4bed-9eb5-117515c15b8f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13146,6 +13795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CINTA ERGONOMICA LOMBAR PARA PROTECAO DE COLUNA TAM - P",
     "divisao": "SERINGAL",
@@ -13155,7 +13805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5cd2fcf3-bf23-4cc0-a9bd-412518f407d7",
+    "id": "b297cee5-f92f-4693-a97e-c976133e839e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13165,6 +13815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 8",
     "divisao": "SERINGAL",
@@ -13174,7 +13825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c27af13-dd3f-4c35-8c28-cbfdf57c66aa",
+    "id": "34d9f723-a56f-4e8e-b360-79b3bfd541bb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13184,6 +13835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 10",
     "divisao": "SERINGAL",
@@ -13193,7 +13845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a4e6601-1f0f-4b32-a9c5-fac349473694",
+    "id": "cf18de18-d0b5-47fd-be08-5e9a6f50c7a2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13203,6 +13855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE CZ KALIPSO CA 10346",
     "divisao": "SERINGAL",
@@ -13212,7 +13865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5982426d-d879-4098-976f-dbeea8d208b8",
+    "id": "6d2d86bc-0357-494f-8edc-82610508d1e2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13222,6 +13875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 8",
     "divisao": "SERINGAL",
@@ -13231,7 +13885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9db4a2af-4255-436c-bed1-066a1d0417f0",
+    "id": "3f07672c-8d37-4386-86e5-24f84be3a537",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13241,6 +13895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
     "divisao": "SERINGAL",
@@ -13250,7 +13905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5094e59b-8e18-4254-a01a-d0933f6d7edb",
+    "id": "e6b09414-c553-4911-a34f-fd72fa417c8f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13260,6 +13915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA SOBREPOR",
     "divisao": "SERINGAL",
@@ -13269,7 +13925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e2b83d1-7d37-425f-8771-6ef526a4ca34",
+    "id": "bd98bfa8-3905-45cd-8db1-13553e07673d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13279,6 +13935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MOSQUETAO ACO OVAL TR ROSCA 23KN VICSA",
     "divisao": "PECUÁRIA",
@@ -13288,7 +13945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b091d35e-0965-4997-9656-2c0563e5099c",
+    "id": "cf83f4cd-81a3-4d48-aa5f-f6d30c4d36e7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13298,6 +13955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAPA DE CHUVA PVC MANGAS LONGAS TAM EXG",
     "divisao": "PECUÁRIA",
@@ -13307,7 +13965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bab0d204-75a3-4951-82ab-70f18ad2bfd9",
+    "id": "e014a831-a89c-4f9f-88ce-32410479dc3b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13317,6 +13975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 41",
     "divisao": "PECUÁRIA",
@@ -13326,7 +13985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6fd99981-d3e0-49ee-9999-33f3905eca10",
+    "id": "e2374f93-3b48-4fd4-8f50-7bb04cc9eb2b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13336,6 +13995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
     "divisao": "PECUÁRIA",
@@ -13345,7 +14005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f031086-e880-4da0-8705-5debcb4eb309",
+    "id": "fd8ce95c-9e0c-4d1e-be32-c99cdcca6fbd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13355,6 +14015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
     "divisao": "PECUÁRIA",
@@ -13364,7 +14025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6311104-3194-4a05-88b2-e26b3f420cbe",
+    "id": "f9399088-ddf1-41a1-aa84-dc47353cf829",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13374,6 +14035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 10",
     "divisao": "PECUÁRIA",
@@ -13383,7 +14045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff91998c-24fa-4e64-8cff-5caf1cf87d71",
+    "id": "0b05f770-e564-4cd4-b1ee-de1552f242cc",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13393,6 +14055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
     "divisao": "PECUÁRIA",
@@ -13402,7 +14065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdac2369-13a2-42eb-bed9-6a1870fd53fe",
+    "id": "e837056b-2ebc-4a09-9814-71f30e282544",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13412,6 +14075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO BRANCA NR 43",
     "divisao": "PECUÁRIA",
@@ -13421,7 +14085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fa17f72-7007-4056-94e5-6a649a33da55",
+    "id": "043b5e2a-9cda-453a-b013-a3bfb02cf657",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13431,6 +14095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 34",
     "divisao": "PECUÁRIA",
@@ -13440,7 +14105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8661b5c1-b7ea-4374-9c7b-ef7e8b87597c",
+    "id": "ea6c5b4c-20d9-4991-a8f2-212901ff67ce",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13450,6 +14115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 39",
     "divisao": "PECUÁRIA",
@@ -13459,7 +14125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ad2e7ca-608f-498d-8c3a-669ea4a5e46f",
+    "id": "98a628a9-5811-4c36-a75c-6037bb1f30e3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13469,6 +14135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SOLADO DE PNEU Nº39",
     "divisao": "PECUÁRIA",
@@ -13478,7 +14145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4af4f24e-11ba-40d4-8491-05f1482d3569",
+    "id": "7917ab19-416a-4bd8-aab3-2e29b36bc150",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13488,6 +14155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
     "divisao": "PECUÁRIA",
@@ -13497,7 +14165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63586d5c-2956-4ca1-bf06-e95e5558c750",
+    "id": "e6445c5f-f639-457b-90eb-fb425f5bcec2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13507,6 +14175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
     "divisao": "PECUÁRIA",
@@ -13516,7 +14185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3a96b84-0295-4d46-bd8d-ac985d6ee8b5",
+    "id": "e1cdbaaa-6b4e-4f52-b340-d5b7a0b8f1a5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13526,6 +14195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
     "divisao": "PECUÁRIA",
@@ -13535,7 +14205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "658dc29d-0930-4a2e-95e2-edc52b58f891",
+    "id": "f475985b-516e-4e67-9fe0-e0475d7b347e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13545,6 +14215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 40",
     "divisao": "PECUÁRIA",
@@ -13554,7 +14225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "885d0ada-2867-48e9-8bc8-014ca6896ba6",
+    "id": "dfbcf7d1-00af-424d-8c39-c3d6bcef0110",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13564,6 +14235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GARRAFAO TERMICO 5L  6915",
     "divisao": "PECUÁRIA",
@@ -13573,7 +14245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b4854d0-bdaf-4f86-b96a-2811cc47b44a",
+    "id": "39850c06-923e-4831-8526-a86b59c39111",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13583,6 +14255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 40",
     "divisao": "PECUÁRIA",
@@ -13592,7 +14265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d70668c4-1eae-46be-9482-14a475064741",
+    "id": "983eb9e6-cf94-4edd-ba95-3cba3b817fbd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13602,6 +14275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RESPIRADOR PURIF AR TIPO SEMIFACIAL FILTRANTE PARA PARTICULAS PFF1",
     "divisao": "PECUÁRIA",
@@ -13611,7 +14285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52d1436a-0758-46c8-8ca2-e3be0dfdd65b",
+    "id": "50cdc132-b87f-4795-9aa4-a3bb576d3349",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13621,6 +14295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
     "divisao": "PECUÁRIA",
@@ -13630,7 +14305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "102db239-b91a-4b49-b177-32a50b7d36bc",
+    "id": "c4c8d482-72f2-48b4-943a-e84e2540c853",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13640,6 +14315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 37",
     "divisao": "PECUÁRIA",
@@ -13649,7 +14325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49334046-5738-4334-b8af-38abea6eaf09",
+    "id": "5d4b7df6-ea9d-4ad1-9e10-c4ea7fbd998c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13659,6 +14335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 35",
     "divisao": "PECUÁRIA",
@@ -13668,7 +14345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9deb3e68-77f6-4741-97ff-6072b1b57c97",
+    "id": "ce6f7c61-7806-45da-9376-0846a16956ce",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13678,6 +14355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 43",
     "divisao": "PECUÁRIA",
@@ -13687,7 +14365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a98d18e0-4872-4f61-9ced-9264125fc418",
+    "id": "cf77be9d-32ac-4b9b-949c-00522796d273",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13697,6 +14375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RECARGA PARA EXTINTOR PQS 8 KG",
     "divisao": "PECUÁRIA",
@@ -13706,7 +14385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c08a1b10-9696-4a88-8c5e-b53ff48f7e98",
+    "id": "d6b76bfd-bb94-49ed-a3b4-461c86b0874b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13716,6 +14395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "RECARGA PARA EXTINTOR PQS 6 KG",
     "divisao": "PECUÁRIA",
@@ -13725,7 +14405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ad25ae3-0d53-4698-b27b-af6ec1a44a85",
+    "id": "1a97840a-3ba5-46eb-9c7b-e94c3518f7f2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13735,6 +14415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
     "divisao": "PECUÁRIA",
@@ -13744,7 +14425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50c08dcd-ead1-427c-a854-6ffd33b8443e",
+    "id": "2548b6d7-3afb-46ce-a8b3-59b4097caea7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13754,6 +14435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTA BORRACHA PVC CANO CURTO  PRETA FLEX NR 37",
     "divisao": "PECUÁRIA",
@@ -13763,7 +14445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d852174d-8890-4e68-9d3c-b25a1bd53a66",
+    "id": "3ce73f4f-3da6-43b0-9b6d-675a01c8ce38",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -13773,6 +14455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 43",
     "divisao": "PECUÁRIA",
@@ -13782,7 +14465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b139272-30a2-41c1-b981-52bf02832393",
+    "id": "55aa34c3-3fa7-427f-9f41-3bca411bffb0",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -13792,6 +14475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PEDAGIO",
     "divisao": "SERINGAL",
@@ -13801,7 +14485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72bf7d8d-a742-4b2f-b7af-e249bd863e74",
+    "id": "6ff55382-3cf5-40e0-9a0d-c1a2047a7f4d",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -13811,6 +14495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PEDAGIO",
     "divisao": "PECUÁRIA",
@@ -13820,7 +14505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b34b783c-bed6-4c38-b6c2-4ff0b23161b1",
+    "id": "e34a76da-bd2f-4a5c-bbc9-e68de55bea23",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13830,6 +14515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LANCHES E REFEIÇÕES",
     "divisao": "PECUÁRIA",
@@ -13839,7 +14525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "158fa3be-cade-48c7-860a-d303f861629b",
+    "id": "f8f71d57-6022-4c7a-a62e-536d574ca11a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13849,6 +14535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ACUCAR",
     "divisao": "PECUÁRIA",
@@ -13858,7 +14545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0f98f0e-c2ba-41f7-a702-13f4b5b0b790",
+    "id": "e40ead8f-0162-4192-a4f8-068ac2fd92c4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13868,6 +14555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SUCO DEL VALE 1LT",
     "divisao": "PECUÁRIA",
@@ -13877,7 +14565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc0b982b-baf8-427e-9ec6-ac8234dc553c",
+    "id": "0fe564ae-1e22-4b25-b739-87db30f9be20",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13887,6 +14575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO DE QUEIJO",
     "divisao": "PECUÁRIA",
@@ -13896,7 +14585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1685f991-5f3a-44e5-b830-8100066746e5",
+    "id": "8e4f51b2-9844-4f3e-b825-0d4a16495c33",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13906,6 +14595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "COCA COLA 2 L",
     "divisao": "PECUÁRIA",
@@ -13915,7 +14605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5133c15-65bf-4cfa-bb40-cf18bd3383fc",
+    "id": "ebb022e7-58e8-4894-97b6-50443a8d3f86",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13925,6 +14615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ENROLADINHO DOCE",
     "divisao": "PECUÁRIA",
@@ -13934,7 +14625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c7c1189-00a8-47b6-8919-21a345f9391b",
+    "id": "8bcb82f4-52e6-490b-ae79-29b66814ea25",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13944,6 +14635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAOZINHO COM PATE",
     "divisao": "PECUÁRIA",
@@ -13953,7 +14645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc9886f3-b8c6-4df1-9c5f-c8db2c192fa9",
+    "id": "48e4c064-2092-40ca-9b44-43de9aeabe66",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13963,6 +14655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
     "divisao": "PECUÁRIA",
@@ -13972,7 +14665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01828423-d2f5-48a8-b0d5-d58ac8e87bc1",
+    "id": "b1853071-c4bb-4bf2-a28a-a0d8bf148f85",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -13982,6 +14675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "EXTRATO DE TOMATE 340G",
     "divisao": "PECUÁRIA",
@@ -13991,7 +14685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b96748ed-f681-4ea5-b389-0242be6d690a",
+    "id": "31cbab34-7b85-4599-9e5b-a6c398d72114",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14001,6 +14695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FEIJAO TIPO 1",
     "divisao": "PECUÁRIA",
@@ -14010,7 +14705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a41723a8-ca0d-48e0-afc2-0bd0d4520ce4",
+    "id": "5a809fac-ce95-4e8e-accf-9a4799d0fad5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14020,6 +14715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAFE MOIDO PCT 250 GRS",
     "divisao": "PECUÁRIA",
@@ -14029,7 +14725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2f71488-1aa0-4b88-92cd-9085b1d7e5b6",
+    "id": "b8125203-0865-4950-b12e-c57bfdc619fb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14039,6 +14735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OLEO DE SOJA 900ML",
     "divisao": "PECUÁRIA",
@@ -14048,7 +14745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0d38569-e7bd-43ec-8d67-f5b56688ecdd",
+    "id": "b2d065c2-09aa-4c3a-ac00-521329f6f4d1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14058,6 +14755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
     "divisao": "PECUÁRIA",
@@ -14067,7 +14765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "efd82f2b-703c-4d5f-bfea-870a54bd9e6e",
+    "id": "3a56b90a-6404-400a-9541-3cd4c87f3dd8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14077,6 +14775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TAPIOCA 500 GR",
     "divisao": "PECUÁRIA",
@@ -14086,7 +14785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a45a6aff-0113-43d9-a307-2654c4ffe2ce",
+    "id": "efa8fd3f-7678-4fb4-9c47-7642d65201a4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14096,6 +14795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
     "divisao": "PECUÁRIA",
@@ -14105,7 +14805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2f5eb7f-7661-46cc-8be4-387fdda6793f",
+    "id": "c1f04bc1-3826-47d9-bd07-bcab5f71db15",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14115,6 +14815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA DE DOCE 400GRS",
     "divisao": "PECUÁRIA",
@@ -14124,7 +14825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a06f4fc-615a-497e-97ce-b1932743b6f8",
+    "id": "a62b2514-dd91-4183-9e41-e393bc1e9722",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14134,6 +14835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
     "divisao": "PECUÁRIA",
@@ -14143,7 +14845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "420c7112-13a4-4d9f-814e-6160cefd4650",
+    "id": "bac6f979-37fe-4682-adf9-2644e5ca17db",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14153,6 +14855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
     "divisao": "PECUÁRIA",
@@ -14162,7 +14865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d04da0d0-bd6f-4c31-8a2a-5ff042430ae5",
+    "id": "4484edc3-503e-4238-a5d6-33aba92416d2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14172,6 +14875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TEMPERO COMPLETO 300G",
     "divisao": "PECUÁRIA",
@@ -14181,7 +14885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dec5c03d-012f-489f-8340-41865928af5a",
+    "id": "dbb2a34c-adc9-4c72-bfb3-91afcfd8a3bb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14191,6 +14895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA DE DOCE 115GRS",
     "divisao": "PECUÁRIA",
@@ -14200,7 +14905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec22fbe6-4182-4111-9968-9634d97496fc",
+    "id": "d0889a62-1165-4c65-b945-0e199607f36d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14210,6 +14915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
     "divisao": "PECUÁRIA",
@@ -14219,7 +14925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e73d810-bab2-4db8-80b5-c19785ca4566",
+    "id": "bc27c23e-0394-4961-9666-00acc8f16948",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14229,6 +14935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ACHOCOLATADO EM PO 200G",
     "divisao": "PECUÁRIA",
@@ -14238,7 +14945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aff29163-233f-43f7-89bc-9c513836f196",
+    "id": "2a5e030d-41a3-47e0-ae19-bd75c94f07a5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14248,6 +14955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GELATINA",
     "divisao": "PECUÁRIA",
@@ -14257,7 +14965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abefcfbb-0051-4349-8cef-0490e528df21",
+    "id": "4b64ef24-fbc8-419a-b947-78bbba129947",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14267,6 +14975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GOIABADA 300 G",
     "divisao": "PECUÁRIA",
@@ -14276,7 +14985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66e10f27-b0fa-43bd-ac57-b19f525d37f2",
+    "id": "9d4dfa4a-8904-4848-a65b-7e94afc63443",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14286,6 +14995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
     "divisao": "PECUÁRIA",
@@ -14295,7 +15005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e919ffcc-6b3a-49d2-a526-8449b1f2e43a",
+    "id": "b19e0ab5-5766-4a5f-9b32-131d3a0c5f96",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14305,6 +15015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SUCO ADOÇADO 140G",
     "divisao": "PECUÁRIA",
@@ -14314,7 +15025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aadeeee8-0d36-430b-90d6-046cd4a5b2d4",
+    "id": "ff21c6a2-9e57-4158-93bf-c61c48311dd8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14324,6 +15035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MACARRAO 500 GRS",
     "divisao": "PECUÁRIA",
@@ -14333,7 +15045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78ed7d5e-5e47-4961-b892-e496797c9bea",
+    "id": "a6d848a7-2114-42e0-9c40-45c4a8cf7a75",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14343,6 +15055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CARTAO ALIMENTACAO",
     "divisao": "PECUÁRIA",
@@ -14352,7 +15065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30f77bfb-97ea-45c0-96b2-d3079a5e8bab",
+    "id": "10561283-2124-4001-bfa8-d10132529359",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14362,6 +15075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LANCHES E REFEIÇÕES",
     "divisao": "SERINGAL",
@@ -14371,7 +15085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c6c859ba-5875-4ce0-8d83-d698b251d717",
+    "id": "7f50d1fe-3604-426d-a5e9-48828eb822b0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14381,6 +15095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
     "divisao": "SERINGAL",
@@ -14390,7 +15105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3fa0ee5e-65d6-439e-a396-4a3c0876d220",
+    "id": "3394f316-6c52-469b-b3e8-1c620a92ece7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14400,6 +15115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SUCO 1L cada UN",
     "divisao": "SERINGAL",
@@ -14409,7 +15125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee0738e2-bfd1-4e25-9155-a76d42b01591",
+    "id": "deb0ca96-33c8-4f57-a1e9-ad571102ab86",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14419,6 +15135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO FRANCES",
     "divisao": "SERINGAL",
@@ -14428,7 +15145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8ebab8a-41e6-44bf-8c35-9bf1574519e2",
+    "id": "328666be-a007-4cfa-8eab-000e52d468ac",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14438,6 +15155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAFE",
     "divisao": "SERINGAL",
@@ -14447,7 +15165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c16df213-0c9b-4f55-85f2-387b9dd6e866",
+    "id": "45eef559-2007-4997-881b-256ec0344b0c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14457,6 +15175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO DE CACHORRO QUENTE",
     "divisao": "SERINGAL",
@@ -14466,7 +15185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c2967b2-ee6c-46b1-8186-4de32a9c9e8b",
+    "id": "695285b3-e4bf-4469-84b0-ad320c3c200a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14476,6 +15195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO DE QUEIJO (ASSADO)",
     "divisao": "SERINGAL",
@@ -14485,7 +15205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30a5e050-37ff-4c07-b913-266636b4a7e7",
+    "id": "5c65ab9e-a4e4-4ee7-b34d-f2873175abc3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14495,6 +15215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PASTEL",
     "divisao": "SERINGAL",
@@ -14504,7 +15225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f25d591-9720-4dda-843d-db84bcf80d6d",
+    "id": "49ea6103-0696-43df-bc24-a197bb83915a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14514,6 +15235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MINI PIZZA",
     "divisao": "SERINGAL",
@@ -14523,7 +15245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e0a6290-976c-454f-a937-d7139b30b45e",
+    "id": "6c0c24c2-b5aa-4eae-9374-eaa91ed19bdf",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14533,6 +15255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
     "divisao": "SERINGAL",
@@ -14542,7 +15265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5034bd7-4376-4b0a-b8d7-472a75c22b3d",
+    "id": "46770b96-6350-45d9-9723-4e4f26496087",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14552,6 +15275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "EXTRATO DE TOMATE 340G",
     "divisao": "SERINGAL",
@@ -14561,7 +15285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ede3ac3-315f-4fb0-aa06-e33d58977658",
+    "id": "0a5db05a-9137-4f4f-9d1a-a10979e6bd88",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14571,6 +15295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ACUCAR",
     "divisao": "SERINGAL",
@@ -14580,7 +15305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c484ded1-30d3-4380-98f9-a1b76cf0cde7",
+    "id": "0206c67e-a1b8-4a00-9458-b149f36406d8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14590,6 +15315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FEIJAO TIPO 1",
     "divisao": "SERINGAL",
@@ -14599,7 +15325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3017cf8e-bd5d-4f53-b8ea-ac3945308c3a",
+    "id": "81a69491-5cf2-45f5-bf2b-6abe9b27d8be",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14609,6 +15335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAFE MOIDO PCT 250 GRS",
     "divisao": "SERINGAL",
@@ -14618,7 +15345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40fd50d3-c705-4024-9eb5-7ef5d49b2843",
+    "id": "1a90259f-10eb-4a22-abe8-4130d4ce844d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14628,6 +15355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "OLEO DE SOJA 900ML",
     "divisao": "SERINGAL",
@@ -14637,7 +15365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82049ec3-48c6-4b15-976b-3822f6a6d280",
+    "id": "88bfe23a-43d0-4f04-9c69-46b136a0b29f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14647,6 +15375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
     "divisao": "SERINGAL",
@@ -14656,7 +15385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f6281c5-7ad9-4951-8923-ec566e9dd94c",
+    "id": "16e8bcbd-5ac6-4bbc-a73f-91496dcdc169",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14666,6 +15395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SUCO ADOÇADO 140G",
     "divisao": "SERINGAL",
@@ -14675,7 +15405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e876d30d-189f-4bbb-838a-a9fd00d47809",
+    "id": "40e1e7b2-efa1-4f8d-8167-e33b23be2a9b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14685,6 +15415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "MACARRAO 500 GRS",
     "divisao": "SERINGAL",
@@ -14694,7 +15425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "049e3bab-0880-40c2-96b7-e5d018ada161",
+    "id": "7fdf0764-c060-4be4-8a09-369e040128fa",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14704,6 +15435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TAPIOCA 500 GR",
     "divisao": "SERINGAL",
@@ -14713,7 +15445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "423984e3-f5f5-4c35-aad3-b9eb3c6e61dc",
+    "id": "b5dd1311-7d03-4eca-8b59-76bf9e711d80",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14723,6 +15455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
     "divisao": "SERINGAL",
@@ -14732,7 +15465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d5d7443a-0868-4a66-805b-a63d3e77df72",
+    "id": "a0f2a492-0b29-427d-aba4-41558e787622",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14742,6 +15475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA DE DOCE 400GRS",
     "divisao": "SERINGAL",
@@ -14751,7 +15485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "405acf9f-d266-40b0-8a0c-247162746a57",
+    "id": "50c2063b-2916-441a-8e9f-df545337f9df",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14761,6 +15495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
     "divisao": "SERINGAL",
@@ -14770,7 +15505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4cd2a93-d8ec-4af5-a42b-aaf77617ec6b",
+    "id": "6b71bc37-953d-4e71-8802-3d0a5f223c87",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14780,6 +15515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
     "divisao": "SERINGAL",
@@ -14789,7 +15525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a939f0d-d92b-4e36-b6fd-b5669fd72000",
+    "id": "fc6ba6d9-6f5e-45fe-9aea-bec38c2eb5c2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14799,6 +15535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TEMPERO COMPLETO 300G",
     "divisao": "SERINGAL",
@@ -14808,7 +15545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f41a38d-7e97-4f8b-a56b-5434350f691a",
+    "id": "5ecd1933-9ecd-414e-804c-80db69100ff7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14818,6 +15555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "BOLACHA DE DOCE 115GRS",
     "divisao": "SERINGAL",
@@ -14827,7 +15565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "033b6b8e-0992-43d1-ae25-503324d2b1b1",
+    "id": "ba7f082a-1299-41c8-b232-cc6ebb6c1c86",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14837,6 +15575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
     "divisao": "SERINGAL",
@@ -14846,7 +15585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09c27d75-4f16-40cd-a39f-a82f6d5a8682",
+    "id": "eeb481f1-1d00-4327-912f-524e76973956",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14856,6 +15595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "ACHOCOLATADO EM PO 200G",
     "divisao": "SERINGAL",
@@ -14865,7 +15605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83eb43de-9fb5-4547-8d01-4333190f2cbd",
+    "id": "55401b72-6dd9-4da5-908e-047be1981b5c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14875,6 +15615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GELATINA",
     "divisao": "SERINGAL",
@@ -14884,7 +15625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2a57017-944b-42e4-ba34-eb448da6a955",
+    "id": "939394db-a37a-476e-8fac-31a7ae223cff",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14894,6 +15635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "GOIABADA 300 G",
     "divisao": "SERINGAL",
@@ -14903,7 +15645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27bc5b9b-942f-4e92-af9d-9fedf13c5191",
+    "id": "b3fca0b1-37ef-4bf4-b91e-60095f983a9f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14913,6 +15655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO DE MILHO",
     "divisao": "SERINGAL",
@@ -14922,7 +15665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "843efdd8-ff61-4d07-a334-e41fb63f8ff6",
+    "id": "c69db130-2461-40ad-b756-413aa4427c2d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14932,6 +15675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO COM MARGARINA",
     "divisao": "SERINGAL",
@@ -14941,7 +15685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae4b9fa6-4f5e-4f69-8ca3-da3c817841db",
+    "id": "d7d937ee-59f4-4e8b-907a-f34a331f0681",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14951,6 +15695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAFE MOIDO KG",
     "divisao": "SERINGAL",
@@ -14960,7 +15705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "700f0a7d-c4a4-4909-9fa3-30e9ad9f8447",
+    "id": "2d8c1b5a-d9b7-415b-a3da-2a56f222e646",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14970,6 +15715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CARTAO ALIMENTACAO",
     "divisao": "SERINGAL",
@@ -14979,7 +15725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e9754c8-e2f4-4dc9-9639-c4f7b79bbe75",
+    "id": "98b154e2-23b2-4181-8a47-f887b321d856",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -14989,6 +15735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAFE MOIDO KG",
     "divisao": "PECUÁRIA",
@@ -14998,7 +15745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "321b895c-2aaf-451a-b8a7-026c87dd7959",
+    "id": "97354f71-c792-4789-84e9-089ecbdcd78d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15008,6 +15755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO DE MILHO",
     "divisao": "PECUÁRIA",
@@ -15017,7 +15765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "af757afa-dbf8-4e53-90e0-056ef96403ab",
+    "id": "293c0904-2c5e-4d4b-94e1-3e5f21b32e72",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -15027,6 +15775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "PAO COM MARGARINA",
     "divisao": "PECUÁRIA",
@@ -15036,7 +15785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5f8a9e6-984c-4b18-96c3-f01ce631424c",
+    "id": "3ee401d3-a334-4a84-8602-28e57d9d3fcb",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -15046,6 +15795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
     "divisao": "PECUÁRIA",
@@ -15055,7 +15805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b44d631e-a8f1-4dab-8744-4beff2e255f6",
+    "id": "f7b79ec9-f938-4974-8e55-2162a7492bc9",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15065,6 +15815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA GOLA POLO G VERDE FLORESTA",
     "divisao": "PECUÁRIA",
@@ -15074,7 +15825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17e3f2ad-7e92-4aa4-be44-1a8244aaced6",
+    "id": "5acd5b6c-32fb-41e8-90f1-1aa8e21c2519",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15084,6 +15835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (M)",
     "divisao": "PECUÁRIA",
@@ -15093,7 +15845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eacbbcb5-8171-4ced-8e35-302e923ed0b8",
+    "id": "ffdd441f-9749-43f2-ab1b-5853a0c8a884",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15103,6 +15855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CALCA ELANCA VERDE (M)",
     "divisao": "PECUÁRIA",
@@ -15112,7 +15865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f34fb8e1-b225-446f-9680-b94b76257275",
+    "id": "0c5cb4f7-1bbc-453f-8b62-81496be910ee",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15122,6 +15875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (P)",
     "divisao": "SERINGAL",
@@ -15131,7 +15885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb9927d6-2061-4398-a487-47b008d14257",
+    "id": "1f4426e8-4c17-4a7b-8b62-6c3a34c9f416",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15141,6 +15895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CALCA ELANCA VERDE (P)",
     "divisao": "SERINGAL",
@@ -15150,7 +15905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93742197-d17d-49fc-959a-f8dccd73c0f0",
+    "id": "533d3176-13d8-4b6b-8f58-8131b99b706c",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15160,6 +15915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CALCA ELANCA VERDE (M)",
     "divisao": "SERINGAL",
@@ -15169,7 +15925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20be0f53-3734-4385-bcee-9343ce9964a3",
+    "id": "b802c174-bb4d-4505-a8fc-8859a4245afe",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15179,6 +15935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (M)",
     "divisao": "SERINGAL",
@@ -15188,7 +15945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8050c662-9760-43e7-871c-1468f39e526c",
+    "id": "b01c9f8c-d7be-4463-9469-3b4aa0a4a969",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15198,6 +15955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (GG)",
     "divisao": "SERINGAL",
@@ -15207,7 +15965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f210316-52bb-42aa-a368-7ab66e81df4e",
+    "id": "3c660044-d3b1-4835-8af5-1e5509a7b7f5",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15217,6 +15975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CALCA ELANCA VERDE (G)",
     "divisao": "SERINGAL",
@@ -15226,7 +15985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dad8d07e-4ba3-45d5-b796-8cdb93216577",
+    "id": "e039ba11-6ee4-490e-83f5-c326d824e5d4",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15236,6 +15995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (G)",
     "divisao": "SERINGAL",
@@ -15245,7 +16005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4580a7fb-f4ef-4280-8fa6-3603fcdc49e7",
+    "id": "0f27c44d-77cb-48ce-ad40-12182f69f110",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -15255,6 +16015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
     "nomeProduto": "CAMISA MODELO SOCIAL MASCULINA MANGA CURTA VERDE M",
     "divisao": "SERINGAL",
@@ -15264,7 +16025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6f6483d-4ba4-411b-b494-fa2b24e820fe",
+    "id": "64232c4d-d18a-442b-8bae-b15aedc93ddb",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -15275,7 +16036,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1dc8cfe5-0e34-4946-a7e1-af82b358ca50",
+    "id": "7db31c64-c3b7-4f1e-8634-767197397f07",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -15286,7 +16047,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f402798a-069c-416b-9063-68e098382d0a",
+    "id": "2b19ef5f-9bb1-401d-a9ae-25b6096b2364",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -15297,7 +16058,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "68f0a755-29ed-40d9-98f1-0ffe7f0c80b5",
+    "id": "4de35526-8a6e-470b-9259-d01cb03f4529",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -15308,7 +16069,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9fd84908-dc70-49a7-a489-c4f8f3a0df12",
+    "id": "4eac6faf-5ac6-48b9-ba06-7841d58deedf",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -15319,7 +16080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "85f9002e-65a7-4ccd-ab09-8d9aa40ae636",
+    "id": "383265ec-de75-453b-b577-cee349a22eb4",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -15330,7 +16091,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a565b1cf-9921-4c5c-be7f-b4b6d434fa43",
+    "id": "e78c33b8-2ff6-4b72-acc5-e269017714a1",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -15340,6 +16101,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15349,7 +16111,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "289ef01c-ac34-4e8a-a629-f58c0f0f766d",
+    "id": "61f989dd-3b5b-4b10-b490-77938ebab345",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -15359,6 +16121,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15368,7 +16131,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff9c319f-10b1-42ba-9906-e33067b8cea3",
+    "id": "aaabfb57-8af9-4f57-a9a5-7b0aae2639a2",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -15378,6 +16141,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15387,7 +16151,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "138474e5-99e3-49e7-853f-5071983f90db",
+    "id": "e3733b11-9dea-4ce7-aba2-3ee669f77d8b",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -15397,6 +16161,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15406,7 +16171,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2407175c-7ebf-4b0e-985f-ac1c3d7e5c13",
+    "id": "3f247ee0-e100-4ac3-bbf6-a0cc53a794ff",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -15416,6 +16181,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15425,7 +16191,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "647396b7-91f9-4b75-918a-15dd56784cf0",
+    "id": "7991b312-4f61-412f-8f2a-c3e720a4a84d",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -15435,6 +16201,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "PECUÁRIA",
@@ -15444,7 +16211,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6853e79-28cd-4e95-81e7-3de8a1318403",
+    "id": "a0ca1884-53fd-4639-baca-da3df195a49c",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -15454,6 +16221,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15463,7 +16231,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d15acee2-dca7-4624-bd48-0c3319969e96",
+    "id": "ed46c61a-5da8-4551-a97c-e14bae841413",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -15473,6 +16241,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15482,7 +16251,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2e88fe3-fe08-43b3-9227-6e59d631d74a",
+    "id": "efa20010-8c6c-437e-927b-161820554201",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -15492,6 +16261,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15501,7 +16271,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c81e9061-d388-41ed-acc3-a6826a59c7f8",
+    "id": "99bcb93b-88ed-4bc6-a099-8887a0ab4ff3",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -15511,6 +16281,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15520,7 +16291,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff73e86b-a2a1-4fe4-aa2b-268916dbf7b5",
+    "id": "39140e6a-6f89-4d5e-8b88-b7d965a05466",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -15530,6 +16301,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15539,7 +16311,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "550368d5-8921-4ced-b09d-70bfd8433f93",
+    "id": "36a24de4-ee40-4ab0-8a8c-6d31db89c197",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
     "tipo": "C",
@@ -15549,6 +16321,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15558,7 +16331,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6af60ad9-5a7a-4eeb-952f-faf0b1a99db7",
+    "id": "9427729c-751c-480b-a488-5a75c5e98f90",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -15568,6 +16341,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15577,7 +16351,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86913655-d4b5-477a-a601-4d558f2047eb",
+    "id": "218fa040-025d-4c0d-ae48-84725dc6ffb0",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -15587,6 +16361,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15596,7 +16371,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bae854b6-b96f-4613-9d03-6ef9852cd566",
+    "id": "15cdbc3d-8b3d-4a08-9e3a-e97d980c7f5a",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -15606,6 +16381,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15615,7 +16391,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d26b1f2d-3e64-4f93-835c-0ad5137c8c6a",
+    "id": "0eb2e15b-40bd-4881-88f0-5237c43006a5",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -15625,6 +16401,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15634,7 +16411,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c6c7501e-55b6-4271-8b76-43a8f7c6fae7",
+    "id": "b1491930-38b9-4681-a117-6ca795b76a1c",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -15644,6 +16421,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15653,7 +16431,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b41d2879-25f6-47a9-9397-476a8a153c32",
+    "id": "18806172-8e44-4945-8ed2-4aab32df03bc",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -15663,6 +16441,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15672,7 +16451,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fcc6390-9c4d-4d84-bbc1-f545f647ae70",
+    "id": "760d6823-a599-44e5-954d-a9886f007c47",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -15682,6 +16461,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15691,7 +16471,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a63ccbc6-92c8-4bc4-87fb-5ea0c6e1cda2",
+    "id": "69408597-cf43-4dc8-96ba-eb0286d9fa09",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -15701,6 +16481,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15710,7 +16491,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab3d800b-853f-4010-9af8-c8186851357d",
+    "id": "55a46b7d-26c0-48a5-80e8-b5f33f364889",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -15720,6 +16501,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15729,7 +16511,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1e79b19-e6d7-47f5-b4e2-a7285a89e7e8",
+    "id": "07960324-1b41-4b5c-8d24-b71474a21dbe",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -15739,6 +16521,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15748,7 +16531,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1f0207f-562b-4144-96a3-b37a7d1e430d",
+    "id": "3a711f31-96c1-4810-8b92-69c67ec9ea9e",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -15758,6 +16541,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "BANDEIRANTES SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15767,7 +16551,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f343f164-43b9-4de1-ab70-106df51bda3e",
+    "id": "7065e6c8-1cae-4491-9339-62bac8bf5424",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -15777,6 +16561,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15786,7 +16571,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1214cce-daf7-4769-a10c-1e88d6e8d790",
+    "id": "f289a280-eded-4303-93ef-49070fdb1da1",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -15796,6 +16581,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15805,7 +16591,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1e89815-78b0-4f74-bbdd-e4df7e578023",
+    "id": "a363e9ff-3444-45aa-8928-41a0a472a457",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -15815,6 +16601,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15824,7 +16611,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61879bdc-96a2-4c31-ac9b-c59b68020e7f",
+    "id": "18acf392-0b2c-4c6b-ab56-4f3f573dc6bb",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -15834,6 +16621,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15843,7 +16631,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1de36b21-1bc5-4c21-8d90-cea9cd96a0ed",
+    "id": "7fccf3de-4d2a-4649-a9bb-59591777faf9",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -15853,6 +16641,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15862,7 +16651,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43e5f862-efea-4762-8ee1-529f8c875d7f",
+    "id": "ab6b9e94-dfe0-47e3-94d9-7d08b1af4c60",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -15872,6 +16661,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15881,7 +16671,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ca256f3-a898-414a-89e1-236153399550",
+    "id": "5ca53f65-1529-4dd9-968c-252cb02994d7",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -15891,6 +16681,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15900,7 +16691,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc8bd3ad-c02a-4e0f-b544-6c70ea702618",
+    "id": "1e907c55-82ed-4b28-af81-e8e7de475669",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -15910,6 +16701,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15919,7 +16711,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d81dacc-67e8-4777-b019-971857582e86",
+    "id": "36a42ca6-1957-4167-87a3-6224ba08e92f",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -15929,6 +16721,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15938,7 +16731,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ea9db25-b68a-4318-bffa-ffaa80ad49c5",
+    "id": "341e20ea-d083-4a83-a044-1392cc41d1fd",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -15948,6 +16741,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15957,7 +16751,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5a92e11-1221-4753-b2cf-64d0f131b0a1",
+    "id": "29797ed3-f174-43c2-ba89-9cd31bac932a",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -15967,6 +16761,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -15976,7 +16771,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19dfb3b6-81e1-43c9-b931-556fada4cb9b",
+    "id": "82ae556a-9528-497d-9136-f86a5fc7cc51",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -15986,6 +16781,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -15995,7 +16791,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10dc76bb-b982-4623-86e8-4955bc054d6b",
+    "id": "34ce9377-87d8-4870-bd0b-b6f271ea8021",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -16005,6 +16801,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -16014,7 +16811,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8979a45b-2da8-485a-95b8-f14c02ae24ab",
+    "id": "3c76e08a-1991-4708-8699-5e3304ac4f53",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -16024,6 +16821,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16033,7 +16831,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "495da2e2-ea53-4765-b2da-08cb43101f55",
+    "id": "99ff2d04-109c-48aa-98a1-64cd1e64deef",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -16043,6 +16841,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16052,7 +16851,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3369ea8e-1bed-4e14-bcc2-eb3e4918985b",
+    "id": "2582750d-a79c-44bc-ae72-42884e431a6d",
     "codigo": "4.2.01.02.0054",
     "descricao": "RATEIO MANUTENCAO PREDIAL",
     "tipo": "C",
@@ -16062,6 +16861,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16071,7 +16871,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73ef825b-c34c-450b-9311-6723da165c3b",
+    "id": "2961629f-c89f-462c-a271-e2df44f73da2",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -16081,6 +16881,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -16090,7 +16891,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a954ce0-074e-45c3-9f1f-72df85ca4cf8",
+    "id": "1e87da50-8b5c-4b10-a1f4-5104a4fc3ba7",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -16100,6 +16901,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16109,7 +16911,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e6d24c0-8c8f-46e1-8c71-543da4ba87ec",
+    "id": "eac50b37-9158-473b-9df7-7fc7ffe8243c",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -16119,6 +16921,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "VERA CRUZ - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -16128,7 +16931,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "851eaddc-980a-42d5-a8fb-deb3f8b174b4",
+    "id": "66f7fbaa-a882-4e02-8a30-f79c702a9afd",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -16138,6 +16941,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16147,7 +16951,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c54a30c7-e81c-4483-aa34-93d1174d0558",
+    "id": "c4c5f051-c3aa-4bf6-a19b-39f7231c0ec1",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -16157,6 +16961,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "PORTEIRAS - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -16166,7 +16971,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aac0117a-9efa-4038-b396-e97b1651bc72",
+    "id": "2769e6d9-65e9-4b02-9f92-05891ad048ad",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -16176,6 +16981,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
@@ -16185,7 +16991,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c69df87-57e3-444b-98a1-8d1f22662069",
+    "id": "0793ce5b-3218-4794-ab58-24b64bb2e94a",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16195,6 +17001,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "ESPLANADA SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
@@ -16204,7 +17011,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35530548-c1a1-44ac-b1a1-4b19de991c96",
+    "id": "814f8f99-8242-415a-aec8-982a070626b2",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16214,6 +17021,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "COVOA - SERINGAL",
     "centroCusto": "RATEIO SERINGAL",
     "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
@@ -16223,7 +17031,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3635580-8db1-401f-8762-5d33969880a0",
+    "id": "c374ef5f-9627-4e2e-81b4-3f3b098d08e1",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -16233,6 +17041,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "departamento": "CONFINAMENTO",
     "centroCusto": "RATEIO CONFINAMENTO",
     "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
     "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "PECUÁRIA",
