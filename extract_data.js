@@ -124,10 +124,36 @@ function mapAtividadeByDivisao(divisao) {
   return null;
 }
 
+const DESPESAS_FINANCEIRAS = [
+  '3.4.04.01.0001', '3.4.04.01.0002', '3.4.04.01.0003', '3.4.04.01.0004',
+  '3.4.04.01.0005', '3.4.04.01.0006', '3.4.04.01.0007', '3.4.04.01.0008',
+  '3.4.04.01.0009', '3.4.04.01.0010', '3.4.04.01.0011', '3.4.04.01.0012',
+  '3.4.04.01.0013', '3.4.04.01.0019', '3.4.04.01.0020', '3.4.04.01.0021',
+  '3.4.04.01.0022', '3.4.04.01.0023', '3.4.04.01.0024'
+];
+
+const RECEITAS_FINANCEIRAS = [
+  '3.4.04.05.0001', '3.4.04.05.0002', '3.4.04.05.0003', '3.4.04.05.0004',
+  '3.4.04.05.0005', '3.4.04.05.0006', '3.4.04.05.0007', '3.4.04.05.0008',
+  '3.4.04.05.0009', '3.4.04.05.0010', '3.4.04.05.0011', '3.4.04.05.0012',
+  '3.4.04.05.0013', '3.4.04.05.0020', '3.4.04.05.0021', '3.4.04.05.0022',
+  '3.4.04.05.0023'
+];
+
+function isEncargoFinanceiro(conta) {
+  const c = conta.trim();
+  return DESPESAS_FINANCEIRAS.includes(c) || RECEITAS_FINANCEIRAS.includes(c);
+}
+
 function mapAtividade(row, departmentMapping, costCenterMapping, conta) {
   const depto = getValue(row, 'NOMEDEPTO') ? String(getValue(row, 'NOMEDEPTO')).trim() : '';
   const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
   const divisaoRaw = getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')).trim() : '';
+
+  // 0. Verificação de Encargos Financeiros (Prioridade Máxima)
+  if (conta && isEncargoFinanceiro(conta)) {
+    return { atividade: 'ENCARGOS', divisao: 'ENCARGOS FINANCEIROS' };
+  }
 
   // 1. Regras de Receitas (Prioridade Máxima)
   if (conta) {
