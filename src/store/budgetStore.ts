@@ -148,18 +148,18 @@ export function calculateReceitasFinanceirasTotals(accounts: AccountEntry[]) {
   return { orc, real, diff: orc - real };
 }
 
-// Função para calcular totais gerais de Encargos (Despesas - Receitas)
+// Função para calcular totais gerais de Encargos (Despesas + Receitas - valor bruto)
 export function calculateEncargosTotals(accounts: AccountEntry[]) {
   const despesas = calculateDespesasFinanceirasTotals(accounts);
   const receitas = calculateReceitasFinanceirasTotals(accounts);
-  
+
   return {
     despesas,
     receitas,
     total: {
-      orc: despesas.orc - receitas.orc,
-      real: despesas.real - receitas.real,
-      diff: (despesas.orc - receitas.orc) - (despesas.real - receitas.real)
+      orc: despesas.orc + receitas.orc,
+      real: despesas.real + receitas.real,
+      diff: (despesas.orc + receitas.orc) - (despesas.real + receitas.real)
     }
   };
 }
