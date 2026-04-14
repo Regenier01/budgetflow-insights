@@ -45,6 +45,7 @@ export function AnalyticalTable({
   if (entryFilter) filtered = filtered.filter(entryFilter);
 
   const root = new Map<string, Node>();
+  const hasDeptOrCCFilter = Boolean(departmentFilter || costCenterFilter);
 
   filtered.forEach(a => {
     const orc = selectedMonth === 'all' 
@@ -62,8 +63,9 @@ export function AnalyticalTable({
       const prefix = a.codigo.split('.').slice(0, 3).join('.');
       n9 = `${prefix} - ${n9}`;
     }
-    
-    const desc = a.descricao || 'Sem Descrição';
+
+    // Quando há filtro de departamento ou centro de custo, incluir o código da conta na hierarquia
+    const conta = hasDeptOrCCFilter ? `${a.codigo} - ${a.descricao || 'Sem Descrição'}` : (a.descricao || 'Sem Descrição');
     const prod = a.nomeProduto || 'Diversos';
 
     if (!root.has(n9)) root.set(n9, { name: n9, orc: 0, real: 0, children: new Map() });
@@ -71,13 +73,13 @@ export function AnalyticalTable({
     nodeN9.orc += orc;
     nodeN9.real += real;
 
-    if (!nodeN9.children.has(desc)) nodeN9.children.set(desc, { name: desc, orc: 0, real: 0, children: new Map() });
-    const nodeDesc = nodeN9.children.get(desc)!;
-    nodeDesc.orc += orc;
-    nodeDesc.real += real;
+    if (!nodeN9.children.has(conta)) nodeN9.children.set(conta, { name: conta, orc: 0, real: 0, children: new Map() });
+    const nodeConta = nodeN9.children.get(conta)!;
+    nodeConta.orc += orc;
+    nodeConta.real += real;
 
-    if (!nodeDesc.children.has(prod)) nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
-    const nodeProd = nodeDesc.children.get(prod)!;
+    if (!nodeConta.children.has(prod)) nodeConta.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
+    const nodeProd = nodeConta.children.get(prod)!;
     nodeProd.orc += orc;
     nodeProd.real += real;
   });
