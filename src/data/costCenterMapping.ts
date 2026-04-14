@@ -443,6 +443,14 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
     "unidadeNegocio": "LAGUNA - GIRASSOL"
   },
+  "LEILAO DE TOUROS NELORE OL": {
+    "centroCusto": "LEILAO DE TOUROS NELORE OL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZA€AO DE TOUROS": {
+    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488": {
     "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
     "unidadeNegocio": "AGRÍCOLA - SORGO"
