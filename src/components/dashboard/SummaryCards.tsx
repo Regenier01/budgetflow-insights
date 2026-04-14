@@ -9,9 +9,10 @@ interface Props {
   atividadeFilter?: AtividadeKey;
   costCenterFilter?: string;
   departmentFilter?: string;
+  tipoFilter?: string[];
 }
 
-export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter, departmentFilter }: Props) {
+export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter, departmentFilter, tipoFilter }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
   const leafAccounts = accounts.filter(a => 
@@ -48,12 +49,16 @@ export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter,
       maximumFractionDigits: 0 
     }).format(v);
 
-  const cards = [
-    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald' },
-    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange' },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange' },
-    { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary' },
+  const allCards = [
+    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
+    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'red', tipo: 'D' },
+    { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
   ];
+
+  const cards = tipoFilter
+    ? allCards.filter(c => tipoFilter.includes(c.tipo) || c.tipo === 'RESULTADO')
+    : allCards;
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -69,8 +74,9 @@ export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter,
               </CardTitle>
               <div className={cn(
                 "p-2 rounded-lg bg-white/90",
-                c.color === 'emerald' ? "text-emerald-600" : 
-                c.color === 'orange' ? "text-orange-500" : "text-primary"
+                c.color === 'emerald' ? "text-emerald-600" :
+                c.color === 'orange' ? "text-orange-500" :
+                c.color === 'red' ? "text-red-500" : "text-primary"
               )}>
                 <c.icon className="h-4 w-4" />
               </div>

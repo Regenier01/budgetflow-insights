@@ -1,6 +1,6 @@
-import { ActivityCards } from '@/components/dashboard/ActivityCards';
+import { RevenueSummary } from '@/components/dashboard/RevenueSummary';
 import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
-import { LayoutDashboard, Info } from 'lucide-react';
+import { LayoutDashboard, DollarSign } from 'lucide-react';
 
 export default function Dashboard() {
   return (
@@ -21,7 +21,7 @@ export default function Dashboard() {
       <section className="space-y-6">
         <div className="flex items-center gap-3 px-1">
           <div className="h-6 w-1.5 bg-orange-500 rounded-full" />
-          <h2 className="text-xl font-black text-primary uppercase tracking-tight">Resumo por Atividade</h2>
+          <h2 className="text-xl font-black text-primary uppercase tracking-tight">CUSTOS</h2>
         </div>
         <GlobalSummary />
       </section>
@@ -29,15 +29,15 @@ export default function Dashboard() {
       <section className="space-y-8 pt-6">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-3">
-            <div className="h-6 w-1.5 bg-primary rounded-full" />
-            <h2 className="text-xl font-black text-primary uppercase tracking-tight">Tendências Mensais</h2>
+            <div className="h-6 w-1.5 bg-emerald-500 rounded-full" />
+            <h2 className="text-xl font-black text-primary uppercase tracking-tight">RECEITAS</h2>
           </div>
           <div className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase bg-white border border-slate-100 shadow-sm px-3 py-1.5 rounded-full">
-            <Info className="h-3.5 w-3.5 text-orange-500" />
+            <DollarSign className="h-3.5 w-3.5 text-emerald-500" />
             Orçado vs Realizado
           </div>
         </div>
-        <ActivityCards />
+        <RevenueSummary />
       </section>
     </div>
   );

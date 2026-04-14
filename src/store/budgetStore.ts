@@ -164,6 +164,37 @@ export function calculateEncargosTotals(accounts: AccountEntry[]) {
   };
 }
 
+// Função para calcular totais de Receitas por Atividade
+export function calculateRevenueByAtividade(accounts: AccountEntry[], atividade: AtividadeKey) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a =>
+    a.atividade === atividade &&
+    a.nivel === 5 &&
+    a.tipo === 'R'
+  );
+  filtered.forEach(a => {
+    orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+    real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+  });
+  return { orc, real, diff: real - orc };
+}
+
+// Função para calcular totais consolidados de Receitas (todas as atividades)
+export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(a =>
+    a.nivel === 5 &&
+    a.tipo === 'R'
+  );
+  filtered.forEach(a => {
+    orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+    real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+  });
+  return { orc, real, diff: real - orc };
+}
+
 interface BudgetState {
   accounts: AccountEntry[];
   uploads: UploadRecord[];

@@ -2,7 +2,18 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "2d6c7c73-e30f-4214-a8cc-5a6dd84055b4",
+    "id": "9f765098-e996-4afb-a8ae-3fbeb2c34035",
+    "codigo": "3",
+    "descricao": "3",
+    "tipo": "R",
+    "codigoPai": null,
+    "nivel": 1,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "202a2b77-275a-4651-a85a-ab0ff0fb6de4",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -13,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e14bf77b-a08a-4593-a613-6c52710f1462",
+    "id": "0d414bed-94ec-4e07-a0a8-44848e9141b5",
     "codigo": "3",
     "descricao": "3",
     "tipo": "R",
@@ -24,7 +35,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6d79b723-54f7-4a26-9b4a-12b7bb9e4583",
+    "id": "ec054785-5aed-47b9-9a20-eca311f06232",
+    "codigo": "3.1",
+    "descricao": "3.1",
+    "tipo": "R",
+    "codigoPai": "3",
+    "nivel": 2,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "2787e492-391c-4fcb-87a2-fdcd6a8b4925",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -35,7 +57,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4ae787b8-4769-432c-8c57-e99131da99a6",
+    "id": "c826b679-c3fd-4094-a1f2-c7311534d67f",
     "codigo": "3.1",
     "descricao": "3.1",
     "tipo": "R",
@@ -46,7 +68,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5dd140c5-802a-4c2f-8101-c9a6f83da741",
+    "id": "c6fdccfa-a144-49ed-85e2-63e0ef0b1ff1",
     "codigo": "3.1.01",
     "descricao": "3.1.01",
     "tipo": "R",
@@ -57,7 +79,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "77a3c118-9bfb-4faf-a3b6-d6fb252085f5",
+    "id": "169a5dfe-6254-46df-8dfb-83cfc8b87933",
     "codigo": "3.1.01.01",
     "descricao": "3.1.01.01",
     "tipo": "R",
@@ -68,7 +90,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "617855be-3312-4e32-9a1d-66b45929c889",
+    "id": "49fe9b24-bae5-4804-8e84-019235d3c8c6",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -88,7 +110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80a62ad1-9aa5-471c-8ac5-634191529cb5",
+    "id": "a13aec21-fde2-4c4b-96c7-50238fb5f47f",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -108,7 +130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34c7d9b3-7023-496d-a75b-9d9997940a07",
+    "id": "59b231ea-30ff-4b59-b0b3-31e3de791ad1",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -128,7 +150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cabe01d9-2596-4cc0-bb7c-66b879eef012",
+    "id": "a0e76d1e-9ee2-4c30-a1f2-477c847eb066",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -148,7 +170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1555d1e-3de0-4bc9-8e2e-24a7d0e9d2c1",
+    "id": "fdb8a1e3-ab89-4400-ba90-dda4d84f050a",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -168,7 +190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e796f54-0021-4e5f-8563-6956facd69f7",
+    "id": "4cbb411b-b7a6-4720-b96d-dccb6b8f948b",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -188,7 +210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b254230-a882-4206-841f-fdc7e1d35bcb",
+    "id": "2e1204dc-e0b5-4970-8305-b120fef3005a",
     "codigo": "3.1.01.01.0001",
     "descricao": "VENDA DE BOVINOS",
     "tipo": "R",
@@ -208,7 +230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "820e2c2c-ad1c-4a66-8a27-9c4f1199ccf5",
+    "id": "5dd22b6e-df19-47cf-b081-ca28c6af741e",
     "codigo": "3.1.01.01.0002",
     "descricao": "VENDA DE MATRIZES",
     "tipo": "R",
@@ -228,7 +250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df654502-61a1-4d12-9016-0e952e9d33f5",
+    "id": "fd1826f4-1200-4c87-8d7a-7985cb7dcd95",
     "codigo": "3.1.01.01.0003",
     "descricao": "VENDA DE TOUROS REPRODUTORES",
     "tipo": "R",
@@ -248,7 +270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3d708e4-06ef-4c35-a2ba-75dab7a74bb8",
+    "id": "baaa8169-7be2-4209-869e-3355758ff3e6",
     "codigo": "3.1.01.01.0003",
     "descricao": "VENDA DE TOUROS REPRODUTORES",
     "tipo": "R",
@@ -268,7 +290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b14875ba-17ac-4c0d-9a8d-743c15bf185f",
+    "id": "fe43a370-c14f-4574-8098-575d06306207",
     "codigo": "3.1.01.01.0017",
     "descricao": "VENDA DE SEMEM BOVINO",
     "tipo": "R",
@@ -288,7 +310,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87231ab7-2b2a-45cc-8001-3e7d3f898373",
+    "id": "fd63a191-feb1-4201-b4cf-fc3b51f5f591",
+    "codigo": "3.1.02",
+    "descricao": "3.1.02",
+    "tipo": "R",
+    "codigoPai": "3.1",
+    "nivel": 3,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "d8e98ea2-c561-442e-b578-d55df7822085",
     "codigo": "3.1.02",
     "descricao": "3.1.02",
     "tipo": "R",
@@ -299,7 +332,58 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ce098c7e-2252-43cb-9012-edb0d34f1c74",
+    "id": "6897ebf1-f218-4b09-9328-86bafda4c23c",
+    "codigo": "3.1.02.01",
+    "descricao": "3.1.02.01",
+    "tipo": "R",
+    "codigoPai": "3.1.02",
+    "nivel": 4,
+    "atividade": "AGRICOLA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "41d672f9-aa3a-423b-a4b7-44d3aed9d9f4",
+    "codigo": "3.1.02.01.0005",
+    "descricao": "VENDA DE SOJA",
+    "tipo": "R",
+    "codigoPai": "3.1.02.01",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAGUNA",
+    "centroCusto": "ÁREAS PRODUTIVAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.1.02.01-VENDA DE GRAOS",
+    "nomeProduto": "SOJA EM GRAOS INDUSTRIAL",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -613244
+    }
+  },
+  {
+    "id": "4145fe8d-be28-48fd-ab43-3e55dcad5789",
+    "codigo": "3.1.02.01.0005",
+    "descricao": "VENDA DE SOJA",
+    "tipo": "R",
+    "codigoPai": "3.1.02.01",
+    "nivel": 5,
+    "atividade": "AGRICOLA",
+    "departamento": "LAVRINHA SLN - SOJA",
+    "centroCusto": "ÁREAS PRODUTIVAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.1.02.01-VENDA DE GRAOS",
+    "nomeProduto": "SOJA EM GRAOS INDUSTRIAL",
+    "divisao": "AGRÍCOLA",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1155000
+    }
+  },
+  {
+    "id": "fd54941d-4586-4d58-81c4-6f1af52ec696",
     "codigo": "3.1.02.03",
     "descricao": "3.1.02.03",
     "tipo": "R",
@@ -310,7 +394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c4e9026e-bd70-490f-a2a5-df020e1cb586",
+    "id": "a4a08313-59dc-47b6-8ab7-6e835beb9186",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -330,7 +414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5b52831-a5cd-4252-8730-482f16374755",
+    "id": "24643468-c473-45a0-88a2-c969c6698e42",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -350,7 +434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36ce93e7-459a-4e96-ada9-854af691a986",
+    "id": "ac01a511-c39b-48f6-9f46-59ee29bd3220",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -370,7 +454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30103733-a17e-400d-b085-bebe05d5aa8f",
+    "id": "590f9848-9d8c-40aa-9b8e-ffca536fd0d7",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -390,7 +474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2012c13c-68d3-4d67-8d5c-88261fc21d66",
+    "id": "bedba3f2-3926-4d0c-9ce8-d74f48353def",
     "codigo": "3.1.02.03.0001",
     "descricao": "VENDA DE LATEX",
     "tipo": "R",
@@ -410,7 +494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "068382d3-9d1b-4832-b5fe-2cd602374ba0",
+    "id": "5f92fbba-7b99-467f-ba3e-0d38096e4472",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -421,7 +505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "92bb3fda-3e50-45a0-9466-e9ef59c58705",
+    "id": "bb1a4e8e-6220-4ef3-a1da-f52ee5adaeb3",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -432,7 +516,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c5b5d4a4-d589-499e-bde9-161127ff7a0b",
+    "id": "687f73c2-ce31-43eb-8c4e-b9961197db40",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -443,7 +527,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "9831e57b-2b3e-47eb-8076-f8f776499e45",
+    "id": "8996215a-dc20-454f-9dbc-be784cdb9982",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -454,7 +538,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "16bf9a43-f2f2-4c5f-a046-8d6351f25b7a",
+    "id": "1de03243-d337-4113-849b-e3f8cacc1e1a",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -465,7 +549,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8c8a4c5e-fa69-4ec4-86f1-4441503d0731",
+    "id": "2f110b38-db44-4aba-8111-15e39000525f",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -476,7 +560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a041aa03-73a2-4439-9e71-c81d6d418f54",
+    "id": "cd3216f9-cee5-46c8-b3da-71660ecf821b",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -487,7 +571,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7e7e6543-044c-4b4f-b447-5195b543d327",
+    "id": "06641b13-defd-4cfe-9d10-3b56a767bc35",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -498,7 +582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e8571a9e-fd5d-48ff-864e-945d83bd255e",
+    "id": "956771ad-649c-4e56-a53e-9c7c12877fc5",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -509,7 +593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "edd9a356-74c8-48d5-af47-dc26cb10fecd",
+    "id": "8fa4a25e-2c2f-4392-ad79-1f274ab6665b",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -520,7 +604,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "eb1c15bb-932d-428a-a6ff-c3e5a2b158ef",
+    "id": "277c25ec-45a9-4fe4-aeeb-5cba3bb58788",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -531,7 +615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7aec1f9b-6114-4159-b867-6bcbf55ff52e",
+    "id": "015b2bc1-226b-41af-a87b-14c3e33b00a1",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -551,7 +635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c15c8474-5cfe-4a1a-a8d3-f10c80b0050d",
+    "id": "471f1d4a-0689-4929-b8e8-102440e7f27e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -571,7 +655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98fd44bc-0afa-483a-af5d-72883a494b46",
+    "id": "be199dcb-5ab0-4332-8e5e-837a73955732",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -591,7 +675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c82dc84-ae32-415e-882f-6a31e34a1f30",
+    "id": "9c6924c8-ba72-4a5f-afe8-ff54f371cb42",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -611,7 +695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92e721bc-3ec9-42f9-b101-e1cb3c0eec5f",
+    "id": "3c6d154b-87a0-4552-979a-de6b6577c4cd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -631,7 +715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4eb02786-d07f-40d6-9cdd-b63539b141a5",
+    "id": "c3fb5f7e-f8d4-486f-8c3b-67e5afa43310",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -651,7 +735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54eb17a9-d02f-4ef3-b3f8-524522042fa6",
+    "id": "12e54b5a-4d27-4fd5-9706-106b8078dd0c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -671,7 +755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6844d9ae-8adb-4d1c-a38e-dfab754a2774",
+    "id": "d1e1aca7-5bca-4607-8bcd-f74d2ac4211b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -691,7 +775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64d14b1b-355b-4a75-8b31-79acf5ca45b5",
+    "id": "6a8552e7-09ab-4dc1-8db5-6f1405140cf7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -711,7 +795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42e22f0e-5205-4a33-ba02-0c6dcc3e48ec",
+    "id": "81881cde-8e32-4579-b616-bb262611575d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -731,7 +815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e0933e2-80ce-44ce-a707-6d00a844e2d5",
+    "id": "b1ac8d70-19a0-4adf-bcec-b4d59d0168fe",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -751,7 +835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0df75c07-62e4-4e07-b2b8-64df46b624c8",
+    "id": "dd703726-5da3-4582-b40c-1780c5192843",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -771,7 +855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7649cb6e-8445-40f8-b284-655aff22401d",
+    "id": "b6a2e6c3-ed48-4885-930a-36e99cec291f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -791,7 +875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11f329f2-46e3-4103-947a-d4a2f48aaf14",
+    "id": "b5e77488-70f3-47be-b640-8d0fd769c5a3",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -811,7 +895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e21be83-03be-4616-b517-6cee0cecf9e0",
+    "id": "d56d8a85-a47c-4fb6-a642-257a245fdb23",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -831,7 +915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5b93783-8dd7-4562-ab93-57a7d4614283",
+    "id": "559beec7-acd4-480b-88e8-d2da744c7615",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -851,7 +935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57ace6c6-374d-44ab-a649-526b74bcad3f",
+    "id": "e7abf9fc-5f57-4390-8d0d-3920b417793f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -871,7 +955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cce32500-7076-4f1c-9a41-1ba43834ebac",
+    "id": "9bd89721-8916-478c-bb65-eda68ec159cf",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -891,7 +975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "926e9505-1f11-41c7-ae19-467cd2bfa2d6",
+    "id": "c24d9978-a838-41ec-9251-d83609996c1b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -911,7 +995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a612cc38-4364-4b1a-b131-a33fba822b19",
+    "id": "0aa0e0c3-d783-42a3-8632-a36df3f6fe30",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -931,7 +1015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01cba87c-ecb7-4df7-8c32-dd7c3bae356e",
+    "id": "372790f4-5e77-4b71-a2eb-233065b33ec6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -951,7 +1035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf6388cd-b7b6-4ce5-8d7a-e19c61e1df70",
+    "id": "d9fa0a94-c272-4d3c-bf00-dddd86b91b86",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -971,7 +1055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2635d7af-0937-4965-abc4-4c9ee620223c",
+    "id": "12985586-e08c-4b05-9b77-edaf098f9d51",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -991,7 +1075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3a109d9-e3e2-40ba-9b05-c4eed9a2fd56",
+    "id": "b26d0331-e958-4bf8-9906-3ba0f7011383",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1011,7 +1095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e26dcdaf-f048-42df-bb61-273bbc9841e7",
+    "id": "cb8dff39-78ec-46ef-a792-e53ef0fd604c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1031,7 +1115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82690f8d-827f-4a6e-a65d-b8148a0bce7b",
+    "id": "68d9dfa2-c196-4ab0-9a91-b1ad398dec3c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1051,7 +1135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b22ac6a-34c2-48ea-a42c-0ffa27f19803",
+    "id": "6460bab6-bfba-46f2-ac07-3fcf153a7363",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1071,7 +1155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10d5f56d-455c-40e4-acd8-8c77b7fbfa95",
+    "id": "3e65026f-e50a-44ba-a927-ce7eee9b4517",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1091,7 +1175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34a046bb-b08d-403c-b38b-83b4afcc9ab9",
+    "id": "ca9895ae-aa7f-4114-8b00-d1d75901e0cd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1111,7 +1195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e8c373d-3047-4ffb-9c54-e675e6ebfc92",
+    "id": "a4bfd19b-f735-49c1-9537-5c0525cca3b7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1131,7 +1215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "060ef50a-d559-4dc6-8e1d-c9cdc6498d59",
+    "id": "74b0c3c0-c47a-48bd-9525-d8c81b82ccf9",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1151,7 +1235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "262e40a2-d559-4064-b8b8-4486916e9166",
+    "id": "62540ee3-eafe-49e1-b925-89dbdad34164",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1171,7 +1255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "159e98f4-4703-439b-a2c3-62381f4bf978",
+    "id": "bbfeaeda-8dab-4efd-bf54-c51903c58583",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1191,7 +1275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "616dff58-61d1-40fd-8a72-069c2374204b",
+    "id": "eacaaf61-7d63-4011-8400-8f1d267b8f13",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1211,7 +1295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4e11e89-bf3c-4af2-b725-3542083eab4d",
+    "id": "525493ca-0f1d-4e7b-9aaf-60ebc7075b27",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1231,7 +1315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd09075c-37c0-45ea-a2db-83254c767fc2",
+    "id": "4b468dc9-ba6a-44d7-936d-365d56cab2ad",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1251,7 +1335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66d0cb99-14a9-44e0-a15a-45cbb190d3d0",
+    "id": "82ecdb00-ec65-4503-9a82-9da9664d3623",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1271,7 +1355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2681a0bb-8e24-4f17-b4bf-bd38a0c25f16",
+    "id": "16425fc1-4f16-46a0-914c-59da1815f2a8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1291,7 +1375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e61573b2-7a3c-4533-be2a-20925c17a4d4",
+    "id": "2242b32f-1754-41d4-b11a-eb2349020f94",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1311,7 +1395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4131670-579c-43c4-849a-3370f87ed039",
+    "id": "75442553-e96f-4ec2-b074-6c3cf0c894aa",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1331,7 +1415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fac90ddb-980a-43aa-b512-c27e9fe77265",
+    "id": "cd231065-e64d-435e-9415-099783a86065",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1351,7 +1435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dad88a8c-0900-4899-85bf-ad95db3495d3",
+    "id": "8df404e3-31e5-46a7-828c-8c97056bd865",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1371,7 +1455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae8a203a-b4a2-427f-ba2b-8210ab044428",
+    "id": "828e5e6d-3a68-44b9-b8cc-714672afaa2e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1391,7 +1475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93821c43-4af2-4ff7-8a33-34e9201ed34c",
+    "id": "2896ddd8-4ed8-4e7f-b93a-e50234db9103",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1411,7 +1495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fee55a06-597c-46bf-9aef-8e83ccb332bf",
+    "id": "20075acf-95e2-4987-afed-d8c2e543b1d7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1431,7 +1515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e652164e-d141-4076-8f9f-f04e5148a857",
+    "id": "dccb2d90-5f12-4a61-bb40-6dcca5565f4c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1451,7 +1535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "81eaf551-e1fa-46f0-9ada-50e76bb90b4f",
+    "id": "53a8b2f2-6914-42cf-bc5e-5203b42de1bf",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1471,7 +1555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db5e6423-455f-496f-9094-21dad6c72950",
+    "id": "564e8159-d18d-4c9b-ae6a-0f5e342dfacd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1491,7 +1575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aba08458-a38b-4008-8a11-d3b29ae21043",
+    "id": "3f563307-4445-449e-b835-62f3772d6d19",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1511,7 +1595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9582f7d9-4695-4380-88df-527d3046c452",
+    "id": "3f438000-1475-4c96-bffb-515d35c20712",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1531,7 +1615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "057dd116-957f-4cf7-b1e4-3b0f519bcaa8",
+    "id": "c3a8ee08-b184-4225-9423-e217c8bef451",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1551,7 +1635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16f9ce6c-d33d-489c-9799-075cc984b902",
+    "id": "5e10c822-48f5-4eec-87a3-f8d2f6a8feea",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1571,7 +1655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1095769-8f58-493b-a09f-cd3cd79dec26",
+    "id": "86a49d1e-7003-4cbc-aafe-484981303c85",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1591,7 +1675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fae1bc6-b119-401b-8213-249eb080973c",
+    "id": "2bbd00f5-913f-4937-9ffb-d2d7fbe684e0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1611,7 +1695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f70bafc4-767e-4bf7-a9cb-b689dabbfbf7",
+    "id": "1e9e3237-65c9-4859-bc75-dde828e7d5fc",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1631,7 +1715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7cdfb7e-f6a7-4dfb-afbc-f20eb9f4e5e0",
+    "id": "10da1f92-1f9a-4324-853b-bfb82d6a3775",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1651,7 +1735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0368731d-bdd1-415d-831d-bd65d995303e",
+    "id": "497ae75d-def9-4530-9efe-3e08657b6b6f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1671,7 +1755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61a6b16c-b4bb-4ff6-817d-2b9088161901",
+    "id": "3acee06d-8dbd-4932-8c3c-7bdfb682493e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1691,7 +1775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87ac89f5-0a5b-40db-ab53-08f7e5b04864",
+    "id": "83cf922f-fd96-427e-be18-f0b3838e588d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1711,7 +1795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fdc48d4e-10ce-4c07-937f-a6faa56985ee",
+    "id": "f6a3f5f8-d795-4bac-aae1-9dad4ce48507",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1731,7 +1815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f8326e6-b0ed-4bcf-8d86-18c02958e620",
+    "id": "b3f104ed-509c-4cca-8583-2159ee61ff73",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1751,7 +1835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54ec2241-4452-42e8-8891-a1f966ad9b21",
+    "id": "684dbac7-c083-4999-adb1-cb242ee2916a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1771,7 +1855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a60ae2c3-0440-4d2f-886d-4d4dba1a2d77",
+    "id": "20cbbdf3-93b0-47c9-b560-d1f7318d0346",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1791,7 +1875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8050235-fbde-44da-947d-6b95b8eaa342",
+    "id": "6c53361d-0b04-4429-9c49-440433d0c8dd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1811,7 +1895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e3cd344-563d-44e8-95c8-774ea71fe1b5",
+    "id": "fbe6a92f-e7f3-4f2b-bf29-c01cae92d453",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1831,7 +1915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2758cba0-8e4e-43f9-8f88-7423cb571bf2",
+    "id": "840f13ac-b0e4-448d-aad3-bdcf92e34690",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1851,7 +1935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfff5c08-41f4-437a-ad35-d29f7e0823c2",
+    "id": "6ca368bf-2d12-4dca-b918-8ea512625c77",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1871,7 +1955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba856499-bcf7-4b92-80c9-5a728dc55f5f",
+    "id": "b2705940-c092-4b0a-8832-21fd2a80a4d6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1891,7 +1975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26fb58e5-a1d3-4177-b788-a711f3eccc4a",
+    "id": "89c830a9-2386-4875-9654-a40095e06fb2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1911,7 +1995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dad9b9c8-9ee1-4429-9ec9-e523914385e2",
+    "id": "4ecebbba-1526-47cf-ac9d-8587506665f0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1931,7 +2015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87f5d894-30a9-4ca6-9a88-228879692559",
+    "id": "5db7529c-ad67-49d5-95de-b8e2b9e818a6",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1951,7 +2035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dcf044b0-8d81-45eb-8f99-3bf5674fa2fb",
+    "id": "2b0a44c2-d889-4565-9efe-2d46ab4ad864",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1971,7 +2055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec445b18-1d4e-4127-b59b-5d158c8b4e72",
+    "id": "730606dd-e231-433f-939c-82ee5e838b39",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -1991,7 +2075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2272966c-3299-4557-b600-d29bcadc96ad",
+    "id": "d1ebb745-eb73-489d-be36-40948e1d6043",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2011,7 +2095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fca7dd0-969f-4213-b29c-6e8e2e566554",
+    "id": "01789ca6-0e20-4a03-8166-8f48f4def5b5",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2031,7 +2115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a40da12-b36e-455d-b68d-95094ecefd18",
+    "id": "dba79076-3d46-4118-a53f-4a3adbd712b9",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2051,7 +2135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "944831c8-8e79-497c-9fba-05b6095e2460",
+    "id": "ee41fe55-bb10-427a-b0c7-b65781b8bab7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2071,7 +2155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d60896ca-c51e-4cf9-b449-4ae58bdce54a",
+    "id": "59f5a950-a811-491f-9d47-d0b77575646d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2091,7 +2175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20dd1ea5-ffa0-4e6a-92ec-14c9aeb4d515",
+    "id": "03a1b0b5-64d9-40d8-9d7e-6bf417405fa9",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2111,7 +2195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82a4747e-fba7-4bd9-93b2-a532fb8a4798",
+    "id": "3c1a858a-b41c-45bc-a59d-00d12f4ba8c7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2131,7 +2215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7685cf2d-9a4c-41be-848a-1b29426e4362",
+    "id": "a0665c65-c552-4ed5-92d5-d95431b405e8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2151,7 +2235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98755801-c394-40eb-8ef6-865dc48e79d7",
+    "id": "f4c064b9-581b-45eb-af51-9903375f55dd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2171,7 +2255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e74b8d0-8ad5-44e6-8744-c59fd7dd541f",
+    "id": "f8aadb96-1ecb-476e-91b2-740d2d951f97",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2191,7 +2275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2aad1bb0-3d99-4797-860e-c66efc78d734",
+    "id": "65582795-e9e6-4bb5-b75f-62b1df8afc2b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2211,7 +2295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df63d3e5-effe-475f-8d76-0962e291c77c",
+    "id": "e687d01d-c88c-475e-8118-ec44cf3b7e1b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2231,7 +2315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b781ec21-ad3e-4db9-b31d-f4f04ab366ba",
+    "id": "91db0ef5-0a61-4cda-8671-571b7f7c8f23",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2251,7 +2335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf77a999-a2ad-4625-b875-5b00689dbb66",
+    "id": "211c800f-4938-4fe8-b661-88b668c07a1c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2271,7 +2355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e167c93f-0acb-4385-8aa5-a305d2e241d5",
+    "id": "b2de1e2d-1039-408c-8bb7-7075bcbeac83",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2291,7 +2375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b16fa53f-4e75-4065-9363-259852066df4",
+    "id": "47e8d9e2-151d-4b0b-a463-791b9cfd85a8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2311,7 +2395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "712e5af2-6c3c-4cbd-b8ed-983400cb1087",
+    "id": "365bb7b9-d516-4267-bf59-a984d6467482",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2331,7 +2415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed3d57ae-9858-4efe-baaa-d94a4fbcaf9d",
+    "id": "a7417da2-2307-462a-9c02-2b13b2bc473d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2351,7 +2435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d99456e3-0e4f-4e2e-91ac-3dc536a16e58",
+    "id": "ff29f4e1-4453-4978-a76a-1dacd82c50ab",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2371,7 +2455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47d1eae3-9711-48ed-9aa7-de0a36ab7479",
+    "id": "bb29023b-8abe-48d8-88a7-7207301fc617",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2391,7 +2475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "963b4845-8794-497a-a0dc-08104b82193b",
+    "id": "b970b727-0b9c-44d0-b2de-7724a5196e53",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2411,7 +2495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9efc28de-a6ae-4cbf-8899-814af0bc36a3",
+    "id": "4500b887-1765-4398-97d4-fc80c9ab817f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2431,7 +2515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb4b830c-c0f1-4748-9d4f-0f8a03c540cf",
+    "id": "b670206a-e71d-4a6e-9fcd-5c639698bfa9",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2451,7 +2535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f495462-ae02-4ab8-8864-857c18d5c477",
+    "id": "d0c39f58-3829-40d6-9b45-e84eba48b4c7",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2471,7 +2555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52868571-5138-48aa-a80a-79180bf30119",
+    "id": "4740955a-5a93-417c-9373-c4f55ad4f609",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2491,7 +2575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d82bc52-e400-4f23-9e44-570c461a4c64",
+    "id": "8c995751-2f6e-4d32-afaa-ce52b8fe0bd3",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2511,7 +2595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0227c734-6d35-419b-b9c1-0a40a5b19b7d",
+    "id": "f1425951-2fa2-4072-9262-7783a9a7f068",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2531,7 +2615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1fbefcca-7ae6-4213-978a-2b36ad2e0988",
+    "id": "d9ab067e-6df7-4bbd-9b17-dc8e53893a1c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2551,7 +2635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b45d0105-845e-4feb-8a36-ba30d87e0c98",
+    "id": "a688ce0c-5919-4581-8c99-9450a551214b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2571,7 +2655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "019b59e7-00a8-4b94-a7cd-8202fe99376b",
+    "id": "67449471-1701-4e33-9e7c-715d611c70c3",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2591,7 +2675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23580b64-36ee-40fe-adfe-be5bbc3368a9",
+    "id": "bbd1ed7d-faa0-407f-aaf3-e78118b451e1",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2611,7 +2695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4627c90-4718-4c69-9c61-0147145ba79b",
+    "id": "a9e97110-cf5e-4b60-877e-df963154f936",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2631,7 +2715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "638c11c6-ac4b-4fdd-8bd5-943e03d6b923",
+    "id": "4624ee0a-3b15-48ba-9e95-655addd9b96c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2651,7 +2735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2e014de-d566-4644-9a5d-e13102d81a9b",
+    "id": "3cd3f547-8d5c-49a5-a1d5-def8702c638a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2671,7 +2755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a494234d-db43-440d-9b3b-3d212d2d1ad7",
+    "id": "9a0ea474-09c3-4a46-b8c5-37b8cb168c39",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2691,7 +2775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e2f72b1-2915-40fb-acc1-fae0178f09e0",
+    "id": "18abcba8-e2cf-417b-a95e-177ec5ce04cd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2711,7 +2795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18c97879-9e97-46ca-9275-067dba037849",
+    "id": "c3261159-defd-4e56-9f18-18eb136038e3",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2731,7 +2815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd220c68-8f7b-4eec-bcbd-96c1c83e8e2b",
+    "id": "13d8b1e6-ecbf-43ac-b8d8-1f4791a5496d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2751,7 +2835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5391eb17-573f-492e-9a12-05deee1827ba",
+    "id": "f89ec8b8-b04c-463b-baa4-404be693c29d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2771,7 +2855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a74752d4-bb86-4865-8f44-cd84f7d36708",
+    "id": "3186c4e9-ff7b-4e5c-a128-e78ebb2c71de",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2791,7 +2875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e03a2145-e6f3-4598-aeb2-88d1802c9340",
+    "id": "33d13c67-02e1-4cc2-a849-baac0f9a0961",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2811,7 +2895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "349c0455-f699-4a63-a05a-83ce96238fc8",
+    "id": "af85ec6d-43ec-4033-86e1-b862de13822b",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -2831,7 +2915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae5dfcef-2d02-4807-9fce-41fe4d280b65",
+    "id": "0ff32fca-e438-4858-ab46-d4511112ce1b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2851,7 +2935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b182ef6d-c1e8-4257-9123-078ee959626c",
+    "id": "b34a1ae0-2c19-48db-b3da-d0c93c81cfaa",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2871,7 +2955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3060fd0b-eb99-4d4e-816e-f7201e20a12f",
+    "id": "5e7a449c-f60a-4342-86c5-86ce4571a5c0",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2891,7 +2975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5cfc7958-5136-4fe9-a16b-cc4fc7ed7163",
+    "id": "42d66aca-93e9-45a3-b0a7-b2738f9b055c",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2911,7 +2995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4caa6381-ab1e-4649-8c03-1ce3a754455e",
+    "id": "c55633f4-0f2b-4f5a-85f2-8380ae9384ce",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2931,7 +3015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92444594-a42c-419b-b2b6-fd4630ea6182",
+    "id": "78641ddc-a790-424c-9217-40eea620097b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2951,7 +3035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e2f3e44-ea20-4812-9454-9670a5049935",
+    "id": "a2ca265b-a40f-419c-813e-02564d1a0f45",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2971,7 +3055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a387ef8-07fa-43c8-9639-1d41c5cc52cf",
+    "id": "51021135-b8e0-47f4-838d-a90ab5085592",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -2991,7 +3075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7ee674c-4c3f-4f59-a860-dd68342a9f55",
+    "id": "8ccabca6-f785-47cf-afb5-4be000f00d58",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3011,7 +3095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6ca53b6-a282-4b30-80a9-2b684f239bf6",
+    "id": "f87e12e4-2599-4482-a9be-e2c1a47a60b7",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3031,7 +3115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15388bbe-090b-4cb0-946b-02f926737655",
+    "id": "02e17fb9-bd60-49f6-8d13-13b7c044386c",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3051,7 +3135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f03b67f-4c54-474f-8a9a-fc221e3f88de",
+    "id": "4494d366-1ca1-432b-b159-4f9b71acddd6",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3071,7 +3155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed93506e-0c3b-475f-b3c1-2d2985a41d72",
+    "id": "747ca204-a9a0-4df7-a0d6-a9e2b6f5b61b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3091,7 +3175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8a20219-fd74-42f9-9d18-e68c32f4cb00",
+    "id": "1a858740-2f89-4b35-8e47-e012a581cf78",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3111,7 +3195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9d6c3e1-51d9-4607-a363-d5e14aea6fa7",
+    "id": "c2d8bf8e-3926-4eb3-982c-c34aca6b113b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3131,7 +3215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "515649b9-6b7a-4572-9ef9-ce371eb0cc32",
+    "id": "79ff7199-5cf1-4107-89b9-c4819d4ee47f",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3151,7 +3235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bac1003-5fcf-48db-8a9b-c90b875db975",
+    "id": "0ade774c-3afb-4b7e-b8a1-ee0b73704a8b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3171,7 +3255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8cff264-306e-4ce3-beab-62de080ee8b7",
+    "id": "6e66462f-c218-4b85-8a04-f6f06a17d370",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3191,7 +3275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b5c3e00-f449-4c1c-ae90-c5e602b34b23",
+    "id": "53e2bcd1-62e5-4200-9581-e04021bed988",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3211,7 +3295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7dba51d7-ebb9-4fd6-a06f-0cdfbd909df3",
+    "id": "a75102fd-032e-44cd-87f7-490d78fbe286",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3231,7 +3315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d92b529c-c4e1-434e-93a2-61c59d09995f",
+    "id": "58092c20-642e-4810-8f28-95ad5112be3d",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3251,7 +3335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "680469ba-0e6e-42ce-aeb8-c7627a6fc7e5",
+    "id": "0cccf4a2-4094-4d45-a881-635c95ec7f16",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3271,7 +3355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "738fa840-5617-4467-984f-c5eaf6031782",
+    "id": "d703fa22-5e1e-4068-a578-5b4e12575750",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3291,7 +3375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8806724-c7be-49d4-8287-886e7373f0d4",
+    "id": "33afe968-14bf-4658-b2a5-93cd9426fbab",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3311,7 +3395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a47c31ba-2b57-4c9e-92a7-392f7fea7dab",
+    "id": "4e83008b-1c07-4c81-a62f-a050b00b5146",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3331,7 +3415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3e0028a-a819-42a2-a1b5-3697a70e8f0b",
+    "id": "b0f04388-b877-4d4d-baf9-cc70870db1b0",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3351,7 +3435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01a5e7b6-a773-4ca8-a95a-260fe179186b",
+    "id": "dee2dfa4-ac27-4a0f-b1e2-313c04dc64c2",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3371,7 +3455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "098c8281-bdf8-43bb-a2ec-ba562a5d5623",
+    "id": "967592ff-346f-497f-abc6-0141e95a8e76",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3391,7 +3475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4afd9b2-a7e2-402c-ad1e-143a9f207b24",
+    "id": "d378e745-7638-4905-9d06-2005cae42f12",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3411,7 +3495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72a08687-694d-44ce-924f-a8ee98682736",
+    "id": "22f5cf4a-4a3a-4767-acad-51e0ea3ae3fd",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3431,7 +3515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b21567cf-b1fb-47b7-9fdf-1ca175fe60d5",
+    "id": "cdb9ad65-c47f-4730-923b-ea113cce3aa3",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3451,7 +3535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0e44d7d-3666-43a3-9406-d1145fdd390f",
+    "id": "e95b85fb-3bf7-4d7f-95d5-22bbb141ea72",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3471,7 +3555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abd4b735-c271-4431-9bc7-e1a3d7c45a69",
+    "id": "6d28c5fa-7e94-4a52-91cf-01c035144f53",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3491,7 +3575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8a79232-4e8d-40ea-8f1e-e6e094be973b",
+    "id": "bde160da-b6d8-4f30-bdfd-c399ed0c9c70",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -3511,7 +3595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6767e374-4fd3-4722-939c-12b4f1810f1d",
+    "id": "75b54738-4bd4-4e2f-8b5d-6dace00f3ab5",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3531,7 +3615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11c96b2e-493b-40da-95d6-98a7064502fb",
+    "id": "90d7547e-1f63-4ba9-9cf9-0c0ff3d86ef9",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3551,7 +3635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "643e5e68-02ce-48b5-abc3-9b872688437d",
+    "id": "a72d9216-cf12-4f9d-a70e-7a2707362df1",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3571,7 +3655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03414d82-92ad-43bf-966e-6dd3d32ec23f",
+    "id": "731e783c-de18-4faa-81a2-7e5dd3384614",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3591,7 +3675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b9fdd61-fe5d-4009-aa78-085df65aacd3",
+    "id": "c6cca376-56f6-452a-ae1a-a3a376878c3f",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3611,7 +3695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f6c7a79-d23a-48cb-92b5-0ba69c875224",
+    "id": "b34f565e-1ff3-4663-8e6b-0aa1fe15f512",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3631,7 +3715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c16cb54a-eef2-4009-8f76-98f5fb795739",
+    "id": "7bcdd7fa-77b3-4613-ba30-c21ce8c69bcd",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3651,7 +3735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11353baf-2b8b-49ed-a9a0-55446478924f",
+    "id": "d4f4c04b-c169-4f5a-a213-ad8034674c25",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3671,7 +3755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffe23ff9-0a52-4beb-b1f1-bb5b236b4973",
+    "id": "56794734-83d3-491d-b71d-20ff7f115d01",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3691,7 +3775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49a60093-9b65-4721-89a1-57dd4859cd8b",
+    "id": "a06b6593-2a33-44d4-b38e-6c8da503c53b",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3711,7 +3795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9be5d05d-112d-4c37-8bbc-9cbe624233c1",
+    "id": "8e2f367b-dda0-4bd0-9a3b-3653d4ad202c",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3731,7 +3815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41adddf3-62a7-462c-a2b3-8be4f752fcd9",
+    "id": "5a03d987-1d78-4975-9dcb-da03461af553",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3751,7 +3835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3be54b5-ae39-41d3-95bb-246472e5e211",
+    "id": "8a99b258-8508-4c00-ac34-cc9cbe029553",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3771,7 +3855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd1397fe-b5eb-4d51-a14a-d2eb237309ad",
+    "id": "77c2610a-926b-445a-bf41-690351a49ba3",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3791,7 +3875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c531547f-0a7c-42e2-8a9f-aa77987645cd",
+    "id": "4e280bd4-db28-453f-b175-aef55c1e35a0",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3811,7 +3895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dde51f09-480d-4604-b9d9-d28c6821fe88",
+    "id": "404ec93c-ea4f-47ac-845f-97b76446c99d",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3831,7 +3915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3eb1387-1151-46cd-9ed6-16cf5fe00b71",
+    "id": "cb1a271c-1826-471e-9f1e-d437b8c1eaf4",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3851,7 +3935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7051b0fa-684e-458e-a79b-fb4bc5501634",
+    "id": "79d28c27-5a1c-415f-85c7-152fdce9dad9",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3871,7 +3955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "12cf0133-b64a-4f9a-9648-29372a74dbdf",
+    "id": "05b251c9-ab91-4135-b980-e30a01bae9c5",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3891,7 +3975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0118d1e-0023-4120-b00c-055ad31c660e",
+    "id": "01836822-757b-45cc-abfd-6749ae610208",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3911,7 +3995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06480b83-f941-4fd9-97ed-d3a5efb18d7d",
+    "id": "1afd8974-326f-4150-9e4d-81825230de78",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3931,7 +4015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3602e620-850b-485f-ba4d-aca9e4672580",
+    "id": "41137795-8b40-4c19-9306-c709a40fff19",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3951,7 +4035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f21d030-4278-4c32-b71c-b22be48424a4",
+    "id": "c2595f57-570e-435f-8d1a-8d6cc44e5ccb",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -3971,7 +4055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c792890-b684-4cf8-9226-b760d212efb5",
+    "id": "2b8dff54-cfd9-4403-9913-b4f1b4d28729",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -3991,7 +4075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "779035a8-79c3-4333-a397-50bab9593504",
+    "id": "9b1cf7e5-d694-480e-b64d-4cf7390c9d0e",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4011,7 +4095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "298cf145-0793-45c7-b8f7-e1df21669aaa",
+    "id": "4b89f2ba-1bd9-4ecb-b409-2a8dc38ce06d",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4031,7 +4115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05ea4214-947b-455f-b426-fe6d76b36a87",
+    "id": "6fa9b652-9a5b-4097-b534-33ec71bd75cf",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4051,7 +4135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2849ea3e-d5bc-4851-925d-095bbd0bb5ad",
+    "id": "3a883c14-1c7e-4d58-b97f-d9bb7ec4d4ce",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4071,7 +4155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09fddc65-eb67-40c4-9ff0-3ac4976d725c",
+    "id": "000bcb3a-9376-4f65-85a1-6ac1a9605e90",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4091,7 +4175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f2d5ed0-112d-4e81-8b33-ed5f6d1d0d61",
+    "id": "1ff2a92b-0a05-45c4-a4ff-760091ddb175",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4111,7 +4195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d9d815d-a70d-423c-9c05-8723a0559542",
+    "id": "fe09f7c0-641c-48f5-93d7-678282db31f6",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4131,7 +4215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28bff654-4fbe-4ab6-aa77-8bfeb1caf3bb",
+    "id": "235655f4-fbb9-4e77-b3dd-ff0399653436",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4151,7 +4235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "375450c5-0bed-4e68-b8c8-d0d76b7bab88",
+    "id": "861535ab-63c1-469b-8156-204a0690f958",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4171,7 +4255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bf24fa6-b8f2-4c21-8850-5de6cdf5d3e5",
+    "id": "0155719e-e8d4-4a3e-9c7c-7e78d09219da",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4191,7 +4275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f6e06e1-f469-449e-b8e7-53af85255616",
+    "id": "d50b6da3-ae6d-4925-8292-df56a6e642c2",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4211,7 +4295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee6a5cab-3dac-4f69-a386-1c7d52ac3ae9",
+    "id": "beb15a9b-d1ca-45cd-b501-102f5d3d4f9a",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4231,7 +4315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cacd0e43-3532-4266-b4f0-b9beecc3b2a1",
+    "id": "ac72a4be-7bc3-49c8-9278-3b03a11ffac2",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4251,7 +4335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dee3afe6-cb54-4be2-a0ca-f0fac8a41478",
+    "id": "33ffc3d2-8e59-4a77-b22c-c68c2184a8e9",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4271,7 +4355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6aa7acd-bdd9-4e5c-b55f-65198935af7c",
+    "id": "3db05834-6074-4b96-97c1-d0f9cd2126a4",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4291,7 +4375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba540884-cf85-4a7d-a3e2-77c9d109c40c",
+    "id": "9e0c4e4f-7eca-4df2-8984-261fb1f16d63",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4311,7 +4395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eae3364f-b995-4c97-9fe7-4463a7c2a670",
+    "id": "1040ac3b-aac5-4955-be2d-a500daf621b0",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4331,7 +4415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24c75b7f-29ca-4857-b093-2426b43a4736",
+    "id": "a5100d42-64cb-47fd-9c58-33f85e0e3823",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4351,7 +4435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1d6edcf-351f-48db-8ba6-9ff51c504dbd",
+    "id": "e80bfc1f-a977-43c7-82cc-18ad5ac51176",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -4371,7 +4455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b5deba2-9466-427b-af55-da587d03ad5f",
+    "id": "7ed89ef7-fdba-4fe7-9ad1-fe105380064f",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4391,7 +4475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3ac0a85-0148-4d7f-ad55-be00953209d1",
+    "id": "af2d5d47-9f64-49fc-b0ee-014f30082030",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4411,7 +4495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b36293d-dbb1-4496-9100-a99b3b5ba242",
+    "id": "d2fd8175-6204-4e08-979e-eb8726f6a375",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4431,7 +4515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68b87b7f-13c6-4668-94e2-092853a1713e",
+    "id": "187ee851-3288-453c-b7a4-f0c836f74a61",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4451,7 +4535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4a1832d-cac9-414d-8704-02c3c9d170d0",
+    "id": "3bf5d5f4-80a4-47f0-8f1d-675ee2396c61",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4471,7 +4555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3bc14b7-f3e8-4fd2-aa55-ade724e10d45",
+    "id": "a221c2af-b802-42ac-b844-6a771f172673",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4491,7 +4575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "411bf0c7-e192-4d58-8802-c70623e128c1",
+    "id": "dcc49914-9255-478f-803b-1118adf517cc",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4511,7 +4595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "157c45a0-3346-410b-bd43-303977c32bc0",
+    "id": "5f6fdcc3-c78d-435d-93f4-8964b6a03e10",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4531,7 +4615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bef1155-539d-417a-a243-66e5deecc610",
+    "id": "a144f151-11f6-41a2-8cac-9ab9d369c223",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4551,7 +4635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b93617c-2ca2-40fd-a1cb-34b715f8290a",
+    "id": "b61b1264-a51d-446d-a915-f16b6fb62ddc",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4571,7 +4655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e483b6e9-17da-4eaf-8f93-9c22fb3d8a4e",
+    "id": "dffe32bd-cf4d-4559-aeaf-8bf58244f0cc",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4591,7 +4675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16e230ee-f5da-47f8-b74d-6ceed777a04d",
+    "id": "16aefa47-2d78-44ce-a7df-2c315eec5ba2",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4611,7 +4695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "babfb127-5957-467c-973d-12fb37175592",
+    "id": "872273d6-1cf3-4382-95b8-28d38b4a88db",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4631,7 +4715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b571e7f0-faeb-443b-b29b-0222f128befc",
+    "id": "448f5536-07b3-4fd1-a5d4-3c297d4ee297",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -4651,7 +4735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65cdbd82-40c2-4ff2-ae1a-8c3e149c8ddd",
+    "id": "4e799d35-8c3b-44e8-9c4e-53f0315de276",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -4671,7 +4755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dbc8bf44-0d9f-458c-9592-f4154ab1f431",
+    "id": "8101f721-bd02-4439-9b20-01b9a8d4d23c",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -4691,7 +4775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04470acb-0540-4ecd-81df-3847e2b645d0",
+    "id": "bb2f55f4-1089-4d3e-9713-1eb912824072",
     "codigo": "4.1.01.01.0007",
     "descricao": "INDENIZACOES",
     "tipo": "C",
@@ -4711,7 +4795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2439af3-5204-4881-a387-8f477dda1068",
+    "id": "70b5e0a8-1383-4d43-92af-bb7cfaa8953e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4731,7 +4815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76cc7094-b6e5-41e5-9240-d63ff808a13e",
+    "id": "d05f1e61-39e1-42d0-a2ef-7701ee7f2f66",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4751,7 +4835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e316ec6-d620-41de-b141-a9d23e53f182",
+    "id": "a6c96e29-12b6-4e18-97dd-e9038e7ac0df",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4771,7 +4855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0b714f9-7264-4d33-a243-6bf7b80548c7",
+    "id": "ec972ca5-50b7-4abf-87be-3a06081a767b",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4791,7 +4875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b742ee9-1afb-4cba-be78-c3766b25c995",
+    "id": "f2067bcf-3249-4a75-bb49-ede9eb3866c0",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4811,7 +4895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53dd845f-e2f3-46ad-8b34-e7afc367d5f5",
+    "id": "9a981a67-5ea3-43c7-9ca7-7344b71c56de",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4831,7 +4915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8fba145-3a65-47f4-8a35-4dfe89368f6f",
+    "id": "41dfa3a3-e793-4296-8231-c8da5e9ef335",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4851,7 +4935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "457de77e-19f8-430a-a251-ce867fcefee2",
+    "id": "f4542ab1-d108-4941-8878-9c039ee1b2f4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4871,7 +4955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf5db57b-103a-4599-b511-59802c03c1dc",
+    "id": "bd85cb76-f487-467f-a675-a244549199e1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4891,7 +4975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6071601e-afb8-4da6-91df-e75638424e05",
+    "id": "0d8d1281-db49-4266-9f86-a7a2fa8524a5",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4911,7 +4995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6c09e33-bdf3-4da1-a999-b7733c26f5f6",
+    "id": "c7e0dc4e-7b12-4480-9071-590a8dda0f4d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4931,7 +5015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ff2f425-5dbd-43b7-b427-6fcd5ee33171",
+    "id": "aa54afe5-8404-4f9c-b26d-d9b65fbc0a3d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4951,7 +5035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c869b59e-01a9-4c22-aa54-690ad4a7bd0a",
+    "id": "2b2551eb-f84d-4ef9-bd6b-d55f6aaeebfd",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4971,7 +5055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "689dc467-8b66-42ae-b65a-671e18275f94",
+    "id": "d9bd0026-8f1b-4479-9344-f2de4bc5f9de",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -4991,7 +5075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c45ca4f5-2d2a-4b63-a2a3-a17a18fb459c",
+    "id": "1cefd9c6-0073-4bb8-aa0f-5e9a816d37b4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5011,7 +5095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e23ec1f-902b-48ee-bd73-543e4008784a",
+    "id": "6f928bdf-1429-4e37-96d9-24f445a5581a",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5031,7 +5115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40f5b9b8-a864-4858-89df-bc4ac0fb89b2",
+    "id": "1ed69e63-3d71-4ba2-8d5e-00b5d89c05b1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5051,7 +5135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11254727-24c4-4186-a413-4250a35a6e2a",
+    "id": "affe1f09-1643-4a37-b9c5-835c9d85974d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5071,7 +5155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c87c1a7-30a8-45f8-a56e-c86b29e49909",
+    "id": "960d490c-61cf-4727-895c-50c56030acae",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5091,7 +5175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7354f93-81e7-4f39-b6f2-4394ff592b40",
+    "id": "e150b7e1-3bc2-433b-96a9-a30d45d09b33",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5111,7 +5195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "047a5cfd-67da-4c36-8c03-a84e34232b14",
+    "id": "fdb11a49-f721-404c-a976-e45ae9fab627",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5131,7 +5215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e4efa3a-038f-4ce1-bb46-257d53915b8d",
+    "id": "0bceab74-8b80-4f1c-b9b9-45c72f0ec449",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5151,7 +5235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4547b7f3-87c8-4229-9a2c-3bc577042d85",
+    "id": "722dc03a-0d6a-42e6-9892-d91c47808de9",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5171,7 +5255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f774a30-d529-4061-ac3b-808f9f10c80c",
+    "id": "a809b31d-23a2-4a4a-b590-ced117211a61",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5191,7 +5275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4657fdc-d45c-4303-99c4-911751f4abac",
+    "id": "d8f28a59-60a3-4585-bcbd-4a10859e3853",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5211,7 +5295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3253b865-a1f7-400c-bdb4-19e7bd60fb89",
+    "id": "522c5787-d7eb-4c2a-92a2-99298851be28",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5231,7 +5315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e2c6bb2-f903-4f63-bc79-9d2acc8181c2",
+    "id": "e460fb35-3d30-457c-9418-4d02ece3b29d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5251,7 +5335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "725a32ca-d528-4c78-9577-8d9c7d91bb53",
+    "id": "4a684561-0778-40fc-9f9d-fcdff6c7e598",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5271,7 +5355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9368a9c1-4d58-410a-bbeb-3515de1d1d0e",
+    "id": "ba6e4940-d554-4025-8740-c9d861bf7fa1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5291,7 +5375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2974a391-1a69-4a8d-9280-1f3d28165458",
+    "id": "8094ee13-8550-46b0-a487-f152afd865bf",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5311,7 +5395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9d71090-0abb-4472-85f7-768acbfe022f",
+    "id": "8eb5fd45-7f8f-4888-be2c-feba78352a03",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5331,7 +5415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f48486d-9f2a-406c-958a-e41b1edfe1ab",
+    "id": "6e844c43-cc16-4a48-b9b3-b24ec5beebe7",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5351,7 +5435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a55ea14-905d-4ae5-9345-81930292c2ef",
+    "id": "2b0ef00b-78dc-43ca-9217-2d6abbbd3f44",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5371,7 +5455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3cd2df85-07db-4115-9d3f-81b093317a94",
+    "id": "4353f69e-3c53-4039-b7a3-026afa2349b1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5391,7 +5475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "343fea03-e93b-491d-8afe-e8939843691a",
+    "id": "2d4c1fd8-b059-4f72-8ac6-b5e464736a12",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5411,7 +5495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5bc9bded-4a14-43a3-9a35-5ad0b957698c",
+    "id": "28f6d4c9-7d62-4ec8-9793-72d358ebd899",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5431,7 +5515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e696383f-dab0-4e78-a153-e214d9600196",
+    "id": "075e199a-4895-48a5-b351-6eadf8a67eff",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5451,7 +5535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa017ab1-8f7b-41c0-a367-2b886653d718",
+    "id": "6fbe29a6-02e5-4f8b-91cb-75d11f3594f2",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5471,7 +5555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36810b68-38ef-40d1-9da6-bf8bdcd3b7e5",
+    "id": "f1a7f755-e5a8-449f-b354-4878c6af1a09",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5491,7 +5575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "014cbd3a-9a7a-4760-8cb9-d04e096edd29",
+    "id": "67b62052-16a3-448a-bd12-61fea5fd1a97",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5511,7 +5595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd7e7195-8fec-423f-8b3a-205e3c120e9d",
+    "id": "51284feb-1c2d-469b-b769-0520dbe660fe",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5531,7 +5615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fff9e154-a461-43be-8b87-f0b8714dd6ad",
+    "id": "b5468b45-af0b-44de-96f6-5cf1d12c6cce",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -5551,7 +5635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6874ab2-e0f4-4cb4-aa2b-2cf7d60595e2",
+    "id": "60a7c959-d3e7-4f8a-b1a7-42b670a2492a",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5571,7 +5655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9a36b0e-0185-47d6-bf3a-242caa4a1dc2",
+    "id": "964077a8-521e-4d75-b8a5-23b51cfbe0ac",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5591,7 +5675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d879c137-48e8-4ed3-ad98-d5941ea51d62",
+    "id": "5b0fa5d8-0526-452c-9976-decc1f0df7bf",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5611,7 +5695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "961a36c7-a3ce-4d56-8ce4-b89f5dbe75e8",
+    "id": "06fb90f4-c2f2-4071-a30b-b3342f020016",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5631,7 +5715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd368635-07ed-4a50-b349-1e1ea7e7175f",
+    "id": "eb0ae23a-cc6c-4e8e-9752-dbec7ddaf59d",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5651,7 +5735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f439dfcc-05f2-4fee-a50e-7ec30ed912be",
+    "id": "b8f036bb-430c-4f22-966a-e43a2f6f6dd9",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5671,7 +5755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ba7d84c-6be8-4eff-9834-a960d4d40779",
+    "id": "25a91df1-122c-42ad-a7a3-53888dcc5bae",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5691,7 +5775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a2b703eb-17ef-4874-a4a6-a6a8e108f447",
+    "id": "be4fb8ec-9479-4868-a9d9-64e1488152ae",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5711,7 +5795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "030420a8-8090-4fb3-a728-d67d01bdd3f6",
+    "id": "b0f462b0-0cf0-4956-9404-8a1be36bb722",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5731,7 +5815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ed40457-0075-4290-b4a1-5a7942eb8201",
+    "id": "6d40e20c-d702-4140-82ae-2ce15237336a",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5751,7 +5835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffbe5446-bd44-4eb2-a53b-8d96084a896f",
+    "id": "36f669a1-5036-44ba-b661-dc0985fde348",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5771,7 +5855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "91acfc6a-f6e0-4a62-9c62-bdc1872b31eb",
+    "id": "e197700d-7634-4509-9d87-80e9dd374c33",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5791,7 +5875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f0e6b63-327e-4d39-9fd2-ee264acecd6b",
+    "id": "06527377-bded-4400-a5f5-6865bbd0ec45",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -5811,7 +5895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "526f1a36-6816-4345-a2bf-a80f9e7f98b5",
+    "id": "27a321c0-7a9b-4c6a-bfb4-7604a29fc1b5",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5831,7 +5915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7529b727-aa47-4ab0-985c-558dfb3b6056",
+    "id": "0c100802-52d0-4f4b-8d2f-485957ef34bd",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5851,7 +5935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d123982-e411-4b1b-afdf-2ae71fbe02b2",
+    "id": "c926f93e-9aa9-4773-a54c-ed7f74c88add",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5871,7 +5955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "045361bc-32cf-4e4a-b4cc-22e04309c1f4",
+    "id": "0f4b317b-3424-419b-ba84-113ecec3e61b",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5891,7 +5975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47a200c6-d2df-4943-b6ca-685ffaf5a4d7",
+    "id": "5c62858b-307c-440f-898a-ca25e6fd5915",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5911,7 +5995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0af5bb79-1b3e-47fb-8874-c1fec0488162",
+    "id": "d1a6b57e-c79d-4400-9628-fe0efc63fb2e",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5931,7 +6015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5529df2a-5593-4c05-a697-2283b5ea6218",
+    "id": "712be275-6a5d-4e47-9926-09f74da9f9fc",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5951,7 +6035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20f1a5be-abf9-471f-b40f-65a83518aa4b",
+    "id": "4eeb9bc0-f3e6-4310-b75a-c2bcbd09f1b1",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5971,7 +6055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d614e99-c388-4537-97f5-709cf31aa6d5",
+    "id": "129f0aab-3ba5-4071-ae20-b1d6a5302a72",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -5991,7 +6075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83e2989e-3b12-4af0-85ca-6f23de072361",
+    "id": "4d1bfe0f-15ee-46e7-a610-dac77eed6214",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -6011,7 +6095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc2616f3-3e9f-4ad1-986b-bc54bdea16ba",
+    "id": "5ba1c88e-3c08-4e74-ae0b-37ba83cf2b64",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -6031,7 +6115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a76b89bd-b6b9-4d90-bbe2-2815a1665651",
+    "id": "1fb086f9-6684-4771-b416-5595b3e19578",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -6051,7 +6135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f90ee4b4-cad5-4109-b023-d53200cc7e41",
+    "id": "7f36b0f1-f4c7-4444-acfd-b91e3406ca50",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -6071,7 +6155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e810d457-8219-4ced-a15b-7c3de84bcef8",
+    "id": "4cc3eddc-2b64-4cf3-9f0f-fd3215c3e71e",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -6091,7 +6175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "493a41c7-1070-471c-9ae7-679fdb42c0c7",
+    "id": "b4c128c2-ce5a-44d5-8b5c-9264e9eb6511",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
     "tipo": "C",
@@ -6111,7 +6195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3e0b39d-f8a3-44d8-8348-d818c05ec6e7",
+    "id": "19132ef4-253b-4b63-96ee-915b08322471",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6131,7 +6215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0dae164-1c4f-4925-abb8-a0ed692f8f42",
+    "id": "5c80600f-9980-410c-a95d-c82363d6ee3f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6151,7 +6235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "144a7fcd-83d2-4292-b1cb-214a9e374a30",
+    "id": "c67a9d5c-d8be-4788-ac7a-27c8cd503bc5",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6171,7 +6255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39073e1e-51cb-48f1-a8a1-435451b19855",
+    "id": "018e6b19-961d-454d-aed3-3a3400b6fb41",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6191,7 +6275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53f27fe8-9262-49ff-8cb8-4964ed45e78a",
+    "id": "71807728-8343-42e8-b152-76a024ae1196",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6211,7 +6295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e72c4238-44a4-44dc-ac13-e2c3a600e22c",
+    "id": "71a04a90-7ab2-4284-9abd-13892545e275",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6231,7 +6315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03163105-a6ac-4a00-98bb-a606ec61ee1b",
+    "id": "df1b9ea7-6117-40a4-9d41-a88d51c73889",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6251,7 +6335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e1916c0-24cb-42ac-b49a-89cc50b81b34",
+    "id": "dbb56e80-e9f2-4dbe-9abe-e414001591a3",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6271,7 +6355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d46ecb6-aa8a-4f84-9b5d-4ddf5079c961",
+    "id": "2ceb158a-42b0-4292-9551-a72bffff9ae3",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6291,7 +6375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dbd11de6-42fa-4736-8e0c-eafa5c295108",
+    "id": "cb1a5a93-e11f-4e76-afd9-09fe29df3b70",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6311,7 +6395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3edef2a5-3d56-43cb-989c-984abe785be1",
+    "id": "8044ce79-434a-4a75-84ae-6f74dfec7a1e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6331,7 +6415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2339a23-3c16-4a23-be6e-095c5d9ce8da",
+    "id": "3f1a4147-13d4-43b0-a115-d28144e9cdd0",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6351,7 +6435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e367fa4-371b-4dfd-b9c9-f5d553270032",
+    "id": "5dca174d-733a-4f55-bca7-b0daa9295d66",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6371,7 +6455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff68c798-5672-4a53-bec1-a6a89657320d",
+    "id": "0e624792-2813-47e1-bcf3-3755b323890d",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6391,7 +6475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe04bf86-9225-4d25-91a0-139456d27b3a",
+    "id": "abc2e6fa-c19c-4b51-ae07-70d362fb8020",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6411,7 +6495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39d1d41b-25a2-4c36-838f-7712575332de",
+    "id": "ed547c64-790c-4617-9f03-42c37b738948",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6431,7 +6515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80f4af2c-5514-4347-a13f-ffb1c9f705a1",
+    "id": "97987768-0f72-481d-9b71-8068ce2f29ce",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6451,7 +6535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b4b2883-bc93-464e-ad85-fecfa4c90554",
+    "id": "d64219b8-e225-4c7a-9c25-282ce0296106",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6471,7 +6555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b13609d4-ad7a-43a2-86b2-521a6da68daf",
+    "id": "546bc73d-42c9-4361-9111-293cd567eab2",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6491,7 +6575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70b6e0ca-4078-4242-95be-f352dcb8d8e7",
+    "id": "0f7a58fe-4fcd-4862-afb5-e8c0076a7a16",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6511,7 +6595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78601a44-a506-40f9-90b3-019bc1fad629",
+    "id": "0549eed7-630d-4d27-9df1-e2e9fd94866a",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6531,7 +6615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2d275bd-b756-4dce-99fa-108889c439a6",
+    "id": "0a13964e-bdfe-40d1-ba78-d78bd217c197",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6551,7 +6635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "429640b0-9a56-4cef-a4a2-9ac06aa85d0c",
+    "id": "ff7cd02f-e860-4526-92f6-2ea177a34ef8",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6571,7 +6655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "421b78c5-3886-4f03-8c1b-2fe4357fcfe0",
+    "id": "b0cac89d-75be-4bd4-9c27-38b760bcd4fd",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6591,7 +6675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0956d66-a2ee-4bf2-afc0-f202a36d1e4a",
+    "id": "df621a7e-4c52-45cf-af18-9d998586aff6",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6611,7 +6695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6c327c0-c58e-412f-92e4-0c2ad3d11a03",
+    "id": "e4c04177-e502-4072-8d55-474279bd1ccd",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6631,7 +6715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "200625d2-dcff-40a1-a65d-778bf47b5a2d",
+    "id": "7a4efeec-71c0-4c60-ab1a-c6d647c8672b",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6651,7 +6735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "340b4a79-2457-477d-a68e-95e701961d8b",
+    "id": "a92008ab-25f5-427a-a277-19be01849287",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6671,7 +6755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b65baa48-e3d1-4902-98d9-10ab9395fafd",
+    "id": "06758b05-334f-48df-870a-4a3aaddce04d",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6691,7 +6775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63c3159f-ecb6-4422-a6d4-56532b04013c",
+    "id": "0f712612-c38e-4036-8fab-0a94e6d5134f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6711,7 +6795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "017231ff-9cf7-432b-aca7-6cb8b75351a7",
+    "id": "99bbb880-6ad7-4c55-99d2-2cea213424a0",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6731,7 +6815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99c47c96-a624-4a3e-8abb-ace268f401f0",
+    "id": "a0e26464-806b-4255-a753-b4549f21ddba",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6751,7 +6835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3223c046-d495-4054-a5dc-517bae74608d",
+    "id": "50d1c2fd-d4b0-476e-9f72-095006da2f66",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6771,7 +6855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad0cbcaf-9160-426a-b746-e4c133b262d2",
+    "id": "a2f1dec6-0668-4fc7-9c3b-02c02b5c028e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6791,7 +6875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f979a229-db0f-4d12-bd6a-918687bb7df2",
+    "id": "71503c83-c3e3-462a-9aef-54b3b7bc6a14",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6811,7 +6895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a24f417-70ff-4d7a-82fb-4006b83e6fc3",
+    "id": "b6b9f730-9a72-4f8e-b439-9cebbe02af91",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6831,7 +6915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "536546b5-bd61-458a-8704-492f6ff87ada",
+    "id": "aff216bb-ae5a-4358-ab8f-c406af2b7e78",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6851,7 +6935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a8ac19a-cdbf-4011-81c6-34601b2d9f53",
+    "id": "df992b6b-cf9e-453e-951b-285983ad4b75",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6871,7 +6955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b41fa11-a0c6-40cb-be86-635af84f9e89",
+    "id": "a2676049-29e8-4680-838f-df86b834eb37",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6891,7 +6975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d991257-0292-4e8c-b67d-f041c404d57e",
+    "id": "3db1eb4f-5608-48ba-b29f-a231ee86ac52",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6911,7 +6995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64216064-5c54-44c3-abf1-da64dbeb2ee3",
+    "id": "1e474309-9404-4797-829f-41d72c1696f7",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6931,7 +7015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78fdad3f-8857-40f0-a1ac-acd9e758d9a8",
+    "id": "8b6333f9-1ca5-4e91-a6a9-9806ea415831",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6951,7 +7035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1450c79b-0b2a-4cf1-b7c0-464e1aa989e5",
+    "id": "c75d6526-4ede-4a9c-ad64-41dbc1593668",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6971,7 +7055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3de65c8a-36e8-48f0-bc01-f0691dea1e3a",
+    "id": "e0d0bb9c-045e-432a-9736-bb57211838b9",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -6991,7 +7075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3336085-3811-4bca-adc6-44254fa66885",
+    "id": "7f51661a-f7c6-4a49-a638-3cb4bfcb82b8",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7011,7 +7095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97dd0ed2-c83f-4dfb-bb72-491ea954af9b",
+    "id": "cbc49766-b702-427c-bcfc-9fae284024c4",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7031,7 +7115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2aecc38-c784-43d3-a71a-9ddcb6e3541e",
+    "id": "e7535843-624a-4816-876e-f849b18671a2",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7051,7 +7135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd1dfe6c-45d0-405b-bd5a-8bedb19e814f",
+    "id": "e2abdbbc-2b95-4740-bd32-141b66cf6ff4",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7071,7 +7155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "139de076-f43c-4879-a947-b81feed7fc1f",
+    "id": "c6c54495-9e0d-4f0b-8225-5fc23c8d3454",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7091,7 +7175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d84c29d1-02be-4a12-a6ef-0f085a64b298",
+    "id": "f26cf648-a0db-4959-942f-fc74a3e6d5aa",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7111,7 +7195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e47ca20-298b-4fff-8319-56211af380cd",
+    "id": "61e4029d-f001-48bb-a87f-9e8a3e0f743f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7131,7 +7215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e348a08-b5e6-42f6-b9da-468882a5861f",
+    "id": "9e149b13-e89a-4e82-83ed-18a1d39d5ff3",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7151,7 +7235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85f94942-fb3d-465b-8d80-8967df087192",
+    "id": "3cfc5a5a-5324-4ee4-8f4e-e105953d03cc",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7171,7 +7255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1edc4e1e-f886-477b-a195-1bba04b907a1",
+    "id": "deb43f15-fb4e-41ab-8b4b-1d4f8a2421f1",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7191,7 +7275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6abcee4-bc17-44ea-a4c7-a08a35908e54",
+    "id": "09b99695-6ba3-4c0d-aea8-104e540fa39d",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7211,7 +7295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78658c5c-ca77-4319-9a95-72989a24fcd7",
+    "id": "9b5dad0e-08d9-4997-8c58-9e0d17bcda6f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7231,7 +7315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5325ec14-8b54-400b-927a-bf05f3337a7a",
+    "id": "15027fe8-66e3-44d4-982d-3710af11ba7d",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7251,7 +7335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf26671a-8cce-4b00-9db4-5935515483ff",
+    "id": "7dda9a3e-13d5-4ca2-8a40-e6c349952897",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7271,7 +7355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f46ca34b-eedd-4317-80eb-927bb728385c",
+    "id": "3734f780-9f21-4259-94e8-41a0d4662f3c",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7291,7 +7375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1df5d49e-e6c8-4e07-9dc9-31a77dd574d9",
+    "id": "6f1bece4-f1d3-43a8-9b15-1793de37acb3",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7311,7 +7395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eff0adaf-5dd9-47fc-bf6a-b2bb6d2356e8",
+    "id": "2b4459c9-881b-4169-8dbd-c288edf07803",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7331,7 +7415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef3a59d7-d936-4396-be99-0d46e9b32bcd",
+    "id": "9775bc58-34af-499c-aac3-1e1bf6020701",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7351,7 +7435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f974067-2a78-4220-8531-b859061dfeca",
+    "id": "d3d3f336-3282-432c-a288-d2a75fbcccf2",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7371,7 +7455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6219f717-ed8d-4867-83c8-0b658f633f81",
+    "id": "2bd1842c-9aca-43e2-881b-f32c67cd4e1d",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7391,7 +7475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "adf8d1e8-6299-4c04-bddd-abeacf083683",
+    "id": "63b5b1d3-4760-4ca6-be17-57bf7b8f1737",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7411,7 +7495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "369c6c35-ec77-4953-8dcc-aedf6fcce5b2",
+    "id": "ebf709b1-2ac0-4a0a-b7b6-962b304b9a43",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7431,7 +7515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "920c627c-2c50-4880-b702-e05dc85e8c7c",
+    "id": "0cc9c421-5962-4cd2-933a-f0346060843c",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7451,7 +7535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d671d0b-d55c-4bb3-8253-98a24ac3f7df",
+    "id": "3b52ef00-e044-4f05-ab54-890faad6a928",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7471,7 +7555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "829847f2-4fe3-4106-a5bd-1ae2ea709bb6",
+    "id": "a402d297-663e-4671-82df-f01ead8f6102",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7491,7 +7575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc666a2d-bc86-47f6-ac32-7d6884fc9f05",
+    "id": "e1d3f6ee-d6d0-4795-839f-5b891a7802d4",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7511,7 +7595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47a1e067-8ac1-4564-a32b-169c85382c95",
+    "id": "01f83a3c-ed8a-4410-b9db-ce329cc60f17",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7531,7 +7615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e35183eb-7ca3-4a40-b7d4-1eb5eac3fcec",
+    "id": "ca6955a3-3270-49eb-9886-b968700d1f8e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -7551,7 +7635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04da6b16-f025-4bd3-a15e-d8c9fb183c34",
+    "id": "2ee42d30-34a7-43d3-9f63-3f557456be18",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7571,7 +7655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4317bd08-03fe-432c-a133-04266a7df230",
+    "id": "e80609b6-25f9-4ac1-8040-108f978fbd2d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7591,7 +7675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "673d816a-87ee-4546-9f51-42a8b23ec979",
+    "id": "2f695235-1c51-4275-881a-f1ad4b889f2a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7611,7 +7695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e5091ef-cd1a-4bbe-a2d2-04b798f5b86c",
+    "id": "5217384f-9ce6-433b-b327-1c3c6e548802",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7631,7 +7715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fc674be-70fc-4352-b6ff-bbb30040dcac",
+    "id": "7b79afe5-8531-4b12-a8c3-01e2af5edf63",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7651,7 +7735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68aeed95-6b47-4dca-bf0d-d39ed530ecd2",
+    "id": "8772c56c-c0a4-43c4-89e0-4aaac779d37c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7671,7 +7755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3917e67-757c-4c5c-b145-5b3c1f8150d0",
+    "id": "b0d4c326-9f61-4456-af19-8654ab8cee37",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7691,7 +7775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "baec2792-64c4-44f9-9c03-132ab88e5731",
+    "id": "a969930d-afd8-4165-b448-946eea553d83",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7711,7 +7795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0093a6cc-8a45-412f-b410-3f02e57efb75",
+    "id": "0e04de4d-090e-415d-95e0-e766871bd710",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7731,7 +7815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "920f4e9c-2560-4811-ad5b-e6fb1d13cf72",
+    "id": "19bfe3bd-bfe8-4941-88dd-16fd08411d39",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7751,7 +7835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31c4ec52-3f99-4e3a-ace8-3a6164464270",
+    "id": "6a30d7ee-6070-4599-9858-478e1318821c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7771,7 +7855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6688399-9538-413a-912e-228a24783427",
+    "id": "84526da0-7f5f-45e6-a584-fc8d96cdc90e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7791,7 +7875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ec28448-418f-4df8-a394-67efca8b7f09",
+    "id": "0dda3cbc-8fd6-4053-ae12-46464c7401a0",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7811,7 +7895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dca307a9-46e9-45b2-b93d-4a355b727e38",
+    "id": "b77a9739-ca4c-4d9a-9a00-71cd9910b44d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7831,7 +7915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93ec7f65-0fb0-4743-9993-3f29481c57a0",
+    "id": "c600f0f3-3faf-4937-9027-f0bf22eceda1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7851,7 +7935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec33aaae-fbbe-464b-bd07-a5cce4aaac48",
+    "id": "8265d10d-8903-4152-8e10-bdcae6824220",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7871,7 +7955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9cd7747c-084d-49a6-ab26-b766541cc35a",
+    "id": "c1b7985c-4895-4cf9-a828-75bca0560dd1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7891,7 +7975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8b205ce-d937-4613-8d1f-293156ba1633",
+    "id": "3acaf689-4e9e-4e7e-845c-75e7ab6f2f02",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7911,7 +7995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "739aaa13-c5f5-4193-8267-21acda521a47",
+    "id": "38b6d9cb-8c06-403b-bdfe-58484eb3c11a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7931,7 +8015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "91c76567-930b-472e-b1a8-5e8f1a8b4a1a",
+    "id": "f3fb81a8-8833-4405-a0b9-fcf46586f40d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7951,7 +8035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7cf26fe2-cc50-422f-953a-db76b6d078b7",
+    "id": "83e4667e-b41d-40d5-9116-d4fdc5b878c8",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7971,7 +8055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "016f48e9-16e9-432e-bb3f-dab8a1f3e9da",
+    "id": "3f46806b-d032-445e-bdd9-24ffbac27eba",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -7991,7 +8075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94a7f217-4a03-422c-af7c-c703627b33c7",
+    "id": "7f96fbf4-3076-4e8b-aaaa-81bcd8701ae4",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8011,7 +8095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "971ac6ee-fed4-4164-b569-9e271a265232",
+    "id": "0f717706-7a9b-4ba9-aa74-5860612bf099",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8031,7 +8115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3043b406-3a5a-4a01-b18a-c25221c8d431",
+    "id": "568f35ba-f528-4a8a-87a2-4986e59b0b39",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8051,7 +8135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d6e6f4c-3456-4564-87ac-8d591633c876",
+    "id": "d0c4c638-d88c-4138-80a6-806dbee0fbe9",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8071,7 +8155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23751e52-1cb4-4a8c-8b98-d664c4a68b59",
+    "id": "f35e4f86-842a-4ee8-bdf3-e93fbaa52cef",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8091,7 +8175,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e104978a-6b44-4678-af24-d44d7048deab",
+    "id": "cf57c870-44f9-4b0f-80e1-736973753e3a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8111,7 +8195,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93936a66-576a-4dd2-b92f-e6c03e6e2965",
+    "id": "5412ddee-9e60-41a2-bdcc-0a873bd64a19",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8131,7 +8215,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48d1c764-9bfa-48d2-b6b8-968a8cd36191",
+    "id": "d4698acd-ceed-4d17-aaed-5764c4fa84cc",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8151,7 +8235,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b539642-0c28-41e9-a7ca-feeb0312fb93",
+    "id": "c800607b-61e4-4d99-b91c-b868576550f1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8171,7 +8255,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "058d2227-150f-4deb-bdd1-68be6c740835",
+    "id": "00a764cf-6f1f-4916-8d55-00b108f7658c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8191,7 +8275,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e688ba42-1b8b-46da-8426-c40b46bb94e3",
+    "id": "c60a917b-05e6-4987-9689-f9f17bd5c1ec",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8211,7 +8295,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eeb15307-8614-40e0-966b-06a0afef984d",
+    "id": "c89d6b9d-8acf-4b1c-9bed-e7fd90a2bad2",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8231,7 +8315,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b669256f-9419-409e-ac62-c649765675f4",
+    "id": "802b8c82-51bc-4b3a-89d8-5b66a89b1c45",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8251,7 +8335,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2fd52028-2ddc-4267-8634-af35a0b0ca6b",
+    "id": "504b1ed6-d401-46cf-83d6-4e430d1898d4",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8271,7 +8355,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "928b2448-a56d-4667-8cb6-8c72eb322024",
+    "id": "d5b96d31-3b2b-4fa9-a99f-36f647c835d0",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8291,7 +8375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43787fce-bf65-43ff-b427-41092d9ec0d6",
+    "id": "c1cc40cb-e7b1-491f-bf49-d9f44822f966",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8311,7 +8395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33fbf94c-f4b5-4a91-8868-f9b8d0f95987",
+    "id": "61f2026d-642c-4d57-bee9-cd631d1ca00c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8331,7 +8415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "594e6d76-2aa6-4095-bbb4-66d3ce51e14c",
+    "id": "044f10aa-18ed-4b2f-abb3-452cdd6997fc",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8351,7 +8435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d202edaa-0981-4240-8921-c3b4c35c6cc6",
+    "id": "44fac103-bd22-4a05-81d8-52f941ad8241",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8371,7 +8455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5ef847b-ebac-4ac2-840e-c1f4c588922d",
+    "id": "34c87dda-059e-4c77-bb47-ef68175bbb44",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8391,7 +8475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34bbb40f-3091-4ab3-a1da-45f1a48913bc",
+    "id": "aa294d06-4d58-4fd2-95c9-cde83cc83a4b",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8411,7 +8495,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5961d569-0f82-4699-8055-bd677e4b9c5f",
+    "id": "88970eb1-049e-462b-933d-d65d9bda0763",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8431,7 +8515,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2c00168-65e4-4160-8df3-c03af864e3c8",
+    "id": "3df6dd8d-52a0-4f51-9aa1-b10f40071c73",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8451,7 +8535,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da98a6a7-b281-4912-bb1b-ac3bc2942a44",
+    "id": "cb678117-b571-43b7-b698-b1d4e89f6b8f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8471,7 +8555,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cbdbf3e-c382-4f2a-8376-2fa44871e9fb",
+    "id": "aac2f5eb-bebe-49fe-9d64-91518e61475c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8491,7 +8575,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ed5eb82-d7eb-4119-83ba-6d4a04d3de1d",
+    "id": "45d6519f-9490-44d3-bc7a-df4d1d530290",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8511,7 +8595,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35e54383-f71f-4359-b981-9314cbdb396c",
+    "id": "3deb3cf1-4604-4248-bd01-4195dd31d0c6",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8531,7 +8615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9800d17-4d06-4bed-b66b-eab05b5a21ff",
+    "id": "284149d4-7c3b-466d-80dd-b77a3d075e89",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8551,7 +8635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13e73dfb-d5a5-4b24-95d8-af771af2f173",
+    "id": "1c147066-18d9-48ed-aab5-f4ec78fee65b",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8571,7 +8655,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5454e3c-ec6f-40d9-8d2e-e00404dc8201",
+    "id": "965abd27-b936-46c5-9c58-8aec19e8cd22",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8591,7 +8675,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64fa3b4a-ecd2-4888-be41-1bd40b13b869",
+    "id": "9d414fb3-95a9-48dc-80b5-451cadda07ee",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8611,7 +8695,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfc20622-6657-4db5-8bd4-e9b143edc873",
+    "id": "a6ea0bee-30d5-4039-98e8-dba82f472ed8",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8631,7 +8715,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1adc76d4-841a-4bc6-8b74-7f9558506413",
+    "id": "40ea56f5-b910-4852-9657-fefc4a26e01a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8651,7 +8735,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b9d352b-8d92-4a19-b1a3-b608ae6da9c1",
+    "id": "1f56c6e8-668d-4bcc-83d2-545c703f4291",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8671,7 +8755,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9967ce1-8d48-43bb-899e-ca5bfcb996a5",
+    "id": "f864d9a7-bbbf-4661-ae48-5e327a4003ae",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8691,7 +8775,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ddece01-cb1c-4d66-8e03-c169095abb99",
+    "id": "6b132577-3d28-4957-b639-aa304a7ae312",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8711,7 +8795,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cabed8ac-c20c-4e95-91c2-03d0ff3d9c2e",
+    "id": "dcb3cf6b-295b-4307-9d89-7c3ff3400e67",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8731,7 +8815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71018388-3d1c-46b5-a66b-3791fa787ab5",
+    "id": "13c6e9ab-f5a1-4054-ab90-704c2a7bfd07",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8751,7 +8835,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e05df67-4ef3-4c94-b506-aacf144acf2d",
+    "id": "7b58fd72-d0ed-491c-af30-cf8da46e2185",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8771,7 +8855,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98934d14-cb79-46c5-a197-9c12e999bc9a",
+    "id": "f9a68af6-1a04-464c-affb-bb9bbe757844",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8791,7 +8875,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9917e49c-37c6-4d1f-aa11-4978af87e32c",
+    "id": "66dd880a-3cf4-4abf-b6d4-50eea3a7c21e",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8811,7 +8895,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbb72c38-c087-4e5f-b145-12bba7ff3f2a",
+    "id": "860b4406-ece7-4084-9368-d008b8936145",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8831,7 +8915,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df8ac58f-a083-4b81-82ba-4fd5c1505503",
+    "id": "20a1ba8e-4208-41c3-91d9-cf3f87fcb706",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8851,7 +8935,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84172e66-4aa1-4453-857f-4ba53ec02a66",
+    "id": "f879d6e2-c01f-44b1-a5be-6c59f6c02247",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8871,7 +8955,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8855d94a-7735-4237-95c0-1a7dc65e06b9",
+    "id": "17a43569-c634-4d63-a533-3dd1dc4cf5cb",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8891,7 +8975,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71f4335e-4514-4d04-8fc3-e983114a4d79",
+    "id": "c07990a4-0a56-4860-a30e-3de8f08de763",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8911,7 +8995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98ee6443-2222-45ec-b531-f5edba974515",
+    "id": "3319b8f6-bf2e-4dfd-9327-b4de3a30af77",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8931,7 +9015,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "610270f8-225f-43be-ad0c-e138a329f4ca",
+    "id": "dc9bc3b4-f719-4e80-946c-831e35c2883d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8951,7 +9035,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0ff6224-e6f8-40a8-908c-6b623150d9d6",
+    "id": "5b321e00-2481-4742-b07f-d2a81d003116",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8971,7 +9055,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "887d09b8-e813-45ee-8fca-440062d45ddf",
+    "id": "9b7626a7-c320-47a0-b96b-cfc96d174210",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -8991,7 +9075,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c29f3d26-fd91-4604-9a1e-3773aca5af20",
+    "id": "cb35a3cf-f2ab-4f83-815b-5501f250fec9",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -9011,7 +9095,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bca2036-c71a-4214-8260-19b8a673ffb5",
+    "id": "820505cd-afa5-4860-8545-75de95955d84",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -9031,7 +9115,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac9bb4e5-5951-4c50-bd97-ec2150efea07",
+    "id": "b8ee2eb4-1856-4fd7-b7c1-4c953229c035",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -9042,7 +9126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0061959d-74f5-4675-a085-3a088cfe857a",
+    "id": "06e1c6c0-4c38-4878-9e92-cde6373612fb",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -9053,7 +9137,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "3bc68b1e-6ecb-4a15-9118-4b3bb306f622",
+    "id": "18764d9b-0768-4703-a7c9-347efc8ff7f1",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -9064,7 +9148,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0a78d37c-a0bf-4d19-a235-f9c4714dd0b4",
+    "id": "726ad965-7460-44e6-b38f-6a584e572c56",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9084,7 +9168,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "864f2938-6e74-41ce-a34b-02f1bdf1f538",
+    "id": "dafdfb4c-b098-4cf9-ba93-425b66d82381",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9104,7 +9188,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6bf35d2-e6b1-469b-8a82-fbcce8670566",
+    "id": "2b41842c-6c63-479e-ae44-0c02e688bc3d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9124,7 +9208,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63bbb3eb-b4d5-497e-8687-d13453374cd2",
+    "id": "24eeded7-f3c1-4e6b-b237-56d7d3d4f671",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9144,7 +9228,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d460986a-2708-4c9b-a454-9dc05130050a",
+    "id": "1a1011b8-9d6d-4ad7-b912-360309398b93",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9164,7 +9248,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fbef384c-7190-482c-9eb6-3f25d0de0830",
+    "id": "8eeecd42-bd1e-4e55-9af3-18e92d032ef1",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9184,7 +9268,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1167bb2d-f96c-4284-a5cd-3cebd92429b6",
+    "id": "5ab52baa-1617-4c96-9a10-54ede59b2e85",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9204,7 +9288,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c03bdcb0-1450-4550-ba28-c34736778731",
+    "id": "2553b3f2-83e5-4a44-8527-9cb72d48ea85",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9224,7 +9308,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6b84af4-9ee9-4a9b-a46e-89c68a7c04bf",
+    "id": "a43ffe0f-1fbd-434f-9238-38d51afd485a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9244,7 +9328,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44a1495f-b567-4b04-8e45-943f78d42a01",
+    "id": "9d444250-5941-4d5b-bd6d-cdc4f6adb091",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9264,7 +9348,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b874b04f-a33f-452b-a67c-54260d928013",
+    "id": "1bbb16cf-b038-48f3-9347-1313d9e78694",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9284,7 +9368,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72ac30e5-2a2e-4a76-b68e-53d7796e6e33",
+    "id": "6874731e-76f9-45d0-aaa7-e187031cd88e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9304,7 +9388,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "af9fb1c5-da2a-4607-958c-cf3aa00059f1",
+    "id": "00412561-c4c1-4cdc-8d79-fa06a74c3a74",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9324,7 +9408,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38f1f163-03c7-43bf-9e3b-a656b77bd92f",
+    "id": "d0ef7f71-457f-4a76-b1f6-cd3d1748859c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9344,7 +9428,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aec45dc6-4f5f-4fcd-accf-34285794d700",
+    "id": "f1648b54-746d-46bd-8d55-41baeac1e14c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9364,7 +9448,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d861975-bfc1-49ce-a47a-5d2e5cbb0034",
+    "id": "bfc7de0f-65db-4849-bbb1-044621b851db",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9384,7 +9468,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb54f16a-1a23-45fc-b853-3c6699e2994a",
+    "id": "69338479-8877-48aa-b5d3-dc490b029a42",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9404,7 +9488,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f452c08a-32fe-4861-97b6-57e38ffd2c7b",
+    "id": "6ecac958-8358-4e46-a3cc-1dbc0070234f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9424,7 +9508,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bef4e4b-8ab5-42b7-9161-f81833398edc",
+    "id": "d4ee8051-ff1c-451f-af96-30a932bf1e7d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9444,7 +9528,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fec3244-2d6f-4bc9-a3c3-bf6d6862479a",
+    "id": "dd99ce59-4663-42dd-8d8e-fa90134d68c0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9464,7 +9548,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ef63bd1-dc69-439c-9a3f-06e55def8749",
+    "id": "d13a931b-7376-41e7-aeee-147a021f3517",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9484,7 +9568,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3df55535-3ccf-41ea-ae7e-988b1ce6fbd5",
+    "id": "fcc60c9a-8dc5-4d85-8776-cadefaadff60",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9504,7 +9588,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ed46f17-65ab-4a39-9566-4c74c442b4b2",
+    "id": "d0225ce8-c898-4aa3-8a21-03395fdf611f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9524,7 +9608,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d88681ee-ebfa-4237-bdc9-d94b47fbcc49",
+    "id": "ca24c50b-6566-43e5-95ae-b6ba8d37788f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9544,7 +9628,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "936422c9-d8d1-49b9-a06f-b46b07e56011",
+    "id": "566c7407-3b77-4de4-b9c1-64687b969aab",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9564,7 +9648,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dcd4705d-5dbf-4476-be68-530db8d0d3b1",
+    "id": "eab14b8b-d93c-4433-87d8-59c999dbd788",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9584,7 +9668,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "119db027-8c33-4ef3-858a-b8a116d811cf",
+    "id": "43f77334-1655-4adc-83d9-b2f15eee2815",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9604,7 +9688,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c09e6ad4-0681-4501-9edd-02314363e3ef",
+    "id": "fb2d599a-e53b-4003-a49c-3ec6aa52ff61",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9624,7 +9708,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6419217-d936-49de-a938-daca85d2951b",
+    "id": "59e45e78-843b-4e31-9f70-69cd79907845",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9644,7 +9728,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9c8bbcb-5f29-468b-b9d4-d5cb5ca74e58",
+    "id": "a63b019e-104e-4950-8873-41000a9f9d15",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9664,7 +9748,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f71080d9-3fbc-4ce1-a43e-7a208896c7fd",
+    "id": "d2191169-dc51-4ca6-87a2-4e312c007ec5",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9684,7 +9768,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4128e63b-d4a7-4a91-85fb-64a543fa39ac",
+    "id": "71fc8a43-d501-402c-a426-9ad74c6f8a00",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9704,7 +9788,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14296d84-1dac-4b3c-b230-fb58d939b726",
+    "id": "5cd8961f-8a63-4b91-a870-1a1431dc44b9",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9724,7 +9808,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d87033d-0f46-4c4a-bbb8-f6fc60157c89",
+    "id": "f9fa0e92-2ad2-4f03-a26a-cfe2eff1e009",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9744,7 +9828,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8646348c-b5f6-4be9-b485-bdcedb885ad0",
+    "id": "0729af41-928c-49db-82e1-ca09567bf67c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9764,7 +9848,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea44135e-c53e-46ed-9b36-a1a418d165b9",
+    "id": "e402951e-5af8-46cb-8ace-b134113190f1",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9784,7 +9868,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "702d5f6e-8993-4f2b-9fd0-3c312aa2f641",
+    "id": "a777cfb4-3640-4e5d-b840-966e20e3cc14",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9804,7 +9888,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1935f8fb-2888-487c-a0cf-1d8107589e4d",
+    "id": "cc36f480-e4a1-46ac-87e3-e40394f70fb2",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9824,7 +9908,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac85b0e8-a653-494c-9e87-a207083f071b",
+    "id": "98aa7be6-df09-441d-a8fc-0fa1025ffe89",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9844,7 +9928,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33fae73b-cd86-4ecf-81a1-a484f3feaa34",
+    "id": "eca8f6ea-6f7e-460c-8e00-852f1f644689",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9864,7 +9948,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a2ea964-9ae8-475d-815d-9a44ffa74ca0",
+    "id": "9e1986a7-bcdf-466a-919f-b6ba2d90bb40",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9884,7 +9968,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64fccf37-8a93-4155-84d7-8c93700a67a0",
+    "id": "c2ae90d1-22c3-4c6f-aef8-bbae337a31f5",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9904,7 +9988,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "715109e3-d9de-44f2-bfbc-3b7a14e33908",
+    "id": "d27415c6-2bc1-4f29-b908-c3685953c52f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9924,7 +10008,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ca941e9-a58b-4549-9d3f-837de65a3c4b",
+    "id": "8ad51a4c-2360-43fc-86ae-7e579bd65e7c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9944,7 +10028,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa1521c5-ce51-4642-ba36-4af43a422c14",
+    "id": "ae5082de-7620-4f18-9cf2-85cb995981ad",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9964,7 +10048,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c08f1e9-ac7e-4368-9781-517e9a226271",
+    "id": "6199ba60-3bc7-48d6-834b-7913ff43fa28",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -9984,7 +10068,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f389a48f-1800-46a0-a73a-7a4b4bfe06ee",
+    "id": "7487edac-468d-4307-b1fa-9e60d05da9c8",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10004,7 +10088,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ecd97055-bf67-45c5-9128-650ac8f5ae41",
+    "id": "09add989-8af8-414b-a61c-d6a9ae37d5e6",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10024,7 +10108,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b02d5d48-37e1-4095-a636-c7020b5df188",
+    "id": "d5e2813e-f93c-478f-a839-126ae8212c1b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10044,7 +10128,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89cc3ace-6708-4cf9-af1d-8631cf74d7c8",
+    "id": "0b06c6b9-d041-495b-894f-759cf1f79af4",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10064,7 +10148,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d5ced158-8e4b-4266-8ca4-d3a6c6cacf08",
+    "id": "f20738a9-888b-4af3-a631-281cebbe37b0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10084,7 +10168,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc276d6b-4563-443c-a289-cc68834707fb",
+    "id": "86db4c4e-574f-4509-a245-3871ee5d4859",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10104,7 +10188,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d57b9e8a-f73c-4fcf-bddd-db6c37f1c58d",
+    "id": "27d95b6a-96bc-4117-abc8-1718ff183afa",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10124,7 +10208,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "020ddf72-9b5f-46c3-a2a4-19f6c48c373c",
+    "id": "76ecee26-86b7-47e6-bebc-d950c2c840b0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10144,7 +10228,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79bbe3cc-b70a-469a-acff-39a3c6e15b29",
+    "id": "777fa461-51d6-4e22-b284-b0ea002757dc",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10164,7 +10248,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a1908f0-0cd5-4101-ba48-a79006b93429",
+    "id": "f9d1af43-c010-4367-8294-7192065b3686",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10184,7 +10268,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ad0ba7c-4fe8-4d17-b1b0-7ea0e597d091",
+    "id": "9671e5cd-6fd1-46d2-91b1-39920b2f4caa",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10204,7 +10288,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "142a0ff5-6d14-4885-ad71-126394d607c2",
+    "id": "f4eee8d4-fd0f-43d3-848c-27bdba075117",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10224,7 +10308,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83a24246-9f16-408f-a093-6c844f44276b",
+    "id": "f5f190cd-aa71-4c2e-8049-e5811c30295a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10244,7 +10328,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e4ad9be-2fd6-4a3e-a2c7-fe68637d6f63",
+    "id": "0fad33c2-40fc-4e4f-824d-26258ac65616",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10264,7 +10348,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b436dbb1-29c8-4d03-ae85-1eaab33e7126",
+    "id": "a0a5e21f-6f91-4cdb-9573-a5da1d8774d7",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10284,7 +10368,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "765f6571-3d08-458d-be88-036a17c1ebe6",
+    "id": "9e1711a8-dcaa-4ae9-ba0f-a96192a410a3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10304,7 +10388,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d77000c6-5d29-43c1-8217-ae97185caa31",
+    "id": "bda06999-3ac1-44af-a794-798d664c3a3b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10324,7 +10408,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0ed5c0f-ff7e-4f85-ab19-d40152dc2ae5",
+    "id": "8bc39836-4926-406f-89af-983972bab1f3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10344,7 +10428,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "551f870a-5496-41fe-8fcf-2155b0664445",
+    "id": "2b747c3c-7f84-42ce-ae83-0c2e55504720",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10364,7 +10448,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65d44dee-d7eb-4429-a856-d1f72f6e3dc5",
+    "id": "7c785126-df21-43ee-af97-9ee8580e56f9",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10384,7 +10468,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6061f939-ac0d-4529-9dfd-1906cae17433",
+    "id": "54c183d6-6d39-41be-8616-360159b178cf",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10404,7 +10488,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6573263-767f-42cb-b789-6dcb541e2566",
+    "id": "26ba3f5e-1b57-4ba8-8072-59ba135fdeb0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10424,7 +10508,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c8aebe1-7f1e-42b6-a1df-cc46396deb96",
+    "id": "726ec76d-c2cf-441b-b903-3b7284bc743f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10444,7 +10528,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e763fa80-4430-4aef-8aa4-404618c9d24b",
+    "id": "73e189c2-3f7b-44ff-88d0-a97abe7931a6",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10464,7 +10548,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c7eff9f-14e8-4ad4-8a7d-8237d6a56536",
+    "id": "456aec1f-682e-49c4-8dce-e595b1d19c43",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10484,7 +10568,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1eb1563-e77e-4b14-b5d0-39e1a8b46395",
+    "id": "9d602bec-fa2a-4ea1-93ff-392549e6e23f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10504,7 +10588,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0432c8b1-f821-4638-a6e9-5600fe374552",
+    "id": "cba2f1c8-f5d7-4665-a5b5-87186e9eefdc",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10524,7 +10608,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29014338-8323-417b-a883-9287153ea8be",
+    "id": "3c830d8b-ec5b-484f-b682-bc51f518b70d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10544,7 +10628,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38c3939e-8097-461f-9da4-cebb42b5242d",
+    "id": "5125428a-6876-4774-81f4-dd2a1efccb0e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10564,7 +10648,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9060c89-f7ec-4b1c-8020-8b4ee4c69df7",
+    "id": "6a07e117-b216-4d83-ad61-0ec530a6e61b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10584,7 +10668,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ba7529d-2685-47d0-a90b-395f84ecce35",
+    "id": "66d6257f-0438-4238-b61a-e7c668840e54",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10604,7 +10688,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "550668d2-fb40-49eb-a091-165ae2bb5015",
+    "id": "b4bcd82c-ac2f-454d-a744-f818dbf2065f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10624,7 +10708,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b7c261b-b749-475b-b875-3bb4582fe881",
+    "id": "6de38f9f-a3f7-47aa-a697-e4344cb5ccd3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10644,7 +10728,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a70b66c-c0a5-480b-ad32-d5c60529510d",
+    "id": "0cfb353e-a052-423c-ada4-a2f674db092b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10664,7 +10748,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f555dcc-1d4a-4508-a25b-b8f7ac476bba",
+    "id": "c02c3675-50a3-4cf3-837f-a6e7e9b2f2f2",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10684,7 +10768,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e364a3f-c48a-4c0a-a8b4-8e9ea55e933a",
+    "id": "08185964-9199-48aa-96dc-4951c6004095",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10704,7 +10788,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f4bfb7e-1472-4e6b-b3aa-a94585409e6b",
+    "id": "27aee848-b408-438a-938c-5ba9288091ed",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10724,7 +10808,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6927fe73-5f88-4c0a-9785-5a4ec53dbb92",
+    "id": "02ed1fc0-7d24-48ff-ba37-715ef61b41ee",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10744,7 +10828,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a37709fb-fb30-4563-a6ca-98b8b420883f",
+    "id": "2e91cadf-08e7-42d4-ad79-4864799aee09",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -10764,7 +10848,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b39e4b53-f428-40c1-8754-ba2a0bc84743",
+    "id": "0fdbcc19-a9c8-4ed9-bc98-1f281ab8054f",
     "codigo": "4.1.01.02.0003",
     "descricao": "FRETES E CARRETOS PF",
     "tipo": "C",
@@ -10784,7 +10868,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b939a17f-2f0e-461d-80e5-73f1c2c1a5ca",
+    "id": "16829cdc-f54f-4117-aa38-79c4f0279dca",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -10804,7 +10888,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0f0a373-da1f-448f-82fd-2e56ea669c99",
+    "id": "f2a9afcc-c802-4b02-a41d-281f756f1ca3",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -10824,7 +10908,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3075ca48-b3e0-4f2b-b439-724aefedb074",
+    "id": "2eb076cd-9143-4b38-b0f4-f0dddf146730",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -10844,7 +10928,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56b63437-98a6-42d3-927b-be3c68832950",
+    "id": "caec9210-6d7f-4fe6-a76e-f3a928def0a3",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -10864,7 +10948,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "417700a2-75ef-4915-acde-7e9951695e90",
+    "id": "87cdff8c-e91e-4a89-a7c5-c9afcdaad557",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -10884,7 +10968,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19cd5cbc-7bea-4881-ae54-94d341e7cafe",
+    "id": "234d68ce-e1fb-427d-9f38-46616f1c63b6",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -10904,7 +10988,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c9219cf-0f9f-4bad-9e61-b5b59f63640c",
+    "id": "fa9c152c-6e5c-4614-84b4-53082774921a",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -10924,7 +11008,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edd9b65d-3dde-4286-a3c2-3de4e782a142",
+    "id": "c6cfdc0a-302c-4133-aeb0-8ea49140fe62",
     "codigo": "4.1.01.02.0012",
     "descricao": "COMISSOES E CORRETAGENS PJ",
     "tipo": "C",
@@ -10944,7 +11028,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "665376d1-2a7e-408c-8601-e49c42216b11",
+    "id": "7f74e1a2-8504-422d-bdb8-a3f7c30c8591",
     "codigo": "4.1.01.03",
     "descricao": "4.1.01.03",
     "tipo": "C",
@@ -10955,7 +11039,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "655acd14-c828-4197-9601-026d4ce7ac9a",
+    "id": "1002e9a6-bab4-4336-86c1-5a9968aeba56",
     "codigo": "4.1.01.03.0002",
     "descricao": "LOCACOES DE MAQUINAS AGRICOLAS",
     "tipo": "C",
@@ -10975,7 +11059,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb84bc08-a405-4675-abee-8350e4a1d806",
+    "id": "ff191b39-2ff4-4ef8-beb7-c766820b6dd0",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -10986,7 +11070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5f8121e8-080e-42c5-a62f-28570554b3f4",
+    "id": "5f6518df-df2c-44d4-9eaa-4e1269140269",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -10997,7 +11081,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "842d1f66-1c7a-4ad1-b362-7c62fcf99c0e",
+    "id": "d33efa91-6a04-48d1-9877-a607c8306384",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -11008,7 +11092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "242949b9-dda6-4d56-9ef6-694e5eb530cc",
+    "id": "d72fd4d7-9bdf-4651-867f-517c9e3c89ed",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11028,7 +11112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03e2e9ec-a48f-4d7d-b55b-3ff360da9cf6",
+    "id": "9b7da64d-883b-45af-a9ca-4e3947671038",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11048,7 +11132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c00c8000-0438-4a57-8688-44c4a204da2c",
+    "id": "919d0b6e-2724-4104-885f-a2bbed069d78",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11068,7 +11152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5a9eb28-06f4-4daa-a02f-d3677cc3a33b",
+    "id": "aed033c2-d567-4c25-87ef-bc60776f4e3f",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11088,7 +11172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f69ab2c-fbb0-46ad-8ba0-041b8690c962",
+    "id": "57e9f8b8-d58b-473a-be69-816cf5df4560",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11108,7 +11192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3cfbe97-6aff-42cc-9ccf-11b617e4e672",
+    "id": "b3f116bd-3200-4b2e-a83d-b05fd74a4982",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11128,7 +11212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "adf17ad6-15be-41d1-ba1a-0220f652c615",
+    "id": "067a7202-4699-457f-8190-f24d13463eb2",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11148,7 +11232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48c06eea-1163-4356-a1d9-730380e965d2",
+    "id": "53363653-0dfc-4a04-b073-057f69ccd3fc",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11168,7 +11252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0012962a-fdc4-4a5c-8046-213d816b0ac6",
+    "id": "d0a439e9-2d3b-41fa-97ab-e4849d9d96a1",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11188,7 +11272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afec9071-f76a-4ddc-a208-0b23233f1bf3",
+    "id": "689ffcdb-4efd-4263-b853-b0ef46bb0eee",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11208,7 +11292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "119393ff-2d1f-468b-abe2-00bb00c13aff",
+    "id": "d169aa15-4bd3-4623-b4ce-11bc43e734d4",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11228,7 +11312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf9bac5c-02eb-4558-afe0-2f6c254c0a7a",
+    "id": "e3376fb0-1ab4-4308-82ac-8e1e11fb7744",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11248,7 +11332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9435072c-71c7-46a4-9a89-f8f92fa79fb1",
+    "id": "d19361a9-3c64-448a-9b2b-4de7dad01f02",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11268,7 +11352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77a204d6-860a-4293-bcb4-05334db980d8",
+    "id": "87aa821c-9cc1-46ec-a99c-0ef1b09ebc1f",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11288,7 +11372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98d77a02-7520-4f24-8fd1-25f3799b69d5",
+    "id": "c5423f3a-ac54-43fd-88da-a95ba1cea3a8",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11308,7 +11392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ed1f82b-280e-4fe6-bd8d-8c6346860b6e",
+    "id": "07785386-d8c5-4c90-bc7c-607acd79e46d",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11328,7 +11412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d6568d4-f688-4bf7-8657-2a1455da5a89",
+    "id": "c3d57f99-4343-4342-8f55-82671e993bfe",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11348,7 +11432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "800216fb-b020-4185-9d5d-01d025c71690",
+    "id": "7a0e1ba0-7cdb-450f-8a59-05893f851795",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11368,7 +11452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "840287a8-cd8d-4062-929b-bb1cfa741363",
+    "id": "f479fd83-63c6-45d4-87d2-596dee73c07b",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11388,7 +11472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3dbd71f-a122-4286-880c-cf16ed06775f",
+    "id": "44ef2d5a-954b-4361-9c2c-867e52c2d8b0",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11408,7 +11492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b22d5729-62e8-4117-aa8f-575ce97cde36",
+    "id": "c46c2208-04e4-4bfc-94c2-d166058c4006",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11428,7 +11512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "721bdc1b-0566-40e1-b16e-5e3c78ab0e80",
+    "id": "b1ad3fe8-3409-46ea-9d13-8a8d412ab5d0",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11448,7 +11532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d161f616-06b5-4f4d-ab59-a8d6de569e2d",
+    "id": "eb3dd001-dfbd-4709-91d6-f7fce41dc5ba",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11468,7 +11552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99ea657b-b150-491d-a086-377065e668a2",
+    "id": "98b51028-dad6-44b7-8bea-041c1937d150",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11488,7 +11572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "990ed1a4-efd0-4eae-a354-a42feb3a83e3",
+    "id": "6c20ac91-90ef-4eb6-b45d-81d9fc840434",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11508,7 +11592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70745fad-781d-4ef6-8e70-533e8cb37636",
+    "id": "29e4e77e-9e2b-4488-9626-7f4f03839f87",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11528,7 +11612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a627f58-4dbb-4c73-8d06-8e306bbad539",
+    "id": "22cec9dc-6200-4812-822f-a190f403a5bf",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11548,7 +11632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4dc24e26-10f7-4983-8f9e-01c89d3af83f",
+    "id": "4b544ab0-1172-449d-b10d-7389b15800e7",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11568,7 +11652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9944b963-f9ac-426d-96af-a85224d8a607",
+    "id": "aab7d4d7-45b9-4212-900e-33d54e7aee67",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11588,7 +11672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3792600b-c521-4687-a335-814e097220e1",
+    "id": "148a6310-1acc-4d2b-acb2-060b5335f0d7",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11608,7 +11692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31fb83d1-6d58-49fd-9c75-d6b76546d782",
+    "id": "db3ab479-be51-4a79-89b4-7e48f2a5a27a",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11628,7 +11712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a5d3f05-8d8d-4ee2-8381-e300277ada58",
+    "id": "96a7f2bd-a7d9-4817-b5dd-4a633dbf440f",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11648,7 +11732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f7b782a-6b37-4792-a8de-1560e8a82d1d",
+    "id": "9abb062e-902e-41a5-af3d-cd92a19601ca",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11668,7 +11752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b449ae84-add2-4628-b046-8f8427ca504e",
+    "id": "a4318138-4bfd-4ba2-99bb-f06a5b523874",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11688,7 +11772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e06bebc5-2c2f-45a4-af44-f30aa4f6032d",
+    "id": "2633f1ee-a83e-4277-9172-fa57f89aa13f",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11708,7 +11792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ec00450-fecf-47c5-84ab-7802e7593896",
+    "id": "a2d5b747-7b7a-4593-a376-a6065bbd4998",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11728,7 +11812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e5baf8a-6ef3-4b54-a386-5b467d823c34",
+    "id": "8baad7ad-443b-4625-a133-2cc8bd3f7ea4",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11748,7 +11832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a2e1a92e-7583-4a7e-a93f-c7da8b253907",
+    "id": "d631cc43-56dd-419e-9518-abd30e7af77b",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11768,7 +11852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60b466b6-453f-4323-b7fd-51e0c460d674",
+    "id": "d1ce15b4-3cad-4855-a663-e7beb8dc0ae2",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -11788,7 +11872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80adccbc-7f54-4ebf-8c07-409869e1ae19",
+    "id": "3ca59165-e7e8-46b4-8e94-f4a87c71ec55",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11808,7 +11892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41f97b02-da3a-45ea-a241-1e0face99832",
+    "id": "66e8319c-df0d-419f-a3d4-1db0f2d1c33a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11828,7 +11912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ca3e937-4052-4511-8530-83ab4f1843c0",
+    "id": "68c7da48-ba03-4111-b379-89e991c26529",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11848,7 +11932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8c30b3a-6d84-415a-9fce-f29960ca9b62",
+    "id": "0bec84c1-8adb-441f-8df6-76f942febf21",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11868,7 +11952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ae01468-82e9-48fe-a8ec-7520f86265d1",
+    "id": "5f6aeda8-9fcc-45e4-a3a8-ef18234632d9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11888,7 +11972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7cb31636-9e6d-4f28-b2c8-54d6106598f7",
+    "id": "bc0817f7-b2db-4816-9517-18a01a6a805e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11908,7 +11992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d65b4ea1-0b62-444e-aef2-4a14ccc6a6b2",
+    "id": "02e63fcd-00e6-4352-9352-2931b26202c1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11928,7 +12012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ab7bab3-b4da-4b69-94af-9d63f2eaa536",
+    "id": "4740956c-9787-48d1-835b-f6fbcdc74405",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11948,7 +12032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "603e8f1e-5ecc-4cfc-8c4f-a1fa751fca2d",
+    "id": "954bb7e5-10f9-4676-a46c-5c583792e6a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11968,7 +12052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "81d2c5f3-4e3d-4231-b4cc-4d236c650276",
+    "id": "cd17db17-c1a8-407f-b914-9195586a3006",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -11988,7 +12072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d97f5d1-513a-4fb6-a819-30fab789a461",
+    "id": "5187f621-35e8-4daa-b112-35d3d6631f1a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12008,7 +12092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b41b52b-5982-4488-87b0-0e6eaa15f4c0",
+    "id": "6e1b67c6-50b7-45a3-93c8-e15ce6513380",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12028,7 +12112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15b90cc7-aa4f-4a57-8235-94f165ce26ca",
+    "id": "dfcc54ba-41ce-4ab2-a6d0-5d86aefb9d80",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12048,7 +12132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72432a40-7ac1-41c9-9710-0b01f4fa255c",
+    "id": "8ea921b0-41c0-41e3-821d-ad2378140d02",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12068,7 +12152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1dfe0524-4d03-4b09-b6ca-a6d56d87aad1",
+    "id": "cde2e7d2-111f-45c2-8385-6029d9d13295",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12088,7 +12172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "166785cf-7947-45df-8ad9-de92c664cfc8",
+    "id": "ffcbbab6-688e-42ea-a217-c03c3b68513e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12108,7 +12192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c1115d0-1858-41a4-8c72-020d19ed8398",
+    "id": "21dff7c4-46f5-4c95-8732-b48c5c7988ae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12128,7 +12212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6485d87-196a-4ec6-922c-142b409eb5df",
+    "id": "e3ba1f95-761b-42f8-982f-954fe5f6d028",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12148,7 +12232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67e6eb5a-870c-43d7-b18c-78ee39c69757",
+    "id": "67b2d8a8-a2c3-4ae9-ab89-780ff55f8904",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12168,7 +12252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a96fbb5-9839-43bf-9a49-a8552435f77d",
+    "id": "3bed5c53-6fd6-4217-8cd9-31d18465957f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12188,7 +12272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0de90df6-25ee-4ce9-8c39-6d3e6e4507a5",
+    "id": "04895ec5-1222-4bf0-b483-328439a76d42",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12208,7 +12292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14d285ce-3833-4e39-b607-204ce6f41349",
+    "id": "92037541-3c08-4c76-9325-bf3400a92594",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12228,7 +12312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca53b4b8-3b70-47a7-8eee-0d68a759b275",
+    "id": "3b6c4a88-3a4e-44ec-a61d-018a3dbe9abd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12248,7 +12332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "645e4b0f-3c5f-433e-9ccc-a3cb337e88be",
+    "id": "640295f2-e2d8-4f89-91cd-51da4577e58b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12268,7 +12352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a69e25c-5616-4ec2-8d89-fba36e36cca4",
+    "id": "ee607dc9-a82a-4731-85a5-656be18b1e19",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12288,7 +12372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "af1a55e8-c512-4327-a455-484cf90731b6",
+    "id": "1e0e267e-edb8-40e9-b8ed-84823c96d38e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12308,7 +12392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72ca3569-3440-4288-8342-7e9e8b716f0a",
+    "id": "c302c78b-5572-43e2-841b-0a7f21141714",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12328,7 +12412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee1a9d26-39cb-4add-b5e9-c71cebb5f8db",
+    "id": "b7d60c0a-954a-46ec-8b18-58d8bc1d8227",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12348,7 +12432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3a0a593b-91c5-4514-9052-9acd611b6812",
+    "id": "e2ddcb19-c269-4ef4-984c-20f14a39985b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12368,7 +12452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebb9992d-7e72-4778-a266-ba5d7bd93a8f",
+    "id": "fa478b5f-c2a3-461c-a35a-eec7eeb6f2ce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12388,7 +12472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50397020-740d-4818-ad54-cf7890b3fdba",
+    "id": "5431dc94-5789-40c7-9a2d-7c1233d51dbb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12408,7 +12492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aae8f500-a093-4c00-91bc-4fdbfc134890",
+    "id": "ce9cfc7a-56b2-4c63-87ba-478bdb14a7c2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12428,7 +12512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4224ed0-15de-4f1b-9f63-0dce9d625ebe",
+    "id": "e4fce764-ec4f-47df-b801-389d0a88f3d1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12448,7 +12532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a06ac70e-5f2f-424b-a5af-363e86287195",
+    "id": "28194cc6-f321-44ab-be69-956b61508f77",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12468,7 +12552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53154f2f-04e2-4b11-a381-c3f48157dbe9",
+    "id": "1e95f9e5-14d4-4eda-96fa-e733460d5754",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12488,7 +12572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c86722cc-8cab-4382-91cb-3f668459684a",
+    "id": "de4d6742-3af7-46d2-a17b-7cce3a66c563",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12508,7 +12592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "607b7160-4b1e-4320-aada-a121cda2ae7a",
+    "id": "ef4c77f1-9a62-440b-9c18-861640639026",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12528,7 +12612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a25fca5b-558d-4ac7-8856-0096c9bef697",
+    "id": "c8df9a67-a6c8-48cc-b038-47d116c83013",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12548,7 +12632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f72e9b5b-3513-4528-8e8f-a6079e466bc9",
+    "id": "7d169186-8f97-4001-8c9b-7781f48906f1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12568,7 +12652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b8e6e62-9e14-4486-9de8-d7a3e643e69e",
+    "id": "f585c2e4-8512-4aaf-bdea-1e8b1d7e7053",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12588,7 +12672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44bd4a13-365e-422d-8729-bf6be557fb0b",
+    "id": "873c6322-f828-41ea-a5f2-f3627f323321",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12608,7 +12692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de41fcb3-47c0-47e4-b8ec-4b7a6115e525",
+    "id": "a23a26d6-bf90-4a58-b867-e7e8bc53a8a9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12628,7 +12712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57bb8223-3b97-4f55-8850-96b6f95f7d73",
+    "id": "c127f3bb-7fce-4ca1-aacf-1915fc5cf782",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12648,7 +12732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6599d804-288f-4cfb-888e-47303c60a95b",
+    "id": "97aff691-c837-4be5-8c11-d94a11076ede",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12668,7 +12752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ce51573-5b3c-4b0f-94ad-a9f2df820eca",
+    "id": "abef91ad-6a55-4f0a-b4cb-b1f6c2fafa09",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12688,7 +12772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac572717-a672-4af6-822b-7f848f069ef3",
+    "id": "fcf74a8a-5ef1-4176-bf6d-ca5a90e97b30",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12708,7 +12792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b912918a-c571-4c12-adc1-f303f7863277",
+    "id": "b974757d-48b8-405f-a073-54b50ea64f0e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12728,7 +12812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72bb761a-31e2-495f-ba60-e03f1869b6ad",
+    "id": "94261493-cad7-4ef5-82ad-c091e3d5314d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12748,7 +12832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1452e31-7974-478d-b84b-000e60976b0d",
+    "id": "185eb624-7439-4239-9940-b7b27a4addcf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12768,7 +12852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68c5b109-02cd-4b64-a270-f50b7ec207c4",
+    "id": "d9c15f33-d6f4-41ee-9272-3786530e477c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12788,7 +12872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "039aa193-300f-4607-a5ee-edbcafa79f2b",
+    "id": "8c849499-0d61-4ca8-a8c5-49c48cec13b0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12808,7 +12892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "228549e0-40ab-4d39-af87-39b367e39747",
+    "id": "aaabe3fa-98bc-40f9-8e15-50032adcbc83",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12828,7 +12912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e724146e-9733-436c-b971-0e29c06304c7",
+    "id": "4c2f27b7-280f-4376-a1b0-5610fdf5673f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12848,7 +12932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "496fc629-505d-43d9-8b34-eeda9e74bff5",
+    "id": "10f7e9d0-117a-49a4-982c-82454a1855e0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12868,7 +12952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26443869-8778-4e3d-bc30-2540b6cccc79",
+    "id": "f538b771-d299-4dfa-a909-3044f7fd9f3b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12888,7 +12972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3999620-bdc7-4bb2-a662-d34840851517",
+    "id": "572aa21d-c11f-47bc-971b-338288e404a4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12908,7 +12992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c420654c-f9af-40dd-b886-43f42c2ec873",
+    "id": "2de98faf-9439-41c9-a1d0-ee88d5a79fe6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12928,7 +13012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4bd984d-b692-41f2-a05c-984460f97685",
+    "id": "e46654eb-5341-46b0-952c-0cb5765c6899",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12948,7 +13032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26e2b123-9f70-4de2-a85d-7f2c28030643",
+    "id": "10baaa01-cf4b-4673-b686-dacd02362a6f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12968,7 +13052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa52c391-548f-4631-bd11-76489c89c130",
+    "id": "954b3f19-4a91-42c6-9e2c-baa586a3ee57",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -12988,7 +13072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02b938ba-512c-4897-8294-144df6150ca2",
+    "id": "7ecca1b9-5732-487d-8f9a-869ef42846d3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13008,7 +13092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36972953-73cd-424c-a860-fe63c0dc87c9",
+    "id": "da457797-eb3e-434d-90e0-e33daf494428",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13028,7 +13112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbe32c44-5da2-4cd3-bb9c-740dd2a26383",
+    "id": "7981c788-2a7f-4b4a-ae3c-bc08ae838ca0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13048,7 +13132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0510c37b-de66-4395-af39-d6df2281116b",
+    "id": "e56115e6-1c96-4ce6-99f7-575330a7e797",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13068,7 +13152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c7273be-279b-4312-a451-4e9ded30fd39",
+    "id": "e2095fa3-5304-43ca-98b4-aaae3f25ee41",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13088,7 +13172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4d3ac68-90de-4d22-b9fc-dedc51d8dbed",
+    "id": "8fab2bb6-86e5-4dfc-b3d0-00a33f759ed0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13108,7 +13192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99bf9c4c-c035-4f30-9dda-bdec933dc1cc",
+    "id": "840b429b-a39e-4f47-95e0-af4d055eed30",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13128,7 +13212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f27ab96-021e-4ec7-b991-9cd361d411f3",
+    "id": "781a963a-0b3f-4886-8a84-8aae1cb498a5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13148,7 +13232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f65a2be6-7430-4b04-9243-5cac5faa9f5d",
+    "id": "d3f7e526-dc97-4d46-8cf6-dbd6b6ee15cc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13168,7 +13252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "233b8817-3348-4b3e-95c6-e2dbeefa4b21",
+    "id": "c4564b32-8bb4-4069-9cc7-d98861b3c5b4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13188,7 +13272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcb5e401-f486-4cd4-8c50-275106b15bfe",
+    "id": "3f87355a-e238-482a-9a77-fdba78ccf3d8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13208,7 +13292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd339bd0-077d-48a5-a6fa-b54e2d1551ae",
+    "id": "39e4bf10-6aa0-41f8-bb93-36d91e394f05",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13228,7 +13312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c27b3e9-2a85-45a7-8c50-bb89f59132b5",
+    "id": "3dc0c8d1-a2a5-4ae1-81bd-3fb023be3203",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13248,7 +13332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6d588c4-2194-4dd7-af13-7992e215a891",
+    "id": "5024da4a-371a-48d5-9e34-cf6c1f499156",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13268,7 +13352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f834f4d3-c2b2-4706-b143-33f1233beabc",
+    "id": "498c11ae-56a1-4b92-be47-c1f13f0ca823",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13288,7 +13372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3681c97a-b23d-4a05-9308-1fdd7742ec61",
+    "id": "be23eb7c-5719-4739-a9f6-c4f71cb0be96",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13308,7 +13392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d46974e1-0a81-4631-a9e3-a781acd0523a",
+    "id": "4af962b0-d316-4828-97fd-5aaf48e4a95e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13328,7 +13412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65a2bc0d-55e0-4de6-834c-510a7bcbb496",
+    "id": "5f263fd2-0477-4f98-b9f3-ef6a3aa727a2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13348,7 +13432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b5e6f0c-8727-4119-b933-9e41c0237e16",
+    "id": "9bf46e1c-c10e-4d2a-bf4f-6e30f55b8bb0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13368,7 +13452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1a4fdff-b384-4c84-be40-b9266e728d76",
+    "id": "44075502-93fd-4613-809c-841057f85a82",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13388,7 +13472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b10847f-7ee6-4903-9a30-7ffb53435133",
+    "id": "e4ce1555-b32f-4522-aaa0-7b1f771e44a1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13408,7 +13492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3baf1d73-2bb3-4696-8f26-2ea6f4c7b92e",
+    "id": "1973f1f8-fb85-437e-a799-084ae95a418d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13428,7 +13512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73cb68a7-25d3-4964-873c-13f6cf1899c4",
+    "id": "7a02b320-41f8-4de2-a5e0-04b90c0cc2a6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13448,7 +13532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dd75592-2413-4f5f-ac2e-43fae3a225db",
+    "id": "f73f6475-e031-463a-811f-833f2fc335c1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13468,7 +13552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "877894a6-e74b-4355-bac5-a636b7186b19",
+    "id": "e0e83096-f496-402e-800a-e821a9237d1e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13488,7 +13572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd322891-2a21-494b-88ce-2a1c63f68f24",
+    "id": "5b3b4c9d-bdfe-4794-8fc8-42a964aebb5d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13508,7 +13592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d55d2440-08b3-4708-b136-23cbfe859256",
+    "id": "466bc297-da6e-497e-a076-a7ebc2c838d5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13528,7 +13612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd5db8b3-e70a-4c65-83c6-bd1139bf533e",
+    "id": "8d468610-740c-4e24-8763-79348c9f1ccd",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13548,7 +13632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54f83a28-0256-4d07-a42a-f5cd7605dd07",
+    "id": "6e2fbf23-4385-4136-a189-7cd4f09a6ec6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13568,7 +13652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92e50dc9-7d43-46a2-92f9-38694f12f6a5",
+    "id": "667f200f-292e-41af-9741-329dd8400ba9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13588,7 +13672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86974a28-4518-44fe-9b97-c375714546f5",
+    "id": "a138fff9-f652-4797-87af-83fdbbabed1a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13608,7 +13692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b47b5dc3-2f9b-4d61-ab28-0f4b0de7a1f6",
+    "id": "bd0c26b3-f7ec-4a6c-9177-18539a1f25d0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13628,7 +13712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3067fb9c-30bd-48f6-883f-98a3c7b69263",
+    "id": "d2d77805-5ff9-41ac-be73-1210775198a1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13648,7 +13732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f196e50f-fe8d-4daa-9ae0-382cf8d05d9e",
+    "id": "432a648a-848b-47f6-9e8f-5eb87db20c6c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13668,7 +13752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e647571f-408e-458f-8f1c-c9f94048fe7c",
+    "id": "d3f48826-6ec8-41ed-ac61-596124c48427",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13688,7 +13772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "141c2120-644a-42c2-944e-e9e6c9db1523",
+    "id": "d94963fd-3a37-43a3-adc8-9cad1e51d854",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13708,7 +13792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1f188dd-8ddf-4839-9841-a988713787b2",
+    "id": "0304e95d-49fc-4941-bb1e-35bef1338989",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13728,7 +13812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89e7af43-b843-4918-8f89-cc21a8882078",
+    "id": "a7cf24d3-29a1-45f5-ad12-c7ce4e67a4f6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13748,7 +13832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "257f2d6f-9dbb-410b-b241-d1a61a42ec5c",
+    "id": "1098c4c5-b32e-4f5b-af4c-be2b5cdafea0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13768,7 +13852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88ea5d26-195e-4d66-b3a2-9e46c1b3f2e4",
+    "id": "b2bb2883-3a67-491d-b7ba-28e3886bfbc5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13788,7 +13872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8cef818-4ca3-4a86-b2eb-147ce5047f47",
+    "id": "885ff662-7be1-4cee-bd08-5c1347ca62e4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13808,7 +13892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e081dcaf-0f22-4b6d-a5f9-0f1e03e3934b",
+    "id": "e11ebba8-95dd-4793-b83e-54cf3f14188a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13828,7 +13912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4efdbc8-e2cb-473e-8468-0062ce3cea66",
+    "id": "16c24865-1e8f-478d-bdef-f17106a32ee9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13848,7 +13932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7649dd2a-c94e-4fab-9c7a-959ee4748578",
+    "id": "b0a604ea-15d5-46f7-80d2-7c1e5546a562",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13868,7 +13952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68d0251b-69c0-4cb9-bf62-fed8931ca4fe",
+    "id": "7c2bdd45-9fa8-4ef9-acd3-0a372f2cce2d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13888,7 +13972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c78b5706-9397-4837-8f7b-7cbe7bfb4ca4",
+    "id": "91ed11d4-8759-4be8-9a82-fd554e56d619",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13908,7 +13992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0050f34-4da8-417c-8190-c1c9f300b245",
+    "id": "c4712f68-3fdc-4257-8f05-26c76d5cae8c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13928,7 +14012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f7dfce0-c2a1-4b17-b4b6-94a1514fe0db",
+    "id": "2cf2b655-bc5e-456e-9707-4bb850b15836",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13948,7 +14032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50b750f7-a501-484f-a164-edeb3eeb8db9",
+    "id": "f7427b9f-cb65-484d-9bfe-81b8aaa10e50",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13968,7 +14052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5feb465-bd68-48d4-8641-9807edb4f8db",
+    "id": "0347332d-868b-4037-83f0-3e3b9c32e08d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -13988,7 +14072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6a6172e-fb00-46d0-b929-dde6aad2b159",
+    "id": "95904663-0851-4486-88bf-3f4604b77a14",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14008,7 +14092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a493cf68-c32d-4d88-876c-45ede0475863",
+    "id": "a53443cd-034e-4aa4-abee-77abf10b82c5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14028,7 +14112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "751efc56-70d4-4715-8029-6dad700ef95e",
+    "id": "157ca735-d079-4c45-a885-88b5396f4de1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14048,7 +14132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed2d09ff-87d3-4f90-b536-300f2710c4e3",
+    "id": "668843c9-128c-402f-a26f-f8fe273402dc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14068,7 +14152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7224b4a4-59d2-4dd2-bd90-16b5f518140a",
+    "id": "114da3a0-48bb-43f4-8961-833551b1c777",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14088,7 +14172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8859f883-16c3-4f4c-aa23-01cf28bd8f20",
+    "id": "8db183cc-3708-4a17-972b-9153293ac745",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14108,7 +14192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2939528-24fb-4758-babc-90827bebb8ba",
+    "id": "02ddaa9e-0fa0-4baa-9810-befca13774e9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14128,7 +14212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46b97666-8766-4e04-b818-7b73ae57e53c",
+    "id": "7781c1a2-3c57-4a21-8c2c-708b5de62f7c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14148,7 +14232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "440ac2a8-48ba-4273-9686-a2a7e9155bc0",
+    "id": "9cbcbd25-5575-4805-9adb-d91191dfbe7f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14168,7 +14252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "714355fc-704d-4a1d-b905-354bcd4f7bf5",
+    "id": "63756ec8-4c17-4a83-9c47-ae363e0b3ec8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14188,7 +14272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e0b8a87-775c-417c-92a2-dc031cce0170",
+    "id": "cbde0cbd-4545-4c0b-ac66-6886aa360a50",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14208,7 +14292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72ad85c0-c5e1-42e9-8a82-388e9c818ce7",
+    "id": "58ee35b0-12aa-4aa6-b9bb-735bbf027eb4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14228,7 +14312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5cdbf10d-a329-4405-9750-37dabd4f0ce9",
+    "id": "05cd1dbf-9343-4b2a-b15d-81ed7a06d581",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14248,7 +14332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90c7d75d-7dd8-465a-995b-ba4a5416d230",
+    "id": "be9f4250-b781-49cd-9f43-e7a0e107f4a7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14268,7 +14352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "010f94a5-d366-4983-b6b8-eaa218f04b83",
+    "id": "11aafd6b-1d2c-4e81-8344-1837a2d42228",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14288,7 +14372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdbb0a01-0be1-492b-8052-70dfa23730a0",
+    "id": "1ceb5c18-40da-494d-a742-0132fc089f83",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14308,7 +14392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6353d471-5d6b-4874-bf73-727b8cc4e050",
+    "id": "b20c6a00-d651-4284-8218-86e5b259ac3b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14328,7 +14412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3938e46-7edd-486c-bfba-bdaba18d76d0",
+    "id": "b4095460-a7e9-4d8a-bc3c-1e9a1d55cb34",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14348,7 +14432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edf0d932-ec4d-41c4-a07f-261a9681128d",
+    "id": "9ca2535a-e946-4ae8-a635-53b799dffbea",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14368,7 +14452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ed2e913-5e63-43ab-bf01-de2c86d38414",
+    "id": "e5c245b5-ff4a-405b-9d0a-3bda20d74405",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14388,7 +14472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0339d753-4b32-4ffa-904f-201c4e0fa64e",
+    "id": "ae8a546e-901f-4ed1-bdd4-ab4d07ced4a9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14408,7 +14492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24eb62de-a321-4b11-9918-7118c15e7fde",
+    "id": "420f1000-ce3d-4107-8053-a597b4e11000",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14428,7 +14512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a636463-6c4b-41b1-a3a5-eed93ca0f670",
+    "id": "0549cf1f-62d1-4b5c-9156-2d49d4e4e0ae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14448,7 +14532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f50238b-0b89-48c0-a013-fb26bbb537b7",
+    "id": "1305e99f-3929-4c8d-8bd0-0595a45b66d5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14468,7 +14552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0afc5a3d-e4ab-473a-a8cb-65e4ce558826",
+    "id": "d4425164-d083-4074-a5f8-a60805736476",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14488,7 +14572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d18add88-d058-4567-91fc-91265102a0bd",
+    "id": "88a05270-f9d2-469f-93d7-a1e6d3727718",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14508,7 +14592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ddb0e640-f632-4f76-9bde-d25dc8ea041f",
+    "id": "51417710-08b4-4632-a150-c7a9533a001f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14528,7 +14612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "919fc59d-ede3-4736-b464-678a3d4100f2",
+    "id": "f8f5f1ff-2a57-4a35-bb36-ffef6d3f10e8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14548,7 +14632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1dd2147b-512f-43fb-a4a3-0d0ddad50434",
+    "id": "2558c611-b003-4c44-a441-fa4fdab9e60e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14568,7 +14652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02f9193c-f260-40dd-a08c-9527c8e6ae52",
+    "id": "16e99297-f7db-42f0-a4ae-5713154011a2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14588,7 +14672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "694e646a-f003-4318-83ff-a48d671e1865",
+    "id": "c424fb98-7f7b-4abd-938c-6ded5aa24cac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14608,7 +14692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13db540c-45a4-439a-82d9-cd24e4d4a207",
+    "id": "dc8c4da9-0f7e-41cb-bdcb-dda655f908f7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14628,7 +14712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed59e900-2270-4ae4-b72f-fe72c5764269",
+    "id": "0510076f-014d-43dc-b4d3-396fc44436fe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14648,7 +14732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42336492-e6b0-44d9-81ff-62b601c92d36",
+    "id": "0b959f68-0787-4839-87d8-0270590e4355",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14668,7 +14752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c192b5fc-0299-4e72-b277-4ee180a7bbac",
+    "id": "efcd1216-879d-4e07-9de1-c9a60879f065",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14688,7 +14772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53cbf860-6895-47ba-8cfd-fb499d927b87",
+    "id": "57fef928-15ee-4629-81f5-60ff9791c7d6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14708,7 +14792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "997d1d1f-9291-47c9-a801-3c8ac9c969b8",
+    "id": "c223c5b6-7c09-4c96-84ab-66270b650297",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14728,7 +14812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99f5de52-2e8b-428c-97bb-8cf08c670cc4",
+    "id": "cb2a3dfb-cd34-42f1-920a-c3a8a753e76c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14748,7 +14832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17d139ae-192a-471d-94b3-827e05dbcd4c",
+    "id": "98e27e66-9730-4243-abba-ce2f7dee10e0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14768,7 +14852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96ee507b-d42b-4a48-9ec4-10c94f30dc53",
+    "id": "d491c090-e556-46fb-9e8c-1ff4b8fa9ce5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14788,7 +14872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02c5e8c0-2088-42a0-9696-a0cd6c2d1e89",
+    "id": "b65f83c7-4779-4e77-83bd-ea02127796ed",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14808,7 +14892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4cea31e-38e0-4dbc-8ea7-9e9c38e96e5f",
+    "id": "b0f2c51e-7c4a-4504-9f70-a0f19a1928ae",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14828,7 +14912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7662531-6b43-400c-85b9-b196b24d8906",
+    "id": "2b44a801-fcde-4bd2-8fc6-2280bdcf4597",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14848,7 +14932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d1e3478-744f-4946-b401-b074a30ee5d3",
+    "id": "34737d03-2039-4d74-b031-3ab20f6ae9ce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14868,7 +14952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e67a1b8c-94ca-40f7-a175-070d32ee9e1d",
+    "id": "3146964a-791e-4dbc-adde-9da002068a4c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14888,7 +14972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc573522-598c-43dd-9c58-51a1c0bb492d",
+    "id": "9bb3a872-cb78-496f-9339-9741d446e410",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14908,7 +14992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03b1271e-d712-4ce3-b73f-cab6ec7a4a17",
+    "id": "a41712af-0775-4105-b189-506ee1dc4358",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14928,7 +15012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e36ab77-4a6f-44ef-9362-917ec4328a2b",
+    "id": "1d57071e-6f78-46de-9793-08507cc65833",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14948,7 +15032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c43bb393-ee3d-4526-8bf9-2ee7939595fa",
+    "id": "ba8aaca9-8631-482b-b064-66b8f2493897",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14968,7 +15052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db03cb5b-234d-4595-a07b-bcf268577a99",
+    "id": "a5d110ca-44bc-489b-bd31-090540060cbe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -14988,7 +15072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3545d88-84e1-40a9-af1b-515318b652ad",
+    "id": "633adbb5-ef86-441e-90d2-476889b0b43c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15008,7 +15092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32b186b5-c260-49cc-8bef-21741d7b5c4f",
+    "id": "4ab54ad9-f8b6-4864-868c-5e6092be85eb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15028,7 +15112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "128edb82-a6dc-481a-957c-da863f7105be",
+    "id": "bb339cb8-2b73-4151-9098-e724f3345fb6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15048,7 +15132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71a3074d-2de9-43cb-810f-b14097828d27",
+    "id": "3d64e6ac-6e3a-435a-99c9-2323000a0a2a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15068,7 +15152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35959bde-79df-4d20-a40b-7317d6d18b0b",
+    "id": "bc3bedc5-a53c-4d21-b0c9-00fc3763c1a2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15088,7 +15172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2addec0c-573b-43f1-8ecb-306c4d53cead",
+    "id": "3ff915ec-370b-41f5-8df3-c2644082ac0f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15108,7 +15192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "260a62d1-c214-4ad9-8b17-dc3832c71ddb",
+    "id": "91d16444-c689-4c94-bce2-fb821697f6f4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15128,7 +15212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aff69dd8-44d4-44d4-9672-e178b99c6cc0",
+    "id": "673eefd0-0351-4abd-b943-ccebbd0deea4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15148,7 +15232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f175e088-f489-4c5b-af94-1f0d88501993",
+    "id": "add88fa1-bfe2-4d1d-99f1-9c59b474b5c2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15168,7 +15252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3406f683-c4c5-4465-b853-2161f6af876d",
+    "id": "82f9c2eb-49d4-43e9-83a9-b3fc8df3b623",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15188,7 +15272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4b15eca-2708-48ce-bf23-efb32c37b44b",
+    "id": "846a4f87-f168-4b89-83d9-64e56518b02f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15208,7 +15292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "572bd20b-a963-4ab2-921f-4463a6db63c4",
+    "id": "4ac1701e-d2ea-492f-8c33-d9463292d244",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15228,7 +15312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e77ee73-2be0-40f5-a816-7d0f9d6fb9ef",
+    "id": "5089a76e-181a-4831-96ea-5135057e645b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15248,7 +15332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ec50a76-33f8-4563-a3f7-859a364713ba",
+    "id": "42189981-3f4b-466a-b9bb-7a9695a0e641",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15268,7 +15352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62633f9c-897f-494f-8841-1d2804b077ca",
+    "id": "cb6efaaf-b246-42f3-a0ce-d10d365f8a37",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15288,7 +15372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e34528ae-f854-44e3-a66d-53d95cd22940",
+    "id": "7b45af4e-26cc-4999-8e2d-107f4dd64449",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15308,7 +15392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63cf6292-e02e-4556-b5b0-2bb4b4e02a1f",
+    "id": "1837f7ca-dd5f-4280-955e-3210de5cf75c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15328,7 +15412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8440c0ce-4ca0-4f34-891b-a189201819ae",
+    "id": "807a53ab-8a59-47cc-9cd1-b60e5ffb0a47",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15348,7 +15432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b33292d1-cb48-4251-ab55-1c19f49ddfa0",
+    "id": "66944ffc-5669-4268-a66e-215799b22012",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15368,7 +15452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4493b65f-e93e-4bec-af2a-61cef5b78c24",
+    "id": "450b4a16-5b5a-4fa2-a94f-2509eb634b8f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15388,7 +15472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09c76bd3-0cc9-4e5c-a16c-53c12184a642",
+    "id": "317ccb16-6a69-427d-8eca-2c88b329e064",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15408,7 +15492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9443a475-f030-464a-9203-562c9381a273",
+    "id": "16cbb6e0-4187-4eb7-81f5-1a36da90e65c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15428,7 +15512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbcaf045-088e-4c58-a8e9-fb22a1f165b0",
+    "id": "1d1767b6-7b98-40e4-824b-f64584e1b572",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15448,7 +15532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7342047-5495-4a71-9841-9c33f7057c50",
+    "id": "2629a81b-c4d7-494b-84e5-157ccf7944c5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15468,7 +15552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38f23ff7-a10d-4b1d-9bec-edb0349a5438",
+    "id": "7db70a20-11fe-4252-a75e-fd2549b8dba8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15488,7 +15572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d58fae3b-6a7a-4b5b-8897-ff04af310a28",
+    "id": "0e76149d-dc03-4925-bf21-5605dd7d9597",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15508,7 +15592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d84e6dd6-8f24-4f9f-b392-b9bd298f2c11",
+    "id": "cbbaa660-7082-4795-8e17-9dd2d2dcb856",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15528,7 +15612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a47444f1-9712-4724-bcd3-4b8cb24b9d48",
+    "id": "2765d4ed-745d-45ea-8c37-d7fff879c720",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15548,7 +15632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc00fb44-69ad-447f-bc5d-7e34f422a0cf",
+    "id": "cb4bbeaa-0ed1-442d-836a-073c157f60c7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15568,7 +15652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19021c92-eb89-4512-b994-41071694ef0c",
+    "id": "06f9b6fa-0878-48ff-93b2-9b77dbb6f10a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15588,7 +15672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aeea696f-d2b5-4c49-bf80-aef7b7d0bdc6",
+    "id": "c8cc1ebe-3354-4914-b78f-12d06703efdb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15608,7 +15692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eedf65d4-d13d-4684-b132-50857d0bab6b",
+    "id": "6a956a40-7d72-4599-8aa9-1bb337f6f32f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15628,7 +15712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffc0896d-f010-48e3-ae65-6db624741a5f",
+    "id": "50151891-6752-45bb-9198-fe047c727397",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15648,7 +15732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6613a11c-3e87-4d0a-a8d1-e197e3927ac0",
+    "id": "06b9b80c-1b93-40ee-92e3-62080c846e88",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15668,7 +15752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18a94256-fb15-421b-8b93-9eadacfac781",
+    "id": "e3112493-7cd1-4d92-95c1-ffbbe27c30b0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15688,7 +15772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c27694f-6b62-4f59-9c14-e7ca54ee4fb7",
+    "id": "dbb9d1d9-94e0-4338-9192-736d38ede202",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15708,7 +15792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aed8c824-3da9-440c-b769-a8789ab7b9ac",
+    "id": "b4165521-8332-4548-a4a3-b42719855977",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15728,7 +15812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c910858-4469-460e-997e-75885418c0eb",
+    "id": "f5af5c29-9ebd-4e0a-8f72-3a0559aeb1b6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15748,7 +15832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55885bf3-cd31-400b-9b02-64d431a684fc",
+    "id": "6e0d4154-a0e3-4f55-9972-fdcc39851404",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15768,7 +15852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8723b111-9757-41e4-b37d-37421602ee3b",
+    "id": "f2da5720-ce2d-4afb-8ef2-b51e3fd9458c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15788,7 +15872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c841510-7328-41f3-8709-7f33963c2541",
+    "id": "e32d2df7-bc2b-4dbe-876e-37ec2ee97b3e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15808,7 +15892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "583a0a07-14b6-4474-a6b6-96bbd63c0970",
+    "id": "d1127cf2-07e2-400c-9a65-a548e6ca9fac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15828,7 +15912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae10fc71-3731-4973-ac5e-fea1f59b9d6a",
+    "id": "6a2f36b9-c180-48d2-bb85-327ede07c6c1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15848,7 +15932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84832083-fe86-4a21-a782-4fcfebdbdf88",
+    "id": "ceca80c9-f76b-4dec-bd12-ba5bd96259a5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15868,7 +15952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e57b9085-2dda-4bdb-a592-e882fdad13c7",
+    "id": "52290336-e0cb-45d7-b143-12b00f3085b8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15888,7 +15972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a42172dc-b736-45e4-ad0e-37e01fc05778",
+    "id": "208a0b08-397e-4d01-a8af-ac4fcb9b893e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15908,7 +15992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3a5028f-4483-4902-a588-a37f0d26cfce",
+    "id": "9a682297-604b-46b3-af74-e4c03a49c018",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15928,7 +16012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3a43c906-e593-46f0-aca5-75a9e3405bd4",
+    "id": "947760dd-fa70-4a9c-8eba-6ede3ee68690",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15948,7 +16032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "95685d81-0f1d-4910-bf47-ace7fe518181",
+    "id": "6d097a8e-4a24-4150-af81-731a17261487",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15968,7 +16052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96d233a0-08b2-41ef-a48c-2cf092aa61d8",
+    "id": "24ec67d9-e62d-4892-ac73-fd2a0357c90f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -15988,7 +16072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ade83e15-527e-4139-bbb5-95940dd2aaa2",
+    "id": "10d58e35-3545-496a-a809-86add61e6605",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16008,7 +16092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ed106be-6adf-43c1-af58-2dd2d0e7992c",
+    "id": "8fae4bf1-e541-4159-b80d-ae7f8d094d9a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16028,7 +16112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3cda9fe0-477c-4d51-8b06-99cef9a12e01",
+    "id": "ec416e82-3923-4734-8fb7-8a206110e798",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16048,7 +16132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9040699-0155-4fa4-ad4a-cbd9e5255144",
+    "id": "114ca46c-fa50-408a-889f-a9834cd1e893",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16068,7 +16152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad9e5dec-430b-4e32-909b-9a68a728aea1",
+    "id": "656b8226-c55d-457c-81de-c9de7c21817c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16088,7 +16172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ce18697b-d188-4ff2-8d3f-a1d356965cbe",
+    "id": "fa1c9dfc-d976-4fa9-b0e9-1bdf74744c6b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16108,7 +16192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54ff298f-f3f2-47ec-8621-029a7c37ed58",
+    "id": "172380a5-4f1e-430c-802c-5ac1514e2851",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16128,7 +16212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1ce5687-f4fd-410a-9bc3-2958c7477348",
+    "id": "86006ce7-5408-4dec-94dd-6de3c78fac0e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16148,7 +16232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6739531-89f3-43e4-9251-f813965d3cbd",
+    "id": "4f3cf8de-ecc2-4bcc-838a-5a7f325909b9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16168,7 +16252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32153e7f-7eae-4b09-97c0-79c844c9a231",
+    "id": "17a433d3-40f1-4a88-b416-7cf99f188c74",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16188,7 +16272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0a787d7-a870-4fd7-b459-0595934e3190",
+    "id": "a0313a7a-1457-4a5a-baf9-bdaf9e03834c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16208,7 +16292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1645fab2-5f79-4b4e-a95c-21584431baa1",
+    "id": "4b2c0110-8059-4e82-a2c1-60e4538bfde1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16228,7 +16312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4b945de-0ed2-4d16-aae6-a84c903ed668",
+    "id": "3b80b135-cd20-443f-a764-69744e3e5a3b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16248,7 +16332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15127895-e73f-4736-abcb-f27935f94325",
+    "id": "19ea43d8-190f-4c6f-957e-81aa70696981",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16268,7 +16352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f4f5eba-1874-4008-a305-8728b64be132",
+    "id": "93acdd70-d690-4d53-98a8-0fee4c44f48d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16288,7 +16372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c79f2c6-5f27-4f7c-9e0f-f5b25209b75f",
+    "id": "0823c0e4-4194-45cf-981a-91f4e4229cbb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16308,7 +16392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9386bc6-9f48-4916-8f7a-7223e7216e1c",
+    "id": "7e2e4baa-42fa-4b7a-8091-4a859a4453ef",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16328,7 +16412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28f3f3b4-6439-420e-8833-b1dc241bf72d",
+    "id": "581fc85b-e368-4a3c-997f-d09d56143c4e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16348,7 +16432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "890df7e4-48a5-442f-9d55-53830cca19d6",
+    "id": "fb62eb1b-f408-4d21-88ae-40502e36e02c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16368,7 +16452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d48fcff-27f5-46fa-8855-cb621db25cce",
+    "id": "42485dae-fde2-46dc-acf3-e5598a70b6fb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16388,7 +16472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70e187e9-722b-40d8-8315-c6afa1870744",
+    "id": "67ce5a48-bf86-48f8-a3e1-2811a20d87db",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16408,7 +16492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb79487d-7016-48b9-82d9-43e9ae7dfee6",
+    "id": "a73b4367-89b2-4ee7-8262-46565d53c739",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16428,7 +16512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7766c445-d17d-4617-b462-efdfe13a0d95",
+    "id": "529ba8f9-19ee-4032-9ea7-e680f0582f6b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16448,7 +16532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3544d7a-c0e7-4b5e-938b-b64d1e923aae",
+    "id": "e2fbc787-59ce-48c1-b8f9-964129e6cee6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16468,7 +16552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f587aa11-4426-4027-b29e-c5681af4023b",
+    "id": "7ed220aa-57f1-4eff-bd51-1c05f07c1a3b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16488,7 +16572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be02186f-ed72-4d7d-a59d-e0d4a492ced4",
+    "id": "3efeb5f9-c840-40e1-81d0-4f3a0177c91c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16508,7 +16592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d5140f2b-5154-4f2d-b5db-4f3b262609ae",
+    "id": "3cbd63a0-ace9-4c56-8d7a-05d7ef2f4507",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16528,7 +16612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c023a4f2-95d7-4167-894d-3fa33c988cc2",
+    "id": "8bd58d6a-eddb-489f-82af-4b9fbe0d265a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16548,7 +16632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dca9d451-042a-499e-88a4-76b22d796ea1",
+    "id": "716aa3e5-52b4-4cb2-9c27-d38bcb9d57bf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16568,7 +16652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b2a3830-699c-4d58-ad09-6ff44de9648b",
+    "id": "c2e1475f-ba05-47ef-b6f6-e811bbaf29c9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16588,7 +16672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dc043b3-1f2c-41f0-bc05-ff62aa77e12a",
+    "id": "20073c1b-3a63-4a09-8f0c-8eb0e8cb4b23",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16608,7 +16692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c537b62-6753-41f4-8750-f67a106a6060",
+    "id": "859c9cdd-8e05-42a4-b290-44a00cc0e68e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16628,7 +16712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a206915-3b17-471f-b221-0e2f3d6edd51",
+    "id": "bec95eeb-678d-4b29-a023-fd43e42ca0b9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16648,7 +16732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7b3f907-bb01-4f05-b520-fdcd3d83ff5d",
+    "id": "c62c9711-3ec7-47a2-952b-3fa15a50df02",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16668,7 +16752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03cfac05-6b41-4fdb-9a2d-a03a8520800f",
+    "id": "1775e603-cc52-4611-a5d7-c59f257d958b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16688,7 +16772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "768dc6c8-d1c0-4a88-92f7-be7993261837",
+    "id": "d83ffd50-61ee-4379-9c1a-c3eed2aeac6a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16708,7 +16792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34ebe779-281a-4c0b-99ba-552876879364",
+    "id": "54966b46-85c2-4d0b-8673-ff6c71a18799",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16728,7 +16812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f992b38-11f0-422d-b918-3f1cb38ba287",
+    "id": "e17bdaf9-c81b-44b2-b0a1-f5f6ea280b56",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16748,7 +16832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fb633b5-7340-4167-b745-c7d248243902",
+    "id": "7d6f11ed-a4a0-4161-939c-8a8d0dd37ac2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16768,7 +16852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d5e41c96-d4c5-41c5-8642-33a325282d47",
+    "id": "3b399066-79e9-4fb9-8a76-a280d318d86e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16788,7 +16872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5cfe098f-f957-4151-9834-3d9d6857ff3d",
+    "id": "0e745a1b-b169-4c0f-a8ea-a8d1922a2571",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16808,7 +16892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b44d782-82a7-4f4e-b144-53358946da80",
+    "id": "f2434cf6-3d1d-43c4-89d9-57ad38bf64f0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16828,7 +16912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5429c403-4132-40da-b771-aa179becb958",
+    "id": "e9e7d8db-6d40-4d45-8e56-237bca200976",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -16848,7 +16932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "017c426b-e227-41a4-9a4b-76f3b653b671",
+    "id": "e2b70a37-ea05-4cd5-9016-82775ec9292d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16868,7 +16952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84f99905-2957-4338-8ecf-abf614990e8e",
+    "id": "2d803a95-6279-47c3-8416-c430174ef4e5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16888,7 +16972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e8c385a-bb1b-4eb9-84a5-426786678302",
+    "id": "690949b9-c0ae-4fa2-9ce2-8cbb86d1ad0a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16908,7 +16992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30c89e78-d43d-4718-a2e8-a28ea7714113",
+    "id": "0de63dce-eb25-418e-a5f1-e37639adab8c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16928,7 +17012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40030052-69c5-4698-921f-88342c8196f7",
+    "id": "ed6daa26-75ee-4f0e-90eb-fed6a8980e51",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16948,7 +17032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c329900-39ed-4b46-a4fa-e964be20fe91",
+    "id": "b016b12a-1aba-4c50-add7-150e8648c47a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16968,7 +17052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8781723-4e77-4d14-abc0-9590779c9595",
+    "id": "4a7d6240-b4ad-4558-bece-51b0ad6ef016",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -16988,7 +17072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5561c7ac-9f05-47a4-a41f-ed1be8f5571f",
+    "id": "be1e855e-4e7d-48d3-8b79-141beff6a6c2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17008,7 +17092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35262172-c39e-4106-971c-e4ed2bb89c69",
+    "id": "fa0cff20-9be3-42b5-b9d6-2c1979208676",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17028,7 +17112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f2521e8-63e3-4f69-9a09-99faed4528b7",
+    "id": "efc2f510-cb5a-4a1e-95fc-5104260c1206",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17048,7 +17132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff18f9c5-3b89-4846-a292-3600df3af64c",
+    "id": "e8d2f8df-2d18-401d-9cfd-99f599f53e3c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17068,7 +17152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28bb30d1-547b-4716-a153-6213bb0d8aa3",
+    "id": "6706d680-19cb-4f18-a2e7-d5a416e94b11",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17088,7 +17172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "297cf8d5-04c3-47e6-b796-b0980f43b19e",
+    "id": "9b1c98d8-265b-4d7c-845d-bc7c02f30241",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17108,7 +17192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7eaad956-f41a-4855-b498-c51cd7dc7982",
+    "id": "4a0ea517-69f0-4fe6-a509-c59ae2a8cb16",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17128,7 +17212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e378cb7-f58a-4269-a207-0a16a8576211",
+    "id": "099c1c89-aca5-49d5-a872-45a7c6d4a6c1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17148,7 +17232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9db4913c-310e-4cab-8636-db59f247e71c",
+    "id": "a7e226b2-1565-4053-acb0-964e4e9efacb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17168,7 +17252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "067a8405-8405-4b18-b3e8-f40e48bf9ff2",
+    "id": "28491dfc-b72d-4427-8206-5de7ed88c15f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17188,7 +17272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6c72d0f-d6fc-4a5f-9eea-e5a2c23fa63b",
+    "id": "4a2056c7-9bc1-40c0-b313-60942d9e2c83",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17208,7 +17292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1856854b-a370-4844-990b-5eabfce50b30",
+    "id": "b438d1cd-59f3-4a24-b175-a3652a1ac179",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17228,7 +17312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c6319484-dc55-42e3-8fec-e93c79ea5b29",
+    "id": "90b8aeb3-3d38-4cf2-a9dc-e622dfd5fc71",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17248,7 +17332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c08361e-c4e1-41a9-a8ae-6ada4e109830",
+    "id": "27efa64f-6998-422b-bcf1-67a7aaaac19e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17268,7 +17352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "067a4c25-211d-4cf6-8bff-1832a14e9de2",
+    "id": "c19cb142-5d62-4c7c-8379-761cdd586196",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17288,7 +17372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f214bc16-8f49-4cf0-9c7e-490ec5579381",
+    "id": "c949c55e-fd38-4414-a3e7-1b0a0d52ccac",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17308,7 +17392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f459f68-cc20-4b82-af45-1f9c8f0c8861",
+    "id": "d0e0c1c0-1d08-4cf0-976f-405782c7e500",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17328,7 +17412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b73bd8c3-50c1-46ae-99b5-92a6eb022c11",
+    "id": "f9f928e0-7866-4aa5-b262-25f693944800",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17348,7 +17432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "192ec636-08d6-4655-96b9-6f6a826df75f",
+    "id": "af349975-6810-4834-8ae0-e7cdac33e2fd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17368,7 +17452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7570f8b-bf6f-430e-9beb-44b6bde99c11",
+    "id": "6c9b1973-02e8-4a69-bfc3-21f80ad79780",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17388,7 +17472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e1757e8-e077-4c6e-bda9-ac8185514198",
+    "id": "d15e80d3-fe98-48b7-a31a-4dca05b4b599",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17408,7 +17492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c96e807-5bef-48cc-8bd8-073071953676",
+    "id": "35c9fdc8-587e-4ef4-a4f4-f8d0300e399b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17428,7 +17512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8b32761-b766-4422-96b4-5ef09e820ab4",
+    "id": "899485f8-e64f-4059-ae3e-e369f3b4fcaa",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17448,7 +17532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a1680d0-d3de-40dc-8b12-b99eeb6829b3",
+    "id": "73e7a71c-6875-4620-9828-4c1519e60b31",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17468,7 +17552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "81fc7240-b76d-4cc7-b626-02efed10eec5",
+    "id": "b5aec60d-72cb-4b07-b1d8-a973c1c0f855",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17488,7 +17572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e2ed737-b173-4b0a-8a67-8cd06af482db",
+    "id": "a591fab9-89fd-4f4c-9bf5-2ab7c385a95d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17508,7 +17592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64c6f8b5-1850-445c-87cd-bd3767682f1e",
+    "id": "14b8f8ea-e499-4969-b0a5-94eb09acc239",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17528,7 +17612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1fc18cb-aac3-486a-8799-429330fc4bc0",
+    "id": "bc4010fa-65d9-499a-a01a-ac7a652e6297",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17548,7 +17632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18f2f41e-67b9-496a-b14c-b499e4d631b7",
+    "id": "73ec7dee-dfdb-49fe-85d5-058d7606bc90",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17568,7 +17652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52fc0dd3-fb9c-4ef7-bf59-72fb9bdd7e7c",
+    "id": "593e6b73-eb88-4e8d-9fda-7ad3bd6e3ca1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17588,7 +17672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "278de3b8-a0ab-4260-9d86-c91efd4f662d",
+    "id": "b0b7d952-9449-4a8e-b637-b697b2c83897",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17608,7 +17692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e99cff2c-ea9f-4055-9808-443d66b8c742",
+    "id": "c125d18c-47ac-47a2-8653-f6e81b31d751",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17628,7 +17712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dee30472-9501-4988-b559-597b721b9bc2",
+    "id": "32ecc31a-0de3-4411-8b1c-a2c2ea3f0253",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17648,7 +17732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e42c800-86b5-4b8f-ba9f-765a7a5dbc0c",
+    "id": "e400c862-151f-4473-9ded-8b96b3fb05a2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17668,7 +17752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70643251-4395-462c-abde-95b773aa7cca",
+    "id": "403d6a5e-61e8-4f78-b110-a99cae69b6b1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17688,7 +17772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d20932c7-f618-4ea8-ade2-5a7617ec7d16",
+    "id": "4f61aa77-ccaf-4355-b76a-81ec92c93683",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17708,7 +17792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c3497f5-470b-4209-8061-0b0296c1d9f0",
+    "id": "541e7fb4-020d-412d-b245-6dc0aa6747f9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17728,7 +17812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8dc3a50-d718-4892-b8f0-f0c71c46e863",
+    "id": "f35db697-5785-4469-8dd0-b6b06f2bdc82",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17748,7 +17832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dc51237-9ab3-4f47-a042-4480dba43f7f",
+    "id": "6cdee110-858d-4a57-92d8-5523847282fe",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17768,7 +17852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4408c0e-01fc-4dea-8119-5a1bcfd41d40",
+    "id": "2ad4a673-734d-4640-92d3-66ed84956b75",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17788,7 +17872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2be7d8e5-8936-486a-a4aa-0ca7f46d00b5",
+    "id": "d2709f9a-6fe6-461c-8381-df22d7c00816",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17808,7 +17892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf5c8821-48e4-4d0a-ae9e-3228688706dd",
+    "id": "a425b57b-32ac-4bd2-8808-a976e8d49635",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17828,7 +17912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1075cb69-5e8e-49a0-86a1-b4af4ea48415",
+    "id": "9a810aa7-468f-4712-aabf-a7201cf5af37",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17848,7 +17932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be7fcc69-908f-441a-a015-2edb61f1bf5b",
+    "id": "32ebb3d2-8460-4d3a-819a-c5be9ceac84d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17868,7 +17952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "752c7af3-2464-4a85-a9a4-8c1d46130df5",
+    "id": "fbff4bb8-50c2-4317-9d1e-61c3a1f52734",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17888,7 +17972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6466fd1b-7820-43e0-aef9-0b10223cf397",
+    "id": "29224444-77b7-4a25-b090-a2946099642e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17908,7 +17992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "463e843a-a42c-45c2-aa27-c444d6ace3e7",
+    "id": "68f97d52-d6a2-42bc-90c9-97daf71d8a4d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17928,7 +18012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0664ff3f-68c4-457d-8e96-fc52cbe47f05",
+    "id": "830463d0-4b22-4604-99a8-455f6da652b4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17948,7 +18032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78bc1bf5-9e76-44bc-95da-389eecfc8818",
+    "id": "169e02dc-0274-4d32-a367-a81e6dd9e022",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17968,7 +18052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca36f124-70df-44b1-bc8e-8bc1a75a1b10",
+    "id": "1a03d05f-777b-4388-9822-826881c88fba",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -17988,7 +18072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5ee08e3-f095-4a3b-870e-f6c1ac87d5be",
+    "id": "6a751709-4a8c-4443-8be2-3d35744008fa",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18008,7 +18092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1730e3f-dfe5-43b4-91cf-ada977324ab2",
+    "id": "73d0fd70-8874-41d3-a982-f0a32ef8c612",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18028,7 +18112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da923a67-89a2-419e-957b-20017a43feb5",
+    "id": "6ca3ab50-5b83-4506-9662-44335e92f939",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18048,7 +18132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa1ae8cd-4876-4f07-9963-38c74857975d",
+    "id": "0e8db50d-5959-410d-bfb8-2b6109f1b78a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18068,7 +18152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca3c268b-c934-4128-bdd5-aa25dcef2b74",
+    "id": "2622e15c-3394-4b5f-a760-3ec1696cbe51",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18088,7 +18172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89fe3bc3-5307-4245-a5d8-1c2d9d2e1205",
+    "id": "a1b7d6d6-8c27-4e60-bf85-d9641ce61414",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18108,7 +18192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74a02583-e7fe-4ce8-8b46-e19e1501e209",
+    "id": "e0967be9-65d6-4f0b-ae0c-621f4520c91d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18128,7 +18212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66dd26e1-e8b9-435c-b3c2-00e3899569d8",
+    "id": "50600ca7-404f-4409-a87d-9507ffb7a8ce",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18148,7 +18232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d46afe1a-d6a1-4d0f-835b-51b2a68d560c",
+    "id": "0b321cfa-a5a6-4b1e-bfa7-20c262811525",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18168,7 +18252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c54a8dd6-6521-40a6-98e4-ae03e5be80b2",
+    "id": "b0b359aa-8e94-49f7-9a45-90cd5c24a408",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18188,7 +18272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e19f550d-8734-4a7a-8d56-f4c6e79727c0",
+    "id": "3fbd57f2-7b85-42f5-b791-43c6be4f4962",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18208,7 +18292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba5b2284-9bc6-43ba-bcbb-64a0ee92ba54",
+    "id": "b0088e27-4ab8-4b95-8166-3d50d1a77470",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18228,7 +18312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39fffa44-b62b-4a84-9529-c9f3515ff6f6",
+    "id": "97ec15f8-c0cd-42d0-a127-898772da4b1e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18248,7 +18332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43f49e74-5565-4f3d-bfa3-c8cf0d4a9d37",
+    "id": "9cb18ece-ed25-476d-8cc5-246fccad5943",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18268,7 +18352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aef2ce47-dd69-4f38-a093-3857e81ab08d",
+    "id": "0b84a0c8-7580-4d3a-8463-3a6c37d1fa2c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18288,7 +18372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef0c0ff6-cc6c-477a-bfe1-48caaffe20c0",
+    "id": "ed619823-aa63-46dd-adf6-98c6551ed81a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18308,7 +18392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70333f5a-e6fc-46a9-b4b0-2e0f2fe5d07a",
+    "id": "5978a4c3-59eb-4d5b-b509-4a9b20c19257",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18328,7 +18412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b21e5659-1c07-4fb4-b40a-0d7b91ecb3e8",
+    "id": "428ef31f-bc21-4191-a416-a7513b1e13ec",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18348,7 +18432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5163d995-5ce9-4b85-8713-5a38a92eb156",
+    "id": "3fe252ec-ba5e-4da0-93c4-a945262c263a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18368,7 +18452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6746abd6-9e09-4afd-8b21-7e3b8ae04546",
+    "id": "1cfc5548-c87f-4ca1-ad1f-d1e80b385c7f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18388,7 +18472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89d8f14c-3213-48b5-bd02-553547a1387f",
+    "id": "d35164ea-986e-4fe4-a642-da147e85c26d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18408,7 +18492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bed9746a-52de-4ec3-a5e2-8c2b8e066a2d",
+    "id": "af0c3ee3-ad52-4e7a-944f-cfcd56b5155c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18428,7 +18512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73332320-7aa8-455e-8dcd-b8d75dfa6ce0",
+    "id": "e14b2f93-fdf4-4a0d-b5a2-ce1823073425",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18448,7 +18532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "820546cc-bd17-4165-9611-7dd9fce3be18",
+    "id": "ffaf2d72-41da-4a66-b974-af32e7c85bb5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18468,7 +18552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c787982-a80b-4bb5-b76d-4f11122c3802",
+    "id": "b4feefdd-cf87-4e31-b72d-f64149847f52",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18488,7 +18572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d2992bc-87bc-409d-9709-15d9881cb2a4",
+    "id": "c82302ac-b2c3-485d-9efd-6ea2ecabc48b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18508,7 +18592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "634e1c0e-0977-4a5d-933d-d33bc265381c",
+    "id": "733c8697-2dd4-4dea-8432-27cdc7b01a5e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18528,7 +18612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "734e0dbf-b0bd-45aa-b3cf-bf640afabc42",
+    "id": "603ef051-50d3-4735-8ef8-d5cfa82673d7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18548,7 +18632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6faf59e9-ae58-41b7-8a51-82132d93db0b",
+    "id": "d511cbc6-baa9-4f44-b0ff-f6238b9dcbb3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18568,7 +18652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4237d33d-4cad-4658-b148-07fc8c51313f",
+    "id": "71694fb0-c1b0-420f-a67f-db2a60bf4e30",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18588,7 +18672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "179abb34-33e3-43f3-853a-cc1f65763812",
+    "id": "f1f18db5-285b-4b1b-8a54-a7b0d4d55c01",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18608,7 +18692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e20382d5-8b3b-4320-83ce-d97e0cc3cb5b",
+    "id": "d601e6e9-4fbf-44c2-a874-ab526bf48682",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18628,7 +18712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c441deec-d5aa-404a-81b8-4732f551ffb0",
+    "id": "7c081b28-272e-425a-91cd-12e26e7a09d9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18648,7 +18732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bdc999a7-493d-46ba-b7c2-287bf576f8f3",
+    "id": "e1be16e3-39f7-44e0-acc8-a68395ff548a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18668,7 +18752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ad7070e-30d8-4ef3-8d08-3b5a35383bef",
+    "id": "f244df3a-3da5-41aa-a197-c33f511c0949",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18688,7 +18772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3b10afd-65bb-4526-970d-543d43ce161d",
+    "id": "fe439e92-9fc5-485c-a19b-5e505880a862",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18708,7 +18792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14af1452-1dec-4795-ac7b-dd424e55d8f6",
+    "id": "74f40ccf-b734-47f9-bf60-7ebc24dbc68d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18728,7 +18812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "529ebd80-9202-40e1-ac1c-49135c4dc5b5",
+    "id": "03b8fba5-f5f9-408d-a690-73d55acf5e99",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18748,7 +18832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "297d09d8-f914-4475-8dbe-bccc422396f4",
+    "id": "ba0e270a-1390-4bb8-8114-c13bf500a40e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18768,7 +18852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ff122c2-7e96-4e30-a513-2175adb89977",
+    "id": "f4fdfa93-e09d-4d52-ab12-62dce45524b0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18788,7 +18872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85e8a9da-f241-4976-b5f8-c1ed28348376",
+    "id": "e8090881-efc0-4b2a-bec8-c615a11f41cb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18808,7 +18892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36f70794-248d-40cf-a8bd-5a130ea6b71f",
+    "id": "d6441e31-5450-47f1-b3ae-95a826a9bf0b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18828,7 +18912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "493e9ade-6a75-48d0-9eb2-13627ec3e89c",
+    "id": "81e794a7-fcc5-4c05-ae88-4bf12f8e7a81",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18848,7 +18932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9b45820-65c9-4af7-9497-4b267d4cd475",
+    "id": "83d804a8-1798-4910-ac69-1bea351624e5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18868,7 +18952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "110720c3-0191-4534-b3fe-fd3c9e922d78",
+    "id": "5e3a9451-8827-4674-bb96-b19d67441f69",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18888,7 +18972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a637aa0a-0773-4094-add6-516c730529e0",
+    "id": "62b45c61-042a-4085-bf09-3c1f3c527046",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18908,7 +18992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eeb373b7-05c9-4e8c-bdb0-48aa551c8568",
+    "id": "17832819-947a-499a-b99b-30bb23efcd0a",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18928,7 +19012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ce49c41f-3377-49de-ae93-e5165aab3f5f",
+    "id": "87f13f99-dd04-4123-bfae-44e0fed71348",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18948,7 +19032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3df29c57-6dcf-4787-af45-2cff4f04e928",
+    "id": "f11e755d-280e-4aab-8d13-a60b8e74d053",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18968,7 +19052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bd4b029-7de1-4e08-a5b6-3b77003be45e",
+    "id": "461a4732-6953-455e-af3d-0fef11e0199f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -18988,7 +19072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f85cf28-ed5a-49dc-8286-f80e2e3dd281",
+    "id": "5da02174-a4af-4dca-ad64-0c2de366d45e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19008,7 +19092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b7fa21b-4f87-4773-a881-8a6a023b03ac",
+    "id": "0627cd25-c1f9-47ab-99a7-4669e3c90607",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19028,7 +19112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5fa34ee-0136-4348-8d19-6574a3b87c3d",
+    "id": "814dc230-525f-41c0-b4c5-0b9caf9ec871",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19048,7 +19132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7220029a-f67b-47a1-8d21-c5a312bca3af",
+    "id": "1258b1ae-fd91-4968-a7e7-fa97e820e7c3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19068,7 +19152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e3a6603-1392-43b0-881e-60ca64d8e5ee",
+    "id": "b97fe519-1de5-4e9f-a2b9-7a89f5246252",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19088,7 +19172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3cdfd8a-f0f7-4fe3-af34-268a6877860d",
+    "id": "c4877645-0688-47ca-82b7-76da2bffb187",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19108,7 +19192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6421c5a6-80be-402f-9a74-ede3ec3a1e64",
+    "id": "77a869c0-bcda-4fc8-b7d9-49e806e9d8e4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19128,7 +19212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44dc995e-956f-4e89-b2a7-e8fcb0c56dfe",
+    "id": "ac580ad6-609f-4d06-af17-9a93a5cb94e6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19148,7 +19232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3f58241-7f1e-415c-b29d-383df60723e4",
+    "id": "041a3111-9e27-41c3-a4fd-1afa15050ae4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19168,7 +19252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25ece48b-14de-4c6a-b6ae-8ea89ea48f0c",
+    "id": "ec3dd276-198b-4f5d-a596-3ccbe10f2a4d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19188,7 +19272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6b04f6f-b520-43b3-8ef3-9c3b34722f9b",
+    "id": "29199e42-7a8c-4245-8496-562a9c02e1d1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19208,7 +19292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5820d125-a694-4ae3-a7cb-174224d7fb3c",
+    "id": "d01d362d-39a2-4a18-a71a-ebca21754806",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19228,7 +19312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8d1fcde-ff9f-4411-aeaa-5c25b5392019",
+    "id": "639b6431-48c9-4948-b528-361715b843fe",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19248,7 +19332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19443936-5d5a-4763-a05e-053f1a586710",
+    "id": "a2334efc-3ce1-4201-bc7e-3a5d4c08ad91",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19268,7 +19352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75a83ec4-ee36-44de-8cad-dc0cb89ae417",
+    "id": "c3cc5cde-2e04-4ff6-ae37-36d4ec0b0a6c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19288,7 +19372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0eed8f7-2b77-4919-9b39-4017c8695705",
+    "id": "cdd9bde6-1cfb-4e9b-868d-344f479c6380",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19308,7 +19392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9bcd7516-964b-472b-aa0d-10efc51836bf",
+    "id": "a5a604a9-126a-49ac-8574-f7977ccd4a9e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19328,7 +19412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "100a1298-0bb8-4d01-b910-98ddf8e371c1",
+    "id": "934644a9-4066-4efe-9e43-9cf2d4ab96c3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19348,7 +19432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6403ac9-81b8-45c3-9c9c-ab44de417e7c",
+    "id": "e95b6401-bda5-46f1-980d-2f6f484b9495",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19368,7 +19452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "865b11cf-c04d-4893-a1a1-a31476135199",
+    "id": "6a630b6f-ac49-49c7-a478-46af791a8336",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19388,7 +19472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0fc0fef-c600-4788-8f10-a2e69930684b",
+    "id": "41709150-90e1-4753-882f-2a445904ef94",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -19408,7 +19492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da81fcb8-cd70-4b06-bf97-b297e695b8ba",
+    "id": "5bdcd8f7-35b2-427e-a727-2355219f37c2",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19428,7 +19512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4d2a134-3bda-4a5f-a12d-a6d3ea521b1d",
+    "id": "26b5f13c-33e1-4f0d-b6d8-8bfd8a392e77",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19448,7 +19532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ab37590-047c-4c47-9d76-924cf040c950",
+    "id": "0bd23e0c-1719-4323-99ef-c3612546e9f3",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19468,7 +19552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbb94ae4-c05f-4419-969b-89093a0a2092",
+    "id": "50974eb0-55b6-4786-8a30-6af7227792d1",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19488,7 +19572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c01d8de-05cb-46a3-bff9-41de98f59e07",
+    "id": "16527fe0-6c82-45f7-986b-4788f59e85d1",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19508,7 +19592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0a87223-94ae-4a0b-bb78-176ad7181c61",
+    "id": "f17f5369-bbe9-4e51-9f90-35cc261795e6",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19528,7 +19612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b18e630-0c17-4d26-938b-04c621723dc5",
+    "id": "63df9e1c-239e-480c-b54b-1502bed8e436",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19548,7 +19632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d12fc9ef-a6f1-4806-9123-dfe21ef29c3f",
+    "id": "55d6f84c-3418-4734-96e0-853477c03643",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19568,7 +19652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17729744-51ca-4e3e-8565-7b2643dc6e79",
+    "id": "9190997d-1e4a-4df5-b4b2-be5b6e7ba806",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19588,7 +19672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2db72dd9-4582-4b00-b6d9-77b654218529",
+    "id": "c34bf767-197c-480e-adb3-b6e88efeb985",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -19608,7 +19692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ced18a9a-6efc-4358-a04a-70cf9c38e6b5",
+    "id": "2b12c5d1-970a-46d4-9323-2e33f8f1e8ef",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19628,7 +19712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0629c49-5ce3-4672-985c-4831a7bde14e",
+    "id": "ffb7eee0-25b1-441a-bfc4-9be554368ff1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19648,7 +19732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "332ac05e-8d12-49c3-9137-eac27bfa3a65",
+    "id": "1bbae265-31f7-4c29-8444-b82931524fe2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19668,7 +19752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ae130de-26e3-46f2-ac52-0be87c88c21e",
+    "id": "0a0a895c-cf4c-4d09-b517-2ceeccdcfd3e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19688,7 +19772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f274dd0-ea52-4851-8c73-0364dfae664c",
+    "id": "8c796414-f303-4e32-8c11-900a8cbfce03",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19708,7 +19792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b291488-8402-43fc-9134-acb1db409a33",
+    "id": "c5ccc108-2da5-4d54-bb3c-637d97414a74",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19728,7 +19812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d657669-6dc3-4bc5-8172-a22b7f916967",
+    "id": "b42208d3-1b3e-4593-a3fc-78c1d1491974",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19748,7 +19832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e77661cd-b823-41d8-bffc-9a26645afb15",
+    "id": "33fadcd1-57e5-47ca-b430-7ebda8a4effa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19768,7 +19852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6fbd45f6-6fae-4bbe-b913-e919ce3cab9c",
+    "id": "f66f56b0-ad5e-4636-a0dd-a7e39142677b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19788,7 +19872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4854a24-3fac-414f-87a9-6310ba95bcd3",
+    "id": "2d9976f7-c292-4a71-9eaa-ecfbb7b0d7a1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19808,7 +19892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65f37f3a-923f-4e2b-8d87-fbda5cc2a6af",
+    "id": "1562937a-c26f-4187-8f3a-810e5967fa12",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19828,7 +19912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbb12126-e972-4699-b49e-a511da96cb46",
+    "id": "7e662e45-1f6a-447a-a874-b51d823a0e6a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19848,7 +19932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94dd8e60-f28c-4430-8c5c-1c9af6d0eb29",
+    "id": "8dbeeb15-99b0-41ca-a96e-f55a9cf53c8e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19868,7 +19952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9724e64-6881-480e-abb7-cf9009d34e5d",
+    "id": "de824767-b70e-43c1-98c7-088512ae2385",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19888,7 +19972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9504d688-90c4-4a90-8095-1241af35ce9c",
+    "id": "3b7a8ec5-cb21-4af6-a333-a707228abb91",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19908,7 +19992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f537645-4942-49c5-9a7a-ecbeb49a92b7",
+    "id": "c5d8bc9c-b87b-4940-94b1-9fc8c0ba3508",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19928,7 +20012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99ac14fa-e3eb-4f86-9c52-d50c57b48399",
+    "id": "004f2d54-eeaa-47e5-84e2-0f7cd4dee22c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19948,7 +20032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdb8c2bd-495d-4aab-85ce-8ecf856e8419",
+    "id": "47898581-ce2f-4a07-9cad-ecd1e1bc6fe2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19968,7 +20052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9574eeff-7bdd-4a24-bbf1-6a3e627b6345",
+    "id": "677e2633-8545-4ec7-9f39-2612cc739ec5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -19988,7 +20072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed21e464-f422-45de-a196-83d5b5187421",
+    "id": "b3721509-3005-46cb-a7f2-99e4112cdd8e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20008,7 +20092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74a5ad3a-06c7-4c71-a80f-5632d34f2d11",
+    "id": "a445739c-f073-4058-bfcc-01cbb7d80b3e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20028,7 +20112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7372b59-af77-4117-ba0d-e64dc3dd6db5",
+    "id": "2112bb47-8c71-4b76-8457-63fae9dea8aa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20048,7 +20132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29aff3d5-3459-4280-acaa-eb970605114c",
+    "id": "c7f54b58-9217-4eaa-954a-3debf85015dd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20068,7 +20152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76637143-0479-4f15-87ab-d0fd79b6a64f",
+    "id": "1f265518-2bee-46c6-b5ab-4f5ee62ed9c4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20088,7 +20172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14693955-1e10-4ffc-aed3-a9a764b1d6e3",
+    "id": "1596413c-e2e1-4d8e-8924-c1a7bd77cffb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20108,7 +20192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c45cb871-de8b-4e46-8558-0e392e663b0b",
+    "id": "82775642-9671-483d-81a3-e19f6cb478c2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20128,7 +20212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e7afa10-9282-4d0a-a7fe-27f06808acdb",
+    "id": "1eb6ea71-fdf4-40c5-98bb-e63dccd47cbe",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20148,7 +20232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3becdf90-64b9-426f-a3be-e1ce8a949019",
+    "id": "9a163c3c-1158-4cbe-be70-84bc54e9a515",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20168,7 +20252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7265871-0b4c-46fc-8949-5cedd2e0c9ce",
+    "id": "30e3db8f-ab33-4f4d-bb0c-a1f659024175",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20188,7 +20272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb5f285f-a769-4dac-ab61-ea023ca9ee75",
+    "id": "fef33d77-59fa-4d21-9da2-8b577aebd223",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20208,7 +20292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c544910-5ddb-4606-ba41-b7e0ad3517bb",
+    "id": "f2e86c3b-8a7f-474d-8eb0-2ed762ed3758",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20228,7 +20312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99a20bae-d68b-409b-8107-ebb4127565e0",
+    "id": "ab81f2fb-bfca-40cc-a4b7-2be272d63bc4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20248,7 +20332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88674f2f-e6e1-41e9-9115-be4cba3e52cc",
+    "id": "55e695c3-fe93-4932-b832-7bb40d5b8962",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20268,7 +20352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c46bad57-8c6d-4f10-b547-e59882f0847e",
+    "id": "9c010c25-e56c-4819-ab1d-3d442f0d1acd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20288,7 +20372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6aeeba15-abe2-4f1a-afe3-79a343c5a96b",
+    "id": "4a70c621-1023-4fa7-aecb-705ef22b6bd7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20308,7 +20392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e7ca9c67-9c64-49b6-baf2-365f34ea8e71",
+    "id": "81a41c1f-f310-46bc-baa9-858df17fee73",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20328,7 +20412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3bb1b39-d653-41a4-8da8-848656d707ac",
+    "id": "7305f181-bd61-4f21-8095-64597e61182d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20348,7 +20432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6a0ecb6-3a33-4052-a1a0-442c1f127b89",
+    "id": "873e00c2-54c0-428c-9718-ec33359d3428",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20368,7 +20452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "95235be6-868c-44c0-a829-963499ad838b",
+    "id": "fbf36b1f-6e7e-4ca0-ba7d-e6c9a32f2d06",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20388,7 +20472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3a79876-b394-40cc-92f6-7537b1fb98eb",
+    "id": "55a96920-fd07-46a6-b288-0235215c4eb4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20408,7 +20492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "513976ee-c248-49e5-8c0b-8508c0a08964",
+    "id": "3f11ac8b-b8c8-4ee5-b11a-3384ec8198d0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20428,7 +20512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77a09396-487f-4200-b3cb-8ce9d55d6bdd",
+    "id": "0fb5a292-b03f-4b88-b229-c1cb43f68ea4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20448,7 +20532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06152368-82dd-412d-800d-5d71fad5cfbf",
+    "id": "d6509cda-4837-4ddf-b900-dd09dd645376",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20468,7 +20552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "252eb3c2-4a15-4b2b-a2cf-36ce0f338162",
+    "id": "b494ab9a-450f-4eae-b030-ffa36c3d619e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20488,7 +20572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1884625-3439-4f24-aeca-b2dcb2cf4602",
+    "id": "efa7d9af-2228-48f6-92e2-de58c5786ea7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20508,7 +20592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "722a07b9-2740-4dcd-97c3-767c9dfdb035",
+    "id": "7501d714-6e5d-4a3e-93b6-4696bb199be8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20528,7 +20612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c26ad0ec-6149-4ac1-a81a-ac4d51d80e25",
+    "id": "758a1757-31f5-4000-a107-bf8388e550b6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20548,7 +20632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36152a64-5e64-44a7-998d-d06f9a987801",
+    "id": "dd429cd8-727d-4754-b96c-cdb6a8614353",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20568,7 +20652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31493518-e0d6-476a-be82-feb27fcf0f84",
+    "id": "b97c591f-d17d-441a-a8b2-797df5ebecee",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20588,7 +20672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76ebc0b3-830b-4305-808f-0b93ad47a27f",
+    "id": "ce891473-bbe3-4be4-a27d-1a7b225308f6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20608,7 +20692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d550e943-4049-4ee5-becb-4dcc4b950fb2",
+    "id": "92dbeb5d-c0c8-44e8-986c-a886255979da",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20628,7 +20712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3bccb7a-c3b5-44e6-8997-0414a426e076",
+    "id": "84eaf9b7-5527-4e0f-80ca-38f7bbbc330d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20648,7 +20732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c52106b0-5bd2-4299-b76a-f9ee75cc3a15",
+    "id": "0ae6c86d-1619-44bb-af78-cf49613cb94f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20668,7 +20752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b6794c6-6ca4-42b1-a9fe-06ed22e2df85",
+    "id": "9069958a-66b5-4aff-9c06-32d0229668ce",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20688,7 +20772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57477fcd-ccf4-48f7-b84d-2493594a876f",
+    "id": "fb68346f-1e7f-4db5-941f-d5bd6d530745",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20708,7 +20792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a088355-f995-426c-92ed-979f50e1c80e",
+    "id": "3304e13d-d717-4a9c-9452-f3282d6adcef",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20728,7 +20812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53108593-160c-4380-b026-861e1ff11044",
+    "id": "bf2595a1-f8e7-476d-adb1-490285666d22",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20748,7 +20832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3648abb-3cde-438c-aa59-50f9262867ed",
+    "id": "b0fb15bb-8263-4876-8a28-8171a0314007",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20768,7 +20852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ba4e0f0-9e84-4802-b446-b4c4675cd75e",
+    "id": "07934502-5c34-4c70-aac0-1e65e4d55b55",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20788,7 +20872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c2705ae-31a2-41ea-a9c3-69a4672db735",
+    "id": "cc45f9d2-cf00-415a-8a6a-82d38d111260",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20808,7 +20892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e17e9223-a0aa-4219-a299-777fc3d8d0fe",
+    "id": "de24b95c-5800-446c-8089-8051e3ab9f63",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20828,7 +20912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dd2ec8d-18ba-4c9f-b903-b28a4731cb2c",
+    "id": "3f35f1cb-1730-45d5-93e7-d89ac077ba3e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20848,7 +20932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d53cd09-3ba6-4dd1-b6ad-128f12f81902",
+    "id": "3fac9ea8-3079-45c1-af3e-de0c3dce0495",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20868,7 +20952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "181a6b23-a6f3-4cff-a744-a17375b410db",
+    "id": "09f8bc06-e146-4756-b7ea-03d643cf2e94",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20888,7 +20972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e830b33-8e88-4ccf-8b79-a3156ea95c4e",
+    "id": "2b244fca-5556-4a28-b9ab-c0d03b7eb87c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20908,7 +20992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ff874ec-d05d-4a1e-b2ab-e486279bfee3",
+    "id": "8f091fda-4132-497d-9b54-f68999bafc98",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20928,7 +21012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fd95818-c820-4b84-b6e8-5be1c0c666b9",
+    "id": "7579b2f1-e57e-4e43-83b7-ee8ff8e1eb95",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20948,7 +21032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4d5dbd8-fb3e-4430-a757-2666dc2071a8",
+    "id": "7b8e39c7-d804-4e8a-aed5-8fce35590e56",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20968,7 +21052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d84d66bb-8498-40e1-8b9f-1b26ffd51785",
+    "id": "b0a1c7c6-27e4-4319-a378-b54569dbfd9b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -20988,7 +21072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c4432d5-9e0c-48fb-a9a6-2204af5b2508",
+    "id": "524ae7ec-6116-48e8-a67d-7528a710dbc1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21008,7 +21092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b261d4c8-0b42-44b1-9081-9828ac4b425b",
+    "id": "f738e33e-1a5e-4b57-867c-cd289beff4f1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21028,7 +21112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bfea3599-8d8b-411b-84ad-34510f4d7a6f",
+    "id": "bdcbc64a-45ad-4804-a6e9-31b366166102",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21048,7 +21132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e14484e5-026c-419f-9cfa-7ecf6f674383",
+    "id": "d9a00046-b442-4567-a4cc-e63cb1069819",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21068,7 +21152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "034b7736-c4b0-41fb-98d5-7f8db301be18",
+    "id": "6c21c4e6-ef28-4900-904f-56262120af24",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21088,7 +21172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed58b084-cfd2-4b28-8ac6-89568a664bc2",
+    "id": "da134759-198c-4222-9d7f-dc0a84ce285f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21108,7 +21192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6bf1165-9255-4b2e-bf89-f665996657fe",
+    "id": "9f08174d-855a-4fee-9b8e-3b2c69605b7e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21128,7 +21212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e57c42b-dcac-43fe-9264-300259bc4327",
+    "id": "b8d69bf5-221f-4647-a9df-4d874b46ffae",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21148,7 +21232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16673492-3199-49d3-84d7-8e90fce4b8cb",
+    "id": "0a7dc981-813e-4394-8e11-c215578c822c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21168,7 +21252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f6d0cd6-3840-4691-a390-29fe11667b26",
+    "id": "e52e322a-f3d5-422d-afc8-a25e4776a052",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21188,7 +21272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79c90fc1-e4c5-4904-95c9-64d75d20526c",
+    "id": "4558cd6e-60a3-4d57-9d40-094c58c5d2b0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21208,7 +21292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a331a6e0-6066-473e-ae44-58dccb291ff7",
+    "id": "21359b67-36fc-43f6-a283-7d6908bf550b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21228,7 +21312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e6215c0-0f70-43b2-a9a9-a11bc2bd0dd1",
+    "id": "af3d7b2b-245a-4ec5-a3bf-3c4f1eaf71b3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21248,7 +21332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb03d1aa-901d-42e9-bad6-60fb99a69aa7",
+    "id": "64ee1286-b6fc-4e30-8152-78540fb0c422",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21268,7 +21352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c321809-06c1-4bf6-8425-354355871564",
+    "id": "d820d70f-073c-47cf-89c2-60f5e01b011d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21288,7 +21372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ffb6a8e-8074-4f18-98e5-ecadf7729b71",
+    "id": "d50438d1-2c8e-421f-a582-42f7f563e72b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21308,7 +21392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d0a7caa-7ce1-4536-8c72-fb593e2b1932",
+    "id": "55f976d3-8573-4883-9e99-c7bf2d8a2383",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21328,7 +21412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "915884a7-7a86-4986-9825-96c54500434f",
+    "id": "4ab2f4b9-abd3-4bf7-ae6a-64fd78a599e8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21348,7 +21432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f346fc8-509a-4a34-a057-5e60de4b02f0",
+    "id": "0f972416-17ae-4f3b-973e-ca204c270f8b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21368,7 +21452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5364ffbb-249b-49d6-aebb-2b02ad034436",
+    "id": "ee98add1-5e2f-48b4-a598-67e463a31fbb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21388,7 +21472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "393ce23c-3eca-4f33-93d7-71acb50aa45e",
+    "id": "f1ab7f0e-3d81-421a-9c68-3e0dbd0f90e0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21408,7 +21492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96afa354-a87b-4351-8800-c6c6c3a272b2",
+    "id": "45a26300-ef17-4495-a1f2-608a33b88a02",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21428,7 +21512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78e038a1-c87f-4544-bb20-6082a1f3210f",
+    "id": "4e792358-185d-4eef-b9e1-422e72a4dc11",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21448,7 +21532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f16b66c-1186-4ce6-9652-80e67f497aaf",
+    "id": "d5c9782a-0b1d-4d52-966b-08091ee92900",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21468,7 +21552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c96f5d4d-9ca8-4876-a96e-72ae7ee9a01d",
+    "id": "b8d60107-b3c4-4060-b348-e42f155a6a18",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21488,7 +21572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e23af1c1-d1f2-4d70-810d-06d9cbd66a4f",
+    "id": "ce69d4b7-45fe-40d3-9bad-9500f1cb5aa0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21508,7 +21592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8111be9f-7a64-42f2-8ae2-f691f977cb7c",
+    "id": "768d8258-40b2-4117-8ded-810ecc4ea27e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21528,7 +21612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9ee9806-3631-4ad6-942b-dadde6705168",
+    "id": "bcde98c0-80a9-473a-8d92-8e8b5db73250",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21548,7 +21632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3892a79-b372-443f-81ec-60f36cc013f0",
+    "id": "eafb7dc2-a656-4684-8957-83c223b25c9e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21568,7 +21652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c31f9895-165f-41f0-8db5-bacb4acc3682",
+    "id": "ef2e583a-98ac-41d5-b0eb-ad3fe74918e3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21588,7 +21672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4aafad43-4b44-4604-bd32-c9dab6b5f281",
+    "id": "2190f628-efab-4cf7-81f5-bd0b7ca4e1b7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21608,7 +21692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b8e46bf-9880-4d55-9dc0-a75e0a39c0ba",
+    "id": "ca41d9d5-513a-4077-88cd-3383614547f4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21628,7 +21712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fc40975-8e50-482d-a185-daf0bf68f351",
+    "id": "9fb7cee0-c45e-475a-9af7-57dc91b15b13",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21648,7 +21732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "754f46da-343d-46a4-86a1-2a338ead7fd7",
+    "id": "bd4c9426-23ab-43f6-bce3-34b060c8e0a5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21668,7 +21752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c024384d-cf6f-4091-b253-4a55cea79746",
+    "id": "ee1753e6-975d-49f8-88e5-640e33f71e99",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21688,7 +21772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "297d1477-ae34-4e99-be15-ccc32151e7cd",
+    "id": "13de5118-17b8-415c-8c8c-3b1b27929aed",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21708,7 +21792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "12250f49-a278-4465-90a3-04f81a3c4a36",
+    "id": "932964da-ce45-4149-b02a-61f69c42cde7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21728,7 +21812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62807c46-75aa-4214-aaf0-fa88eaa90b04",
+    "id": "0b75795e-44e0-4473-a28e-1dccdfefc49e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21748,7 +21832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72b8a7d9-0cc9-4238-b7db-3e49056bdf01",
+    "id": "48d6e004-119a-4d9c-8536-67fc56266082",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21768,7 +21852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc4d8a83-e422-426a-85bf-1d3b9ff4f8b0",
+    "id": "8de478a3-f5d2-48b4-9f95-be403c91a112",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21788,7 +21872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6815d27e-5651-44c9-b9d1-36ff32992681",
+    "id": "91dbfd6e-f611-4b5d-b219-d60c2eb462fe",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21808,7 +21892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7769708a-fe41-44fd-926e-0f424599f143",
+    "id": "417f5311-f327-49a7-ac35-c3942441f56a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21828,7 +21912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d15d19d-3ea4-4797-a18b-fe0ca7025a03",
+    "id": "1b1f7894-9eba-4765-803e-94de3bb1923a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21848,7 +21932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b830ebee-a180-4b53-ab3b-15404a422288",
+    "id": "6be0b24d-ce3c-4f21-b681-1b6ad56b1098",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21868,7 +21952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11791812-bc9f-4315-8a16-8450c72452fc",
+    "id": "3fcc7916-465e-405f-beb4-acfbfc056041",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21888,7 +21972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "624e0233-fde2-4358-9f88-163a03dcc77b",
+    "id": "9f90977a-8f92-4d11-9519-5af0262bc9d7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21908,7 +21992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b11c1b6f-9151-4585-83c6-b05890b7dcec",
+    "id": "b3eba39a-e1a8-40ed-8993-404aafab3160",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21928,7 +22012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7983212d-806d-4005-81a1-1b79db131c54",
+    "id": "93812f66-4edb-4a25-97a5-9f6715384875",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21948,7 +22032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9fefb75-6bec-4611-923b-4285d990db8b",
+    "id": "a873edf0-923d-441d-bc5a-eec5718c29c7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21968,7 +22052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea494430-a801-4e3f-9070-76e2a2b422b6",
+    "id": "922dff2a-4749-4c84-953a-1314a23032d6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -21988,7 +22072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f77ae75-3a1d-4078-a143-dd5cfdff6255",
+    "id": "5c1188a1-3a70-4daa-a042-adeff70259db",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22008,7 +22092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d49e6e96-15fa-426d-a701-850766d99a35",
+    "id": "0ff122e2-5f1d-4a9a-9074-e45a94c1076e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22028,7 +22112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a730816-6194-4f6e-af74-387c102e2449",
+    "id": "7fb97c28-d335-4ded-9b53-d915424e327c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22048,7 +22132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b41b212-d947-48f7-8da7-5f0e1164a882",
+    "id": "728adcef-4ebb-4b2f-b4df-817a94f49c09",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22068,7 +22152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50be37cb-e40d-4625-bb74-241b9dd34571",
+    "id": "aad98c15-f566-48ee-bc86-46538f91b4db",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22088,7 +22172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9612f5e-b256-4df5-8128-e1df5d115363",
+    "id": "07ee0e64-f719-4c0b-9243-8b03628ca021",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22108,7 +22192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55758909-7f7b-4df4-a5bd-0fc4ac090143",
+    "id": "7a31728e-760b-4220-a8ad-94a839f2fc36",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22128,7 +22212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73fd3bb8-bff7-46ba-b13e-83b9aa08574e",
+    "id": "69fd3183-b444-4428-8491-1c1c6b611eda",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22148,7 +22232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45cdd2af-3c4a-4de4-80fc-c6e9c1e53d82",
+    "id": "2ae67937-4cd8-4d7b-ab4d-6b7ea0a846c0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22168,7 +22252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1fbd7ded-d9fd-42a4-998a-828955302bce",
+    "id": "e28eb9b9-5d08-4a1d-b69a-3b7e75e4da32",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22188,7 +22272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c77d2e44-0819-404d-8d55-f3709497b5af",
+    "id": "5d43d108-d328-4aa9-80f3-4f2f0e55ff86",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22208,7 +22292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebe160eb-c3e8-4311-bde8-04b1e96ed1e9",
+    "id": "2be42c00-7180-4f85-a122-2b5af065e55b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22228,7 +22312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee8857be-948e-4fb7-99fd-69570965cdc4",
+    "id": "0fc4650d-1d5d-40e7-bc14-981d016f17c8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22248,7 +22332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cba36ea-3cb9-4987-bf22-54b74b783340",
+    "id": "a0ea88e6-09e6-41ce-8545-f8d9d6033535",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22268,7 +22352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "125cc13f-a976-455d-96f5-916e1f177c07",
+    "id": "ae6363e1-57de-4c0a-b970-135503497db1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22288,7 +22372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74903558-4d88-4cf8-82e8-85372d18d064",
+    "id": "e26e62b1-054e-4214-8724-0517bad4f871",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22308,7 +22392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fca4125a-adda-4627-87d8-6501c331a360",
+    "id": "1beec120-c4a7-4287-88bd-dbd410190365",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22328,7 +22412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f778be4-9899-411e-aca7-902a631dad4c",
+    "id": "0ef0ad12-c471-4d4c-be0d-6f4f7440faae",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22348,7 +22432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "37238e5d-154e-4424-adfa-638ea0b323f5",
+    "id": "f5fef8de-ba5b-4763-a35a-ad8b798da6c7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22368,7 +22452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26809405-1f45-4f23-94fd-a161059aab86",
+    "id": "4b580722-ada9-48b4-a6ec-13e4215e49f0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22388,7 +22472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c96f878b-fb62-49c2-93c8-8b51ed98f237",
+    "id": "9c9cbc3b-2b1d-420f-8cd9-c574dfb14cf6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22408,7 +22492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac484517-f0bb-4e56-ac62-0b462ab9c40e",
+    "id": "beb736f8-36da-4dcc-bf37-191ae4ff3c17",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22428,7 +22512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "123f14a5-cf6e-4b33-8972-18ac58911f1f",
+    "id": "8ef600f0-f0d4-47ce-ba24-22b953e6a378",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22448,7 +22532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd9f1396-f50b-42cc-91fc-627ca5a3d35e",
+    "id": "69d902a3-c41f-43e6-9eae-21693f95b444",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22468,7 +22552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee1c4aad-d8de-4d49-8bf7-4f9a56e5df11",
+    "id": "33042972-a62c-4fac-bfbe-978aaa198dca",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22488,7 +22572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70c2a1be-0f09-4cdf-9529-3eb3037bf86b",
+    "id": "4b251e3e-6007-4871-8052-3ca37ef7ee17",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22508,7 +22592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bdea5517-397b-4b30-bdbb-7abbc603d24b",
+    "id": "d961b264-eb70-45b7-a2eb-77a02a8cbd7f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22528,7 +22612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b33eb5f2-7918-4590-ba72-8b8099a3aa7a",
+    "id": "da688c79-30d9-4bcf-b1c8-fcaf8d7367f9",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22548,7 +22632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2fdc2863-0d78-4d2d-9ea4-25b5918c34de",
+    "id": "52a28fd3-7578-4b3e-8cc5-6efadb9020c2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22568,7 +22652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a35f5a5-f0d9-466d-b8d1-21c9f3618335",
+    "id": "e14a2b0f-e6dd-4bdf-83ee-6b7cfb5ccaa2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22588,7 +22672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de1e8859-460f-46f4-9b0d-b5c23af54685",
+    "id": "95206b49-9ad8-42c6-82b8-4126f155ebc4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22608,7 +22692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c228f39f-ee06-47e1-89da-ad4712745c0b",
+    "id": "ca224501-a348-4c85-b123-4c2da35a49ef",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22628,7 +22712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aaf92468-6915-4bc1-b1a5-b1b988ada522",
+    "id": "ec6f5feb-dcd0-4ed9-bce5-0eacaefbb1d2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22648,7 +22732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57f01bdd-5533-4357-8bd8-0b09a0855df0",
+    "id": "4133d47b-700e-46b9-93e5-8e933bd3d4ff",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22668,7 +22752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab8bc51d-8f20-4ab7-b0f6-3375e8e26fce",
+    "id": "fae586fc-ea4a-40a5-b47c-31fa0e6cd63e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22688,7 +22772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "196ff0ba-1bf1-4c82-8521-27fc6907e687",
+    "id": "28771270-53ca-469b-b828-7bfc6bf7314c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22708,7 +22792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2f751ee-0fc7-4873-9a3b-5f8eceb1a02d",
+    "id": "88b5b826-457c-476b-ab58-b0faca08404b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22728,7 +22812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0de4b8b7-2f58-4458-b6ac-09768e25e198",
+    "id": "b7f267e6-52b8-4972-ad9e-4ee2727808e6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22748,7 +22832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe8a6a8b-9664-44c6-a382-a96aeb902ff2",
+    "id": "81b6844a-b62e-4918-9f12-ae710f28170b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22768,7 +22852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32d98b0b-6c15-4b1c-a1a9-c263bff70d23",
+    "id": "6370b1d2-fa61-449f-989d-68c9a9e73d0f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22788,7 +22872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c98a1ea6-00aa-471b-9d92-11a9899fdd33",
+    "id": "84ff25d0-2e4d-44fe-ab0a-ced2159e5842",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22808,7 +22892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e2cd3ca-8636-4112-931c-935922a75e4b",
+    "id": "722112d1-40b0-4480-b989-0e4de61f31c6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22828,7 +22912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "049e10d1-3551-44b0-a7c1-2e9425a50f1b",
+    "id": "9b09be38-0c30-430c-8151-fb3216b641be",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22848,7 +22932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31d68e44-679a-41c4-b70c-eec6d85860c6",
+    "id": "c71806d1-e664-4071-be08-27f71cf43680",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22868,7 +22952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1af27340-5c2a-43ea-a9e7-a8dbb457bc4a",
+    "id": "828d3993-7565-46ea-b490-dabf9dd97098",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22888,7 +22972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20058071-3b2d-4791-ad9b-6d078fa17bbe",
+    "id": "b339862e-7722-44c9-b392-8dd0235ef098",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22908,7 +22992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fed99b27-5af0-4e3d-ad01-f87c4da4f7d3",
+    "id": "b491b77a-f706-41dc-9788-e2c31f3dcb94",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22928,7 +23012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3c31bf8-fe0d-461e-b19b-dcdc351ee7d4",
+    "id": "e0da54bc-d903-4157-a607-1419f887bd28",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22948,7 +23032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae45f5d3-1628-4ec2-ba61-c139d832967d",
+    "id": "207de8a9-730d-4697-9cbe-73964e93bc95",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22968,7 +23052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2dde5f67-d7df-4e12-a4bc-64c54a4c467b",
+    "id": "13ba10e8-8d50-45b2-9b91-0498af5415b5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -22988,7 +23072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ce69307-a6cd-4acf-80d4-141656e06655",
+    "id": "9ace66c6-55c8-4f9b-8983-0ccb0d44463f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23008,7 +23092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "616f3cc1-e937-4b03-919d-b7d9f7edb8e0",
+    "id": "e7ec3fd9-8fed-4729-9b56-c78918d3ede3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23028,7 +23112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23760016-6337-4e2c-8b9c-eaa35a6a269f",
+    "id": "502e865a-8d89-40f5-b26b-08d006ef6041",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23048,7 +23132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d72b9ef4-e560-4ca9-998c-4223e9cbf649",
+    "id": "79a552e5-d66b-4519-a882-56cabbb43dc2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23068,7 +23152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc450f41-dcf2-45f1-b7ff-70447c4a366b",
+    "id": "af439562-1398-4354-8762-a5966f35c3f2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23088,7 +23172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3a980618-54c0-4876-a5fc-ce59f66d4082",
+    "id": "e6a36533-e107-485c-bcf0-afe2f9c6afbb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23108,7 +23192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f071d050-229d-482e-a5a2-77275af091ab",
+    "id": "07c61e95-7f44-4d13-9e89-29724cad059a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23128,7 +23212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3798d231-b6eb-40b1-8bc9-45f4c5e15f94",
+    "id": "078ee82b-24cf-4ffd-b0e9-1ef5b01389e6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23148,7 +23232,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c555031e-f5a7-46dc-bcce-d2da5cc0f173",
+    "id": "cd65e92c-3e17-4b7b-939a-cdbc62aaa89d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23168,7 +23252,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "134229fa-723d-4701-b0f2-fd997d812845",
+    "id": "6cf41934-e111-4648-8a73-642c5cf16e67",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23188,7 +23272,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "906ac2bb-08b8-4aae-a8e6-3537b8c57cde",
+    "id": "37d13bdf-1dcf-49b5-b9df-d036833f9ff2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23208,7 +23292,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e14bd740-d3b8-497e-9ff2-4e41cf37a72b",
+    "id": "7d827514-d7c9-4ef0-b833-6fe7a8471f4d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23228,7 +23312,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c431a9e-c810-4f21-bc67-604928e3f4b4",
+    "id": "3b0c7b3b-26d4-4909-b913-ea8e696f92d5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23248,7 +23332,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a684c6ba-53d7-498d-829b-4a5ba72a0d45",
+    "id": "7d47aeea-118a-4d29-9553-c940aed44581",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23268,7 +23352,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b07a6f0b-4a9b-4967-b812-cda3216da0c8",
+    "id": "eaec7a0a-988c-484a-8d72-8cd7ef2a211e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23288,7 +23372,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e739a77-00d1-4788-ad09-434885ac47b9",
+    "id": "ca487d05-941e-4cae-8e68-22daa2b4e096",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23308,7 +23392,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "436593a7-7f9a-4a4b-9cd2-83542b193416",
+    "id": "9fdd1113-91fb-44e3-9ee9-f5c7ec832c6f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -23328,7 +23412,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0062b87-3648-4e55-8722-78680fa0314b",
+    "id": "70664dc3-b56c-431a-b241-d2d66f40e241",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23348,7 +23432,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41bbdfff-fd91-42dd-8079-ff5a024784dc",
+    "id": "319b9f00-cdc6-4b34-9d8a-b57ace344fb4",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23368,7 +23452,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e28b14b4-b31d-437f-bbec-f436db7baf27",
+    "id": "6c75791f-b9a5-48df-be92-a7b657b14e61",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23388,7 +23472,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "843f9c88-32f1-44fb-9517-6798e1069727",
+    "id": "3757c827-10c5-4304-aab9-4cfaa83c7117",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23408,7 +23492,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ab44187-1594-4f4a-b976-adf532209b1d",
+    "id": "d28b3722-5fa4-4a98-a092-b4e094f52027",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23428,7 +23512,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d23bb979-96d2-4604-8271-6bf875026450",
+    "id": "1229f797-c606-47bf-8de3-38cfbcb6da07",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23448,7 +23532,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfbb1cb6-d4af-4f6a-b12d-b0ad50ba073a",
+    "id": "9ebff21e-5c00-4185-ba07-4ab98f68d923",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23468,7 +23552,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97df7b1f-a4b4-4e1f-bd29-d19efedcbd77",
+    "id": "bdc97d53-62bf-4dbe-b40b-410f2584b325",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23488,7 +23572,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00c8e77e-bf40-4727-8041-357afc2296e6",
+    "id": "bfa56869-66fe-427d-97b8-7466b3fcd830",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23508,7 +23592,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82647175-57ea-47b5-8777-2095e2e8c9ae",
+    "id": "523fb09f-c2ad-4321-9749-29da92bf3c92",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23528,7 +23612,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69f00233-ea13-41c8-ab0f-f508ce2230e0",
+    "id": "fa6c3abf-250e-4d15-808e-7e4cdec0125d",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23548,7 +23632,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e4d1337-9b58-47ca-9508-e1e93bce303f",
+    "id": "4daf4ac2-7edb-4645-9fe3-bec1b0b41017",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23568,7 +23652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f9b1fcb-1ae2-4a30-8113-a14dbd8ad4cb",
+    "id": "518934ed-604c-48bb-9579-64f2220e83cd",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23588,7 +23672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d09adf46-68c9-4f1d-ac05-89b2180ab9b0",
+    "id": "780621a4-d384-416b-8853-8ffdec785752",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23608,7 +23692,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "524e949e-2a53-4f4c-86a2-3d2511a4e8cd",
+    "id": "db11cb51-2ba4-4874-bfac-6da7c3a13141",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23628,7 +23712,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "800f371c-cb54-4048-96f0-0aff69667d68",
+    "id": "ac1c2610-af6b-4d0a-9840-250329fed62a",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23648,7 +23732,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "025e7c28-d0a8-47e0-a798-457e797848e9",
+    "id": "5986cb6e-9ef8-4098-b394-7acd0dc5149f",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23668,7 +23752,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9f3e02f-b615-476c-8ef3-5d405578a98d",
+    "id": "fb7f5480-b75e-40b6-ad84-ab244f2bbfb7",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23688,7 +23772,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f19dacb1-5b3d-4fce-b5b6-8b6105596658",
+    "id": "d19bbe7f-01fd-4883-8b3d-8187ecb7d6eb",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23708,7 +23792,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee8224cd-9fe2-422a-a1a7-fed043a15270",
+    "id": "d8bc45da-3400-4f3a-9501-13545d8fff15",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23728,7 +23812,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d98fddf5-f55c-467c-802b-6402331ce099",
+    "id": "d7292412-aff2-45ee-8728-67b3647a5db4",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23748,7 +23832,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49843dfa-4283-48cd-9db1-617fee233be2",
+    "id": "48785fce-38ba-4849-8297-28adc187832a",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23768,7 +23852,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aed4cb85-e53b-4f38-8540-0699fe2d63f1",
+    "id": "17e03c73-fb5f-42c1-9958-f4332a05c759",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23788,7 +23872,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e798394-7b2d-4e6e-a148-800a10c1015a",
+    "id": "98b82efd-9c00-4125-8aa8-b5a47a5b9acd",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23808,7 +23892,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "338700c3-eab0-4fca-9a49-5b704cf0f648",
+    "id": "012b4c2e-4b7e-4c95-a54a-caa6544b1125",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23828,7 +23912,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4b58926-d82f-4a22-924b-5fee199095f2",
+    "id": "d4483fe3-c0d5-4947-9644-b11120626cb1",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23848,7 +23932,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9544b408-fc3b-4998-b88f-329d35434723",
+    "id": "8b03f540-5384-433f-8427-53a61b912ce0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23868,7 +23952,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d562349f-085f-4e0e-b76b-ecec5ab755be",
+    "id": "d1a9ea88-2c3c-4e29-9991-9b568d7abf68",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23888,7 +23972,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "653086a1-7929-4d80-9a49-03e76293cfe3",
+    "id": "6c269788-d18c-4499-a367-564dda6bed95",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23908,7 +23992,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09fb2e88-9ae2-4ef0-a888-47adf1959470",
+    "id": "8d5428cc-23c3-441e-92f3-e48392176062",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23928,7 +24012,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad1459a1-0b68-4cec-9749-69b8e76adb4a",
+    "id": "790c9f02-6081-44a2-ad51-1986a2b87f99",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23948,7 +24032,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a76fc365-84a2-4f85-b3bc-c6966a76fd6c",
+    "id": "e5d8e917-9470-4214-9f0a-fbebdaa18f5b",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23968,7 +24052,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca4fa582-fe9a-4f69-8176-3f00d620e54c",
+    "id": "b39ca947-aa10-4be8-b395-fe37cf5bac0f",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -23988,7 +24072,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab062fe1-7dbb-41dc-8ac9-1d081ffffb27",
+    "id": "b56a93ec-f798-4a08-9ea8-eb05eef86319",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24008,7 +24092,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "803986a2-b3ec-4864-9e44-d7c449f3f8e0",
+    "id": "01689429-fbf2-4f91-8251-1e9ac2efff44",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24028,7 +24112,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a323ef0-cdfd-490b-a832-ea80f5f80824",
+    "id": "c1f52fb3-2bf2-482d-bdab-cd7ad59dfe0c",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24048,7 +24132,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8135e436-eb73-4ea8-a531-b6ac8846fee0",
+    "id": "e05611a4-dbc7-40f9-a403-6d672d8c12c0",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24068,7 +24152,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5dd5c6fb-21ac-4f92-ae7b-7b103fb3debe",
+    "id": "9e218497-5fdd-48ca-a7bb-1e4c3d024ddd",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24088,7 +24172,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8f1874d-45f5-4266-a152-54eede8b8cd9",
+    "id": "df1260c5-51a0-452c-a294-da4f044be193",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24108,7 +24192,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5226eab-89ac-4f4b-a80e-40dc185fce99",
+    "id": "b3f20c5e-1856-4da0-8af0-ace898d8f647",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -24128,7 +24212,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9d55db5-9283-4ab3-a719-e633a4961b2f",
+    "id": "09ff2142-77ea-45dc-8360-c4772a750dd9",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -24139,7 +24223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7212836e-a138-4315-89e2-008b4298b1d6",
+    "id": "e422ea01-2181-408d-abcb-7820a4f103fa",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -24150,7 +24234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8ec88c47-239b-483f-ab87-720dcd813589",
+    "id": "6a55d1ec-318e-4627-8f45-8734efe5401d",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24170,7 +24254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ef0e553-a6e8-43f3-8506-2bb5779cdf0c",
+    "id": "cb93e65f-073d-4bc1-bbe0-72bad6a51f4d",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24190,7 +24274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f169e66-fc9c-4a5a-80ce-98a6701aaaee",
+    "id": "290a1568-9df9-42f2-8752-6c1cc4c8a511",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24210,7 +24294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbe2c47e-4fdb-43f1-940e-c569aadd52d6",
+    "id": "172bcb0b-21ab-4e97-96cd-f59f7ef3d22a",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24230,7 +24314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "275c4eb7-12e8-4c30-8044-7e893fa31e18",
+    "id": "1c380d9b-a5fe-4d9f-99b8-1901da3580bd",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24250,7 +24334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64f3bccd-7ed7-44e6-b56f-0c65447665fa",
+    "id": "f1a9ed11-df19-4127-8da4-1eca386c29ed",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24270,7 +24354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f9c674f-e75a-4905-8512-07da5e620084",
+    "id": "c41b9c93-c477-4df2-9bf5-0f5a973b01fc",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24290,7 +24374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c168fe47-2d2d-42bb-ba6b-4d83e9991761",
+    "id": "06139d11-92ee-44e0-9200-2da66312a028",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24310,7 +24394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "343b1017-c377-4d21-9dfd-5f1ed6990c2e",
+    "id": "db38c47a-81c2-4fdc-a65a-036191fa3c21",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24330,7 +24414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6129124-716e-4e5b-a35a-10b506284759",
+    "id": "99f96aeb-be65-4f03-a628-a96488861183",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24350,7 +24434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e022ff4a-f400-43e8-bbe9-59f98af586a7",
+    "id": "90c6878a-ae06-418f-9220-572874a2b5af",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24370,7 +24454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57adc6c2-e6cf-463f-ba52-15d4cd72a9d0",
+    "id": "495ab889-7c94-4328-95e3-67655f7a104f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24390,7 +24474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae4718f4-0e97-45c9-89c9-d4e7f54da9c7",
+    "id": "a73e9280-f2b0-4fff-aedc-5d7864353137",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24410,7 +24494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ab9e64b-284e-4a08-8e3f-5866ccd6a0ed",
+    "id": "471aefb0-80e6-40ce-a49f-5bdcdde04cdd",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24430,7 +24514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97574373-65e6-4c1a-8f90-d55c87b1d55c",
+    "id": "3d9daac3-cbe1-4b46-9540-c5a65fef531c",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24450,7 +24534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "863a16f6-e98c-4ae8-a25c-85bbd005a8ce",
+    "id": "7da84f18-bb7e-492f-af07-b8b38a227d04",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24470,7 +24554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fd40235-bad5-4e75-b745-63c025b05055",
+    "id": "2707dbfb-2636-4e55-9011-4fb64e24f106",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24490,7 +24574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbc0295d-f0de-4146-b78f-7dbf8058257e",
+    "id": "ed04a27b-7b5a-4f69-be5b-a2f88c8d22ef",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24510,7 +24594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aadc7f80-1d41-41ab-a2a4-0874ea02c4bb",
+    "id": "76a7535f-8edb-4b76-aaef-c03de50ff09f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24530,7 +24614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "195c9058-feb0-44ba-ba7e-b319a73046dd",
+    "id": "17fdacbf-03db-48ea-a1bb-ed0b2690fb6a",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24550,7 +24634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17678921-6321-4268-a870-f7851733d664",
+    "id": "66ad0e01-68e6-4017-bde7-c05c18ad315f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24570,7 +24654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa18690c-6a7c-46eb-b949-3cb97711856c",
+    "id": "5d4e9348-2285-45b6-bc69-ff51a3efeac0",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24590,7 +24674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9bf7910e-404f-4e52-b988-b73d4c1482c9",
+    "id": "238ccc8f-d8e4-40ec-9e7f-c205836f3c68",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24610,7 +24694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "379c0cfe-1c61-4366-993c-8d34a16467bd",
+    "id": "1e4f35fc-1cac-4d97-8c10-630ef07b9835",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24630,7 +24714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aef01e5c-2839-4d75-beef-ea117bdbbf09",
+    "id": "89132e35-932c-4250-8e11-5858010cc33f",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24650,7 +24734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c6f107d-6c57-452d-b1fb-1395fd37eb55",
+    "id": "166ba4cd-6534-4312-8acd-b507c5223a80",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24670,7 +24754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d55d7992-2cb5-4471-b95e-21e5e130b570",
+    "id": "cafd28ca-fc00-41c5-bdfc-20bce0917a6b",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24690,7 +24774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "669c629e-661f-4374-8d01-f977ca2d0abe",
+    "id": "31ff9168-dbf0-4774-9263-c9bee609eab9",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -24710,7 +24794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6590e59a-d58b-4958-96e4-d147d6ca37e9",
+    "id": "6794d1c3-f67c-44d2-bd79-040d84858b91",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -24721,7 +24805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2745ab9f-dd84-4286-8d8f-faf08e0d3b49",
+    "id": "0ad3f8dd-9179-4819-818c-feb06503bd38",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -24732,7 +24816,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "61edfe62-cdcd-469e-a59b-753b9b0d8811",
+    "id": "ffae06f8-bd98-429d-8599-beaf2eb31556",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -24743,7 +24827,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4110c4bc-7d34-4caa-b9ad-773dd16b7872",
+    "id": "e60b476a-d878-4da5-83ec-86566b1adad8",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24763,7 +24847,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60591b82-0440-419c-8024-b8a8f74854fe",
+    "id": "dfcbdf2a-52d2-4509-bf64-5ed6a7fe437e",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24783,7 +24867,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7204429a-cecd-43f2-9d4d-02e3d1d09db3",
+    "id": "a5db86da-5c1a-477e-914f-a5da0e78d6f6",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24803,7 +24887,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8348a85f-089a-4e04-9015-b02f7600ef28",
+    "id": "55bf0a3e-d10b-4c09-8a50-bf123781eb4a",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24823,7 +24907,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1eb99ee-28d8-4d8c-92ea-bc4a3b793f8e",
+    "id": "6b7eae9c-efbe-498d-9661-359d71d114c9",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24843,7 +24927,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "657afb15-6f5a-4e20-9447-6bf02c5c3752",
+    "id": "93ea9213-5f20-4cd0-9a71-ea1aa42a04d1",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24863,7 +24947,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f60174b9-dcf3-43e5-b52b-92704dd8eb42",
+    "id": "e466f6df-9d00-42cd-b838-2da593fcd041",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -24883,7 +24967,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ff39bc9-0ff7-4100-bd85-2e0b309d56a5",
+    "id": "e4fb87ed-2f87-498c-9665-df88f8b05794",
     "codigo": "4.1.01.06.0003",
     "descricao": "QUILOMETRAGENS",
     "tipo": "C",
@@ -24903,7 +24987,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "222c9bca-438b-4139-ac36-93f5cc303a3b",
+    "id": "950b83c7-e6d7-4b81-aca5-56e6a7e7f190",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -24923,7 +25007,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3b52a78-8b72-4214-9a73-17c06cbcb32e",
+    "id": "a4156c6f-abd7-4d3e-8e30-20a3d68a35bd",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -24943,7 +25027,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1722367f-3c81-4acf-a6c8-cd893b1a832c",
+    "id": "7997395d-5005-44e1-b200-4b89517b1737",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -24963,7 +25047,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3202b45-174a-4bf3-9cf3-71f8d01b3305",
+    "id": "67e9cac8-d39c-49e9-aa95-6c8ac1789812",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -24983,7 +25067,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a38678a-f0eb-45fe-a53d-31a5f6f915f2",
+    "id": "aad107f5-1ba1-4005-9f05-05b536fcd812",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -25003,7 +25087,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab2d35c2-822c-4443-855b-cebddf074829",
+    "id": "ac76c21d-acca-4b4f-bf9a-7afe68e5c434",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -25014,7 +25098,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b49aaf8f-74ce-4e08-9faa-3f239b077ff7",
+    "id": "15d357c2-be81-4886-b6bc-28dab29a55a6",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -25025,7 +25109,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2d29e79e-4486-4e0d-a2c7-9f0c6402fce7",
+    "id": "fbf8a0fe-7bd1-4314-a8cc-adc6b2026741",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25045,7 +25129,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "804cfb58-dd7f-4334-b378-797b87f5451c",
+    "id": "8de9d854-f141-42a9-9e60-5c398217ef95",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25065,7 +25149,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18c233fe-f0fe-420d-a181-3e495f7905a0",
+    "id": "af89ba9f-0b60-4089-8c50-e475c450f804",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25085,7 +25169,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d632d88-05c7-4f59-a899-94d47afcd413",
+    "id": "ce6a31cc-e559-4733-a66c-9e471bb449e4",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25105,7 +25189,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd485339-a76a-464c-b3df-177ade3871a4",
+    "id": "d0297635-dfa4-4bc0-9335-6ea4ecd9a519",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25125,7 +25209,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3678be8-1c13-436a-8d2a-af23c321fa69",
+    "id": "8edd1a70-59ba-4b19-b0d7-86ba1c0425a1",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25145,7 +25229,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "118096fa-8ce6-4f0d-aa90-104da6b65e52",
+    "id": "11ae9936-5ea9-40ae-88b6-1d654d1def5d",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25165,7 +25249,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f732d26-fe23-462f-affe-2501951c6da2",
+    "id": "5a5b2be8-1078-456d-9e0e-82b0d90e2111",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25185,7 +25269,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b73d7040-68be-480f-a507-7e40c95a65ae",
+    "id": "6aaa7e75-b4ed-47a0-81e7-f876ae6c9321",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25205,7 +25289,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bb4f76a-604d-4d5c-bd0f-f90eb9282e8b",
+    "id": "0a35138d-349e-4193-b3fe-7f1ca6aa6b6d",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -25225,7 +25309,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2941251-2e5e-4a85-bf82-211b3882f18d",
+    "id": "3de71c19-4401-433e-a462-c85868b0d3e3",
     "codigo": "4.1.01.07.0003",
     "descricao": "CORREIOS",
     "tipo": "C",
@@ -25245,7 +25329,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1f4ba9b-72a2-403d-bf50-346319f19bb2",
+    "id": "c647dbf0-9e63-4d8b-996c-57cc6f63851a",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -25256,7 +25340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c6aaf02b-6f96-4d9b-bd56-125de7e4e2af",
+    "id": "62e88e0e-4017-4b16-96a7-45018f435e34",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -25267,7 +25351,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "0de3dda6-c249-419f-94c5-586633f4b9da",
+    "id": "a443691e-d7f1-4e99-a4c8-81c0ef4ca147",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -25278,7 +25362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2fc50d81-9171-47be-a48c-0ea5b4128e39",
+    "id": "83739a3a-bea9-42cd-9353-8edc9afa5f8b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25298,7 +25382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c89ff37-40b9-4cd3-be4d-8a61dd0e56d5",
+    "id": "c6658c10-5630-44b7-a458-c1167fc6a565",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25318,7 +25402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb2b6e02-e5ec-40c7-b6ea-dbc17e7d3cc4",
+    "id": "c428244d-d590-41ed-8313-b13e4febe543",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25338,7 +25422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7d5b7ee-b37d-4550-a94c-91a7bcd27d41",
+    "id": "0b7ad6cc-fa4d-4377-bcb6-cba79beb3d58",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25358,7 +25442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18c52e79-a0ea-494c-a097-0797d17ed882",
+    "id": "a65ab2d0-652c-4fea-ba29-26a7daf2329b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25378,7 +25462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0647583-bb58-4908-96c6-e2ff1bed7f92",
+    "id": "5992512c-14d9-4b0e-aee2-e37411904bc5",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25398,7 +25482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01300e9b-96e0-4246-bd90-58de63edf4de",
+    "id": "97bcf3b6-c7c2-49a6-9427-941664acf4ea",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25418,7 +25502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62a633d8-33ce-453f-aa3d-9f508e7f7172",
+    "id": "4deadbbc-6c1b-48d0-8568-82a5b50398b4",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25438,7 +25522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54847800-6d74-4ff2-b107-c133bf4781e8",
+    "id": "7c881124-8348-4b5a-aca3-013100b01b1c",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25458,7 +25542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dca2b17c-502e-46ba-bf66-a9e94c1d3f79",
+    "id": "374e3920-1f47-4c51-adfd-99c78f0b7a54",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25478,7 +25562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58177e4b-7ed0-4b86-a662-73d71b327bd8",
+    "id": "2ffdf0c2-e1f4-4029-a7dc-e449e91e4d48",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25498,7 +25582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87b90a43-7a63-43c9-90ad-425da46ba7f3",
+    "id": "57cb8143-1c18-4168-a4c8-c5df91fba175",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25518,7 +25602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d2ab1f1-1ad1-4fb4-ad75-8ef62fd8f023",
+    "id": "76370cdf-6fd2-4264-a458-9e593673023a",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25538,7 +25622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "59919fdc-2a79-42f4-877e-40446a1a6693",
+    "id": "45a3a517-a02d-4c28-87dc-10b62a0a0913",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25558,7 +25642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "841e26a4-7331-4bc7-ace2-95422dcefc94",
+    "id": "6108bfea-ba55-4cfc-9f51-ac9516faf222",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25578,7 +25662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01c7ed47-e968-4d87-8bd0-46df1036d59d",
+    "id": "c856e14d-c08e-48e7-abe4-2bd406b572b3",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25598,7 +25682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abd7558f-5f09-4b8e-8507-0cf5b35bda92",
+    "id": "9023325d-d7b5-4ff8-b338-fb94efcb56bd",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25618,7 +25702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57bdd09f-b3b6-4ad0-88c0-34171cc81044",
+    "id": "0105bb9e-b4ec-48e7-890d-5037b900295b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25638,7 +25722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e83a8ac3-88de-4d35-862c-4c705417ce58",
+    "id": "da9098d1-15e7-42ca-9649-42b29472f4bc",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25658,7 +25742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f98a66b7-1ec7-4664-a495-629cbcca8820",
+    "id": "a46bbe34-efb8-40d5-920f-29f6b0828fe1",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25678,7 +25762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "474454b9-5bf9-4567-bf98-06c1e847783d",
+    "id": "1338d991-deff-4473-9e79-93d8ed8baef7",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25698,7 +25782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a638a57-2dea-44b7-8261-7e5a6ea42b02",
+    "id": "9754418b-c369-42d6-821b-9df5fac8ce4f",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25718,7 +25802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dada767-5395-47e8-8db5-4ee162c6a7a1",
+    "id": "ada6118f-942e-4356-a682-da592bf58d94",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25738,7 +25822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96e2e7a6-21c1-403d-8449-a7557f9f19dd",
+    "id": "162bc3b5-fbbf-4bf5-bb68-9c925543032e",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25758,7 +25842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fc4c947-e8f8-4e8f-bc01-172d16f75271",
+    "id": "4f4f03f4-412f-4362-b2b0-ef478d5b9afa",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25778,7 +25862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d88e403-b1fa-4b7e-97ba-2b5bcdbc62b5",
+    "id": "e61b40ab-1c3d-4b97-82d0-8fcbdb975328",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25798,7 +25882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2262727c-4bf2-4fee-b478-260462d03af6",
+    "id": "40d8949b-565d-4b52-ad4a-dcb4fee81b0b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25818,7 +25902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "563202b4-c743-495d-bff9-c121121b82a7",
+    "id": "a4e98f10-d1fd-4e60-b908-62ab6bdb45ec",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25838,7 +25922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aca37dda-b3f1-48f1-9237-80726b21dc6c",
+    "id": "da919e5b-655e-432d-8870-eb686364f0e2",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25858,7 +25942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99a0252b-3b9d-499f-8971-de301561b31c",
+    "id": "cde78d09-fd68-4c91-baee-ec5f5b69e25d",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25878,7 +25962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4e12355-4f64-478d-9f51-23d115f9e754",
+    "id": "6f839563-39a4-405f-a247-fd9c520790ec",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25898,7 +25982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed7305bc-4510-4efa-b670-e44b65c2b384",
+    "id": "7e835ccc-ed95-47c3-93cf-d0d06f5e02ec",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25918,7 +26002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc6b3f1d-dbe9-42f8-8c0f-339390ebffcc",
+    "id": "2ca90b5c-7b0d-4da1-9aa1-75c3a75b47fb",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25938,7 +26022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11e86cca-412e-4207-8a18-af087c0c2515",
+    "id": "bcb98ee8-a1b0-46a1-b229-367900bf586c",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25958,7 +26042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f414661a-9794-44dc-afbb-7a0b7d755490",
+    "id": "99981737-2867-4a0f-810e-30852df00d9f",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25978,7 +26062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b65976b9-e5f4-4097-bcfb-7f941e50d436",
+    "id": "6503831e-df62-4109-ae44-ee773b2f851f",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -25998,7 +26082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2746b291-e494-43e5-8b65-39fe1cfcb13e",
+    "id": "eff8dce6-5971-4f3f-ab79-88133f1b907e",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -26018,7 +26102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1ec5bd2-1d61-492e-a1f3-6d823c50f7b8",
+    "id": "5093d325-4650-40d2-afbc-e88376e6fd7e",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -26038,7 +26122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "596844ec-7b64-4629-a599-7ce5700db2e5",
+    "id": "656be9ac-9534-4510-9af4-ceef53f94820",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -26058,7 +26142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ea65297-49a2-43fc-ae0b-58825ce4b902",
+    "id": "c08fb7e3-01a4-4c10-bef1-d47e164c14cc",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26078,7 +26162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4071064c-7af8-4726-b8b8-ebd47ca49168",
+    "id": "283d91f3-8a37-4ef7-bc3b-c2683ea775b7",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26098,7 +26182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11decb70-20c9-4dac-b8ed-3618e69dc6b7",
+    "id": "867a8326-764e-4373-a192-5f02e48c93e7",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26118,7 +26202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ce524322-b3ab-4b24-91b8-12abd0b81be9",
+    "id": "26ba206b-2164-45bd-b22f-83f24f3eb583",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26138,7 +26222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da9cddb0-500e-47cd-a7e4-fcee134ef692",
+    "id": "5c408457-5b12-493a-a899-02897c74060b",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26158,7 +26242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83202cd5-a98f-43cd-9fa3-3b98b7522258",
+    "id": "0a37b310-3910-4bbe-977e-23925334ee96",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26178,7 +26262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5c28736f-d460-46c2-8d51-bad53324e5a1",
+    "id": "07948a75-86cc-4941-933f-3845d6e3eae9",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26198,7 +26282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc026e4f-8a27-4cd5-8c5b-da02ce9da81a",
+    "id": "bc8acac1-e630-4356-a209-984f67d5d295",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26218,7 +26302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8c4f012-b0f6-4799-8d63-d379080ddf7f",
+    "id": "7f53cd10-7904-4553-84d8-16b6ff9b8bd2",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26238,7 +26322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60d8e4a1-bc37-4a1e-b4c3-61697815fca3",
+    "id": "c7ea450a-e0ad-4a6f-a11e-926dde0e8c60",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26258,7 +26342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78a55051-3670-455a-88f8-1f0130f0e8bb",
+    "id": "944f8dd5-ca68-44d4-95b2-8d308137407b",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26278,7 +26362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7cf1493-972f-4192-ab90-4c0c1493db80",
+    "id": "3217c768-993c-45de-9ca5-7c4aa38babd8",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -26298,7 +26382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d37a32c4-69a4-4312-a422-ab77aeb23444",
+    "id": "9745ba5c-7822-4c84-aa46-6390de449d0d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26318,7 +26402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f972e8c9-a54b-4754-885c-74703dced8ea",
+    "id": "3794ecc6-53e9-451b-b0f4-3beda2e9e2a3",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26338,7 +26422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3911c44-d0b5-4196-a4dc-1e2b1c1507c1",
+    "id": "e3faa765-952a-4c75-b3a5-d50e65812630",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26358,7 +26442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7fe9581-a9c4-4557-9d3f-1e7548f82702",
+    "id": "6211f9f7-3836-4220-857d-952df2688f30",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26378,7 +26462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c80dc6c5-05ea-4ba1-99ae-e51c1dc91423",
+    "id": "c958610b-72fe-4c28-8eb5-77c7fbd4fbc9",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26398,7 +26482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "873f49b6-70c5-401c-a313-0747eb6d1414",
+    "id": "fda012c8-2a27-41a2-946e-92025f37eb77",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26418,7 +26502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98f3e71f-63a9-4a4b-9a61-cb931d8f18f8",
+    "id": "a150c2eb-6d63-4c02-a65a-525cae5739ba",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26438,7 +26522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c504997c-6344-4fbf-8cb4-3aa6054e8144",
+    "id": "fd87ab2b-dbbb-4192-9f94-959d9ee07308",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26458,7 +26542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd17bea6-97fc-4156-b4a8-45543d71eb4d",
+    "id": "dc11dfd2-7cdc-452e-9206-5004d3372918",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26478,7 +26562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5e3d0b4-b9a6-46ae-87f3-cfc8ef80b467",
+    "id": "87820a26-dbb9-4aed-8df2-961daee1ff7a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26498,7 +26582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2ec1e65-0f8f-4246-83f1-2a1824208333",
+    "id": "0259c2af-804d-431f-ad7a-d83402b61e7e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26518,7 +26602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f1d0383-be82-4e37-b4f7-3186cb46dbee",
+    "id": "c857744c-144d-4837-b1f3-71c27fb23326",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26538,7 +26622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f81c8f60-475c-419b-a1f7-fb6ffebd6c4b",
+    "id": "3b76d299-9276-451a-9b92-ddad6cda05ec",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26558,7 +26642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03f2784c-fbb9-402f-8adb-40a13da2de94",
+    "id": "514ff541-c62e-4713-b56a-6279481346dd",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26578,7 +26662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "679cdfc9-bbdf-46a2-8405-bf6af4f3945a",
+    "id": "714b9443-4b58-4769-9f0a-5f89f732d3c9",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26598,7 +26682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8554f67c-8754-4286-9397-b94c21008cd3",
+    "id": "0cad2cc0-b99d-495f-a78c-2017a12b0237",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26618,7 +26702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7342c04-685c-468e-b8bd-1a0dab11a2de",
+    "id": "0d0b1227-a425-43bc-bfdb-b39966c2a5e5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26638,7 +26722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7b57aa6-4b9f-4da0-9b5e-6f50aad4b1ec",
+    "id": "1a7c125d-899d-41ac-ae32-0127d0499219",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26658,7 +26742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cdd3c0b-d935-4170-bdc7-ad4210aee283",
+    "id": "35daca5d-2bb3-4c90-aa28-46221c027393",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26678,7 +26762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b6df07e-88c4-488f-951a-f991197f4495",
+    "id": "f51c56eb-b5c6-456b-8beb-b58d2396e62b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26698,7 +26782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "198ac5d2-9485-4a2a-9435-3e5c4448aeb6",
+    "id": "95cde6b3-d0f9-4d36-bbc3-8cfa5232145e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26718,7 +26802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "193cfcd1-36ee-4aff-9d30-df5e18363f0d",
+    "id": "8c825b92-2916-4579-a7bc-4d9ab8cfad6b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26738,7 +26822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f5c832f-76d6-4dcf-9921-458adcbbab08",
+    "id": "03d1b529-d155-46eb-b12b-a3c76dc05078",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26758,7 +26842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "681e496a-6cee-4687-a4e6-8cb7058522b1",
+    "id": "a02c4eaf-2f5e-40de-9592-0d3a4ee61039",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26778,7 +26862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "033fb2f5-a099-402d-8a5f-48e359215452",
+    "id": "8621d429-d493-4841-abc8-8c165a85906f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26798,7 +26882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c5ad8dc-382a-4855-895d-0dd3dadd544f",
+    "id": "96c40b59-4553-484e-bb60-f4e4331f1fd2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26818,7 +26902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bab2f4d4-778f-4460-83a7-5906d29c2b0f",
+    "id": "480cb695-c40a-4fab-878c-5f8bf7a30d59",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26838,7 +26922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9d2725a-df2a-443c-bfdc-5c1a2510211b",
+    "id": "33e2aff3-eb7f-44f3-b1ba-535fb1cb2911",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26858,7 +26942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c9b6113-cdf8-4326-8b0e-0b47d2212239",
+    "id": "d8455580-60b9-4f48-9537-4422e66ba04b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26878,7 +26962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb0629b2-2578-4bb5-890b-785a4b11a5d7",
+    "id": "7552984c-6563-4017-a8b0-57852790d164",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26898,7 +26982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97e90a7f-2511-4299-adae-791a89087546",
+    "id": "6df2d933-7c34-420c-a2dc-a8887adc287c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26918,7 +27002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1ba414f-fd02-4487-9040-345e48d49c3e",
+    "id": "3b033d81-8529-4ae3-a061-d7b8555eba27",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26938,7 +27022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc966d21-6a84-4ae3-924b-9769dfb357fa",
+    "id": "27e7fbea-a8cd-4b4f-92e1-9d7052128093",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26958,7 +27042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4b15d5c-5a43-495a-b786-ec630744eef3",
+    "id": "1f17268a-ceb8-449d-8261-80e336ece1ad",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26978,7 +27062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0afa940-597c-4bd5-ba3e-b9d470a16f0f",
+    "id": "5e577488-0f57-4255-bda7-3e30dee0eb3c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -26998,7 +27082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f13fcc5-2658-4a90-a5d7-75a4489acd24",
+    "id": "bf0ae391-9c4b-4b7b-8bf0-46d8660aa7fc",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27018,7 +27102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3421a1e-79ae-4bac-86da-eb0ab25af9ea",
+    "id": "4e3f93db-a4d5-406c-be4e-6eeb7b37825a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27038,7 +27122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72fc2c9f-eb40-41b0-9161-14c21e40bee6",
+    "id": "87a508cf-76d4-4c13-aa6a-48464ef46d68",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27058,7 +27142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "374edf18-0c38-4771-8238-36dc01ed505c",
+    "id": "11228003-146a-4812-8ea8-7640b0e1096e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27078,7 +27162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f8b9116-6e3b-47f0-94c6-bb110e858f1a",
+    "id": "8d610468-449a-4777-af98-45554319b540",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27098,7 +27182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b81355f8-a413-4e06-804d-c473b5024e3e",
+    "id": "8bc3c141-cdd0-4e83-ad16-5dc06fd64d86",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27118,7 +27202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "675cfc15-5724-4766-a2e0-5714e40cea37",
+    "id": "79a832d2-3777-4821-9ebd-f7a13a41ed81",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27138,7 +27222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50c46d34-e68d-4060-b45b-2170de7629cd",
+    "id": "22af7d25-12e1-4ff2-a2c8-b29f24e8b614",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27158,7 +27242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1200437-8089-4fcd-ac42-90f5b675597f",
+    "id": "383618b0-d2a4-443c-b52a-cabe9a0f1182",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27178,7 +27262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6de87643-8219-46a1-bc91-1918f9796f4c",
+    "id": "376882c2-2d7d-4a69-9391-f3043f7d632f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27198,7 +27282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ccb2986c-9d29-483d-bc07-be7af3b74e9b",
+    "id": "a3be7b3f-cd95-40d1-9731-5e5d3a17171c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27218,7 +27302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b5a2998-cd88-41fb-9ed9-40b60efffc71",
+    "id": "831c8f16-d00b-4363-ba30-a6b81587a7eb",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27238,7 +27322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9dbba50-b0ff-40bb-a37a-e8e34c9ca255",
+    "id": "87c8174f-3872-418b-9caa-b21c7ea292c5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27258,7 +27342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "774dca00-dc3e-4c0b-bafe-0095a265f585",
+    "id": "db3d3058-c4fb-49bb-88d8-8d363a3b0ab5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27278,7 +27362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a249afc-c8f5-4b51-a7ef-574d0a850ac8",
+    "id": "94e81917-3ec0-4fe0-a1ff-3461ff8f8020",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27298,7 +27382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39545fd9-5d6b-48b7-b24b-205c6052fc7b",
+    "id": "7e9b3413-3e67-43a9-b1bd-cfb6bdc1b29e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27318,7 +27402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "911d8928-4225-4412-943a-51b7083519ec",
+    "id": "c4402490-8999-472a-952b-5ef8ce39be57",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27338,7 +27422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "826be07d-2dd2-403b-bc05-8f1e8a858654",
+    "id": "4b439cfa-4f7c-4afa-95b2-047288d70d7a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27358,7 +27442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d61ddc97-6344-4cc0-94c3-690c16e17db1",
+    "id": "c45dc85a-56de-4f2b-9986-64c636ac9e93",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27378,7 +27462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2bfde05a-25c0-4030-b068-7243d6551151",
+    "id": "6ca14f25-e5f2-4363-84de-6f4fe0206c7c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27398,7 +27482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e126c652-d5b3-415a-b5a9-0ec775c1af96",
+    "id": "17beb538-5363-4567-b7ce-dab3e70f593f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27418,7 +27502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e81b92dd-c717-42e2-a6dc-72d1ecb57e37",
+    "id": "0d6021d4-d47a-4300-a92f-f7ad56805bd3",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27438,7 +27522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e6917b0-78f0-416b-9e0e-35f9ced62030",
+    "id": "24563317-e6f5-4af1-a9d4-1918b3dd8caf",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27458,7 +27542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e579d693-ac55-42e0-8ad0-c1fb0226c843",
+    "id": "92cb07b4-b797-4b78-aaa9-67060a55971e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27478,7 +27562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa6fe6a1-4a10-4ea8-8e7a-bed091b88c15",
+    "id": "f74657f6-370b-4cc7-8f48-1caa0de080b5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27498,7 +27582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3f4f2c4-23c4-4279-ac18-6490e082b527",
+    "id": "d0df5001-bcd0-49d1-9f18-5562cacf5da6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27518,7 +27602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97eb93ab-8a77-47b8-923b-0109aba9ae51",
+    "id": "cda80d84-7fea-466d-93ad-3ff2b7a292cd",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27538,7 +27622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbfb4726-bd14-4f7b-a8de-f024e4554696",
+    "id": "3377b707-aa83-4e6e-a9b2-fcd849798ecf",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27558,7 +27642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6afc5068-db08-4488-8c91-86876375fd62",
+    "id": "62339249-fb88-4054-b95f-3e3045cdfb0a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27578,7 +27662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09e29d6e-67e8-4548-8b98-2a5fe610babe",
+    "id": "64b568cd-f755-4b55-ae0c-a691cffdc0cf",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27598,7 +27682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "081e8466-7749-4c3a-bf75-658f07b4aaa4",
+    "id": "ed040524-8c2b-4c42-899d-b20d01518401",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27618,7 +27702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "beaebc63-21ae-4679-b2fb-bdd2d4e55bb3",
+    "id": "7e8f42fd-84f3-418c-85b0-1e6859a10236",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27638,7 +27722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc7e5b48-e103-40e2-99ea-5b8521cd457f",
+    "id": "167261a2-8baa-4dcc-be53-3aa3e973598a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27658,7 +27742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06140fe2-0617-4390-8833-559d483adfb6",
+    "id": "6672df50-98c0-4e24-aa16-d59d38060eca",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27678,7 +27762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2295de8b-de5b-4204-b127-917b9a8119f8",
+    "id": "97c8dfc9-0030-4f99-bf36-118494812435",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27698,7 +27782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a3a32e2-a542-49b6-af01-581d5974fc18",
+    "id": "fe5dd787-3e6d-4a5f-91f9-57d245687ec0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27718,7 +27802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2613ece-9e7d-402b-8bdb-be95d0b12abc",
+    "id": "f95e440c-7736-4436-935f-f0c6ab5c4de3",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27738,7 +27822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28ed36c4-61b1-44b8-9959-d3dd2b00a527",
+    "id": "802984ca-1534-4d4c-b181-6cd8a19f7696",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27758,7 +27842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e301607b-e9bf-4549-b5e3-6b0663d02932",
+    "id": "7997101e-e6f3-432a-b954-2968ae6684ad",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27778,7 +27862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88067ef2-da99-417f-aceb-5d69c8f99480",
+    "id": "08b6dce0-f3a4-4798-85e7-ca6dff2478a2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27798,7 +27882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d163e5a3-b44e-437d-b2f2-045977cb6a50",
+    "id": "a5c47df1-d539-4e7c-8d9b-8d9317638337",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27818,7 +27902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b6b0b5d-7530-47cd-b65f-f64c7ec314de",
+    "id": "b29eded4-2273-4b03-b098-cfd2e2c5d4e2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27838,7 +27922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bde6ab17-5664-43c9-85b4-57b9a7619685",
+    "id": "0ff1e239-f13f-4f09-99be-94684150221e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27858,7 +27942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0b2e2fe-736b-4282-bea6-529707cce64d",
+    "id": "97d89744-db95-4993-aed3-27e9aa77fd8d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27878,7 +27962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "683cdeb6-9801-47d0-af71-c4cc6395d7ea",
+    "id": "9e60ef5f-0dea-459f-bf2e-d67c52b89964",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27898,7 +27982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5778cbe-3129-4ba3-a59e-1bb5c61a4bd9",
+    "id": "fc73ad16-9248-4897-82cb-3fa15510582a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27918,7 +28002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b35d8ec-612d-427a-b205-bfea93ab66f8",
+    "id": "af56d699-e5ee-4b74-9cc4-565d18196621",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27938,7 +28022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70de89fc-4216-41dc-9b64-60c1cb9d8d99",
+    "id": "31135f43-bed6-4c03-93fa-846986876e0b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27958,7 +28042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ec83e86-7f33-4da7-a05f-8bc552cba13e",
+    "id": "c31672ba-0c0b-4cc4-9487-81ba1919ff73",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27978,7 +28062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f51ed84-7615-40ba-ae8d-626117d7ede7",
+    "id": "8b53e499-be30-4e2f-9ce1-b0aad8db7ca2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -27998,7 +28082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b26db09-9867-447f-98d9-a1a9c8578f16",
+    "id": "5ac7379f-8c37-4c12-be02-058a81bac781",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28018,7 +28102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78eb170f-d8ed-4a76-9b1a-04bb1e06539c",
+    "id": "b241a15c-6974-4027-b23f-0e83b440d92f",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28038,7 +28122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0afc1f57-2c8a-420e-9a88-3fb55d05d510",
+    "id": "13f6477f-1b7d-4784-872b-fb201fda42e4",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28058,7 +28142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "041cc839-5097-47e9-9c3b-5d8016fd5c62",
+    "id": "cf043220-5bc3-482a-bbc6-c11e7286c1e9",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28078,7 +28162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4265f8b-41d1-40c5-acc5-874f007d028e",
+    "id": "a69d260d-0dbc-415d-905c-f369d6214efc",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28098,7 +28182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bf4ee92-8e6c-42c2-bf3f-ace8eb072184",
+    "id": "2d85cff6-198d-47cd-af45-007b6de1c9a8",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28118,7 +28202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc1bdde8-87af-432a-b4dc-2bc8dea63a2b",
+    "id": "35c1786f-8756-4921-96fe-58e6cc48e94c",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28138,7 +28222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7113761b-3ce4-4297-87ed-b4b72cda3864",
+    "id": "0ec573f4-e2f0-4286-a417-dd697b5e1758",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28158,7 +28242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87e98e7d-8642-4c0a-89f9-af7c5cbb8336",
+    "id": "e9de7aee-c3f6-40d4-8337-0e43bc07711d",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28178,7 +28262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fa67c0b-1c6b-40dc-ba43-caeee2088a86",
+    "id": "c65536fd-9768-4451-bed4-87a0e96589f2",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28198,7 +28282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc3b07db-22c5-4b5e-9e51-985e570afc1a",
+    "id": "089e7250-b634-4c76-b07f-be7046b3d1b0",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28218,7 +28302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88ae9d2a-15ab-4d23-9a84-f6b9ec8e1bcb",
+    "id": "e4d42055-c413-4428-99e8-497bf9c5d5c8",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28238,7 +28322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7843460-6ba8-4cb2-8337-3141d189da9d",
+    "id": "2a2623cc-8f42-40ba-8a47-97af92919bdf",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28258,7 +28342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e9fe1b6-259b-4658-94f0-dd1f972230c4",
+    "id": "5fcbf222-b119-4f1b-b658-f74ef7471b63",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28278,7 +28362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1b559d4-d43a-4cf7-9d37-723a2cc6ee9e",
+    "id": "31d6b830-a2cc-47ee-bf10-053489bc6af0",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28298,7 +28382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ccfd7af-b38c-4d29-996a-0caa4e1609b7",
+    "id": "6c7c6b0c-8870-4d08-af6f-d2f556df6f55",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28318,7 +28402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "91a2405b-2ac6-4f3c-ac9a-c593aa741ff7",
+    "id": "1e9f38a8-6111-41c2-b647-d3e4f023eb7a",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28338,7 +28422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb21185d-4f96-41e9-8950-e171618e5cf0",
+    "id": "81e1f806-1a35-4597-91d2-1d2aa36737d4",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28358,7 +28442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd51d60f-72c3-4be8-8c23-88a894f94536",
+    "id": "f2548560-e286-4970-b651-ab80c8a7cc52",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28378,7 +28462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1c6aa68-4ace-4dd7-80b2-6b8a03c4aff3",
+    "id": "aeee4943-58d0-4454-8a48-f98adc93e5aa",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28398,7 +28482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d1ce9e1-1337-4e87-9ff2-deceb5753dad",
+    "id": "fe45c40e-d7bc-4f8c-9d12-ecfb028bd9e1",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28418,7 +28502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25265c37-49b5-4722-b585-658c2c985d0d",
+    "id": "7b4d7ea3-8490-4b0b-ac5d-e79c40e8b887",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28438,7 +28522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c62bfd9-039a-45ae-a611-aea2fd9195ee",
+    "id": "3ef4b88d-f505-4a91-9526-71f5c936f22e",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28458,7 +28542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d02efcd4-0329-4a21-9304-a016b62c4970",
+    "id": "9799c0cd-b54c-4f79-b29a-43952da9e916",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28478,7 +28562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e307a31-12e6-4608-a931-01a4f1abf8b2",
+    "id": "bfcc1b5a-1941-46e6-8527-91a23cc6111b",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28498,7 +28582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6c4e055-0b27-4106-8c27-7fc51e4d1602",
+    "id": "519c9b43-1517-47e7-bb2c-c05a6b2a9d24",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28518,7 +28602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c704c1c-13e2-4907-a8c0-a5234d7950ce",
+    "id": "c5866e45-bfc7-4973-a9df-35795413159e",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -28538,7 +28622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02f6a32b-e419-43a8-8c58-7aba539337be",
+    "id": "e950733a-4bd8-491d-9ecb-966176c13d0c",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28558,7 +28642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d79a91cb-4fbb-4feb-9918-0ed131eef4b3",
+    "id": "b629701c-3e16-4f10-9c1a-ea02975c09da",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28578,7 +28662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c49b5e3-6d82-42c6-a82b-2f19a9289a67",
+    "id": "c6e02bfc-1339-4e1a-a2e4-ba295cba90d0",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28598,7 +28682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65b6bdd4-6850-479c-85f4-d4f0d00e76b7",
+    "id": "3b1e37ee-1aea-4f50-bd27-182e72cc0b5e",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28618,7 +28702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38376e3f-8490-49c5-98d1-2489f6eb9d77",
+    "id": "e3f9010f-18a8-40a2-97dc-55f9450bc390",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28638,7 +28722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27d2fb1d-1e71-4f55-ac9a-f9e55982e396",
+    "id": "64f9be24-c631-480b-b193-d0ce04615456",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28658,7 +28742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "141e9bc0-aaa3-4728-ae9b-8c0024492420",
+    "id": "377903de-d79a-4cab-b62f-3d324c56964a",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28678,7 +28762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1796a5f0-3c4e-4fe0-85c6-1075e848fa71",
+    "id": "82638678-4bb1-4ed2-8b30-2a2235bc6253",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28698,7 +28782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3341206f-348a-432a-ba74-a23c4933aeaf",
+    "id": "62ea1194-8c46-43e9-88c0-aed41ffa4583",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28718,7 +28802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4d20e26-e2b4-4e57-9846-e98aecad3c6e",
+    "id": "a6b59a52-632c-442c-8045-4e025f430e01",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28738,7 +28822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7d07891-2c71-42bf-9afa-d4e669b2b97a",
+    "id": "9503bff4-6e3e-48ce-9d16-e53b979b37c7",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28758,7 +28842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9ea938a-8b02-47ab-9700-8a36bb73508d",
+    "id": "7df4c94a-2e72-4920-a707-069970478e7f",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28778,7 +28862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2697885-018b-4bdc-894d-05729e7b4505",
+    "id": "89e692ea-54eb-49c9-87c0-2f2a246b8251",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28798,7 +28882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42cbe2ae-3c03-41a7-98c2-44a93a527d74",
+    "id": "1cf08607-5d66-4b64-87e8-38647694f959",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28818,7 +28902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dca9643-3307-4ffe-ab69-8a9fc79f5486",
+    "id": "49fe6681-3a61-46e1-b8fa-953a822ee4ca",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28838,7 +28922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99ccb310-6f6f-423a-b503-94806d5f7800",
+    "id": "fb942be2-e398-4cfe-af1e-da4934f8bf94",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -28858,7 +28942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec0bb46f-18f0-403e-a650-a95a41880937",
+    "id": "d234515b-519b-4e40-86cf-de297e7d639c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28878,7 +28962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd7e7dcf-fe59-4191-80cb-935ffe2c1357",
+    "id": "4b5b36bd-e307-482f-b469-94862b1d2cce",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28898,7 +28982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2fe26655-6a5f-4d26-9366-07277b2a435b",
+    "id": "42458c06-947e-4bc4-a833-ee0476cbb1d1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28918,7 +29002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "804c26ec-cfe5-49e6-b2cc-820241fbfcdf",
+    "id": "b679d4e8-cb45-45c3-b8c8-278f2a6cc86b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28938,7 +29022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a7b6e2b-2004-4fcd-bc1f-81b06e4bbf18",
+    "id": "57577042-6e02-4fee-a657-c2607ea139cf",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28958,7 +29042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48fd1b18-62c3-4e3e-8f7e-2ba707268bc4",
+    "id": "5336667a-7316-40d7-9c6e-cf17a839f7fc",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28978,7 +29062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cb15344-e55b-443c-ba42-a5197624eb94",
+    "id": "e54bf30e-ba5a-4254-bb60-feab2145390b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -28998,7 +29082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36f9e599-2d6c-434f-b5e4-0ce8935956f6",
+    "id": "aa5301e4-2a92-4439-9096-0c640c29c678",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29018,7 +29102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e214e298-9bf5-4337-bd7e-048c62a0df6e",
+    "id": "0058e83b-f35f-44b4-98fa-68477961ea1a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29038,7 +29122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7c2dfe0-0d43-4d6e-b608-6cb251edaf73",
+    "id": "2b691e70-5e58-4898-8aa8-f197e703deaf",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29058,7 +29142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7994bcdc-955a-4af3-8836-4682ac6acae9",
+    "id": "910f05a2-3528-4685-b098-390097757ac5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29078,7 +29162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ac1c1cb-19ea-4098-851d-d6aeb73d9264",
+    "id": "4c00e530-1e44-4fbf-998a-8300f59b59d0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29098,7 +29182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a57b8b23-c6cd-49cc-bc2f-2db2f2ad99f1",
+    "id": "c572036c-2ec4-446a-8344-be98225d6817",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29118,7 +29202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcf08168-b6dc-4489-83ce-861de053efa6",
+    "id": "8b7d2654-7e26-49d2-be5b-e13dcce90b99",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29138,7 +29222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "716f7066-ac98-4b78-b275-e3f68c042ee9",
+    "id": "575f7f39-7b48-472e-89b0-435465661c66",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29158,7 +29242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5565a906-4e47-4411-8468-7e7bccdb1adf",
+    "id": "8c752540-c8df-4de6-9666-8ff4dac6cff3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29178,7 +29262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "844d6a5a-a95e-4c38-af1e-3cf57bdeff43",
+    "id": "742ca3ed-218a-417c-940d-c13bbb575431",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29198,7 +29282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "258c5804-e7f7-4435-8cdb-d763cad81f2a",
+    "id": "a96312c0-ecb1-4971-8238-9e9dcb9454e1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29218,7 +29302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8d33ffd-aef3-4abb-9ee3-fb3d99641ba7",
+    "id": "7194c783-c261-42c0-ab93-3d466821a1e6",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29238,7 +29322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b07de77-dd0c-4fe7-a260-c447dacc794e",
+    "id": "1a019123-c01a-4f2d-acf7-7819d1d43a4f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29258,7 +29342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e58d1be-f886-4991-98c1-59ed19731f8f",
+    "id": "b09406d7-d01f-498c-873e-99a752132df0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29278,7 +29362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8143cd49-608a-4b5a-ac1b-61f35481b495",
+    "id": "0c630d1c-5203-4940-a405-ce7575a59637",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29298,7 +29382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72c2f823-9e97-476a-b26e-f25ca6242528",
+    "id": "75ff4f6e-3d19-4646-bb0e-7dbcaa02e2d8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29318,7 +29402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c025383-2477-4879-b6cf-435fe91c8e7a",
+    "id": "6f0452b8-d909-4c2f-9e95-48b67fff44b0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29338,7 +29422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef3f827d-6847-4f60-92bb-8a3e67abfeb9",
+    "id": "1f5ffb0a-b562-401c-8c1d-26b7ca0c24c6",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29358,7 +29442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea799bc7-6262-440c-8853-3ba3d4ac8069",
+    "id": "3a5e8b60-de18-45f6-9cb6-3cdb25ca66b1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29378,7 +29462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cca2133-23f1-4c25-aa62-0808671441df",
+    "id": "969c886f-001b-46b1-b96c-bbab01cf7f18",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29398,7 +29482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7b14927-eb5e-4dab-8585-1f3e352837ae",
+    "id": "1a48f2fa-3287-4ef8-87d5-1e5456e96dd0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29418,7 +29502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1e66502-faca-4e16-bef4-6c2173170795",
+    "id": "4dda1ea8-9573-4b45-9807-d74082ffbde1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29438,7 +29522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "758b66af-203d-4f27-a4c7-0aeeb746152f",
+    "id": "1476dbe6-ba67-4f08-a3ba-722e15eeea2e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29458,7 +29542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ed63069-9239-404d-a2bf-d99006b22779",
+    "id": "c321d11c-07f4-41e5-8697-a4daecfb1e2a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29478,7 +29562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d214917c-569b-4778-9110-0ec5c0c4d00d",
+    "id": "9472cf30-2e87-4200-b257-785fc4d31b58",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29498,7 +29582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8dbbe09d-f4cd-4003-b637-10b4634e3461",
+    "id": "9096dfdf-b238-49c5-872d-23ae129a97e5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29518,7 +29602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ea54b55-3210-45fc-8eb1-36c9a1d451b8",
+    "id": "587ecbb0-ad1a-45f2-9401-beee75e48f42",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29538,7 +29622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67d662ad-6257-4613-9508-5c38f5d62905",
+    "id": "29b96366-04f9-44d3-94a6-3fce03c4b6e1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29558,7 +29642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf5f99f0-d8f3-498a-80a4-9f09ea0794c3",
+    "id": "914e6dba-48ed-4b36-bfe2-31becd13b602",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29578,7 +29662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f01a0bb-ec61-4056-96e3-b89107bdc654",
+    "id": "b24c83c6-4c06-47f8-9eb9-fdbe5c344449",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29598,7 +29682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ebfa853-1d3e-4c19-81a9-243780fb49d9",
+    "id": "cd252add-1bda-4aa5-b4c3-70420b4d214e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29618,7 +29702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b8a1940-c041-42d2-a9d0-eaa295039640",
+    "id": "aee7fefa-c80a-4ec5-988b-70e3eb527c45",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29638,7 +29722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a006579f-5130-48d3-846f-ba03e185a5c7",
+    "id": "a235e111-2908-46bc-9504-8ef034f8cd9f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29658,7 +29742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad57c9ff-c53e-4f53-ba5a-0a806d02ac67",
+    "id": "874e59bc-53f7-48ac-8992-23d52618c663",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29678,7 +29762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7b80b32-2c0f-4390-83f1-e3cc1a0ca142",
+    "id": "b56f55aa-c1e8-4c53-ba54-aa5f6b502e00",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29698,7 +29782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08cdbe51-2ee6-4fbf-a34d-b8a1e1f8bc29",
+    "id": "7670e8f3-3991-47f5-8991-2b2c261e80bb",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29718,7 +29802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f14faeb-b266-4619-9fbb-132f53f01f8f",
+    "id": "ac1192ac-e67b-4fa3-9bf1-472dc07177c4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29738,7 +29822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e9ffce9-4da3-4eb0-8840-d70d5cb56214",
+    "id": "750395f5-5c58-40ae-a85b-a440b90b30ba",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29758,7 +29842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6ef3fc1-7066-4f39-9364-3951bb3c4d71",
+    "id": "d5028b7e-86e1-443e-af0d-5ef8e3322eb3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29778,7 +29862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c656dca-9989-498d-acae-cb08e7d3bba9",
+    "id": "8f39a472-754b-4b63-9c7b-76abbd380d7d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29798,7 +29882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30951d22-3af6-4d87-b903-5c736cb5316f",
+    "id": "733c3007-0439-4f45-9098-52dcc08d61b5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29818,7 +29902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e38b5040-a314-4182-b37f-1d81a47c595f",
+    "id": "b778ab8a-1066-4f96-9aad-028ca3c9e90b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29838,7 +29922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de474e8f-c45c-4b6b-a0a7-f560a9d73005",
+    "id": "1f1b99fe-4a32-48be-b04d-40479b830d27",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29858,7 +29942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "322ac9a3-c7a6-424d-b3e7-e6ad555154f3",
+    "id": "bcfe1711-9a99-4d59-8a0d-45f78f6bfd79",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29878,7 +29962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64a66b7a-ccb9-4d3d-99da-98636ec1879f",
+    "id": "7335838a-9eca-41ac-9762-8a982341a366",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29898,7 +29982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4b6203e-d37d-4a83-ab17-134d686fa345",
+    "id": "af9d5987-0af7-48cb-95d1-7e11e9746969",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29918,7 +30002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9da5103a-44fb-4e55-a025-1c266de1dc7b",
+    "id": "92742b35-fe8f-40be-80d9-eeef49520b87",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29938,7 +30022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fb60042-20b1-4776-8797-3d34c7f8aa22",
+    "id": "d2b76ff4-7ec8-4d37-a223-1c7c702da83d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29958,7 +30042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d180b41-58ad-4723-8c3a-3aa6cea46a02",
+    "id": "1a1f1185-b56f-44fa-a53b-375d76c67525",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29978,7 +30062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a6b4ebb-bce6-402b-83ff-35bd0ca5a4c4",
+    "id": "1624f8c3-a5ea-40f5-ad41-c173b5bf2991",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -29998,7 +30082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c2ee15b-a389-4912-800a-40b43bfba0a3",
+    "id": "c374ef5f-d778-4345-a7c6-66eb8e6aacd9",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30018,7 +30102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "112cd05b-5fc8-4582-a176-089bd0da76c6",
+    "id": "7e0a49c8-ced9-4487-9b4d-c3afa973fe8b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30038,7 +30122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd9245dd-a4a7-4a8f-a6c4-6acad0d51764",
+    "id": "5ca17887-e422-4e5e-bbec-e88ae13ed2d4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30058,7 +30142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83cc89eb-2eb8-46d1-866a-c18db6a6285c",
+    "id": "c727fefc-37d4-456f-80cf-5da7f9df43a0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30078,7 +30162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "312de420-478e-45c5-b77f-4980a8949573",
+    "id": "8605b8d9-5d52-4618-ba51-f5b7cf09eda9",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30098,7 +30182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f756b55e-ccdb-44f8-b1c3-6a90f04406b3",
+    "id": "633adf21-aa61-43c3-869c-082a323fd3cc",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30118,7 +30202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca8ef7b3-2861-436a-be7a-1c38bfb9236d",
+    "id": "ffce6e55-9a68-49cc-abb4-d46abf82a621",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30138,7 +30222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a9c0a24-3994-40da-893d-3e991803a072",
+    "id": "647a4737-d7b6-4c13-b243-dc7468fa990c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30158,7 +30242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b10d0217-989a-42ff-b359-933976c38d57",
+    "id": "890c3d73-5975-44a6-b21e-a21b72199b3f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30178,7 +30262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fc99b2f-8ab8-4903-84d5-fd3bead0860f",
+    "id": "60e80be0-9b9f-4b0f-a20c-f68575bfeceb",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30198,7 +30282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1850b713-31b7-473b-b710-6d283ecc7390",
+    "id": "0728d483-d912-4faf-bb5d-4963ec49c07a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30218,7 +30302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e13d943a-3cce-422f-ab1a-6e7560d4e951",
+    "id": "48e3b794-4e45-4227-9120-0355b65ecb72",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30238,7 +30322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a58c389-bd77-46cf-a31a-ea77618e5260",
+    "id": "52a46828-9422-4b2c-9c19-47c735e99b1b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30258,7 +30342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "803ed39f-afe7-40a2-a0fa-e876e02abe28",
+    "id": "f9fd3a8d-ada2-4cd9-893d-3d54b658e41b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30278,7 +30362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fb6608a-9c86-4567-a742-970585e2a676",
+    "id": "37273498-6387-4787-bea3-7643310246e3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30298,7 +30382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c45de440-4eac-4e7e-83fe-8cc89a635d20",
+    "id": "24c14c11-14ab-4031-a680-604d45345d4a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30318,7 +30402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e35d7c70-0459-4018-902e-75f4ca4dab9b",
+    "id": "84803e85-56a6-42c5-bb1b-5b6c53674258",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30338,7 +30422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65eb538d-ff59-4daa-826c-064421b3c29a",
+    "id": "02847677-63d6-4f25-8913-16ab0ca95206",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30358,7 +30442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15c15d5e-560b-412a-bb9f-e717d643564f",
+    "id": "051fd216-dcdd-41e0-b313-3e07e1e5fc79",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30378,7 +30462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6664b37-719e-4fb6-aa79-3d8c9a6fc2d6",
+    "id": "b33266aa-7009-4281-807c-35e8ff828739",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30398,7 +30482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb599fe7-1939-4028-833d-187b6d352531",
+    "id": "8232cc0f-6862-4f09-993f-3597f7fea431",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30418,7 +30502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a02a1f61-2223-4065-b5a0-25539324cf8f",
+    "id": "5eb50733-4339-42df-8032-99bd4ead8d55",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30438,7 +30522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2e1cd16-2a88-4a21-8ad8-fbb291e09222",
+    "id": "5f8ee87c-2a0b-4fad-8f07-c5119273f10a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30458,7 +30542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d96d960b-58c7-4673-ac8e-b8b13e2fe138",
+    "id": "44ebb821-67b2-4443-af13-d2d6ce236b01",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30478,7 +30562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d68dc84-8b2b-4bbc-9bb1-a4f7abf86944",
+    "id": "3f0f9c14-ced7-40ee-9af0-2f8a48f836f3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30498,7 +30582,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab490e56-af30-42e9-9947-b03c43b0f3dd",
+    "id": "82dc90f0-f4df-49a1-b377-d94513bdc5ff",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30518,7 +30602,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8be4894f-d877-409a-8d7f-d0fc4c46f46c",
+    "id": "ed4dd084-e623-4c6d-8951-c27d6258ca77",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30538,7 +30622,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6e12725-c13b-421b-9dfb-d9d2bb3eb2bd",
+    "id": "ae5809a9-6ba0-4017-9566-a610a7fa0773",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30558,7 +30642,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dd5cad9-385d-4e92-bfdb-a9734afc67c9",
+    "id": "92753c22-766e-4289-9a90-f5ea65a78c23",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30578,7 +30662,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07a53f8a-a1e7-460b-af48-edd99e52c126",
+    "id": "ddac0bc0-a503-4c46-bca6-7877dcd40d13",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30598,7 +30682,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9285b5f9-1010-46aa-bec7-be1fc0dd83e1",
+    "id": "d513acd4-a4af-44e8-bcf7-0da816092635",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30618,7 +30702,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8e625c4-ac4a-4328-b56a-fac2e04901fe",
+    "id": "a3b95692-4e3c-4f01-b4cc-8e86cf32fe1a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30638,7 +30722,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd382bf7-75e8-4120-8133-32fb696b2f57",
+    "id": "a8af4de5-e069-4dfc-86f4-2a7bee012750",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30658,7 +30742,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbdc58ca-a7cc-4d3d-a88c-8456e9deca08",
+    "id": "a1556194-961f-44a3-9e1e-f78ccc9d3182",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30678,7 +30762,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "af08f885-c260-4e1e-9865-219f1ae4578a",
+    "id": "2191fa64-30e4-460d-bc60-25bc9cb71030",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30698,7 +30782,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90b0224e-6483-45fd-a527-1b94137fad31",
+    "id": "ac8a77e6-1b85-4abd-8586-3ecf1aa81c90",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30718,7 +30802,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f9e40b4-1c62-4262-8761-fce413d0a16b",
+    "id": "57d5ff4e-9f86-43f6-95b6-1cdc6b9c49bb",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30738,7 +30822,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "789aedb0-6eff-4d77-951c-fb01ec68a5e3",
+    "id": "c33e7857-9032-48c8-b4c8-ad38d8fb8d1a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30758,7 +30842,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73756e21-c211-4aa7-8976-1b03dccebbea",
+    "id": "08cafdf0-8aa0-4dae-b8d8-95791593175d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30778,7 +30862,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8447ad90-049f-46b6-87ea-c2a7783ec48d",
+    "id": "35a3ca9c-dc5c-4be3-83bb-f2d701efc33d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30798,7 +30882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47f2a0f5-26e4-44d3-ac6f-6f0e3a2a96dd",
+    "id": "88b3e576-15cf-4ca0-a2ab-6d0af9ecd409",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30818,7 +30902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "097449d4-35e0-4d43-88da-bc78154c0d92",
+    "id": "af308ed5-9aa3-435e-a5f1-7c2d6769d274",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30838,7 +30922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d1a1856-bd0e-489e-b951-13507cf9f681",
+    "id": "b67a4c30-cc4d-48bd-93e9-74d7cb79a3fe",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30858,7 +30942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47ba9c02-d3ec-4246-911b-acc41c67fcc8",
+    "id": "c060cf57-205f-4924-badb-3e7e3336f05c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30878,7 +30962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80823b4b-6727-42ad-aacd-b94000df3b5c",
+    "id": "24aadc98-c91c-4a28-8062-c3cb42704d29",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30898,7 +30982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0302084f-c644-41f9-bdb1-13ef7d8dfe6f",
+    "id": "0d439953-7aaf-4310-9250-a385baf73627",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30918,7 +31002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "655ac32c-031c-461f-a9de-7b0894cb8dd8",
+    "id": "e9eb88cc-36ca-40a7-9329-6d3646dd7005",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30938,7 +31022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a452fca1-ed0f-455f-a1b0-a1718bcb054f",
+    "id": "258cba17-da2b-413c-aefd-77e33ae5faf3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30958,7 +31042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8fc4f6e-5d90-4884-a6a4-08d5968da1ea",
+    "id": "39da5fb8-f08d-45bc-9a39-6a7086a50a7e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30978,7 +31062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae77e5de-8d2f-49a2-9b65-5b675605e949",
+    "id": "8891afba-903b-4ded-a40c-ee8bde0d6e40",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -30998,7 +31082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc0a2de4-c3b8-4e5a-afd6-bbff1d12682a",
+    "id": "3bd25558-1207-498d-81dc-92cd00a1beb7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31018,7 +31102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f878b6a4-7d51-4ec1-86ff-27a216358b03",
+    "id": "cc1dd399-e615-4ab9-ae87-b8f0437c9ec7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31038,7 +31122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6227ecc3-1d99-4818-abaa-17a67eb1edbe",
+    "id": "2ed8bc44-72ea-481d-bd90-ab22b2211884",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31058,7 +31142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9be38103-368a-4430-aded-837521d4508c",
+    "id": "e2e31d60-0abd-48aa-ba92-7e9255eb627d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31078,7 +31162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3cce154-a4a2-4bf3-9f56-2089e2e00553",
+    "id": "7845de92-f072-40be-bc5d-97a8cdca378e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31098,7 +31182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58664a4d-3efe-46c0-80da-157c0d8a9f9b",
+    "id": "1b37f71c-4ce4-4bf7-9d06-9c6baea981d3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31118,7 +31202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f690ab35-801a-4cd3-a3f3-a2e6699b6d89",
+    "id": "60c7ff88-acd5-43c9-9b21-2c3f0fb3b541",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31138,7 +31222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d8a6843-65b8-4625-a7fd-4bd87c7a2bf1",
+    "id": "e5e8d5b0-62ba-4638-80bc-85ed426d8737",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31158,7 +31242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e6ee813-6ffb-4fb7-8c17-9c01cc1d5bb3",
+    "id": "31c768b0-f685-4cb1-8e65-f2212602a523",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31178,7 +31262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39012972-d9af-4c62-8d77-53f5794504aa",
+    "id": "fd1a139a-7435-46c3-b55a-18e5eca6bde1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31198,7 +31282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0878bc27-e5fc-4621-bfcb-9436fa35d3dd",
+    "id": "bed67ac0-f2cf-424e-93cc-5de1da405ed4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31218,7 +31302,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8025ab67-80f2-44ba-a8d5-e47676d8d1c4",
+    "id": "a15d7be8-6bb6-4f71-a0b5-87f15df660da",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31238,7 +31322,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65d82cbd-681d-4adc-a1fc-9095bd4c8c8b",
+    "id": "4e17aca1-9900-4afe-96a5-3b1af15b3343",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31258,7 +31342,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bb6e82d-2dde-4930-bfaa-e5b3afe7039c",
+    "id": "3ddfb971-85e5-47b2-953c-62823bdcac6f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31278,7 +31362,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3cad21e5-69c4-4837-8059-d748fb9a2cb9",
+    "id": "db82b062-0d67-4abf-b07b-e11df7f57b38",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31298,7 +31382,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9789c414-1f45-4cad-baf7-0977b5822f31",
+    "id": "daf0fe73-8b73-4eb5-a6d8-90ddb8a174e7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31318,7 +31402,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9aac4cd2-83ea-4e6d-9b21-c7dbe5e70081",
+    "id": "12a7751c-1e63-42b8-b7f6-ab46c28ccb74",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31338,7 +31422,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f809203b-62d5-4a87-bf63-1bdb3f16d47f",
+    "id": "68653fba-e107-45d4-a12d-681e07b19d19",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31358,7 +31442,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbb6ed21-3e3a-4daa-87b2-d611122bdc75",
+    "id": "83e624d2-3b47-471b-a2e3-7d44e4e3bc24",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31378,7 +31462,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a16b2199-4799-4a25-b59e-561c1af7d235",
+    "id": "5a3bcde2-a1c6-4b0d-85ef-1734d354fda4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31398,7 +31482,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "816375f2-169a-4c97-a16e-c06084b3606e",
+    "id": "407b1107-a57c-46ea-a202-b4f4bec2c4d7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31418,7 +31502,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "91783f32-09bb-4d56-9dba-e0a81273b068",
+    "id": "14981467-ce99-49f3-969e-c8d64be5426f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31438,7 +31522,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e40b00b-36f3-4ad0-a771-f0022fdbcee0",
+    "id": "af83d935-e479-4052-80bd-1dad0768147d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -31458,7 +31542,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6018eff8-cb4b-4a21-a63f-eabd4aed26f2",
+    "id": "7d6e5917-34d9-425a-b176-5b530f4712f0",
     "codigo": "4.1.01.11.0021",
     "descricao": "PARCERIAS RURAIS",
     "tipo": "C",
@@ -31478,7 +31562,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc028ce7-6252-44d4-83b0-93fdf86e24d8",
+    "id": "b62641b3-ca7e-4d12-b666-c99bad4d06d3",
     "codigo": "4.1.01.13",
     "descricao": "4.1.01.13",
     "tipo": "C",
@@ -31489,7 +31573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c3748e4f-e128-4bd9-b7dc-707708a9b2cd",
+    "id": "b4c2229c-75fc-40ba-8596-293ac17a8045",
     "codigo": "4.1.01.13.0003",
     "descricao": "CONSUMO DE EMBALAGENS",
     "tipo": "C",
@@ -31509,7 +31593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89183ad9-c42c-4248-a276-5145792fabc9",
+    "id": "e8f554b2-6516-4eab-a0c9-0df919b0cdb1",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -31520,7 +31604,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4adee861-b6ba-4e8d-b00d-bbdcd8232625",
+    "id": "c3b86592-e5b0-44d9-b37d-31868db63d36",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -31531,7 +31615,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c3915aa5-ce7b-448b-bd8f-8e28fefb674f",
+    "id": "ec76ab10-83ed-4d9d-83fe-a98c4215e646",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -31542,7 +31626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "cecbf763-0250-4045-8e45-6a3ea7f928ff",
+    "id": "c21969a0-f15c-402d-a3ad-2595f87a8015",
     "codigo": "4.1.01.21.0001",
     "descricao": "SEGUROS",
     "tipo": "C",
@@ -31562,7 +31646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfc20e35-9d79-45a6-9991-b1cda8aa8227",
+    "id": "b6194dd6-9ec7-451c-b1ed-0dcb0d846354",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31582,7 +31666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75bd154b-c9b8-4d17-95f8-a574fece4d5b",
+    "id": "47342d0d-6d86-408f-850d-6420d3017bda",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31602,7 +31686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "795b8595-c186-417d-ac29-3a26786e2e8c",
+    "id": "8359ff32-c6be-4778-9f83-811d2485ab55",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31622,7 +31706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33470770-f602-4b5b-8442-40eedf5665ca",
+    "id": "035b5fa3-e831-4f23-a3f4-138c14dcbda8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31642,7 +31726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad829188-d820-42e1-8a51-cbe4f947191a",
+    "id": "1f5c7fa8-15c7-4d5b-90fe-b603a8051b63",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31662,7 +31746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24fd44e1-5216-4545-901b-88c865e6fe65",
+    "id": "f29543a1-81bc-4e65-9388-3f67217b5f93",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31682,7 +31766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ba23bef-bcc4-4a03-a73e-a8e0d9d6038e",
+    "id": "413de9a7-e93c-4b26-8a3e-935791551c92",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31702,7 +31786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7bdc4a1-5153-4706-8a07-6503d45df9ee",
+    "id": "215e4f7d-452e-47d9-a72a-381b184b32e4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31722,7 +31806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44479cc0-5aa3-46ca-8506-41ee0622c439",
+    "id": "d9b6fe9c-b014-4d29-b135-c8f3eb97c232",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31742,7 +31826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "884f9fb8-4164-414d-a20d-164b69a10a35",
+    "id": "508f82d0-419d-4ab1-9ad1-99cb5b34d1fb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31762,7 +31846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f357f604-b161-4736-9e05-5bae8966a3b7",
+    "id": "26e52bdc-d647-4ec1-ac5b-119bba1eb5e5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31782,7 +31866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b4427ca-dbb3-4378-a288-860503617f3e",
+    "id": "a6e02c95-4520-49a3-a9da-2fd44b1e12e9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31802,7 +31886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dbf192c-d307-42d4-abf3-276b267c89ad",
+    "id": "5562bf87-373d-42df-8721-ec50a7978e20",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31822,7 +31906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f638fb8-bb9e-4cf9-9ed4-c3e206977de1",
+    "id": "e2bb292f-ed43-4920-b680-d0b0ed44004d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31842,7 +31926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c1200a9-0ffb-4e53-869d-3869874ea99b",
+    "id": "9407084c-26cd-4415-b8cf-c299675c7c5a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31862,7 +31946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3f10d3a-c6c2-4490-a40a-2a0e87fd4b0b",
+    "id": "3551b6bc-78f1-4b0f-9e66-3d2435310cae",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31882,7 +31966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50a6202c-a4c1-4ff6-b9e1-c790128dc1e3",
+    "id": "114979ee-1f3b-4e11-a36b-c465a81556e3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31902,7 +31986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01f2630f-3574-43da-95c9-08d3e8be5be5",
+    "id": "473d688c-803e-4ca3-8694-ef87246895f8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31922,7 +32006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69b75231-813e-4c52-922d-2b249e0df364",
+    "id": "b0cf0aba-a5fb-43ee-b1ab-2d5258d4c176",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31942,7 +32026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17cb188f-5cad-47b5-9713-c4ed2649dfe7",
+    "id": "a47ef69a-1369-4e53-a408-9dd05d5ac05e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31962,7 +32046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "514d2dd8-a5f7-4f5a-b028-6a01f5961054",
+    "id": "d43de838-bc34-4b5d-aae0-2f82feb4c634",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -31982,7 +32066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1045051-1b40-4ead-ba7b-7fbb509af325",
+    "id": "5ccedf57-88a3-47d2-88a8-a91d58778e32",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32002,7 +32086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7595c0b2-ca69-472d-9110-21cba197dce3",
+    "id": "35831485-52b5-4ed0-a9d1-9a0a0103129a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32022,7 +32106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75bfbdc5-0864-46fc-afd3-672eb5b39002",
+    "id": "0463ccf1-f5f9-45de-a890-f990a1e62227",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32042,7 +32126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4a2668a-f23f-4204-8467-a03a04bf5036",
+    "id": "d75c6f5f-e30a-40a9-9de6-aecf5a8628f8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32062,7 +32146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fadbb091-7536-4eff-8fb6-9d8f97ef32e9",
+    "id": "025978fe-b459-4e54-bdd6-3e8f9087e060",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32082,7 +32166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42b03fd8-0220-4e31-99aa-1a41dfcee71a",
+    "id": "25f7a558-dfde-4ac4-9258-d1b0fb1752fd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32102,7 +32186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92c636d4-b48b-4072-979f-03f13c223270",
+    "id": "d733b421-b87b-4bcd-9622-1a71769e72d7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32122,7 +32206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02ffb47c-32e2-4b56-80fd-16464e0f5daa",
+    "id": "bb57bf81-0cac-44fc-8fa5-3c282e817046",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32142,7 +32226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc02940e-e145-4310-b8e4-fa2b679efc53",
+    "id": "84278f50-3640-4ff5-81d9-44890d6a9c33",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32162,7 +32246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "accaab07-a5c7-4e54-81db-000261c6cbab",
+    "id": "381333d6-6c98-47bd-986c-a90521fc6b78",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32182,7 +32266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f50fdaf-5b20-4e92-a3aa-154db320d3fd",
+    "id": "67a2709f-ab47-4387-9d5e-5f7d111c9ca4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32202,7 +32286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "589579ab-57fc-491a-b8c0-c3f9df302bd1",
+    "id": "0edfb24a-e464-4134-91be-8b5f9bac9f96",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32222,7 +32306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "336484f5-4969-4235-a259-d3d2a735d587",
+    "id": "3407ed27-4545-44a1-af33-e5fdfba99f91",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32242,7 +32326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f732a2ad-6c2e-4747-a471-7b4225fa9259",
+    "id": "6aec014e-ed3e-45cc-8564-df33eb1ed0bd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32262,7 +32346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a922cf5-10c0-4ddb-9eba-ae6aa8a7d0fb",
+    "id": "54371a7f-6f0d-4f4c-b6ac-0c5860fc619c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32282,7 +32366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b01b8480-4488-400e-8a17-e7feab8fc34c",
+    "id": "6a277d3b-c6fd-4e34-ad7a-a4fc6800e301",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32302,7 +32386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e46deb7-ce9f-45b5-9aa9-2c60b23d2a85",
+    "id": "fd2e94f6-faf2-4eca-9a38-c2da6a611785",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32322,7 +32406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "368d5b0d-a42b-4fc4-9931-d2b1b8b33cbc",
+    "id": "9bf16323-003b-4924-a4da-c1f39eb3dff7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32342,7 +32426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19e85c33-801e-4d83-98a2-bf9d1503296c",
+    "id": "dda2cf01-59c0-4af8-9e22-e860222fd6fe",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32362,7 +32446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63a4540f-c54f-46c9-8f73-68523418b536",
+    "id": "69fec887-2d44-4b0d-916d-270d074df0e3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32382,7 +32466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e9fa3d0-66c9-4f49-8be6-64fdd9099996",
+    "id": "718e53cb-d912-4ae8-a22e-defc255d028f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32402,7 +32486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d6f1e0d-4dcb-4890-b8ec-8736c8366028",
+    "id": "6b1a3df0-1939-4d19-9097-d4ebe4f40fa9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32422,7 +32506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11980cb5-e70f-4378-a214-adf35a2bb57f",
+    "id": "0d366e8e-4cf2-4168-b854-6799a2aa4ee9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32442,7 +32526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1e92e99-7b0f-4371-887f-911080fe8736",
+    "id": "10943891-bc93-401e-a872-e194a254541a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32462,7 +32546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d10b93bf-b1be-49ba-9752-4f4830e24e28",
+    "id": "7b76bc84-5c6c-4e76-b72b-ca490af2f84f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32482,7 +32566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a662e4a4-1f00-43f8-a515-c5f71637a8d3",
+    "id": "e0087b4c-7339-4014-bccc-f432a1672a41",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32502,7 +32586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45452ba8-edb8-4782-9fb3-d29e836a836b",
+    "id": "b965441f-adaa-4392-9593-2ca9583c1960",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32522,7 +32606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8836408-f14b-4516-9b9d-7642828524d2",
+    "id": "34bd440d-0b97-45e7-bd4a-309ded47cd65",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32542,7 +32626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5397d27-e00e-4e78-a13a-d821358a5bae",
+    "id": "81e0927f-21e3-45a5-a993-cf8a8dfce890",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32562,7 +32646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11cdb320-1fea-4738-a5ea-c6966abb664f",
+    "id": "f323a3cc-4b56-4b29-ad4e-f6396a32008e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32582,7 +32666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0aff4b55-f61c-4d73-a618-7288545379c5",
+    "id": "9798304e-a4a4-4fb1-b670-f0ba5b9e1b2f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32602,7 +32686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b752ced9-c8b2-4287-bc4a-49d3b8f19c47",
+    "id": "4bc056f6-e179-4275-a0b3-3ee566c62c02",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32622,7 +32706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0ecb76b-5376-4e2d-be77-937ee023557a",
+    "id": "d807c495-95c3-4be4-8951-49939712c577",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32642,7 +32726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "046cb624-b539-472c-8ff8-0e92771882ba",
+    "id": "293ada69-ca5f-4d01-9af9-e08581ad4af1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32662,7 +32746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d116d4b6-e15b-4c0e-b34e-773637cb3019",
+    "id": "2fa48bc6-e63b-4d62-94ca-ac906cd1432e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32682,7 +32766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c053e7b8-6199-4665-b052-3428453e33f7",
+    "id": "2c8a2419-a231-4dc1-a92d-f75ec4b86967",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32702,7 +32786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b973ac6-b3e3-4091-a824-6179b4c62c3e",
+    "id": "c6fa3dfc-acf5-4a91-b75c-bbb95640b3e9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32722,7 +32806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfc62f56-d92e-4479-be08-89a90d8fc1d9",
+    "id": "ee2f0ef8-5220-4424-a1ea-63b254e9d840",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32742,7 +32826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4133c145-21b7-4837-897a-de7995e83747",
+    "id": "3c867b14-831b-4c4e-a8f5-177292bb5ffe",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32762,7 +32846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "249d91fe-d47c-4b04-bce4-8a66878f13ad",
+    "id": "a7a61a04-8e44-4ce2-8bfa-62e56402ab1e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32782,7 +32866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62488924-c9cc-4e7c-8a06-90c6093ea199",
+    "id": "f2ee7721-0fde-4db2-8f18-d7864c40921e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32802,7 +32886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e57a821-0b58-48ab-8cc7-0f589a8d4d3c",
+    "id": "5c6dbc78-8981-499a-82e2-1dc77a0cd631",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32822,7 +32906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94b84974-9b20-4ab2-8a92-da4b7c3143d5",
+    "id": "0c980d86-29b9-488d-b54b-a4c2559908b6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32842,7 +32926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3145d8bf-3428-4756-a3e3-8dedaa0436de",
+    "id": "493a09a3-2048-4993-8777-b770651c8619",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32862,7 +32946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef68a194-101e-4b1a-8557-4e103560e772",
+    "id": "caab8528-c5ed-45ee-ae2d-d9d878c24990",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32882,7 +32966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd33861c-efbe-41a4-baa9-8ab147987d88",
+    "id": "0ead1981-1677-4427-877d-e1f67b4613f9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32902,7 +32986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f50c1ec3-48ab-447d-95a3-9ee78ab420b3",
+    "id": "e2b51c1d-56cc-491a-9f65-fd91eb1bcbb6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32922,7 +33006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a899e3f0-5723-441f-ae63-427dc42a47b7",
+    "id": "c6b349da-7ade-4118-b1f2-3e82d41694c0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32942,7 +33026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1da7d098-3cb2-40e4-83db-2eada867bab6",
+    "id": "e5024bec-0e27-426c-992a-815e6c67030a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32962,7 +33046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98b6688d-9cb8-4437-9bd3-c0abba126c3a",
+    "id": "d58d1083-be20-467a-8bf5-d51e3b98dc89",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -32982,7 +33066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98e9ae85-ff7d-4e0b-856f-a8bda38c7409",
+    "id": "a8265baa-fc4b-49c3-8b8f-363bf06b1ce1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33002,7 +33086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64b5665d-1ada-486a-928e-c4b4f4df4f10",
+    "id": "f206b1e8-c179-418e-b85f-fcf6f56be22b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33022,7 +33106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30e42956-f6bc-49e5-ae25-abee594b60c0",
+    "id": "d47a6987-dd3f-4d71-a0dd-0c96bef10e98",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33042,7 +33126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54fca736-a803-49c3-a1f5-6299fb3d15da",
+    "id": "b071b49a-dd49-427c-a227-72b722a91496",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33062,7 +33146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1ee89a7-f324-4fd9-9b0a-992e0e6c5fb9",
+    "id": "a0ad3dab-d2e0-47d5-893e-aa45dd1ab5dd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33082,7 +33166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f0399a8-3383-40ec-93a6-dcef858e06a9",
+    "id": "0606328e-384f-4f4b-b202-249ae06b346f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33102,7 +33186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1af5d2f-f122-476f-8a5d-cd0b7359300f",
+    "id": "433d0d30-9abe-4d6d-b172-19d1bf2b7540",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33122,7 +33206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39a75b70-c6ea-4f3a-b0a7-72e891d21408",
+    "id": "bd2d9f97-163c-4c1e-8fc7-d0d9eb74c59c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33142,7 +33226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a8d158f-82ef-4d6e-b34c-47e58c0ee77c",
+    "id": "594213cc-b076-41b1-8331-51b2f7ebcd91",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33162,7 +33246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9de31e1-98a2-4600-9f4c-01414abd3f01",
+    "id": "946b4f15-72b0-440e-ac21-2703578e23f4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33182,7 +33266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29e990a1-4284-4095-bb84-9dfc0e414552",
+    "id": "b940783b-84e4-4974-a976-2c50e83e6d37",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33202,7 +33286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "886b0ccc-3161-4269-8379-69955ad6d9e7",
+    "id": "253e4b05-0d38-4f16-beff-e12ab221a5e5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33222,7 +33306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58601096-eaf2-4326-89e2-e3b3b2f719f5",
+    "id": "52e164c6-dde3-48d9-bc13-8c3eb5b40dcb",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33242,7 +33326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1de10ad1-1482-43ce-85ef-65517d89e1c5",
+    "id": "5fb0b827-0123-4f77-9b7a-fc608c42ae6b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33262,7 +33346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "940bb125-e291-4de9-a704-b9203f54064a",
+    "id": "9300883c-25e9-4d60-9f69-ab8140d7e733",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33282,7 +33366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8499d6b-e84f-4ffd-b0fb-33dafa3826f9",
+    "id": "30193aef-aaaa-4f67-bf4b-5d7a0b753489",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33302,7 +33386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d97f2ef-2f01-49fc-ba13-de24859a6123",
+    "id": "687fe3ab-ccfc-45f3-be8b-5abf2ea82300",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33322,7 +33406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "132c8bec-bbb6-477e-be13-852a77342b1d",
+    "id": "54d7b7a7-0d06-4580-b52d-f8bb053be4df",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33342,7 +33426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9254c6e-a951-4bd7-b1de-d6123bd649c6",
+    "id": "631e5ec1-293e-4d16-957e-999ead6a6cc7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33362,7 +33446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1dcb8d55-907c-4ccb-9475-82bea9bd1587",
+    "id": "eedf85ba-3315-478f-8ad9-1c3e2f17c718",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33382,7 +33466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcca1e35-feee-416a-9acb-eb456b0bceca",
+    "id": "d5d5c37d-272f-4517-aa9e-c39c9814f6b0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33402,7 +33486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d5baeae-85ad-45b8-86c3-db9a36ccc6eb",
+    "id": "8b458b6f-f701-4cd5-966f-28de7033da8b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33422,7 +33506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73d44d26-ab35-4f40-9545-d0bdeb127543",
+    "id": "f6338c52-f704-4f09-b7e1-b415fa4a6abf",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33442,7 +33526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47ff704e-a039-40ef-8ae5-89d00b8478ef",
+    "id": "e8408355-bc69-4f0e-911d-f4e2ddf4fe6d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33462,7 +33546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3391f51a-d210-4a6c-91a3-c750dd0c9cac",
+    "id": "f57b0ce2-60f6-45e4-b5df-1bfa6864c4c6",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33482,7 +33566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f658673-09ca-464a-9378-16190d778f55",
+    "id": "f69481e1-e396-4893-ac6d-228016c99817",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33502,7 +33586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea2e9b51-5b7d-47d3-b1c7-d6ee871e6b34",
+    "id": "839f433b-ca1f-4793-b135-e21d7ab4315b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33522,7 +33606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44c140d6-51a1-415d-9db1-7cfe8e43eda7",
+    "id": "aab35ed8-0fcc-4cec-9d20-0ffffd8c62fa",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33542,7 +33626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c22407eb-82f3-46c1-9127-e3836e58168d",
+    "id": "34c03704-9ee5-4432-bc35-850a71619f7f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33562,7 +33646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0b66056-756c-4edf-aba0-3ad12fbc53d8",
+    "id": "990a55e0-1b83-453e-a14d-9d7f9a41b68f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33582,7 +33666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4346ead3-7597-46c1-98ab-ca5b8e5b7e37",
+    "id": "ac49a0c0-2cf7-404f-bc4d-a7b3f4e13939",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33602,7 +33686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c854756-faad-47b4-b374-44702bdfb88d",
+    "id": "db16eabd-2e6a-4345-a8bc-675b1976e2ed",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33622,7 +33706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc0f0286-a067-4935-a91c-8e84859144f2",
+    "id": "50ec1458-b809-41d6-8924-a59822ccf4c8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33642,7 +33726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b275d1b-6286-4971-8e07-d16fff474139",
+    "id": "e7cad370-5682-466e-a672-0998a2dec8d5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33662,7 +33746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77b5b489-3acc-439b-a50c-b3bdf950f8c2",
+    "id": "8d898012-c330-41f7-8018-752ada5723c7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33682,7 +33766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbd5dbcc-b0ac-4273-ba62-6354fdc8377e",
+    "id": "0c931b2b-3720-469e-b17f-8ac65ab74cba",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33702,7 +33786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3153805d-d09f-4938-82f5-de6bfa97edbc",
+    "id": "2cc50527-110f-44d4-b3fe-01a043373752",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33722,7 +33806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db85e49f-e5bb-4452-b7f1-198578c81e3a",
+    "id": "78884f5c-8c57-4256-ab97-bea60ff59e25",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33742,7 +33826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9f9778d-ec5c-4f56-b335-79a6e5f4cd95",
+    "id": "66052585-4276-4257-b121-f41de9a273c1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33762,7 +33846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46742e14-ee69-4277-8c29-ccdf421c91e2",
+    "id": "ba9bedbc-b20a-4feb-a058-06809619bd29",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33782,7 +33866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7941d8e0-caa9-4089-9a4e-1744fa7810aa",
+    "id": "de7ad906-9f74-4638-bf8f-49636502ecf4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33802,7 +33886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "558713f9-5436-42e9-b7e2-d83b7e503c4f",
+    "id": "420d130b-7cbf-4dc2-9077-7deb42f92b2a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33822,7 +33906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a5accee-40ee-4d50-bc84-58ee9e1e03e3",
+    "id": "3f44881e-3956-4a7c-b1c2-1d6defe3aa57",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33842,7 +33926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ed7b58d-2354-4ec9-91ac-da745c6673e5",
+    "id": "40a922b5-853e-45b1-863b-b927bda4d43b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33862,7 +33946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "675af3c7-c1f0-43bc-b4d6-395786839970",
+    "id": "f64a61cb-ff25-498e-9fd4-312f6b1e317b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33882,7 +33966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7df6ba0d-9453-4d5b-ad20-cfe6c4cf3259",
+    "id": "073c7fbe-754c-4a59-9315-20e1d4f0c4e5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33902,7 +33986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f91be6d-ad27-4f00-bd51-a98c9a770f8c",
+    "id": "b532a58f-0b7f-4b17-974e-46d6300f365b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33922,7 +34006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "818ff811-4c99-4ef9-80ef-8e2b1242f32b",
+    "id": "2c2cfe91-0794-4068-b9b5-f043d2d7cae0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33942,7 +34026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a888fb28-b96c-4f13-87f5-89740ca6beda",
+    "id": "d3cc9c15-8925-4d00-b13d-4e16d8e2c1c9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33962,7 +34046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78c3ec70-4610-4c5e-bf35-67bb145d167a",
+    "id": "57656e66-36c1-4309-8ce2-998b7e2cd5d4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -33982,7 +34066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4505efda-86a8-437a-9a4f-3f7f3e4f3553",
+    "id": "3d412fcb-7222-47c2-8360-e5f94e23956f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34002,7 +34086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b164271-fcb0-4957-89eb-6b073fd1a651",
+    "id": "70519d41-2141-4353-865e-648fcd8787c0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34022,7 +34106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffec61e4-fb79-455c-be00-ac4ee3a12b65",
+    "id": "117111d2-ae51-4836-87ae-a65f6f96f32c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34042,7 +34126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae279036-e7e7-4d58-b1df-e604828fa6d9",
+    "id": "a2911796-ee29-4130-8863-25c7b814db43",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34062,7 +34146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b1dd9a9-032e-4e2d-a06c-5a7b403bd2a4",
+    "id": "015b6db5-c484-4c6d-aeaa-f5fb2b51a18e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34082,7 +34166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "719f15e6-5631-478a-bbd5-9c3a939963cb",
+    "id": "b7c1ac4a-ad8f-464d-bd43-ca9e81a9beb4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34102,7 +34186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5c8f2ad-38c1-4c3c-8530-c04bc7b2789d",
+    "id": "0391935d-df6b-4e46-a957-0e561fb7eeb5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34122,7 +34206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "009b23ad-5788-4bce-8ecc-ca20bcb89b27",
+    "id": "b8650527-451c-4894-a1a2-fc642a6c83a5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34142,7 +34226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05bd52a3-a49a-4b86-84be-4014e654c0d4",
+    "id": "9f5588b3-b709-490f-9008-74acf5c806be",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34162,7 +34246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "899d4c03-b6ed-4201-bbbd-0579f93f06b9",
+    "id": "735e5f85-f180-4ff2-8160-f3cb4340461b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34182,7 +34266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c0c92a4-3170-4211-90bb-480596ddbd48",
+    "id": "9cdf6e5e-e19f-440a-ab72-64f9b8e4049e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34202,7 +34286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10efcead-7783-4b07-bc0c-413b0b6289ea",
+    "id": "f1da6e47-662e-4fc6-bacd-e89df65745da",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34222,7 +34306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d085734a-3a79-4a59-b800-97fd09749cce",
+    "id": "933e778a-1cba-43bb-b5f8-92593287aea9",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34242,7 +34326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fb18c1b-a8f3-4c86-bf75-5e2faac174ac",
+    "id": "890377a7-073f-49fd-8e0e-e7ef17c8eb78",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34262,7 +34346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2626cce6-4621-4b36-aea6-b4dcc65ef363",
+    "id": "bbee3f5a-d52f-4b1d-8e79-d63c1c973d98",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34282,7 +34366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c139b8f-134a-4118-a18d-b17e5c6c394f",
+    "id": "3ade30db-eaf6-4046-af3f-fea1b9f0455e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34302,7 +34386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdc65f61-c67b-4215-a852-fd955aa3a078",
+    "id": "e936be25-2f63-454d-808e-5cfefef78d64",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34322,7 +34406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb623bc1-5d40-4064-b05c-f033b2cf1a38",
+    "id": "31ac13fb-35b7-425c-b89e-99ca5130414c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34342,7 +34426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc920945-cb7f-4550-9953-f7085e453c7f",
+    "id": "7dd6d484-28d9-4d0a-a6a0-443798cf9985",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34362,7 +34446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bdee388a-6ca8-4330-aa56-c433710469d5",
+    "id": "cb9d1a34-efc1-4ba7-b925-c0925507126b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34382,7 +34466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f21ff8ac-ff68-41e6-9f8b-0125345e52d8",
+    "id": "85d6c4e4-f346-4fef-adcf-d1b35646bb22",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34402,7 +34486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9618b210-38cf-4c79-8212-d060d038f380",
+    "id": "d11600c6-dbe2-47da-9e17-f62eae046451",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -34422,7 +34506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edbd0b4b-149f-4651-8d0e-2972a89b331c",
+    "id": "0495651e-0d87-4cdb-abf4-063dc1c36cfa",
     "codigo": "4.1.01.21.0003",
     "descricao": "CONTRIBUICOES E DOACOES",
     "tipo": "C",
@@ -34442,7 +34526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44217768-4e04-42b0-9ef2-c7815bc74e90",
+    "id": "39057383-a0b5-44d9-bd88-79120c55fe66",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -34462,7 +34546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3918e102-0fe9-4f46-9492-321b3cd19ef8",
+    "id": "aa57b0e3-e011-4b06-9bf8-0ddb068d0071",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -34482,7 +34566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36543172-4879-48e5-b9a8-96670f9be9e4",
+    "id": "46dcf36e-a093-4383-bdf5-095d7ffe53ac",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -34502,7 +34586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e51b93d7-b982-42be-92b1-39d53dd5c9c0",
+    "id": "9b0fdad9-8eac-4853-8390-7b2bbdde9a62",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34522,7 +34606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26c4f577-584c-44c0-9e46-54297b51d9a5",
+    "id": "d730ba99-0028-4394-b147-75e1dd718457",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34542,7 +34626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f633c17c-b0ba-4ba9-b74c-87633826eccc",
+    "id": "ba131d51-8b98-4149-8dd7-bfdd2d1973e9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34562,7 +34646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b87a2988-6606-4c30-9218-85422024fd17",
+    "id": "62f82d7e-acb6-4bf0-9550-4321ecbda064",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34582,7 +34666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "adf8b463-eeb1-457b-9691-6bf58a858e47",
+    "id": "452c37e8-b2d6-4b30-a293-33bf575e2984",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34602,7 +34686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "680c5d2a-e213-4101-8fec-d6ba5aeb7162",
+    "id": "41d40bb8-e988-47c5-a411-f7562f766cd3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34622,7 +34706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa227974-a775-40ac-af95-e53a9391f59f",
+    "id": "1d43acb7-5220-444a-8a4f-a886cae85e9a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34642,7 +34726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b406f7dc-c506-45e4-a0af-5c4e628c34f6",
+    "id": "a37335d0-7947-4c0a-89e7-3398846d51eb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34662,7 +34746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9abaa070-c12a-471d-9f3c-385092fc1114",
+    "id": "02031621-fecd-4272-8e45-86f488ae8c90",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34682,7 +34766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83684c26-7eaf-43c8-be83-22b022d5ce3e",
+    "id": "760300e5-29d4-4f0d-8ee3-5b1c2f6cf2c8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34702,7 +34786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb6f428e-3d0e-463b-a9d4-6814979bd967",
+    "id": "a25c4d0d-bd3d-4b7a-b6e1-a5251442f84f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34722,7 +34806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49161e63-5ed0-466a-b229-94a3ad2bee06",
+    "id": "d81e9164-1279-4183-b391-d7e54d5b58e2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34742,7 +34826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02e63b7f-dc46-43b1-a738-dbee1fd6e80e",
+    "id": "41b02d52-808e-4444-b97f-fa3becb7150a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34762,7 +34846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f34cbbf-cfe4-4e78-b078-0b7785c29b89",
+    "id": "0546d60f-e1c3-470c-aeda-c21dca408333",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34782,7 +34866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56c61e68-0092-4f6a-9a2d-a017af8fcf38",
+    "id": "abe7f03b-2f87-402e-bd67-e4c101afde6f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34802,7 +34886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d65378c-bb39-47d8-8f27-c1a1af16fe64",
+    "id": "d67b1c5e-c2a9-415e-a08d-e3ef11ce104d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34822,7 +34906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ea25e68-bd70-4f0f-9d3a-a4e4084c9ce4",
+    "id": "e31167a1-cd71-4682-a92a-fdb686aa6111",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34842,7 +34926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc65b811-a242-4189-b1a2-237d814abcaa",
+    "id": "01f44af4-d03c-408b-b1b7-964c441526f3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34862,7 +34946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca9b3368-cf78-46de-8132-c6f8cc65b823",
+    "id": "93a62089-9ed6-4372-84c4-bc5cab4aa6d9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34882,7 +34966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97b9f5c5-2f35-464f-839d-5e4db87b1f47",
+    "id": "48772d53-c72b-4c92-8d78-0aa36d8c4d44",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34902,7 +34986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c7f3c1f-f8ec-48a8-b5a6-f817e74cc1c5",
+    "id": "360302e8-2460-4c5a-bfd4-44a1dfed6d6e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34922,7 +35006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "985c9e60-42e5-474c-9673-91e3250402c2",
+    "id": "1e4faf83-25f2-42b3-8879-fc4819ab59b9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34942,7 +35026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94ef0bf7-8659-4c18-90c2-169963fc73bc",
+    "id": "97b0ccb6-bec9-48cf-b3d7-74a6c0a5277c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34962,7 +35046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e14b2a3-5d7a-4f61-bb96-651dd13316c0",
+    "id": "84e1a5ca-1195-46db-a8a0-5a811457d0f1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -34982,7 +35066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52b60982-95f1-4941-8cc0-fe99b79f4e6a",
+    "id": "7dbe0a75-030a-4f02-b1f2-993ccd8295bc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35002,7 +35086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de0ae947-bb54-4dbc-897c-db56f453cc6b",
+    "id": "cdc6410d-1785-4edc-b683-6fd8b85cf25f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35022,7 +35106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "331a5426-38c2-4a04-818f-f98ae18cf636",
+    "id": "731476c9-c5c9-49aa-9384-3cc309612608",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35042,7 +35126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "669ebad3-298b-4373-85c8-8cf75828ae77",
+    "id": "adf42794-f429-4e88-a8e8-d19987d855fc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35062,7 +35146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79cebf39-76e5-49ca-9082-481970c42073",
+    "id": "ad668a9b-38c1-4b18-8b1e-a238a419abc5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35082,7 +35166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7359353-ea29-4a72-ab92-188882515230",
+    "id": "cf9fb918-c1fa-4610-8004-b213654c8186",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35102,7 +35186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3fe1ab7-25d2-4e72-a4e4-13bb1662f03f",
+    "id": "8ae1e754-1c5d-4503-ab81-cc227495e5b0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35122,7 +35206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8c3f147-3519-4b8e-a4fb-0bd84dcfc775",
+    "id": "97841592-ac35-487a-b788-7460ac2feb3c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35142,7 +35226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1880642d-9590-4fb4-b848-d306a4fdc90b",
+    "id": "6cdfddc6-b5ac-46d0-95cc-93ff953fed51",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35162,7 +35246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "089095ea-cd4d-45f3-b1d6-db3d5b5bef01",
+    "id": "8d06b97c-f2c7-42c2-a2a6-438349819cae",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35182,7 +35266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a63b95f-9bec-4e3c-8122-e7ad328a2d09",
+    "id": "5488e32a-3541-48ae-95d1-ae0c662fd035",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35202,7 +35286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4405f223-4e94-425d-8a50-8dfe62577807",
+    "id": "6bb3ffe2-1d8f-49b5-bb23-16d750d609db",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35222,7 +35306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "019bae29-450b-46be-ae0d-6fbbb5e95afc",
+    "id": "f32fc991-b2dd-43a1-8fea-09385c35c601",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35242,7 +35326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e476950c-88d2-4d28-8e09-20edaf01e1a0",
+    "id": "70c62fc6-cbc5-4ac1-8220-e894307f52b1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35262,7 +35346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4a18cc8-db79-4af5-bd74-43b64600c800",
+    "id": "920065ad-9b5c-4ed3-ab06-22760f88b806",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35282,7 +35366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7986260-2e82-4501-8576-44f351cc3db9",
+    "id": "f4d34efd-b4ba-415f-8e51-06566c4af21f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35302,7 +35386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e293ca7-51e4-4bb0-8472-1dfe0d2fa1ee",
+    "id": "ad2bfaee-46a6-4829-a88e-04ad3fd54b21",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35322,7 +35406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "12ffec02-8c58-4eb9-ac93-e891ce266975",
+    "id": "131fc3ea-4f86-4191-8982-8dcd81782e11",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35342,7 +35426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fb43df05-1029-4c30-9eb8-bd79bd227fb5",
+    "id": "86e4467d-97c8-4e4f-81d2-b7f65c6ffdb6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35362,7 +35446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04ce195e-8226-4410-8cac-1b3941b63210",
+    "id": "3e35895b-524d-491e-9545-bf9d456ee630",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35382,7 +35466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "474bf127-a530-409b-bc03-7275bb1d84d1",
+    "id": "513b424d-a0a7-44b9-8226-272ca705a0f3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35402,7 +35486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e500a26c-d32e-45ca-98db-46c601399289",
+    "id": "870f2dd5-f9ca-4d5e-9525-ce4ae2a84c14",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35422,7 +35506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d330363-ef3e-4186-9162-d3c157f821c3",
+    "id": "02e88cfe-63b8-4c44-822a-eca691540f26",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35442,7 +35526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9222359-05fc-4768-a549-acb4a1d6c5bf",
+    "id": "be2270b9-5caa-46cf-9dc6-61a17b07757e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35462,7 +35546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48c8a9fd-7bc8-4975-8c6d-d4da6d121f83",
+    "id": "950a5810-350c-46dc-a7c9-507bcc7078f3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35482,7 +35566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff899d1c-a125-4e3c-80f3-7d7990f8be16",
+    "id": "47d6670e-3116-4ee2-a13c-8f620d4eca97",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35502,7 +35586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6392faea-0ffc-4bab-b1b1-3ef84b0e0538",
+    "id": "699e0bbe-9d71-4d84-a70e-44ae604753f0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35522,7 +35606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f85c164-aa08-4054-b760-87ffeb0fa7fc",
+    "id": "0a7d8fee-19df-4aae-976e-26a5ff81497b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35542,7 +35626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8ee834f-99fb-4d23-879a-0cc04022053e",
+    "id": "2e10ba94-3041-43f3-8fe0-6a4fada0e2c9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35562,7 +35646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a74e8462-9d23-4e7c-89dd-781422b91c6a",
+    "id": "95b2e0f8-29da-46cf-83bc-9875c44f7922",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35582,7 +35666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ee6952d-95f1-4ff6-b82d-7caf22590315",
+    "id": "7f4b0525-779f-45b6-8417-34092833388d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35602,7 +35686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e61767f-35bc-4881-8c92-020f079c32ce",
+    "id": "d4fa0c49-ea6a-4c49-92b8-7930b3d38c62",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35622,7 +35706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29b004ee-a159-4e1e-ba83-ef82d5a3d382",
+    "id": "e6e298d0-8936-4b30-972d-de28777c5a36",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35642,7 +35726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee1441f3-b3ed-4667-92ce-6716cfcedf1c",
+    "id": "d1b9d7bc-0877-49b9-aff6-334f77aab079",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35662,7 +35746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffbe878f-1cbc-49a2-8436-1bb4310a859a",
+    "id": "c485c75a-885a-4503-a0a7-38f932c5fc45",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35682,7 +35766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a6c0adb-f1e6-4763-a117-aba789f6ecf6",
+    "id": "36a21077-cb85-4137-be4e-31ff5c5f9f3e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35702,7 +35786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c587b57-799d-4064-9721-dd34b0d61821",
+    "id": "ddaac209-54de-45f0-a276-4c99d2c27b2a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35722,7 +35806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75f06742-3395-4335-940f-dcd73f92d624",
+    "id": "15d6dd06-efd1-4456-a284-96895215a5e2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35742,7 +35826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fedd1238-c298-402f-b3b0-a2b31a5de45d",
+    "id": "a202c16d-67fd-444f-8021-bcda4f49dd01",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35762,7 +35846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "665ba49e-7f3a-4725-a7c4-15119f3f3bb0",
+    "id": "c93bd6ec-b59d-4fc4-980d-cb7c12ec3c64",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35782,7 +35866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae1f215e-a68d-4284-b05e-56eef5e11ba8",
+    "id": "b1333652-07b2-42a9-933f-66f4359fc34d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35802,7 +35886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf1d3523-4613-40f9-94a6-da490eff038c",
+    "id": "b9926596-b5da-46c2-a879-f3a371aba3fb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35822,7 +35906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb98d104-f8d7-418e-b42a-cfb2fec1ac98",
+    "id": "9e558fd7-4407-4fbe-ba9f-2fa2045f0d01",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35842,7 +35926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1342e454-4bec-43e7-ab80-366cdf3836b3",
+    "id": "ccce881f-80bf-4d39-870e-65c32721dba5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35862,7 +35946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dab4696-161a-45b5-9774-a91594f9a4b8",
+    "id": "de67df6f-d70c-49c7-bb2c-693a6f745050",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35882,7 +35966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aeaf0501-6b67-448a-8d67-ff17ed6494a9",
+    "id": "e89f78f9-7711-4aba-b7d8-0dd9442a74e2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35902,7 +35986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08e397c0-6a0c-4062-965d-c4e01fe4a869",
+    "id": "439b42ff-4f3b-4969-9358-66b94a0ce373",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35922,7 +36006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfb77059-9b90-4fb0-a513-e3a1548f8ce8",
+    "id": "42d3c4f4-4030-4975-bec1-15f9f7fca25e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35942,7 +36026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6ae2f36-e940-48db-b20f-df4dae6f09cf",
+    "id": "47122e45-ef49-490e-b2d6-b585ce5085bb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35962,7 +36046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93155c3c-8833-404e-99a0-c02a91b89cc2",
+    "id": "f735e346-afe8-4891-8d96-8365542ad725",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -35982,7 +36066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3c16927-cb0e-4ae1-a649-96335a8666de",
+    "id": "e5802307-0905-4c77-80a8-828ed6399688",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36002,7 +36086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d7a7c39-30c5-4778-af3f-ecb7b87cfaf5",
+    "id": "c290e94a-60bb-4c5a-b6a9-5252c627ea92",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36022,7 +36106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "235cbbe9-5e81-4b51-93f6-a7e0ffdba416",
+    "id": "5dce8c34-9c00-4173-8c1a-032ea9f9ceda",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36042,7 +36126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66536317-5899-43e5-a3ce-e220392a4a5b",
+    "id": "87a88a29-8ba3-406d-b8c8-2fa7936aee4c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36062,7 +36146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2c12958-af70-4891-8211-f5633882fc1a",
+    "id": "4615c1bc-5ad1-4b61-a9fb-7ddf56973e12",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36082,7 +36166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87d8162f-4924-4b6a-ac06-21e1bd551572",
+    "id": "451fc2a2-c125-4e8b-bf21-25537f6dc249",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36102,7 +36186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6737893c-764f-4427-9b08-0dba40d5d192",
+    "id": "8873a3c9-fc24-467c-8835-29284d5d770b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36122,7 +36206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c527e9a-0e3f-4eec-93c8-e04189cf3b93",
+    "id": "54f3f079-92aa-4350-a1bd-df6d87bf1d32",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36142,7 +36226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e59ee895-2549-4f19-bdd8-9c186e743a56",
+    "id": "d6449ac9-5c45-45ec-9b74-79b3fb6fb86b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36162,7 +36246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73061554-ad32-4024-a208-2fb928be1843",
+    "id": "4643c4c8-84a8-4425-b062-724e08eab4b0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36182,7 +36266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7976517-f88a-4cd2-9707-b9a78dfb4b90",
+    "id": "99b19747-2c21-45ce-bb20-967ffbbf498b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36202,7 +36286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39a9ae21-3228-4f7a-8ff9-74d902e72f2b",
+    "id": "0703db95-25c9-492b-b98c-e5301d5f9dbc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36222,7 +36306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4586f9a1-427f-4815-b1b7-555ca1f838d3",
+    "id": "d915c33c-7bc0-4064-a3f2-f5e5100e18e3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36242,7 +36326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ce88f98-c664-4007-8999-0516e1ec3ff2",
+    "id": "b7ce5c06-e07f-448b-b594-b1982e17cd64",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36262,7 +36346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3534481-235b-4ee2-9911-9fd9104f1673",
+    "id": "16c1b1a0-b3ba-43cb-902c-3d42d27b8602",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36282,7 +36366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0fb1f804-c307-4ed4-b7e9-82b2b8c70fbe",
+    "id": "ab2ec46b-fae2-462e-81ed-52f8c976f63d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36302,7 +36386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d4645d1-cab1-4653-abe7-c84a3d763eed",
+    "id": "9e3219de-a327-4983-aa7c-4ec0e7b1b9e5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36322,7 +36406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "21a24c55-0e46-4826-a5d3-81005c3cda6b",
+    "id": "ce0a90e7-525c-4602-89d9-ba5a20ced296",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36342,7 +36426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "891ee5a7-abf7-4960-aa04-6ccbb12fcba1",
+    "id": "69df5e23-bf87-4d59-a154-c069221a751d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36362,7 +36446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "893d3759-f07f-4f5e-af2d-662aeaa662d4",
+    "id": "b3d37b07-59b4-4798-a51c-944e292c0fef",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36382,7 +36466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97f915cd-2eaa-4166-b998-1a9a172ee044",
+    "id": "53d298c5-e4a6-4303-9679-56b248177331",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36402,7 +36486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "748cb36d-af9e-4924-af95-157623ae2e8d",
+    "id": "5ce247f8-3fe0-4967-a724-fc1f8fa69739",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36422,7 +36506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd2eb303-3950-4825-856e-18c02542cff9",
+    "id": "783439d7-27bb-46ed-b96e-aedef8eb0c0d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36442,7 +36526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b87f59a7-c2c3-4621-aba3-076b9e856b6a",
+    "id": "4ecf52b5-362b-4e87-84eb-589817a60b19",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36462,7 +36546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2f0d3c0-b5a3-4c66-99bc-bf3b96afef5f",
+    "id": "141d6e51-0d5b-46b0-9344-ea606180e1ca",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36482,7 +36566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e10c69b5-b415-4744-94bd-c2ea172aa9b0",
+    "id": "12563f1a-5fe7-49ab-9534-63c5005476df",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36502,7 +36586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b564d289-e1b1-4c12-bdb1-0758ebe7e3d4",
+    "id": "3637eadb-cc4f-4b98-b292-a39ab06310c8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36522,7 +36606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fcff760-d346-4f56-a866-823a66170b2b",
+    "id": "6e3c095a-9601-4788-8776-61dcb7d9bbff",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36542,7 +36626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e12682f-cc3b-48f2-8e70-a2b26fc499e1",
+    "id": "a515db5f-f3ab-468a-9c74-f114aa922eb4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36562,7 +36646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b602a9ad-4c60-4352-9aa5-3d18f3155258",
+    "id": "8bed1404-5876-4f2f-85e6-4aea671631f9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36582,7 +36666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10e935bf-851b-4029-9bdb-e137e4fedf61",
+    "id": "16543473-5ef4-4d7c-a03c-09c233e69ba5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36602,7 +36686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04e1a639-76fb-489c-a110-019f8cfdf881",
+    "id": "164f20ba-abd3-42b1-be95-7b9c93a42413",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36622,7 +36706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f8906ee-76db-4765-b115-a521fe0eff4c",
+    "id": "1825a724-f577-431c-9818-0b6045a827bb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36642,7 +36726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3ce4c64-00a1-43a5-8497-1be80d4da97b",
+    "id": "83011b4b-0195-48c9-96df-162779c463cc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36662,7 +36746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19aa6934-4a22-4a18-bfac-89f4a2803078",
+    "id": "dafe8a76-237b-4207-ab6b-2fd65c5d4a84",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36682,7 +36766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "672900fc-a0d9-4bd6-bdbf-f7e685984a41",
+    "id": "9060464d-1d7b-4f5c-ae71-576bee21c173",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36702,7 +36786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed6da31f-06f8-406c-80fa-06d38e5026b0",
+    "id": "662c05d9-1c4a-4cc9-acc8-71135a5c0ca2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36722,7 +36806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62fa5c52-e347-4820-8186-cca4f95cdead",
+    "id": "e4ba60fa-ea84-4477-958f-187677a7ae1c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36742,7 +36826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94a8bf37-5f8f-48ab-b312-4f4ee2aca7e6",
+    "id": "21c31900-aae5-4790-9410-8b4d5aa7d773",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36762,7 +36846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0004351b-92dd-4d6d-8108-1445983bee7e",
+    "id": "58404260-8130-4dba-ab07-bbeac3d42970",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36782,7 +36866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "202b546e-0026-413e-9f95-d3c6b33db627",
+    "id": "58cfd562-f7c7-482f-8715-29ec3a7e206e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36802,7 +36886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69e1730a-65c7-4a36-bf48-2f22daf1b175",
+    "id": "1f80b839-0982-4de8-a92b-59c0b51a056e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36822,7 +36906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c347aa3b-cb88-4ee3-89b8-af88c1623c7a",
+    "id": "32ceaf12-a800-48f3-9582-6f9c4b704a3e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36842,7 +36926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90eeb987-e6bd-457c-bdf6-ef01d0d5758b",
+    "id": "cd4795fa-81c0-40b5-a230-de5b8b8dfa5f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36862,7 +36946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7726defc-293f-48b7-99b7-b7924bcb3019",
+    "id": "f10d5bd0-0e34-40aa-98b8-151bdd113a14",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36882,7 +36966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b25f6689-b1bc-446b-b797-547954cc76ea",
+    "id": "1bc71c96-a089-4b02-9092-69810abae48d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36902,7 +36986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd00f456-c990-45c7-8cfa-616986d54fb2",
+    "id": "13804078-2817-4fba-987f-fd26a45beb8d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36922,7 +37006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4ed0c57-1646-4609-aa01-7b7a07978f40",
+    "id": "091017ff-d120-46fd-81ce-1a1adc6a663a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36942,7 +37026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "794eafa4-5872-4aca-abc1-031dc13b0797",
+    "id": "2ff37c14-9dba-4fc3-8a2f-af92887a1aab",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36962,7 +37046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7200288-404c-489f-86df-0a8873d928d1",
+    "id": "6c572cd9-e82a-4244-a760-100b8ab31677",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -36982,7 +37066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72edd02f-b9cb-44e0-ac66-1dca38fa7cc0",
+    "id": "9c60de2a-bd4e-4c2c-a0de-a030d0cb14cf",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37002,7 +37086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60d81b6b-922a-426e-ab1e-afe9b8db1cb8",
+    "id": "b9896edd-c5c9-4bd7-ae48-98be99628bf0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37022,7 +37106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afc0037a-c1ac-48c1-8afd-c2a3f63d567f",
+    "id": "a883d9e0-1e8b-417d-9546-8291c3bb79fd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37042,7 +37126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aed7690a-bebd-4fed-a780-05cd1261bb52",
+    "id": "1a98d289-fa35-4ac5-b806-5f6069a2a7e3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37062,7 +37146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b80a9bb-1755-4c35-9069-05dd10b37aa1",
+    "id": "24106e11-dcad-4532-90f2-4538aba3fad8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37082,7 +37166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "096db4a6-45de-46e8-bfb4-3fd9473e2862",
+    "id": "be961ab8-506b-42ed-9489-159534c048c4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37102,7 +37186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc518171-679f-497f-8b26-1018caec0cb3",
+    "id": "4dac6602-6d28-4d3c-bd85-d7c40449ca4f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37122,7 +37206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f2389f8-e292-47ce-9710-e50533039d16",
+    "id": "c4db5b2c-fe07-439a-8d81-bd20589df7c5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37142,7 +37226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d7e3d26-76f0-447d-84ac-e61ef11c783c",
+    "id": "3dadaaeb-5ed7-494e-b784-579fbc1be32b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37162,7 +37246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c365d8e6-c003-4c08-9736-8be64ecf86f2",
+    "id": "4ef2b730-5b5b-4282-b145-baf31e7e7d41",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37182,7 +37266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13d1870b-3e0a-47d8-8d65-bce9dbeda510",
+    "id": "90b23357-6f13-429f-b03b-d97652dc8622",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37202,7 +37286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86d77577-6e3e-4ce0-b1d9-037487e4cd48",
+    "id": "a0f5ae1f-3343-40f7-8230-2ed636d2bc48",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37222,7 +37306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00c62b79-d78b-4e4e-a85e-ccd2f0db87c6",
+    "id": "3a29f58a-79c7-43e1-9eb0-31fa1e02c65e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37242,7 +37326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cebd6ce7-d99c-40a1-a2a2-a17420cc7777",
+    "id": "66dfb034-f798-4f3f-a88b-21e7e31169f7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37262,7 +37346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0115f94c-32df-4022-9a23-3eef696f928d",
+    "id": "20c7db6a-eab6-4098-aee1-740c1c793f4d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37282,7 +37366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c42a70bd-05a2-41b4-8373-29b2339c0d58",
+    "id": "017d35a3-8959-49bc-9bf1-d1b9686a0bf3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37302,7 +37386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "badd2a49-732c-4b2d-9f8f-2a89b3cc91ca",
+    "id": "d9b16d2c-a14a-4693-8a92-67e4faa2e7cc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37322,7 +37406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38939141-fad7-4b29-8933-d9de2324f3ad",
+    "id": "41a709ae-3127-4418-8d5c-af603cccf541",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37342,7 +37426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6084815-ebbb-44b2-81ff-55cf3e53d6cc",
+    "id": "86eb826f-b7b0-404b-af42-0f431c87183a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37362,7 +37446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ba37cc8-1da3-4f45-8e9a-3204e9cea1c2",
+    "id": "c7d5aaa6-4eba-4b2c-9639-297ad60a9e62",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37382,7 +37466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "547dd0cd-fcca-4851-9b20-443c0ed88a90",
+    "id": "df5ab12e-4956-48a1-89b2-a9f51af74001",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37402,7 +37486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14cb2584-a2e2-4d5c-9f3a-57db790999d6",
+    "id": "e862466f-ebbf-4102-bdf2-5845f96c6ee8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37422,7 +37506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "155f3b94-8aa2-432d-9ff4-3175a9edaa62",
+    "id": "fa0f9024-c3ab-4f6a-971d-f1f789411906",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37442,7 +37526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcf9a134-6a1a-43ec-8c78-df481d913b72",
+    "id": "9a1e87cb-187a-4792-a483-ea95fa364e53",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37462,7 +37546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f11ac05e-9060-43ba-bea1-e2d0cde1653a",
+    "id": "aae28e7b-91ff-4da5-bfeb-6548d28d86e6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37482,7 +37566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1271b837-172d-404e-94ef-88de25c11454",
+    "id": "78fbcf63-edff-4309-ab37-899eae896d64",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37502,7 +37586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdfd13a2-f32a-4253-8b83-3651dc81d525",
+    "id": "a6126472-c6e4-44d8-abe8-bcd58d7b081f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37522,7 +37606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc5b59bc-6391-4aea-a0f5-09b10b823b7c",
+    "id": "a78b299a-0bbd-4640-b54f-f8b48625360d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37542,7 +37626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90ceeb41-845a-4591-b5e7-ecc1ece9813b",
+    "id": "44454f5e-77a6-4e1c-bdf4-55d0e555305f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37562,7 +37646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1084984-f643-4790-9082-4075d7b3db28",
+    "id": "225185c0-6ede-4d52-b98d-ec0cccdd2838",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37582,7 +37666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ef71008-8338-4ed1-b252-3c1126e8afd7",
+    "id": "12c842e0-c1ea-4888-96c6-99d9ff975205",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37602,7 +37686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18100b55-71e5-4bbb-a437-e41dde80b882",
+    "id": "1f915ab8-fcbd-4d41-91be-f5e7f2b7b8f0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37622,7 +37706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49ae5474-7adb-4972-91d4-3b1fa1a3dc78",
+    "id": "a075eedb-1542-4903-9240-e37f9cf5e070",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37642,7 +37726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a8ab552-7173-48c1-9e89-afa84cb35b31",
+    "id": "3c2de601-4feb-4b48-8361-0e7c396d6523",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37662,7 +37746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94e1867a-25f5-4c57-84c9-ed77eda7d7e8",
+    "id": "561ce211-e3a8-40b9-8607-a7ecdbd7df19",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37682,7 +37766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55472132-a1c1-45e6-b276-2e97f0feafc3",
+    "id": "88f1166d-8dc2-4795-9dfb-125dd6bfd961",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37702,7 +37786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bcd9d9c-d00e-47d2-a851-5809642828d6",
+    "id": "74c8779c-613e-40d2-aeb9-cff19b8ac0b3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37722,7 +37806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d98a0487-877c-45a5-b831-47738f0a545a",
+    "id": "b9347e77-017a-4d42-a809-77ca0fcaaa1f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37742,7 +37826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75ed8fff-1ade-4d86-967d-ef8d35f300ff",
+    "id": "7f6ab8dc-5d92-47d7-9755-641b17f4ea2f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37762,7 +37846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9765cd31-b4c7-4c6c-a452-b494d54c3b69",
+    "id": "2340f4ab-55db-46e5-aa37-34411c53b323",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37782,7 +37866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8af892c1-f84d-4b7f-957c-b3b0f66048e9",
+    "id": "49dfdd20-e45c-4df2-aa73-1b406c307782",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37802,7 +37886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c90ba7a-5f07-4275-832b-1c2121ebf977",
+    "id": "1d79baf9-c412-4e4b-837a-7d577179a90a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37822,7 +37906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c4300c3-72cf-4d61-9765-10de5f7a3699",
+    "id": "c6a1d16e-a626-4f64-b74d-14d545116450",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37842,7 +37926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9fd9354-f8ed-49e9-b058-0e8ed5f61448",
+    "id": "3b73a6ce-8cc7-41b4-b58f-d1d4cf4f5fea",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37862,7 +37946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd3c6ded-5f13-49e8-b07a-9745ed0439ac",
+    "id": "e57c3fec-4038-4d5c-89ed-75a4520ef47a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37882,7 +37966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70fa995b-da71-4821-86b1-fa364618f0ff",
+    "id": "43714eae-bdb3-4133-875e-9356b7696f98",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37902,7 +37986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "744e005c-34fc-4fd1-9266-958cb6beea89",
+    "id": "4a1797b0-6528-4da0-adfa-2854abad3551",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37922,7 +38006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e20e73b-d1f1-426b-a419-b16762d820c6",
+    "id": "88aba388-38f3-4a2a-91e1-3fdbca736b0b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37942,7 +38026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e63f984a-b879-4c4b-b00d-c753e88cf6de",
+    "id": "9afb4fb6-c934-4be6-85f5-8a0c042e1544",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37962,7 +38046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d2dc48e-406e-44cf-bb73-32a8f2986fad",
+    "id": "27f34fcf-4219-4da2-ac8d-b0143bb8350c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -37982,7 +38066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "290672bb-7a15-4b0b-afb0-c15d002e444c",
+    "id": "efe7359e-01bc-42cd-8247-bc78efbd3b5d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38002,7 +38086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5527bcde-ffbd-4105-a9ba-db93d9bfb06d",
+    "id": "d78798f3-bc5e-4035-8a29-c590b233ca6f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38022,7 +38106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fca3ab4a-283f-4a41-873b-58535997c27a",
+    "id": "138af8a6-470c-4b85-a6a0-b44eb427d517",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38042,7 +38126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88db6ce3-6c84-4007-b831-6ef1af5dc441",
+    "id": "108f6fb0-1bc6-4af2-a100-7da0e859f414",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38062,7 +38146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3348b821-8d49-4694-b184-9aee3928d919",
+    "id": "76f2e216-86e0-4251-82e3-b2c8649aa473",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38082,7 +38166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39fe6ff6-e377-4a06-9423-df4ff9dfe75c",
+    "id": "d5b56194-9e28-469b-b320-361996f8c31d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38102,7 +38186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1d7c0b5-e17e-4300-9b9a-17e3011092fd",
+    "id": "29a3f0da-80de-4d94-91ac-b0512a6c45fc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38122,7 +38206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7309148f-4f0f-4757-80e1-0d86e85e6e1c",
+    "id": "a0630401-f859-4c9a-82e1-d448aed01b14",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38142,7 +38226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe0652e2-8c11-47ad-aa98-30f1ec991917",
+    "id": "6e1a19d7-f3c9-4064-9fc3-216393ca4a9b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38162,7 +38246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8132b98-04a8-4ac6-ae6a-fff832c28edf",
+    "id": "58efd81d-1616-4d79-ab34-23544e20091d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38182,7 +38266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a7fa62b-4d6c-46d9-b8f1-841ce95c1184",
+    "id": "2aa13076-6127-4b63-aaea-cd3d56c79b91",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38202,7 +38286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "707a6055-7c70-4029-917f-e59b62e1c212",
+    "id": "bb289302-34cd-4b4b-aecd-e7885a617988",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38222,7 +38306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a65e5011-5ef1-4d38-aa84-dc8f49c9640a",
+    "id": "305a1408-4977-4134-bf01-21df30ffdb10",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38242,7 +38326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec277676-d994-4fe1-aeaa-085954a07039",
+    "id": "4d0c04da-c4a1-4e1f-8406-ea3763b00eda",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38262,7 +38346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "909f0bd3-7a76-4275-aa5a-853a7edae1db",
+    "id": "1aa9ae36-556f-4521-a4c8-d8fa94268d6e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38282,7 +38366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc0e051b-85a0-4995-8e32-5cda52c70fed",
+    "id": "74c9a227-eb76-40a8-950b-a55747290212",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38302,7 +38386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0fe0687-4b85-4ae5-9307-3ee3c08b9e73",
+    "id": "e53c96c6-f63a-4f55-a0aa-9f162a2959c5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38322,7 +38406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5878e8a-e085-4a50-b344-fcf676e89c86",
+    "id": "bd56d033-a795-4d86-8479-9da479771d4c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38342,7 +38426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6851cd30-ed90-4284-9ee4-5722fe02a73e",
+    "id": "94c8eeb4-361b-43ec-8124-342254b0892a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38362,7 +38446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c339271c-fb52-4775-9bd9-dab11fba26ae",
+    "id": "f455b158-fd61-4588-94ba-5f7ed747ea77",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38382,7 +38466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0b9f933-ccc5-4eae-bd34-330e55d08a05",
+    "id": "9c806bd0-4b84-40ee-b919-3c5bb915ce56",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38402,7 +38486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f387a1b5-aef5-421c-96f4-c80d1f9249d5",
+    "id": "cae9e14d-abbb-4e7f-8f79-9a8190387b37",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38422,7 +38506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fbe5620a-573d-4678-8517-d34b82401ab7",
+    "id": "29ea34cb-6250-44ef-9ab6-ecf23c45a300",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38442,7 +38526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0718fc3-4c99-407e-a18e-ee6b01c2b571",
+    "id": "117a0aaf-f5f5-405f-b43e-4d18cc8f2ce5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38462,7 +38546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eaa6330d-9429-4971-8524-c66f1fa94584",
+    "id": "7d7be95f-48be-4595-a47b-8881a7d76753",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38482,7 +38566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c4f99da-5dbc-4c7e-ae12-04dce2d5e6a7",
+    "id": "40ac015d-9424-4a71-8d2c-7815ca4b2194",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38502,7 +38586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fb9febf-ef0f-4a1a-95fe-22109b17b93e",
+    "id": "95861f71-b0d1-462e-954f-bd0bc98fdd5d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38522,7 +38606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7e51e85-6269-4c67-b5c8-ca299d8a3c12",
+    "id": "15a392e1-7c3f-4b00-a32c-0246df2291a8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38542,7 +38626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dcecb45-fef8-41be-a80b-a8d7c563edf7",
+    "id": "d7333f7e-b859-48b8-8075-4d9e367b6a45",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38562,7 +38646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f61a322-7806-472e-8451-469ef873a806",
+    "id": "cf72c4c4-be96-46ae-aa70-b278ae5f2ef2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38582,7 +38666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4f03a79-615c-4789-b499-68ec79f3c91f",
+    "id": "48f8f308-7ed2-4399-bf4c-94b134d3188f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38602,7 +38686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b78af32d-a631-4bbb-9c85-3a5bd9085de1",
+    "id": "0cd94517-b1f7-48aa-a82c-bbedd3743e16",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38622,7 +38706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5604742c-e169-4c36-b638-74d824e8a939",
+    "id": "758436d1-9e88-4b79-86a3-82cad669be59",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38642,7 +38726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8467896f-b4f9-4d7c-a03e-5edc891a3eb2",
+    "id": "47d710be-d7a7-4f24-a370-73f73e005808",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38662,7 +38746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "59587075-3bd5-459a-9201-a97484fd1932",
+    "id": "c30f2057-8818-4262-b492-ab2bbaeda38c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38682,7 +38766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "51754815-189c-49df-9d02-bfa2cfd5510c",
+    "id": "4a310ef3-d8ff-4d9c-96af-ce35c96e0096",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38702,7 +38786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd4d75d5-4b58-48ff-947f-2f60320a24e6",
+    "id": "b39a15db-45a2-45e0-bb9c-f0321e59c8af",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38722,7 +38806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e8a0d6d-2c13-41e5-97d1-597d713aaa89",
+    "id": "72d2b95f-db84-4add-be5e-9cf3b2216c8f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38742,7 +38826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d30afa81-1e4b-4eba-9009-da6b5071da5d",
+    "id": "2f0c0794-ea6d-44d2-a7c9-53a18e77f3cc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38762,7 +38846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9eed721-b8a7-4831-a6ca-9282289cda60",
+    "id": "6d055fb9-53b4-4a05-a1bd-63c1708a10ba",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38782,7 +38866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f97ec32e-f4e7-4b89-b102-03e5fc25e093",
+    "id": "5c3c6838-990f-4d10-b1c8-981176add98a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38802,7 +38886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9b3a0c4-df96-4be2-a7d2-4f68f2754d43",
+    "id": "3ff0c9c6-7b92-4668-b401-0522e4e0425c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38822,7 +38906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b9c21d1-3986-425f-85cc-53e9edf88eb6",
+    "id": "a0c6147c-8861-4c8c-a828-688e7c08a146",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38842,7 +38926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c90098a-e7f6-43ec-85eb-cde93793b53c",
+    "id": "d978d245-2a73-40ec-bace-191a8896118b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38862,7 +38946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45a274d4-2f33-4b57-9a89-ef491eeb2b12",
+    "id": "3bd7070b-0521-4a7c-a15d-afe09e124883",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38882,7 +38966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e198c66-9fe9-449b-a82f-54c4c763a5e3",
+    "id": "40e4739d-36db-40e6-b3b7-588323d9a7b2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38902,7 +38986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb787a81-ef82-43f1-a90c-2f3cd5682153",
+    "id": "3a84f7fb-9fbd-48e3-ab0b-5f4922df421f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38922,7 +39006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02fecc8b-5103-4ee1-a010-11ac3bbaa882",
+    "id": "26b11b2d-0247-4516-bf9e-f358705343a5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38942,7 +39026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d34db846-cfa7-4045-a624-224ff51b5c06",
+    "id": "db76b84e-749a-4193-927d-f02c2b62ab48",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38962,7 +39046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eda0c6e8-0fee-4f0f-8e63-55e2eefc86e2",
+    "id": "0824fef7-19fc-443c-9189-e345790f57cc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -38982,7 +39066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "004aa213-9495-43cb-ab68-1e4243e10eaa",
+    "id": "0582f731-88fd-4cb5-b97f-3093bf2b78c4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39002,7 +39086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d51589d0-fb6a-4f9d-8610-5716ac878380",
+    "id": "b2afc229-3a7f-454a-b961-8a75e96eb971",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39022,7 +39106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50bdc08d-bdb7-498f-a4bd-7a5f1ca141f2",
+    "id": "86d1abfd-3077-4b2f-ad41-ba771fe2419e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39042,7 +39126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d2612b7-9da3-4067-8462-95a8ed59f9cb",
+    "id": "2eacf88f-1f62-489d-90bc-48bc731af938",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39062,7 +39146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b856eba3-48cf-4ea8-a5ee-c22c56fb01f1",
+    "id": "37100bea-7dec-4bb1-9c89-2b44cfececb8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39082,7 +39166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f777a350-b8cc-4622-ada8-07948d930ecf",
+    "id": "1d0bbe35-d89e-4053-b2d9-74d471c412a9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39102,7 +39186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "098a7061-0dd5-437c-8ccb-3fd3c3acf93e",
+    "id": "aeb93fbf-10ca-40d4-9cd7-b98f24e1dc83",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39122,7 +39206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42142416-a4c1-4a5c-ba1e-b7c2882a29b5",
+    "id": "355fb1e6-40e8-4a26-90ee-bab617bac470",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39142,7 +39226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "238ebfff-ff9a-447e-95a7-83d09c6683f8",
+    "id": "fdadafc4-7238-4bc7-ba52-a55db47fd8ec",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39162,7 +39246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25166735-4d9a-4efa-b956-12f8c8bf5a30",
+    "id": "8575434c-c579-47bd-a7a9-f5353db1d151",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39182,7 +39266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ef03e41-0add-4113-9691-4c4c2b0f2721",
+    "id": "fefcad60-66ac-4c52-989b-f47a19f245d3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39202,7 +39286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "152b03df-35ff-4452-bcd2-2b9d080b820e",
+    "id": "2a7c1fa3-cc34-47fd-b8c3-146083f9e5b5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39222,7 +39306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cad5fd22-1dd4-4e53-8496-88fc7b92e08a",
+    "id": "410333b4-9ef8-4423-9015-1119430078e0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39242,7 +39326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "973d4b91-e838-406b-8025-272a9dfc4990",
+    "id": "d7b2510b-a9bd-46bc-9811-6b3e1150be24",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39262,7 +39346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa96eb94-983a-4e71-a98a-1ced6f01b45b",
+    "id": "6a3be2ad-b067-480b-a338-c51844396a76",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39282,7 +39366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58069cb0-6318-40b9-a08e-54bef07bcf44",
+    "id": "d3304241-23c8-4f0d-9c32-805d41114855",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39302,7 +39386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c02ac4d8-724b-4a22-ad18-3eb3c5e72436",
+    "id": "c2a4dc41-8860-4849-bba1-a73095eec249",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39322,7 +39406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e68e4f15-0cfb-4692-9ccd-b8f60169c91c",
+    "id": "26eb4da6-4a3f-4a4c-abb3-beaa1914414f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39342,7 +39426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afd6b929-8861-42f2-988f-ca9eee63f7d1",
+    "id": "327928ef-f528-49e4-b912-d71816fbbcd5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39362,7 +39446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d40b19f9-9ab7-4ccf-b7d7-8753cb2ee413",
+    "id": "67e38c4f-6a71-4972-a2f4-9643954ab4ca",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39382,7 +39466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7122932f-e112-42d8-b277-422a7eb3e2bc",
+    "id": "1b725d5c-6540-4533-af6f-0dbace50735a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39402,7 +39486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c41aa68-03a2-4e1b-814d-2739fdece31c",
+    "id": "d9d40f14-941c-4f34-b270-f439fc0a714b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39422,7 +39506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d04e1b26-22f4-41f2-988d-f5d4ab00c8c9",
+    "id": "82df49a3-64ab-4a37-9f68-b204a6317e55",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39442,7 +39526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd1bae80-d27e-486e-9f5e-ab4ef4e6e7f6",
+    "id": "888bb2c7-c1d5-47a7-bd60-5115328944d4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39462,7 +39546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "688bbc74-0aa5-40d2-ab61-96601c29776a",
+    "id": "c0f422ee-a828-410a-a980-c69972a8caa0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39482,7 +39566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "658b8872-655f-4b08-9b06-4da41fa13232",
+    "id": "9e4090f4-780c-468e-bd27-f3605946396b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39502,7 +39586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4f69949-b62e-48c6-a39c-10621b64aefe",
+    "id": "e8a906d0-3164-41ec-a600-ae7e61aefb3a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39522,7 +39606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a39633fa-ba84-46ea-933d-16b188f7827a",
+    "id": "686f9ca0-e1ce-4c9a-b3af-3e75919d5743",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39542,7 +39626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9c01173-4c8f-49f4-9cf5-513c278fa084",
+    "id": "3880b556-24e6-4c28-a75b-769dabeacbb4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39562,7 +39646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36181630-1300-4f12-ba90-b7cb283e3e85",
+    "id": "e2ec502f-34ae-4100-9a30-9fa5eebfa9c7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39582,7 +39666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "098783e1-ce32-4ffc-a754-f7e71ba04287",
+    "id": "cd077c26-f111-4cfd-bddf-58ff354ccfc4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39602,7 +39686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d074c826-b910-43ac-898a-11228b5207fd",
+    "id": "a783b08e-c4b4-405c-aa97-b398d107941b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39622,7 +39706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6abef31f-a0ba-42bc-bae7-2f6508c71272",
+    "id": "f7f0b321-268b-46af-a526-b656ed34a179",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39642,7 +39726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "332fe795-74f0-43de-ab97-bfedb627b510",
+    "id": "dda2a1e5-4e75-4cc6-9f27-07766e2f2f29",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39662,7 +39746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2b0881b-8165-424f-8876-14f65adb912e",
+    "id": "164d9552-6c73-48b7-ba22-42149363f483",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39682,7 +39766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4c25adb-e306-4609-996f-c47c9831722d",
+    "id": "3768d677-325a-4f8e-9f0a-16f8c9d7a109",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39702,7 +39786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fc4c1b1-fbbf-4af6-9319-1828967fb347",
+    "id": "54760d02-1024-4d46-bd0c-dcfb3d524c3b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39722,7 +39806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f54a3a26-eab5-4b14-aad7-dad27354a744",
+    "id": "3a1432fa-5889-4528-baf9-7c505b1e3194",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39742,7 +39826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60263bab-67cf-49bd-b82e-1d43fd263fc4",
+    "id": "fe4ccec8-8c0f-4ddc-a5dc-2d6245d04e14",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39762,7 +39846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa88a6a1-c3ec-430c-89f5-0979a022c0a6",
+    "id": "067cdf0f-6b52-4d6c-ad01-164485585dd4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39782,7 +39866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76569232-3065-4c87-ab2e-c54205ae75c9",
+    "id": "e277e393-6de2-49a9-b5f5-b473be76b1aa",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39802,7 +39886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd29bcce-49e8-4b59-a03e-1d02e95e7bcb",
+    "id": "7efe25bc-8c12-4bcd-94cc-673938063298",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39822,7 +39906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e5fed79e-7df1-4866-8160-ada93480d1ed",
+    "id": "eba2e324-6b30-4f9e-ab25-bb9814ce98a2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39842,7 +39926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6952748e-fdee-4b0a-9c62-6cc7a3b64c7c",
+    "id": "cf4c9287-9e42-45c1-ba94-f62c6760f1b5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39862,7 +39946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42fedc4e-3221-4887-86f3-0e981023124c",
+    "id": "78e38199-b5f2-46d5-b2cd-9183ac169b3d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39882,7 +39966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b408286a-8cba-46cb-b255-07fd7a39b212",
+    "id": "ce696020-c87a-4608-81b5-5a710c23c911",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39902,7 +39986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a727016d-3c51-4955-b6f2-66280e397135",
+    "id": "873ff80b-3a57-484e-93c2-a2dfcae595f2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39922,7 +40006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf6d4426-2af4-472a-91d4-c07c023c5723",
+    "id": "3282a5be-72f8-493d-a8c7-cb121a44e24b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39942,7 +40026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa9b5f72-28ce-41a0-aa74-0df8007ae1ac",
+    "id": "88a0de1f-eb57-4339-aaa1-e8c87ba40c8f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39962,7 +40046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47e0d739-520c-4de0-a2d8-37eca2e808bd",
+    "id": "8ab46491-ffc5-4873-b941-bff8ba96bc39",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -39982,7 +40066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9b63767-49ca-49b5-b67a-fbdfa171af0f",
+    "id": "b1a53893-0016-4616-a10b-75798ef4da9d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40002,7 +40086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fdb809b0-2d97-42f6-be92-6d6cbfeb717f",
+    "id": "e542452f-d412-41d6-a751-bf23751c29c2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40022,7 +40106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52b0c597-e5be-41a4-9cdb-3dd007b2b70a",
+    "id": "4035ea15-7dcb-4c2f-af23-75dad05fce82",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40042,7 +40126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2bbc2a2b-023d-484c-ad4c-492d401691bf",
+    "id": "7ea6838a-0564-4ae7-beda-31375bf76180",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40062,7 +40146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bccb321-392b-4b25-833d-c7a17ece52fe",
+    "id": "4e03e157-5028-4088-b9ed-9d1d554180fb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40082,7 +40166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0064266b-207a-4f89-b231-71161c4d2540",
+    "id": "878dfdcb-afc9-4264-a610-9b7303b14e40",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40102,7 +40186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35d1a5d6-ca9a-407c-884d-b6ff50901d49",
+    "id": "90bda351-b11a-4ea1-95bc-c7954f775e95",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40122,7 +40206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fec18804-2e10-4e39-a1d8-44cabef24efb",
+    "id": "0e1e711e-77d3-4915-bc5b-cd8173913149",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40142,7 +40226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "caa9dee0-3ee4-4336-8dd1-3493c190b25f",
+    "id": "6b5e3faf-0bb1-4984-92b3-4b41ae9db92f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40162,7 +40246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "244525d1-a635-4afc-be80-a457ad7bdf02",
+    "id": "7feebbc7-bb20-4b63-8aad-694c793f0037",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40182,7 +40266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83bd6650-8f86-4311-b170-f6d6b825ad30",
+    "id": "86150f16-cd16-416e-8e51-26e4abc19aa9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40202,7 +40286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0d45809-9a19-41c8-9d6d-ec38ff2efcdf",
+    "id": "6df0919e-d92b-480e-88af-0bccb8d864dd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40222,7 +40306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "895ff299-17cb-42b3-ade4-a48579303f3e",
+    "id": "a64b626c-1830-4b24-a102-47df637353bd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40242,7 +40326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74afa80c-4f76-42fd-959e-c4705c65d62e",
+    "id": "65bfe0df-2edb-4df5-8bd4-599e571278af",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40262,7 +40346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ab87cb2-bff7-4779-b8a3-8ec001228b28",
+    "id": "372176b1-d395-4aab-82c4-f8b37a815bf2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40282,7 +40366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f715bd2-1f3d-43e6-b072-5a981435b3a6",
+    "id": "8bca7d93-83fd-4251-9a02-0daf73b79569",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40302,7 +40386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63315771-8fe7-45e7-963d-7c710a2a5cf0",
+    "id": "e8582a80-dd64-4445-8876-0728515bdf08",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40322,7 +40406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc49d274-fccb-499b-86ab-fc0730e4f1e1",
+    "id": "30dd85a8-c46b-4f48-9ee9-705e95d14aa5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40342,7 +40426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1be2a49e-b781-43c1-9ec4-0352baa27d02",
+    "id": "9f743e80-49e8-4613-9032-9e6f819e1592",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40362,7 +40446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e32f7fba-1754-414a-8b26-36eb7ee77404",
+    "id": "2687a853-8384-44ff-b933-846b91ac9a45",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40382,7 +40466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d5d5667-5800-4de8-88d9-cb41c7f87cfe",
+    "id": "af78ded7-00d6-4d39-be95-e057470bdeb3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40402,7 +40486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2376efd5-03ac-4331-a20f-3db42c51601d",
+    "id": "4d13cc49-2701-4e24-bf72-ee4b400584a4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40422,7 +40506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc8a30a9-f62f-420c-b531-6805cee333c7",
+    "id": "a70e70b7-f569-4764-8dae-5b982c81d113",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40442,7 +40526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20a5eabd-d322-49bd-a5ff-daae15db3d24",
+    "id": "d0ae5389-3a70-45e6-a724-7744dae96e48",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40462,7 +40546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "884878e7-638c-4317-b500-0252b89a0dd4",
+    "id": "1b2ecded-b1e2-45a0-a294-568c49b6bf5a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40482,7 +40566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be70f4f4-41f7-4490-aa12-c0baa1e42ea8",
+    "id": "e91d29ea-3193-459e-8480-00a9e07abc79",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40502,7 +40586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de5cdc26-bb09-4f62-b6ab-2bcc4b4f859f",
+    "id": "2812da32-f398-40c2-9a36-198d57d070a2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40522,7 +40606,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7cba79dd-3bea-43a2-85fd-523a5ea8bb1f",
+    "id": "dc72abcf-2059-4847-bc56-30f7cb63ad61",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40542,7 +40626,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06923687-58ca-416c-88dd-60896c0c3f70",
+    "id": "572214da-9f39-4340-97d6-77409831eb17",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40562,7 +40646,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd031f2b-e970-4c4a-b5f5-82a4fe9317ab",
+    "id": "2c2f45c0-f103-4fe7-b224-35ac3402b05f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40582,7 +40666,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80ef9535-99f7-498f-b107-bba38a9b1fd9",
+    "id": "abd0b8f0-c14c-4299-a2e6-6472d54523ba",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40602,7 +40686,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5464b315-c61d-4f4b-9619-a2503e68170d",
+    "id": "5b98791e-d444-4bbc-ac2b-8417a2f768cb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40622,7 +40706,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da2cd2c4-37d4-4b5a-a0fa-7b69ddc770be",
+    "id": "2800bc05-e54f-431a-a433-1b13863111ad",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40642,7 +40726,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c68861c-cb3e-4f3e-b2f2-d82002bdafb3",
+    "id": "eb62f735-292b-40c6-b7e0-005a682e9532",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40662,7 +40746,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e275bac0-7b19-4737-93a8-1fe6d40f1054",
+    "id": "9cd113ac-24a2-4c07-86d8-032a24e488b9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40682,7 +40766,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ed7da90-8b52-4ca8-a783-24564be5def3",
+    "id": "45be52e2-81ec-4ad0-a389-256aaa1dabd0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40702,7 +40786,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67287711-d8ea-43b8-9b48-beaaa656c74f",
+    "id": "7c526848-9a43-4ab8-9dfd-29bc63a1d74b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40722,7 +40806,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7af1faa-daf6-4859-a420-c2b6538e61e3",
+    "id": "91ab75a0-8043-414f-8420-a2a2bfbc14e1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40742,7 +40826,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f6e4a75-bea2-4d8a-910c-7de1a0f07438",
+    "id": "1e99c4dc-ea8f-4d12-94e8-bdc0daaa0038",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40762,7 +40846,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1b78d0e-96c1-43d4-8e33-0cc785ee7da1",
+    "id": "0d7af29f-491a-495f-9708-3d74567a4623",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40782,7 +40866,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56d2b1b3-b98b-4737-9459-c8d25311406d",
+    "id": "1bc4dc54-bbc8-4895-a9d6-4a2a036130f7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40802,7 +40886,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "918d2f6f-f687-45f0-946b-a1ffc08129ec",
+    "id": "90c0c1a1-080c-4620-ba8f-ace8745a7236",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40822,7 +40906,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70396866-855c-4aa3-8383-594cd46f4adc",
+    "id": "74bdd588-1aa5-4692-94d4-c2fe706fa14d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40842,7 +40926,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90611b7e-816e-4896-82fe-9c5ce9e25c1f",
+    "id": "770435eb-2878-4cb9-a456-9432d5c2f897",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40862,7 +40946,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a860193c-801a-4977-869b-815704dca5b6",
+    "id": "1b4e1b28-9e70-407f-b02c-2a2148678d9f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40882,7 +40966,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8cdb986-78fc-4230-b018-1bd7b7373d5d",
+    "id": "9d0e4152-660c-4b4a-883e-b64aba7f94f0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40902,7 +40986,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7848601a-dc3d-4b0e-9f79-b6c023924915",
+    "id": "95532a81-d48c-48bd-8c9a-d723d28422c8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40922,7 +41006,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89e4c9ea-b04d-4f94-9921-fe1a876e61df",
+    "id": "31f28d3b-9d23-479c-9c4e-c0e413913c06",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40942,7 +41026,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "51d09b74-6459-42c4-a88e-869e2683c2bf",
+    "id": "7c90ee62-05d2-456b-9e2e-e26064b9ba80",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40962,7 +41046,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b8cfc62-b735-415a-b2f9-d1718432dab2",
+    "id": "894a3ae3-b734-42c1-91c5-4481c78e273d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -40982,7 +41066,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b676236a-c80e-4095-95fa-996dbdc63053",
+    "id": "4c4a70bf-6c64-40a2-9e0c-37bb59901509",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -41002,7 +41086,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42ece8b7-d05a-43e9-898a-14c741e2d155",
+    "id": "d13fe442-21c1-42ed-bf59-c8a4d4014af6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -41022,7 +41106,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88056f51-eb49-4a10-83e2-b8807301991d",
+    "id": "96d161dc-12b0-42ae-aa22-b7c9a03f3cde",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -41042,7 +41126,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f48fe66a-9fba-4221-9793-e69555a4f611",
+    "id": "bd5cc389-bf59-4dc5-923f-e1fc9bfd4298",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -41062,7 +41146,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42aa7e1b-4f49-4040-a0e2-1d0026d13e79",
+    "id": "e6126b80-a4fd-48e9-b4b7-24c130122d6e",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -41082,7 +41166,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a527e1d5-c1ea-42f1-8d30-ed42875dae41",
+    "id": "436cde1a-b01a-430b-b933-c88f08457c68",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -41102,7 +41186,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "264e1aa9-56b0-453f-9b37-433d7afbb77e",
+    "id": "846c97a5-ae4d-4753-82c9-96236c79977f",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -41122,7 +41206,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c587bd9c-8182-496b-9691-05228f5973f4",
+    "id": "157fe975-0d1b-43df-b5ab-13d94fb8845a",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -41142,7 +41226,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dab29b5c-f17e-46e3-a739-851c9118f130",
+    "id": "fae68a56-e481-4be7-ae7b-47a565ed3c4b",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -41162,7 +41246,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64557977-ccdf-4244-b151-541aa64b89f3",
+    "id": "4db1a3bb-3e1c-4429-9b9f-b978723f50d3",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41182,7 +41266,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4dfcd432-43c1-40ee-a1f6-e209351e39a6",
+    "id": "c22f7d09-c793-4968-9d04-ed9be51b3657",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41202,7 +41286,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6536ec61-fbbd-491f-8e84-d526b9a6eac9",
+    "id": "b3a6ceb3-aa23-4972-8f2d-a4f5925d0e92",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41222,7 +41306,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38a87664-0223-48c8-81d6-15e88bae89de",
+    "id": "e0678d84-2c42-4b5c-bc5b-e375a66317d0",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41242,7 +41326,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c33e182d-e04f-4e4a-be6f-4774c160bd46",
+    "id": "2ee67355-4e74-42b3-82ae-6e02cdc7d8a0",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41262,7 +41346,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43c7b17b-60f7-4bef-9433-5037ea9b59d5",
+    "id": "61025912-77d8-4114-94c9-c9e9f111ec04",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41282,7 +41366,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "facd383a-45d0-41aa-9274-6a4093a91bc1",
+    "id": "800655e4-9f96-41dc-977b-ea44dd1999e2",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41302,7 +41386,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb68189a-7e9a-482e-b4bc-ac045b16baba",
+    "id": "45b4cd12-efe0-4ef5-bde7-6164f7967cea",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41322,7 +41406,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c30bcc0e-fe08-444c-aec4-66d2fe9dd0cc",
+    "id": "2d3f8cd1-18b3-4ef5-ae73-f8fc1a3f05f5",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41342,7 +41426,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94e82f23-36dc-4c57-9a3a-1312b5adb105",
+    "id": "5f878ca2-506e-4b43-aab9-650ce689ca77",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41362,7 +41446,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07e842c6-6cb4-48c2-8208-83e7c9462d83",
+    "id": "1947fe1a-c994-42ba-9b2e-b09c2624b39c",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41382,7 +41466,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7527ab5e-cf84-4aa5-9490-ceef9d99d680",
+    "id": "8947fd54-6207-4360-ba2c-4158e2aca604",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41402,7 +41486,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0bb30b1-3137-4df3-8fc5-7ec09339e528",
+    "id": "1bd2b20f-8935-4c7b-b2b9-57448fe78d99",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41422,7 +41506,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30923250-6b12-4959-9437-6bcd1d6552ef",
+    "id": "1c2390bd-cd2f-4155-aad5-dc1013fa7566",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41442,7 +41526,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00a29709-628d-4403-a73b-2d8febf2dfe1",
+    "id": "a3281baf-471b-46d7-8ab6-9be8cea86d43",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41462,7 +41546,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78d14d0c-1479-40aa-b952-c7222f15b229",
+    "id": "60583c93-0371-40da-a469-1a07fec82ca9",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41482,7 +41566,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a12e0683-2337-4296-bfa7-b5ba26f45fab",
+    "id": "c5bcb993-abd4-4b9b-b7ed-85df59eaa8ed",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -41502,7 +41586,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "592fa54d-9312-457b-aadd-4b47523a4e85",
+    "id": "e3b29dc7-14cd-4c64-9606-f90d8c047c35",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -41513,7 +41597,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ed3c2e78-fea6-481d-a0ab-7d9fad99c841",
+    "id": "e25fbbbd-10cf-4937-9243-d17e783c4f18",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -41524,7 +41608,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4e651ecc-dbb1-452d-a322-824f5ec24179",
+    "id": "c7ce4f6b-5818-4ac5-a6e4-bf206e8482fe",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -41535,7 +41619,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "50f63aff-35d5-419a-ae06-60cf3186cf30",
+    "id": "0354f8fd-268a-427e-937d-0978a3612c9d",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -41546,7 +41630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "cb9c32cf-3155-433b-92ad-eba1a9cb989a",
+    "id": "669339fc-e0ce-4267-9b1d-c8e62517f4f8",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -41557,7 +41641,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4794df77-3d87-4438-b4a9-e0b1ec81dccb",
+    "id": "7d33ff39-c476-427b-96d8-cd56da9a03aa",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -41568,7 +41652,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "20a4aa15-63dc-4d97-ba9b-0e273f2d233b",
+    "id": "a1b3ccf5-5406-4d25-a677-424ea8f7665c",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -41579,7 +41663,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "8ebff722-3c5b-48d0-8283-241ea4bfd040",
+    "id": "2de35a8c-4c0d-48df-b2fc-ee9ac6f2b9a6",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -41590,7 +41674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a361fc1b-aeea-4f79-b44c-1db138369913",
+    "id": "d353eb58-5cae-4b9e-91c5-0884669fe26c",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -41601,7 +41685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "ba101d5a-bf10-4b1b-b4a7-de935f5c3a8d",
+    "id": "a1dc685d-5bcf-49a4-8814-c4d0d26ab7d2",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41621,7 +41705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0330d62a-0c7f-4447-a781-e03b520a7fbc",
+    "id": "4d2ebdfd-6777-4bfa-83dc-a8266f042780",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41641,7 +41725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a364bfe0-467a-4034-a5f5-5cdb20797718",
+    "id": "35c66039-b5ed-43e2-adc6-299092385a16",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41661,7 +41745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be590443-77c7-4534-9fe1-184fdb4ba72a",
+    "id": "fc071b6a-0c0d-413f-ad0c-334e5191856c",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41681,7 +41765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bdda1f1-4417-4cfb-8b40-3ffb84f9be69",
+    "id": "61b6c8ef-90ca-455f-8851-a486053c3084",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41701,7 +41785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45de0553-e7bd-4c98-a8ec-7022ba9ee490",
+    "id": "3b1680d1-8a0f-402b-b6d9-f728fe6d0d33",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41721,7 +41805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc3747d0-1fa2-49e5-9c3b-8f1017336680",
+    "id": "42472695-c759-487d-a680-9b4b341aad93",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -41741,7 +41825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26758ff2-bb62-415e-8ba7-1ac1caf9ae0d",
+    "id": "dcac2021-0267-4145-af79-70014e031ce0",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41761,7 +41845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad620268-6da0-4dda-ad51-bf5e13249283",
+    "id": "a481f292-610c-407a-8815-b5e8e646ebbe",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41781,7 +41865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b992512-97c5-4ce0-931e-ce1450cf3504",
+    "id": "45bf467f-4564-476c-a19d-bffb9f2726a3",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41801,7 +41885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b9cbf9b-aca2-48b6-94ea-0355f5b27658",
+    "id": "6bac291d-138e-4ac7-bb48-3512ee498f31",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41821,7 +41905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd49e705-28cb-4199-84db-dc1e5c16b239",
+    "id": "fbde0408-f447-412c-a37f-fdc7e3414980",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41841,7 +41925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "763dcd8d-a68e-4a63-8bdf-65c0859fb858",
+    "id": "2804f1ac-6841-4f8f-8a2c-2a8f02cb1f26",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41861,7 +41945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7012dc83-88b7-4b10-9e2a-ce7ea38b7b6f",
+    "id": "de2cc9fc-0e87-4db5-ba4c-118b17a3fb71",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41881,7 +41965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fa2065e-bcc9-4be1-bfff-40780f287dad",
+    "id": "03d0772c-6202-4936-a4db-d00d16f09022",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41901,7 +41985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "070f6c94-c3a6-406e-af34-0aaa04b2e00f",
+    "id": "d728eed6-5914-4dc0-8b1b-d785a1762f0a",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -41921,7 +42005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "237bae39-bfb1-446f-907b-f4f2e7ad8ce0",
+    "id": "a24cb1df-0aa3-4720-a112-4fc5f0214ead",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -41941,7 +42025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f56f4e99-9a14-4937-9aa5-d78b3b2d8853",
+    "id": "d28f20cb-99bf-46fe-ba59-2d6e31a63a6b",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -41961,7 +42045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b540ff8-d4b2-40d8-8a59-a5adfb3f2fe6",
+    "id": "afc5a2cf-948b-4a73-a6d3-651dfbb4ece6",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -41981,7 +42065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "efb227e3-fda4-4a86-a6e9-6c2f85bbb5b8",
+    "id": "afa3c5e0-db32-4d68-8c27-ac252cbde18c",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -42001,7 +42085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "703fb247-45a5-469b-a327-06d9477c4819",
+    "id": "e6adf087-308f-44b9-bc88-cf3c348fc409",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -42021,7 +42105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1b179e2-9a78-4eb4-b8ba-43c856d513d6",
+    "id": "5194687b-42e4-4348-96bc-de7eb0043c9c",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -42041,7 +42125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2af5a4d6-9b20-4e37-a5e2-9ce21e8fcd30",
+    "id": "732878dc-5b5d-4b53-bade-83db658d676a",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -42061,7 +42145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b350178c-ee87-48d3-b8ad-3d1961849f87",
+    "id": "d7da3c22-75b9-41ac-976b-0d16344cb353",
     "codigo": "4.2.01.02.0017",
     "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
     "tipo": "C",
@@ -42081,7 +42165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a275db81-5681-4277-afa5-d4a9df2daff2",
+    "id": "6690a58f-545c-428a-9fc3-94e0fb8f8c2a",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42101,7 +42185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc8047fe-54f8-4c47-b1fa-ecaf939810ca",
+    "id": "64f4fcbf-96a6-4f4a-bb5e-46764530d652",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42121,7 +42205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09d07824-34e5-4d14-93c8-c5ddd4ed426c",
+    "id": "9011db28-3696-404e-87ff-cfab8737290a",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42141,7 +42225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "535aa2f8-71d4-4393-aab8-b6b341f5d432",
+    "id": "3b164d9c-e1da-4ed1-a33d-e8d8b1c5dfe4",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42161,7 +42245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "413a60b2-e5e9-477f-ae94-acca8c6cbb75",
+    "id": "d09d94c3-01e0-4dae-b406-59ac4e8dad4e",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42181,7 +42265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da459651-8615-4702-9e6d-afb200d07c38",
+    "id": "cc1ca768-afec-4974-84ee-eb3dd93df74f",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42201,7 +42285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cf04def-9a12-4f7a-9c38-35de4a6260a3",
+    "id": "69a8c84b-2bfa-4be3-9ee7-d2e46e65c5a7",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42221,7 +42305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a341366a-114e-4464-92db-0f6f6b56ed3c",
+    "id": "e969f62a-8de2-40a3-9fd5-3d1c6c551044",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42241,7 +42325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbd04a47-a886-4cfa-8e83-2541e7e02109",
+    "id": "957c7491-c277-48ae-8e2e-65ac6e676236",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42261,7 +42345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1c45f99-1750-41fd-b0b7-2f4f466f205a",
+    "id": "2f55816e-fcff-4d82-9e15-950ee0038062",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42281,7 +42365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d0b0218-f3fa-4aef-ae15-c8ddef33664c",
+    "id": "1bf939b2-7b34-4f20-8885-9769d21505a1",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42301,7 +42385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5efbc133-dbe1-45a5-be28-f162d3fe1406",
+    "id": "1be45acc-f34a-4918-b7fb-407de78d779b",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -42321,7 +42405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf16d2b6-bd44-4046-a2ff-bcc48626951b",
+    "id": "f48c14a7-59dd-4eeb-97f9-e450057cc655",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -42341,7 +42425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d62d6247-8ce4-4d18-91f0-07c4cb13edeb",
+    "id": "b897f863-4e06-46b0-8008-f76fa7cd0a77",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -42361,7 +42445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e92a0763-9cb0-48d9-b6c0-a736d182ad54",
+    "id": "34a28dfc-4b38-4d8f-a526-70df1e5cf7a4",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42381,7 +42465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b61dd563-ad19-4abc-a66f-0cadef4dd3d5",
+    "id": "b6dc38a5-d2a8-4102-9115-83ef59f6da8f",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42401,7 +42485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d307c58e-1e92-430c-8a76-fb3e8c3d4fd5",
+    "id": "9ee25c54-b17f-442f-b5e3-5b404c1cf851",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42421,7 +42505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "59ac8f12-ab47-4bdf-9548-74d2398966e0",
+    "id": "b2fa8e19-6fe8-4f16-b72f-76565b6888e0",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42441,7 +42525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5818bb1f-f70c-47a8-9ec9-475357b594bc",
+    "id": "d5028e01-2623-4610-b1ba-aeb17b01f173",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42461,7 +42545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e509482-ff66-4a98-8d6a-1ebdc3d56c07",
+    "id": "5b65d807-884e-4d53-baaf-d3953a54d5cf",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42481,7 +42565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de454e2c-d842-4aee-8b04-281ae60734b7",
+    "id": "042f386c-e9db-4823-a11b-a1209891d288",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42501,7 +42585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07840550-1bde-437f-b498-fdc952a8d632",
+    "id": "d2f3c281-cd2f-4e7e-9211-21855422b78a",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42521,7 +42605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9be0c7a-002c-4a11-9632-a3db8856726c",
+    "id": "ddf8de69-651b-41ff-9951-1325aed338fd",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42541,7 +42625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6af2eb8-b8a5-49ee-b1af-c56298b9be29",
+    "id": "6bf93bdc-816f-484b-afc2-1a0a4827a31a",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -42561,7 +42645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3881c199-8590-42e6-8953-786f006a82b4",
+    "id": "1611d70b-eee4-4dd6-ac6a-64e228faf70f",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42581,7 +42665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1754799e-cad9-4b07-8ab1-2c2751b4c63f",
+    "id": "ea09ffae-eb8f-4e57-b03e-cf9e7d1cfa51",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42601,7 +42685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfe3ae89-69f2-4919-91d7-ccb1bc263d40",
+    "id": "a42c4ed6-e333-4fec-8f7e-d873d08638ae",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42621,7 +42705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3cf0290-c714-4204-8736-510b00ca4563",
+    "id": "40693e97-3086-4dba-9e02-3cd91131046d",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42641,7 +42725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa90ac5b-4cc9-4257-9ef0-337ff955613f",
+    "id": "d61a0ba4-c490-42bf-9d1b-a65598be8f1a",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42661,7 +42745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "037cda29-8438-4838-9dca-4e38c7a5d6e6",
+    "id": "4dcbdc76-127d-4fa3-b6be-420f1edc7319",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42681,7 +42765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fa5a170-f692-45e4-bdbb-2a0e6ca8e78c",
+    "id": "72c34318-ddf4-4422-8ddc-1516469d5c79",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -42701,7 +42785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3087543-5f63-4caa-a400-a6265b65f519",
+    "id": "6b4e2111-cdd0-40b4-b50d-7c1a33ad1537",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
     "tipo": "C",
@@ -42721,7 +42805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b561fc46-2fc0-48ec-a4bd-9e73e23724f9",
+    "id": "3ed4bd1e-bacc-4b18-8a04-abf3b7f05f3d",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42741,7 +42825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f33a3a6-bce8-463a-8eba-f7910eb3cb5c",
+    "id": "f2259f91-1429-4d04-9d10-48b7fe5dfb71",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42761,7 +42845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e944ee36-6b49-4b12-bb90-fde3103d3d2d",
+    "id": "3f61d4fa-39ca-4a5b-aaae-0e1526b47e8d",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42781,7 +42865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0d055a0-2746-48b2-a8bd-930232d96993",
+    "id": "62427791-a409-46f2-80a4-db82ae605320",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42801,7 +42885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b590aba-daea-4c1b-b955-27d578419ee9",
+    "id": "276ff13e-d189-4e9b-8ec2-894bead1767e",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42821,7 +42905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f914edb-145b-4d17-b17e-746a44660711",
+    "id": "4b5817a3-3985-430f-85cc-3caf6c390edf",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -42841,7 +42925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39486953-e2f9-49d2-b930-2278175378ca",
+    "id": "c4d6c075-ae70-4f02-b531-7709e640e7b4",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -42861,7 +42945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6193af4-388a-4365-965d-790eab4630d3",
+    "id": "0c8aa870-2bb6-4b57-8c80-b9ae3a38050e",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -42881,7 +42965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf33d4e6-496f-4f77-a334-60db3bfa8fdb",
+    "id": "45cdd456-3a0d-4224-a598-f8b559f9c585",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -42901,7 +42985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38fe1463-c75c-4bad-a3f9-5c5616ecfca4",
+    "id": "b5afbe0d-2101-4ecc-bcde-7ce65df58677",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -42921,7 +43005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b95160a6-32b4-47fd-9fe7-ec0832384e31",
+    "id": "4ede8303-a52c-4bad-ac2c-b80c46c846b9",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -42941,7 +43025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "95b8a0c2-e8da-40f6-8e14-a52be96dd312",
+    "id": "57ad964e-433e-4fa2-9b89-5671386ce073",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -42961,7 +43045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78522581-3155-46b7-ae76-5eda0f68e87a",
+    "id": "b2340ad1-e645-4c76-a140-cbb40a09ef2b",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -42981,7 +43065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3aa98f0-30fe-4065-97f2-4cb8cd9320a2",
+    "id": "c3328af2-b613-4840-886d-12a8323478d3",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43001,7 +43085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abf6a7d7-fdd7-4c29-9c53-2651c264e737",
+    "id": "8b6bb0eb-e3b8-4e91-a19d-e77a718e2be4",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43021,7 +43105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ecf4440c-3d6a-466f-af4c-48136f0492f8",
+    "id": "4351e530-cd97-42e1-aff9-bf47f8162f6f",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43041,7 +43125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8dd45975-f301-48d4-a6d3-156afdd68c0e",
+    "id": "2703eaee-7c78-4f25-9d54-8bc3e53d5400",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43061,7 +43145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5735bc98-ffd0-41f4-8b65-731d21055428",
+    "id": "fc0eb261-46e4-4bcb-bc74-cc57c85ccee1",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43081,7 +43165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f95047f-7cf1-44e9-8922-40f8ec4568f4",
+    "id": "95aa8e67-c56f-48ef-bb1a-8a6b78a0a4c2",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43101,7 +43185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "759566ba-2d4c-4f4e-ac20-cc5a66474164",
+    "id": "22184a97-c6d0-4c2b-bfe8-b38d1b9122e3",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43121,7 +43205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e28e07c-00ea-4583-b065-08f9a0cac9e3",
+    "id": "63190711-43a2-40ed-b1b8-5000f604ab5e",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43141,7 +43225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48a9cf99-1df5-4197-80fb-2b3370fcfcda",
+    "id": "4b8425b1-db6e-42d8-8087-e69f99ffb0cf",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43161,7 +43245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed7341ee-bbee-46fc-82c6-87dfeb24e00f",
+    "id": "bccb223d-3fbd-4552-aee4-0b2adad04139",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43181,7 +43265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be7bcb80-61ac-423a-b4d0-35d01aabb9f7",
+    "id": "cd7b741f-289d-47ef-9f67-8bf46103b7b1",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43201,7 +43285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3799871b-4ce3-4964-9077-f2d26817cd21",
+    "id": "984348d4-4839-4cde-8322-d10967ed4eb4",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43221,7 +43305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "237b0edd-7735-44d5-96e8-6b649021cccc",
+    "id": "49b54fc9-19ec-4a97-a16f-c4922663f31e",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -43241,7 +43325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fbdf8c32-9aca-4f9b-a1db-13be04a0ddd2",
+    "id": "61e9f496-f69b-4918-b8c5-853603c4d744",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43261,7 +43345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "302f7e68-8d33-4fdd-905e-d5d4f5e02645",
+    "id": "06fec97a-bab2-4ca9-9a85-9d259673f3f1",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43281,7 +43365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a108a2c-6e1b-41e1-8e72-84a975383e27",
+    "id": "7ebe39c8-0f53-49f5-ad79-0ade9ae3be84",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43301,7 +43385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ee5cdce-f78d-4365-8f49-2b6184f952d1",
+    "id": "244c2741-02d7-4cd5-9d98-a409a782860a",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43321,7 +43405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "acae1bd9-4c2e-4285-ab77-ddb395f1e74f",
+    "id": "0202e737-3f80-4217-9a06-82b187db8978",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43341,7 +43425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca64059a-7dfa-4300-b450-83a488d1c8ed",
+    "id": "164dc2d8-a9ce-44f1-a837-d5119dd99978",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43361,7 +43445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e407921b-7d4e-4f06-b415-b2d493ef6943",
+    "id": "9623162f-b683-4c49-977e-9241dbfdc930",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43381,7 +43465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea87e5a4-b6a1-498e-af0b-b2517b834517",
+    "id": "72bd2bb5-3db2-449d-a984-148f1c756bb2",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43401,7 +43485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "569b358e-5f47-4d9d-ab5f-9e525f147074",
+    "id": "b880157d-fb27-4d2d-9f4b-355252c25941",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43421,7 +43505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4d9054c-bf9e-43bf-8452-3da721e478f4",
+    "id": "b6e6963d-0032-4043-a886-e7815997cbcf",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43441,7 +43525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "acb05958-8ff2-4627-831d-72a3b8a5f888",
+    "id": "ae616274-dc63-46bc-a557-01e1c47d1fc0",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43461,7 +43545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf2e7e33-858b-4b54-a40e-d082316c0cea",
+    "id": "8fef6093-33e3-473f-9d69-d55258a22013",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43481,7 +43565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b14a1ea1-1fa1-4261-bd34-226a2b9678ef",
+    "id": "0c13d728-c30f-4d45-bf68-2069941086b6",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43501,7 +43585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f223d9f1-b2bc-4732-88a9-63e15402b9a4",
+    "id": "4d5a3e02-4423-4622-afef-a04b57b18cd2",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43521,7 +43605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08f29a08-6486-47e2-8c14-8c115e54394e",
+    "id": "2b5d0c42-3812-4c8b-9436-5634e62270c7",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43541,7 +43625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "817a4612-1552-4c51-bef9-81b82666375b",
+    "id": "72f474db-9a61-4d7d-a0c3-47035880c043",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43561,7 +43645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe87200d-8a09-4988-aaeb-dee21203425a",
+    "id": "070c0cdc-531a-4b34-941c-41ad302c57b1",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -43581,7 +43665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee2bfa67-f048-4f4f-99a5-95fe7f362783",
+    "id": "193a9586-b04f-4d22-92dd-e073f1617dec",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43601,7 +43685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4de31495-e9fa-48d6-b807-06d1b1144f12",
+    "id": "1b1928b9-f89f-4292-81c1-95205467bc0f",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43621,7 +43705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff1e68bd-6107-4590-a2a2-0e91dacf265f",
+    "id": "4a1da62b-0a5b-4d59-b8a0-693d7b748d61",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43641,7 +43725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "858ac75d-4d88-4250-a663-6c8b59cd615b",
+    "id": "2dc8879a-d497-4ad4-a80c-b129476217c1",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43661,7 +43745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0aeca84-bbd7-4518-a78c-61727914fb57",
+    "id": "93de3840-103a-43df-9802-7f3d5009d782",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43681,7 +43765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e401607-4479-4c25-ba68-644843fc538a",
+    "id": "57516b0c-eaab-4be2-8464-87da81c9908f",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43701,7 +43785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54d0d3c9-b253-4dd5-8ecc-36ac4e107929",
+    "id": "12afaf6f-b42e-4cdc-859b-e18e8ac39da2",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43721,7 +43805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26b9ba5f-2b58-4b15-8558-b6b8fb11ccd1",
+    "id": "7b520e02-da0a-4c57-8917-ddfc5b3498cb",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -43741,7 +43825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e173bc65-c8f3-48a0-af2a-e7bb7b6b175e",
+    "id": "ba734032-fa33-4e4b-a050-37b3a8ef28be",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43761,7 +43845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba7825e5-574f-41b1-9886-920d5681ab1b",
+    "id": "89b50740-307e-4844-befc-edb57c71af56",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43781,7 +43865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d67ec4ea-547f-4821-a797-815c5739c527",
+    "id": "8da29f21-7c3b-4e6e-8c1c-c563e7266b2d",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43801,7 +43885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d418a99-06d0-4564-a8f5-d40c95a1b34e",
+    "id": "b0bfd12d-dc86-4017-b53e-ac9f3bbc2cbe",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43821,7 +43905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1fc70fd3-3428-4d62-b859-55430a64ea31",
+    "id": "e71d29a8-c1bc-48de-93b2-2b5f2fc605d9",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43841,7 +43925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2365d0d-abb7-4572-a3d0-1c9716b9d2dc",
+    "id": "a94963f6-2993-49c8-9f05-49d8c1512bd6",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43861,7 +43945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d05f7b20-3d0c-4b0e-81e1-96876985ea9c",
+    "id": "71425405-46ce-4af8-a64d-e33a34db09a3",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43881,7 +43965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24bc65f4-41a2-4365-925e-9efd746d7d17",
+    "id": "ce480b15-f8b9-4b6a-a2f1-a6ada3d4fc6c",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43901,7 +43985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f397b33-dfca-4a96-84ae-6d53b5a4c16e",
+    "id": "531e5eea-2b85-4f0b-8ff5-5300b996584f",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43921,7 +44005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "776e58df-af10-43c7-b671-4ceac02013f6",
+    "id": "0d21ea23-ff80-40c0-9e07-ba83244cc82c",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43941,7 +44025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7a6ebe8-5b31-4fae-846a-ab82598df906",
+    "id": "889c355e-e56f-4c2a-ba53-e471b210afbb",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43961,7 +44045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d608e59f-a97e-4e0b-8f83-8ecf8f942dfa",
+    "id": "2fd1b3dc-0b28-439c-9577-94405f6fdd83",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -43981,7 +44065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8b1539b-6c3e-4aac-8164-1dbcce46a024",
+    "id": "51436ee1-0dc4-4609-8bcd-9fe5a122c632",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -44001,7 +44085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd8ebb77-5a5f-40e8-9f49-e859f15b9fde",
+    "id": "dbc1dc15-e762-420a-9a76-5e8c960f5444",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -44021,7 +44105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a8a0d11-5e35-499c-9f87-a7dbd339b4c5",
+    "id": "8c193065-d2ed-427c-8094-905e63240a37",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -44041,7 +44125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f10ea0d2-2ffa-452f-826f-c8310b7d928d",
+    "id": "21016fd8-6ce8-42dd-9bad-4483ca8673dd",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -44061,7 +44145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f61c1df-741a-403b-a2d0-7d66d49540d8",
+    "id": "e35677e7-9a6e-42a3-87c6-57ad33c17ac6",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44081,7 +44165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5af18bcd-3360-4ed1-9d06-6b89ca059edb",
+    "id": "894a7fac-47ac-4850-a074-dc951486161e",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44101,7 +44185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "350f392a-4497-44fe-977d-486b30a69e65",
+    "id": "0f4a566e-13f3-47eb-a981-d52fdb01d7c2",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44121,7 +44205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29c0769b-bfc7-4a47-b474-5dea7cff4e8e",
+    "id": "cc6fdf50-5bf4-46d3-b112-2b4219296328",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44141,7 +44225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4bfa1f8-f13c-4558-ab0e-01d5c1e80d51",
+    "id": "1c0e8bb6-7b47-4590-ab6a-2376e4590269",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44161,7 +44245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e8ffd846-5d61-42f0-a6c0-0883716623e9",
+    "id": "afa45bc8-5eb7-4321-a319-b6d3b6dc0cba",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44181,7 +44265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8541e60-deb8-4a3b-81e5-77f3ec19aecd",
+    "id": "b4d45123-15b5-4e48-91c4-e8b801a3770e",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -44201,7 +44285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ae672fa-5a27-4744-9811-9b69c08178d1",
+    "id": "4b8ea8d4-19cd-43ba-a5c3-1862219b799d",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44221,7 +44305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24b557e1-a49a-4747-a2b5-7943a02a5582",
+    "id": "fe365e37-83c9-42fc-8d1d-28a568f3aae2",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44241,7 +44325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ccbc61b0-b764-4b55-b67a-10e5714cc26f",
+    "id": "41552fd5-0b7b-4168-9771-468b6c4a6e1a",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44261,7 +44345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bea6d87-c9e7-4f31-9614-0617b83b73da",
+    "id": "9474d928-c70f-45bb-a0d8-e00f6440827c",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44281,7 +44365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c23a13d-c1de-40c1-91a3-a5010e185242",
+    "id": "83190052-7fbd-468d-a8df-e8c713be6bc1",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44301,7 +44385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00a7a597-be8a-4bdc-9163-1dd281c861fe",
+    "id": "e780da8e-8eea-4c2d-ad72-ce20f05371b9",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44321,7 +44405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b07eb16-6744-40d6-be94-7b8f63f78ae1",
+    "id": "9b87bb1f-e7a4-4c50-82b6-35f23e917e70",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -44341,7 +44425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c775595b-6387-4c05-823f-af74f32339c3",
+    "id": "a0c4d560-380f-49be-b4b1-18c7ea3cef84",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44361,7 +44445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1bc5245-6c11-4a67-80dd-cea20afa3a79",
+    "id": "4870d85e-0e8e-4f09-b46f-3e4d1be7255b",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44381,7 +44465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2843ba0a-fad8-4bd0-bcab-559736d5b756",
+    "id": "541022ef-c6c0-4bcf-94de-d8bf71d1b20d",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44401,7 +44485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7607e9a1-a323-462f-a8bd-5dd2f31ae7f8",
+    "id": "64ef217b-e202-479c-8a08-d1a3bf4c42fd",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44421,7 +44505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2943f71a-6b24-435b-bf5d-d42f21b1143e",
+    "id": "4fe50f8a-31f1-409b-9586-224882278ad6",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44441,7 +44525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85881051-831c-47e2-8dc2-b6e0eb0b3d57",
+    "id": "0d87e4dc-7a34-45e7-a6eb-979c14ee0891",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44461,7 +44545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "225f4560-5944-4621-b8cc-3dc03dfb6ced",
+    "id": "8807c7b3-30ab-4961-be5a-268642880f38",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44481,7 +44565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20d09f1b-75ca-44c4-b294-2fdc64b95a3e",
+    "id": "16dd6aac-bc3f-43f6-9894-4836269b332d",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44501,7 +44585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "512c1e72-01e0-4c1c-b324-fe08e94da4ff",
+    "id": "5749ec0e-3df3-4d4f-8e00-1766202fd58c",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44521,7 +44605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "364d98fa-e1f3-4818-ab6c-08fbaf6b0331",
+    "id": "8712bb3b-6731-40a6-8c9b-de578d42d7a5",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -44541,7 +44625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0fdcd84-d930-4c43-beb0-8788f6935c63",
+    "id": "aa6b578f-fdc2-446d-93aa-fb47e39a6701",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44561,7 +44645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5cca3582-3f36-4c1d-8b1d-48cc1f88803e",
+    "id": "d965fd20-87da-45b9-934e-f19cd9100bc0",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44581,7 +44665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8f13fbb-0098-4dc4-8a64-33a2bbcaf6b1",
+    "id": "d8667781-19bb-42b4-9fa2-ac024e4de804",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44601,7 +44685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d1eaf68-ac3d-46e8-8348-671e96f4afca",
+    "id": "566d1dc1-10b3-4ade-855a-9f68c106b2cb",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44621,7 +44705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a99372cc-165e-4e43-a723-360a10c81461",
+    "id": "0a43ae06-831a-4420-94d3-2169c329a8d6",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44641,7 +44725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70cb95a6-73b2-45d9-98ad-ca68aa741ab8",
+    "id": "5899a484-7c08-4bb7-96e2-f2e218ed957a",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44661,7 +44745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25d71a0c-e4cb-47a8-9379-48f36069763f",
+    "id": "7e282922-e04f-4e9f-be96-4f3f99dc71ee",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44681,7 +44765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4dc1ddc4-b36f-4b99-89dd-15d93d23c7bb",
+    "id": "4fb97aef-95a3-434b-9db1-5913822bce24",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44701,7 +44785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "031b24d6-44f6-4de0-8d6f-3ee03e5a213c",
+    "id": "dbbd8bbb-0d8b-47b2-825b-020e3af9bd89",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44721,7 +44805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97ab3e9c-ac98-4ccf-8187-d788f6f7a2d3",
+    "id": "fdea3cf5-e346-44e1-b1e7-899360efcc04",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -44741,7 +44825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ecffc85-0762-4cf0-a8be-8c38fcd6eb04",
+    "id": "1eb86df2-1b6e-4560-9c1c-7f5670de79bc",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44761,7 +44845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c531280c-345a-4568-ba9e-28ebb6c534b1",
+    "id": "bd30585b-a736-4603-83e5-032a7f120e0c",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44781,7 +44865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebc1bc66-e41d-4329-8894-78aa98d3a110",
+    "id": "6e1f57b3-1e8a-47d3-9e5c-4c9b87b10aa0",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44801,7 +44885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8c59dfe-0d98-4b5b-b38c-e5fa098964f8",
+    "id": "fd93a307-0d50-43fd-90ea-45844eb101b3",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44821,7 +44905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "728cc4a9-bd5d-4416-9364-2d938f495a6e",
+    "id": "363fcc37-f42f-4eb2-87b4-6ecd8ae93bff",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44841,7 +44925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2dbc762-fd40-46f5-b474-4ef90d8b5400",
+    "id": "a0dd9c1d-f2a7-4528-819a-4e9c0a054c80",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44861,7 +44945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d626b6d3-834f-47e9-8897-f221659d90dc",
+    "id": "f3eebd57-38d9-469d-b8a4-0d1000909ffd",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44881,7 +44965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b30b5c4-8591-402c-9b0f-5a899c8d084f",
+    "id": "3e9b3a16-718a-4e40-b565-a91d1b4d29c8",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -44901,7 +44985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0be48630-7d7d-40a1-9412-d267a494e4cd",
+    "id": "06ec7475-c3a8-4fd0-9e4b-625f79a2746d",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -44921,7 +45005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f430a23-1bf4-4428-8a29-9adbc6f6912f",
+    "id": "4e759ede-5deb-418f-9702-3af9aeb499cd",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -44941,7 +45025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14d5263b-8e8a-40b2-9704-101b08c5d19a",
+    "id": "bcbc9760-b6f6-42d3-87f0-883502617e7f",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -44961,7 +45045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23b3c071-f57c-492c-a452-6013aa4a8d11",
+    "id": "964acf28-227a-4301-b218-2fd96ac15841",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -44981,7 +45065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a00d8e0a-2682-418a-a82b-0dc473247b37",
+    "id": "b1310b97-e6db-470c-81ae-1430876e7e0e",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45001,7 +45085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "300802ac-6c3f-4c4f-88cc-d9fb136c93f9",
+    "id": "bf0495d0-a119-4282-b96d-700e3f0189ac",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45021,7 +45105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29b09cee-63e6-44d9-b389-ef09ffa2419f",
+    "id": "02302d19-47d3-44ac-aff2-40ad1396660a",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45041,7 +45125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e14b3cda-4beb-4b90-8a27-957d1c07a74f",
+    "id": "9daefc33-5b1c-42ab-87f8-52408dd8783a",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45061,7 +45145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13ae980a-7ea9-458f-ab34-4568bc6935b5",
+    "id": "b08dd190-7508-46c5-b0f4-cbb1d965f3da",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45081,7 +45165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b260856-b28e-4da8-ac88-e50311e59c24",
+    "id": "cac9b318-a68f-44f9-8a62-1477428c34d8",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45101,7 +45185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2f2179c-6bd6-4492-ba48-9f905260169c",
+    "id": "42efe2cd-f3bd-4bd5-8218-670ea737ef1c",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45121,7 +45205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dbff9b42-87b6-4ef4-86b3-82bc3b57491c",
+    "id": "c3fe888d-c9e3-42f7-8373-adfa5e6dac9a",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45141,7 +45225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25622549-691f-4aaf-88d7-b4437a8b095b",
+    "id": "ee5455ea-2683-4983-ab1e-8b7a944647f3",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45161,7 +45245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10a2818b-cfaf-4fa6-b980-512ac0040a9f",
+    "id": "2736bd90-248d-4c87-9de8-c1e851e1ebee",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45181,7 +45265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4cd5c10d-cf52-4ddf-8292-761596329fa9",
+    "id": "12ac9420-0e3b-49d3-98c9-bbd5a366066e",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45201,7 +45285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "354eafba-058f-4ced-8c82-47c595bc10ab",
+    "id": "ab602108-d874-424a-89bb-8b884274f891",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45221,7 +45305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4aef415b-ca73-4c23-91b5-c70598111d9f",
+    "id": "643322eb-0d5b-4a14-a1aa-4db63bc6481b",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45241,7 +45325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9296b6f-1cb8-4f6c-afc9-eaab6631ae72",
+    "id": "9b69229b-6a89-4e4e-a4dc-27330639b986",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45261,7 +45345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6db1f75e-6f00-4692-9314-3f854f8ee816",
+    "id": "f6eac995-da18-412e-b781-eafc9ca4e7dd",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -45281,7 +45365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0444677e-ed22-4431-9608-ffb009084dee",
+    "id": "95c7348b-a824-4d14-800f-02f594831f0b",
     "codigo": "4.2.01.02.0048",
     "descricao": "RATEIO SEMEADORAS",
     "tipo": "C",
@@ -45301,7 +45385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "118d65a8-8f19-461c-921e-717b47e888d3",
+    "id": "89416592-5a2b-4c79-a003-231f906aa436",
     "codigo": "4.2.01.02.0048",
     "descricao": "RATEIO SEMEADORAS",
     "tipo": "C",
@@ -45321,7 +45405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "adf2928a-3b61-4bda-8a31-152752204949",
+    "id": "31490984-be95-47e1-9ff1-6074f3516f6d",
     "codigo": "4.2.01.02.0050",
     "descricao": "RATEIO PLANTADEIRAS",
     "tipo": "C",
@@ -45341,7 +45425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fd745f1-da90-4850-9d65-b7118adff30f",
+    "id": "9556a008-f160-435c-a746-65d8b3e13d30",
     "codigo": "4.2.01.02.0050",
     "descricao": "RATEIO PLANTADEIRAS",
     "tipo": "C",
@@ -45361,7 +45445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8696c6b3-5555-48e0-9fd5-f60e3501a251",
+    "id": "f4a04085-6396-4b0c-bb51-c76e7ab30e36",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -45381,7 +45465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d356da4e-51e2-4c9d-ab88-de00f6bd5d86",
+    "id": "86aeb518-ed41-4503-8913-50a84c770b14",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -45401,7 +45485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89cb23ff-0c73-4a89-8a83-d76ddab1a5a4",
+    "id": "c3a8da31-d388-40fb-992a-e8df5f744cc6",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -45421,7 +45505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c832790c-5c5f-4a90-b14f-ecf17f85a805",
+    "id": "c19e0cb8-daf7-411f-b4c2-df4360511dea",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -45441,7 +45525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6675fec3-ba60-478b-9055-0143987e9bb1",
+    "id": "f5cc969b-a866-4fc2-9aaf-6f2769c6c93a",
     "codigo": "4.2.01.02.0051",
     "descricao": "RATEIO SUPERVISAO AGRICOLA",
     "tipo": "C",
@@ -45461,7 +45545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6e1f719-17f4-4c20-965b-b02d70655198",
+    "id": "7ff8d54d-2394-423a-bcfd-c85dbb8cd6f9",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45481,7 +45565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56b6f8ae-5c73-471d-875c-fba3ffc85946",
+    "id": "2b1581c2-b540-4397-bdac-ee9f6a84e7e6",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45501,7 +45585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e9472dc-9757-4ed5-a35e-ebe95119843c",
+    "id": "696aa5e9-c1f6-42d3-886e-b2730a944eae",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45521,7 +45605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62ba12dd-4d8b-422a-be7b-f51b1209bbeb",
+    "id": "d847c3b2-08df-4e07-b62b-a2ad5eceb560",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45541,7 +45625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b0e27b2-a783-4ce4-a23d-a1a387a617b1",
+    "id": "6b3cba8c-efb2-4302-9efc-b8a444c80db3",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45561,7 +45645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f3f64eb-3c94-4b12-b282-9cda513270cc",
+    "id": "a8384b78-8ac3-413c-8a93-9e60b589800f",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45581,7 +45665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d43c9b7a-fc15-45c6-975e-95689135ac89",
+    "id": "2b27dc22-845f-461f-b665-cc6f05908603",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45601,7 +45685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d7aa624-50aa-4c14-8d34-0a177f32a44d",
+    "id": "2b9200f3-31d3-450a-a87b-73c8fa083543",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45621,7 +45705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "309f1ab5-628e-4b9c-a3fb-a942bea9098d",
+    "id": "e99b46fa-05c2-4c37-87e5-053d1ef22661",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45641,7 +45725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ebd70d7-9948-42b2-8607-b1508259d3ed",
+    "id": "c34a3608-c8ab-4027-a011-a5315f2fa280",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45661,7 +45745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d484cd9a-a5f6-4c27-a364-e733c8320c7d",
+    "id": "51ef75a7-d928-474a-8a92-1b04e4518539",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45681,7 +45765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1fc83dc-e8e5-4381-acba-b298f9902f29",
+    "id": "f0f8c597-1502-4403-bdc6-e9f5bdeaa16c",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45701,7 +45785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afc72b02-8832-44b3-b9ce-ce3dde609084",
+    "id": "0266a1e5-9583-4f65-bddb-8a4ce9bb6991",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45721,7 +45805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4de1a4ab-eb14-4698-ab41-4c0710d53c99",
+    "id": "55ad0266-0691-4033-9e89-ba36f2c6e880",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45741,7 +45825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "418a7522-828a-434b-909b-2f07b05b1fc5",
+    "id": "bd37368b-e6b7-4e00-911a-45b651277cd5",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45761,7 +45845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60d21667-09b7-419d-b8df-7a77f1a4c710",
+    "id": "09eee76d-41c8-4e88-be0f-a45fd4763b49",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45781,7 +45865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e25c4406-d73d-4080-8863-0631662aeac1",
+    "id": "f63fae61-a42d-40b3-85cc-2264067a331a",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45801,7 +45885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbeccbac-d536-4208-92bd-55e671b2550b",
+    "id": "eb38bf6b-e443-4afe-8698-9934f9aba429",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45821,7 +45905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de9e03fb-e34b-4150-8f29-af54fa955245",
+    "id": "1d688d69-2684-4336-8d08-e9d55f0833a4",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45841,7 +45925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "580f8630-52f7-45d6-b247-83fe3c74030a",
+    "id": "bcca4f35-ef7d-43c3-a5ca-f88b589f99d5",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45861,7 +45945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19453611-1683-40b8-9c51-3df4351316ce",
+    "id": "72f6aadf-5a9c-4758-865f-fd3a6d6d426d",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45881,7 +45965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bb082ab-e200-442d-8824-155824362cea",
+    "id": "b4b13f76-ae53-4d81-950a-ca23d1e4e6e5",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45901,7 +45985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cea4aaea-ec9d-4fcf-85d2-2ceef07fae71",
+    "id": "f5772c21-f070-4bea-84d4-ee628738144b",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45921,7 +46005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56f81384-d274-4f06-971f-db2742328070",
+    "id": "68960268-154f-4380-86ed-ebb22c12866b",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45941,7 +46025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "561ab8f8-9d52-431b-878e-d669f39e2602",
+    "id": "e7427da6-7c5f-4587-a375-17e0da6811b7",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -45961,7 +46045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "620ad3a8-93ba-463f-8e81-5ed2af8db8d0",
+    "id": "7f9af810-341d-48b9-87f4-cbf12872e563",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -45981,7 +46065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c079cb70-7c2a-4fb0-850a-9892caee971d",
+    "id": "4a8c0899-f75f-4d87-8c82-489863dce29b",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -46001,7 +46085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85fbd742-1af8-47d0-9f7f-0537b7200331",
+    "id": "6d0a06de-4eaa-4c7e-b768-a3713de594dc",
     "codigo": "4.2.01.02.0054",
     "descricao": "RATEIO MANUTENCAO PREDIAL",
     "tipo": "C",
@@ -46021,7 +46105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fb1274c-5c76-40b0-8631-60dd56dbbb2f",
+    "id": "ac939b05-4d1d-4b41-b25b-422a4adc2c68",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -46041,7 +46125,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "846296ed-ccec-4663-8fcf-de597ee541c2",
+    "id": "b4d67047-44bf-4f29-a7e6-db117224c27c",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -46061,7 +46145,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d02243e-6894-47f4-92f8-5362d575cdf8",
+    "id": "271264db-8a6c-48f0-bdb0-86608001f700",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -46081,7 +46165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9cc5a51f-1b66-4b39-b80b-e40eaa4378ec",
+    "id": "4a662c7f-1f6d-47fd-ac09-47db4ed05b09",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -46101,7 +46185,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfe94b79-a190-4ba8-a102-c4f28b4ffd7e",
+    "id": "51bad667-e8df-41df-b60d-87709182ffeb",
     "codigo": "4.2.01.02.0058",
     "descricao": "RATEIO COLHEITADEIRAS",
     "tipo": "C",
@@ -46121,7 +46205,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7ca5323-ce9a-4957-b249-3e2ad578459b",
+    "id": "805e3571-cb60-4d3c-8bf5-2e29f5930703",
     "codigo": "4.2.01.02.0058",
     "descricao": "RATEIO COLHEITADEIRAS",
     "tipo": "C",
@@ -46141,7 +46225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f943c697-15cf-45e7-9f15-5d710d6e015c",
+    "id": "833374cf-e047-47aa-9d6e-0bc9803f6bda",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -46161,7 +46245,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40671ad3-9069-4528-b83f-8cd4c3d6c9df",
+    "id": "a4d707fc-a986-4bc5-b1fe-8ac64aed4755",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -46181,7 +46265,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29da34e8-b50b-48bd-8595-2d8b73e7faa6",
+    "id": "6cc74098-d192-4459-80c7-b3c2e9589045",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -46201,7 +46285,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69bef025-80ef-4f03-b06e-fe82a788cdd1",
+    "id": "ce828c37-04e8-4bff-9929-507733a40e1d",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46221,7 +46305,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "189fee77-94e9-44d8-ab9d-0f2e941808d6",
+    "id": "e1019977-e638-4567-9e13-f200aaba193e",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46241,7 +46325,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17457255-b4c3-471f-a49d-9de6abcd58a3",
+    "id": "d2bf4d3b-3fa8-484b-9f56-d69ace443597",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46261,7 +46345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe41ce7e-64bc-4e12-ad88-c1b985bffa2a",
+    "id": "25a5d048-30ce-4172-b407-8cc1cae75481",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46281,7 +46365,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffe6c9a1-e464-4f01-b883-d2419185a9ed",
+    "id": "eaa0587d-96d5-4fc1-9d5b-aa90acb9752a",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46301,7 +46385,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7aca2e2-ecf9-4d46-bded-8c113c743a7a",
+    "id": "ba2c2e8d-7a61-40d6-8060-57d8df804645",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46321,7 +46405,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8b5f100-f98c-463a-a559-8734c8492c5e",
+    "id": "3b17a723-2f58-4cc2-ad09-309b7907e9fd",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46341,7 +46425,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cdaf4979-0d75-4444-886f-a88fb2bc90c4",
+    "id": "5e7a2791-f4d0-48ee-8689-35e9878c3eef",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46361,7 +46445,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "51ff5270-06cc-4679-aed9-fc4711208d0f",
+    "id": "232f9dfa-93e6-4821-8456-cc802d9935be",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46381,7 +46465,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a3f50f4-86ad-4651-b9f2-c0e997488869",
+    "id": "510b5109-daa3-4e0d-a58d-b82f8c9da041",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46401,7 +46485,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fe965b0-241a-4bf7-9727-63a9f7038ece",
+    "id": "97e8a434-fa3c-40fe-a219-8e49780bf63a",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46421,7 +46505,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0605991-802f-4e81-81fb-879d9456f3a0",
+    "id": "9e223eac-587a-42c3-8dfa-9fe48354720f",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46441,7 +46525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b38f57e1-bd78-471a-93e7-63d091b52d64",
+    "id": "357eb714-62d8-4ed3-9408-192cf2f9e524",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -46461,7 +46545,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "873357e7-c837-4ec7-94ad-d703c47b2182",
+    "id": "04a9ca5f-90fa-42a8-a9aa-be2b11b8eb66",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46481,7 +46565,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79a77e7c-651e-4570-835b-a9b11b599ef7",
+    "id": "1ce84fdd-ae91-4eeb-b31f-dc3396cafd10",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46501,7 +46585,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df4221a6-58d9-4400-a40f-606a89265698",
+    "id": "4433d191-2bed-48b9-af34-2a4c2bda96d2",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46521,7 +46605,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "634e0280-2bb5-485c-b21a-9943200d80d4",
+    "id": "089b213c-ce3a-4d3d-89f0-0dc2a4a19e77",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46541,7 +46625,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc5d1336-2f2d-4e9b-bba9-d85220666aa2",
+    "id": "da1fd824-1f72-42f1-a0a9-9bfccd29b542",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46561,7 +46645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1b5e9db-d6f3-4db7-8729-a17d65e11331",
+    "id": "6935f71f-2492-4a01-8637-ed16179aa3c0",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46581,7 +46665,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e16acb35-3f75-4143-a0cc-78e62948f34f",
+    "id": "c51a0850-ce7e-4899-a553-ef07dc8e7e57",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46601,7 +46685,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3a0fccc-7aae-41bd-882f-58495b099833",
+    "id": "650c506c-4d2c-4276-83aa-4b48c56c47ec",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46621,7 +46705,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4143aa9f-c951-47d7-96df-7d4b53f7175d",
+    "id": "acfa15e5-9fdf-438c-9d88-138391f1301f",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46641,7 +46725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e291ac97-d19c-4b4f-b92b-8c3ef4d3a2ad",
+    "id": "e5731411-54f1-4450-afba-34dfdbd64a13",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46661,7 +46745,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d931ca50-e727-4c80-930c-f16aa3f2c9a9",
+    "id": "aa4b76e4-5773-4f8a-8f9b-1b026020a02f",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46681,7 +46765,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "292d3b7a-a3f1-4e72-994b-6374dbbc7d4d",
+    "id": "673e520c-e256-434d-b0b7-d78a9560d5d1",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -46701,7 +46785,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67830ead-2c02-44bc-aa9d-c95e6cb300c6",
+    "id": "b0e993de-2910-4860-ac45-e62511214d86",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46721,7 +46805,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7c79092-4614-46c6-9125-227e342ea414",
+    "id": "0a8ec3e8-27a2-4208-9e8c-02fa71109ed9",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46741,7 +46825,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "21747c24-43bf-4ecd-b54f-9c85a0c94f1b",
+    "id": "425e9840-b934-4892-9ccc-392c8afdfe72",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46761,7 +46845,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d6ec31b8-ec71-485a-a0c8-61dddf3e32e1",
+    "id": "9a706209-f450-418e-86de-853d66ac6b5c",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46781,7 +46865,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ef9d767-9329-473d-a499-7628ca68f400",
+    "id": "f3a74f66-a82b-40c8-bbd7-68aacd1c98c2",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46801,7 +46885,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e1aae98-e0cf-428d-99c5-03c91d77ad6d",
+    "id": "d5be58c7-ef26-4a98-aad4-e9f63fcab86a",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46821,7 +46905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9a88ee3-d4fd-4d59-b700-d5578d7c4f3c",
+    "id": "e8799e16-68c2-4848-b21c-73d0ccda950c",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46841,7 +46925,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "206edf51-c0f0-4dd3-ace7-157377bd8e4d",
+    "id": "c5ac78c9-a4ae-43cd-8f2d-e57f4502eb29",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46861,7 +46945,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "720787f9-61cc-4bab-98c5-d78e43b4ec31",
+    "id": "cae7e008-7d87-4f31-be90-7b1283e56349",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46881,7 +46965,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f34daaa-c59a-440c-8b2e-4eeb212c100d",
+    "id": "e5ea402c-0206-4ab7-830e-fd4f2354abcf",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46901,7 +46985,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07eb5a80-9570-4850-920e-2618e749fddd",
+    "id": "b45a5ae4-627d-445a-bffc-7bd8c2cce951",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46921,7 +47005,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c2398ca-c4d1-40ab-8bab-41b511de7538",
+    "id": "a05a6d0f-7df1-456e-a3a8-6ead123e9ad5",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46941,7 +47025,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5494ca3-790e-448d-8b71-b4400151e8d5",
+    "id": "6ac3b1d4-b6e1-404f-889c-a6ef9e412f7b",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46961,7 +47045,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aeae637d-b1f2-4882-80ab-693dcbdefad4",
+    "id": "97f8ba3f-8f16-4f79-b23b-e2302b23ae82",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -46981,7 +47065,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8d01852-e402-4e96-b0be-5520c905da59",
+    "id": "46769e5d-2c26-4673-979c-476ef306c0d7",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -47001,7 +47085,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b6ee97e-b66d-40a4-8e2c-8f081654e4a2",
+    "id": "48f4c28a-0f18-45cd-b004-d5745ab3490a",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -47021,7 +47105,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9583a2e2-189d-4612-a6b2-3ac47707f964",
+    "id": "9189ee76-8c99-4bb6-bd0b-43be9e732f51",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
