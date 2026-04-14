@@ -1304,9 +1304,59 @@ export const DEPARTMENT_MAPPING = {
     "unidadeNegocio": "Veículos - Logistica",
     "divisao": "LOGÍSTICA"
   },
-  "BANDEIRANTES - PECUÁRIA": {
-    "nomedepto": "BANDEIRANTES - PECUÁRIA",
+  "LAVRINHA - SLN - AGRICOLA": {
+    "nomedepto": "LAVRINHA - SLN - AGRICOLA",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "VALE DO IMBÉ": {
+    "nomedepto": "VALE DO IMBÉ",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "MECANIZADO": {
+    "nomedepto": "MECANIZADO",
+    "unidadeNegocio": "MECANIZADO",
+    "divisao": "MECANIZADO"
+  },
+  "FAZENDA SANTA MARIA PORANGATU": {
+    "nomedepto": "FAZENDA SANTA MARIA PORANGATU",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "FAZENDA MONTE CARMELO": {
+    "nomedepto": "FAZENDA MONTE CARMELO",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "AROEIRA": {
+    "nomedepto": "AROEIRA",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "OUTROS": {
+    "nomedepto": "OUTROS",
+    "unidadeNegocio": "OUTROS",
+    "divisao": "OUTROS"
+  },
+  "JÓIA": {
+    "nomedepto": "JÓIA",
     "unidadeNegocio": "PECUARIA",
     "divisao": "PECUARIA"
+  },
+  "SUPERVISAO AGRICOLA OL LATEX": {
+    "nomedepto": "SUPERVISAO AGRICOLA OL LATEX",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "SUPERVISAO AGRICOLA VERA CRUZ": {
+    "nomedepto": "SUPERVISAO AGRICOLA VERA CRUZ",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "CODORA - CANA": {
+    "nomedepto": "CODORA - CANA",
+    "unidadeNegocio": "CANA",
+    "divisao": "CANA"
   }
 };
