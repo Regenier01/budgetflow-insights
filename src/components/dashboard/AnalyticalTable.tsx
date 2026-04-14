@@ -31,7 +31,7 @@ export function AnalyticalTable({
   tipoFilter,
   entryFilter,
   title = "Abertura Analítica",
-  subtitle = "N9 → Descrição → Produto",
+  subtitle = "N9 → Conta → Produto",
   accentColor = "orange"
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -45,7 +45,6 @@ export function AnalyticalTable({
   if (entryFilter) filtered = filtered.filter(entryFilter);
 
   const root = new Map<string, Node>();
-  const hasDeptOrCCFilter = Boolean(departmentFilter || costCenterFilter);
 
   filtered.forEach(a => {
     const orc = selectedMonth === 'all' 
@@ -63,23 +62,29 @@ export function AnalyticalTable({
       const prefix = a.codigo.split('.').slice(0, 3).join('.');
       n9 = `${prefix} - ${n9}`;
     }
-
-    // Quando há filtro de departamento ou centro de custo, incluir o código da conta na hierarquia
-    const conta = hasDeptOrCCFilter ? `${a.codigo} - ${a.descricao || 'Sem Descrição'}` : (a.descricao || 'Sem Descrição');
-    const prod = a.nomeProduto || 'Diversos';
+    
+    const desc = a.descricao || 'Sem Descrição';
+    const accountLabel = `${a.codigo} - ${desc}`;
+    const prod = a.nomeProduto?.trim();
 
     if (!root.has(n9)) root.set(n9, { name: n9, orc: 0, real: 0, children: new Map() });
     const nodeN9 = root.get(n9)!;
     nodeN9.orc += orc;
     nodeN9.real += real;
 
-    if (!nodeN9.children.has(conta)) nodeN9.children.set(conta, { name: conta, orc: 0, real: 0, children: new Map() });
-    const nodeConta = nodeN9.children.get(conta)!;
-    nodeConta.orc += orc;
-    nodeConta.real += real;
+    if (!nodeN9.children.has(accountLabel)) {
+      nodeN9.children.set(accountLabel, { name: accountLabel, orc: 0, real: 0, children: new Map() });
+    }
+    const nodeAccount = nodeN9.children.get(accountLabel)!;
+    nodeAccount.orc += orc;
+    nodeAccount.real += real;
 
-    if (!nodeConta.children.has(prod)) nodeConta.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
-    const nodeProd = nodeConta.children.get(prod)!;
+    if (!prod) return;
+
+    if (!nodeAccount.children.has(prod)) {
+      nodeAccount.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
+    }
+    const nodeProd = nodeAccount.children.get(prod)!;
     nodeProd.orc += orc;
     nodeProd.real += real;
   });
