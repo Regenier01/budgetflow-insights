@@ -443,6 +443,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
     "unidadeNegocio": "LAGUNA - GIRASSOL"
   },
+  "ALMOXARIFADO": {
+    "centroCusto": "ALMOXARIFADO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "SEM_CODCCUTO": {
     "centroCusto": "SEM_CODCCUTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -461,10 +465,6 @@ export const COST_CENTER_MAPPING = {
   },
   "LEILAO DE TOUROS NELORE OL": {
     "centroCusto": "LEILAO DE TOUROS NELORE OL",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "ALMOXARIFADO": {
-    "centroCusto": "ALMOXARIFADO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "F7T0 - LAVRINHA - T0": {
