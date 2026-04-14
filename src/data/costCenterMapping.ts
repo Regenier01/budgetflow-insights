@@ -443,20 +443,40 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
     "unidadeNegocio": "LAGUNA - GIRASSOL"
   },
-  "RATEIO CANA": {
-    "centroCusto": "RATEIO CANA",
-    "unidadeNegocio": "CANA"
+  "SEM_CODCCUTO": {
+    "centroCusto": "SEM_CODCCUTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "ÁREAS PRODUTIVAS": {
-    "centroCusto": "ÁREAS PRODUTIVAS",
+  "RATEIO FABRICA RACAO": {
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZA€AO DE TOUROS": {
+    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "FIAT STRADA FREEDOM CD 1.3  FLEX  4 PORTAS": {
+    "centroCusto": "FIAT STRADA FREEDOM CD 1.3  FLEX  4 PORTAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "LEILAO DE TOUROS NELORE OL": {
     "centroCusto": "LEILAO DE TOUROS NELORE OL",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "COMERCIALIZA€AO DE TOUROS": {
-    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
+  "ALMOXARIFADO": {
+    "centroCusto": "ALMOXARIFADO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F7T0 - LAVRINHA - T0": {
+    "centroCusto": "F7T0 - LAVRINHA - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO CANA": {
+    "centroCusto": "RATEIO CANA",
+    "unidadeNegocio": "CANA"
+  },
+  "ÁREAS PRODUTIVAS": {
+    "centroCusto": "ÁREAS PRODUTIVAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488": {
