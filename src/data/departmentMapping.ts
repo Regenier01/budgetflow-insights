@@ -1303,5 +1303,10 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "Veículos - Logistica",
     "unidadeNegocio": "Veículos - Logistica",
     "divisao": "LOGÍSTICA"
+  },
+  "BANDEIRANTES - PECUÁRIA": {
+    "nomedepto": "BANDEIRANTES - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
   }
 };

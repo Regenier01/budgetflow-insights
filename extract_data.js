@@ -545,6 +545,8 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     const centroCusto = getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : '';
 
+    const divisaoRaw = getValue(row, 'DIVISAO') ? String(getValue(row, 'DIVISAO')).trim() : '';
+
     // Adicionar automaticamente departamentos e centros de custo ausentes ao mapeamento
     if (depto && !departmentMapping[depto]) {
       departmentMapping[depto] = {
