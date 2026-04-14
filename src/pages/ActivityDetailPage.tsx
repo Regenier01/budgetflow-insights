@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -50,25 +50,44 @@ export default function ActivityDetailPage() {
     const depts = new Set<string>();
     accounts.forEach(a => {
       if (a.atividade === id && a.departamento) {
-        depts.add(a.departamento);
+        // Se um centro de custo está selecionado, apenas mostrar departamentos relacionados a esse CC
+        if (selectedCC === 'all' || a.centroCusto === selectedCC) {
+          depts.add(a.departamento);
+        }
       }
     });
     return Array.from(depts).sort();
-  }, [accounts, id]);
+  }, [accounts, id, selectedCC]);
 
   const availableCostCenters = useMemo(() => {
     if (!id) return [];
     const dynamic = new Set<string>();
     accounts.forEach((a) => {
       if (a.atividade === id && a.centroCusto) {
-        dynamic.add(a.centroCusto);
+        // Se um departamento está selecionado, apenas mostrar centros de custo relacionados a esse dept
+        if (selectedDept === 'all' || a.departamento === selectedDept) {
+          dynamic.add(a.centroCusto);
+        }
       }
     });
 
     const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
     fallback.forEach((cc) => dynamic.add(cc));
     return Array.from(dynamic).sort();
-  }, [accounts, id]);
+  }, [accounts, id, selectedDept]);
+
+  // Resetar filtros quando ficam inválidos (ex: departamento selecionado não existe para o CC escolhido)
+  useEffect(() => {
+    if (selectedDept !== 'all' && !availableDepts.includes(selectedDept)) {
+      setSelectedDept('all');
+    }
+  }, [selectedDept, availableDepts]);
+
+  useEffect(() => {
+    if (selectedCC !== 'all' && !availableCostCenters.includes(selectedCC)) {
+      setSelectedCC('all');
+    }
+  }, [selectedCC, availableCostCenters]);
 
   if (!atividade) return <NotFound />;
 
