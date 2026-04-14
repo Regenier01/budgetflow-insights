@@ -31,7 +31,7 @@ export function AnalyticalTable({
   tipoFilter,
   entryFilter,
   title = "Abertura Analítica",
-  subtitle = "N9 → Descrição → Produto",
+  subtitle = "N9 → Conta → Produto",
   accentColor = "orange"
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -64,20 +64,27 @@ export function AnalyticalTable({
     }
     
     const desc = a.descricao || 'Sem Descrição';
-    const prod = a.nomeProduto || 'Diversos';
+    const accountLabel = `${a.codigo} - ${desc}`;
+    const prod = a.nomeProduto?.trim();
 
     if (!root.has(n9)) root.set(n9, { name: n9, orc: 0, real: 0, children: new Map() });
     const nodeN9 = root.get(n9)!;
     nodeN9.orc += orc;
     nodeN9.real += real;
 
-    if (!nodeN9.children.has(desc)) nodeN9.children.set(desc, { name: desc, orc: 0, real: 0, children: new Map() });
-    const nodeDesc = nodeN9.children.get(desc)!;
-    nodeDesc.orc += orc;
-    nodeDesc.real += real;
+    if (!nodeN9.children.has(accountLabel)) {
+      nodeN9.children.set(accountLabel, { name: accountLabel, orc: 0, real: 0, children: new Map() });
+    }
+    const nodeAccount = nodeN9.children.get(accountLabel)!;
+    nodeAccount.orc += orc;
+    nodeAccount.real += real;
 
-    if (!nodeDesc.children.has(prod)) nodeDesc.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
-    const nodeProd = nodeDesc.children.get(prod)!;
+    if (!prod) return;
+
+    if (!nodeAccount.children.has(prod)) {
+      nodeAccount.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
+    }
+    const nodeProd = nodeAccount.children.get(prod)!;
     nodeProd.orc += orc;
     nodeProd.real += real;
   });
