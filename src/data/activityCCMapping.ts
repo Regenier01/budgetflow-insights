@@ -1,4 +1,7 @@
 export const ACTIVITY_CC_MAPPING = {
+  "SERINGAL": [
+    "RATEIO SERINGAL"
+  ],
   "PECUARIA": [
     "RATEIO CONFINAMENTO",
     "RATEIO GADO GERAL"

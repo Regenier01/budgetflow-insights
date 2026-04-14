@@ -2,7 +2,18 @@ import type { AccountEntry } from '@/types/budget';
 
 export const INITIAL_ACCOUNTS: AccountEntry[] = [
   {
-    "id": "6d8dde79-0792-4a43-ac28-49700caf83e7",
+    "id": "df65d417-9212-4787-baac-0b7487fb708d",
+    "codigo": "4",
+    "descricao": "4",
+    "tipo": "C",
+    "codigoPai": null,
+    "nivel": 1,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "c514df7b-686d-4f32-97ac-cf8fe7750507",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -13,7 +24,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "dfdc7088-2457-4387-b53c-f1d71ef20d2c",
+    "id": "d8c2f7ca-3d43-40ab-8e0e-626e528a6bcd",
     "codigo": "4",
     "descricao": "4",
     "tipo": "C",
@@ -24,7 +35,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "009696dc-c330-44c9-8a86-f0e27e19d52d",
+    "id": "aa7840b9-206a-4743-8e5e-c6ac6ba91dbb",
+    "codigo": "4.1",
+    "descricao": "4.1",
+    "tipo": "C",
+    "codigoPai": "4",
+    "nivel": 2,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "54f3a01d-5d97-4a9f-9f3a-52d7b3222c9f",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -35,7 +57,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "086f2786-6e3e-4fd3-8bc2-fa4aaba38a27",
+    "id": "a9ef5881-fa6d-450e-95ef-cb1f1285f8c2",
     "codigo": "4.1",
     "descricao": "4.1",
     "tipo": "C",
@@ -46,7 +68,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "4a4ec834-32d4-4d9e-b11c-3b9a99d7022c",
+    "id": "0b5bbf6a-6f5a-45f0-a0cd-33fb7effdca1",
+    "codigo": "4.1.01",
+    "descricao": "4.1.01",
+    "tipo": "C",
+    "codigoPai": "4.1",
+    "nivel": 3,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "52b3f599-323e-46da-88e4-fbc384747400",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -57,7 +90,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b40067f6-ab9a-4483-aa72-9d2acde8430e",
+    "id": "442c4b0b-ac80-48bb-9ad4-8f99112d8064",
     "codigo": "4.1.01",
     "descricao": "4.1.01",
     "tipo": "C",
@@ -68,7 +101,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "81b3aca0-85a2-4ba8-8e97-78f6639dc066",
+    "id": "e96c3288-ad14-4cca-87dd-3535f87ae427",
+    "codigo": "4.1.01.01",
+    "descricao": "4.1.01.01",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "b06c6c08-d5ec-4eb4-b69d-3b017003e2d7",
     "codigo": "4.1.01.01",
     "descricao": "4.1.01.01",
     "tipo": "C",
@@ -79,7 +123,1467 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "e0e22503-155d-4c89-870e-6663af56b0be",
+    "id": "4e008989-937a-465e-a008-698bf2be3593",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 269556.83
+    }
+  },
+  {
+    "id": "111ee91b-2f7b-40dd-948a-2e21db6c8f62",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO - AVISO PREVIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -6295.53
+    }
+  },
+  {
+    "id": "5dde9ba3-1314-4079-869b-605b59ccdc96",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -3847.56
+    }
+  },
+  {
+    "id": "81f74e10-40a0-4e96-902e-28e30e187188",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 406.25
+    }
+  },
+  {
+    "id": "00f17823-c166-451d-909c-1519b8eca9b8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1842.48
+    }
+  },
+  {
+    "id": "a75b141f-cc77-4b42-b32f-556f91ca1fc5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATRASOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -868.12
+    }
+  },
+  {
+    "id": "46907ffd-2ffc-4561-9ade-c9a7e5851120",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO BANCO DE HORAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -761.88
+    }
+  },
+  {
+    "id": "21604e3d-3d80-48a5-a393-d52e24414110",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REMUNERACAO PAGO A MAIOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -126.94
+    }
+  },
+  {
+    "id": "1e347394-8000-4c6c-bad6-4657427c13d0",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO SALARIAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 265.91
+    }
+  },
+  {
+    "id": "a4b5ec64-831f-49ae-827f-0a50e1ef8782",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 486.3
+    }
+  },
+  {
+    "id": "71911616-cfe3-4560-b523-59a04181afc6",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE (C)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 567.5
+    }
+  },
+  {
+    "id": "1c22c534-458d-4931-8855-9303666e702d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "LIQUIDO - NEGATIVO RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 579.35
+    }
+  },
+  {
+    "id": "76b0a54a-713a-4dc1-88d1-7c263aee15ce",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - GRATIFICACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 630.55
+    }
+  },
+  {
+    "id": "4c877da5-69fa-4260-9b61-0484a619bf95",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PREMIO HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 641.07
+    }
+  },
+  {
+    "id": "89bb6556-38a3-4edd-85b7-decf78d470c7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 667.54
+    }
+  },
+  {
+    "id": "4e8d10b9-04ab-419f-b76f-5a966e1c63b4",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1766
+    }
+  },
+  {
+    "id": "14da816f-6bcf-4308-a8f5-0efcd00415f7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16883.02
+    }
+  },
+  {
+    "id": "7c6f822b-ab75-433a-92ff-0f8dedf0f1fa",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 71386.19
+    }
+  },
+  {
+    "id": "3911adbf-a433-4d84-be08-ab70f6cdd56e",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -596.07
+    }
+  },
+  {
+    "id": "49fd83ec-30db-45e3-a550-1d0044513bc0",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -356.11
+    }
+  },
+  {
+    "id": "fb90811b-faf7-475b-b8fb-68bbc4ecbc9d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATRASOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -247.94
+    }
+  },
+  {
+    "id": "d0aa86bf-0f9c-4423-a831-5f9d6dfca53b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO - AVISO PREVIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -7148.45
+    }
+  },
+  {
+    "id": "2f12d31b-a206-419f-a846-45929d74eea0",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.31
+    }
+  },
+  {
+    "id": "a1736caf-547b-42e1-81ad-33107c74b3b4",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PREMIO HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 46.56
+    }
+  },
+  {
+    "id": "0c5eebb2-81f9-4d3a-8783-9f2a1d22a5d1",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO D.S.R",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.38
+    }
+  },
+  {
+    "id": "128da9f4-25be-4b5b-b7cc-9b0cd07b56c3",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO ASSIDUIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 253.88
+    }
+  },
+  {
+    "id": "837d94d7-b13b-435c-b14c-e1dd3316bb9b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ADICIONAL NOTURNO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 379.81
+    }
+  },
+  {
+    "id": "b36a6315-4a41-4ea5-8e97-dfce1fdb85c2",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "LIQUIDO - NEGATIVO RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 386.05
+    }
+  },
+  {
+    "id": "4bd49db5-6525-4629-ace5-599385d680b8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1408.7
+    }
+  },
+  {
+    "id": "035e4460-e26e-4da7-9309-331f3cdd086f",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATESTADO MEDICO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1408.97
+    }
+  },
+  {
+    "id": "0a6f88de-6957-4aea-84ce-118a0ce4ff60",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1947.11
+    }
+  },
+  {
+    "id": "f07ad327-2c6b-4ae9-979c-a512602553b1",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2160.63
+    }
+  },
+  {
+    "id": "d3069d1a-af5f-4610-812a-dad34fca6c26",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5576.91
+    }
+  },
+  {
+    "id": "98353f86-615a-4114-a9b9-93bf191e853c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6740
+    }
+  },
+  {
+    "id": "677f8d44-9a2f-4204-bd74-1c39c7ae8b83",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 95950.89
+    }
+  },
+  {
+    "id": "1fb2c6b1-54a1-476b-8c5b-d87b22d5afb8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO DSR HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.08
+    }
+  },
+  {
+    "id": "66180ec6-6022-4366-ac38-75909a57e128",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.38
+    }
+  },
+  {
+    "id": "c6c89f25-76a0-4c57-ab68-538a9f7b218b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO ASSIDUIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 126.94
+    }
+  },
+  {
+    "id": "fadbbf00-9d78-4900-a225-4989d5dd84eb",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO D.S.R",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54.19
+    }
+  },
+  {
+    "id": "53eb2e67-38e6-46d8-bd37-509eae1a5c8d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 558.54
+    }
+  },
+  {
+    "id": "61de9177-62e8-4b93-bb60-dffee72ddf43",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 810
+    }
+  },
+  {
+    "id": "b16dab26-6a8e-47d6-bd2d-50cde9d1c945",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7153.26
+    }
+  },
+  {
+    "id": "a644bb59-06c5-43b9-89e8-73dd4049ad4f",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54.19
+    }
+  },
+  {
+    "id": "4414177b-a36d-4fb2-9541-0e8dfc5bfb25",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATRASOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -179.94
+    }
+  },
+  {
+    "id": "99a5cab6-0e0b-4096-a85a-a3c915bcf9fb",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -162.57
+    }
+  },
+  {
+    "id": "3ac2c45f-c2fe-4aff-a18d-e257988d61d8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -216.76
+    }
+  },
+  {
+    "id": "dcac350b-2687-4e83-8ad9-a805bda3691c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 487.72
+    }
+  },
+  {
+    "id": "e3d07b2e-530e-43fa-adf1-920d9adac72c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2465.38
+    }
+  },
+  {
+    "id": "92025898-4e35-457f-820b-8500b06bc1f2",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3435.85
+    }
+  },
+  {
+    "id": "c8ce9556-8cbc-4eeb-9c41-f3da37b07572",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 51887.77
+    }
+  },
+  {
+    "id": "9d0cd5d6-01d4-4159-b225-966893d84c57",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14104.68
+    }
+  },
+  {
+    "id": "a3bbc461-294d-4dd3-89c2-e0167b23add5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 505.62
+    }
+  },
+  {
+    "id": "f8c3f008-ca08-445b-bfde-af0f8f4acf7c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 437916.29
+    }
+  },
+  {
+    "id": "c443f4d9-fb61-416f-8862-722178bc19b7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO - AVISO PREVIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -20321.13
+    }
+  },
+  {
+    "id": "bdcdfbe7-d60d-495b-8d29-c49914e87a67",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -5148.14
+    }
+  },
+  {
+    "id": "fb92be17-1521-4106-9a22-1f1f1fa5ecaa",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -3843.84
+    }
+  },
+  {
+    "id": "cafaeffc-9f11-4705-98ef-2477c1e86fd3",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ATRASOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -378.33
+    }
+  },
+  {
+    "id": "5a2200b3-dc93-4022-b613-f6d85309b803",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DESCONTO BANCO DE HORAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -110.85
+    }
+  },
+  {
+    "id": "1e6fb8d7-299d-40ac-bf96-54965ba9b303",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.93
+    }
+  },
+  {
+    "id": "0ceb4711-aab3-4afe-b7c6-141daf6030ea",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO - COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 123.59
+    }
+  },
+  {
+    "id": "3b935ce4-cd75-4930-a003-224ea50f30f7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO D.S.R",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 162.57
+    }
+  },
+  {
+    "id": "f41574fe-b53f-4d25-be7d-c12602ed5164",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ADICIONAL NOTURNO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 278.37
+    }
+  },
+  {
+    "id": "1cec8d77-cd8a-463f-a437-9a444fd24392",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO ASSIDUIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 380.82
+    }
+  },
+  {
+    "id": "f5470f09-80a5-469b-aaf4-085eb7f17440",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PREMIO HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 480.1
+    }
+  },
+  {
+    "id": "4b59ccea-5a74-444d-879b-3d8c7ec5f2b9",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "LIQUIDO - NEGATIVO RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1414.64
+    }
+  },
+  {
+    "id": "d38a8d5f-5c87-43e6-ada8-d7ffe0190d58",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2198.94
+    }
+  },
+  {
+    "id": "524ecaa9-3762-4a98-9b3f-9c18335cc18a",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8376.77
+    }
+  },
+  {
+    "id": "6e2cab88-30fd-4389-a523-57be577e8411",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ASSIDUIDADE/VALOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 26166.6
+    }
+  },
+  {
+    "id": "8db52306-18f3-45f7-af47-f9c3bb657053",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 105327.24
+    }
+  },
+  {
+    "id": "dc0ad809-9f91-4002-85da-f36dcef08136",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CONDOMINIO CAPELINHA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -460
+    }
+  },
+  {
+    "id": "6ef6e5a6-7f39-4a61-8822-1b168a91e70d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO DSR HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.22
+    }
+  },
+  {
+    "id": "6c0ec9cc-9c5a-4b17-b942-7bae21798057",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO FALTAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 162.57
+    }
+  },
+  {
+    "id": "9d2b4988-9fe3-44e3-a386-f3a7fc831ef8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 352.33
+    }
+  },
+  {
+    "id": "919e0756-f619-4d22-9237-59fd7a3f769e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -99,7 +1603,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b78435c4-ee8e-48b3-a251-368a69d64a63",
+    "id": "25c03cff-e99a-4227-82a6-3a55942c3208",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -119,7 +1623,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ab985ef-c84b-4c2c-b03e-bdf3769bd881",
+    "id": "340f5166-17fc-4f07-a5de-ad3c653c45b5",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -139,7 +1643,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "856c8af3-5f76-48d6-886e-119d9f10f00b",
+    "id": "139c7e1f-4049-4c1e-8b7c-b7c1f94932ee",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -159,7 +1663,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "427399e8-a96d-4899-8ca1-dde2d4d89c07",
+    "id": "138d4826-000f-4513-8857-d64e38878e2f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -179,7 +1683,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9cd60f4f-b0f0-4673-8022-a8c9cec8ca5f",
+    "id": "74129f12-6c1e-407e-854c-0025507644d8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -199,7 +1703,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "34196635-bef2-4629-9b1f-57afd489ddc5",
+    "id": "6cd043e4-eb7e-4672-9f9d-6f1892706d9e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -219,7 +1723,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed972390-a772-4afb-b9e0-81e87e13a0cc",
+    "id": "17225a7f-1418-41df-9180-1079cff76cfd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -239,7 +1743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ceef23e0-c655-445d-bdb7-a8788978c7c7",
+    "id": "acd138c6-cd90-4b8c-ba64-5f95f1ccb8ad",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -259,7 +1763,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c4d1309-8b89-4e60-bc63-b68c728390fa",
+    "id": "e52bddbb-ed8e-4689-9735-bed20aafdbef",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -279,7 +1783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6418cb80-1e40-4fae-9d87-1c9e2b421854",
+    "id": "175f98bb-3974-442e-b9c0-16239aeb1dd4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -299,7 +1803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d0c7d5e-71d5-4e80-80f7-2242138c54be",
+    "id": "7758b400-bbfb-45db-a4f4-52f79441306d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -319,7 +1823,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d10cdae-9170-4186-a933-11d27fd27ba8",
+    "id": "1d30407c-554c-436d-8f67-6698a33461e1",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -339,7 +1843,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8212dec6-9059-47d8-ad52-1b565054d59d",
+    "id": "6526bc7e-b4f1-4313-b746-2342313f1846",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -359,7 +1863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3034936-309c-4f73-aa7c-6cd9e0c42238",
+    "id": "d485d3ac-7258-4dbd-a5c3-a95ee98c6229",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -379,7 +1883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c84cb7f-d46b-4036-9866-fbe2a3b73ba3",
+    "id": "2a23d054-0b83-439c-b2ad-78cf0e634512",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -399,7 +1903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4507090a-e489-4df3-82bf-5208e35b4312",
+    "id": "b6397de9-2892-43a9-8754-65a61bc2297c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -419,7 +1923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4871ae79-fb9d-4e79-8283-d1f728085a3a",
+    "id": "d6b7f317-9289-4de2-a293-68c7e43faf8a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -439,7 +1943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36bf8c0a-aaf9-4fc8-931b-80de9c0707b2",
+    "id": "06b300ee-820a-45d1-a406-696b8abf863c",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -459,7 +1963,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebab8492-e5cc-45a1-889d-c3e00a1bcc7a",
+    "id": "e097764d-8756-49f3-a5c8-64506b1d2589",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -479,7 +1983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "011ffe18-a116-4404-8bb8-83cb73eadb84",
+    "id": "175e9147-1e71-4537-858e-a40d85b00144",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -499,7 +2003,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26c87e59-9a90-42ae-91ec-6b4ee6fd877f",
+    "id": "33f4cbd2-4250-4fda-b3eb-f16b62fa3851",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -519,7 +2023,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dca8f890-39b8-4165-9e19-e94b2f52ebae",
+    "id": "b065d5c1-f844-473b-bb52-bf9508751ba0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -539,7 +2043,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61c64ada-767b-4fd9-b27c-103213a3384c",
+    "id": "ad299fd2-d503-4a27-9e45-aaecce5a996f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -559,7 +2063,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bf3f22c-30b1-48bf-921f-53a2363ce78f",
+    "id": "a03ac03d-e704-4ad6-a16d-556c49d0e2d2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -579,7 +2083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17259816-74b5-4ad8-89bf-5b86893ebdd9",
+    "id": "b8d37209-d34b-47af-aec4-5e1f727d9522",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -599,7 +2103,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "610f7f07-6d24-4ca7-9db8-d4e22e2d71f5",
+    "id": "46fa0a01-b9a5-4afe-a5e6-2cfd6034495a",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -619,7 +2123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eea5567f-953e-4dc7-9bce-1024f43df403",
+    "id": "9d2eb4ba-aba3-4691-9b96-23f7fbebb48e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -639,7 +2143,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ab76c4a-dbeb-4dbd-a9c0-5520bef66d59",
+    "id": "ad148e08-6fe5-43ae-97ba-e7f16bdab215",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -659,7 +2163,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7aaf08c4-a987-4406-acbc-c911d7912541",
+    "id": "18e7bea4-8583-4b4c-b3ed-5fdc6a2b353f",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -679,7 +2183,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88aea98e-f709-41e3-b18e-342f2d25c472",
+    "id": "179d97f8-0481-41c8-9e24-bfe0de1aaef0",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -699,7 +2203,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "180cedfd-ce16-42ab-be51-a6b5ff3db9be",
+    "id": "c09579bc-f042-4610-ada5-6718d7068198",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -719,7 +2223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d8cdc54-efca-4270-a587-43ab26de51f5",
+    "id": "8997493a-8d45-47c8-a393-6089cde742c4",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -739,7 +2243,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1f78f50-6d90-4161-9977-fa395b87bd4c",
+    "id": "3b214448-9940-4d07-832a-b1741a0074f8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -759,7 +2263,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "263e5064-4fe6-4611-9f69-9ede2a98eb80",
+    "id": "c9a80946-4f56-4710-a0bd-04d769727e38",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -779,7 +2283,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edab10e0-46aa-4395-a8e4-c008a2decd79",
+    "id": "2d7227c5-e19a-49b5-91fb-a3c43941253e",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -799,7 +2303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a436ed8-c3d7-413f-877c-59d99088a28d",
+    "id": "9378b300-96ed-4a86-b8ff-f2f7eb1e1b57",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -819,7 +2323,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c999734c-8941-4a87-b771-a609dcf21ebe",
+    "id": "b472538c-3f2d-4540-a9f6-73d6ed89d9f2",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -839,7 +2343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3e269c0-19c0-419a-84fb-9706bb4b158e",
+    "id": "d1953f83-0c8a-488f-94b7-bf30025ab0b1",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -859,7 +2363,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70d74fff-2f9f-4034-9af0-79404074c8e5",
+    "id": "2ebfcff0-c637-43f8-8a75-f39a7867a3fd",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -879,7 +2383,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f59acad8-bad2-473f-bd57-297e51284f54",
+    "id": "0d26d7c4-6991-460b-93d2-06cc870c8dd8",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -899,7 +2403,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d7f76a3-a126-4a62-953d-698026305467",
+    "id": "2bfba539-c514-439b-a6fe-445764cfba9d",
     "codigo": "4.1.01.01.0001",
     "descricao": "SALARIOS E ORDENADOS",
     "tipo": "C",
@@ -919,7 +2423,307 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dc7bf72-a7bd-4f1e-9134-3b86dc85255c",
+    "id": "b6cbddfe-5ea1-458a-be2c-144aaf8e328e",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18548.03
+    }
+  },
+  {
+    "id": "d97a7ab9-0f4b-42d0-b9f4-4ff89d393ec2",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15537.67
+    }
+  },
+  {
+    "id": "776cf1c6-f476-4db1-b870-e2431f1f0f44",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R S/ INTERVALO INTRAJORNADA INDENIZA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 81.82
+    }
+  },
+  {
+    "id": "463bea93-3d1c-468a-868e-62f319a1da12",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "INTERVALO INTRAJORNADA INDENIZADA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 425.49
+    }
+  },
+  {
+    "id": "7d4ae7a0-5018-4d9a-bd7b-9ff76b5e329b",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 80999.4
+    }
+  },
+  {
+    "id": "31181e3b-1b86-43a0-8416-e521e5a7f049",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1008.85
+    }
+  },
+  {
+    "id": "11aabf48-df43-45fc-bc9d-d4b7b7f332c1",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5281.48
+    }
+  },
+  {
+    "id": "10309088-99b2-4c12-a769-224695078d63",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 228.84
+    }
+  },
+  {
+    "id": "9a3e329b-900c-4187-a5ba-3f28ea093b89",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1189.97
+    }
+  },
+  {
+    "id": "16b7b675-ba96-4eb0-b171-dcbc57f856eb",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3605.01
+    }
+  },
+  {
+    "id": "0e4423ec-6372-4558-8393-b2165c84e64d",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "INTERVALO INTRAJORNADA INDENIZADA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 594.89
+    }
+  },
+  {
+    "id": "1611ac36-c55f-4caf-9a18-560cc68b986a",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R S/ INTERVALO INTRAJORNADA INDENIZA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 114.41
+    }
+  },
+  {
+    "id": "63653fe5-c292-47e4-9820-aafe94349e60",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 225.04
+    }
+  },
+  {
+    "id": "1e2673b3-bf43-4c42-a356-9525d927a10f",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6483.05
+    }
+  },
+  {
+    "id": "92f3ef37-a2a9-485c-ac6e-051c1ae9745d",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 33899.28
+    }
+  },
+  {
+    "id": "290ac10c-ade1-449d-b317-b4ecccdf8f16",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -939,7 +2743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc5cf359-cae1-4d73-b715-8d433458b038",
+    "id": "4396a6e7-c5a9-4a83-a43a-5efceb751ff0",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -959,7 +2763,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fcd8c318-b679-48a3-9799-ae12581f4101",
+    "id": "c8c15e34-9939-4860-8872-fbec45676fac",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -979,7 +2783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c65c53b-f41a-4d29-b0be-a42058129850",
+    "id": "6f0af01d-9216-4402-8e2b-b7c127750130",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -999,7 +2803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ceb1983b-3ccd-497a-bcc2-6a774ef90823",
+    "id": "6e63c2a6-0bc3-4eb6-83e7-d55f70889f26",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1019,7 +2823,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "519e0dcf-7b91-455c-b1c4-5d87e171e80b",
+    "id": "71e25e81-0ae4-4d67-8d0d-576ad15c4199",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1039,7 +2843,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec37147d-fd11-4f54-a7ab-fabb3f05117f",
+    "id": "b45c3584-c7d3-465e-9a4e-2c999902eae3",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1059,7 +2863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f82605f8-28e8-400f-ada3-ce9c41ac1891",
+    "id": "e84d02f7-2bff-4a35-844b-c724c328e02e",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1079,7 +2883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4221370e-8582-473b-9a62-9df891ee4986",
+    "id": "40c1cf90-2630-44b9-85f5-bbc791cc8fd3",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1099,7 +2903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2b242df-7e75-4b14-bfc4-b82844223160",
+    "id": "93cd13ad-16ad-4726-9bcc-91592096a32b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1119,7 +2923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c836a1c-6254-4525-b200-0d2bf81e4e4d",
+    "id": "b7cde26b-0281-4547-9102-d44564a5640b",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1139,7 +2943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a80a347-b1ad-40ba-a3dc-b26da957d905",
+    "id": "c839503f-a646-40f6-856f-62e4e8474e28",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1159,7 +2963,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "294e9656-4d92-491b-90d8-73d80c8dc654",
+    "id": "d1674ae8-8904-4761-b9e1-2dd793a16c21",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1179,7 +2983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac37b7c5-a54d-4a84-addc-4e2a23dc11ad",
+    "id": "82c1d97e-3af8-426f-b3db-9ad6cab883c3",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1199,7 +3003,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "417e43c8-b70f-4dd5-9c1e-5dfe936cbce6",
+    "id": "31503982-22f2-42b8-b183-54e30a6f30ed",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1219,7 +3023,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb231d3b-b66f-4816-9c5d-5f1b9bdbe06c",
+    "id": "098c21ac-282a-4f01-8dce-8f293a554f77",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1239,7 +3043,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e484838-1015-49d7-beb3-6f5adea448a4",
+    "id": "f31fd0b8-dd2c-4720-afef-ef712dde5ec9",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1259,7 +3063,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0307524b-1f95-4045-a83d-45b72cc1fb29",
+    "id": "beb68fba-eee6-46cd-a224-846f18ecbe3a",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1279,7 +3083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84d0963c-fc53-4361-b56c-0707b2f434c4",
+    "id": "9fae1c95-5c20-40ea-8a1b-59aa017609f6",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
     "tipo": "C",
@@ -1299,7 +3103,367 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fc79d55-a60e-49a0-8524-7df5e39138ab",
+    "id": "e99aad9e-7a70-4a52-8ba8-e3457a6dfbe5",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8475.18
+    }
+  },
+  {
+    "id": "dddcd0e3-2106-4387-8b67-c7eff3084b68",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23848.45
+    }
+  },
+  {
+    "id": "d41346bb-ce75-4c32-8494-f6fb6bd28a23",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO DSR COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 111.25
+    }
+  },
+  {
+    "id": "d54299f0-2eab-4b76-9fe7-b9cfa7255e5b",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 143225.31
+    }
+  },
+  {
+    "id": "422604f6-9fd7-4772-a7ed-44da4bd9bcb2",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO DSR COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 234.78
+    }
+  },
+  {
+    "id": "11f0bbf5-2de1-4fff-924c-8ebee51c404a",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO - HORIMETRO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 720.12
+    }
+  },
+  {
+    "id": "108c8115-819c-46ae-b073-efb9bb1cde17",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3009.38
+    }
+  },
+  {
+    "id": "c233fff5-ee22-4c1a-9725-ab4da6931871",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5221.24
+    }
+  },
+  {
+    "id": "9a310f69-a94b-4a7e-ae3b-663ada6646fd",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30607.02
+    }
+  },
+  {
+    "id": "e07a3376-c6e8-4cd3-9868-026e37710b8b",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 660.49
+    }
+  },
+  {
+    "id": "06852f10-7c1e-4ceb-80a7-792643d59f2c",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3962.86
+    }
+  },
+  {
+    "id": "10a99bc8-8a8b-4541-ab0a-5800cee5c73e",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 725.99
+    }
+  },
+  {
+    "id": "bae9943b-f48a-4746-9ca5-f72277843b3f",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24328.47
+    }
+  },
+  {
+    "id": "7b0ad8ea-eecc-4ffa-a907-02240c013a0f",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4054.76
+    }
+  },
+  {
+    "id": "724d5103-1d69-47a7-9fe4-28d0a8522d39",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13685.16
+    }
+  },
+  {
+    "id": "90e544d9-c8e3-40db-a98b-f6c897113e26",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "REPOSICAO DSR COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.6
+    }
+  },
+  {
+    "id": "de75f3c8-dc75-42e4-921f-37e1bf54cbba",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 27586.62
+    }
+  },
+  {
+    "id": "6996714f-40f0-41f8-a411-9e78a0a23351",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 165518.63
+    }
+  },
+  {
+    "id": "cb819854-7c5a-4249-b8f9-16e6f1be4ab0",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -1319,7 +3483,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2983f3fe-369a-4752-94fe-83f4289e1f36",
+    "id": "59730221-1300-4c0b-bb7b-855f33103c8f",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -1339,7 +3503,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b102c87-0c0c-4c99-a627-8ede0264ec9f",
+    "id": "f3beebaa-70a2-45ea-9b5d-918ab85cb149",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -1359,7 +3523,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "878c0324-00be-4a29-95b2-bb15b9a8cf07",
+    "id": "108deeed-0742-4c44-870c-fa7ec4abbfea",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -1379,7 +3543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9399ce14-4ea1-4e1e-89b6-ab723fef90d6",
+    "id": "f5d2a006-89a7-4c49-8aa9-bb754ab6405d",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
     "tipo": "C",
@@ -1399,7 +3563,207 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f16f0711-2846-4bd8-ade8-d8bb34e166d8",
+    "id": "49ade5a5-f171-4e9e-a439-9ab84916b6d8",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 85645.01
+    }
+  },
+  {
+    "id": "022b9d3a-2513-4b3e-9155-d71150a00974",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -337.40000000000003
+    }
+  },
+  {
+    "id": "e1f94812-5d3b-4acd-a27b-7154b21f4c3f",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11472.5
+    }
+  },
+  {
+    "id": "a3fc87a6-7600-48f7-8aab-3754048e0ae4",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 103.66
+    }
+  },
+  {
+    "id": "45ae3baf-788f-478a-8991-456b42d4e991",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1528.05
+    }
+  },
+  {
+    "id": "eae97d60-d4a7-436f-9104-e0019d7c9cd8",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17245.93
+    }
+  },
+  {
+    "id": "3b8714c9-7566-4f7b-8ed9-8a304ad54740",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 329.75
+    }
+  },
+  {
+    "id": "5eb44f38-d48d-49f2-9789-a4245704585c",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 51285.329999999994
+    }
+  },
+  {
+    "id": "581946de-069b-446c-ba45-f0701d4dfdd1",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.22
+    }
+  },
+  {
+    "id": "90e0360f-4811-4cca-99a7-eec62380af1a",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO DE FERIAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 68.98
+    }
+  },
+  {
+    "id": "a6d957d4-b7f9-4431-abd9-b2f6bed9b916",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1419,7 +3783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44895615-560e-461b-b43f-a83d8283d37e",
+    "id": "728b5f00-5004-4be2-a681-403ea726a8a9",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1439,7 +3803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e27361b0-7b2f-41f3-9db8-f6debe5a4239",
+    "id": "203ad49b-1254-4809-b567-0824a4d8b471",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1459,7 +3823,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4935e899-985d-4d8e-b8d2-41b672da387f",
+    "id": "4f481229-3d18-4715-8c2a-d603c6fce253",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1479,7 +3843,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d48d4ba-73a8-4a30-8c2f-8235e2beacb7",
+    "id": "3b1c643f-0b0f-4296-95f7-374f4d12be93",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1499,7 +3863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8734776-47d8-4a41-807c-0afb1266602b",
+    "id": "9b94170b-260c-468c-b52d-c0517f84d263",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1519,7 +3883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e75e5c1e-c4bc-4117-b787-f93e305eb5e0",
+    "id": "8683c61c-540e-4aa5-abee-dda199d91f3c",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1539,7 +3903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d503137-250a-461e-8167-a578c7b0d1f3",
+    "id": "01ea05f0-cb8d-43a8-a6bc-bef52218276d",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1559,7 +3923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "807deeb6-e31f-4f4f-9a9d-f7acbaa578c3",
+    "id": "44689e98-74e7-4ef3-9aa0-10ff0990e7f5",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1579,7 +3943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83543afd-d56a-4fae-93b1-8a277d40c12c",
+    "id": "57366722-8db2-4e1d-923d-bc35a79ecba3",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
     "tipo": "C",
@@ -1599,7 +3963,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28657818-1998-4c9a-a690-e5825dadfb26",
+    "id": "92dc76d9-1f91-40d1-9ce0-7e1aba22efbf",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41924.1
+    }
+  },
+  {
+    "id": "be91a163-350e-44d5-b087-d22276b00bb3",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14145.6
+    }
+  },
+  {
+    "id": "a692fe2d-11b2-4ebe-9131-b4958d308b1c",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1098.33
+    }
+  },
+  {
+    "id": "63e0dcb3-f941-4fbb-84b6-a7a94c3ba728",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8435.5
+    }
+  },
+  {
+    "id": "65e53d99-d943-4cef-a67c-77efeae16c3e",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 64462.350000000006
+    }
+  },
+  {
+    "id": "f4fd9eac-6762-4011-b6a9-0654c79fc279",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1619,7 +4083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab754c3b-10ea-42b6-a754-d02772568ea8",
+    "id": "e26d3987-87d0-4745-9b2a-7268e8c3507e",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1639,7 +4103,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dc6c8ee-1914-49c3-9374-c1420e603306",
+    "id": "9fd23fff-6dc8-4cce-867b-f0d261656bf5",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1659,7 +4123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a6ec38e-f03b-4606-a732-36460ac6494c",
+    "id": "0ca3cfeb-35a6-4bca-8da4-23f50abe7fcb",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1679,7 +4143,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dba545f-e096-40b9-b260-87be39c30aff",
+    "id": "2a9544f3-9094-41f7-9c0b-710b07d931ee",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1699,7 +4163,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2cbe67d5-8628-4995-be18-d672a09cf57c",
+    "id": "06c2d2e1-954e-47d6-8d50-ade8977e8264",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1719,7 +4183,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d57373a-c1af-499c-830f-04eda2befff2",
+    "id": "c68ff9a3-824e-455c-835a-5739e17825f8",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1739,7 +4203,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2271ecd7-b6e5-4fdf-98f0-440ee69f73d7",
+    "id": "a5ba9e65-99f0-45cb-9edd-beab7cbc1f76",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1759,7 +4223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9fda4c7-29d4-402d-bbd7-6c20000d4072",
+    "id": "3d3a0679-edb9-4ac1-8661-3745ec5d8802",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
     "tipo": "C",
@@ -1779,7 +4243,607 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cbf363c5-40a7-401b-a21b-66d6d2aa74b9",
+    "id": "75800661-da90-442f-b45e-6eca1755c798",
+    "codigo": "4.1.01.01.0007",
+    "descricao": "INDENIZACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AVISO PREVIO - INDENIZADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4577.94
+    }
+  },
+  {
+    "id": "7b2e1c04-9417-4543-abaf-8994d94ec0d2",
+    "codigo": "4.1.01.01.0007",
+    "descricao": "INDENIZACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AVISO PREVIO - INDENIZADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2782.68
+    }
+  },
+  {
+    "id": "da8cb6e8-632e-41d6-ab41-254c44d7a80b",
+    "codigo": "4.1.01.01.0007",
+    "descricao": "INDENIZACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PENSAO JUDICIAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 292.03
+    }
+  },
+  {
+    "id": "bf97b7b7-83a8-450f-8a11-48d1b0f02da3",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "LORATADINA 1MG XPE 100ML(GEN)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.9
+    }
+  },
+  {
+    "id": "688b4bf7-ee3d-4354-8815-4e48db997c26",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIPIRONA 1G 10CPR PRATI DONA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.9
+    }
+  },
+  {
+    "id": "44260c96-1a51-47ca-a57d-7dfe1c6413f2",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PREDNISOLONA SOL 60 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.9
+    }
+  },
+  {
+    "id": "01428fcd-db4b-45cc-836c-bdf3f22919fe",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PARACETAMOL GTS 15ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.9
+    }
+  },
+  {
+    "id": "104147c6-a8bc-4ed1-84ec-b7d2ac6f2023",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIPIRONA 1G C/10 COMP(GEN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25
+    }
+  },
+  {
+    "id": "c99978c1-aa3d-43c5-b7e2-44cb547a5277",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PARACETAMOL 750",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25.9
+    }
+  },
+  {
+    "id": "f2c1bbcb-5f24-45ba-a512-cb365d88353f",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CETOPROFENO LEGRAND GEN 150MG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25.9
+    }
+  },
+  {
+    "id": "38f60317-1ec2-43b5-a9c0-a2a3c227cf69",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "MEDICAMENTOS FARMACIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 77.8
+    }
+  },
+  {
+    "id": "c392e1c4-8710-4abf-81e6-1343094eec58",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "TENOXICAN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28.9
+    }
+  },
+  {
+    "id": "51e80f77-67ff-49ab-b05c-06d61cf45747",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CICLOBENZAPRINA 10MG C/10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 29.8
+    }
+  },
+  {
+    "id": "44240d9f-0645-4c30-ab10-bd4b34d2b3e5",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "MELOXICAM INICOX DP 15MG C/5 CP",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 31.8
+    }
+  },
+  {
+    "id": "1fe15c5e-0fd7-4e5e-8fab-14a01a33c914",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "TYLENOL SINUS C/24 COMP REV",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34.9
+    }
+  },
+  {
+    "id": "7d5920ce-89a6-41ac-a5c3-800bb4179899",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CEFALEXINA 500 MG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.8
+    }
+  },
+  {
+    "id": "874b9524-7f42-40b7-bc49-d2ec2ce2ab3a",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PARAFUSO 10X30 MA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.6
+    }
+  },
+  {
+    "id": "f836b752-f15e-4214-9531-f5dd0cb0c2df",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GOMA XANTANA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 792.33
+    }
+  },
+  {
+    "id": "b26f385e-dd44-4f7b-99ef-ff5c18392180",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ALGODAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.65
+    }
+  },
+  {
+    "id": "f511864a-b779-4a4d-b2eb-2e4630a48892",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ESPARADRAPO CREMER 2,5CMX4,5M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.88
+    }
+  },
+  {
+    "id": "291c39e7-b6f9-47ef-b0f6-206181b8a65d",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAND-AID",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30.47
+    }
+  },
+  {
+    "id": "1926bef3-2a74-405b-83f4-693033b68e4d",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ALGODAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.94
+    }
+  },
+  {
+    "id": "6eb7f9c8-9bbd-400c-a4c5-1f91a3035535",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SORO FISIOLOGICO 250ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17.06
+    }
+  },
+  {
+    "id": "d1b4ed71-3f72-4211-a76a-fd61815acb1e",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "MEDICAMENTOS FARMACIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36.07
+    }
+  },
+  {
+    "id": "f925642a-e266-41a0-9fd9-5802803c3edb",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIPIRONA 1G C/10 COMP",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12.58
+    }
+  },
+  {
+    "id": "ad670c51-f4f2-4ef3-807c-93401f818f46",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FENAFLAN ICE MASSAGEADOR AEROS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.19
+    }
+  },
+  {
+    "id": "67571769-3e5d-47df-b9a2-c039ba96fd77",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CICLOBENZAPRINA 10MG C/10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.54
+    }
+  },
+  {
+    "id": "fcf9b063-d7e3-4aa0-a597-585e87e53039",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CETOPROFENO LEGRAND GEN 150MG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.73
+    }
+  },
+  {
+    "id": "f54a65cf-24c2-42f2-b3b9-742019d965c8",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CETOPROFENO 20MG GTS 20ML(GEN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.73
+    }
+  },
+  {
+    "id": "be626c4a-7cc1-43f6-9860-56aad5603d16",
+    "codigo": "4.1.01.01.0008",
+    "descricao": "ASSISTENCIA MEDICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "XEFO 8 MG 20 COMPRIMIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49.79
+    }
+  },
+  {
+    "id": "daafda63-5e29-46f2-abf0-e288bedb82bb",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1799,7 +4863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eaf50e8c-1f88-42a4-93ca-358e3d6338a8",
+    "id": "1bd67217-3d74-4b30-ad80-9e7cde41afaf",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1819,7 +4883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c35423e3-3352-445b-aa76-7e3ebba6b788",
+    "id": "5301fe93-14f5-4ee4-bf88-aa104bb7de0e",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1839,7 +4903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8096e560-c272-4c99-9f1b-060f59f75d29",
+    "id": "94d2b7f1-bb3a-47d3-8837-2f6a850203b4",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1859,7 +4923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f11d0eb2-033e-41f2-b7ce-4176f662cc87",
+    "id": "51c1eb9c-3a87-45e6-b8e6-4cbaecb5c9c3",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1879,7 +4943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b92774f0-2cad-43d5-953f-8b4233a89489",
+    "id": "476d58df-3887-4bf4-a468-951828f538a6",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1899,7 +4963,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfaecca4-f981-4b4a-9e2f-2072cb5b747c",
+    "id": "c1fc1794-dea5-45f9-827a-9581e48a7eb6",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1919,7 +4983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86865952-4f90-4dbd-84cb-3b465301b93a",
+    "id": "5150536b-f3a2-4261-8a50-5866b1153314",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1939,7 +5003,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7083ce9-41f0-4fc9-889a-d0b48e384b08",
+    "id": "535ee097-ee98-44bb-af2a-2374181faab1",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1959,7 +5023,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "031bb263-918a-45c4-8f35-bf42d15e9201",
+    "id": "a686d0e8-c43b-4a10-bcc6-cf03194796c0",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1979,7 +5043,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ad3d367-65e5-4f81-a8b4-31037a3623a0",
+    "id": "dda1aa4a-27f6-4f33-bbd3-7d55b9ba7553",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -1999,7 +5063,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0cd780a-9760-4f67-af09-974c7e98aebf",
+    "id": "629ef759-9634-4717-846b-eb68b3120014",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2019,7 +5083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b96c40ef-352e-40f1-bc65-396ad7957bde",
+    "id": "9ce9624b-1cfc-4f10-b46b-17424d32a56d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2039,7 +5103,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "720e78ce-957c-420a-92ec-05a5bff09656",
+    "id": "757302c0-bacf-4352-a672-7fc288087b43",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2059,7 +5123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f631871e-65df-4f8e-b335-41c2b4d9afde",
+    "id": "d7a43add-27d0-473e-95bb-a57b796ea40d",
     "codigo": "4.1.01.01.0008",
     "descricao": "ASSISTENCIA MEDICA",
     "tipo": "C",
@@ -2079,7 +5143,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46d87387-87c2-43a0-89d4-204df91568d7",
+    "id": "0540cc53-5f7d-4c77-8c1f-a344b09542ac",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 242.63
+    }
+  },
+  {
+    "id": "c084059b-969e-4e57-b8ac-bbe2be154782",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16.05
+    }
+  },
+  {
+    "id": "b66d2103-80c2-4776-9be7-2e80a49f7760",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 113.99
+    }
+  },
+  {
+    "id": "f85c8b3d-ae5f-4374-8a33-223caa2ff3de",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 565.36
+    }
+  },
+  {
+    "id": "b1e2c51f-b1c0-4eeb-8142-06c5b789d347",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1019.34
+    }
+  },
+  {
+    "id": "f36f6b82-0f1f-417e-b346-a762769418d5",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2099,7 +5263,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5650a2c-cf31-450b-895a-e6e5b02f53f8",
+    "id": "a6f1ba2d-aff9-4a8c-a8f8-ecdbad710e00",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2119,7 +5283,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df8d33bc-869a-4c19-bdcd-7df8001597a4",
+    "id": "3749d65a-78c2-49d0-98a0-ad2ac78bf5db",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2139,7 +5303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2595061f-a392-4509-beca-5ba2d00beb2c",
+    "id": "06943a87-ba30-45e8-919e-19aa943f0d9d",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2159,7 +5323,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "acfce8f1-3467-49ad-b015-04dc4018250e",
+    "id": "6d3a3fd4-a7b4-4e49-abde-1e7ffc460d5d",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2179,7 +5343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71986e38-219a-45d8-b667-8324d18ea6cc",
+    "id": "662b0c08-e0e0-4273-a669-bfb07e12b57e",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2199,7 +5363,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec581c7a-fa58-4119-823e-b9f7f79acdb5",
+    "id": "45cc1a6f-55c1-467c-a1a1-62862a3df2b5",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2219,7 +5383,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d7cdc26-916d-48b1-9d1a-51d5bdcd196f",
+    "id": "d1634d89-a04c-4743-8926-cca7021c0787",
     "codigo": "4.1.01.01.0009",
     "descricao": "SEGURO DE VIDA",
     "tipo": "C",
@@ -2239,7 +5403,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ce18e2b-938e-460e-8909-6d35e002726c",
+    "id": "623b76f2-ef75-4e57-944f-c8ede0a46a85",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17268.449999999997
+    }
+  },
+  {
+    "id": "26c1cf8a-eb32-4b95-b580-d49de96a3893",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5521.6
+    }
+  },
+  {
+    "id": "5df4b783-5604-4fd7-abec-7921906061e0",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3618.54
+    }
+  },
+  {
+    "id": "aed05f05-ff7e-4079-826e-9ae674322be0",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 268.04
+    }
+  },
+  {
+    "id": "fc8632d7-36ee-492a-9c67-02524f143e65",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5971.44
+    }
+  },
+  {
+    "id": "409a70af-948e-44ac-83e9-bf7181772efd",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2259,7 +5523,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70daa459-9a33-4ba5-9ea5-92908c4d11e0",
+    "id": "fa0fc7b2-0d6f-4032-a557-e1490e19aac1",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2279,7 +5543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28902c95-2f9d-40ab-8483-4992bd9e1c21",
+    "id": "7116008e-a369-446e-b8ad-fb6ade828108",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2299,7 +5563,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5cf4738-7986-4b06-948c-cf9d6ad221eb",
+    "id": "3bdf1735-5f7d-44df-8677-f93c783f3255",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2319,7 +5583,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5340694-8d84-46a9-9da4-8f44aa9d8d8d",
+    "id": "6325bade-2c81-48bf-9fd0-7b84480813e7",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2339,7 +5603,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15fb3434-8433-4171-bb67-24c425dcedf6",
+    "id": "1ac9857a-5920-4847-a2cb-891f8932d85f",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2359,7 +5623,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84c9bac9-84b5-4225-8f10-3c903c9ff540",
+    "id": "e9e83a46-4c21-4d02-aaa9-5a612497c46e",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
     "tipo": "C",
@@ -2379,7 +5643,647 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04e11da9-2473-41ff-ae00-fef7d7db2141",
+    "id": "a224bd4e-5ae3-492e-b1a3-397f2f058709",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3027.18
+    }
+  },
+  {
+    "id": "1dde79c3-860d-4638-aad0-ad302d04a027",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4208.27
+    }
+  },
+  {
+    "id": "db3d3807-478d-45e5-9965-7366ede038c0",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1650.01
+    }
+  },
+  {
+    "id": "59a7e733-490f-4b14-a2be-71737313695c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4613.41
+    }
+  },
+  {
+    "id": "9c0bf063-413a-4163-b1ec-adeec83421b3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 377.72
+    }
+  },
+  {
+    "id": "b6d548fa-9071-4b90-bbf0-8885e04cf38e",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 29.65
+    }
+  },
+  {
+    "id": "64955d9a-0a4c-4a49-92d7-09336c2ce346",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.25
+    }
+  },
+  {
+    "id": "884b27f9-62d0-43c8-a56d-cc331240c4a7",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.01
+    }
+  },
+  {
+    "id": "6c31099b-8896-44b1-a590-af31bb53443c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.01
+    }
+  },
+  {
+    "id": "8af05cd8-7f9a-4351-9ed9-8f07765e9921",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.959999999999997
+    }
+  },
+  {
+    "id": "c2100473-f6c0-4b68-98a7-7c3cc6b08733",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 465.67
+    }
+  },
+  {
+    "id": "70094285-85ed-483e-9135-97cdca4d6375",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 381.92999999999995
+    }
+  },
+  {
+    "id": "b621919e-b39a-409f-a6a8-d4203fcbecba",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS S/ FERIAS RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -242.29
+    }
+  },
+  {
+    "id": "aa5896bc-b435-4923-bf72-6b8aa6f920d3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.01999999999999999
+    }
+  },
+  {
+    "id": "6c64c6e9-52f1-47bf-a0fe-44821044b9d0",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2514.14
+    }
+  },
+  {
+    "id": "aa11d0cb-88dd-44b3-8077-98e4fc3a96ed",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 56.9
+    }
+  },
+  {
+    "id": "67336c4e-fb91-413e-b036-f75471de1c84",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -5.489999999999999
+    }
+  },
+  {
+    "id": "d47e1588-a4c5-4368-9867-3826a3d3ef0c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 227.78
+    }
+  },
+  {
+    "id": "25558467-cbb7-4dde-8d53-2bd009b7ec74",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 309.77
+    }
+  },
+  {
+    "id": "a344e390-241d-4d06-b32b-f8c1d619cf47",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS S/ FERIAS RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -192.64
+    }
+  },
+  {
+    "id": "624af0ad-5eb1-491c-921c-3585c6826b2d",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13482
+    }
+  },
+  {
+    "id": "822c70b4-ed65-4ef8-9794-b6c4d0c13fe4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.03
+    }
+  },
+  {
+    "id": "6ed2982d-c1e9-488b-b3e7-96f1682a1455",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.4799999999999998
+    }
+  },
+  {
+    "id": "364f7cb7-1f57-4680-be3e-1426a11c6b89",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS S/ FERIAS RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -155.58
+    }
+  },
+  {
+    "id": "24c6e3e9-a324-4cf7-8011-0a36f84c4422",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1131.9599999999998
+    }
+  },
+  {
+    "id": "b1fffbff-22bc-4c4d-9742-0b8cbfd38bc0",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1384.73
+    }
+  },
+  {
+    "id": "b095db85-0645-4289-8f7b-b070e4405f6d",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20790.99
+    }
+  },
+  {
+    "id": "2b7d2d69-7314-4b43-a7fc-aabaf53685ea",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2312.43
+    }
+  },
+  {
+    "id": "a5ef656a-b6d9-4f42-b687-a69990e1e979",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1740.51
+    }
+  },
+  {
+    "id": "b0f7f0b0-8ec4-435f-ac09-7b741d299bd4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -17.37
+    }
+  },
+  {
+    "id": "1ff5ea77-e1f5-47c9-a341-8af613f9812f",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -11.24
+    }
+  },
+  {
+    "id": "383f782b-1886-4982-9466-5f0b34b5c3b7",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS S/ FERIAS RESCISAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -730.14
+    }
+  },
+  {
+    "id": "04a8c4f9-9338-4a05-836f-bb02394217af",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2399,7 +6303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1b70d62-a2c4-4e66-a3a3-18c1759589cc",
+    "id": "1b027b52-7db7-43ff-a966-fec942e49872",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2419,7 +6323,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71092bb4-1940-459d-b06d-202edb9a0571",
+    "id": "dc9a56cf-c507-4409-96b9-227117967439",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2439,7 +6343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0db04b35-9455-4890-8f4a-82fd5f816147",
+    "id": "05287f5b-47a1-4aa6-9c22-09aa42996509",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2459,7 +6363,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1fadcc3-141e-4813-a0b4-ab3b74e49df0",
+    "id": "bc098ffd-0e0a-4b87-86bd-923510758fe0",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2479,7 +6383,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38b0788a-2328-431a-9489-ea1171a3e6df",
+    "id": "ec060d48-3cfa-4db3-86d5-aef4e5bfd65b",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2499,7 +6403,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70b11f56-09c5-406a-b71d-03e75e7f8f7f",
+    "id": "2287a854-7901-48af-b069-8f4e23454d98",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2519,7 +6423,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52febab1-4bfc-4823-b6b6-e6404b98aed8",
+    "id": "bf3d5a5f-c265-4bfb-9215-8f81d65a3d9f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2539,7 +6443,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad60f237-d993-4ac4-9e19-ef6cd810d46b",
+    "id": "beb2fa75-2f8a-42ca-aaa7-d8afe57fb2bf",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2559,7 +6463,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53da7c74-249c-4040-b75b-a150277565a1",
+    "id": "9979428f-8fec-4440-9df5-000cf6bf42b8",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2579,7 +6483,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "046ed5bd-de42-42b4-a58e-468a7a3e85a4",
+    "id": "c484d7fb-6e27-4a1d-b063-82734dedb320",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2599,7 +6503,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "acc911e2-437c-4112-ace1-c86fc2a2095f",
+    "id": "d5fef17d-db0d-4ab7-8738-38f334c47022",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2619,7 +6523,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2142d67b-5dc2-428a-b4c5-cde12b4c6f56",
+    "id": "1aa5f30d-32d7-40d8-ba10-817bfd40501b",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2639,7 +6543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ea835d2-7460-484f-9d23-2261405407a5",
+    "id": "f7291f30-2f40-41b9-a7e2-a0c4b25bd6da",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2659,7 +6563,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e403ff3b-d08f-47eb-aeef-bd40b90760a3",
+    "id": "6aeb27d5-1762-4ba7-b69c-4ed06d2344e1",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2679,7 +6583,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8f5d55c-7316-4319-907a-6f5b5187262c",
+    "id": "df26691e-3f6a-4c00-9891-91093c005566",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2699,7 +6603,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ab206a2-ca1a-4205-8c3a-a56db8697226",
+    "id": "032ceb02-4379-44ce-8af3-5b65677d9662",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2719,7 +6623,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b352d9ce-7176-48fd-9d3b-f65466146271",
+    "id": "8ccfc823-9d32-4c18-907c-fd9b01d06b24",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2739,7 +6643,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85cf28bb-46f7-43a0-a540-7449c3cd6abb",
+    "id": "d4c63924-83ca-48f5-b759-567843be39de",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2759,7 +6663,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35965d0b-71a7-4e45-9f81-e1c9ac77d9c4",
+    "id": "870305c0-3692-46bd-acad-2fc9ca85b31f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2779,7 +6683,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca63e58a-0099-4c1a-8c45-06fbd26cdf4f",
+    "id": "0f187c2a-f936-474d-a0c9-127b607e1552",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2799,7 +6703,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89d0c58b-d5e9-4478-b5b9-fe9fad88aeac",
+    "id": "e22dbb03-e933-4f7c-a8e7-81ea234b81cb",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2819,7 +6723,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a0f219f-5734-4d9d-98f6-cd1d7454d9aa",
+    "id": "28a8c076-1c42-4e2a-b01e-3b9d47b0753c",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2839,7 +6743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4390ef83-d63d-4749-930d-d90748d72d8a",
+    "id": "9d804e2d-e9e2-46d8-ac9e-c950491342c7",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2859,7 +6763,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60e2dc62-222d-4441-9c96-78f155a45e10",
+    "id": "39010965-7299-4929-b467-b980de90a448",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2879,7 +6783,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bd1cf85-fb75-4a35-9fd1-107da8be3460",
+    "id": "4ec51600-789b-4da4-b3bf-951da38b0c85",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2899,7 +6803,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "769611ba-3ca9-4ac0-aad0-13a8a6c0f405",
+    "id": "69324420-de7c-4fd2-8318-01137d3b8100",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2919,7 +6823,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be5ddcbe-dbc1-44f0-be86-5569fd520973",
+    "id": "c5f789d7-93d2-4971-ab97-e39c0b125f02",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2939,7 +6843,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08e185a4-545e-4a69-8b7b-41800b30c564",
+    "id": "83ceb5dc-64c1-40ae-9e4f-284c371e368e",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2959,7 +6863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "018a6989-e05b-4f17-aa9f-a73cb4b4f29a",
+    "id": "db8d5494-cb55-43a5-a9e3-a3c00a91c801",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2979,7 +6883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b628454-2590-4ce5-9bd3-cd0261d47d80",
+    "id": "6743a11b-bf63-4b48-b1fc-12e2c1b7e949",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -2999,7 +6903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4efbe0a7-161a-434f-8639-002a1eb524df",
+    "id": "8c49ae95-4019-43cc-a44e-fa367767db2c",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3019,7 +6923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a56eadf4-d14c-4bf2-b9bc-192e23763a12",
+    "id": "ce63936b-b671-4d17-aae2-c7ac9cf2af51",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3039,7 +6943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd32ce6c-2319-47c7-ae55-4f3230cd3f80",
+    "id": "3f105484-37f4-4bae-b8a0-89c6e24ae0ac",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3059,7 +6963,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ea5a29f-e193-4bc7-9fb4-00eac7c4b3f3",
+    "id": "e4e6c930-ecc8-4331-82d5-6e4aff4220a5",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3079,7 +6983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99ecd676-b562-4f07-8bed-529a4f2987db",
+    "id": "46c5e443-3bc1-4bfd-9a4b-7f126599ca93",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3099,7 +7003,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f150252f-31b6-4be4-968b-d95e558c5f0b",
+    "id": "dd26a6c3-2804-41ed-89a8-1516cda4c06a",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3119,7 +7023,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19fe920f-2988-4b2d-baa8-ce547b79f347",
+    "id": "2eddee7b-a834-444c-8b69-247d85c2d172",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3139,7 +7043,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "152aaa93-685b-426c-b28c-65c81b792f8f",
+    "id": "9afa6e19-e3b8-468b-8218-7fb6ada0115b",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3159,7 +7063,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f2a86b5-1d22-4c20-803f-65a12a44bb58",
+    "id": "5cb092c3-05c9-4e25-8690-fe82b4049420",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3179,7 +7083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf98e5dd-1d76-40f2-821b-48697f93bf22",
+    "id": "a96c9554-50c4-49e6-9555-5f6a91dac843",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3199,7 +7103,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1298fb67-d873-494c-a0c5-e0b3a5bcec7b",
+    "id": "c20a791f-9598-4348-b6a3-39fd882042fe",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3219,7 +7123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45142ec0-518b-4932-a53b-0050cbcb43b0",
+    "id": "dc0f3403-d77b-496f-bc24-74b311e3806f",
     "codigo": "4.1.01.01.0030",
     "descricao": "ENCARGOS INSS",
     "tipo": "C",
@@ -3239,7 +7143,707 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "850aeff3-4bf4-44c4-af4d-bdb99f7984e1",
+    "id": "c5aa9514-a34a-4b71-b3d8-f2994df7ea37",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6851.5199999999995
+    }
+  },
+  {
+    "id": "39cb8644-2eb5-4f22-8b4e-90d0359587de",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -2163.44
+    }
+  },
+  {
+    "id": "9ebeaf10-4b40-4332-aa66-1ddc04cfc659",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.020000000000000018
+    }
+  },
+  {
+    "id": "6a871907-d5e9-4f77-a57a-5fd2b66d501b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5156.99
+    }
+  },
+  {
+    "id": "2cfa24a7-502b-4242-9040-046e5249e60d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -51.480000000000004
+    }
+  },
+  {
+    "id": "1de37f13-f839-4089-9b02-50f630199fff",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 62141.729999999996
+    }
+  },
+  {
+    "id": "af5ee684-1a2b-4200-a9d8-1dd11bd6300f",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3353.89
+    }
+  },
+  {
+    "id": "fb1db343-ecfa-405b-b267-bf0068c48397",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4102.860000000001
+    }
+  },
+  {
+    "id": "c393aec7-26cf-4af2-b86e-cb277bf9976f",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39936.7
+    }
+  },
+  {
+    "id": "ea2bd286-0c1f-4844-ba2e-12869def1b45",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.63
+    }
+  },
+  {
+    "id": "ad1f587e-b2d2-455f-acd1-a936c8af9447",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -461
+    }
+  },
+  {
+    "id": "992294c1-f460-459a-9752-722fb934bc2c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.11999999999999997
+    }
+  },
+  {
+    "id": "5ac038ac-69b8-47c5-842e-d1d13714a37a",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -0.010000000000000002
+    }
+  },
+  {
+    "id": "c737577a-d205-48c6-a963-9cdffa83a958",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 168.67
+    }
+  },
+  {
+    "id": "b77a16fd-cb2c-4de3-8069-36a61722819e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1119.15
+    }
+  },
+  {
+    "id": "73fb65a2-74fc-40a3-abc6-c7ac7d49749d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -570.8
+    }
+  },
+  {
+    "id": "2f58f1f0-d2e8-4327-83c3-74c6460f5c7c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 674.84
+    }
+  },
+  {
+    "id": "3d4d7561-7f65-4ae9-955d-1b4b8fc2a2c3",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 917.78
+    }
+  },
+  {
+    "id": "bb783c83-6c21-4428-ae67-045d890d93d0",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7296.17
+    }
+  },
+  {
+    "id": "79aeeb36-4bd8-41bc-8693-aaa370708e3e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -0.05
+    }
+  },
+  {
+    "id": "d49f86fa-8218-4c43-b42f-975b59e506f9",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1131.6399999999999
+    }
+  },
+  {
+    "id": "8d89e164-d7f2-4615-8326-310168ae336e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 62.17
+    }
+  },
+  {
+    "id": "96277d14-6773-43c9-9102-899a3ac4694b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1379.67
+    }
+  },
+  {
+    "id": "888ccc4c-5671-4353-883b-dfb8b4494989",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -717.9
+    }
+  },
+  {
+    "id": "3c6c119d-a5cd-4564-bbc0-493aa5de978b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.01
+    }
+  },
+  {
+    "id": "751a6c7d-b0d1-4276-b4d4-45701e374b94",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -0.01
+    }
+  },
+  {
+    "id": "7dc4d76e-7e5c-4d7d-aad9-ac5648f29161",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 87.87
+    }
+  },
+  {
+    "id": "6460c805-975d-49f7-8aaa-de35d2961d9b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 122.24
+    }
+  },
+  {
+    "id": "d13e05e8-7ddb-45b3-b25c-f8381aad36d5",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13586.44
+    }
+  },
+  {
+    "id": "94cb7904-1142-4f20-ba36-65c337469c87",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8433.65
+    }
+  },
+  {
+    "id": "c0476ae1-aa8e-47b2-8024-0e48aac4c2db",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2436.01
+    }
+  },
+  {
+    "id": "3b679c8b-f1d9-4e3e-8e60-e6bbdce75d0b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 85.87
+    }
+  },
+  {
+    "id": "2b37c9fe-2d70-4fa7-88f8-9ebf51d67229",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS  039251",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -26.96
+    }
+  },
+  {
+    "id": "74d46cb5-d309-4921-b125-e44162748f40",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS  039251",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -27.68
+    }
+  },
+  {
+    "id": "a029508f-256a-4909-8442-a14770befeac",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -225.44
+    }
+  },
+  {
+    "id": "4b044d9e-b004-4b37-9afe-e394d27d520c",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3259,7 +7863,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10faefc1-6ece-4243-9775-4d230dd70c0a",
+    "id": "7617a1bc-4f6e-4d53-bfcb-efeed3fadd8a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3279,7 +7883,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1045bf9b-432a-4295-8190-01ec22e11477",
+    "id": "4fbef0a4-f1c4-4b6f-a31e-0f0e48f1b1f6",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3299,7 +7903,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78075325-17a9-4067-ae9f-1a809fbce235",
+    "id": "a23dd5d8-29d6-4999-aed2-0cfa3382adb9",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3319,7 +7923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebdc7009-11de-442a-973e-3c714e0b29c0",
+    "id": "922bcce0-0965-426c-80be-e98fd4f726b1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3339,7 +7943,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be0f3e6c-8d1c-4518-a153-02a3d99266f3",
+    "id": "651df340-8fe8-4678-b02c-661dce9359f0",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3359,7 +7963,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef64639a-8b08-4603-a46e-5dcba1921051",
+    "id": "c592a2b8-b713-4264-9ff6-fdb5c4433ec6",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3379,7 +7983,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10434aa6-05e0-4331-a972-c5ae9db9ec5d",
+    "id": "05a4d212-76a7-4cf0-a166-fb24fa8a59bd",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3399,7 +8003,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a7dfa97f-0a81-41c9-849a-d6ed702b39f1",
+    "id": "c21037c5-a44a-4141-a12e-a70ee180853a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3419,7 +8023,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2a9a879-7091-4fe4-8855-ee362eac90f5",
+    "id": "32f1ee4c-1140-4458-8ff1-3d2cc723edd0",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3439,7 +8043,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed2f3e6a-eb5e-4273-83a0-faa4f1cabad7",
+    "id": "6add803a-b61f-40dc-8b28-973c806aee80",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3459,7 +8063,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d63a05ea-35eb-47f4-9d8b-76a82a5eb197",
+    "id": "bd5545ee-9dd6-462f-a82d-599c523f1cbf",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3479,7 +8083,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8c5f831-0aaf-420c-beb6-82358f1b3315",
+    "id": "49065dc4-3073-49e3-8482-87421609174a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3499,7 +8103,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3236b05-9505-4597-a4c7-9082018149ce",
+    "id": "4e29161f-660f-4169-be89-9b6adf19704d",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3519,7 +8123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0c70070-4b34-43e3-8b53-572e99054c43",
+    "id": "b7b7e708-f403-4f42-ac79-3b8c2a9fcd51",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3539,7 +8143,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e7b3487f-2e45-4272-be18-3c8348831738",
+    "id": "ac5d11ed-0582-4601-b3a9-0d89b93845e5",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3559,7 +8163,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89bb6d85-84bf-4e63-b404-1742933bd686",
+    "id": "c8e4ac80-e6d7-4783-b199-d182ec65c737",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3579,7 +8183,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46779aaf-abae-40b3-9949-cc70eaf5d26f",
+    "id": "98fca7c4-8fce-4ad0-862c-5aece1fbfc82",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3599,7 +8203,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a5f5bb3-250f-4dee-8545-2ebb0bc55832",
+    "id": "8d276494-23dc-4e5c-8b8c-d84aa4c4f642",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3619,7 +8223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7291777-7971-4374-9f8a-3ee481456bef",
+    "id": "26c5f6be-0853-4de8-beb3-22ef36f3118a",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3639,7 +8243,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38409058-1aba-45a0-84e5-33031f9053a0",
+    "id": "00b9bd00-f199-469f-992d-5c80f740ab56",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3659,7 +8263,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a20ef831-1371-4867-a31e-377eb3539fa4",
+    "id": "daac0170-6d81-4505-82fd-b82c2787f2d1",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3679,7 +8283,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4491ba80-cca6-4f18-a7f7-dc7f05ad3ff9",
+    "id": "185ca0a0-3f18-4c8d-9867-a08ce1407a2f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3699,7 +8303,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45f1cf62-de78-4835-bfb9-fe4bcdd7975e",
+    "id": "d31d2e65-317a-4169-8611-130fd8167a92",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3719,7 +8323,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "239e1366-8425-4c9d-9f8c-6c80efb2c203",
+    "id": "7a2b40a1-59a3-4c9a-a685-cf7bf20b8d40",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3739,7 +8343,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0444575-8443-4b17-a6c4-9beaf0f9ad57",
+    "id": "eae0dc01-5e4b-443d-b308-e5c2a63b07a3",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3759,7 +8363,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf24cdaa-ce34-4d7f-b29a-cd9951b27207",
+    "id": "d4dd2e21-634d-4f61-8717-4d9bf7a0d79f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3779,7 +8383,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18c43a89-cbb8-4ea4-979b-f8e9e2ebde30",
+    "id": "32b97258-eded-49f4-b71a-28c722be9d26",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3799,7 +8403,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "361c0b19-b585-4422-9e9e-eff148d8c444",
+    "id": "df157153-e3ba-4a1f-a9e9-9c86067c3fd3",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3819,7 +8423,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bc657c2-6954-48a8-9e73-8d06c27ee78a",
+    "id": "2d0fd90d-2291-42cd-a7ae-27e8d649f113",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3839,7 +8443,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1efe9d3-05b0-4d26-b5fb-253ef80d0fb8",
+    "id": "aad921e1-1404-462b-8870-2be73627aeb3",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3859,7 +8463,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "829c0318-d0e6-4593-9724-cc54fe71601e",
+    "id": "efea6241-a153-4833-bb3e-a01ac691469f",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3879,7 +8483,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "086346d5-9bd2-4713-b97d-448ea3beac3b",
+    "id": "7b030196-c000-4898-8ed4-6c011ed9aa0b",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3899,7 +8503,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20ba9425-91b0-4610-823d-6b0155d4be99",
+    "id": "701723a8-b579-4c4d-850d-cb31fd3e81e2",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3919,7 +8523,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1647852f-51c4-4cd5-8b18-559327179d68",
+    "id": "1a761fb3-cf18-4ad9-af63-fdea731c09cf",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3939,7 +8543,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6355a280-b8df-4115-97d9-34dc7f0d149e",
+    "id": "339670e0-125a-4582-88db-7f0cfb054598",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3959,7 +8563,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc9e7444-2d56-4236-ba31-0a04f424e4e4",
+    "id": "1540321e-236d-4922-89c8-f912626d05a7",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3979,7 +8583,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c842284d-aa40-4504-b9c0-0d7e5dc6bf64",
+    "id": "6a73b86a-70f8-44ab-af45-f4f725fe743b",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -3999,7 +8603,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bb94af9-9c34-4001-b73f-6211b7c2eef7",
+    "id": "f57ea7c4-6eff-4fa3-a73d-bc9942e52ecf",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
     "tipo": "C",
@@ -4019,7 +8623,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "841161f6-7001-4720-8551-e806d782504a",
+    "id": "7caf51ec-0dfb-47dd-bcc6-a136214683fc",
+    "codigo": "4.1.01.02",
+    "descricao": "4.1.01.02",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "9cce5243-f435-477a-9911-a05464d9f339",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -4030,7 +8645,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f17e8eab-5d6f-4e04-a254-7f27db38287d",
+    "id": "85d0ff38-2d78-4763-bf9a-2d82f74b822b",
     "codigo": "4.1.01.02",
     "descricao": "4.1.01.02",
     "tipo": "C",
@@ -4041,7 +8656,607 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5675dbe5-6632-472f-a2dd-a9e95da2aef2",
+    "id": "28784d92-96f5-4b8e-8c69-06bc716e7750",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2144.9
+    }
+  },
+  {
+    "id": "30779fc8-7928-49c9-8998-46d97612cc66",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 68.34
+    }
+  },
+  {
+    "id": "ae3cbd8a-aa8b-41bc-a79d-00630e26fc7b",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3390.9399999999996
+    }
+  },
+  {
+    "id": "0f655e44-411c-4a13-b512-cf4f2178b6a3",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE ACESSORIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3041.41
+    }
+  },
+  {
+    "id": "90575c27-d84a-4ec9-822b-d098310b1716",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "EXAMES OCUPACIONAIS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1775
+    }
+  },
+  {
+    "id": "30b63b95-053a-40c3-8672-66d763a558db",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3300.22
+    }
+  },
+  {
+    "id": "c4573dc5-6440-43e7-9619-0457bdd4a636",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 798
+    }
+  },
+  {
+    "id": "cc982205-f783-446c-9120-3c98e67ca86e",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "ALCOOL ETILICO HIDRATADO CARBURANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 127.56
+    }
+  },
+  {
+    "id": "cccb32a7-3a33-402f-bc77-2a3feebd4a94",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "EXAMES OCUPACIONAIS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 377.5
+    }
+  },
+  {
+    "id": "0ec7cf6f-7700-4d6b-8844-707ed50e8b64",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 138.99
+    }
+  },
+  {
+    "id": "ead933b2-5d9a-4583-89b5-ee3f6e71404a",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "EXAMES OCUPACIONAIS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 168.75
+    }
+  },
+  {
+    "id": "2e84b42a-f2b4-469e-b699-d4db481e84dc",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "XXX",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 80
+    }
+  },
+  {
+    "id": "cbe1e89d-a075-441c-9ddf-d35d9b0cf050",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 105
+    }
+  },
+  {
+    "id": "219a5e25-4696-46d4-af6f-363ef7cbd2cc",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 529.89
+    }
+  },
+  {
+    "id": "07864283-27ac-48b7-9bb7-b07ad53f87b5",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1415.04
+    }
+  },
+  {
+    "id": "c3d93557-7f8e-45ca-898f-518c55743741",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 247
+    }
+  },
+  {
+    "id": "1e90ba84-88c9-4aca-8206-d1b499031344",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE SEGURANCA EM INFORMARTICA, BACKUP E OUTROS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 250
+    }
+  },
+  {
+    "id": "0762038f-ef63-4e6d-929d-f49cf81c02d7",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 787.5999999999999
+    }
+  },
+  {
+    "id": "2a73e5e6-698f-4e00-80f7-690d2f6b5400",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1881.75
+    }
+  },
+  {
+    "id": "ac887c03-acd6-4218-a6f2-5fc940204f37",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1190.63
+    }
+  },
+  {
+    "id": "de011c93-f157-475b-90e6-6d6f9f883636",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 665.62
+    }
+  },
+  {
+    "id": "f5bd2d92-3164-406d-8f68-42b113a26bd1",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 665.62
+    }
+  },
+  {
+    "id": "90124c1c-4acd-47bb-8722-1d76f6953e1e",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 665.63
+    }
+  },
+  {
+    "id": "acd664be-826a-4576-8952-aa179241efdb",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE ASSISTENCIA SOCIAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 672.58
+    }
+  },
+  {
+    "id": "25900726-4cd3-44d2-a48f-9bcf9796662b",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10193.73
+    }
+  },
+  {
+    "id": "7f66a82d-54d6-4201-a112-a46211c19a4d",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE PERICIA, AUDITORIA E ANALISE TECNICA - PRODUÇÃO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5608.6900000000005
+    }
+  },
+  {
+    "id": "3880e575-7e87-4531-aec8-e9533c2d674a",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1600
+    }
+  },
+  {
+    "id": "b6911da8-586d-4b6a-b837-2888c9cac0be",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1600
+    }
+  },
+  {
+    "id": "a7ec3d77-046d-499d-9732-cb8293accedd",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2732.92
+    }
+  },
+  {
+    "id": "65b1e878-7a11-4906-a5ab-bec6fc643954",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE CONSTRUCOES E EDIFICACOES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 22950
+    }
+  },
+  {
+    "id": "85d9fcbb-84ed-443c-a1ab-397b26f86730",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4061,7 +9276,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0eb9078c-4c8f-484c-b371-a715fbf96c6a",
+    "id": "307f6fa3-ca99-4c82-ba24-dc53cdb3f240",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4081,7 +9296,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b909de6f-1de8-4203-8766-b2cddba09b39",
+    "id": "f9fe7a42-6153-471b-9a4f-e500c0d484c3",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4101,7 +9316,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16dcfc14-9883-471f-9be2-23a3c3a5e34e",
+    "id": "a966b069-3450-4d56-8a67-2c264fa7043d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4121,7 +9336,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ebdf73a-7fbb-4326-a1c1-9521fc831d97",
+    "id": "f3c186e3-2f6e-47a0-a254-f84940088611",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4141,7 +9356,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d5c216f-4699-4ce3-8a50-9bbe61a2556c",
+    "id": "d176e254-7973-49e9-9210-5083a70e0da7",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4161,7 +9376,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9995c18-2338-4e58-9950-80b0094ea808",
+    "id": "80dcffda-b55b-4db2-b1d0-c6698120acb9",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4181,7 +9396,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a586079e-910d-47d3-b2df-2e813879ea5c",
+    "id": "fd81c050-c538-44d8-9460-67ac02c57af2",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4201,7 +9416,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e713978-7c09-43e7-b66f-e8ac6d6d0a9e",
+    "id": "78104764-cd3a-4025-9970-682912007e44",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4221,7 +9436,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a03f3ec3-81c7-4d44-b6eb-b3176d45523c",
+    "id": "b3bae068-63cc-45de-8d44-c1e426d6e36b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4241,7 +9456,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6cb56629-b160-48e6-9500-2e58a753f92a",
+    "id": "40080aaf-ba61-4b31-96c0-b6bf4340ee6e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4261,7 +9476,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b10f9485-86f5-4d8b-b1d5-d4d9180238da",
+    "id": "7a34de3b-d26e-4ac4-a9c9-f893329970de",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4281,7 +9496,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c511156-2826-49ee-9402-99d63d6ae656",
+    "id": "2d0c5905-b7a6-4739-9bd6-66fbf3eea972",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4301,7 +9516,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58388e32-7d5c-4e36-873d-7a0bfb8301ef",
+    "id": "21bc0f2b-249d-426b-b596-ab94b85ccf12",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4321,7 +9536,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ef350a3-66e2-4c10-986d-8e495f80ae9a",
+    "id": "8175aa05-dee7-4a47-a4fa-256d275f626a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4341,7 +9556,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2017104-262d-4981-a0de-4c1bfc1f7ff1",
+    "id": "a4311984-a4ef-453c-806d-cff5643aeb24",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4361,7 +9576,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8f0a042-5136-4f05-9e49-4b867356fa66",
+    "id": "8b2d63f5-6e02-4f78-a888-bcd445a460c8",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4381,7 +9596,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f250f3b0-6bf0-4ccd-a120-77b9f9bd41cf",
+    "id": "7767a0a5-9601-42ab-8dc5-427e296a2ff0",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4401,7 +9616,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2327ba6-29c7-4eaa-ac63-691f24523c7c",
+    "id": "c853960d-7c0b-44e9-82ee-2bf68ac44e7d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4421,7 +9636,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5a947c5-2eed-4681-9b72-04ee4bcc370a",
+    "id": "9fba8c2b-a7f7-4c8c-9fe2-829ac3e12c39",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4441,7 +9656,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aac5ffd9-b6b0-4ff6-a68d-b84c27c127c8",
+    "id": "2c2c4ce8-056a-4d83-846b-ebe8c7d97712",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4461,7 +9676,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27cdc1eb-91ba-4867-9e93-8c9d178774ad",
+    "id": "5b886f0d-dc93-4748-989b-49d867c1ecb8",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4481,7 +9696,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3543011b-5bef-4c2c-b674-90f6d0264160",
+    "id": "2e663a86-e50e-4f90-8c9b-757163b8906c",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4501,7 +9716,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a96614c-f9ee-41d0-bfe0-92504e35fac0",
+    "id": "a700ac11-13f2-4be2-8802-6b8feb0128ee",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4521,7 +9736,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "620fe7ee-976a-40ed-b4a7-614518ca43ab",
+    "id": "06b47b1a-b66b-4c89-a915-f09f061471db",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4541,7 +9756,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "976297cb-5a66-4681-8d22-197a23c4b173",
+    "id": "7e4002f9-2ed8-4d81-a0c1-de4cd202b516",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4561,7 +9776,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb973895-aaf7-4c5d-a1bc-bc76263bb3d0",
+    "id": "ce92362f-3c4d-4ed5-8c7e-693285a5283f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4581,7 +9796,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a3ced5d-fbbe-4eef-a7b2-fc61d6ec0532",
+    "id": "0c76c9b3-7c3c-467b-b468-f93814d2823f",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4601,7 +9816,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1b5f1d0-d02f-49a2-8582-e40002605aec",
+    "id": "d1bb8447-5cc1-4d77-8c5f-2805fc9c0b3e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4621,7 +9836,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1e9441b-2806-4f94-8dce-07c1976f885a",
+    "id": "376705e8-9888-4f4d-b8db-021ef273d963",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4641,7 +9856,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e58f618-899c-48b7-93b3-ff1b9d4afba5",
+    "id": "c445e263-27da-4bba-923d-b2f9e726186a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4661,7 +9876,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6abe06c2-635a-4763-bd16-a1e7400c29e4",
+    "id": "9d3391f5-4cef-4051-9ddf-f2175f5cd981",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4681,7 +9896,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fb5cd473-3943-415e-bfec-de58ce0353b8",
+    "id": "af03f130-6019-40e8-91ec-3bea2e86016e",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4701,7 +9916,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41395bd2-3ba7-40a6-982a-d14defe0676e",
+    "id": "6deeb692-672d-4d2d-af97-fed5e70fae2a",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4721,7 +9936,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "132b60d7-b5ae-4acf-b3dd-71076024d4a7",
+    "id": "0a6385ec-1632-494a-93eb-e3afa19a5570",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4741,7 +9956,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32bb94b8-16f9-428b-9adf-4310c784e10c",
+    "id": "caf66909-7579-415f-82a4-014e6755f41b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4761,7 +9976,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "522fc968-d490-4f86-a538-fd9efaabf8a7",
+    "id": "9cb598ab-960f-4e87-9103-6ae07de6b84d",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4781,7 +9996,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2fc2b6e-044f-4abe-9ec2-5f930f96cb4f",
+    "id": "7bc25095-6477-4966-b6cd-e79d159d0355",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4801,7 +10016,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8ec10d9-39cb-4ad4-9517-5c8485f647a9",
+    "id": "b5257075-b2bc-492e-bdd3-337b219a8d0b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4821,7 +10036,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4b9e462-b463-43f9-89ef-005999c1ee57",
+    "id": "9bab1fb6-93a6-4c6b-82f5-2a9be333e293",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4841,7 +10056,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dda1684-6c5d-4619-a5d7-6617c25513ad",
+    "id": "028fe9db-cfa4-46be-ad5f-4dc1afec4018",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4861,7 +10076,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3ff6c52-cb88-45d2-89f8-96d4febf64c6",
+    "id": "4cbdd8e0-30f0-471d-abdd-93e96a61a3f9",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4881,7 +10096,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff293ab7-d284-4537-b0d2-4744cec30667",
+    "id": "b8439020-ffae-4eb0-aa2f-a1227e14e006",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4901,7 +10116,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd488687-df5a-49ac-9554-9f3c4dcd5c6b",
+    "id": "9adb5bc5-d285-45cf-b279-1568a8ceffa1",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4921,7 +10136,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66223a7a-64d6-446b-bcdc-745c5da25f01",
+    "id": "04e9c860-b975-4ef2-a799-4ec0df51d487",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4941,7 +10156,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fcb05f26-a2e4-4744-8988-eca4fcd816b5",
+    "id": "e86fbec6-8f0f-461b-90cf-26e91ff93cdc",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4961,7 +10176,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c07fb71-bf99-44d2-99e3-2b9fc2e98a8c",
+    "id": "de14fe7a-1e57-4edf-8da4-37a038769773",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -4981,7 +10196,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a728e06-8de8-4a13-943b-954aa9a5cbaa",
+    "id": "884c20fe-4e57-4b5d-a419-3b06f84099a4",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5001,7 +10216,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f88d219-1bfe-4003-8d5d-9fdbd15a6a88",
+    "id": "195aff94-508a-425d-920c-fcd5c339ecd7",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5021,7 +10236,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "deef7d52-fb0b-4624-9318-9ead5b760f7e",
+    "id": "34212cb3-aa4e-4199-8b75-3f5787817c21",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5041,7 +10256,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0867cb34-f8bc-4d30-a498-efecaa130eb2",
+    "id": "f3a28adb-dc18-4d0d-b4cb-242df89df338",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5061,7 +10276,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90e779d3-98f5-4221-bd15-15ba1359a827",
+    "id": "049cb460-b3dd-4374-9cb6-8737cf7be466",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5081,7 +10296,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f135d32-0e37-4492-8b26-d0c5ee760365",
+    "id": "faa9eabb-70d3-470c-880c-6ab6d8d36ad8",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5101,7 +10316,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88713bbe-942a-4eca-899d-6fd0879a9a96",
+    "id": "e99ebf64-b355-4cb7-b13f-041b3595dcf2",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5121,7 +10336,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67360aeb-1dd8-44fa-ac53-e4ba523418b4",
+    "id": "0e141024-09b7-4448-bbc5-9f8fd4b4589b",
     "codigo": "4.1.01.02.0002",
     "descricao": "SERVICOS DE TERCEIROS PJ",
     "tipo": "C",
@@ -5141,7 +10356,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d755fe80-5b4d-48a5-92f0-f26e5f0c360e",
+    "id": "acab3a87-c1f3-4ce8-bffd-0486d6dd4572",
     "codigo": "4.1.01.02.0003",
     "descricao": "FRETES E CARRETOS PF",
     "tipo": "C",
@@ -5161,7 +10376,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d6b76d4-0c74-4eed-bf5d-d78b7de1e97f",
+    "id": "dbf5c090-0732-4948-bcad-a92927641d05",
+    "codigo": "4.1.01.02.0004",
+    "descricao": "FRETES E CARRETOS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "FRETES E CARRETOS PJ 000013",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 119644.23
+    }
+  },
+  {
+    "id": "c65cde0a-0988-4e81-8fe1-b10b33d2d27c",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -5181,7 +10416,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d7a4b8c-4c8d-4d73-ac85-74efafa034b8",
+    "id": "88f31d56-8545-4759-8d55-ca9416ded6e1",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -5201,7 +10436,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c57b7d7-14b9-4270-a302-927516e2569e",
+    "id": "0d09dd94-c8b9-465b-a7ae-2788675d10db",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -5221,7 +10456,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d448c9a2-9c69-4f55-ba8e-2b06e5d52917",
+    "id": "c3b76bf3-bc4a-4383-9695-b08bd7781617",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
     "tipo": "C",
@@ -5241,7 +10476,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50258f5e-a3fc-4860-bb54-96a629bbcdcd",
+    "id": "9c70d3bc-ab66-4ed4-92c2-951a490b1716",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -5261,7 +10496,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00b5ed60-c180-407c-9ab0-9fea3bd239c0",
+    "id": "dc69f238-4f85-4045-88e9-63a37ee00b9d",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
     "tipo": "C",
@@ -5281,7 +10516,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c3e5217-3825-4430-be3b-c7b06c0a0996",
+    "id": "bdfb805f-3d91-4484-a018-3de4c2047edf",
     "codigo": "4.1.01.02.0012",
     "descricao": "COMISSOES E CORRETAGENS PJ",
     "tipo": "C",
@@ -5301,7 +10536,49 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b057a343-295a-4474-aea3-912614089501",
+    "id": "938f25c8-b79f-4e2d-98fd-4a8d533227de",
+    "codigo": "4.1.01.03",
+    "descricao": "4.1.01.03",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "f7e21bcd-821f-46c5-8f11-54946adb3570",
+    "codigo": "4.1.01.03.0002",
+    "descricao": "LOCACOES DE MAQUINAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.03",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.03-LOCACOES",
+    "nomeProduto": "LOCACOES DE MAQUINAS 0001",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6522.96
+    }
+  },
+  {
+    "id": "4efa224a-9366-4468-ab53-3e0726fa7a3d",
+    "codigo": "4.1.01.04",
+    "descricao": "4.1.01.04",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "c57cf7c4-b100-4c85-9a75-b8debcbd8b1d",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -5312,7 +10589,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2c9e74fa-f1d1-441a-a7f5-dc44b418f34b",
+    "id": "46b29fec-044d-4af2-92e3-31494366563f",
     "codigo": "4.1.01.04",
     "descricao": "4.1.01.04",
     "tipo": "C",
@@ -5323,7 +10600,187 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "d9566d98-50c2-4c68-97ae-ad5d9a32e184",
+    "id": "8ad0408b-3271-4258-966d-69d984c9831d",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.08
+    }
+  },
+  {
+    "id": "98fa925e-b33a-4386-aa36-5c6ab2266ce4",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 104.99
+    }
+  },
+  {
+    "id": "4768b2c8-5703-4d3f-8591-bc6c995776c5",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 314.95
+    }
+  },
+  {
+    "id": "4375e59d-7ec2-4efc-a6cb-7eca5d5111d9",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIFICANTE 2T 8017H 500ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 92.9
+    }
+  },
+  {
+    "id": "e23c423b-aeb2-4856-9223-026a67439756",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -15156.22
+    }
+  },
+  {
+    "id": "c1083693-dacc-42d6-b5d8-01560f6cf40a",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GRAXA LUBRIF SABAO LITIO NLGI-2 BALDE DE 20 KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 895
+    }
+  },
+  {
+    "id": "190e3cd2-4643-4ebf-bb48-6d252338515e",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.22
+    }
+  },
+  {
+    "id": "1cf00e0d-1da4-4724-82ad-81a2f5f09fdc",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 125
+    }
+  },
+  {
+    "id": "00b887ef-7795-4357-98a7-3222b997396e",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 855.5999999999999
+    }
+  },
+  {
+    "id": "ff652e13-bd93-47aa-9631-eddf6a6e44af",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5343,7 +10800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d85bc35e-3157-4472-abed-d342ade2fd6e",
+    "id": "7aebbf00-8a88-42f0-ba64-5616e17fa79e",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5363,7 +10820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a11e9f8a-29ff-4f82-b504-44224adba8fc",
+    "id": "8a059276-ab89-4799-bc23-7ea23d4d3463",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5383,7 +10840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "461aa0bd-b5d8-4234-a3e1-e7221a2e5be2",
+    "id": "e4fa2afc-e69a-4db3-8736-7e0efcf960d1",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5403,7 +10860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7cd2287b-3935-4946-a961-c8300401379f",
+    "id": "c703bfbf-c0fd-48bf-b2a7-6a80c7e9ff53",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5423,7 +10880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2211382a-5a10-4fd4-a0a0-3152a65fdfa7",
+    "id": "e5542f44-693e-406d-ac08-a3c4466db299",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5443,7 +10900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15853560-1b14-4b93-9a83-fc77dee6a154",
+    "id": "a1a9e231-8c35-4e25-be10-cb059e9db144",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5463,7 +10920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7532aa0a-eb36-40c8-ad91-46f3af122f5a",
+    "id": "4232f90c-c12a-4a79-9ec9-573b4dc867e1",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5483,7 +10940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6aedf62e-759a-4f4f-a2d4-321d746d21be",
+    "id": "d911f9aa-e7ce-4905-acd4-29d335cd87b3",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5503,7 +10960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a01ea28d-ffb4-4e65-aa07-37e4ebf00185",
+    "id": "9774e31c-778d-4d55-b631-e276d264d6e3",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5523,7 +10980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5da62ab-ae70-460b-b0db-0e31047fcd87",
+    "id": "63e66dce-0800-4ebc-8e45-92e62abcabe5",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5543,7 +11000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6448a7c6-4021-41d4-afba-991cb34b355b",
+    "id": "57951f32-17ee-4656-9028-f2ddd1e48913",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5563,7 +11020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97d20d73-7067-4d9a-aa49-2f509bad6837",
+    "id": "9821c229-3750-44ba-9571-13e84f411eb9",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5583,7 +11040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab00faf1-4143-44af-bf9e-c497c4895124",
+    "id": "810abdbb-f7d4-4700-8ff9-314fa5fe98c8",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5603,7 +11060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3243d230-6079-4381-bc47-67905f9da619",
+    "id": "63d7a6e1-14ff-4fe2-a865-3b620a909455",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5623,7 +11080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "164b8f7a-9559-434e-a1eb-2fd4f6db7b92",
+    "id": "18b4d0cb-5f28-4a90-8ce0-326b81afe651",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5643,7 +11100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5c76dcd-96cd-46a2-9a73-1f3223e1bbbe",
+    "id": "455f6151-1664-407e-9ae2-6ae7230d72cc",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5663,7 +11120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "445929a7-cb30-4a19-978f-2ff73cc78a15",
+    "id": "b01599b2-31b5-4956-bca9-5aff3a4ff7e1",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5683,7 +11140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3153ad93-f65e-474c-a130-07217d948122",
+    "id": "49ba3ef1-4871-499d-92f3-5b6ca7cc7829",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5703,7 +11160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eb38911d-dcec-47d5-9497-153b9e5a6152",
+    "id": "add217a5-5f8d-4638-a5b5-cb7e0c91d160",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5723,7 +11180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c98def5-ff8e-4987-9054-dc57154abc3f",
+    "id": "8b5b35e3-b0a8-412e-ab0e-9e5b41be878d",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5743,7 +11200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f50269f7-8d40-46b4-9094-973d96b485f4",
+    "id": "6519b420-39c5-4670-b565-6c62655c15de",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5763,7 +11220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d44da648-17f0-4150-9b3e-9c4afad5954a",
+    "id": "d3bc3c05-005a-4ebc-8758-96eb5808d254",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5783,7 +11240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9f3a6cf-5de1-4f48-817b-5b5924671dd7",
+    "id": "1bb36184-ed43-47bf-b316-0f0e79767be2",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5803,7 +11260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41b09bf0-48ad-4e6a-816f-9965bde3b187",
+    "id": "a512f3e5-50bc-4844-88f7-483e33dc896e",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5823,7 +11280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2f44dac-e476-4639-8fb9-27b4558491b7",
+    "id": "6e95c12f-649e-4da1-8afa-e1973475e312",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5843,7 +11300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be0ed8ff-a1bf-4450-bf0d-a852285f95f5",
+    "id": "73f29e87-a969-4a52-b777-d9fb44222523",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5863,7 +11320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43fc5cae-f081-492b-acd1-1b92069a3f8f",
+    "id": "06f2a33a-3809-46ae-b619-3d0669c06f06",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5883,7 +11340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97be4d63-8f4b-43d4-a7ed-1ddc70169c12",
+    "id": "94c5964d-b026-4ac3-92c7-ccb55199eba9",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5903,7 +11360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97263d13-9980-4406-9c1e-92503a2225e4",
+    "id": "0a005e22-0f82-4cf9-be78-1591d13da501",
     "codigo": "4.1.01.04.0001",
     "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
     "tipo": "C",
@@ -5923,7 +11380,1767 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8cbed28c-4fb1-4618-8d60-8f290fca734d",
+    "id": "66166ea6-aa95-437a-9f83-77ef023bab00",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3037.45
+    }
+  },
+  {
+    "id": "bef6327c-0441-494b-8144-d6473d374766",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMBOR PLASTICO 30 LITROS SEM TAMPA PARA COLETA BORRACHA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 600
+    }
+  },
+  {
+    "id": "9e4ea5a0-48bb-49ef-90d8-df362facfd59",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA DE NYLON 05 06 08 MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.4
+    }
+  },
+  {
+    "id": "e2a6332e-78a7-4f60-8161-d1eb4bd3eae8",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO MADEIRA CHIPBOARD CABECA CHATA PHILIPS 4,5X45",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.4
+    }
+  },
+  {
+    "id": "1c767b3c-7a92-4e06-b037-f0cad4c89934",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONJUNTO COROA 15Z-DESTR DUPLO EG-1939 0503060607",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4902.68
+    }
+  },
+  {
+    "id": "4c1240d0-ee86-4995-8700-d8d2a9999a73",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE EM BARRA MAMAE BEBE 100G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28.38
+    }
+  },
+  {
+    "id": "80da4932-7456-41fd-831d-0278d2450f46",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LENCO UMEDECIDO MAMAE BEBE 50 UND",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 35.02
+    }
+  },
+  {
+    "id": "73c8e988-fcaa-4428-b4df-dfe0c4dd95e5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SHAMPOO MAMAE BEBE 200 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 43.56
+    }
+  },
+  {
+    "id": "a5235820-a1b6-432c-9740-d4ce8a2f20da",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONDICIONADOR MAMAE BEBE 200 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 43.56
+    }
+  },
+  {
+    "id": "a5996598-1ffb-4d4c-abad-2838bcf9ba65",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO HIDRATANTE MAMAE BEBE 200 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.64
+    }
+  },
+  {
+    "id": "13b74058-64b5-42c3-97d9-f440999fe766",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AGUA DE COLONIA MAMAE BEBE 100 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 101.45
+    }
+  },
+  {
+    "id": "5d6aeeaf-fbe5-4133-bb42-172a7d4c7d42",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BOLSA MATERNIDADE MAMAE BEBE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 177.29
+    }
+  },
+  {
+    "id": "55089b09-4722-4a90-bd75-4689b8e1a07b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GRAMPO ELASTICO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10
+    }
+  },
+  {
+    "id": "99aad53a-9405-4d1b-b66a-6711d27e9eb2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MANGUEIRA GASOLINA 5,0MM X 2,50",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15
+    }
+  },
+  {
+    "id": "0484d5f3-6a5c-442e-a032-e81fb595ace0",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REPARO CARBURADOR 0 66",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20
+    }
+  },
+  {
+    "id": "fce6a110-b708-42c1-bd8a-eac6724e35ee",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA DE ENCOSTO 8X15X75X1,3MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25
+    }
+  },
+  {
+    "id": "2e4038a7-6357-4124-94ec-8f83ee425cb1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEX MA 08",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "a4f644de-407d-4e4d-ac1e-931eb34c622b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMPA PARTIDA BRIGGS E STRATTON 594062",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "08b96a17-2e81-4d28-9847-7068cf8f0e05",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VELA DE IGNICAO NGK BPMR7A",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "d1aca6df-4d08-4b0f-bf21-35f2f0d9bbee",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO DE COMBUSTIVEL 98439682",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "6d9f01f7-90b4-40b1-a546-f8d6ab346c4b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMPA 87577690",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 105
+    }
+  },
+  {
+    "id": "bae4e4fc-147d-4ba9-95b2-cfe83492dac1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "POLIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 150
+    }
+  },
+  {
+    "id": "4262a2dc-a173-412a-add2-eb49483d9d8b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE 2 TELAS INOX 4 1/2X1/8X7/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.88
+    }
+  },
+  {
+    "id": "6936ee03-86db-4298-94c4-a581d34a8c19",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 46 X 2,5MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.76
+    }
+  },
+  {
+    "id": "cb8758ae-e31c-47fe-a2dc-593d5f67440c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MANTA ASFALTICA ALUMINIZADA 150MMX10M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 115
+    }
+  },
+  {
+    "id": "458b917b-8370-4f6a-898d-4edd6ab38f88",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REBITE REPUXO (POP) ALUMINIO 4.0X22MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.5
+    }
+  },
+  {
+    "id": "b075272b-7178-40ba-a0b6-7a954d830a2d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE 2 TELAS INOX 1.0MM 4.1/2X0,39X7/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9
+    }
+  },
+  {
+    "id": "46480056-e315-4f85-bb1e-293c8291c3da",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO SOLDA 2,50MM AWS E 308-17",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34
+    }
+  },
+  {
+    "id": "bc8ea477-3084-4109-a433-71126c333b2a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO 6MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6
+    }
+  },
+  {
+    "id": "5eb5a353-28e3-4f27-a440-67b05a503940",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO AUTO BROCANTE CABECA FLANGEADA PHILIPS 4.2X13MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.5
+    }
+  },
+  {
+    "id": "c3774630-9c91-4126-a507-0f42c1f26e2e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO 4MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "97337a8c-1d6a-4fc0-93b5-ae2a69a4e8fd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO DORMER 7MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20
+    }
+  },
+  {
+    "id": "caadc126-6484-4d70-b50f-9793af06f20c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FITA ISOLANTE 18MM X 20M 3M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10
+    }
+  },
+  {
+    "id": "9bcb10f6-debc-4e4b-b62e-51ad2b6660e4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXT ROSCA SOBERBA 1/4X70 CISER",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28
+    }
+  },
+  {
+    "id": "9d738638-20a6-4537-987f-04f090bf8357",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE INOX EHT 7X5/64X7/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44
+    }
+  },
+  {
+    "id": "fe5ff0dc-da17-4f06-90e9-dae0171e5d52",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO OLEO LUBRIFICANTE TECFIL PSL339",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 221.2
+    }
+  },
+  {
+    "id": "f9d7173c-93e6-4794-97b1-a1f9a83cc982",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO COMBUSTIVEL MOTOR MANN WK1060/1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 230.8
+    }
+  },
+  {
+    "id": "7861c2eb-279f-4ba9-b7ea-24bacb8f8b82",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FILTRO DE COMBUSTIVEL MANN WK962/13",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 309.6
+    }
+  },
+  {
+    "id": "f4772d3f-7c9d-4efc-bff0-a6c019c6ed14",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA 10 C/ ANEL BRANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4
+    }
+  },
+  {
+    "id": "546f2c93-e904-4e0a-85a0-7f5702cd250b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO CHIPBOARD CABECA CHATA 5,0X60",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "7367a50f-8916-4232-a8c5-920939a8527d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO CHIP 5,0 X 35MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12.75
+    }
+  },
+  {
+    "id": "99ab4ef7-e44e-4406-b607-d4956c619005",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REBITE REPUXO (POP) ALUMINIO 6X30MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.7
+    }
+  },
+  {
+    "id": "3c2b3537-0b16-459b-b95e-4458897d8cf1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE ACO INOX 4,1/2X0 40X7/8 TYROLIT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15
+    }
+  },
+  {
+    "id": "53a82911-fb9a-46a9-9799-b188a4906f24",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORTA ELETRODO SOLDAGEM 500A",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "76a9f736-9e96-4bc0-be40-9d88dd04c817",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LENTE INCOLOR RETANGULAR PARA MASCARA DE SOLDA 105MMX115MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60
+    }
+  },
+  {
+    "id": "1cc947e4-d2a9-41f4-aa3d-d2594f2f5fe1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA AE 5/16",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.24
+    }
+  },
+  {
+    "id": "300f2064-da69-41f1-b0ae-20f9bad66b85",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA 1/4 X 1,2",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.3
+    }
+  },
+  {
+    "id": "88f5eaac-1381-4082-85a1-e3ae9470497b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEX NC D 1/4",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.3
+    }
+  },
+  {
+    "id": "815d44e8-5f87-44b3-b095-8c8c8e09dba3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO FRANCES 1/4X5",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 0.7
+    }
+  },
+  {
+    "id": "5f3be64d-0e8f-436a-9e81-b700f9c3ce43",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO DORMER 4,5MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "5d09ed5b-0b31-4d29-950c-f410074d1ac4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO DORMER 06MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "6b40fe2c-4267-4c17-8b54-2dd385437927",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO DORMER 5,5MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "53797a76-6422-44ef-8d6c-8b451685c0e7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO SOLDA 3,25MM 48.04 ESAB",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11
+    }
+  },
+  {
+    "id": "ca9bc0f3-2f54-4be2-912f-2e37e2250c04",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO AUTO BROCANTE 5.5X1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12.1
+    }
+  },
+  {
+    "id": "fd0f8e2f-faf5-4ef3-a043-4f551ba279ba",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADESIVO COLA INSTANTANEA TEK BOND 793 100GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "0c27aa2b-2efc-4ada-a3e1-633e555711df",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO RAPIDO 03,5MM IRWIN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "951d9209-add2-426d-9d1b-94f3b9f24375",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORRENTE ZINCADA ELO CURTO 5/16\" (8MM)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 517
+    }
+  },
+  {
+    "id": "76e0d66a-7137-43e8-b01d-5d5ab8b1880e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA FIXACAO NYLON FU10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4
+    }
+  },
+  {
+    "id": "20d2157c-9baf-4d73-8cdc-158ac740373a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO DORMER 05 MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.5
+    }
+  },
+  {
+    "id": "02f6068f-fdec-4ea8-ac88-3f262563baff",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REBITE REPUXO (POP) ALUM 6X19MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.2
+    }
+  },
+  {
+    "id": "7b63e64e-4fc1-433f-8946-da0227bb8637",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE DIAMANTADO SECO 110X22,2MM SPARTA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 79.8
+    }
+  },
+  {
+    "id": "d2949c4d-29cc-4c04-ab59-3c18f8eb9312",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO DIAGRAMA TACOGRAFO 125KM/H 24 HORAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 143.2
+    }
+  },
+  {
+    "id": "f20ff308-9d12-486f-9ad5-76ee90026600",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO FRANCES 3/8X7.1/2 ACO 5.8 POLIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 120
+    }
+  },
+  {
+    "id": "8ca99a0e-0ed5-4bff-837c-825f8e3e661e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DENTE CORRENTE MOTO SERRA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 124
+    }
+  },
+  {
+    "id": "64616e70-2fac-4d44-a574-87df6e5dc785",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXTAVADO 10X30 ACO 8.8 FOSFATIZADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.2
+    }
+  },
+  {
+    "id": "a2861937-b2d0-4713-a94f-9312f11d68d0",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA 3/8L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.2
+    }
+  },
+  {
+    "id": "5ead5924-7514-4805-985b-575df11926f0",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ROSCADA D 3/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13
+    }
+  },
+  {
+    "id": "9f59186b-acc8-4fc5-9744-308a16078b37",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ROSCADA 5/8 POLIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 20.5
+    }
+  },
+  {
+    "id": "37b3631e-d830-4ecc-8ed4-be06608b7b9d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CALIBRADOR AR E AGUA 06 A 50 LIBRAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50.3
+    }
+  },
+  {
+    "id": "03dafce9-e464-45fc-8971-03f301676e92",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 1/4",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1
+    }
+  },
+  {
+    "id": "336d75ab-da6d-49b4-bde3-258dd81c72a6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 5/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.8
+    }
+  },
+  {
+    "id": "d1d949cf-f1aa-4708-82ff-479f027694ab",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 3/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.4
+    }
+  },
+  {
+    "id": "f6884f41-43d1-44b5-8969-0af899904753",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXTAVADO 1/4X2 ACO 8.8 FOSFATIZADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3
+    }
+  },
+  {
+    "id": "67ed4074-eb59-49ce-b1eb-83de00377dec",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA 5/16 POLIDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.2
+    }
+  },
+  {
+    "id": "58ab02de-bb81-4724-b38f-5016d33e31f1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 10MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.6
+    }
+  },
+  {
+    "id": "6e61aa12-879e-4d66-921c-e7a2faf4febf",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA FUNIL 3/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.6
+    }
+  },
+  {
+    "id": "02d7a2b8-d247-42d0-935a-4f8b5a5e4ba6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ROSCADA INOX 304 5/16 UNF 24F 1M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9
+    }
+  },
+  {
+    "id": "f534ab8c-000d-4a18-b746-7e3aafd332bb",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACRE SSB LOK  1,71MM ZAMAC CABO GALVANIZADO 20 CM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 141
+    }
+  },
+  {
+    "id": "e992396e-b1c6-465d-97a3-c4ec6185d47c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIXA D'AGUA FOLHA GRANA 240",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 163
+    }
+  },
+  {
+    "id": "8bbef429-c9f2-49c9-8caa-9cb1a3b1eb33",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACRE SSB LOK  1,71MM ZAMAC CABO GALVANIZADO 20 CM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30.68
+    }
+  },
+  {
+    "id": "ad59abe5-06b8-4aca-a258-e69f89f57801",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIXA D'AGUA FOLHA GRANA 240",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 82.5
+    }
+  },
+  {
+    "id": "07c35e36-827a-4293-9235-92fa59421ace",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MODULO BIFACIAL 545W CABO 1.3M MAXEON",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1800
+    }
+  },
+  {
+    "id": "e6f89e62-dcaa-4460-acd1-15cd6180da75",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MB RUGGI 3SC8 123 110 1100W",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2100
+    }
+  },
+  {
+    "id": "a2293331-f86b-47e1-b573-877ad49e22f6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 14F 7/16",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.6
+    }
+  },
+  {
+    "id": "aa8e3543-3dfe-4202-9ac2-f7f772cc5cc6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA 7/16",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2
+    }
+  },
+  {
+    "id": "df41cd47-7e7b-4a77-bbf2-9ca103b85826",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA 3/8 CAP00003",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.8
+    }
+  },
+  {
+    "id": "fa357b1a-d84e-4c27-97ee-460d004fc41a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA AUTO TRAV MA 06",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.8
+    }
+  },
+  {
+    "id": "3317e8fb-53e4-49f3-9f9b-c75d2440ff26",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "26376-PARAFUSO 9/16 X 2 UNF P TIPO CRAVO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.6
+    }
+  },
+  {
+    "id": "16687999-1c79-4b66-aa27-597c7cee26d4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5943,7 +13160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c1425a7-720a-437c-8b76-0e75128cc932",
+    "id": "13f100dd-7355-4b7a-bf17-1ec15a1bd140",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5963,7 +13180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2614c768-481a-4470-99a3-720255b9ce44",
+    "id": "2c1f2b7a-2ec5-4442-ad7c-f8e92beba1bc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -5983,7 +13200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd61ceb3-ce34-4d56-be3f-998e4b1a7881",
+    "id": "41d990ad-0b14-4f8c-a9c5-7c34f9571ee2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6003,7 +13220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36fd18e1-2ef4-4c27-8bb0-b40f4e50f674",
+    "id": "8f8d20b3-a5ad-40b3-9b8b-05ed478bf0f7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6023,7 +13240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "266bad72-e46c-4faa-954c-cc0ce02ad1eb",
+    "id": "be56f166-b03b-4e63-9269-a9120d914447",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6043,7 +13260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5475db4-e594-4417-bb70-c4eaef1a161f",
+    "id": "c077e8a6-811c-4e88-80f6-f631797abcf9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6063,7 +13280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0daf50fd-9428-4d7f-a85e-f0b9c5c56ebe",
+    "id": "8470c81e-2c88-41ab-8c0c-bbb30afb097e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6083,7 +13300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b80d3d0e-49a6-41dc-be89-892ded0b2ecc",
+    "id": "9fc07cf4-8a74-4488-b524-1879d2faddad",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6103,7 +13320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24d62a6a-bdff-4a76-a883-2cf25d2494c9",
+    "id": "75152001-20dd-4a30-ad69-55b4b9388ec4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6123,7 +13340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17a452c1-b783-4dec-bcbb-fae39565f5dd",
+    "id": "f836a82d-4829-4d6a-8c2f-c61b4441ac65",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6143,7 +13360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5dcb880e-9af7-444a-ac9b-ac59d72de529",
+    "id": "10def20c-47b5-4317-9fac-388081e85b49",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6163,7 +13380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a30d83bf-9986-4101-9a36-d4edb99d431c",
+    "id": "1baa0c39-dc44-4341-9b5f-4ece642e3376",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6183,7 +13400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ab84e9f-d57d-4fc6-8c9c-4a8d63783fb8",
+    "id": "0a36cb13-4721-4d2b-a00c-7d02ef2ff614",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6203,7 +13420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ece530b-100b-4b32-981e-130d6431d6a0",
+    "id": "a723ae0f-aa3a-4e11-abec-178e7e4f851a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6223,7 +13440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "afe753f4-739c-4c3d-9463-664ffa7d2239",
+    "id": "38bb354d-1585-4438-b818-2977ae2b9ae2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6243,7 +13460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f66389d-6bff-499c-9401-d48b2cb44f3f",
+    "id": "f087f1ab-0cc9-4035-9274-6fa34be59ebf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6263,7 +13480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8325336-a0f0-4299-a687-a3bab75b64c6",
+    "id": "62e05f94-5a6f-4d6a-8f03-d9502059f7c0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6283,7 +13500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71403703-5f74-4b84-9a66-5e047d66ca4f",
+    "id": "5bfd5619-93a4-4b06-8627-12cdb4327b14",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6303,7 +13520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "228704fd-c240-4569-b31d-da5f27a963ed",
+    "id": "0d67e159-5227-4f45-9fbf-a87cbcc46214",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6323,7 +13540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4d42715-fb38-4237-a843-249c445761b5",
+    "id": "2a728b21-a282-403f-9f51-7f4164f3e15f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6343,7 +13560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40d37891-f8f8-48d0-8862-e8383480085d",
+    "id": "a8f1cb35-4296-49fb-9700-73adf0e04200",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6363,7 +13580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5446a3a0-08cd-4c10-85df-19971abb4ef0",
+    "id": "1d0e31f1-1e8f-4f77-89b7-757b5e46ec5f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6383,7 +13600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0ce11d0-71e4-40b4-ad1c-09fcab8a9a35",
+    "id": "49c60b6d-8914-45ab-9b94-9bb551311bcb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6403,7 +13620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3b6cff1-b6ae-4f7c-81ab-ec6f89eb100b",
+    "id": "7933a131-79e9-4f18-9d31-1eac7edac0b9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6423,7 +13640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3a62aa1-fb2b-4351-9ca8-b5160074981c",
+    "id": "b72274c7-0dde-4078-85e0-59bbb51de0c9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6443,7 +13660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3ea553c-8502-4ee3-b2a3-da963178c298",
+    "id": "4c0cd183-f7e6-4394-bbb6-01e567144d8e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6463,7 +13680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80cf4106-7a7e-412e-8f09-788e5f9801c4",
+    "id": "c53faa2a-01d6-4b63-af50-96031b170930",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6483,7 +13700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "401bb2e2-8b2b-431e-8b43-6436afcbcb47",
+    "id": "c6b981d3-3ea2-4039-88da-a5beed334d72",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6503,7 +13720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "498a3fec-b1ed-4973-a837-7412f60dd5bf",
+    "id": "856b9517-51da-4aa0-b95d-f01c58307d73",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6523,7 +13740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be989ea8-7414-4beb-ae33-5c6c47f352a8",
+    "id": "2849280e-3ec2-427b-ba71-2429bebe72ef",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6543,7 +13760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c475633-b418-4552-88f8-52e3968f67dd",
+    "id": "1df3741a-4f3a-4791-bed0-abfec8bf2459",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6563,7 +13780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2100325a-5299-47ca-98b2-b68ba12bcae5",
+    "id": "47d5931b-7cef-4d1b-921e-2556d2f16b4c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6583,7 +13800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc83daf6-c354-4033-ab24-bd4bd091b567",
+    "id": "02c455c8-f728-4db4-959e-4e881ca5cb07",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6603,7 +13820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db35f55a-0544-40db-939c-e9528f97e64a",
+    "id": "537cebf3-e6cf-4eaa-bf83-fa275e8838e0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6623,7 +13840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "346fb662-be51-4184-a161-28c71c14bd6f",
+    "id": "a9bdd237-3ca9-4592-8164-c89e3e75dcd2",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6643,7 +13860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94f0000d-8730-4f61-8287-409778658013",
+    "id": "f5b50268-4f8b-4859-8b39-44ecc50bae7c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6663,7 +13880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0ae6e00-7b83-48dd-bd08-9fd4f1f34538",
+    "id": "53c9bc10-928c-46f0-a1ac-8836682d99fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6683,7 +13900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c93d4595-451c-438c-887b-0899057cb6b5",
+    "id": "d475cf75-a6f7-4045-9104-853e38fae1e3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6703,7 +13920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39374f67-1347-41dc-b88b-e2e71a68ad03",
+    "id": "16a3ce97-4d1a-4f7e-8ef0-979be9f15c54",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6723,7 +13940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd19774f-f3fe-44b8-b77b-661f74102b42",
+    "id": "56bf3e0d-5fe6-43f6-a93e-444afb2d8bce",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6743,7 +13960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4675665-e8e4-440f-865d-cbea168acfb7",
+    "id": "2a074913-563a-465e-9257-4f3bbd4e48b6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6763,7 +13980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06126a65-3d03-42d2-b3be-cbbcf19d042b",
+    "id": "e064a939-72c1-4753-96f6-d14db30807d1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6783,7 +14000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a60dacde-8720-44d5-b247-d515d6c87e07",
+    "id": "04c6ac96-c287-4349-b41d-74f12b4f8a4b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6803,7 +14020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e201796-c544-43f7-9cab-c5e7ccb9c27e",
+    "id": "4cccd73a-d06d-46cb-b085-20bed1ace949",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6823,7 +14040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "947c386c-e57d-4229-a969-c8c99b235dd4",
+    "id": "c89d88dc-6a2a-4a99-a161-6b09e4d24599",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6843,7 +14060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14c16d13-508f-42a7-b068-1a0aa1db9cbc",
+    "id": "76e1785c-c02b-4b69-9d05-3c157f6deea4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6863,7 +14080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e7df87f7-e127-4e63-9cd5-863151988d7f",
+    "id": "0707d3d5-f95b-4670-bf0b-849ab859f941",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6883,7 +14100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36167031-6b15-47bc-af44-ba306209303a",
+    "id": "a7723041-be35-49da-96b7-6b9b3120177a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6903,7 +14120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9214e2ee-ea67-48ab-bbe0-3639f2ae2923",
+    "id": "14fd9d4e-9db8-49b9-96d6-64be271a7339",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6923,7 +14140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c1608e0-f9ab-4b39-882d-22286047f490",
+    "id": "86044bf6-b22d-4366-ac45-531015b202e3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6943,7 +14160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e03e781-60ac-4919-82d4-77f8307f4dcb",
+    "id": "52be1e51-6fde-42ea-a22b-c83da60d0ee7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6963,7 +14180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fa81fdc-b6d4-4623-87fe-97dafe231a0e",
+    "id": "9fd866e7-1d45-424c-a3c8-db1ec5098286",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -6983,7 +14200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cf1f186-e373-425d-aa7a-6b7548d70185",
+    "id": "1f0b14fb-617b-452f-9f8b-19b732fcd2db",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7003,7 +14220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "358fa46f-cb2e-40d7-bc98-f0acc442d81a",
+    "id": "13b3d85a-df2b-4c83-a542-7ff0e94e6b5b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7023,7 +14240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e709fc57-ce9c-47fc-9438-98378de331cc",
+    "id": "fb9668ff-8c8c-45d6-8f8e-9c1612952bbc",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7043,7 +14260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf46f6ef-8788-4e89-938b-d323f04085f5",
+    "id": "848d7fa3-34f7-43aa-ada3-a797c10de457",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7063,7 +14280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3553bb62-f54e-40a1-ab3d-21404dae82f5",
+    "id": "2e707bd3-d64e-4d79-b2f1-c479021966e7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7083,7 +14300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "09839e00-4f96-4a41-9b70-ec8f3039aef1",
+    "id": "73af70e1-ab56-4faa-9390-fe1169881596",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7103,7 +14320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "199ed229-a827-42ba-99a6-000c6b157294",
+    "id": "1193f508-1c32-419a-83e8-1531c34e9292",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7123,7 +14340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a07b40a8-2fbc-4875-af57-8e3fc6de0684",
+    "id": "5283dce7-cdd4-4e08-8d4d-844259b2dbfe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7143,7 +14360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0d47453-1633-4767-93a9-d26409bd2680",
+    "id": "8db864c8-f12b-438c-88b9-ffe287a7e0b1",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7163,7 +14380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9ba6ec8-9973-489a-974e-b56f0ac21233",
+    "id": "d2097ee3-740a-41ec-a3f3-1b162aa10db3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7183,7 +14400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fd348a4-3a42-43eb-9b08-8b1bbb7857b0",
+    "id": "7e642152-416f-43ff-a203-8f9076b85148",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7203,7 +14420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f7ab386-96a9-47d8-87f2-ba5534a42ec8",
+    "id": "d8dbb1d6-cdd7-417e-b7af-737f6d12d368",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7223,7 +14440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff323cef-a31d-47e2-808e-dce92bb4bb25",
+    "id": "1117e5b9-1a1b-4933-be56-be76d28958d4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7243,7 +14460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d4085b7-4c9b-4ee3-b3cc-38cc46860c36",
+    "id": "d033d93a-06e3-4266-bcf5-1d9a93a53b3c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7263,7 +14480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "474ea996-e1ef-4b68-bfd8-8cf5dd296ff1",
+    "id": "6d76981b-db7a-47ea-9d91-62423648ba6e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7283,7 +14500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef6f51f9-6d04-4586-a0eb-131f7e8d578c",
+    "id": "e4262199-d10b-46b9-87d7-74686f8952c8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7303,7 +14520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d7e5531-aa04-479e-8f20-3e7fea84a2b1",
+    "id": "ef59ccfd-06b2-48cd-9fe8-aa92b57edf77",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7323,7 +14540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80e821d4-026c-4abf-bd03-760146792531",
+    "id": "0223dcc1-2d8f-494b-a66b-8667b092a1c4",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7343,7 +14560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "294d427c-8e5b-45ff-8f9d-f5882ef846fc",
+    "id": "2c031873-b619-4fa0-8b06-82016b345b9c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7363,7 +14580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5eb0eba7-5333-484b-b1bc-ba6047dc075d",
+    "id": "c9cee3e0-23e7-4db2-a796-6ad622cfe470",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7383,7 +14600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96fae731-6363-47a0-a50c-2a5bc03d4f52",
+    "id": "485822ba-de4a-4fdf-8f78-27d294e4b31c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7403,7 +14620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46ab11aa-25e5-4164-ae73-8f37cf2ae3fc",
+    "id": "231b8b4c-b03a-48be-81aa-6ca95c000afa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7423,7 +14640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8cc90bc6-ff0c-42d7-bc67-356141ec99d4",
+    "id": "d08785eb-f218-46d0-a358-fd8bd5e89507",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7443,7 +14660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d35e4ed-97ca-470e-97f8-973230bd9c28",
+    "id": "663ab518-bbb0-464c-839f-8656bfb584cb",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7463,7 +14680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b1d066a-dccf-420f-bfb5-67d07e5ce3f7",
+    "id": "383f7a81-25af-4574-99db-facdaeb16cad",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7483,7 +14700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "037e1509-8132-45f8-8f76-0d9f41e82cb2",
+    "id": "08bcf5dd-9052-41a7-9e78-67fb53e76e0a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7503,7 +14720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7e043e8-f4a7-48a2-b592-84ff88b4af41",
+    "id": "a8bf33b9-5895-4304-98ef-7b21ca0b9605",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7523,7 +14740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73caec52-5a61-4bf2-83ff-b0d79fe56c83",
+    "id": "a1c0807f-e1cf-4ab6-a568-49ca6fab3f94",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7543,7 +14760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1691d4c-d5c7-454e-a75b-0b18257876dd",
+    "id": "575ff805-c6dc-4cf1-b512-2e034429eaaa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7563,7 +14780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74d7a64f-b887-4843-9672-1d7caf11764d",
+    "id": "fe0b039a-5a95-4e33-b787-11af7808df61",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7583,7 +14800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08d9eb16-0351-47da-9ddd-ef7a584e7870",
+    "id": "b8ac3ea7-16e4-4bfe-9c4f-4b1e09ff5dbe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7603,7 +14820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6871cd6f-058d-45f9-96e3-78c09c5db303",
+    "id": "cef1b56a-5ce2-4139-a852-9d4dce842371",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7623,7 +14840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0850f6c7-fd7f-49f3-aab9-bb690ac4c3c7",
+    "id": "547d9c3f-2f28-4209-9e12-15dea5cbd9b8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7643,7 +14860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f494aa89-e738-48b8-b647-0a02a96d7edd",
+    "id": "2732373c-562c-4bb9-928f-ec0ecf4c1282",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7663,7 +14880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "805db1ab-37b2-4222-bce7-ed9afcf5ca86",
+    "id": "ec708e8c-daaa-4c60-9a8f-86b2672b6af8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7683,7 +14900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63b6a3e6-b984-4318-8528-d1f0af840da1",
+    "id": "43180be5-a661-4315-a759-7cd7b8468d98",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7703,7 +14920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "781c5f40-06bb-472f-bd0b-5b38f2c31a63",
+    "id": "f7d37d09-93de-4755-a092-fe12b6a7b958",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7723,7 +14940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec829913-16c6-4c84-a4da-93b9ee063a19",
+    "id": "e2e6694c-325b-4a9b-9581-58a61e9a21a0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7743,7 +14960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a4603b9-6afc-4f74-94d0-f4ce5bd0a6db",
+    "id": "c3d9ae6e-f945-4c16-840c-5039920d47da",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7763,7 +14980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2876ec86-6dc4-4bde-93ee-ccb10c8200bb",
+    "id": "ac126b9f-925f-458b-b75d-f6967fa55666",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7783,7 +15000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf3c7f8d-0f72-4a63-afd3-edf7f1b8cefb",
+    "id": "78353a22-4d6b-4d28-a19a-3693f22a1673",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7803,7 +15020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea0e4392-4338-4fd9-9c3c-3ac8dcae0ea2",
+    "id": "ca78dabd-e47d-4dcc-b8f9-145aa8da4d76",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7823,7 +15040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aff94c76-fe8f-411a-b324-3c3baee3b927",
+    "id": "c032f0b0-a222-4942-a905-93814534e691",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7843,7 +15060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86398573-4a12-49ad-bc9c-5d924c1e6a11",
+    "id": "fa98b128-d690-4a1e-9936-49c3652ce6b0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7863,7 +15080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e30b1d9-9a65-4a7a-b44c-27cc51d2850d",
+    "id": "af49f68b-0925-43f3-9cae-f47d8ed7f32c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7883,7 +15100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a454e07-db33-4216-82d4-c1eda697aca8",
+    "id": "e9d420e5-3d0b-4299-8b56-3833c4fbb9cf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7903,7 +15120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40c1a3c7-2915-420d-8782-8f2b6890bf8c",
+    "id": "c7824f9f-db7c-4efc-94b5-5f34dff4d380",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7923,7 +15140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd006b61-2fd1-43cc-bdcd-484df8509edd",
+    "id": "6314d7a4-5346-43bb-9f5f-634a4a1f0057",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7943,7 +15160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8810b3bd-332e-466c-a051-34fba842b846",
+    "id": "973dbbf2-f833-4540-b1f1-016fd439de07",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7963,7 +15180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9260b47f-ac21-43f0-9a24-dd9b60952078",
+    "id": "d04d1643-4781-43c3-a7f8-d89f22084889",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -7983,7 +15200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8debb2e-08f1-44d6-9384-1498094c5a08",
+    "id": "c4ea6266-41d5-4583-a423-ea9ccb4f9b64",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8003,7 +15220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e85ae6e5-5d95-4b27-84ca-5ddade76e694",
+    "id": "05ada1c7-d65f-4abc-85be-fb904a58ec83",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8023,7 +15240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b73658e7-e534-4a94-a1f1-3e4ca20e4f64",
+    "id": "3ed823b5-e342-4864-8f9b-66a6ba3f795a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8043,7 +15260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "475af226-17ac-4296-a453-4e8001f39934",
+    "id": "04460c73-b590-495b-9a08-d535a387ef57",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8063,7 +15280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55bb2480-7d43-4310-a146-dcd096c21560",
+    "id": "75147dbe-f83d-4e18-a0bb-33873aaec3be",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8083,7 +15300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a961ebb-040e-4140-a638-c29e2e040aff",
+    "id": "c3ef1dae-71a7-43b7-b053-741da46a7b22",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8103,7 +15320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bf5010a-4d53-42e4-9c09-8a94d07d71ed",
+    "id": "82e6c826-cf9b-47fe-917a-b431da0126ac",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8123,7 +15340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20d1e2af-ca57-40a5-a3ac-86e89caf4fdd",
+    "id": "5b7a6ad0-f92e-4263-81fc-af074d843f08",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8143,7 +15360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "104b128e-e0df-4bf1-9c29-885e674d10d5",
+    "id": "d8bc0213-9625-40af-ba05-aee819022c85",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8163,7 +15380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78972a8c-37fe-43c1-8d0f-346883a2349f",
+    "id": "15d6dda8-145d-4c3b-be37-adb6604ec0e3",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8183,7 +15400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d554592-4638-4a86-83e0-d9a610b9a8b5",
+    "id": "31df75c4-5c43-4a25-b11a-f0c9c723438b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8203,7 +15420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70cbfb82-4d97-4a86-a285-1363f5fe7d0c",
+    "id": "ccd670ff-17b4-4166-8577-6ee020279b0d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8223,7 +15440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea19a0a9-6955-4fd5-ac17-c92cf820874a",
+    "id": "8e0e0415-cf9e-43ea-85df-0694aaaae62b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8243,7 +15460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f29bc700-e2e4-40d0-aa52-73fec64af1ee",
+    "id": "298e1aba-2fef-4179-a7d5-28dfba5ec506",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8263,7 +15480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1eac6aa3-8169-49e7-aad2-c49e957f4836",
+    "id": "bb2b65c9-17ed-4208-8fd3-54e01b578421",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8283,7 +15500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c90a0cce-a8ac-4286-b492-510916c494bb",
+    "id": "6bd522ee-65ce-4e09-9fd1-d0d77247c301",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8303,7 +15520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d5a87e8-c0c9-464a-b03c-851f606a1b18",
+    "id": "108ddcdf-e767-4911-a04b-4fed0e278cfa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8323,7 +15540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7df4c1d2-15f1-4793-9abb-b318117c9e8a",
+    "id": "15eb018c-ceb4-4c58-b94c-b5b3becdca37",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8343,7 +15560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb09c114-0e6e-4f0b-8042-07bf0e6d7f89",
+    "id": "2cbc4f4e-69c2-4fc5-998a-38c10b41888b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8363,7 +15580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dea6d18-14ca-40d9-9c92-18acd9670e73",
+    "id": "6c8357ac-cbeb-4d5b-8607-d3530dc8b475",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8383,7 +15600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63efb401-f361-4e29-9a52-2ab6f0e97cbe",
+    "id": "f343046c-2d57-401d-99e9-826c48e8164a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8403,7 +15620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c534895-0487-458a-8637-37e9afdb72a3",
+    "id": "bbfb7816-9607-4cd4-8ad6-e66766deb5a5",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8423,7 +15640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a759b93d-93b9-4fdb-bca4-71e4bc13f058",
+    "id": "f339f92a-0edf-4cd0-a60a-4b62f3ca8475",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8443,7 +15660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11104d09-7009-43b8-84a3-8bbd959e21ce",
+    "id": "f3b5e8ff-85b9-4bb8-b75c-6aa0ff0a110c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8463,7 +15680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "951fc9aa-9fdb-402a-a240-2e0e16d1d600",
+    "id": "bf2f773e-16c0-468f-90c3-4bf05e3eafe7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8483,7 +15700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f03bd7a-8daa-4c05-8544-afb45a0f9aed",
+    "id": "d701acef-7e38-4b27-80a6-a3198edf3abf",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8503,7 +15720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40dff653-c4ab-45ad-adcd-d002898d5e6d",
+    "id": "1a852e7e-85eb-4387-beac-fc14cd5ccaa7",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8523,7 +15740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1bcdc1c-5ca2-4570-bdd2-96e40eab3ad2",
+    "id": "e0b40eca-2cd5-410f-a298-5d8e59fe089b",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8543,7 +15760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0acf739a-24ed-4e23-b298-a79bb8aacf32",
+    "id": "6ec46921-dd0b-4bda-870a-612940e56e46",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8563,7 +15780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17ec4875-d49e-4af2-a3b4-9207c790cf9a",
+    "id": "f1efcb96-2236-4442-a72f-f7f2fe76e630",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8583,7 +15800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc2f6a51-9b2e-4baf-bcd0-792ee550f1c5",
+    "id": "a1eb06bb-9cbb-4a2f-b0c2-a64a583428fe",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8603,7 +15820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0c0db46-3ef9-4739-bbc2-d5f01316d140",
+    "id": "d435f434-4319-4a1f-87dd-5cbbdecfed00",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8623,7 +15840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "816b1655-0aac-4e38-93d1-216f668dd16d",
+    "id": "4a99e2e5-1326-46bd-a451-d57b080b8735",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8643,7 +15860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b23816e-cf5f-455a-9082-70133b3a8b91",
+    "id": "e15441ba-73b1-4fa5-b696-1dbf6292271a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8663,7 +15880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bce42f14-2ef7-4c7d-b069-71089ea89b03",
+    "id": "7e0b340c-c5e3-4126-952f-fda268e97cf9",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8683,7 +15900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08602094-0c45-4334-86d1-861061d3777d",
+    "id": "80cb898a-3c72-4779-b8e4-b4264e41bd78",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8703,7 +15920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcf5dcf6-3086-4a97-8fee-6d0d2cde567c",
+    "id": "81450b57-8c8e-4477-b3b8-f7034098fdaa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8723,7 +15940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "477e9845-1645-40a2-98f3-873f124972c1",
+    "id": "b17c3193-f315-4cb6-bca8-3f4162b4820d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8743,7 +15960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f00aa5ce-2f6b-4ce5-89e4-664db33079eb",
+    "id": "deeb5f99-7319-414c-9306-8574afd2ce6c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8763,7 +15980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfd56a7c-c569-4a68-aab5-beb96e80480b",
+    "id": "cc8d2919-8905-4498-879f-bcac1e84625e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8783,7 +16000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47c32809-818c-452f-9b70-b1d10e8b08ae",
+    "id": "514c573d-4ee2-4049-bdd6-1c71d85fcba0",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8803,7 +16020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "760e039b-6ba4-4839-85f4-8a44f8c6d425",
+    "id": "c0bcf8ad-acb3-4318-b3fd-56f1fdd9ea73",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8823,7 +16040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5dc4cfd-616f-4bf3-a949-7eab2daf50d8",
+    "id": "d7535c10-652f-40cf-addf-0d2763e1867c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8843,7 +16060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20140648-7ae7-4263-a6fd-14ebb68ff104",
+    "id": "62f14ee7-68f1-4d9e-8b42-0d28b827ec57",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8863,7 +16080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a95c638-6d61-4688-b681-d7d1134b5b66",
+    "id": "271594d8-9469-4e58-b9cb-3f5ca78bcf6c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8883,7 +16100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2147b6e-2ac6-466b-934a-83a7dbe040f5",
+    "id": "a579c2db-daaf-4b18-a038-0ecf43f8322f",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8903,7 +16120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7fe781c5-95bf-4172-a625-486e42c261ac",
+    "id": "b3a58dc7-7e17-4513-95fd-e9a3cc68b1f8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8923,7 +16140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8946882e-dcbb-4524-abf1-5580205f6a28",
+    "id": "7752e14d-8d01-44a1-945f-1b1d7713fd2d",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8943,7 +16160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6456c273-45ef-43e4-b300-ab72e65c49f5",
+    "id": "5bbf4009-11d6-4470-8a0d-a30759da77c6",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8963,7 +16180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f73a65e7-487b-4422-94d4-1063792e24b7",
+    "id": "766de852-d3aa-4d3d-9ac5-39d7e57cd623",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -8983,7 +16200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "478bec20-e96e-452a-aa29-e00fc03412ba",
+    "id": "4cf493f9-ff8d-4932-b6ea-245963717252",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9003,7 +16220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "488c0b70-0741-4fde-93f9-6dfaf1dd059a",
+    "id": "ce5f64ec-ad2e-4380-95c3-19eff6b97015",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9023,7 +16240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3ab26ee2-c734-47a9-98dd-76551b107731",
+    "id": "e4c55285-f8e1-4e12-859f-ef0aa6e6c070",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9043,7 +16260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "730a7b47-58c9-4056-85e5-1f30c0254cb7",
+    "id": "1082f918-d259-4a11-82af-e23810461206",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9063,7 +16280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c0dfccb-5108-454f-bbac-dde96b04e754",
+    "id": "b52114b3-b4b7-42d6-80a6-943fedce098e",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9083,7 +16300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9eb98041-7c8b-420e-b5b6-a47fdf06c974",
+    "id": "5ce4e1fb-ab43-4f64-a8f3-c4186f015cd8",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9103,7 +16320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05854aa3-70e7-4141-9f8e-a9ae4a5d7b74",
+    "id": "827a9137-5d3e-469b-9d46-294bd8dc11fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9123,7 +16340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a66fc061-6d19-4d2f-9d8b-25753a622aec",
+    "id": "e52aa428-1ec1-4bda-8c20-209ba9fe9733",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9143,7 +16360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b10479d-9227-480a-8bf3-2231f90c71a3",
+    "id": "a0e4dc4d-2063-40fb-a787-0aab6651e79c",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9163,7 +16380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13de964c-e0ba-4f5d-baab-84a77edf864e",
+    "id": "81fccfb2-1674-4a42-b7d9-689bb0c8e46a",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9183,7 +16400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dd844f5-cf19-4114-89d7-79c593429eb8",
+    "id": "b67ca76c-eef6-4d79-8d86-9b326efb7046",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9203,7 +16420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bea16d9-0da4-432f-8a3c-a1487da66c21",
+    "id": "67476be2-aa91-4b63-a81e-0d42b4db01fa",
     "codigo": "4.1.01.04.0002",
     "descricao": "PECAS, ACESSORIOS E MATERIAIS",
     "tipo": "C",
@@ -9223,7 +16440,687 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a241ac0-b626-4d42-9eb5-58850c8fcf53",
+    "id": "a6fa68a8-e02a-47c5-9dc0-382a872554c5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MADEIRA SERRADA 5,0X2,5CMX2M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 450
+    }
+  },
+  {
+    "id": "99407ef4-cb87-48ce-a288-18d28092c59b",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADAPTADOR INTERNO 1\" ROSCA EXTERNA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.35
+    }
+  },
+  {
+    "id": "b5c3d61c-11b2-497e-aa6a-1db3151c5771",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADAPTADOR INTERNO 2 POL TIPO ROSCA EXTERNA PT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.84
+    }
+  },
+  {
+    "id": "d04eadb8-de34-46bb-906f-ad549ecc7221",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LUVA SOLDAVEL LR 25MM X 1/2",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 22.54
+    }
+  },
+  {
+    "id": "0edb2bf6-8342-4467-92ee-bdaf3e7aaf22",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO SOLDAVEL 25MM 6M - TIGRE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 31.92
+    }
+  },
+  {
+    "id": "6a8fdecc-0be3-4512-9366-1863da4a1c22",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA REDUCAO SOLDAVEL PVC 50X25MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44.18
+    }
+  },
+  {
+    "id": "4f174324-dc26-400f-be93-d125e3cac795",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JOELHO SOLDÁVEL 50MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44.18
+    }
+  },
+  {
+    "id": "2266c83a-2170-475e-8934-b1cac792bef0",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TORNEIRA JARDIM 1/2 E 3/4 HERC",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.09
+    }
+  },
+  {
+    "id": "c1246491-7259-470f-9888-c1295c8c7804",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADESIVO PVC FRASCO 175G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 71.15
+    }
+  },
+  {
+    "id": "a8b46f6f-6604-4587-a22a-b751ee87e310",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHUVEIRO FRIO C/BRA S/REG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 80.61
+    }
+  },
+  {
+    "id": "3a5e5d07-4aad-4071-9efe-3fe4391a6f5f",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO SOLDÁVEL 50MM MT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96.85
+    }
+  },
+  {
+    "id": "ce58286e-45fb-470b-a72f-67b6e35e3de3",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAIXA DESCARGA 9LT ASTRA BRANCA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 243.01
+    }
+  },
+  {
+    "id": "29fe996e-8e68-4255-948b-934910b622f9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CIMENTO 50KG TODAS OBRAS TOCANTINS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1035.57
+    }
+  },
+  {
+    "id": "0ce3e3ee-ddfe-4ec6-a84c-62085d3bf323",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORTA VENEZIANA 60 ZEMA PLUS (GALVANIZADA) DIREITA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 493.96
+    }
+  },
+  {
+    "id": "321e3b29-7d20-40fc-acb8-19b7d29c79d8",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORTA VENEZIANA 60 ZEMA PLUS (GALVANIZADA) ESQUERDA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 987.93
+    }
+  },
+  {
+    "id": "493a87a2-54f6-4aec-90e7-81db209588cf",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TRINCHA PLUMATEC 3/4 ''315",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 179
+    }
+  },
+  {
+    "id": "5c73fd75-d910-4768-a692-ac07a81879c5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PINCEL MEDIO CERDAS BRANCA CABO PLASTICO 3/4",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15.75
+    }
+  },
+  {
+    "id": "4a27082a-6f56-4e79-8b92-1f88489273c4",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SEXTAVADA 5/16",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.2
+    }
+  },
+  {
+    "id": "67c0c229-2f04-496d-9c9e-fc10a1a177f5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TINTA SPRAY CHEMI 350 ML ALT. TEMP.",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 22
+    }
+  },
+  {
+    "id": "fbdeadd6-cf09-48c8-8a4d-d5b35e890d16",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TINTA SPRAY USO GERAL 400ML/250 GRAMASPRETO BRI",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 26
+    }
+  },
+  {
+    "id": "c85de3f6-31a5-4b60-b8c1-479ad650aa0c",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TINTA SPRAY ESMALTE SINT PRETO BRILHANTE 350 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44
+    }
+  },
+  {
+    "id": "2b826fc4-3b55-420d-8e84-de9e5bf3e81c",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MANTA ASFALTICA ALUMINIZADA AUTO ADESIVA 30CM X 10MT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 100
+    }
+  },
+  {
+    "id": "bd6404bb-13f9-47ba-8838-54fa35af64d5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 2.5 ESAB O.K 6013",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21
+    }
+  },
+  {
+    "id": "ec6ac41c-201e-45fd-97bf-719aba560537",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 3.25 ESAB O.K 7018",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25.3
+    }
+  },
+  {
+    "id": "6109c592-1a77-4aec-b6ed-058ebec5dd99",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TINTA SPRAY PRETO PARA METAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 26
+    }
+  },
+  {
+    "id": "fb174710-e601-493f-8501-1937df9b9533",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GRAMPO CB ACO 3/8\"",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25
+    }
+  },
+  {
+    "id": "1724e844-8b9c-4999-9341-1dba92b2b3e2",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VIGOTA DE MADEIRA 3,5 MTS X 0,05 X 0,11 CM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 330.75
+    }
+  },
+  {
+    "id": "f9d931ae-6563-4dc5-8ead-59618a4a0560",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VEDALIT  3,600",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50
+    }
+  },
+  {
+    "id": "34284125-a22a-45ae-b273-3713ed1e1724",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO WELD 2,50 X46",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 90.21
+    }
+  },
+  {
+    "id": "86fecc3d-75ad-45d1-9bad-7d6d4d26639a",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FECHADURA ALIANCA INOX PREMIUM EXTERNA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 119.8
+    }
+  },
+  {
+    "id": "18cb7af5-15b2-49fe-85d0-e0f9b19d24a1",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO DE CONCRETO PS-1 DN 1000MM X 1M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4500
+    }
+  },
+  {
+    "id": "4af8091c-e942-46aa-8d13-6eab6c6deabb",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARAME RECOZIDO 14 - 1KG ARCELON MITTAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16
+    }
+  },
+  {
+    "id": "53228f46-b069-477b-af4b-57a660f917c7",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TIJOLO FURADO 6 FUROS 14X09X24 (NORMAL)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 500
+    }
+  },
+  {
+    "id": "16ffd3a2-0521-4a2a-a8ba-8df437fa215d",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -3375
+    }
+  },
+  {
+    "id": "318bab84-6aef-4ce0-98ca-5c382aee605e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9243,7 +17140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f4f11f0a-307b-4e16-a123-9127da754907",
+    "id": "a56c4cfc-9303-4d88-94e1-686ae03be620",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9263,7 +17160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63875e5f-a4db-4b12-8653-fcd1c29be643",
+    "id": "9baea4b7-37dd-41de-b375-3c430fedb83f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9283,7 +17180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa06fd4f-f2c7-45f8-8a7a-d20335f9410e",
+    "id": "3bd9b038-1827-4bcd-a064-0e0b927f4961",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9303,7 +17200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed1cf990-380c-4970-be12-5a104a8bde4d",
+    "id": "68347fcd-1e66-4505-8b26-f118c979d440",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9323,7 +17220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e406cd84-5db4-406b-b9cf-169eecee1b27",
+    "id": "d1d8b50f-6c7b-4938-ad23-cd9ba11b7fa4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9343,7 +17240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f3ead64-9809-4840-9c2e-aea8aaa7308e",
+    "id": "deaf1ccb-123a-4e9d-a5f2-9884ac38f9c7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9363,7 +17260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5331a2b-f44a-47ed-891b-23bd630e587b",
+    "id": "ab6010cf-0a77-4914-85ea-0dec72250cc0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9383,7 +17280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc4189e6-437f-4a76-a933-15e24f18ea55",
+    "id": "ed19c216-47b7-418c-b66f-95ed0ac83c56",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9403,7 +17300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1afeff97-997a-4864-9fca-7393fbff8c1b",
+    "id": "0eed86ad-e892-49f8-8044-ac1962fa4d7c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9423,7 +17320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07c47fde-e862-47e2-ac77-f101553862db",
+    "id": "d4495d1e-9a26-45cd-8bed-a268540a9da8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9443,7 +17340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e03c1a4d-343f-44af-9360-db7b782e3d6d",
+    "id": "c9b40862-52cc-4faa-bfcf-cae7eeb2e7f3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9463,7 +17360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0965976b-e549-4728-af78-e09c2cb0ff8a",
+    "id": "2f9fca1a-2df7-4cbd-a4a9-273be97c90d4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9483,7 +17380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d3853a6-a006-4b18-ab62-810d8bd91d8e",
+    "id": "1006a56b-d28f-4196-8d8c-92285846eea0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9503,7 +17400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "089bd174-0972-473d-80ac-0b76d7387e57",
+    "id": "59c10ccf-8b77-4820-8e94-845973648427",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9523,7 +17420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0adff601-85aa-4f1e-8233-7a97e4eef2ef",
+    "id": "25beb1a7-2155-49c1-9080-7024e9e2d96b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9543,7 +17440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5c989cd8-924a-48ad-8f7d-27c798fd6b13",
+    "id": "3cef65dd-f9b7-4590-a3a8-591d634e0922",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9563,7 +17460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98eb4e45-2517-4cec-b31c-944ad8f008ed",
+    "id": "4fe99d1a-298b-4f31-9286-5b1953a7b084",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9583,7 +17480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "adbc5831-42c5-459e-bb9d-976de0446b0c",
+    "id": "b1005548-b2a0-4d55-b2a3-cadb8744bea4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9603,7 +17500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3cc10c32-105f-4348-8a21-6c784cd3e8bb",
+    "id": "aa120f14-ec06-42cc-9324-b62a33b80ae6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9623,7 +17520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7044afa0-5dcf-4afe-a870-b44d9a3b16bc",
+    "id": "2bbd0a6b-05ca-4715-b5bd-1929545825a0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9643,7 +17540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80742345-e3c3-4a9a-99cd-0eddf3668d64",
+    "id": "3cbcf5d3-3c2d-4b1e-a374-653060205978",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9663,7 +17560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "014a9f7e-eb1b-4043-8956-7537033a37e8",
+    "id": "a776b3bb-5baf-40f7-b9c3-b9a374a60ba1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9683,7 +17580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc20f008-48b3-4917-aede-960444474173",
+    "id": "e18b6e4d-0e07-46c5-bafe-d4380e76f7c8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9703,7 +17600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bc8dcdf6-42a4-4582-b5f7-209a2b5ec7a6",
+    "id": "f44b4ddc-516f-4c43-9463-4662b26e9f5d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9723,7 +17620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fec09710-e891-4ea4-945c-d848c19bdc78",
+    "id": "658979f0-3e99-4a74-b14e-4f4b3daeb490",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9743,7 +17640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8adc910e-c650-4fa4-bca6-35e9e01f5478",
+    "id": "9942a789-03c3-4a48-a020-87ea7400a71c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9763,7 +17660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46b5a9c4-eef6-4898-97c0-bdbd684def33",
+    "id": "b28dbefc-48bd-44b9-a23f-b7e868f3ce04",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9783,7 +17680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8d8559e-b2a6-4df1-99ce-a49418619878",
+    "id": "32ce13c1-60c6-445e-8478-2e8443f92985",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9803,7 +17700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2fb01f23-bf2a-4d2e-bff8-f5ff9393ed98",
+    "id": "5ba9e11c-3f69-4966-b603-f0beb28f35c2",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9823,7 +17720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de395bec-b4f2-46b8-a719-00dbe4f3af36",
+    "id": "5c204bbe-6d43-4273-bfc5-2299ffec1bc6",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9843,7 +17740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f453b27-66d7-4c88-b2b5-7b8983713781",
+    "id": "adb6d326-1362-43fc-a26b-b1752841fbbd",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9863,7 +17760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b7c0443-193c-4a37-883e-4f2d520ebb1f",
+    "id": "9eb49467-6fbe-490d-89dd-3031d78ea3f4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9883,7 +17780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c8358b6-c33d-4322-87bc-02f2d523ef6e",
+    "id": "57682996-9ef5-43e5-9d5d-a8d3a9f1b67c",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9903,7 +17800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1535b752-47ab-4ccc-8e69-82349b901539",
+    "id": "66e971ea-184a-466a-9c3d-96e43880cbde",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9923,7 +17820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c25d12c3-4e73-4d5f-b925-1d74c0cc1d33",
+    "id": "817748ec-9b78-416b-80f0-22f8a0da030f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9943,7 +17840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1d34138-fed7-4b22-bec3-47c45d4615e7",
+    "id": "71d45510-82fe-4d9c-a459-c7b81245fc18",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9963,7 +17860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "848fc110-e51b-4ed9-b812-b9dc1d62c276",
+    "id": "64c3748e-25bc-4999-b195-98eb5fabc727",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -9983,7 +17880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a9bfad0-f48a-4f26-8212-920a165d857e",
+    "id": "971a02c1-64ec-4030-989c-c0a355d8c6b9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10003,7 +17900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb02a81d-96b5-40fa-8ab1-e8354b21a746",
+    "id": "b31b0793-47f4-4c18-969e-39139878edd7",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10023,7 +17920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9c048e08-6d7c-4197-ae0a-2d75b0a794e1",
+    "id": "5c53a49f-20d4-4731-abed-abf48945f3af",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10043,7 +17940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e98b8ac1-240b-4bf4-88ce-906d979273ef",
+    "id": "f4b3bfc3-cfda-4ef7-8db6-5a037f5ca8cc",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10063,7 +17960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03674ffe-ce1d-4744-b603-0abf3b402a63",
+    "id": "8877d4bf-b42e-4723-9cce-4f130cbe2b88",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10083,7 +17980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c037f43-ac84-42e9-9867-cf576be154c9",
+    "id": "bcef5e41-c634-4a69-a200-02562ebef11b",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10103,7 +18000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5769cb88-6e03-4807-8fbe-1ff772cbb925",
+    "id": "fd2ec047-a32e-40a8-8e63-6dad030f19f8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10123,7 +18020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e31f1ae-cc6c-4dd0-ab8c-69f63fc510a1",
+    "id": "3d84065f-b2bd-43fd-9d12-c60a2b578ccb",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10143,7 +18040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "926b5545-6f1f-4bf0-b903-07af5d186820",
+    "id": "4234cb58-e768-4630-bfc3-61ed1c4a0318",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10163,7 +18060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d916ffe-bb8b-472f-b604-cb68959c182e",
+    "id": "ee7fa9c9-5a97-4894-8a7e-fb5f4cd229fe",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10183,7 +18080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "137603f1-c54e-49fe-9fa0-fc26870cdf8b",
+    "id": "e1640066-1fa4-48fd-8804-ef7a1116faf5",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10203,7 +18100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "169666d7-50f1-4765-87f6-fbf7c2241a2a",
+    "id": "08c3d749-1514-459b-90a0-d3374e706f0e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10223,7 +18120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eebc234c-a755-421c-8289-5a113b59d156",
+    "id": "49723902-721e-4ca6-b452-e417eb64e9c0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10243,7 +18140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ae7d54c-3425-48c5-8d46-07d34ece9c6b",
+    "id": "75acf3f0-fc96-450c-acec-2f14386c581e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10263,7 +18160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85918d05-5250-44b2-9446-17d8535c6701",
+    "id": "b3ec860b-3228-4719-b4ef-e0d19f3d1c82",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10283,7 +18180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e145d86-83e4-4b5c-bc0e-f93f2fdd8168",
+    "id": "e7bd968f-b629-4d50-bf23-76a979426f54",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10303,7 +18200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ddccdd5-4a03-48ea-af21-afab39d04aab",
+    "id": "24520e78-e65c-4364-a898-99bf7af43fb8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10323,7 +18220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c5b7c22-5e64-4201-bd51-1b18cb6ebf68",
+    "id": "5647c8b2-89c3-4bc6-b292-ca4903bfebd9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10343,7 +18240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f98f9c1-35cb-48df-bf64-686e5676c905",
+    "id": "f6696d0f-0397-4680-a6e9-8cb15c6a1737",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10363,7 +18260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a84a073f-643a-45eb-863a-91c3f5e2bdf6",
+    "id": "a4a5190e-99bb-47a4-b473-02b3931db1a9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10383,7 +18280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "388ccaa5-ba0c-40db-a96a-4b3d7327f3c3",
+    "id": "1252f297-ee33-4c81-9c86-948ad2ba8587",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10403,7 +18300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8c538f44-cce6-492c-8929-86b13100c7e9",
+    "id": "624f1132-a945-4c8b-9fe1-9b31f4126858",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10423,7 +18320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b4c7d32-4efd-44eb-8480-d549f35e491b",
+    "id": "0ec8132e-a288-4fa2-8bac-ba93cc5084aa",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10443,7 +18340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dd9f495-aa5b-4545-aeac-62e61f83aa84",
+    "id": "dbf761ef-48d8-4da7-bbef-4e8564437374",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10463,7 +18360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1160cd93-3b81-4b08-b0eb-04ffaee135e6",
+    "id": "0b05b7e4-3a20-4b16-9add-095aa9f65294",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10483,7 +18380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b0ecc08-58e2-4d1f-adac-e4530af1c283",
+    "id": "83cfa2d5-e265-40db-98f6-e3a0c02f8a56",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10503,7 +18400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e52d96c2-574d-48ac-9bf9-7b4b818bf4af",
+    "id": "e333d825-25b7-4276-94b7-460f91565b00",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10523,7 +18420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11995ff4-f909-4f58-a480-0574c587c080",
+    "id": "36628f80-7cba-430c-98d6-7a4cb41b95f9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10543,7 +18440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef69afc8-053d-4df3-86da-7abf328f740c",
+    "id": "85855c5b-85de-4bb3-a824-ba4ef8cb0cc4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10563,7 +18460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3fd95f3-f700-41fe-ae74-650b9a3fe829",
+    "id": "ebdf94a0-e023-4504-a7fb-34f5d2275aa9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10583,7 +18480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47974383-7e3a-4934-9267-aed8977fc3b5",
+    "id": "ddbb3f09-7e7d-4ac8-b033-914b7f561e2d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10603,7 +18500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be01277f-18fb-4eb0-ab6b-419e6bd7fc46",
+    "id": "1b6b7aba-8ffd-46e3-a428-d36cd669064d",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10623,7 +18520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3bb4eef0-fb54-4606-a582-a201cfadb194",
+    "id": "a02ac9bf-9d32-4a3f-b3ff-455833955c13",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10643,7 +18540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ab413c9-4fbd-4f59-9d78-c35a4d2f8acc",
+    "id": "ad925957-a11b-4eca-a748-c764643b37d8",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10663,7 +18560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9d1869a0-ba06-4252-b399-d7bc6961c6c7",
+    "id": "36967a71-3124-4def-a2f2-d4390385df23",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10683,7 +18580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2f24751-8b72-4f12-bb2b-44a0ab70adc9",
+    "id": "cd15c1af-2dd1-459b-aed6-6a3261c45426",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10703,7 +18600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b79bfe2-7f40-49f3-91f2-39bd25a85d79",
+    "id": "1c5b76e4-0cc2-4925-a388-051f1ed77242",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10723,7 +18620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a111b756-171e-4313-b231-e5d3d6f62666",
+    "id": "efb56569-d54d-439e-b50b-7feff1948aee",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10743,7 +18640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "97b68f0f-9159-4589-88a5-980c8863b430",
+    "id": "9e06fbff-5498-41e6-a3e2-1c57afaeeb0f",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10763,7 +18660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f385a1aa-5f79-4847-a24e-0fb7421930de",
+    "id": "f8173562-87f1-426a-a059-d0fc325639a1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10783,7 +18680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16991403-6332-4801-9a22-8f7ceb22a841",
+    "id": "b96034d8-7db5-4d94-b9fd-49427e6d5515",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10803,7 +18700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e14d0c5d-1184-4957-b233-458b02331f99",
+    "id": "d0c51513-68bd-4ce1-9dd3-f2cd27f8fdd1",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10823,7 +18720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65306fde-f7ce-4a1b-baef-303c08f7105d",
+    "id": "37c6079e-a790-4d6c-9438-bad812324638",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10843,7 +18740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f890c33-cea9-4372-8705-bbdf0683ac00",
+    "id": "04a0a4c3-13f3-4013-886e-0a35b36a4a0e",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10863,7 +18760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61d08eb1-d5cd-4317-b788-74b7c760594d",
+    "id": "b160192e-88d7-4840-8f7b-5e34b21615b9",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10883,7 +18780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2907feb2-a162-4ced-8983-f54979b3872a",
+    "id": "acd23419-b9c9-4185-8ca0-d2a2e6bbf7da",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10903,7 +18800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a4db08bb-5758-40cf-ad37-a1632f5a801e",
+    "id": "1ab8bec5-96df-4f9a-9362-73b3b88a5a08",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10923,7 +18820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "76c0e5fb-bad0-44b9-b92d-039e3cd950fb",
+    "id": "a1c5bc74-8265-4756-8835-e8dd5e8bb921",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10943,7 +18840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db0ff066-9a70-4d2c-bdc4-8c38d5339208",
+    "id": "7a940527-badc-490a-a6be-b6c82f027819",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10963,7 +18860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25f5ff92-5658-4d63-81a2-3ea57c730db3",
+    "id": "2959151b-658c-4b31-9b91-d1e05689c806",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -10983,7 +18880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "37dd5ff1-2558-45fb-b1fe-0d7c4a46ad0d",
+    "id": "d072de91-a2ee-4ea4-986b-9e03ed16acc4",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11003,7 +18900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d7eba41-24c4-44ae-be85-db61d1fe41dc",
+    "id": "774d679f-91be-4021-b5e9-0747d28533de",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11023,7 +18920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0163d1d6-859f-442d-8e6f-0298c1615baf",
+    "id": "63ba3391-2382-4275-8395-37227f7e7fd3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11043,7 +18940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9167374-95bb-480d-8ab2-661bf45e8779",
+    "id": "da3dc9dc-4bcf-44e9-bbd5-d557a9fbfff3",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11063,7 +18960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f80ca25-e4b7-4a40-be6b-0fa40d95c68a",
+    "id": "012b5fab-0f80-4cb0-8d60-95524768e015",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11083,7 +18980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bb143e8-2b2f-4bbf-b6cf-46bace3c7527",
+    "id": "4c3cba5b-6aca-4005-8ad9-479b419c80c0",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
     "tipo": "C",
@@ -11103,7 +19000,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2c4da38-7f6c-459a-84fe-2cb04a8e56da",
+    "id": "df38fdff-1612-4fe8-8275-5ce8db1a6727",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISPLAY ACRILICO A4 PORTA FOLHA EXPOSITOR VERTICAL PAREDE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 67.16
+    }
+  },
+  {
+    "id": "e8b5a376-db23-4ab9-a2f4-147426f4f890",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PASTA EXPOSITOR ACRILICO A4 TRIPLO VERTICAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 86
+    }
+  },
+  {
+    "id": "71cd7307-6334-480a-9749-b58a0c795205",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CARIMBO AUTOMATICO PERSONALIZADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 85
+    }
+  },
+  {
+    "id": "900e7cd5-8642-4ad9-9809-ffcb6c7e9c92",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACRE FIX 30 CM BRANCO COM CODIGO DE BARRAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 78
+    }
+  },
+  {
+    "id": "9247ec15-8c43-47a7-b446-5415dd5ce143",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LACRE FIX 30 CM BRANCO COM CODIGO DE BARRAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.73
+    }
+  },
+  {
+    "id": "9eec648c-7e27-432e-a3c5-bb1216f35de3",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -11123,7 +19120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3f4c550-a397-462f-9743-fc3688078950",
+    "id": "f4fbe6ea-b6a2-4012-9814-0664e7a344a8",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -11143,7 +19140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18641b2e-f566-4996-8343-8dc335bb8372",
+    "id": "d5ae2695-5be2-4e65-b594-efaaf03cf3a9",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -11163,7 +19160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8f3e1d9-f269-4b7f-85e4-86cdb9550511",
+    "id": "d4b7898e-0745-43b9-986c-6d704d8de1a1",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -11183,7 +19180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3aabb20b-3b38-4099-8238-d0c6b9c5403d",
+    "id": "3578d54d-8f86-4029-b2a1-343dd3a1e816",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
     "tipo": "C",
@@ -11203,7 +19200,1407 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "666c53d5-0425-4f38-99cf-15a3c3379075",
+    "id": "0d9950ce-87e3-4fe6-b0b2-17a83c6519b0",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.64
+    }
+  },
+  {
+    "id": "c57aa4b4-c100-44f5-be53-c1c334eb8f24",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "XXXX",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 346.2
+    }
+  },
+  {
+    "id": "186ca817-f79e-4e8e-820d-7f034f80245b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 199.1
+    }
+  },
+  {
+    "id": "19042191-2fee-471e-a8ef-a3bec95a347b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESCOVA P LAVAR MULTIUSO CORPO MADEIRA CERDAS POLIPROPILENO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1.8
+    }
+  },
+  {
+    "id": "9ed39fab-c4f9-469b-9e09-aed07f469b25",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.2
+    }
+  },
+  {
+    "id": "7da942be-049e-49db-9440-cb6310092f35",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORANTE VERMELHO RESIN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 141.36
+    }
+  },
+  {
+    "id": "1cac4098-0882-4f04-85ae-2d0a029c8c95",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 452.5
+    }
+  },
+  {
+    "id": "4926afdd-5537-4e69-97f7-201a836e11af",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AGUA SANITARIA 1L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.66
+    }
+  },
+  {
+    "id": "8dde24a0-f8e0-4020-9b40-5890f8dd8864",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 506.8
+    }
+  },
+  {
+    "id": "c55d9bd0-6f0b-4590-aed2-9037fd299a9a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 633.5
+    }
+  },
+  {
+    "id": "344aa47a-52c4-48bb-97a4-e61ad9c8d32e",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 633.5
+    }
+  },
+  {
+    "id": "9d90de87-032d-4fea-b424-5420961bc022",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 760.2
+    }
+  },
+  {
+    "id": "395d8535-c9f1-4c6f-ba87-47204e376303",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 760.2
+    }
+  },
+  {
+    "id": "92d76e3b-3c2f-4883-b1eb-7881877ecb26",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5
+    }
+  },
+  {
+    "id": "f455896d-b455-48e0-be4e-b2c7760bd103",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.6
+    }
+  },
+  {
+    "id": "5bdb3cce-34fe-4416-887a-0041aa8b0fa6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1067.9
+    }
+  },
+  {
+    "id": "8c279d71-9116-40b3-85a2-b894698ebca9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7
+    }
+  },
+  {
+    "id": "68bd1a07-cbbd-482f-a786-0139a5db4f4d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7
+    }
+  },
+  {
+    "id": "ec1e19d6-e0bc-4d41-8005-dc05cdddeb25",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.4
+    }
+  },
+  {
+    "id": "e9c31c28-a55c-49f0-9fb7-670fa8b92049",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8.4
+    }
+  },
+  {
+    "id": "948bc20d-5b5a-49d8-aae4-57f28b6bbc65",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA BRILHUS MULTIUSO L4 P3",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10.5
+    }
+  },
+  {
+    "id": "86e3ad97-cd03-4162-8883-f659fd62eddf",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 11.8
+    }
+  },
+  {
+    "id": "9429ee79-16e0-4369-a964-ab186cc7972b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CERA LIQUIDA VERMELHA 750 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14.97
+    }
+  },
+  {
+    "id": "9726ecaa-8188-408b-949b-0ac1a010a602",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5X1 MINUANO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17.42
+    }
+  },
+  {
+    "id": "0df59075-c02f-40dd-953d-1e04eb33a83f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SACO PARA LIXO 40 LT PLASFIL 100X1 PT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.42
+    }
+  },
+  {
+    "id": "5cbb175d-23be-407c-a6da-39bc8421f956",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.8
+    }
+  },
+  {
+    "id": "46c86cd1-fcd3-47ee-a98d-aacc9deae1ba",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DUREPOX",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21
+    }
+  },
+  {
+    "id": "976ba460-11c5-44a9-acb3-0d6f47b7eaa2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28.95
+    }
+  },
+  {
+    "id": "f2d51831-ad20-4122-91e3-647d6382251d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VASSOURA LIMPEZA PELO CONDOR V9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 32.73
+    }
+  },
+  {
+    "id": "9e33e6e3-aff1-4157-ad5e-cd97db9e709c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44
+    }
+  },
+  {
+    "id": "263f3a1b-0305-49e4-9f1c-5b86f031976f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE LIQUIDO MAGIC",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44.3
+    }
+  },
+  {
+    "id": "cdf6c123-affc-406c-b217-10926884a705",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "d4f5fc15-6a9d-48dc-914c-8b3eb375ffe7",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 50.4
+    }
+  },
+  {
+    "id": "279bc42c-92ea-49e2-91ad-5451d7ce9a4b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DETERGENTE LIQUIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 51
+    }
+  },
+  {
+    "id": "52fcca7e-68b4-461b-b256-847b3454d563",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CERA LIQUIDA VERMELHA 750 ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 287.9
+    }
+  },
+  {
+    "id": "555540df-4934-4d87-a377-417dace60af3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALCOOL 70% LT",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54
+    }
+  },
+  {
+    "id": "b4000fe1-ad1b-4239-bf6c-3c5cf4661eda",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SACO P/ LIXO 30 LTS BOM LIXO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 58.65
+    }
+  },
+  {
+    "id": "2fbcc639-26c5-4614-8441-d768f6a1835c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VEJA LIMPEZA PESADA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60
+    }
+  },
+  {
+    "id": "53c21c23-1084-4d42-b1b5-98b9e558ab43",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63
+    }
+  },
+  {
+    "id": "916440fc-e4e4-4d4b-941b-be7bc9c040f0",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63
+    }
+  },
+  {
+    "id": "52b43db0-714c-4bf9-93ee-95f058d458d2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75.6
+    }
+  },
+  {
+    "id": "a158d502-d1d3-485b-9a8d-9821bfd079ac",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75.6
+    }
+  },
+  {
+    "id": "43432abd-04ed-4481-b07a-58792927c9bb",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AGUA SANITARIA 1L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 79.8
+    }
+  },
+  {
+    "id": "7ac6766f-22a8-4cff-a7dd-1e83acf6608f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PANO CHÃO 68X48 LIMPAR LAR ATOALHADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 83.25
+    }
+  },
+  {
+    "id": "a3fb2b22-d3a8-4e05-a410-1aef2f6f1e63",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 100
+    }
+  },
+  {
+    "id": "80161a8a-1977-4ab0-b9d8-710fa202abfd",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 106.2
+    }
+  },
+  {
+    "id": "e4285f33-5cc2-4b93-ba8b-e74b41e421eb",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 112
+    }
+  },
+  {
+    "id": "2a876dcc-e884-4089-ae4e-c3a71ac0f512",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 346.75
+    }
+  },
+  {
+    "id": "de4e3764-bab7-4c58-a122-3756b746adb7",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 140
+    }
+  },
+  {
+    "id": "df280f35-55ee-4e3f-8d42-0761f2c7c55a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 140
+    }
+  },
+  {
+    "id": "094447ec-6a2f-426f-9c99-f3d783dcd122",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO SCOTT 300 MT 3 DOBRAS( JOFEL)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 142.2
+    }
+  },
+  {
+    "id": "6eb41fe4-2ce3-4861-87a9-cfb7384c183b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 152.46
+    }
+  },
+  {
+    "id": "2f13898b-4df5-4d0e-a8e4-7893a6ccaf83",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SACO BRANCO PARA LIMPEZA ALVEJADO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 160
+    }
+  },
+  {
+    "id": "0ebee02c-9100-45d0-986f-a4e56898fa53",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 168
+    }
+  },
+  {
+    "id": "d7bee28d-020f-4d57-a558-5344d6e4baf9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 168
+    }
+  },
+  {
+    "id": "e1cc1992-fe53-46d5-b7a8-1d0517ed6bc4",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JARRA MEDIDORA 5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 180
+    }
+  },
+  {
+    "id": "e9c5b87d-bb36-4033-96a8-4d145719e142",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SACO P/ LIXO 100LTS 100 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 182.91
+    }
+  },
+  {
+    "id": "ff3f79fd-5b3f-4c00-82bb-62a6f0ffc0e8",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 236
+    }
+  },
+  {
+    "id": "5cf16aeb-2301-4ae5-9886-8708ffef62b4",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORANTE VERMELHO RESIN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 334.88
+    }
+  },
+  {
+    "id": "b1602987-7114-42f8-aaaa-834a5ba28aa8",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 567.5
+    }
+  },
+  {
+    "id": "de7b3947-1f79-47ed-81bb-01b2a9662772",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ORGANIZADOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "648e3194-6117-42f2-ac95-d8136ebdb825",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 157.3
+    }
+  },
+  {
+    "id": "5fc141bd-4e86-4b33-acfb-fb509cd6b1ca",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 357.5
+    }
+  },
+  {
+    "id": "0175b6e7-41b0-410e-9899-f96c4a5021b1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 400.4
+    }
+  },
+  {
+    "id": "c8976e50-3b8a-4ffb-869f-140d04cd5b49",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 500.5
+    }
+  },
+  {
+    "id": "2b9ac078-5e24-4010-a1db-e9745b52c794",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 500.5
+    }
+  },
+  {
+    "id": "f92a8e0e-8f79-4eb9-86d7-619e1c3fb495",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 600.6
+    }
+  },
+  {
+    "id": "8eae6663-ceec-4c69-9dd8-be10fe42eae1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 600.6
+    }
+  },
+  {
+    "id": "500c07f9-3a7e-4cde-95bb-04159f3290c3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 843.7
+    }
+  },
+  {
+    "id": "363e8e50-579c-4026-871c-8735774546cc",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DETERGENTE LIQUIDO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 875
+    }
+  },
+  {
+    "id": "cee14eca-3916-4918-b48f-5bee886a0816",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11223,7 +20620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1657c00d-c34e-46ce-8e74-7bd06a6071f5",
+    "id": "3edaf143-1990-441e-90f3-75e595eba88e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11243,7 +20640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de136c0e-fe5d-4c77-ac9f-3a0ee99cf852",
+    "id": "b5d0aa69-208d-47b5-b603-0ffce28cef74",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11263,7 +20660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52e34d68-1a97-4acf-a2f4-e0c41f66434a",
+    "id": "967cfc92-3943-485d-add2-8686d785431a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11283,7 +20680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "978ef4ad-7ad0-44ed-945d-a0d4af719bdc",
+    "id": "aa365469-6a4f-4aa2-b6a6-850cdd4edb23",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11303,7 +20700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39a2f078-685f-4436-b7b6-c0af19eab9f3",
+    "id": "405fb7f9-bbe5-43da-897e-20fa8da30bb3",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11323,7 +20720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "305add41-9a92-47a6-9e04-27fe182444bf",
+    "id": "1ee4b7c1-f5a6-41f2-ab87-c76df4273dca",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11343,7 +20740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "181c50a0-0630-4ac0-ba8b-396710a1388d",
+    "id": "1db894ff-bfdf-40e6-9a71-f15c1cb0e708",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11363,7 +20760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25f12dc7-cb0f-4376-ad2b-e74bb071f84f",
+    "id": "be9e7587-7410-4379-a12e-2c253fd845db",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11383,7 +20780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c399481-b712-49bc-b675-c001794f962c",
+    "id": "13ca447a-29d2-4533-8c58-3fa15466d82e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11403,7 +20800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "781a02ce-1064-46ba-88b9-6bfe7186df34",
+    "id": "2af4e76c-fab7-4f76-9a69-7ad713e1aed2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11423,7 +20820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "baafef0a-0e37-4fba-a1a6-df8ee64d79fd",
+    "id": "93ac6198-d90f-4c42-b3d3-383abe7b5b17",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11443,7 +20840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "210a7933-6866-4c06-a848-71d1e09089ad",
+    "id": "9593b84f-a472-4188-9e1c-026ae7b026e8",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11463,7 +20860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5cb9355-32ba-4b2b-997a-2bbf1ca5fbf2",
+    "id": "962fe5f4-b39e-4b20-8f07-62ae9e7673c9",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11483,7 +20880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c160bb71-f667-43f8-bcf2-e22a444e5416",
+    "id": "311c69f9-bed8-4da9-a3b2-6c765977dcba",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11503,7 +20900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50e4b7a1-1fbb-4816-9c90-184f0560f885",
+    "id": "d309e545-4d7d-4777-bf46-266de71b8f83",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11523,7 +20920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1c0ebb55-7edd-453b-8b42-9f27cba87381",
+    "id": "17f65532-c09b-42fd-809e-6cda007cf1ed",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11543,7 +20940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d35c618c-87b9-45a3-8ceb-366c407d04f4",
+    "id": "559109d8-b9fe-456c-a29c-2d9dee4b2b44",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11563,7 +20960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88a3c39d-eee2-49f4-96a0-deef25afaaba",
+    "id": "60c91e7f-543e-462a-b344-9eb658887e88",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11583,7 +20980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ab35cd9a-a39d-4e20-b851-8fe0b91e6290",
+    "id": "e62c38a7-cd26-4fb4-8266-29502d990ae7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11603,7 +21000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "164c572b-a85d-4f11-97d4-281acaaf71ab",
+    "id": "10719553-bd0f-41f7-b5e3-ba571d192128",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11623,7 +21020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0cdabcd1-21b2-4e17-8120-c0094fca7d51",
+    "id": "a653c351-14a9-4ea8-93ae-94e7202ab053",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11643,7 +21040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a4e7aed4-160a-4d97-97c4-35df3b6c3fcb",
+    "id": "d0948601-1299-4bd2-9116-552f872802c6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11663,7 +21060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d92bc264-27d9-47e7-9979-48085e5c7624",
+    "id": "98545ef1-b9d7-4ab6-967b-a924c5c819c1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11683,7 +21080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9bbad353-d258-4e9a-af95-5bd6e7fa310e",
+    "id": "708b8313-3d3a-49e8-b02e-461026ff046c",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11703,7 +21100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d48995f-5075-4a61-b288-e17429cf5685",
+    "id": "85fb6241-e1b7-4b34-b5e8-98548e4828dd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11723,7 +21120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93a79f80-0cb0-4046-86ed-d0e1690f5b6f",
+    "id": "1ea4068e-9261-4ce1-9e8e-6e01ad448629",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11743,7 +21140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70e84ae3-9948-4c1a-85be-1b932d80ff5d",
+    "id": "7e0bbdfb-2392-4c22-a5d3-b344519d2bfa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11763,7 +21160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ee72b2c-08df-4f1f-9e42-638ccbab6ade",
+    "id": "1652b364-068c-48ce-8807-0fde17548155",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11783,7 +21180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cad63c66-a74c-448c-ac35-c9a2762e0ec6",
+    "id": "834a28e9-daed-4ff1-90f8-570435870d8f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11803,7 +21200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2347a37-380e-4074-94dd-5b81818951e8",
+    "id": "69a5994f-6f4c-4167-8b2f-c68b121f2f91",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11823,7 +21220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00fe07c9-81cf-4510-b68b-b2d4041f0dac",
+    "id": "c9399ef8-64f7-4a82-b7f9-7ae6be465bdb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11843,7 +21240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d59782f-7f94-4980-a7d3-863747d576f6",
+    "id": "b59370a5-8b7f-4787-9569-64f102bbb4a1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11863,7 +21260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e3540026-5564-4ae5-b9ff-b7a30f1f4399",
+    "id": "e451b8d7-9ec5-450a-8e3f-0c7b146eeb7b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11883,7 +21280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93053afe-79b0-4816-b8dc-7dc82a31017b",
+    "id": "b0a7a703-2189-453a-a5a3-da05088ec38b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11903,7 +21300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "158e997a-fb8f-4ee9-9fd8-3664c4002f47",
+    "id": "97236790-e7dd-4950-89b9-be086813f342",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11923,7 +21320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b909f63c-c95e-487c-99e0-bf348212f7e2",
+    "id": "e54f8b31-1a9d-4513-99fa-1d4890721718",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11943,7 +21340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "927370b0-e521-4a78-9b1c-3963083d2efd",
+    "id": "cfcb3c16-a3dd-4128-b307-87605c51ac60",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11963,7 +21360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3628f351-be84-494b-8d1a-997f51e08a17",
+    "id": "4802acec-d9a4-4890-922d-b6c3c0454c9a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -11983,7 +21380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9cea77ce-834f-4ba6-9a8e-6479b37a8f89",
+    "id": "e9d53837-d573-4425-9076-c22cc3b9c680",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12003,7 +21400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40b296de-01b1-46c0-bd6a-9a13c012a884",
+    "id": "d42dafd1-92bb-4b64-b488-966a2937fb29",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12023,7 +21420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00b1a86f-c39e-428f-9026-97e5693c08cc",
+    "id": "a700be16-b089-4d49-a517-4c5fe87cb061",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12043,7 +21440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "19457ffd-f643-479d-ba09-2d4b56869a47",
+    "id": "52df472c-96e7-4802-95c5-d50f092a05e7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12063,7 +21460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "575cf2d8-f5fc-4a2c-b2ac-ed2cc4f3c1af",
+    "id": "1af5789e-76f8-4874-a0bc-4cb8be74193d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12083,7 +21480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6b538d0-8782-48d7-a939-d37ba273abde",
+    "id": "28b6d989-dc8b-46e4-a3d1-c0fdbcdbf6a0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12103,7 +21500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b5650d2c-6ee1-4f77-aaa8-ffb274226664",
+    "id": "fafabe9d-39a6-4022-a802-286421026bfc",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12123,7 +21520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e010b8ab-51b8-44a7-b08a-a1ee754f6fb1",
+    "id": "2dac49ef-efa6-4869-9082-4894dffa9143",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12143,7 +21540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a01a9560-371e-48e3-a26b-4a8d5dc94aa4",
+    "id": "a721c250-5afe-4e4f-9bc1-80f683d4fcc6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12163,7 +21560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a238e6bb-ba91-40eb-930a-e4929507f2c1",
+    "id": "710cc097-700d-4266-9a32-b49f94e527da",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12183,7 +21580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14cc8327-363d-4417-86a1-54da611bc18c",
+    "id": "59d3092f-e5b3-4b97-be81-a591f41b8788",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12203,7 +21600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c796b10-eb0c-4a10-8da1-4704f17a9d8a",
+    "id": "3c07e263-c1a7-4d9d-ab70-048cdcb44446",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12223,7 +21620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "845f3eb8-9e27-4b5f-aaf3-a307ce0cf115",
+    "id": "8b68c477-9b6e-45c9-813d-604d12c4281b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12243,7 +21640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4d3f7a16-66e6-4686-ba7a-8bee795c6d75",
+    "id": "e207cc7c-9d3e-4920-86a0-4f3001fc75ca",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12263,7 +21660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56f8d121-e66d-4925-a331-e69c0ca4ffb9",
+    "id": "e29b59b1-1f59-4f29-8380-b604b5c12e39",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12283,7 +21680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "16a1180a-e26b-45a4-bec3-71deb78a53c5",
+    "id": "189f1db7-1d74-4781-8345-7a4073f23135",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12303,7 +21700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ed35cf1-f366-4582-a847-7612e3b932d1",
+    "id": "d339257b-2b1e-42e8-aa32-7e6e4c970d22",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12323,7 +21720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad009d43-7726-4ae3-9006-0f5e81b07dcd",
+    "id": "dcefaec5-1431-41b4-93dd-3bf63a653c1b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12343,7 +21740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98edfe20-7b1f-4f9f-a134-b11e65c682ac",
+    "id": "be61c43d-d707-4f21-8ecb-2e0d335d8d87",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12363,7 +21760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32401be4-4455-45b0-a5f9-53e96e9c2f9d",
+    "id": "722c5f5d-6dbb-4da3-8549-0474024a5c49",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12383,7 +21780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4f8b862-ce93-417a-b8c0-189ae52af152",
+    "id": "41c1cdf5-52fd-4901-afa8-9df847e0b75d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12403,7 +21800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2d260ca-8926-4f77-b0d9-ad20edc462cc",
+    "id": "563abb1c-1bf4-486d-8896-2bc0c02683e7",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12423,7 +21820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3021d28a-8697-4d68-9326-f9544e11d861",
+    "id": "4ab58ffe-277c-4400-946f-33e1c0bd0a60",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12443,7 +21840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a2b6be5e-0a02-4033-961a-40c38306f675",
+    "id": "1578839d-8624-42a3-835d-1c122a95b58d",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12463,7 +21860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c4756f7-ac91-41df-8507-806093ee0c31",
+    "id": "4b49b65e-4dfe-4669-b5ed-984cc8dcbb78",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12483,7 +21880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07c077b5-43b0-4491-9839-1c3663d89774",
+    "id": "0fa6fcc4-1ec7-469e-9998-054ec5aa9035",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12503,7 +21900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e55c97a5-1fe3-4d81-a69c-22dbbf38f5e0",
+    "id": "3cd7a152-1377-4f8d-b139-59f80ea27d57",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12523,7 +21920,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e05f97e-1822-4c30-a47b-9ed9838d0874",
+    "id": "268bfc3d-0339-46c3-ad90-d036d4b6dd2f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12543,7 +21940,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4882f8cf-a05d-484b-bc6c-18e5cdcab34d",
+    "id": "89c3e7e3-752d-485e-afb9-cfdbfbf06764",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12563,7 +21960,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b899af9-4399-4396-ae6a-6a4ea71e2402",
+    "id": "4bfe49ba-c04e-4b79-a8f7-d8f76f0005aa",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12583,7 +21980,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f7e6b14-80b0-477e-b9ff-1b7b6d0f1c3c",
+    "id": "95135c81-fbea-45d8-88ae-f1b9b0997998",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12603,7 +22000,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6020a582-4e0c-4162-af3d-b3ceeaaa7d46",
+    "id": "77f17aa3-3125-49a9-a103-2ed9e9182946",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12623,7 +22020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77dc25f8-bcb6-4297-b664-75f12742efeb",
+    "id": "e08896dd-c2f6-4fb3-882f-1e2a96d58732",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12643,7 +22040,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64609a40-6883-429e-9fec-f6f5ee1195f1",
+    "id": "b6f6257a-bfe5-41a1-b4bc-fbf5af91aa9e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12663,7 +22060,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96ac6368-a477-4f10-ab8e-0fff8b142ef6",
+    "id": "35298efe-9e2c-451d-ab65-cf313379c726",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12683,7 +22080,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e60a487b-0e5a-432e-97c8-4e9726b5ed80",
+    "id": "35fed457-788a-4e25-99ca-c3802d3a8bca",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12703,7 +22100,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4aac5c7-2a66-4761-a7cd-d7f18cd9daaf",
+    "id": "fb0967a5-23cc-4aba-976d-5949c061c679",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12723,7 +22120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d54a5aa-9bc5-48a2-8f04-17d07f9b5fd4",
+    "id": "ca5793bc-84b0-4fd5-8e1c-880c73197f66",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12743,7 +22140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13af7261-6a4e-4565-9c34-8dfaace16742",
+    "id": "84a0fb91-9a6f-471d-80ed-b8f83654d01b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12763,7 +22160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "45e78691-d35a-41a5-b41c-99159f7ad14d",
+    "id": "d7fd70f7-4aa5-4178-8348-19a02d1255ee",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12783,7 +22180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71de78f4-9a09-424e-8666-2164644acf0b",
+    "id": "7660915e-9588-4630-b19d-a23605e3ae73",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12803,7 +22200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d155685-ab96-409b-906b-8e2d7cfa711d",
+    "id": "677a0d7d-f05c-4a97-bd88-243d2331cc29",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12823,7 +22220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3eed6022-dcd5-496c-af77-b27b5e4f578c",
+    "id": "5a1a2254-6928-4471-b597-b218249b6158",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12843,7 +22240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac5ae22f-d366-41d2-919e-94a5219a2fe6",
+    "id": "bfc8326f-abaa-419e-95df-55ba9c16cef0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12863,7 +22260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c30937dd-3f52-40b4-b562-4290cc87d8d8",
+    "id": "44eb246c-31fb-472a-a5b3-55b795ee7ed6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12883,7 +22280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebe905ec-6aff-477b-acdc-d367fa0519bf",
+    "id": "468f1493-946b-4842-bc41-5dfeffd7d08f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12903,7 +22300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1669ebc8-0fad-44c0-88a4-4b82b82715eb",
+    "id": "9ac3b588-403b-4a63-98c9-c1441a93923f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12923,7 +22320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d711722-1182-428a-8c83-986b8d1d2864",
+    "id": "65d5ea83-1490-478a-8694-e46720ec1c6b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12943,7 +22340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6ce9671-3ff6-4eb9-807c-5139d33fbe7c",
+    "id": "6c9cf8ab-c153-4852-b956-ad5311ad80dd",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12963,7 +22360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8eb579e0-45d7-44dc-a181-0020603ba929",
+    "id": "62df117b-2ac8-402e-aa73-5e4fe81f4586",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -12983,7 +22380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08404c6d-de12-4d39-9ab4-de98614a9fa6",
+    "id": "350b5525-4f89-4131-934f-61dbe8c462b2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13003,7 +22400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "861af492-d9cb-45f4-9640-016855546865",
+    "id": "99a3d0ab-cdb0-4525-85b5-e029bccfd3c5",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13023,7 +22420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85ff9866-fbe4-45e3-b049-9c172c64b5bd",
+    "id": "38b30c25-5dac-4c09-b359-c6e238da872f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13043,7 +22440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55747208-11ab-4214-95f5-c0c8972a5bca",
+    "id": "4228239b-d233-4e82-8022-2f27d2a66f68",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13063,7 +22460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8cd23453-1b41-468a-a756-95bac12c52d2",
+    "id": "fc4729c6-4aad-4656-b6d7-db52632a0b90",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13083,7 +22480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94778151-d525-42a5-8631-3b21686cb82f",
+    "id": "f465c06c-d50e-4a60-b87b-6c41d07698d4",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13103,7 +22500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f6403c6-6166-4b1d-9cdf-f919128f08be",
+    "id": "00a47fad-137a-475c-b9f1-392a6a0f99a6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13123,7 +22520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f7b4e419-44c6-4578-a050-7ae4941488c9",
+    "id": "b4e0454c-dc78-48cb-bb3f-27439fd4ccee",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13143,7 +22540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a4be1cd7-19a0-47d9-bd18-d5833c27ed34",
+    "id": "813ed743-76c3-4f37-ac9b-0b7f00a905e9",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13163,7 +22560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3840501-a533-449f-92a3-c6b5b6e3ab62",
+    "id": "2c895b55-d857-42c5-9e40-0345010efdde",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13183,7 +22580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9ea34e8-ceb5-47d2-ab60-4222b98afae5",
+    "id": "d8ccae70-0cc2-452b-b28a-b46f1916cd98",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13203,7 +22600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e97db827-277c-41c2-aa6c-b28b31a513a3",
+    "id": "fea42676-877b-4dad-96e0-3154ff11b5c0",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13223,7 +22620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f1d996ee-3b5f-4904-bdd0-2bdccbfb6858",
+    "id": "abf362a2-0b87-4e43-a493-a556c63dbfec",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13243,7 +22640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "95009fb2-55c6-443a-a5bc-ca48ac4a103f",
+    "id": "a7755bd1-fc44-4d0f-b6b4-b6e4f1b3dfc6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13263,7 +22660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47a3ea3a-0cd0-4852-9a88-1499f50893a0",
+    "id": "dfc73422-6bb1-4d6e-ab35-53a952b079b2",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13283,7 +22680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7815c0c-fbef-498a-a4d9-5bf9cfc8a24f",
+    "id": "a3a61e61-0125-4580-96bb-0feb65c3701e",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13303,7 +22700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ccbb4a30-2850-492b-a3e2-3e3347dc302d",
+    "id": "add8a48b-a0de-49fa-8bef-f9320d06613b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13323,7 +22720,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36223e19-d93d-4174-8503-ae03b70bdd24",
+    "id": "3a161a07-329a-4da5-9969-51d1da81902a",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13343,7 +22740,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c31939c-14b3-45d4-bc0a-61c2878f856b",
+    "id": "7e6012f1-943a-4d4a-a6d5-e0a49144d760",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13363,7 +22760,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "949aa052-b39f-4459-a413-2b8123a8e707",
+    "id": "702cd7ff-5a6a-4409-bb0f-2380ceca90c1",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13383,7 +22780,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f131801a-43dd-4822-8ffa-18b3350aeeb5",
+    "id": "27b02a9f-6c38-4036-99f8-e61056a5f4da",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13403,7 +22800,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "790e01c9-ead5-4cdf-8e77-9eeb4797c687",
+    "id": "3a589b93-a34b-4c61-8695-98761401c0ae",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13423,7 +22820,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aec14a86-7fc3-4d6a-98d7-19b220cd2f4b",
+    "id": "d73f31c1-cffe-486e-b506-2ca224d5cb5b",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13443,7 +22840,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ae457dd-b92b-429b-ae64-48f55069fa2a",
+    "id": "557eefb7-5962-4ec8-90e0-d4edb2b17ddb",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13463,7 +22860,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7130c03-7962-4ee8-bd88-d8588ae4c813",
+    "id": "fe92cd20-71fa-4a21-8394-c566dbb9501f",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13483,7 +22880,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0822ea34-529f-4542-9794-d1a00652e7e5",
+    "id": "ffff66d0-da25-4abb-a5b3-b991321196d6",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13503,7 +22900,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "68a7778b-7f06-4718-a5cd-760668608acf",
+    "id": "5b9f7023-1f2b-4f03-a493-b40213dd6067",
     "codigo": "4.1.01.04.0005",
     "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
     "tipo": "C",
@@ -13523,7 +22920,187 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5861a86c-af8a-445b-9186-3a32e1255a64",
+    "id": "47cfe987-7ad4-4f6c-b32d-a2a20c1aa0d9",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMA REDONDA 5,5X200",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "2e76274e-b615-43bb-823c-26808689e5d1",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BITS PONTA PHILLIPS PH1 1\" IRWIN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "9bd5be2c-d0b1-4832-bd8d-dbf96cbd74e2",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PINO MACHO 2P+T 10 AMP",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5
+    }
+  },
+  {
+    "id": "7ea77a53-9ba9-4da8-b69d-b012c060d6e9",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BROCA ACO DORMER 08 MM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 15
+    }
+  },
+  {
+    "id": "2831fd9f-6cd4-43c7-b2f8-b6e8bf42e512",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GRAMPEADOR ALICATE S150 CIS 26/6 P/25 FL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 150
+    }
+  },
+  {
+    "id": "172540b1-3227-4c09-9e92-1d96f228e82b",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SERRA COPO 16MM - 5/8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19.14
+    }
+  },
+  {
+    "id": "2df4f2e4-e79a-4a04-b8d2-9730e4bb82e8",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMA REDONDA 4.8X200",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10
+    }
+  },
+  {
+    "id": "1a5ddd6e-2d42-4c40-bff1-0e11249ac733",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REFIL PARA FACA DE SANGRIA  18",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1800
+    }
+  },
+  {
+    "id": "539a1f26-ff7f-4b1b-81e0-c312304380d8",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMA CHATA MURCA 8 SEM CABO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 349.75
+    }
+  },
+  {
+    "id": "e6ebafe9-6451-48e0-9f0e-b4de43361004",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13543,7 +23120,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39078426-8f12-4440-8426-690c51c087d0",
+    "id": "8d59e72d-028a-4e5e-b799-3a3e685eda92",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13563,7 +23140,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "434b35fd-b7f5-48aa-8095-5bb34778ec48",
+    "id": "312f099a-1cf9-421b-8891-cbb01b8a2855",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13583,7 +23160,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "815620b6-b374-48ba-978f-e09f7aed6e1e",
+    "id": "ede73801-8bf4-498a-a7c6-d348a7dced7c",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13603,7 +23180,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4eb0794-c323-42db-80e3-6bb5ce17a533",
+    "id": "a607665f-a388-41d1-9b28-1b2ddc8d03c3",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13623,7 +23200,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "349ed822-f48f-40ca-a1df-8af3f1e61d77",
+    "id": "32e8f306-b5a8-42ac-9511-0d49732e2a5b",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13643,7 +23220,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56c1bfbc-0050-44d0-ab94-fde79e6de542",
+    "id": "647bee0e-8ebc-4bde-bba8-e94bd467308e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13663,7 +23240,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9fe5c22-da5a-4b3f-97e8-148c46370f71",
+    "id": "d4be757e-9a4a-4511-ae5b-fb9bbe9aca6c",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13683,7 +23260,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c28be60d-71fe-4792-be9c-794ee61de24e",
+    "id": "9cd76602-5b6e-43ce-bbaa-cdd5042faee7",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13703,7 +23280,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b9d14c43-d704-49e7-a1ac-8b45918236ed",
+    "id": "487425ef-d437-4117-aec0-aa98ea6958ef",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13723,7 +23300,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f925cded-f146-4e42-a81f-e1461989bc90",
+    "id": "ad170c2b-8ee1-49c4-bd3f-b1805994bca9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13743,7 +23320,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20056236-69fb-4996-9bfc-3e14d9cc43fb",
+    "id": "fd65ac65-14f6-4efb-bfdb-284b1a17823c",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13763,7 +23340,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49040953-e6aa-481d-aee5-8ca0aedd9652",
+    "id": "409bbd37-e786-49e6-9dff-7e2dae94b945",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13783,7 +23360,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "621b01a2-dea4-47ee-8ae0-12c8f3933aa2",
+    "id": "44831ec1-0263-4cfd-a02e-8162228ecbbc",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13803,7 +23380,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "216e0d8d-f233-486d-a31a-a2cddf143ff0",
+    "id": "7c23dd7a-ea4a-48dc-9798-62d963376a04",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13823,7 +23400,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7898134f-eede-4670-ab8f-629f14a7af41",
+    "id": "1f185b1f-b6c7-4388-8d74-ec8370ae2456",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13843,7 +23420,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7d5a2623-32b2-4b5e-9450-dbc24a25b1c6",
+    "id": "3f3aeef7-0996-46f0-964f-fc0ef8bc7373",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13863,7 +23440,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46e06f46-40a4-4a92-bd26-17d0df675b88",
+    "id": "f6ab4899-7406-4d67-b991-1dc78b0d9de9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13883,7 +23460,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc503cc6-e544-4ded-82a4-2d4aa69d1d42",
+    "id": "9c27b575-4db2-4702-82df-24176d02349d",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13903,7 +23480,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b61a0ee8-446f-4373-ae9e-5354671cce5c",
+    "id": "71d25395-f438-42fd-b5a5-ddee277ae2dc",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13923,7 +23500,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "542e8f3b-4b7f-4215-98b0-2c236e675b82",
+    "id": "68cbcadb-f245-4e9f-84b4-12feec170c47",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13943,7 +23520,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b47ab4c-cc3a-4ecc-b8fc-4942344bab42",
+    "id": "a9b0e87f-2ef9-4739-a35f-38ff7fffee27",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13963,7 +23540,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "951519ef-a75f-4ff9-887a-fe538f49dfcb",
+    "id": "afeb4c25-1169-4571-af86-8e60c459e03e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -13983,7 +23560,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8a67ca9-cebb-4a20-a8de-38424cecbcce",
+    "id": "7165a421-620c-46e7-8a39-72536ee6b5a9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14003,7 +23580,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b71012d3-3438-4f52-9b9d-28a368f1c984",
+    "id": "dbf035fd-f75a-460c-95c2-e3a022d964cd",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14023,7 +23600,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bacc78c9-d573-4baf-8489-b233c61d3b10",
+    "id": "c939a406-c381-4bf0-975d-22fed9222e1b",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14043,7 +23620,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78e8a294-24b2-441c-9609-92a1d45b15ea",
+    "id": "26fc156c-aecd-4412-8e33-cfee2bc9fd70",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14063,7 +23640,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4aad394b-d8eb-45a2-93ac-02a11884b8e6",
+    "id": "8aeb757e-b9b8-4340-934d-49062940dda8",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14083,7 +23660,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9945df28-450c-4f75-8abe-1cfc01c26085",
+    "id": "eb90188a-f1a6-4510-b098-5e1ff535fda9",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14103,7 +23680,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e3fc20f-d78d-4f07-8e5c-69319740cef3",
+    "id": "7f342c72-95e3-45e8-ba3a-4b0f8fdd552d",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14123,7 +23700,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "082d5dd0-5384-4753-be49-bffa17afb59b",
+    "id": "04f8ab0e-4325-4a4c-9d7a-18f3ef56005e",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
     "tipo": "C",
@@ -14143,7 +23720,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e2eb94e-1d82-415f-b1e3-d39b81d0a9db",
+    "id": "35b46365-7ef8-4427-9700-a1b0c8b17d06",
+    "codigo": "4.1.01.05",
+    "descricao": "4.1.01.05",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "0ab35c31-10f5-4fd4-b832-00d8fffd4369",
     "codigo": "4.1.01.05",
     "descricao": "4.1.01.05",
     "tipo": "C",
@@ -14154,7 +23742,127 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "2bc7cefe-b7c8-4e53-8424-1121254ffdd3",
+    "id": "22cfa0ac-644e-4753-ade9-73fe0018da53",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 131857.55999999976
+    }
+  },
+  {
+    "id": "71f7e2c4-c508-4d6d-bee9-9095463d6e4e",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12584.770000000004
+    }
+  },
+  {
+    "id": "c0764561-e563-4909-a5f8-745f3aae4097",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4255.6
+    }
+  },
+  {
+    "id": "368fd2a9-90f9-415f-bfd9-fe2b8f96d277",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18504.040000000008
+    }
+  },
+  {
+    "id": "2468cb83-2fcf-4f88-bedb-736951c3c038",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 121605.34000000021
+    }
+  },
+  {
+    "id": "473c2886-15af-44c0-8aae-dca9779dc28b",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 751.56
+    }
+  },
+  {
+    "id": "5a563174-ea09-4903-b561-e267b7e22ba3",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14174,7 +23882,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15cbbe60-2e83-4761-aea8-d0ad214245ff",
+    "id": "f5bfa45f-e98f-4780-9b0e-c3ee580cd63d",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14194,7 +23902,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e33dfad-9f82-4ed3-bc93-5acbf9503b10",
+    "id": "6e188e6c-1cb5-4168-9113-9c28d92fade5",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14214,7 +23922,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "583d6f1b-17f9-4995-af9d-404fe98f4dac",
+    "id": "a8c7869a-1531-4fb3-9c0f-6969f7a32e1b",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14234,7 +23942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f96dcf3b-0901-4d92-a296-dfbe36c97f7a",
+    "id": "7292794a-6cb0-4045-8dfb-81213963cd3e",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14254,7 +23962,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f55acbb4-8136-4d66-8203-07b263eddfb1",
+    "id": "369084fd-3711-4da7-8ff2-d31eb2244fe4",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14274,7 +23982,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b750387-d78f-40dd-9be9-5882c441b49f",
+    "id": "b510a0b5-2787-48c4-81db-ed51b846c5e4",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14294,7 +24002,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4e0d19e-bdd3-4dd0-bf41-08051764faca",
+    "id": "3ed422d3-3a43-4970-8bd8-c8156311d131",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14314,7 +24022,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92dd280d-d73f-48d0-b320-401accf90c32",
+    "id": "586f9be4-3321-4442-aa5f-c098e2f04239",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14334,7 +24042,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a1b4c5d2-7fcb-4855-8e36-846986c02821",
+    "id": "e9032544-2800-4ca5-ba04-b755f2032694",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14354,7 +24062,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "81942099-7369-4db5-a286-c52372fea562",
+    "id": "e1196b62-f932-44b3-9caa-7cafb0ac1b72",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14374,7 +24082,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d643969-3f4f-438e-99a4-7ba36400b586",
+    "id": "67fb8807-0c43-4225-b7ea-5a21138efe37",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14394,7 +24102,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8aac355-01ec-42fa-8868-69e0a9fc7188",
+    "id": "a25d1773-983a-4c68-a154-fc8133582b8a",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14414,7 +24122,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "98a29a07-12c9-4d79-b638-76296061f261",
+    "id": "c9bd9c09-e204-4173-8da2-61958a7f42cf",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14434,7 +24142,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61692b42-f2c5-4369-945e-b0e651c5dc05",
+    "id": "6d9d83b5-561b-485b-bd9c-d7fda0d874ae",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14454,7 +24162,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6fc2f7fc-aeb2-4739-af5e-af5616a1b861",
+    "id": "0cc8343a-a99b-4b2c-9d65-02b5864e0222",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14474,7 +24182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0a6988b1-0769-4d94-9c82-4e983c97662c",
+    "id": "1c08aa85-5080-4dd6-9377-111dc7fdaa6b",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14494,7 +24202,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9f59379-ccbd-421f-afbc-1487521d374e",
+    "id": "b120cb5b-f1e5-41f6-9b83-04f995cc5a31",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14514,7 +24222,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e75ee837-d10a-4376-b836-7b9e0f325216",
+    "id": "eaa3ec38-0de3-4852-bb40-615853799730",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14534,7 +24242,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56aac4f1-6ea0-4533-868d-5c23a0a97ecf",
+    "id": "b83fcb14-c22b-4557-9f9f-2d750b87f753",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14554,7 +24262,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7974056-8371-42bf-8bbd-be6db40fa45d",
+    "id": "5a19a07e-11d9-4502-a1db-96ac71926fa9",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14574,7 +24282,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e507abe6-18a2-4d4b-b186-cb2922c54abd",
+    "id": "4df96601-49e4-4dce-ad99-87e8497d0756",
     "codigo": "4.1.01.05.0001",
     "descricao": "DEPRECIACOES",
     "tipo": "C",
@@ -14594,7 +24302,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35589b37-0732-474a-bed5-382ad537205c",
+    "id": "8398aaf4-0130-403f-b834-e3947dfe6def",
+    "codigo": "4.1.01.06",
+    "descricao": "4.1.01.06",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "36dd4cd2-ee7a-41cd-b21e-f227566d0f52",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -14605,7 +24324,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "6124b138-7e48-46e7-829e-37dc80e109b8",
+    "id": "74582051-fc66-446b-8945-0a36a5a99e1a",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
     "tipo": "C",
@@ -14616,7 +24335,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "82f743ef-1fa7-43c4-977d-b090ae407449",
+    "id": "ef4c20d3-f313-4ce4-8476-e82b1ff8e68d",
+    "codigo": "4.1.01.06.0002",
+    "descricao": "REFEICOES E ESTADIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "DESPESAS COM HOSPEDAGEM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1183
+    }
+  },
+  {
+    "id": "3ac6c1fb-6c1b-4403-82ce-c02030714c0c",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14636,7 +24375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78cf1bb9-b3b6-4769-ad55-433b0e6a2120",
+    "id": "a0aff2e0-4aff-4909-8925-fcee2be9e073",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14656,7 +24395,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29a67aad-e9cc-4b83-be23-1b471be37074",
+    "id": "6e0f72c6-02b1-4e1e-92e5-8f05d406579d",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14676,7 +24415,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fa1e1d56-2b74-4a24-9be6-125403ed397f",
+    "id": "0e4d9e5f-d534-4cef-bd42-7d4f0671cfba",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14696,7 +24435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5ec08ca-527f-41b8-9479-f9901811939f",
+    "id": "915ae1b0-b1f6-4a85-afc9-063cf29ec613",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14716,7 +24455,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "540951d7-7e8e-4f12-af51-ed02c4a260b4",
+    "id": "1df1ff0a-4756-461e-a47a-77393257ba2b",
     "codigo": "4.1.01.06.0002",
     "descricao": "REFEICOES E ESTADIAS",
     "tipo": "C",
@@ -14736,7 +24475,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "caa1f055-62d1-4c6b-8a08-38e5829db2e6",
+    "id": "dae5b63b-470b-4bc4-954e-202ccf589535",
     "codigo": "4.1.01.06.0003",
     "descricao": "QUILOMETRAGENS",
     "tipo": "C",
@@ -14756,7 +24495,87 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "31c9c76d-461a-4f22-831f-81dca41b8922",
+    "id": "5a45aa52-aaa1-4f01-a71f-590b038c7fb6",
+    "codigo": "4.1.01.06.0010",
+    "descricao": "OUTRAS DESPESAS DE VIAGENS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "PEDAGIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2262.7
+    }
+  },
+  {
+    "id": "f9cf6b83-bd6e-4c25-ac7e-6a53cd879f20",
+    "codigo": "4.1.01.06.0010",
+    "descricao": "OUTRAS DESPESAS DE VIAGENS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "GASTOS COM TAXI",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 90
+    }
+  },
+  {
+    "id": "d7eae8f5-7cf3-4634-a18c-7e3eb4c7c661",
+    "codigo": "4.1.01.06.0010",
+    "descricao": "OUTRAS DESPESAS DE VIAGENS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "GASTOS COM TAXI",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 80
+    }
+  },
+  {
+    "id": "a749be1e-370d-4354-919c-30e44ac1f557",
+    "codigo": "4.1.01.06.0010",
+    "descricao": "OUTRAS DESPESAS DE VIAGENS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "GASTOS COM TAXI",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 70
+    }
+  },
+  {
+    "id": "94dc674d-98ff-434c-844f-2a7ccd4c436c",
     "codigo": "4.1.01.06.0010",
     "descricao": "OUTRAS DESPESAS DE VIAGENS",
     "tipo": "C",
@@ -14776,7 +24595,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea38da64-db6f-45cf-9947-704cc3029f83",
+    "id": "bc539181-6cbc-47d1-b4f4-fb6835a69059",
+    "codigo": "4.1.01.07",
+    "descricao": "4.1.01.07",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "06ef9506-389d-429a-9699-7915835879ad",
     "codigo": "4.1.01.07",
     "descricao": "4.1.01.07",
     "tipo": "C",
@@ -14787,7 +24617,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a4649d17-bbf6-4e24-93ff-77551049bc3a",
+    "id": "921d08cc-e183-4a56-a56a-8006d1df6b50",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1364.49
+    }
+  },
+  {
+    "id": "e4752486-429f-48a7-a19d-c72028943801",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 104.83
+    }
+  },
+  {
+    "id": "6ff4dcec-2c0e-44e2-911b-69367d0d2c53",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1795.11
+    }
+  },
+  {
+    "id": "f3a32984-fecb-4d95-bacc-a7e46342e10a",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 865.74
+    }
+  },
+  {
+    "id": "450f425e-7e96-45d6-ae93-c281727c41a9",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1676.48
+    }
+  },
+  {
+    "id": "0c76a146-7bc8-4660-a2f4-65499c76ca6f",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -14807,7 +24737,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b97fac68-dfa9-44e6-b493-6db17e093bce",
+    "id": "61470d6e-2f6f-40e6-885c-5fe5f1023dc6",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -14827,7 +24757,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b607980-2e33-4d0b-a086-69b438d3b1b9",
+    "id": "f4ac64fa-1696-4202-900c-0add273cac26",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -14847,7 +24777,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2583f28e-2466-4802-abf7-b4ff5183bfd4",
+    "id": "0c57e0b9-dba1-4b30-9ce0-e22057fe5088",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -14867,7 +24797,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3509824e-91e3-4cda-a151-fd2908835909",
+    "id": "53d6dec6-5d2a-4d96-b140-ca41855f4cf7",
     "codigo": "4.1.01.07.0001",
     "descricao": "ENERGIA ELETRICA",
     "tipo": "C",
@@ -14887,7 +24817,38 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25f2aa20-037d-497d-ab0a-23f6564333d1",
+    "id": "8ce8dcb3-cbaf-4214-b197-ffc1d479fddb",
+    "codigo": "4.1.01.07.0003",
+    "descricao": "CORREIOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "CORREIOS 039431",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 361.18
+    }
+  },
+  {
+    "id": "79bea4b2-0cdc-46f7-8d0a-990080a4344c",
+    "codigo": "4.1.01.11",
+    "descricao": "4.1.01.11",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "142ba790-e828-4a72-8148-db476722f13f",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -14898,7 +24859,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1d838d02-91af-4a6a-b198-dfdc8a2d3fb7",
+    "id": "dd50c93e-54f8-4330-9dd6-2dcca3609834",
     "codigo": "4.1.01.11",
     "descricao": "4.1.01.11",
     "tipo": "C",
@@ -14909,7 +24870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "b33576d4-0866-4839-9db4-aeee8a8faee4",
+    "id": "b74b0660-5962-4f9b-a6a3-f81190e9a5a3",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -14929,7 +24890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2130c308-747f-4f33-afa3-e9c4acf3203c",
+    "id": "574f7bfb-33a3-48de-be86-2f09e9650b54",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -14949,7 +24910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "181e89a1-0ca1-4e08-b048-8937996ab321",
+    "id": "52092ef8-d521-4ee2-8e9a-de25a9399725",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -14969,7 +24930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ca6715c1-8701-459f-8e4d-1f58fec702a4",
+    "id": "760cf5e9-d654-4676-9514-5ff7b650d7fd",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -14989,7 +24950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6902d779-06e6-447a-a703-5a080cb1aa84",
+    "id": "86bbc7a1-708a-4e1f-83d1-98436322b805",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15009,7 +24970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79792a28-47e6-4ffb-9a7f-2d473f7ac110",
+    "id": "8c193c57-8027-4ccc-b9ac-66f176eff45e",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15029,7 +24990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b1cfb1d-0612-44d0-beb2-f66497554b71",
+    "id": "8f983c45-ae4d-42dc-b515-298c3c6343be",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15049,7 +25010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a742ef8a-5c93-4178-a47b-92ae26efee1f",
+    "id": "e79e1705-d6f0-4f8f-af0e-6437be825300",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15069,7 +25030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f4bb091-6f61-49ca-95a7-f387e1425a10",
+    "id": "0f614866-2d23-4f01-9477-0768a35ce6a5",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15089,7 +25050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71ebb37b-a68d-4047-a0e7-426cd4691498",
+    "id": "e3676c3b-925f-497f-9c57-c6efff7686f3",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15109,7 +25070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "080512ff-b987-4bf3-a758-bdb4666dc639",
+    "id": "8a4fce64-3732-4a7c-b643-b6a0f2892d00",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15129,7 +25090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e81e782e-790a-4410-8251-f07cca2e7658",
+    "id": "2e78bdc9-f36c-415d-9f1f-3c0fc33ab42b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15149,7 +25110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc941acb-2948-4b98-a191-9650d127399c",
+    "id": "3dc8348c-21e7-480e-9aa3-3e2b77abec19",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15169,7 +25130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b6ffc44-45a0-4d03-a228-c3462a7c8deb",
+    "id": "e61eb54f-09b4-4dc4-b07c-37af90fac9d0",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15189,7 +25150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c928ca4-2a56-43c6-9206-01efe45786b5",
+    "id": "e55710be-4f11-41ee-9588-e1369686a0f6",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15209,7 +25170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5172ed95-7fb7-403e-868d-f3093a1347f7",
+    "id": "6e618b4d-9589-4007-a869-c38f05bc214c",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15229,7 +25190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a4d716c-466e-460a-a78d-11da9948267f",
+    "id": "f50e59a5-c74f-4eb6-9505-484105733dd7",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15249,7 +25210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b773ae1d-40f9-4e4b-83d5-2548fbc5e812",
+    "id": "61e6d297-8043-431b-ad3d-074e72171664",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15269,7 +25230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "843da940-84e5-408f-967b-f5f5794c403d",
+    "id": "77276179-1051-4d6f-8ed2-592f3b6579a0",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15289,7 +25250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27b2bfaa-8d17-488d-ba0b-00d3ba1a81fb",
+    "id": "94fc98f8-21bb-42d2-a9d4-a43f1c44161b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15309,7 +25270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf6efa2b-4519-4600-9024-67c56100e6d7",
+    "id": "1d829b7c-fec4-4d5b-8328-926860dafcd5",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15329,7 +25290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e19a4644-93f4-4b2e-a470-3010525610db",
+    "id": "289a0d9c-7986-4e9b-bc04-e70b2eae43ad",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15349,7 +25310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "742541e9-d3eb-492c-a067-067fbab134fa",
+    "id": "6a74ac0f-5887-4935-b82f-c5faaafa46e1",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15369,7 +25330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6e76b29-021f-4e80-bf3f-461ec9c7f19e",
+    "id": "01eb1ef2-56ae-4c12-9a43-385f2985f33b",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15389,7 +25350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94dfc689-999b-477a-80c3-26f635954675",
+    "id": "fa5c9d8a-9602-4b01-9bfc-98f4cd26e38d",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15409,7 +25370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2cd853a-fbf1-4e59-ab69-d2444847ed48",
+    "id": "e0d9f6b5-6ad5-4940-8cb1-e03665c90299",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15429,7 +25390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eff94dec-e21d-46f8-92e9-8ae4629975d1",
+    "id": "5c58bdf9-62d9-479b-8a3e-92808aba680f",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15449,7 +25410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea3dc5a2-1750-4329-827f-84c5b9367d42",
+    "id": "ededec75-d0c9-4e79-b546-487aa28a9c47",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15469,7 +25430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd6148ea-d352-4404-aefd-2711a5d99f53",
+    "id": "320db28a-85cd-4716-8c5c-43feae261764",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15489,7 +25450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88ed931a-b2c9-4d95-9b4d-56d5eb2dd5ac",
+    "id": "10dfaa21-7d85-4f8a-af63-7c5afbd70c28",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15509,7 +25470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "007f154b-dc34-4f2d-ba44-28477954a9be",
+    "id": "6462077b-6bf1-4443-a0e7-d7438e746a90",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15529,7 +25490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ecfba010-818d-4dfc-9b3c-efde0e7480e1",
+    "id": "a8cc0f1e-51b5-4c24-8f54-9b29dae47a4d",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15549,7 +25510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e6e2ae95-a019-425a-9771-9e9b6dfde116",
+    "id": "d5d1bc9e-995a-4fd8-b942-5688e279fa27",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15569,7 +25530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57f2cb25-86c9-45ed-9678-f6f83c501e68",
+    "id": "192355a8-51cc-449b-971a-8eb73c1c43dc",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15589,7 +25550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0fe2507-6014-48e7-a8b1-4d5ff5ca59c0",
+    "id": "1e0a78fc-f81c-4beb-b521-31dd7a7ad719",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15609,7 +25570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48fef92d-9d48-4461-9c9d-755e93a64969",
+    "id": "24b27edc-8671-4451-a7a1-366db9dde700",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15629,7 +25590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "657aeeff-95c1-4b57-9ce2-ef95d2ac33e3",
+    "id": "ed760e04-e67d-424a-b94b-8171f9a697d4",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15649,7 +25610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9372d2b-8807-465e-8c97-86a456316f08",
+    "id": "4fcd2461-d691-47ee-9346-52f72083d9cd",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15669,7 +25630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b61a0f68-8118-4227-a316-db6263bf442a",
+    "id": "7d33647a-a377-495a-afbd-c59d76f6f423",
     "codigo": "4.1.01.11.0001",
     "descricao": "ALIMENTACAO ANIMAL",
     "tipo": "C",
@@ -15689,7 +25650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ba04eb2-1836-4ab6-9ac5-a29d35ec0288",
+    "id": "9ca9e15c-13a4-4fca-9d40-8dbcfb0ce9e1",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15709,7 +25670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2ef0892f-1098-4b1c-a498-e7a046429879",
+    "id": "f6fa8688-b693-41c6-bed0-a57f94724227",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15729,7 +25690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05463f30-541e-4e57-bb11-289ac76f9992",
+    "id": "e11e2863-f3c3-4743-bbe2-a17d729d0d7e",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15749,7 +25710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a13a7d20-1a84-421f-9e07-3f83f99c18cb",
+    "id": "387e7632-93dd-4d78-b26e-90ebe9668452",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15769,7 +25730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b75c565f-f28f-4f5e-9fd5-8811cab12f67",
+    "id": "6a58cc86-291d-4563-99a3-31100f48778a",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15789,7 +25750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e34f7cc1-c4d5-42e7-b491-79f065639c39",
+    "id": "d0bb3e29-2d2b-4a7a-947d-9cf1e6a372b8",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15809,7 +25770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edb837bb-bdbe-4b88-8747-6664512ce662",
+    "id": "5ee02efc-7601-4436-912c-878449444147",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15829,7 +25790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0e69685-51e1-4305-a187-3d34cfc4c84f",
+    "id": "c8e22fe4-4792-42d8-8b91-9d5cbb904c9e",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15849,7 +25810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f66a4df6-d901-4339-ae2e-fe6d972e922b",
+    "id": "af38d9b0-0944-4137-86b3-68e8f73d8aad",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15869,7 +25830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d42488e0-a6a7-4507-b8f2-3bf792d9368c",
+    "id": "c2e775d3-0121-4c81-8e8a-358f87ba68a5",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15889,7 +25850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0bd02760-cf10-408d-9fe9-feaca9a27efc",
+    "id": "1d9a672c-df05-4cb8-9c22-e1bacfb075f6",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15909,7 +25870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00eed742-7f56-4751-ac9f-69882e228a03",
+    "id": "1f1449d8-443e-467e-8878-4a6414097ba3",
     "codigo": "4.1.01.11.0002",
     "descricao": "VACINAS",
     "tipo": "C",
@@ -15929,7 +25890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6e11c19c-b974-4245-b4c1-9825d50a346b",
+    "id": "5347f851-e9a1-4796-8fe8-372262c506ea",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -15949,7 +25910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "35c6f344-e795-47a9-ad69-45ee67dffae6",
+    "id": "f580fd6b-23f0-4aa0-b4d4-032e02a62a68",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -15969,7 +25930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f32c0fd0-6290-441d-bd01-27f214ebe02f",
+    "id": "133b9252-1da8-445a-94e3-b801217b2c76",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -15989,7 +25950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f2faca4-5656-45d4-891e-7c82a04736dc",
+    "id": "0ec1cdeb-d5ed-4d0d-a5d4-9368fc7271fb",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16009,7 +25970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9237678e-64f7-417d-bd54-7537b94af1a6",
+    "id": "e28de8da-d44f-4251-9876-9d32b886c78d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16029,7 +25990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d53e91d-ff23-4e1c-a389-22e9067855cd",
+    "id": "81c1e6c3-c2e6-457c-818b-cace9383ddce",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16049,7 +26010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9d82adb-2da5-4119-993c-2bb350a5f528",
+    "id": "c2cd6129-3661-48a2-85e4-90846f99bf2c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16069,7 +26030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e8d28ee-cbd1-4865-bf2b-88e0bfd2f0d7",
+    "id": "16a77394-0a24-4f20-9baf-99e4cec5e87a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16089,7 +26050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0d1bbc0-f922-421f-a389-2c91152ea40f",
+    "id": "85772843-f2c5-403e-8a0f-cee2defaee08",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16109,7 +26070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4219534a-93e7-4576-9883-d35db50b2aba",
+    "id": "8bd83013-1509-4145-9670-a379aa3daac8",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16129,7 +26090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0dcb6cf2-7341-497c-8424-a86863881296",
+    "id": "5a92c935-e95f-4db4-9a1e-bd7f2f273b62",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16149,7 +26110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f13f34a0-ec96-4b87-9ee0-e0ffb83b2883",
+    "id": "569960e3-2399-4748-a37b-40c786c9164d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16169,7 +26130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47c7cbf0-0f95-43fb-a229-7d2eaec17024",
+    "id": "93526ce3-7131-4341-907d-71ef5431f799",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16189,7 +26150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1aaa1cde-4bc2-4a2f-b38f-cf52ea6bfaf7",
+    "id": "dcae60f9-d856-4aa0-a608-b70c3c4f1548",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16209,7 +26170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de2758f6-d027-41e0-9fc1-038fc5c6e702",
+    "id": "20ed1413-95c1-4ae9-86ee-df7954672262",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16229,7 +26190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61d8419d-117e-40ab-bd6a-b09fcded0854",
+    "id": "1a068859-94ac-495b-a2ff-b1975ecd0980",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16249,7 +26210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f188df28-c43e-463d-9956-9b6d60f50562",
+    "id": "ef941ba6-0233-48ba-857a-767f6c23bc97",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16269,7 +26230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6bca004a-4bd8-4f70-9169-c24299d5ee53",
+    "id": "64b69cb1-6cb4-409b-b271-7d6bdad55cf2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16289,7 +26250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9c15d30-3a08-4bd9-9a5b-a1d3cd490b48",
+    "id": "0d89e058-abf3-47a9-8bdf-55e4c2d56b02",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16309,7 +26270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a7db363-25af-4a6a-b1e1-c2c1ce36d3e6",
+    "id": "3747df5b-9321-480f-8302-9261d16df7d2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16329,7 +26290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7bd40dad-3f62-4fd2-a1c1-f808fb6f8b16",
+    "id": "909dcf89-3413-486a-864d-9a68e09ac5de",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16349,7 +26310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f2f03a0f-ae2f-4973-b901-f99fab12c580",
+    "id": "6bf3a1c6-6fe5-48fa-a6ba-f6de400717a6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16369,7 +26330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0d1945a-a02a-4d20-89ed-fdd28b66817f",
+    "id": "8a46600a-a914-48ad-8290-d5a5be60d0eb",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16389,7 +26350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05ecbb03-df84-4e20-8434-187acc85cbde",
+    "id": "255b31a8-712d-4289-a5d0-e0cdab9a53ff",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16409,7 +26370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4719b29a-9c9a-492e-b280-2a97e3f6e368",
+    "id": "566ae90b-3f3c-4168-a863-c353c3b1cf2f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16429,7 +26390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ce264e12-a689-401a-98e6-11b08bc9af02",
+    "id": "4432eb39-8be6-4696-b4fd-f39caa0746c9",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16449,7 +26410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0480024e-9213-4015-b11f-3b156ec8077d",
+    "id": "4c690ff2-60e7-4f35-8898-babd14caf140",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16469,7 +26430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1f73096-fc00-4c3e-88c0-dde7006bcda6",
+    "id": "b9c747db-ab90-43e7-9425-2683ec8c1566",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16489,7 +26450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a195ed9c-d5b7-4da5-9476-04c16524e773",
+    "id": "b82dcdc9-e793-4f51-9cc0-d633d81ef62a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16509,7 +26470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4153c50d-8727-468e-8974-1529f97d168a",
+    "id": "a6109b62-b25b-4462-9891-e0ac70c887ac",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16529,7 +26490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06b76a51-5400-4769-a611-8563742b94f0",
+    "id": "ad858436-e322-46e0-9a36-130e774c4d45",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16549,7 +26510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "50c234a6-25a1-4c9c-82b1-767f233e2048",
+    "id": "fff76617-4617-4dd4-8e20-8b32ee16ea2e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16569,7 +26530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57f367b6-d6e4-4991-8519-ac14366dda18",
+    "id": "00b9941f-3306-441e-b859-1019c8053f16",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16589,7 +26550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de4a69c1-1b4b-4d8f-9aec-7f792c25cdaa",
+    "id": "262f44ae-12d3-402e-b15e-d04498f3d6de",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16609,7 +26570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d3d26aac-54ad-4a6a-8aa3-fe212bda873a",
+    "id": "9a1c0a26-74cf-4a0f-a170-a65ee14b4b5c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16629,7 +26590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b1dbf49c-7db4-402e-97d2-45a50fa5607b",
+    "id": "2c67b100-8ca4-4e4e-9d12-50078e2b2188",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16649,7 +26610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4035ff1d-8a6b-484d-a281-d6d0bfe14807",
+    "id": "86a3d585-1c33-42a2-8bdd-ccb74c581a1d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16669,7 +26630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a294104-aa7c-4508-ad60-e91fd0b742cc",
+    "id": "7bf1118c-1482-4428-bd84-fa5ffd780741",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16689,7 +26650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3555643a-bbb6-4fb2-8dfa-34f13c7309e2",
+    "id": "c0126cd7-a693-4370-9331-e79703ff42cf",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16709,7 +26670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c95c52b3-6ec6-4c02-a36f-e51811d42594",
+    "id": "e6ff0de2-18f3-482c-a78b-2e04f1dfbad8",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16729,7 +26690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5e1c4dd-f2d7-4be0-806f-1d49c9cbfa56",
+    "id": "4523cad5-ad7b-4c12-bd57-e825e1d8eeb2",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16749,7 +26710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee64ce3f-7ef9-4e4e-814e-29decfdfecc7",
+    "id": "3e3c2da2-d818-430f-9ab3-f2b5d553816e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16769,7 +26730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6da5f8a2-1adf-4236-bd72-de9361d0de2c",
+    "id": "2e0cd160-8488-4c7c-aeaa-b8fd6f93ae2c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16789,7 +26750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e39ce82-e281-462a-9661-55668d4c446d",
+    "id": "691060c2-ebaf-420b-a33c-500061980538",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16809,7 +26770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "95fb4cfc-2b90-48e7-83f4-2a4154839d76",
+    "id": "7c0af333-debe-4b49-babe-af415faa1c76",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16829,7 +26790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2f83d86b-ca92-45e1-9fd8-fc3170fd4578",
+    "id": "afe11898-8b8e-4eb7-90e8-f63c84197b25",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16849,7 +26810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d418fbab-a3c6-49fc-a180-ae438e466f99",
+    "id": "b8c0acc4-f532-4d56-aaa6-d9d1b4c6e0b0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16869,7 +26830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e05ac9d3-f2b8-493b-9afb-fe72d3c290c9",
+    "id": "1e330e7d-83c5-46ee-966b-76149cc421b5",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16889,7 +26850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5aac8aeb-0375-49df-915d-868283f61cad",
+    "id": "fac2fcc9-64c1-4319-b70c-f5ab4c71be6a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16909,7 +26870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fcd14c80-63da-4bb5-8900-8b68c70366e2",
+    "id": "45001984-8eb6-406a-a198-056fbffe6336",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16929,7 +26890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6dcfbcda-5ec5-4134-9c52-90a247e07dca",
+    "id": "6e228e8f-1569-4257-bdb5-2f9b9cc5c441",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16949,7 +26910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85486dc2-686b-4e29-b682-1b51c67653e7",
+    "id": "78a9de7b-f238-4285-afb9-35d0642f3ca0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16969,7 +26930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "818e2bd1-aaea-4379-92ac-8961d0656967",
+    "id": "ffbac66e-5420-4a9d-884e-7ed51dca03b6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -16989,7 +26950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6cbae6f-ab63-4783-9dd1-7b29af7af2d1",
+    "id": "cfed31be-67df-406a-816c-f67e025a6948",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17009,7 +26970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c33a663e-bc80-42fa-9eb1-db9ad504ad44",
+    "id": "1d5510e6-a981-406c-aac0-f92f3545031b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17029,7 +26990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "674c824c-4d9c-424d-9210-537d336369fe",
+    "id": "77e32e06-a219-4bf5-ae2d-3621dca106db",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17049,7 +27010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac72fd20-4a4d-49a3-91f7-7f0ca95f71fa",
+    "id": "fe667b22-a4b3-43bc-9f44-62a2fc332053",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17069,7 +27030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "be84a1c7-9d65-4d4a-bbe4-d355ecf7f90a",
+    "id": "c3f9800d-fe09-4085-8f81-a8d669081f06",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17089,7 +27050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "13fd8816-f361-4984-8dba-3de4c9a0fc67",
+    "id": "d46e2dd2-6e88-4a9f-b2c0-84470994e41e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17109,7 +27070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c86c49b2-2678-4f17-9bd2-f1164f4f5977",
+    "id": "b02d7fe3-30ba-460a-b9d3-54aebb56674a",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17129,7 +27090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0939cb6b-48d5-42bb-8b7e-863f0aabc5c5",
+    "id": "dd9cf555-9092-4115-b5fd-7477e2dc25ab",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17149,7 +27110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8d4f7090-00ac-4db8-a3eb-f0893d0b5db8",
+    "id": "41e46572-fe4b-448b-bdc2-e2643daa96d6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17169,7 +27130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2c2590a5-eaf1-4ce9-83c5-0ad75b360f37",
+    "id": "ce591ba0-fc3b-4d05-8df9-bfdb69a75b6e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17189,7 +27150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a54ee2f2-a34d-46a1-baeb-4a1be28a677b",
+    "id": "e8fb89e5-379f-45aa-b8f4-cc6e73831da9",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17209,7 +27170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec329c20-d260-4164-8120-1e31f870c8ad",
+    "id": "dc858aea-70a5-4a03-98fe-2e1a2a58b09f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17229,7 +27190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "58f7346c-6726-4678-bcaf-1fd3fc098529",
+    "id": "298135aa-f089-486d-a3e7-157221ee4a7e",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17249,7 +27210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49219fd3-3aab-490e-833f-11c4b3b78d87",
+    "id": "87fc852d-4ea0-4519-9c63-b4a3263fc555",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17269,7 +27230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d84ae3e-4de5-4a08-b9ed-c5072e7fa11e",
+    "id": "29aa8923-9cf5-4fdd-9496-413d7a4127fc",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17289,7 +27250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "563b612b-f3b2-400b-81bc-d541f84aa334",
+    "id": "7528c780-c287-4de5-8c6d-fdf88e356e2d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17309,7 +27270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7017ea1a-0e19-4cf3-877d-717dd46e323f",
+    "id": "8a425784-6a02-4281-ae7d-2a2243fd954b",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17329,7 +27290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dc5c59b6-71f8-4c07-9e68-6442535a7a44",
+    "id": "e3714b1a-e98d-4b60-9be0-5ea6556fc861",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17349,7 +27310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32c9b18c-00f6-4b03-a0a2-9d5b47235a38",
+    "id": "3bd2b4c1-3de9-4d0a-88ce-d855e960740d",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17369,7 +27330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e52a94a4-ae16-445c-9ce6-c9d98ef90bae",
+    "id": "0ce9b9dd-e348-4e96-a1f2-25109ff928b7",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17389,7 +27350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae8e6bbe-0686-413a-9771-f94756402902",
+    "id": "0f64346f-9bc0-4ecc-b294-8a6c378bc129",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17409,7 +27370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad755138-0596-4482-8593-bee268a53a0f",
+    "id": "4aac1c82-9282-403c-a5fd-74fcee90c6a9",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17429,7 +27390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f46f0d76-913a-4b26-a5cb-10a66067ea5f",
+    "id": "a22652b2-91cc-42b4-ab26-c630a5773bd0",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17449,7 +27410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5d81e280-7b86-4598-9ed2-482ff6ece068",
+    "id": "d07b30c1-ce64-43a4-b3a2-2c493678d2fa",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17469,7 +27430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05dbb905-1a1d-4a5d-8ef3-4ef487e44961",
+    "id": "b228c648-a713-4f14-8ffc-30c97899e36f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17489,7 +27450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9ce6278-6c08-4252-ba0d-a155b09f184c",
+    "id": "2a3e29a9-afa4-4dda-8c0b-79a3ef4ed30f",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17509,7 +27470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1682f91-4fe6-4103-a7a0-f485eb31b709",
+    "id": "ad159e04-ed78-4e4c-bd4c-15d4f4ac0f56",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17529,7 +27490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cac5b2d4-529a-4221-ac00-ba65774add2c",
+    "id": "8a7f6d2f-8496-4aff-98d6-f9723afc59a6",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17549,7 +27510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "70c7808a-447e-46ef-9b6d-d6ef4b94625e",
+    "id": "3c069b65-a235-4178-b11a-c2177efeb82c",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17569,7 +27530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0696012-8c59-4310-96b3-6a9cf60c2da3",
+    "id": "f6e14d54-5f12-4cbc-85c1-a716137601ce",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17589,7 +27550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe3339ca-7902-4756-b84f-ad9f35563fad",
+    "id": "31ac314c-8658-46a8-94e9-8202ca448e85",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17609,7 +27570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "24e2ea60-e9aa-46e5-9325-58a224b4ed12",
+    "id": "4c966f49-1784-49e7-b541-493c26bb5f56",
     "codigo": "4.1.01.11.0003",
     "descricao": "MEDICAMENTOS",
     "tipo": "C",
@@ -17629,7 +27590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b6073ae6-a16e-4511-9848-22b69fe9f689",
+    "id": "7bd9000e-742d-4dc9-b53a-79ac96c02fc3",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17649,7 +27610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dddd8ec7-48ac-42e1-9a2e-cf19bae758fc",
+    "id": "373e835f-1825-4da4-8a55-1da25bf4ef62",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17669,7 +27630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9600a82a-fe02-4a76-ba79-02af70c16960",
+    "id": "c06c723d-c46f-4a11-8c84-cfe40d967182",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17689,7 +27650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c8f64a8-9aa1-4815-9ba9-c3dec880d45c",
+    "id": "d5b2572a-262d-443c-a4fe-b8f77ac0664e",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17709,7 +27670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "03d97081-a9f5-4166-aa4e-0f7773be2a04",
+    "id": "6a0d5abe-b629-47ba-bd59-8b00d84eb4f6",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17729,7 +27690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52d2080f-55fa-4d92-9492-5249b53c2bbf",
+    "id": "baa6a077-6b5a-4bee-a0d9-facac31e4464",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17749,7 +27710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c13c0e34-0e6e-4e6b-a26d-75d0f39f6d3d",
+    "id": "a36ae101-fc47-4220-be39-0f1bd296bcbd",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17769,7 +27730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0599e27-6177-47f5-8e6f-34ffbafc8733",
+    "id": "4b8b7826-b87f-4daf-a924-465d25da4654",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17789,7 +27750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fea52151-08aa-45e0-8e54-c4f11c9dd1c3",
+    "id": "25216b42-2c63-4b67-8b5e-aaa285bb08a5",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17809,7 +27770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6435e187-eb27-4fd2-bcb6-ac965d70bf4f",
+    "id": "4fea1d00-e1c7-43b6-b373-335a7e734ad4",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17829,7 +27790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f850f1f2-6527-48c4-ae6e-565b50c7787e",
+    "id": "71d72869-e05e-4924-bc42-0035a94a3ebe",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17849,7 +27810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4593ceb-7632-47e6-b735-19480d333517",
+    "id": "9b842e72-d909-4298-9e97-8efcba811f0e",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17869,7 +27830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c0e1937d-fa36-4062-8ab5-4595deffcee8",
+    "id": "339a738f-4740-4525-b88a-4ff5d76a38bb",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17889,7 +27850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07e44cbc-ee62-4fb2-9d71-62b2e12e234b",
+    "id": "4bd00c88-af80-422d-a701-0acff88425c9",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17909,7 +27870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3fbee0f0-c4e9-4c35-a5d7-8c28e490f89a",
+    "id": "721981d3-beba-4b71-b9ab-10c4dffd0559",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17929,7 +27890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74c7425e-bacb-492b-bdab-e5007e3f8c29",
+    "id": "61c33f59-9b07-44ff-a182-3caa3bb51ffe",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17949,7 +27910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66c2e0c0-f262-4417-8865-37faaeb8a5f4",
+    "id": "f67bef80-6ded-41e9-b171-998fc7f24db4",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17969,7 +27930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb5e203f-68c2-482b-996a-0749bde4c410",
+    "id": "4da4e70f-00a5-42fe-9fb0-70bb09956387",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -17989,7 +27950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b88b2f61-dcc4-4da3-86c3-f6db29eae639",
+    "id": "a3d68b3d-09e0-4e2d-8ab6-b8ea4ad26c0e",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18009,7 +27970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "565d5075-79d9-48c8-8119-cdedad3a9b89",
+    "id": "24ae1969-abb4-480b-8237-d647d183ff8d",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18029,7 +27990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b12023bd-82a2-4070-88f7-e7de2db89cdc",
+    "id": "f114a8af-8296-4860-8988-9f6e4fa6d0bd",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18049,7 +28010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "339d815a-83f9-4813-907a-ea4ed2649995",
+    "id": "c221374a-65c4-4970-b2a7-3d7495c815e8",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18069,7 +28030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b9b1627-164a-4196-ae6b-2285392a5333",
+    "id": "297694ec-fc2a-4630-a042-f1fa2eb7eee2",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18089,7 +28050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75bc62a4-6663-4285-b90d-7ad06c97fe91",
+    "id": "00bc9de3-d540-4715-83b3-403613a8191f",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18109,7 +28070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "784d4a25-24fa-492f-9f1b-83a779e041b8",
+    "id": "9ac4c82c-1f14-4c44-a1d0-ad6cdb1056b8",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18129,7 +28090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4bef3450-f8f6-4d94-b32a-1acf396d7a50",
+    "id": "f30b155b-7662-456c-8d79-d175eebcc60d",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18149,7 +28110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "600bd96c-26af-404f-8344-cbe480dfdb75",
+    "id": "0082ef5c-16ba-4fe0-ac4b-f42b3adf2919",
     "codigo": "4.1.01.11.0004",
     "descricao": "MATERIAIS DE INSEMINACAO",
     "tipo": "C",
@@ -18169,7 +28130,47 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bdc7b436-ae06-48ca-85be-42f050df415c",
+    "id": "be172ad4-d900-4463-b5ee-4659f8dbceb6",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FOLIAR N 1% + P205 30% + MG 1,5%",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 81.3
+    }
+  },
+  {
+    "id": "71f342c7-c387-49ec-98f8-8e88b65e2205",
+    "codigo": "4.1.01.11.0017",
+    "descricao": "FERTILIZANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FERTILIZANTE (ADUBO) FORM 20.05.20",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 187.98
+    }
+  },
+  {
+    "id": "07cae85d-1cce-4039-a834-9f87c4dadd32",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18189,7 +28190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9898ef84-c2af-4a1f-a116-9bd7a8da97cb",
+    "id": "5691c9f9-b041-4641-b6d4-62879a4d8dc3",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18209,7 +28210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c1ff9067-57cb-4b5c-a71a-9fa87c52683b",
+    "id": "7ba05b45-1a96-44a3-b91e-407f589d85f6",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18229,7 +28230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "121ebc21-33dc-432b-93fc-01cc290b2aae",
+    "id": "ed688eb2-d50e-4a8b-baf4-5c685b979205",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18249,7 +28250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6489954-74f6-4286-b88b-1a141b2ee6fc",
+    "id": "f0597409-676c-45d3-a530-6c2a97058c31",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18269,7 +28270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93742c46-20bb-433a-ab05-619b4d0d3666",
+    "id": "dcb009da-2a30-4047-9c8f-5f7ec7f1378d",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18289,7 +28290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63b9848f-3d31-4409-90d4-27538c912d81",
+    "id": "a5574395-9af8-4364-a7e1-f9bd619798b3",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18309,7 +28310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7a69ee68-9169-4c80-8e1d-b21b8bf97dbf",
+    "id": "f47fa70b-3a89-47ee-adad-9705a59d2ed6",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18329,7 +28330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a28124c2-a4d0-475b-add8-d310a308bb8e",
+    "id": "f79e09d1-5bbb-4d45-824e-6fa148e6f808",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18349,7 +28350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40c3e146-3592-4f9c-80fe-eed6faa6026c",
+    "id": "6a37aaed-8a8c-4cae-8588-7f50e2dd6d1d",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18369,7 +28370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "47434612-88f2-48a3-ac84-451cbe877a39",
+    "id": "41f66a1b-1fb1-477c-8a7d-f1a3adfa9c8e",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18389,7 +28390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56d9a27f-2575-4387-8fe7-e9a3a89e7c8d",
+    "id": "eb363a5d-b879-421b-bc13-d5e240cee348",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18409,7 +28410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d8897d1-6fd7-4cc6-8d55-f3208e744ee2",
+    "id": "7a3b25f1-89ba-47e3-a501-83b901a2e11f",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18429,7 +28430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0b30e71-cf4c-45a3-a998-d58f5cfd6f56",
+    "id": "9ae4175e-9db5-4d97-bec2-dec1fdfdb262",
     "codigo": "4.1.01.11.0017",
     "descricao": "FERTILIZANTES",
     "tipo": "C",
@@ -18449,7 +28450,247 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2582b6c-973d-4059-8673-a22377ac819e",
+    "id": "90a8d94e-e06c-4126-b7ff-d8a7e5800be6",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "REGULADOR ETHEPHON 720 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6038.76
+    }
+  },
+  {
+    "id": "87175e71-311c-4f41-b4ff-1a9a2459b8a2",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "REGULADOR ETHEPHON 720 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18887.23
+    }
+  },
+  {
+    "id": "62427d1f-4cd7-4021-a92c-edeec7509e0d",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA CLORIMURON-ETIL 250 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2495.6800000000003
+    }
+  },
+  {
+    "id": "0af2d4b5-618a-4970-baac-f9da7e842494",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "ADJUVANTE ESTER METILICO 720 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 464.64
+    }
+  },
+  {
+    "id": "576a2197-f664-4c27-98ab-fdde76b6e025",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA CLORIMURON-ETIL 250 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1142.64
+    }
+  },
+  {
+    "id": "45fce76b-6da2-4ca9-88e7-12ca63bc9274",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA 2,4D DIMETILAMINA 806 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3061.5
+    }
+  },
+  {
+    "id": "88ea196d-a9e2-4aab-bf89-88c10f6ba88e",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5777
+    }
+  },
+  {
+    "id": "ee09e255-2d87-4639-aab2-45b4c75549ff",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "FORMICIDA ISCA FIPRONIL 0,03 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 288.23
+    }
+  },
+  {
+    "id": "ffae4d17-cc77-4a88-b1b3-47ef76590450",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA SAL DE AMONIO DE GLIFOSATO 792,5 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18720
+    }
+  },
+  {
+    "id": "4a3c9977-9930-433a-91a2-c59272af3241",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "HERBICIDA CLETODIM 240 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13287.199999999999
+    }
+  },
+  {
+    "id": "ebe52967-ac9d-4c6e-9002-05bb4bd24ea0",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "REGULADOR ETHEPHON 720 G/L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2741.6
+    }
+  },
+  {
+    "id": "c60bcf7e-3ea2-4775-80b8-f5f3ff855d5b",
+    "codigo": "4.1.01.11.0019",
+    "descricao": "HERBICIDAS E DEFENSIVOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "REGULADOR ETHEPHON 100 G/KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2920
+    }
+  },
+  {
+    "id": "577cd142-7dd4-48ff-a019-375eaca93379",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18469,7 +28710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b30d0a9b-d14a-430c-8f7c-a3ac14efe845",
+    "id": "d6905ff7-cd6e-4cde-9e11-3037cbc5a8ca",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18489,7 +28730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e59d61e1-a6f5-4cf2-b3a6-2029ff442c58",
+    "id": "b68e8043-d9af-4621-9a84-5a4df7d52bb4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18509,7 +28750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edc91e6a-e609-4857-8df5-65a5cadd0540",
+    "id": "bc093f43-1b0e-49b5-bc6f-755e6f380ced",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18529,7 +28770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cea0b132-c80c-4f95-ac98-f3729c4bfcf3",
+    "id": "d135c841-a4bb-44a8-892c-65abe889071c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18549,7 +28790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4694a4b3-8ddb-4a75-8bad-e59170dfb561",
+    "id": "8240407a-17a5-4034-b97b-b95229edb2bf",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18569,7 +28810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e04e7663-d7d4-41cf-bab5-0d8de19612b3",
+    "id": "9f92abe3-97a2-4d94-bc4c-975055aca6da",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18589,7 +28830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef2fbf4b-f293-4929-bcdd-50386ecc3b49",
+    "id": "11c0c508-e723-422a-aa18-d29dc800f6ee",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18609,7 +28850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "964aeea3-108f-4dea-bfc5-913c473a5645",
+    "id": "84d1591c-3323-4b88-a2ea-d3440920fe3a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18629,7 +28870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c96b3e9-c36b-4084-b81d-5d62a11296f7",
+    "id": "efeec033-9b97-43d7-81ce-c2e6722728d8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18649,7 +28890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3100a06-8aa9-473f-bae1-ea85c2030e11",
+    "id": "a3e1eca8-3300-4cd1-8828-c96fae4b6df4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18669,7 +28910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f8ba00ff-15ab-4c44-95d7-ff0fb3c22e0a",
+    "id": "e3684357-624f-47c6-b3f5-5b6bacd1f710",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18689,7 +28930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "702a5fe9-d744-4434-b7da-be3eeae77da2",
+    "id": "38352c01-d4c0-4e59-b97f-153d40007fe7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18709,7 +28950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "326f7673-d27a-43d9-abc4-8aaa73053688",
+    "id": "901dd5cb-9c0c-4336-885e-b1264d3f3c53",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18729,7 +28970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b435af35-f8bb-4229-92e4-6a1594b84f28",
+    "id": "988b58c2-0ce4-4ea9-aab9-79763c6c9032",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18749,7 +28990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8034ef68-1b65-4a3f-9212-5936c0456a79",
+    "id": "4ebc2ecd-4f37-4076-bcf7-dabc55bededd",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18769,7 +29010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "355399a0-75df-4060-9592-08f492f7bf5a",
+    "id": "06d06047-5e8c-4df6-be73-ad835372b844",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18789,7 +29030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1755f2b2-1be1-4598-b3f1-2bbe66e96552",
+    "id": "fe698bd1-a953-41f1-9ad8-276f0e6e14ed",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18809,7 +29050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dd4cea46-e02f-42cb-9704-f043a6586d42",
+    "id": "cbe3bec3-43d7-4d13-8f7b-ced7e3f20f14",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18829,7 +29070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "39fe44c7-f26b-47e3-a880-7728de3d343e",
+    "id": "5921dd5d-69bb-4d7e-890d-8bcff9215939",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18849,7 +29090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99097f9f-466e-4c4e-a1a1-46c139563d22",
+    "id": "1f39d010-860c-4ff0-98f2-33fbfb45a991",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18869,7 +29110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b8d84da4-4597-4af6-a626-cf1be1967520",
+    "id": "18cc148c-f032-441e-b5dd-86eabcbfade5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18889,7 +29130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f02d0a5-50b0-4b9d-bf9f-a84bce2268ad",
+    "id": "04cf816d-4c99-47ec-893c-35ba088e3af8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18909,7 +29150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b156691b-785f-4f2b-8ba2-cc7774585044",
+    "id": "3ad239fe-c1ee-46d6-b133-bf1035352094",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18929,7 +29170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ba54a2d1-d613-4877-8429-87b6ac7b7bd2",
+    "id": "bd22d1d5-e352-458a-afdf-5977ebbcaf1b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18949,7 +29190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f67aa995-6268-4ea3-86d4-91f6d0d1c57d",
+    "id": "0c54c7c8-cc54-4506-89b4-be7f423a6242",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18969,7 +29210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "439c1141-a30f-4db0-8cca-d3d6b8abac36",
+    "id": "9199f054-c377-4dee-8219-ab1de7c8fdc7",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -18989,7 +29230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a70ed84c-79c6-481b-aa04-2ada84456026",
+    "id": "e12c4d40-a4ad-4a7f-b64e-c8b0d012b7ac",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19009,7 +29250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "851f9a87-9b59-4cdb-9dc3-d663e451f9d6",
+    "id": "94442c0c-59a9-486a-b0e3-77e9e4776f38",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19029,7 +29270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b327aabd-4481-4131-9339-5b90a8c64874",
+    "id": "51120a67-9de3-4c61-8772-6fc08d9dd408",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19049,7 +29290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f4bc7f6-9467-41b9-837c-027185cf888e",
+    "id": "10c20642-0058-4b78-83b3-fe13afa52f83",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19069,7 +29310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ce95c2b-6822-4dda-9622-9e7050507566",
+    "id": "4cfce314-34e3-4feb-b72e-fef51731ce11",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19089,7 +29330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36056559-6584-4adf-8692-ea228cc02ac1",
+    "id": "b1132a51-c1f2-44ba-be7f-50dfb8f3607a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19109,7 +29350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71188ca0-0c29-4a1d-bc4f-4f9bf0bf4f57",
+    "id": "f97f946f-f918-45e3-9690-20c174359b77",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19129,7 +29370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da922163-a2a2-45a4-beb0-963c466a6789",
+    "id": "3b0f503f-948a-4f20-8f84-7185a49e430b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19149,7 +29390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0b61e0e8-5679-4a03-8f1b-1aea6b8e0e54",
+    "id": "3a575f1e-aba7-4242-9db7-9adf0488fc9a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19169,7 +29410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec0887ea-11b4-4c9e-ac53-158033dd4fcb",
+    "id": "24d24748-2f98-42f9-98d4-261774b00c21",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19189,7 +29430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a8d9ac0-6fd5-48b6-977a-39e7070d2fc9",
+    "id": "d413c530-34ca-49d9-b895-6fa6add1e010",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19209,7 +29450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f921b1ee-cc63-4987-ab9a-2d6fd6dc3c14",
+    "id": "88ec8a5c-fb38-4bb5-bb5f-48256adeb0ad",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19229,7 +29470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4e456738-5282-46a9-85dd-1468da0578af",
+    "id": "c8e45c56-feb0-4b3e-b595-a7022601395b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19249,7 +29490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36a59f21-b9d4-42a6-b6f5-33741ec46e08",
+    "id": "0828502a-7181-4bbd-aaad-d17a9831c6bf",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19269,7 +29510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ea7a6ce-b3b1-4f76-95c5-c8412fe0dbf2",
+    "id": "acda4b6a-3beb-446e-9a8b-6678b7114bb2",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19289,7 +29530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "baee0692-e19a-496e-8191-fb0ecf1db837",
+    "id": "7298c424-1936-4faf-a3bd-3e7b8c854c34",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19309,7 +29550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d0529ed-f73a-417c-9a20-485005416fc4",
+    "id": "dbc27dd4-29ac-46bc-8b27-cad3bb0f838b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19329,7 +29570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c8c90ee-3ab7-49f3-a475-c7824e92065c",
+    "id": "c628710e-587a-4e95-a476-d02005c55129",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19349,7 +29590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c4b1508-0282-4c4b-9343-245a1043a8b8",
+    "id": "8dd8689d-85f8-4ba4-b729-281fef02b0c2",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19369,7 +29610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dd18152-2210-4b79-97f0-c8c7965454c8",
+    "id": "4fd34366-759e-4540-ace7-72450aea7a4d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19389,7 +29630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fda4f5d-6ba2-4a87-abcd-95722d4f9b85",
+    "id": "1f10aace-24bf-42de-abca-e6e293854306",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19409,7 +29650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a23ea0cf-9503-4a6a-8195-95229c08bec4",
+    "id": "8e92f9c7-8f82-4e8c-9c79-ceb4b57c7fe9",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19429,7 +29670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "896039b5-013c-40f0-a01c-380a542bba74",
+    "id": "e034fe16-164c-474b-99fa-131f9478730b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19449,7 +29690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "998dd15b-d5f2-4844-b016-7f7223cf152f",
+    "id": "359bcfec-f084-4a86-af2b-bf0897dce975",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19469,7 +29710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82437713-7343-419a-9dcf-b764c822a33d",
+    "id": "baa49032-4e74-4d81-9233-d13d46dbf778",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19489,7 +29730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87178677-ee7f-4db2-b5e4-7d348af18249",
+    "id": "639157ce-64de-498c-8417-3764e55f6fdc",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19509,7 +29750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb981c25-79f0-4adb-b3c3-ea2e708c83cc",
+    "id": "2fe2ccb9-9c21-4125-8798-c16f96420dc8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19529,7 +29770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abf52cba-ffdf-455d-8ae6-dec4652eab8f",
+    "id": "67062a99-042b-44e1-9413-bc03fdefdaa5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19549,7 +29790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "42f18aa6-ffc2-48dc-b5e2-e5aa083f24c1",
+    "id": "5e92e5d5-f9c0-416c-a457-0b28008f7bd4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19569,7 +29810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee7cdda1-5ac9-4a3b-aee4-f71b2db917d2",
+    "id": "33a03612-b06c-4e27-8318-b93358341df3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19589,7 +29830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4dc2bfcf-5c85-4941-bcdb-540795965b4a",
+    "id": "c6129139-7354-4063-954f-415790ffbb5e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19609,7 +29850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b0d059f-4a63-4cc0-84d7-13ca4619ae71",
+    "id": "dcf71e91-514e-45ec-8512-bae7132096d4",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19629,7 +29870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9426bca-3377-42b7-957e-e95b15c40e37",
+    "id": "b18c57fb-580e-4e27-a5e8-e94413518f68",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19649,7 +29890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0966f06-afd3-4070-aa4b-c3e1ad454c95",
+    "id": "77961181-6b60-4843-ad3f-0f360b884d52",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19669,7 +29910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f82e3573-c8ac-4a49-b269-6e0897b1af13",
+    "id": "3db0f451-e200-4e3f-845c-69084f05774d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19689,7 +29930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "17ba0dc5-2010-4838-a544-4320affa0c37",
+    "id": "a93e8dda-13c4-4d01-9c64-2bfe74e86cc3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19709,7 +29950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f5c65813-8e8b-4985-9041-e5f1a252e0db",
+    "id": "461d2fae-2a5c-4478-b485-1dc1e0e5a115",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19729,7 +29970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dff9d89e-0dd6-47c8-88cc-48e9c77af4d4",
+    "id": "dfaf4f08-4c34-4ce4-a582-48d23ac4acfe",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19749,7 +29990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "73d1c923-d4bb-40ae-b747-8c87ea0d7e42",
+    "id": "d1a76805-1390-4778-8b00-32ffb629b302",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19769,7 +30010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "23d18549-415e-4bf2-ad11-be6ff9bd9512",
+    "id": "a4d4ea50-f178-4674-a96f-79290e23a74a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19789,7 +30030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e812cbe-0262-4e8b-bca2-d7e11609751e",
+    "id": "5b508ca3-3950-4df4-a8b7-7134bbc542bf",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19809,7 +30050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2384f16d-3155-4baa-8a75-9fe2f1c603e2",
+    "id": "f0501f10-dffb-4eb7-8d94-3be3460c7907",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19829,7 +30070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aad2d0a2-6215-407d-a6e0-b3eb1e1c215e",
+    "id": "daccbd94-9367-4b20-a209-06a4e0e7c2b3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19849,7 +30090,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "601b3338-be2c-4f02-bc36-32c20d71ccf2",
+    "id": "c1ea8f88-79a6-445b-80b1-359c6ef85865",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19869,7 +30110,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf39d7ac-b53b-4fcb-a4dd-5fbb73d72f38",
+    "id": "d2c8986b-3cea-4d48-9323-fb670577ef87",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19889,7 +30130,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0d36d662-f97c-4205-8a2c-1b369cdcb4fc",
+    "id": "593ba5d4-997e-4a13-b020-4de27343f4f0",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19909,7 +30150,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9ba5d5dd-95e4-453e-a2b3-ad4f4ec1e5b9",
+    "id": "63a18391-c77f-4e2a-8694-e7f46eb7c158",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19929,7 +30170,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "201de4e2-d3b3-4e6b-b8dd-93bd9566b8a8",
+    "id": "ceb7c47b-9f52-4704-ac55-aebd558f3154",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19949,7 +30190,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aec829c3-811f-4781-9356-8ca6abcd6eda",
+    "id": "78d699ec-e56b-416e-8487-0fe1c1f19d08",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19969,7 +30210,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe4e86dc-8ec1-45dd-9b50-16cdff74b0cf",
+    "id": "bfe2dbcc-80f9-46ef-a257-4fdd59becc63",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -19989,7 +30230,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ff0656b-f024-43b0-849f-5492a58ca78d",
+    "id": "e1ff8113-1388-4ca5-bfba-bbc02491a3d3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20009,7 +30250,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06e312e4-49c6-4ef2-977f-1b987bf78e46",
+    "id": "c6916829-21c8-4891-92aa-7c436095ac47",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20029,7 +30270,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e37068ff-75e3-4237-8670-34065a5a68c8",
+    "id": "7fa33b4e-47e8-41c7-abe2-f39618eca845",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20049,7 +30290,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d5b7e481-f000-492b-b03d-12075bee9859",
+    "id": "0fea0c1a-e403-4416-9fce-964a15322937",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20069,7 +30310,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6f9add7-8595-4b30-9c5c-5d50156df3fc",
+    "id": "435f8fda-7e2a-4602-9be0-9003376e9285",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20089,7 +30330,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a8334dd-cca5-4b10-961f-7c9260bfa29a",
+    "id": "957d9849-900f-414b-8040-1fd0f443ffa9",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20109,7 +30350,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "217ef103-4c8a-4212-ae70-0bcf6736ab60",
+    "id": "2f244f7c-1852-4728-afec-3a1201e0e31b",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20129,7 +30370,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6db89c8-d02d-41b9-bf06-f46c867975ca",
+    "id": "ca113c1d-ac74-40f3-bf0e-7a9a3710a316",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20149,7 +30390,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "785eee16-e86f-422f-b36d-bc33cfbe81d3",
+    "id": "4dc2684b-26b1-4bf6-93a0-6a1ae71272c6",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20169,7 +30410,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74620178-a69b-4764-a623-7dc3f3a84221",
+    "id": "e2149b49-7865-4593-a070-8663afae52f3",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20189,7 +30430,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0b16386-5cac-40d6-8ca2-3477040a3c0f",
+    "id": "3cbb8eb4-75ea-411d-aa5c-a33baf91ec4d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20209,7 +30450,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a6512b35-a17c-4718-bfbd-3736b0eaf504",
+    "id": "a1f18cdb-c0a0-44ed-a7f4-18ce18d605ad",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20229,7 +30470,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f780745a-5800-47b4-9659-0c87b1ac6496",
+    "id": "894dc683-5ee3-4a7f-aa79-1dd2d0403416",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20249,7 +30490,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d1de336-ef51-450c-bbf3-43cf268aebec",
+    "id": "ff8655a5-d195-4336-b31a-1045d8cefc57",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20269,7 +30510,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "89432676-8fec-4ce7-9129-d5ff8f1cbc36",
+    "id": "17e901fa-08b5-4052-926b-0c6ea2204102",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20289,7 +30530,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "907161a5-5ce4-4855-b704-501328999193",
+    "id": "e776b572-1dc4-4c56-ab39-4905bc5f9a3f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20309,7 +30550,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "107107c9-02d5-48da-980a-75ff9d1f8efa",
+    "id": "cd4cbcea-ba20-45de-962e-32f0f2825493",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20329,7 +30570,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a3db0ce-ecad-4482-96e1-da50cc020f8e",
+    "id": "1862600e-82c5-40bd-887b-e89c62ab3b45",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20349,7 +30590,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c32df068-3ef1-4636-a433-6561fc60be4f",
+    "id": "607fae01-0dba-469a-968f-543ba205486a",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20369,7 +30610,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62ac5c30-4bdc-4b33-9805-690a8f9e01a0",
+    "id": "b3bbe1b7-7cb0-4e60-b432-10aeb1a22031",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20389,7 +30630,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bed4f6f7-0180-4af2-be59-7472d9fcfebe",
+    "id": "150269fd-5581-42af-841d-b36d82f204da",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20409,7 +30650,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "605f7d62-5dcb-4b92-a14e-2e149aa7b499",
+    "id": "e58ac094-7f81-4250-9d71-d309924c94f5",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20429,7 +30670,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0981bbe3-4101-4460-9409-0b7e0d0c8fb4",
+    "id": "48f02232-03a6-473a-85e1-229e2d974a8d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20449,7 +30690,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "448ad089-4c09-4c2b-bfaa-90cf7d6e3b93",
+    "id": "11c29692-33b9-4d0f-88c1-7d69392c8e15",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20469,7 +30710,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75c863ec-2c5f-49e2-9cb2-8f21430717bc",
+    "id": "02370a31-df45-4560-a12a-4eccd9842c88",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20489,7 +30730,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64346f78-4980-4117-a717-1fc18355e241",
+    "id": "01f4ae05-5da9-4edf-9788-db65ab0cea7f",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20509,7 +30750,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "609febf9-adfa-4a89-aca6-0ac7f39076f8",
+    "id": "a7f573dc-734f-4935-86e6-04759b1581d6",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20529,7 +30770,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9816696b-ccf5-446e-892f-15c38a7d4552",
+    "id": "ddda322b-411a-4884-8ca7-cb3549cf7e48",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20549,7 +30790,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0564e0e8-6c57-4b75-9fd7-aa1fa8104251",
+    "id": "ef1800de-2956-470a-b9f5-1b115dbaed0d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20569,7 +30810,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2d75837c-c715-4b98-a166-13633846bc84",
+    "id": "6692ef93-7f3f-48f8-8212-83797b6a2b29",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20589,7 +30830,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1acfa48-eb93-4c87-a5d9-a43e421ccda4",
+    "id": "40652d79-5e26-4b8b-9cf7-5f7134ea42a8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20609,7 +30850,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "badda3b4-b7c8-4cdd-91ba-77abf48065c2",
+    "id": "d55f7406-10cc-4e22-86dd-e042e7bc2552",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20629,7 +30870,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90bff026-3a95-4e3a-ab10-dff5ee25a6f2",
+    "id": "05375121-d2ed-4b2f-9a56-f22bf5b7292c",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20649,7 +30890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ffa744f5-1bd7-4113-8c23-385056e08f2a",
+    "id": "2d9c52a7-f0b4-4c51-9496-f50d4491e92d",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20669,7 +30910,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9fde49e4-5eec-46bf-b69f-116015f87639",
+    "id": "c393c406-70fe-47b0-b194-e455dea634e1",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20689,7 +30930,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2135c511-0e25-4a26-bbf7-32a176527ebc",
+    "id": "d723bfbd-af63-4a02-a3cb-d70f94d6a03e",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20709,7 +30950,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ba16f74-8208-4807-9939-5fb92165b58c",
+    "id": "fad7605d-7a40-4927-b44d-eb505ab02eb8",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20729,7 +30970,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6484a456-639e-4dae-9d3e-dec1f9bcfe9c",
+    "id": "843fe14c-d7bc-4dc2-b9bb-35a39be0a0df",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20749,7 +30990,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "abdfe450-7bfb-469f-8a0c-ad56cde18341",
+    "id": "2e250f83-085a-449d-97cc-36ae41df7411",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20769,7 +31010,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f9452a0-105e-4d4b-ae3d-7e176dad4e6c",
+    "id": "fb6decd4-a644-4e11-8940-c682aa94f213",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20789,7 +31030,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "82ae7c2b-741e-4168-905c-6292b5254356",
+    "id": "a15e47d5-196f-436c-9653-10b3ac6f3806",
     "codigo": "4.1.01.11.0019",
     "descricao": "HERBICIDAS E DEFENSIVOS",
     "tipo": "C",
@@ -20809,7 +31050,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07e3175f-2130-44d4-8025-170113287cde",
+    "id": "e92cd800-85bb-4126-a298-d038220ce80d",
     "codigo": "4.1.01.11.0021",
     "descricao": "PARCERIAS RURAIS",
     "tipo": "C",
@@ -20829,7 +31070,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f092129-a43a-4874-b0f8-a87dca908a69",
+    "id": "61e0297e-bbc9-47a3-bed1-5802d0c60d47",
     "codigo": "4.1.01.13",
     "descricao": "4.1.01.13",
     "tipo": "C",
@@ -20840,7 +31081,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "5f20582a-2141-4d3d-b291-3f6c6d912e8a",
+    "id": "52e95b24-07a8-433d-8989-eb53a80ab2be",
     "codigo": "4.1.01.13.0003",
     "descricao": "CONSUMO DE EMBALAGENS",
     "tipo": "C",
@@ -20860,7 +31101,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63af638c-cfb0-4f4b-ba6b-59936490ef61",
+    "id": "0c29d53c-0e04-418b-8dcb-9576f0bb6499",
+    "codigo": "4.1.01.21",
+    "descricao": "4.1.01.21",
+    "tipo": "C",
+    "codigoPai": "4.1.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "9f1e5f8f-3205-42f7-a3f4-dd711cbec466",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -20871,7 +31123,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "be3dcacc-0708-4c0c-95c6-53bb38c4ff66",
+    "id": "56bd0705-afdf-4eeb-b631-790a825884d5",
     "codigo": "4.1.01.21",
     "descricao": "4.1.01.21",
     "tipo": "C",
@@ -20882,7 +31134,1647 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "c71d705d-132a-4c0b-8b58-b36baae10039",
+    "id": "5c4b384c-a133-45a0-8b63-85df561b01ef",
+    "codigo": "4.1.01.21.0001",
+    "descricao": "SEGUROS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 348.15
+    }
+  },
+  {
+    "id": "e558c62d-260f-4aa1-91a4-a9ba86121971",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 105.30999999999999
+    }
+  },
+  {
+    "id": "37af10df-9f29-40dd-bca6-e26c4e156d65",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 34",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 127.15
+    }
+  },
+  {
+    "id": "8630440e-c69e-4c32-8a6b-29aaeeff9c0e",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 32.56
+    }
+  },
+  {
+    "id": "fdb77c6e-83e9-407f-89ff-a33cb0ff6fb5",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 181.03
+    }
+  },
+  {
+    "id": "c959154f-f3e7-4500-84f3-3aabe39b7860",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 460.4100000000002
+    }
+  },
+  {
+    "id": "80c5d52b-86fb-467c-8010-728c88f23628",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 889.3899999999996
+    }
+  },
+  {
+    "id": "26968554-65d3-4bf6-bbd8-1288b147168b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPA DE CHUVA PVC MANGAS LONGAS TAM EXG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 757.5000000000003
+    }
+  },
+  {
+    "id": "a9d7d044-7a8a-4fe2-b7d9-203f38710335",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GARRAFAO TERMICO 5L  6915",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1055.7600000000002
+    }
+  },
+  {
+    "id": "27affbed-6f88-4840-8208-ec4d561d785a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 36",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 48.28
+    }
+  },
+  {
+    "id": "1f60062d-c152-439a-afe6-e6103bb7d788",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 36",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 140.06
+    }
+  },
+  {
+    "id": "5f504796-f192-432e-a6be-c3112b2f7fd6",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA DE SEGURANCA OPERADOR DE MOTOSSERRA 5 DEDOS Nº 9,5",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.5
+    }
+  },
+  {
+    "id": "41df63cb-1569-4acd-868a-95d7d7c17396",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPACETE SEGURANCA ACOPLADO PROTETOR AUDITIVO E TELA 6",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 119
+    }
+  },
+  {
+    "id": "55d98602-dcc6-4851-a787-063645f272cf",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPACETE FECHADO Nº 58",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 344
+    }
+  },
+  {
+    "id": "ced167ac-9c3e-45ac-b694-44b261d7a322",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BLUSAO OPERADOR DE MOTOSSERRA TAM. XG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 289
+    }
+  },
+  {
+    "id": "1b4b8520-23dc-445e-be9e-3ed23bae368b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 43",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 320.81
+    }
+  },
+  {
+    "id": "7d8795ae-a09c-4baf-999d-aa99e1328524",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 43",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 452.91
+    }
+  },
+  {
+    "id": "1159a3fb-a68f-43c5-9111-9d468d15f9c0",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA PVC SEM FORRO 35CM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 906.8300000000006
+    }
+  },
+  {
+    "id": "915ad978-54c8-4eb3-b8ae-3b8fcb96c30c",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR JAGUAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12
+    }
+  },
+  {
+    "id": "6af8b530-f34e-4f9d-8fc2-d2aea10644a8",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 145.09999999999997
+    }
+  },
+  {
+    "id": "46dd6402-da4f-4b57-97ba-1c22bef10744",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 103.64000000000001
+    }
+  },
+  {
+    "id": "ec7c226f-518b-4367-8c91-9b394508f73d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 42",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 269.41
+    }
+  },
+  {
+    "id": "368a1372-e2db-4f25-92f5-b2894640f13c",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR JAGUAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 77.88
+    }
+  },
+  {
+    "id": "76e8ed67-7dcc-47ea-b2a2-7e4f47948bd9",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 193.5899999999999
+    }
+  },
+  {
+    "id": "c62c44bf-2425-4f76-bbdd-fb5b3fc40b71",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 109.63000000000001
+    }
+  },
+  {
+    "id": "c5cb8fd7-f737-4365-9c64-d9693c7d638e",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA PVC SEM FORRO 35CM",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 519.68
+    }
+  },
+  {
+    "id": "bc846d4a-d4e9-46cb-a0d6-8c6eb96c788f",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18.39
+    }
+  },
+  {
+    "id": "8e404b17-6e4a-4b33-9154-1c81d719e7fc",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS S VELCRO TAM G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 83.28999999999999
+    }
+  },
+  {
+    "id": "1db32acd-f8a9-4527-8084-d0ad98d6fc35",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 127.16999999999999
+    }
+  },
+  {
+    "id": "f175e4db-d1c9-465b-a4e1-162f84281438",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPA DE CHUVA PVC MANGAS LONGAS TAM EXG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 255.72
+    }
+  },
+  {
+    "id": "0b509a56-8644-42d8-829b-b90b75b16611",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GARRAFAO TERMICO 5L  6915",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 176.54000000000002
+    }
+  },
+  {
+    "id": "3e879bfd-acd4-4367-b19a-20722f1d642d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 36",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 145.17000000000002
+    }
+  },
+  {
+    "id": "26dce9fe-1441-4db2-8e76-675ddd745ef9",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 37",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 119.74
+    }
+  },
+  {
+    "id": "018a8cbf-a455-4f73-a07d-1b5d4730f79b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 41",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 304.96
+    }
+  },
+  {
+    "id": "dde4d3d0-857e-4f44-8a93-65c533379eea",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 39",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 547.2
+    }
+  },
+  {
+    "id": "48e55a34-231b-4828-97c7-7e4668fb4480",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 40",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 706.8499999999999
+    }
+  },
+  {
+    "id": "1d6898c5-e2be-4ebf-be85-c259085d7a60",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 59.71
+    }
+  },
+  {
+    "id": "f1d07bc8-8169-4806-b751-d0fabc848309",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 39",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45.23
+    }
+  },
+  {
+    "id": "be3623da-c6fb-44f4-9ab1-55e892ba4ac0",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 40",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 109.41
+    }
+  },
+  {
+    "id": "19c23804-67d3-450b-9acf-25c18af5ec4c",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54.99
+    }
+  },
+  {
+    "id": "56fe7104-e5bf-4695-bf12-788e17fb2aa7",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PERNEIRA SEG SINT 3 TALAS C VELCRO TAM G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 34.72
+    }
+  },
+  {
+    "id": "05c2fa57-12c8-4772-966d-b88c886afe8a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 42",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 116.85
+    }
+  },
+  {
+    "id": "d02f8d11-8869-4dc9-96cb-a3e4a34b983e",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 40",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 295.5
+    }
+  },
+  {
+    "id": "f79bd1d0-3286-4c5b-b7c1-aeb531a4e024",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 38",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 125.55000000000001
+    }
+  },
+  {
+    "id": "cc958b91-f0d3-43d8-9633-0c2c8e9b0316",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 38",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 195.14
+    }
+  },
+  {
+    "id": "08020f7a-0623-47f5-84a1-0e8cdcd6f99d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 41",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 109.52
+    }
+  },
+  {
+    "id": "eb274020-1ead-4be9-ba92-5dbff96c9d27",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 39",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 181.6
+    }
+  },
+  {
+    "id": "8e8a6a42-0894-4eed-9fa4-d60ba0ebf867",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36.059999999999995
+    }
+  },
+  {
+    "id": "b9d63444-9452-4438-887a-cf14d27044cc",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 36",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 38
+    }
+  },
+  {
+    "id": "91d9139b-9fa6-4196-be67-b94f34d0d3ae",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 37",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 140.7
+    }
+  },
+  {
+    "id": "5259638e-3451-42f2-8875-d6f1fdee1686",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 41",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 76
+    }
+  },
+  {
+    "id": "fa7192a9-283d-4718-876d-57f65d41e523",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 44",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39.05
+    }
+  },
+  {
+    "id": "c1594f5a-322e-4283-b2b0-a2b0192d7d83",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 38",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 44.85
+    }
+  },
+  {
+    "id": "3f81f89e-3d30-4be1-8da1-7696188ac858",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 38",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96.19
+    }
+  },
+  {
+    "id": "edcce2ae-d539-44f7-981a-847da6ccb0df",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RECARGA PARA EXTINTOR PQS 8 KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 45
+    }
+  },
+  {
+    "id": "872ce425-27d6-4e02-986d-61ea86246f6d",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RECARGA PARA EXTINTOR ABC 6 KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 75
+    }
+  },
+  {
+    "id": "9753ddce-cd1f-446f-a2ff-55a01cbd3dae",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 40",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 379.24
+    }
+  },
+  {
+    "id": "2724c613-dd41-49c5-a383-0f2a1d7f0f19",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 37",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96
+    }
+  },
+  {
+    "id": "5c37b6d6-3865-4a95-afb5-f406df2894e6",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 42",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 96.3
+    }
+  },
+  {
+    "id": "b2f695e1-0090-4cf9-8f1b-d3526b9e5b26",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 41",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 799.1999999999999
+    }
+  },
+  {
+    "id": "56cfddc7-85e0-4069-bbfc-b9c55b63eb58",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 43",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 99.9
+    }
+  },
+  {
+    "id": "eb78217c-a5e6-4652-90e4-74bc681bc25c",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAPA DE CHUVA PVC MANGAS LONGAS TAM EXG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 301.2
+    }
+  },
+  {
+    "id": "54f6776f-1cca-4b95-b2af-1be633d78bbf",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CINTA ERGONOMICA LOMBAR PARA PROTECAO DE COLUNA TAM - M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36
+    }
+  },
+  {
+    "id": "c42b512e-19e9-462a-ab23-785c73249372",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CINTA ERGONOMICA LOMBAR PARA PROTECAO DE COLUNA TAM - P",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36
+    }
+  },
+  {
+    "id": "b0b3323c-12e7-4aa8-b928-b5ccbce093cb",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GARRAFAO TERMICO 5L  6915",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 404.0999999999999
+    }
+  },
+  {
+    "id": "a6ee9b99-04eb-4591-81b9-150e0e0e7ada",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5.2
+    }
+  },
+  {
+    "id": "9e60d255-97f9-44c9-b4f4-e3c735d5539f",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 104.00000000000003
+    }
+  },
+  {
+    "id": "fc938491-2f11-4789-b7ee-876778e44eed",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 129.57000000000002
+    }
+  },
+  {
+    "id": "c943e6ca-a0f8-457b-a933-5670d36f5e08",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 10",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 113.59999999999997
+    }
+  },
+  {
+    "id": "05e85da4-04d9-45b0-90f9-fb2d0c236143",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR JAGUAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108.15999999999995
+    }
+  },
+  {
+    "id": "3afd2597-771f-4ce4-bd50-6ba34cb320b2",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE CZ KALIPSO CA 10346",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.57
+    }
+  },
+  {
+    "id": "7c589da9-4116-48c9-8d29-5a39f25a3b33",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 71
+    }
+  },
+  {
+    "id": "1897a924-1009-4e55-9225-8e809ff5b52b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 8",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 21.299999999999997
+    }
+  },
+  {
+    "id": "f24295b1-3308-44b8-b9a0-abcd2d1ec81f",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 190.8
+    }
+  },
+  {
+    "id": "d3f5c9e0-ed70-4069-8d9e-532e5fa43fc7",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 24.919999999999998
+    }
+  },
+  {
+    "id": "9a44e31f-2e19-41a2-9bcf-8835c0d8c32c",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 42",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 238.75
+    }
+  },
+  {
+    "id": "aa936810-d224-46f6-8bb0-d5e575dcd9e7",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 38",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 95.09
+    }
+  },
+  {
+    "id": "db25d38e-a05e-4c58-9f70-2a7a04e1d6de",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 39",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 101.04
+    }
+  },
+  {
+    "id": "5d4dd84f-404b-4785-9198-0dbe1cc0c87b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA BLATT PT S BIQUEIRA NR 37",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 76.96
+    }
+  },
+  {
+    "id": "0efd23ef-49f4-42c3-9901-bcf5b28bea60",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTA BORRACHA PVC CANO LONGO PRETA NR 44",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 95.68
+    }
+  },
+  {
+    "id": "82948cf5-b600-4df2-80af-9ce7cf2dfe7a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 483
+    }
+  },
+  {
+    "id": "ca473db9-a731-4300-a9f7-d9a15ba9e416",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA SOBREPOR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 53.8
+    }
+  },
+  {
+    "id": "29cac383-d145-48e3-8df0-e9f9b7f4801e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -20902,7 +32794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec191324-ee15-401f-9de2-e1a79fdd8b8d",
+    "id": "ef8792c3-5bc8-4425-8a26-3e33169a42d0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -20922,7 +32814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d63d36cb-e5d0-461b-9241-68434218504e",
+    "id": "d19c4a35-6da2-457c-bc67-fdb6dce4d161",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -20942,7 +32834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3c3ffcd-3107-4570-97c1-bf89b2148f10",
+    "id": "12914608-5fde-4e4a-9550-33eb2348a9b3",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -20962,7 +32854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33d7782a-467d-4c14-a53b-4ae4b6c326fb",
+    "id": "0313dd3a-9089-4ad4-88e1-481c83cdf742",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -20982,7 +32874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3330bc33-76ed-44e2-8a56-e188b454ae39",
+    "id": "fe63ff0c-1200-4d4a-a03f-9958cd528ede",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21002,7 +32894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ef3d223-448d-45da-8e27-caff94e53808",
+    "id": "d8454dc0-fbc2-4205-8ecb-22e1f87924ab",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21022,7 +32914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ccd26fd-d329-40bc-96c1-146407d96ddc",
+    "id": "3df7d855-d3d7-4316-8817-de1b27f55b63",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21042,7 +32934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9caf4182-882d-46a6-9d6e-6c63a11e41dc",
+    "id": "e8122381-a16b-4498-9da4-9033457884c7",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21062,7 +32954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b15a2018-4b91-458a-a0cd-f6fd60943b1f",
+    "id": "61a7ce62-e4c1-4e94-a278-858f924a1d2b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21082,7 +32974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1f178ba8-a5f4-4b98-a33d-c8c6b37d9b43",
+    "id": "6801f6cb-37e9-4d78-a414-66ab6d03e978",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21102,7 +32994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fafc238-7683-4b0b-8953-9c3fdf559317",
+    "id": "e083649e-d6d8-4c2b-a506-0066e0b08c5c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21122,7 +33014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ed7fd0d8-ccd4-4dad-8034-d451ff42b97e",
+    "id": "9d00b007-56a1-4d4d-bd1f-ee4350607f5b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21142,7 +33034,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d031a4ac-53d5-4d60-a8d0-bcef2d7ff6bc",
+    "id": "c0cd85c4-db3d-4140-aa27-c28a0a577795",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21162,7 +33054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87e24f9a-d167-42b2-aed6-fda9da48aadc",
+    "id": "9c57f7d3-e389-4d2d-b96f-ab3f3d9752aa",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21182,7 +33074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe2ff08f-9d2a-4b02-b107-1b32f70d6a8f",
+    "id": "e61bd7fb-cd5f-4b1f-8362-f0f3cc5ff107",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21202,7 +33094,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "daf8746e-cc24-4dc5-9c32-3ae9dcfe35a3",
+    "id": "743a7d33-db95-4cdb-973f-65a9a5af38d8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21222,7 +33114,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30b26a96-1e9e-4b9a-84ae-c174023a54d2",
+    "id": "ead55156-1433-4812-9249-16ef77a2e9a4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21242,7 +33134,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96611f79-4a73-4c82-8354-e08ecd3f3efe",
+    "id": "f985838b-01dc-4f82-8b8b-ae5fe3dfaa93",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21262,7 +33154,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "af5e111d-8760-452c-800a-7672dfb96a51",
+    "id": "b185775f-525b-4a4c-8509-fe4fd0bb2e66",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21282,7 +33174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7941441f-7d95-4141-a60d-88a7564068e7",
+    "id": "546eb231-c4cb-4587-a802-e40fd1a325ab",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21302,7 +33194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14e82411-29ef-48b1-8c71-2d94f522d7fb",
+    "id": "06cdc19e-382a-4d91-b11d-27aeb2fac2ee",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21322,7 +33214,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d12d1077-2283-4d70-ac41-1de6dad151a7",
+    "id": "b9f0a282-20c3-417a-861c-5b57da95d6be",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21342,7 +33234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48752df9-e4ea-417b-9f13-627fd1a0c415",
+    "id": "42763b6a-19d1-4f17-9312-a4244e4a265a",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21362,7 +33254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a6ab1f9-7543-49e8-ab91-802940511730",
+    "id": "0090d870-c2bb-48df-9437-76abdb9daf28",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21382,7 +33274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e46a64b8-38c8-4ad4-a43b-b928501f5c63",
+    "id": "2f761d4e-bafb-4401-863f-d3422f2f27ff",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21402,7 +33294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "29023a9f-5534-4dd1-9e83-3be895a91082",
+    "id": "cf9d3a90-d658-46b3-b6ae-1488eac1f349",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21422,7 +33314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b50e5ab9-d38b-46e4-8f2e-b23b376b5dca",
+    "id": "962e9807-4b43-4f8f-a14e-fa171e594ce0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21442,7 +33334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "66b110e3-7a55-434d-afdd-3d1319581a7f",
+    "id": "d9562263-c506-447b-b7be-1c68a25db4b1",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21462,7 +33354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3131be40-d3d8-446a-badc-56a7784c8310",
+    "id": "efd1a04b-44c5-4af5-820c-5f0773b19de0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21482,7 +33374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf8841e4-5cb4-499c-a57c-0dadd3776268",
+    "id": "d7b2651b-7a02-401a-8437-9be031e8a277",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21502,7 +33394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "454cb7e6-e1be-4b79-89fe-e2e146b7986b",
+    "id": "ae2108d9-a5b2-488b-a6b0-7d5dcbee2911",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21522,7 +33414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "05d3378f-de4e-4769-8cf9-5233c8e3075b",
+    "id": "4f69c0b0-003b-48b3-a76e-db0392397a7f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21542,7 +33434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ba92284-ce07-43bd-b4ae-c7b9774a4e6c",
+    "id": "79341c25-17de-484f-891d-93b7a4000692",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21562,7 +33454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55d0a25c-2215-447a-8a28-7e7c5a966521",
+    "id": "e8ea92c1-ecc8-4c59-8bab-f26cb8c95d41",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21582,7 +33474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e85159d-4d98-4041-b87a-dc85aa60494e",
+    "id": "1b056ec4-fcb8-4ffb-8aa4-08ef05746d4c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21602,7 +33494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "64a65aa5-e999-49a4-8d40-f7aeae81b8a5",
+    "id": "f9dd2938-6a52-43b5-8263-92cc717a06ce",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21622,7 +33514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a4b681ff-dfa8-4a97-9d68-88730d93a981",
+    "id": "a7161b34-521f-4d04-afe8-19b727732a23",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21642,7 +33534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f0023642-72f3-4b19-9ead-1085dfeec1b2",
+    "id": "e42c4c2a-6569-4d25-aaa8-17e334540d90",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21662,7 +33554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5e095a8-a172-4eb5-9911-cc169ec87499",
+    "id": "420d4aef-c335-4b06-a0e3-58aaa51678f8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21682,7 +33574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfbd2e61-151e-4440-a0aa-f3ec1dd4394a",
+    "id": "e4d24c76-3427-4899-bd04-d598a623150c",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21702,7 +33594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc7c4c66-ea21-401a-a677-1b60456aa382",
+    "id": "c95bdd8a-3409-4dc5-8797-ffefaf2e5590",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21722,7 +33614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6c19f2ce-4b3f-4d48-8cd0-0e4f750749c3",
+    "id": "5ce963e1-75c0-45c4-a550-af00cc0f89a4",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21742,7 +33634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "645f80d6-6696-4f99-b4b6-3532bf8e8299",
+    "id": "90e7853b-6f5f-4534-b7e2-6c54e4d7b3ea",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21762,7 +33654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b019e04f-e34a-445c-8560-46fdf4f6547d",
+    "id": "9be62ff2-7bc3-46ee-8ffc-019af57ed66b",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21782,7 +33674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "191dfbea-8d8f-4606-a9d1-94ea305b99d6",
+    "id": "0ade3509-53dc-45e7-bbcd-4d72c470adae",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21802,7 +33694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8e295621-9f08-4fe1-a6f7-3f3fab21af5a",
+    "id": "189aa8e4-32d1-40e2-a6d8-241edc8945b5",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21822,7 +33714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4428810-fcf2-4064-afaa-c53cc5bbb33f",
+    "id": "96deba1e-204b-449e-af1c-2ff65db7ef38",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21842,7 +33734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cddcce38-a4ce-4fb4-8f8b-bccde4014b4e",
+    "id": "3593cd7f-f0c0-4f71-bd00-ab25bfb250ad",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21862,7 +33754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ec8bdd56-a140-426b-8a5f-fa004141a78c",
+    "id": "20292a47-94f2-44f5-b0fc-008d473e3664",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21882,7 +33774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a4fb4b6-ffc4-4bce-a3ce-af59ec9b2137",
+    "id": "d1f24c54-fadc-44d0-9c30-fe5de574d615",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21902,7 +33794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "294e8cdd-643f-4a04-a2e4-6650098c495f",
+    "id": "3cbc82f0-ad0a-4228-92f0-b1c253bbc37f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21922,7 +33814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "db2f8be1-0954-471d-8131-ee773d36d25d",
+    "id": "3e205eae-32ba-46d0-af3a-727a1ca8872e",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21942,7 +33834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49104db2-b87e-4f7a-8481-9658bca5df1a",
+    "id": "a994b0d2-fe21-4461-87ee-3250791ee63d",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21962,7 +33854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "465e7e50-0188-4e88-8bfc-8dbfdfbcf098",
+    "id": "9f79f3f3-5053-480c-8f44-4a0cbffd92c8",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -21982,7 +33874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "167b9d66-284b-476a-8fc5-0a83dfe4cc0e",
+    "id": "c4c4b867-00ab-4307-8e40-adcfad2cffdd",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22002,7 +33894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "baf24334-988c-4f92-b2e7-5bd18476b033",
+    "id": "b3cc8101-e507-477d-9d41-8f23d33672e2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22022,7 +33914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0789955a-182f-40fe-98a3-a83a9a26335d",
+    "id": "e17505fc-3d19-47d8-ba37-e71bf4dcf4ed",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22042,7 +33934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9dc51d1-ab2c-431f-bcac-e6cd52b86d10",
+    "id": "7792666c-db86-4476-ab19-960cc763d9a2",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22062,7 +33954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ddcfd73-7475-4e59-91cc-6ce535ad4078",
+    "id": "c3e8685f-8fd9-4de6-bbe8-2f1881d8090f",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22082,7 +33974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fa912b2-d0d7-4982-a531-d4ac014c90c2",
+    "id": "06bcd8f3-7d10-4dd7-b465-5302f5383a01",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22102,7 +33994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74c1f258-f2fe-42b4-a1ba-72823915aec5",
+    "id": "93a898cc-caec-4901-9c62-cd8ccff62cd0",
     "codigo": "4.1.01.21.0002",
     "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
     "tipo": "C",
@@ -22122,7 +34014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "716f89df-65c2-4b22-941a-272ba0f39c1e",
+    "id": "c0f9c4ab-d76e-43e4-9c63-58fa042aed40",
     "codigo": "4.1.01.21.0003",
     "descricao": "CONTRIBUICOES E DOACOES",
     "tipo": "C",
@@ -22142,7 +34034,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e49c943c-10bb-489f-97b2-1298ff2fb330",
+    "id": "db4afbd6-854b-4c10-ba56-186aa02a8044",
+    "codigo": "4.1.01.21.0005",
+    "descricao": "PEDAGIOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PEDAGIO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 54.9
+    }
+  },
+  {
+    "id": "5ab40109-1418-4bbc-88d1-900d1c172cca",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -22162,7 +34074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b0497ec7-8a4d-441c-807a-f5e52c556954",
+    "id": "50821221-12c1-49c5-abdc-283158e288c3",
     "codigo": "4.1.01.21.0005",
     "descricao": "PEDAGIOS",
     "tipo": "C",
@@ -22182,7 +34094,2587 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8faad28b-b341-4bd8-8045-a3752f063515",
+    "id": "edb385bd-9cbb-4174-95e3-4e5fdb2fbd0d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1315.27
+    }
+  },
+  {
+    "id": "9be3337c-cee1-4b3a-8cf2-1339c115364c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2507.83
+    }
+  },
+  {
+    "id": "69ff0c9d-7172-4a82-83e7-46c02b9196e6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17
+    }
+  },
+  {
+    "id": "50555d80-7686-4dac-95a5-41b4769ca8e8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 143
+    }
+  },
+  {
+    "id": "2ec24a6e-4f5a-4ad0-b216-99898cbbb74a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO 1L cada UN",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1680
+    }
+  },
+  {
+    "id": "2a20a17c-469a-4209-9615-71a5be0e5d04",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO FRANCES",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3510
+    }
+  },
+  {
+    "id": "f1444368-9250-44a2-93e9-5e275d7abd0f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3600
+    }
+  },
+  {
+    "id": "b5367635-72cb-48f4-95e0-ba77b16dd789",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE CACHORRO QUENTE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3672
+    }
+  },
+  {
+    "id": "a0697b78-8bbe-40b8-b686-818fbdbd45b5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE QUEIJO (ASSADO)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28
+    }
+  },
+  {
+    "id": "8fb17022-d62b-4349-91ae-b2bb6ab39659",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PASTEL",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28
+    }
+  },
+  {
+    "id": "8d0b4cb2-219c-444e-ac0a-759c2cac5bfc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MINI PIZZA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30
+    }
+  },
+  {
+    "id": "3983cfc1-6173-4aa7-b141-b9bdf5a36ced",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 943.8
+    }
+  },
+  {
+    "id": "98da9116-ca3c-49c4-992f-7f9b1fed3b93",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1229.8
+    }
+  },
+  {
+    "id": "92e9ab90-4a44-4c8b-8e4d-ef3a39df7462",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1916.2
+    }
+  },
+  {
+    "id": "366d67d2-d6c0-48e9-916a-991a44526262",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3088.8
+    }
+  },
+  {
+    "id": "52574c91-7ff7-4af3-b49d-a80c0766697f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4490.2
+    }
+  },
+  {
+    "id": "fc6f9150-a40c-411f-8d98-d3293047eb8b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4576
+    }
+  },
+  {
+    "id": "30c21370-2b1e-4d96-a599-7a348327214d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7722
+    }
+  },
+  {
+    "id": "dbd7522d-3b02-4d3c-acaa-2a0a6d9f599a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 657.8
+    }
+  },
+  {
+    "id": "7f7f865b-52b1-42e6-b97e-1085f2c37f0e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 715
+    }
+  },
+  {
+    "id": "fdb42559-19f9-4009-83e3-b034270f99c9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 521.95
+    }
+  },
+  {
+    "id": "a301a3f2-2811-4ff9-b511-f1a537e90fb8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 543.4
+    }
+  },
+  {
+    "id": "1bf381da-af97-40f2-9bd0-86485ef5af77",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 572
+    }
+  },
+  {
+    "id": "f497bec9-1fcd-473b-ad27-1b7165a6d0db",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 457.6
+    }
+  },
+  {
+    "id": "e6880fa7-f250-43ac-88b9-481004083ed8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 479.05
+    }
+  },
+  {
+    "id": "52036b73-93b6-414b-8ec0-f98fda8a9e86",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 200.2
+    }
+  },
+  {
+    "id": "45dafb4f-d89a-43bc-89bc-d07268fb8c1d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 228.8
+    }
+  },
+  {
+    "id": "beef7e5b-3cbf-4abc-9ecc-bf4a1e50767c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 228.8
+    }
+  },
+  {
+    "id": "e87a9f05-d170-4ce2-8a84-4a2fb595a5ce",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 286
+    }
+  },
+  {
+    "id": "b684202f-cba7-409a-8a5b-1d0ff9b257bc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 314.6
+    }
+  },
+  {
+    "id": "40b9dd78-3023-42f0-80be-6167bf7a67cc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 328.9
+    }
+  },
+  {
+    "id": "ea1482e0-0deb-4658-a558-f29421f7768c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 181
+    }
+  },
+  {
+    "id": "25475177-d471-43dc-9977-d28c018375fb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 579.2
+    }
+  },
+  {
+    "id": "1fe6bce4-cf71-4245-832e-a72f861cc6ef",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 606.35
+    }
+  },
+  {
+    "id": "4651100d-f030-491c-89d5-7cf38c8dd368",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 253.4
+    }
+  },
+  {
+    "id": "107df1c2-85dd-4696-a8f5-8ef8d95aaf2c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 289.6
+    }
+  },
+  {
+    "id": "dc7798c9-0953-4edc-9113-81a2c764086f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 289.6
+    }
+  },
+  {
+    "id": "cf966faf-9a65-40b0-a055-3b04105a20d9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 362
+    }
+  },
+  {
+    "id": "2fa1d9a2-a474-4e9f-ba50-3e6750551095",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 398.2
+    }
+  },
+  {
+    "id": "0d5ccd9f-a999-4237-9305-d03a85b73b6f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 416.3
+    }
+  },
+  {
+    "id": "ba5b1186-b699-4be7-83d3-039b29dbc0e6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1194.6
+    }
+  },
+  {
+    "id": "eba9a847-cd4a-45e5-8e3a-9391b6d2742c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1556.6
+    }
+  },
+  {
+    "id": "d811fe58-c8e4-4069-a2c9-5b661ab8a6f0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2894.6000000000004
+    }
+  },
+  {
+    "id": "689d014e-cc1a-4a19-a08c-86b1847d3431",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3909.6
+    }
+  },
+  {
+    "id": "5c8014ac-f819-4797-8f72-48b6aaf5e838",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5683.4
+    }
+  },
+  {
+    "id": "ea5a9905-afbf-4bd5-ae4f-c6937f0d9a2c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5792
+    }
+  },
+  {
+    "id": "225cbe1e-922b-418a-a382-b70b24efaf5e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9774
+    }
+  },
+  {
+    "id": "51ec164e-0f7f-4459-9753-6038751c8b99",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 832.6
+    }
+  },
+  {
+    "id": "fc351103-9051-4635-8c91-92488b9f10c8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 905
+    }
+  },
+  {
+    "id": "db641d53-176a-4b29-b3c9-7a0d7865e750",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 660.65
+    }
+  },
+  {
+    "id": "df5becab-1c0d-4002-b1c8-91eef91282b8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 687.8
+    }
+  },
+  {
+    "id": "b61c597f-5480-4f5c-b794-73a85e9c8ee8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 724
+    }
+  },
+  {
+    "id": "b81d9eed-61ae-472e-92ab-bc7f6d4d7eca",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13.2
+    }
+  },
+  {
+    "id": "94a8b0a8-abfd-4abb-8874-85289f1ef7e9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 17.2
+    }
+  },
+  {
+    "id": "6c7e0472-ebfa-4966-90ec-e1e96957666b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 26.8
+    }
+  },
+  {
+    "id": "747c2006-d6b4-403f-a7b8-8ec368ae134d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 43.2
+    }
+  },
+  {
+    "id": "74d3b9ab-9231-4179-91b8-94deb50cc94e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 62.8
+    }
+  },
+  {
+    "id": "d1280cce-95b5-4739-8137-e851f429d3fc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 64
+    }
+  },
+  {
+    "id": "eb010c41-8f23-4712-9bfe-1230e490b400",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 108
+    }
+  },
+  {
+    "id": "8ff2ef7b-987a-40c6-8d0f-5d818b63f486",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9.2
+    }
+  },
+  {
+    "id": "9ad65153-60c4-4134-991e-a63fc659f447",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10
+    }
+  },
+  {
+    "id": "9c8ef385-cc5e-40a0-b1f7-8493e9e17511",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.3
+    }
+  },
+  {
+    "id": "bc6f3ce4-b04b-4d99-a071-dd8dda7f34da",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7.6
+    }
+  },
+  {
+    "id": "cb5d802d-2e08-42d9-bd00-0b55100c36d0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8
+    }
+  },
+  {
+    "id": "0a3f3a37-e15a-424e-8fe3-dbff001c4b92",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.4
+    }
+  },
+  {
+    "id": "b9ae1b83-39b5-4963-a1ea-59387cc08b6c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 6.7
+    }
+  },
+  {
+    "id": "3cb70e54-dbd0-44f6-a478-c8fcc9a2f1ac",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2.8
+    }
+  },
+  {
+    "id": "d123506e-1ff7-4508-b960-6d78b6e06b3c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.2
+    }
+  },
+  {
+    "id": "70b3703c-c573-4d84-95ad-cd892b5d10c7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3.2
+    }
+  },
+  {
+    "id": "66aa3f97-9cb4-4a1d-a087-9650ab675337",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4
+    }
+  },
+  {
+    "id": "99996a9d-d82c-4d87-92da-994dc9aef6e3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4.4
+    }
+  },
+  {
+    "id": "d6daf0f6-3e43-40a5-8f40-cc0030359a00",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4.6
+    }
+  },
+  {
+    "id": "24a860bf-2ee4-4904-aab6-8f1c5a92c27b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2
+    }
+  },
+  {
+    "id": "566501b3-a27d-4c31-8fe9-cfebec8055bc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 375
+    }
+  },
+  {
+    "id": "e584c84b-c459-4bfb-8c5b-42e1d1f1efee",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE MILHO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 507
+    }
+  },
+  {
+    "id": "e007450b-be1a-4900-9cf9-753fce3cc995",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO COM MARGARINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 748.8
+    }
+  },
+  {
+    "id": "457099b1-aa46-476a-940c-2fdeeca6e8a4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE MILHO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3134
+    }
+  },
+  {
+    "id": "1219bee2-1746-4bed-b051-5e874bcb7214",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO COM MARGARINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4513.6
+    }
+  },
+  {
+    "id": "9f1fda77-d85b-44f6-9c03-a877b5eef3ef",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO DE MILHO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 715
+    }
+  },
+  {
+    "id": "1a8afed2-ab8c-4a48-8493-0bfd444dd73d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PAO COM MARGARINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1056
+    }
+  },
+  {
+    "id": "5d123a6c-a2d4-4620-9cd9-dac5ab576e45",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3831.2
+    }
+  },
+  {
+    "id": "991a03b4-05be-47f6-8275-e43f26b66c70",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 586.88
+    }
+  },
+  {
+    "id": "d4c5bbf0-243f-4b39-8ef9-f71c578f6dee",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO KG",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 475.68
+    }
+  },
+  {
+    "id": "77c74646-1f51-4d6f-8846-17da8bf1ce6d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 18
+    }
+  },
+  {
+    "id": "58c496a0-4963-4709-b044-62e1339340d1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 82.8
+    }
+  },
+  {
+    "id": "4a6aef61-1067-4b07-bdaa-2a11249cdf8e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 90
+    }
+  },
+  {
+    "id": "14e21dd9-0f49-4d41-8747-b338624f9da2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 65.7
+    }
+  },
+  {
+    "id": "3ece4a3b-dbd8-4d6d-b247-118919e25322",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 68.4
+    }
+  },
+  {
+    "id": "d6724365-04eb-46f0-99ef-9a02d136df61",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 72
+    }
+  },
+  {
+    "id": "760e094d-376d-4e3e-b5f5-e9ed4e3c0b95",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 57.6
+    }
+  },
+  {
+    "id": "0d883007-ab6a-493f-b05c-66e255d005d8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.3
+    }
+  },
+  {
+    "id": "a4862c53-7b01-4edf-8705-6593faa0e6ce",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 25.2
+    }
+  },
+  {
+    "id": "fe3c8c98-f1e1-4e4b-9bfd-9d9bad043fa3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28.8
+    }
+  },
+  {
+    "id": "51e5b037-47c3-4faa-8966-2303cb3dcf1a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28.8
+    }
+  },
+  {
+    "id": "24424940-920b-407d-b169-8d04c2ad8037",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 36
+    }
+  },
+  {
+    "id": "b952b45f-b294-4955-99e1-572f2e0526d6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 39.6
+    }
+  },
+  {
+    "id": "f5fbbf50-f538-4ae5-963b-dab523f94176",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.4
+    }
+  },
+  {
+    "id": "677501d5-1331-4ceb-8251-b0b46efbf91b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 118.8
+    }
+  },
+  {
+    "id": "1e923f12-57a8-4122-ba6a-5ea8b08c23fb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 154.8
+    }
+  },
+  {
+    "id": "10bf5634-61bd-4f18-b2e1-390de69c3442",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 241.2
+    }
+  },
+  {
+    "id": "83ed1569-098b-4f2c-87ae-c090195de123",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 388.8
+    }
+  },
+  {
+    "id": "8328fa96-2c1b-4dbd-a525-b671aef2e1f8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 565.2
+    }
+  },
+  {
+    "id": "67d704c4-055c-4490-8080-8506b80987ca",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 576
+    }
+  },
+  {
+    "id": "e59737fe-0cf0-4a46-8d62-b033b8cc392c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 972
+    }
+  },
+  {
+    "id": "02d5fab1-a6c3-4185-9680-3a17df5cc08f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 184
+    }
+  },
+  {
+    "id": "0a9e518d-8db8-41f9-bd58-00496341bf73",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 200
+    }
+  },
+  {
+    "id": "45a499dd-ba18-4c42-97b6-712183afd83f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 146
+    }
+  },
+  {
+    "id": "d1458fc9-5349-4dce-96ee-ce099041fe20",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 152
+    }
+  },
+  {
+    "id": "692981eb-e408-4d5b-b9d8-a47d77f1b8ae",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 160
+    }
+  },
+  {
+    "id": "11eb9164-eeb8-49ab-9fb6-c8bc847902af",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 128
+    }
+  },
+  {
+    "id": "4baf8a8c-1afc-4597-a562-417d7f4a1315",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 134
+    }
+  },
+  {
+    "id": "bf322876-3e87-4bc8-a894-b6505b228ee6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 56
+    }
+  },
+  {
+    "id": "cb7f0e11-596c-4fa8-b92e-fdd1d091d45c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 64
+    }
+  },
+  {
+    "id": "e8136b29-5033-478f-84a3-74c797915383",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 64
+    }
+  },
+  {
+    "id": "02fc0e8e-e608-4898-b0b9-99cc2b1eac2e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 80
+    }
+  },
+  {
+    "id": "3d395ef1-3cd8-4ece-8ea6-7640bf2d10dc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 88
+    }
+  },
+  {
+    "id": "793eaab1-3e94-4cd9-877c-e0b9141838bc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 92
+    }
+  },
+  {
+    "id": "de59c893-16df-4579-ac1f-af9a807ced52",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 40
+    }
+  },
+  {
+    "id": "a6781d03-d982-4f4b-818c-695aeb100f27",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 264
+    }
+  },
+  {
+    "id": "72cddbdc-60cf-42d8-a34f-57d0b8068fe2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 344
+    }
+  },
+  {
+    "id": "bad50b93-b1a5-477f-8e40-172821003a19",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 864
+    }
+  },
+  {
+    "id": "bbd6bec0-4cdd-4649-a3b6-35531e2f1aeb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1256
+    }
+  },
+  {
+    "id": "dd937cdd-15a5-4f37-ae8c-0a2bece64155",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1280
+    }
+  },
+  {
+    "id": "48056eb4-7c4d-4d2a-9113-d8e72bacc3dc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2160
+    }
+  },
+  {
+    "id": "d96de33e-6123-4007-ac61-e7558b0e3d38",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 16924
+    }
+  },
+  {
+    "id": "30e1192b-b46f-40f2-9241-e2a9753055f0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5272
+    }
+  },
+  {
+    "id": "363d4334-88a2-4ea1-b1d0-9d7032042a1b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 292
+    }
+  },
+  {
+    "id": "bab5bdf2-db2d-4650-9bd6-f6c86b0a5229",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3796
+    }
+  },
+  {
+    "id": "9aafcb3a-9d06-4370-9b24-8e6ee7339a17",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1660
+    }
+  },
+  {
+    "id": "15072d99-2015-495d-81d6-463771423188",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22202,7 +36694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf86f9d3-1247-4a0b-98cd-42afced31115",
+    "id": "79adffaa-99f6-42e4-8184-9252d1e89247",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22222,7 +36714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8295b3dd-08ef-4801-b935-3d439b4f1371",
+    "id": "d22940dd-a597-4240-a0c2-e52752a5da18",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22242,7 +36734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2498eed-9f3f-4675-8ad6-1725f87e66e7",
+    "id": "08cc2389-ab6d-4cad-8c2c-74cf7d8b9567",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22262,7 +36754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bbe3335b-9a6a-4768-a52e-193c4505f8d9",
+    "id": "8df274e2-529c-4c7d-a3e6-aa88d2b714d6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22282,7 +36774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f957254b-9218-434f-b7a1-3310a1438213",
+    "id": "83beb11a-04ec-4c28-aaf5-c860266ad741",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22302,7 +36794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56f15700-8df1-4df8-8d4b-fe8a1e4cc693",
+    "id": "545f6f55-c4fd-45ff-936a-1cc101a0ce4d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22322,7 +36814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "233a14e3-d987-45c9-96cd-538f1f01af2f",
+    "id": "d390f42b-e714-438b-8fdc-334202899268",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22342,7 +36834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4796db4c-7c12-48a7-838a-84fad7946ea1",
+    "id": "e0f3e83a-8257-4592-9fa4-05bb42ba1a42",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22362,7 +36854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac326aef-bd5c-48ae-93dd-bd8900f2763d",
+    "id": "5a17cad0-7be2-4f52-91f1-e8a4184cd4ca",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22382,7 +36874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ad974c4-e32b-4342-a4bd-14db2dde833f",
+    "id": "af1c9693-76a0-48c3-a1be-840efa029f13",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22402,7 +36894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "594b3cce-d8ce-4ea5-b983-0c83e969b9be",
+    "id": "aed3945c-b8e8-466b-9079-3f1b4f9b3722",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22422,7 +36914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "306bee26-bde7-4e71-aa6a-793208851cce",
+    "id": "cd41b220-d62a-43f0-88d1-7541bfb27a1a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22442,7 +36934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4df43c1d-319e-4434-b674-a148c20b5520",
+    "id": "ab912f85-1f34-4344-8de6-6f246f5de173",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22462,7 +36954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fe491683-bd8d-4683-89f7-f12ff840e521",
+    "id": "a7f0ed06-3f90-4290-afbe-0bfda21503ab",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22482,7 +36974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04c07eb7-955b-4ebb-a9c4-ae8447c77b22",
+    "id": "1642bdb6-1f53-4c04-93f4-5530f18c26a0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22502,7 +36994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b2c7209-8582-4006-916c-5248e9248de3",
+    "id": "69346918-dcb1-4250-a7e0-35e5623f5a79",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22522,7 +37014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f57ac4a-8a21-4d12-8d85-011a40b1a5f3",
+    "id": "cfd7a6a5-a42b-429e-9498-65910b89b1a0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22542,7 +37034,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6afb3243-5805-47b8-a7e9-47d6c583147a",
+    "id": "e4545d29-7eef-4f96-9637-5b7369e39556",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22562,7 +37054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aceed156-8a6e-4a05-8a8c-ac1884ce536c",
+    "id": "00d5f359-000d-4700-ba36-d2906028d216",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22582,7 +37074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d521355f-3666-4eca-be8b-08da204d4e96",
+    "id": "b79951b0-7d9b-468c-a17a-da8f7df53b36",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22602,7 +37094,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4035c8b7-54a5-410f-a3bd-92870e434ae0",
+    "id": "527d6a69-a010-4d7b-be19-5796edce2177",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22622,7 +37114,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a84c70f9-ed9f-45aa-bc76-81d4e8f10f3f",
+    "id": "84142193-dbfb-4939-813c-9ee61a4cc4ef",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22642,7 +37134,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eef1f5f3-8e9a-45f3-88ce-bf480ee90bfd",
+    "id": "897fb95e-8ecb-496d-bcd7-bc2508826c83",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22662,7 +37154,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "edde807e-c88b-4a96-bf02-b328434a3a72",
+    "id": "2451e58c-fc9d-4a01-ac1e-cc82424bb73c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22682,7 +37174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9862b94-e6d6-4616-b704-e0e0779d0363",
+    "id": "842a4814-4ca2-4473-b0de-9f80d9946c08",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22702,7 +37194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b24c2a5-3e74-49a8-9c8e-2dc0df60031f",
+    "id": "7bdfce56-16ef-4e51-a5a2-3def1c8ce1b8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22722,7 +37214,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3671d51d-f6d1-493a-9821-9a440e9c44ed",
+    "id": "adfa86bf-c1a7-4c24-b24a-cbb5fa872936",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22742,7 +37234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dab6cd44-a52b-4da2-9200-7d97b7e7e412",
+    "id": "7fbdfd12-89e3-46d8-bb22-e25b81530fba",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22762,7 +37254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "84685046-6ca4-4a95-8b7a-dcd55ee2fd0e",
+    "id": "1081d1d7-e004-43a4-ada6-bc0ce569acdb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22782,7 +37274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48518e00-5291-494d-96ec-797815a6bdb7",
+    "id": "785f7dbc-8f12-4786-b5a7-0bcb8f948d97",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22802,7 +37294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d9ffb470-34af-46cb-8731-2f07265a247b",
+    "id": "8168b6fa-d266-4fc4-89a7-3216c17f7de4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22822,7 +37314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71c847c5-2d25-4ce9-86f2-5ab3c7bd9d24",
+    "id": "d1cbe71f-0b27-4490-ad14-e770fc8dd4a8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22842,7 +37334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ea6b474c-2e08-42ab-9f73-7d91bc32621d",
+    "id": "7271ba12-53e3-4528-a3e6-25d9fe0251d4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22862,7 +37354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "240aa49e-453c-4d86-b2a3-b379ab53c33f",
+    "id": "ecabff7b-ac51-4920-9e4e-950016341e66",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22882,7 +37374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "df457c44-f5fe-4614-ae56-316723bb06f4",
+    "id": "48758d86-dc79-4814-b550-49d2014485de",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22902,7 +37394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "14653956-3068-4fdd-a09c-e395c143b667",
+    "id": "63053dd6-1d7b-4326-9ebd-4258e0e54475",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22922,7 +37414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4d95b36-e414-418d-9953-079011794495",
+    "id": "c01fe2c7-d3eb-4097-b92f-7aaae679844d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22942,7 +37434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3e611a9b-9a1a-436b-a8ca-09a805d1c8ad",
+    "id": "ddbedbc1-e44c-431e-bdc6-ff4a4006c2ce",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22962,7 +37454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "da9e299a-8263-4b83-9790-54912912953a",
+    "id": "b74968ec-a03b-4e38-8867-98e7f67ff816",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -22982,7 +37474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28d42150-00c9-4a2e-96b3-255efdfc7c26",
+    "id": "b4d39844-e2dd-443c-af09-9f36b477268f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23002,7 +37494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8af5c6a9-4835-4d73-8f66-b9356b0b50d9",
+    "id": "52075180-2690-4628-8c76-c75890709c1c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23022,7 +37514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71513c54-8c85-45de-b506-11e23dc0f73a",
+    "id": "1e44db1f-222a-4898-bcb0-0a6ac27e1b33",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23042,7 +37534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5ed9ed7f-6503-4411-ab2f-79f34d03887f",
+    "id": "be94bbff-5a25-4660-b831-1c74d8ab11d0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23062,7 +37554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4f204307-07a7-4414-b58a-cd7c93233ca7",
+    "id": "c52de3de-8418-43ab-a7e9-43ad4887590e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23082,7 +37574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2e8b233-fe4a-4a85-a928-42104a9d77b6",
+    "id": "4e445bb7-d71c-4be6-9767-8483eb1a10a2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23102,7 +37594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c27df45-75de-4b03-970d-bc476a299667",
+    "id": "242d0539-be3b-410e-9e28-63940c925f2e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23122,7 +37614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7c4102d9-27a5-4266-bc55-dac4e60b7bf6",
+    "id": "34011d96-343b-45e9-8b10-91daade92226",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23142,7 +37634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "216d9176-41a0-4ab4-a6ec-2fc2eddeeefd",
+    "id": "66d989b1-2e47-4f45-83b5-7a92b1a1f518",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23162,7 +37654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e73a2834-a115-4620-a1c9-13dd389e6fb8",
+    "id": "7a9cb2c2-42a7-4c61-b8c9-5839cb942746",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23182,7 +37674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c0452f4-915d-4d01-9333-c87623709a6a",
+    "id": "719e60c8-f71f-44e3-85d8-9961d9be8211",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23202,7 +37694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0918acde-32a1-4b95-bf68-0bf23a6824ee",
+    "id": "c1f4a70a-76c6-4c22-9ef2-b4726aefb832",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23222,7 +37714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0c766a6c-cbe8-4011-bda4-a3df12e4e51a",
+    "id": "1f1fb1bf-3dc6-459a-bb53-41c8f22f987d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23242,7 +37734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8b1de2ef-fa6a-4df7-8b3e-6c6ac38909c3",
+    "id": "2ee51b12-c9b6-40c0-907b-bb07438656d3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23262,7 +37754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "838cf627-b2ff-4852-8517-76b9e741eb2a",
+    "id": "639d170e-acf9-40a4-8729-8df5afd379f7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23282,7 +37774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb010c56-f61c-4ff1-8468-0d4ef38cb5a8",
+    "id": "4e8b8f29-0d65-4fe8-91f0-11fe232a40b4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23302,7 +37794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8522f5d5-42cc-45da-bfd8-52baf591e65c",
+    "id": "ba5f670a-b841-4470-8b0e-3c5e5be5863f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23322,7 +37814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "33488d98-5e7c-4398-ad96-152c8846c45a",
+    "id": "6d27afcf-0ce4-4557-b4df-2876ec53b56d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23342,7 +37834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d56fe8c5-5129-4ecd-acad-c14fe71e7e72",
+    "id": "9f11f34b-125d-4746-a04a-dc6da448c78b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23362,7 +37854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5b3bfb0-b09d-4a64-9910-65c6829a6c25",
+    "id": "031b7518-10fc-4acb-9cd6-74277f9de73c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23382,7 +37874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c9df1ba1-e6ab-4780-ad36-e38e5a9974f4",
+    "id": "377745d9-ff81-452a-a502-1417ad87d9f7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23402,7 +37894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e444a48-f6d4-44d9-a424-73dca995be98",
+    "id": "d86aae9c-1996-4e78-8335-160ed61e65b7",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23422,7 +37914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd6dd919-45d4-453e-97a5-08937092c4a1",
+    "id": "59d79a2c-5244-4043-a960-4ef3bf52957c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23442,7 +37934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "00b5c635-8f85-4e1d-b358-e71da493bfdb",
+    "id": "585b49ab-a85e-4e1e-82fe-1a9d95b2de0d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23462,7 +37954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f3beea78-7cd5-4667-bc15-70bdca986de5",
+    "id": "0349dddb-15e4-4a8a-8dce-5443e7dfcc1b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23482,7 +37974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "743bd61a-e78a-44b1-9567-a5f0d2a555b6",
+    "id": "8cc0db1c-85d7-45d1-bd52-a9f4840f9804",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23502,7 +37994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "65ca12c0-d7d7-4848-b82c-6917da92655d",
+    "id": "30671bd2-f2ad-4880-b59d-9bfc322e0ae4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23522,7 +38014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9c692c9-861b-45d8-a8ad-bc5caf8623b6",
+    "id": "423e64f1-7f39-4851-a328-61a4d44116a1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23542,7 +38034,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d51fb769-a9ab-4cb3-a7f4-b8d7dbf4fb03",
+    "id": "786075cf-b07b-4f6b-818f-4d1c560d8366",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23562,7 +38054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2c2479c-2256-450f-a2b6-69090c32c520",
+    "id": "0dde7e5a-2ba9-4564-b101-88e6e1d2a9a0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23582,7 +38074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b14dad7-9305-4387-b50c-de5d3292ceba",
+    "id": "373c4164-f956-4890-976a-1db8f3aae130",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23602,7 +38094,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cafd6d99-72df-49af-ae5c-3b8a853838e8",
+    "id": "a0fc5b53-e99b-43cf-b468-eeb3e4b619a2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23622,7 +38114,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bd5ed5e6-5362-430d-b498-8b8fac075cc6",
+    "id": "c7b2a01a-ad02-468c-8615-ea48c0c7201a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23642,7 +38134,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a703cdbd-a7fa-4bd2-9b31-59169af75d27",
+    "id": "e42fa285-a68c-4343-b756-12347137203a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23662,7 +38154,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7abfdac0-c405-4b7c-99e6-e91c6b1eacf1",
+    "id": "836c597c-13dd-4a1e-86f1-15dfc11abf4a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23682,7 +38174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2364d559-887d-4cf1-b581-d37f807eef84",
+    "id": "e46d5b67-11aa-45f8-84b6-b457bc6b5b37",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23702,7 +38194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a487b9a0-568d-428a-93f2-6edc2e263cea",
+    "id": "9ab0f6db-8e46-45c0-8f71-2f41b081ad36",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23722,7 +38214,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7b5e3402-4427-469d-9cb5-4b901e2f88af",
+    "id": "021380a2-db5c-4107-90aa-60e0f4378353",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23742,7 +38234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9b942eab-fce6-433d-b62f-ac6ef0cd90bf",
+    "id": "416391c1-cbb7-447b-b5a7-9ca705cc0cd2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23762,7 +38254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2090af0d-4dee-44ca-a9e0-3843911c3444",
+    "id": "10d2e4ed-1db1-4142-a45a-85c94ec2b60f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23782,7 +38274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01c8a71e-0e4d-49ec-9d37-f2d6cab8f532",
+    "id": "ba1349d9-7210-4e35-827c-8883c41d40cb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23802,7 +38294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a11c5a63-1dc7-4e9b-9bbd-9a23bf283112",
+    "id": "b3e69931-73a0-4aee-8401-af0992be59ad",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23822,7 +38314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72bcdd9e-fe96-4da2-9e2c-095d4e472441",
+    "id": "5596a6e6-7300-4112-bbea-883054eac139",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23842,7 +38334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e438259a-23ba-439c-b7f7-320d7effa36b",
+    "id": "01de7fd3-8179-472e-a050-a710912acbbb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23862,7 +38354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c18c262c-805b-411e-ad03-0a32dad6fc0a",
+    "id": "8b503340-47dd-40ae-8967-2f3065c1262d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23882,7 +38374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "94990d6e-da60-4669-830f-cad90eb63c80",
+    "id": "da3f37c3-29a5-4946-bedf-3cac0ce7e2ec",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23902,7 +38394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b6baf06-bf79-477b-8d51-9149a0b0750f",
+    "id": "5a2ada6d-be8a-4b35-87c8-c1a64423e35b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23922,7 +38414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27e51c22-4a50-44c3-9870-3370bac93ffa",
+    "id": "e8697ad5-08c2-40cd-ae70-247e12c8728a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23942,7 +38434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cfb26d38-eb35-4d73-813e-db19011fc800",
+    "id": "4f07ecbb-2ff9-4562-9056-befdc0347427",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23962,7 +38454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "59cff60d-ec08-4c00-9da7-6d64df94127a",
+    "id": "02b6a057-abc1-49ec-8472-314737831258",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -23982,7 +38474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "545f3b94-4c62-46d8-9094-b5087ee66be2",
+    "id": "6925e677-0659-4bb4-8cf7-12d3a56818ae",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24002,7 +38494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5e213fce-e890-43f3-9b5a-8ebbe39c08ed",
+    "id": "873a469b-f2bf-415c-a59c-1841eeaf8e9f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24022,7 +38514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32ec7a23-2392-4e07-b074-182f94a4a040",
+    "id": "fb1b8f02-a94d-4ed6-9232-2fbc4ea1c4bf",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24042,7 +38534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cb1f5897-a965-4e81-8bad-e841afd73658",
+    "id": "b844a0fe-67c8-4c3b-867e-9d0632146c3e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24062,7 +38554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "efb3a62c-c2f0-4160-bca1-1a54c868660e",
+    "id": "a0be2617-5d1f-4b60-90b5-8694736f1e51",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24082,7 +38574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc00b739-7b62-4bf2-ab3e-69468a3f0b95",
+    "id": "04c19fa0-e4e6-4793-a8a2-c69d30d915d3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24102,7 +38594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bec0e183-74fc-4a8a-a9cd-32a1a26a5110",
+    "id": "b1e9781c-c5c2-4517-8b3a-27555817e636",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24122,7 +38614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f27fedda-ef3d-44f0-bec0-223752120f5f",
+    "id": "506bce29-dc20-48da-9299-32bce8c01478",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24142,7 +38634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "75fc1364-0b3f-43a1-90b0-36700f5985e2",
+    "id": "ec7210f8-d661-47f1-b2cc-9c0243448bd4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24162,7 +38654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4c554607-bc41-45b6-a0c6-e205ac009153",
+    "id": "7882dfb8-fce1-4c89-8623-b559bbfed619",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24182,7 +38674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c2524166-c386-4241-a36f-02860cd6d87f",
+    "id": "ee5da087-017a-4e3b-8e51-7d7f5f857bf3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24202,7 +38694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c29b4a98-5968-4adc-b492-a89e4cc983cb",
+    "id": "35764ed6-9227-470a-ac3f-80e45cc2c894",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24222,7 +38714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e269c0e6-3133-4080-bd4d-56743423ffb5",
+    "id": "a199a699-298a-4088-8a7d-4214e361da69",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24242,7 +38734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c38aa566-344b-40a7-85d5-36e12dd6cdf1",
+    "id": "e71234be-fb8e-4610-aac6-ac58a780114e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24262,7 +38754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "79d53e55-1511-4fa0-804e-d4dc108e0056",
+    "id": "73a608cd-fb37-47b1-ab43-9e6c5c7f6367",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24282,7 +38774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e2978ecc-7237-4ea4-8557-254d97a56eb6",
+    "id": "b9013d1d-10ee-4da1-bab9-4d6166c6edd0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24302,7 +38794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7e4a9c8-e0eb-4c25-93c3-76f3e18c3335",
+    "id": "5754e711-1a3e-4b06-aadc-908acc6c1cb2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24322,7 +38814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8e8f1ad-ebaf-4a63-8a57-dfec9c3bce8f",
+    "id": "42de8d69-faf3-4b7a-89de-e4c029c3f429",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24342,7 +38834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e232226d-5170-4d96-b364-5b4e643faa03",
+    "id": "71d875d6-27d9-4d99-b725-227642ae2454",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24362,7 +38854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72bceab7-7509-4e0a-a0c9-01658c49dd5a",
+    "id": "8b205419-cffd-4fa0-bd75-35ed6039e9e1",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24382,7 +38874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d696d530-6f8b-45cb-8f36-2d1489c66321",
+    "id": "25968fb2-54a3-46ea-9394-be45dc9275d8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24402,7 +38894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d20ccf1c-7571-4ca3-bc09-7283aa3fb4c5",
+    "id": "a19a79ba-0592-4d2c-b1d4-197b32b9f34c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24422,7 +38914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "effcdcb1-a32a-4aa4-86af-67c1df729c18",
+    "id": "2ca85492-ea50-495a-82ac-e91206cdc098",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24442,7 +38934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9f43cf2-5f5f-463a-8708-4ecb1e1ae00e",
+    "id": "f78561a1-6584-4b67-a227-86ea55556058",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24462,7 +38954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "391a6e65-0530-4aa7-8c83-ac8314cc111b",
+    "id": "6edaff86-bd8f-440d-a346-99b358adbdc4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24482,7 +38974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a563ff8f-9c8a-4463-bf26-8db1a5c1260a",
+    "id": "eafdab16-2902-4c81-a714-9872f06a0be3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24502,7 +38994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44aacee1-589c-47a5-b61e-c9d369d56248",
+    "id": "095e3de9-7753-46b2-8610-c509d5242cae",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24522,7 +39014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "07eb5582-c7a1-4df0-80dd-f3d81b59aeed",
+    "id": "a6eae8a1-8b60-489c-a6f3-8f878f677a15",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24542,7 +39034,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5f6622b-4bd2-4cba-9a13-b9e82e5643c0",
+    "id": "81f159c9-afd3-4993-84eb-5bad0b44b21f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24562,7 +39054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99e269be-6494-4648-97a6-37cc726d2e17",
+    "id": "b3c27aa6-d7c7-4ce6-b3f1-8a088044965c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24582,7 +39074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "85f0dbd0-1710-4b52-bc0b-dc45498b6d77",
+    "id": "00aea65f-f930-4b4a-b9e3-f76cc781fca9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24602,7 +39094,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1b1a95c8-16ea-4667-85c4-57fd36ce4cb1",
+    "id": "067a1eff-685f-4b89-ab4b-c114f7093a3e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24622,7 +39114,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "08c44dec-999f-48cb-be52-14b097019f31",
+    "id": "1b889d09-1e76-4469-9fc4-9dc4bb8ea2b4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24642,7 +39134,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fc1a046a-67cc-434a-9bf2-2a9f12226743",
+    "id": "b4dc2721-7a83-43be-a202-ebf8f0dad86d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24662,7 +39154,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "96e8cf1d-de26-4213-a2de-11a738f5ef3b",
+    "id": "b98a2567-e4bd-4a1e-971c-c5cea2860d7e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24682,7 +39174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e9b78ffb-2cf9-42ed-ad42-880cf6d0c087",
+    "id": "4110330f-769e-49d0-aef3-b69bae41641b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24702,7 +39194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54298030-df7f-45d1-9918-c0004f450317",
+    "id": "379a6b3e-eef9-4824-a0b7-7433a852129e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24722,7 +39214,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf402eb7-7043-4a21-90d0-89e5537e0269",
+    "id": "05c6ceea-5ed1-4a98-ae1d-4f9f6448699d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24742,7 +39234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3c4e752f-03c1-4734-b9e2-fa801fbfe333",
+    "id": "dca0cf75-dbd4-4338-9a7b-4419dcf60f67",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24762,7 +39254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "62c0878b-94ed-493b-81d4-c6b62dc638e5",
+    "id": "a4efdb83-9dca-4e25-9aa8-5c63d9535bdd",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24782,7 +39274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "02b7028d-81c3-4c34-9fe3-5f90dd5ae111",
+    "id": "efa2d891-8254-434d-bc25-88899faaa236",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24802,7 +39294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "934c250a-f539-40f8-8e56-2eb23673fc22",
+    "id": "fbc289c1-8576-40bd-a054-a23fd1f61533",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24822,7 +39314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ac1b5bb0-7720-4427-9f44-d652ff50d482",
+    "id": "105ebb5e-7015-46c0-b91a-eab70e1622e2",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24842,7 +39334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8bd325d7-33b4-4c5f-a307-2b00de585f28",
+    "id": "35f7d473-83f4-4237-b3a2-24d548107f31",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24862,7 +39354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01310c1d-9f12-4df0-9c7f-e7b89d897dc9",
+    "id": "2854c675-e28e-433f-b349-5fbef0180a26",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24882,7 +39374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "91dc2dbf-dd26-41fc-a451-3ed811941eaa",
+    "id": "0ef1ef15-0d37-4c6d-959e-cd41aecb7d66",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24902,7 +39394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4fba4533-1ff6-45fe-9e4f-2965689a93e7",
+    "id": "de692018-e11a-426b-bce7-46148729f48c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24922,7 +39414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "57be5e2b-429d-4a30-b7b9-2059b4e2e0cd",
+    "id": "083d7853-fea0-4421-80d6-7329a425fcce",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24942,7 +39434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9c409c7-8a1c-425e-8d25-e8c41945c52d",
+    "id": "a9e4d277-1c0f-467c-b1d6-6660c230f801",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24962,7 +39454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0ec5770-2368-4d99-895a-ef16715eff8b",
+    "id": "e11ad8f8-8007-4c4a-be84-432e70865fbc",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -24982,7 +39474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "955fa474-0601-49e8-8b1b-e82787a3fa44",
+    "id": "21333847-1d0c-4074-a50f-5a4e42971917",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25002,7 +39494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d60464b-605c-4ab0-ab05-db19d05e0f2d",
+    "id": "ca819d15-105d-45a2-b450-768661c769b5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25022,7 +39514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40c8c6fc-c324-4701-bf14-d1c0c66379f8",
+    "id": "75f5d5f2-ab8a-46c4-b1a2-0aaa954d530b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25042,7 +39534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04ea9911-a2bf-42f4-9bc9-463cd9a8c38d",
+    "id": "e5d725a7-f842-42ee-81d8-2d8a3119b3be",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25062,7 +39554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3b1a3de4-b8ea-40b2-8fc8-856f5ba15b1d",
+    "id": "3fc64c6d-b300-42dd-990a-68783a65c7b0",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25082,7 +39574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f209413-b2e3-43e0-a3a0-34a93e3b87c5",
+    "id": "884b077a-b3ea-4b58-a42b-a52ef3e114d8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25102,7 +39594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff61e177-7c3a-4447-9284-a815abd16c84",
+    "id": "c3a8ecc9-5706-428e-8665-de99cf4ac949",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25122,7 +39614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "52ecbe30-48a7-46c0-b3d9-581226146c2b",
+    "id": "af4cda80-411a-486c-b8ea-e09dd527e66b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25142,7 +39634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "27903931-9769-4ce2-a2f1-87fd477564a7",
+    "id": "4be60f9b-6e84-425a-910c-1a9c163291d4",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25162,7 +39654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b7ab98d8-0471-43ef-b9bd-09ccd052dfb5",
+    "id": "78b717c5-3ad1-47e3-8aa3-09f7a605ab1f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25182,7 +39674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c7297ba9-f9e5-470b-bf77-3c096872ce50",
+    "id": "f91ed647-4957-4578-9846-5fac6862b5be",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25202,7 +39694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "61967b64-9c64-47f0-a3d8-219474585d5a",
+    "id": "e5c81ad9-d6a0-4f4d-80f1-9661a0c7d81f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25222,7 +39714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "83909543-9255-4575-9c50-9abb2470611c",
+    "id": "2529bc5c-0dfa-49fc-8128-7d74b128b36e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25242,7 +39734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c85a5ff1-5121-495c-b812-e29a0f388f7a",
+    "id": "4055aa75-f470-421c-a644-1bde58ce4a94",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25262,7 +39754,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38b9077d-2969-4fbd-95ce-a79232fceee3",
+    "id": "e8497a98-f683-4324-bd0e-2b8a03bde511",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25282,7 +39774,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0e5f474-a099-44e7-aa9e-21096667883a",
+    "id": "d15b81b4-8117-4ed9-ae87-92e4d75b2d2b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25302,7 +39794,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "187edc5e-ac48-4ee0-ae22-d3ebd6ac5083",
+    "id": "5d04ffb2-2b34-4081-bf9b-d082f159a2f8",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25322,7 +39814,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9895c28d-125a-464a-88ae-4a158494d27b",
+    "id": "3fa2d6c2-9d85-4b24-8996-43a89542edf5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25342,7 +39834,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77cea516-b7f7-47e4-956f-49ffc1da3802",
+    "id": "c1409688-e232-44da-a3b5-dc0f330d0f22",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25362,7 +39854,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25628e23-74e2-4e4d-9fed-2fdaf3f1237c",
+    "id": "74ce49f9-2a9d-4b17-9ee8-26021a81f050",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25382,7 +39874,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "758cb4b3-af27-4c59-a5b3-108120883ff1",
+    "id": "c998c8d2-64b1-4ca0-a1ac-64763b9a0330",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25402,7 +39894,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9524805-fd19-403c-af75-a8a1b62c13d7",
+    "id": "a0e5abb9-d7b8-4d8d-9709-dd067761000e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25422,7 +39914,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d4359c7d-aa37-438f-89b5-6e47e81ccdc2",
+    "id": "24b1ba5d-e970-4b7c-9b0f-d430c23ab26d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25442,7 +39934,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f0fa867-8f97-4cf1-b41e-67825bd44b8a",
+    "id": "1d689fe5-d72b-47c5-a27c-855e9110255a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25462,7 +39954,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f1e118d-5ab5-4d5f-80c1-740f585f0101",
+    "id": "49425ee8-7caa-4961-8738-c3a441bbea6f",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25482,7 +39974,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cff2a1b6-bd97-46b5-acf7-d417e63f579a",
+    "id": "e4d0c1e8-596a-421a-ba38-9597efc956f3",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25502,7 +39994,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "74d3665b-b7e2-40cc-8053-6c4cd9710732",
+    "id": "fc550352-b3b3-4637-bf35-c198b195670c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25522,7 +40014,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2e5d681e-6223-42f8-a4b5-a01e18a0a987",
+    "id": "b82e1fd9-542c-4ad9-a8fd-1a57b71a1750",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25542,7 +40034,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee32a591-49df-447d-82a2-d86e547b2458",
+    "id": "2b0dc7e6-8a28-4009-84df-d7b5508f6872",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25562,7 +40054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0ca2a20f-342e-46ff-ac13-2467913b60a4",
+    "id": "cfc28700-e5c1-4687-8bd0-8781d3d30078",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25582,7 +40074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8e58b6c-64b8-4574-b371-01bbda616d2b",
+    "id": "fb2170a7-f085-4552-9a56-9c54f2e4e049",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25602,7 +40094,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28848444-f68f-4411-a64b-e0b406cb22f3",
+    "id": "c3122c3e-83d7-4e43-a2d4-0ceb6ba1211a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25622,7 +40114,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6a5f9eab-e2c7-4f05-b3a5-302cf787f43c",
+    "id": "b98f12d7-8e98-4f62-a719-e6c6ccde1fe6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25642,7 +40134,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aadfe945-0076-4a43-93d3-444e8fb939e9",
+    "id": "a70a0a5a-148e-44d1-8e66-2e521b71cdc6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25662,7 +40154,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "906173ee-e4b1-45e7-93d2-7e1cdfb156ec",
+    "id": "930ad1ce-59b7-4885-8305-d8dbd6c20a02",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25682,7 +40174,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "201a4517-5a67-409b-8841-6a466fc3a53a",
+    "id": "248831c3-74c7-4ae1-8594-f0a8b9b5b816",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25702,7 +40194,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6fd37693-ddf3-482d-884e-4bffdb2d095e",
+    "id": "025360cf-b5f9-4008-aa6b-1aab849d0d7c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25722,7 +40214,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f91195c-ae99-45cf-acf2-9f4d29fbcba7",
+    "id": "2108b9a9-bcfa-4936-b54d-ab57106383cb",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25742,7 +40234,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "062db750-4eab-4764-882c-08266daa8d97",
+    "id": "2e4dc345-d12a-4ddc-872e-1af11bdc1efe",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25762,7 +40254,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf97745a-2ce7-4b9a-916a-953e4f502b5d",
+    "id": "8f67fc4f-aa8f-43a7-b7fc-d96800f20558",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25782,7 +40274,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9af2ff3-8234-4190-9237-358f1bf788a8",
+    "id": "db5b0332-86f4-43f2-a89f-9019f15d7314",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25802,7 +40294,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e4a9471f-689a-4750-b0cb-0f35e7268cce",
+    "id": "5c8b333f-b92e-48a0-939d-1456b74302c6",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25822,7 +40314,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8a553b5b-0379-48eb-902c-d8e7dafadaf4",
+    "id": "120a0eea-f2bb-47a3-a01e-bdbade41709e",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25842,7 +40334,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "330cb533-5595-4e6a-8995-e2e85fc3b049",
+    "id": "61300e40-5869-469b-b456-86a62a30aa72",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25862,7 +40354,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "184ff65a-4fc2-46d9-ab02-53868bae124d",
+    "id": "5119b220-2a7f-4c6e-8978-bf31f4eb2b8d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25882,7 +40374,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a651962-a8a6-4d27-a1ec-20b9ce24d731",
+    "id": "a7c04a3b-1b14-49a9-a440-1f771eb32884",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25902,7 +40394,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "92f1df6d-fcdd-48c5-a4fb-1b9a3dc39f27",
+    "id": "f648c5ab-1612-4834-bb63-48bdfb51137c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25922,7 +40414,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20240f57-2730-4311-a63a-915a8f69501f",
+    "id": "43246377-d3f3-4673-9fcb-e776e813903c",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25942,7 +40434,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4df3188f-3372-4f61-9bac-33f028c743ac",
+    "id": "6c7a40b0-01b0-483e-a83d-0a8ac5884a55",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25962,7 +40454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "72ba31ff-0bba-4ec2-9fdd-aa6ee4b39705",
+    "id": "9fab8b8c-91cb-43a1-96f5-47483dedb93a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -25982,7 +40474,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f1451c6-e58b-402b-8fb7-be39482746ea",
+    "id": "1fd19add-7a71-4d63-82e4-98eb9401b217",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26002,7 +40494,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "55a6db06-84bd-4d0f-8ea1-346488b77ba2",
+    "id": "e6a28411-91b1-44db-bfa5-e3345bdd8d8b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26022,7 +40514,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "276f20c1-0376-4403-a353-270fef6edf72",
+    "id": "e271e123-0b3d-4b18-9f3a-7871746c0b90",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26042,7 +40534,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e11f1c52-3ea4-48d2-9f23-c6c3ad0b1d97",
+    "id": "b7686681-4975-48ae-b1c2-b810fa2e672b",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26062,7 +40554,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5f656be7-a1c0-4005-bc5c-ef970034c106",
+    "id": "7cb84706-8004-4278-89a4-193c4eff2c3d",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26082,7 +40574,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aec41961-8686-44fe-a3b6-688548de4f22",
+    "id": "043b4aac-3638-451b-979f-9b4dfcd39326",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26102,7 +40594,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "350faf9b-806a-4f89-83c0-2f0fc933b5d4",
+    "id": "110eefe2-163d-4afe-8e10-296c41212de5",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26122,7 +40614,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b39e1d31-5b98-470c-a66b-e39bc6c55f13",
+    "id": "461212da-1c67-40e9-82d5-8a4b1e9fddf9",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26142,7 +40634,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bb8fa624-00d9-4332-b1ea-812f6afedbd0",
+    "id": "b5460c5b-1a94-4f6a-bca3-05ad58aeaa4a",
     "codigo": "4.1.01.21.0012",
     "descricao": "LANCHES E REFEICOES",
     "tipo": "C",
@@ -26162,7 +40654,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9dce8bbb-eea2-4e65-96a3-07695c8185a1",
+    "id": "82f94f48-d5a5-41b1-90f7-88e1ff8b560c",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -26182,7 +40674,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ed70263-fd6c-4610-abd4-954cbbb92d47",
+    "id": "129f41cb-b8a3-49e1-bfff-b7a98b25e9b4",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -26202,7 +40694,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c745dcd6-b87b-4c9f-af2d-a7e517259ed5",
+    "id": "45641896-e99e-49dd-8984-d32e8bc6046f",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -26222,7 +40714,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2a702bd0-fd83-490d-b23c-bad051da3420",
+    "id": "32d4a2cf-5c65-41a5-96bc-ee85e13cf236",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -26242,7 +40734,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a9396072-12a3-443c-baa5-6a699a910c4a",
+    "id": "192f3306-c4d2-4b4d-98c3-bbb9982fa675",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
     "tipo": "C",
@@ -26262,7 +40754,287 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "38096f4b-3fb3-47f0-b67f-8aeb8b1654c6",
+    "id": "fc038b96-20a1-44a2-8c82-d1ba9c11236a",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (P)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 177.66
+    }
+  },
+  {
+    "id": "acba0f17-7571-47d0-8a9e-8a9cbf18ba66",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (P)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 199.35000000000002
+    }
+  },
+  {
+    "id": "0d7db8d4-3bec-405b-8898-668a039e12ff",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (P)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 59.22
+    }
+  },
+  {
+    "id": "e5e98119-e9a1-41ad-a5db-a73b6022a737",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (P)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 66.45
+    }
+  },
+  {
+    "id": "324958b5-313a-413d-9066-137c93573b02",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.09
+    }
+  },
+  {
+    "id": "b99e70d7-ec09-4799-9541-d5d13e8fd0f5",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63.6
+    }
+  },
+  {
+    "id": "1c4bca50-da11-4c60-b373-5b2eca733909",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (GG)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 41.9
+    }
+  },
+  {
+    "id": "9cd266be-4c9e-47d5-be62-aff43b5054a7",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 300.45000000000005
+    }
+  },
+  {
+    "id": "3f1fb7bb-2b2f-46bc-98a4-6d14c66512c1",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (G)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 365.4
+    }
+  },
+  {
+    "id": "d60f524d-dbdc-4437-acf8-f56525c612ea",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (G)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 444.99
+    }
+  },
+  {
+    "id": "cf652f12-11e9-473c-be1a-7c2caebd32d1",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 254.4
+    }
+  },
+  {
+    "id": "089ddafb-e89e-4215-934f-afba09d24900",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA MODELO SOCIAL MASCULINA MANGA CURTA VERDE M",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 221.4
+    }
+  },
+  {
+    "id": "12041a32-936d-4d95-b847-a2aab00b2b1a",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CALCA ELANCA VERDE (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 60.09
+    }
+  },
+  {
+    "id": "2ae0c155-50fd-4ca2-84c5-12fffe8d421d",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAMISA ELANCA F. VERDE MANGA LONGA (M)",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63.6
+    }
+  },
+  {
+    "id": "35260c40-47b4-4902-aeb0-340f9bbeb4a5",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -26282,7 +41054,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e0b2bc99-58da-47d7-88b0-63607ac9b1e9",
+    "id": "74e500ff-647d-4180-ab84-668b1baeb4a7",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -26302,7 +41074,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44215b17-f7b1-4e0a-832e-b43e5bdc4dde",
+    "id": "9ebe7d14-4b2f-437f-ba6d-de0cb8313fe9",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
     "tipo": "C",
@@ -26322,7 +41094,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f0936e9-a6af-4e8f-828f-96d7826daaa9",
+    "id": "531a4510-b965-40b8-8e6d-ed404a745bf3",
+    "codigo": "4.2",
+    "descricao": "4.2",
+    "tipo": "C",
+    "codigoPai": "4",
+    "nivel": 2,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "321bb9b2-e487-4457-bb45-7b4a3619e6ed",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -26333,7 +41116,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "a297698d-14ae-42fb-bfb3-cd5131800f3b",
+    "id": "e52c4030-8616-4b17-a472-60c704ec229b",
     "codigo": "4.2",
     "descricao": "4.2",
     "tipo": "C",
@@ -26344,7 +41127,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "7d2b6217-8786-45ef-be78-81f575c6caf7",
+    "id": "d2c1ce61-09be-48e4-bf5c-eff3e2f9752b",
+    "codigo": "4.2.01",
+    "descricao": "4.2.01",
+    "tipo": "C",
+    "codigoPai": "4.2",
+    "nivel": 3,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "aa7d84ff-3a59-495e-9275-9ddbece6341c",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -26355,7 +41149,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "f23bee0e-3970-4b72-8efb-e273fdcfffb2",
+    "id": "5a2fe85e-30e8-47b8-822d-1a8dbc59e6de",
     "codigo": "4.2.01",
     "descricao": "4.2.01",
     "tipo": "C",
@@ -26366,7 +41160,18 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "76cf5b9b-94c4-42e8-9cb7-8ce9fbc70f96",
+    "id": "7e32ecd7-f13c-42f7-a717-94574f2e2947",
+    "codigo": "4.2.01.02",
+    "descricao": "4.2.01.02",
+    "tipo": "C",
+    "codigoPai": "4.2.01",
+    "nivel": 4,
+    "atividade": "SERINGAL",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "99995ce8-88db-43f4-bd22-5f024ab21ef9",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -26377,7 +41182,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "1a50046a-9d0f-49af-bac9-1beff5e52458",
+    "id": "abd3c023-a6fb-4a9d-9c7e-c5374033964e",
     "codigo": "4.2.01.02",
     "descricao": "4.2.01.02",
     "tipo": "C",
@@ -26388,7 +41193,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
-    "id": "cb74cd92-b57c-4434-9949-e7c807022c88",
+    "id": "75a7d148-2ac1-4b76-860b-d6034f09b18b",
+    "codigo": "4.2.01.02.0001",
+    "descricao": "RATEIO RECEBIDO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1566.7
+    }
+  },
+  {
+    "id": "4f229a7f-da31-404f-bdd1-962ae29dd23c",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26408,7 +41233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6ea1cc03-b578-4ca8-8213-1332d429311a",
+    "id": "18d20714-21bc-4210-bcac-d46092e8fef7",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26428,7 +41253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ce69518b-4a70-4138-818b-9082f154edb6",
+    "id": "7344073d-6397-4f22-aa6e-341c32dc7d5c",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26448,7 +41273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf98b54e-251c-44a3-a583-1fbc9488ee0d",
+    "id": "564a4e4f-9440-4a10-96a2-f5ab2f815f80",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26468,7 +41293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7e92cd22-2982-461b-9aa4-ea98e69ca909",
+    "id": "0ebbc5af-a32d-43c2-83aa-ea56306e5be9",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26488,7 +41313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "505d501a-19b3-497a-b1e8-d7f4e6201067",
+    "id": "826288c6-67e8-4100-a109-baa75a2a5ab4",
     "codigo": "4.2.01.02.0001",
     "descricao": "RATEIO RECEBIDO",
     "tipo": "C",
@@ -26508,7 +41333,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "48d4cd43-4eba-4912-87a7-531d3d021218",
+    "id": "a4e24b6b-0acc-4f6e-a2af-0a9ca7b6f61c",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26528,7 +41353,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9f4d0ccb-8a19-4806-931d-0cee23dbb555",
+    "id": "52b8f695-bb60-405c-9383-3fd9244ecc6d",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26548,7 +41373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d538e0ac-743a-48d9-9607-8d5e035e6689",
+    "id": "7d056ede-3c62-421a-98ff-24c199260845",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26568,7 +41393,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d2062e1a-b656-43eb-b8fd-221037ec9076",
+    "id": "1f244cd8-879e-4308-8b55-71ecd1617282",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26588,7 +41413,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "406f8792-9cf0-44ed-9610-76c6eadcdc38",
+    "id": "b1f4137f-6980-4102-935e-23d85e81c31e",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26608,7 +41433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f8363c9-186e-4ab9-82b3-118a7d08c85c",
+    "id": "0799ca1c-5cc5-422e-b1ce-8a00ac63a401",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26628,7 +41453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4cf2f5df-054b-42bc-852c-cbcf4620bc33",
+    "id": "c1172788-3821-4df2-82bb-82bec537787e",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26648,7 +41473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "889ab62a-508f-425c-85fb-7a2082acbd21",
+    "id": "a89f1e58-5ade-4652-8d3e-0fcc3d37c5d3",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26668,7 +41493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "77c8e54b-5a63-46a5-b9c6-c44529e7f506",
+    "id": "1610e394-782a-4c66-a0bc-fb2a377c663a",
     "codigo": "4.2.01.02.0007",
     "descricao": "RATEIO CUSTO DE PESSOAL",
     "tipo": "C",
@@ -26688,7 +41513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "30e27332-aa4c-4365-8009-34ccd1f44b78",
+    "id": "93e35c52-fcd2-40d1-baf2-28679a197885",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -26708,7 +41533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f0ee6f5-61c2-4e36-bc4e-08f04d1db6fd",
+    "id": "8e57c430-a8d6-4e0f-be3c-f87509d6a3d2",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -26728,7 +41553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a5d0668e-7dfe-439f-8e12-21340893b22a",
+    "id": "0337327f-c7cd-439a-b21b-ab47ddf50c27",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -26748,7 +41573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "20d2654f-3a43-4cb8-892a-d024f99b6c38",
+    "id": "bbdfb055-4329-4f48-bf32-6bb181c164d6",
     "codigo": "4.2.01.02.0010",
     "descricao": "RATEIO CERQUEIROS",
     "tipo": "C",
@@ -26768,7 +41593,167 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "15a46a81-432b-4b40-913b-b116aeec08c8",
+    "id": "4cc6c935-a4d2-4b4d-a0b3-974e0537bd98",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 273.88
+    }
+  },
+  {
+    "id": "f9bd9f73-99ec-43c5-b0e4-13a7400b4d34",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4.75
+    }
+  },
+  {
+    "id": "3422b5bf-b65d-4bf8-92fb-c4104358809b",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 30.44
+    }
+  },
+  {
+    "id": "f15dfc03-5712-4c89-8b15-1b00fa5e3326",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 63.73
+    }
+  },
+  {
+    "id": "b804a651-2c6c-49b3-9a21-99ac550adadc",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1671.55
+    }
+  },
+  {
+    "id": "4e3af7d8-af8f-4883-b779-cd71c53c7d38",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 124.71
+    }
+  },
+  {
+    "id": "c823723d-b364-4cc4-9fc3-80f7100b437f",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 798.57
+    }
+  },
+  {
+    "id": "96ffeab9-72e8-408e-befd-aaf3d5c9da74",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7184.02
+    }
+  },
+  {
+    "id": "f05ae4d0-f29d-4041-b9bb-4b5cc22b947e",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26788,7 +41773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9a16b795-c3dd-4bb5-a062-9d9f4c37d297",
+    "id": "56102778-0db4-4c16-895a-a95ef2c894ba",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26808,7 +41793,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d434b41d-e6f7-4351-8dd1-f67900833cca",
+    "id": "99dcbc40-11f7-4ef8-aea4-16bd4ede1f84",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26828,7 +41813,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "88dc1043-be40-4c3e-af5d-91efa36641aa",
+    "id": "99491e3d-180a-41c9-b2eb-79bedfe8240f",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26848,7 +41833,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cf929624-00d7-493a-9614-d1627dd000fb",
+    "id": "d85f9259-078d-4681-bfeb-d91942c4597a",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26868,7 +41853,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b2a34a2f-f649-43d2-8079-4c4e6a1c299c",
+    "id": "12fd28cb-d601-448c-816a-7b8623a02a23",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26888,7 +41873,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ade2627-4832-4a6e-99b7-eac51a09f910",
+    "id": "1e7358a5-56ae-4886-924b-2bed1664a1e7",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26908,7 +41893,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "87167b22-3c36-4908-9647-d48f6b78686a",
+    "id": "4d21f257-64df-4c98-8eab-8d6a8ab8daba",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
     "tipo": "C",
@@ -26928,7 +41913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6d291210-aaf6-43c5-a424-ba0df04c5b5c",
+    "id": "7664ea9d-ae4b-45be-a8cb-d48230b6591b",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -26948,7 +41933,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80f7d964-8838-48a7-9b53-0ee7abd755cd",
+    "id": "15cbcc75-7c69-4442-a7e9-ef9804464dd2",
     "codigo": "4.2.01.02.0019",
     "descricao": "RATEIO TRANSPORTE LEVES ADMINITRACAO",
     "tipo": "C",
@@ -26968,7 +41953,87 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "693d1715-888e-44fe-8283-db7cdf2dcf1e",
+    "id": "8ac91b75-3b89-43a2-b4f6-35899228f4ee",
+    "codigo": "4.2.01.02.0020",
+    "descricao": "RATEIO MOTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5477.84
+    }
+  },
+  {
+    "id": "c2b6f8b3-2a3e-4c00-a096-b396409a5205",
+    "codigo": "4.2.01.02.0020",
+    "descricao": "RATEIO MOTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3431.4900000000007
+    }
+  },
+  {
+    "id": "630c8d34-4443-4569-8d08-8e38f8f233d6",
+    "codigo": "4.2.01.02.0020",
+    "descricao": "RATEIO MOTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 223.51
+    }
+  },
+  {
+    "id": "c1362588-ee1a-45b4-9f17-e61e34b81d69",
+    "codigo": "4.2.01.02.0020",
+    "descricao": "RATEIO MOTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 566.57
+    }
+  },
+  {
+    "id": "90fd5e0d-98c6-4ec8-acd6-8669d9b6e118",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -26988,7 +42053,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8db8346d-3fcd-4f39-95fe-cfde660d1ada",
+    "id": "be7eda2a-b780-44cf-8694-050ddbaab9d6",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -27008,7 +42073,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ddec7f31-a959-437a-8fdc-997ae11c43b5",
+    "id": "a0eb999f-c596-4a09-99c8-dcbf031b4181",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -27028,7 +42093,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3cdbaff8-3e92-4704-a105-4903694fe5d4",
+    "id": "94c0729e-3eeb-4101-8dc2-8eb4698e2fe0",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -27048,7 +42113,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1d105036-4a52-4a63-a356-a6c281da878b",
+    "id": "901669ca-530b-4a5a-baf6-35e9356ce646",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -27068,7 +42133,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "36a9d7e3-d02d-4aea-8a38-c6f6a40f34ac",
+    "id": "fc86a483-022b-4781-a7b0-6ef552d1cbff",
     "codigo": "4.2.01.02.0020",
     "descricao": "RATEIO MOTOS",
     "tipo": "C",
@@ -27088,7 +42153,87 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8f0dc273-0fd0-454d-8a89-37fe844c4cf7",
+    "id": "97a65d54-7170-4ff3-bdb7-6781b09064af",
+    "codigo": "4.2.01.02.0021",
+    "descricao": "RATEIO VEICULOS MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 73195.31999999999
+    }
+  },
+  {
+    "id": "de4e6e22-662a-46dd-9db8-30a72d1af383",
+    "codigo": "4.2.01.02.0021",
+    "descricao": "RATEIO VEICULOS MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 83569.20999999999
+    }
+  },
+  {
+    "id": "25f36904-ab57-43ff-85a8-be3171374413",
+    "codigo": "4.2.01.02.0021",
+    "descricao": "RATEIO VEICULOS MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 10664.36
+    }
+  },
+  {
+    "id": "8dc8ead9-cef0-4c90-af2a-615cfb0643a5",
+    "codigo": "4.2.01.02.0021",
+    "descricao": "RATEIO VEICULOS MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 19246.9
+    }
+  },
+  {
+    "id": "cbeb3a79-9bed-428f-a283-5f9688bad1f8",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -27108,7 +42253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "088512b9-daa9-4c52-bcd6-33f16658e341",
+    "id": "f1666c7e-ac4b-4fd7-84bf-a42b58d66a1c",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -27128,7 +42273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e75f181-fdd9-4f23-b230-f5a7c9a0f42f",
+    "id": "123695d6-f6d1-4631-9372-3030275797ec",
     "codigo": "4.2.01.02.0021",
     "descricao": "RATEIO VEICULOS MEDIOS",
     "tipo": "C",
@@ -27148,7 +42293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "561367e8-4fe0-4970-b631-73321f79bbce",
+    "id": "34ce4651-419e-4b19-861c-04eeb919ecf1",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
     "tipo": "C",
@@ -27168,7 +42313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3fa99250-927c-4bf2-81d8-4e7ddf7f5bf9",
+    "id": "29f4eb53-f381-4179-90cc-b1e60d4b9270",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27188,7 +42333,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8de158d3-9374-4d4d-8d6a-34259cad777e",
+    "id": "80d0ef27-cbb6-4c49-bb9e-8c3a6c573ce9",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27208,7 +42353,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7258b783-e092-419e-86ce-e73f521fc903",
+    "id": "315ec634-a47b-4e38-a2c6-68fba1e74f9c",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27228,7 +42373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "44e81fd0-5231-44b3-8a4b-f44cb4dd1b34",
+    "id": "b35d922e-23d5-4d9f-933d-ddd89a989205",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27248,7 +42393,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d656f529-2890-4951-b541-568778486734",
+    "id": "53afe853-0346-4281-af0e-2c2a1c570e35",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27268,7 +42413,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8847b34a-4414-4fb7-ad12-1c37d5b6a1af",
+    "id": "190fb239-d29a-473f-82ee-158b2e7d93c2",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
     "tipo": "C",
@@ -27288,7 +42433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e0b9799-f090-4190-ad4c-f33edaa1fdae",
+    "id": "482690fa-ce9e-4409-95a0-68f08de6e711",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -27308,7 +42453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ada0b5b6-86ff-4ad3-8262-dd44b311beec",
+    "id": "86c1272b-2ee2-43af-a213-95ac68c0fc1c",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -27328,7 +42473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ebbd3bbe-738d-4f43-ac2a-c544f6d967e6",
+    "id": "e1ecdc4d-bd4c-4348-8c54-59b1a15571ce",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -27348,7 +42493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ee50c7e4-bda0-49ea-a780-7bc9256e3b9a",
+    "id": "b0cec288-06c6-4f47-a1a9-7d5c31715816",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -27368,7 +42513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "67c08544-6928-4837-a308-87cec6fd114e",
+    "id": "79389e32-2f49-4c5d-8cb9-d63435a00a66",
     "codigo": "4.2.01.02.0030",
     "descricao": "RATEIO TRATORES PESADOS",
     "tipo": "C",
@@ -27388,7 +42533,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ddf0f0cd-58cb-4054-9f14-de2b98f8b340",
+    "id": "4ba99957-2320-46a0-930f-eacb49bf2b78",
+    "codigo": "4.2.01.02.0033",
+    "descricao": "RATEIO ROCADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 364.6
+    }
+  },
+  {
+    "id": "709bd97e-44ee-470d-9f4f-50fefa5af748",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
     "tipo": "C",
@@ -27408,7 +42573,67 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a0f4b4ec-8572-42b4-a619-a551e83f4b16",
+    "id": "5aceafd5-7a0b-47e1-a3b9-fe913ab426fc",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 718.6800000000001
+    }
+  },
+  {
+    "id": "f86744e1-2ed3-4024-ab6f-dc7623fa355d",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 128.39
+    }
+  },
+  {
+    "id": "99acdbeb-f842-411e-b35b-e6c2438214f3",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 420.84
+    }
+  },
+  {
+    "id": "0359e35c-bb7f-4aea-8587-85a7e0dd1e58",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27428,7 +42653,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d1a81d81-5f18-4b64-9eb3-4f6affb125c9",
+    "id": "a18086c2-ca76-4840-8c63-c61af1ecd8c2",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27448,7 +42673,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4ae5efb5-71d6-4e73-aef3-295d4d188c84",
+    "id": "547ef614-fb5c-4840-bbdd-677099a7de94",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27468,7 +42693,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4a679f87-eac1-4a85-919f-d4d9a609efbc",
+    "id": "e17ba5a2-a7b6-4ac3-96e0-d1f398fc789c",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27488,7 +42713,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fdc467e0-8a11-4adc-85f1-d81eb4dbf9d8",
+    "id": "bec15271-fa1e-4513-9613-cb1cdce43542",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27508,7 +42733,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32bda06a-4d62-43de-b7a2-04c0c6aee004",
+    "id": "e6f3a4e5-7194-47ad-82ff-df07c322dfa8",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27528,7 +42753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6559c02f-d0b5-422c-aa17-7a263f856a8d",
+    "id": "330b1d6e-1e11-4eed-bcac-e6de75b6b3e0",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27548,7 +42773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bf81dedd-b565-4da7-9946-de998a72531f",
+    "id": "ee100f88-06ed-4138-aad3-d80bfe32c24a",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27568,7 +42793,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "49576713-63b1-4864-bed3-00df3c0e4332",
+    "id": "0976e84a-2604-4ab5-b9ef-65820c73408e",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27588,7 +42813,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f94eba9f-7eef-4e8c-9ee6-56aca47fab1e",
+    "id": "f44189f9-3b18-4ed8-8f01-7f7fd21222db",
     "codigo": "4.2.01.02.0034",
     "descricao": "RATEIO CARRETAS AGRICOLAS",
     "tipo": "C",
@@ -27608,7 +42833,67 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ad748f1a-b63c-4cc7-bded-686e86027cae",
+    "id": "c8a47106-f8f1-4e77-82ba-f29482c28d00",
+    "codigo": "4.2.01.02.0035",
+    "descricao": "RATEIO TRATORES LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 29320.920000000002
+    }
+  },
+  {
+    "id": "b6d5b5ff-0729-4394-acb5-ce86456c0d7e",
+    "codigo": "4.2.01.02.0035",
+    "descricao": "RATEIO TRATORES LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23456.69
+    }
+  },
+  {
+    "id": "4665075f-6419-418e-923f-046592d150e0",
+    "codigo": "4.2.01.02.0035",
+    "descricao": "RATEIO TRATORES LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 31706.059999999998
+    }
+  },
+  {
+    "id": "bc23e99f-0d23-4d0e-9b4c-325759d9dc3c",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27628,7 +42913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5b4c348d-dafe-4965-9fe1-4479c594f8f3",
+    "id": "cb70df06-6d5a-4e18-a114-2bc9f7b9feae",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27648,7 +42933,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a460fa9f-4bb4-4c3a-9f75-1c5520328573",
+    "id": "dd2cbaf4-5663-4555-ba0d-8c3f990bf6e2",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27668,7 +42953,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3ce2ec0-cfa7-4f96-8b28-f2f3afd44510",
+    "id": "a5a11381-a9cd-4c86-abba-7a5c1c20bfb4",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27688,7 +42973,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1e1048c9-0e9c-40d6-94bc-18e969962862",
+    "id": "1bd532f4-7c63-4adb-a780-429d477cabd3",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27708,7 +42993,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3c94991-e8b9-4153-ba87-297e8002c5fb",
+    "id": "64412050-4d99-4091-a859-d9895ccfd3c6",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27728,7 +43013,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43f5cc47-ab3e-4a72-8857-7be87ce1a94d",
+    "id": "6d234573-ed40-47b7-bea9-fec99c53b3d0",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27748,7 +43033,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c5bab045-c810-4804-b0cc-47f00185f602",
+    "id": "b638c97c-c402-4102-aff9-60fb64977b6d",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27768,7 +43053,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8285f6d7-b3b3-4766-9555-9bddcbd2099d",
+    "id": "69711f4a-beb1-431f-a37a-5faed078b9ca",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27788,7 +43073,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7273bdb-5828-4cde-9310-f54c829517c8",
+    "id": "84b1de23-58a0-4ba1-992a-e3542fafca2a",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27808,7 +43093,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "882bcb4e-afbd-45cc-bb0c-95ae884a5af7",
+    "id": "47083b35-f8f6-4d82-9850-b77e461888f3",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27828,7 +43113,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ef480d88-16c5-4812-ad35-19c933c75568",
+    "id": "f85a647f-6478-44d8-8289-6b13322e3f8e",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27848,7 +43133,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1161ba78-198e-4065-a538-a9a25f87d17d",
+    "id": "004b59c2-c6e7-409b-aa65-c1696c2370da",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27868,7 +43153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b4fddfe8-be36-4961-b46b-f5dfd4e948dc",
+    "id": "70611365-99b0-485a-83a7-586e617a3e1e",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
     "tipo": "C",
@@ -27888,7 +43173,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "32673114-7712-47a0-a1fb-75650f68ac1d",
+    "id": "014c3d26-511e-4000-9ad2-bffd22bf06db",
+    "codigo": "4.2.01.02.0036",
+    "descricao": "RATEIO TRATORES MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 57581.32
+    }
+  },
+  {
+    "id": "c0c6bff6-9207-47d8-9bc0-8c6109c6ee7e",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -27908,7 +43213,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7854e995-49d5-4d34-ad2e-d836dcb90806",
+    "id": "d20dd4a2-7d80-40ed-a429-3ace8da09f19",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -27928,7 +43233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "616c8615-0924-40f7-a344-0fe6d88133c5",
+    "id": "b46ae9c6-803c-440f-8ddd-8676709df2c4",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -27948,7 +43253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25e98b16-45bb-4ed3-8fae-85732f8079cb",
+    "id": "6bfa196e-c470-4f4e-8d7a-b5908cbbb16b",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -27968,7 +43273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "25dd0c9e-2432-4ce7-9ce5-ec3516e4d237",
+    "id": "3da82dc8-b9e5-4320-be15-4ec1f7182ad9",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -27988,7 +43293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cca99af3-884a-455b-ac82-84e7dd03d495",
+    "id": "00a26b91-7acc-405f-98a9-25f743626fd7",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -28008,7 +43313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1291e7c0-380c-4faf-9b1c-53fa36573132",
+    "id": "21d8ae88-c670-4749-b377-a22b9ebf396e",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
     "tipo": "C",
@@ -28028,7 +43333,87 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "322aa9d3-8dd1-49c7-be75-ea2e47f21631",
+    "id": "8a78df12-f107-4cb0-af31-0eb672f5b693",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14754.560000000001
+    }
+  },
+  {
+    "id": "f753f6d3-8a67-4a3e-aaf5-b5dba553fabe",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5561.8
+    }
+  },
+  {
+    "id": "25f1515b-c2c7-4faa-ad2e-1b7686ef8bed",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9812.25
+    }
+  },
+  {
+    "id": "fd9b85a3-44dc-4c56-a88c-0463b17a60dc",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 176.38
+    }
+  },
+  {
+    "id": "e14ed6b1-6a0b-4792-b559-5bf1c38d16d6",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28048,7 +43433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "60a960bf-5f8c-4bdc-8ece-e8a990c53baa",
+    "id": "d06ce5c1-2d00-4b64-9d1e-ee2628fef659",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28068,7 +43453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ccfef3d-75d0-4530-a92b-04b4bd86f4eb",
+    "id": "f4b7eca4-61cc-47b5-97cd-2b16674c84d8",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28088,7 +43473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e29227da-0e53-44d9-a63d-d36aa3c64afa",
+    "id": "3bea74db-3f12-40a2-8a11-6fc85c60667e",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28108,7 +43493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f6374087-6f9b-44ac-90c1-b679f698eef1",
+    "id": "6596d1b1-2c13-4408-a327-5c2cfef8d1cb",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28128,7 +43513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c4b75237-72b8-49e7-8128-fd8c99ba90fa",
+    "id": "7f551948-3159-40d1-994a-fba4ad7d08d7",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28148,7 +43533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "de87b60c-952b-41e8-891e-3260224914f3",
+    "id": "8fd3fca7-625c-4c14-9141-b644819571dd",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28168,7 +43553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "53ea8aae-46b1-4479-8859-3b35ef8450ba",
+    "id": "22d9261e-a104-4366-9c85-bc98ff38acb2",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28188,7 +43573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e7dd8cc3-7f7f-4c7c-a18e-1ede28dfd950",
+    "id": "821ff4dd-1d55-45b9-b710-6a5071d378d2",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28208,7 +43593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ba35ba4-7eb9-4d60-bd8e-8d57037f5f8a",
+    "id": "68628f53-329b-46dc-8a3e-be23cb1df3c8",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28228,7 +43613,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cc9b1697-fe1c-4b92-962b-9588685f86c2",
+    "id": "ab351de2-e07b-43b1-a28a-01d518c57123",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28248,7 +43633,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "10c57cbb-44e2-4576-8980-8c61a37ddfed",
+    "id": "a4a2e105-b23c-4d2d-a65c-281fc77f5241",
     "codigo": "4.2.01.02.0037",
     "descricao": "RATEIO VEICULOS LEVES",
     "tipo": "C",
@@ -28268,7 +43653,47 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "71a9ae47-f6b9-4cfc-8508-61a4f1d187f6",
+    "id": "1fb9813f-3237-4143-9f1b-057448e00deb",
+    "codigo": "4.2.01.02.0038",
+    "descricao": "RATEIO VEICULOS PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3668.34
+    }
+  },
+  {
+    "id": "c54ae42e-409e-414b-a00b-3de6005448d1",
+    "codigo": "4.2.01.02.0038",
+    "descricao": "RATEIO VEICULOS PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 464.7
+    }
+  },
+  {
+    "id": "3a1e19ff-086b-4402-99b9-2909863460ba",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -28288,7 +43713,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9905d887-ff22-470b-a987-904f5c0a2605",
+    "id": "9551e0f8-d9ad-423d-a1cd-116b8905bfa9",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -28308,7 +43733,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c433686f-d388-4927-9a36-a4f0e27d2ba5",
+    "id": "828cf7b2-f21e-4585-9114-3a3d4326c252",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -28328,7 +43753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1809df7f-aacb-4747-bb9a-0e515eac1b1e",
+    "id": "e4c4b9fd-d72d-4bf6-a292-4e3b6b33f69a",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -28348,7 +43773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "371ccf0f-6c12-465d-a781-efc40c41f1df",
+    "id": "f72ad4d5-179f-4e4b-b173-87e9218b51e9",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
     "tipo": "C",
@@ -28368,7 +43793,47 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d98392f-c4de-4351-b3f8-a79b16ba0411",
+    "id": "ab4bead2-42cb-4111-b0fd-56ff032cac49",
+    "codigo": "4.2.01.02.0039",
+    "descricao": "RATEIO REBOQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 49.22
+    }
+  },
+  {
+    "id": "d0d4977a-4303-487a-aae5-74ae2601ffc4",
+    "codigo": "4.2.01.02.0039",
+    "descricao": "RATEIO REBOQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 388.59
+    }
+  },
+  {
+    "id": "5c732e05-b6b7-4d86-aab1-4d71ecdfa0f6",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -28388,7 +43853,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7328daa9-0ce2-4378-ad4d-60db43cdb0e9",
+    "id": "2fa97dfd-268b-495b-95ae-dbe79bdee5d4",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -28408,7 +43873,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f02d73e2-f1c0-40c1-83e6-c572bffe6e6b",
+    "id": "5ff6ad09-aa02-456f-9113-416a2eaf1f4a",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -28428,7 +43893,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "54eb94da-eb2f-4bbd-8b0d-3ae3d535e76c",
+    "id": "f3ded387-3f2a-4956-8dff-b97e1e00f9e3",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -28448,7 +43913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5dcb453f-e322-4db6-b73e-506a89bb2a14",
+    "id": "ad4bc7e2-dee9-4c67-a530-69af84f5f19c",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
     "tipo": "C",
@@ -28468,7 +43933,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "41f5abad-e3a9-4ff4-a703-5d3433de2854",
+    "id": "1046825a-2fae-4d10-a1f6-b08686ea4886",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28488,7 +43953,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8520af30-fc99-4b74-afe7-c3ffd6689723",
+    "id": "f8cdca3d-92da-463f-9c6c-be8c7b42fb21",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28508,7 +43973,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1ffe93a7-03ef-416a-b5cb-9f446937d389",
+    "id": "77c9808e-303b-4b6a-8eb8-7829f6848845",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28528,7 +43993,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "854ebc62-3d9e-4ca2-9a12-c57399906792",
+    "id": "dd3d77df-e20c-4154-97f0-3a0108144918",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28548,7 +44013,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f590874b-8698-4577-89f1-61c7de56aaeb",
+    "id": "7ccc36e4-a465-4f0a-887d-18b9af277737",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28568,7 +44033,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e55521d6-97e6-4aed-a8bb-31400af77796",
+    "id": "92ddd90f-eb40-49c1-a6fe-44b93e6082ab",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28588,7 +44053,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9e2302ed-0c72-4260-8b61-3d187debf331",
+    "id": "2dac9ed2-1571-4eec-827e-494febf5ec6f",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28608,7 +44073,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a3e6b061-0438-4efe-9550-9a9121c25be5",
+    "id": "08a5c6fc-b49b-49be-bde5-062a4a1b51b8",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28628,7 +44093,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "01f7d157-f248-4a2c-ba64-c708ed260d0e",
+    "id": "c6fabc2a-defc-49cc-b70c-7d27995e0f2b",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28648,7 +44113,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c8e02fe2-bb10-42f4-a778-1564ea27af80",
+    "id": "0db53a7e-40bc-43c7-9244-cebff8aea36e",
     "codigo": "4.2.01.02.0042",
     "descricao": "RATEIO SUPERVISAO PECUARIA",
     "tipo": "C",
@@ -28668,7 +44133,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "677f3a30-4f91-4b97-80c3-1a1a8ef110c2",
+    "id": "3ba04ccf-151c-411d-8616-28498360930a",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28688,7 +44153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "bcfc6480-19a7-400a-abd2-19ce0a32ba19",
+    "id": "9459e1cd-8db5-49f2-895e-4908d8e51dda",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28708,7 +44173,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6b055130-10de-4714-b946-76d559a82c89",
+    "id": "4c56a230-31ec-4c5e-900a-1f4114ede8ce",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28728,7 +44193,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6f831b0e-9211-4f65-930a-2e519f1dc414",
+    "id": "1c4ffe27-9319-4b7a-9258-2a72c29522ee",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28748,7 +44213,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "b3af5e2c-500d-407f-89fe-2ea14ef0e65e",
+    "id": "acfa99a6-41ba-40b3-8a5b-828190ba9a7a",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28768,7 +44233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ede28e01-f98b-4611-bcc3-27ce8a970172",
+    "id": "78b129ba-9b5e-48f9-9b50-d64cf62cfd7c",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28788,7 +44253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "86ca34b3-d411-4eb2-bf8b-f74168ca0755",
+    "id": "8b0578a4-d674-4aed-9107-84c73666019f",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28808,7 +44273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c63f0cee-5a9b-4f44-ac87-0917b9d804dc",
+    "id": "7ddf86a2-86a7-4b82-90b4-a7497ff446ab",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28828,7 +44293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "708974b5-6ba4-409b-8308-1683c4ba659a",
+    "id": "8a7eb0c6-c654-4cac-9362-608feb74f4ee",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28848,7 +44313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0f8e1c65-0883-45d4-9a7d-41d4f68131fc",
+    "id": "b037006a-db59-4cfb-9582-9883236fdb5e",
     "codigo": "4.2.01.02.0044",
     "descricao": "RATEIO FABRICA RACAO E SAL",
     "tipo": "C",
@@ -28868,7 +44333,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "04d4fcb5-c687-42d7-8ede-88ed6812dc1c",
+    "id": "a1a4de72-5f58-4d5b-b39e-2c25038279da",
+    "codigo": "4.2.01.02.0045",
+    "descricao": "RATEIO CARRETAS TANQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 84.85
+    }
+  },
+  {
+    "id": "78117e15-4daa-4b16-ad29-d2519ea71659",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28888,7 +44373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c3bd3d33-4004-41cd-ac01-47d8b337f01a",
+    "id": "8a289827-7cd2-491a-ba3b-4f19d8f2fdfc",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28908,7 +44393,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e67e28d1-a52e-4079-baec-d3698e484dd2",
+    "id": "7b2d9763-7a2d-4fd2-9060-480766f0f0d1",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28928,7 +44413,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26db1167-0056-4dcc-bea6-4551bfb501e7",
+    "id": "e6881609-6ae6-4da0-87c3-e5f883f04e0c",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28948,7 +44433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "18e4fbb2-d9d4-4fdc-abb1-92c1a849f0b0",
+    "id": "83a64d92-ae72-49d7-9fa4-120b63cc5cec",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28968,7 +44453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a8691fa9-214f-478b-899a-d26884c1fe11",
+    "id": "4f512b3f-8c87-44c3-86a6-5e74bdf0f9bb",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -28988,7 +44473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "99a36d7d-bde5-4ffa-95cf-cefc20be997b",
+    "id": "c351729a-ceba-4749-843a-72e266f151f8",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
     "tipo": "C",
@@ -29008,7 +44493,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "758a9211-cd37-40ec-9a7e-44973395fd65",
+    "id": "e5615e02-4e96-4280-9e10-254bb50b10ca",
+    "codigo": "4.2.01.02.0046",
+    "descricao": "RATEIO PA CARREGADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 9739.02
+    }
+  },
+  {
+    "id": "923a8e59-0b80-4862-a652-98ea73747912",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -29028,7 +44533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7ecdab1b-322d-4586-81eb-a591ee0136ec",
+    "id": "3656d401-987b-48a8-b2b2-aa569d257cb4",
     "codigo": "4.2.01.02.0046",
     "descricao": "RATEIO PA CARREGADEIRAS",
     "tipo": "C",
@@ -29048,7 +44553,47 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "cd6c4fdc-acb3-42bd-949a-9b3442c53e85",
+    "id": "6cdb379c-646b-45a3-be59-e92e2075e9f8",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1621.91
+    }
+  },
+  {
+    "id": "ae871b84-d289-4b33-bebd-32f604cc6abc",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 79.33
+    }
+  },
+  {
+    "id": "73fce518-5719-4799-8e2a-71ee426a39ff",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29068,7 +44613,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a09363d5-9beb-443f-b1f2-8277e1bce475",
+    "id": "d2b5e591-5edd-4b0e-abed-00197af2d910",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29088,7 +44633,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "954c537c-dbd1-4af1-ba37-d4ee784eab8a",
+    "id": "a607ed65-8fe9-4368-b5b2-02f8664dcc69",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29108,7 +44653,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8679d183-252c-40d8-a3c5-0e832cabbda1",
+    "id": "f5ca0e0e-f5b3-4502-8f78-6ef29abee014",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29128,7 +44673,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "63560936-8a35-4ada-b877-289b1b182257",
+    "id": "660cecea-ac00-4622-9f4c-c5601a54dc52",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29148,7 +44693,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "90924799-0099-4a84-80c3-2695ff349964",
+    "id": "d8f2dfcb-1d75-4abc-8ea6-4214ae5722f6",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29168,7 +44713,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd7d99ce-2dc7-4081-b17a-144dcb15cac6",
+    "id": "b98b9ec3-c8a5-4e37-82c9-1bcf40c8df78",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29188,7 +44733,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "274ee1b1-d71a-46c8-a868-0a2324929cb0",
+    "id": "cd72740e-6b98-4949-a6bb-e1401a61e51a",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29208,7 +44753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8fb95250-0bf5-4a0e-b961-6a4f7cc568cd",
+    "id": "e0297682-b235-4ba9-bb39-0572cd6ff713",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29228,7 +44773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0533e71d-0fba-445f-b274-5630b289cd97",
+    "id": "d3bd7190-9c33-4cfd-86d0-bfd88d8d1ce3",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29248,7 +44793,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "916b1f35-af87-4cfd-8821-edaaf4c89bbe",
+    "id": "81fc2a25-d376-4359-b0bc-c7a6d0969516",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29268,7 +44813,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ff54b562-5879-45ac-b566-c7a0a18870d3",
+    "id": "f7bd40a0-807f-4e2f-9c67-bdf1afeded63",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29288,7 +44833,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "43e72faa-7a37-46f3-bb84-4165bf2e973e",
+    "id": "1c590443-d10f-499f-9ab6-5ed2b9e080fc",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29308,7 +44853,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aa6c6aa6-e696-4620-b1b8-817dd964dab8",
+    "id": "2d9853e3-8df8-45dc-ae15-bebc8ae87e0c",
     "codigo": "4.2.01.02.0047",
     "descricao": "RATEIO PULVERIZADORES",
     "tipo": "C",
@@ -29328,7 +44873,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "69c99b05-c170-4d48-a20d-d97f0bce6eed",
+    "id": "0804774d-cb9f-49c1-9fc2-235e7cd762df",
     "codigo": "4.2.01.02.0048",
     "descricao": "RATEIO SEMEADORAS",
     "tipo": "C",
@@ -29348,7 +44893,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ae374d4f-87cc-4937-bc6f-a27b35d8414e",
+    "id": "e740388c-de00-4e9b-9127-5b250b52e0d0",
     "codigo": "4.2.01.02.0048",
     "descricao": "RATEIO SEMEADORAS",
     "tipo": "C",
@@ -29368,7 +44913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "002eb361-e7c4-46c6-98d2-dd5c8aa4b183",
+    "id": "dc1ec9a1-1dcb-4769-8c82-a85053618e21",
     "codigo": "4.2.01.02.0050",
     "descricao": "RATEIO PLANTADEIRAS",
     "tipo": "C",
@@ -29388,7 +44933,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "ccdab4f3-e783-4ad8-9b9c-54ee7369fd29",
+    "id": "6844c860-bfd0-4ac8-8079-1757709f2e7b",
     "codigo": "4.2.01.02.0050",
     "descricao": "RATEIO PLANTADEIRAS",
     "tipo": "C",
@@ -29408,7 +44953,167 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0091770d-ddfa-489d-a4e5-01f566f273b0",
+    "id": "260896dd-36f4-4b61-a11c-564ac5181871",
+    "codigo": "4.2.01.02.0051",
+    "descricao": "RATEIO SUPERVISAO AGRICOLA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 53260.63
+    }
+  },
+  {
+    "id": "15e6587e-6c4b-47e6-92bb-ffdacd9cbc38",
+    "codigo": "4.2.01.02.0051",
+    "descricao": "RATEIO SUPERVISAO AGRICOLA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 87.93
+    }
+  },
+  {
+    "id": "ff4bf262-7463-4d51-954e-81232ba02c32",
+    "codigo": "4.2.01.02.0051",
+    "descricao": "RATEIO SUPERVISAO AGRICOLA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 12272.15
+    }
+  },
+  {
+    "id": "67539204-ab46-4b87-b20b-8456a1542a22",
+    "codigo": "4.2.01.02.0051",
+    "descricao": "RATEIO SUPERVISAO AGRICOLA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 7229.16
+    }
+  },
+  {
+    "id": "6e7988c8-6711-43c4-a7e4-190510a5cc2c",
+    "codigo": "4.2.01.02.0051",
+    "descricao": "RATEIO SUPERVISAO AGRICOLA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 14336.39
+    }
+  },
+  {
+    "id": "7a50ba95-bf54-478f-8527-9805f9523821",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 699.33
+    }
+  },
+  {
+    "id": "9555b8d3-d980-4ece-bee3-4367c49f8cce",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 3162.2699999999995
+    }
+  },
+  {
+    "id": "0868bf07-db1d-4d8c-8fa7-685e1e462a8f",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 5519.089999999999
+    }
+  },
+  {
+    "id": "06c83a3a-ca3e-46dc-bf08-0d9083e787a3",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29428,7 +45133,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c864fc19-b79b-4cf7-b234-065a5039c0d0",
+    "id": "8745f919-f760-4947-8bcd-ce47ee0d17db",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29448,7 +45153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93fdfbc2-ff3d-414c-bf48-ef68703fa668",
+    "id": "de8fd9e7-98c8-46e3-aaf4-a8a490e5b5b4",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29468,7 +45173,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fbbb5a89-34dc-4ba8-b111-6323bd002e50",
+    "id": "27918f58-6cef-4804-8a5b-280952e4be4f",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29488,7 +45193,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "c72cfffd-8c9c-4ae2-ac20-0a61af2b6fa7",
+    "id": "7f859c65-c632-4931-b237-1743949ca8c0",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29508,7 +45213,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "aaf9ce87-aea0-43a9-a43b-4c7b87d9ec58",
+    "id": "9cb52d34-cb3a-42e7-bf61-4f19baed729a",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29528,7 +45233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5281bf21-1038-4d3b-980d-b6843caa4a26",
+    "id": "050f7b76-ab1f-4615-933b-4c268ab037f9",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29548,7 +45253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4b30d8fa-2d8d-4df5-8ff0-49e6d02b3684",
+    "id": "15ca9a50-2ca6-440e-93ed-608508d1d974",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29568,7 +45273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5a83ae65-59b9-4368-9459-224f73a410f3",
+    "id": "77bc45e5-0b72-4e62-a7c3-80d07fa65f26",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29588,7 +45293,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "78326494-ddd8-4073-a3ba-b41c22e6f49d",
+    "id": "5d26bef7-4177-4608-90a0-fba45464dc35",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29608,7 +45313,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "e1f2cf33-b55c-4eb0-b179-11fe8ba1f7db",
+    "id": "d82cae29-1b41-4080-a61c-1e572070d7b1",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29628,7 +45333,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "eaaf0360-9707-4e87-b363-f46e0c2834b4",
+    "id": "8b4c93e0-ec4d-4cac-9448-8f41fed3bf50",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29648,7 +45353,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d7ab898e-fe1a-458c-ac08-1ccfb091d5ce",
+    "id": "f8867ffb-91c4-4ab3-bcaf-87ce694a0ca0",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29668,7 +45373,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "545a7318-003d-4015-b996-deabd517625a",
+    "id": "57cb6a08-df78-46c8-af15-e5b87a347457",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29688,7 +45393,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3f607790-fabc-4586-b339-e4587bf46404",
+    "id": "f4c0fbc5-19e4-46aa-9635-c050fd4b25fb",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29708,7 +45413,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f16a193e-b7ec-4d12-a4b5-01087277f77d",
+    "id": "25ee4d3b-b3c3-4535-b367-da3e5776d446",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29728,7 +45433,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "3d8c3a5c-de81-43a1-afef-81eb7a898c87",
+    "id": "831384d8-9067-4de8-97a9-ab4c1eb4cb7e",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29748,7 +45453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "80d09a36-6786-4016-b2b5-901a01f4fa31",
+    "id": "14c1a8fa-6c6c-426e-8c11-64679919d81f",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29768,7 +45473,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "2b5f064e-03e0-4e95-8b21-8fbf4d291efa",
+    "id": "8796042f-cd6d-4536-b80f-573e9fe3734c",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29788,7 +45493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "11fc8b04-434c-40dc-874e-ec6d65fa94de",
+    "id": "6a505f18-4f5c-4830-9e0e-3d1368ab8d27",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29808,7 +45513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "06c47808-f2ea-41fd-9a75-1b6312d6a74c",
+    "id": "be75baa6-0f5b-4a61-84b7-a162fe2a6e6e",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29828,7 +45533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "1a323c1a-b06f-417e-aa83-c6fad63a3f8e",
+    "id": "f8d8660b-ab65-4950-9017-a470d7abad18",
     "codigo": "4.2.01.02.0052",
     "descricao": "RATEIO OUTROS IMPLEMENTOS",
     "tipo": "C",
@@ -29848,7 +45553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "dfe64ddb-9906-4cf1-831e-879b71773206",
+    "id": "e84c1bf6-b126-445b-8c4a-c3d1387f5311",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -29868,7 +45573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8263c4df-5f7d-4e5e-b572-c3925330e246",
+    "id": "1ff7ef1d-9b4f-4282-92c4-afe6f6c27850",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
     "tipo": "C",
@@ -29888,7 +45593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "40ed5e27-fc4f-4e26-9b7b-5810c4eebc3b",
+    "id": "4f9efd6e-19dc-4988-996d-53c1243aa069",
     "codigo": "4.2.01.02.0054",
     "descricao": "RATEIO MANUTENCAO PREDIAL",
     "tipo": "C",
@@ -29908,7 +45613,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "516aa74f-05d9-41f6-8be9-7a065f94f412",
+    "id": "5a919d8b-3994-4151-8dbf-18f763b0738e",
+    "codigo": "4.2.01.02.0055",
+    "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 83.87
+    }
+  },
+  {
+    "id": "57c83f18-943c-4777-abc2-e12283ada568",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -29928,7 +45653,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "012faf7d-f14e-4421-8669-18ae406eafd9",
+    "id": "e094a0ff-3365-4135-84aa-e19204b87682",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -29948,7 +45673,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56619f2a-2cef-487f-9e1c-7545bf2c9fab",
+    "id": "f73b338b-6f69-4fb9-a5d7-f65777efa369",
     "codigo": "4.2.01.02.0055",
     "descricao": "RATEIO CUSTO PESSOAL PALHA DE MILHO LG",
     "tipo": "C",
@@ -29968,7 +45693,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "81c4ed5b-3ed5-4f0d-87d5-408de3d03fef",
+    "id": "53fbf265-2978-4ece-a629-d01d4a873f98",
     "codigo": "4.2.01.02.0058",
     "descricao": "RATEIO COLHEITADEIRAS",
     "tipo": "C",
@@ -29988,7 +45713,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "fd7ef334-2e52-4d72-b943-47d4c93bce9a",
+    "id": "8193a1ca-b73a-47f2-b126-915525d0c9e0",
     "codigo": "4.2.01.02.0058",
     "descricao": "RATEIO COLHEITADEIRAS",
     "tipo": "C",
@@ -30008,7 +45733,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9bdc8d82-1ec9-4ade-b932-1b7b30989819",
+    "id": "c9305bb9-0341-4996-bbb9-b9b8c5b6e84d",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -30028,7 +45753,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "46230c55-7133-404c-a617-f88b86f22a11",
+    "id": "3f426124-07b2-4927-8c52-04e1710410a9",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -30048,7 +45773,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "029bd9c5-910d-4f0b-90c2-296a2044727c",
+    "id": "5c99e6ea-ea3a-4083-bbd6-987007d674db",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
     "tipo": "C",
@@ -30068,7 +45793,107 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d8f7deaf-f504-4ac9-be2a-73b3383a1b7c",
+    "id": "2674212e-c29d-44fb-955b-32711dc780fc",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 23.53
+    }
+  },
+  {
+    "id": "44c35e49-7b3a-4152-9ce6-1b47fb46e90a",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 150.66
+    }
+  },
+  {
+    "id": "4be551b8-6f54-4d76-9c93-428e34cb8ce1",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 315.35
+    }
+  },
+  {
+    "id": "0cecc5c8-edfd-4f0e-bfff-339b91432b56",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 363.77
+    }
+  },
+  {
+    "id": "0f161020-202a-4098-accb-8ef24ad3cfa0",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1355.26
+    }
+  },
+  {
+    "id": "cae84792-13a9-4538-a0cc-ef1663b43a9a",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30088,7 +45913,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7de395e0-1bed-4ba6-b740-af240409d4b2",
+    "id": "c09deccc-29f1-4efa-b19c-8f61bc221474",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30108,7 +45933,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "957334c1-049a-405e-aca2-54df721dbf08",
+    "id": "e2bc0f6d-9765-47d0-b17d-2d216057d599",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30128,7 +45953,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "6083d87f-9969-45a7-92f2-3ae783d1c2e8",
+    "id": "a2693f6f-091d-404f-8a55-13f299ac1eb0",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30148,7 +45973,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0e889176-d97b-492b-a585-fd38be765240",
+    "id": "4f5c0bbf-2ea2-4d1f-a453-b3722f907180",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30168,7 +45993,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4207781c-a9f7-4d24-a7b0-c5ec85ca32a2",
+    "id": "3ffb1a78-afa3-4dc2-85f9-a85d4c745e58",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30188,7 +46013,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "28c837b9-a5ef-4b43-98b6-e92000f06bde",
+    "id": "951728ce-0bbd-4464-9c89-bb8f6a2c40cd",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30208,7 +46033,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "9035a19a-33f2-4a03-837a-416c75e49a9f",
+    "id": "cd6643a4-91b0-4b0a-ac16-d5faad183900",
     "codigo": "4.2.01.02.0064",
     "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
     "tipo": "C",
@@ -30228,7 +46053,87 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "26783204-6c50-4505-baf9-6f1ecdf8f88b",
+    "id": "839376fb-c752-4559-9db8-9f28a340df9c",
+    "codigo": "4.2.01.02.0065",
+    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 122638.16
+    }
+  },
+  {
+    "id": "34e80de6-de5c-41d7-a28f-4a34d839f8a8",
+    "codigo": "4.2.01.02.0065",
+    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 28545.72
+    }
+  },
+  {
+    "id": "e1914528-209c-4e14-b7ab-1923f86955ec",
+    "codigo": "4.2.01.02.0065",
+    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 2131.9
+    }
+  },
+  {
+    "id": "2e1da359-46a0-4352-a858-d428ef151461",
+    "codigo": "4.2.01.02.0065",
+    "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 13640.52
+    }
+  },
+  {
+    "id": "c96b02e8-874d-495e-9cfa-cb802e54d559",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30248,7 +46153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "4dce1842-eeec-4c64-9874-1d8e0d8ae26b",
+    "id": "d9cc1c40-c164-420e-a6d0-ae2f6b13ae7e",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30268,7 +46173,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "370aeed5-f06e-4e5e-9396-2b15e8cbbbd7",
+    "id": "5c20fde0-110e-4de4-994e-9db863c4a0b4",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30288,7 +46193,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "56ef0a7c-8a18-4ed6-9ffa-f5d57a53c833",
+    "id": "66e86bd0-6670-44c4-86a3-54a17f700628",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30308,7 +46213,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f9cc0cde-9c9e-4e2c-8356-e2c690e29167",
+    "id": "3ab4e047-551f-4b25-8a6b-631635356243",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30328,7 +46233,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "f67a910a-dc96-4402-a73e-094c62e6b235",
+    "id": "08f855fd-0ac8-40a5-8cfe-4226c79b1aea",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30348,7 +46253,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5055757b-ffba-4c4e-9934-edb44c141aff",
+    "id": "d1c87871-d7ed-4adf-b2d9-6cac79298437",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30368,7 +46273,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "8ae85116-d16d-4bce-9fcd-59926d4ce6bc",
+    "id": "5f65d5b5-ee24-4534-b6da-b3de87c58471",
     "codigo": "4.2.01.02.0065",
     "descricao": "RATEIO DESPESAS ADMINISTRATIVAS",
     "tipo": "C",
@@ -30388,7 +46293,187 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "93507d5c-15ce-403b-8194-61b2dd959668",
+    "id": "6590a221-2110-424b-a2be-628f952baac9",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -1859.89
+    }
+  },
+  {
+    "id": "a30dc2a7-91a3-45a7-a7a8-0f5f1458b8b6",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -290.69
+    }
+  },
+  {
+    "id": "b6218ccd-24da-4f71-a401-6569ad1d5c7c",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -3892.23
+    }
+  },
+  {
+    "id": "dff55a6d-0b62-4321-a1b1-dae01e5dc1ae",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "COVOA - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 1105.6000000000001
+    }
+  },
+  {
+    "id": "af00017b-2b6c-4221-a433-f142ca20900c",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ESPLANADA SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 528.3
+    }
+  },
+  {
+    "id": "3f67247b-c26f-4452-a8d5-f0e054b3e358",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 82.57
+    }
+  },
+  {
+    "id": "cd4547e7-e143-475d-af27-63a57cb56e92",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 8449.14
+    }
+  },
+  {
+    "id": "4bca5ef7-c882-4c74-a028-37b00f7bafdf",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": -16721.81
+    }
+  },
+  {
+    "id": "cbe6e544-9699-4e60-9413-310f239ab1c8",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-02": 4749.79
+    }
+  },
+  {
+    "id": "4ca99c3a-1919-46c5-8a23-3728b43609d9",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30408,7 +46493,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "a85d5014-e2c2-448b-9156-f8f19b2f5a05",
+    "id": "a2b4d381-6ce5-4a8c-a62f-d62760b7cea2",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30428,7 +46513,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0448fa7a-45d2-4acb-ae88-846399750c40",
+    "id": "33b19989-a710-4e1f-85d1-aff83d1cf863",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30448,7 +46533,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "5fef15d2-6531-4092-9ebb-6586db230a64",
+    "id": "59812623-1763-4fbd-8a62-172b1298e5fa",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30468,7 +46553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "7f22ec83-b1a4-4995-aad2-2b443e816975",
+    "id": "f0fd912d-c0b9-4edf-b09a-c2f874780b82",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30488,7 +46573,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "067e824f-ffe9-4e09-807a-22f43f085fa9",
+    "id": "54e2907a-1bb7-4263-89e2-50f0f83f2728",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30508,7 +46593,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "d0e9c7bc-1d7a-49de-806b-1697f0e06b87",
+    "id": "84da0940-1b45-4362-aee4-0e56ea1ca8cf",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
@@ -30528,7 +46613,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
-    "id": "0914360f-b714-4141-b0e6-d1fe47c0863e",
+    "id": "3197600f-ddfc-4acf-93cf-4903a123c66b",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
     "tipo": "C",
