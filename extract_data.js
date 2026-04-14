@@ -182,7 +182,7 @@ async function run() {
 
   if (existsSync(realizadoDir)) {
 
-    const files = readdirSync(realizadoDir).filter(f => f.endsWith('.xlsx'));
+    const files = readdirSync(realizadoDir).filter(f => f.endsWith('.xlsx') && !f.startsWith('~$'));
 
     for (const file of files) {
 
