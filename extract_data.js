@@ -573,13 +573,10 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
 
-
-
-    const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}`;
+    // Incluir departamento e centro de custo na chave para agregação correta
+    const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}|${depto}|${centroCusto}`;
 
     const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
-
-
 
     const existing = aggregated.get(aggKey);
 
