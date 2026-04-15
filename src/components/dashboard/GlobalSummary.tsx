@@ -60,6 +60,25 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
   };
 
+  const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
+    PECUARIA: [
+      'RATEIO GADO GERAL',
+      'RATEIO CONFINAMENTO',
+      'TRANSPORTE DE GADO CONFINAMENTO',
+      'TRANSPORTE DE INSUMOS CONFINAMENTO',
+      'CONFINAMENTO - TRANSPORTE DE GADO',
+      'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+    ],
+    SERINGAL: ['RATEIO SERINGAL'],
+  };
+
+  const isAllowedCentroCustoForCustos = (activityKey: string, centroCusto?: string) => {
+    const allowed = CUSTOS_ALLOWED_CC_BY_ACTIVITY[activityKey];
+    if (!allowed) return true;
+    const normalizedCC = normalizeText(centroCusto);
+    return allowed.some((item) => normalizeText(item) === normalizedCC);
+  };
+
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'decimal',
@@ -166,6 +185,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
+        (a.tipo !== 'C' || isAllowedCentroCustoForCustos(activityKey, a.centroCusto)) &&
         (activityKey !== 'DESP_ADM_TRIB' || !isRateioDepartment(a.departamento))
     );
   };
@@ -181,7 +201,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
     { orc: 0, real: 0 }
   );
 
-  const despesasComVendas = computeTotals((a) => isDespesaComVendasCode(a.codigo));
+  const despesasComVendas = computeTotals(
+    (a) => isDespesaComVendasCode(a.codigo) && (a.tipo === 'C' || a.tipo === 'D')
+  );
 
   return (
     <div className="space-y-6">

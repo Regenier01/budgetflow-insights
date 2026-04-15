@@ -1,5 +1,5 @@
 import { useParams, useSearchParams } from 'react-router-dom';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -102,6 +102,9 @@ export default function ActivityDetailPage() {
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
   const isEncargos = atividade?.key === 'ENCARGOS';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
+  const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
+  const activeCostCenterFilter =
+    shouldApplyCostCenterFilter && selectedCC !== 'all' ? selectedCC : undefined;
   const atividadeLabel = isOutrasReceitasEventuais
     ? 'Outras Receitas Eventuais'
     : isDespesasComVendas
@@ -145,66 +148,17 @@ export default function ActivityDetailPage() {
     return haystack.includes('TRIBUT');
   };
   
-  const availableDepts = useMemo(() => {
-    if (!id) return [];
-    const depts = new Set<string>();
-    accounts.forEach(a => {
-      const matchesRateios =
-        isRateios && isRateioDepartment(a.departamento);
-      const matchesOutrasReceitas =
-        isOutrasReceitasEventuais && isOutrasReceitasEventuaisCode(a.codigo);
-      const matchesDespesasComVendas =
-        isDespesasComVendas && isDespesaComVendasCode(a.codigo);
-      const matchesAtividade =
-        !isOutrasReceitasEventuais &&
-        !isDespesasComVendas &&
-        a.atividade === id &&
-        !isOutrasReceitasEventuaisCode(a.codigo);
-      if ((matchesRateios || matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.departamento) {
-        depts.add(a.departamento);
-      }
-    });
-    return Array.from(depts).sort();
-  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas, isRateios]);
-
-  const availableCostCenters = useMemo(() => {
-    if (!id) return [];
-    const dynamic = new Set<string>();
-    accounts.forEach((a) => {
-      const matchesRateios =
-        isRateios && isRateioDepartment(a.departamento);
-      const matchesOutrasReceitas =
-        isOutrasReceitasEventuais && isOutrasReceitasEventuaisCode(a.codigo);
-      const matchesDespesasComVendas =
-        isDespesasComVendas && isDespesaComVendasCode(a.codigo);
-      const matchesAtividade =
-        !isOutrasReceitasEventuais &&
-        !isDespesasComVendas &&
-        a.atividade === id &&
-        !isOutrasReceitasEventuaisCode(a.codigo);
-      if ((matchesRateios || matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.centroCusto) {
-        dynamic.add(a.centroCusto);
-      }
-    });
-
-    if (!isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
-      const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
-      fallback.forEach((cc) => dynamic.add(cc));
-    }
-    return Array.from(dynamic).sort();
-  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas, isRateios]);
-
   const filteredLeafAccounts = useMemo(
     () =>
       accounts.filter(
         (entry) =>
           entry.nivel === 5 &&
           (!atividade?.key || entry.atividade === atividade.key) &&
-          (selectedCC === 'all' || entry.centroCusto === selectedCC) &&
+          (!activeCostCenterFilter || entry.centroCusto === activeCostCenterFilter) &&
           (selectedDept === 'all' || entry.departamento === selectedDept) &&
           (!activityLevelEntryFilter || activityLevelEntryFilter(entry))
       ),
-    [accounts, atividade?.key, selectedCC, selectedDept, activityLevelEntryFilter]
+    [accounts, atividade?.key, activeCostCenterFilter, selectedDept, activityLevelEntryFilter]
   );
 
   const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
@@ -265,6 +219,109 @@ export default function ActivityDetailPage() {
       : undefined
   );
 
+  const filterEntriesForSelectors = useMemo(() => {
+    if (isOutrasReceitasEventuais) {
+      return combineEntryFilters(
+        activityLevelEntryFilter,
+        (entry) => isOutrasReceitasEventuaisCode(entry.codigo)
+      );
+    }
+
+    if (isRateios) return activityLevelEntryFilter;
+
+    if (isDespesasComVendas) {
+      return combineEntryFilters(
+        activityLevelEntryFilter,
+        (entry) => isDespesaComVendasCode(entry.codigo)
+      );
+    }
+
+    if (resolvedTipoView === 'receitas') {
+      return combineEntryFilters(
+        activityLevelEntryFilter,
+        (entry) => entry.tipo === 'R' || isReceitaDeductionEntry(entry)
+      );
+    }
+
+    if (resolvedTipoView === 'custos') {
+      return summaryEntryFilter;
+    }
+
+    return activityLevelEntryFilter;
+  }, [
+    isOutrasReceitasEventuais,
+    isRateios,
+    isDespesasComVendas,
+    resolvedTipoView,
+    activityLevelEntryFilter,
+    summaryEntryFilter,
+  ]);
+
+  const availableDepts = useMemo(() => {
+    if (!id) return [];
+    return Array.from(
+      new Set(
+        accounts
+          .filter(
+            (entry) =>
+              entry.nivel === 5 &&
+              (!atividade?.key || entry.atividade === atividade.key) &&
+              (!filterEntriesForSelectors || filterEntriesForSelectors(entry))
+          )
+          .map((entry) => entry.departamento)
+          .filter((dept): dept is string => Boolean(dept))
+      )
+    ).sort();
+  }, [accounts, id, atividade?.key, filterEntriesForSelectors]);
+
+  const availableCostCenters = useMemo(() => {
+    if (!id) return [];
+    const dynamic = new Set(
+      accounts
+        .filter(
+          (entry) =>
+            entry.nivel === 5 &&
+            (!atividade?.key || entry.atividade === atividade.key) &&
+            (!filterEntriesForSelectors || filterEntriesForSelectors(entry))
+        )
+        .map((entry) => entry.centroCusto)
+        .filter((cc): cc is string => Boolean(cc))
+    );
+
+    if (resolvedTipoView === 'custos' && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
+      return Array.from(dynamic)
+        .filter((cc) => isAllowedCentroCustoForCustos(atividade?.key, cc))
+        .sort();
+    }
+
+    if (!isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
+      const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
+      fallback.forEach((cc) => dynamic.add(cc));
+    }
+    return Array.from(dynamic).sort();
+  }, [
+    accounts,
+    id,
+    atividade?.key,
+    filterEntriesForSelectors,
+    isOutrasReceitasEventuais,
+    isDespesasComVendas,
+    isRateios,
+    resolvedTipoView,
+  ]);
+
+  useEffect(() => {
+    if (selectedDept !== 'all' && !availableDepts.includes(selectedDept)) {
+      setSelectedDept('all');
+    }
+  }, [availableDepts, selectedDept]);
+
+  useEffect(() => {
+    if (selectedCC !== 'all' && !availableCostCenters.includes(selectedCC)) {
+      setSelectedCC('all');
+    }
+  }, [availableCostCenters, selectedCC]);
+
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
   return (
@@ -294,17 +351,19 @@ export default function ActivityDetailPage() {
             </SelectContent>
           </Select>
 
-          <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
-            <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-              <SelectValue placeholder="Centro de Custo" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
-              {availableCostCenters.map((cc) => (
-                <SelectItem key={cc} value={cc}>{cc}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          {shouldApplyCostCenterFilter && (
+            <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
+              <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                <SelectValue placeholder="Centro de Custo" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
+                {availableCostCenters.map((cc) => (
+                  <SelectItem key={cc} value={cc}>{cc}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
 
           <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
             <SelectTrigger className="w-[160px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
@@ -323,7 +382,7 @@ export default function ActivityDetailPage() {
       <SummaryCards 
         selectedMonth={selectedMonth} 
         atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
-        costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+        costCenterFilter={activeCostCenterFilter}
         departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
         entryFilter={summaryEntryFilter}
         tipoFilter={summaryTipoFilter}
@@ -381,7 +440,7 @@ export default function ActivityDetailPage() {
             <AnalyticalTable 
               atividadeFilter={atividade.key}
               selectedMonth={selectedMonth}
-              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+              costCenterFilter={activeCostCenterFilter}
               departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
               tipoFilter={['R']}
               entryFilter={combineEntryFilters(
@@ -396,7 +455,7 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                  costCenterFilter={activeCostCenterFilter}
                   departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                   tipoFilter={['D']}
                   entryFilter={combineEntryFilters(
@@ -598,7 +657,7 @@ export default function ActivityDetailPage() {
               <AnalyticalTable 
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
-                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                costCenterFilter={activeCostCenterFilter}
                 departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                 tipoFilter={['R']}
                 entryFilter={combineEntryFilters(
@@ -613,7 +672,7 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    costCenterFilter={activeCostCenterFilter}
                     departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
