@@ -9,21 +9,16 @@ import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
 import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import NotFound from './NotFound';
-
-const OUTRAS_RECEITAS_EVENTUAIS_CODES = new Set([
-  '3.7.01.01.0001',
-  '3.7.01.01.0002',
-  '3.7.01.01.0003',
-  '3.7.01.01.0004',
-  '3.7.01.01.0005',
-  '3.7.01.01.0006',
-  '3.7.01.01.0030',
-  '3.7.01.01.0031',
-  '3.7.01.01.0040',
-]);
-const isOutrasReceitasEventuaisCode = (codigo: string) =>
-  OUTRAS_RECEITAS_EVENTUAIS_CODES.has(codigo.trim());
+const RATEIO_DEPARTMENTS = [
+  'OFICINA GERAL',
+  'FABRICA DE RACAO',
+  'FABRICA DE SAL',
+  'MECANIZADO',
+  'LOGISTICA',
+  'ALMOXARIFADO',
+] as const;
 
 const normalizeText = (value?: string) =>
   (value || '')
@@ -31,6 +26,14 @@ const normalizeText = (value?: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toUpperCase()
     .trim();
+
+const isRateioDepartment = (departamento?: string) => {
+  if (!departamento) return false;
+  const normalized = normalizeText(departamento);
+  return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
+};
+
+const isNonRateioDepartment = (departamento?: string) => !isRateioDepartment(departamento);
 
 const isRendasOperacionaisEntry = (entry: AccountEntry) => {
   const normalizedGroup = normalizeText(entry.grupoContabilN9);
@@ -49,13 +52,15 @@ export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
   const tipoView = searchParams.get('tipo') || 'todos';
+  const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
-  const [selectedDept, setSelectedDept] = useState<string | 'all'>('all');
+  const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
   
   const isOutrasReceitasEventuais = id === 'OUTRAS_RECEITAS_EVENTUAIS';
   const isDespesasComVendas = id === 'DESPESAS_COM_VENDAS';
+  const isRateios = id === 'RATEIOS';
   const atividade = ATIVIDADES.find(a => a.key === id);
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
   const isEncargos = atividade?.key === 'ENCARGOS';
@@ -64,10 +69,17 @@ export default function ActivityDetailPage() {
     ? 'Outras Receitas Eventuais'
     : isDespesasComVendas
       ? 'Despesas com Vendas'
-      : atividade?.label;
+      : isRateios
+        ? 'Rateios'
+        : atividade?.label;
   const activityLevelEntryFilter = isOutrasReceitasEventuais
     ? undefined
-    : (entry: AccountEntry) =>
+    : isRateios
+      ? (entry: AccountEntry) =>
+        isRateioDepartment(entry.departamento) &&
+        !isOutrasReceitasEventuaisCode(entry.codigo)
+      : (entry: AccountEntry) =>
+        !isOutrasReceitasEventuaisCode(entry.codigo) &&
         !isRendasOperacionaisEntry(entry) &&
         (isDespesasComVendas || !isDespesaComVendasCode(entry.codigo));
 
@@ -100,42 +112,52 @@ export default function ActivityDetailPage() {
     if (!id) return [];
     const depts = new Set<string>();
     accounts.forEach(a => {
+      const matchesRateios =
+        isRateios && isRateioDepartment(a.departamento);
       const matchesOutrasReceitas =
         isOutrasReceitasEventuais && isOutrasReceitasEventuaisCode(a.codigo);
       const matchesDespesasComVendas =
         isDespesasComVendas && isDespesaComVendasCode(a.codigo);
       const matchesAtividade =
-        !isOutrasReceitasEventuais && !isDespesasComVendas && a.atividade === id;
-      if ((matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.departamento) {
+        !isOutrasReceitasEventuais &&
+        !isDespesasComVendas &&
+        a.atividade === id &&
+        !isOutrasReceitasEventuaisCode(a.codigo);
+      if ((matchesRateios || matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.departamento) {
         depts.add(a.departamento);
       }
     });
     return Array.from(depts).sort();
-  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas]);
+  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas, isRateios]);
 
   const availableCostCenters = useMemo(() => {
     if (!id) return [];
     const dynamic = new Set<string>();
     accounts.forEach((a) => {
+      const matchesRateios =
+        isRateios && isRateioDepartment(a.departamento);
       const matchesOutrasReceitas =
         isOutrasReceitasEventuais && isOutrasReceitasEventuaisCode(a.codigo);
       const matchesDespesasComVendas =
         isDespesasComVendas && isDespesaComVendasCode(a.codigo);
       const matchesAtividade =
-        !isOutrasReceitasEventuais && !isDespesasComVendas && a.atividade === id;
-      if ((matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.centroCusto) {
+        !isOutrasReceitasEventuais &&
+        !isDespesasComVendas &&
+        a.atividade === id &&
+        !isOutrasReceitasEventuaisCode(a.codigo);
+      if ((matchesRateios || matchesOutrasReceitas || matchesDespesasComVendas || matchesAtividade) && a.centroCusto) {
         dynamic.add(a.centroCusto);
       }
     });
 
-    if (!isOutrasReceitasEventuais && !isDespesasComVendas) {
+    if (!isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
       const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
       fallback.forEach((cc) => dynamic.add(cc));
     }
     return Array.from(dynamic).sort();
-  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas]);
+  }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas, isRateios]);
 
-  if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas) return <NotFound />;
+  if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
   return (
     <div className="space-y-8 pb-10">
@@ -192,7 +214,7 @@ export default function ActivityDetailPage() {
 
       <SummaryCards 
         selectedMonth={selectedMonth} 
-        atividadeFilter={isOutrasReceitasEventuais ? undefined : atividade?.key}
+        atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
         costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
         departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
         entryFilter={activityLevelEntryFilter}
@@ -229,6 +251,24 @@ export default function ActivityDetailPage() {
               title="Detalhamento de Outras Receitas Eventuais"
               subtitle="Contas 3.7.01.01"
               accentColor="emerald"
+            />
+          </div>
+        ) : isRateios ? (
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-slate-900">Abertura de Rateios</h2>
+              <div className="text-[10px] font-bold text-sky-600 uppercase tracking-widest bg-sky-50 px-2 py-1 rounded border border-sky-100">
+                Departamentos
+              </div>
+            </div>
+            <AnalyticalTable
+              selectedMonth={selectedMonth}
+              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+              entryFilter={activityLevelEntryFilter}
+              title="Detalhamento de Rateios"
+              subtitle="Departamentos selecionados"
+              accentColor="sky"
             />
           </div>
         ) : resolvedTipoView === 'receitas' ? (
@@ -339,7 +379,10 @@ export default function ActivityDetailPage() {
                   costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                   departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                   tipoFilter={['C']}
-                  entryFilter={activityLevelEntryFilter}
+                  entryFilter={combineEntryFilters(
+                    activityLevelEntryFilter,
+                    isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                  )}
                   title="Detalhamento de Custos"
                   accentColor="orange"
                 />
@@ -362,6 +405,7 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
+                        (entry) => isNonRateioDepartment(entry.departamento),
                         (entry) => !isTributariaEntry(entry),
                       )}
                       title="Abertura de Despesas ADM"
@@ -376,6 +420,7 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
+                        (entry) => isNonRateioDepartment(entry.departamento),
                         (entry) => isTributariaEntry(entry),
                       )}
                       title="Abertura de Despesas Tributárias"
@@ -436,7 +481,10 @@ export default function ActivityDetailPage() {
                 costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                 departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                 tipoFilter={['C']}
-                entryFilter={activityLevelEntryFilter}
+                entryFilter={combineEntryFilters(
+                  activityLevelEntryFilter,
+                  isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                )}
                 title="Detalhamento de Custos"
                 accentColor="orange"
               />
@@ -459,6 +507,7 @@ export default function ActivityDetailPage() {
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
+                      (entry) => isNonRateioDepartment(entry.departamento),
                       (entry) => !isTributariaEntry(entry),
                     )}
                     title="Abertura de Despesas ADM"
@@ -473,6 +522,7 @@ export default function ActivityDetailPage() {
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
+                      (entry) => isNonRateioDepartment(entry.departamento),
                       (entry) => isTributariaEntry(entry),
                     )}
                     title="Abertura de Despesas Tributárias"

@@ -3,23 +3,9 @@ import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
-
-const OUTRAS_RECEITAS_EVENTUAIS_CODES = new Set([
-  '3.7.01.01.0001',
-  '3.7.01.01.0002',
-  '3.7.01.01.0003',
-  '3.7.01.01.0004',
-  '3.7.01.01.0005',
-  '3.7.01.01.0006',
-  '3.7.01.01.0030',
-  '3.7.01.01.0031',
-  '3.7.01.01.0040',
-]);
+import { OUTRAS_RENDAS_CODE_SET, isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 export function RevenueSummary() {
-  const isOutrasReceitasEventuaisCode = (codigo: string) =>
-    OUTRAS_RECEITAS_EVENTUAIS_CODES.has(codigo.trim());
-
   const calculateRevenueByAtividadeWithoutOutrasEventuais = (atividadeKey: string) => {
     return accounts
       .filter(
@@ -130,7 +116,7 @@ export function RevenueSummary() {
     .filter(
       (a) =>
         a.nivel === 5 &&
-        OUTRAS_RECEITAS_EVENTUAIS_CODES.has(a.codigo.trim())
+        OUTRAS_RENDAS_CODE_SET.has(a.codigo.trim())
     )
     .reduce(
       (acc, a) => {
