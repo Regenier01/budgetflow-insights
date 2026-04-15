@@ -443,240 +443,16 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "F9T30 GIRASSOL GRAO GIRASSOL GRAO 02/2026 Ciclo:2491",
     "unidadeNegocio": "LAGUNA - GIRASSOL"
   },
-  "F7T0 - LAVRINHA - T0": {
-    "centroCusto": "F7T0 - LAVRINHA - T0",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F9T0 - LAGUNA - T0": {
-    "centroCusto": "F9T0 - LAGUNA - T0",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "SEM_CODCCUTO": {
-    "centroCusto": "SEM_CODCCUTO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "COMPOSTAGEM": {
-    "centroCusto": "COMPOSTAGEM",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "PALHA DE MILHO LG": {
-    "centroCusto": "PALHA DE MILHO LG",
-    "unidadeNegocio": "AGRÍCOLA - MILHO"
-  },
-  "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477": {
-    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "COMERCIALIZACAO DE GRAOS": {
-    "centroCusto": "COMERCIALIZACAO DE GRAOS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480": {
-    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483": {
-    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479": {
-    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484": {
-    "centroCusto": "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "UNIDADE DE RECEPCAO DE GRAOS": {
-    "centroCusto": "UNIDADE DE RECEPCAO DE GRAOS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482": {
-    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481": {
-    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
-  "F4T350 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2478": {
-    "centroCusto": "F4T350 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2478",
-    "unidadeNegocio": "AGRÍCOLA - SOJA"
-  },
   "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488": {
     "centroCusto": "F9T20 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2488",
     "unidadeNegocio": "AGRÍCOLA - SORGO"
-  },
-  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 -VALE IMBE": {
-    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 -VALE IMBE",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)": {
-    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS APROP SEMENTES CAMPIM 2026 - SANTA MARIA": {
-    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - SANTA MARIA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS APROP SEMENTES CAMPIM 2026 - MONTE CARMELO": {
-    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - MONTE CARMELO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS APROP SEMENTES CAMPIM 2026 - AROEIRA": {
-    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - AROEIRA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "MEDICINA E SEGURANCA DO TRABALHO": {
-    "centroCusto": "MEDICINA E SEGURANCA DO TRABALHO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "COMERCIALIZA€AO DE TOUROS": {
-    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "LEILAO DE TOUROS NELORE OL": {
     "centroCusto": "LEILAO DE TOUROS NELORE OL",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "CENTRO DE CUSTO SOMENTE P/ CONTA PATRIMONIAL": {
-    "centroCusto": "CENTRO DE CUSTO SOMENTE P/ CONTA PATRIMONIAL",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "RATEIO AREAS PRODUTIVAS": {
-    "centroCusto": "RATEIO AREAS PRODUTIVAS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - UNIAO": {
-    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - UNIAO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - CANADA": {
-    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - CANADA",
-    "unidadeNegocio": "CANA"
-  },
-  "ALMOXARIFADO": {
-    "centroCusto": "ALMOXARIFADO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - JOIA": {
-    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - JOIA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "SUPERVISAO PECUARIA": {
-    "centroCusto": "SUPERVISAO PECUARIA",
-    "unidadeNegocio": "PECUÁRIA"
-  },
-  "CONSTRUCAO CERCAS FAZENDA CODORA": {
-    "centroCusto": "CONSTRUCAO CERCAS FAZENDA CODORA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO DE CERCAS FAZENDA JOIA": {
-    "centroCusto": "CONSTRUCAO DE CERCAS FAZENDA JOIA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO CERCAS 25/26 FAZ. BAND PECUARIA": {
-    "centroCusto": "CONSTRUCAO CERCAS 25/26 FAZ. BAND PECUARIA",
-    "unidadeNegocio": "PECUÁRIA"
-  },
-  "REFORMA PASTAGENS FAZ JOIA 2025/2026": {
-    "centroCusto": "REFORMA PASTAGENS FAZ JOIA 2025/2026",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONTRUCAO CERCAS FAZ JOIA 25/26": {
-    "centroCusto": "CONTRUCAO CERCAS FAZ JOIA 25/26",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA CASAS FAZ JOIA 2025/2026": {
-    "centroCusto": "REFORMA CASAS FAZ JOIA 2025/2026",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONTRUCAO E REFORMA DE COCHOS FAZ JOIA 25/26": {
-    "centroCusto": "CONTRUCAO E REFORMA DE COCHOS FAZ JOIA 25/26",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO COCHOS BAND. PECUARIA 25/26": {
-    "centroCusto": "CONSTRUCAO COCHOS BAND. PECUARIA 25/26",
-    "unidadeNegocio": "PECUÁRIA"
-  },
-  "PROJETO HIDRAULICO RETIRO DANTAS 2025/2026": {
-    "centroCusto": "PROJETO HIDRAULICO RETIRO DANTAS 2025/2026",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA DE CASAS BAND PECUARIA 2025/2026": {
-    "centroCusto": "REFORMA DE CASAS BAND PECUARIA 2025/2026",
-    "unidadeNegocio": "PECUÁRIA"
-  },
-  "MANUTENCAO  MISTURADOR M6888 ANO 2025": {
-    "centroCusto": "MANUTENCAO  MISTURADOR M6888 ANO 2025",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO SALA PCM OFICINA": {
-    "centroCusto": "CONSTRUCAO SALA PCM OFICINA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA VAGAO MISTURADOR DE RACAO M4219 ANO 2026": {
-    "centroCusto": "REFORMA VAGAO MISTURADOR DE RACAO M4219 ANO 2026",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "AMPLIACAO BALANCA RODOVIARIA CONFINAMENTO": {
-    "centroCusto": "AMPLIACAO BALANCA RODOVIARIA CONFINAMENTO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "FABRICACAO TRANSBORDO NO BOX - CONFINAMENTO": {
-    "centroCusto": "FABRICACAO TRANSBORDO NO BOX - CONFINAMENTO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO DE TELHADO TRANSBORDOS - CONFINAMENTO": {
-    "centroCusto": "CONSTRUCAO DE TELHADO TRANSBORDOS - CONFINAMENTO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA ADAPTACAO FSC": {
-    "centroCusto": "REFORMA ADAPTACAO FSC",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "CONSTRUCAO BUEIRO BARRAGEM COVOA SERINGAL": {
-    "centroCusto": "CONSTRUCAO BUEIRO BARRAGEM COVOA SERINGAL",
-    "unidadeNegocio": "SERINGAL"
-  },
-  "BANHEIROS SALA TREINAMENTO BAND SERINGAL": {
-    "centroCusto": "BANHEIROS SALA TREINAMENTO BAND SERINGAL",
-    "unidadeNegocio": "SERINGAL"
-  },
-  "MELHORIAS DAS MOEGAS UNID RECEPC GRAOS": {
-    "centroCusto": "MELHORIAS DAS MOEGAS UNID RECEPC GRAOS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "COBERTURA AREA DESPACHO - FABRICA DE RACAO": {
-    "centroCusto": "COBERTURA AREA DESPACHO - FABRICA DE RACAO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "INTENSIFICACAO PASTAGENS GOTEJO": {
-    "centroCusto": "INTENSIFICACAO PASTAGENS GOTEJO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "ADEQ AMB LICENCIAMENTO DE BARRAGENS FAZ LAGUNA": {
-    "centroCusto": "ADEQ AMB LICENCIAMENTO DE BARRAGENS FAZ LAGUNA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "AMPLIACAO BALANCA RODOVIARIA PORTARIA": {
-    "centroCusto": "AMPLIACAO BALANCA RODOVIARIA PORTARIA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "INSTALACOES SALA SERVIDOR CENTRAL": {
-    "centroCusto": "INSTALACOES SALA SERVIDOR CENTRAL",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA SEDE FAZENDA VERA CRUZ": {
-    "centroCusto": "REFORMA SEDE FAZENDA VERA CRUZ",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "REFORMA CARRETA GRANELEIRA M4998 25/26": {
-    "centroCusto": "REFORMA CARRETA GRANELEIRA M4998 25/26",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "ADEQUACAO AMBIENTAL CONFINAMENTO": {
-    "centroCusto": "ADEQUACAO AMBIENTAL CONFINAMENTO",
+  "COMERCIALIZA€AO DE TOUROS": {
+    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "ÁREAS PRODUTIVAS": {
@@ -691,12 +467,24 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "OUTROS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "RATEIO CANA": {
-    "centroCusto": "RATEIO CANA",
-    "unidadeNegocio": "CANA"
+  "RATEIO AREAS PRODUTIVAS": {
+    "centroCusto": "RATEIO AREAS PRODUTIVAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZACAO DE GRAOS": {
+    "centroCusto": "COMERCIALIZACAO DE GRAOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "COMERCIALIZACAO DE SEMENTES": {
     "centroCusto": "COMERCIALIZACAO DE SEMENTES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ALMOXARIFADO": {
+    "centroCusto": "ALMOXARIFADO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "SEM_CODCCUTO": {
+    "centroCusto": "SEM_CODCCUTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "RATEIO FABRICA RACAO": {
@@ -707,12 +495,20 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "FIAT STRADA FREEDOM CD 1.3  FLEX  4 PORTAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "F7T0 - LAVRINHA - T0": {
+    "centroCusto": "F7T0 - LAVRINHA - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M6427 - TANDEM TRANSPORTE PANTHER 14000/": {
     "centroCusto": "M6427 - TANDEM TRANSPORTE PANTHER 14000/",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "RATEIO MAQUINAS LEVES": {
     "centroCusto": "RATEIO MAQUINAS LEVES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)": {
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "MANUTENCAO DE MAQUINAS E CAMINHOES": {
@@ -755,9 +551,9 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "CUSTO PESSOAL RATEIO CANADA/VALE DO IMBE/AROEIRA",
     "unidadeNegocio": "CANA"
   },
-  "F51T0 - FAZENDA CANADÁ - T0": {
-    "centroCusto": "F51T0 - FAZENDA CANADÁ - T0",
-    "unidadeNegocio": "CANA"
+  "MEDICINA E SEGURANCA DO TRABALHO": {
+    "centroCusto": "MEDICINA E SEGURANCA DO TRABALHO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "VIGILANCIA": {
     "centroCusto": "VIGILANCIA",
@@ -765,6 +561,10 @@ export const COST_CENTER_MAPPING = {
   },
   "RATEIO VIGILANTES ROTATIVOS": {
     "centroCusto": "RATEIO VIGILANTES ROTATIVOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "UNIDADE DE RECEPCAO DE GRAOS": {
+    "centroCusto": "UNIDADE DE RECEPCAO DE GRAOS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "CUSTO PESSOAL FABRICA DE RAÇAO": {
@@ -853,6 +653,14 @@ export const COST_CENTER_MAPPING = {
   },
   "M12189 - TRATOR MASSEY FERGUSON MODELO 283 ( TERCEIRO (": {
     "centroCusto": "M12189 - TRATOR MASSEY FERGUSON MODELO 283 ( TERCEIRO (",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "BANHEIROS SALA TREINAMENTO BAND SERINGAL": {
+    "centroCusto": "BANHEIROS SALA TREINAMENTO BAND SERINGAL",
+    "unidadeNegocio": "SERINGAL"
+  },
+  "REFORMA ADAPTACAO FSC": {
+    "centroCusto": "REFORMA ADAPTACAO FSC",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M6466 - FIAT STRADA ENDURACE 1.4  FLEX  4 PORTAS": {
@@ -1010,6 +818,10 @@ export const COST_CENTER_MAPPING = {
   "PROJETO JORNAL DA TERRA - RETROSPECTIVA": {
     "centroCusto": "PROJETO JORNAL DA TERRA - RETROSPECTIVA",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO CANA": {
+    "centroCusto": "RATEIO CANA",
+    "unidadeNegocio": "CANA"
   },
   "M12188 - TRATOR MASSEY FERGUSON MODELO 290 (TERCEIRO)": {
     "centroCusto": "M12188 - TRATOR MASSEY FERGUSON MODELO 290 (TERCEIRO)",
@@ -1191,10 +1003,6 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M6421 - MOTOCICLETA HONDA ESDD 160 BROS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "F50T0 -  FAZENDA UNIÃO - T0": {
-    "centroCusto": "F50T0 -  FAZENDA UNIÃO - T0",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
   "M7081 - CAMINHONETE MITSUBISHI L 200 TRITON OUTDOR GLS 2.4": {
     "centroCusto": "M7081 - CAMINHONETE MITSUBISHI L 200 TRITON OUTDOR GLS 2.4",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1223,6 +1031,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M6914 - TRATOR JOHN DEERE 7230J CAB",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "AMPLIACAO BALANCA RODOVIARIA PORTARIA": {
+    "centroCusto": "AMPLIACAO BALANCA RODOVIARIA PORTARIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M110 - TRATOR JOHN DEERE 6605": {
     "centroCusto": "M110 - TRATOR JOHN DEERE 6605",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1245,6 +1057,10 @@ export const COST_CENTER_MAPPING = {
   },
   "M21 - COLHEITADEIRA JONH DEERE 9650 STS": {
     "centroCusto": "M21 - COLHEITADEIRA JONH DEERE 9650 STS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "AMPLIACAO BALANCA RODOVIARIA CONFINAMENTO": {
+    "centroCusto": "AMPLIACAO BALANCA RODOVIARIA CONFINAMENTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M4981 - CAMINHAO MERCEDES-BENZ ATRON 2729 6 X 4 B": {
@@ -1275,6 +1091,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M3070 - TRATOR JOHN DEERE 7515",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482": {
+    "centroCusto": "F51T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2482",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
   "M48 - TRATOR MF 265": {
     "centroCusto": "M48 - TRATOR MF 265",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1295,6 +1115,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M4908 - CAMINHAO MERCEDES-BENZ ATRON 2729 6 X 4 P",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "CONSTRUCAO SALA PCM OFICINA": {
+    "centroCusto": "CONSTRUCAO SALA PCM OFICINA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M6656 - PULVERIZADOR AUTOPROPELIDO II SP 250 CIH": {
     "centroCusto": "M6656 - PULVERIZADOR AUTOPROPELIDO II SP 250 CIH",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1309,6 +1133,10 @@ export const COST_CENTER_MAPPING = {
   },
   "M6949 - DISTRIBUIDOR JAN LANCER MAXIMUS 12500 TH INOX": {
     "centroCusto": "M6949 - DISTRIBUIDOR JAN LANCER MAXIMUS 12500 TH INOX",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "FABRICACAO TRANSBORDO NO BOX - CONFINAMENTO": {
+    "centroCusto": "FABRICACAO TRANSBORDO NO BOX - CONFINAMENTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "MANUTENCAO PLACAS SOLARES OFICINA": {
@@ -1327,24 +1155,44 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "MANUTENCAO PLACAS SOLARES CENTRO COMERCIAL DE TOUR",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "PALHA DE MILHO LG": {
+    "centroCusto": "PALHA DE MILHO LG",
+    "unidadeNegocio": "AGRÍCOLA - MILHO"
+  },
   "M5017 - TRATOR ESTEIRA D51EX-22": {
     "centroCusto": "M5017 - TRATOR ESTEIRA D51EX-22",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "INTENSIFICACAO PASTAGENS GOTEJO": {
+    "centroCusto": "INTENSIFICACAO PASTAGENS GOTEJO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M6618 - COLHEITADEIRA CASE CIH AF SERIE 150-6150": {
     "centroCusto": "M6618 - COLHEITADEIRA CASE CIH AF SERIE 150-6150",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "COBERTURA AREA DESPACHO - FABRICA DE RACAO": {
+    "centroCusto": "COBERTURA AREA DESPACHO - FABRICA DE RACAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M4245 - PLANTADEIRA JOHN DEERE 2100 16 LINHAS": {
     "centroCusto": "M4245 - PLANTADEIRA JOHN DEERE 2100 16 LINHAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "F56T0 FAZ. MONTE CARMELO": {
-    "centroCusto": "F56T0 FAZ. MONTE CARMELO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
   "RECRIA GOTEJO CONFINAMENTO": {
     "centroCusto": "RECRIA GOTEJO CONFINAMENTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F4T350 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2478": {
+    "centroCusto": "F4T350 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2478",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484": {
+    "centroCusto": "F57T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2484",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "PROJETO HIDRAULICO RETIRO DANTAS 2025/2026": {
+    "centroCusto": "PROJETO HIDRAULICO RETIRO DANTAS 2025/2026",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "CONFINAMENTO - TRANSPORTE DE GADO": {
@@ -1355,12 +1203,24 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "F9T20 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2485",
     "unidadeNegocio": "AGRÍCOLA - SOJA"
   },
+  "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477": {
+    "centroCusto": "F9T30 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2477",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "REFORMA SEDE FAZENDA VERA CRUZ": {
+    "centroCusto": "REFORMA SEDE FAZENDA VERA CRUZ",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "PROJETO BOOK BOAS PRATICAS": {
     "centroCusto": "PROJETO BOOK BOAS PRATICAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M49 - TRATOR MF 290": {
     "centroCusto": "M49 - TRATOR MF 290",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CONSTRUCAO DE TELHADO TRANSBORDOS - CONFINAMENTO": {
+    "centroCusto": "CONSTRUCAO DE TELHADO TRANSBORDOS - CONFINAMENTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M100326 - TRATOR MF 290": {
@@ -1371,13 +1231,33 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M100642 - TRATOR MASSEY FERGUSSON XTRA (TERCEIRO)",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "CONSTRUCAO CERCAS 25/26 FAZ. BAND PECUARIA": {
+    "centroCusto": "CONSTRUCAO CERCAS 25/26 FAZ. BAND PECUARIA",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "COMPOSTAGEM": {
+    "centroCusto": "COMPOSTAGEM",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "OPERACAO GRAO REIDRATADO - CONFINAMENTO": {
     "centroCusto": "OPERACAO GRAO REIDRATADO - CONFINAMENTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "CONSTRUCAO DE CERCAS FAZENDA JOIA": {
+    "centroCusto": "CONSTRUCAO DE CERCAS FAZENDA JOIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483": {
+    "centroCusto": "F52T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2483",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
   "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2486": {
     "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2025 Ciclo:2486",
     "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "REFORMA PASTAGENS FAZ JOIA 2025/2026": {
+    "centroCusto": "REFORMA PASTAGENS FAZ JOIA 2025/2026",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "CONFINAMENTO - TRANSPORTE DE INSUMOS": {
     "centroCusto": "CONFINAMENTO - TRANSPORTE DE INSUMOS",
@@ -1443,6 +1323,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M6547 - PULVERIZADOR AUTOPROPELIDO II SP 250 CIH",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "ADEQUACAO AMBIENTAL CONFINAMENTO": {
+    "centroCusto": "ADEQUACAO AMBIENTAL CONFINAMENTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M5486 - TRATOR JOHN DEERE 6145 J": {
     "centroCusto": "M5486 - TRATOR JOHN DEERE 6145 J",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1454,6 +1338,14 @@ export const COST_CENTER_MAPPING = {
   "M29 - TRATOR JOHN DEERE 5700": {
     "centroCusto": "M29 - TRATOR JOHN DEERE 5700",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479": {
+    "centroCusto": "F53T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2479",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480": {
+    "centroCusto": "F56T1 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2480",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
   },
   "M4230 - TRATOR JOHN DEERE 7715": {
     "centroCusto": "M4230 - TRATOR JOHN DEERE 7715",
@@ -1671,6 +1563,14 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M4385 - ROÇADEIRA HIDRÁULICA SUPER TATU RC-2-2600 CL",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "REFORMA VAGAO MISTURADOR DE RACAO M4219 ANO 2026": {
+    "centroCusto": "REFORMA VAGAO MISTURADOR DE RACAO M4219 ANO 2026",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO  MISTURADOR M6888 ANO 2025": {
+    "centroCusto": "MANUTENCAO  MISTURADOR M6888 ANO 2025",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M6509 - ROÇADEIRA DE ARRASTO COM KIT TRANSPORTE SUPER TATU": {
     "centroCusto": "M6509 - ROÇADEIRA DE ARRASTO COM KIT TRANSPORTE SUPER TATU",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1711,6 +1611,10 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M6140 - DISTRIBUIDOR DE CALCARIO PICCIN MASTER 5500",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "CONTRUCAO E REFORMA DE COCHOS FAZ JOIA 25/26": {
+    "centroCusto": "CONTRUCAO E REFORMA DE COCHOS FAZ JOIA 25/26",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M6720 - PLATAFORMA DE CORTE DRAPER 35 PES": {
     "centroCusto": "M6720 - PLATAFORMA DE CORTE DRAPER 35 PES",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1737,6 +1641,10 @@ export const COST_CENTER_MAPPING = {
   },
   "M6619 - PLATAFORMA DE CORTE DRAPER GTS FLEX 35 PÉS": {
     "centroCusto": "M6619 - PLATAFORMA DE CORTE DRAPER GTS FLEX 35 PÉS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "REFORMA CARRETA GRANELEIRA M4998 25/26": {
+    "centroCusto": "REFORMA CARRETA GRANELEIRA M4998 25/26",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M4175 - GRADE ARADORA INTERMEDIARIA CONTROLE REMOTO 32 DIS": {
@@ -1771,9 +1679,37 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "RATEIO AREAS IRRIGADAS LAGUNA",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "CONTRUCAO CERCAS FAZ JOIA 25/26": {
+    "centroCusto": "CONTRUCAO CERCAS FAZ JOIA 25/26",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "INSTALACOES SALA SERVIDOR CENTRAL": {
+    "centroCusto": "INSTALACOES SALA SERVIDOR CENTRAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "M6424 - CARRETA TANQUE COMBATE INCENDIO 6500 LTS  M6424": {
     "centroCusto": "M6424 - CARRETA TANQUE COMBATE INCENDIO 6500 LTS  M6424",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CONSTRUCAO COCHOS BAND. PECUARIA 25/26": {
+    "centroCusto": "CONSTRUCAO COCHOS BAND. PECUARIA 25/26",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "CONSTRUCAO CERCAS FAZENDA CODORA": {
+    "centroCusto": "CONSTRUCAO CERCAS FAZENDA CODORA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "REFORMA CASAS FAZ JOIA 2025/2026": {
+    "centroCusto": "REFORMA CASAS FAZ JOIA 2025/2026",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "REFORMA DE CASAS BAND PECUARIA 2025/2026": {
+    "centroCusto": "REFORMA DE CASAS BAND PECUARIA 2025/2026",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "CONSTRUCAO BUEIRO BARRAGEM COVOA SERINGAL": {
+    "centroCusto": "CONSTRUCAO BUEIRO BARRAGEM COVOA SERINGAL",
+    "unidadeNegocio": "SERINGAL"
   },
   "M4988 - CARRETA AGRICOLA DE MADEIRA": {
     "centroCusto": "M4988 - CARRETA AGRICOLA DE MADEIRA",
@@ -1781,14 +1717,6 @@ export const COST_CENTER_MAPPING = {
   },
   "M6961 - SEMEADORA ARTICULADA FLEXXA 20300": {
     "centroCusto": "M6961 - SEMEADORA ARTICULADA FLEXXA 20300",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F53T0 - AROEIRA": {
-    "centroCusto": "F53T0 - AROEIRA",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F52T0 - FAZENDA VALE DO IMBE": {
-    "centroCusto": "F52T0 - FAZENDA VALE DO IMBE",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "RATEIO GOTEJAMENTO": {
@@ -1841,10 +1769,6 @@ export const COST_CENTER_MAPPING = {
   },
   "M4246 - PLANTADEIRA JOHN DEERE 2100 16 LINHAS": {
     "centroCusto": "M4246 - PLANTADEIRA JOHN DEERE 2100 16 LINHAS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "F57T0 - FAZENDA SANTA MARIA PORANGATU": {
-    "centroCusto": "F57T0 - FAZENDA SANTA MARIA PORANGATU",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "M12104 - PULVERIZADOR CANHÃO AJ- 401 LH 400 LTS": {
@@ -2047,10 +1971,6 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "M6204 - QUEBRA GALHO M6204",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "F4T0 - JÓIA - T0": {
-    "centroCusto": "F4T0 - JÓIA - T0",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
   "TORNO": {
     "centroCusto": "TORNO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -2075,6 +1995,42 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "MANUTENCAO SISTEMA IRRIGACAO - CUSTO CONFINAMENTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481": {
+    "centroCusto": "F50T10 SOJA COMERCIAL A DEFINIR SOJA 11/2025 Ciclo:2481",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 -VALE IMBE": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 -VALE IMBE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS APROP SEMENTES CAMPIM 2026 - AROEIRA": {
+    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - AROEIRA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS APROP SEMENTES CAMPIM 2026 - MONTE CARMELO": {
+    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - MONTE CARMELO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - CANADA": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - CANADA",
+    "unidadeNegocio": "CANA"
+  },
+  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - JOIA": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - JOIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - UNIAO": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - UNIAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ADEQ AMB LICENCIAMENTO DE BARRAGENS FAZ LAGUNA": {
+    "centroCusto": "ADEQ AMB LICENCIAMENTO DE BARRAGENS FAZ LAGUNA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS APROP SEMENTES CAMPIM 2026 - SANTA MARIA": {
+    "centroCusto": "CUSTOS APROP SEMENTES CAMPIM 2026 - SANTA MARIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
   "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487": {
     "centroCusto": "F9T20 MILHO SEMENTE MILHO SEMENTE 02/2026 Ciclo:2487",
     "unidadeNegocio": "AGRÍCOLA - MILHO"
@@ -2083,8 +2039,16 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "PRODUTO ACABADO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
+  "SUPERVISAO PECUARIA": {
+    "centroCusto": "SUPERVISAO PECUARIA",
+    "unidadeNegocio": "PECUÁRIA"
+  },
   "M100551 - FIAT ARGO 1.0  5P": {
     "centroCusto": "M100551 - FIAT ARGO 1.0  5P",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MELHORIAS DAS MOEGAS UNID RECEPC GRAOS": {
+    "centroCusto": "MELHORIAS DAS MOEGAS UNID RECEPC GRAOS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "PESQUISA DE CLIMA - INTERNA": {

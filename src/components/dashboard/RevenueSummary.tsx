@@ -4,6 +4,18 @@ import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 
+const OUTRAS_RECEITAS_EVENTUAIS_CODES = new Set([
+  '3.7.01.01.0001',
+  '3.7.01.01.0002',
+  '3.7.01.01.0003',
+  '3.7.01.01.0004',
+  '3.7.01.01.0005',
+  '3.7.01.01.0006',
+  '3.7.01.01.0030',
+  '3.7.01.01.0031',
+  '3.7.01.01.0040',
+]);
+
 export function RevenueSummary() {
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
@@ -92,6 +104,20 @@ export function RevenueSummary() {
   };
 
   const global = calculateGlobalRevenueTotals(accounts);
+  const outrasReceitasEventuais = accounts
+    .filter(
+      (a) =>
+        a.nivel === 5 &&
+        OUTRAS_RECEITAS_EVENTUAIS_CODES.has(a.codigo.trim())
+    )
+    .reduce(
+      (acc, a) => {
+        acc.orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+        acc.real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+        return acc;
+      },
+      { orc: 0, real: 0 }
+    );
 
   // Filtrar apenas atividades que têm receitas (excluir ENCARGOS e DESP_ADM_TRIB)
   const revenueActivities = ATIVIDADES.filter(a =>
@@ -125,6 +151,12 @@ export function RevenueSummary() {
             />
           );
         })}
+        <SummaryTable
+          title="Outras Receitas Eventuais"
+          orc={outrasReceitasEventuais.orc}
+          real={outrasReceitasEventuais.real}
+          diff={outrasReceitasEventuais.real - outrasReceitasEventuais.orc}
+        />
       </div>
     </div>
   );

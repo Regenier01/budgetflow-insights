@@ -1304,45 +1304,25 @@ export const DEPARTMENT_MAPPING = {
     "unidadeNegocio": "Veículos - Logistica",
     "divisao": "LOGÍSTICA"
   },
-  "LAVRINHA - SLN - AGRICOLA": {
-    "nomedepto": "LAVRINHA - SLN - AGRICOLA",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
+  "OUTROS": {
+    "nomedepto": "OUTROS",
+    "unidadeNegocio": "OUTROS",
+    "divisao": "OUTROS"
   },
   "VALE DO IMBÉ": {
     "nomedepto": "VALE DO IMBÉ",
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
   },
-  "MECANIZADO": {
-    "nomedepto": "MECANIZADO",
-    "unidadeNegocio": "MECANIZADO",
-    "divisao": "MECANIZADO"
-  },
-  "FAZENDA SANTA MARIA PORANGATU": {
-    "nomedepto": "FAZENDA SANTA MARIA PORANGATU",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "FAZENDA MONTE CARMELO": {
-    "nomedepto": "FAZENDA MONTE CARMELO",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "AROEIRA": {
-    "nomedepto": "AROEIRA",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "OUTROS": {
-    "nomedepto": "OUTROS",
-    "unidadeNegocio": "OUTROS",
-    "divisao": "OUTROS"
-  },
   "JÓIA": {
     "nomedepto": "JÓIA",
     "unidadeNegocio": "PECUARIA",
     "divisao": "PECUARIA"
+  },
+  "MECANIZADO": {
+    "nomedepto": "MECANIZADO",
+    "unidadeNegocio": "MECANIZADO",
+    "divisao": "MECANIZADO"
   },
   "SUPERVISAO AGRICOLA OL LATEX": {
     "nomedepto": "SUPERVISAO AGRICOLA OL LATEX",
@@ -1358,5 +1338,20 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "CODORA - CANA",
     "unidadeNegocio": "CANA",
     "divisao": "CANA"
+  },
+  "AROEIRA": {
+    "nomedepto": "AROEIRA",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "FAZENDA MONTE CARMELO": {
+    "nomedepto": "FAZENDA MONTE CARMELO",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "FAZENDA SANTA MARIA PORANGATU": {
+    "nomedepto": "FAZENDA SANTA MARIA PORANGATU",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   }
 };
