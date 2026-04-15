@@ -1,4 +1,4 @@
-import { useBudgetStore, calculateGlobalRevenueTotals } from '@/store/budgetStore';
+import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
@@ -6,8 +6,32 @@ import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { OUTRAS_RENDAS_CODE_SET, isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 export function RevenueSummary() {
+  const sumEntryValues = (values: Record<string, number>) =>
+    Object.values(values).reduce((sum, v) => sum + v, 0);
+
+  const isReceitaDeductionEntry = (entry: { codigo: string; descricao?: string; grupoContabilN9?: string }) => {
+    const normalize = (value?: string) =>
+      (value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toUpperCase();
+
+    const descricao = normalize(entry.descricao);
+    const grupoN9 = normalize(entry.grupoContabilN9);
+
+    return (
+      entry.codigo.trim().startsWith('3.2.') ||
+      descricao.includes('ABATIMENT') ||
+      descricao.includes('IMPOST') ||
+      descricao.includes('TRIBUT') ||
+      grupoN9.includes('ABATIMENT') ||
+      grupoN9.includes('IMPOST') ||
+      grupoN9.includes('TRIBUT')
+    );
+  };
+
   const calculateRevenueByAtividadeWithoutOutrasEventuais = (atividadeKey: string) => {
-    return accounts
+    const bruta = accounts
       .filter(
         (a) =>
           a.atividade === atividadeKey &&
@@ -17,12 +41,35 @@ export function RevenueSummary() {
       )
       .reduce(
         (acc, a) => {
-          acc.orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-          acc.real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+          acc.orc += sumEntryValues(a.orcado);
+          acc.real += sumEntryValues(a.realizado);
           return acc;
         },
-        { orc: 0, real: 0, diff: 0 }
+        { orc: 0, real: 0 }
       );
+
+    const deducoes = accounts
+      .filter(
+        (a) =>
+          a.atividade === atividadeKey &&
+          a.nivel === 5 &&
+          a.tipo === 'D' &&
+          isReceitaDeductionEntry(a)
+      )
+      .reduce(
+        (acc, a) => {
+          acc.orc += sumEntryValues(a.orcado);
+          acc.real += sumEntryValues(a.realizado);
+          return acc;
+        },
+        { orc: 0, real: 0 }
+      );
+
+    return {
+      orc: bruta.orc + deducoes.orc,
+      real: bruta.real + deducoes.real,
+      diff: (bruta.real + deducoes.real) - (bruta.orc + deducoes.orc),
+    };
   };
 
   const accounts = useBudgetStore((s) => s.accounts);
@@ -111,7 +158,27 @@ export function RevenueSummary() {
     );
   };
 
-  const global = calculateGlobalRevenueTotals(accounts);
+  const global = accounts
+    .filter((a) => a.nivel === 5)
+    .reduce(
+      (acc, a) => {
+        const orcado = sumEntryValues(a.orcado);
+        const realizado = sumEntryValues(a.realizado);
+
+        if (a.tipo === 'R') {
+          acc.orc += orcado;
+          acc.real += realizado;
+        }
+
+        if (a.tipo === 'D' && isReceitaDeductionEntry(a)) {
+          acc.orc += orcado;
+          acc.real += realizado;
+        }
+
+        return acc;
+      },
+      { orc: 0, real: 0 }
+    );
   const outrasReceitasEventuais = accounts
     .filter(
       (a) =>
@@ -135,28 +202,27 @@ export function RevenueSummary() {
   return (
     <div className="space-y-6">
       <SummaryTable
-        title="Consolidado Geral de Receitas"
+        title="Consolidado Geral de Receita Líquida"
         orc={global.orc}
         real={global.real}
-        diff={global.diff}
+        diff={global.real - global.orc}
         isMain
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {revenueActivities.map((ativ) => {
           const stats = calculateRevenueByAtividadeWithoutOutrasEventuais(ativ.key);
-          const diff = stats.real - stats.orc;
           // Só mostra atividades que têm algum valor orçado ou realizado
           if (stats.orc === 0 && stats.real === 0) return null;
 
           return (
             <SummaryTable
               key={ativ.key}
-              title={ativ.label}
+              title={`${ativ.label} (Líquida)`}
               activityKey={ativ.key}
               orc={stats.orc}
               real={stats.real}
-              diff={diff}
+              diff={stats.diff}
             />
           );
         })}

@@ -463,10 +463,6 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "SOLO VERDE",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
-  "OUTROS": {
-    "centroCusto": "OUTROS",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
   "RATEIO AREAS PRODUTIVAS": {
     "centroCusto": "RATEIO AREAS PRODUTIVAS",
     "unidadeNegocio": "NÃO IDENTIFICADO"

@@ -40,6 +40,21 @@ const isRendasOperacionaisEntry = (entry: AccountEntry) => {
   return normalizedGroup.includes('RENDAS OPERACIONAIS');
 };
 
+const isReceitaDeductionEntry = (entry: AccountEntry) => {
+  const normalizedDescription = normalizeText(entry.descricao);
+  const normalizedGroup = normalizeText(entry.grupoContabilN9);
+
+  return (
+    entry.codigo.trim().startsWith('3.2.') ||
+    normalizedDescription.includes('ABATIMENT') ||
+    normalizedDescription.includes('IMPOST') ||
+    normalizedDescription.includes('TRIBUT') ||
+    normalizedGroup.includes('ABATIMENT') ||
+    normalizedGroup.includes('IMPOST') ||
+    normalizedGroup.includes('TRIBUT')
+  );
+};
+
 const combineEntryFilters = (
   ...filters: Array<((entry: AccountEntry) => boolean) | undefined>
 ) => {
@@ -156,6 +171,49 @@ export default function ActivityDetailPage() {
     }
     return Array.from(dynamic).sort();
   }, [accounts, id, isOutrasReceitasEventuais, isDespesasComVendas, isRateios]);
+
+  const filteredLeafAccounts = useMemo(
+    () =>
+      accounts.filter(
+        (entry) =>
+          entry.nivel === 5 &&
+          (!atividade?.key || entry.atividade === atividade.key) &&
+          (selectedCC === 'all' || entry.centroCusto === selectedCC) &&
+          (selectedDept === 'all' || entry.departamento === selectedDept) &&
+          (!activityLevelEntryFilter || activityLevelEntryFilter(entry))
+      ),
+    [accounts, atividade?.key, selectedCC, selectedDept, activityLevelEntryFilter]
+  );
+
+  const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+    entries.reduce((sum, entry) => {
+      if (selectedMonth === 'all') {
+        return sum + Object.values(entry[field]).reduce((acc, value) => acc + value, 0);
+      }
+      return sum + (entry[field][selectedMonth] || 0);
+    }, 0);
+
+  const receitaBrutaEntries = filteredLeafAccounts.filter(
+    (entry) => entry.tipo === 'R' && !isOutrasReceitasEventuaisCode(entry.codigo)
+  );
+  const deducoesReceitaEntries = filteredLeafAccounts.filter(
+    (entry) => entry.tipo === 'D' && isReceitaDeductionEntry(entry)
+  );
+  const receitaBrutaOrc = sumEntries(receitaBrutaEntries, 'orcado');
+  const receitaBrutaReal = sumEntries(receitaBrutaEntries, 'realizado');
+  const deducoesReceitaOrc = sumEntries(deducoesReceitaEntries, 'orcado');
+  const deducoesReceitaReal = sumEntries(deducoesReceitaEntries, 'realizado');
+  const receitaLiquida = {
+    orc: receitaBrutaOrc + deducoesReceitaOrc,
+    real: receitaBrutaReal + deducoesReceitaReal,
+  };
+
+  const formatCurrency = (value: number) =>
+    new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+      maximumFractionDigits: 0,
+    }).format(value);
 
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
@@ -293,6 +351,44 @@ export default function ActivityDetailPage() {
               title="Detalhamento de Receitas"
               accentColor="emerald"
             />
+            {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
+              <>
+                <AnalyticalTable
+                  atividadeFilter={atividade.key}
+                  selectedMonth={selectedMonth}
+                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  tipoFilter={['D']}
+                  entryFilter={combineEntryFilters(
+                    activityLevelEntryFilter,
+                    (entry) => isReceitaDeductionEntry(entry),
+                  )}
+                  title="Deduções de Receita (Impostos)"
+                  subtitle="Contas de abatimento e tributos sobre vendas"
+                  accentColor="red"
+                />
+
+                <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 px-5 py-4">
+                  <h3 className="text-sm font-black uppercase tracking-[0.18em] text-emerald-700">
+                    Receita Líquida da Atividade
+                  </h3>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-lg border border-emerald-100 bg-white px-3 py-2">
+                      <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Bruta</p>
+                      <p className="text-[14px] font-semibold text-slate-800">{formatCurrency(receitaBrutaReal)}</p>
+                    </div>
+                    <div className="rounded-lg border border-rose-100 bg-white px-3 py-2">
+                      <p className="text-[11px] font-semibold uppercase text-slate-500">Impostos / Deduções</p>
+                      <p className="text-[14px] font-semibold text-rose-600">{formatCurrency(deducoesReceitaReal)}</p>
+                    </div>
+                    <div className="rounded-lg border border-emerald-200 bg-white px-3 py-2">
+                      <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Líquida</p>
+                      <p className="text-[14px] font-bold text-emerald-700">{formatCurrency(receitaLiquida.real)}</p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         ) : resolvedTipoView === 'custos' ? (
           // Mostrar apenas Custos/Despesas
@@ -407,6 +503,7 @@ export default function ActivityDetailPage() {
                         activityLevelEntryFilter,
                         (entry) => isNonRateioDepartment(entry.departamento),
                         (entry) => !isTributariaEntry(entry),
+                        (entry) => !isReceitaDeductionEntry(entry),
                       )}
                       title="Abertura de Despesas ADM"
                       subtitle="Despesas administrativas"
@@ -422,6 +519,7 @@ export default function ActivityDetailPage() {
                         activityLevelEntryFilter,
                         (entry) => isNonRateioDepartment(entry.departamento),
                         (entry) => isTributariaEntry(entry),
+                        (entry) => !isReceitaDeductionEntry(entry),
                       )}
                       title="Abertura de Despesas Tributárias"
                       subtitle="Despesas tributárias"
@@ -435,7 +533,10 @@ export default function ActivityDetailPage() {
                     costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                     departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                     tipoFilter={['D']}
-                    entryFilter={activityLevelEntryFilter}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      (entry) => !isReceitaDeductionEntry(entry),
+                    )}
                     title="Detalhamento de Despesas"
                     accentColor="red"
                   />
@@ -466,6 +567,44 @@ export default function ActivityDetailPage() {
                 title="Detalhamento de Receitas"
                 accentColor="emerald"
               />
+              {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
+                <>
+                  <AnalyticalTable
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    tipoFilter={['D']}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      (entry) => isReceitaDeductionEntry(entry),
+                    )}
+                    title="Deduções de Receita (Impostos)"
+                    subtitle="Contas de abatimento e tributos sobre vendas"
+                    accentColor="red"
+                  />
+
+                  <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 px-5 py-4">
+                    <h3 className="text-sm font-black uppercase tracking-[0.18em] text-emerald-700">
+                      Receita Líquida da Atividade
+                    </h3>
+                    <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                      <div className="rounded-lg border border-emerald-100 bg-white px-3 py-2">
+                        <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Bruta</p>
+                        <p className="text-[14px] font-semibold text-slate-800">{formatCurrency(receitaBrutaReal)}</p>
+                      </div>
+                      <div className="rounded-lg border border-rose-100 bg-white px-3 py-2">
+                        <p className="text-[11px] font-semibold uppercase text-slate-500">Impostos / Deduções</p>
+                        <p className="text-[14px] font-semibold text-rose-600">{formatCurrency(deducoesReceitaReal)}</p>
+                      </div>
+                      <div className="rounded-lg border border-emerald-200 bg-white px-3 py-2">
+                        <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Líquida</p>
+                        <p className="text-[14px] font-bold text-emerald-700">{formatCurrency(receitaLiquida.real)}</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="space-y-4">
@@ -509,6 +648,7 @@ export default function ActivityDetailPage() {
                       activityLevelEntryFilter,
                       (entry) => isNonRateioDepartment(entry.departamento),
                       (entry) => !isTributariaEntry(entry),
+                      (entry) => !isReceitaDeductionEntry(entry),
                     )}
                     title="Abertura de Despesas ADM"
                     subtitle="Despesas administrativas"
@@ -524,6 +664,7 @@ export default function ActivityDetailPage() {
                       activityLevelEntryFilter,
                       (entry) => isNonRateioDepartment(entry.departamento),
                       (entry) => isTributariaEntry(entry),
+                      (entry) => !isReceitaDeductionEntry(entry),
                     )}
                     title="Abertura de Despesas Tributárias"
                     subtitle="Despesas tributárias"
@@ -537,7 +678,10 @@ export default function ActivityDetailPage() {
                   costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
                   departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                   tipoFilter={['D']}
-                  entryFilter={activityLevelEntryFilter}
+                  entryFilter={combineEntryFilters(
+                    activityLevelEntryFilter,
+                    (entry) => !isReceitaDeductionEntry(entry),
+                  )}
                   title="Detalhamento de Despesas"
                   accentColor="red"
                 />

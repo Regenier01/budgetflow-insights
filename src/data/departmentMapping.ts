@@ -1304,11 +1304,6 @@ export const DEPARTMENT_MAPPING = {
     "unidadeNegocio": "Veículos - Logistica",
     "divisao": "LOGÍSTICA"
   },
-  "OUTROS": {
-    "nomedepto": "OUTROS",
-    "unidadeNegocio": "OUTROS",
-    "divisao": "OUTROS"
-  },
   "VALE DO IMBÉ": {
     "nomedepto": "VALE DO IMBÉ",
     "unidadeNegocio": "AGRICOLA",
