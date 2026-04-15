@@ -35,6 +35,13 @@ const isRateioDepartment = (departamento?: string) => {
 
 const isNonRateioDepartment = (departamento?: string) => !isRateioDepartment(departamento);
 
+const isAgricolaFarmCultureDepartment = (departamento?: string) => {
+  const normalized = normalizeText(departamento);
+  if (!normalized.includes(' - ')) return false;
+  const [farm, culture, ...rest] = normalized.split(' - ').map((part) => part.trim());
+  return Boolean(farm) && Boolean(culture) && rest.length === 0;
+};
+
 const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
   PECUARIA: [
     'RATEIO GADO GERAL',
@@ -101,6 +108,7 @@ export default function ActivityDetailPage() {
   const atividade = ATIVIDADES.find(a => a.key === id);
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
   const isEncargos = atividade?.key === 'ENCARGOS';
+  const isAgricola = atividade?.key === 'AGRICOLA';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
@@ -216,6 +224,9 @@ export default function ActivityDetailPage() {
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
       ? (entry) => isNonRateioDepartment(entry.departamento)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAgricola
+      ? (entry) => entry.tipo !== 'C' || isAgricolaFarmCultureDepartment(entry.departamento)
       : undefined
   );
 
@@ -244,7 +255,10 @@ export default function ActivityDetailPage() {
     }
 
     if (resolvedTipoView === 'custos') {
-      return summaryEntryFilter;
+      return combineEntryFilters(
+        summaryEntryFilter,
+        isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined
+      );
     }
 
     return activityLevelEntryFilter;
@@ -255,6 +269,7 @@ export default function ActivityDetailPage() {
     resolvedTipoView,
     activityLevelEntryFilter,
     summaryEntryFilter,
+    isAgricola,
   ]);
 
   const availableDepts = useMemo(() => {
@@ -577,6 +592,7 @@ export default function ActivityDetailPage() {
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                    isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
                     (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                   )}
                   title="Detalhamento de Custos"
@@ -723,6 +739,7 @@ export default function ActivityDetailPage() {
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
                   isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                  isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
                   (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                 )}
                 title="Detalhamento de Custos"

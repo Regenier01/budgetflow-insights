@@ -79,6 +79,13 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return allowed.some((item) => normalizeText(item) === normalizedCC);
   };
 
+  const isAgricolaFarmCultureDepartment = (departamento?: string) => {
+    const normalized = normalizeText(departamento);
+    if (!normalized.includes(' - ')) return false;
+    const [farm, culture, ...rest] = normalized.split(' - ').map((part) => part.trim());
+    return Boolean(farm) && Boolean(culture) && rest.length === 0;
+  };
+
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'decimal',
@@ -186,7 +193,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
         (a.tipo !== 'C' || isAllowedCentroCustoForCustos(activityKey, a.centroCusto)) &&
-        (activityKey !== 'DESP_ADM_TRIB' || !isRateioDepartment(a.departamento))
+        (activityKey !== 'DESP_ADM_TRIB' || !isRateioDepartment(a.departamento)) &&
+        (activityKey !== 'AGRICOLA' || a.tipo !== 'C' || isAgricolaFarmCultureDepartment(a.departamento))
     );
   };
 
