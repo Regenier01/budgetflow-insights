@@ -1329,6 +1329,11 @@ export const DEPARTMENT_MAPPING = {
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
   },
+  "BANDEIRANTES - PECUÁRIA": {
+    "nomedepto": "BANDEIRANTES - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
   "CODORA - CANA": {
     "nomedepto": "CODORA - CANA",
     "unidadeNegocio": "CANA",
