@@ -158,27 +158,6 @@ export function RevenueSummary() {
     );
   };
 
-  const global = accounts
-    .filter((a) => a.nivel === 5)
-    .reduce(
-      (acc, a) => {
-        const orcado = sumEntryValues(a.orcado);
-        const realizado = sumEntryValues(a.realizado);
-
-        if (a.tipo === 'R') {
-          acc.orc += orcado;
-          acc.real += realizado;
-        }
-
-        if (a.tipo === 'D' && isReceitaDeductionEntry(a)) {
-          acc.orc += orcado;
-          acc.real += realizado;
-        }
-
-        return acc;
-      },
-      { orc: 0, real: 0 }
-    );
   const outrasReceitasEventuais = accounts
     .filter(
       (a) =>
@@ -198,6 +177,22 @@ export function RevenueSummary() {
   const revenueActivities = ATIVIDADES.filter(a =>
     a.key !== 'ENCARGOS' && a.key !== 'DESP_ADM_TRIB'
   );
+
+  // O consolidado precisa seguir exatamente as mesmas regras dos cards exibidos.
+  const globalFromActivities = revenueActivities.reduce(
+    (acc, atividade) => {
+      const stats = calculateRevenueByAtividadeWithoutOutrasEventuais(atividade.key);
+      acc.orc += stats.orc;
+      acc.real += stats.real;
+      return acc;
+    },
+    { orc: 0, real: 0 }
+  );
+
+  const global = {
+    orc: globalFromActivities.orc,
+    real: globalFromActivities.real,
+  };
 
   return (
     <div className="space-y-6">
