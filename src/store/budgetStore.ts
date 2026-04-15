@@ -74,6 +74,16 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
+export function sumValuesByMonth(
+  values: Record<string, number>,
+  selectedMonth: MonthKey | 'all'
+) {
+  if (selectedMonth === 'all') {
+    return Object.values(values).reduce((sum, v) => sum + v, 0);
+  }
+  return values[selectedMonth] || 0;
+}
+
 const rowValue = (value: unknown): string | undefined => {
   const parsed = String(value || '').trim();
   return parsed || undefined;

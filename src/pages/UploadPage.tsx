@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
-import { useBudgetStore } from '@/store/budgetStore';
+import { dateToMonthKey, useBudgetStore } from '@/store/budgetStore';
 import { MONTHS } from '@/types/budget';
 import type { MonthKey, ExcelRow } from '@/types/budget';
 import * as XLSX from 'xlsx';
@@ -32,6 +32,20 @@ export default function UploadPage() {
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
         const rows = XLSX.utils.sheet_to_json<ExcelRow>(sheet);
 
+        let rowsWithoutDate = 0;
+        let rowsOutOfPeriod = 0;
+
+        rows.forEach((row) => {
+          const rowMonth = dateToMonthKey(row.DATA);
+          if (!rowMonth) {
+            rowsWithoutDate++;
+          } else if (rowMonth !== selectedPeriod) {
+            rowsOutOfPeriod++;
+          }
+        });
+
+        // Mantém compatibilidade com o comportamento anterior:
+        // nenhuma linha é descartada no upload; apenas sinalizamos divergências.
         const processed = importExcelRows(rows, selectedPeriod);
 
         addUpload({
@@ -43,7 +57,14 @@ export default function UploadPage() {
           rowCount: processed,
         });
 
-        toast.success(`${processed} registros importados com sucesso para ${MONTHS.find((m) => m.key === selectedPeriod)?.label}`);
+        const notices: string[] = [];
+        if (rowsWithoutDate > 0) notices.push(`${rowsWithoutDate} sem DATA válida`);
+        if (rowsOutOfPeriod > 0) notices.push(`${rowsOutOfPeriod} fora do período`);
+        const suffix = notices.length > 0 ? ` (${notices.join(' | ')})` : '';
+
+        toast.success(
+          `${processed} registros importados com sucesso para ${MONTHS.find((m) => m.key === selectedPeriod)?.label}${suffix}`
+        );
       } catch {
         addUpload({
           id: crypto.randomUUID(),

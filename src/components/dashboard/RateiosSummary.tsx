@@ -1,8 +1,9 @@
-import { useBudgetStore } from '@/store/budgetStore';
+import { useBudgetStore, sumValuesByMonth } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Building2, TrendingDown, TrendingUp } from 'lucide-react';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import type { MonthKey } from '@/types/budget';
 
 const RATEIO_DEPARTMENTS = [
   'OFICINA GERAL',
@@ -20,7 +21,11 @@ const normalizeDepartment = (value?: string) =>
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
 
-export function RateiosSummary() {
+interface Props {
+  selectedMonth: MonthKey | 'all';
+}
+
+export function RateiosSummary({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
 
@@ -49,8 +54,8 @@ export function RateiosSummary() {
 
     const totals = departmentAccounts.reduce(
       (acc, account) => {
-        acc.orc += Object.values(account.orcado).reduce((sum, value) => sum + value, 0);
-        acc.real += Object.values(account.realizado).reduce((sum, value) => sum + value, 0);
+        acc.orc += sumValuesByMonth(account.orcado, selectedMonth);
+        acc.real += sumValuesByMonth(account.realizado, selectedMonth);
         return acc;
       },
       { orc: 0, real: 0 }

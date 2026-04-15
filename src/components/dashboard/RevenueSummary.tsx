@@ -1,13 +1,16 @@
-import { useBudgetStore } from '@/store/budgetStore';
-import { ATIVIDADES } from '@/types/budget';
+import { useBudgetStore, sumValuesByMonth } from '@/store/budgetStore';
+import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { OUTRAS_RENDAS_CODE_SET, isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
-export function RevenueSummary() {
-  const sumEntryValues = (values: Record<string, number>) =>
-    Object.values(values).reduce((sum, v) => sum + v, 0);
+interface Props {
+  selectedMonth: MonthKey | 'all';
+}
+
+export function RevenueSummary({ selectedMonth }: Props) {
+  const sumEntryValues = (values: Record<string, number>) => sumValuesByMonth(values, selectedMonth);
 
   const isReceitaDeductionEntry = (entry: { codigo: string; descricao?: string; grupoContabilN9?: string }) => {
     const normalize = (value?: string) =>
@@ -166,8 +169,8 @@ export function RevenueSummary() {
     )
     .reduce(
       (acc, a) => {
-        acc.orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
-        acc.real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+        acc.orc += sumEntryValues(a.orcado);
+        acc.real += sumEntryValues(a.realizado);
         return acc;
       },
       { orc: 0, real: 0 }

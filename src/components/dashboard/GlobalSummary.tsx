@@ -1,18 +1,64 @@
 import {
   useBudgetStore,
-  calculateGlobalTotals,
-  calculateTotalsByDivisao,
-  calculateEncargosTotals,
-  calculateDespesasComVendasTotals,
+  sumValuesByMonth,
 } from '@/store/budgetStore';
-import { ATIVIDADES } from '@/types/budget';
+import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
+import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
+import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
-export function GlobalSummary() {
+interface Props {
+  selectedMonth: MonthKey | 'all';
+}
+
+export function GlobalSummary({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
+
+  const normalizeText = (value?: string) =>
+    (value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toUpperCase()
+      .trim();
+
+  const isRendasOperacionaisEntry = (entry: (typeof accounts)[number]) => {
+    const normalizedGroup = normalizeText(entry.grupoContabilN9);
+    return normalizedGroup.includes('RENDAS OPERACIONAIS');
+  };
+
+  const isReceitaDeductionEntry = (entry: (typeof accounts)[number]) => {
+    const normalizedDescription = normalizeText(entry.descricao);
+    const normalizedGroup = normalizeText(entry.grupoContabilN9);
+
+    return (
+      entry.codigo.trim().startsWith('3.2.') ||
+      normalizedDescription.includes('ABATIMENT') ||
+      normalizedDescription.includes('IMPOST') ||
+      normalizedDescription.includes('TRIBUT') ||
+      normalizedGroup.includes('ABATIMENT') ||
+      normalizedGroup.includes('IMPOST') ||
+      normalizedGroup.includes('TRIBUT')
+    );
+  };
+
+  const RATEIO_DEPARTMENTS = [
+    'OFICINA GERAL',
+    'FABRICA DE RACAO',
+    'FABRICA DE SAL',
+    'MECANIZADO',
+    'LOGISTICA',
+    'ALMOXARIFADO',
+  ] as const;
+
+  const isRateioDepartment = (departamento?: string) => {
+    if (!departamento) return false;
+    const normalized = normalizeText(departamento);
+    return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
+  };
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
@@ -93,8 +139,49 @@ export function GlobalSummary() {
     );
   };
 
-  const global = calculateGlobalTotals(accounts);
-  const despesasComVendas = calculateDespesasComVendasTotals(accounts);
+  const computeTotals = (predicate: (entry: (typeof accounts)[number]) => boolean) =>
+    accounts
+      .filter((a) => a.nivel === 5 && predicate(a))
+      .reduce(
+        (acc, a) => {
+          acc.orc += sumValuesByMonth(a.orcado, selectedMonth);
+          acc.real += sumValuesByMonth(a.realizado, selectedMonth);
+          return acc;
+        },
+        { orc: 0, real: 0 }
+      );
+
+  const calculateCostsByActivity = (activityKey: string) => {
+    if (activityKey === 'ENCARGOS') {
+      return computeTotals(
+        (a) => a.atividade === 'ENCARGOS' && (isDespesaFinanceira(a.codigo) || isReceitaFinanceira(a.codigo))
+      );
+    }
+
+    return computeTotals(
+      (a) =>
+        a.atividade === activityKey &&
+        (a.tipo === 'C' || a.tipo === 'D') &&
+        !isOutrasReceitasEventuaisCode(a.codigo) &&
+        !isRendasOperacionaisEntry(a) &&
+        !isDespesaComVendasCode(a.codigo) &&
+        !isReceitaDeductionEntry(a) &&
+        (activityKey !== 'DESP_ADM_TRIB' || !isRateioDepartment(a.departamento))
+    );
+  };
+
+  // O consolidado deve seguir exatamente a mesma regra de cálculo dos cards por atividade.
+  const global = ATIVIDADES.reduce(
+    (acc, atividade) => {
+      const stats = calculateCostsByActivity(atividade.key);
+      acc.orc += stats.orc;
+      acc.real += stats.real;
+      return acc;
+    },
+    { orc: 0, real: 0 }
+  );
+
+  const despesasComVendas = computeTotals((a) => isDespesaComVendasCode(a.codigo));
 
   return (
     <div className="space-y-6">
@@ -108,13 +195,7 @@ export function GlobalSummary() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {ATIVIDADES.map((ativ) => {
-          let stats;
-          if (ativ.key === 'ENCARGOS') {
-            const encargosData = calculateEncargosTotals(accounts);
-            stats = encargosData.total;
-          } else {
-            stats = calculateTotalsByDivisao(accounts, ativ.key);
-          }
+          const stats = calculateCostsByActivity(ativ.key);
           return (
             <SummaryTable
               key={ativ.key}
