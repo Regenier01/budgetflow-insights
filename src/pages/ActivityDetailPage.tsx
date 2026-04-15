@@ -35,6 +35,26 @@ const isRateioDepartment = (departamento?: string) => {
 
 const isNonRateioDepartment = (departamento?: string) => !isRateioDepartment(departamento);
 
+const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
+  PECUARIA: [
+    'RATEIO GADO GERAL',
+    'RATEIO CONFINAMENTO',
+    'TRANSPORTE DE GADO CONFINAMENTO',
+    'TRANSPORTE DE INSUMOS CONFINAMENTO',
+    'CONFINAMENTO - TRANSPORTE DE GADO',
+    'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+  ],
+  SERINGAL: ['RATEIO SERINGAL'],
+};
+
+const isAllowedCentroCustoForCustos = (atividadeKey: string | undefined, centroCusto?: string) => {
+  if (!atividadeKey) return true;
+  const allowed = CUSTOS_ALLOWED_CC_BY_ACTIVITY[atividadeKey];
+  if (!allowed) return true;
+  const normalizedCC = normalizeText(centroCusto);
+  return allowed.some((item) => normalizeText(item) === normalizedCC);
+};
+
 const isRendasOperacionaisEntry = (entry: AccountEntry) => {
   const normalizedGroup = normalizeText(entry.grupoContabilN9);
   return normalizedGroup.includes('RENDAS OPERACIONAIS');
@@ -62,6 +82,8 @@ const combineEntryFilters = (
   if (activeFilters.length === 0) return undefined;
   return (entry: AccountEntry) => activeFilters.every((filter) => filter(entry));
 };
+
+const ENCARGOS_SUMMARY_TIPO_FILTER: Array<'R' | 'C' | 'D'> = ['R', 'C', 'D'];
 
 export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -215,6 +237,34 @@ export default function ActivityDetailPage() {
       maximumFractionDigits: 0,
     }).format(value);
 
+  const summaryTipoFilter: Array<'R' | 'C' | 'D'> | undefined =
+    isOutrasReceitasEventuais
+      ? ['R']
+      : isDespesasComVendas
+        ? ['C', 'D']
+        : resolvedTipoView === 'receitas'
+          ? ['R']
+          : resolvedTipoView === 'custos'
+            ? isEncargos
+              ? ENCARGOS_SUMMARY_TIPO_FILTER
+              : ['C', 'D']
+            : undefined;
+
+  const summaryEntryFilter = combineEntryFilters(
+    activityLevelEntryFilter,
+    resolvedTipoView === 'custos' && !isDespesasComVendas
+      ? isEncargos
+        ? (entry) => isDespesaFinanceira(entry.codigo) || isReceitaFinanceira(entry.codigo)
+        : (entry) => entry.tipo !== 'D' || !isReceitaDeductionEntry(entry)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos
+      ? (entry) => entry.tipo !== 'C' || isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
+      ? (entry) => isNonRateioDepartment(entry.departamento)
+      : undefined
+  );
+
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
   return (
@@ -275,18 +325,8 @@ export default function ActivityDetailPage() {
         atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
         costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
         departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-        entryFilter={activityLevelEntryFilter}
-        tipoFilter={
-          isOutrasReceitasEventuais
-            ? ['R']
-            : isDespesasComVendas
-              ? ['C', 'D']
-            : resolvedTipoView === 'receitas'
-              ? ['R']
-              : resolvedTipoView === 'custos'
-                ? ['C', 'D']
-                : undefined
-        }
+        entryFilter={summaryEntryFilter}
+        tipoFilter={summaryTipoFilter}
       />
 
       <div className="grid gap-8">
@@ -478,6 +518,7 @@ export default function ActivityDetailPage() {
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                    (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                   )}
                   title="Detalhamento de Custos"
                   accentColor="orange"
@@ -623,6 +664,7 @@ export default function ActivityDetailPage() {
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
                   isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                  (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                 )}
                 title="Detalhamento de Custos"
                 accentColor="orange"

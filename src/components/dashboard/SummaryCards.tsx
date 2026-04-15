@@ -23,6 +23,14 @@ export function SummaryCards({
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
+  const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+    entries.reduce((sum, entry) => {
+      if (selectedMonth === 'all') {
+        return sum + Object.values(entry[field]).reduce((acc: number, value: number) => acc + value, 0);
+      }
+      return sum + (entry[field][selectedMonth] || 0);
+    }, 0);
+
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
     (!atividadeFilter || a.atividade === atividadeFilter) &&
@@ -33,12 +41,7 @@ export function SummaryCards({
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {
     const items = leafAccounts.filter((a) => a.tipo === tipo);
-    return items.reduce((sum, a) => {
-      if (selectedMonth === 'all') {
-        return sum + Object.values(a[field]).reduce((s: number, v: number) => s + v, 0);
-      }
-      return sum + (a[field][selectedMonth] || 0);
-    }, 0);
+    return sumEntries(items, field);
   };
 
   const receitaOrc = sumByTipo('R', 'orcado');
@@ -50,6 +53,11 @@ export function SummaryCards({
 
   const resultadoOrc = receitaOrc - (custoOrc + despesaOrc);
   const resultadoReal = receitaReal - (custoReal + despesaReal);
+  const scopedAccounts = tipoFilter
+    ? leafAccounts.filter((a) => tipoFilter.includes(a.tipo))
+    : leafAccounts;
+  const totalOrc = sumEntries(scopedAccounts, 'orcado');
+  const totalReal = sumEntries(scopedAccounts, 'realizado');
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
@@ -65,8 +73,15 @@ export function SummaryCards({
     { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
   ];
 
+  const scopedCards = [
+    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
+    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'red', tipo: 'D' },
+    { title: 'Total da Abertura', orc: totalOrc, real: totalReal, icon: Target, color: 'primary', tipo: 'TOTAL' },
+  ];
+
   const cards = tipoFilter
-    ? allCards.filter(c => tipoFilter.includes(c.tipo) || c.tipo === 'RESULTADO')
+    ? scopedCards.filter((c) => tipoFilter.includes(c.tipo) || c.tipo === 'TOTAL')
     : allCards;
 
   return (
