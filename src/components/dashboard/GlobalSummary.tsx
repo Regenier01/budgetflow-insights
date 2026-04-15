@@ -1,4 +1,10 @@
-import { useBudgetStore, calculateGlobalTotals, calculateTotalsByDivisao, calculateEncargosTotals } from '@/store/budgetStore';
+import {
+  useBudgetStore,
+  calculateGlobalTotals,
+  calculateTotalsByDivisao,
+  calculateEncargosTotals,
+  calculateDespesasComVendasTotals,
+} from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
@@ -88,6 +94,7 @@ export function GlobalSummary() {
   };
 
   const global = calculateGlobalTotals(accounts);
+  const despesasComVendas = calculateDespesasComVendasTotals(accounts);
 
   return (
     <div className="space-y-6">
@@ -119,6 +126,13 @@ export function GlobalSummary() {
             />
           );
         })}
+        <SummaryTable
+          title="Despesas com Vendas"
+          activityKey="DESPESAS_COM_VENDAS"
+          orc={despesasComVendas.orc}
+          real={despesasComVendas.real}
+          diff={despesasComVendas.real - despesasComVendas.orc}
+        />
       </div>
     </div>
   );

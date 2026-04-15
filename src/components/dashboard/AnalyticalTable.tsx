@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
 interface Props {
-  atividadeFilter: AtividadeKey;
+  atividadeFilter?: AtividadeKey;
   selectedMonth: MonthKey | 'all';
   costCenterFilter?: string;
   departmentFilter?: string;
@@ -51,7 +51,9 @@ export function AnalyticalTable({
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
 
-  let filtered = accounts.filter(a => a.atividade === atividadeFilter && a.nivel === 5);
+  let filtered = accounts.filter(
+    (a) => a.nivel === 5 && (!atividadeFilter || a.atividade === atividadeFilter)
+  );
   
   if (costCenterFilter) filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
   if (departmentFilter) filtered = filtered.filter(a => a.departamento === departmentFilter);

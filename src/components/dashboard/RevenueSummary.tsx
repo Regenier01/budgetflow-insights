@@ -1,4 +1,4 @@
-import { useBudgetStore, calculateRevenueByAtividade, calculateGlobalRevenueTotals } from '@/store/budgetStore';
+import { useBudgetStore, calculateGlobalRevenueTotals } from '@/store/budgetStore';
 import { ATIVIDADES } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
@@ -17,6 +17,28 @@ const OUTRAS_RECEITAS_EVENTUAIS_CODES = new Set([
 ]);
 
 export function RevenueSummary() {
+  const isOutrasReceitasEventuaisCode = (codigo: string) =>
+    OUTRAS_RECEITAS_EVENTUAIS_CODES.has(codigo.trim());
+
+  const calculateRevenueByAtividadeWithoutOutrasEventuais = (atividadeKey: string) => {
+    return accounts
+      .filter(
+        (a) =>
+          a.atividade === atividadeKey &&
+          a.nivel === 5 &&
+          a.tipo === 'R' &&
+          !isOutrasReceitasEventuaisCode(a.codigo)
+      )
+      .reduce(
+        (acc, a) => {
+          acc.orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+          acc.real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+          return acc;
+        },
+        { orc: 0, real: 0, diff: 0 }
+      );
+  };
+
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
 
@@ -136,7 +158,8 @@ export function RevenueSummary() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {revenueActivities.map((ativ) => {
-          const stats = calculateRevenueByAtividade(accounts, ativ.key);
+          const stats = calculateRevenueByAtividadeWithoutOutrasEventuais(ativ.key);
+          const diff = stats.real - stats.orc;
           // Só mostra atividades que têm algum valor orçado ou realizado
           if (stats.orc === 0 && stats.real === 0) return null;
 
@@ -147,12 +170,13 @@ export function RevenueSummary() {
               activityKey={ativ.key}
               orc={stats.orc}
               real={stats.real}
-              diff={stats.diff}
+              diff={diff}
             />
           );
         })}
         <SummaryTable
           title="Outras Receitas Eventuais"
+          activityKey="OUTRAS_RECEITAS_EVENTUAIS"
           orc={outrasReceitasEventuais.orc}
           real={outrasReceitasEventuais.real}
           diff={outrasReceitasEventuais.real - outrasReceitasEventuais.orc}

@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TrendingUp, TrendingDown, DollarSign, Target, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
-import type { MonthKey, AtividadeKey } from '@/types/budget';
+import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
 interface Props {
   selectedMonth: MonthKey | 'all';
@@ -10,16 +10,25 @@ interface Props {
   costCenterFilter?: string;
   departmentFilter?: string;
   tipoFilter?: string[];
+  entryFilter?: (entry: AccountEntry) => boolean;
 }
 
-export function SummaryCards({ selectedMonth, atividadeFilter, costCenterFilter, departmentFilter, tipoFilter }: Props) {
+export function SummaryCards({
+  selectedMonth,
+  atividadeFilter,
+  costCenterFilter,
+  departmentFilter,
+  tipoFilter,
+  entryFilter,
+}: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
     (!atividadeFilter || a.atividade === atividadeFilter) &&
     (!costCenterFilter || a.centroCusto === costCenterFilter) &&
-    (!departmentFilter || a.departamento === departmentFilter)
+    (!departmentFilter || a.departamento === departmentFilter) &&
+    (!entryFilter || entryFilter(a))
   );
 
   const sumByTipo = (tipo: string, field: 'orcado' | 'realizado') => {

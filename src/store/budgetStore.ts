@@ -4,6 +4,7 @@ import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
+import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 
 // Função auxiliar para normalizar strings de busca
 const normalizeKey = (str: string) => 
@@ -84,7 +85,11 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
   const leafAccounts = accounts.filter(a => 
     a.nivel === 5 && 
     a.atividade !== 'ENCARGOS' &&
-    (a.grupoContabil === '4' || (a.grupoContabil === '3' && a.atividade === 'DESP_ADM_TRIB'))
+    (
+      a.grupoContabil === '4' ||
+      (a.grupoContabil === '3' && a.atividade === 'DESP_ADM_TRIB') ||
+      isDespesaComVendasCode(a.codigo)
+    )
   );
   leafAccounts.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D' || a.tipo === 'R') {
@@ -162,6 +167,24 @@ export function calculateEncargosTotals(accounts: AccountEntry[]) {
       diff: (despesas.orc + receitas.orc) - (despesas.real + receitas.real)
     }
   };
+}
+
+export function calculateDespesasComVendasTotals(accounts: AccountEntry[]) {
+  let orc = 0;
+  let real = 0;
+  const filtered = accounts.filter(
+    (a) =>
+      a.nivel === 5 &&
+      (a.tipo === 'C' || a.tipo === 'D') &&
+      isDespesaComVendasCode(a.codigo)
+  );
+
+  filtered.forEach((a) => {
+    orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
+    real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
+  });
+
+  return { orc, real, diff: orc - real };
 }
 
 // Função para calcular totais de Receitas por Atividade
