@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
-import { dateToMonthKey, useBudgetStore } from '@/store/budgetStore';
+import { dateToMonthKey, getLastUploadedPeriod, useBudgetStore } from '@/store/budgetStore';
 import { MONTHS } from '@/types/budget';
 import type { MonthKey, ExcelRow } from '@/types/budget';
 import * as XLSX from 'xlsx';
@@ -14,7 +14,7 @@ import * as XLSX from 'xlsx';
 const MAX_FILE_SIZE_KB = 6500;
 
 export default function UploadPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState<MonthKey>(MONTHS[0].key);
+  const [selectedPeriod, setSelectedPeriod] = useState<MonthKey>(() => getLastUploadedPeriod() ?? MONTHS[0].key);
   const [isDragging, setIsDragging] = useState(false);
   const { uploads, addUpload, importExcelRows } = useBudgetStore();
 

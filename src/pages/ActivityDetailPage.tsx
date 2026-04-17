@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
 import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
-import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
+import { useBudgetStore, calculateEncargosTotals, getLastUploadedPeriod } from '@/store/budgetStore';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
@@ -119,7 +119,7 @@ export default function ActivityDetailPage() {
   const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => getLastUploadedPeriod() ?? 'all');
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
   const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
   
@@ -482,6 +482,25 @@ export default function ActivityDetailPage() {
       setSelectedCC('all');
     }
   }, [availableCostCenters, selectedCC]);
+
+  useEffect(() => {
+    const persistedMonth = getLastUploadedPeriod();
+    if (persistedMonth) {
+      setSelectedMonth(persistedMonth);
+      return;
+    }
+
+    const monthsInData = new Set<string>();
+    accounts.forEach((entry) => {
+      Object.keys(entry.orcado).forEach((month) => monthsInData.add(month));
+      Object.keys(entry.realizado).forEach((month) => monthsInData.add(month));
+    });
+
+    const latestMonthFromData = MONTHS.filter((m) => monthsInData.has(m.key)).at(-1)?.key;
+    if (latestMonthFromData) {
+      setSelectedMonth(latestMonthFromData);
+    }
+  }, [accounts]);
 
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 

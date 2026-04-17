@@ -1,10 +1,23 @@
 import { create } from 'zustand';
-import type { AccountEntry, MonthKey, AtividadeKey, ExcelRow, UploadRecord } from '@/types/budget';
+import { MONTHS, type AccountEntry, type MonthKey, type AtividadeKey, type ExcelRow, type UploadRecord } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
+const validMonthKeys = new Set(MONTHS.map((month) => month.key));
+
+const saveLastUploadedPeriod = (period: string) => {
+  if (typeof window === 'undefined' || !validMonthKeys.has(period as MonthKey)) return;
+  window.localStorage.setItem(LAST_UPLOADED_PERIOD_STORAGE_KEY, period);
+};
+
+export const getLastUploadedPeriod = (): MonthKey | null => {
+  if (typeof window === 'undefined') return null;
+  const stored = window.localStorage.getItem(LAST_UPLOADED_PERIOD_STORAGE_KEY);
+  return stored && validMonthKeys.has(stored as MonthKey) ? (stored as MonthKey) : null;
+};
 
 // Função auxiliar para normalizar strings de busca
 const normalizeKey = (str: string) => 
@@ -242,7 +255,11 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
   uploads: [],
   setAccounts: (accounts) => set({ accounts }),
   clearAllData: () => set({ accounts: [], uploads: [] }),
-  addUpload: (record) => set((s) => ({ uploads: [...s.uploads, record] })),
+  addUpload: (record) =>
+    set((s) => {
+      saveLastUploadedPeriod(record.period);
+      return { uploads: [...s.uploads, record] };
+    }),
   importExcelRows: (rows, fallbackPeriod) => {
     const { accounts } = get();
     const newAccounts = [...accounts];
