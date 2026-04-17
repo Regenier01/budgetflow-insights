@@ -142,6 +142,7 @@ export default function ActivityDetailPage() {
   const [searchParams] = useSearchParams();
   const tipoView = searchParams.get('tipo') || 'todos';
   const subview = searchParams.get('subview');
+  const returnTo = searchParams.get('returnTo');
   const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
@@ -163,6 +164,20 @@ export default function ActivityDetailPage() {
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
     shouldApplyCostCenterFilter && selectedCC !== 'all' ? selectedCC : undefined;
+  const buildActivityPath = (activityKey: string, options?: { subview?: string }) => {
+    const params = new URLSearchParams();
+    params.set('tipo', tipoView);
+
+    if (options?.subview) {
+      params.set('subview', options.subview);
+    }
+
+    if (returnTo) {
+      params.set('returnTo', returnTo);
+    }
+
+    return `/atividade/${activityKey}?${params.toString()}`;
+  };
   const atividadeLabel = isOutrasReceitasEventuais
     ? 'Outras Receitas Eventuais'
     : isDespesasComVendas
@@ -599,7 +614,7 @@ export default function ActivityDetailPage() {
         <div>
           {(isPecuaria || isAgricola) && subview && (
             <button
-              onClick={() => navigate(`/atividade/${atividade?.key}?tipo=${tipoView}`)}
+              onClick={() => atividade?.key && navigate(buildActivityPath(atividade.key))}
               className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -617,7 +632,7 @@ export default function ActivityDetailPage() {
         </div>
         
         <div className="flex flex-wrap gap-3">
-          {!(isPecuaria && !subview) && (
+          {!(isPecuaria && !subview && resolvedTipoView === 'custos') && (
             <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
               <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
                 <SelectValue placeholder="Departamento" />
@@ -631,7 +646,7 @@ export default function ActivityDetailPage() {
             </Select>
           )}
 
-          {!(isPecuaria && !subview) && shouldApplyCostCenterFilter && (
+          {!(isPecuaria && !subview && resolvedTipoView === 'custos') && shouldApplyCostCenterFilter && (
             <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
               <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
                 <SelectValue placeholder="Centro de Custo" />
@@ -659,15 +674,15 @@ export default function ActivityDetailPage() {
         </div>
       </div>
 
-      {isPecuaria && !subview && pecuariaSummary ? (
+      {isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (
         <div className="space-y-6">
           {renderSummaryCard('Total Pecuária', pecuariaSummary.total, { isMain: true })}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {renderSummaryCard('Pasto', pecuariaSummary.pasto, {
-              onClick: () => navigate(`/atividade/PECUARIA?tipo=${tipoView}&subview=pasto`),
+              onClick: () => navigate(buildActivityPath('PECUARIA', { subview: 'pasto' })),
             })}
             {renderSummaryCard('Confinamento', pecuariaSummary.confinamento, {
-              onClick: () => navigate(`/atividade/PECUARIA?tipo=${tipoView}&subview=confinamento`),
+              onClick: () => navigate(buildActivityPath('PECUARIA', { subview: 'confinamento' })),
               accentColor: 'amber',
             })}
           </div>
@@ -677,10 +692,10 @@ export default function ActivityDetailPage() {
           {renderSummaryCard('Total Agrícola', agricolaSummary.total, { isMain: true })}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {renderSummaryCard('Agrícola', agricolaSummary.geral, {
-              onClick: () => navigate(`/atividade/AGRICOLA?tipo=${tipoView}&subview=geral`),
+              onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'geral' })),
             })}
             {renderSummaryCard('AGRICOLA / UNIDADE RECEP', agricolaSummary.unidadeRecep, {
-              onClick: () => navigate(`/atividade/AGRICOLA?tipo=${tipoView}&subview=unidade-recep`),
+              onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'unidade-recep' })),
               accentColor: 'amber',
             })}
           </div>

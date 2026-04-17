@@ -4,7 +4,7 @@ import {
 } from '@/store/budgetStore';
 import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
@@ -17,6 +17,8 @@ interface Props {
 export function GlobalSummary({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
+  const location = useLocation();
+  const returnTo = encodeURIComponent(`${location.pathname}${location.search}${location.hash}`);
 
   const normalizeText = (value?: string) =>
     (value || '')
@@ -129,7 +131,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
 
     return (
       <div 
-        onClick={() => isClickable && navigate(`/atividade/${activityKey}?tipo=custos`)}
+        onClick={() =>
+          isClickable && navigate(`/atividade/${activityKey}?tipo=custos&returnTo=${returnTo}`)
+        }
         className={cn(
           "border overflow-hidden rounded-2xl transition-all duration-300 bg-white",
           isMain 

@@ -1,7 +1,7 @@
 import { useBudgetStore, sumValuesByMonth } from '@/store/budgetStore';
 import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { OUTRAS_RENDAS_CODE_SET, isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
@@ -77,6 +77,8 @@ export function RevenueSummary({ selectedMonth }: Props) {
 
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
+  const location = useLocation();
+  const returnTo = encodeURIComponent(`${location.pathname}${location.search}${location.hash}`);
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
@@ -105,7 +107,9 @@ export function RevenueSummary({ selectedMonth }: Props) {
 
     return (
       <div
-        onClick={() => isClickable && navigate(`/atividade/${activityKey}?tipo=receitas`)}
+        onClick={() =>
+          isClickable && navigate(`/atividade/${activityKey}?tipo=receitas&returnTo=${returnTo}`)
+        }
         className={cn(
           "border overflow-hidden rounded-2xl transition-all duration-300 bg-white",
           isMain

@@ -1,22 +1,43 @@
 import { ReactNode } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { BarChart3, BookOpen, ChevronDown, LayoutDashboard } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ArrowLeft, BarChart3, LayoutDashboard } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { ATIVIDADES } from '@/types/budget';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const navItems = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard },
-  { to: '/instrucoes', label: 'Instruções', icon: BookOpen },
 ];
 
 export function AppLayout({ children }: { children: ReactNode }) {
   const location = useLocation();
+  const navigate = useNavigate();
+  const searchParams = new URLSearchParams(location.search);
+  const returnToParam = searchParams.get('returnTo');
+  const returnTo = returnToParam ? decodeURIComponent(returnToParam) : null;
+  const isActivityPage = location.pathname.startsWith('/atividade/');
+  const safeReturnTo = returnTo && returnTo.startsWith('/') ? returnTo : '/';
+  const showReturnNav = isActivityPage && Boolean(returnTo);
+  const getReturnLabel = (target: string) => {
+    const pathname = target.split('?')[0]?.split('#')[0] || '/';
+    if (pathname === '/') return 'Home';
+
+    const firstSegment = pathname.split('/').filter(Boolean)[0];
+    if (!firstSegment) return 'Home';
+
+    return firstSegment
+      .replace(/[-_]/g, ' ')
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+  const returnLabel = getReturnLabel(safeReturnTo);
+  const handleReturnClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    if (window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+
+    navigate(safeReturnTo);
+  };
 
   return (
     <div className="min-h-screen bg-[#fdfcfb]">
@@ -45,26 +66,16 @@ export function AppLayout({ children }: { children: ReactNode }) {
                 <span>{label}</span>
               </Link>
             ))}
-
-            <DropdownMenu>
-              <DropdownMenuTrigger className={cn(
-                'flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-black uppercase tracking-widest transition-all text-white/70 hover:bg-white/10 hover:text-white outline-none',
-                location.pathname.startsWith('/atividade') && 'bg-white/20 text-white'
-              )}>
-                <BarChart3 className="h-4 w-4" />
-                <span>Atividades</span>
-                <ChevronDown className="h-3 w-3 opacity-50" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-64 rounded-xl border-none shadow-2xl p-2">
-                {ATIVIDADES.map((ativ) => (
-                  <DropdownMenuItem key={ativ.key} asChild className="rounded-lg focus:bg-orange-50 focus:text-orange-600">
-                    <Link to={`/atividade/${ativ.key}`} className="cursor-pointer w-full font-bold py-2.5">
-                      {ativ.label}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            {showReturnNav && (
+              <Link
+                to={safeReturnTo}
+                onClick={handleReturnClick}
+                className="flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-black uppercase tracking-widest transition-all whitespace-nowrap text-white/70 hover:bg-white/10 hover:text-white"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>{returnLabel}</span>
+              </Link>
+            )}
           </nav>
         </div>
       </header>
