@@ -994,5 +994,121 @@ export const COST_CENTER_MAPPING = {
   "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2489": {
     "centroCusto": "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2026 Ciclo:2489",
     "unidadeNegocio": "AGRÍCOLA - SORGO"
+  },
+  "CAVALO MECÂNICO VW 25420 CONSTELLATION M6263": {
+    "centroCusto": "CAVALO MECÂNICO VW 25420 CONSTELLATION M6263",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F51T0 - FAZENDA CANADÁ - T0": {
+    "centroCusto": "F51T0 - FAZENDA CANADÁ - T0",
+    "unidadeNegocio": "CANA"
+  },
+  "F9T0 - LAGUNA - T0": {
+    "centroCusto": "F9T0 - LAGUNA - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO DIA DAS MULHERES": {
+    "centroCusto": "PROJETO DIA DAS MULHERES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F52T0 - FAZENDA VALE DO IMBE": {
+    "centroCusto": "F52T0 - FAZENDA VALE DO IMBE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F53T0 - AROEIRA": {
+    "centroCusto": "F53T0 - AROEIRA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F50T0 -  FAZENDA UNIÃO - T0": {
+    "centroCusto": "F50T0 -  FAZENDA UNIÃO - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO COMBATE INCENDIO UNIDADE RECEPCAO DE GRAOS": {
+    "centroCusto": "PROJETO COMBATE INCENDIO UNIDADE RECEPCAO DE GRAOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "REFORMA DE CASAS FAZENDA JOIA": {
+    "centroCusto": "REFORMA DE CASAS FAZENDA JOIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RECUPERACAO PASTAGENS GOTEJO": {
+    "centroCusto": "RECUPERACAO PASTAGENS GOTEJO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - LAGUNA": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES CAMPIM 2026 - LAGUNA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS A APROPRIAR SEMENTES DE CAPIM FAZ UNIAO": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES DE CAPIM FAZ UNIAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F57T0 - FAZENDA SANTA MARIA PORANGATU": {
+    "centroCusto": "F57T0 - FAZENDA SANTA MARIA PORANGATU",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "REFORMA PONTE CORREGO CAPIVARA - FAZENDA JOIA": {
+    "centroCusto": "REFORMA PONTE CORREGO CAPIVARA - FAZENDA JOIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CONSTRUCAO BANHEIRO BANDEIRANTES SERINGAL": {
+    "centroCusto": "CONSTRUCAO BANHEIRO BANDEIRANTES SERINGAL",
+    "unidadeNegocio": "SERINGAL"
+  },
+  "REFORMA E PINTURA GERAL": {
+    "centroCusto": "REFORMA E PINTURA GERAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO COMEMORACAO GPTW": {
+    "centroCusto": "PROJETO COMEMORACAO GPTW",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO ONBOARDING SEM CAMISETA": {
+    "centroCusto": "PROJETO ONBOARDING SEM CAMISETA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA PODCAST PODE PROSEAR": {
+    "centroCusto": "PROGRAMA PODCAST PODE PROSEAR",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "TOPOGRAFIA": {
+    "centroCusto": "TOPOGRAFIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F4T0 - JÓIA - T0": {
+    "centroCusto": "F4T0 - JÓIA - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F56T0 FAZ. MONTE CARMELO": {
+    "centroCusto": "F56T0 FAZ. MONTE CARMELO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO MATERIAIS AVALIACAO DE DESEMPENHO": {
+    "centroCusto": "PROJETO MATERIAIS AVALIACAO DE DESEMPENHO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTOS A APROPRIAR SEMENTES DE CAPIM FAZ LAGUNA": {
+    "centroCusto": "CUSTOS A APROPRIAR SEMENTES DE CAPIM FAZ LAGUNA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RECUPERACAO DE PASTAGEM FAZENDA CODORA": {
+    "centroCusto": "RECUPERACAO DE PASTAGEM FAZENDA CODORA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CONTRUCAO CERCA COVOA PECUARIA": {
+    "centroCusto": "CONTRUCAO CERCA COVOA PECUARIA",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "CONSTRUCAO CERCAS PORTEIRAS PECUARIA": {
+    "centroCusto": "CONSTRUCAO CERCAS PORTEIRAS PECUARIA",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "IRRIGACAO CONFINAMENTO": {
+    "centroCusto": "IRRIGACAO CONFINAMENTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "SOFTWARE AVALIACAO DE DESEMPENHO OL LATEX": {
+    "centroCusto": "SOFTWARE AVALIACAO DE DESEMPENHO OL LATEX",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
