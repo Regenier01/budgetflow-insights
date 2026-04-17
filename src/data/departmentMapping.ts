@@ -1364,15 +1364,15 @@ export const DEPARTMENT_MAPPING = {
     "unidadeNegocio": "PECUARIA",
     "divisao": "PECUARIA"
   },
-  "LAVRINHA - SLN - AGRICOLA": {
-    "nomedepto": "LAVRINHA - SLN - AGRICOLA",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
   "OUTROS": {
     "nomedepto": "OUTROS",
     "unidadeNegocio": "OUTROS",
     "divisao": "OUTROS"
+  },
+  "LAVRINHA - SLN - AGRICOLA": {
+    "nomedepto": "LAVRINHA - SLN - AGRICOLA",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   },
   "POUSO ALEGRE": {
     "nomedepto": "POUSO ALEGRE",

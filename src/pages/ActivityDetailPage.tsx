@@ -5,7 +5,6 @@ import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
-import { ACTIVITY_CC_MAPPING } from '@/data/activityCCMapping';
 import { useBudgetStore, calculateEncargosTotals, getLastUploadedPeriod } from '@/store/budgetStore';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
@@ -45,6 +44,19 @@ const isAgricolaFarmCultureDepartment = (departamento?: string) => {
   if (!normalized.includes(' - ')) return false;
   const [farm, culture, ...rest] = normalized.split(' - ').map((part) => part.trim());
   return Boolean(farm) && Boolean(culture) && rest.length === 0;
+};
+
+const AGRICOLA_UNIDADE_RECEP_DEPARTMENT = 'UNIDADE RECEPÇÃO DE GRAOS';
+const AGRICOLA_UNIDADE_RECEP_COST_CENTER = 'UNIDADE DE RECEPCAO DE GRAOS';
+
+const isAgricolaUnidadeRecepConta4Entry = (entry: AccountEntry) => {
+  if (!entry.codigo.trim().startsWith('4')) return false;
+  const dept = normalizeText(entry.departamento);
+  const cc = normalizeText(entry.centroCusto);
+  return (
+    dept === normalizeText(AGRICOLA_UNIDADE_RECEP_DEPARTMENT) ||
+    cc === normalizeText(AGRICOLA_UNIDADE_RECEP_COST_CENTER)
+  );
 };
 
 const CONFINAMENTO_COST_CENTERS = [
@@ -115,6 +127,15 @@ const combineEntryFilters = (
 };
 
 const ENCARGOS_SUMMARY_TIPO_FILTER: Array<'R' | 'C' | 'D'> = ['R', 'C', 'D'];
+const hasEntryValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
+  if (selectedMonth === 'all') {
+    const totalOrcado = Object.values(entry.orcado).reduce((sum, value) => sum + value, 0);
+    const totalRealizado = Object.values(entry.realizado).reduce((sum, value) => sum + value, 0);
+    return totalOrcado !== 0 || totalRealizado !== 0;
+  }
+
+  return (entry.orcado[selectedMonth] || 0) !== 0 || (entry.realizado[selectedMonth] || 0) !== 0;
+};
 
 export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -136,6 +157,8 @@ export default function ActivityDetailPage() {
   const isEncargos = atividade?.key === 'ENCARGOS';
   const isAgricola = atividade?.key === 'AGRICOLA';
   const isPecuaria = atividade?.key === 'PECUARIA';
+  const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
+  const isAgricolaGeralSubview = isAgricola && subview === 'geral';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
@@ -150,6 +173,10 @@ export default function ActivityDetailPage() {
           ? 'Pecuária — Pasto'
           : isPecuaria && subview === 'confinamento'
             ? 'Pecuária — Confinamento'
+            : isAgricola && subview === 'geral'
+              ? 'Agrícola'
+              : isAgricola && subview === 'unidade-recep'
+                ? 'AGRICOLA / UNIDADE RECEP'
             : atividade?.label;
   const baseActivityFilter = isOutrasReceitasEventuais
     ? undefined
@@ -168,7 +195,13 @@ export default function ActivityDetailPage() {
       ? isConfinamentoEntry
       : undefined;
 
-  const activityLevelEntryFilter = combineEntryFilters(baseActivityFilter, pecuariaSubFilter);
+  const agricolaSubFilter = resolvedTipoView === 'custos' && isAgricola && subview === 'geral'
+    ? (entry: AccountEntry) => !isAgricolaUnidadeRecepConta4Entry(entry)
+    : resolvedTipoView === 'custos' && isAgricola && subview === 'unidade-recep'
+      ? isAgricolaUnidadeRecepConta4Entry
+      : undefined;
+
+  const activityLevelEntryFilter = combineEntryFilters(baseActivityFilter, pecuariaSubFilter, agricolaSubFilter);
 
   const isTributariaEntry = (entry: {
     descricao?: string;
@@ -283,6 +316,49 @@ export default function ActivityDetailPage() {
     };
   }, [accounts, isPecuaria, selectedMonth]);
 
+  const agricolaSummary = useMemo(() => {
+    if (!isAgricola) return null;
+
+    const agricolaLeaves = accounts.filter(
+      (a) =>
+        a.nivel === 5 &&
+        a.atividade === 'AGRICOLA' &&
+        (a.tipo === 'C' || a.tipo === 'D') &&
+        !isOutrasReceitasEventuaisCode(a.codigo) &&
+        !isRendasOperacionaisEntry(a) &&
+        !isDespesaComVendasCode(a.codigo) &&
+        !isReceitaDeductionEntry(a) &&
+        (a.tipo !== 'C' ||
+          isAllowedCentroCustoForCustos('AGRICOLA', a.centroCusto) ||
+          isAgricolaUnidadeRecepConta4Entry(a)) &&
+        (a.tipo !== 'C' ||
+          isAgricolaFarmCultureDepartment(a.departamento) ||
+          isAgricolaUnidadeRecepConta4Entry(a))
+    );
+
+    const unidadeRecepEntries = agricolaLeaves.filter((a) => isAgricolaUnidadeRecepConta4Entry(a));
+    const agricolaGeralEntries = agricolaLeaves.filter((a) => !isAgricolaUnidadeRecepConta4Entry(a));
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (selectedMonth === 'all') {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + (entry[field][selectedMonth] || 0);
+      }, 0);
+
+    const geralOrc = sum(agricolaGeralEntries, 'orcado');
+    const geralReal = sum(agricolaGeralEntries, 'realizado');
+    const recepOrc = sum(unidadeRecepEntries, 'orcado');
+    const recepReal = sum(unidadeRecepEntries, 'realizado');
+
+    return {
+      geral: { orc: geralOrc, real: geralReal },
+      unidadeRecep: { orc: recepOrc, real: recepReal },
+      total: { orc: geralOrc + recepOrc, real: geralReal + recepReal },
+    };
+  }, [accounts, isAgricola, selectedMonth]);
+
   const renderSummaryCard = (
     title: string,
     data: { orc: number; real: number },
@@ -377,7 +453,10 @@ export default function ActivityDetailPage() {
       ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAgricola
-      ? (entry) => entry.tipo !== 'C' || isAgricolaFarmCultureDepartment(entry.departamento)
+      ? (entry) =>
+        entry.tipo !== 'C' ||
+        isAgricolaFarmCultureDepartment(entry.departamento) ||
+        isAgricolaUnidadeRecepConta4Entry(entry)
       : undefined
   );
 
@@ -408,7 +487,11 @@ export default function ActivityDetailPage() {
     if (resolvedTipoView === 'custos') {
       return combineEntryFilters(
         summaryEntryFilter,
-        isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined
+        isAgricola
+          ? (entry) =>
+            isAgricolaFarmCultureDepartment(entry.departamento) ||
+            isAgricolaUnidadeRecepConta4Entry(entry)
+          : undefined
       );
     }
 
@@ -432,39 +515,39 @@ export default function ActivityDetailPage() {
             (entry) =>
               entry.nivel === 5 &&
               (!atividade?.key || entry.atividade === atividade.key) &&
-              (!filterEntriesForSelectors || filterEntriesForSelectors(entry))
+              (!filterEntriesForSelectors || filterEntriesForSelectors(entry)) &&
+              hasEntryValueForMonth(entry, selectedMonth)
           )
           .map((entry) => entry.departamento)
           .filter((dept): dept is string => Boolean(dept))
       )
     ).sort();
-  }, [accounts, id, atividade?.key, filterEntriesForSelectors]);
+  }, [accounts, id, atividade?.key, filterEntriesForSelectors, selectedMonth]);
 
   const availableCostCenters = useMemo(() => {
     if (!id) return [];
-    const dynamic = new Set(
-      accounts
-        .filter(
-          (entry) =>
-            entry.nivel === 5 &&
-            (!atividade?.key || entry.atividade === atividade.key) &&
-            (!filterEntriesForSelectors || filterEntriesForSelectors(entry))
-        )
-        .map((entry) => entry.centroCusto)
-        .filter((cc): cc is string => Boolean(cc))
+    const dynamic = Array.from(
+      new Set(
+        accounts
+          .filter(
+            (entry) =>
+              entry.nivel === 5 &&
+              (!atividade?.key || entry.atividade === atividade.key) &&
+              (!filterEntriesForSelectors || filterEntriesForSelectors(entry)) &&
+              hasEntryValueForMonth(entry, selectedMonth)
+          )
+          .map((entry) => entry.centroCusto)
+          .filter((cc): cc is string => Boolean(cc))
+      )
     );
 
     if (resolvedTipoView === 'custos' && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
-      return Array.from(dynamic)
+      return dynamic
         .filter((cc) => isAllowedCentroCustoForCustos(atividade?.key, cc))
         .sort();
     }
 
-    if (!isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
-      const fallback = ACTIVITY_CC_MAPPING[id as keyof typeof ACTIVITY_CC_MAPPING] || [];
-      fallback.forEach((cc) => dynamic.add(cc));
-    }
-    return Array.from(dynamic).sort();
+    return dynamic.sort();
   }, [
     accounts,
     id,
@@ -474,6 +557,7 @@ export default function ActivityDetailPage() {
     isDespesasComVendas,
     isRateios,
     resolvedTipoView,
+    selectedMonth,
   ]);
 
   useEffect(() => {
@@ -513,13 +597,13 @@ export default function ActivityDetailPage() {
     <div className="space-y-8 pb-10">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          {isPecuaria && subview && (
+          {(isPecuaria || isAgricola) && subview && (
             <button
-              onClick={() => navigate(`/atividade/PECUARIA?tipo=${tipoView}`)}
+              onClick={() => navigate(`/atividade/${atividade?.key}?tipo=${tipoView}`)}
               className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
-              Voltar para Pecuária
+              Voltar para {isPecuaria ? 'Pecuária' : 'Agrícola'}
             </button>
           )}
           <div className="flex items-center gap-2 mb-1">
@@ -584,6 +668,19 @@ export default function ActivityDetailPage() {
             })}
             {renderSummaryCard('Confinamento', pecuariaSummary.confinamento, {
               onClick: () => navigate(`/atividade/PECUARIA?tipo=${tipoView}&subview=confinamento`),
+              accentColor: 'amber',
+            })}
+          </div>
+        </div>
+      ) : isAgricola && resolvedTipoView === 'custos' && !subview && agricolaSummary ? (
+        <div className="space-y-6">
+          {renderSummaryCard('Total Agrícola', agricolaSummary.total, { isMain: true })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {renderSummaryCard('Agrícola', agricolaSummary.geral, {
+              onClick: () => navigate(`/atividade/AGRICOLA?tipo=${tipoView}&subview=geral`),
+            })}
+            {renderSummaryCard('AGRICOLA / UNIDADE RECEP', agricolaSummary.unidadeRecep, {
+              onClick: () => navigate(`/atividade/AGRICOLA?tipo=${tipoView}&subview=unidade-recep`),
               accentColor: 'amber',
             })}
           </div>
@@ -789,7 +886,11 @@ export default function ActivityDetailPage() {
                     activityLevelEntryFilter,
                     isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
                     isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
-                    isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
+                    isAgricola
+                      ? (entry) =>
+                        isAgricolaFarmCultureDepartment(entry.departamento) ||
+                        isAgricolaUnidadeRecepConta4Entry(entry)
+                      : undefined,
                     (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                   )}
                   title="Detalhamento de Custos"
@@ -834,7 +935,6 @@ export default function ActivityDetailPage() {
                         (entry) => isNonRateioDepartment(entry.departamento),
                         (entry) => !isConta4Entry(entry),
                         (entry) => isTributariaEntry(entry),
-                        (entry) => !isReceitaDeductionEntry(entry),
                       )}
                       title="Abertura de Despesas Tributárias"
                       subtitle="Despesas tributárias"
@@ -964,7 +1064,11 @@ export default function ActivityDetailPage() {
                   activityLevelEntryFilter,
                   isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
                   isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
-                  isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
+                  isAgricola
+                    ? (entry) =>
+                      isAgricolaFarmCultureDepartment(entry.departamento) ||
+                      isAgricolaUnidadeRecepConta4Entry(entry)
+                    : undefined,
                   (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                 )}
                 title="Detalhamento de Custos"
@@ -1009,7 +1113,6 @@ export default function ActivityDetailPage() {
                       (entry) => isNonRateioDepartment(entry.departamento),
                       (entry) => !isConta4Entry(entry),
                       (entry) => isTributariaEntry(entry),
-                      (entry) => !isReceitaDeductionEntry(entry),
                     )}
                     title="Abertura de Despesas Tributárias"
                     subtitle="Despesas tributárias"

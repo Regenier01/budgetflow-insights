@@ -244,92 +244,141 @@ export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
 interface BudgetState {
   accounts: AccountEntry[];
   uploads: UploadRecord[];
+  importedBatches: {
+    key: string;
+    fileName: string;
+    period: MonthKey;
+    rows: ExcelRow[];
+    importedAt: string;
+  }[];
   setAccounts: (accounts: AccountEntry[]) => void;
   clearAllData: () => void;
   addUpload: (record: UploadRecord) => void;
-  importExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey) => number;
+  importExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey, fileName: string) => number;
 }
 
+const uploadBatchKey = (period: MonthKey, fileName: string) =>
+  `${period}::${fileName.trim().toUpperCase()}`;
+
+const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
+  ...account,
+  orcado: { ...account.orcado },
+  realizado: { ...account.realizado },
+});
+
+const INITIAL_ACCOUNTS_TEMPLATE = INITIAL_ACCOUNTS.map(cloneAccountEntry);
+const buildFreshInitialAccounts = () => INITIAL_ACCOUNTS_TEMPLATE.map(cloneAccountEntry);
+
+const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fallbackPeriod: MonthKey) => {
+  const newAccounts = baseAccounts.map(cloneAccountEntry);
+  let count = 0;
+
+  rows.forEach(row => {
+    const conta = String(row.CONTA_CONTABIL || '').trim();
+    if (!conta) return;
+    const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
+    const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+    const rowAtividade = resolveAtividadeFromRow(row);
+    const rowDept = rowValue(row.NOMEDEPTO);
+    const rowCC = rowValue(row.NOMECUSTO);
+    const rowGrupo = rowValue(row.GRUPOCONTABIL);
+    const rowGrupoN9 = rowValue(row.GRUPOCONTABILN9);
+    const rowProduto = rowValue(row.NOMEPRODUTO);
+    const rowDivisao = rowValue(row.DIVISAO);
+    const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
+    const rowColigada = rowValue(row.COLIGADA);
+    const rowDescricao = rowValue(row.DESCRICAO_CONTABIL);
+
+    const existing = newAccounts.find(
+      (a) =>
+        a.codigo === conta &&
+        a.atividade === rowAtividade &&
+        (a.departamento || '') === (rowDept || '') &&
+        (a.centroCusto || '') === (rowCC || '') &&
+        (a.grupoContabil || '') === (rowGrupo || '') &&
+        (a.grupoContabilN9 || '') === (rowGrupoN9 || '') &&
+        (a.nomeProduto || '') === (rowProduto || '')
+    );
+
+    if (existing) {
+      existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
+      if (!existing.departamento) existing.departamento = rowDept;
+      if (!existing.centroCusto) existing.centroCusto = rowCC;
+      if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
+      if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9;
+      if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
+      if (!existing.divisao) existing.divisao = rowDivisao;
+      if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
+      if (!existing.coligada) existing.coligada = rowColigada;
+      count++;
+      return;
+    }
+
+    const base = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade && a.nivel === 5);
+    if (!base) return;
+
+    const newEntry: AccountEntry = {
+      ...base,
+      id: `${base.id}-${count}-${newAccounts.length}`,
+      descricao: rowDescricao || base.descricao,
+      departamento: rowDept,
+      centroCusto: rowCC,
+      grupoContabil: rowGrupo,
+      grupoContabilN9: rowGrupoN9,
+      nomeProduto: rowProduto,
+      divisao: rowDivisao,
+      unidadeNegocio: rowUnidadeNegocio,
+      coligada: rowColigada,
+      orcado: {},
+      realizado: { [month]: saldo },
+    };
+
+    newAccounts.push(newEntry);
+    count++;
+  });
+
+  return { accounts: newAccounts, count };
+};
+
 export const useBudgetStore = create<BudgetState>((set, get) => ({
-  accounts: INITIAL_ACCOUNTS,
+  accounts: buildFreshInitialAccounts(),
   uploads: [],
+  importedBatches: [],
   setAccounts: (accounts) => set({ accounts }),
-  clearAllData: () => set({ accounts: [], uploads: [] }),
+  clearAllData: () => set({ accounts: buildFreshInitialAccounts(), uploads: [], importedBatches: [] }),
   addUpload: (record) =>
     set((s) => {
       saveLastUploadedPeriod(record.period);
       return { uploads: [...s.uploads, record] };
     }),
-  importExcelRows: (rows, fallbackPeriod) => {
-    const { accounts } = get();
-    const newAccounts = [...accounts];
-    let count = 0;
+  importExcelRows: (rows, fallbackPeriod, fileName) => {
+    const { importedBatches } = get();
+    const currentKey = uploadBatchKey(fallbackPeriod, fileName);
+    const withoutCurrent = importedBatches.filter((batch) => batch.key !== currentKey);
+    const nextBatches = [
+      ...withoutCurrent,
+      {
+        key: currentKey,
+        fileName,
+        period: fallbackPeriod,
+        rows,
+        importedAt: new Date().toISOString(),
+      },
+    ];
 
-    rows.forEach(row => {
-      const conta = String(row.CONTA_CONTABIL || '').trim();
-      if (!conta) return;
-      const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
-      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
-      const rowAtividade = resolveAtividadeFromRow(row);
-      const rowDept = rowValue(row.NOMEDEPTO);
-      const rowCC = rowValue(row.NOMECUSTO);
-      const rowGrupo = rowValue(row.GRUPOCONTABIL);
-      const rowGrupoN9 = rowValue(row.GRUPOCONTABILN9);
-      const rowProduto = rowValue(row.NOMEPRODUTO);
-      const rowDivisao = rowValue(row.DIVISAO);
-      const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
-      const rowColigada = rowValue(row.COLIGADA);
-      const rowDescricao = rowValue(row.DESCRICAO_CONTABIL);
+    const rebuiltAccounts = buildFreshInitialAccounts();
+    let currentBatchCount = 0;
 
-      const existing = newAccounts.find(
-        (a) =>
-          a.codigo === conta &&
-          a.atividade === rowAtividade &&
-          (a.departamento || '') === (rowDept || '') &&
-          (a.centroCusto || '') === (rowCC || '') &&
-          (a.grupoContabil || '') === (rowGrupo || '') &&
-          (a.grupoContabilN9 || '') === (rowGrupoN9 || '') &&
-          (a.nomeProduto || '') === (rowProduto || '')
-      );
-
-      if (existing) {
-        existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
-        if (!existing.departamento) existing.departamento = rowDept;
-        if (!existing.centroCusto) existing.centroCusto = rowCC;
-        if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
-        if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9;
-        if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
-        if (!existing.divisao) existing.divisao = rowDivisao;
-        if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
-        if (!existing.coligada) existing.coligada = rowColigada;
-        count++;
-        return;
+    nextBatches.forEach((batch) => {
+      const result = applyRowsToAccounts(rebuiltAccounts, batch.rows, batch.period);
+      rebuiltAccounts.length = 0;
+      rebuiltAccounts.push(...result.accounts);
+      if (batch.key === currentKey) {
+        currentBatchCount = result.count;
       }
-
-      const base = newAccounts.find(a => a.codigo === conta && a.atividade === rowAtividade && a.nivel === 5);
-      if (!base) return;
-
-      const newEntry: AccountEntry = {
-        ...base,
-        id: `${base.id}-${count}-${newAccounts.length}`,
-        descricao: rowDescricao || base.descricao,
-        departamento: rowDept,
-        centroCusto: rowCC,
-        grupoContabil: rowGrupo,
-        grupoContabilN9: rowGrupoN9,
-        nomeProduto: rowProduto,
-        divisao: rowDivisao,
-        unidadeNegocio: rowUnidadeNegocio,
-        coligada: rowColigada,
-        orcado: {},
-        realizado: { [month]: saldo },
-      };
-
-      newAccounts.push(newEntry);
-      count++;
     });
 
-    set({ accounts: newAccounts });
-    return count;
+    set({ accounts: rebuiltAccounts, importedBatches: nextBatches });
+    return currentBatchCount;
   }
 }));

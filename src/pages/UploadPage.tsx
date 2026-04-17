@@ -46,7 +46,7 @@ export default function UploadPage() {
 
         // Mantém compatibilidade com o comportamento anterior:
         // nenhuma linha é descartada no upload; apenas sinalizamos divergências.
-        const processed = importExcelRows(rows, selectedPeriod);
+        const processed = importExcelRows(rows, selectedPeriod, file.name);
 
         addUpload({
           id: crypto.randomUUID(),

@@ -1055,10 +1055,6 @@ export const COST_CENTER_MAPPING = {
     "centroCusto": "CONSTRUCAO BANHEIRO BANDEIRANTES SERINGAL",
     "unidadeNegocio": "SERINGAL"
   },
-  "REFORMA E PINTURA GERAL": {
-    "centroCusto": "REFORMA E PINTURA GERAL",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
   "PROJETO COMEMORACAO GPTW": {
     "centroCusto": "PROJETO COMEMORACAO GPTW",
     "unidadeNegocio": "NÃO IDENTIFICADO"
@@ -1069,10 +1065,6 @@ export const COST_CENTER_MAPPING = {
   },
   "PROGRAMA PODCAST PODE PROSEAR": {
     "centroCusto": "PROGRAMA PODCAST PODE PROSEAR",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "TOPOGRAFIA": {
-    "centroCusto": "TOPOGRAFIA",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   },
   "F4T0 - JÓIA - T0": {
@@ -1105,10 +1097,6 @@ export const COST_CENTER_MAPPING = {
   },
   "IRRIGACAO CONFINAMENTO": {
     "centroCusto": "IRRIGACAO CONFINAMENTO",
-    "unidadeNegocio": "NÃO IDENTIFICADO"
-  },
-  "SOFTWARE AVALIACAO DE DESEMPENHO OL LATEX": {
-    "centroCusto": "SOFTWARE AVALIACAO DE DESEMPENHO OL LATEX",
     "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };

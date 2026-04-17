@@ -92,6 +92,16 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return Boolean(farm) && Boolean(culture) && rest.length === 0;
   };
 
+  const isAgricolaUnidadeRecepConta4Entry = (entry: (typeof accounts)[number]) => {
+    if (!entry.codigo.trim().startsWith('4')) return false;
+    const dept = normalizeText(entry.departamento);
+    const cc = normalizeText(entry.centroCusto);
+    return (
+      dept === normalizeText('UNIDADE RECEPÇÃO DE GRAOS') ||
+      cc === normalizeText('UNIDADE DE RECEPCAO DE GRAOS')
+    );
+  };
+
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'decimal',
@@ -202,7 +212,10 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (a.tipo !== 'C' || isAllowedCentroCustoForCustos(activityKey, a.centroCusto)) &&
         (activityKey !== 'DESP_ADM_TRIB' ||
           (!isRateioDepartment(a.departamento) && !isConta4Entry(a))) &&
-        (activityKey !== 'AGRICOLA' || a.tipo !== 'C' || isAgricolaFarmCultureDepartment(a.departamento))
+        (activityKey !== 'AGRICOLA' ||
+          a.tipo !== 'C' ||
+          isAgricolaFarmCultureDepartment(a.departamento) ||
+          isAgricolaUnidadeRecepConta4Entry(a))
     );
   };
 
