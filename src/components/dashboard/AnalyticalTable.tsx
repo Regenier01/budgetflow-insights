@@ -36,6 +36,66 @@ interface FlatEntry {
   real: number;
 }
 
+const TABLE_ACCENTS = {
+  emerald: {
+    titleBar: 'bg-revenue',
+    subtitle: 'text-white/75',
+    thead: 'bg-revenue text-white font-semibold border-b border-black/15',
+    tfoot: 'bg-revenue/10 border-t-2 border-revenue/30',
+    hoverL0: 'bg-white hover:bg-revenue/10',
+    hoverL1: 'bg-slate-100/70 hover:bg-revenue/15',
+    flatHover: 'hover:bg-revenue/10',
+    chevronOpen: 'bg-revenue text-white',
+  },
+  sky: {
+    titleBar: 'bg-sky-600',
+    subtitle: 'text-sky-100',
+    thead: 'bg-sky-500 text-white font-semibold border-b border-sky-600',
+    tfoot: 'bg-sky-50 border-t-2 border-sky-200',
+    hoverL0: 'bg-white hover:bg-sky-50/40',
+    hoverL1: 'bg-slate-100/70 hover:bg-sky-50/70',
+    flatHover: 'hover:bg-sky-50/40',
+    chevronOpen: 'bg-sky-500 text-white',
+  },
+  red: {
+    titleBar: 'bg-red-700',
+    subtitle: 'text-red-100',
+    thead: 'bg-red-600 text-white font-semibold border-b border-red-700',
+    tfoot: 'bg-red-50 border-t-2 border-red-200',
+    hoverL0: 'bg-white hover:bg-red-50/40',
+    hoverL1: 'bg-slate-100/70 hover:bg-red-50/70',
+    flatHover: 'hover:bg-red-50/40',
+    chevronOpen: 'bg-red-600 text-white',
+  },
+  orange: {
+    titleBar: 'bg-primary',
+    subtitle: 'text-orange-400',
+    thead: 'bg-orange-500 text-white font-semibold border-b border-orange-600',
+    tfoot: 'bg-orange-50 border-t-2 border-orange-200',
+    hoverL0: 'bg-white hover:bg-orange-50/40',
+    hoverL1: 'bg-slate-100/70 hover:bg-orange-50/70',
+    flatHover: 'hover:bg-orange-50/40',
+    chevronOpen: 'bg-orange-500 text-white',
+  },
+  amber: {
+    titleBar: 'bg-amber-600',
+    subtitle: 'text-amber-100',
+    thead: 'bg-amber-500 text-white font-semibold border-b border-amber-600',
+    tfoot: 'bg-amber-50 border-t-2 border-amber-200',
+    hoverL0: 'bg-white hover:bg-amber-50/40',
+    hoverL1: 'bg-slate-100/70 hover:bg-amber-50/70',
+    flatHover: 'hover:bg-amber-50/40',
+    chevronOpen: 'bg-amber-500 text-white',
+  },
+} as const;
+
+type TableAccentKey = keyof typeof TABLE_ACCENTS;
+
+function resolveTableAccent(accentColor: string): (typeof TABLE_ACCENTS)[TableAccentKey] {
+  if (accentColor in TABLE_ACCENTS) return TABLE_ACCENTS[accentColor as TableAccentKey];
+  return TABLE_ACCENTS.orange;
+}
+
 export function AnalyticalTable({ 
   atividadeFilter, 
   selectedMonth, 
@@ -50,6 +110,7 @@ export function AnalyticalTable({
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
+  const ta = resolveTableAccent(accentColor);
 
   let filtered = accounts.filter(
     (a) => a.nivel === 5 && (!atividadeFilter || a.atividade === atividadeFilter)
@@ -157,7 +218,7 @@ export function AnalyticalTable({
         <Fragment key={currentPath}>
           <tr className={cn(
             "group transition-all duration-150 border-b border-slate-200 last:border-0",
-            level === 0 ? "bg-white hover:bg-orange-50/40" : "bg-slate-100/70 hover:bg-orange-50/70"
+            level === 0 ? ta.hoverL0 : ta.hoverL1
           )}>
             <td className="py-3 px-4">
               <div 
@@ -168,7 +229,7 @@ export function AnalyticalTable({
                 {hasChildren ? (
                   <div className={cn(
                     "flex items-center justify-center h-5 w-5 rounded-md transition-all duration-200",
-                    isExpanded ? "bg-orange-500 text-white rotate-90" : "bg-slate-100 text-slate-400"
+                    isExpanded ? cn(ta.chevronOpen, "rotate-90") : "bg-slate-100 text-slate-400"
                   )}>
                     <ChevronRight className="h-3 w-3" />
                   </div>
@@ -203,7 +264,7 @@ export function AnalyticalTable({
 
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
-      <div className="bg-primary px-6 py-4 flex items-center justify-between">
+      <div className={cn('px-6 py-4 flex items-center justify-between', ta.titleBar)}>
         <h3 className="text-sm font-black text-white uppercase tracking-[0.2em]">{title}</h3>
         <div className="flex items-center gap-3">
           <div className="flex items-center bg-slate-800/50 rounded-lg p-1">
@@ -232,14 +293,14 @@ export function AnalyticalTable({
               Planilha
             </button>
           </div>
-          <span className="text-[10px] font-bold text-orange-400 uppercase tracking-widest">{subtitle}</span>
+          <span className={cn('text-[10px] font-bold uppercase tracking-widest', ta.subtitle)}>{subtitle}</span>
         </div>
       </div>
       <div className="overflow-x-auto">
         {viewMode === 'hierarchy' ? (
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-orange-500 text-white text-[13px] font-semibold border-b border-orange-600">
+              <tr className={cn(ta.thead, 'text-[13px]')}>
                 <th className="text-left py-3 px-4">Classificação Contábil</th>
                 <th className="text-right py-3 px-4 w-[150px]">Orçado</th>
                 <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
@@ -257,7 +318,7 @@ export function AnalyticalTable({
               const totalDiff = totalReal - totalOrc;
               const isTotalHigher = totalReal > totalOrc;
               return (
-                <tfoot className="bg-orange-50 border-t-2 border-orange-200 font-semibold">
+                <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-4 text-[13px] text-slate-700">Total Consolidado</td>
                     <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
@@ -273,7 +334,7 @@ export function AnalyticalTable({
         ) : (
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-orange-500 text-white text-[12px] font-semibold border-b border-orange-600">
+              <tr className={cn(ta.thead, 'text-[12px]')}>
                 <th className="text-left py-3 px-3">Departamento</th>
                 <th className="text-left py-3 px-3">Centro de Custo</th>
                 <th className="text-left py-3 px-3">Conta</th>
@@ -289,7 +350,7 @@ export function AnalyticalTable({
                 const diff = entry.real - entry.orc;
                 const isHigher = entry.real > entry.orc;
                 return (
-                  <tr key={entry.id} className="border-b border-slate-200 hover:bg-orange-50/40 transition-colors">
+                  <tr key={entry.id} className={cn('border-b border-slate-200 transition-colors', ta.flatHover)}>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700 font-medium">{entry.departamento || '-'}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-600">{entry.centroCusto || '-'}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-600 font-mono">{entry.conta}</td>
@@ -312,7 +373,7 @@ export function AnalyticalTable({
               const totalDiff = totalReal - totalOrc;
               const isTotalHigher = totalReal > totalOrc;
               return (
-                <tfoot className="bg-orange-50 border-t-2 border-orange-200 font-semibold">
+                <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
                     <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>

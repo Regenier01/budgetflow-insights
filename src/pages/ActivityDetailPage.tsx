@@ -716,7 +716,7 @@ export default function ActivityDetailPage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-900">Abertura de Outras Receitas Eventuais</h2>
-              <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+              <div className="text-[10px] font-bold text-revenue uppercase tracking-widest bg-revenue/10 px-2 py-1 rounded border border-revenue/25">
                 Entradas
               </div>
             </div>
@@ -756,7 +756,7 @@ export default function ActivityDetailPage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
-              <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+              <div className="text-[10px] font-bold text-revenue uppercase tracking-widest bg-revenue/10 px-2 py-1 rounded border border-revenue/25">
                 Entradas
               </div>
             </div>
@@ -787,15 +787,15 @@ export default function ActivityDetailPage() {
                   )}
                   title="Deduções de Receita (Impostos)"
                   subtitle="Contas de abatimento e tributos sobre vendas"
-                  accentColor="red"
+                  accentColor="emerald"
                 />
 
-                <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 px-5 py-4">
-                  <h3 className="text-sm font-black uppercase tracking-[0.18em] text-emerald-700">
+                <div className="rounded-2xl border border-revenue/30 bg-revenue/[0.08] px-5 py-4">
+                  <h3 className="text-sm font-black uppercase tracking-[0.18em] text-revenue">
                     Receita Líquida da Atividade
                   </h3>
                   <div className="mt-3 grid gap-3 sm:grid-cols-3">
-                    <div className="rounded-lg border border-emerald-100 bg-white px-3 py-2">
+                    <div className="rounded-lg border border-revenue/20 bg-white px-3 py-2">
                       <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Bruta</p>
                       <p className="text-[14px] font-semibold text-slate-800">{formatCurrency(receitaBrutaReal)}</p>
                     </div>
@@ -803,9 +803,9 @@ export default function ActivityDetailPage() {
                       <p className="text-[11px] font-semibold uppercase text-slate-500">Impostos / Deduções</p>
                       <p className="text-[14px] font-semibold text-rose-600">{formatCurrency(deducoesReceitaReal)}</p>
                     </div>
-                    <div className="rounded-lg border border-emerald-200 bg-white px-3 py-2">
+                    <div className="rounded-lg border border-revenue/30 bg-white px-3 py-2">
                       <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Líquida</p>
-                      <p className="text-[14px] font-bold text-emerald-700">{formatCurrency(receitaLiquida.real)}</p>
+                      <p className="text-[14px] font-bold text-revenue">{formatCurrency(receitaLiquida.real)}</p>
                     </div>
                   </div>
                 </div>
@@ -818,7 +818,7 @@ export default function ActivityDetailPage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas com Vendas</h2>
-                <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
                   Saídas
                 </div>
               </div>
@@ -833,7 +833,7 @@ export default function ActivityDetailPage() {
                 )}
                 title="Detalhamento de Despesas com Vendas"
                 subtitle="Contas 3.4.02"
-                accentColor="red"
+                accentColor="orange"
               />
             </div>
           ) : isEncargos ? (
@@ -841,7 +841,7 @@ export default function ActivityDetailPage() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-bold text-slate-900">Despesas Financeiras</h2>
-                  <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
                     Saídas
                   </div>
                 </div>
@@ -856,14 +856,14 @@ export default function ActivityDetailPage() {
                   )}
                   title="Detalhamento de Despesas Financeiras"
                   subtitle="Contas 3.4.04.01"
-                  accentColor="red"
+                  accentColor="orange"
                 />
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-bold text-slate-900">Receitas Financeiras</h2>
-                  <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+                  <div className="text-[10px] font-bold text-revenue uppercase tracking-widest bg-revenue/10 px-2 py-1 rounded border border-revenue/25">
                     Entradas
                   </div>
                 </div>
@@ -916,7 +916,7 @@ export default function ActivityDetailPage() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-                  <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
                     Saídas
                   </div>
                 </div>
@@ -937,7 +937,7 @@ export default function ActivityDetailPage() {
                       )}
                       title="Abertura de Despesas ADM"
                       subtitle="Despesas administrativas"
-                      accentColor="red"
+                      accentColor="orange"
                     />
                     <AnalyticalTable
                       atividadeFilter={atividade.key}
@@ -953,7 +953,7 @@ export default function ActivityDetailPage() {
                       )}
                       title="Abertura de Despesas Tributárias"
                       subtitle="Despesas tributárias"
-                      accentColor="red"
+                      accentColor="orange"
                     />
                   </div>
                 ) : (
@@ -968,7 +968,7 @@ export default function ActivityDetailPage() {
                       (entry) => !isReceitaDeductionEntry(entry),
                     )}
                     title="Detalhamento de Despesas"
-                    accentColor="red"
+                    accentColor="orange"
                   />
                 )}
               </div>
@@ -1005,7 +1005,7 @@ export default function ActivityDetailPage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas</h2>
-                <div className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
+                <div className="text-[10px] font-bold text-revenue uppercase tracking-widest bg-revenue/10 px-2 py-1 rounded border border-revenue/25">
                   Entradas
                 </div>
               </div>
@@ -1036,15 +1036,15 @@ export default function ActivityDetailPage() {
                     )}
                     title="Deduções de Receita (Impostos)"
                     subtitle="Contas de abatimento e tributos sobre vendas"
-                    accentColor="red"
+                    accentColor="emerald"
                   />
 
-                  <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 px-5 py-4">
-                    <h3 className="text-sm font-black uppercase tracking-[0.18em] text-emerald-700">
+                  <div className="rounded-2xl border border-revenue/30 bg-revenue/[0.08] px-5 py-4">
+                    <h3 className="text-sm font-black uppercase tracking-[0.18em] text-revenue">
                       Receita Líquida da Atividade
                     </h3>
                     <div className="mt-3 grid gap-3 sm:grid-cols-3">
-                      <div className="rounded-lg border border-emerald-100 bg-white px-3 py-2">
+                      <div className="rounded-lg border border-revenue/20 bg-white px-3 py-2">
                         <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Bruta</p>
                         <p className="text-[14px] font-semibold text-slate-800">{formatCurrency(receitaBrutaReal)}</p>
                       </div>
@@ -1052,9 +1052,9 @@ export default function ActivityDetailPage() {
                         <p className="text-[11px] font-semibold uppercase text-slate-500">Impostos / Deduções</p>
                         <p className="text-[14px] font-semibold text-rose-600">{formatCurrency(deducoesReceitaReal)}</p>
                       </div>
-                      <div className="rounded-lg border border-emerald-200 bg-white px-3 py-2">
+                      <div className="rounded-lg border border-revenue/30 bg-white px-3 py-2">
                         <p className="text-[11px] font-semibold uppercase text-slate-500">Receita Líquida</p>
-                        <p className="text-[14px] font-bold text-emerald-700">{formatCurrency(receitaLiquida.real)}</p>
+                        <p className="text-[14px] font-bold text-revenue">{formatCurrency(receitaLiquida.real)}</p>
                       </div>
                     </div>
                   </div>
@@ -1094,7 +1094,7 @@ export default function ActivityDetailPage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-                <div className="text-[10px] font-bold text-red-600 uppercase tracking-widest bg-red-50 px-2 py-1 rounded border border-red-100">
+                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
                   Saídas
                 </div>
               </div>
@@ -1115,7 +1115,7 @@ export default function ActivityDetailPage() {
                     )}
                     title="Abertura de Despesas ADM"
                     subtitle="Despesas administrativas"
-                    accentColor="red"
+                    accentColor="orange"
                   />
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
@@ -1131,7 +1131,7 @@ export default function ActivityDetailPage() {
                     )}
                     title="Abertura de Despesas Tributárias"
                     subtitle="Despesas tributárias"
-                    accentColor="red"
+                    accentColor="orange"
                   />
                 </div>
               ) : (
@@ -1146,7 +1146,7 @@ export default function ActivityDetailPage() {
                     (entry) => !isReceitaDeductionEntry(entry),
                   )}
                   title="Detalhamento de Despesas"
-                  accentColor="red"
+                  accentColor="orange"
                 />
               )}
             </div>
