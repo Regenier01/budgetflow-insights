@@ -1,4 +1,4 @@
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { useState, useMemo, useEffect } from 'react';
 import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
@@ -10,6 +10,8 @@ import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import NotFound from './NotFound';
 const RATEIO_DEPARTMENTS = [
   'OFICINA GERAL',
@@ -40,6 +42,23 @@ const isAgricolaFarmCultureDepartment = (departamento?: string) => {
   if (!normalized.includes(' - ')) return false;
   const [farm, culture, ...rest] = normalized.split(' - ').map((part) => part.trim());
   return Boolean(farm) && Boolean(culture) && rest.length === 0;
+};
+
+const CONFINAMENTO_COST_CENTERS = [
+  'RATEIO CONFINAMENTO',
+  'CONFINAMENTO - TRANSPORTE DE GADO',
+  'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+  'MANUTENCAO SISTEMA IRRIGACAO - CUSTO CONFINAMENTO',
+  'RECRIA GOTEJO CONFINAMENTO',
+] as const;
+
+const isConfinamentoEntry = (entry: AccountEntry) => {
+  const dept = normalizeText(entry.departamento);
+  const cc = normalizeText(entry.centroCusto);
+  return (
+    dept === 'CONFINAMENTO' ||
+    CONFINAMENTO_COST_CENTERS.some((allowed) => normalizeText(allowed) === cc)
+  );
 };
 
 const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
@@ -96,6 +115,8 @@ export default function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
   const tipoView = searchParams.get('tipo') || 'todos';
+  const subview = searchParams.get('subview');
+  const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
@@ -109,6 +130,7 @@ export default function ActivityDetailPage() {
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
   const isEncargos = atividade?.key === 'ENCARGOS';
   const isAgricola = atividade?.key === 'AGRICOLA';
+  const isPecuaria = atividade?.key === 'PECUARIA';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
@@ -119,8 +141,12 @@ export default function ActivityDetailPage() {
       ? 'Despesas com Vendas'
       : isRateios
         ? 'Rateios'
-        : atividade?.label;
-  const activityLevelEntryFilter = isOutrasReceitasEventuais
+        : isPecuaria && subview === 'pasto'
+          ? 'Pecuária — Pasto'
+          : isPecuaria && subview === 'confinamento'
+            ? 'Pecuária — Confinamento'
+            : atividade?.label;
+  const baseActivityFilter = isOutrasReceitasEventuais
     ? undefined
     : isRateios
       ? (entry: AccountEntry) =>
@@ -130,6 +156,14 @@ export default function ActivityDetailPage() {
         !isOutrasReceitasEventuaisCode(entry.codigo) &&
         !isRendasOperacionaisEntry(entry) &&
         (isDespesasComVendas || !isDespesaComVendasCode(entry.codigo));
+
+  const pecuariaSubFilter = resolvedTipoView === 'custos' && isPecuaria && subview === 'pasto'
+    ? (entry: AccountEntry) => !isConfinamentoEntry(entry)
+    : resolvedTipoView === 'custos' && isPecuaria && subview === 'confinamento'
+      ? isConfinamentoEntry
+      : undefined;
+
+  const activityLevelEntryFilter = combineEntryFilters(baseActivityFilter, pecuariaSubFilter);
 
   const isTributariaEntry = (entry: {
     descricao?: string;
@@ -198,6 +232,118 @@ export default function ActivityDetailPage() {
       currency: 'BRL',
       maximumFractionDigits: 0,
     }).format(value);
+
+  const fmtDecimal = (v: number) =>
+    new Intl.NumberFormat('pt-BR', {
+      style: 'decimal',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(v);
+
+  const pecuariaSummary = useMemo(() => {
+    if (!isPecuaria) return null;
+
+    const pecuariaLeaves = accounts.filter(
+      (a) =>
+        a.nivel === 5 &&
+        a.atividade === 'PECUARIA' &&
+        (a.tipo === 'C' || a.tipo === 'D') &&
+        !isOutrasReceitasEventuaisCode(a.codigo) &&
+        !isRendasOperacionaisEntry(a) &&
+        !isDespesaComVendasCode(a.codigo) &&
+        !isReceitaDeductionEntry(a) &&
+        (a.tipo !== 'C' || isAllowedCentroCustoForCustos('PECUARIA', a.centroCusto))
+    );
+
+    const pastoEntries = pecuariaLeaves.filter((a) => !isConfinamentoEntry(a));
+    const confinamentoEntries = pecuariaLeaves.filter((a) => isConfinamentoEntry(a));
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (selectedMonth === 'all') {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + (entry[field][selectedMonth] || 0);
+      }, 0);
+
+    const pastoOrc = sum(pastoEntries, 'orcado');
+    const pastoReal = sum(pastoEntries, 'realizado');
+    const confOrc = sum(confinamentoEntries, 'orcado');
+    const confReal = sum(confinamentoEntries, 'realizado');
+
+    return {
+      pasto: { orc: pastoOrc, real: pastoReal },
+      confinamento: { orc: confOrc, real: confReal },
+      total: { orc: pastoOrc + confOrc, real: pastoReal + confReal },
+    };
+  }, [accounts, isPecuaria, selectedMonth]);
+
+  const renderSummaryCard = (
+    title: string,
+    data: { orc: number; real: number },
+    options?: { isMain?: boolean; onClick?: () => void; accentColor?: string }
+  ) => {
+    const { isMain = false, onClick, accentColor = 'orange' } = options || {};
+    const isHigher = data.real > data.orc;
+    const bgColor = accentColor === 'amber' ? 'bg-amber-500' : 'bg-orange-500';
+    const hoverBorder = accentColor === 'amber' ? 'hover:border-amber-200' : 'hover:border-orange-200';
+    const iconColor = accentColor === 'amber' ? 'text-amber-500' : 'text-orange-500';
+    const iconHover = accentColor === 'amber' ? 'group-hover:bg-amber-100' : 'group-hover:bg-orange-100';
+
+    return (
+      <div
+        onClick={onClick}
+        className={cn(
+          'border overflow-hidden rounded-2xl transition-all duration-300 bg-white',
+          isMain
+            ? 'border-primary/20 shadow-xl ring-1 ring-primary/5'
+            : cn('border-slate-100 shadow-sm hover:shadow-md group', hoverBorder),
+          onClick && 'cursor-pointer active:scale-[0.99]'
+        )}
+      >
+        <div className={cn('py-4 px-5 flex items-center justify-between text-white', bgColor)}>
+          <span className="font-semibold text-[13px]">{title}</span>
+          {onClick && (
+            <div
+              className={cn(
+                'h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center transition-colors',
+                iconColor,
+                iconHover
+              )}
+            >
+              <ArrowRight className="h-4 w-4" />
+            </div>
+          )}
+        </div>
+        <div className="grid grid-cols-3 text-center border-y border-slate-200 bg-slate-100/70">
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Orçado</div>
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Realizado</div>
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
+        </div>
+        <div className="grid grid-cols-3 text-center items-center">
+          <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
+            {fmtDecimal(data.orc)}
+          </div>
+          <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
+            {fmtDecimal(data.real)}
+          </div>
+          <div
+            className={cn(
+              'py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1',
+              isHigher ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
+            )}
+          >
+            {isHigher ? (
+              <TrendingUp className="h-3.5 w-3.5" />
+            ) : (
+              <TrendingDown className="h-3.5 w-3.5" />
+            )}
+            {fmtDecimal(data.real - data.orc)}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   const summaryTipoFilter: Array<'R' | 'C' | 'D'> | undefined =
     isOutrasReceitasEventuais
@@ -343,6 +489,15 @@ export default function ActivityDetailPage() {
     <div className="space-y-8 pb-10">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
+          {isPecuaria && subview && (
+            <button
+              onClick={() => navigate(`/atividade/PECUARIA?tipo=${tipoView}`)}
+              className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Voltar para Pecuária
+            </button>
+          )}
           <div className="flex items-center gap-2 mb-1">
             <div className="h-6 w-1 bg-orange-500 rounded-full" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-600/70">Relatório Detalhado</span>
@@ -354,19 +509,21 @@ export default function ActivityDetailPage() {
         </div>
         
         <div className="flex flex-wrap gap-3">
-          <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
-            <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-              <SelectValue placeholder="Departamento" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
-              {availableDepts.map((dept) => (
-                <SelectItem key={dept} value={dept}>{dept}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          {!(isPecuaria && !subview) && (
+            <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
+              <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                <SelectValue placeholder="Departamento" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
+                {availableDepts.map((dept) => (
+                  <SelectItem key={dept} value={dept}>{dept}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
 
-          {shouldApplyCostCenterFilter && (
+          {!(isPecuaria && !subview) && shouldApplyCostCenterFilter && (
             <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
               <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
                 <SelectValue placeholder="Centro de Custo" />
@@ -394,16 +551,31 @@ export default function ActivityDetailPage() {
         </div>
       </div>
 
-      <SummaryCards 
-        selectedMonth={selectedMonth} 
-        atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
-        costCenterFilter={activeCostCenterFilter}
-        departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-        entryFilter={summaryEntryFilter}
-        tipoFilter={summaryTipoFilter}
-      />
+      {isPecuaria && !subview && pecuariaSummary ? (
+        <div className="space-y-6">
+          {renderSummaryCard('Total Pecuária', pecuariaSummary.total, { isMain: true })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {renderSummaryCard('Pasto', pecuariaSummary.pasto, {
+              onClick: () => navigate(`/atividade/PECUARIA?tipo=${tipoView}&subview=pasto`),
+            })}
+            {renderSummaryCard('Confinamento', pecuariaSummary.confinamento, {
+              onClick: () => navigate(`/atividade/PECUARIA?tipo=${tipoView}&subview=confinamento`),
+              accentColor: 'amber',
+            })}
+          </div>
+        </div>
+      ) : (
+        <>
+          <SummaryCards 
+            selectedMonth={selectedMonth} 
+            atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
+            costCenterFilter={activeCostCenterFilter}
+            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+            entryFilter={summaryEntryFilter}
+            tipoFilter={summaryTipoFilter}
+          />
 
-      <div className="grid gap-8">
+          <div className="grid gap-8">
         {isOutrasReceitasEventuais ? (
           <div className="space-y-4">
             <div className="flex items-center justify-between">
@@ -658,6 +830,31 @@ export default function ActivityDetailPage() {
                   />
                 )}
               </div>
+
+              {isPecuaria && !subview && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-bold text-slate-900">Pecuária Confinamento</h2>
+                    <div className="text-[10px] font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-2 py-1 rounded border border-amber-100">
+                      Confinamento
+                    </div>
+                  </div>
+                  <AnalyticalTable
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    tipoFilter={['C', 'D']}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      isConfinamentoEntry,
+                    )}
+                    title="Detalhamento Pecuária Confinamento"
+                    subtitle="Depto. Confinamento e centros de custo relacionados"
+                    accentColor="amber"
+                  />
+                </div>
+              )}
             </>
           )
         ) : (
@@ -805,9 +1002,35 @@ export default function ActivityDetailPage() {
                 />
               )}
             </div>
+
+            {isPecuaria && !subview && (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-xl font-bold text-slate-900">Pecuária Confinamento</h2>
+                  <div className="text-[10px] font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-2 py-1 rounded border border-amber-100">
+                    Confinamento
+                  </div>
+                </div>
+                <AnalyticalTable
+                  atividadeFilter={atividade.key}
+                  selectedMonth={selectedMonth}
+                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  entryFilter={combineEntryFilters(
+                    activityLevelEntryFilter,
+                    isConfinamentoEntry,
+                  )}
+                  title="Detalhamento Pecuária Confinamento"
+                  subtitle="Depto. Confinamento e centros de custo relacionados"
+                  accentColor="amber"
+                />
+              </div>
+            )}
           </>
         )}
       </div>
+        </>
+      )}
     </div>
   );
 }
