@@ -1,7 +1,7 @@
 import { RevenueSummary } from '@/components/dashboard/RevenueSummary';
 import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
 import { RateiosSummary } from '@/components/dashboard/RateiosSummary';
-import { LayoutDashboard, DollarSign, Split } from 'lucide-react';
+import { DollarSign, Split } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { getLastUploadedPeriod, useBudgetStore } from '@/store/budgetStore';
@@ -36,16 +36,15 @@ export default function Dashboard() {
   return (
     <div className="space-y-12 pb-20">
       <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-2 text-orange-500">
-          <LayoutDashboard className="h-5 w-5" />
-          <span className="text-[11px] font-black uppercase tracking-[0.4em]">Performance Corporativa</span>
+        <div className="flex flex-col gap-4 items-center text-center">
+          <h1 className="text-5xl font-black tracking-tight uppercase">
+            <span className="text-primary">Orçado X</span>{' '}
+            <span className="text-orange-500">Realizado</span>
+          </h1>
+          <p className="text-slate-400 font-semibold text-lg leading-relaxed">
+            Safra 26/27
+          </p>
         </div>
-        <h1 className="text-5xl font-black text-primary tracking-tight">
-          Dashboard <span className="text-orange-500">Executivo</span>
-        </h1>
-        <p className="text-slate-400 font-semibold max-w-2xl text-lg leading-relaxed">
-          Análise consolidada de resultados. Utilize os painéis abaixo para navegar entre as divisões operacionais.
-        </p>
         <div className="w-full sm:w-[280px]">
           <Select value={selectedMonth} onValueChange={(value) => setSelectedMonth(value as MonthKey | 'all')}>
             <SelectTrigger className="bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
