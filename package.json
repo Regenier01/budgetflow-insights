@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "data:import": "node extract_data.js"
+    "data:import": "node extract_data.js",
+    "data:add": "node extract_data.js --file"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

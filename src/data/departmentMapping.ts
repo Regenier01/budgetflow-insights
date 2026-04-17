@@ -1353,45 +1353,5 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "FAZENDA SANTA MARIA PORANGATU",
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
-  },
-  "JOIA - PECUÁRIA": {
-    "nomedepto": "JOIA - PECUÁRIA",
-    "unidadeNegocio": "PECUARIA",
-    "divisao": "PECUARIA"
-  },
-  "UNIÃO - PECUÁRIA": {
-    "nomedepto": "UNIÃO - PECUÁRIA",
-    "unidadeNegocio": "PECUARIA",
-    "divisao": "PECUARIA"
-  },
-  "LAVRINHA - SLN - AGRICOLA": {
-    "nomedepto": "LAVRINHA - SLN - AGRICOLA",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "OUTROS": {
-    "nomedepto": "OUTROS",
-    "unidadeNegocio": "OUTROS",
-    "divisao": "OUTROS"
-  },
-  "POUSO ALEGRE": {
-    "nomedepto": "POUSO ALEGRE",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "SAO CARLOS": {
-    "nomedepto": "SAO CARLOS",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "FAZ.SECA": {
-    "nomedepto": "FAZ.SECA",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
-  },
-  "BAND SERINGAL TOCANTINS- ARAGUAÇU": {
-    "nomedepto": "BAND SERINGAL TOCANTINS- ARAGUAÇU",
-    "unidadeNegocio": "AGRICOLA",
-    "divisao": "AGRICOLA"
   }
 };

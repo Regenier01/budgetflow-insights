@@ -2,7 +2,7 @@ import XLSX from 'xlsx';
 
 import ExcelJS from 'exceljs';
 
-import { writeFileSync, readdirSync, existsSync, createReadStream, statSync } from 'fs';
+import { writeFileSync, readFileSync, readdirSync, existsSync, createReadStream, statSync } from 'fs';
 
 import { join } from 'path';
 
@@ -10,9 +10,69 @@ import { randomUUID } from 'crypto';
 
 
 
+const CACHE_FILE = '.data-cache.json';
+
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const result = { file: null };
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--file' && args[i + 1]) {
+      result.file = args[i + 1];
+      i++;
+    }
+  }
+  return result;
+}
+
+function loadCache() {
+  if (existsSync(CACHE_FILE)) {
+    const raw = JSON.parse(readFileSync(CACHE_FILE, 'utf-8'));
+    return raw;
+  }
+  return null;
+}
+
+function saveCache(data) {
+  writeFileSync(CACHE_FILE, JSON.stringify(data));
+}
+
+function mergeAccounts(existing, incoming) {
+  const merged = [...existing];
+
+  for (const newAcc of incoming) {
+    const match = merged.find(a =>
+      a.codigo === newAcc.codigo &&
+      a.atividade === newAcc.atividade &&
+      (a.departamento || '') === (newAcc.departamento || '') &&
+      (a.centroCusto || '') === (newAcc.centroCusto || '') &&
+      (a.nomeProduto || '') === (newAcc.nomeProduto || '')
+    );
+
+    if (match) {
+      for (const [month, value] of Object.entries(newAcc.realizado || {})) {
+        match.realizado[month] = (match.realizado[month] || 0) + value;
+      }
+      for (const [month, value] of Object.entries(newAcc.orcado || {})) {
+        match.orcado[month] = (match.orcado[month] || 0) + value;
+      }
+    } else {
+      merged.push(newAcc);
+    }
+  }
+
+  return merged.sort((a, b) => a.codigo.localeCompare(b.codigo, undefined, { numeric: true }));
+}
+
 async function run() {
 
-  console.log('--- Iniciando extração de dados ---');
+  const cliArgs = parseArgs();
+  const incrementalMode = !!cliArgs.file;
+
+  if (incrementalMode) {
+    console.log(`--- Modo incremental: carregando apenas "${cliArgs.file}" ---`);
+  } else {
+    console.log('--- Iniciando extração completa de dados ---');
+  }
 
 
 
@@ -182,7 +242,18 @@ async function run() {
 
   if (existsSync(realizadoDir)) {
 
-    const files = readdirSync(realizadoDir).filter(f => f.endsWith('.xlsx') && !f.startsWith('~$'));
+    let files = readdirSync(realizadoDir).filter(f => f.endsWith('.xlsx') && !f.startsWith('~$'));
+
+    if (incrementalMode) {
+      const target = files.find(f => f.toLowerCase().includes(cliArgs.file.toLowerCase()));
+      if (!target) {
+        console.error(`Arquivo não encontrado na pasta realizado/ contendo "${cliArgs.file}"`);
+        console.log('Arquivos disponíveis:');
+        files.forEach(f => console.log(`  - ${f}`));
+        process.exit(1);
+      }
+      files = [target];
+    }
 
     for (const file of files) {
 
@@ -239,7 +310,24 @@ async function run() {
 
   // 3. Processamento e Agregação
 
-  const accounts = processBudgetRows(allRows, departmentMapping, costCenterMapping);
+  const newAccounts = processBudgetRows(allRows, departmentMapping, costCenterMapping);
+
+  let accounts;
+
+  if (incrementalMode) {
+    const cache = loadCache();
+    if (cache) {
+      console.log(`Mesclando com cache existente (${cache.accounts.length} contas)...`);
+      accounts = mergeAccounts(cache.accounts, newAccounts);
+      departmentMapping = { ...cache.departmentMapping, ...departmentMapping };
+      costCenterMapping = { ...cache.costCenterMapping, ...costCenterMapping };
+    } else {
+      console.log('Sem cache anterior, usando apenas dados do arquivo atual.');
+      accounts = newAccounts;
+    }
+  } else {
+    accounts = newAccounts;
+  }
 
 
 
@@ -275,6 +363,10 @@ async function run() {
 
 
 
+  // Salvar cache para uso incremental futuro
+  saveCache({ accounts, departmentMapping, costCenterMapping });
+  console.log('Cache salvo em .data-cache.json');
+
   // Escrita dos arquivos de saída
 
   writeFileSync('src/data/departmentMapping.ts', `export const DEPARTMENT_MAPPING = ${JSON.stringify(departmentMapping, null, 2)};`);
@@ -286,8 +378,11 @@ async function run() {
   writeFileSync('src/data/initialData.ts', `import type { AccountEntry } from '@/types/budget';\n\nexport const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null, 2)};`);
 
   
-
-  console.log('--- Extração finalizada com sucesso! ---');
+  if (incrementalMode) {
+    console.log(`--- Extração incremental finalizada! (${newAccounts.length} contas do arquivo novo, ${accounts.length} contas no total) ---`);
+  } else {
+    console.log(`--- Extração completa finalizada! (${accounts.length} contas) ---`);
+  }
 
 }
 
