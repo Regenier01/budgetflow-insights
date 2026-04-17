@@ -36,6 +36,9 @@ const isRateioDepartment = (departamento?: string) => {
 };
 
 const isNonRateioDepartment = (departamento?: string) => !isRateioDepartment(departamento);
+const isConta4Entry = (entry: AccountEntry) => entry.codigo.trim().startsWith('4');
+const isConta4AdministracaoEntry = (entry: AccountEntry) =>
+  entry.codigo.trim().startsWith('4') && normalizeText(entry.departamento) === 'ADMINISTRACAO';
 
 const isAgricolaFarmCultureDepartment = (departamento?: string) => {
   const normalized = normalizeText(departamento);
@@ -69,6 +72,8 @@ const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
     'TRANSPORTE DE INSUMOS CONFINAMENTO',
     'CONFINAMENTO - TRANSPORTE DE GADO',
     'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+    'MANUTENCAO SISTEMA IRRIGACAO - CUSTO CONFINAMENTO',
+    'RECRIA GOTEJO CONFINAMENTO',
   ],
   SERINGAL: ['RATEIO SERINGAL'],
 };
@@ -150,7 +155,7 @@ export default function ActivityDetailPage() {
     ? undefined
     : isRateios
       ? (entry: AccountEntry) =>
-        isRateioDepartment(entry.departamento) &&
+        (isRateioDepartment(entry.departamento) || isConta4AdministracaoEntry(entry)) &&
         !isOutrasReceitasEventuaisCode(entry.codigo)
       : (entry: AccountEntry) =>
         !isOutrasReceitasEventuaisCode(entry.codigo) &&
@@ -369,7 +374,7 @@ export default function ActivityDetailPage() {
       ? (entry) => entry.tipo !== 'C' || isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
-      ? (entry) => isNonRateioDepartment(entry.departamento)
+      ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAgricola
       ? (entry) => entry.tipo !== 'C' || isAgricolaFarmCultureDepartment(entry.departamento)
@@ -783,6 +788,7 @@ export default function ActivityDetailPage() {
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                    isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
                     isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
                     (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                   )}
@@ -809,6 +815,7 @@ export default function ActivityDetailPage() {
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
                         (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => !isConta4Entry(entry),
                         (entry) => !isTributariaEntry(entry),
                         (entry) => !isReceitaDeductionEntry(entry),
                       )}
@@ -825,6 +832,7 @@ export default function ActivityDetailPage() {
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
                         (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => !isConta4Entry(entry),
                         (entry) => isTributariaEntry(entry),
                         (entry) => !isReceitaDeductionEntry(entry),
                       )}
@@ -955,6 +963,7 @@ export default function ActivityDetailPage() {
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
                   isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                  isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
                   isAgricola ? (entry) => isAgricolaFarmCultureDepartment(entry.departamento) : undefined,
                   (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
                 )}
@@ -981,6 +990,7 @@ export default function ActivityDetailPage() {
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
                       (entry) => isNonRateioDepartment(entry.departamento),
+                      (entry) => !isConta4Entry(entry),
                       (entry) => !isTributariaEntry(entry),
                       (entry) => !isReceitaDeductionEntry(entry),
                     )}
@@ -997,6 +1007,7 @@ export default function ActivityDetailPage() {
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
                       (entry) => isNonRateioDepartment(entry.departamento),
+                      (entry) => !isConta4Entry(entry),
                       (entry) => isTributariaEntry(entry),
                       (entry) => !isReceitaDeductionEntry(entry),
                     )}

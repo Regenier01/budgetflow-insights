@@ -60,6 +60,10 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
   };
 
+  const isConta4AdministracaoEntry = (entry: (typeof accounts)[number]) =>
+    entry.codigo.trim().startsWith('4') && normalizeText(entry.departamento) === 'ADMINISTRACAO';
+  const isConta4Entry = (entry: (typeof accounts)[number]) => entry.codigo.trim().startsWith('4');
+
   const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
     PECUARIA: [
       'RATEIO GADO GERAL',
@@ -68,6 +72,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
       'TRANSPORTE DE INSUMOS CONFINAMENTO',
       'CONFINAMENTO - TRANSPORTE DE GADO',
       'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+      'MANUTENCAO SISTEMA IRRIGACAO - CUSTO CONFINAMENTO',
+      'RECRIA GOTEJO CONFINAMENTO',
     ],
     SERINGAL: ['RATEIO SERINGAL'],
   };
@@ -187,13 +193,15 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return computeTotals(
       (a) =>
         a.atividade === activityKey &&
+        (activityKey !== 'DESP_ADM_TRIB' ? !isConta4AdministracaoEntry(a) : !isConta4Entry(a)) &&
         (a.tipo === 'C' || a.tipo === 'D') &&
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
         (a.tipo !== 'C' || isAllowedCentroCustoForCustos(activityKey, a.centroCusto)) &&
-        (activityKey !== 'DESP_ADM_TRIB' || !isRateioDepartment(a.departamento)) &&
+        (activityKey !== 'DESP_ADM_TRIB' ||
+          (!isRateioDepartment(a.departamento) && !isConta4Entry(a))) &&
         (activityKey !== 'AGRICOLA' || a.tipo !== 'C' || isAgricolaFarmCultureDepartment(a.departamento))
     );
   };
@@ -216,7 +224,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
   return (
     <div className="space-y-6">
       <SummaryTable
-        title="Consolidado Geral de Operações"
+        title="Total Consolidado de Custos das Operações"
         orc={global.orc}
         real={global.real}
         diff={global.real - global.orc}

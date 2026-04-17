@@ -21,6 +21,9 @@ const normalizeDepartment = (value?: string) =>
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
 
+const isConta4AdministracaoEntry = (codigo?: string, departamento?: string) =>
+  (codigo || '').trim().startsWith('4') && normalizeDepartment(departamento) === 'ADMINISTRACAO';
+
 interface Props {
   selectedMonth: MonthKey | 'all';
 }
@@ -42,11 +45,21 @@ export function RateiosSummary({ selectedMonth }: Props) {
     (account) =>
       account.nivel === 5 &&
       account.departamento &&
-      rateioDepartmentSet.has(normalizeDepartment(account.departamento)) &&
+      (
+        rateioDepartmentSet.has(normalizeDepartment(account.departamento)) ||
+        isConta4AdministracaoEntry(account.codigo, account.departamento)
+      ) &&
       !isOutrasReceitasEventuaisCode(account.codigo)
   );
 
-  const totalsByDepartment = RATEIO_DEPARTMENTS.map((department) => {
+  const orderedDepartments = Array.from(
+    new Set([
+      ...RATEIO_DEPARTMENTS,
+      ...rateioAccounts.map((account) => account.departamento).filter((dept): dept is string => Boolean(dept)),
+    ])
+  );
+
+  const totalsByDepartment = orderedDepartments.map((department) => {
     const normalizedDepartment = normalizeDepartment(department);
     const departmentAccounts = rateioAccounts.filter(
       (account) => normalizeDepartment(account.departamento) === normalizedDepartment
