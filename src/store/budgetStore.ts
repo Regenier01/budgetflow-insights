@@ -1,5 +1,13 @@
 import { create } from 'zustand';
-import { MONTHS, type AccountEntry, type MonthKey, type AtividadeKey, type ExcelRow, type UploadRecord } from '@/types/budget';
+import {
+  MONTHS,
+  type AccountEntry,
+  type MonthKey,
+  type AtividadeKey,
+  type ExcelRow,
+  type UploadRecord,
+  type OrcadoGrupoMonthValue
+} from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
@@ -244,21 +252,31 @@ export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
 interface BudgetState {
   accounts: AccountEntry[];
   uploads: UploadRecord[];
-  importedBatches: {
+  importedRealizadoBatches: {
     key: string;
     fileName: string;
     period: MonthKey;
     rows: ExcelRow[];
     importedAt: string;
   }[];
+  importedOrcadoBatches: {
+    key: string;
+    fileName: string;
+    atividade: AtividadeKey;
+    rows: OrcadoGrupoMonthValue[];
+    importedAt: string;
+  }[];
   setAccounts: (accounts: AccountEntry[]) => void;
   clearAllData: () => void;
   addUpload: (record: UploadRecord) => void;
   importExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey, fileName: string) => number;
+  importOrcadoByGrupo: (rows: OrcadoGrupoMonthValue[], atividade: AtividadeKey, fileName: string) => number;
 }
 
 const uploadBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
+const uploadOrcadoBatchKey = (atividade: AtividadeKey, fileName: string) =>
+  `${atividade}::${fileName.trim().toUpperCase()}`;
 
 const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   ...account,
@@ -340,21 +358,73 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
   return { accounts: newAccounts, count };
 };
 
+const applyOrcadoRowsByGrupoToAccounts = (
+  baseAccounts: AccountEntry[],
+  rows: OrcadoGrupoMonthValue[],
+  atividade: AtividadeKey
+) => {
+  const nextAccounts = baseAccounts.map(cloneAccountEntry);
+  let count = 0;
+
+  rows.forEach((row) => {
+    const normalizedGrupo = row.grupoContabil.trim();
+    if (!normalizedGrupo) return;
+
+    const candidates = nextAccounts.filter(
+      (account) =>
+        account.nivel === 5 &&
+        account.atividade === atividade &&
+        (account.grupoContabil || '').trim() === normalizedGrupo
+    );
+    if (candidates.length === 0) return;
+
+    const previousTotal = candidates.reduce((sum, account) => sum + (account.orcado[row.month] || 0), 0);
+
+    if (previousTotal > 0) {
+      // Preserva a distribuição existente e troca apenas o total do grupo.
+      let assigned = 0;
+      candidates.forEach((account, index) => {
+        const rawShare = index === candidates.length - 1
+          ? row.value - assigned
+          : row.value * ((account.orcado[row.month] || 0) / previousTotal);
+        account.orcado[row.month] = rawShare;
+        assigned += rawShare;
+      });
+    } else {
+      const evenShare = row.value / candidates.length;
+      candidates.forEach((account) => {
+        account.orcado[row.month] = evenShare;
+      });
+    }
+
+    count++;
+  });
+
+  return { accounts: nextAccounts, count };
+};
+
 export const useBudgetStore = create<BudgetState>((set, get) => ({
   accounts: buildFreshInitialAccounts(),
   uploads: [],
-  importedBatches: [],
+  importedRealizadoBatches: [],
+  importedOrcadoBatches: [],
   setAccounts: (accounts) => set({ accounts }),
-  clearAllData: () => set({ accounts: buildFreshInitialAccounts(), uploads: [], importedBatches: [] }),
+  clearAllData: () =>
+    set({
+      accounts: buildFreshInitialAccounts(),
+      uploads: [],
+      importedRealizadoBatches: [],
+      importedOrcadoBatches: []
+    }),
   addUpload: (record) =>
     set((s) => {
       saveLastUploadedPeriod(record.period);
       return { uploads: [...s.uploads, record] };
     }),
   importExcelRows: (rows, fallbackPeriod, fileName) => {
-    const { importedBatches } = get();
+    const { importedRealizadoBatches, importedOrcadoBatches } = get();
     const currentKey = uploadBatchKey(fallbackPeriod, fileName);
-    const withoutCurrent = importedBatches.filter((batch) => batch.key !== currentKey);
+    const withoutCurrent = importedRealizadoBatches.filter((batch) => batch.key !== currentKey);
     const nextBatches = [
       ...withoutCurrent,
       {
@@ -378,7 +448,48 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       }
     });
 
-    set({ accounts: rebuiltAccounts, importedBatches: nextBatches });
+    importedOrcadoBatches.forEach((batch) => {
+      const result = applyOrcadoRowsByGrupoToAccounts(rebuiltAccounts, batch.rows, batch.atividade);
+      rebuiltAccounts.length = 0;
+      rebuiltAccounts.push(...result.accounts);
+    });
+
+    set({ accounts: rebuiltAccounts, importedRealizadoBatches: nextBatches });
+    return currentBatchCount;
+  },
+  importOrcadoByGrupo: (rows, atividade, fileName) => {
+    const { importedRealizadoBatches, importedOrcadoBatches } = get();
+    const currentKey = uploadOrcadoBatchKey(atividade, fileName);
+    const withoutCurrent = importedOrcadoBatches.filter((batch) => batch.key !== currentKey);
+    const nextOrcadoBatches = [
+      ...withoutCurrent,
+      {
+        key: currentKey,
+        fileName,
+        atividade,
+        rows,
+        importedAt: new Date().toISOString(),
+      },
+    ];
+
+    const rebuiltAccounts = buildFreshInitialAccounts();
+    importedRealizadoBatches.forEach((batch) => {
+      const result = applyRowsToAccounts(rebuiltAccounts, batch.rows, batch.period);
+      rebuiltAccounts.length = 0;
+      rebuiltAccounts.push(...result.accounts);
+    });
+
+    let currentBatchCount = 0;
+    nextOrcadoBatches.forEach((batch) => {
+      const result = applyOrcadoRowsByGrupoToAccounts(rebuiltAccounts, batch.rows, batch.atividade);
+      rebuiltAccounts.length = 0;
+      rebuiltAccounts.push(...result.accounts);
+      if (batch.key === currentKey) {
+        currentBatchCount = result.count;
+      }
+    });
+
+    set({ accounts: rebuiltAccounts, importedOrcadoBatches: nextOrcadoBatches });
     return currentBatchCount;
   }
 }));

@@ -51,8 +51,16 @@ export interface UploadRecord {
   fileName: string;
   uploadDate: string;
   period: string;
+  kind: 'realizado' | 'orcado';
+  atividade?: AtividadeKey;
   status: 'success' | 'error';
   rowCount: number;
+}
+
+export interface OrcadoGrupoMonthValue {
+  grupoContabil: string;
+  month: MonthKey;
+  value: number;
 }
 
 export const MONTHS = [
