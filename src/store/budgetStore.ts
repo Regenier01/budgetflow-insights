@@ -627,6 +627,9 @@ const applyOrcadoRowsToAccounts = (
   const nextAccounts = baseAccounts.map(cloneAccountEntry);
   let count = 0;
   const normalizedImportedDept = normalizeLooseMatch(departamento);
+  const hasRateioHint = (value?: string) => normalizeMatch(value).includes('RATEIO');
+  const realizedTotal = (account: AccountEntry) =>
+    Object.values(account.realizado).reduce((sum, value) => sum + value, 0);
 
   rows.forEach((row) => {
     const normalizedGrupo = extractGrupoCode(row.grupoContabil);
@@ -681,23 +684,24 @@ const applyOrcadoRowsToAccounts = (
           );
     if (scopedCandidates.length === 0) return;
 
-    const previousTotal = scopedCandidates.reduce((sum, account) => sum + (account.orcado[row.month] || 0), 0);
+    // Regra: o valor orcado deve refletir o total do grupo contabil da planilha,
+    // sem rateio entre contas.
+    const orderedCandidates = [...scopedCandidates].sort((a, b) => {
+      const aRateio = hasRateioHint(a.centroCusto) || hasRateioHint(a.descricao);
+      const bRateio = hasRateioHint(b.centroCusto) || hasRateioHint(b.descricao);
+      if (aRateio !== bRateio) return aRateio ? -1 : 1;
 
-    if (previousTotal > 0) {
-      let assigned = 0;
-      scopedCandidates.forEach((account, index) => {
-        const rawShare = index === scopedCandidates.length - 1
-          ? row.value - assigned
-          : row.value * ((account.orcado[row.month] || 0) / previousTotal);
-        account.orcado[row.month] = rawShare;
-        assigned += rawShare;
-      });
-    } else {
-      const evenShare = row.value / scopedCandidates.length;
-      scopedCandidates.forEach((account) => {
-        account.orcado[row.month] = evenShare;
-      });
-    }
+      const aReal = realizedTotal(a);
+      const bReal = realizedTotal(b);
+      if (aReal !== bReal) return bReal - aReal;
+
+      const byCode = a.codigo.localeCompare(b.codigo);
+      if (byCode !== 0) return byCode;
+      return a.id.localeCompare(b.id);
+    });
+
+    const anchorAccount = orderedCandidates[0];
+    anchorAccount.orcado[row.month] = (anchorAccount.orcado[row.month] || 0) + row.value;
 
     count++;
   });
