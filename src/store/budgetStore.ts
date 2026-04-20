@@ -8,7 +8,7 @@ import {
   type UploadRecord
 } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
-import { type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
+import { ORCADO_IMPORT_BATCHES, type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
@@ -280,6 +280,23 @@ const uploadBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
 const uploadOrcadoBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
+
+const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
+  (rows.find((row) => validMonthKeys.has(row.month as MonthKey))?.month as MonthKey) || MONTHS[0].key;
+
+const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] =>
+  ORCADO_IMPORT_BATCHES.map((batch) => {
+    const period = getBatchFallbackPeriod(batch.rows);
+    return {
+      key: uploadOrcadoBatchKey(period, batch.fileName),
+      fileName: batch.fileName,
+      departamento: batch.departamento,
+      atividade: batch.atividade,
+      period,
+      rows: batch.rows,
+      importedAt: new Date(0).toISOString(),
+    };
+  });
 
 const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   ...account,
@@ -709,11 +726,11 @@ const buildAccountsWithImportedOrcado = (
 export const useBudgetStore = create<BudgetState>((set, get) => ({
   accounts: buildAccountsWithImportedOrcado(
     buildFreshInitialAccounts(),
-    []
+    buildInitialImportedOrcadoBatches()
   ),
   uploads: [],
   importedRealizadoBatches: [],
-  importedOrcadoBatches: [],
+  importedOrcadoBatches: buildInitialImportedOrcadoBatches(),
   setAccounts: (accounts) => set({ accounts }),
   clearAllData: () =>
     set(() => {
