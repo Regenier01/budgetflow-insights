@@ -783,6 +783,15 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     const resolvedAtividade =
       fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : (aggregated.atividadeFromRows || fileInfo.atividade);
 
+    console.log('[Orçado] Import:', {
+      fileName,
+      atividade: resolvedAtividade,
+      departamento: aggregated.departamentoFromRows || fileInfo.departamento,
+      excelRows: rows.length,
+      aggregatedEntries: aggregated.entries.length,
+      sampleEntries: aggregated.entries.slice(0, 3),
+    });
+
     const nextBatch = {
       key: currentKey,
       fileName,
@@ -818,6 +827,15 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       if (batch.key === currentKey) {
         currentBatchCount = result.count;
       }
+    });
+
+    const totalOrcadoApplied = rebuiltAccounts
+      .filter((a) => a.nivel === 5)
+      .reduce((sum, a) => sum + Object.values(a.orcado).reduce((s, v) => s + v, 0), 0);
+    console.log('[Orçado] Resultado:', {
+      currentBatchCount,
+      totalAccounts: rebuiltAccounts.length,
+      totalOrcadoApplied,
     });
 
     set({ accounts: rebuiltAccounts, importedOrcadoBatches: nextOrcadoBatches });
