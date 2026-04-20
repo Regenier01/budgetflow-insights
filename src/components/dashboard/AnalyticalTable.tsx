@@ -211,6 +211,7 @@ export function AnalyticalTable({
       const isExpanded = expanded.has(currentPath);
       const hasChildren = node.children.size > 0;
       
+      const showBudget = level === 0;
       const diff = node.real - node.orc;
       const isHigher = node.real > node.orc;
 
@@ -244,7 +245,7 @@ export function AnalyticalTable({
               </div>
             </td>
             <td className="text-right py-3 px-4 text-[13px] text-slate-600 tabular-nums">
-              {node.orc ? fmtCurrency(node.orc) : '-'}
+              {showBudget && node.orc ? fmtCurrency(node.orc) : '-'}
             </td>
             <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
               {node.real ? fmtCurrency(node.real) : '-'}
@@ -253,7 +254,7 @@ export function AnalyticalTable({
               "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
               isHigher ? "text-emerald-600" : "text-rose-600"
             )}>
-              {(node.orc || node.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
+              {showBudget && (node.orc || node.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
             </td>
           </tr>
           {isExpanded && hasChildren && renderNodes(node.children, currentPath, level + 1)}

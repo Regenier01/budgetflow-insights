@@ -5,16 +5,17 @@ import {
   type MonthKey,
   type AtividadeKey,
   type ExcelRow,
-  type UploadRecord,
-  type OrcadoGrupoMonthValue
+  type UploadRecord
 } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
+import { type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
 const validMonthKeys = new Set(MONTHS.map((month) => month.key));
+type MappingValue = { divisao?: string; unidadeNegocio?: string };
 
 const saveLastUploadedPeriod = (period: string) => {
   if (typeof window === 'undefined' || !validMonthKeys.has(period as MonthKey)) return;
@@ -62,14 +63,14 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   if (conta.startsWith('3.4.03.02')) return 'DESP_ADM_TRIB';
 
   // 3. Tenta pelo Mapeamento de Departamento
-  const deptInfo = (DEPARTMENT_MAPPING as any)[depto];
+  const deptInfo = (DEPARTMENT_MAPPING as Record<string, MappingValue>)[depto];
   if (deptInfo) {
     const mapped = mapDivisaoToAtividade(deptInfo.divisao);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
   }
 
   // 4. Tenta pelo Mapeamento de Centro de Custo
-  const ccInfo = (COST_CENTER_MAPPING as any)[cc];
+  const ccInfo = (COST_CENTER_MAPPING as Record<string, MappingValue>)[cc];
   if (ccInfo) {
     const mapped = mapDivisaoToAtividade(ccInfo.unidadeNegocio);
     if (mapped && mapped !== 'DESP_ADM_TRIB') return mapped;
@@ -262,7 +263,9 @@ interface BudgetState {
   importedOrcadoBatches: {
     key: string;
     fileName: string;
+    departamento: string;
     atividade: AtividadeKey;
+    period: MonthKey;
     rows: OrcadoGrupoMonthValue[];
     importedAt: string;
   }[];
@@ -270,13 +273,13 @@ interface BudgetState {
   clearAllData: () => void;
   addUpload: (record: UploadRecord) => void;
   importExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey, fileName: string) => number;
-  importOrcadoByGrupo: (rows: OrcadoGrupoMonthValue[], atividade: AtividadeKey, fileName: string) => number;
+  importOrcadoExcelRows: (rows: ExcelRow[], fallbackPeriod: MonthKey, fileName: string) => number;
 }
 
 const uploadBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
-const uploadOrcadoBatchKey = (atividade: AtividadeKey, fileName: string) =>
-  `${atividade}::${fileName.trim().toUpperCase()}`;
+const uploadOrcadoBatchKey = (period: MonthKey, fileName: string) =>
+  `${period}::${fileName.trim().toUpperCase()}`;
 
 const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   ...account,
@@ -286,6 +289,246 @@ const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
 
 const INITIAL_ACCOUNTS_TEMPLATE = INITIAL_ACCOUNTS.map(cloneAccountEntry);
 const buildFreshInitialAccounts = () => INITIAL_ACCOUNTS_TEMPLATE.map(cloneAccountEntry);
+const normalizeMatch = (value: string | undefined) =>
+  String(value || '')
+    .toUpperCase()
+    .trim()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+const normalizeLooseMatch = (value: string | undefined) =>
+  normalizeMatch(value).replace(/[^A-Z0-9]+/g, ' ').trim();
+
+const GRUPO_CODE_PREFIX_PATTERN = /^\d(?:\.\d{1,4}){2,}/;
+
+const parseNumeric = (value: unknown): number => {
+  if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
+  const raw = String(value ?? '').trim();
+  if (!raw) return 0;
+
+  const cleaned = raw.replace(/[R$\s\u00A0]/g, '');
+  const hasComma = cleaned.includes(',');
+  const hasDot = cleaned.includes('.');
+  let normalized = cleaned;
+  const commaAsThousandsPattern = /^-?\d{1,3}(,\d{3})+$/;
+  const dotAsThousandsPattern = /^-?\d{1,3}(\.\d{3})+$/;
+
+  if (hasComma && hasDot) {
+    // Uses the rightmost separator as decimal marker.
+    if (cleaned.lastIndexOf(',') > cleaned.lastIndexOf('.')) {
+      normalized = cleaned.replace(/\./g, '').replace(',', '.');
+    } else {
+      normalized = cleaned.replace(/,/g, '');
+    }
+  } else if (hasComma) {
+    // If it does not match strict thousands grouping, treat comma as decimal separator.
+    normalized = commaAsThousandsPattern.test(cleaned)
+      ? cleaned.replace(/,/g, '')
+      : cleaned.replace(',', '.');
+  } else if (hasDot) {
+    // If it does not match strict thousands grouping, treat dot as decimal separator.
+    normalized = dotAsThousandsPattern.test(cleaned)
+      ? cleaned.replace(/\./g, '')
+      : cleaned;
+  }
+
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : 0;
+};
+
+const ORCADO_ATIVIDADE_ALIASES: Array<{ atividade: AtividadeKey; aliases: string[] }> = [
+  { atividade: 'SERINGAL', aliases: ['SERINGAL', 'LATEX', 'BORRACHA'] },
+  { atividade: 'PECUARIA', aliases: ['PECUARIA', 'GADO'] },
+  { atividade: 'AGRICOLA', aliases: ['AGRICOLA', 'SOJA', 'MILHO', 'GRAOS', 'GRAO'] },
+  { atividade: 'CANA', aliases: ['CANA'] },
+  { atividade: 'DESP_ADM_TRIB', aliases: ['ADM', 'ADMINISTRAT', 'TRIBUT'] },
+  { atividade: 'ENCARGOS', aliases: ['ENCARGO', 'FINANCEIR'] },
+];
+
+const parseOrcadoFileInfo = (fileName: string): { atividade: AtividadeKey; departamento: string } => {
+  const baseName = fileName.replace(/\.(xlsx|xls|csv)$/i, '').trim();
+  const normalized = normalizeMatch(baseName).replace(/^ORCAMENTO\s+/, '').trim();
+  const atividade =
+    ORCADO_ATIVIDADE_ALIASES.find((item) =>
+      item.aliases.some((alias) => normalized.includes(normalizeMatch(alias)))
+    )?.atividade || 'DESP_ADM_TRIB';
+  return { atividade, departamento: normalized || normalizeMatch(baseName) };
+};
+
+const ORCADO_MONTH_HEADER_MAP: Record<string, MonthKey> = {
+  'APR-26': '2026-04',
+  'ABR-26': '2026-04',
+  'APR/26': '2026-04',
+  'ABR/26': '2026-04',
+  'MAY-26': '2026-05',
+  'MAI-26': '2026-05',
+  'MAY/26': '2026-05',
+  'MAI/26': '2026-05',
+  'JUN-26': '2026-06',
+  'JUN/26': '2026-06',
+  'JUL-26': '2026-07',
+  'JUL/26': '2026-07',
+  'AUG-26': '2026-08',
+  'AGO-26': '2026-08',
+  'AUG/26': '2026-08',
+  'AGO/26': '2026-08',
+  'SEP-26': '2026-09',
+  'SET-26': '2026-09',
+  'SEP/26': '2026-09',
+  'SET/26': '2026-09',
+  'OCT-26': '2026-10',
+  'OUT-26': '2026-10',
+  'OCT/26': '2026-10',
+  'OUT/26': '2026-10',
+  'NOV-26': '2026-11',
+  'NOV/26': '2026-11',
+  'DEC-26': '2026-12',
+  'DEZ-26': '2026-12',
+  'DEC/26': '2026-12',
+  'DEZ/26': '2026-12',
+  'JAN-27': '2027-01',
+  'JAN/27': '2027-01',
+  'FEB-27': '2027-02',
+  'FEV-27': '2027-02',
+  'FEB/27': '2027-02',
+  'FEV/27': '2027-02',
+  'MAR-27': '2027-03',
+  'MAR/27': '2027-03',
+};
+
+const parseMonthFromHeader = (header: unknown): MonthKey | null => {
+  if (header instanceof Date && !Number.isNaN(header.getTime())) {
+    const key = `${header.getFullYear()}-${String(header.getMonth() + 1).padStart(2, '0')}` as MonthKey;
+    return validMonthKeys.has(key) ? key : null;
+  }
+  if (typeof header === 'number' && Number.isFinite(header)) {
+    const date = new Date((header - 25569) * 86400000);
+    if (!Number.isNaN(date.getTime())) {
+      const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}` as MonthKey;
+      return validMonthKeys.has(key) ? key : null;
+    }
+  }
+  const normalized = normalizeMatch(String(header || ''));
+  const variants = [
+    normalized,
+    normalized.replace(/\s+/g, '-'),
+    normalized.replace(/\s+/g, '/'),
+    normalized.replace(/-/g, '/'),
+    normalized.replace(/\//g, '-'),
+  ];
+
+  for (const variant of variants) {
+    const month = ORCADO_MONTH_HEADER_MAP[variant];
+    if (month) return month;
+  }
+  return null;
+};
+
+const parseGrupoContabilFromRow = (row: Record<string, unknown>): string => {
+  const pickGrupoCode = (rawValue: unknown): string => {
+    const value = String(rawValue || '').trim();
+    if (!value) return '';
+    const candidate = value.split('-')[0]?.trim() || value;
+    const extracted = extractGrupoCode(candidate);
+    return GRUPO_CODE_PREFIX_PATTERN.test(extracted) ? extracted : '';
+  };
+
+  const directKeys = [
+    'GRUPO_CONTABIL',
+    'GRUPOCONTABIL',
+    'GRUPO CONTABIL',
+    'GRUPO_CONTABIL_N9',
+    'GRUPOCONTABILN9',
+    'CONTA_CONTABIL',
+    'CONTA CONTABIL',
+    'CONTA',
+    'GRUPO',
+  ];
+  for (const key of directKeys) {
+    const code = pickGrupoCode(row[key]);
+    if (code) return code;
+  }
+
+  // Fallback for spreadsheets where the first column header is empty/unnamed.
+  const looseKeys = ['__EMPTY', '__EMPTY_0', 'Unnamed: 0', 'UNNAMED: 0', 'CONTA_CONTABIL'];
+  for (const key of looseKeys) {
+    const code = pickGrupoCode(row[key]);
+    if (code) return code;
+  }
+
+  for (const value of Object.values(row)) {
+    const code = pickGrupoCode(value);
+    if (code) return code;
+  }
+  return '';
+};
+
+const extractGrupoCode = (value: string | undefined): string => {
+  const normalized = String(value || '').trim();
+  if (!normalized) return '';
+  const match = normalized.match(/^\d(?:\.\d{1,4}){2,}/);
+  return match?.[0] || '';
+};
+
+const accountMatchesGrupoContabil = (account: AccountEntry, grupoCode: string): boolean => {
+  if (!grupoCode) return false;
+  const accountGrupoN9Code = extractGrupoCode(account.grupoContabilN9);
+  if (accountGrupoN9Code === grupoCode) return true;
+
+  // Fallback for entries where only account code is populated.
+  return account.codigo === grupoCode || account.codigo.startsWith(`${grupoCode}.`);
+};
+
+const aggregateOrcadoRows = (
+  rows: ExcelRow[],
+  fallbackPeriod: MonthKey
+): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  const grouped = new Map<string, number>();
+  const atividadeCounts: Partial<Record<AtividadeKey, number>> = {};
+  const departamentoCounts = new Map<string, number>();
+
+  rows.forEach((row) => {
+    const rawRow = row as Record<string, unknown>;
+    const grupoContabil = parseGrupoContabilFromRow(rawRow);
+    if (!grupoContabil) return;
+
+    let hasPivotMonth = false;
+    Object.entries(rawRow).forEach(([header, cellValue]) => {
+      const month = parseMonthFromHeader(header);
+      if (!month) return;
+      hasPivotMonth = true;
+      const key = `${grupoContabil}::${month}`;
+      grouped.set(key, (grouped.get(key) || 0) + parseNumeric(cellValue));
+    });
+
+    if (!hasPivotMonth) {
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      const value = parseNumeric(row.SALDO);
+      const key = `${grupoContabil}::${month}`;
+      grouped.set(key, (grouped.get(key) || 0) + value);
+    }
+
+    const atividade = resolveAtividadeFromRow(row);
+    atividadeCounts[atividade] = (atividadeCounts[atividade] || 0) + 1;
+
+    const dept = normalizeMatch(rowValue(row.NOMEDEPTO));
+    if (dept) {
+      departamentoCounts.set(dept, (departamentoCounts.get(dept) || 0) + 1);
+    }
+  });
+
+  const atividadeFromRows = (Object.entries(atividadeCounts).sort((a, b) => b[1]! - a[1]!)[0]?.[0] ||
+    null) as AtividadeKey | null;
+  const departamentoFromRows =
+    Array.from(departamentoCounts.entries()).sort((a, b) => b[1] - a[1])[0]?.[0] || null;
+
+  const entries: OrcadoGrupoMonthValue[] = Array.from(grouped.entries()).map(([key, value]) => {
+    const [grupoContabil, month] = key.split('::');
+    return { grupoContabil, month: month as MonthKey, value };
+  });
+
+  return { entries, atividadeFromRows, departamentoFromRows };
+};
 
 const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fallbackPeriod: MonthKey) => {
   const newAccounts = baseAccounts.map(cloneAccountEntry);
@@ -358,41 +601,83 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
   return { accounts: newAccounts, count };
 };
 
-const applyOrcadoRowsByGrupoToAccounts = (
+const applyOrcadoRowsToAccounts = (
   baseAccounts: AccountEntry[],
   rows: OrcadoGrupoMonthValue[],
-  atividade: AtividadeKey
+  atividade: AtividadeKey,
+  departamento: string
 ) => {
   const nextAccounts = baseAccounts.map(cloneAccountEntry);
   let count = 0;
+  const normalizedImportedDept = normalizeLooseMatch(departamento);
 
   rows.forEach((row) => {
-    const normalizedGrupo = row.grupoContabil.trim();
+    const normalizedGrupo = extractGrupoCode(row.grupoContabil);
     if (!normalizedGrupo) return;
 
-    const candidates = nextAccounts.filter(
+    const strictCandidates = nextAccounts.filter(
       (account) =>
         account.nivel === 5 &&
         account.atividade === atividade &&
-        (account.grupoContabil || '').trim() === normalizedGrupo
+        accountMatchesGrupoContabil(account, normalizedGrupo) &&
+        (() => {
+          const accountDept = normalizeLooseMatch(account.departamento);
+          if (!normalizedImportedDept) return true;
+          return (
+            accountDept === normalizedImportedDept ||
+            accountDept.includes(normalizedImportedDept) ||
+            normalizedImportedDept.includes(accountDept)
+          );
+        })()
     );
-    if (candidates.length === 0) return;
+    const sameActivityCandidates =
+      strictCandidates.length > 0
+        ? strictCandidates
+        : nextAccounts.filter(
+            (account) =>
+              account.nivel === 5 &&
+              account.atividade === atividade &&
+              accountMatchesGrupoContabil(account, normalizedGrupo)
+          );
+    const departmentCandidates =
+      sameActivityCandidates.length > 0
+        ? sameActivityCandidates
+        : nextAccounts.filter(
+            (account) =>
+              account.nivel === 5 &&
+              accountMatchesGrupoContabil(account, normalizedGrupo) &&
+              (() => {
+                const accountDept = normalizeLooseMatch(account.departamento);
+                if (!normalizedImportedDept) return false;
+                return (
+                  accountDept === normalizedImportedDept ||
+                  accountDept.includes(normalizedImportedDept) ||
+                  normalizedImportedDept.includes(accountDept)
+                );
+              })()
+          );
+    const scopedCandidates =
+      departmentCandidates.length > 0
+        ? departmentCandidates
+        : nextAccounts.filter(
+            (account) => account.nivel === 5 && accountMatchesGrupoContabil(account, normalizedGrupo)
+          );
+    if (scopedCandidates.length === 0) return;
 
-    const previousTotal = candidates.reduce((sum, account) => sum + (account.orcado[row.month] || 0), 0);
+    const previousTotal = scopedCandidates.reduce((sum, account) => sum + (account.orcado[row.month] || 0), 0);
 
     if (previousTotal > 0) {
-      // Preserva a distribuição existente e troca apenas o total do grupo.
       let assigned = 0;
-      candidates.forEach((account, index) => {
-        const rawShare = index === candidates.length - 1
+      scopedCandidates.forEach((account, index) => {
+        const rawShare = index === scopedCandidates.length - 1
           ? row.value - assigned
           : row.value * ((account.orcado[row.month] || 0) / previousTotal);
         account.orcado[row.month] = rawShare;
         assigned += rawShare;
       });
     } else {
-      const evenShare = row.value / candidates.length;
-      candidates.forEach((account) => {
+      const evenShare = row.value / scopedCandidates.length;
+      scopedCandidates.forEach((account) => {
         account.orcado[row.month] = evenShare;
       });
     }
@@ -403,18 +688,42 @@ const applyOrcadoRowsByGrupoToAccounts = (
   return { accounts: nextAccounts, count };
 };
 
+const buildAccountsWithImportedOrcado = (
+  baseAccounts: AccountEntry[],
+  importedOrcadoBatches: BudgetState['importedOrcadoBatches']
+) => {
+  const rebuiltAccounts = baseAccounts.map(cloneAccountEntry);
+  importedOrcadoBatches.forEach((batch) => {
+    const result = applyOrcadoRowsToAccounts(
+      rebuiltAccounts,
+      batch.rows,
+      batch.atividade,
+      batch.departamento
+    );
+    rebuiltAccounts.length = 0;
+    rebuiltAccounts.push(...result.accounts);
+  });
+  return rebuiltAccounts;
+};
+
 export const useBudgetStore = create<BudgetState>((set, get) => ({
-  accounts: buildFreshInitialAccounts(),
+  accounts: buildAccountsWithImportedOrcado(
+    buildFreshInitialAccounts(),
+    []
+  ),
   uploads: [],
   importedRealizadoBatches: [],
   importedOrcadoBatches: [],
   setAccounts: (accounts) => set({ accounts }),
   clearAllData: () =>
-    set({
-      accounts: buildFreshInitialAccounts(),
-      uploads: [],
-      importedRealizadoBatches: [],
-      importedOrcadoBatches: []
+    set(() => {
+      const importedOrcadoBatches: BudgetState['importedOrcadoBatches'] = [];
+      return {
+        accounts: buildAccountsWithImportedOrcado(buildFreshInitialAccounts(), importedOrcadoBatches),
+        uploads: [],
+        importedRealizadoBatches: [],
+        importedOrcadoBatches,
+      };
     }),
   addUpload: (record) =>
     set((s) => {
@@ -449,7 +758,12 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     });
 
     importedOrcadoBatches.forEach((batch) => {
-      const result = applyOrcadoRowsByGrupoToAccounts(rebuiltAccounts, batch.rows, batch.atividade);
+      const result = applyOrcadoRowsToAccounts(
+        rebuiltAccounts,
+        batch.rows,
+        batch.atividade,
+        batch.departamento
+      );
       rebuiltAccounts.length = 0;
       rebuiltAccounts.push(...result.accounts);
     });
@@ -457,19 +771,31 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     set({ accounts: rebuiltAccounts, importedRealizadoBatches: nextBatches });
     return currentBatchCount;
   },
-  importOrcadoByGrupo: (rows, atividade, fileName) => {
-    const { importedRealizadoBatches, importedOrcadoBatches } = get();
-    const currentKey = uploadOrcadoBatchKey(atividade, fileName);
-    const withoutCurrent = importedOrcadoBatches.filter((batch) => batch.key !== currentKey);
+  importOrcadoExcelRows: (rows, fallbackPeriod, fileName) => {
+    const {
+      importedRealizadoBatches,
+      importedOrcadoBatches,
+    } = get();
+    const fileInfo = parseOrcadoFileInfo(fileName);
+    const aggregated = aggregateOrcadoRows(rows, fallbackPeriod);
+    const currentKey = uploadOrcadoBatchKey(fallbackPeriod, fileName);
+
+    const resolvedAtividade =
+      fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : (aggregated.atividadeFromRows || fileInfo.atividade);
+
+    const nextBatch = {
+      key: currentKey,
+      fileName,
+      departamento: aggregated.departamentoFromRows || fileInfo.departamento,
+      atividade: resolvedAtividade,
+      period: fallbackPeriod,
+      rows: aggregated.entries,
+      importedAt: new Date().toISOString(),
+    };
+
     const nextOrcadoBatches = [
-      ...withoutCurrent,
-      {
-        key: currentKey,
-        fileName,
-        atividade,
-        rows,
-        importedAt: new Date().toISOString(),
-      },
+      ...importedOrcadoBatches.filter((batch) => batch.key !== currentKey),
+      nextBatch,
     ];
 
     const rebuiltAccounts = buildFreshInitialAccounts();
@@ -481,7 +807,12 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
 
     let currentBatchCount = 0;
     nextOrcadoBatches.forEach((batch) => {
-      const result = applyOrcadoRowsByGrupoToAccounts(rebuiltAccounts, batch.rows, batch.atividade);
+      const result = applyOrcadoRowsToAccounts(
+        rebuiltAccounts,
+        batch.rows,
+        batch.atividade,
+        batch.departamento
+      );
       rebuiltAccounts.length = 0;
       rebuiltAccounts.push(...result.accounts);
       if (batch.key === currentKey) {

@@ -57,12 +57,6 @@ export interface UploadRecord {
   rowCount: number;
 }
 
-export interface OrcadoGrupoMonthValue {
-  grupoContabil: string;
-  month: MonthKey;
-  value: number;
-}
-
 export const MONTHS = [
   { key: '2026-04', label: 'Abr/26' },
   { key: '2026-05', label: 'Mai/26' },
