@@ -280,6 +280,8 @@ const uploadBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
 const uploadOrcadoBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
+const uploadOrcadoScopeKey = (atividade: AtividadeKey, departamento: string) =>
+  `${normalizeMatch(atividade)}::${normalizeLooseMatch(departamento)}`;
 
 const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
   (rows.find((row) => validMonthKeys.has(row.month as MonthKey))?.month as MonthKey) || MONTHS[0].key;
@@ -362,14 +364,26 @@ const ORCADO_ATIVIDADE_ALIASES: Array<{ atividade: AtividadeKey; aliases: string
   { atividade: 'ENCARGOS', aliases: ['ENCARGO', 'FINANCEIR'] },
 ];
 
+const normalizeDepartmentKey = (value?: string) =>
+  normalizeMatch(value).replace(/\s+/g, ' ').trim();
+
 const parseOrcadoFileInfo = (fileName: string): { atividade: AtividadeKey; departamento: string } => {
   const baseName = fileName.replace(/\.(xlsx|xls|csv)$/i, '').trim();
-  const normalized = normalizeMatch(baseName).replace(/^ORCAMENTO\s+/, '').trim();
+  const normalized = normalizeMatch(baseName)
+    .replace(/^ORCAMENTO\s+/, '')
+    .replace(/^DEPARTAMENTO\s+/, '')
+    .replace(/^DEPTO\s+/, '')
+    .trim();
+  const rawDepartamento = baseName
+    .replace(/^ORCAMENTO\s+/i, '')
+    .replace(/^DEPARTAMENTO\s+/i, '')
+    .replace(/^DEPTO\s+/i, '')
+    .trim();
   const atividade =
     ORCADO_ATIVIDADE_ALIASES.find((item) =>
       item.aliases.some((alias) => normalized.includes(normalizeMatch(alias)))
     )?.atividade || 'DESP_ADM_TRIB';
-  return { atividade, departamento: normalized || normalizeMatch(baseName) };
+  return { atividade, departamento: rawDepartamento || baseName };
 };
 
 const ORCADO_MONTH_HEADER_MAP: Record<string, MonthKey> = {
@@ -627,9 +641,23 @@ const applyOrcadoRowsToAccounts = (
   const nextAccounts = baseAccounts.map(cloneAccountEntry);
   let count = 0;
   const normalizedImportedDept = normalizeLooseMatch(departamento);
+  const isAdministrativeImport = atividade === 'DESP_ADM_TRIB';
   const hasRateioHint = (value?: string) => normalizeMatch(value).includes('RATEIO');
   const realizedTotal = (account: AccountEntry) =>
     Object.values(account.realizado).reduce((sum, value) => sum + value, 0);
+  const compareCandidatePriority = (a: AccountEntry, b: AccountEntry) => {
+    const aRateio = hasRateioHint(a.centroCusto) || hasRateioHint(a.descricao);
+    const bRateio = hasRateioHint(b.centroCusto) || hasRateioHint(b.descricao);
+    if (aRateio !== bRateio) return aRateio ? -1 : 1;
+
+    const aReal = realizedTotal(a);
+    const bReal = realizedTotal(b);
+    if (aReal !== bReal) return bReal - aReal;
+
+    const byCode = a.codigo.localeCompare(b.codigo);
+    if (byCode !== 0) return byCode;
+    return a.id.localeCompare(b.id);
+  };
 
   rows.forEach((row) => {
     const normalizedGrupo = extractGrupoCode(row.grupoContabil);
@@ -641,12 +669,17 @@ const applyOrcadoRowsToAccounts = (
         account.atividade === atividade &&
         accountMatchesGrupoContabil(account, normalizedGrupo) &&
         (() => {
-          const accountDept = normalizeLooseMatch(account.departamento);
+          const accountScope = normalizeLooseMatch(
+            isAdministrativeImport ? account.centroCusto : account.departamento
+          );
           if (!normalizedImportedDept) return true;
+          if (isAdministrativeImport) {
+            return accountScope === normalizedImportedDept;
+          }
           return (
-            accountDept === normalizedImportedDept ||
-            accountDept.includes(normalizedImportedDept) ||
-            normalizedImportedDept.includes(accountDept)
+            accountScope === normalizedImportedDept ||
+            accountScope.includes(normalizedImportedDept) ||
+            normalizedImportedDept.includes(accountScope)
           );
         })()
     );
@@ -667,12 +700,17 @@ const applyOrcadoRowsToAccounts = (
               account.nivel === 5 &&
               accountMatchesGrupoContabil(account, normalizedGrupo) &&
               (() => {
-                const accountDept = normalizeLooseMatch(account.departamento);
+                const accountScope = normalizeLooseMatch(
+                  isAdministrativeImport ? account.centroCusto : account.departamento
+                );
                 if (!normalizedImportedDept) return false;
+                if (isAdministrativeImport) {
+                  return accountScope === normalizedImportedDept;
+                }
                 return (
-                  accountDept === normalizedImportedDept ||
-                  accountDept.includes(normalizedImportedDept) ||
-                  normalizedImportedDept.includes(accountDept)
+                  accountScope === normalizedImportedDept ||
+                  accountScope.includes(normalizedImportedDept) ||
+                  normalizedImportedDept.includes(accountScope)
                 );
               })()
           );
@@ -684,21 +722,30 @@ const applyOrcadoRowsToAccounts = (
           );
     if (scopedCandidates.length === 0) return;
 
+    let anchorCandidates = scopedCandidates;
+    if (
+      isAdministrativeImport &&
+      normalizedImportedDept &&
+      strictCandidates.length === 0 &&
+      sameActivityCandidates.length > 0
+    ) {
+      // If this group has no existing line for the imported cost center,
+      // clone the best same-activity candidate and pin it to the file cost center.
+      const baseCandidate = [...sameActivityCandidates].sort(compareCandidatePriority)[0];
+      const syntheticAnchor: AccountEntry = {
+        ...baseCandidate,
+        id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
+        centroCusto: departamento,
+        orcado: { ...baseCandidate.orcado },
+        realizado: { ...baseCandidate.realizado },
+      };
+      nextAccounts.push(syntheticAnchor);
+      anchorCandidates = [syntheticAnchor];
+    }
+
     // Regra: o valor orcado deve refletir o total do grupo contabil da planilha,
     // sem rateio entre contas.
-    const orderedCandidates = [...scopedCandidates].sort((a, b) => {
-      const aRateio = hasRateioHint(a.centroCusto) || hasRateioHint(a.descricao);
-      const bRateio = hasRateioHint(b.centroCusto) || hasRateioHint(b.descricao);
-      if (aRateio !== bRateio) return aRateio ? -1 : 1;
-
-      const aReal = realizedTotal(a);
-      const bReal = realizedTotal(b);
-      if (aReal !== bReal) return bReal - aReal;
-
-      const byCode = a.codigo.localeCompare(b.codigo);
-      if (byCode !== 0) return byCode;
-      return a.id.localeCompare(b.id);
-    });
+    const orderedCandidates = [...anchorCandidates].sort(compareCandidatePriority);
 
     const anchorAccount = orderedCandidates[0];
     anchorAccount.orcado[row.month] = (anchorAccount.orcado[row.month] || 0) + row.value;
@@ -799,15 +846,36 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     } = get();
     const fileInfo = parseOrcadoFileInfo(fileName);
     const aggregated = aggregateOrcadoRows(rows, fallbackPeriod);
-    const currentKey = uploadOrcadoBatchKey(fallbackPeriod, fileName);
-
     const resolvedAtividade =
       fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : (aggregated.atividadeFromRows || fileInfo.atividade);
+    const resolvedDepartamento = fileInfo.departamento;
+    const normalizedResolvedDepartamento = normalizeDepartmentKey(resolvedDepartamento);
+    const rowDepartments = Array.from(
+      new Set(
+        rows
+          .map((row) => normalizeDepartmentKey(rowValue(row.NOMEDEPTO)))
+          .filter((dept) => Boolean(dept))
+      )
+    );
+
+    if (rowDepartments.length === 0) {
+      throw new Error(
+        `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`
+      );
+    }
+    if (rowDepartments.length !== 1 || rowDepartments[0] !== normalizedResolvedDepartamento) {
+      throw new Error(
+        `Importacao do orcado "${fileName}" invalida: NOMEDEPTO deve corresponder ao nome do arquivo.`
+      );
+    }
+
+    const currentKey = uploadOrcadoBatchKey(fallbackPeriod, fileName);
+    const currentScopeKey = uploadOrcadoScopeKey(resolvedAtividade, resolvedDepartamento);
 
     console.log('[Orçado] Import:', {
       fileName,
       atividade: resolvedAtividade,
-      departamento: aggregated.departamentoFromRows || fileInfo.departamento,
+      departamento: resolvedDepartamento,
       excelRows: rows.length,
       aggregatedEntries: aggregated.entries.length,
       sampleEntries: aggregated.entries.slice(0, 3),
@@ -816,7 +884,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     const nextBatch = {
       key: currentKey,
       fileName,
-      departamento: aggregated.departamentoFromRows || fileInfo.departamento,
+      departamento: resolvedDepartamento,
       atividade: resolvedAtividade,
       period: fallbackPeriod,
       rows: aggregated.entries,
@@ -824,7 +892,11 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     };
 
     const nextOrcadoBatches = [
-      ...importedOrcadoBatches.filter((batch) => batch.key !== currentKey),
+      ...importedOrcadoBatches.filter((batch) => {
+        if (batch.key === currentKey) return false;
+        const batchScopeKey = uploadOrcadoScopeKey(batch.atividade, batch.departamento);
+        return batchScopeKey !== currentScopeKey;
+      }),
       nextBatch,
     ];
 
