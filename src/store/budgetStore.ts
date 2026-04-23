@@ -232,7 +232,7 @@ export function calculateRevenueByAtividade(accounts: AccountEntry[], atividade:
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: real - orc };
+  return { orc, real, diff: orc - real };
 }
 
 // Função para calcular totais consolidados de Receitas (todas as atividades)
@@ -247,7 +247,7 @@ export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: real - orc };
+  return { orc, real, diff: orc - real };
 }
 
 interface BudgetState {

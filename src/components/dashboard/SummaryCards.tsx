@@ -87,8 +87,8 @@ export function SummaryCards({
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((c) => {
-        const isHigher = c.real > c.orc;
-        const diffPct = c.orc === 0 ? 0 : ((c.real - c.orc) / Math.abs(c.orc)) * 100;
+        const isPositive = c.orc - c.real > 0;
+        const diffPct = c.orc === 0 ? 0 : ((c.orc - c.real) / Math.abs(c.orc)) * 100;
 
         return (
           <Card key={c.title} className="overflow-hidden border border-slate-200 shadow-sm bg-white group">
@@ -111,9 +111,9 @@ export function SummaryCards({
               <div className="flex items-center gap-2 mt-3">
                 <div className={cn(
                   "flex items-center gap-0.5 text-[13px] font-semibold px-2 py-0.5 rounded-full",
-                  isHigher ? "bg-emerald-50/80 text-emerald-600" : "bg-rose-50/80 text-rose-600"
+                  isPositive ? "bg-emerald-50/80 text-emerald-600" : "bg-rose-50/80 text-rose-600"
                 )}>
-                  {isHigher ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
+                  {isPositive ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
                   {Math.abs(diffPct).toFixed(1)}%
                 </div>
                 <span className="text-[13px] font-medium text-slate-600">vs Orçado</span>

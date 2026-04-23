@@ -212,8 +212,8 @@ export function AnalyticalTable({
       const hasChildren = node.children.size > 0;
       
       const showBudget = level === 0;
-      const diff = node.real - node.orc;
-      const isHigher = node.real > node.orc;
+      const diff = node.orc - node.real;
+      const isPositive = diff > 0;
 
       return (
         <Fragment key={currentPath}>
@@ -252,7 +252,7 @@ export function AnalyticalTable({
             </td>
             <td className={cn(
               "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
-              isHigher ? "text-emerald-600" : "text-rose-600"
+              isPositive ? "text-emerald-600" : "text-rose-600"
             )}>
               {showBudget && (node.orc || node.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
             </td>
@@ -316,15 +316,15 @@ export function AnalyticalTable({
             {root.size > 0 && (() => {
               const totalOrc = Array.from(root.values()).reduce((sum, n) => sum + n.orc, 0);
               const totalReal = Array.from(root.values()).reduce((sum, n) => sum + n.real, 0);
-              const totalDiff = totalReal - totalOrc;
-              const isTotalHigher = totalReal > totalOrc;
+              const totalDiff = totalOrc - totalReal;
+              const isTotalPositive = totalDiff > 0;
               return (
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-4 text-[13px] text-slate-700">Total Consolidado</td>
                     <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
                     <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
-                    <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalHigher ? "text-emerald-600" : "text-rose-600")}>
+                    <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                     </td>
                   </tr>
@@ -348,8 +348,8 @@ export function AnalyticalTable({
             </thead>
             <tbody>
               {flatEntries.length > 0 ? flatEntries.map((entry) => {
-                const diff = entry.real - entry.orc;
-                const isHigher = entry.real > entry.orc;
+                const diff = entry.orc - entry.real;
+                const isPositive = diff > 0;
                 return (
                   <tr key={entry.id} className={cn('border-b border-slate-200 transition-colors', ta.flatHover)}>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700 font-medium">{entry.departamento || '-'}</td>
@@ -359,7 +359,7 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
                     <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
                     <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
-                    <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isHigher ? "text-emerald-600" : "text-rose-600")}>
+                    <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(entry.orc || entry.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
                     </td>
                   </tr>
@@ -371,15 +371,15 @@ export function AnalyticalTable({
             {flatEntries.length > 0 && (() => {
               const totalOrc = flatEntries.reduce((sum, e) => sum + e.orc, 0);
               const totalReal = flatEntries.reduce((sum, e) => sum + e.real, 0);
-              const totalDiff = totalReal - totalOrc;
-              const isTotalHigher = totalReal > totalOrc;
+              const totalDiff = totalOrc - totalReal;
+              const isTotalPositive = totalDiff > 0;
               return (
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
                     <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
-                    <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalHigher ? "text-emerald-600" : "text-rose-600")}>
+                    <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                     </td>
                   </tr>

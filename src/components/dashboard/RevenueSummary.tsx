@@ -71,7 +71,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
     return {
       orc: bruta.orc + deducoes.orc,
       real: bruta.real + deducoes.real,
-      diff: (bruta.real + deducoes.real) - (bruta.orc + deducoes.orc),
+      diff: (bruta.orc + deducoes.orc) - (bruta.real + deducoes.real),
     };
   };
 
@@ -102,7 +102,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    const isHigher = real > orc;
+    const isPositive = diff > 0;
     const isClickable = !!activityKey;
 
     return (
@@ -153,11 +153,11 @@ export function RevenueSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1",
-              isHigher ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
+              isPositive ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
-            {isHigher ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
-            {fmt(Math.abs(diff))}
+            {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+            {fmt(diff)}
           </div>
         </div>
       </div>
@@ -206,7 +206,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
         title="Consolidado Geral de Receita Líquida"
         orc={global.orc}
         real={global.real}
-        diff={global.real - global.orc}
+        diff={global.orc - global.real}
         isMain
       />
 
@@ -232,7 +232,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           activityKey="OUTRAS_RECEITAS_EVENTUAIS"
           orc={outrasReceitasEventuais.orc}
           real={outrasReceitasEventuais.real}
-          diff={outrasReceitasEventuais.real - outrasReceitasEventuais.orc}
+          diff={outrasReceitasEventuais.orc - outrasReceitasEventuais.real}
         />
       </div>
     </div>

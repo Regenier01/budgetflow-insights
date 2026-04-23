@@ -126,7 +126,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    const isHigher = real > orc;
+    const isPositive = diff > 0;
     const isClickable = !!activityKey;
 
     return (
@@ -174,11 +174,11 @@ export function GlobalSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1",
-              isHigher ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
+              isPositive ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
-            {isHigher ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
-            {fmt(real - orc)}
+            {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+            {fmt(diff)}
           </div>
         </div>
       </div>
@@ -244,7 +244,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         title="Total Consolidado de Custos das Operações"
         orc={global.orc}
         real={global.real}
-        diff={global.real - global.orc}
+        diff={global.orc - global.real}
         isMain
       />
 
@@ -258,7 +258,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
               activityKey={ativ.key}
               orc={stats.orc}
               real={stats.real}
-              diff={stats.real - stats.orc}
+              diff={stats.orc - stats.real}
             />
           );
         })}
@@ -267,7 +267,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
           activityKey="DESPESAS_COM_VENDAS"
           orc={despesasComVendas.orc}
           real={despesasComVendas.real}
-          diff={despesasComVendas.real - despesasComVendas.orc}
+          diff={despesasComVendas.orc - despesasComVendas.real}
         />
       </div>
     </div>

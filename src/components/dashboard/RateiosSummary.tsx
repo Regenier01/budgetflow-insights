@@ -80,7 +80,7 @@ export function RateiosSummary({ selectedMonth }: Props) {
       department,
       orc: totals.orc,
       real: totals.real,
-      diff: totals.real - totals.orc,
+      diff: totals.orc - totals.real,
     };
   }).filter((item) => item.orc !== 0 || item.real !== 0);
 
@@ -108,7 +108,7 @@ export function RateiosSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     department?: string;
   }) => {
-    const isHigher = real > orc;
+    const isPositive = diff > 0;
     const isClickable = Boolean(department);
 
     return (
@@ -157,11 +157,11 @@ export function RateiosSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               'py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1',
-              isHigher ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
+              isPositive ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
             )}
           >
-            {isHigher ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
-            {fmt(Math.abs(diff))}
+            {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+            {fmt(diff)}
           </div>
         </div>
       </div>
@@ -174,7 +174,7 @@ export function RateiosSummary({ selectedMonth }: Props) {
         title="Consolidado de Rateios"
         orc={globalTotals.orc}
         real={globalTotals.real}
-        diff={globalTotals.real - globalTotals.orc}
+        diff={globalTotals.orc - globalTotals.real}
         isMain
       />
 
