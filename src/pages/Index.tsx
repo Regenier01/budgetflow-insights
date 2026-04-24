@@ -1,5 +1,5 @@
-import Dashboard from './Dashboard';
+import Home from './Home';
 
 export default function Index() {
-  return <Dashboard />;
+  return <Home />;
 }
