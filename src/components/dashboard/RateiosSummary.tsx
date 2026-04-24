@@ -122,16 +122,16 @@ export function RateiosSummary({ selectedMonth }: Props) {
         className={cn(
           'border overflow-hidden rounded-2xl transition-all duration-300 bg-white',
           isMain
-            ? 'mb-10 border-sky-500/20 shadow-xl ring-1 ring-sky-500/10'
-            : 'border-slate-100 shadow-sm hover:shadow-md hover:border-sky-200'
+            ? 'mb-10 border-revenue/30 shadow-xl ring-1 ring-revenue/15'
+            : 'border-slate-100 shadow-sm hover:shadow-md hover:border-revenue/30'
           ,
           isClickable && 'cursor-pointer active:scale-[0.99] group'
         )}
       >
-        <div className="py-4 px-5 flex items-center justify-between bg-sky-500 text-white">
+        <div className="py-4 px-5 flex items-center justify-between bg-revenue text-revenue-foreground">
           <span className="font-semibold text-[13px]">{title}</span>
           {isClickable ? (
-            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-sky-500 group-hover:bg-sky-100 transition-colors">
+            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-revenue group-hover:bg-revenue/10 transition-colors">
               <ArrowRight className="h-4 w-4" />
             </div>
           ) : (

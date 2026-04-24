@@ -72,7 +72,7 @@ function TileCard({ tile, small = false }: { tile: Tile; small?: boolean }) {
 
 export default function Home() {
   return (
-    <div className="relative min-h-[calc(100vh-10rem)] -mt-10 -mx-4 sm:-mx-8 px-4 sm:px-10 py-12 overflow-hidden">
+    <div className="relative min-h-[calc(100vh-10rem)] -mt-10 -mx-4 sm:-mx-8 px-4 sm:px-10 py-12">
       {/* Topographic background pattern */}
       <div
         aria-hidden
@@ -102,8 +102,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Rateios — top-left small tile */}
-      <div className="absolute left-6 sm:left-10 top-44 sm:top-48">
+      {/* Rateios */}
+      <div className="mx-auto mb-10 flex max-w-5xl justify-center sm:justify-start">
         <TileCard tile={rateiosTile} small />
       </div>
 
@@ -117,9 +117,11 @@ export default function Home() {
       </div>
 
       {/* Decorative bottom waves */}
-      <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
-        <div className="absolute -bottom-6 -left-10 right-10 h-20 bg-primary/90 rotate-[-3deg] rounded-tr-[120px]" />
-        <div className="absolute -bottom-2 left-20 -right-10 h-16 bg-orange-500 rotate-[2deg] rounded-tl-[140px]" />
+      <div aria-hidden className="pointer-events-none mt-16 h-24 overflow-hidden">
+        <div className="relative h-24 overflow-hidden">
+          <div className="absolute -bottom-6 -left-10 right-10 h-20 bg-primary/90 rotate-[-3deg] rounded-tr-[120px]" />
+          <div className="absolute -bottom-2 left-20 -right-10 h-16 bg-orange-500 rotate-[2deg] rounded-tl-[140px]" />
+        </div>
       </div>
     </div>
   );

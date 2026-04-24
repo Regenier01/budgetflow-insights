@@ -12,6 +12,10 @@ import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import NotFound from './NotFound';
+
+const RECEITAS_GREEN = '#038779';
+const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
+
 const RATEIO_DEPARTMENTS = [
   'OFICINA GERAL',
   'FABRICA DE RACAO',
@@ -367,8 +371,12 @@ export default function ActivityDetailPage() {
 
     const recOrc = sum(receitasEntries, 'orcado') + sum(deducoesEntries, 'orcado');
     const recReal = sum(receitasEntries, 'realizado') + sum(deducoesEntries, 'realizado');
-    const cusOrc = sum(custosEntries, 'orcado');
+    const rawCusOrc = sum(custosEntries, 'orcado');
     const cusReal = sum(custosEntries, 'realizado');
+    const cusOrc =
+      isAdmTrib && selectedMonth === 'all'
+        ? rawCusOrc - DESP_ADM_BUDGET_ADJUSTMENT
+        : rawCusOrc;
 
     return {
       receitas: { orc: recOrc, real: recReal },
@@ -466,10 +474,12 @@ export default function ActivityDetailPage() {
   ) => {
     const { isMain = false, onClick, accentColor = 'orange' } = options || {};
     const isHigher = data.real > data.orc;
-    const bgColor = accentColor === 'amber' ? 'bg-amber-500' : 'bg-orange-500';
-    const hoverBorder = accentColor === 'amber' ? 'hover:border-amber-200' : 'hover:border-orange-200';
-    const iconColor = accentColor === 'amber' ? 'text-amber-500' : 'text-orange-500';
-    const iconHover = accentColor === 'amber' ? 'group-hover:bg-amber-100' : 'group-hover:bg-orange-100';
+    const isEmerald = accentColor === 'emerald';
+    const isAmber = accentColor === 'amber';
+    const bgColor = isAmber ? 'bg-amber-500' : isEmerald ? '' : 'bg-orange-500';
+    const hoverBorder = isAmber ? 'hover:border-amber-200' : isEmerald ? 'hover:border-emerald-200' : 'hover:border-orange-200';
+    const iconColor = isAmber ? 'text-amber-500' : isEmerald ? '' : 'text-orange-500';
+    const iconHover = isAmber ? 'group-hover:bg-amber-100' : isEmerald ? 'group-hover:bg-emerald-100' : 'group-hover:bg-orange-100';
 
     return (
       <div
@@ -482,7 +492,10 @@ export default function ActivityDetailPage() {
           onClick && 'cursor-pointer active:scale-[0.99]'
         )}
       >
-        <div className={cn('py-4 px-5 flex items-center justify-between text-white', bgColor)}>
+        <div
+          className={cn('py-4 px-5 flex items-center justify-between text-white', bgColor)}
+          style={isEmerald ? { backgroundColor: RECEITAS_GREEN } : undefined}
+        >
           <span className="font-semibold text-[13px]">{title}</span>
           {onClick && (
             <div
@@ -491,6 +504,7 @@ export default function ActivityDetailPage() {
                 iconColor,
                 iconHover
               )}
+              style={isEmerald ? { color: RECEITAS_GREEN } : undefined}
             >
               <ArrowRight className="h-4 w-4" />
             </div>
@@ -789,6 +803,7 @@ export default function ActivityDetailPage() {
                 {!onlyDespesas &&
                   renderSummaryCard('Receitas', activityHubSummary.receitas, {
                     onClick: () => navigate(buildHubPath('receitas')),
+                    accentColor: 'emerald',
                   })}
                 {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
                   onClick: () => navigate(buildHubPath('custos')),

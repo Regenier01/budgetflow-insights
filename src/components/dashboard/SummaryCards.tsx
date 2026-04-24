@@ -4,6 +4,8 @@ import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
+const RECEITAS_GREEN = '#038779';
+
 interface Props {
   selectedMonth: MonthKey | 'all';
   atividadeFilter?: AtividadeKey;
@@ -69,14 +71,14 @@ export function SummaryCards({
   const allCards = [
     { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
     { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'red', tipo: 'D' },
+    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
     { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
   ];
 
   const scopedCards = [
     { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
     { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'red', tipo: 'D' },
+    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
     { title: 'Total da Abertura', orc: totalOrc, real: totalReal, icon: Target, color: 'primary', tipo: 'TOTAL' },
   ];
 
@@ -84,24 +86,45 @@ export function SummaryCards({
     ? scopedCards.filter((c) => tipoFilter.includes(c.tipo) || c.tipo === 'TOTAL')
     : allCards;
 
+  const totalColor = tipoFilter?.includes('R')
+    ? 'emerald'
+    : tipoFilter?.some((tipo) => tipo === 'C' || tipo === 'D')
+      ? 'orange'
+      : 'primary';
+
+  const resolveCardColor = (color: string, tipo: string) =>
+    tipo === 'TOTAL' ? totalColor : color;
+
+  const resolveHeaderClass = (color: string) =>
+    color === 'emerald'
+      ? 'text-white'
+      : color === 'orange'
+        ? 'bg-orange-500 text-white'
+        : 'bg-primary text-primary-foreground';
+
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((c) => {
+        const cardColor = resolveCardColor(c.color, c.tipo);
         const isPositive = c.orc - c.real > 0;
         const diffPct = c.orc === 0 ? 0 : ((c.orc - c.real) / Math.abs(c.orc)) * 100;
 
         return (
           <Card key={c.title} className="overflow-hidden border border-slate-200 shadow-sm bg-white group">
-            <CardHeader className="flex flex-row items-center justify-between pb-3 space-y-0 bg-orange-500 text-white">
+            <CardHeader className={cn(
+              "flex flex-row items-center justify-between pb-3 space-y-0",
+              resolveHeaderClass(cardColor)
+            )}
+            style={cardColor === 'emerald' ? { backgroundColor: RECEITAS_GREEN } : undefined}>
               <CardTitle className="text-[13px] font-semibold">
                 {c.title}
               </CardTitle>
               <div className={cn(
                 "p-2 rounded-lg bg-white/90",
-                c.color === 'emerald' ? "text-emerald-600" :
-                c.color === 'orange' ? "text-orange-500" :
-                c.color === 'red' ? "text-red-500" : "text-primary"
-              )}>
+                cardColor === 'emerald' ? "" :
+                cardColor === 'orange' ? "text-orange-500" : "text-primary"
+              )}
+              style={cardColor === 'emerald' ? { color: RECEITAS_GREEN } : undefined}>
                 <c.icon className="h-4 w-4" />
               </div>
             </CardHeader>
