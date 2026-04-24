@@ -305,6 +305,78 @@ export default function ActivityDetailPage() {
       maximumFractionDigits: 2,
     }).format(v);
 
+  const activityHubSummary = useMemo(() => {
+    if (!atividade?.key) return null;
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (selectedMonth === 'all') {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + (entry[field][selectedMonth] || 0);
+      }, 0);
+
+    const baseLeaves = accounts.filter(
+      (a) =>
+        a.nivel === 5 &&
+        a.atividade === atividade.key &&
+        !isOutrasReceitasEventuaisCode(a.codigo) &&
+        !isRendasOperacionaisEntry(a) &&
+        !isDespesaComVendasCode(a.codigo)
+    );
+
+    // Receitas (R) — exclui deduções tributárias (vão como redutor) e contas de "outras receitas"
+    const receitasEntries = baseLeaves.filter((a) => a.tipo === 'R');
+    const deducoesEntries = baseLeaves.filter(
+      (a) => a.tipo === 'D' && isReceitaDeductionEntry(a)
+    );
+
+    // Custos/Despesas — para Encargos usa filtro financeiro; para AdmTrib remove rateio/conta4/marketing
+    let custosEntries: AccountEntry[];
+    if (isEncargos) {
+      custosEntries = baseLeaves.filter(
+        (a) => isDespesaFinanceira(a.codigo) || isReceitaFinanceira(a.codigo)
+      );
+    } else if (isAdmTrib) {
+      custosEntries = baseLeaves.filter(
+        (a) =>
+          (a.tipo === 'C' || a.tipo === 'D') &&
+          !isReceitaDeductionEntry(a) &&
+          isNonRateioDepartment(a.departamento) &&
+          !isConta4Entry(a) &&
+          isNotMarketingInternoCostCenter(a.centroCusto)
+      );
+    } else if (isAgricola) {
+      custosEntries = baseLeaves.filter(
+        (a) =>
+          (a.tipo === 'C' || a.tipo === 'D') &&
+          !isReceitaDeductionEntry(a) &&
+          (a.tipo !== 'C' || isAllowedEntryForCustos('AGRICOLA', a)) &&
+          (a.tipo !== 'C' ||
+            isAgricolaFarmCultureDepartment(a.departamento) ||
+            isAgricolaUnidadeRecepConta4Entry(a))
+      );
+    } else {
+      custosEntries = baseLeaves.filter(
+        (a) =>
+          (a.tipo === 'C' || a.tipo === 'D') &&
+          !isReceitaDeductionEntry(a) &&
+          (a.tipo !== 'C' || isAllowedEntryForCustos(atividade.key, a))
+      );
+    }
+
+    const recOrc = sum(receitasEntries, 'orcado') + sum(deducoesEntries, 'orcado');
+    const recReal = sum(receitasEntries, 'realizado') + sum(deducoesEntries, 'realizado');
+    const cusOrc = sum(custosEntries, 'orcado');
+    const cusReal = sum(custosEntries, 'realizado');
+
+    return {
+      receitas: { orc: recOrc, real: recReal },
+      custos: { orc: cusOrc, real: cusReal },
+      total: { orc: recOrc - cusOrc, real: recReal - cusReal },
+    };
+  }, [accounts, atividade?.key, selectedMonth, isEncargos, isAdmTrib, isAgricola]);
+
   const pecuariaSummary = useMemo(() => {
     if (!isPecuaria) return null;
 
@@ -695,7 +767,38 @@ export default function ActivityDetailPage() {
         <div className="h-[84px]" />
       </div>
 
-      {isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (
+      {tipoView === 'todos' &&
+      atividade &&
+      !isOutrasReceitasEventuais &&
+      !isRateios &&
+      !isDespesasComVendas &&
+      !subview &&
+      activityHubSummary ? (
+        (() => {
+          const buildHubPath = (tipo: 'receitas' | 'custos') => {
+            const params = new URLSearchParams();
+            params.set('tipo', tipo);
+            if (returnTo) params.set('returnTo', returnTo);
+            return `/atividade/${atividade.key}?${params.toString()}`;
+          };
+          const onlyDespesas = isAdmTrib || isEncargos;
+          return (
+            <div className="space-y-6">
+              {renderSummaryCard(`Total ${atividade.label}`, activityHubSummary.total, { isMain: true })}
+              <div className={cn('grid gap-6', onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
+                {!onlyDespesas &&
+                  renderSummaryCard('Receitas', activityHubSummary.receitas, {
+                    onClick: () => navigate(buildHubPath('receitas')),
+                  })}
+                {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
+                  onClick: () => navigate(buildHubPath('custos')),
+                  accentColor: 'amber',
+                })}
+              </div>
+            </div>
+          );
+        })()
+      ) : isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (
         <div className="space-y-6">
           {renderSummaryCard('Total Pecuária', pecuariaSummary.total, { isMain: true })}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
