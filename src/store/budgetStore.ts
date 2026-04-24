@@ -729,19 +729,17 @@ const applyOrcadoRowsToAccounts = (
     if (scopedCandidates.length === 0) return;
 
     let anchorCandidates = scopedCandidates;
-    if (
-      isAdministrativeImport &&
-      normalizedImportedDept &&
-      strictCandidates.length === 0 &&
-      sameActivityCandidates.length > 0
-    ) {
-      // If this group has no existing line for the imported cost center,
-      // clone the best same-activity candidate and pin it to the file cost center.
+    if (normalizedImportedDept && strictCandidates.length === 0 && sameActivityCandidates.length > 0) {
+      // If this group has no existing line for the imported scope,
+      // clone the best same-activity candidate and pin it to the imported department/cost center.
       const baseCandidate = [...sameActivityCandidates].sort(compareCandidatePriority)[0];
       const syntheticAnchor: AccountEntry = {
         ...baseCandidate,
         id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
-        centroCusto: departamento,
+        departamento: isAdministrativeImport ? baseCandidate.departamento : departamento,
+        // For non-administrative budget imports, keep the synthetic line scoped to the
+        // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).
+        centroCusto: isAdministrativeImport ? departamento : departamento,
         orcado: { ...baseCandidate.orcado },
         realizado: { ...baseCandidate.realizado },
       };
@@ -754,7 +752,7 @@ const applyOrcadoRowsToAccounts = (
     const orderedCandidates = [...anchorCandidates].sort(compareCandidatePriority);
 
     const anchorAccount = orderedCandidates[0];
-    anchorAccount.orcado[row.month] = (anchorAccount.orcado[row.month] || 0) + row.value;
+    anchorAccount.orcado[row.month] = row.value;
 
     count++;
   });

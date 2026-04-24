@@ -14,7 +14,8 @@
     "data:import": "node extract_data.js",
     "data:add": "node extract_data.js --file",
     "orcado:import": "node import_orcado.js",
-    "orcado:import:adm": "node import_orcado_despesas_adm.js"
+    "orcado:import:adm": "node import_orcado_despesas_adm.js",
+    "orcado:import:pecuaria": "node import_orcado_pecuaria.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
