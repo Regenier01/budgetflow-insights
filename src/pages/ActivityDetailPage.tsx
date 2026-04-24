@@ -767,7 +767,38 @@ export default function ActivityDetailPage() {
         <div className="h-[84px]" />
       </div>
 
-      {isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (
+      {tipoView === 'todos' &&
+      atividade &&
+      !isOutrasReceitasEventuais &&
+      !isRateios &&
+      !isDespesasComVendas &&
+      !subview &&
+      activityHubSummary ? (
+        (() => {
+          const buildHubPath = (tipo: 'receitas' | 'custos') => {
+            const params = new URLSearchParams();
+            params.set('tipo', tipo);
+            if (returnTo) params.set('returnTo', returnTo);
+            return `/atividade/${atividade.key}?${params.toString()}`;
+          };
+          const onlyDespesas = isAdmTrib || isEncargos;
+          return (
+            <div className="space-y-6">
+              {renderSummaryCard(`Total ${atividade.label}`, activityHubSummary.total, { isMain: true })}
+              <div className={cn('grid gap-6', onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
+                {!onlyDespesas &&
+                  renderSummaryCard('Receitas', activityHubSummary.receitas, {
+                    onClick: () => navigate(buildHubPath('receitas')),
+                  })}
+                {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
+                  onClick: () => navigate(buildHubPath('custos')),
+                  accentColor: 'amber',
+                })}
+              </div>
+            </div>
+          );
+        })()
+      ) : isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (
         <div className="space-y-6">
           {renderSummaryCard('Total Pecuária', pecuariaSummary.total, { isMain: true })}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
