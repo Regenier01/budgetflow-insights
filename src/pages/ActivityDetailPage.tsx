@@ -117,6 +117,9 @@ const isReceitaDeductionEntry = (entry: AccountEntry) => {
     normalizedGroup.includes('TRIBUT')
   );
 };
+const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
+const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
+  normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
 
 const combineEntryFilters = (
   ...filters: Array<((entry: AccountEntry) => boolean) | undefined>
@@ -467,6 +470,9 @@ export default function ActivityDetailPage() {
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
       ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
       : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
+      ? (entry) => isNotMarketingInternoCostCenter(entry.centroCusto)
+      : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAgricola
       ? (entry) =>
         entry.tipo !== 'C' ||
@@ -610,7 +616,7 @@ export default function ActivityDetailPage() {
 
   return (
     <div className="space-y-8 pb-10">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4">
         <div>
           {(isPecuaria || isAgricola) && subview && (
             <button
@@ -631,47 +637,52 @@ export default function ActivityDetailPage() {
           <p className="text-sm text-slate-500 font-medium">Análise granular de orçado vs realizado por categoria contábil</p>
         </div>
         
-        <div className="flex flex-wrap gap-3">
-          {!(isPecuaria && !subview && resolvedTipoView === 'custos') && (
-            <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
-              <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-                <SelectValue placeholder="Departamento" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
-                {availableDepts.map((dept) => (
-                  <SelectItem key={dept} value={dept}>{dept}</SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          )}
+        <div className="fixed inset-x-0 top-16 z-40 py-3">
+          <div className="container flex justify-center">
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {!(isPecuaria && !subview && resolvedTipoView === 'custos') && (
+                <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
+                  <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                    <SelectValue placeholder="Departamento" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
+                    {availableDepts.map((dept) => (
+                      <SelectItem key={dept} value={dept}>{dept}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
 
-          {!(isPecuaria && !subview && resolvedTipoView === 'custos') && shouldApplyCostCenterFilter && (
-            <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
-              <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-                <SelectValue placeholder="Centro de Custo" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
-                {availableCostCenters.map((cc) => (
-                  <SelectItem key={cc} value={cc}>{cc}</SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          )}
+              {!(isPecuaria && !subview && resolvedTipoView === 'custos') && shouldApplyCostCenterFilter && (
+                <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
+                  <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                    <SelectValue placeholder="Centro de Custo" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
+                    {availableCostCenters.map((cc) => (
+                      <SelectItem key={cc} value={cc}>{cc}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
 
-          <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
-            <SelectTrigger className="w-[160px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-              <SelectValue placeholder="Período" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all" className="font-semibold">Acumulado 2026/27</SelectItem>
-              {MONTHS.map((m) => (
-                <SelectItem key={m.key} value={m.key}>{m.label}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+              <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
+                <SelectTrigger className="w-[160px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                  <SelectValue placeholder="Período" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all" className="font-semibold">Acumulado 2026/27</SelectItem>
+                  {MONTHS.map((m) => (
+                    <SelectItem key={m.key} value={m.key}>{m.label}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
         </div>
+        <div className="h-[84px]" />
       </div>
 
       {isPecuaria && resolvedTipoView === 'custos' && !subview && pecuariaSummary ? (

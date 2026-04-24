@@ -126,8 +126,6 @@ function parseDepartmentFromFilename(fileName) {
   const rawName = normalizeText(fileName.replace(/\.xlsx$/i, '').replace(/\.xls$/i, ''));
   return rawName
     .replace(/^ORCAMENTO\s+/i, '')
-    .replace(/^DEPARTAMENTO\s+/i, '')
-    .replace(/^DEPTO\s+/i, '')
     .trim();
 }
 

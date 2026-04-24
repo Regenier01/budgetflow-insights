@@ -14,6 +14,8 @@ interface Props {
   selectedMonth: MonthKey | 'all';
 }
 
+const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
+
 export function GlobalSummary({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const navigate = useNavigate();
@@ -103,6 +105,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
       cc === normalizeText('UNIDADE DE RECEPCAO DE GRAOS')
     );
   };
+  const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
+  const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
+    normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
@@ -208,6 +213,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
       (a) =>
         a.atividade === activityKey &&
         (activityKey !== 'DESP_ADM_TRIB' ? !isConta4AdministracaoEntry(a) : !isConta4Entry(a)) &&
+        (activityKey !== 'DESP_ADM_TRIB' || isNotMarketingInternoCostCenter(a.centroCusto)) &&
         (a.tipo === 'C' || a.tipo === 'D') &&
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
@@ -223,10 +229,18 @@ export function GlobalSummary({ selectedMonth }: Props) {
     );
   };
 
+  const applyAdmBudgetAdjustment = (activityKey: string, value: { orc: number; real: number }) => {
+    if (activityKey !== 'DESP_ADM_TRIB' || selectedMonth !== 'all') return value;
+    return {
+      ...value,
+      orc: value.orc - DESP_ADM_BUDGET_ADJUSTMENT,
+    };
+  };
+
   // O consolidado deve seguir exatamente a mesma regra de cálculo dos cards por atividade.
   const global = ATIVIDADES.reduce(
     (acc, atividade) => {
-      const stats = calculateCostsByActivity(atividade.key);
+      const stats = applyAdmBudgetAdjustment(atividade.key, calculateCostsByActivity(atividade.key));
       acc.orc += stats.orc;
       acc.real += stats.real;
       return acc;
@@ -250,7 +264,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {ATIVIDADES.map((ativ) => {
-          const stats = calculateCostsByActivity(ativ.key);
+          const stats = applyAdmBudgetAdjustment(ativ.key, calculateCostsByActivity(ativ.key));
           return (
             <SummaryTable
               key={ativ.key}

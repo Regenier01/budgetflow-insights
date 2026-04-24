@@ -367,6 +367,12 @@ const ORCADO_ATIVIDADE_ALIASES: Array<{ atividade: AtividadeKey; aliases: string
 const normalizeDepartmentKey = (value?: string) =>
   normalizeMatch(value).replace(/\s+/g, ' ').trim();
 
+const canonicalDepartmentKey = (value?: string) =>
+  normalizeDepartmentKey(value)
+    .replace(/^(DEPARTAMENTO|DEPTO)\s+/, '')
+    .replace(/\bADMNISTRATIVA\b/g, 'ADMINISTRATIVA')
+    .trim();
+
 const parseOrcadoFileInfo = (fileName: string): { atividade: AtividadeKey; departamento: string } => {
   const baseName = fileName.replace(/\.(xlsx|xls|csv)$/i, '').trim();
   const normalized = normalizeMatch(baseName)
@@ -850,6 +856,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : (aggregated.atividadeFromRows || fileInfo.atividade);
     const resolvedDepartamento = fileInfo.departamento;
     const normalizedResolvedDepartamento = normalizeDepartmentKey(resolvedDepartamento);
+    const canonicalResolvedDepartamento = canonicalDepartmentKey(resolvedDepartamento);
     const rowDepartments = Array.from(
       new Set(
         rows
@@ -857,13 +864,19 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
           .filter((dept) => Boolean(dept))
       )
     );
+    const canonicalRowDepartments = Array.from(
+      new Set(rowDepartments.map((dept) => canonicalDepartmentKey(dept)).filter((dept) => Boolean(dept)))
+    );
 
     if (rowDepartments.length === 0) {
       throw new Error(
         `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`
       );
     }
-    if (rowDepartments.length !== 1 || rowDepartments[0] !== normalizedResolvedDepartamento) {
+    const strictMatch = rowDepartments.length === 1 && rowDepartments[0] === normalizedResolvedDepartamento;
+    const canonicalMatch =
+      canonicalRowDepartments.length === 1 && canonicalRowDepartments[0] === canonicalResolvedDepartamento;
+    if (!strictMatch && !canonicalMatch) {
       throw new Error(
         `Importacao do orcado "${fileName}" invalida: NOMEDEPTO deve corresponder ao nome do arquivo.`
       );
