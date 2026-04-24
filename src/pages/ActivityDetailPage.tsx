@@ -98,6 +98,11 @@ const isAllowedCentroCustoForCustos = (atividadeKey: string | undefined, centroC
   return allowed.some((item) => normalizeText(item) === normalizedCC);
 };
 
+const isSyntheticOrcadoEntry = (entry: AccountEntry) => entry.id.includes('::ORCADO::');
+
+const isAllowedEntryForCustos = (atividadeKey: string | undefined, entry: AccountEntry) =>
+  isSyntheticOrcadoEntry(entry) || isAllowedCentroCustoForCustos(atividadeKey, entry.centroCusto);
+
 const isRendasOperacionaisEntry = (entry: AccountEntry) => {
   const normalizedGroup = normalizeText(entry.grupoContabilN9);
   return normalizedGroup.includes('RENDAS OPERACIONAIS');
@@ -308,7 +313,7 @@ export default function ActivityDetailPage() {
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
-        (a.tipo !== 'C' || isAllowedCentroCustoForCustos('PECUARIA', a.centroCusto))
+        (a.tipo !== 'C' || isAllowedEntryForCustos('PECUARIA', a))
     );
 
     const pastoEntries = pecuariaLeaves.filter((a) => !isConfinamentoEntry(a));
@@ -347,7 +352,7 @@ export default function ActivityDetailPage() {
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
         (a.tipo !== 'C' ||
-          isAllowedCentroCustoForCustos('AGRICOLA', a.centroCusto) ||
+          isAllowedEntryForCustos('AGRICOLA', a) ||
           isAgricolaUnidadeRecepConta4Entry(a)) &&
         (a.tipo !== 'C' ||
           isAgricolaFarmCultureDepartment(a.departamento) ||
@@ -465,7 +470,7 @@ export default function ActivityDetailPage() {
         : (entry) => entry.tipo !== 'D' || !isReceitaDeductionEntry(entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos
-      ? (entry) => entry.tipo !== 'C' || isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto)
+      ? (entry) => entry.tipo !== 'C' || isAllowedEntryForCustos(atividade?.key, entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
       ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
@@ -917,7 +922,7 @@ export default function ActivityDetailPage() {
                         isAgricolaFarmCultureDepartment(entry.departamento) ||
                         isAgricolaUnidadeRecepConta4Entry(entry)
                       : undefined,
-                    (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
+                    (entry) => isAllowedEntryForCustos(atividade?.key, entry),
                   )}
                   title="Detalhamento de Custos"
                   accentColor="orange"
@@ -1095,7 +1100,7 @@ export default function ActivityDetailPage() {
                       isAgricolaFarmCultureDepartment(entry.departamento) ||
                       isAgricolaUnidadeRecepConta4Entry(entry)
                     : undefined,
-                  (entry) => isAllowedCentroCustoForCustos(atividade?.key, entry.centroCusto),
+                  (entry) => isAllowedEntryForCustos(atividade?.key, entry),
                 )}
                 title="Detalhamento de Custos"
                 accentColor="orange"

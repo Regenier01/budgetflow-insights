@@ -278,8 +278,15 @@ interface BudgetState {
 
 const uploadBatchKey = (period: MonthKey, fileName: string) =>
   `${period}::${fileName.trim().toUpperCase()}`;
-const uploadOrcadoBatchKey = (period: MonthKey, fileName: string) =>
-  `${period}::${fileName.trim().toUpperCase()}`;
+const uploadOrcadoBatchKey = (
+  period: MonthKey,
+  fileName: string,
+  atividade: AtividadeKey,
+  departamento: string
+) =>
+  `${period}::${fileName.trim().toUpperCase()}::${normalizeMatch(atividade)}::${normalizeLooseMatch(
+    departamento
+  )}`;
 const uploadOrcadoScopeKey = (atividade: AtividadeKey, departamento: string) =>
   `${normalizeMatch(atividade)}::${normalizeLooseMatch(departamento)}`;
 
@@ -290,7 +297,7 @@ const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches
   ORCADO_IMPORT_BATCHES.map((batch) => {
     const period = getBatchFallbackPeriod(batch.rows);
     return {
-      key: uploadOrcadoBatchKey(period, batch.fileName),
+      key: uploadOrcadoBatchKey(period, batch.fileName, batch.atividade, batch.departamento),
       fileName: batch.fileName,
       departamento: batch.departamento,
       atividade: batch.atividade,
@@ -373,6 +380,30 @@ const canonicalDepartmentKey = (value?: string) =>
     .replace(/\bADMNISTRATIVA\b/g, 'ADMINISTRATIVA')
     .trim();
 
+const findDepartmentMappingByName = (departmentName?: string): MappingValue | null => {
+  const target = canonicalDepartmentKey(departmentName);
+  if (!target) return null;
+  const entries = Object.entries(DEPARTMENT_MAPPING as Record<string, MappingValue>);
+  const match = entries.find(([name]) => canonicalDepartmentKey(name) === target);
+  return match ? match[1] : null;
+};
+
+const normalizeDepartmentToPecuaria = (departmentName: string): string => {
+  const normalized = String(departmentName || '').trim();
+  if (!normalized) return normalized;
+
+  const directMap = findDepartmentMappingByName(normalized);
+  const directAtividade = mapDivisaoToAtividade(directMap?.divisao);
+  if (directAtividade === 'PECUARIA') return normalized;
+
+  const candidate = normalized.replace(/SERINGAL/gi, 'PECUARIA');
+  if (candidate === normalized) return normalized;
+
+  const candidateMap = findDepartmentMappingByName(candidate);
+  const candidateAtividade = mapDivisaoToAtividade(candidateMap?.divisao);
+  return candidateAtividade === 'PECUARIA' ? candidate : normalized;
+};
+
 const parseOrcadoFileInfo = (fileName: string): { atividade: AtividadeKey; departamento: string } => {
   const baseName = fileName.replace(/\.(xlsx|xls|csv)$/i, '').trim();
   const normalized = normalizeMatch(baseName)
@@ -385,9 +416,19 @@ const parseOrcadoFileInfo = (fileName: string): { atividade: AtividadeKey; depar
     .replace(/^DEPARTAMENTO\s+/i, '')
     .replace(/^DEPTO\s+/i, '')
     .trim();
+  const normalizedWords = normalized.replace(/[^A-Z0-9]+/g, ' ').trim();
   const atividade =
     ORCADO_ATIVIDADE_ALIASES.find((item) =>
-      item.aliases.some((alias) => normalized.includes(normalizeMatch(alias)))
+      item.aliases.some((alias) => {
+        const normalizedAlias = normalizeMatch(alias);
+        const aliasAsToken = new RegExp(`(^|\\s)${normalizedAlias}(\\s|$)`);
+        return (
+          normalized === normalizedAlias ||
+          normalized.startsWith(`${normalizedAlias} `) ||
+          normalized.endsWith(` ${normalizedAlias}`) ||
+          aliasAsToken.test(normalizedWords)
+        );
+      })
     )?.atividade || 'DESP_ADM_TRIB';
   return { atividade, departamento: rawDepartamento || baseName };
 };
@@ -698,6 +739,9 @@ const applyOrcadoRowsToAccounts = (
               account.atividade === atividade &&
               accountMatchesGrupoContabil(account, normalizedGrupo)
           );
+    if (!isAdministrativeImport && sameActivityCandidates.length === 0) {
+      return;
+    }
     const departmentCandidates =
       sameActivityCandidates.length > 0
         ? sameActivityCandidates
@@ -850,9 +894,15 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     } = get();
     const fileInfo = parseOrcadoFileInfo(fileName);
     const aggregated = aggregateOrcadoRows(rows, fallbackPeriod);
+    const mappingAtividade =
+      mapDivisaoToAtividade(findDepartmentMappingByName(fileInfo.departamento)?.divisao) || null;
     const resolvedAtividade =
-      fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : (aggregated.atividadeFromRows || fileInfo.atividade);
-    const resolvedDepartamento = fileInfo.departamento;
+      mappingAtividade ||
+      (fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : aggregated.atividadeFromRows || fileInfo.atividade);
+    const resolvedDepartamento =
+      resolvedAtividade === 'PECUARIA'
+        ? normalizeDepartmentToPecuaria(fileInfo.departamento)
+        : fileInfo.departamento;
     const normalizedResolvedDepartamento = normalizeDepartmentKey(resolvedDepartamento);
     const canonicalResolvedDepartamento = canonicalDepartmentKey(resolvedDepartamento);
     const rowDepartments = Array.from(
@@ -862,16 +912,21 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
           .filter((dept) => Boolean(dept))
       )
     );
+    const effectiveRowDepartments =
+      resolvedAtividade === 'PECUARIA'
+        ? Array.from(new Set(rowDepartments.map((dept) => normalizeDepartmentKey(normalizeDepartmentToPecuaria(dept)))))
+        : rowDepartments;
     const canonicalRowDepartments = Array.from(
-      new Set(rowDepartments.map((dept) => canonicalDepartmentKey(dept)).filter((dept) => Boolean(dept)))
+      new Set(effectiveRowDepartments.map((dept) => canonicalDepartmentKey(dept)).filter((dept) => Boolean(dept)))
     );
 
-    if (rowDepartments.length === 0) {
+    if (effectiveRowDepartments.length === 0) {
       throw new Error(
         `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`
       );
     }
-    const strictMatch = rowDepartments.length === 1 && rowDepartments[0] === normalizedResolvedDepartamento;
+    const strictMatch =
+      effectiveRowDepartments.length === 1 && effectiveRowDepartments[0] === normalizedResolvedDepartamento;
     const canonicalMatch =
       canonicalRowDepartments.length === 1 && canonicalRowDepartments[0] === canonicalResolvedDepartamento;
     if (!strictMatch && !canonicalMatch) {
@@ -880,8 +935,13 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       );
     }
 
-    const currentKey = uploadOrcadoBatchKey(fallbackPeriod, fileName);
     const currentScopeKey = uploadOrcadoScopeKey(resolvedAtividade, resolvedDepartamento);
+    const currentKey = uploadOrcadoBatchKey(
+      fallbackPeriod,
+      fileName,
+      resolvedAtividade,
+      resolvedDepartamento
+    );
 
     console.log('[Orçado] Import:', {
       fileName,
