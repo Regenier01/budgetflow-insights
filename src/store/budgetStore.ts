@@ -739,9 +739,6 @@ const applyOrcadoRowsToAccounts = (
               account.atividade === atividade &&
               accountMatchesGrupoContabil(account, normalizedGrupo)
           );
-    if (!isAdministrativeImport && sameActivityCandidates.length === 0) {
-      return;
-    }
     const departmentCandidates =
       sameActivityCandidates.length > 0
         ? sameActivityCandidates
@@ -773,13 +770,17 @@ const applyOrcadoRowsToAccounts = (
     if (scopedCandidates.length === 0) return;
 
     let anchorCandidates = scopedCandidates;
-    if (normalizedImportedDept && strictCandidates.length === 0 && sameActivityCandidates.length > 0) {
+    if (normalizedImportedDept && strictCandidates.length === 0) {
       // If this group has no existing line for the imported scope,
-      // clone the best same-activity candidate and pin it to the imported department/cost center.
-      const baseCandidate = [...sameActivityCandidates].sort(compareCandidatePriority)[0];
+      // clone the best candidate and pin it to the imported department/cost center.
+      // This also handles regressions where the base data no longer has this group
+      // for the imported activity (e.g. SERINGAL), by creating a scoped synthetic anchor.
+      const basePool = sameActivityCandidates.length > 0 ? sameActivityCandidates : scopedCandidates;
+      const baseCandidate = [...basePool].sort(compareCandidatePriority)[0];
       const syntheticAnchor: AccountEntry = {
         ...baseCandidate,
         id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
+        atividade,
         departamento: isAdministrativeImport ? baseCandidate.departamento : departamento,
         // For non-administrative budget imports, keep the synthetic line scoped to the
         // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).

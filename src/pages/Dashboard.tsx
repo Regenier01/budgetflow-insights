@@ -4,12 +4,12 @@ import { RateiosSummary } from '@/components/dashboard/RateiosSummary';
 import { DollarSign, Split } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MONTHS, type MonthKey } from '@/types/budget';
-import { getLastUploadedPeriod, useBudgetStore } from '@/store/budgetStore';
-import { useEffect, useMemo, useState } from 'react';
+import { useBudgetStore } from '@/store/budgetStore';
+import { useMemo, useState } from 'react';
 
 export default function Dashboard() {
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => getLastUploadedPeriod() ?? 'all');
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
 
   const availableMonths = useMemo(() => {
     const monthSet = new Set<string>();
@@ -20,18 +20,6 @@ export default function Dashboard() {
 
     return MONTHS.filter((month) => monthSet.has(month.key));
   }, [accounts]);
-
-  useEffect(() => {
-    const persistedMonth = getLastUploadedPeriod();
-    if (persistedMonth) {
-      setSelectedMonth(persistedMonth);
-      return;
-    }
-
-    if (availableMonths.length > 0) {
-      setSelectedMonth(availableMonths[availableMonths.length - 1].key);
-    }
-  }, [availableMonths]);
 
   return (
     <div className="space-y-12 pb-20">

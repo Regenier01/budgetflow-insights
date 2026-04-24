@@ -9515,8 +9515,8 @@ export const ORCADO_IMPORT_BATCHES: OrcadoImportBatch[] = [
     ]
   },
   {
-    "fileName": "COVOA - PECUÁRIA.xlsx",
-    "departamento": "COVOA - PECUÁRIA",
+    "fileName": "COVOA - PECUARIA.xlsx",
+    "departamento": "COVOA - PECUARIA",
     "atividade": "PECUARIA",
     "rows": [
       {

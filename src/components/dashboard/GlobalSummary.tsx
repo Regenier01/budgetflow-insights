@@ -88,6 +88,13 @@ export function GlobalSummary({ selectedMonth }: Props) {
     const normalizedCC = normalizeText(centroCusto);
     return allowed.some((item) => normalizeText(item) === normalizedCC);
   };
+  const isSyntheticOrcadoEntry = (entry: (typeof accounts)[number]) => entry.id.includes('::ORCADO::');
+  const isRateioDeCustosGroup = (entry: (typeof accounts)[number]) =>
+    normalizeText(entry.grupoContabilN9).includes('4.2.01.02-RATEIO DE CUSTOS');
+  const isAllowedEntryForCustos = (activityKey: string, entry: (typeof accounts)[number]) =>
+    isSyntheticOrcadoEntry(entry) ||
+    isRateioDeCustosGroup(entry) ||
+    isAllowedCentroCustoForCustos(activityKey, entry.centroCusto);
 
   const isAgricolaFarmCultureDepartment = (departamento?: string) => {
     const normalized = normalizeText(departamento);
@@ -219,7 +226,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
-        (a.tipo !== 'C' || isAllowedCentroCustoForCustos(activityKey, a.centroCusto)) &&
+        (a.tipo !== 'C' || isAllowedEntryForCustos(activityKey, a)) &&
         (activityKey !== 'DESP_ADM_TRIB' ||
           (!isRateioDepartment(a.departamento) && !isConta4Entry(a))) &&
         (activityKey !== 'AGRICOLA' ||

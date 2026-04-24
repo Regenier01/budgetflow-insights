@@ -99,9 +99,13 @@ const isAllowedCentroCustoForCustos = (atividadeKey: string | undefined, centroC
 };
 
 const isSyntheticOrcadoEntry = (entry: AccountEntry) => entry.id.includes('::ORCADO::');
+const isRateioDeCustosGroup = (entry: AccountEntry) =>
+  normalizeText(entry.grupoContabilN9).includes('4.2.01.02-RATEIO DE CUSTOS');
 
 const isAllowedEntryForCustos = (atividadeKey: string | undefined, entry: AccountEntry) =>
-  isSyntheticOrcadoEntry(entry) || isAllowedCentroCustoForCustos(atividadeKey, entry.centroCusto);
+  isSyntheticOrcadoEntry(entry) ||
+  isRateioDeCustosGroup(entry) ||
+  isAllowedCentroCustoForCustos(atividadeKey, entry.centroCusto);
 
 const isRendasOperacionaisEntry = (entry: AccountEntry) => {
   const normalizedGroup = normalizeText(entry.grupoContabilN9);
@@ -309,6 +313,7 @@ export default function ActivityDetailPage() {
         a.nivel === 5 &&
         a.atividade === 'PECUARIA' &&
         (a.tipo === 'C' || a.tipo === 'D') &&
+        !isConta4AdministracaoEntry(a) &&
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
