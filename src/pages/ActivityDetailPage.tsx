@@ -677,6 +677,17 @@ export default function ActivityDetailPage() {
     selectedMonth,
   ]);
 
+  const isGeneralTotalsView =
+    (tipoView === 'todos' &&
+      Boolean(atividade) &&
+      !isOutrasReceitasEventuais &&
+      !isRateios &&
+      !isDespesasComVendas &&
+      !subview &&
+      Boolean(activityHubSummary)) ||
+    (isPecuaria && resolvedTipoView === 'custos' && !subview && Boolean(pecuariaSummary)) ||
+    (isAgricola && resolvedTipoView === 'custos' && !subview && Boolean(agricolaSummary));
+
   useEffect(() => {
     if (selectedDept !== 'all' && !availableDepts.includes(selectedDept)) {
       setSelectedDept('all');
@@ -736,7 +747,7 @@ export default function ActivityDetailPage() {
         <div className="fixed inset-x-0 top-16 z-40 py-3">
           <div className="container flex justify-center">
             <div className="flex flex-wrap items-center justify-center gap-3">
-              {!(isPecuaria && !subview && resolvedTipoView === 'custos') && (
+              {!isGeneralTotalsView && (
                 <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
                   <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
                     <SelectValue placeholder="Departamento" />
@@ -750,7 +761,7 @@ export default function ActivityDetailPage() {
                 </Select>
               )}
 
-              {!(isPecuaria && !subview && resolvedTipoView === 'custos') && shouldApplyCostCenterFilter && (
+              {!isGeneralTotalsView && shouldApplyCostCenterFilter && (
                 <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
                   <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
                     <SelectValue placeholder="Centro de Custo" />
@@ -845,7 +856,6 @@ export default function ActivityDetailPage() {
             selectedMonth={selectedMonth} 
             atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
             costCenterFilter={activeCostCenterFilter}
-            departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
             entryFilter={summaryEntryFilter}
             tipoFilter={summaryTipoFilter}
           />
