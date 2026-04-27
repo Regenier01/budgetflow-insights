@@ -474,16 +474,30 @@ const ORCADO_MONTH_HEADER_MAP: Record<string, MonthKey> = {
   'MAR/27': '2027-03',
 };
 
+const MONTH_NUMBER_TO_KEY: Partial<Record<number, MonthKey>> = MONTHS.reduce(
+  (acc, month) => {
+    const monthNumber = Number(month.key.split('-')[1]);
+    acc[monthNumber] = month.key;
+    return acc;
+  },
+  {} as Partial<Record<number, MonthKey>>
+);
+
+const mapHeaderDateToMonthKey = (date: Date): MonthKey | null => {
+  const exactKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}` as MonthKey;
+  if (validMonthKeys.has(exactKey)) return exactKey;
+
+  return MONTH_NUMBER_TO_KEY[date.getMonth() + 1] || null;
+};
+
 const parseMonthFromHeader = (header: unknown): MonthKey | null => {
   if (header instanceof Date && !Number.isNaN(header.getTime())) {
-    const key = `${header.getFullYear()}-${String(header.getMonth() + 1).padStart(2, '0')}` as MonthKey;
-    return validMonthKeys.has(key) ? key : null;
+    return mapHeaderDateToMonthKey(header);
   }
   if (typeof header === 'number' && Number.isFinite(header)) {
     const date = new Date((header - 25569) * 86400000);
     if (!Number.isNaN(date.getTime())) {
-      const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}` as MonthKey;
-      return validMonthKeys.has(key) ? key : null;
+      return mapHeaderDateToMonthKey(date);
     }
   }
   const normalized = normalizeMatch(String(header || ''));
@@ -723,11 +737,7 @@ const applyOrcadoRowsToAccounts = (
           if (isAdministrativeImport) {
             return accountScope === normalizedImportedDept;
           }
-          return (
-            accountScope === normalizedImportedDept ||
-            accountScope.includes(normalizedImportedDept) ||
-            normalizedImportedDept.includes(accountScope)
-          );
+          return accountScope === normalizedImportedDept;
         })()
     );
     const sameActivityCandidates =
@@ -754,11 +764,7 @@ const applyOrcadoRowsToAccounts = (
                 if (isAdministrativeImport) {
                   return accountScope === normalizedImportedDept;
                 }
-                return (
-                  accountScope === normalizedImportedDept ||
-                  accountScope.includes(normalizedImportedDept) ||
-                  normalizedImportedDept.includes(accountScope)
-                );
+                return accountScope === normalizedImportedDept;
               })()
           );
     const scopedCandidates =

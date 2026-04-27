@@ -80,6 +80,20 @@ const isConfinamentoEntry = (entry: AccountEntry) => {
   );
 };
 
+const isPecuariaDepartmentOption = (departamento?: string) => {
+  const normalized = normalizeText(departamento);
+  if (!normalized) return false;
+  return (
+    normalized === 'CENTRO COMERCIAL DE TOUROS' ||
+    normalized === 'CONFINAMENTO' ||
+    normalized === 'CONFINAMENTO - TRANSPORTE DE GADO' ||
+    /^[^-]+ - PECUARIA$/.test(normalized)
+  );
+};
+
+const formatConfinamentoDepartmentLabel = (departamento: string) =>
+  departamento.replace(/\s*-\s*PECUARIA$/i, '').trim();
+
 const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
   PECUARIA: [
     'RATEIO GADO GERAL',
@@ -637,9 +651,10 @@ export default function ActivityDetailPage() {
           )
           .map((entry) => entry.departamento)
           .filter((dept): dept is string => Boolean(dept))
+          .filter((dept) => (isPecuaria ? isPecuariaDepartmentOption(dept) : true))
       )
     ).sort();
-  }, [accounts, id, atividade?.key, filterEntriesForSelectors, selectedMonth]);
+  }, [accounts, id, atividade?.key, filterEntriesForSelectors, selectedMonth, isPecuaria]);
 
   const availableCostCenters = useMemo(() => {
     if (!id) return [];
@@ -659,9 +674,13 @@ export default function ActivityDetailPage() {
     );
 
     if (resolvedTipoView === 'custos' && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) {
-      return dynamic
-        .filter((cc) => isAllowedCentroCustoForCustos(atividade?.key, cc))
-        .sort();
+      const allowed = dynamic.filter((cc) => isAllowedCentroCustoForCustos(atividade?.key, cc));
+      if (isPecuaria && subview === 'confinamento') {
+        return allowed
+          .filter((cc) => normalizeText(cc) !== 'CONFINAMENTO - TRANSPORTE DE GADO')
+          .sort();
+      }
+      return allowed.sort();
     }
 
     return dynamic.sort();
@@ -675,6 +694,8 @@ export default function ActivityDetailPage() {
     isRateios,
     resolvedTipoView,
     selectedMonth,
+    isPecuaria,
+    subview,
   ]);
 
   const isGeneralTotalsView =
@@ -755,7 +776,11 @@ export default function ActivityDetailPage() {
                   <SelectContent>
                     <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
                     {availableDepts.map((dept) => (
-                      <SelectItem key={dept} value={dept}>{dept}</SelectItem>
+                      <SelectItem key={dept} value={dept}>
+                        {isPecuaria && subview === 'confinamento'
+                          ? formatConfinamentoDepartmentLabel(dept)
+                          : dept}
+                      </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
