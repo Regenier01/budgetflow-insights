@@ -5,7 +5,7 @@ import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
-import { useBudgetStore, calculateEncargosTotals, getLastUploadedPeriod } from '@/store/budgetStore';
+import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
 import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
@@ -147,6 +147,16 @@ const isReceitaDeductionEntry = (entry: AccountEntry) => {
 const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
 const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
   normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
+const DESPESAS_RAILENE_COST_CENTERS = [
+  'GOVERNANCIA CORPORATIVA',
+  'RATEIO DESENVOLVIMENTO HUMANO',
+  'MARKETING INTERNO',
+  'ORGANIZACAO PREDIAL',
+  'PESSOAL',
+] as const;
+const isDespesasRaileneCostCenter = (centroCusto?: string) =>
+  DESPESAS_RAILENE_COST_CENTERS.some((item) => normalizeText(item) === normalizeText(centroCusto));
+const isDespesasLaizaCostCenter = (centroCusto?: string) => !isDespesasRaileneCostCenter(centroCusto);
 
 const combineEntryFilters = (
   ...filters: Array<((entry: AccountEntry) => boolean) | undefined>
@@ -176,7 +186,7 @@ export default function ActivityDetailPage() {
   const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => getLastUploadedPeriod() ?? 'all');
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
   const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
   
@@ -188,6 +198,8 @@ export default function ActivityDetailPage() {
   const isEncargos = atividade?.key === 'ENCARGOS';
   const isAgricola = atividade?.key === 'AGRICOLA';
   const isPecuaria = atividade?.key === 'PECUARIA';
+  const isAdmTribLaizaSubview = isAdmTrib && subview === 'laiza';
+  const isAdmTribRaileneSubview = isAdmTrib && subview === 'railene';
   const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
   const isAgricolaGeralSubview = isAgricola && subview === 'geral';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
@@ -218,6 +230,10 @@ export default function ActivityDetailPage() {
           ? 'Pecuária — Pasto'
           : isPecuaria && subview === 'confinamento'
             ? 'Pecuária — Confinamento'
+            : isAdmTrib && subview === 'laiza'
+              ? 'Desp. Adm. e Tributárias — DESPESAS - LAIZA'
+              : isAdmTrib && subview === 'railene'
+                ? 'Desp. Adm. e Tributárias — DESPESAS RAILENE'
             : isAgricola && subview === 'geral'
               ? 'Agrícola'
               : isAgricola && subview === 'unidade-recep'
@@ -246,7 +262,18 @@ export default function ActivityDetailPage() {
       ? isAgricolaUnidadeRecepConta4Entry
       : undefined;
 
-  const activityLevelEntryFilter = combineEntryFilters(baseActivityFilter, pecuariaSubFilter, agricolaSubFilter);
+  const admTribSubFilter = resolvedTipoView === 'custos' && isAdmTrib && subview === 'laiza'
+    ? (entry: AccountEntry) => isDespesasLaizaCostCenter(entry.centroCusto)
+    : resolvedTipoView === 'custos' && isAdmTrib && subview === 'railene'
+      ? (entry: AccountEntry) => isDespesasRaileneCostCenter(entry.centroCusto)
+      : undefined;
+
+  const activityLevelEntryFilter = combineEntryFilters(
+    baseActivityFilter,
+    pecuariaSubFilter,
+    agricolaSubFilter,
+    admTribSubFilter
+  );
 
   const isTributariaEntry = (entry: {
     descricao?: string;
@@ -437,6 +464,43 @@ export default function ActivityDetailPage() {
       total: { orc: pastoOrc + confOrc, real: pastoReal + confReal },
     };
   }, [accounts, isPecuaria, selectedMonth]);
+
+  const admTribSummary = useMemo(() => {
+    if (!isAdmTrib) return null;
+
+    const admLeaves = accounts.filter(
+      (a) =>
+        a.nivel === 5 &&
+        a.atividade === 'DESP_ADM_TRIB' &&
+        a.tipo === 'D' &&
+        !isReceitaDeductionEntry(a) &&
+        !isTributariaEntry(a) &&
+        isNonRateioDepartment(a.departamento) &&
+        !isConta4Entry(a)
+    );
+
+    const laizaEntries = admLeaves.filter((a) => isDespesasLaizaCostCenter(a.centroCusto));
+    const raileneEntries = admLeaves.filter((a) => isDespesasRaileneCostCenter(a.centroCusto));
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (selectedMonth === 'all') {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + (entry[field][selectedMonth] || 0);
+      }, 0);
+
+    const laizaOrc = sum(laizaEntries, 'orcado');
+    const laizaReal = sum(laizaEntries, 'realizado');
+    const raileneOrc = sum(raileneEntries, 'orcado');
+    const raileneReal = sum(raileneEntries, 'realizado');
+
+    return {
+      laiza: { orc: laizaOrc, real: laizaReal },
+      railene: { orc: raileneOrc, real: raileneReal },
+      total: { orc: laizaOrc + raileneOrc, real: laizaReal + raileneReal },
+    };
+  }, [accounts, isAdmTrib, selectedMonth]);
 
   const agricolaSummary = useMemo(() => {
     if (!isAgricola) return null;
@@ -707,7 +771,8 @@ export default function ActivityDetailPage() {
       !subview &&
       Boolean(activityHubSummary)) ||
     (isPecuaria && resolvedTipoView === 'custos' && !subview && Boolean(pecuariaSummary)) ||
-    (isAgricola && resolvedTipoView === 'custos' && !subview && Boolean(agricolaSummary));
+    (isAgricola && resolvedTipoView === 'custos' && !subview && Boolean(agricolaSummary)) ||
+    (isAdmTrib && resolvedTipoView === 'custos' && !subview && Boolean(admTribSummary));
 
   useEffect(() => {
     if (selectedDept !== 'all' && !availableDepts.includes(selectedDept)) {
@@ -721,38 +786,19 @@ export default function ActivityDetailPage() {
     }
   }, [availableCostCenters, selectedCC]);
 
-  useEffect(() => {
-    const persistedMonth = getLastUploadedPeriod();
-    if (persistedMonth) {
-      setSelectedMonth(persistedMonth);
-      return;
-    }
-
-    const monthsInData = new Set<string>();
-    accounts.forEach((entry) => {
-      Object.keys(entry.orcado).forEach((month) => monthsInData.add(month));
-      Object.keys(entry.realizado).forEach((month) => monthsInData.add(month));
-    });
-
-    const latestMonthFromData = MONTHS.filter((m) => monthsInData.has(m.key)).at(-1)?.key;
-    if (latestMonthFromData) {
-      setSelectedMonth(latestMonthFromData);
-    }
-  }, [accounts]);
-
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
   return (
     <div className="space-y-8 pb-10">
       <div className="flex flex-col gap-4">
         <div>
-          {(isPecuaria || isAgricola) && subview && (
+          {(isPecuaria || isAgricola || isAdmTrib) && subview && (
             <button
               onClick={() => atividade?.key && navigate(buildActivityPath(atividade.key))}
               className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
-              Voltar para {isPecuaria ? 'Pecuária' : 'Agrícola'}
+              Voltar para {isPecuaria ? 'Pecuária' : isAgricola ? 'Agrícola' : 'Desp. Adm. e Tributárias'}
             </button>
           )}
           <div className="flex items-center gap-2 mb-1">
@@ -766,11 +812,11 @@ export default function ActivityDetailPage() {
         </div>
         
         <div className="fixed inset-x-0 top-16 z-40 py-3">
-          <div className="container flex justify-center">
-            <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex justify-end px-4 sm:px-8">
+            <div className="flex flex-wrap items-center justify-end gap-3">
               {!isGeneralTotalsView && (
                 <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
-                  <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                  <SelectTrigger className="w-[200px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
                     <SelectValue placeholder="Departamento" />
                   </SelectTrigger>
                   <SelectContent>
@@ -788,7 +834,7 @@ export default function ActivityDetailPage() {
 
               {!isGeneralTotalsView && shouldApplyCostCenterFilter && (
                 <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
-                  <SelectTrigger className="w-[200px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                  <SelectTrigger className="w-[200px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
                     <SelectValue placeholder="Centro de Custo" />
                   </SelectTrigger>
                   <SelectContent>
@@ -801,7 +847,7 @@ export default function ActivityDetailPage() {
               )}
 
               <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
-                <SelectTrigger className="w-[160px] bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
+                <SelectTrigger className="w-[160px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
                   <SelectValue placeholder="Período" />
                 </SelectTrigger>
                 <SelectContent>
@@ -831,21 +877,40 @@ export default function ActivityDetailPage() {
             if (returnTo) params.set('returnTo', returnTo);
             return `/atividade/${atividade.key}?${params.toString()}`;
           };
+          const buildHubPathWithSubview = (tipo: 'receitas' | 'custos', nextSubview?: string) => {
+            const params = new URLSearchParams();
+            params.set('tipo', tipo);
+            if (nextSubview) params.set('subview', nextSubview);
+            if (returnTo) params.set('returnTo', returnTo);
+            return `/atividade/${atividade.key}?${params.toString()}`;
+          };
           const onlyDespesas = isAdmTrib || isEncargos;
           return (
             <div className="space-y-6">
               {renderSummaryCard(`Total ${atividade.label}`, activityHubSummary.total, { isMain: true })}
-              <div className={cn('grid gap-6', onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
-                {!onlyDespesas &&
-                  renderSummaryCard('Receitas', activityHubSummary.receitas, {
-                    onClick: () => navigate(buildHubPath('receitas')),
-                    accentColor: 'emerald',
+              {isAdmTrib && admTribSummary ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
+                    onClick: () => navigate(buildHubPathWithSubview('custos', 'laiza')),
                   })}
-                {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
-                  onClick: () => navigate(buildHubPath('custos')),
-                  accentColor: 'amber',
-                })}
-              </div>
+                  {renderSummaryCard('DESPESAS RAILENE', admTribSummary.railene, {
+                    onClick: () => navigate(buildHubPathWithSubview('custos', 'railene')),
+                    accentColor: 'amber',
+                  })}
+                </div>
+              ) : (
+                <div className={cn('grid gap-6', onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
+                  {!onlyDespesas &&
+                    renderSummaryCard('Receitas', activityHubSummary.receitas, {
+                      onClick: () => navigate(buildHubPath('receitas')),
+                      accentColor: 'emerald',
+                    })}
+                  {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
+                    onClick: () => navigate(buildHubPath('custos')),
+                    accentColor: 'amber',
+                  })}
+                </div>
+              )}
             </div>
           );
         })()
@@ -871,6 +936,19 @@ export default function ActivityDetailPage() {
             })}
             {renderSummaryCard('AGRICOLA / UNIDADE RECEP', agricolaSummary.unidadeRecep, {
               onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'unidade-recep' })),
+              accentColor: 'amber',
+            })}
+          </div>
+        </div>
+      ) : isAdmTrib && resolvedTipoView === 'custos' && !subview && admTribSummary ? (
+        <div className="space-y-6">
+          {renderSummaryCard('Total Despesas Administrativas', admTribSummary.total, { isMain: true })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
+              onClick: () => navigate(buildActivityPath('DESP_ADM_TRIB', { subview: 'laiza' })),
+            })}
+            {renderSummaryCard('DESPESAS RAILENE', admTribSummary.railene, {
+              onClick: () => navigate(buildActivityPath('DESP_ADM_TRIB', { subview: 'railene' })),
               accentColor: 'amber',
             })}
           </div>
@@ -1096,23 +1174,29 @@ export default function ActivityDetailPage() {
                 </div>
                 {isAdmTrib ? (
                   <div className="space-y-6">
-                    <AnalyticalTable
-                      atividadeFilter={atividade.key}
-                      selectedMonth={selectedMonth}
-                      costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                      departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
-                      tipoFilter={['D']}
-                      entryFilter={combineEntryFilters(
-                        activityLevelEntryFilter,
-                        (entry) => isNonRateioDepartment(entry.departamento),
-                        (entry) => !isConta4Entry(entry),
-                        (entry) => !isTributariaEntry(entry),
-                        (entry) => !isReceitaDeductionEntry(entry),
-                      )}
-                      title="Abertura de Despesas ADM"
-                      subtitle="Despesas administrativas"
-                      accentColor="orange"
-                    />
+                    {(isAdmTribLaizaSubview || isAdmTribRaileneSubview) && (
+                      <AnalyticalTable
+                        atividadeFilter={atividade.key}
+                        selectedMonth={selectedMonth}
+                        costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                        departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                        tipoFilter={['D']}
+                        entryFilter={combineEntryFilters(
+                          activityLevelEntryFilter,
+                          (entry) => isNonRateioDepartment(entry.departamento),
+                          (entry) => !isConta4Entry(entry),
+                          (entry) => !isTributariaEntry(entry),
+                          (entry) => !isReceitaDeductionEntry(entry),
+                        )}
+                        title={isAdmTribLaizaSubview ? 'DESPESAS - LAIZA' : 'DESPESAS RAILENE'}
+                        subtitle={
+                          isAdmTribLaizaSubview
+                            ? 'Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
+                            : 'Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
+                        }
+                        accentColor="orange"
+                      />
+                    )}
                     <AnalyticalTable
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
@@ -1286,9 +1370,28 @@ export default function ActivityDetailPage() {
                       (entry) => !isConta4Entry(entry),
                       (entry) => !isTributariaEntry(entry),
                       (entry) => !isReceitaDeductionEntry(entry),
+                      (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
                     )}
-                    title="Abertura de Despesas ADM"
-                    subtitle="Despesas administrativas"
+                    title="DESPESAS - LAIZA"
+                    subtitle="Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
+                    accentColor="orange"
+                  />
+                  <AnalyticalTable
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
+                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    tipoFilter={['D']}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      (entry) => isNonRateioDepartment(entry.departamento),
+                      (entry) => !isConta4Entry(entry),
+                      (entry) => !isTributariaEntry(entry),
+                      (entry) => !isReceitaDeductionEntry(entry),
+                      (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
+                    )}
+                    title="DESPESAS RAILENE"
+                    subtitle="Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
                     accentColor="orange"
                   />
                   <AnalyticalTable
