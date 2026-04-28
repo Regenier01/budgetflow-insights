@@ -130,10 +130,17 @@ function parseDepartmentFromFilename(fileName) {
     .trim();
 }
 
+const AGRICOLA_FILE_NAME_EXCEPTIONS = new Set([
+  'UNIDADE RECEPCAO DE GRAOS',
+]);
+
 function validateAgricolaFileNames(files) {
   const invalidFiles = files.filter((fileName) => {
     const department = parseDepartmentFromFilename(fileName);
-    return !/^[^-]+-\s*[^-]+$/.test(department);
+    const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
+    const matchesDefaultPattern = /^[^-]+-\s*[^-]+$/.test(department);
+    const isKnownException = AGRICOLA_FILE_NAME_EXCEPTIONS.has(normalizedDepartment);
+    return !matchesDefaultPattern && !isKnownException;
   });
 
   if (invalidFiles.length === 0) return;

@@ -399,7 +399,8 @@ export default function ActivityDetailPage() {
           (a.tipo !== 'C' || isAllowedEntryForCustos('AGRICOLA', a)) &&
           (a.tipo !== 'C' ||
             isAgricolaFarmCultureDepartment(a.departamento) ||
-            isAgricolaUnidadeRecepConta4Entry(a))
+            isAgricolaUnidadeRecepConta4Entry(a)) &&
+          !isAgricolaUnidadeRecepConta4Entry(a)
       );
     } else {
       custosEntries = baseLeaves.filter(
@@ -541,7 +542,7 @@ export default function ActivityDetailPage() {
     return {
       geral: { orc: geralOrc, real: geralReal },
       unidadeRecep: { orc: recepOrc, real: recepReal },
-      total: { orc: geralOrc + recepOrc, real: geralReal + recepReal },
+      total: { orc: geralOrc, real: geralReal },
     };
   }, [accounts, isAgricola, selectedMonth]);
 

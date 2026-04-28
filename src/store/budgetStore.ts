@@ -378,6 +378,9 @@ const canonicalDepartmentKey = (value?: string) =>
   normalizeDepartmentKey(value)
     .replace(/^(DEPARTAMENTO|DEPTO)\s+/, '')
     .replace(/\bADMNISTRATIVA\b/g, 'ADMINISTRATIVA')
+    // Treat both variants as the same department for agricola imports.
+    .replace(/\bUNIDADE\s+RECEPCAO\s+DE\s+GRAOS\b/g, 'UNIDADE DE RECEPCAO DE GRAOS')
+    .replace(/\bUNIDADE\s+DE\s+RECEPCAO\s+DE\s+GRAOS\b/g, 'UNIDADE DE RECEPCAO DE GRAOS')
     .trim();
 
 const findDepartmentMappingByName = (departmentName?: string): MappingValue | null => {

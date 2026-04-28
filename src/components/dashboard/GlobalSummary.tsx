@@ -232,7 +232,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (activityKey !== 'AGRICOLA' ||
           a.tipo !== 'C' ||
           isAgricolaFarmCultureDepartment(a.departamento) ||
-          isAgricolaUnidadeRecepConta4Entry(a))
+          isAgricolaUnidadeRecepConta4Entry(a)) &&
+        (activityKey !== 'AGRICOLA' || !isAgricolaUnidadeRecepConta4Entry(a))
     );
   };
 
