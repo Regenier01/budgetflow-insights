@@ -14445,6 +14445,2568 @@ export const ORCADO_IMPORT_BATCHES: OrcadoImportBatch[] = [
     ]
   },
   {
+    "fileName": "JÓIA - SOJA.xlsx",
+    "departamento": "JÓIA - SOJA",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 8187.0999999999985
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 548772
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 15754.26
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 481710.716
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 228622.31567999997
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 114831.23599999999
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 308832.908
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 15779.279999999999
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 1099.56
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 7397.45
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 1436.25
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 4022.37
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 242.71
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 197.78
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 95440.5
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 51685.82
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 80382.49
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 56907.04
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 63815.36
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 9291.31
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 70072.75
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 107958.49
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 107313.57
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 74003.76999999999
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 53540.16
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 106426.76000000001
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 23727
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 24285
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 206430.6
+      }
+    ]
+  },
+  {
+    "fileName": "LAGUNA - GIRASSOL.xlsx",
+    "departamento": "LAGUNA - GIRASSOL",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 70717.5
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 13481.9
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 3000
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 17500
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 21245.75
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 3000
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 15224.999999999998
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "fileName": "LAGUNA - MILHO.xlsx",
+    "departamento": "LAGUNA - MILHO",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 382941.3331875
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 16555.147500000003
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 35013.700424999995
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 71248.66433243747
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 51878.652061877605
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 63470.624046271616
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 46010.45491415814
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 29604.15234363205
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 33206.78171699697
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 157356.36084189595
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 64161.04
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "fileName": "LAGUNA - SOJA.xlsx",
+    "departamento": "LAGUNA - SOJA",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 4515.863
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 173537.1
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 69003.98999999999
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 147610.67816
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 310023.0100825
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 151925.5925704
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 137226.892275
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 131431.77112000002
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 8703.5784
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 10000
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 49311.07
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 31345.11829865621
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 35370.455636816405
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 58823.228713407414
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 76098.4314792372
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 87569.70341544808
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 192218.3118954416
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 207126.2815506524
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 230994.48819956626
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 133944.8921870268
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 129947.69171291386
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 117795.87151656517
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 764965.7583044993
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 46042.920000000006
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 248016.00912
+      }
+    ]
+  },
+  {
+    "fileName": "LAGUNA - SORGO.xlsx",
+    "departamento": "LAGUNA - SORGO",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 44048.642400000004
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 4048.1856000000002
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 2234.628
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 133090.20875000002
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 65940.841
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 27433.037462123066
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 19958.257176801282
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 14045.953496000002
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 50336.770872
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 4714.6125999999995
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 10211.011003509388
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 12751.282378336971
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 59618.71864194797
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 97047.61536890393
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 37168.58977005885
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 54559.723
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "fileName": "LAVRINHA - MILHO.xlsx",
+    "departamento": "LAVRINHA - MILHO",
+    "atividade": "AGRICOLA",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 396074.31625000003
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 50949
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 203995.80000000002
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 11192.5
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 34746.034999999996
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 1162.43
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 90769.08601557526
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 118962.56543198116
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 109202.03825185992
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 106403.71467995744
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 105673.62949350844
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 91165.06518262958
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 3276.2940000000003
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 209.22
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 116882.08796047235
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0
+      }
+    ]
+  },
+  {
     "fileName": "LAVRINHA - SOJA.xlsx",
     "departamento": "LAVRINHA - SOJA",
     "atividade": "AGRICOLA",
