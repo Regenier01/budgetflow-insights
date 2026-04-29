@@ -706,6 +706,10 @@ const applyOrcadoRowsToAccounts = (
   let count = 0;
   const normalizedImportedDept = normalizeLooseMatch(departamento);
   const isAdministrativeImport = atividade === 'DESP_ADM_TRIB';
+  const isTributaryOnlyImport =
+    isAdministrativeImport &&
+    normalizedImportedDept.includes('TRIBUT');
+  const shouldScopeByDepartment = !isTributaryOnlyImport;
   const hasRateioHint = (value?: string) => normalizeMatch(value).includes('RATEIO');
   const realizedTotal = (account: AccountEntry) =>
     Object.values(account.realizado).reduce((sum, value) => sum + value, 0);
@@ -733,6 +737,7 @@ const applyOrcadoRowsToAccounts = (
         account.atividade === atividade &&
         accountMatchesGrupoContabil(account, normalizedGrupo) &&
         (() => {
+          if (!shouldScopeByDepartment) return true;
           const accountScope = normalizeLooseMatch(
             isAdministrativeImport ? account.centroCusto : account.departamento
           );
@@ -760,6 +765,7 @@ const applyOrcadoRowsToAccounts = (
               account.nivel === 5 &&
               accountMatchesGrupoContabil(account, normalizedGrupo) &&
               (() => {
+                if (!shouldScopeByDepartment) return true;
                 const accountScope = normalizeLooseMatch(
                   isAdministrativeImport ? account.centroCusto : account.departamento
                 );
@@ -774,7 +780,9 @@ const applyOrcadoRowsToAccounts = (
       departmentCandidates.length > 0
         ? departmentCandidates
         : nextAccounts.filter(
-            (account) => account.nivel === 5 && accountMatchesGrupoContabil(account, normalizedGrupo)
+            (account) =>
+              account.nivel === 5 &&
+              accountMatchesGrupoContabil(account, normalizedGrupo)
           );
     if (scopedCandidates.length === 0) return;
 

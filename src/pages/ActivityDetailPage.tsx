@@ -276,28 +276,18 @@ export default function ActivityDetailPage() {
   );
 
   const isTributariaEntry = (entry: {
-    descricao?: string;
-    departamento?: string;
-    centroCusto?: string;
+    grupoContabil?: string;
     grupoContabilN9?: string;
-    divisao?: string;
-    unidadeNegocio?: string;
   }) => {
-    const haystack = [
-      entry.descricao,
-      entry.departamento,
-      entry.centroCusto,
-      entry.grupoContabilN9,
-      entry.divisao,
-      entry.unidadeNegocio,
-    ]
-      .filter(Boolean)
-      .join(' ')
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toUpperCase();
+    const normalizedGrupo = normalizeText(entry.grupoContabil);
+    const normalizedGrupoN9 = normalizeText(entry.grupoContabilN9);
 
-    return haystack.includes('TRIBUT');
+    return (
+      normalizedGrupo.startsWith('3.4.03.01') ||
+      normalizedGrupo.startsWith('3.4.03.02') ||
+      normalizedGrupoN9.startsWith('3.4.03.01') ||
+      normalizedGrupoN9.startsWith('3.4.03.02')
+    );
   };
   
   const filteredLeafAccounts = useMemo(
@@ -386,7 +376,6 @@ export default function ActivityDetailPage() {
       custosEntries = baseLeaves.filter(
         (a) =>
           (a.tipo === 'C' || a.tipo === 'D') &&
-          !isReceitaDeductionEntry(a) &&
           isNonRateioDepartment(a.departamento) &&
           !isConta4Entry(a) &&
           isNotMarketingInternoCostCenter(a.centroCusto)
@@ -411,8 +400,10 @@ export default function ActivityDetailPage() {
       );
     }
 
-    const recOrc = sum(receitasEntries, 'orcado') + sum(deducoesEntries, 'orcado');
-    const recReal = sum(receitasEntries, 'realizado') + sum(deducoesEntries, 'realizado');
+    const recOrc =
+      isAdmTrib ? 0 : sum(receitasEntries, 'orcado') + sum(deducoesEntries, 'orcado');
+    const recReal =
+      isAdmTrib ? 0 : sum(receitasEntries, 'realizado') + sum(deducoesEntries, 'realizado');
     const rawCusOrc = sum(custosEntries, 'orcado');
     const cusReal = sum(custosEntries, 'realizado');
     const cusOrc =
@@ -423,7 +414,9 @@ export default function ActivityDetailPage() {
     return {
       receitas: { orc: recOrc, real: recReal },
       custos: { orc: cusOrc, real: cusReal },
-      total: { orc: recOrc - cusOrc, real: recReal - cusReal },
+      total: isAdmTrib
+        ? { orc: cusOrc, real: cusReal }
+        : { orc: recOrc - cusOrc, real: recReal - cusReal },
     };
   }, [accounts, atividade?.key, selectedMonth, isEncargos, isAdmTrib, isAgricola]);
 
@@ -469,17 +462,18 @@ export default function ActivityDetailPage() {
   const admTribSummary = useMemo(() => {
     if (!isAdmTrib) return null;
 
-    const admLeaves = accounts.filter(
+    const admBaseLeaves = accounts.filter(
       (a) =>
         a.nivel === 5 &&
         a.atividade === 'DESP_ADM_TRIB' &&
         a.tipo === 'D' &&
-        !isReceitaDeductionEntry(a) &&
-        !isTributariaEntry(a) &&
         isNonRateioDepartment(a.departamento) &&
-        !isConta4Entry(a)
+        !isConta4Entry(a) &&
+        isNotMarketingInternoCostCenter(a.centroCusto)
     );
 
+    const admLeaves = admBaseLeaves.filter((a) => !isTributariaEntry(a));
+    const tributariaEntries = admBaseLeaves.filter((a) => isTributariaEntry(a));
     const laizaEntries = admLeaves.filter((a) => isDespesasLaizaCostCenter(a.centroCusto));
     const raileneEntries = admLeaves.filter((a) => isDespesasRaileneCostCenter(a.centroCusto));
 
@@ -495,11 +489,22 @@ export default function ActivityDetailPage() {
     const laizaReal = sum(laizaEntries, 'realizado');
     const raileneOrc = sum(raileneEntries, 'orcado');
     const raileneReal = sum(raileneEntries, 'realizado');
+    const tributariaOrc = sum(tributariaEntries, 'orcado');
+    const tributariaReal = sum(tributariaEntries, 'realizado');
+
+    const totalOrcRaw = laizaOrc + raileneOrc + tributariaOrc;
+    const totalOrc =
+      selectedMonth === 'all'
+        ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT
+        : totalOrcRaw;
 
     return {
       laiza: { orc: laizaOrc, real: laizaReal },
       railene: { orc: raileneOrc, real: raileneReal },
-      total: { orc: laizaOrc + raileneOrc, real: laizaReal + raileneReal },
+      total: {
+        orc: totalOrc,
+        real: laizaReal + raileneReal + tributariaReal,
+      },
     };
   }, [accounts, isAdmTrib, selectedMonth]);
 
@@ -637,7 +642,9 @@ export default function ActivityDetailPage() {
     resolvedTipoView === 'custos' && !isDespesasComVendas
       ? isEncargos
         ? (entry) => isDespesaFinanceira(entry.codigo) || isReceitaFinanceira(entry.codigo)
-        : (entry) => entry.tipo !== 'D' || !isReceitaDeductionEntry(entry)
+        : isAdmTrib
+          ? undefined
+          : (entry) => entry.tipo !== 'D' || !isReceitaDeductionEntry(entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos
       ? (entry) => entry.tipo !== 'C' || isAllowedEntryForCustos(atividade?.key, entry)

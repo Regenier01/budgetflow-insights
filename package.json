@@ -16,7 +16,8 @@
     "orcado:import": "node import_orcado.js",
     "orcado:import:adm": "node import_orcado_despesas_adm.js",
     "orcado:import:pecuaria": "node import_orcado_pecuaria.js",
-    "orcado:import:agricola": "node import_orcado_agricola.js"
+    "orcado:import:agricola": "node import_orcado_agricola.js",
+    "orcado:import:tributarias": "node import_orcado_despesas_tributarias.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

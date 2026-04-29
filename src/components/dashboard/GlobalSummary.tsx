@@ -216,7 +216,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
       );
     }
 
-    return computeTotals(
+    const shouldExcludeReceitaDeductions = activityKey !== 'DESP_ADM_TRIB';
+
+    const totals = computeTotals(
       (a) =>
         a.atividade === activityKey &&
         (activityKey !== 'DESP_ADM_TRIB' ? !isConta4AdministracaoEntry(a) : !isConta4Entry(a)) &&
@@ -225,7 +227,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
-        !isReceitaDeductionEntry(a) &&
+        (!shouldExcludeReceitaDeductions || !isReceitaDeductionEntry(a)) &&
         (a.tipo !== 'C' || isAllowedEntryForCustos(activityKey, a)) &&
         (activityKey !== 'DESP_ADM_TRIB' ||
           (!isRateioDepartment(a.departamento) && !isConta4Entry(a))) &&
@@ -235,6 +237,12 @@ export function GlobalSummary({ selectedMonth }: Props) {
           isAgricolaUnidadeRecepConta4Entry(a)) &&
         (activityKey !== 'AGRICOLA' || !isAgricolaUnidadeRecepConta4Entry(a))
     );
+
+    if (activityKey === 'DESP_ADM_TRIB' && selectedMonth === 'all') {
+      return { ...totals, orc: totals.orc - DESP_ADM_BUDGET_ADJUSTMENT };
+    }
+
+    return totals;
   };
 
   // O consolidado deve seguir exatamente a mesma regra de cálculo dos cards por atividade.
@@ -247,8 +255,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
     },
     { orc: 0, real: 0 }
   );
-  const consolidatedOrc =
-    selectedMonth === 'all' ? global.orc - DESP_ADM_BUDGET_ADJUSTMENT : global.orc;
+  const consolidatedOrc = global.orc;
 
   const despesasComVendas = computeTotals(
     (a) => isDespesaComVendasCode(a.codigo) && (a.tipo === 'C' || a.tipo === 'D')
