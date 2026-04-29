@@ -29,7 +29,7 @@ const tiles: Tile[] = [
 
 const rateiosTile: Tile = {
   label: 'Rateios',
-  to: '/atividade/RATEIOS?returnTo=%2F',
+  to: '/rateios',
   icon: rateiosIcon,
 };
 
