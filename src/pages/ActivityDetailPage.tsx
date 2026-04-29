@@ -147,6 +147,19 @@ const isReceitaDeductionEntry = (entry: AccountEntry) => {
 const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
 const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
   normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
+const DESPESAS_VENDAS_PECUARIA_DEPARTMENTS = [
+  'COMERCIALIZACAO DE TOUROS',
+  'SUPERVISAO PECUARIA',
+] as const;
+const DESPESAS_VENDAS_AGRICOLA_DEPARTMENTS = ['COMERCIALIZACAO DE SEMENTES'] as const;
+const isDespesasVendasPecuariaDepartment = (departamento?: string) =>
+  DESPESAS_VENDAS_PECUARIA_DEPARTMENTS.some(
+    (item) => normalizeText(item) === normalizeText(departamento)
+  );
+const isDespesasVendasAgricolaDepartment = (departamento?: string) =>
+  DESPESAS_VENDAS_AGRICOLA_DEPARTMENTS.some(
+    (item) => normalizeText(item) === normalizeText(departamento)
+  );
 const DESPESAS_RAILENE_COST_CENTERS = [
   'GOVERNANCIA CORPORATIVA',
   'RATEIO DESENVOLVIMENTO HUMANO',
@@ -202,6 +215,8 @@ export default function ActivityDetailPage() {
   const isAdmTribRaileneSubview = isAdmTrib && subview === 'railene';
   const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
   const isAgricolaGeralSubview = isAgricola && subview === 'geral';
+  const isDespesasComVendasPecuariaSubview = isDespesasComVendas && subview === 'pecuaria';
+  const isDespesasComVendasAgricolaSubview = isDespesasComVendas && subview === 'agricola';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
@@ -222,7 +237,11 @@ export default function ActivityDetailPage() {
   };
   const atividadeLabel = isOutrasReceitasEventuais
     ? 'Outras Receitas Eventuais'
-    : isDespesasComVendas
+    : isDespesasComVendas && subview === 'pecuaria'
+      ? 'Desp. com Vendas Pecuária'
+      : isDespesasComVendas && subview === 'agricola'
+        ? 'Desp. com Vendas Agrícola'
+        : isDespesasComVendas
       ? 'Despesas com Vendas'
       : isRateios
         ? 'Rateios'
@@ -267,12 +286,19 @@ export default function ActivityDetailPage() {
     : resolvedTipoView === 'custos' && isAdmTrib && subview === 'railene'
       ? (entry: AccountEntry) => isDespesasRaileneCostCenter(entry.centroCusto)
       : undefined;
+  const despesasComVendasSubFilter =
+    resolvedTipoView === 'custos' && isDespesasComVendas && subview === 'pecuaria'
+      ? (entry: AccountEntry) => isDespesasVendasPecuariaDepartment(entry.departamento)
+      : resolvedTipoView === 'custos' && isDespesasComVendas && subview === 'agricola'
+        ? (entry: AccountEntry) => isDespesasVendasAgricolaDepartment(entry.departamento)
+        : undefined;
 
   const activityLevelEntryFilter = combineEntryFilters(
     baseActivityFilter,
     pecuariaSubFilter,
     agricolaSubFilter,
-    admTribSubFilter
+    admTribSubFilter,
+    despesasComVendasSubFilter
   );
 
   const isTributariaEntry = (entry: {
@@ -551,6 +577,40 @@ export default function ActivityDetailPage() {
     };
   }, [accounts, isAgricola, selectedMonth]);
 
+  const despesasComVendasSummary = useMemo(() => {
+    if (!isDespesasComVendas) return null;
+
+    const vendasLeaves = accounts.filter(
+      (a) => a.nivel === 5 && (a.tipo === 'C' || a.tipo === 'D') && isDespesaComVendasCode(a.codigo)
+    );
+
+    const pecuariaEntries = vendasLeaves.filter((a) =>
+      isDespesasVendasPecuariaDepartment(a.departamento)
+    );
+    const agricolaEntries = vendasLeaves.filter((a) =>
+      isDespesasVendasAgricolaDepartment(a.departamento)
+    );
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (selectedMonth === 'all') {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + (entry[field][selectedMonth] || 0);
+      }, 0);
+
+    const pecuariaOrc = sum(pecuariaEntries, 'orcado');
+    const pecuariaReal = sum(pecuariaEntries, 'realizado');
+    const agricolaOrc = sum(agricolaEntries, 'orcado');
+    const agricolaReal = sum(agricolaEntries, 'realizado');
+
+    return {
+      pecuaria: { orc: pecuariaOrc, real: pecuariaReal },
+      agricola: { orc: agricolaOrc, real: agricolaReal },
+      total: { orc: pecuariaOrc + agricolaOrc, real: pecuariaReal + agricolaReal },
+    };
+  }, [accounts, isDespesasComVendas, selectedMonth]);
+
   const renderSummaryCard = (
     title: string,
     data: { orc: number; real: number },
@@ -676,7 +736,13 @@ export default function ActivityDetailPage() {
     if (isDespesasComVendas) {
       return combineEntryFilters(
         activityLevelEntryFilter,
-        (entry) => isDespesaComVendasCode(entry.codigo)
+        (entry) => isDespesaComVendasCode(entry.codigo),
+        isDespesasComVendasPecuariaSubview
+          ? (entry) => isDespesasVendasPecuariaDepartment(entry.departamento)
+          : undefined,
+        isDespesasComVendasAgricolaSubview
+          ? (entry) => isDespesasVendasAgricolaDepartment(entry.departamento)
+          : undefined
       );
     }
 
@@ -703,6 +769,8 @@ export default function ActivityDetailPage() {
     isOutrasReceitasEventuais,
     isRateios,
     isDespesasComVendas,
+    isDespesasComVendasPecuariaSubview,
+    isDespesasComVendasAgricolaSubview,
     resolvedTipoView,
     activityLevelEntryFilter,
     summaryEntryFilter,
@@ -779,6 +847,10 @@ export default function ActivityDetailPage() {
       !subview &&
       Boolean(activityHubSummary)) ||
     (isPecuaria && resolvedTipoView === 'custos' && !subview && Boolean(pecuariaSummary)) ||
+    (isDespesasComVendas &&
+      resolvedTipoView === 'custos' &&
+      !subview &&
+      Boolean(despesasComVendasSummary)) ||
     (isAgricola && resolvedTipoView === 'custos' && !subview && Boolean(agricolaSummary)) ||
     (isAdmTrib && resolvedTipoView === 'custos' && !subview && Boolean(admTribSummary));
 
@@ -800,13 +872,19 @@ export default function ActivityDetailPage() {
     <div className="space-y-8 pb-10">
       <div className="flex flex-col gap-4">
         <div>
-          {(isPecuaria || isAgricola || isAdmTrib) && subview && (
+          {(isPecuaria || isAgricola || isAdmTrib || isDespesasComVendas) && subview && (
             <button
-              onClick={() => atividade?.key && navigate(buildActivityPath(atividade.key))}
+              onClick={() =>
+                navigate(
+                  isDespesasComVendas
+                    ? buildActivityPath('DESPESAS_COM_VENDAS')
+                    : buildActivityPath(atividade!.key)
+                )
+              }
               className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
-              Voltar para {isPecuaria ? 'Pecuária' : isAgricola ? 'Agrícola' : 'Desp. Adm. e Tributárias'}
+              Voltar para {isPecuaria ? 'Pecuária' : isAgricola ? 'Agrícola' : isDespesasComVendas ? 'Despesas com Vendas' : 'Desp. Adm. e Tributárias'}
             </button>
           )}
           <div className="flex items-center gap-2 mb-1">
@@ -931,6 +1009,19 @@ export default function ActivityDetailPage() {
             })}
             {renderSummaryCard('Confinamento', pecuariaSummary.confinamento, {
               onClick: () => navigate(buildActivityPath('PECUARIA', { subview: 'confinamento' })),
+              accentColor: 'amber',
+            })}
+          </div>
+        </div>
+      ) : isDespesasComVendas && resolvedTipoView === 'custos' && !subview && despesasComVendasSummary ? (
+        <div className="space-y-6">
+          {renderSummaryCard('Total Despesas com Vendas', despesasComVendasSummary.total, { isMain: true })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {renderSummaryCard('Desp. com Vendas Pecuária', despesasComVendasSummary.pecuaria, {
+              onClick: () => navigate(buildActivityPath('DESPESAS_COM_VENDAS', { subview: 'pecuaria' })),
+            })}
+            {renderSummaryCard('Desp. com Vendas Agrícola', despesasComVendasSummary.agricola, {
+              onClick: () => navigate(buildActivityPath('DESPESAS_COM_VENDAS', { subview: 'agricola' })),
               accentColor: 'amber',
             })}
           </div>
@@ -1090,8 +1181,19 @@ export default function ActivityDetailPage() {
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
                   (entry) => isDespesaComVendasCode(entry.codigo),
+                  isDespesasComVendasPecuariaSubview
+                    ? (entry) => isDespesasVendasPecuariaDepartment(entry.departamento)
+                    : isDespesasComVendasAgricolaSubview
+                      ? (entry) => isDespesasVendasAgricolaDepartment(entry.departamento)
+                      : undefined,
                 )}
-                title="Detalhamento de Despesas com Vendas"
+                title={
+                  isDespesasComVendasPecuariaSubview
+                    ? 'Desp. com Vendas Pecuária - COMERCIALIZACAO DE TOUROS - SUPERVISAO PECUARIA'
+                    : isDespesasComVendasAgricolaSubview
+                      ? 'Desp. com Vendas Agrícola - COMERCIALIZACAO DE SEMENTES'
+                      : 'Detalhamento de Despesas com Vendas'
+                }
                 subtitle="Contas 3.4.02"
                 accentColor="orange"
               />

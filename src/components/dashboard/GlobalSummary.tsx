@@ -260,14 +260,16 @@ export function GlobalSummary({ selectedMonth }: Props) {
   const despesasComVendas = computeTotals(
     (a) => isDespesaComVendasCode(a.codigo) && (a.tipo === 'C' || a.tipo === 'D')
   );
+  const consolidatedOrc = global.orc + despesasComVendas.orc;
+  const consolidatedReal = global.real + despesasComVendas.real;
 
   return (
     <div className="space-y-6">
       <SummaryTable
         title="Total Consolidado de Custos das Operações"
         orc={consolidatedOrc}
-        real={global.real}
-        diff={consolidatedOrc - global.real}
+        real={consolidatedReal}
+        diff={consolidatedOrc - consolidatedReal}
         isMain
       />
 
