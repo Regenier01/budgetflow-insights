@@ -1,5 +1,7 @@
 import type { AtividadeKey, MonthKey } from '@/types/budget';
 
+type OrcadoImportAtividadeKey = AtividadeKey | 'OUTRAS_RECEITAS_EVENTUAIS';
+
 export interface OrcadoGrupoMonthValue {
   grupoContabil: string;
   month: MonthKey;
@@ -9,7 +11,7 @@ export interface OrcadoGrupoMonthValue {
 export interface OrcadoImportBatch {
   fileName: string;
   departamento: string;
-  atividade: AtividadeKey;
+  atividade: OrcadoImportAtividadeKey;
   rows: OrcadoGrupoMonthValue[];
 }
 
@@ -22194,6 +22196,133 @@ export const ORCADO_IMPORT_BATCHES: OrcadoImportBatch[] = [
         "grupoContabil": "3.4.02.10",
         "month": "2027-03",
         "value": 96484.74100000001
+      }
+    ]
+  },
+  {
+    "fileName": "Receitas Operacionais.xlsx",
+    "departamento": "OUTRAS RECEITAS EVENTUAIS",
+    "atividade": "OUTRAS_RECEITAS_EVENTUAIS",
+    "rows": [
+      {
+        "month": "2026-04",
+        "grupoContabil": "3.6.01.01",
+        "value": 175200
+      },
+      {
+        "month": "2026-05",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-06",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-07",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-08",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-09",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-10",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-11",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2026-12",
+        "grupoContabil": "3.6.01.01",
+        "value": 25200
+      },
+      {
+        "month": "2027-01",
+        "grupoContabil": "3.6.01.01",
+        "value": 26500
+      },
+      {
+        "month": "2027-02",
+        "grupoContabil": "3.6.01.01",
+        "value": 26500
+      },
+      {
+        "month": "2027-03",
+        "grupoContabil": "3.6.01.01",
+        "value": 26500
+      },
+      {
+        "month": "2026-04",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-05",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-06",
+        "grupoContabil": "3.7.01.01",
+        "value": 201762.94
+      },
+      {
+        "month": "2026-07",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-08",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-09",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-10",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-11",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2026-12",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2027-01",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2027-02",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
+      },
+      {
+        "month": "2027-03",
+        "grupoContabil": "3.7.01.01",
+        "value": 0
       }
     ]
   }

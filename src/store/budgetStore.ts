@@ -13,9 +13,11 @@ import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
 const validMonthKeys = new Set(MONTHS.map((month) => month.key));
 type MappingValue = { divisao?: string; unidadeNegocio?: string };
+type OrcadoImportAtividadeKey = AtividadeKey | 'OUTRAS_RECEITAS_EVENTUAIS';
 
 const saveLastUploadedPeriod = (period: string) => {
   if (typeof window === 'undefined' || !validMonthKeys.has(period as MonthKey)) return;
@@ -264,7 +266,7 @@ interface BudgetState {
     key: string;
     fileName: string;
     departamento: string;
-    atividade: AtividadeKey;
+    atividade: OrcadoImportAtividadeKey;
     period: MonthKey;
     rows: OrcadoGrupoMonthValue[];
     importedAt: string;
@@ -281,13 +283,13 @@ const uploadBatchKey = (period: MonthKey, fileName: string) =>
 const uploadOrcadoBatchKey = (
   period: MonthKey,
   fileName: string,
-  atividade: AtividadeKey,
+  atividade: OrcadoImportAtividadeKey,
   departamento: string
 ) =>
   `${period}::${fileName.trim().toUpperCase()}::${normalizeMatch(atividade)}::${normalizeLooseMatch(
     departamento
   )}`;
-const uploadOrcadoScopeKey = (atividade: AtividadeKey, departamento: string) =>
+const uploadOrcadoScopeKey = (atividade: OrcadoImportAtividadeKey, departamento: string) =>
   `${normalizeMatch(atividade)}::${normalizeLooseMatch(departamento)}`;
 
 const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
@@ -699,11 +701,12 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
 const applyOrcadoRowsToAccounts = (
   baseAccounts: AccountEntry[],
   rows: OrcadoGrupoMonthValue[],
-  atividade: AtividadeKey,
+  atividade: OrcadoImportAtividadeKey,
   departamento: string
 ) => {
   const nextAccounts = baseAccounts.map(cloneAccountEntry);
   let count = 0;
+  const isOutrasReceitasImport = atividade === 'OUTRAS_RECEITAS_EVENTUAIS';
   const normalizedImportedDept = normalizeLooseMatch(departamento);
   const isAdministrativeImport = atividade === 'DESP_ADM_TRIB';
   const isTributaryOnlyImport =
@@ -734,7 +737,11 @@ const applyOrcadoRowsToAccounts = (
     const strictCandidates = nextAccounts.filter(
       (account) =>
         account.nivel === 5 &&
-        account.atividade === atividade &&
+        (
+          isOutrasReceitasImport
+            ? isOutrasReceitasEventuaisCode(account.codigo)
+            : account.atividade === atividade
+        ) &&
         accountMatchesGrupoContabil(account, normalizedGrupo) &&
         (() => {
           if (!shouldScopeByDepartment) return true;
@@ -754,7 +761,11 @@ const applyOrcadoRowsToAccounts = (
         : nextAccounts.filter(
             (account) =>
               account.nivel === 5 &&
-              account.atividade === atividade &&
+              (
+                isOutrasReceitasImport
+                  ? isOutrasReceitasEventuaisCode(account.codigo)
+                  : account.atividade === atividade
+              ) &&
               accountMatchesGrupoContabil(account, normalizedGrupo)
           );
     const departmentCandidates =
@@ -797,7 +808,7 @@ const applyOrcadoRowsToAccounts = (
       const syntheticAnchor: AccountEntry = {
         ...baseCandidate,
         id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
-        atividade,
+        atividade: isOutrasReceitasImport ? baseCandidate.atividade : atividade,
         departamento: isAdministrativeImport ? baseCandidate.departamento : departamento,
         // For non-administrative budget imports, keep the synthetic line scoped to the
         // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).
