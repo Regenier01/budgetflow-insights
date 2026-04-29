@@ -255,8 +255,6 @@ export function GlobalSummary({ selectedMonth }: Props) {
     },
     { orc: 0, real: 0 }
   );
-  const consolidatedOrc = global.orc;
-
   const despesasComVendas = computeTotals(
     (a) => isDespesaComVendasCode(a.codigo) && (a.tipo === 'C' || a.tipo === 'D')
   );
