@@ -245,8 +245,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
     return totals;
   };
 
-  // O consolidado deve seguir exatamente a mesma regra de cálculo dos cards por atividade.
-  const global = ATIVIDADES.reduce(
+  // O total consolidado de custos não inclui Encargos.
+  const global = ATIVIDADES.filter((atividade) => atividade.key !== 'ENCARGOS').reduce(
     (acc, atividade) => {
       const stats = calculateCostsByActivity(atividade.key);
       acc.orc += stats.orc;
