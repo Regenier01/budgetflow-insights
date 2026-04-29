@@ -9,6 +9,7 @@ import {
 } from '@/types/budget';
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { ORCADO_IMPORT_BATCHES, type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
+import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
@@ -296,7 +297,7 @@ const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
   (rows.find((row) => validMonthKeys.has(row.month as MonthKey))?.month as MonthKey) || MONTHS[0].key;
 
 const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] =>
-  ORCADO_IMPORT_BATCHES.map((batch) => {
+  [...ORCADO_IMPORT_BATCHES, ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES].map((batch) => {
     const period = getBatchFallbackPeriod(batch.rows);
     return {
       key: uploadOrcadoBatchKey(period, batch.fileName, batch.atividade, batch.departamento),
