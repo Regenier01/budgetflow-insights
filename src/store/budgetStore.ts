@@ -12,6 +12,7 @@ import { ORCADO_IMPORT_BATCHES, type OrcadoGrupoMonthValue } from '@/data/orcado
 import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
 import { ORCADO_RECEITA_LATEX_IMPORT_BATCHES } from '@/data/orcadoReceitaLatexImportData';
 import { ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES } from '@/data/orcadoReceitaAgricolaImportData';
+import { ORCADO_RECEITA_CANA_IMPORT_BATCHES } from '@/data/orcadoReceitaCanaImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
@@ -303,6 +304,7 @@ const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches
     ...ORCADO_IMPORT_BATCHES,
     ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES,
     ...ORCADO_RECEITA_LATEX_IMPORT_BATCHES,
+    ...ORCADO_RECEITA_CANA_IMPORT_BATCHES,
     ...ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES.map((batch) => ({
       ...batch,
       departamento: batch.cultura,
