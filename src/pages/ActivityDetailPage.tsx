@@ -737,7 +737,8 @@ export default function ActivityDetailPage() {
     options?: { isMain?: boolean; onClick?: () => void; accentColor?: string }
   ) => {
     const { isMain = false, onClick, accentColor = 'orange' } = options || {};
-    const isHigher = data.real > data.orc;
+    const difference = Math.abs(data.orc) - Math.abs(data.real);
+    const isPositiveDifference = difference >= 0;
     const isEmerald = accentColor === 'emerald';
     const isAmber = accentColor === 'amber';
     const bgColor = isAmber ? 'bg-amber-500' : isEmerald ? '' : 'bg-orange-500';
@@ -789,15 +790,15 @@ export default function ActivityDetailPage() {
           <div
             className={cn(
               'py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1',
-              isHigher ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
+              isPositiveDifference ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
             )}
           >
-            {isHigher ? (
+            {isPositiveDifference ? (
               <TrendingUp className="h-3.5 w-3.5" />
             ) : (
               <TrendingDown className="h-3.5 w-3.5" />
             )}
-            {fmtDecimal(data.real - data.orc)}
+            {fmtDecimal(difference)}
           </div>
         </div>
       </div>
@@ -1177,7 +1178,10 @@ export default function ActivityDetailPage() {
             isAdmTrib && admTribSummary ? admTribSummary.total : activityHubSummary.total;
           return (
             <div className="space-y-6">
-              {renderSummaryCard(`Total ${atividade.label}`, activityTotalData, { isMain: true })}
+              {!isPecuaria &&
+                !isAgricola &&
+                atividade?.key !== 'SERINGAL' &&
+                renderSummaryCard(`Total ${atividade.label}`, activityTotalData, { isMain: true })}
               {isAdmTrib && admTribSummary ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
