@@ -15,6 +15,7 @@ interface Props {
 }
 
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
+const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
 
 export function GlobalSummary({ selectedMonth }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -67,6 +68,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
   const isConta4AdministracaoEntry = (entry: (typeof accounts)[number]) =>
     entry.codigo.trim().startsWith('4') && normalizeText(entry.departamento) === 'ADMINISTRACAO';
   const isConta4Entry = (entry: (typeof accounts)[number]) => entry.codigo.trim().startsWith('4');
+  const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
+    normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
 
   const CUSTOS_ALLOWED_CC_BY_ACTIVITY: Partial<Record<string, string[]>> = {
     PECUARIA: [
@@ -112,10 +115,6 @@ export function GlobalSummary({ selectedMonth }: Props) {
       cc === normalizeText('UNIDADE DE RECEPCAO DE GRAOS')
     );
   };
-  const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
-  const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
-    normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
-
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'decimal',
@@ -222,7 +221,6 @@ export function GlobalSummary({ selectedMonth }: Props) {
       (a) =>
         a.atividade === activityKey &&
         (activityKey !== 'DESP_ADM_TRIB' ? !isConta4AdministracaoEntry(a) : !isConta4Entry(a)) &&
-        (activityKey !== 'DESP_ADM_TRIB' || isNotMarketingInternoCostCenter(a.centroCusto)) &&
         (a.tipo === 'C' || a.tipo === 'D') &&
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
@@ -230,7 +228,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (!shouldExcludeReceitaDeductions || !isReceitaDeductionEntry(a)) &&
         (a.tipo !== 'C' || isAllowedEntryForCustos(activityKey, a)) &&
         (activityKey !== 'DESP_ADM_TRIB' ||
-          (!isRateioDepartment(a.departamento) && !isConta4Entry(a))) &&
+          (!isRateioDepartment(a.departamento) &&
+            !isConta4Entry(a) &&
+            isNotMarketingInternoCostCenter(a.centroCusto))) &&
         (activityKey !== 'AGRICOLA' ||
           a.tipo !== 'C' ||
           isAgricolaFarmCultureDepartment(a.departamento) ||
@@ -238,11 +238,14 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (activityKey !== 'AGRICOLA' || !isAgricolaUnidadeRecepConta4Entry(a))
     );
 
-    if (activityKey === 'DESP_ADM_TRIB' && selectedMonth === 'all') {
-      return { ...totals, orc: totals.orc - DESP_ADM_BUDGET_ADJUSTMENT };
+    if (activityKey !== 'DESP_ADM_TRIB' || selectedMonth !== 'all') {
+      return totals;
     }
 
-    return totals;
+    return {
+      ...totals,
+      orc: totals.orc - DESP_ADM_BUDGET_ADJUSTMENT,
+    };
   };
 
   // O total consolidado de custos não inclui Encargos.

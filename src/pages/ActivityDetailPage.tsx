@@ -494,11 +494,12 @@ export default function ActivityDetailPage() {
         a.atividade === 'DESP_ADM_TRIB' &&
         a.tipo === 'D' &&
         isNonRateioDepartment(a.departamento) &&
-        !isConta4Entry(a) &&
-        isNotMarketingInternoCostCenter(a.centroCusto)
+        !isConta4Entry(a)
     );
 
-    const admLeaves = admBaseLeaves.filter((a) => !isTributariaEntry(a));
+    const admLeaves = admBaseLeaves.filter(
+      (a) => !isTributariaEntry(a) && !isReceitaDeductionEntry(a)
+    );
     const tributariaEntries = admBaseLeaves.filter((a) => isTributariaEntry(a));
     const laizaEntries = admLeaves.filter((a) => isDespesasLaizaCostCenter(a.centroCusto));
     const raileneEntries = admLeaves.filter((a) => isDespesasRaileneCostCenter(a.centroCusto));
@@ -517,19 +518,26 @@ export default function ActivityDetailPage() {
     const raileneReal = sum(raileneEntries, 'realizado');
     const tributariaOrc = sum(tributariaEntries, 'orcado');
     const tributariaReal = sum(tributariaEntries, 'realizado');
+    const marketingInternoEntries = admLeaves.filter(
+      (a) => !isNotMarketingInternoCostCenter(a.centroCusto)
+    );
+    const marketingInternoOrc = sum(marketingInternoEntries, 'orcado');
+    const marketingInternoReal = sum(marketingInternoEntries, 'realizado');
 
     const totalOrcRaw = laizaOrc + raileneOrc + tributariaOrc;
+    const totalRealRaw = laizaReal + raileneReal + tributariaReal;
     const totalOrc =
       selectedMonth === 'all'
-        ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT
-        : totalOrcRaw;
+        ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT - marketingInternoOrc
+        : totalOrcRaw - marketingInternoOrc;
+    const totalReal = totalRealRaw - marketingInternoReal;
 
     return {
       laiza: { orc: laizaOrc, real: laizaReal },
       railene: { orc: raileneOrc, real: raileneReal },
       total: {
         orc: totalOrc,
-        real: laizaReal + raileneReal + tributariaReal,
+        real: totalReal,
       },
     };
   }, [accounts, isAdmTrib, selectedMonth]);
@@ -694,7 +702,9 @@ export default function ActivityDetailPage() {
           : resolvedTipoView === 'custos'
             ? isEncargos
               ? ENCARGOS_SUMMARY_TIPO_FILTER
-              : ['C', 'D']
+              : isAdmTrib
+                ? ['D']
+                : ['C', 'D']
             : undefined;
 
   const summaryEntryFilter = combineEntryFilters(
@@ -712,8 +722,18 @@ export default function ActivityDetailPage() {
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
       ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
       : undefined,
-    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
+    resolvedTipoView === 'custos' &&
+    !isDespesasComVendas &&
+    !isEncargos &&
+    isAdmTrib &&
+    !isAdmTribRaileneSubview
       ? (entry) => isNotMarketingInternoCostCenter(entry.centroCusto)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && (isAdmTribLaizaSubview || isAdmTribRaileneSubview)
+      ? (entry) => !isTributariaEntry(entry)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && (isAdmTribLaizaSubview || isAdmTribRaileneSubview)
+      ? (entry) => !isReceitaDeductionEntry(entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAgricola
       ? (entry) =>
@@ -971,9 +991,11 @@ export default function ActivityDetailPage() {
             return `/atividade/${atividade.key}?${params.toString()}`;
           };
           const onlyDespesas = isAdmTrib || isEncargos;
+          const activityTotalData =
+            isAdmTrib && admTribSummary ? admTribSummary.total : activityHubSummary.total;
           return (
             <div className="space-y-6">
-              {renderSummaryCard(`Total ${atividade.label}`, activityHubSummary.total, { isMain: true })}
+              {renderSummaryCard(`Total ${atividade.label}`, activityTotalData, { isMain: true })}
               {isAdmTrib && admTribSummary ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
@@ -1297,6 +1319,11 @@ export default function ActivityDetailPage() {
                           (entry) => !isConta4Entry(entry),
                           (entry) => !isTributariaEntry(entry),
                           (entry) => !isReceitaDeductionEntry(entry),
+                          isAdmTribLaizaSubview
+                            ? (entry) => isDespesasLaizaCostCenter(entry.centroCusto)
+                            : isAdmTribRaileneSubview
+                              ? (entry) => isDespesasRaileneCostCenter(entry.centroCusto)
+                              : undefined,
                         )}
                         title={isAdmTribLaizaSubview ? 'DESPESAS - LAIZA' : 'DESPESAS RAILENE'}
                         subtitle={
