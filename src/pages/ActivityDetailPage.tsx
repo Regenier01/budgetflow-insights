@@ -50,6 +50,99 @@ const isAgricolaFarmCultureDepartment = (departamento?: string) => {
   return Boolean(farm) && Boolean(culture) && rest.length === 0;
 };
 
+const AGRICOLA_CULTURES = ['SOJA', 'MILHO', 'SORGO', 'GIRASSOL'] as const;
+const AGRICOLA_RECEITAS_DEPT_EXCLUSIONS = new Set(AGRICOLA_CULTURES.map((culture) => normalizeText(culture)));
+
+const resolveAgricolaCulture = (value?: string) => {
+  const normalized = normalizeText(value);
+  if (!normalized) return undefined;
+  return AGRICOLA_CULTURES.find((culture) => normalized.includes(culture));
+};
+
+const getAgricolaCultureFromDepartment = (departamento?: string) => {
+  const normalized = normalizeText(departamento);
+  if (!normalized) return undefined;
+
+  if (normalized.includes(' - ')) {
+    const [, culture, ...rest] = normalized.split(' - ').map((part) => part.trim());
+    if (culture && rest.length === 0) return resolveAgricolaCulture(culture);
+  }
+
+  return resolveAgricolaCulture(normalized);
+};
+
+const getAgricolaCultureFromDescription = (descricao?: string) => {
+  const normalized = normalizeText(descricao);
+  if (!normalized) return undefined;
+  return resolveAgricolaCulture(normalized);
+};
+
+const shouldHideAgricolaReceitaDepartment = (
+  departamento: string,
+  isAgricola: boolean,
+  resolvedTipoView: string
+) =>
+  isAgricola &&
+  resolvedTipoView === 'receitas' &&
+  AGRICOLA_RECEITAS_DEPT_EXCLUSIONS.has(normalizeText(departamento));
+
+const getAgricolaCultureFromOrcado = (entry: AccountEntry) => {
+  const syntheticScope =
+    entry.id.includes('::ORCADO::') ? entry.id.split('::ORCADO::')[1]?.split('::')[0] : undefined;
+  const fromSyntheticScope = resolveAgricolaCulture(syntheticScope);
+  if (fromSyntheticScope) return fromSyntheticScope;
+
+  const fromDepartment = getAgricolaCultureFromDepartment(entry.departamento);
+  if (fromDepartment) return fromDepartment;
+
+  return getAgricolaCultureFromDescription(entry.descricao);
+};
+
+const getAgricolaCultureFromRealizado = (entry: AccountEntry) => {
+  const fromDepartment = getAgricolaCultureFromDepartment(entry.departamento);
+  if (fromDepartment) return fromDepartment;
+
+  return getAgricolaCultureFromDescription(entry.descricao);
+};
+
+const hasOrcadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
+  if (selectedMonth === 'all') {
+    return Object.values(entry.orcado).some((value) => value !== 0);
+  }
+  return (entry.orcado[selectedMonth] || 0) !== 0;
+};
+
+const hasRealizadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
+  if (selectedMonth === 'all') {
+    return Object.values(entry.realizado).some((value) => value !== 0);
+  }
+  return (entry.realizado[selectedMonth] || 0) !== 0;
+};
+
+const matchesAgricolaCulture = (
+  entry: AccountEntry,
+  culture: string,
+  selectedMonth: MonthKey | 'all'
+) => {
+  const normalizedCulture = normalizeText(culture);
+  const orcadoCulture = getAgricolaCultureFromOrcado(entry);
+  const realizadoCulture = getAgricolaCultureFromRealizado(entry);
+  const hasRealizado = hasRealizadoValueForMonth(entry, selectedMonth);
+  const hasOrcado = hasOrcadoValueForMonth(entry, selectedMonth);
+
+  // Quando existe realizado no período, a cultura deve ser guiada pela DESCRICAO_CONTABIL.
+  // Evita vazar realizado de uma cultura para outra por causa do orçado na mesma linha.
+  if (hasRealizado) {
+    return normalizeText(realizadoCulture) === normalizedCulture;
+  }
+
+  if (hasOrcado) {
+    return normalizeText(orcadoCulture) === normalizedCulture;
+  }
+
+  return false;
+};
+
 const AGRICOLA_UNIDADE_RECEP_DEPARTMENT = 'UNIDADE RECEPÇÃO DE GRAOS';
 const AGRICOLA_UNIDADE_RECEP_COST_CENTER = 'UNIDADE DE RECEPCAO DE GRAOS';
 
@@ -202,6 +295,7 @@ export default function ActivityDetailPage() {
   const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
   const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
+  const [selectedCulture, setSelectedCulture] = useState<string | 'all'>('all');
   
   const isOutrasReceitasEventuais = id === 'OUTRAS_RECEITAS_EVENTUAIS';
   const isDespesasComVendas = id === 'DESPESAS_COM_VENDAS';
@@ -221,6 +315,13 @@ export default function ActivityDetailPage() {
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter =
     shouldApplyCostCenterFilter && selectedCC !== 'all' ? selectedCC : undefined;
+  const shouldApplyCultureFilter = isAgricola;
+  const activeCultureFilter =
+    shouldApplyCultureFilter && selectedCulture !== 'all' ? selectedCulture : undefined;
+  const cultureEntryFilter = activeCultureFilter
+    ? (entry: AccountEntry) =>
+      matchesAgricolaCulture(entry, activeCultureFilter, selectedMonth)
+    : undefined;
   const buildActivityPath = (activityKey: string, options?: { subview?: string }) => {
     const params = new URLSearchParams();
     params.set('tipo', tipoView);
@@ -293,13 +394,14 @@ export default function ActivityDetailPage() {
         ? (entry: AccountEntry) => isDespesasVendasAgricolaDepartment(entry.departamento)
         : undefined;
 
-  const activityLevelEntryFilter = combineEntryFilters(
+  const activityLevelEntryFilterBase = combineEntryFilters(
     baseActivityFilter,
     pecuariaSubFilter,
     agricolaSubFilter,
     admTribSubFilter,
     despesasComVendasSubFilter
   );
+  const activityLevelEntryFilter = combineEntryFilters(activityLevelEntryFilterBase, cultureEntryFilter);
 
   const isTributariaEntry = (entry: {
     grupoContabil?: string;
@@ -324,9 +426,19 @@ export default function ActivityDetailPage() {
           (!atividade?.key || entry.atividade === atividade.key) &&
           (!activeCostCenterFilter || entry.centroCusto === activeCostCenterFilter) &&
           (selectedDept === 'all' || entry.departamento === selectedDept) &&
+          (!activeCultureFilter ||
+            matchesAgricolaCulture(entry, activeCultureFilter, selectedMonth)) &&
           (!activityLevelEntryFilter || activityLevelEntryFilter(entry))
       ),
-    [accounts, atividade?.key, activeCostCenterFilter, selectedDept, activityLevelEntryFilter]
+    [
+      accounts,
+      atividade?.key,
+      activeCostCenterFilter,
+      selectedDept,
+      activeCultureFilter,
+      activityLevelEntryFilter,
+      selectedMonth,
+    ]
   );
 
   const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
@@ -797,6 +909,46 @@ export default function ActivityDetailPage() {
     isAgricola,
   ]);
 
+  const availableCultures = useMemo(() => {
+    if (!id || !shouldApplyCultureFilter) return [];
+    const culturesWithData = new Set(
+      accounts
+        .filter(
+          (entry) =>
+            entry.nivel === 5 &&
+            (!atividade?.key || entry.atividade === atividade.key) &&
+            (!activityLevelEntryFilterBase || activityLevelEntryFilterBase(entry)) &&
+            (!activeCostCenterFilter || entry.centroCusto === activeCostCenterFilter) &&
+            (selectedDept === 'all' || entry.departamento === selectedDept) &&
+            hasEntryValueForMonth(entry, selectedMonth)
+        )
+        .flatMap((entry) => {
+          const cultures: string[] = [];
+          if (hasOrcadoValueForMonth(entry, selectedMonth)) {
+            const fromOrcado = getAgricolaCultureFromOrcado(entry);
+            if (fromOrcado) cultures.push(fromOrcado);
+          }
+          if (hasRealizadoValueForMonth(entry, selectedMonth)) {
+            const fromRealizado = getAgricolaCultureFromRealizado(entry);
+            if (fromRealizado) cultures.push(fromRealizado);
+          }
+          return cultures;
+        })
+        .filter((culture): culture is string => Boolean(culture))
+    );
+
+    return AGRICOLA_CULTURES.filter((culture) => culturesWithData.has(culture));
+  }, [
+    id,
+    shouldApplyCultureFilter,
+    accounts,
+    atividade?.key,
+    activityLevelEntryFilterBase,
+    activeCostCenterFilter,
+    selectedDept,
+    selectedMonth,
+  ]);
+
   const availableDepts = useMemo(() => {
     if (!id) return [];
     return Array.from(
@@ -812,9 +964,19 @@ export default function ActivityDetailPage() {
           .map((entry) => entry.departamento)
           .filter((dept): dept is string => Boolean(dept))
           .filter((dept) => (isPecuaria ? isPecuariaDepartmentOption(dept) : true))
+          .filter((dept) => !shouldHideAgricolaReceitaDepartment(dept, isAgricola, resolvedTipoView))
       )
     ).sort();
-  }, [accounts, id, atividade?.key, filterEntriesForSelectors, selectedMonth, isPecuaria]);
+  }, [
+    accounts,
+    id,
+    atividade?.key,
+    filterEntriesForSelectors,
+    selectedMonth,
+    isPecuaria,
+    isAgricola,
+    resolvedTipoView,
+  ]);
 
   const availableCostCenters = useMemo(() => {
     if (!id) return [];
@@ -886,6 +1048,12 @@ export default function ActivityDetailPage() {
     }
   }, [availableCostCenters, selectedCC]);
 
+  useEffect(() => {
+    if (selectedCulture !== 'all' && !availableCultures.includes(selectedCulture)) {
+      setSelectedCulture('all');
+    }
+  }, [availableCultures, selectedCulture]);
+
   if (!atividade && !isOutrasReceitasEventuais && !isDespesasComVendas && !isRateios) return <NotFound />;
 
   return (
@@ -947,6 +1115,20 @@ export default function ActivityDetailPage() {
                     <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
                     {availableCostCenters.map((cc) => (
                       <SelectItem key={cc} value={cc}>{cc}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
+
+              {!isGeneralTotalsView && shouldApplyCultureFilter && (
+                <Select value={selectedCulture} onValueChange={(v) => setSelectedCulture(v)}>
+                  <SelectTrigger className="w-[220px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
+                    <SelectValue placeholder="Cultura" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all" className="font-semibold">Todas Culturas</SelectItem>
+                    {availableCultures.map((culture) => (
+                      <SelectItem key={culture} value={culture}>{culture}</SelectItem>
                     ))}
                   </SelectContent>
                 </Select>

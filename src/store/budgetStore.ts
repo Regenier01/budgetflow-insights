@@ -11,6 +11,7 @@ import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { ORCADO_IMPORT_BATCHES, type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
 import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
 import { ORCADO_RECEITA_LATEX_IMPORT_BATCHES } from '@/data/orcadoReceitaLatexImportData';
+import { ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES } from '@/data/orcadoReceitaAgricolaImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
 import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
@@ -298,7 +299,15 @@ const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
   (rows.find((row) => validMonthKeys.has(row.month as MonthKey))?.month as MonthKey) || MONTHS[0].key;
 
 const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] =>
-  [...ORCADO_IMPORT_BATCHES, ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES, ...ORCADO_RECEITA_LATEX_IMPORT_BATCHES].map((batch) => {
+  [
+    ...ORCADO_IMPORT_BATCHES,
+    ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES,
+    ...ORCADO_RECEITA_LATEX_IMPORT_BATCHES,
+    ...ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES.map((batch) => ({
+      ...batch,
+      departamento: batch.cultura,
+    })),
+  ].map((batch) => {
     const period = getBatchFallbackPeriod(batch.rows);
     return {
       key: uploadOrcadoBatchKey(period, batch.fileName, batch.atividade, batch.departamento),
@@ -816,7 +825,10 @@ const applyOrcadoRowsToAccounts = (
         // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).
         centroCusto: isAdministrativeImport ? departamento : departamento,
         orcado: { ...baseCandidate.orcado },
-        realizado: { ...baseCandidate.realizado },
+        // Synthetic lines are created to anchor imported budget scopes only.
+        // Realized values must come exclusively from realized imports to avoid
+        // leaking amounts from a different department/culture.
+        realizado: {},
       };
       nextAccounts.push(syntheticAnchor);
       anchorCandidates = [syntheticAnchor];

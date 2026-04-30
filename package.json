@@ -22,7 +22,8 @@
     "orcado:import:desp-vendas": "node import_orcado_despesas_vendas.js",
     "orcado:import:outras-receitas": "node import_orcado_outras_receitas.js",
     "orcado:import:receitas-pecuaria": "node import_orcado_receitas_pecuaria.js",
-    "orcado:import:receitas-latex": "node import_orcado_receitas_latex.js"
+    "orcado:import:receitas-latex": "node import_orcado_receitas_latex.js",
+    "orcado:import:receitas-agricola": "node import_orcado_receitas_agricola.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
