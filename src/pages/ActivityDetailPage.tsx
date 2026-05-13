@@ -5,7 +5,7 @@ import { SummaryCards } from '@/components/dashboard/SummaryCards';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
-import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
+import { useBudgetStore, calculateEncargosTotals, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import {
@@ -283,7 +283,10 @@ export default function ActivityDetailPage() {
   const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => {
+    const s = useBudgetStore.getState();
+    return getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches) ?? 'all';
+  });
   const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
   const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
   const [selectedCulture, setSelectedCulture] = useState<string | 'all'>('all');

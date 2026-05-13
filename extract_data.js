@@ -83,6 +83,35 @@ function mergeAccounts(existing, incoming, { replaceRealizado } = {}) {
   return merged.sort((a, b) => a.codigo.localeCompare(b.codigo, undefined, { numeric: true }));
 }
 
+/** Meses de realizado presentes em qualquer conta (após processar o arquivo atual). */
+function collectRealizadoMonths(accounts) {
+  const months = new Set();
+  for (const acc of accounts) {
+    if (!acc.realizado) continue;
+    for (const m of Object.keys(acc.realizado)) {
+      months.add(m);
+    }
+  }
+  return months;
+}
+
+/**
+ * Remove chaves de realizado dos meses indicados em todas as contas.
+ * Usado com --replace-realizado: o arquivo novo passa a ser a fonte da verdade
+ * para esses meses; lançamentos que saíram da planilha deixam de persistir no cache.
+ */
+function stripRealizadoMonthsFromAccounts(accounts, monthsToStrip) {
+  if (!monthsToStrip.size) return accounts;
+  return accounts.map((acc) => {
+    const r = acc.realizado || {};
+    const next = { ...r };
+    for (const m of monthsToStrip) {
+      delete next[m];
+    }
+    return { ...acc, realizado: next };
+  });
+}
+
 async function run() {
 
   const cliArgs = parseArgs();
@@ -363,7 +392,18 @@ async function run() {
     const cache = loadCache();
     if (cache) {
       console.log(`Mesclando com cache existente (${cache.accounts.length} contas)...`);
-      accounts = mergeAccounts(cache.accounts, newAccounts, { replaceRealizado });
+      let cacheAccounts = cache.accounts;
+      if (replaceRealizado) {
+        const monthsFromImport = collectRealizadoMonths(newAccounts);
+        if (monthsFromImport.size) {
+          const monthList = [...monthsFromImport].sort().join(', ');
+          console.log(
+            `Substituindo realizado no cache para o(s) mes(es): ${monthList} (linhas ausentes no arquivo serao removidas).`
+          );
+          cacheAccounts = stripRealizadoMonthsFromAccounts(cache.accounts, monthsFromImport);
+        }
+      }
+      accounts = mergeAccounts(cacheAccounts, newAccounts, { replaceRealizado });
       departmentMapping = { ...cache.departmentMapping, ...departmentMapping };
       costCenterMapping = { ...cache.costCenterMapping, ...costCenterMapping };
     } else {

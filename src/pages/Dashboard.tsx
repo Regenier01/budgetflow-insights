@@ -3,12 +3,15 @@ import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
 import { DollarSign } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MONTHS, type MonthKey } from '@/types/budget';
-import { useBudgetStore } from '@/store/budgetStore';
+import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
 import { useMemo, useState } from 'react';
 
 export default function Dashboard() {
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>('all');
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => {
+    const s = useBudgetStore.getState();
+    return getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches) ?? 'all';
+  });
 
   const availableMonths = useMemo(() => {
     const monthSet = new Set<string>();

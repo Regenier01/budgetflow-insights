@@ -16977,9 +16977,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "GRATIFICACAO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 512.45
-    }
+    "realizado": {}
   },
   {
     "id": "f7c36470-b69f-406b-8fb7-ee65c1543394",
@@ -16997,9 +16995,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "DIAS TRABALHADOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 10931.44
-    }
+    "realizado": {}
   },
   {
     "id": "4e7e7328-aed3-432f-a2e4-de18005d51f0",
@@ -17017,9 +17013,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "HORA EXTRA 50%",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 390.62
-    }
+    "realizado": {}
   },
   {
     "id": "713d1dbe-fea5-4844-b8ca-6397a71a893f",
@@ -17037,9 +17031,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "D.S.R. - HORA EXTRA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 75.12
-    }
+    "realizado": {}
   },
   {
     "id": "26568ce8-0088-45ec-a854-7778e8cba67c",
@@ -17057,9 +17049,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CARGO DE CONFIANCA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 1713.04
-    }
+    "realizado": {}
   },
   {
     "id": "9959c9f2-dc39-432a-aebe-24b5ef737957",
@@ -17157,9 +17147,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PROVISAO FERIAS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 1509.04
-    }
+    "realizado": {}
   },
   {
     "id": "59d25152-aed1-4de5-a1d2-797b26f7bec2",
@@ -17177,9 +17165,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PROVISAO 13 SALARIO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 1135.21
-    }
+    "realizado": {}
   },
   {
     "id": "6289e374-9ab4-4ef7-a749-6829dc799020",
@@ -17237,9 +17223,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SEGURO VIDA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 21.57
-    }
+    "realizado": {}
   },
   {
     "id": "54203173-7457-4eb9-a45b-8afa0ad550da",
@@ -17257,9 +17241,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 201.03
-    }
+    "realizado": {}
   },
   {
     "id": "42fe391c-239c-4684-a2d8-244c66d64142",
@@ -17417,9 +17399,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 320.13
-    }
+    "realizado": {}
   },
   {
     "id": "023365ad-de28-4efd-8cb8-ea101f23f375",
@@ -17437,9 +17417,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 425.55
-    }
+    "realizado": {}
   },
   {
     "id": "05ee8640-f860-4b92-8719-df7bb379ff14",
@@ -17457,9 +17435,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 0.01
-    }
+    "realizado": {}
   },
   {
     "id": "592128d4-0a82-4079-9cbd-600b6fed9ad6",
@@ -17477,9 +17453,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3841.59
-    }
+    "realizado": {}
   },
   {
     "id": "416db72b-be2a-40d2-a11d-7537f9276427",
@@ -17497,9 +17471,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "FAP",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": -1.35
-    }
+    "realizado": {}
   },
   {
     "id": "56cdcf1d-dd5f-4295-8237-ff6fe662501f",
@@ -17517,9 +17489,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 1089.81
-    }
+    "realizado": {}
   },
   {
     "id": "cb246797-31c9-4632-9372-f47e6a2df99c",
@@ -17537,9 +17507,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 90.82
-    }
+    "realizado": {}
   },
   {
     "id": "46313825-41f2-4083-81f7-657de5240979",
@@ -17557,9 +17525,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 120.72
-    }
+    "realizado": {}
   },
   {
     "id": "8df3ad3f-07dd-4ea3-a406-e564c464e876",
@@ -17677,9 +17643,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 100
-    }
+    "realizado": {}
   },
   {
     "id": "ac713c5b-a948-4254-9c3e-9afbefd39260",
@@ -17917,9 +17881,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "FONE DE OUVIDO PARA COMPUTADOR",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 279.9
-    }
+    "realizado": {}
   },
   {
     "id": "0cb69cfe-1c3f-4fa8-84cb-95f7458c61b7",
@@ -18097,9 +18059,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 79.6
-    }
+    "realizado": {}
   },
   {
     "id": "1ea5aadc-c6e0-44b7-a248-209cb4292e6b",
@@ -18157,9 +18117,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 2.2
-    }
+    "realizado": {}
   },
   {
     "id": "a7c886be-86d3-4e1f-a8f0-652550d00b58",
@@ -18177,9 +18135,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SABONETE 90GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 5
-    }
+    "realizado": {}
   },
   {
     "id": "b18a7c6d-d341-48e3-8a0e-779471f14881",
@@ -18197,9 +18153,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 5.6
-    }
+    "realizado": {}
   },
   {
     "id": "daf49e1c-731e-49b9-8588-8501bdd25ecf",
@@ -18217,9 +18171,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CREME DENTAL 90G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 7
-    }
+    "realizado": {}
   },
   {
     "id": "062ab53f-ecc4-4289-bd2e-40f26767ba58",
@@ -18237,9 +18189,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "DESINFETANTE 2 L",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 7
-    }
+    "realizado": {}
   },
   {
     "id": "a2679703-1b93-4da5-9448-3f72e3cb9008",
@@ -18257,9 +18207,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "AMACIANTE",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 8.4
-    }
+    "realizado": {}
   },
   {
     "id": "2035beab-d820-4880-8acf-90b84d834525",
@@ -18277,9 +18225,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SABAO EM BARRA 5 X 1",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 8.7
-    }
+    "realizado": {}
   },
   {
     "id": "bb251bc9-e4a2-4b0e-8166-b5779034bf6a",
@@ -18297,9 +18243,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SABAO EM PO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 10.4
-    }
+    "realizado": {}
   },
   {
     "id": "68f85707-dd27-4850-b5c2-b0b04de3368e",
@@ -18357,9 +18301,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 196.23000000000002
-    }
+    "realizado": {}
   },
   {
     "id": "a9bb7cae-5242-47a5-94c8-fdace7eb0f41",
@@ -18657,9 +18599,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 8.3
-    }
+    "realizado": {}
   },
   {
     "id": "0355a043-dffd-4b50-9532-90956f321abd",
@@ -18677,9 +18617,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SUCO ADOÇADO 140G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 9.2
-    }
+    "realizado": {}
   },
   {
     "id": "20d08df0-6be5-48f2-8b5d-e013dd3a1f71",
@@ -18697,9 +18635,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "MACARRAO 500 GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 10
-    }
+    "realizado": {}
   },
   {
     "id": "97873ea7-0be0-4c72-a373-df7a3427b5b6",
@@ -18717,9 +18653,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 13.2
-    }
+    "realizado": {}
   },
   {
     "id": "e086d8ae-4efb-44e3-970e-25b8b99a8c26",
@@ -18737,9 +18671,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "EXTRATO DE TOMATE 340G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 18.6
-    }
+    "realizado": {}
   },
   {
     "id": "ebec9f43-67c4-4b9b-ad64-c2d4a8ce6f35",
@@ -18757,9 +18689,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "ACUCAR",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 24.8
-    }
+    "realizado": {}
   },
   {
     "id": "7a447f0f-7ab0-472f-bb16-f251741adfd9",
@@ -18777,9 +18707,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CAFE MOIDO PCT 250 GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 60.8
-    }
+    "realizado": {}
   },
   {
     "id": "6152201a-50b5-44fd-92de-b086f10132a5",
@@ -18797,9 +18725,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "OLEO DE SOJA 900ML",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 61.6
-    }
+    "realizado": {}
   },
   {
     "id": "2d857a16-7f3d-4891-b64d-ba59c2549eda",
@@ -18817,9 +18743,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "FEIJAO TIPO 1",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 55.2
-    }
+    "realizado": {}
   },
   {
     "id": "30fa93d5-56dc-4694-b7ec-58359f1df61d",
@@ -18837,9 +18761,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 111
-    }
+    "realizado": {}
   },
   {
     "id": "329b5d8c-9e88-4377-9b84-e7bc0932c1cd",
@@ -18857,9 +18779,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "TAPIOCA 500 GR",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 7.3
-    }
+    "realizado": {}
   },
   {
     "id": "9758ba27-0ed3-4f56-aaeb-692fa3d9f76b",
@@ -18877,9 +18797,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "BOLACHA DE DOCE 400GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 8
-    }
+    "realizado": {}
   },
   {
     "id": "3d8226ad-9714-4892-863d-724110a4e8c3",
@@ -18897,9 +18815,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 6.4
-    }
+    "realizado": {}
   },
   {
     "id": "7063f805-b8ca-4c08-b011-8c5bd0382a05",
@@ -18917,9 +18833,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 6.7
-    }
+    "realizado": {}
   },
   {
     "id": "604cd270-e954-419c-ab41-6037b48265ef",
@@ -18937,9 +18851,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 2.2
-    }
+    "realizado": {}
   },
   {
     "id": "6b5dd838-01d6-40e4-a03c-67077c82070e",
@@ -18957,9 +18869,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "TEMPERO COMPLETO 300G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 2.9
-    }
+    "realizado": {}
   },
   {
     "id": "733ae05c-2caf-4788-bf86-19603b095d75",
@@ -18977,9 +18887,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "BOLACHA DE DOCE 115GRS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3.2
-    }
+    "realizado": {}
   },
   {
     "id": "63d88ca8-d8b4-442b-a5f2-a62a89647fb2",
@@ -18997,9 +18905,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3.2
-    }
+    "realizado": {}
   },
   {
     "id": "6d567eca-3382-4f9a-980f-af6801fad145",
@@ -19017,9 +18923,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "ACHOCOLATADO EM PO 200G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 4.1
-    }
+    "realizado": {}
   },
   {
     "id": "d8d4a825-cfee-4907-b985-10b81a6f1d5f",
@@ -19037,9 +18941,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "GELATINA",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 4.4
-    }
+    "realizado": {}
   },
   {
     "id": "0bf9b60b-d3a7-40b9-8882-a8a029f7b21c",
@@ -19057,9 +18959,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "GOIABADA 300 G",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 4.6
-    }
+    "realizado": {}
   },
   {
     "id": "c9eadc2e-5fe8-4904-acf1-848945327e3a",
@@ -19137,9 +19037,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CARTAO ALIMENTACAO",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 584
-    }
+    "realizado": {}
   },
   {
     "id": "60fbc0b9-43a7-4f85-bd60-2cd26b3ce6ae",
@@ -19257,9 +19155,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 94.26
-    }
+    "realizado": {}
   },
   {
     "id": "90ea5d5a-67dc-45d6-8317-0d88a91841f1",
@@ -19277,9 +19173,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 82.29
-    }
+    "realizado": {}
   },
   {
     "id": "5c3cb1e1-c02f-4bcf-97b8-6ffacdfaf473",
@@ -19357,9 +19251,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 27.57
-    }
+    "realizado": {}
   },
   {
     "id": "bf485be1-34fe-4e2a-8594-901c08934f7b",
@@ -19377,9 +19269,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 98.25000000000001
-    }
+    "realizado": {}
   },
   {
     "id": "0c9ce2bb-8a68-4ca7-b52b-3d4ce362bd25",
@@ -19437,9 +19327,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 632.24
-    }
+    "realizado": {}
   },
   {
     "id": "3b51255b-f9c1-4bab-b1fa-c698abbd069a",
@@ -19457,9 +19345,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "ADMINISTRACAO",
     "orcado": {},
-    "realizado": {
-      "2026-04": 2707.83
-    }
+    "realizado": {}
   },
   {
     "id": "f973c832-e613-4bdf-88da-8a70de679891",
@@ -19697,9 +19583,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "JUROS DE MORA  039483",
     "divisao": "ENCARGOS FINANCEIROS",
     "orcado": {},
-    "realizado": {
-      "2026-04": -109.09
-    }
+    "realizado": {}
   },
   {
     "id": "d80f4f19-1dc0-4df6-bf9e-429ca1fbb9d7",
@@ -19757,9 +19641,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "JUROS ATIVOS",
     "divisao": "ENCARGOS FINANCEIROS",
     "orcado": {},
-    "realizado": {
-      "2026-04": -55.79
-    }
+    "realizado": {}
   },
   {
     "id": "55a31fd2-dc40-49f8-9d57-c20d54d8260a",
@@ -19777,9 +19659,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "JUROS ATIVOS",
     "divisao": "ENCARGOS FINANCEIROS",
     "orcado": {},
-    "realizado": {
-      "2026-04": -464.48
-    }
+    "realizado": {}
   },
   {
     "id": "2103261d-6b54-4b86-a585-515a04e1f230",
@@ -20097,9 +19977,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "RECEITAS FINANCEIRAS",
     "divisao": "ENCARGOS FINANCEIROS",
     "orcado": {},
-    "realizado": {
-      "2026-04": -23334.24
-    }
+    "realizado": {}
   },
   {
     "id": "624487cb-e752-4708-877c-5c0644c8ed26",
@@ -31497,9 +31375,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3955.0099999999998
-    }
+    "realizado": {}
   },
   {
     "id": "2c174c6a-de63-4bc3-a746-257cab037b2e",
@@ -36677,9 +36553,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS TRANSFERIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 241.63
-    }
+    "realizado": {}
   },
   {
     "id": "0482a27a-03d0-478b-9396-5e341d2d122f",
@@ -57553,9 +57427,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CURSOS DE TREINAMENTO",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 56.25
-    }
+    "realizado": {}
   },
   {
     "id": "36b1bcbd-7f9c-4e80-9da7-06302e66143c",
@@ -65052,9 +64924,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3657.69
-    }
+    "realizado": {}
   },
   {
     "id": "7f3b00dc-1bcf-4cd2-89a7-e4bcae46dd3a",
@@ -65072,9 +64942,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 17057.68
-    }
+    "realizado": {}
   },
   {
     "id": "087cce5b-641d-4629-b766-bcc308ea06b4",
@@ -66152,9 +66020,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 5984.3099999999995
-    }
+    "realizado": {}
   },
   {
     "id": "9a1db522-f9bf-4908-8539-898d70cda4cb",
@@ -66172,9 +66038,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 4017.1
-    }
+    "realizado": {}
   },
   {
     "id": "1111d225-04c7-412e-a501-18b640aeb802",
@@ -66192,9 +66056,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 1785.38
-    }
+    "realizado": {}
   },
   {
     "id": "088fbd30-48be-4318-aa57-62b4e3c89355",
@@ -67592,9 +67454,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 495.91
-    }
+    "realizado": {}
   },
   {
     "id": "f70cb9da-b8e0-4030-99d8-457f9546b256",
@@ -67812,9 +67672,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 3315.94
-    }
+    "realizado": {}
   },
   {
     "id": "902f3649-683a-4f71-93b0-1e236bc89729",
@@ -68032,9 +67890,7 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "nomeProduto": "CUSTOS RECEBIDOS",
     "divisao": "SERINGAL",
     "orcado": {},
-    "realizado": {
-      "2026-04": 557.18
-    }
+    "realizado": {}
   },
   {
     "id": "0d5a7312-3383-411d-abd8-32d1b33e301c",

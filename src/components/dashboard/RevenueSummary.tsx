@@ -71,7 +71,9 @@ export function RevenueSummary({ selectedMonth }: Props) {
     return {
       orc: bruta.orc + deducoes.orc,
       real: bruta.real + deducoes.real,
-      diff: (bruta.orc + deducoes.orc) - (bruta.real + deducoes.real),
+      // Receitas: realizado é armazenado como negativo. Soma-se ao orçado
+      // para obter a variação real (negativa quando a receita supera o orçado).
+      diff: (bruta.orc + deducoes.orc) + (bruta.real + deducoes.real),
     };
   };
 
@@ -102,7 +104,9 @@ export function RevenueSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    const isPositive = diff > 0;
+    // Em receitas, o realizado é negativo. Uma variação negativa (orçado + realizado < 0)
+    // significa que a receita superou o orçado — cenário favorável (verde).
+    const isFavorable = diff < 0;
     const isClickable = !!activityKey;
 
     return (
@@ -153,10 +157,10 @@ export function RevenueSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1",
-              isPositive ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
+              isFavorable ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
-            {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+            {isFavorable ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
             {fmt(diff)}
           </div>
         </div>
@@ -202,7 +206,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
         title="Consolidado Geral de Receita Líquida"
         orc={global.orc}
         real={global.real}
-        diff={global.orc - global.real}
+        diff={global.orc + global.real}
         isMain
       />
 
@@ -228,7 +232,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           activityKey="OUTRAS_RECEITAS_EVENTUAIS"
           orc={outrasReceitasEventuais.orc}
           real={outrasReceitasEventuais.real}
-          diff={outrasReceitasEventuais.orc - outrasReceitasEventuais.real}
+          diff={outrasReceitasEventuais.orc + outrasReceitasEventuais.real}
         />
       </div>
     </div>

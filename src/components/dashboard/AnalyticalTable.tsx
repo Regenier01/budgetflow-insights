@@ -112,6 +112,14 @@ export function AnalyticalTable({
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
   const ta = resolveTableAccent(accentColor);
 
+  // Tabela de receitas (tipoFilter exclusivamente 'R'): o realizado é armazenado como
+  // negativo, então a variação real é "orçado + realizado" e é favorável (verde)
+  // quando o resultado é negativo (receita superou o orçado).
+  const isRevenueTable = tipoFilter?.length === 1 && tipoFilter[0] === 'R';
+  const computeDiff = (orc: number, real: number) =>
+    isRevenueTable ? orc + real : orc - real;
+  const isDiffFavorable = (diff: number) => (isRevenueTable ? diff < 0 : diff > 0);
+
   let filtered = accounts.filter(
     (a) => a.nivel === 5 && (!atividadeFilter || a.atividade === atividadeFilter)
   );
@@ -212,8 +220,8 @@ export function AnalyticalTable({
       const hasChildren = node.children.size > 0;
       
       const showBudget = level === 0;
-      const diff = node.orc - node.real;
-      const isPositive = diff > 0;
+      const diff = computeDiff(node.orc, node.real);
+      const isPositive = isDiffFavorable(diff);
 
       return (
         <Fragment key={currentPath}>
@@ -316,8 +324,8 @@ export function AnalyticalTable({
             {root.size > 0 && (() => {
               const totalOrc = Array.from(root.values()).reduce((sum, n) => sum + n.orc, 0);
               const totalReal = Array.from(root.values()).reduce((sum, n) => sum + n.real, 0);
-              const totalDiff = totalOrc - totalReal;
-              const isTotalPositive = totalDiff > 0;
+              const totalDiff = computeDiff(totalOrc, totalReal);
+              const isTotalPositive = isDiffFavorable(totalDiff);
               return (
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
@@ -348,8 +356,8 @@ export function AnalyticalTable({
             </thead>
             <tbody>
               {flatEntries.length > 0 ? flatEntries.map((entry) => {
-                const diff = entry.orc - entry.real;
-                const isPositive = diff > 0;
+                const diff = computeDiff(entry.orc, entry.real);
+                const isPositive = isDiffFavorable(diff);
                 return (
                   <tr key={entry.id} className={cn('border-b border-slate-200 transition-colors', ta.flatHover)}>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700 font-medium">{entry.departamento || '-'}</td>
@@ -371,8 +379,8 @@ export function AnalyticalTable({
             {flatEntries.length > 0 && (() => {
               const totalOrc = flatEntries.reduce((sum, e) => sum + e.orc, 0);
               const totalReal = flatEntries.reduce((sum, e) => sum + e.real, 0);
-              const totalDiff = totalOrc - totalReal;
-              const isTotalPositive = totalDiff > 0;
+              const totalDiff = computeDiff(totalOrc, totalReal);
+              const isTotalPositive = isDiffFavorable(totalDiff);
               return (
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>

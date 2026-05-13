@@ -39,6 +39,45 @@ export const getLastUploadedPeriod = (): MonthKey | null => {
   return stored && validMonthKeys.has(stored as MonthKey) ? (stored as MonthKey) : null;
 };
 
+/** Ignora meses com realizado residual (ex.: seed) frente ao mês dominante. */
+const REALIZADO_MONTH_MATERIALITY_RATIO = 0.02;
+
+const latestRealizadoMonthFromAggregates = (accounts: AccountEntry[]): MonthKey | null => {
+  const monthTotals = new Map<string, number>();
+  for (const account of accounts) {
+    for (const [month, v] of Object.entries(account.realizado)) {
+      if (!validMonthKeys.has(month as MonthKey)) continue;
+      monthTotals.set(month, (monthTotals.get(month) || 0) + Math.abs(Number(v) || 0));
+    }
+  }
+  if (monthTotals.size === 0) return null;
+  const maxSum = Math.max(...monthTotals.values());
+  if (maxSum === 0) return null;
+  const threshold = maxSum * REALIZADO_MONTH_MATERIALITY_RATIO;
+  const candidates = [...monthTotals.entries()]
+    .filter(([, t]) => t >= threshold)
+    .map(([m]) => m as MonthKey)
+    .sort();
+  return candidates.length ? candidates[candidates.length - 1]! : null;
+};
+
+/**
+ * Mês inicial do filtro: último período importado em realizado (quando houver lotes),
+ * senão o último mês com volume material em realizado (evita vencer por ruído em meses futuros no seed).
+ */
+export const getDefaultRealizadoFilterMonth = (
+  accounts: AccountEntry[],
+  importedRealizadoBatches: { period: MonthKey; importedAt: string }[]
+): MonthKey | null => {
+  if (importedRealizadoBatches.length > 0) {
+    const sorted = [...importedRealizadoBatches].sort(
+      (a, b) => new Date(a.importedAt).getTime() - new Date(b.importedAt).getTime()
+    );
+    return sorted[sorted.length - 1]!.period;
+  }
+  return latestRealizadoMonthFromAggregates(accounts);
+};
+
 // Função auxiliar para normalizar strings de busca
 const normalizeKey = (str: string) => 
   str.toUpperCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
