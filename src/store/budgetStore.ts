@@ -21,6 +21,7 @@ import {
   isReceitaFinanceiraAccount,
 } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
 const validMonthKeys = new Set(MONTHS.map((month) => month.key));
@@ -218,7 +219,8 @@ export function calculateDespesasComVendasTotals(accounts: AccountEntry[]) {
     (a) =>
       a.nivel === 5 &&
       (a.tipo === 'C' || a.tipo === 'D') &&
-      isDespesaComVendasCode(a.codigo)
+      isDespesaComVendasCode(a.codigo) &&
+      isDespesasComVendasConsolidatedScopeDepartment(a.departamento)
   );
 
   filtered.forEach((a) => {

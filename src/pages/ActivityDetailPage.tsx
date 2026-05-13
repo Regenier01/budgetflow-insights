@@ -8,6 +8,10 @@ import type { AccountEntry } from '@/types/budget';
 import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import {
+  isDespesasVendasAgricolaDepartment,
+  isDespesasVendasPecuariaDepartment,
+} from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -240,19 +244,6 @@ const isReceitaDeductionEntry = (entry: AccountEntry) => {
 const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
 const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
   normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
-const DESPESAS_VENDAS_PECUARIA_DEPARTMENTS = [
-  'COMERCIALIZACAO DE TOUROS',
-  'SUPERVISAO PECUARIA',
-] as const;
-const DESPESAS_VENDAS_AGRICOLA_DEPARTMENTS = ['COMERCIALIZACAO DE SEMENTES'] as const;
-const isDespesasVendasPecuariaDepartment = (departamento?: string) =>
-  DESPESAS_VENDAS_PECUARIA_DEPARTMENTS.some(
-    (item) => normalizeText(item) === normalizeText(departamento)
-  );
-const isDespesasVendasAgricolaDepartment = (departamento?: string) =>
-  DESPESAS_VENDAS_AGRICOLA_DEPARTMENTS.some(
-    (item) => normalizeText(item) === normalizeText(departamento)
-  );
 const DESPESAS_RAILENE_COST_CENTERS = [
   'GOVERNANCIA CORPORATIVA',
   'RATEIO DESENVOLVIMENTO HUMANO',
@@ -606,7 +597,10 @@ export default function ActivityDetailPage() {
         a.atividade === 'DESP_ADM_TRIB' &&
         a.tipo === 'D' &&
         isNonRateioDepartment(a.departamento) &&
-        !isConta4Entry(a)
+        !isConta4Entry(a) &&
+        !isOutrasReceitasEventuaisCode(a.codigo) &&
+        !isRendasOperacionaisEntry(a) &&
+        !isDespesaComVendasCode(a.codigo)
     );
 
     const admLeaves = admBaseLeaves.filter(
@@ -630,19 +624,14 @@ export default function ActivityDetailPage() {
     const raileneReal = sum(raileneEntries, 'realizado');
     const tributariaOrc = sum(tributariaEntries, 'orcado');
     const tributariaReal = sum(tributariaEntries, 'realizado');
-    const marketingInternoEntries = admLeaves.filter(
-      (a) => !isNotMarketingInternoCostCenter(a.centroCusto)
-    );
-    const marketingInternoOrc = sum(marketingInternoEntries, 'orcado');
-    const marketingInternoReal = sum(marketingInternoEntries, 'realizado');
 
     const totalOrcRaw = laizaOrc + raileneOrc + tributariaOrc;
     const totalRealRaw = laizaReal + raileneReal + tributariaReal;
     const totalOrc =
       selectedMonth === 'all'
-        ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT - marketingInternoOrc
-        : totalOrcRaw - marketingInternoOrc;
-    const totalReal = totalRealRaw - marketingInternoReal;
+        ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT
+        : totalOrcRaw;
+    const totalReal = totalRealRaw;
 
     return {
       laiza: { orc: laizaOrc, real: laizaReal },

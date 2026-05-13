@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
+import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
@@ -261,7 +262,10 @@ export function GlobalSummary({ selectedMonth }: Props) {
     { orc: 0, real: 0 }
   );
   const despesasComVendas = computeTotals(
-    (a) => isDespesaComVendasCode(a.codigo) && (a.tipo === 'C' || a.tipo === 'D')
+    (a) =>
+      isDespesaComVendasCode(a.codigo) &&
+      (a.tipo === 'C' || a.tipo === 'D') &&
+      isDespesasComVendasConsolidatedScopeDepartment(a.departamento)
   );
   const consolidatedOrc = global.orc + despesasComVendas.orc;
   const consolidatedReal = global.real + despesasComVendas.real;
