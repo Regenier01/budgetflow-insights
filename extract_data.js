@@ -14,11 +14,13 @@ const CACHE_FILE = '.data-cache.json';
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  const result = { file: null };
+  const result = { file: null, replaceRealizado: false };
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--file' && args[i + 1]) {
+    if (args[i] === '--file' && args[i + 1] && !args[i + 1].startsWith('-')) {
       result.file = args[i + 1];
       i++;
+    } else if (args[i] === '--replace-realizado') {
+      result.replaceRealizado = true;
     }
   }
   return result;
@@ -36,7 +38,7 @@ function saveCache(data) {
   writeFileSync(CACHE_FILE, JSON.stringify(data));
 }
 
-function mergeAccounts(existing, incoming) {
+function mergeAccounts(existing, incoming, { replaceRealizado } = {}) {
   const merged = [...existing];
 
   for (const newAcc of incoming) {
@@ -50,12 +52,22 @@ function mergeAccounts(existing, incoming) {
 
     if (match) {
       for (const [month, value] of Object.entries(newAcc.realizado || {})) {
-        match.realizado[month] = (match.realizado[month] || 0) + value;
+        if (replaceRealizado) {
+          match.realizado[month] = value;
+        } else {
+          match.realizado[month] = (match.realizado[month] || 0) + value;
+        }
       }
       for (const [month, value] of Object.entries(newAcc.orcado || {})) {
         match.orcado[month] = (match.orcado[month] || 0) + value;
       }
     } else {
+      if (replaceRealizado) {
+        const r = newAcc.realizado || {};
+        if (Object.keys(r).length === 0 || Object.values(r).every((v) => v === 0)) {
+          continue;
+        }
+      }
       merged.push(newAcc);
     }
   }
@@ -66,10 +78,27 @@ function mergeAccounts(existing, incoming) {
 async function run() {
 
   const cliArgs = parseArgs();
+  const argv = process.argv.slice(2);
+  const hasBareFileFlag = argv.includes('--file');
+  if (hasBareFileFlag && !cliArgs.file) {
+    console.error(
+      'Uso incorreto: --file precisa do trecho do nome do .xlsx dentro de realizado/.\n' +
+        '  npm run data:add -- 04.2026\n' +
+        'Sem o nome após o comando, o script cai no modo COMPLETO (todos os xlsx) e reescreve initialData inteiro.\n' +
+        'Para sobrescrever o realizado dos meses vindos do arquivo (incluindo zerar saldos), use:\n' +
+        '  npm run data:add -- 04.2026 --replace-realizado'
+    );
+    process.exit(1);
+  }
+
   const incrementalMode = !!cliArgs.file;
+  const replaceRealizado = incrementalMode && !!cliArgs.replaceRealizado;
 
   if (incrementalMode) {
     console.log(`--- Modo incremental: carregando apenas "${cliArgs.file}" ---`);
+    if (replaceRealizado) {
+      console.log('--- replace-realizado: meses do arquivo substituem o cache (saldos 0 contam) ---');
+    }
   } else {
     console.log('--- Iniciando extração completa de dados ---');
   }
@@ -310,7 +339,9 @@ async function run() {
 
   // 3. Processamento e Agregação
 
-  const newAccounts = processBudgetRows(allRows, departmentMapping, costCenterMapping);
+  const newAccounts = processBudgetRows(allRows, departmentMapping, costCenterMapping, {
+    includeZeroSaldo: replaceRealizado,
+  });
 
   let accounts;
 
@@ -318,7 +349,7 @@ async function run() {
     const cache = loadCache();
     if (cache) {
       console.log(`Mesclando com cache existente (${cache.accounts.length} contas)...`);
-      accounts = mergeAccounts(cache.accounts, newAccounts);
+      accounts = mergeAccounts(cache.accounts, newAccounts, { replaceRealizado });
       departmentMapping = { ...cache.departmentMapping, ...departmentMapping };
       costCenterMapping = { ...cache.costCenterMapping, ...costCenterMapping };
     } else {
@@ -602,7 +633,8 @@ function mapTipo(contaContabil) {
 
 
 
-function processBudgetRows(rows, departmentMapping, costCenterMapping) {
+function processBudgetRows(rows, departmentMapping, costCenterMapping, options = {}) {
+  const { includeZeroSaldo = false } = options;
 
   const aggregated = new Map();
 
@@ -628,9 +660,9 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping) {
 
     if (isNaN(saldo)) saldo = 0;
 
-    // Ignorar valores zerados para evitar criar contas vazias
+    // Ignorar valores zerados para evitar criar contas vazias (no modo replace-realizado incremental, zero zera o mês)
 
-    if (saldo === 0) continue;
+    if (saldo === 0 && !includeZeroSaldo) continue;
 
 
 

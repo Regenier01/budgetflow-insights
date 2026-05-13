@@ -15,7 +15,11 @@ import { ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES } from '@/data/orcadoReceitaAgri
 import { ORCADO_RECEITA_CANA_IMPORT_BATCHES } from '@/data/orcadoReceitaCanaImportData';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 import { COST_CENTER_MAPPING } from '@/data/costCenterMapping';
-import { isEncargo, isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
+import {
+  isEncargo,
+  isDespesaFinanceiraAccount,
+  isReceitaFinanceiraAccount,
+} from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
@@ -162,7 +166,7 @@ export function calculateDespesasFinanceirasTotals(accounts: AccountEntry[]) {
   const filtered = accounts.filter(a => 
     a.atividade === 'ENCARGOS' && 
     a.nivel === 5 &&
-    isDespesaFinanceira(a.codigo)
+    isDespesaFinanceiraAccount(a)
   );
   filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
@@ -180,7 +184,7 @@ export function calculateReceitasFinanceirasTotals(accounts: AccountEntry[]) {
   const filtered = accounts.filter(a => 
     a.atividade === 'ENCARGOS' && 
     a.nivel === 5 &&
-    isReceitaFinanceira(a.codigo)
+    isReceitaFinanceiraAccount(a)
   );
   filtered.forEach(a => {
     if (a.tipo === 'C' || a.tipo === 'D') {
@@ -711,6 +715,99 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
   return { accounts: newAccounts, count };
 };
 
+/** Nível 5 sintético para ancorar orçado quando o realizado não traz linhas desse grupo. */
+const syntheticLeafCodigoForOrcado = (normalizedGrupo: string): string => {
+  const parts = normalizedGrupo.split('.').filter(Boolean);
+  if (parts.length >= 5) return parts.slice(0, 5).join('.');
+  const out = [...parts];
+  let k = 9001;
+  while (out.length < 5) {
+    out.push(String(k));
+    k += 1;
+  }
+  return out.join('.');
+};
+
+const inferTipoFromConta = (codigoConta: string): AccountEntry['tipo'] => {
+  const c = String(codigoConta || '').trim();
+  if (c.startsWith('3.1') || c.startsWith('3.01')) return 'R';
+  if (c.startsWith('4.')) return 'C';
+  return 'D';
+};
+
+const grupoContabilFilterDigit = (normalizedGrupo: string): string => {
+  if (normalizedGrupo.startsWith('4.')) return '4';
+  if (normalizedGrupo.startsWith('3.')) return '3';
+  const first = normalizedGrupo.split('.')[0];
+  return first === '4' ? '4' : first === '3' ? '3' : '4';
+};
+
+const ensureSyntheticParentChain = (
+  accounts: AccountEntry[],
+  leafCodigo: string,
+  atividade: AtividadeKey,
+  tipo: AccountEntry['tipo']
+) => {
+  const parts = leafCodigo.split('.').filter(Boolean);
+  for (let depth = 1; depth < parts.length; depth += 1) {
+    const codigo = parts.slice(0, depth).join('.');
+    const exists = accounts.some((a) => a.codigo === codigo && a.atividade === atividade);
+    if (exists) continue;
+    const codigoPai = depth > 1 ? parts.slice(0, depth - 1).join('.') : null;
+    accounts.push({
+      id: `SYN::PARENT::${atividade}::${codigo}`,
+      codigo,
+      descricao: codigo,
+      tipo,
+      codigoPai,
+      nivel: depth,
+      atividade,
+      orcado: {},
+      realizado: {},
+    });
+  }
+};
+
+const getOrCreateStandaloneOrcadoAnchor = (
+  nextAccounts: AccountEntry[],
+  ctx: {
+    normalizedGrupo: string;
+    atividade: OrcadoImportAtividadeKey;
+    departamento: string;
+    isOutrasReceitasImport: boolean;
+  }
+): AccountEntry => {
+  const { normalizedGrupo, atividade, departamento, isOutrasReceitasImport } = ctx;
+  const atividadeKey = isOutrasReceitasImport ? 'OUTRAS_RECEITAS' : atividade;
+  const id = `SYN::ORCADO::${atividadeKey}::${normalizeLooseMatch(departamento)}::${normalizedGrupo}`;
+  const existing = nextAccounts.find((a) => a.id === id);
+  if (existing) return existing;
+
+  const resolvedAtividade: AtividadeKey = isOutrasReceitasImport ? 'PECUARIA' : atividade;
+  const leafCodigo = syntheticLeafCodigoForOrcado(normalizedGrupo);
+  const tipo = inferTipoFromConta(leafCodigo);
+  ensureSyntheticParentChain(nextAccounts, leafCodigo, resolvedAtividade, tipo);
+
+  const codigoPai = leafCodigo.includes('.') ? leafCodigo.split('.').slice(0, -1).join('.') : null;
+  const leaf: AccountEntry = {
+    id,
+    codigo: leafCodigo,
+    descricao: `Orçado — grupo ${normalizedGrupo}`,
+    tipo,
+    codigoPai,
+    nivel: 5,
+    atividade: resolvedAtividade,
+    departamento,
+    centroCusto: departamento,
+    grupoContabil: grupoContabilFilterDigit(normalizedGrupo),
+    grupoContabilN9: normalizedGrupo,
+    orcado: {},
+    realizado: {},
+  };
+  nextAccounts.push(leaf);
+  return leaf;
+};
+
 const applyOrcadoRowsToAccounts = (
   baseAccounts: AccountEntry[],
   rows: OrcadoGrupoMonthValue[],
@@ -808,32 +905,42 @@ const applyOrcadoRowsToAccounts = (
               account.nivel === 5 &&
               accountMatchesGrupoContabil(account, normalizedGrupo)
           );
-    if (scopedCandidates.length === 0) return;
-
-    let anchorCandidates = scopedCandidates;
-    if (normalizedImportedDept && strictCandidates.length === 0) {
-      // If this group has no existing line for the imported scope,
-      // clone the best candidate and pin it to the imported department/cost center.
-      // This also handles regressions where the base data no longer has this group
-      // for the imported activity (e.g. SERINGAL), by creating a scoped synthetic anchor.
-      const basePool = sameActivityCandidates.length > 0 ? sameActivityCandidates : scopedCandidates;
-      const baseCandidate = [...basePool].sort(compareCandidatePriority)[0];
-      const syntheticAnchor: AccountEntry = {
-        ...baseCandidate,
-        id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
-        atividade: isOutrasReceitasImport ? baseCandidate.atividade : atividade,
-        departamento: isAdministrativeImport ? baseCandidate.departamento : departamento,
-        // For non-administrative budget imports, keep the synthetic line scoped to the
-        // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).
-        centroCusto: isAdministrativeImport ? departamento : departamento,
-        orcado: { ...baseCandidate.orcado },
-        // Synthetic lines are created to anchor imported budget scopes only.
-        // Realized values must come exclusively from realized imports to avoid
-        // leaking amounts from a different department/culture.
-        realizado: {},
-      };
-      nextAccounts.push(syntheticAnchor);
-      anchorCandidates = [syntheticAnchor];
+    let anchorCandidates: AccountEntry[];
+    if (scopedCandidates.length === 0) {
+      anchorCandidates = [
+        getOrCreateStandaloneOrcadoAnchor(nextAccounts, {
+          normalizedGrupo,
+          atividade,
+          departamento,
+          isOutrasReceitasImport,
+        }),
+      ];
+    } else {
+      anchorCandidates = scopedCandidates;
+      if (normalizedImportedDept && strictCandidates.length === 0) {
+        // If this group has no existing line for the imported scope,
+        // clone the best candidate and pin it to the imported department/cost center.
+        // This also handles regressions where the base data no longer has this group
+        // for the imported activity (e.g. SERINGAL), by creating a scoped synthetic anchor.
+        const basePool = sameActivityCandidates.length > 0 ? sameActivityCandidates : scopedCandidates;
+        const baseCandidate = [...basePool].sort(compareCandidatePriority)[0];
+        const syntheticAnchor: AccountEntry = {
+          ...baseCandidate,
+          id: `${baseCandidate.id}::ORCADO::${normalizedImportedDept}::${normalizedGrupo}`,
+          atividade: isOutrasReceitasImport ? baseCandidate.atividade : atividade,
+          departamento: isAdministrativeImport ? baseCandidate.departamento : departamento,
+          // For non-administrative budget imports, keep the synthetic line scoped to the
+          // imported department to avoid inheriting an unrelated cost center (e.g. Confinamento).
+          centroCusto: isAdministrativeImport ? departamento : departamento,
+          orcado: { ...baseCandidate.orcado },
+          // Synthetic lines are created to anchor imported budget scopes only.
+          // Realized values must come exclusively from realized imports to avoid
+          // leaking amounts from a different department/culture.
+          realizado: {},
+        };
+        nextAccounts.push(syntheticAnchor);
+        anchorCandidates = [syntheticAnchor];
+      }
     }
 
     // Regra: o valor orcado deve refletir o total do grupo contabil da planilha,

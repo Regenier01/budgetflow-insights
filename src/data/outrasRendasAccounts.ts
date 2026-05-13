@@ -35,5 +35,13 @@ const OUTRAS_RENDAS_CODES = [
 
 export const OUTRAS_RENDAS_CODE_SET = new Set<string>(OUTRAS_RENDAS_CODES);
 
-export const isOutrasReceitasEventuaisCode = (codigo?: string) =>
-  OUTRAS_RENDAS_CODE_SET.has((codigo || '').trim());
+/** Plano 3.6 e 3.7 inteiro: card Outras Receitas Eventuais (além da lista explícita). */
+const OUTRAS_RECEITAS_EVENTUAIS_PREFIXES = ['3.6.', '3.7.'] as const;
+
+export const isOutrasReceitasEventuaisCode = (codigo?: string) => {
+  const trimmed = (codigo || '').trim();
+  if (!trimmed) return false;
+  if (OUTRAS_RENDAS_CODE_SET.has(trimmed)) return true;
+  if (trimmed === '3.6' || trimmed === '3.7') return true;
+  return OUTRAS_RECEITAS_EVENTUAIS_PREFIXES.some((prefix) => trimmed.startsWith(prefix));
+};

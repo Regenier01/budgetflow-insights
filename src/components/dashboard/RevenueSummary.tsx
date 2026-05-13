@@ -3,7 +3,7 @@ import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
-import { OUTRAS_RENDAS_CODE_SET, isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 interface Props {
   selectedMonth: MonthKey | 'all';
@@ -165,11 +165,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
   };
 
   const outrasReceitasEventuais = accounts
-    .filter(
-      (a) =>
-        a.nivel === 5 &&
-        OUTRAS_RENDAS_CODE_SET.has(a.codigo.trim())
-    )
+    .filter((a) => a.nivel === 5 && isOutrasReceitasEventuaisCode(a.codigo))
     .reduce(
       (acc, a) => {
         acc.orc += sumEntryValues(a.orcado);

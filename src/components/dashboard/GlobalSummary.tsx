@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
-import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
+import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 interface Props {
@@ -211,7 +211,9 @@ export function GlobalSummary({ selectedMonth }: Props) {
   const calculateCostsByActivity = (activityKey: string) => {
     if (activityKey === 'ENCARGOS') {
       return computeTotals(
-        (a) => a.atividade === 'ENCARGOS' && (isDespesaFinanceira(a.codigo) || isReceitaFinanceira(a.codigo))
+        (a) =>
+          a.atividade === 'ENCARGOS' &&
+          (isDespesaFinanceiraAccount(a) || isReceitaFinanceiraAccount(a))
       );
     }
 

@@ -78,5 +78,12 @@ export const DESPESAS_COM_VENDAS_CODES = new Set([
   '3.4.02.10.0030',
 ]);
 
-export const isDespesaComVendasCode = (codigo: string) =>
-  DESPESAS_COM_VENDAS_CODES.has(codigo.trim());
+/** Contas 3.4.02 inteiras pertencem ao card Despesas com Vendas (não às atividades operacionais). */
+const DESPESAS_COM_VENDAS_PLANO_PREFIX = '3.4.02';
+
+export const isDespesaComVendasCode = (codigo: string) => {
+  const trimmed = codigo.trim();
+  if (DESPESAS_COM_VENDAS_CODES.has(trimmed)) return true;
+  if (trimmed === DESPESAS_COM_VENDAS_PLANO_PREFIX) return true;
+  return trimmed.startsWith(`${DESPESAS_COM_VENDAS_PLANO_PREFIX}.`);
+};

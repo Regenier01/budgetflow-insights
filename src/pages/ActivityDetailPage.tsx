@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
 import { useBudgetStore, calculateEncargosTotals } from '@/store/budgetStore';
-import { isDespesaFinanceira, isReceitaFinanceira } from '@/data/encargosAccounts';
+import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
@@ -508,7 +508,7 @@ export default function ActivityDetailPage() {
     let custosEntries: AccountEntry[];
     if (isEncargos) {
       custosEntries = baseLeaves.filter(
-        (a) => isDespesaFinanceira(a.codigo) || isReceitaFinanceira(a.codigo)
+        (a) => isDespesaFinanceiraAccount(a) || isReceitaFinanceiraAccount(a)
       );
     } else if (isAdmTrib) {
       custosEntries = baseLeaves.filter(
@@ -526,15 +526,15 @@ export default function ActivityDetailPage() {
           (a.tipo !== 'C' || isAllowedEntryForCustos('AGRICOLA', a)) &&
           (a.tipo !== 'C' ||
             isAgricolaFarmCultureDepartment(a.departamento) ||
-            isAgricolaUnidadeRecepConta4Entry(a)) &&
-          !isAgricolaUnidadeRecepConta4Entry(a)
+            isAgricolaUnidadeRecepConta4Entry(a))
       );
     } else {
       custosEntries = baseLeaves.filter(
         (a) =>
           (a.tipo === 'C' || a.tipo === 'D') &&
           !isReceitaDeductionEntry(a) &&
-          (a.tipo !== 'C' || isAllowedEntryForCustos(atividade.key, a))
+          (a.tipo !== 'C' || isAllowedEntryForCustos(atividade.key, a)) &&
+          (atividade.key !== 'PECUARIA' || !isConta4AdministracaoEntry(a))
       );
     }
 
@@ -693,7 +693,7 @@ export default function ActivityDetailPage() {
     return {
       geral: { orc: geralOrc, real: geralReal },
       unidadeRecep: { orc: recepOrc, real: recepReal },
-      total: { orc: geralOrc, real: geralReal },
+      total: { orc: geralOrc + recepOrc, real: geralReal + recepReal },
     };
   }, [accounts, isAgricola, selectedMonth]);
 
@@ -824,7 +824,7 @@ export default function ActivityDetailPage() {
     activityLevelEntryFilter,
     resolvedTipoView === 'custos' && !isDespesasComVendas
       ? isEncargos
-        ? (entry) => isDespesaFinanceira(entry.codigo) || isReceitaFinanceira(entry.codigo)
+        ? (entry) => isDespesaFinanceiraAccount(entry) || isReceitaFinanceiraAccount(entry)
         : isAdmTrib
           ? undefined
           : (entry) => entry.tipo !== 'D' || !isReceitaDeductionEntry(entry)
@@ -853,6 +853,9 @@ export default function ActivityDetailPage() {
         entry.tipo !== 'C' ||
         isAgricolaFarmCultureDepartment(entry.departamento) ||
         isAgricolaUnidadeRecepConta4Entry(entry)
+      : undefined,
+    resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isPecuaria
+      ? (entry) => !isConta4AdministracaoEntry(entry)
       : undefined
   );
 
@@ -1288,7 +1291,7 @@ export default function ActivityDetailPage() {
                 (entry) => isOutrasReceitasEventuaisCode(entry.codigo),
               )}
               title="Detalhamento de Outras Receitas Eventuais"
-              subtitle="Contas 3.7.01.01"
+              subtitle="Contas 3.6 e 3.7"
               accentColor="emerald"
             />
           </div>
@@ -1422,7 +1425,7 @@ export default function ActivityDetailPage() {
                   departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
-                    (entry) => isDespesaFinanceira(entry.codigo),
+                    (entry) => isDespesaFinanceiraAccount(entry),
                   )}
                   title="Detalhamento de Despesas Financeiras"
                   subtitle="Contas 3.4.04.01"
@@ -1444,7 +1447,7 @@ export default function ActivityDetailPage() {
                   departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
-                    (entry) => isReceitaFinanceira(entry.codigo),
+                    (entry) => isReceitaFinanceiraAccount(entry),
                   )}
                   title="Detalhamento de Receitas Financeiras"
                   subtitle="Contas 3.4.04.05"
