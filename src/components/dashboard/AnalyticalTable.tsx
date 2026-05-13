@@ -3,6 +3,10 @@ import { ChevronRight, Table, ListTree } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
+import {
+  CONFINAMENTO_DIARIA_ORCADO,
+  CONFINAMENTO_DIARIA_REALIZADO,
+} from '@/data/confinamentoDiarias';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -14,6 +18,8 @@ interface Props {
   title?: string;
   subtitle?: string;
   accentColor?: string;
+  /** Custos confinamento: Diária O/R (planilha Diarias.xlsx, um mês por célula — sem somar meses) */
+  showDiariaColumns?: boolean;
 }
 
 interface Node {
@@ -105,7 +111,8 @@ export function AnalyticalTable({
   entryFilter,
   title = "Abertura Analítica",
   subtitle = "N9 → Conta → Produto",
-  accentColor = "orange"
+  accentColor = "orange",
+  showDiariaColumns = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -219,6 +226,35 @@ export function AnalyticalTable({
   const fmtCurrency = (v: number) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
+  /** Um único mês no filtro: usa a coluna daquele mês na planilha; vários meses ou “todos” → não soma, mostra “-”. */
+  const singleMonthForDiaria: MonthKey | null =
+    showDiariaColumns &&
+    selectedMonth !== 'all' &&
+    Array.isArray(selectedMonth) &&
+    selectedMonth.length === 1
+      ? selectedMonth[0]
+      : null;
+
+  const diariaOrcResolved: number | null =
+    singleMonthForDiaria == null ? null : (CONFINAMENTO_DIARIA_ORCADO[singleMonthForDiaria] ?? null);
+
+  const diariaRealResolved: number | null =
+    singleMonthForDiaria == null ? null : (CONFINAMENTO_DIARIA_REALIZADO[singleMonthForDiaria] ?? null);
+
+  const fmtDiaria = (v: number) =>
+    new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(v);
+
+  const renderDiariaTd = (className: string, value: number | null) => (
+    <td className={cn(className, 'tabular-nums', value != null ? 'text-slate-700' : 'text-slate-400')}>
+      {value != null ? fmtDiaria(value) : '-'}
+    </td>
+  );
+
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
     const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real));
 
@@ -263,9 +299,11 @@ export function AnalyticalTable({
             <td className="text-right py-3 px-4 text-[13px] text-slate-600 tabular-nums">
               {showBudget && node.orc ? fmtCurrency(node.orc) : '-'}
             </td>
+            {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>
+            {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className={cn(
               "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
               isPositive ? "text-emerald-600" : "text-rose-600"
@@ -320,13 +358,19 @@ export function AnalyticalTable({
               <tr className={cn(ta.thead, 'text-[13px]')}>
                 <th className="text-left py-3 px-4">Classificação Contábil</th>
                 <th className="text-right py-3 px-4 w-[150px]">Orçado</th>
+                {showDiariaColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">Diária O</th>
+                )}
                 <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
+                {showDiariaColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">Diária R</th>
+                )}
                 <th className="text-right py-3 px-4 w-[150px]">Variação</th>
               </tr>
             </thead>
             <tbody>
               {root.size > 0 ? renderNodes(root) : (
-                <tr><td colSpan={4} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
+                <tr><td colSpan={showDiariaColumns ? 6 : 4} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
             </tbody>
             {root.size > 0 && (() => {
@@ -339,7 +383,11 @@ export function AnalyticalTable({
                   <tr>
                     <td className="py-4 px-4 text-[13px] text-slate-700">Total Consolidado</td>
                     <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                    {showDiariaColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaOrcResolved)}
                     <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                    {showDiariaColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaRealResolved)}
                     <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                     </td>
@@ -358,7 +406,13 @@ export function AnalyticalTable({
                 <th className="text-left py-3 px-3">Descrição</th>
                 <th className="text-left py-3 px-3">Produto</th>
                 <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
+                {showDiariaColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">Diária O</th>
+                )}
                 <th className="text-right py-3 px-3 w-[120px]">Realizado</th>
+                {showDiariaColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">Diária R</th>
+                )}
                 <th className="text-right py-3 px-3 w-[120px]">Variação</th>
               </tr>
             </thead>
@@ -374,14 +428,16 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-700">{entry.descricao}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
                     <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
+                    {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
+                    {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(entry.orc || entry.real) ? <>{diff > 0 ? "+" : ""}{fmtCurrency(diff)}</> : '-'}
                     </td>
                   </tr>
                 );
               }) : (
-                <tr><td colSpan={8} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
+                <tr><td colSpan={showDiariaColumns ? 10 : 8} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
             </tbody>
             {flatEntries.length > 0 && (() => {
@@ -394,7 +450,11 @@ export function AnalyticalTable({
                   <tr>
                     <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
                     <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                    {showDiariaColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaOrcResolved)}
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                    {showDiariaColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaRealResolved)}
                     <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? <>{totalDiff > 0 ? "+" : ""}{fmtCurrency(totalDiff)}</> : '-'}
                     </td>

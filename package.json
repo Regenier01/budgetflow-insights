@@ -14,6 +14,7 @@
     "data:import": "node extract_data.js",
     "data:add": "node extract_data.js --file",
     "data:replace": "node extract_data.js --replace-realizado --file",
+    "diarias:import": "node import_diarias.js",
     "orcado:import": "node import_orcado.js",
     "orcado:import:adm": "node import_orcado_despesas_adm.js",
     "orcado:import:pecuaria": "node import_orcado_pecuaria.js",

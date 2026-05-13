@@ -1499,6 +1499,7 @@ export default function ActivityDetailPage() {
                   )}
                   title="Detalhamento de Custos"
                   accentColor="orange"
+                  showDiariaColumns={isPecuaria && subview === 'confinamento'}
                 />
               </div>
 
@@ -1688,6 +1689,7 @@ export default function ActivityDetailPage() {
                 )}
                 title="Detalhamento de Custos"
                 accentColor="orange"
+                showDiariaColumns={isPecuaria && subview === 'confinamento'}
               />
             </div>
 
