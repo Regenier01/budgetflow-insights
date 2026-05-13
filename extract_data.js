@@ -23,6 +23,14 @@ function parseArgs() {
       result.replaceRealizado = true;
     }
   }
+  // Fallback via env var para contornar npm/PowerShell que engole flags `--`
+  // após o separador `--` em `npm run`.
+  if (!result.replaceRealizado) {
+    const env = String(process.env.REPLACE_REALIZADO || '').toLowerCase();
+    if (env === '1' || env === 'true' || env === 'yes') {
+      result.replaceRealizado = true;
+    }
+  }
   return result;
 }
 
@@ -86,6 +94,9 @@ async function run() {
         '  npm run data:add -- 04.2026\n' +
         'Sem o nome após o comando, o script cai no modo COMPLETO (todos os xlsx) e reescreve initialData inteiro.\n' +
         'Para sobrescrever o realizado dos meses vindos do arquivo (incluindo zerar saldos), use:\n' +
+        '  npm run data:replace -- 04.2026\n' +
+        '  (ou: $env:REPLACE_REALIZADO=1; npm run data:add -- 04.2026)\n' +
+        'Obs.: no PowerShell, npm engole flags --xxx depois do separador `--`, por isso evite\n' +
         '  npm run data:add -- 04.2026 --replace-realizado'
     );
     process.exit(1);
@@ -97,7 +108,10 @@ async function run() {
   if (incrementalMode) {
     console.log(`--- Modo incremental: carregando apenas "${cliArgs.file}" ---`);
     if (replaceRealizado) {
-      console.log('--- replace-realizado: meses do arquivo substituem o cache (saldos 0 contam) ---');
+      console.log('*** MODO REPLACE-REALIZADO ATIVO: meses do arquivo SUBSTITUEM o cache (saldos 0 zeram o mês) ***');
+    } else {
+      console.log('Modo MERGE (soma): valores do arquivo serão SOMADOS aos do cache para os mesmos meses.');
+      console.log('  Para substituir em vez de somar, use: npm run data:replace -- <nome>');
     }
   } else {
     console.log('--- Iniciando extração completa de dados ---');
