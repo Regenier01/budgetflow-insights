@@ -361,9 +361,9 @@ export default function ActivityDetailPage() {
           : isPecuaria && subview === 'confinamento'
             ? 'Pecuária — Confinamento'
             : isAdmTrib && subview === 'laiza'
-              ? 'Desp. Adm. e Tributárias — DESPESAS - LAIZA'
+              ? 'Desp. Adm. e Tributárias — DESPESAS - GERENCIA FINANCEIRO'
               : isAdmTrib && subview === 'railene'
-                ? 'Desp. Adm. e Tributárias — DESPESAS RAILENE'
+                ? 'Desp. Adm. e Tributárias — DESPESAS - GERENCIA RH'
             : isAgricola && subview === 'geral'
               ? 'Agrícola'
               : isAgricola && subview === 'unidade-recep'
@@ -1233,10 +1233,10 @@ export default function ActivityDetailPage() {
                 renderSummaryCard(`Total ${atividade.label}`, activityTotalData, { isMain: true })}
               {isAdmTrib && admTribSummary ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
+                  {renderSummaryCard('DESPESAS - GERENCIA FINANCEIRO', admTribSummary.laiza, {
                     onClick: () => navigate(buildHubPathWithSubview('custos', 'laiza')),
                   })}
-                  {renderSummaryCard('DESPESAS RAILENE', admTribSummary.railene, {
+                  {renderSummaryCard('DESPESAS - GERENCIA RH', admTribSummary.railene, {
                     onClick: () => navigate(buildHubPathWithSubview('custos', 'railene')),
                     accentColor: 'amber',
                   })}
@@ -1300,10 +1300,10 @@ export default function ActivityDetailPage() {
         <div className="space-y-6">
           {renderSummaryCard('Total Despesas Administrativas', admTribSummary.total, { isMain: true })}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {renderSummaryCard('DESPESAS - LAIZA', admTribSummary.laiza, {
+            {renderSummaryCard('DESPESAS - GERENCIA FINANCEIRO', admTribSummary.laiza, {
               onClick: () => navigate(buildActivityPath('DESP_ADM_TRIB', { subview: 'laiza' })),
             })}
-            {renderSummaryCard('DESPESAS RAILENE', admTribSummary.railene, {
+            {renderSummaryCard('DESPESAS - GERENCIA RH', admTribSummary.railene, {
               onClick: () => navigate(buildActivityPath('DESP_ADM_TRIB', { subview: 'railene' })),
               accentColor: 'amber',
             })}
@@ -1572,7 +1572,7 @@ export default function ActivityDetailPage() {
                               ? (entry) => isDespesasRaileneCostCenter(entry.centroCusto)
                               : undefined,
                         )}
-                        title={isAdmTribLaizaSubview ? 'DESPESAS - LAIZA' : 'DESPESAS RAILENE'}
+                        title={isAdmTribLaizaSubview ? 'DESPESAS - GERENCIA FINANCEIRO' : 'DESPESAS - GERENCIA RH'}
                         subtitle={
                           isAdmTribLaizaSubview
                             ? 'Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
@@ -1758,7 +1758,7 @@ export default function ActivityDetailPage() {
                       (entry) => !isReceitaDeductionEntry(entry),
                       (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
                     )}
-                    title="DESPESAS - LAIZA"
+                    title="DESPESAS - GERENCIA FINANCEIRO"
                     subtitle="Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
                     accentColor="orange"
                   />
@@ -1776,7 +1776,7 @@ export default function ActivityDetailPage() {
                       (entry) => !isReceitaDeductionEntry(entry),
                       (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
                     )}
-                    title="DESPESAS RAILENE"
+                    title="DESPESAS - GERENCIA RH"
                     subtitle="Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
                     accentColor="orange"
                   />
