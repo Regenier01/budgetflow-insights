@@ -1,9 +1,10 @@
-import { useBudgetStore, sumValuesByMonth } from '@/store/budgetStore';
+import { useBudgetStore, sumValuesByMonth, receitaLiquidaFromBrutaEDeducoes } from '@/store/budgetStore';
 import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 
 interface Props {
   selectedMonth: MonthKey[] | 'all';
@@ -40,7 +41,8 @@ export function RevenueSummary({ selectedMonth }: Props) {
           a.atividade === atividadeKey &&
           a.nivel === 5 &&
           a.tipo === 'R' &&
-          !isOutrasReceitasEventuaisCode(a.codigo)
+          !isOutrasReceitasEventuaisCode(a.codigo) &&
+          !isRendasOperacionaisEntry(a)
       )
       .reduce(
         (acc, a) => {
@@ -57,7 +59,8 @@ export function RevenueSummary({ selectedMonth }: Props) {
           a.atividade === atividadeKey &&
           a.nivel === 5 &&
           a.tipo === 'D' &&
-          isReceitaDeductionEntry(a)
+          isReceitaDeductionEntry(a) &&
+          !isRendasOperacionaisEntry(a)
       )
       .reduce(
         (acc, a) => {
@@ -68,12 +71,12 @@ export function RevenueSummary({ selectedMonth }: Props) {
         { orc: 0, real: 0 }
       );
 
+    const liqOrc = receitaLiquidaFromBrutaEDeducoes(bruta.orc, deducoes.orc);
+    const liqReal = receitaLiquidaFromBrutaEDeducoes(bruta.real, deducoes.real);
     return {
-      orc: bruta.orc + deducoes.orc,
-      real: bruta.real + deducoes.real,
-      // Receitas: realizado é armazenado como negativo. Soma-se ao orçado
-      // para obter a variação real (negativa quando a receita supera o orçado).
-      diff: (bruta.orc + deducoes.orc) + (bruta.real + deducoes.real),
+      orc: liqOrc,
+      real: liqReal,
+      diff: liqReal - liqOrc,
     };
   };
 
@@ -104,9 +107,8 @@ export function RevenueSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    // Em receitas, o realizado é negativo. Uma variação negativa (orçado + realizado < 0)
-    // significa que a receita superou o orçado — cenário favorável (verde).
-    const isFavorable = diff < 0;
+    // Variação = realizado − orçado: positivo quando a receita superou o orçado (verde).
+    const isFavorable = diff > 0;
     const diffPctVsOrc =
       Math.abs(orc) < 1e-9 ? null : (diff / Math.abs(orc)) * 100;
     const isClickable = !!activityKey;
@@ -224,7 +226,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
         title="Consolidado Geral de Receita Líquida"
         orc={global.orc}
         real={global.real}
-        diff={global.orc + global.real}
+        diff={global.real - global.orc}
         isMain
       />
 
@@ -250,7 +252,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           activityKey="OUTRAS_RECEITAS_EVENTUAIS"
           orc={outrasReceitasEventuais.orc}
           real={outrasReceitasEventuais.real}
-          diff={outrasReceitasEventuais.orc + outrasReceitasEventuais.real}
+          diff={outrasReceitasEventuais.real - outrasReceitasEventuais.orc}
         />
       </div>
     </div>

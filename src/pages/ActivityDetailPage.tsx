@@ -6,7 +6,12 @@ import { MultiSelect } from '@/components/ui/multi-select';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
-import { useBudgetStore, calculateEncargosTotals, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
+import {
+  useBudgetStore,
+  calculateEncargosTotals,
+  getDefaultRealizadoFilterMonth,
+  receitaLiquidaFromBrutaEDeducoes,
+} from '@/store/budgetStore';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import {
@@ -14,6 +19,7 @@ import {
   isDespesasVendasPecuariaDepartment,
 } from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import NotFound from './NotFound';
@@ -227,11 +233,6 @@ const isAllowedEntryForCustos = (atividadeKey: string | undefined, entry: Accoun
   isSyntheticOrcadoEntry(entry) ||
   isRateioDeCustosGroup(entry) ||
   isAllowedCentroCustoForCustos(atividadeKey, entry.centroCusto);
-
-const isRendasOperacionaisEntry = (entry: AccountEntry) => {
-  const normalizedGroup = normalizeText(entry.grupoContabilN9);
-  return normalizedGroup.includes('RENDAS OPERACIONAIS');
-};
 
 const isReceitaDeductionEntry = (entry: AccountEntry) => {
   const normalizedDescription = normalizeText(entry.descricao);
@@ -473,8 +474,8 @@ export default function ActivityDetailPage() {
   const deducoesReceitaOrc = sumEntries(deducoesReceitaEntries, 'orcado');
   const deducoesReceitaReal = sumEntries(deducoesReceitaEntries, 'realizado');
   const receitaLiquida = {
-    orc: receitaBrutaOrc + deducoesReceitaOrc,
-    real: receitaBrutaReal + deducoesReceitaReal,
+    orc: receitaLiquidaFromBrutaEDeducoes(receitaBrutaOrc, deducoesReceitaOrc),
+    real: receitaLiquidaFromBrutaEDeducoes(receitaBrutaReal, deducoesReceitaReal),
   };
 
   const formatCurrency = (value: number) =>
@@ -551,10 +552,18 @@ export default function ActivityDetailPage() {
       );
     }
 
-    const recOrc =
-      isAdmTrib ? 0 : sum(receitasEntries, 'orcado') + sum(deducoesEntries, 'orcado');
-    const recReal =
-      isAdmTrib ? 0 : sum(receitasEntries, 'realizado') + sum(deducoesEntries, 'realizado');
+    const recOrc = isAdmTrib
+      ? 0
+      : receitaLiquidaFromBrutaEDeducoes(
+          sum(receitasEntries, 'orcado'),
+          sum(deducoesEntries, 'orcado')
+        );
+    const recReal = isAdmTrib
+      ? 0
+      : receitaLiquidaFromBrutaEDeducoes(
+          sum(receitasEntries, 'realizado'),
+          sum(deducoesEntries, 'realizado')
+        );
     const rawCusOrc = sum(custosEntries, 'orcado');
     const cusReal = sum(custosEntries, 'realizado');
     const cusOrc =
@@ -748,7 +757,10 @@ export default function ActivityDetailPage() {
     options?: { isMain?: boolean; onClick?: () => void; accentColor?: string }
   ) => {
     const { isMain = false, onClick, accentColor = 'orange' } = options || {};
-    const difference = Math.abs(data.orc) - Math.abs(data.real);
+    const isRevenueStyle = accentColor === 'emerald';
+    const difference = isRevenueStyle
+      ? data.real - data.orc
+      : Math.abs(data.orc) - Math.abs(data.real);
     const diffPctVsOrc =
       Math.abs(data.orc) < 1e-9 ? null : (difference / Math.abs(data.orc)) * 100;
     const isPositiveDifference = difference >= 0;
@@ -1303,8 +1315,18 @@ export default function ActivityDetailPage() {
             selectedMonth={selectedMonth} 
             atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
             costCenterFilter={activeCostCenterFilter}
+            departmentFilter={activeDepartmentFilter}
             entryFilter={summaryEntryFilter}
             tipoFilter={summaryTipoFilter}
+            receitaLiquidaOverride={
+              resolvedTipoView === 'receitas' &&
+              atividade?.key &&
+              !isOutrasReceitasEventuais &&
+              !isRateios &&
+              !isDespesasComVendas
+                ? receitaLiquida
+                : undefined
+            }
           />
 
           <div className="grid gap-8">

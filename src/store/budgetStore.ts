@@ -178,6 +178,11 @@ export function sumValuesByMonth(
   return values[selectedMonth as MonthKey] || 0;
 }
 
+/** Receita líquida: bruta menos o valor absoluto das deduções (evita somar deduções positivas como se fossem receita). */
+export function receitaLiquidaFromBrutaEDeducoes(bruta: number, deducoes: number): number {
+  return bruta - Math.abs(deducoes);
+}
+
 const rowValue = (value: unknown): string | undefined => {
   const parsed = String(value || '').trim();
   return parsed || undefined;
@@ -305,7 +310,7 @@ export function calculateRevenueByAtividade(accounts: AccountEntry[], atividade:
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: real - orc };
 }
 
 // Função para calcular totais consolidados de Receitas (todas as atividades)
@@ -320,7 +325,7 @@ export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: real - orc };
 }
 
 interface BudgetState {
@@ -394,6 +399,20 @@ const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   orcado: { ...account.orcado },
   realizado: { ...account.realizado },
 });
+
+/** Créditos de receita vêm negativos na planilha; consolidamos como valores positivos no app. */
+export const normalizeReceitaRealizadoSigns = (accounts: AccountEntry[]): AccountEntry[] =>
+  accounts.map((a) => {
+    if (a.tipo !== 'R') return a;
+    const nextReal: Record<string, number> = {};
+    for (const [m, v] of Object.entries(a.realizado)) {
+      nextReal[m] = Math.abs(Number(v) || 0);
+    }
+    return { ...a, realizado: nextReal };
+  });
+
+const realizadoDeltaForTipo = (tipo: AccountEntry['tipo'], saldo: number) =>
+  tipo === 'R' ? Math.abs(saldo) : saldo;
 
 const INITIAL_ACCOUNTS_TEMPLATE = INITIAL_ACCOUNTS.map(cloneAccountEntry);
 const normalizeInitialAccountActivity = (account: AccountEntry): AccountEntry =>
@@ -744,7 +763,8 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     );
 
     if (existing) {
-      existing.realizado[month] = (existing.realizado[month] || 0) + saldo;
+      const delta = realizadoDeltaForTipo(existing.tipo, saldo);
+      existing.realizado[month] = (existing.realizado[month] || 0) + delta;
       if (!existing.departamento) existing.departamento = rowDept;
       if (!existing.centroCusto) existing.centroCusto = rowCC;
       if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
@@ -773,7 +793,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
       unidadeNegocio: rowUnidadeNegocio,
       coligada: rowColigada,
       orcado: {},
-      realizado: { [month]: saldo },
+      realizado: { [month]: realizadoDeltaForTipo(base.tipo, saldo) },
     };
 
     newAccounts.push(newEntry);
@@ -1043,19 +1063,23 @@ const buildAccountsWithImportedOrcado = (
 };
 
 export const useBudgetStore = create<BudgetState>((set, get) => ({
-  accounts: buildAccountsWithImportedOrcado(
-    buildFreshInitialAccounts(),
-    buildInitialImportedOrcadoBatches()
+  accounts: normalizeReceitaRealizadoSigns(
+    buildAccountsWithImportedOrcado(
+      buildFreshInitialAccounts(),
+      buildInitialImportedOrcadoBatches()
+    )
   ),
   uploads: [],
   importedRealizadoBatches: [],
   importedOrcadoBatches: buildInitialImportedOrcadoBatches(),
-  setAccounts: (accounts) => set({ accounts }),
+  setAccounts: (accounts) => set({ accounts: normalizeReceitaRealizadoSigns(accounts) }),
   clearAllData: () =>
     set(() => {
       const importedOrcadoBatches: BudgetState['importedOrcadoBatches'] = [];
       return {
-        accounts: buildAccountsWithImportedOrcado(buildFreshInitialAccounts(), importedOrcadoBatches),
+        accounts: normalizeReceitaRealizadoSigns(
+          buildAccountsWithImportedOrcado(buildFreshInitialAccounts(), importedOrcadoBatches)
+        ),
         uploads: [],
         importedRealizadoBatches: [],
         importedOrcadoBatches,
@@ -1104,7 +1128,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       rebuiltAccounts.push(...result.accounts);
     });
 
-    set({ accounts: rebuiltAccounts, importedRealizadoBatches: nextBatches });
+    set({ accounts: normalizeReceitaRealizadoSigns(rebuiltAccounts), importedRealizadoBatches: nextBatches });
     return currentBatchCount;
   },
   importOrcadoExcelRows: (rows, fallbackPeriod, fileName) => {
@@ -1222,7 +1246,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       totalOrcadoApplied,
     });
 
-    set({ accounts: rebuiltAccounts, importedOrcadoBatches: nextOrcadoBatches });
+    set({ accounts: normalizeReceitaRealizadoSigns(rebuiltAccounts), importedOrcadoBatches: nextOrcadoBatches });
     return currentBatchCount;
   }
 }));

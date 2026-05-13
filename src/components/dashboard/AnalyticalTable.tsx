@@ -119,13 +119,12 @@ export function AnalyticalTable({
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
   const ta = resolveTableAccent(accentColor);
 
-  // Tabela de receitas (tipoFilter exclusivamente 'R'): o realizado é armazenado como
-  // negativo, então a variação real é "orçado + realizado" e é favorável (verde)
-  // quando o resultado é negativo (receita superou o orçado).
+  // Tabela de receitas (tipoFilter exclusivamente 'R'): variação = realizado − orçado;
+  // favorável (verde) quando real > orçado.
   const isRevenueTable = tipoFilter?.length === 1 && tipoFilter[0] === 'R';
   const computeDiff = (orc: number, real: number) =>
-    isRevenueTable ? orc + real : orc - real;
-  const isDiffFavorable = (diff: number) => (isRevenueTable ? diff < 0 : diff > 0);
+    isRevenueTable ? real - orc : orc - real;
+  const isDiffFavorable = (diff: number) => diff > 0;
 
   /** Percentual da variação em relação ao orçado (|orçado| como base). */
   const fmtDiffVsOrcPct = (orc: number, diff: number) => {

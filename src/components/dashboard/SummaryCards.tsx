@@ -13,6 +13,8 @@ interface Props {
   departmentFilter?: string[];
   tipoFilter?: string[];
   entryFilter?: (entry: AccountEntry) => boolean;
+  /** Quando informado (ex.: visão receitas na atividade), o card de receitas e o total refletem receita líquida (R + deduções), alinhado ao consolidado e à caixa "Receita líquida". */
+  receitaLiquidaOverride?: { orc: number; real: number };
 }
 
 export function SummaryCards({
@@ -22,6 +24,7 @@ export function SummaryCards({
   departmentFilter,
   tipoFilter,
   entryFilter,
+  receitaLiquidaOverride,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
@@ -53,8 +56,14 @@ export function SummaryCards({
     return sumEntries(items, field);
   };
 
-  const receitaOrc = sumByTipo('R', 'orcado');
-  const receitaReal = sumByTipo('R', 'realizado');
+  const receitaBrutaOrc = sumByTipo('R', 'orcado');
+  const receitaBrutaReal = sumByTipo('R', 'realizado');
+  const useLiquidaCard =
+    receitaLiquidaOverride &&
+    tipoFilter?.length === 1 &&
+    tipoFilter[0] === 'R';
+  const receitaOrc = useLiquidaCard ? receitaLiquidaOverride.orc : receitaBrutaOrc;
+  const receitaReal = useLiquidaCard ? receitaLiquidaOverride.real : receitaBrutaReal;
   const custoOrc = sumByTipo('C', 'orcado');
   const custoReal = sumByTipo('C', 'realizado');
   const despesaOrc = sumByTipo('D', 'orcado');
@@ -65,8 +74,12 @@ export function SummaryCards({
   const scopedAccounts = tipoFilter
     ? leafAccounts.filter((a) => tipoFilter.includes(a.tipo))
     : leafAccounts;
-  const totalOrc = sumEntries(scopedAccounts, 'orcado');
-  const totalReal = sumEntries(scopedAccounts, 'realizado');
+  const totalOrc = useLiquidaCard
+    ? receitaLiquidaOverride.orc
+    : sumEntries(scopedAccounts, 'orcado');
+  const totalReal = useLiquidaCard
+    ? receitaLiquidaOverride.real
+    : sumEntries(scopedAccounts, 'realizado');
 
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
@@ -75,15 +88,17 @@ export function SummaryCards({
       maximumFractionDigits: 0 
     }).format(v);
 
+  const receitaCardTitle = useLiquidaCard ? 'Receita líquida' : 'Receitas';
+
   const allCards = [
-    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: receitaCardTitle, orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
     { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
     { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
     { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
   ];
 
   const scopedCards = [
-    { title: 'Receitas', orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: receitaCardTitle, orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
     { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
     { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
     { title: 'Total da Abertura', orc: totalOrc, real: totalReal, icon: Target, color: 'primary', tipo: 'TOTAL' },
@@ -113,8 +128,20 @@ export function SummaryCards({
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((c) => {
         const cardColor = resolveCardColor(c.color, c.tipo);
-        const isPositive = c.orc - c.real > 0;
-        const diffPct = c.orc === 0 ? 0 : ((c.orc - c.real) / Math.abs(c.orc)) * 100;
+        const isPositive =
+          c.tipo === 'R'
+            ? c.real > c.orc
+            : c.tipo === 'RESULTADO'
+              ? c.real > c.orc
+              : c.orc - c.real > 0;
+        const diffPct =
+          c.orc === 0
+            ? 0
+            : c.tipo === 'R'
+              ? ((c.real - c.orc) / Math.abs(c.orc)) * 100
+              : c.tipo === 'RESULTADO'
+                ? ((c.real - c.orc) / Math.abs(c.orc || 1)) * 100
+                : ((c.orc - c.real) / Math.abs(c.orc)) * 100;
 
         return (
           <Card key={c.title} className="overflow-hidden border border-slate-200 shadow-sm bg-white group">

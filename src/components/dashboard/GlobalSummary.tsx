@@ -10,6 +10,7 @@ import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 
 interface Props {
   selectedMonth: MonthKey[] | 'all';
@@ -33,11 +34,6 @@ export function GlobalSummary({ selectedMonth }: Props) {
       .replace(/[\u0300-\u036f]/g, '')
       .toUpperCase()
       .trim();
-
-  const isRendasOperacionaisEntry = (entry: (typeof accounts)[number]) => {
-    const normalizedGroup = normalizeText(entry.grupoContabilN9);
-    return normalizedGroup.includes('RENDAS OPERACIONAIS');
-  };
 
   const isReceitaDeductionEntry = (entry: (typeof accounts)[number]) => {
     const normalizedDescription = normalizeText(entry.descricao);
