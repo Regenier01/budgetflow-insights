@@ -626,5 +626,77 @@ export const COST_CENTER_MAPPING = {
   "M26 - TRATOR MF 95 X": {
     "centroCusto": "M26 - TRATOR MF 95 X",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)": {
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO MAQUINAS LEVES": {
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO MAQUINAS MEDIAS": {
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO MAQUINAS PESADAS": {
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRATO DE GADO": {
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "RATEIO PULVERIZADORES AUTOPROPELIDO": {
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRANSPORTE LEVE": {
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRANSPORTE PESADO (CAVALO)": {
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS": {
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO MECANIZACAO AGRICOLA - OCIOSA": {
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO FABRICA RACAO": {
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO FABRICA SAL": {
+    "centroCusto": "RATEIO FABRICA SAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO DE MAQUINAS E CAMINHOES": {
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO ELETRICA": {
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO MANUTENCAO": {
+    "centroCusto": "RATEIO MANUTENCAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "BORRACHARIA": {
+    "centroCusto": "BORRACHARIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO INDUSTRIAL": {
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO PREDIAL": {
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };

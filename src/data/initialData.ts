@@ -22372,6 +22372,1106 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "26924a06-d3d2-4eac-b22c-b3a2dc83c2c5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2111.44
+    }
+  },
+  {
+    "id": "59af4811-6d69-4b2e-9cb2-f6ac3fc46eb6",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1264.91
+    }
+  },
+  {
+    "id": "3b29693c-b809-4287-aa10-293486aadd9f",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 33403.42
+    }
+  },
+  {
+    "id": "37aa6e16-e69d-42ff-ac65-eb844c3740dc",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FALTAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -180.32
+    }
+  },
+  {
+    "id": "816f5e03-f30b-4f51-b46f-bc33c047c716",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - PERDIDO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -180.32
+    }
+  },
+  {
+    "id": "e787cb6e-3ef3-47de-88c8-e680710fd4e7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 578.07
+    }
+  },
+  {
+    "id": "1b618a8a-c506-4a70-9606-3fcebc90f979",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15820.929999999997
+    }
+  },
+  {
+    "id": "62dd815a-874e-410c-a97c-c7c615cad4fc",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 817.82
+    }
+  },
+  {
+    "id": "6483f0d5-3b5d-4fea-8d2b-5715ad4193c5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 429.76
+    }
+  },
+  {
+    "id": "d59e648a-6aa8-410c-b13b-b28f140ff138",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 312.74
+    }
+  },
+  {
+    "id": "b37b70ab-af66-4326-bf0b-94d3e12dd020",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10842.81
+    }
+  },
+  {
+    "id": "604fb00f-c03c-49b9-b15c-dec6f808d8dd",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21321.599999999995
+    }
+  },
+  {
+    "id": "4f19bf81-f294-4e57-b08d-070140f0e75d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ADICIONAL NOTURNO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.1
+    }
+  },
+  {
+    "id": "64b5f6f7-cb45-4069-aa65-2d5ce8ae67bc",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2517.61
+    }
+  },
+  {
+    "id": "3ee209a5-82b4-4a2a-93ea-9ba5f7a071e2",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CONDOMINIO CAPELINHA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -230
+    }
+  },
+  {
+    "id": "867f26b6-0a46-4788-982c-e200d197bd7c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SAIDA ANTECIPADA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -73.59
+    }
+  },
+  {
+    "id": "06d4de00-9664-44f5-8cb2-286b8351bfaf",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3753.22
+    }
+  },
+  {
+    "id": "b73b50ec-54c3-4942-8783-f19c50770116",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1611.6
+    }
+  },
+  {
+    "id": "94eff907-fc01-41fc-b204-1017635801a9",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2649.25
+    }
+  },
+  {
+    "id": "8727ec3a-e9f7-42cd-af43-8984725c899f",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CONDOMINIO CAPELINHA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -230
+    }
+  },
+  {
+    "id": "1cfaced0-eacb-45e3-9202-0582d47c04aa",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "OUTROS DESCONTOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -104.88
+    }
+  },
+  {
+    "id": "46eb612e-4e25-453e-9cd3-98b6269a698d",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1132.2
+    }
+  },
+  {
+    "id": "fb1abdad-f20e-46ee-ac3f-a226bcbf5a3b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 446.19
+    }
+  },
+  {
+    "id": "8e594410-caa4-4bc8-8f7f-957f395ac24e",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8528.48
+    }
+  },
+  {
+    "id": "568c5d2b-5ffb-4ebc-8988-f88491d1948b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 649
+    }
+  },
+  {
+    "id": "bef73688-61b5-4447-aed4-0c26c3a9e2b3",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3469.96
+    }
+  },
+  {
+    "id": "c6d8c793-f56f-4c3c-8bf0-a4fd5d5d4bf7",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7265.099999999999
+    }
+  },
+  {
+    "id": "65c14a31-159e-4951-8e98-1f709b81089f",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1618.0500000000002
+    }
+  },
+  {
+    "id": "de898126-708f-4522-9879-a5663097ce98",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SAIDA ANTECIPADA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -36.69
+    }
+  },
+  {
+    "id": "70337379-596e-4c3b-86fa-dccee54fd06e",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 17
+    }
+  },
+  {
+    "id": "211ef1e4-cad4-49a2-9a03-43f67c6f0baf",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2895.39
+    }
+  },
+  {
+    "id": "b7e8eee1-7ed7-4b93-9394-b782de2df7a3",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 181.72
+    }
+  },
+  {
+    "id": "7ba7d119-cfc2-46c9-95d2-8a337d9706ff",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 639.64
+    }
+  },
+  {
+    "id": "16367fb5-0286-4693-9a5e-ff72cae6dde2",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1210.4
+    }
+  },
+  {
+    "id": "1eb209f1-1cd3-4380-86c4-47c57e63de23",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4264.24
+    }
+  },
+  {
+    "id": "748a2898-3d30-484a-a595-10e93099aac5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6109.03
+    }
+  },
+  {
+    "id": "a70e0d95-550a-412d-8bbc-f5832179ac7a",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 733.99
+    }
+  },
+  {
+    "id": "4ed04963-9975-4c7f-b3f8-4eea12549844",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. / FERIADO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 597.58
+    }
+  },
+  {
+    "id": "d3aea1ba-cdf2-4649-8115-9f7202e4e95e",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1714.94
+    }
+  },
+  {
+    "id": "961a1500-baf5-4281-99c2-cb1fb987137a",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15277.119999999999
+    }
+  },
+  {
+    "id": "049c4d00-94e9-42df-9623-2143996443dc",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 251.6
+    }
+  },
+  {
+    "id": "e7e9af9f-bd1d-41b6-9128-8c3b9b71265c",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1263.52
+    }
+  },
+  {
+    "id": "2a542ca0-c129-4d55-8894-7f12b8f1bfe4",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PERICULOSIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1895.4
+    }
+  },
+  {
+    "id": "f2501dd5-0e62-4f99-8f85-6cbff4b04255",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6318.01
+    }
+  },
+  {
+    "id": "da632271-53eb-4133-93ee-b7022add9050",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 877.2
+    }
+  },
+  {
+    "id": "50f5c533-f352-40fe-adbe-3187366013ee",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5262.62
+    }
+  },
+  {
+    "id": "3f951852-4f61-41dc-b485-becc15433a6b",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1052.52
+    }
+  },
+  {
+    "id": "23f0bf74-4093-42b0-8868-5409b6346ae5",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3833.33
+    }
+  },
+  {
+    "id": "ac5ce9a5-d17c-4dad-a3cf-4918590192bb",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 766.67
+    }
+  },
+  {
+    "id": "28faa6a8-7fc1-42e0-85ec-af68e489cb39",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 255
+    }
+  },
+  {
+    "id": "b868b3b3-057b-4cd1-a156-0315cfd74309",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 33724.14
+    }
+  },
+  {
+    "id": "68402cd9-691d-4be9-8e22-e3bd07db42d8",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BONIFICACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6329.81
+    }
+  },
+  {
+    "id": "02626d73-3906-48d7-a106-41151d869814",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "OUTROS DESCONTOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -469.17
+    }
+  },
+  {
+    "id": "c216bcb6-a899-4e4f-9fee-455116f73a25",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 17
+    }
+  },
+  {
+    "id": "371ddcc7-6058-4067-bf6b-bb876e257c42",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5720.14
+    }
+  },
+  {
     "id": "a827e4c6-5f6b-490d-94e0-1c273b1db1e1",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
@@ -23132,6 +24232,566 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "8d298201-f605-4d42-aa05-51eeb2b9018d",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 421
+    }
+  },
+  {
+    "id": "b857835f-ba46-456c-83ef-e3781fc81b80",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 703.76
+    }
+  },
+  {
+    "id": "d064e468-54fb-4103-ba84-c8a3152cb14b",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3238.55
+    }
+  },
+  {
+    "id": "a7a2f35a-75c4-4698-a480-6160e6910740",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11364.85
+    }
+  },
+  {
+    "id": "6b616ee9-5bfd-4f81-97b2-d9f4e43ecfd8",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2185.55
+    }
+  },
+  {
+    "id": "514fb7b1-412f-406f-a560-c48075e07707",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 648.91
+    }
+  },
+  {
+    "id": "bd961700-8c8c-491c-a4b7-ea39d93bb7e3",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2350.1600000000003
+    }
+  },
+  {
+    "id": "98fe3684-3d5c-46eb-bb14-25f855551791",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 124.79
+    }
+  },
+  {
+    "id": "ba5a47b0-aec5-4565-ae6e-b24ecac133b3",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 451.96000000000004
+    }
+  },
+  {
+    "id": "73337132-ea79-4d44-b203-63c541c870ce",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4898.84
+    }
+  },
+  {
+    "id": "0f355fa1-371b-44ca-bebf-84e51de53e0e",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 922.15
+    }
+  },
+  {
+    "id": "5e6e0b8a-5d2a-4e86-9907-b23adf6b3f1e",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1127.32
+    }
+  },
+  {
+    "id": "44e8faf0-e25f-40d2-9f8e-0bc989800d8a",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3782.1400000000003
+    }
+  },
+  {
+    "id": "e0c83c3a-e84c-4925-8bc0-0c6407274046",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 771.02
+    }
+  },
+  {
+    "id": "077381b4-9f7c-4644-bbc2-3c9990a9737b",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 227.16
+    }
+  },
+  {
+    "id": "784dcd10-f519-4349-892a-37c86f9b0567",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 822.65
+    }
+  },
+  {
+    "id": "18f8d773-d5fe-4fb9-87c2-217809f47024",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 481.64
+    }
+  },
+  {
+    "id": "c50e874d-313d-4d68-be16-b19f9b88eabd",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3796.1
+    }
+  },
+  {
+    "id": "62b8d12e-b35f-4646-aaf2-244a64d09c0d",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3079.72
+    }
+  },
+  {
+    "id": "d48ed89d-8464-481b-87aa-ac3a17d3bbe5",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10223.019999999999
+    }
+  },
+  {
+    "id": "4f67d3de-5eeb-44f6-8840-7575f0ee3ad5",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2566.9900000000002
+    }
+  },
+  {
+    "id": "6a5cb8cf-d9fa-4a8e-b038-6ae81999081c",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15.14
+    }
+  },
+  {
+    "id": "fc1f4b99-0d94-47af-930b-0be497df6357",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 78.72
+    }
+  },
+  {
+    "id": "895dba33-9044-4a05-9d01-7f703bdbe425",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2008.2199999999998
+    }
+  },
+  {
+    "id": "964e18fb-5a80-4489-874e-ca2cda15ca00",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 386.2
+    }
+  },
+  {
+    "id": "b8b56731-91ce-448b-8409-bcf25e015097",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.41
+    }
+  },
+  {
+    "id": "c342d531-8bae-44f5-a426-e9e585d95dad",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 50.26
+    }
+  },
+  {
+    "id": "3df4575e-cfd9-48ad-8594-7c4e27f506fd",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA 50%",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.87
+    }
+  },
+  {
     "id": "c9c64717-2226-49fa-9ff9-234e26030c9f",
     "codigo": "4.1.01.01.0004",
     "descricao": "COMISSOES",
@@ -23612,6 +25272,326 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "b3c5a91b-9b27-46b3-a547-050fcfd52550",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO - HORIMETRO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12089.93
+    }
+  },
+  {
+    "id": "f0ed9ad7-287a-4605-aee7-f29eb8ac85b0",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 268.08
+    }
+  },
+  {
+    "id": "af2c731b-d3f5-419a-82ba-b16019c839d5",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2059.69
+    }
+  },
+  {
+    "id": "3b73faf4-3057-4da8-b37a-bb8a6b255a1e",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1173.7900000000002
+    }
+  },
+  {
+    "id": "7dc558dd-a316-4959-bf40-d342f587cce3",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO - HORIMETRO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6821.62
+    }
+  },
+  {
+    "id": "f821d6ad-8722-4b86-bb32-de5dbd85e916",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 221.05
+    }
+  },
+  {
+    "id": "04fbb1e0-ba0c-483b-9eb5-698b14f22dab",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 504.48
+    }
+  },
+  {
+    "id": "db0f651c-614a-4527-85b6-708b6976b802",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO - HORIMETRO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3026.87
+    }
+  },
+  {
+    "id": "3480fae8-11b8-498b-a07e-885c2f3d14a1",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO - HORIMETRO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2358.97
+    }
+  },
+  {
+    "id": "2c1d28be-0208-4afe-bb05-357f3cab0abf",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 393.17
+    }
+  },
+  {
+    "id": "987108dd-5396-44f2-b704-59df4472a01a",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1863.27
+    }
+  },
+  {
+    "id": "21cc02be-f2c5-4c73-baa3-4e6486507616",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 451.4
+    }
+  },
+  {
+    "id": "e45eff76-95b2-4096-b745-5f661346bd28",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2708.41
+    }
+  },
+  {
+    "id": "8e4cb394-046c-4016-b53a-002b6f73ed2b",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1464.96
+    }
+  },
+  {
+    "id": "af1261c2-fcb2-4ed2-81d6-34e1160418d1",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1988.74
+    }
+  },
+  {
+    "id": "0e5b20da-0e7f-4e3e-a5b6-2b1d0f756b62",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2680.97
+    }
+  },
+  {
     "id": "d04f8ac2-3463-4c12-86df-c8e569029281",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
@@ -23932,6 +25912,306 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "ea4b3d72-b967-479c-a6e7-dfa646374826",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1288.33
+    }
+  },
+  {
+    "id": "7116c4ed-73f0-48c8-b202-2bea43fce97a",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4037.3100000000004
+    }
+  },
+  {
+    "id": "70b19f1d-a35a-4eb4-9fe2-8ff27d42039d",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 612.32
+    }
+  },
+  {
+    "id": "787879fb-7c2b-4597-a069-c9bab9fe5463",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1509.96
+    }
+  },
+  {
+    "id": "be784f5f-591d-42f9-978b-8499ae8db66e",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1859.81
+    }
+  },
+  {
+    "id": "47f4b74e-5d29-445a-bff8-3166d2770933",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2883.68
+    }
+  },
+  {
+    "id": "c2e980ca-eb66-4e9e-b4c2-482473e644f1",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3292.87
+    }
+  },
+  {
+    "id": "3428a445-25e9-43cf-b29c-c50ddf370a98",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7511.47
+    }
+  },
+  {
+    "id": "c2d376c8-0f0c-4299-82c2-1ca5efe1ea36",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1000.6600000000001
+    }
+  },
+  {
+    "id": "43fdf3e1-e86e-4386-afec-fb2227350bbd",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2376.8199999999997
+    }
+  },
+  {
+    "id": "186262ae-9333-49cf-9207-004160584132",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4638.31
+    }
+  },
+  {
+    "id": "74223d73-cbad-40a7-aced-0f0d6c05eea3",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 607.2
+    }
+  },
+  {
+    "id": "935fd018-4d77-4fd1-a0c7-c322e25ec1d3",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 635.56
+    }
+  },
+  {
+    "id": "a8efc30e-f7e7-4390-8a76-0b463763f61a",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -826.51
+    }
+  },
+  {
+    "id": "67bc2572-278e-420d-a1da-55479814b2b2",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1084.58
+    }
+  },
+  {
     "id": "48315727-8a3b-4142-9edd-2ae9749bda6d",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
@@ -24249,6 +26529,306 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65994.49
+    }
+  },
+  {
+    "id": "2f07265b-2c3c-41bb-97ff-30e1c5bad146",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3137.2200000000003
+    }
+  },
+  {
+    "id": "3208c0e0-2a41-438f-8f77-5d5ace2e6a4a",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6276.400000000001
+    }
+  },
+  {
+    "id": "178d5c7e-761b-49e0-b30c-431a8da2cce9",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2689.86
+    }
+  },
+  {
+    "id": "6b64eab5-cd53-4500-8d0f-b4b4b80b56ae",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1825.67
+    }
+  },
+  {
+    "id": "4101b203-4cd1-4ee9-aebe-da57152407e9",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1578.89
+    }
+  },
+  {
+    "id": "a4007298-9abf-4695-a134-98d0478b504b",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1203.0900000000001
+    }
+  },
+  {
+    "id": "7dc30ac5-187b-4d85-b88d-f5a3f749c2ff",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 461.02
+    }
+  },
+  {
+    "id": "dec20e71-ed89-4081-9c1b-c7076d771017",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 982.28
+    }
+  },
+  {
+    "id": "a246ace2-5fcd-4957-bcbb-80850a33b05f",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 700.15
+    }
+  },
+  {
+    "id": "2a361a6a-bc4c-431a-b9cd-7a5f71af7956",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1888.74
+    }
+  },
+  {
+    "id": "86b76bfe-7261-4943-9c9f-4030f22aa9da",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 785.24
+    }
+  },
+  {
+    "id": "9bdcbab6-5b85-4c30-aefd-7fc760619d00",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 526.26
+    }
+  },
+  {
+    "id": "70101b0b-529d-4000-ac46-46420f356dca",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 476.67
+    }
+  },
+  {
+    "id": "c044b0d6-9a32-4ebd-9d11-47dd197568ce",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 383.34
+    }
+  },
+  {
+    "id": "4e2e9e78-fe11-4220-b753-4e8067894c2b",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3514.11
     }
   },
   {
@@ -25032,6 +27612,306 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "f8490b1d-72ef-4cdc-9261-b1138cb57beb",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 78.29999999999998
+    }
+  },
+  {
+    "id": "8a103808-8f7c-42d8-a440-0b1427605742",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.34
+    }
+  },
+  {
+    "id": "be596dd1-780a-4d2c-bb9c-5ea02be28143",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.84
+    }
+  },
+  {
+    "id": "a62630a7-114a-445f-8d7b-f1a93ad6b8d6",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.4
+    }
+  },
+  {
+    "id": "cca6678e-e81e-4ef0-8546-1b1d28c8c4ec",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39
+    }
+  },
+  {
+    "id": "cd3e0f41-2221-42da-8ad5-a28d9aa7dd11",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.42
+    }
+  },
+  {
+    "id": "240e149e-bc69-4a28-b3d8-a45e11594f6d",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 42.1
+    }
+  },
+  {
+    "id": "fd88ca56-51e4-4084-8183-3261674723e7",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.71
+    }
+  },
+  {
+    "id": "10a81eaa-e8e3-421d-87de-2bfcca68367c",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15.67
+    }
+  },
+  {
+    "id": "3e251a2e-9c23-44ba-b8d5-1b4816cc6b5f",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.159999999999997
+    }
+  },
+  {
+    "id": "b13061cf-9fe3-48b7-82ee-35f30cd4c424",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 66.55
+    }
+  },
+  {
+    "id": "f36cdf64-4a3b-47dc-9a4d-d5d86cdc252c",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.57
+    }
+  },
+  {
+    "id": "5de6811c-f001-4be7-936a-23295c3963fd",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.29
+    }
+  },
+  {
+    "id": "a11836cb-9fe4-4aea-8ad4-7de6b9712539",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.92
+    }
+  },
+  {
+    "id": "0a00d29c-3c68-45d1-a225-c3616b758790",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.469999999999999
+    }
+  },
+  {
     "id": "58ca21d2-0498-49ff-b1fc-bc5f94c2dc4f",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
@@ -25292,6 +28172,306 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "5501eab9-c3c1-428e-9ee1-08e1a04668b1",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1876.28
+    }
+  },
+  {
+    "id": "1e30c5d5-f2e5-41fe-9a9c-e4758a6a8e71",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1206.18
+    }
+  },
+  {
+    "id": "63e87900-56e0-4e91-a82d-b675c4e50022",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 897.9300000000001
+    }
+  },
+  {
+    "id": "697237cf-07ee-4f11-9e47-25655b6f1ea6",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 670.1
+    }
+  },
+  {
+    "id": "33c59bbd-61fc-4345-9ae5-b68d796a3571",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 201.03
+    }
+  },
+  {
+    "id": "72accd38-e42a-4559-8da4-01a129ae1d6f",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 134.02
+    }
+  },
+  {
+    "id": "8b3bd68a-5874-4ea6-a4b3-ceef923b2f8a",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 603.09
+    }
+  },
+  {
+    "id": "27783ec8-3f51-4979-a90e-196307896c40",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 536.08
+    }
+  },
+  {
+    "id": "e00ee4eb-b65b-427b-814a-a739a58a5024",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 241.23000000000002
+    }
+  },
+  {
+    "id": "82857d80-e80e-452b-b768-cf38172f890f",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 268.04
+    }
+  },
+  {
+    "id": "83cf2c96-915a-412d-86c3-d95d5b8bd61e",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 335.05
+    }
+  },
+  {
+    "id": "446aa6d6-331e-4a57-8ba2-1feac513f258",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 335.05
+    }
+  },
+  {
+    "id": "50a5a8bd-6338-4189-9fdb-c9fbab1ab490",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 335.05
+    }
+  },
+  {
+    "id": "3078c2b3-07cb-4824-8292-22d234238936",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1675.25
+    }
+  },
+  {
+    "id": "0f842fc3-694f-443b-8da9-700409036571",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 134.02
+    }
+  },
+  {
     "id": "66c73fa2-8de8-4323-a44c-7105d88532ad",
     "codigo": "4.1.01.01.0020",
     "descricao": "SALARIOS E ORDENADOS APRENDIZES",
@@ -25349,6 +28529,86 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4327.85
+    }
+  },
+  {
+    "id": "fb13a194-df56-4d72-887f-9b4a07f45822",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1009.06
+    }
+  },
+  {
+    "id": "3a6f93f5-7ffe-4ef3-ae0f-f51141860ffa",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1009.06
+    }
+  },
+  {
+    "id": "b31ca4b4-6a6a-439e-8bc8-c6a8db15bafc",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2018.12
+    }
+  },
+  {
+    "id": "aa0778c3-e380-4dd6-b856-558e6d9e3b53",
+    "codigo": "4.1.01.01.0020",
+    "descricao": "SALARIOS E ORDENADOS APRENDIZES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SALARIOS E ORDENADOS - MENOR APRENDIZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1009.06
     }
   },
   {
@@ -26952,6 +30212,1466 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "d801bbf2-8fe9-4a18-87dc-9c394fa7abde",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1233.6399999999999
+    }
+  },
+  {
+    "id": "b5cf0abd-bb10-45f2-be17-28a356fbb40e",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.17
+    }
+  },
+  {
+    "id": "fe3df057-0d29-4ec8-a536-9a4688600b20",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 339.27
+    }
+  },
+  {
+    "id": "6be1fe8c-72b0-4399-8b9a-bdd373acf5ec",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 425.81
+    }
+  },
+  {
+    "id": "16c7d4f7-9052-42bd-aa64-2350a7a483db",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4061
+    }
+  },
+  {
+    "id": "a50a2015-7b91-4328-b660-bf9e7b4073db",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5342.98
+    }
+  },
+  {
+    "id": "82d77e85-35d5-4101-8680-56ffee46436a",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 112.37
+    }
+  },
+  {
+    "id": "06e4eec9-feb7-41c3-8f7b-e3c1903aad44",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 445.24
+    }
+  },
+  {
+    "id": "337c806a-49e2-4ddd-9a96-916667a6a1dd",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 524.47
+    }
+  },
+  {
+    "id": "0d878c13-5ff1-41a2-91ec-785a738f64ff",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 61.96
+    }
+  },
+  {
+    "id": "651316ff-97c4-4ce0-99eb-afbe1f4d75b6",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 686.02
+    }
+  },
+  {
+    "id": "a0e6fd18-f505-4446-a15f-66e31b5e0597",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4546.320000000001
+    }
+  },
+  {
+    "id": "ab03fe87-e252-4bbf-9393-dc5950b81bf8",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 433.09000000000003
+    }
+  },
+  {
+    "id": "5dcd8375-4916-47f2-84a8-14688df11a7b",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3832.3399999999997
+    }
+  },
+  {
+    "id": "05be8069-c5ef-4124-be10-337ae7935d11",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -299.09
+    }
+  },
+  {
+    "id": "fade468e-2f05-4e48-bdd2-f3825f709eb4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "9bb56dfa-25f4-412a-91b0-5e76e3bb88ff",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 127.12
+    }
+  },
+  {
+    "id": "d53a6a40-866b-4055-96d1-20d5531b8a02",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 328.75
+    }
+  },
+  {
+    "id": "b4eed14a-4317-4a1f-a23e-14db88a963c7",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 363.86
+    }
+  },
+  {
+    "id": "2306f5cc-3f50-48c1-8154-1c21b94f6d77",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1067
+    }
+  },
+  {
+    "id": "b824fbaa-e568-403f-9835-6d8801adb8ca",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12952.390000000001
+    }
+  },
+  {
+    "id": "e772d88b-fc85-42c1-9072-c8f351a0386b",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 329.43
+    }
+  },
+  {
+    "id": "1e8a240f-031d-43e0-9caa-7ee1d4daeda8",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1367.0700000000002
+    }
+  },
+  {
+    "id": "975e16b6-292a-41c6-85c9-4c7087b878a4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 827.8399999999999
+    }
+  },
+  {
+    "id": "0889631e-035e-47ae-8ef5-4a084f0937f1",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "74f60e5a-e139-4655-a170-c8187179cadb",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -804.13
+    }
+  },
+  {
+    "id": "899509c2-4624-47d7-aff4-fa324741bea3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -1.17
+    }
+  },
+  {
+    "id": "9f3f1472-cf58-4fd5-b635-d45feef65013",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 277
+    }
+  },
+  {
+    "id": "a98f0b73-c610-4696-b38e-e5d2b5b238bb",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 363.3
+    }
+  },
+  {
+    "id": "00bd1ff8-2e74-4504-84b8-145d4cb69b0c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.17
+    }
+  },
+  {
+    "id": "a6ee5c3f-a7d0-4aec-90b7-4cb017394b95",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3324.03
+    }
+  },
+  {
+    "id": "dd587ee1-0389-4368-9132-62b580f251d2",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 240.95000000000002
+    }
+  },
+  {
+    "id": "5db8833e-8f7a-4b0a-a40f-788cd3531b36",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2094.77
+    }
+  },
+  {
+    "id": "a0566bbf-0be0-47ae-98cc-a32b6c5ffdbf",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 174.56
+    }
+  },
+  {
+    "id": "5a6ed41a-c18c-4a9a-a39f-e05f40d5a960",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1560.13
+    }
+  },
+  {
+    "id": "d4ed04b4-e663-4756-bf47-3d719866eb73",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.55
+    }
+  },
+  {
+    "id": "edae727a-9368-4570-878b-18ab085b26f2",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 130.01
+    }
+  },
+  {
+    "id": "1bb73e2e-1a31-49f7-81cc-6e8ce86cca56",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 172.67
+    }
+  },
+  {
+    "id": "f76903c8-9813-432b-9dcc-8eb54b9c949d",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "57e968e7-b453-420c-91d1-c40b9e78151b",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.03
+    }
+  },
+  {
+    "id": "998884ad-50a5-4e15-961a-186128ef4806",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1061.85
+    }
+  },
+  {
+    "id": "98f4e38f-99a4-4aed-9534-76e90aa42f97",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.32
+    }
+  },
+  {
+    "id": "3a2f551f-c1ab-45e7-883f-aaebc345c307",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 88.49000000000001
+    }
+  },
+  {
+    "id": "6a890a14-306a-46e9-878d-91947415fe9f",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 136.91
+    }
+  },
+  {
+    "id": "ae65deb6-fcdb-4dc4-aaf8-52ed19bfd81a",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 134.42
+    }
+  },
+  {
+    "id": "2d50a8bd-be40-47e5-bace-870c6f29247c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 179.23
+    }
+  },
+  {
+    "id": "701fd78e-5464-4cbc-90cf-706d5b7909f6",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -1.58
+    }
+  },
+  {
+    "id": "aef8ef82-245d-4e67-b232-41a95f63e682",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "f5212d8f-88ae-4563-b542-8faf3cfb5b45",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4678.780000000001
+    }
+  },
+  {
+    "id": "02d536b3-3be3-441f-a7a9-7f48f7fd3cb3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -4.19
+    }
+  },
+  {
+    "id": "0b0f3570-e916-4d52-a0a4-7aa1d9432496",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11891.7
+    }
+  },
+  {
+    "id": "6f779160-f1f8-4f63-8aae-d90e426d11c4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 389.90000000000003
+    }
+  },
+  {
+    "id": "ffe13503-4a3f-4a1a-b85f-27df1f4b526e",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 477.62
+    }
+  },
+  {
+    "id": "9ea026cf-df2b-42ef-aed9-cb67e6141a36",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 108.1
+    }
+  },
+  {
+    "id": "b2420647-4958-4e5d-90ce-c6d49f711c86",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 171.23
+    }
+  },
+  {
+    "id": "6cb259e9-6189-4470-8e25-71edaf892ed0",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.54
+    }
+  },
+  {
+    "id": "13283243-9dc7-4567-95ae-9370bd83d25c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1297.2
+    }
+  },
+  {
+    "id": "cc72bee9-86bf-4fcb-a9be-4a8800aeb4e5",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.46
+    }
+  },
+  {
+    "id": "ab225810-a877-4d3d-a8f6-7a7788a30723",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "d38d7b3c-0bc2-4c6e-b070-34c3b789f848",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 990.97
+    }
+  },
+  {
+    "id": "6bafb714-65b4-44eb-bd35-32fb705fb35b",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1308.02
+    }
+  },
+  {
+    "id": "aa7b614a-ac6a-4e9e-83d6-356b7797a44f",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1613.08
+    }
+  },
+  {
+    "id": "c8bd2cfe-bcdf-474f-aa98-00f03571f0a9",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.57
+    }
+  },
+  {
+    "id": "81a86140-2ec8-4118-bf66-d8f5fe44a02d",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 148.4
+    }
+  },
+  {
+    "id": "37442b73-c295-4580-82f0-362f717b2131",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 198.09
+    }
+  },
+  {
+    "id": "e923b8f6-b510-4c0c-98da-43f1f2835e0f",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1780.88
+    }
+  },
+  {
+    "id": "4c77e085-db4b-48f1-95b5-8a3eb52fe874",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -431.18
+    }
+  },
+  {
+    "id": "680ff6e3-d7c5-496f-a844-10a4a477735c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 136.45
+    }
+  },
+  {
+    "id": "d278977c-6b3a-4a7f-9580-c9aa691c09d1",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 186.41
+    }
+  },
+  {
+    "id": "b57d7800-aa99-49f7-aced-b011c706e38c",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1638.8500000000001
+    }
+  },
+  {
+    "id": "91782357-874c-49e5-a405-58bced877ef4",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.62
+    }
+  },
+  {
+    "id": "a31b1a7f-52e3-421d-9c56-c2f55d5a14c3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENCARGOS INSS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "80f71564-39c1-479d-a5a3-968cabb501e3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
     "id": "4bec6d97-82da-4e20-9b4d-6831ecc821c5",
     "codigo": "4.1.01.01.0031",
     "descricao": "ENCARGOS FGTS",
@@ -28469,6 +33189,1366 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2565.0099999999998
+    }
+  },
+  {
+    "id": "73be22ec-564a-4d63-bc31-af10dc51c190",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -134.44000000000003
+    }
+  },
+  {
+    "id": "1f8358c4-b3c6-4699-a228-b2ef91fd5f8e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 234.85
+    }
+  },
+  {
+    "id": "8ad744dc-7aed-4d13-9bb8-6f439f2dfc37",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 502.12999999999994
+    }
+  },
+  {
+    "id": "29938bb7-f8c5-41a8-bb15-8e37a75b8f40",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 600.93
+    }
+  },
+  {
+    "id": "770f6a94-5dec-4ec9-a2af-ce57d19f0164",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.03
+    }
+  },
+  {
+    "id": "156cf652-6eed-436f-9b43-8d4e1f18e564",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.02
+    }
+  },
+  {
+    "id": "f890ccc0-f6c9-4c4f-b1de-153f17c7f3aa",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 250.99
+    }
+  },
+  {
+    "id": "96b1dff6-4eb6-49bf-b0b7-168014fd1aa3",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 322.99
+    }
+  },
+  {
+    "id": "0cd1af93-6722-47dd-8637-2783afbe749d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5159.39
+    }
+  },
+  {
+    "id": "f980718a-7de0-4021-920a-6ec045461e26",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3011.77
+    }
+  },
+  {
+    "id": "0c347a58-4c96-40a2-933c-a0f8573505fd",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "1386cb53-c924-4a92-91f8-e112881756f9",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 215.20000000000002
+    }
+  },
+  {
+    "id": "9eb208ff-edbc-41e8-96a7-d361be60bf4d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 263.44
+    }
+  },
+  {
+    "id": "2dfada63-782b-4ea3-be1c-5e15b3884108",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 146.06
+    }
+  },
+  {
+    "id": "74b0e143-7b0f-4c46-9bbc-35fa14fc0adb",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 230.7
+    }
+  },
+  {
+    "id": "9406da1f-e0bf-406f-ac96-c67281576889",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2430.82
+    }
+  },
+  {
+    "id": "a2edead0-d5e7-484d-8b73-933126b9a11a",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1568.0500000000002
+    }
+  },
+  {
+    "id": "f7d2757b-c6db-4a0d-ab49-994a72955f2f",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "3bf6521c-ce4d-4f9c-9620-defad2844c9d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.88
+    }
+  },
+  {
+    "id": "c9650093-ba19-4e9c-8a57-a7fff347c386",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 48.99
+    }
+  },
+  {
+    "id": "b0eec5e1-b0a4-42ee-a6bb-994fc04d8e11",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 442.59
+    }
+  },
+  {
+    "id": "eb691bf8-f6f5-49a0-b621-43544adcf455",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 942.99
+    }
+  },
+  {
+    "id": "03397907-ec70-434f-aa2f-aad5958dc3aa",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "0c5506cf-f535-48a7-9329-25234de0d7c8",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 78.58
+    }
+  },
+  {
+    "id": "a16d50e1-5b97-4920-a99d-698c215a7f3e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 103.07
+    }
+  },
+  {
+    "id": "f9fb9f29-c691-4e26-99ee-7af1092d000f",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DEDUCAO 13º REF A LIC MATERNIDADE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -228.12
+    }
+  },
+  {
+    "id": "eef0820a-bb3a-4f51-89d2-1d25f682d512",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 302.68
+    }
+  },
+  {
+    "id": "15a3edb2-b93e-4ec0-8b03-3a08447d5081",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "364eaa51-2ef9-4b24-a6a8-d04e2e4f287c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -84.85
+    }
+  },
+  {
+    "id": "69a8329e-00c7-4beb-9516-994df660b7d3",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 126.31
+    }
+  },
+  {
+    "id": "5bdb7256-252f-47ee-a940-76075ad43708",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 148.79
+    }
+  },
+  {
+    "id": "6a5b017f-67da-4a65-b33e-cfc7f1371422",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1515.74
+    }
+  },
+  {
+    "id": "e3dac26e-ee47-4313-9835-04f9f0a47c0e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "68907003-0b3e-47e4-95e6-531fb5a080f8",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 96.25
+    }
+  },
+  {
+    "id": "96770710-a6a4-4db2-97b7-a96a0d3fafff",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 120.8
+    }
+  },
+  {
+    "id": "a16e3bea-409d-41ad-872f-49bdff4ad99c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1152.06
+    }
+  },
+  {
+    "id": "409c5ad0-ab07-439d-8a94-3940eb08feef",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "f099d755-f3a3-402e-9dff-26863520f887",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "303a133e-d7f0-4faf-a5af-c63391f9009c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 464.73
+    }
+  },
+  {
+    "id": "e1096fe0-3e65-44f3-b63a-01f171e31c3d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 56.01
+    }
+  },
+  {
+    "id": "ed071ece-254f-4c4b-8488-e765d9ba8b78",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 80.06
+    }
+  },
+  {
+    "id": "7882771b-93f3-4038-a1a5-14e89027be8f",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 672.15
+    }
+  },
+  {
+    "id": "c218bedb-9104-4e2e-94b7-254ae32b6a82",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "f56a692d-06e3-4f56-bb14-c02d735baf1d",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1813.1999999999998
+    }
+  },
+  {
+    "id": "0674edca-f262-4b49-8ccc-08edcf7134d4",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 151.11
+    }
+  },
+  {
+    "id": "ecd0f9fd-511b-4987-9542-6776810fcc45",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 190.15
+    }
+  },
+  {
+    "id": "9575914b-2c35-427c-9c52-93e1eb438973",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "cd21f751-7a6b-4f80-8cf4-56da6a8c88ce",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 62.81999999999999
+    }
+  },
+  {
+    "id": "5bf6c666-0999-4052-999a-fc6449f7f2db",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 86.75999999999999
+    }
+  },
+  {
+    "id": "73ded252-1d70-42a2-9c23-a41a5d831464",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 758.15
+    }
+  },
+  {
+    "id": "cf72759e-d32c-4f66-9414-9126cf319744",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.02
+    }
+  },
+  {
+    "id": "8ee25bc5-2e8e-4a64-aebd-130ef547cc97",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -66.13
+    }
+  },
+  {
+    "id": "065ff759-5908-4a08-a51e-fddcc2dc55df",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 42.1
+    }
+  },
+  {
+    "id": "a69c6276-0ba1-4cc2-b9ae-69e8f67d587c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 505.22
+    }
+  },
+  {
+    "id": "d4e0f71e-4420-464a-a8c9-37e813209e4e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 38.13
+    }
+  },
+  {
+    "id": "dd886922-668a-496d-95e6-4376b2c54351",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 50.85
+    }
+  },
+  {
+    "id": "bbe19165-42cf-4920-a29b-ad3a933b39a7",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 281.13
+    }
+  },
+  {
+    "id": "82178801-c3e1-4ce9-9bc1-ea26e8f2b5e2",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 371.07
+    }
+  },
+  {
+    "id": "4c1c6127-b795-4386-8fad-9e30d688f8cb",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "b4ae65c1-cf2d-4243-8c51-8e727443989b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -0.01
+    }
+  },
+  {
+    "id": "044b34e0-f167-47f5-8f63-2a4dd95a9323",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.67
+    }
+  },
+  {
+    "id": "7a3869d8-6e17-432c-a33d-e1ba510d226a",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 48.58
+    }
+  },
+  {
+    "id": "43d00ef4-8e38-46fc-8957-d674fa130dbe",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 368
+    }
+  },
+  {
+    "id": "c95e3a4c-0dbc-42ca-979a-6ace0eff8e2b",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3373.52
+    }
+  },
+  {
+    "id": "cae391eb-6f0b-403f-a078-ab856ba9bb4e",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "062a29d9-ac31-491f-9119-670f7fafdd17",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.01
+    }
+  },
+  {
+    "id": "48ca67ad-05f9-4525-b7c8-fe636670fe33",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 457.61
+    }
+  },
+  {
+    "id": "eb7269f6-8519-4b45-b7e8-9316c8698c3c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "ENCARGOS FGTS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 429.12
     }
   },
   {
@@ -30685,6 +36765,206 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "020ca49b-2f34-4d62-a075-94926cfde6fc",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7260
+    }
+  },
+  {
+    "id": "35276249-cfd0-4bc3-88b7-f208df391aed",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE CONSULTORIA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2583.3599999999997
+    }
+  },
+  {
+    "id": "72452765-67c2-4437-b8a1-1ca908f1484d",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE DEDETIZACAO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 800
+    }
+  },
+  {
+    "id": "89789e2b-a996-46d1-9e61-c92384c26197",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1519.7099999999998
+    }
+  },
+  {
+    "id": "1a8b034d-67aa-43cb-8040-13f826f5a86e",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7171.92
+    }
+  },
+  {
+    "id": "f48e1d1d-23cf-4440-aff7-46a67d6ffb5b",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS DE TERCEIROS PJ -",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 573.72
+    }
+  },
+  {
+    "id": "fa34189d-9ced-4bae-a6bb-42ebe0b5d9fa",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE CONSULTORIA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 695.76
+    }
+  },
+  {
+    "id": "1199aeda-2ace-4de7-b189-8d24e2767661",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICO DE TRANSPORTE E LOCACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 272.25
+    }
+  },
+  {
+    "id": "2db1ea64-c3a7-4d92-aa42-1da47fc29611",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "SERVICOS MANUTENCAO GERAL",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 375
+    }
+  },
+  {
+    "id": "1a5e168e-9b40-48dd-a73d-4def24d7eee8",
+    "codigo": "4.1.01.02.0002",
+    "descricao": "SERVICOS DE TERCEIROS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "EXAMES OCUPACIONAIS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.5
+    }
+  },
+  {
     "id": "be942479-770f-47cc-a486-65398f23827c",
     "codigo": "4.1.01.02.0004",
     "descricao": "FRETES E CARRETOS PJ",
@@ -30985,6 +37265,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "95bff059-cac4-4f72-8dd4-1fcc43d69dc0",
+    "codigo": "4.1.01.02.0004",
+    "descricao": "FRETES E CARRETOS PJ",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "FRETES E CARRETOS PJ 000013",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 900.1700000000001
+    }
+  },
+  {
     "id": "978c8eb6-c235-4ef3-a09c-882fe6cb86c9",
     "codigo": "4.1.01.02.0009",
     "descricao": "HONORARIOS ESTAGIARIOS",
@@ -31164,6 +37464,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67063.32
+    }
+  },
+  {
+    "id": "eef6fb2a-7dde-474a-bd6c-0ae8f40b98f2",
+    "codigo": "4.1.01.03.0010",
+    "descricao": "LOCACOES DE MAQUINAS E EQUIPAMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.03",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.03-LOCACOES",
+    "nomeProduto": "LOCACOES DE EQUIPAMENTOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5200
     }
   },
   {
@@ -31855,6 +38175,226 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 606.06
+    }
+  },
+  {
+    "id": "e9b28dc5-61dd-449c-8ca3-5e65787b8408",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "GAS LIQUEFEITO PETROLEO (GLP) 13KG",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 105
+    }
+  },
+  {
+    "id": "e9fc00c6-d53b-4288-9cc7-43534f9138d4",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.72
+    }
+  },
+  {
+    "id": "2e17f6a7-8c2b-4cfc-a6c0-0fa65b1fda49",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESENGRIPANTE SPRAY 300 ml",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 95.58000000000001
+    }
+  },
+  {
+    "id": "fd887087-e6df-4c76-aa66-2f2dcff817d0",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIFICANTE GRAU ISO 150",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 62.64
+    }
+  },
+  {
+    "id": "71a77b8e-cec1-4387-987b-f5780069aae1",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIF SAE 15W40 API CI-4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 72.75
+    }
+  },
+  {
+    "id": "3dc2953e-1c47-40db-9423-e6502a39e6f5",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIF ISO 68 DIN 51524 PARTE 2 HLP",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 72.8
+    }
+  },
+  {
+    "id": "2c33aa71-f131-4bee-9b84-5e46b400c6dc",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "QUEROSENE AGRANEL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 75.4
+    }
+  },
+  {
+    "id": "044bc928-91e8-40c7-8980-b0282513f3cf",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 739.76
+    }
+  },
+  {
+    "id": "fecd06f3-a4e1-4a80-ac9c-244a96785a24",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S10 CLASSE B 8% BIODIESEL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2719.8199999999997
+    }
+  },
+  {
+    "id": "c6f6c1a0-28d0-4fb9-9926-171f7f7cbcee",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO LUBRIF HIDR TIPO ATF A BD 20L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 17.48
+    }
+  },
+  {
+    "id": "0280c7a5-cd09-4177-827c-282f40b6648b",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "QUEROSENE AGRANEL",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.16
     }
   },
   {
@@ -37176,6 +43716,2866 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "97b8ff14-ea21-4aa9-8549-cfa9007e92d8",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "X4 SUPRA- /BB 5,0 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 460
+    }
+  },
+  {
+    "id": "7923ee77-fa45-4306-b4ee-bb2138ee7943",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CALCULADORA DE MESA 12 DIGITOS PROCALC PC123",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.4
+    }
+  },
+  {
+    "id": "1ab84c11-2e64-4fd4-b11d-bfe61dacb6f6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA INSULOK NYLON PRETA 7,6X450MM",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.08
+    }
+  },
+  {
+    "id": "0805f52a-1a07-454c-96bf-dbba20cd39da",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DEFLETOR 100294",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 75
+    }
+  },
+  {
+    "id": "0ffaa234-5272-48d1-bfdc-009fbd417376",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SUPORTE PARA NOTEBOOK",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 119.8
+    }
+  },
+  {
+    "id": "8b4fce46-587d-4f71-b899-df531744f960",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FONTE ALIMENTACAO 5V 110/220V",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 199.9
+    }
+  },
+  {
+    "id": "09451548-9c81-4d68-a3aa-3be2e828c3b1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PERFIL ENRIJECIDO 100X50X20X6000 #14",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 314.28
+    }
+  },
+  {
+    "id": "2cfef98c-f08c-4f8e-adf8-d0aa8628f149",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RESINA SINTETICA CINZA CONCRETO",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 649.76
+    }
+  },
+  {
+    "id": "7510237a-1e08-423e-8bbf-4a66a8c0dda3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6207 2RS1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -32.45
+    }
+  },
+  {
+    "id": "2ba8c79f-15fd-4f39-b226-95b03c7511fd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 16F 3/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "1f331e23-9a16-44d4-a4a7-4baf078799e5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA PRESSAO MEDIA ACO MOLA 5/8 DIN 127",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.64
+    }
+  },
+  {
+    "id": "2a3c7c24-b3fb-4b56-bf23-74c19b1ed852",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA 3/4\" FERRO PL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.71
+    }
+  },
+  {
+    "id": "dd384168-16f5-4951-8648-a9f0aaa974c7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA SAE 1020 POL 1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.72
+    }
+  },
+  {
+    "id": "98a2978b-42a7-4ca3-9ce3-ac9e3df133d6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RP 8.8 UNC 16F 3/8X4.1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.94
+    }
+  },
+  {
+    "id": "f4e9c1ad-861e-45d2-9b4e-ec7e80e9b345",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA SAE 1020 POL 3/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.96
+    }
+  },
+  {
+    "id": "de1eb0fa-1155-4ff2-a755-5ccc85d595d1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 20F 1/4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "4f199c41-d523-4101-a748-1447fcb6115a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 11F 5/8X1.1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.15
+    }
+  },
+  {
+    "id": "1937ee05-ef10-4fbf-88f1-8d113319699d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA SAE 1020 POL 1/4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.2
+    }
+  },
+  {
+    "id": "327c7340-5531-459b-af8f-f517d13cd563",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAF SEXT ACO NC EF 1 X 5",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.43
+    }
+  },
+  {
+    "id": "4820a137-0b5c-4351-b813-c155ba8ad5a9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 ZINC UNC 13F 1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.28
+    }
+  },
+  {
+    "id": "d006377a-2e78-47d6-8924-02ffd365d823",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 18F 5/16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "52ce21e2-95c0-421e-b616-705dd9b814b2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 20F 1/4X1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.92
+    }
+  },
+  {
+    "id": "3749798d-b9c2-4619-bb91-98ea17dd992e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXTAVADO \rM16 X 160 JDEERE 19M7596",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.85
+    }
+  },
+  {
+    "id": "43c295f0-d7f8-4daa-8d95-0b0339a1e0e4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 24F 3/16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3
+    }
+  },
+  {
+    "id": "7b8bfcd7-ad69-40ec-bf41-04ef0cd61c9c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 13F 1/2X2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.04
+    }
+  },
+  {
+    "id": "2bee96d0-3b75-4afd-b1f6-74028ca29ec2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA AUTO TRAV NY ALT NC 3/8 DIV",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.18
+    }
+  },
+  {
+    "id": "474fbd85-269d-4683-962a-ddde474fdb41",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 16F 3/8X2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.52
+    }
+  },
+  {
+    "id": "ef88d4e6-0dbb-4beb-aad2-cb898144da0d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 16F 3/8X1.1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.2
+    }
+  },
+  {
+    "id": "248b69b2-68c2-41f5-9d1e-611e76cd7957",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXT 16X170",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.37
+    }
+  },
+  {
+    "id": "4afa051e-f8c0-49d6-a643-7e0225a12a7c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXT UNC 24F 5/16X3",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "f8a78864-b06c-4049-af35-054877d2cc21",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 20F 1/4X1.1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.5
+    }
+  },
+  {
+    "id": "94acebf9-fc9c-4ad7-8cae-fce8c5cc4cad",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 18F 5/16X1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.7
+    }
+  },
+  {
+    "id": "7ad7ddcd-655b-4f5a-a32d-2002f21a69d9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELO FUSIVEL ALTA TENSAO 10K",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37.4
+    }
+  },
+  {
+    "id": "b377cfc7-c759-4787-820a-432b4df216c5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA 10,5MM ID X 30MM ODX 4MM THK 83904166",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.6
+    }
+  },
+  {
+    "id": "d2b112ea-0535-405e-bc48-b447abc2531d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX 3/16X1 24F",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8
+    }
+  },
+  {
+    "id": "68f1ce6f-adf0-46de-aec9-dd2e26b95808",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO DESBASTE 4.1/2X3/16X7/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 40.25
+    }
+  },
+  {
+    "id": "2acdb376-bdcb-4d97-910f-8847e14d5925",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO ALLEN SEM CABECA SEXTAVADO INTERNO 5/16 X 3/4 FIO 18",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.37
+    }
+  },
+  {
+    "id": "63cedc4f-a6ae-423d-a3f9-2a0dfba28d4a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNF 20F 1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "ae9aa383-1b2c-4896-b08c-9e7930144ce6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ROSCADA SAE 1020 UNC 1/2X1M",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.05
+    }
+  },
+  {
+    "id": "5ab5b09a-3fdf-4d36-a811-44aaae9c9c3a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6203 2RS1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 34.95
+    }
+  },
+  {
+    "id": "4eb847fd-0932-4fc0-944b-69546a687b13",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SELANTE PU HIBRIDO HT 1010 POLIPLAS 400G",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.28
+    }
+  },
+  {
+    "id": "2c14af75-61a9-4c06-8063-1ba3588808a8",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA ACO TIPO D COM CUNHA 3/4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13
+    }
+  },
+  {
+    "id": "9b114bb2-e4da-46c3-a586-3550ec198b8e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 13F 1/2X1.1/2",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.3
+    }
+  },
+  {
+    "id": "4c0a08e5-7385-45f2-9485-42ac7e69a7f3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6202 2RS1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.28
+    }
+  },
+  {
+    "id": "d13d6806-7e36-4244-8f5d-9c35a0ee727f",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "22220 E/C3 SKF ROLAMENTO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 68.48
+    }
+  },
+  {
+    "id": "053d515a-5c37-4633-a67c-ee0bd112ac66",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO DESBASTE 7X1/4X7/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.92
+    }
+  },
+  {
+    "id": "2cca39e7-f29d-4627-9bf3-f0eeb9a2cec3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PLACA IDENTIFICAÇAO PORTA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.95
+    }
+  },
+  {
+    "id": "d98369e5-96cf-438b-932c-3cadf25f702f",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA CONCAVA MF 196010",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.5
+    }
+  },
+  {
+    "id": "dd85623a-362e-4dae-bf2f-df2b327bb88e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO 6314 ZZ C3",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 33.3
+    }
+  },
+  {
+    "id": "59002cd6-dd98-4b7e-b366-fd043d3d4424",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BALANCA DIGITAL DE MESA CAPACIDADE 5,0 KG PRECISAO 1,0 G",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 33.91
+    }
+  },
+  {
+    "id": "046eb35d-790f-430e-9d00-78ea8a237a87",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B98",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.87
+    }
+  },
+  {
+    "id": "d6e722e7-aa5f-4b1c-8ae9-18bb4cc47c52",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B92 V-21",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.48
+    }
+  },
+  {
+    "id": "5eb43e9f-ff96-4bdf-aeb6-d0b845a2959d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE 2 TELAS INOX 1.0MM 4.1/2X0,39X7/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 275.34999999999997
+    }
+  },
+  {
+    "id": "bc41c340-d3f3-4b8a-bfcf-4952bfdad181",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPIGAO MACHO MANG. B 5/16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 42.75
+    }
+  },
+  {
+    "id": "28b7cfb0-48ff-4e10-b7f7-14cb0f6d1abc",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6206 2RS1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 42.86
+    }
+  },
+  {
+    "id": "1ee29a99-cdf5-449c-94ab-0f100950a27d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO CHIP PHILIPS/CHATA 4,0X22",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 44.64
+    }
+  },
+  {
+    "id": "56e64597-3c62-4c80-9ee4-939f965368e5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO 22.25MM HEX X 52MM OD 87650438",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 44.89
+    }
+  },
+  {
+    "id": "72090bac-299a-4c3d-8d15-9819facd099c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CABO FLEXIVEL 2,5 MM AZUL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45
+    }
+  },
+  {
+    "id": "5b6420aa-ae2f-4909-b6e1-a2a41f0cf4a1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VENTILADOR 100 WEG 10016822",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 90
+    }
+  },
+  {
+    "id": "32924e2d-4c01-41f2-8328-7d3e0e1f8c5e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RESINA SINTETICA CINZA CONCRETO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45.37
+    }
+  },
+  {
+    "id": "fd8e8e59-773d-4eaf-9c2a-2acf0411ddd2",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COLA PARABRISA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 136.14000000000001
+    }
+  },
+  {
+    "id": "87c456cb-c88a-4b30-9675-3cc8ae3fcf65",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CABO FLEXIVEL 2,5 MM PRETO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45.6
+    }
+  },
+  {
+    "id": "2ea00084-bf3c-4a88-8fbe-174b508d25b4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SEXT 5.8 6X50X1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 46.74
+    }
+  },
+  {
+    "id": "0ea937e0-04bf-42bc-bead-f130abe98087",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO CORREIA ELEVADORA C/ PORCA 5/16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 47.5
+    }
+  },
+  {
+    "id": "09a87461-1988-416e-8d23-41aba5c5651a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "344CC59/1000 BARRA MACHO QUADRADA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 53.94
+    }
+  },
+  {
+    "id": "caf13606-c26e-4940-ac55-c3a2feb97343",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO MADEIRA CHIPBOARD CABECA CHATA 4,0X25MM PHILIPS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.8
+    }
+  },
+  {
+    "id": "18dc8bab-35d3-48b2-9e9b-d5c4ea01de39",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VENTILADOR 132 2 POLOS WEG",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58.5
+    }
+  },
+  {
+    "id": "5bad0cfe-6053-4408-ae5d-bfa667037403",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPUMA EXPANSIVA 300ML KALA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 66.41
+    }
+  },
+  {
+    "id": "7560a434-66bc-4d21-be7e-aea669c40234",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B082 V-6",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 72.6
+    }
+  },
+  {
+    "id": "6b161bd0-988f-4d4e-acc5-0ddf7f109682",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE INOX EHT 7X5/64X7/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 215.6
+    }
+  },
+  {
+    "id": "5967624a-6d4a-4d89-95dd-2d33fc74b1c9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO DE ESFERAS JDEERE JD9301",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 106.72
+    }
+  },
+  {
+    "id": "cb38ffcd-c397-48d1-a4df-0e50d14b89ea",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "POLIA 2 CANAIS PERFIL B VIRGEM 300MM FERRO FUNDIDO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 115.9
+    }
+  },
+  {
+    "id": "230271fc-6353-4c19-87bb-62c770746f8f",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 130.68
+    }
+  },
+  {
+    "id": "076f180b-11e9-4848-910e-5cb08fb54f0b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B96 V-20",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 146.16
+    }
+  },
+  {
+    "id": "94616651-01a9-4694-bb38-be2c3a821b66",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONDULETE GALVANIZADO MULTIPLO X ROSCA/TAMPA 3/4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 153
+    }
+  },
+  {
+    "id": "3790c962-0212-4542-9538-f14d169011cd",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B66 V-12",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 163.32
+    }
+  },
+  {
+    "id": "4c17a1e1-f8f0-4c72-8d26-5aa0ef98a8e0",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO 2327-5",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 163.35
+    }
+  },
+  {
+    "id": "9f50050c-1e85-4098-b3df-e4725eb6813e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B87 V-20",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 170.36
+    }
+  },
+  {
+    "id": "d4bda1bd-1ccb-433e-8703-f1d6f58c34ce",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADESIVO EPOXI 1KG SIKADUR-32",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 210.54
+    }
+  },
+  {
+    "id": "1bc7f34a-d3de-47e6-96d9-899583522ac3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMPA BASE DIAZED DII 25A E27",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 213.21
+    }
+  },
+  {
+    "id": "fc9f7f76-d992-4128-a788-305d162cc5b1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "KIT ELETRO VENTILADOR 24V",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 256.5
+    }
+  },
+  {
+    "id": "83233a58-1068-4d8b-952c-f6a2e1737fe3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VENTILADOR INDUSTRIAL DE PAREDE OSCILANTE 40CM 6 PÁS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 288
+    }
+  },
+  {
+    "id": "74ef0d90-2a6f-4b43-ab91-b9a2af13cb3c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B105 V-14",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 313.1
+    }
+  },
+  {
+    "id": "127836e9-9700-4a78-a35d-1bbc57d34014",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONTATOR TRIPOLAR WEG CWMC 50-10-30 220V P/ CAPACITOR",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 721.38
+    }
+  },
+  {
+    "id": "91ef3b05-0866-49c1-8d41-f66d3b9f312d",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORREIA TRANSMISSAO V B112  V-15",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 444.08
+    }
+  },
+  {
+    "id": "2ffc281c-37ad-4e82-81ac-df46b12fe06c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VENTILADOR INDUSTRIAL DE PAREDE 60CM 3 PÁS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 479.8
+    }
+  },
+  {
+    "id": "b73e450c-0333-4bdd-870d-3592ef6fcba9",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA CONICA PARA CANECA 5/16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 485
+    }
+  },
+  {
+    "id": "8f7b5f67-e68f-4981-a146-fe061117645b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAPA XADREZ NR 14 1200MMX3000MM",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 564.93
+    }
+  },
+  {
+    "id": "d911b9fd-ee49-450c-8e37-cac189342b1e",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "KIT CAIXA DE LIGACAO 63 W22",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 618.73
+    }
+  },
+  {
+    "id": "a19cdebf-7a84-4d3f-b142-a44bbc5d2ae7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONTATOR BANCO CAPACITOR 32A WEG CWMC 32 220V",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1376.12
+    }
+  },
+  {
+    "id": "e73d4e78-c6ac-4edc-83fb-40ae64a7a3a0",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA ELETRODUTO GALVANIZADO 3/4",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 806.8
+    }
+  },
+  {
+    "id": "37085e6d-a922-45a7-80f6-55878935cc9c",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO PLANO LISO 13 JUMIL 99.01.020",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2072.63
+    }
+  },
+  {
+    "id": "5a5610f8-c329-441d-8e28-210a81215af1",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 16F 3/8",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.32
+    }
+  },
+  {
+    "id": "92d4818a-39b7-4cd7-9401-271ab8294b30",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA SX 8.8 UNC 20F 1/4",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.4
+    }
+  },
+  {
+    "id": "a47f4418-75a2-43c4-b52a-70e75ce69938",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 20F 1/4X2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.52
+    }
+  },
+  {
+    "id": "734dbd0f-e90f-4821-8f06-145555fecc34",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALTA-PARAF FRANCES M-16X150 MM A FOGO - ROMAGNOLE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.53
+    }
+  },
+  {
+    "id": "d20c50a0-712c-433a-9ff4-92202e7bb8f8",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PORCA FLANGE SEXTAVADA CUMMINS 3929777",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.86
+    }
+  },
+  {
+    "id": "a74c3afd-be1a-4b2b-a23f-d884c19f4c0b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARRUELA LISA (I) 9/16\"",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.86
+    }
+  },
+  {
+    "id": "0aeadf28-1be0-45d8-828a-8e9de6754d18",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA INSULOK NYLON PRETA M4,8X300",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.4
+    }
+  },
+  {
+    "id": "a58d234d-f137-40b3-a209-56cd22487495",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PLUG MACHO SOBR 2P 10A 250V BR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.29
+    }
+  },
+  {
+    "id": "415acab4-f507-4429-b826-acfef1f577fa",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO CABECA FENDA RT 1/8X2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.72
+    }
+  },
+  {
+    "id": "930497e9-3a78-4ee2-aad8-6c485127fc30",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PARAFUSO SX RT 8.8 UNC 16F 3/8X2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.05
+    }
+  },
+  {
+    "id": "8d9ecad4-5557-4860-a370-a302a41eca99",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPIGAO DE MOLA (FERRO) 9/16X6” CB",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.65
+    }
+  },
+  {
+    "id": "22b6d6f5-5e18-4ebf-a9ac-559c6df7ab50",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA INSULOK NYLON PRETA 7,6X450MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.4
+    }
+  },
+  {
+    "id": "ab6c27c7-e4c3-458f-a798-7999c575dc05",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BATERIA 9 VOLTS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.92
+    }
+  },
+  {
+    "id": "8382127f-3cb6-4f01-a0b1-90cfe98ddcca",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SELANTE PU HIBRIDO HT 1010 POLIPLAS 400G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.11
+    }
+  },
+  {
+    "id": "c088a3d7-30ae-4cba-83fd-4ccea93936cf",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA REDUCAO 22X16 MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.3
+    }
+  },
+  {
+    "id": "775d5f2a-b0c7-4033-95ad-480a754acd65",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA 38MM TUBO QUADRADO JACTO 361980",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.3
+    }
+  },
+  {
+    "id": "e1d7f6dc-d314-42e7-add4-350157a4ec54",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RODA PARA CADEIRA 50MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.24
+    }
+  },
+  {
+    "id": "ee9c28a6-2804-4fbe-b147-41a9d12b3914",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COLA 3M 50 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.1
+    }
+  },
+  {
+    "id": "a617ef9a-843a-4475-9a9f-f59805d0d689",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6203 2RS1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.65
+    }
+  },
+  {
+    "id": "7fe9bc54-aa77-4175-b592-657d3e09b1be",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6204 2RS1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.9
+    }
+  },
+  {
+    "id": "7f295b16-6dcb-45c5-bb67-abca40a7fe27",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBATE SATA 42MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.56
+    }
+  },
+  {
+    "id": "83d31121-c351-40e9-b106-ae4726bffcf5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LAMPADA LED 50W E27",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.93
+    }
+  },
+  {
+    "id": "fac1dc67-5299-4ad4-9ead-1bbaa24a91ce",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TAMPA CONDULETE ALUMINIO 1 CEGA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.72
+    }
+  },
+  {
+    "id": "c4721f5b-de42-4478-8436-96a348349493",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPIGAO MACHO MANG. B 5/16",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.46
+    }
+  },
+  {
+    "id": "7a7b9c74-88a5-4088-a74d-38ef0f1185ba",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PLACA 4X2 3P JUNTOS LIZ BRANCA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.05
+    }
+  },
+  {
+    "id": "a8d919f4-69f0-4650-87e2-46a244c247be",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COLA PARABRISA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.69
+    }
+  },
+  {
+    "id": "5ed3b797-cd8f-4361-9bff-512a7de15818",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA P/ MANGOTE 8 POL 09911476",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.59
+    }
+  },
+  {
+    "id": "0f666a11-69b4-4a28-bf6b-395109bb9605",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE 2 TELAS INOX 1.0MM 4.1/2X0,39X7/8",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 67.59
+    }
+  },
+  {
+    "id": "1905fd51-3837-46fd-9d3b-1820caa01848",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAMARA AR 3.25-8",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 34.7
+    }
+  },
+  {
+    "id": "cbdd6d9b-cbf3-4da5-a4ca-fcda76d3042b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MODULO CEGO BRANCO C/ 2 UNID",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.64
+    }
+  },
+  {
+    "id": "3f04c590-3ce7-480f-a6d1-cfa0302afb0b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO DESBASTE 7X1/4X7/8",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 38.88
+    }
+  },
+  {
+    "id": "5ae1f1c0-25ca-45be-bdde-4522128e69a5",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ABRACADEIRA DE METAL 3/4",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39
+    }
+  },
+  {
+    "id": "0ece0e03-0cd6-4966-b5d9-38765d623306",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLAMENTO ESFERAS SKF 6206 2RS1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 40.68
+    }
+  },
+  {
+    "id": "3a80024b-2344-4448-8a83-448008a38193",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE INOX EHT 7X5/64X7/8",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 42.7
+    }
+  },
+  {
+    "id": "1b7a75d8-7475-44e6-af7d-5bc48c8c9aad",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ENGATE RAPIDO 1/2 CARRETA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45.29
+    }
+  },
+  {
+    "id": "bf8e1003-467e-4877-ac88-234e972c8a5a",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PISO EMBORRACHADO MOEDA PRETO 3MM X 2 MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58.13
+    }
+  },
+  {
+    "id": "a6f8c6e5-8496-4fa8-9c2d-0e86137cac08",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BARRA REDONDA SAE 1045 TREF 1.1/4X6000MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.84
+    }
+  },
+  {
+    "id": "38cda94c-278c-4bb0-8ab0-e47dfbc7e675",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONDULETE ALUMINIO LL 1 BSP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 71.28
+    }
+  },
+  {
+    "id": "85b9dd85-463a-410e-ac34-9ce891ccdc7b",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONECTOR CG 70-95 MACHO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 76.9
+    }
+  },
+  {
+    "id": "b4785f90-f33f-401a-8e48-e1d784c78fa3",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "POLIA FERRO FUNDIDO VIRGEM 1 CANAL 65MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 189.72
+    }
+  },
+  {
+    "id": "533af298-ff5e-4634-a52d-ee921c270328",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONECTOR DEUTSCH 8 VIAS MACHO E FEMEA D T FLANGE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 95
+    }
+  },
+  {
+    "id": "3a30bb48-9a8d-4b6a-83f3-73da003b7174",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DISCO CORTE 1 TELA 14X1/8X1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 120.9
+    }
+  },
+  {
+    "id": "84282b3a-36af-413e-90d1-7700bd85afb4",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHUMBADOR 5/16",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 148.8
+    }
+  },
+  {
+    "id": "282e0b81-b325-42eb-9b2e-1a7f4ce423b7",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAIXA DE ANEL OFM-988/20N",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 155
+    }
+  },
+  {
+    "id": "5169e606-a697-4570-95cc-abe69514a444",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARAME SOLDA MIG 1,0MM NORMA ER 70S",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 175.35
+    }
+  },
+  {
+    "id": "d3347280-4494-4185-9d3b-a6b7f985f167",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CONJUTO SEPARADO RODADO AUXILIAR 219022000",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 241.8
+    }
+  },
+  {
+    "id": "e79d1861-a0e0-4178-9eee-fb960d0b0b37",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RESINA SINTETICA CINZA CONCRETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 324.88
+    }
+  },
+  {
+    "id": "e7b899d6-e793-45d0-b4ad-01be2cb678af",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BATERIA RECARREGAVEL DE IONS DE LITIO 3.0AH 18V MAKITA BL1830B",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 372.07
+    }
+  },
+  {
+    "id": "e6f27911-c920-4397-ac46-0384ab49bca6",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA ACO BRONZE TM 620 50X40X150",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 611.88
+    }
+  },
+  {
+    "id": "2adbc0ac-f439-4698-85d6-9c44d710fabc",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO RET 30X20 CH 1.20 # 18",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 661.92
+    }
+  },
+  {
+    "id": "eb2d40f3-bc2e-47f3-a94d-065b8d88f142",
+    "codigo": "4.1.01.04.0002",
+    "descricao": "PECAS, ACESSORIOS E MATERIAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TUBO METALON QD CC 1020 16X16MM N 18",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1164.8
+    }
+  },
+  {
     "id": "ee4fd74d-4364-4bdd-95eb-36464fb54d71",
     "codigo": "4.1.01.04.0003",
     "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
@@ -40516,6 +49916,486 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "4f530c18-bd0d-4b33-8114-2ce31aab20d5",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "7899349181685-TORNEIRA LAV CROSS MESA ALTA BR 1/2 - TI",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70
+    }
+  },
+  {
+    "id": "a7e8f0dc-852b-4bf4-a692-ba9f80b17046",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "THINNER P LIMPEZA ANJO 2750 LT 5L",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70
+    }
+  },
+  {
+    "id": "89d2bda0-2172-450a-a89d-1059f7c52b26",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "REGISTRO ESFERA 25MM",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 91.2
+    }
+  },
+  {
+    "id": "f6250b12-afe2-4889-a15c-da10f931ebbf",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "VERNIZ CETOL DECK MOGNO SEMI BRILHO 3,6L",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 67.5
+    }
+  },
+  {
+    "id": "e39e1eed-97d7-42c7-8be0-7ae2f824352e",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TOMADA CJ TOMADA 2P+T 10A/250V ARIA BRANCO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 110.4
+    }
+  },
+  {
+    "id": "35303ea0-2135-4ca8-bde1-2ca387a3b342",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA PLASTICA PAREDE OCA 10X60",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.95
+    }
+  },
+  {
+    "id": "70172fe0-e8d1-40b6-a08b-849a1bdfa728",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA PLASTICA 6MM",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.8
+    }
+  },
+  {
+    "id": "132fbceb-0f49-46c1-b411-1908697dbbee",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 2 ESAB O.K 6013",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 115.6
+    }
+  },
+  {
+    "id": "e2f761e4-1b69-46be-bafd-f7459fedcdd6",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "THINNER P LIMPEZA ANJO 2750 LT 5L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 140
+    }
+  },
+  {
+    "id": "cf9470d4-5829-4bbe-9afb-76ba0245634c",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO INOX 308 L 2 O.K",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 511.05
+    }
+  },
+  {
+    "id": "1592c325-43c8-4d44-9bd5-80244894072f",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO INOX 308 L 3.25 O.K",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 865.5
+    }
+  },
+  {
+    "id": "ec3e55bb-a329-4387-836c-cd287f25320d",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 3.25 ESAB O.K 6013",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 129.5
+    }
+  },
+  {
+    "id": "f77df2f5-6ea5-4595-bf1a-f40f55309f78",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ELETRODO 2.5 ESAB O.K 6013",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 259.2
+    }
+  },
+  {
+    "id": "0f6d7ec3-d1f6-496f-9e44-2752d19cafe9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BUCHA DE REDUCAO LONGA 50X40MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.02
+    }
+  },
+  {
+    "id": "0735870d-bf73-4e0b-92c5-387977dfd813",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MANILHA CONCRETO 1 X 50",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 115.32
+    }
+  },
+  {
+    "id": "e4d582cb-b374-43cf-880c-4b66abb7e138",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DOBRADICA GONZO 3/4 SEM ABAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.23
+    }
+  },
+  {
+    "id": "976c475a-89b8-451d-ac21-b3f3487761d4",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPIGAO FIXO MACHO ROSCA 3/8 NPT PARA MANGUEIRA 1/2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.58
+    }
+  },
+  {
+    "id": "c0392385-ab15-40df-8da5-987107adc22e",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DOBRADICA GONZO 3/8 X 2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.63
+    }
+  },
+  {
+    "id": "0c2f6386-f3be-4db2-a7c9-3869d527bbf9",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPIGAO 3/4 X 3/8 ABASTECEDOR COD 5124",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 82.65
+    }
+  },
+  {
+    "id": "211edf76-9933-40bc-8a97-a73cf50776fb",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "THINNER 200 P 5L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.9
+    }
+  },
+  {
+    "id": "848c0ef9-100e-48e0-b75c-b1816f2646d0",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CATALISADOR PU 900ML BRASILUX",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 99
+    }
+  },
+  {
+    "id": "2c1bcd36-0e6a-4e3c-ba57-28bc9a1bc7ed",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ROLO PARA RESINA LA 23 CM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 199
+    }
+  },
+  {
+    "id": "2491658c-1cb3-413d-8a55-fdc293cc6277",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "TINTA SPRAY PRETO FOSCO 400ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.73
+    }
+  },
+  {
+    "id": "7d37e187-9396-41ba-bea5-149c05375a4d",
+    "codigo": "4.1.01.04.0003",
+    "descricao": "MATERIAIS PARA MANUTENCAO E REFORMA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALAVANCA PARA MECANICO BELZER 248011B",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 191.54
+    }
+  },
+  {
     "id": "e934686b-62c7-45c3-a9f7-f69b93176479",
     "codigo": "4.1.01.04.0004",
     "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
@@ -41613,6 +51493,226 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 175
+    }
+  },
+  {
+    "id": "7fa6068e-afb6-4604-a487-e7d6ac535b2d",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 141.64
+    }
+  },
+  {
+    "id": "692d309d-1f6e-418c-a1ab-7448e127c292",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO ABONO DE PONTO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.5
+    }
+  },
+  {
+    "id": "1ddc9092-2c69-4502-afa6-0b97d9c2253a",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO OS AGRICOLA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.02
+    }
+  },
+  {
+    "id": "c4c3dd65-89a9-470a-bfab-1a82a9f6d980",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL GRAMATURA 75G/M2 A4 (210X297MM)",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 71.97
+    }
+  },
+  {
+    "id": "64b80644-2752-47ef-bcea-46e5299e106d",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ARQUIVO MORTO PAPELAO 40X30X19CM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.92
+    }
+  },
+  {
+    "id": "2d7f5466-181f-4cc4-a599-4bc60d714657",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COLA BRANCA MAXI COLA 1KG",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.5
+    }
+  },
+  {
+    "id": "7670b36d-6616-4387-b84c-ab4b2925b461",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO ABONO DE PONTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11
+    }
+  },
+  {
+    "id": "922b3304-50c8-4d82-a30b-98c9d4ab2f68",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO APONTAMENTO MAO DE OBRA OFICINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36
+    }
+  },
+  {
+    "id": "3759b105-09ba-4994-8a13-ef9928c4fcf6",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO DE SOLICITACAO COMPRA 2 VIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70.4
+    }
+  },
+  {
+    "id": "8abc1982-965f-4b8f-9d01-b9f75b0e8205",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO DE SOLICITACAO COMPRAS 1 VIA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 76.8
+    }
+  },
+  {
+    "id": "68b18bd6-e160-4d35-867b-6048e9288015",
+    "codigo": "4.1.01.04.0004",
+    "descricao": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BLOCO APONTAMENTO MAO DE OBRA OFICINA 3 VIAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 152.4
     }
   },
   {
@@ -45976,6 +56076,2766 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "194b2ed9-c94e-49d4-bfff-57608449b1e0",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.2
+    }
+  },
+  {
+    "id": "98871b57-7094-4856-ad5d-6adbdd14bbe3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.200000000000003
+    }
+  },
+  {
+    "id": "b690fd4f-6ce1-49d7-ba4d-4bfb7a67583e",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27
+    }
+  },
+  {
+    "id": "2a0b26eb-20fd-430c-b6c0-70a296c24d92",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27
+    }
+  },
+  {
+    "id": "cb928a3f-d382-4351-8be9-ec1bbaaac136",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 80
+    }
+  },
+  {
+    "id": "7728c89a-fb90-4400-985e-48a0c9c97a08",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 89.60000000000001
+    }
+  },
+  {
+    "id": "b09d8bd8-7a74-4e72-972e-33db6307a4b9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 112
+    }
+  },
+  {
+    "id": "ef504b4a-8036-4cae-9d83-4041306e9791",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 112
+    }
+  },
+  {
+    "id": "7c558d5c-a8d4-4450-8199-e4e184f77462",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 134.39999999999998
+    }
+  },
+  {
+    "id": "e220197b-32fb-45a7-920c-f096f6ec65d4",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 139.8
+    }
+  },
+  {
+    "id": "5e494c76-e345-4964-a926-f70146d2aa6b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 163.6
+    }
+  },
+  {
+    "id": "d3ebf515-0bc1-42c8-965e-6c1071c36b61",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6000000000000005
+    }
+  },
+  {
+    "id": "c5b906dc-85db-4faf-9a2b-ff56c8a676ed",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15
+    }
+  },
+  {
+    "id": "c32b47b5-aa10-4019-a51f-aa470c03d6e4",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.799999999999997
+    }
+  },
+  {
+    "id": "c7093aaf-27ee-4782-9d2d-c891cd705887",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "e5a9dcca-a6d2-469b-a057-04d9ca41729e",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "7e6fecf4-c851-4ffc-bab3-4e67803213ee",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "646e52f1-b31e-4016-a93f-d6b6368c95a6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "d6bb90ea-978b-4b00-a1dd-e5f59b54f322",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.9
+    }
+  },
+  {
+    "id": "c86f857a-679b-4e67-8384-d4b8a36e7600",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.9
+    }
+  },
+  {
+    "id": "cbf6bd5a-d044-4ad2-b6fe-f92048904264",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "1f0ac5ec-f957-4436-a62e-07b9bd96c52a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "d077e702-41d3-4b50-8472-bb261a623e32",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.5
+    }
+  },
+  {
+    "id": "1133b184-0761-4758-9360-82062fa17eea",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.5
+    }
+  },
+  {
+    "id": "d23f3e18-5f29-4377-9f1c-63e405eaca96",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.6
+    }
+  },
+  {
+    "id": "8a261e55-e561-4c56-85db-e98a284e90d3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.6
+    }
+  },
+  {
+    "id": "d09fd699-2e0a-4560-8719-217c530f27dd",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.2
+    }
+  },
+  {
+    "id": "85135068-1d3b-4530-bffc-4f306571c7e1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.2
+    }
+  },
+  {
+    "id": "b9c3f624-84c6-4e5f-94e1-2eb992050184",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6
+    }
+  },
+  {
+    "id": "5c177282-869b-468a-a248-eceae963ccfb",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6
+    }
+  },
+  {
+    "id": "4d3d24ea-10c7-4f67-97d7-c4c1a82fe0c8",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "8490ea9e-ea84-4b52-a53b-97067d7457c9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "a468d1cf-eaee-4a58-9538-37b9188383ff",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "727367d6-dcef-426a-b937-b5926bae750c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "e7880a10-8b74-420a-bb84-d42e07e3d7b3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.5
+    }
+  },
+  {
+    "id": "d19bf8be-d4fe-4338-880a-c47f4ea9b3ec",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.5
+    }
+  },
+  {
+    "id": "ca5bdc26-da65-4e62-ac81-e0e5e739cf51",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.5
+    }
+  },
+  {
+    "id": "8e419d80-0d4e-48f7-9866-662fcc8e5862",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.5
+    }
+  },
+  {
+    "id": "80be7c51-2706-4bf8-a55f-f1f3018059d1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "b6042e26-5217-49ac-a2b6-28e7270bacf4",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.4
+    }
+  },
+  {
+    "id": "b2e41912-2eb3-4eb1-bc10-1510c0933d58",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "5a8e49f3-7d32-4b82-8768-ff8e60069272",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.4
+    }
+  },
+  {
+    "id": "7e3926a7-7497-47fe-a0bf-a912f052ddbf",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37.8
+    }
+  },
+  {
+    "id": "1cc9e21c-eaf9-435b-9991-340cd76dcaa3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37.800000000000004
+    }
+  },
+  {
+    "id": "10efe247-18dd-4e02-9590-4819daf16446",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.9
+    }
+  },
+  {
+    "id": "63514d3a-8bed-4111-bdc1-75112810a5f6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 43.3
+    }
+  },
+  {
+    "id": "970c8f06-1e97-4425-bce3-c2f5ad7b5b6b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39
+    }
+  },
+  {
+    "id": "8140620b-ef83-47f2-bea8-eee493d6f587",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 47.5
+    }
+  },
+  {
+    "id": "2f726194-d33e-47a1-b4fb-2774288e2c28",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.4
+    }
+  },
+  {
+    "id": "ca97f9bc-38bf-4b60-af25-9b2119f40eb5",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.4
+    }
+  },
+  {
+    "id": "4dc1afb7-809a-4b36-a10c-bdd8df4711bc",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15
+    }
+  },
+  {
+    "id": "8d6b4949-da95-47f5-870b-67be80080913",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15
+    }
+  },
+  {
+    "id": "daa13ef3-39ed-4ca5-bd00-56feadbcdede",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.8
+    }
+  },
+  {
+    "id": "30b77889-e3b8-4a82-942f-94b97a54b879",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.8
+    }
+  },
+  {
+    "id": "a23f7ca8-dbaf-497d-8e03-b0eaf4d7dff5",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "5a92044c-2538-4ea6-9d87-f6fa4ca25f79",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "92fd4580-5f24-4777-825e-0d7d31411c68",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "3c685f4c-eb28-4d68-89ca-7c70514cc8a6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21
+    }
+  },
+  {
+    "id": "35f86d8b-715d-46bb-b300-16fbec5bdedb",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 26.1
+    }
+  },
+  {
+    "id": "2364ecd3-89c9-49ba-bb9b-a8ebf79cb5a9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.2
+    }
+  },
+  {
+    "id": "d9a32a49-c5c1-48de-afcd-8bdc4fc02b90",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 26.1
+    }
+  },
+  {
+    "id": "16d4f8af-a959-4db9-b9a4-45bb1717d636",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.2
+    }
+  },
+  {
+    "id": "5e3e02bc-f03c-4a7a-bf9d-61cc81f09b65",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.2
+    }
+  },
+  {
+    "id": "fe4b13c0-084e-4566-ac5c-fd843fa742d2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.2
+    }
+  },
+  {
+    "id": "62b8feb2-b845-47d2-8705-9db92ded001f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHISPA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 142.45
+    }
+  },
+  {
+    "id": "1750c7c9-b83a-47f3-bbdf-4b939a09c69c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "XXX",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 213
+    }
+  },
+  {
+    "id": "32f5e35e-4943-459a-adee-f864d3958540",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA PARA LIMPEZA DUPLA FACE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 0.86
+    }
+  },
+  {
+    "id": "1c89805a-51be-472e-9df1-9dab0518651d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.3000000000000003
+    }
+  },
+  {
+    "id": "4a289ed6-c6eb-4652-ba3c-c067497b98e0",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DETERGENTE NEUTRO 500ML",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.62
+    }
+  },
+  {
+    "id": "a2646171-eb11-488e-8783-d95a0e88007c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.5
+    }
+  },
+  {
+    "id": "db9a91b7-f208-40c4-88a9-b45d37f8d85c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.399999999999999
+    }
+  },
+  {
+    "id": "7379f0d6-5ca0-4c8f-945b-28891b4e5433",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.5
+    }
+  },
+  {
+    "id": "9e4af531-08a4-4641-abcc-3c200b51a5ee",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.5
+    }
+  },
+  {
+    "id": "44b0bd1d-7636-4aeb-8854-a1c04ad3fd0b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "6173cc1f-1153-47dd-8b28-59016f823119",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.600000000000001
+    }
+  },
+  {
+    "id": "ef22a6d6-f7e6-4339-8903-a18d199ef4e1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.9
+    }
+  },
+  {
+    "id": "6fb4532f-f44a-41b7-bb4f-1f4e52ae6763",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 23.5
+    }
+  },
+  {
+    "id": "6583113b-c8c6-441f-89a5-3e3e349d2d54",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AGUA SANITARIA Q-BOA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.79
+    }
+  },
+  {
+    "id": "642a524b-c565-4cf1-93a6-7cbdc952f70e",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 5L",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.45
+    }
+  },
+  {
+    "id": "e4f8231b-2f2c-4364-b560-c5ac6b2089bc",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PANO BOM PARA LIMPEZA 40 X 67",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.64
+    }
+  },
+  {
+    "id": "89b42829-7c62-4aac-b3dc-45b43daaead6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DETERGENTE LIQUIDO",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.8
+    }
+  },
+  {
+    "id": "4cf0403b-b973-4211-b342-07523ba13b2b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RODO MADEIRA 60 CM",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.39
+    }
+  },
+  {
+    "id": "467fb875-05fa-433a-87c4-c402d83d145d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO SCOTT 300 MT 3 DOBRAS( JOFEL)",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.72
+    }
+  },
+  {
+    "id": "d4244d99-b6e9-440b-916b-09d352f76e2a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTOPA MALHA COSTURADA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45.75
+    }
+  },
+  {
+    "id": "f1603458-5f6c-4c7c-8f34-99a3f55db52b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ADESIVO COLA INSTANTÂNEA ULTRA BOND 2G",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 53.2
+    }
+  },
+  {
+    "id": "2b5c43ef-6faf-444d-afda-6c5b0309e631",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL TOALHA 2D INTERFOLHADO 22X21CM 1000FL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 54
+    }
+  },
+  {
+    "id": "0156e16f-bf3c-4ce0-8e60-cd8a2b49100e",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SACO PLASTICO LIXO 200L 100 X 1",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 78.94
+    }
+  },
+  {
+    "id": "d7a9d509-681d-4d20-a8b4-5a1a48f4c08b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 117
+    }
+  },
+  {
+    "id": "0de41f4c-ced7-445a-95c3-f348d1fd731a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CANECA PLASTICA PARA ELEVADOR 24,1X14X10 3 FUROS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2922
+    }
+  },
+  {
+    "id": "fe373b2d-8424-4317-8983-5019720f0b14",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 5L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -11.440000000000001
+    }
+  },
+  {
+    "id": "6416a66f-57b0-44b0-bb0f-56ee5b63b8ca",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "8f9bdc60-2dd3-4a5b-9a77-b216b1e6378b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "e0ea662c-35ca-455a-8437-fca4a84ad5a1",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "d1c965b1-8468-4454-97f3-363dd6840eb8",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "19f811e8-0908-4164-a2c6-29ac1946c28d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "f2650731-ac02-419a-9714-bc677e88f4ab",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "ae92e1ec-1e4d-4941-b5b5-bde81c147e2f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.6
+    }
+  },
+  {
+    "id": "3f6e4d23-6b96-47f6-8665-09ab820c71dc",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.6
+    }
+  },
+  {
+    "id": "5928d07f-bbb9-42e4-87df-f73f72a6f521",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.2
+    }
+  },
+  {
+    "id": "ecdffb1e-5eda-455e-bb57-6d4b6992a00d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "9c7414a0-0c38-42c0-ab9b-f3f12d91db7d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "4c9fd6c6-6df2-4f22-a9b6-6e3917bd838d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "071c0706-c443-4c27-824a-627f385bbd8b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7
+    }
+  },
+  {
+    "id": "4c3e9c52-d526-446c-a423-3a0984329f4c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14
+    }
+  },
+  {
+    "id": "345fe710-d56a-4177-9ac4-2c3debd21248",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14
+    }
+  },
+  {
+    "id": "fbeedf89-c0da-4bef-8a43-751381bc7df6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "FITA PARA EMPACOTAMENTO TRANSPARENTE SCOTCH 3M",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.16
+    }
+  },
+  {
+    "id": "336ce1dc-f7f7-48cf-8909-e014710167c3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "cc92f4f9-9065-40e2-ba0b-a9668ca6d847",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.4
+    }
+  },
+  {
+    "id": "e29e4fb5-4ac3-4525-a982-a260d8491f41",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "b12d017e-95a8-49c2-85df-b605a33d8152",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.4
+    }
+  },
+  {
+    "id": "332a04ec-acac-49e9-91fd-91125ecedcd6",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.8
+    }
+  },
+  {
+    "id": "8e29b9b5-6fab-4d2c-98ca-59ba1e2a3c86",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 17.4
+    }
+  },
+  {
+    "id": "56cea575-49ab-4abe-9030-c93af0700af3",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.8
+    }
+  },
+  {
+    "id": "5732752c-1039-4fa4-8b2b-258fc591dfc7",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.4
+    }
+  },
+  {
+    "id": "628fdf68-266f-43b8-8552-bda45aa8d1c9",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.4
+    }
+  },
+  {
+    "id": "76c8fc55-7672-4799-a3c3-958597d5f479",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15.4
+    }
+  },
+  {
+    "id": "10300ae6-37b1-459d-8648-97669e6971b2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "RODO MADEIRA DUPLO 30CM C/CABO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.2
+    }
+  },
+  {
+    "id": "c1907fa4-348e-4cd9-885e-5fa7db90cd40",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DETERGENTE LIQUIDO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.5
+    }
+  },
+  {
+    "id": "f31faa08-535e-4699-bab0-50977977d09d",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35
+    }
+  },
+  {
+    "id": "919199a9-a5f1-4973-a83c-684965b58183",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTOPA MALHA COSTURADA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 43.41
+    }
+  },
+  {
+    "id": "eca493a5-c48b-485e-9951-2fdd92ca9ead",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.2
+    }
+  },
+  {
+    "id": "0c2b4167-7637-4774-917a-09dd3cbbc60a",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE LIQUIDO MAGIC",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.95
+    }
+  },
+  {
+    "id": "de6d1a84-4e1d-42b2-ab87-1a4ebdc6c651",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COADOR 23 CM 100% ALGODAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.38
+    }
+  },
+  {
+    "id": "a0d9ef50-fecd-4391-bd5b-dc2fa835812c",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 49
+    }
+  },
+  {
+    "id": "649566eb-7a0a-4cba-812c-d43d09c1adcf",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 49
+    }
+  },
+  {
+    "id": "97a355c4-70b8-4421-8175-a383df0fcb28",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PASTA DESENGRAXANTE TO BLACK 2KG",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 56.44
+    }
+  },
+  {
+    "id": "c8637409-d925-4a51-9d86-21f7277b2a55",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.9
+    }
+  },
+  {
+    "id": "0e0b3454-7f79-4ad1-9b39-be4f414f4c0b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58.8
+    }
+  },
+  {
+    "id": "f2648447-6a2c-4096-9269-a329f728f616",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 72.8
+    }
+  },
+  {
+    "id": "4543afa5-4974-48d7-9eb5-b4ba4a0a0b82",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "COPO DESCARTAVEL 200ML TRANSPARENTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 222.75
+    }
+  },
+  {
+    "id": "2096bc21-c074-4561-a8d4-7978e2085e28",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.1
+    }
+  },
+  {
+    "id": "57d1c68c-f9c5-4b48-8024-5f18a3f8b77f",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.5
+    }
+  },
+  {
+    "id": "3bada408-577e-4c2c-bf80-2a83a47db475",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.8
+    }
+  },
+  {
+    "id": "da3de4f3-af05-4c8b-881b-eecc5a1d365b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.2
+    }
+  },
+  {
+    "id": "83088185-a482-4b74-b555-0520b32ac953",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.5
+    }
+  },
+  {
+    "id": "a39f2e55-a62d-4617-8f46-c172fffd9d50",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.5
+    }
+  },
+  {
+    "id": "f17d9b0d-f9f0-4117-a0e8-5b28257466f0",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.5
+    }
+  },
+  {
+    "id": "e77f0a7b-e81b-4a2e-b7d2-ba5e0dcaee84",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.5
+    }
+  },
+  {
     "id": "e4343f09-fe37-4c6c-8628-b7223e03c4b3",
     "codigo": "4.1.01.04.0006",
     "descricao": "FERRAMENTAS DE TRABALHO",
@@ -47116,6 +59976,646 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "43c614cc-cd92-4ad0-8b84-119eba080247",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CLIPS CABO ACO GALVANIZADO 3/8",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 52.5
+    }
+  },
+  {
+    "id": "0dbe3827-0aa7-42ad-8874-55aa5deeb986",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTICADOR FORJADO GANCHO X OLHAL M16",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 208.9
+    }
+  },
+  {
+    "id": "9c5bbd5c-83db-4895-bf77-e01377f99eda",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LONA PLASTICA 8 X 50 160 MICRAS POLICILO BRANCA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 620
+    }
+  },
+  {
+    "id": "f0bce603-3f6b-46cc-8022-15cc7650b22f",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALICATE PARA ANEIS EXTERNOS ST72001ST",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 43.24
+    }
+  },
+  {
+    "id": "c8921f8c-2b27-4e59-beda-5f1c449980f9",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CORDA DE SEDA SEGURA 8MM",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 50.7
+    }
+  },
+  {
+    "id": "d5fe6e02-ebf7-4a5c-a9fb-ecb66fe95be6",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESTICADOR GX0 DIN 1480 REFORCADO M12X125",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 110.2
+    }
+  },
+  {
+    "id": "b2c9eb22-5097-44fb-898a-3791545aa125",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CABO ACO GALV 6X25 AF 5/16 CLASSE IPS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 366.1
+    }
+  },
+  {
+    "id": "1d010694-6bc4-404d-bf41-381f88df018b",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESCOVA MANUAL DE ACO COM CABO DE PLASTICO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.08
+    }
+  },
+  {
+    "id": "4859c861-25d4-44b5-975c-e1952e4c3826",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPATULA REDONDA 18\" 450MM 3301506",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 52.5
+    }
+  },
+  {
+    "id": "df0bbeed-06e6-42bc-9f4d-dd6bf2a24838",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBINADA 28MM TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 53.6
+    }
+  },
+  {
+    "id": "26d5bd07-6b60-4de1-a7c0-bff24f2ed20f",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBINADA 30MM TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 56.4
+    }
+  },
+  {
+    "id": "9bbbef46-957d-4f58-9740-d12053da06fc",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBINADA 32MM TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58
+    }
+  },
+  {
+    "id": "e2efe1bd-da07-4790-a685-98bc08b6b2c9",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBINADA 22MM TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.7
+    }
+  },
+  {
+    "id": "5d21faf5-9b79-4be8-a4c4-d992b618fe64",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE COMBINADA 24MM TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.6
+    }
+  },
+  {
+    "id": "48416fb8-e4fb-493e-84c3-74a66613d229",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JG DE SACA PINOS PARALELOS 2 A 8MM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 229.6
+    }
+  },
+  {
+    "id": "0e52eb68-98ba-49cf-8214-b5122de5230c",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE CANHAO 9X75MM ST62424ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.2
+    }
+  },
+  {
+    "id": "6113d11c-79ca-495c-baba-84c812bef1d8",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE CANHAO 6X75MM ST62421ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.97
+    }
+  },
+  {
+    "id": "de2579d0-cd07-4740-a2b2-eb4756e61a3c",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE CANHAO 7X75MM ST62422ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.8
+    }
+  },
+  {
+    "id": "74c2c6cc-2410-4c66-817d-7cec3614dd41",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALICATE PARA ANEIS EXTERNOS BICO CURVADO ST72002ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.48
+    }
+  },
+  {
+    "id": "cb0e571b-0792-4ad2-ad6f-b4c5e1b9c300",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "JOGO DE CHAVES HEXAGONAIS LONGA ST091008SJ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 46
+    }
+  },
+  {
+    "id": "888b1055-4af4-42da-81a1-fe42bca65cbf",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "MARRETA OITAVADA 2 KG COM CABO DE FIBRA COLIINS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 67
+    }
+  },
+  {
+    "id": "853eb1f6-9f07-49dd-8b01-cd48de07c7b7",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE CANHAO 8X75MM ST62423ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.19
+    }
+  },
+  {
+    "id": "011403a9-f032-4fa4-9f90-1df7dcc0092d",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE CANHAO 10X75MM ST62425ST",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.9
+    }
+  },
+  {
+    "id": "870fcaa6-bf07-4521-8f43-a5eae78001c6",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALICATE UNIVERSAL 610422BR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.47
+    }
+  },
+  {
+    "id": "2c1f16fa-5573-45ef-a277-8c296bde0e3f",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALICATE DE PRESSAO 10 POL MAYLE CRESCENT 119042M",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.57
+    }
+  },
+  {
+    "id": "09a30ac6-b6df-4fa4-b063-6d5fec9c275e",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PINCEL TRINCHA 395 1 1/2\" ATLAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2
+    }
+  },
+  {
+    "id": "6f4329cd-9fcb-45b2-bc95-36f591aa610c",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "APLICADOR DE SILICONE TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 159.8
+    }
+  },
+  {
+    "id": "12d04d91-3616-4613-ac42-c93c11265a8c",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "BOMBA ABASTECIMENTO ELETRICA 12 VOLTS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 450
+    }
+  },
+  {
+    "id": "5d3bc91a-9398-4027-9119-ffa8b5dc818d",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CAPACIMETRO MINIPA MC 154A",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 243
+    }
+  },
+  {
+    "id": "c25584a4-6ffb-4538-9f96-c66370d53b90",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ALICATE PARA ANEIS EXTERNO 9 BICO RETO 4 TRAMONTINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58.75
+    }
+  },
+  {
+    "id": "8f4dc43f-31f4-4b24-8ea4-ff316520f5ba",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CHAVE BIELA 08MM GEDORE RED",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.53
+    }
+  },
+  {
+    "id": "f0c2c86a-2411-449b-ab28-db8bd68759bd",
+    "codigo": "4.1.01.04.0006",
+    "descricao": "FERRAMENTAS DE TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "LIMA CHATA MURCA 8 COM CABO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27.88
+    }
+  },
+  {
     "id": "754db127-237d-496a-ba38-e11e80e26b6c",
     "codigo": "4.1.01.04.0007",
     "descricao": "PNEUS E CAMARAS",
@@ -47729,6 +61229,166 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "e052f9a6-572d-466f-a42f-21b9e62e4b08",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1689.7399999999998
+    }
+  },
+  {
+    "id": "d578f10b-600d-4e0a-8ef3-1c33ce15c5b7",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8454.349999999997
+    }
+  },
+  {
+    "id": "d3e108c7-c536-4720-b71d-04fa0751a4f9",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2816.21
+    }
+  },
+  {
+    "id": "e5480f00-c995-496e-a8df-b618e8c8cd8d",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 129.14
+    }
+  },
+  {
+    "id": "8dffcdb0-37bc-4d0b-92fc-bdef3944dbf1",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.29
+    }
+  },
+  {
+    "id": "01c3b220-c622-49e6-9847-65d206c4fd78",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 171.01000000000002
+    }
+  },
+  {
+    "id": "2dea9d3a-22b8-4e54-8043-6f01e19502ff",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 34.28
+    }
+  },
+  {
+    "id": "0b147028-2a06-4186-96dc-189bb2fd10fa",
+    "codigo": "4.1.01.05.0001",
+    "descricao": "DEPRECIACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.05",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES",
+    "nomeProduto": "DEPRECIACAO IMOBILIZADO CF 50.01.000044",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 109.51
+    }
+  },
+  {
     "id": "f63a7a8c-9f52-4da9-ad9c-75649b5c1d02",
     "codigo": "4.1.01.06",
     "descricao": "4.1.01.06",
@@ -47868,6 +61528,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 315
+    }
+  },
+  {
+    "id": "d069bc58-1422-48ff-972c-5ab9b0b0b3c4",
+    "codigo": "4.1.01.06.0002",
+    "descricao": "REFEICOES E ESTADIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.06",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.06-DESPESAS DE VIAGENS",
+    "nomeProduto": "DESPESAS COM HOSPEDAGEM",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 200
     }
   },
   {
@@ -48184,6 +61864,66 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "e4d0c75f-c4c4-4765-93ce-149655f82e21",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3711.5
+    }
+  },
+  {
+    "id": "5b9ad974-d9b8-4cf1-a834-2dbfc83e7d51",
+    "codigo": "4.1.01.07.0001",
+    "descricao": "ENERGIA ELETRICA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS COM ENERGIA ELETRICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 358.16
+    }
+  },
+  {
+    "id": "8cde3684-c44b-4db6-8c63-90c707b5fe68",
+    "codigo": "4.1.01.07.0002",
+    "descricao": "TELEFONE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "DESPESAS TELEFONICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 85.9
+    }
+  },
+  {
     "id": "003574b0-2d6b-41fb-b195-d255452cf332",
     "codigo": "4.1.01.07.0003",
     "descricao": "CORREIOS",
@@ -48221,6 +61961,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.25
+    }
+  },
+  {
+    "id": "75618389-0049-4f41-a81f-0842af146881",
+    "codigo": "4.1.01.07.0003",
+    "descricao": "CORREIOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.07",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.07-UTILIDADES E SERVICOS",
+    "nomeProduto": "CORREIOS 039431",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 190.53
     }
   },
   {
@@ -48814,6 +62574,46 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 259.47
+    }
+  },
+  {
+    "id": "5be75ce1-62e7-4164-bfe2-1a1368439d32",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "OPTIGEN",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -8169.12
+    }
+  },
+  {
+    "id": "15e4fdc7-f759-4bb3-a3a9-1324fcf1a4a2",
+    "codigo": "4.1.01.11.0001",
+    "descricao": "ALIMENTACAO ANIMAL",
+    "tipo": "C",
+    "codigoPai": "4.1.01.11",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.11-CUSTOS RURAIS",
+    "nomeProduto": "NUCLEO NUTRON PERFORMA PASTO BOM TOPMOST",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -5541.24
     }
   },
   {
@@ -57692,6 +71492,506 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "853e7f09-793d-4e9e-a9ca-68d4690c7771",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE COM GRAVACAO SILK",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 497.72
+    }
+  },
+  {
+    "id": "80c4a95b-4927-49ee-82ff-cb31397d3a3f",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.5
+    }
+  },
+  {
+    "id": "4a078a74-47ff-4eb1-b114-40a8ce6bf497",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.94
+    }
+  },
+  {
+    "id": "98c92949-e363-4ac8-94d7-18d7631fb497",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.58
+    }
+  },
+  {
+    "id": "5f57d983-db93-4be0-80fb-148754e0e0b5",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BONE TIPO ARABE HELANCA COR AZUL ROYAL",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 25.56
+    }
+  },
+  {
+    "id": "b7ef88d7-77b1-4f76-9ec0-1e2a0d7f9bb0",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA PARA PROTECAO CONTRA AGENTES TERMICOS E MECANICOS BT TAM 9 (G)",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.36
+    }
+  },
+  {
+    "id": "92c5c6e1-2261-48e2-b97c-5adcc060ed51",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR JAGUAR",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.36
+    }
+  },
+  {
+    "id": "5a139ef2-4f97-41f2-a0e1-0cd0b27886fd",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MARMITA TERMICA SEM DIVISORIA 1,5L",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.58
+    }
+  },
+  {
+    "id": "5377881c-4e5e-4bf3-9211-15dd8de164ac",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.06
+    }
+  },
+  {
+    "id": "75e2ec57-ffc2-4967-8d26-423bade3fe13",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA BICO DE ACO Nº 44",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 306
+    }
+  },
+  {
+    "id": "ef028489-7442-4d59-8d4b-6aa462768b6e",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.98
+    }
+  },
+  {
+    "id": "5749efcd-3fa3-417b-a9cf-2f25ae5aec8a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.79
+    }
+  },
+  {
+    "id": "7627afd4-80a7-47cb-b6b2-33d740324878",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "PROTETOR AUDITIVO SILICONADO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.06
+    }
+  },
+  {
+    "id": "76732dac-ca07-455d-96c1-3497045306aa",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE INCOLOR AGUIA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.18
+    }
+  },
+  {
+    "id": "c9dedf22-5286-46f3-9724-9bec55ff5148",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA SEGURANCA VAQUETA 8/9",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 17.96
+    }
+  },
+  {
+    "id": "fb8f30cd-5577-45dd-8951-e54814bc35cb",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "RESPIRADOR PURIFICADOR DE AR TIPO PECA SEMIFACIAL FILTRANTE PARA PARTICULAS PFF2",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 150
+    }
+  },
+  {
+    "id": "5d34bb5d-a982-42f4-884a-3b03aecd6f12",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA DE ALGODAO COM NITRILICO G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.89
+    }
+  },
+  {
+    "id": "c940bfdf-ccaa-4be8-96b6-9ddd45cd5c45",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CINTURAO SEG PARAQUEDISTA ABDOMINAL CARBOGRAFITE CG 792 EP",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 124.24
+    }
+  },
+  {
+    "id": "27937b85-d9c1-499a-ba00-0dcf0208be84",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TALABARTE Y FITA TUBULAR MULT MG 1892",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 126.96
+    }
+  },
+  {
+    "id": "79a88ece-95a6-49fd-a9ed-f81d03437bbf",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 40",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 81.58
+    }
+  },
+  {
+    "id": "8352867c-8146-401f-becb-0c92374adb6b",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOTINA SEGURANCA COURO PT C BIQUEIRA NR 39",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 90.95
+    }
+  },
+  {
+    "id": "65cdea1a-e28f-4d7a-bc7a-d89b112a143e",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GARRAFAO TERMICO 5L  6915",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37.93
+    }
+  },
+  {
+    "id": "2085e60f-bf48-436c-b98c-b122f8de689a",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OCULOS SEGURANCA LENTE CINZA AGUIA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.98
+    }
+  },
+  {
+    "id": "bdb8376e-05d2-44d9-a9b7-65d029ce14bd",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROTECAO CONTRA AGENTES MECANICOS TAM 9",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.79
+    }
+  },
+  {
+    "id": "fe95fd69-0161-4eb4-a658-5cb0eb7ba1db",
+    "codigo": "4.1.01.21.0002",
+    "descricao": "EQUIPAMENTOS DE SEGURANCA NO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LUVA PROT NITRILIA CONTRA AGS MEC QUIM TAM 9",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.86
+    }
+  },
+  {
     "id": "fe558237-06a3-4c79-be27-297e1ad9db3e",
     "codigo": "4.1.01.21.0003",
     "descricao": "CONTRIBUICOES E DOACOES",
@@ -57729,6 +72029,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2167.5
+    }
+  },
+  {
+    "id": "42d33735-3bbb-4801-bdbd-78d8a42b8a39",
+    "codigo": "4.1.01.21.0003",
+    "descricao": "CONTRIBUICOES E DOACOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CONTRIBUICOES E DOACOES 099430",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 484.15
     }
   },
   {
@@ -57788,6 +72108,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {}
+  },
+  {
+    "id": "ef4218af-ba42-4545-9cb0-4e1a7df549d5",
+    "codigo": "4.1.01.21.0004",
+    "descricao": "CURSOS DE TREINAMENTO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CURSOS DE TREINAMENTO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 618.75
+    }
   },
   {
     "id": "36b1bcbd-7f9c-4e80-9da7-06302e66143c",
@@ -64650,6 +78990,6206 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "849da8ec-1fa5-4c46-a4ed-870595fa69d4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 35.6
+    }
+  },
+  {
+    "id": "e45df116-26bc-41bd-a338-22582f96e246",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 46.6
+    }
+  },
+  {
+    "id": "7124831f-a32a-4c8d-a3f1-f2a3ce95ed8e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 51.2
+    }
+  },
+  {
+    "id": "b61c1700-0464-4712-bb4e-cfff1886fc5f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 51.2
+    }
+  },
+  {
+    "id": "b43c89d2-c2d2-4464-8466-4f849e65314a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 65.8
+    }
+  },
+  {
+    "id": "638b3935-b969-4324-a074-e2eb220a83d9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70.4
+    }
+  },
+  {
+    "id": "a5df0be6-ba25-4642-9af7-e30bfd6ce953",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 73.6
+    }
+  },
+  {
+    "id": "849d092b-eedd-4df0-b232-e1ad02065e25",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27
+    }
+  },
+  {
+    "id": "c8604586-7eb3-4711-a9b2-9c0b1779127a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27.599999999999998
+    }
+  },
+  {
+    "id": "82aae707-1adf-4c71-a785-8ff1650782af",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30
+    }
+  },
+  {
+    "id": "3706fdad-a86e-46ef-bc1f-40ebb350d0a9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.599999999999994
+    }
+  },
+  {
+    "id": "3ec4d265-b922-401a-9287-95e5d0601bbb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60
+    }
+  },
+  {
+    "id": "f8e02a2d-d3e6-4903-a36f-a2ad30702b3f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 68.4
+    }
+  },
+  {
+    "id": "5becce39-fb67-47e2-b48c-fe3371967004",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 176.39999999999998
+    }
+  },
+  {
+    "id": "a13dbbd3-a54a-415b-868e-6d2e05fc4ac2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 177.60000000000002
+    }
+  },
+  {
+    "id": "59a20570-c2b2-4ac7-b8ad-40bd014d7b35",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 201.60000000000002
+    }
+  },
+  {
+    "id": "ceda2a49-be5f-4193-8558-c342fa2b754d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 342
+    }
+  },
+  {
+    "id": "0493b232-1329-4fca-b9b3-0e7a7272d1e1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.9
+    }
+  },
+  {
+    "id": "8cdd9ea6-dccb-4103-b73a-5631f97a3ead",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24
+    }
+  },
+  {
+    "id": "c28da16f-e2f1-4dba-ab47-49e9df26922e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.200000000000003
+    }
+  },
+  {
+    "id": "e877fa64-ed5d-448e-8b91-409e919cdf6c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.1
+    }
+  },
+  {
+    "id": "155039d4-7564-4300-b996-da8a274caafb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.199999999999999
+    }
+  },
+  {
+    "id": "4aab3fed-cc28-4d97-9242-1c2d5ac2246e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9
+    }
+  },
+  {
+    "id": "3de347a2-a6d7-4a12-b756-519036eaa424",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.600000000000001
+    }
+  },
+  {
+    "id": "9857a167-f6bd-424b-81f7-926f9f87f3b1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.600000000000001
+    }
+  },
+  {
+    "id": "c2ce0358-36d7-4039-b341-80e353f4f3e5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.600000000000001
+    }
+  },
+  {
+    "id": "9b4100b7-356e-4266-b8a5-785fc45619eb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.200000000000001
+    }
+  },
+  {
+    "id": "2b421d60-bf28-4dc5-bc3e-88eff413394b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.799999999999999
+    }
+  },
+  {
+    "id": "76b470ab-c2cd-40be-b0a9-f1055fcfefff",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 134.2
+    }
+  },
+  {
+    "id": "824bdb85-f60f-4bb2-b480-735376804075",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 147.2
+    }
+  },
+  {
+    "id": "2ea2f4b7-51f1-4ada-a68b-c2b05f5daeda",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 160
+    }
+  },
+  {
+    "id": "86d000d7-feca-4264-a968-cda72acf09a4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 211.2
+    }
+  },
+  {
+    "id": "bba75227-422b-4a99-b358-925508675f38",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 300.4
+    }
+  },
+  {
+    "id": "712f3fc6-8bb3-481e-b2d7-a05d0d05197d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 392.79999999999995
+    }
+  },
+  {
+    "id": "937d3c33-c018-4478-bf48-34722c0f0695",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 968.8000000000001
+    }
+  },
+  {
+    "id": "c8cf64a7-5659-4028-994f-6e3db31b7b16",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 980.8
+    }
+  },
+  {
+    "id": "c2fa79b9-1649-4927-8538-2c2c5583b485",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 907.1999999999999
+    }
+  },
+  {
+    "id": "ae166022-8b28-4c74-b019-ba70cbb2254f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1782
+    }
+  },
+  {
+    "id": "3126131b-f1b6-4c3f-be71-3677f3f46030",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 116.80000000000001
+    }
+  },
+  {
+    "id": "4b3bd1b4-6df4-44a4-b70a-8caa998d1d63",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 128
+    }
+  },
+  {
+    "id": "5ec57343-7cb1-40e6-a44d-5682a248e24b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 102.4
+    }
+  },
+  {
+    "id": "6a509a85-11d2-4754-b02e-4c6e63378f83",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 107.19999999999999
+    }
+  },
+  {
+    "id": "57680b86-4f00-4670-bc17-b42c34c8f507",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.3
+    }
+  },
+  {
+    "id": "8362910d-6ab1-4e58-a36e-45638ef5742a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.2
+    }
+  },
+  {
+    "id": "1490241b-d0e3-4fd7-ac15-e90eb8bd960b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "09b6e3ee-d173-4ab1-b945-1f8731f51fd9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "b745015f-b795-4dee-9d26-d73da997cd53",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.6
+    }
+  },
+  {
+    "id": "b5d5c35d-be47-4744-a3d0-3d8f4c98e083",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.8
+    }
+  },
+  {
+    "id": "ec20fc93-6fba-4431-84b6-da0bb8be08d0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.8
+    }
+  },
+  {
+    "id": "47bd21e7-fde7-4949-832d-61f9a9ed48a9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 61.6
+    }
+  },
+  {
+    "id": "5baac4fd-00cf-4750-aab6-10d6808f37b7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.2
+    }
+  },
+  {
+    "id": "4197cb4d-7d92-4d47-819f-47e66c095054",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 111
+    }
+  },
+  {
+    "id": "170e4905-6e7e-4963-b3c8-8d959ad08dfd",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.3
+    }
+  },
+  {
+    "id": "63edae33-3856-4a4c-9f06-b1b704c6f5b4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8
+    }
+  },
+  {
+    "id": "e46621d9-8a94-4778-9a90-4dc7f52043b2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "7ca6cc54-53d6-4d96-8f15-5fd92f1e41c6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.7
+    }
+  },
+  {
+    "id": "d9dbd650-ff66-48ca-ae26-f35755e20258",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "53816a99-cfc3-48f2-88c2-7ec6a81023ea",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.9
+    }
+  },
+  {
+    "id": "72abd4d0-0495-4fc1-b4da-fa377b0df4fc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "9975877e-f060-4a80-be9f-47e59b287ddb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "a7b4c433-6a16-4ee1-93e5-17253129df34",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.1
+    }
+  },
+  {
+    "id": "22fe7e5e-f82a-43cd-97ab-86cca0517db3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "a11c343b-b04b-4cf5-8711-5990e0f4fb23",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.6
+    }
+  },
+  {
+    "id": "0fb569e6-c03c-4b63-af05-f6469c605400",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.3
+    }
+  },
+  {
+    "id": "241f8f00-0708-4155-b18a-3188328ef53d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.2
+    }
+  },
+  {
+    "id": "2bd9857e-c758-455f-9c89-42f1525d287b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "154ed697-3e98-4729-8abb-92b448f757e9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "a094146d-2f40-4fdc-84cb-bcc4718fe271",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.6
+    }
+  },
+  {
+    "id": "269bde6c-043b-425d-b11d-de43bf72dd5e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.8
+    }
+  },
+  {
+    "id": "9436c997-213e-41d3-9091-ca40bc349969",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.8
+    }
+  },
+  {
+    "id": "eb7fde9a-16a9-4aa3-a535-0d3fa33162e3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 61.6
+    }
+  },
+  {
+    "id": "9e2a6f85-393c-4a5b-92b6-da5da0033490",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.2
+    }
+  },
+  {
+    "id": "808d7a32-88f5-4b5d-96b2-18afebccce34",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 111
+    }
+  },
+  {
+    "id": "fca3dc5d-fccd-49da-b7d0-4382ddb7ee64",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.3
+    }
+  },
+  {
+    "id": "4fc3ad6d-b678-49e8-b302-c42a5120439c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8
+    }
+  },
+  {
+    "id": "e7c8b8d0-0ca2-48f3-9220-feb7b7f7f489",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "5e8d8c7d-fca9-467f-94ef-93f68f4570a1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.7
+    }
+  },
+  {
+    "id": "a648d1aa-db70-4004-a61b-89d10162489b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "71ab3c99-f719-42b9-9b6a-12cbe79d091e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.9
+    }
+  },
+  {
+    "id": "c5587574-e911-45ce-8db2-c7939add5a81",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "a060e654-9981-426d-a841-1fc74abe572b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "0551f744-4021-4c77-95be-264d7116d951",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.1
+    }
+  },
+  {
+    "id": "d382bf58-00da-41b5-a903-85ad300fd7e1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "65a671e8-7856-47b5-8ab3-87415a36ed20",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.6
+    }
+  },
+  {
+    "id": "1392ecc1-7b62-4ea1-a647-d1baec13f31f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.9
+    }
+  },
+  {
+    "id": "f00dcac1-b0ab-4da0-b533-db21932e1e54",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27.6
+    }
+  },
+  {
+    "id": "066c6d76-2251-4269-92ae-46b6a453da7a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30
+    }
+  },
+  {
+    "id": "a9d5c26d-2522-4e67-9404-7ca83919d31e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.6
+    }
+  },
+  {
+    "id": "e19a4302-f8d0-4b98-8692-982417c6d133",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.8
+    }
+  },
+  {
+    "id": "21453ba6-9b2b-4654-a0ba-579e286bc146",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 74.4
+    }
+  },
+  {
+    "id": "482445c4-cd31-4e73-a8e0-1329a08cf393",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 182.4
+    }
+  },
+  {
+    "id": "b475cffb-c967-4c72-93ca-c6f6b12c1054",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 184.8
+    }
+  },
+  {
+    "id": "eb58ac06-80c1-423b-aa0d-c788cdb50df6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 165.6
+    }
+  },
+  {
+    "id": "97c34bd5-ea99-4e4f-b07e-06b8743508b8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 333
+    }
+  },
+  {
+    "id": "cb50c22f-d5d1-4032-af8e-73a95e090e5a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.9
+    }
+  },
+  {
+    "id": "6c4343f6-6f80-43a8-be71-00bb72f69178",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24
+    }
+  },
+  {
+    "id": "f0e8ac90-a63c-4231-8b34-db643b88f434",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.2
+    }
+  },
+  {
+    "id": "286be2ca-50c8-4598-ab1e-26f2f8c0b980",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.1
+    }
+  },
+  {
+    "id": "9b6c2b6d-7598-4625-83dd-a945527de8b9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6
+    }
+  },
+  {
+    "id": "66905520-91f0-4a53-9ae7-ff55018640f2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "f011169a-6eea-4a2c-a992-6ebc04c07034",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "b7654988-a400-468d-adb3-dadc9a85ab88",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "5c76d33d-aef8-4671-aff7-99f446f52ad4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.3
+    }
+  },
+  {
+    "id": "82d26da9-c66e-4087-a1e4-7946405329a1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "9517778a-0cb3-4e5f-bbeb-0f962a3828aa",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.8
+    }
+  },
+  {
+    "id": "7a81826e-55c6-468f-b82d-e50ca86c77a0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.9
+    }
+  },
+  {
+    "id": "2aed8575-6414-428f-a757-65c9c834b12a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27.6
+    }
+  },
+  {
+    "id": "b143a2f2-a3b8-4cd1-bb15-e399b50dff73",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30
+    }
+  },
+  {
+    "id": "11167cca-63d0-4868-904f-32ff47fe4685",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.6
+    }
+  },
+  {
+    "id": "b2f32f58-c6dd-41c6-93cc-e170ecae130c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.8
+    }
+  },
+  {
+    "id": "cc323b5e-b48b-4041-a5de-f14c36dfb217",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 74.4
+    }
+  },
+  {
+    "id": "6b9167eb-d369-40d1-8f73-0bcf65a29664",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 182.4
+    }
+  },
+  {
+    "id": "cf559695-1534-47d5-b43f-fa2a05917767",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 184.8
+    }
+  },
+  {
+    "id": "f9a10ca5-b979-4d1c-b020-72bb798783c9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 165.6
+    }
+  },
+  {
+    "id": "fd0fb6e6-2e50-41c5-bdd7-2d85494bda0e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 333
+    }
+  },
+  {
+    "id": "9975c94f-b64d-40a6-8374-890ce8e0856a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.9
+    }
+  },
+  {
+    "id": "e07cc9be-4b38-4068-a8dd-4cc95d761cb4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24
+    }
+  },
+  {
+    "id": "870c286e-1816-4b3f-8871-ad870f3dd4b3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.2
+    }
+  },
+  {
+    "id": "1bbbf0d3-2231-4c9e-ab7c-bd836548fc86",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.1
+    }
+  },
+  {
+    "id": "c4792d64-ea59-4399-a5c6-5a2a988dff5b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6
+    }
+  },
+  {
+    "id": "3374d8cc-99f9-45ec-bd55-986393d7126a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.7
+    }
+  },
+  {
+    "id": "708b1031-6d46-41c7-a045-a61ebe3e9c44",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "3697dc88-056d-43df-af6e-c92938d06162",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.6
+    }
+  },
+  {
+    "id": "7a8b91b9-6ff3-48b6-82b4-708ef6ee3499",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.3
+    }
+  },
+  {
+    "id": "42a0e8d2-e1c1-4e12-80fa-d292b5525be9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "f47bb976-add1-4431-a50e-eada85e15ffc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.8
+    }
+  },
+  {
+    "id": "cf90a3cb-53c7-4df5-b655-a826a26fb6a4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37
+    }
+  },
+  {
+    "id": "7df7a9d6-ba52-4ec7-9de7-6f9e6718e53a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 41.4
+    }
+  },
+  {
+    "id": "b160ed32-1c85-490f-89ff-54b451b5db65",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45
+    }
+  },
+  {
+    "id": "d75f36de-39e0-4b97-8cba-480ee7197bb4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 59.4
+    }
+  },
+  {
+    "id": "dff5e1b4-6154-4520-a720-cf28ca702f8b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 83
+    }
+  },
+  {
+    "id": "37ee3773-1d2b-4306-8c30-c5a026b8a9a5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 112.6
+    }
+  },
+  {
+    "id": "83937c88-ca52-4f88-8bed-7f692796a93f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 274.6
+    }
+  },
+  {
+    "id": "a1016131-e3d7-4e41-9c06-341bc6504856",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 278.4
+    }
+  },
+  {
+    "id": "88a2ddd5-3139-4796-8ba7-16807f558d22",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 242.4
+    }
+  },
+  {
+    "id": "912eb348-a032-43f3-98bb-4a4d989f987e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 498
+    }
+  },
+  {
+    "id": "4c898824-2050-4b68-9eaa-34bf35512a2a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.85
+    }
+  },
+  {
+    "id": "26e0eb42-b3c4-40fc-9866-1c5b24e8cd54",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36
+    }
+  },
+  {
+    "id": "e18acd42-1ed6-4910-a223-1371db690e79",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.8
+    }
+  },
+  {
+    "id": "5423a6f3-b6cd-46e0-8413-b23dad77a295",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.15
+    }
+  },
+  {
+    "id": "8a7688bc-31eb-4c97-a0ec-15109b88ae4a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.8
+    }
+  },
+  {
+    "id": "8cbc0b79-8fd0-46e2-a759-3b9ec751dd53",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13
+    }
+  },
+  {
+    "id": "26442670-3015-41f4-9a35-1b59973b9b93",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.4
+    }
+  },
+  {
+    "id": "bebac744-ad17-4551-8d54-8315aed91cf7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.4
+    }
+  },
+  {
+    "id": "559dd92c-0b94-4ce2-8505-3563feccbfd4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.4
+    }
+  },
+  {
+    "id": "5bab165b-54ae-47df-9c9c-c3fe5e68f159",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.8
+    }
+  },
+  {
+    "id": "b3bac9bc-36d1-4f44-adab-09a85445e0f9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.7
+    }
+  },
+  {
+    "id": "07461a8f-55b9-400a-b242-599f868cb3b7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.4
+    }
+  },
+  {
+    "id": "f44952fa-63ed-46ee-8024-438e58e3eefb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.3
+    }
+  },
+  {
+    "id": "7ce0dfae-993b-420b-bc8f-ce4d16dbfdc7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.399999999999999
+    }
+  },
+  {
+    "id": "3d0c234e-b35e-4ac1-abab-a18bf20a2dd7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.399999999999999
+    }
+  },
+  {
+    "id": "878b2b56-501e-449e-abd2-55868dc78878",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.7
+    }
+  },
+  {
+    "id": "a0dab147-ee64-435b-a9bc-1398eddf75d2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.799999999999997
+    }
+  },
+  {
+    "id": "c7581f25-af7c-48b5-883d-0e28ed5e5e42",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.700000000000003
+    }
+  },
+  {
+    "id": "27f5bb0d-c7bc-41e8-957c-6bdfae00727e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.849999999999994
+    }
+  },
+  {
+    "id": "de7d25a5-f3b5-4790-ac59-83b6b1f76d17",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36
+    }
+  },
+  {
+    "id": "a6a01caf-d9bc-41a9-a9ab-f4451a0f9fdf",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 39.1
+    }
+  },
+  {
+    "id": "64f09ca9-d81b-4946-92f0-91ac061882b6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 41.400000000000006
+    }
+  },
+  {
+    "id": "6aad3429-ac24-43c3-a8c5-d5431cedc9d8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 45
+    }
+  },
+  {
+    "id": "baca1041-eec3-4959-b2aa-cc060c9ef3c6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 59.400000000000006
+    }
+  },
+  {
+    "id": "caf0c518-613b-47dc-a7e7-5722f2fc13f0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 87.2
+    }
+  },
+  {
+    "id": "c559ebb5-b2aa-48da-88ee-b79e1d3c68a3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 106.60000000000001
+    }
+  },
+  {
+    "id": "41d1f779-4d7c-49d5-a367-2ea3ebfcc01a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 268.6
+    }
+  },
+  {
+    "id": "5fd2897f-7f55-41b3-89e1-6ac05c840282",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 271.2
+    }
+  },
+  {
+    "id": "f7fcbb0a-5d72-48de-a850-3131b142c866",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 278.4
+    }
+  },
+  {
+    "id": "51b1b913-bde3-4aff-b89a-2b15db662ba6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 507
+    }
+  },
+  {
+    "id": "52b5e775-e79b-438a-ad7e-3a7b8ed1bf00",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.799999999999997
+    }
+  },
+  {
+    "id": "f33b52b2-322b-4df9-84bf-0f0c5c5ebd6e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.150000000000002
+    }
+  },
+  {
+    "id": "a349fa50-cd28-4233-bf0e-da60390bffea",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1168
+    }
+  },
+  {
+    "id": "c2ebe118-a993-47ea-aff3-c8cc0b45f060",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "36beb5a0-38c6-4dad-a8aa-cd0cb45ffcdf",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "6cf4c0de-e01e-433e-9566-d996cd2af9e7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "c2e31bd9-fc86-4cc1-ac40-3967d95e61dc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "9fc743c1-207f-4042-86cf-9d16518366cb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "25bf2089-8f6b-4a86-8840-d549c003bc92",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.95
+    }
+  },
+  {
+    "id": "67aa2101-32c5-4051-87df-67ea67ef23bc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12
+    }
+  },
+  {
+    "id": "373ef2b0-6202-4f00-96b4-69e0f779554f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.8
+    }
+  },
+  {
+    "id": "d15f5486-386b-4218-bdf5-931d83106f87",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.799999999999999
+    }
+  },
+  {
+    "id": "4e2c20c6-3725-4145-99cd-1fceccf7e395",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15
+    }
+  },
+  {
+    "id": "2a4cef33-d656-4d33-8722-1385b25e229c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.799999999999997
+    }
+  },
+  {
+    "id": "68446a98-34d3-4c4b-b2d4-a4aa79f5ff8f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.6
+    }
+  },
+  {
+    "id": "6924baf1-5e18-47dc-a2b7-95519f97fbd5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 41.4
+    }
+  },
+  {
+    "id": "6d765506-8bb2-4fd3-9ab7-a992e88bd710",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 90.19999999999999
+    }
+  },
+  {
+    "id": "1ad715bc-c671-4094-9866-0beb12bf1be3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 91.2
+    }
+  },
+  {
+    "id": "0f68bd7c-9914-4b65-9563-56fb0b44c8df",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 88.80000000000001
+    }
+  },
+  {
+    "id": "c8715d0b-7e09-477b-91da-f9ebc50c76aa",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 168
+    }
+  },
+  {
+    "id": "a47c52d5-ecd3-4b4e-b8b2-0d68d7049186",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.600000000000001
+    }
+  },
+  {
+    "id": "657bedfb-699a-42de-af9c-54251081bae0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10.05
+    }
+  },
+  {
+    "id": "9bd32151-ad87-479f-9aec-3bea7666797e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.4
+    }
+  },
+  {
+    "id": "471db368-04cf-43d6-a147-502469a0a8bb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "a7afbe78-495e-40df-bdb2-82f08bc854a3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.800000000000001
+    }
+  },
+  {
+    "id": "a41c2e4e-2069-4c09-ae34-d235789b6a66",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.800000000000001
+    }
+  },
+  {
+    "id": "3d7af503-7874-4056-97bd-37b7291d4551",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.2
+    }
+  },
+  {
+    "id": "2d4595ca-317a-4e8a-a66d-96548c076d14",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6000000000000005
+    }
+  },
+  {
+    "id": "296eef5f-eba6-4adf-b0fe-85d451c1130e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.8999999999999995
+    }
+  },
+  {
+    "id": "d5588df7-7e7e-4c0e-9a85-97069d90dc37",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO KG",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.88
+    }
+  },
+  {
+    "id": "8177c6dd-ebd4-4007-916b-c86e91e6ef81",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 162
+    }
+  },
+  {
+    "id": "ee94c965-3d3a-445b-ac4d-6b99786cd9dc",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO KG",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 89.4
+    }
+  },
+  {
+    "id": "48748cc8-d0b0-48cf-8886-ffccc5162709",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13
+    }
+  },
+  {
+    "id": "7bc87d5c-f559-4f43-a685-6f4a997efa8f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14.6
+    }
+  },
+  {
+    "id": "386e3a45-aaf4-4a68-8eb8-c7bd0a9c2f47",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16
+    }
+  },
+  {
+    "id": "d94c4805-a4dc-47ad-85fe-eb48cf2b8366",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 12.8
+    }
+  },
+  {
+    "id": "40abbfce-c295-474c-9fb9-332c4ad601ff",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.4
+    }
+  },
+  {
+    "id": "8ec87a2f-efc0-4d43-8606-93e761be96fd",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "0c1b6b75-fc91-4ed7-ab72-d1c8cdf4aa37",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.8
+    }
+  },
+  {
+    "id": "750a1a5c-fd17-4e97-954c-eed72347c0c5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "6daae397-4f11-4f24-a126-1d3d6142dc6e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "6990376c-e9b5-433b-8638-b875be01921d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.2
+    }
+  },
+  {
+    "id": "52986a3f-92b4-485c-96a8-e97760a1ba6f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.8
+    }
+  },
+  {
+    "id": "abb41ec9-3454-4f72-aeb0-f90ba9583edb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.2
+    }
+  },
+  {
+    "id": "52b0f109-2384-4f46-9b7d-a500dd1c8a6e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 58.1
+    }
+  },
+  {
+    "id": "0b024708-1996-49de-a39d-580e1b3cfad4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 64.4
+    }
+  },
+  {
+    "id": "6a8e2235-b0cc-4338-846f-03562513bd56",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70
+    }
+  },
+  {
+    "id": "658db453-84ca-468f-a326-0f180cf54880",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 92.4
+    }
+  },
+  {
+    "id": "42fd8406-01c8-4f33-98ab-12a9ddd3e7a1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 130.2
+    }
+  },
+  {
+    "id": "38b86cd5-a36d-43a1-bf69-b3de1c2ebb73",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 173.6
+    }
+  },
+  {
+    "id": "e2fdeb54-bb6b-43a8-b286-89c1daf3c4b9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 425.6
+    }
+  },
+  {
+    "id": "74acec60-40ce-4137-9b35-2af86955897c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 431.2
+    }
+  },
+  {
+    "id": "577e5b01-45b6-4635-ae49-76bfdcd6a1da",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 386.4
+    }
+  },
+  {
+    "id": "8e64f134-e66e-47d6-924a-799088415d43",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 777
+    }
+  },
+  {
+    "id": "7d2932eb-cf69-465d-8b0d-57f87e285c53",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 51.1
+    }
+  },
+  {
+    "id": "23534477-c854-435e-928e-d0d55375d017",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 56
+    }
+  },
+  {
+    "id": "20acabc7-a8ff-4e3c-808f-6aeeabef496a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 44.8
+    }
+  },
+  {
+    "id": "f9c7f396-8bcc-487e-929c-78b9f78782c2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 46.9
+    }
+  },
+  {
+    "id": "f8964623-1781-4030-ba09-8ad26f3a0ea9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 15.4
+    }
+  },
+  {
+    "id": "56b0f169-2cf4-431f-a1df-35d969fd2048",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.3
+    }
+  },
+  {
+    "id": "686992bc-5d9e-48ab-b229-58be7eda1d7b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.4
+    }
+  },
+  {
+    "id": "f94a833d-3c6a-4588-ba64-555accf167ca",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 22.4
+    }
+  },
+  {
+    "id": "f73ee32a-244b-4268-a9d6-40671925412b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 28.7
+    }
+  },
+  {
+    "id": "f656f79f-f4c5-428b-ba9f-79703571dae4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.8
+    }
+  },
+  {
+    "id": "ef2450c9-6138-4770-a0a2-95e276dd2bbe",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.2
+    }
+  },
+  {
+    "id": "690db913-81bc-44e0-8a08-7a40c2d777f9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.3
+    }
+  },
+  {
+    "id": "a4cfbf90-c7fa-4528-94e2-456a8c2c55ff",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.2
+    }
+  },
+  {
+    "id": "7c4dd42e-f1d9-4718-b392-064f8881ff99",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "84ad552d-74fc-426d-86ad-0917a9020de8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "0d6a136b-4c53-4f31-b238-695304cb442f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.6
+    }
+  },
+  {
+    "id": "cb34e8a5-583b-44d5-9810-e7a3c6619000",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.8
+    }
+  },
+  {
+    "id": "78448396-4970-49ee-89ca-3aa884cde454",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.8
+    }
+  },
+  {
+    "id": "ae71e343-8677-4e3b-863f-596a58063217",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 61.6
+    }
+  },
+  {
+    "id": "e1ed064a-6098-4cb8-b137-f9ae01582357",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.2
+    }
+  },
+  {
+    "id": "24e557c6-df16-42b8-aa97-2c07f1ceaeb4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 111
+    }
+  },
+  {
+    "id": "9f1d2290-cfbd-4456-8ede-abb6e37441ba",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.3
+    }
+  },
+  {
+    "id": "de56b4dd-0f00-41e2-90cb-c76c5099a0f9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8
+    }
+  },
+  {
+    "id": "30b48104-70c8-4a3e-9421-9030f513121c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "0089b089-38d2-40b7-8bf0-cf141204a6cb",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.7
+    }
+  },
+  {
+    "id": "59d61d38-f6ad-4f70-9723-1062994126c8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "2dc62178-4814-4873-b748-273e1d863aa1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.9
+    }
+  },
+  {
+    "id": "36c756ce-8b08-4726-9b59-a8914ebc8ce1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "e8d338de-425c-40fa-a2b9-a44f8855db57",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "c5b6452c-2ea0-4ea9-98ce-039803ad61ea",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.1
+    }
+  },
+  {
+    "id": "fc6b1697-382c-4875-9b9d-f27375e12ddd",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "5d8f4462-921e-4f5b-b5ff-e8139a4e3b56",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.6
+    }
+  },
+  {
+    "id": "ccc9db74-08d5-45e8-9361-dabd5bf42940",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8.3
+    }
+  },
+  {
+    "id": "6465b5d2-7275-4c3a-a492-6feebf1187c0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.2
+    }
+  },
+  {
+    "id": "b0ea1956-98a7-450c-942b-785f00847b54",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "24eb8c2c-687d-4d43-8535-e75a8f3d610e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 13.2
+    }
+  },
+  {
+    "id": "85f6f175-6ee4-4211-875e-59f65fb8fec2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.6
+    }
+  },
+  {
+    "id": "11066bcb-9612-4cb5-b3d3-efeb184f042c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 24.8
+    }
+  },
+  {
+    "id": "937316bd-049f-48b7-8302-361b77deac8b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 60.8
+    }
+  },
+  {
+    "id": "c77fda1f-c22c-48af-80e6-a8fe20aeea1e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 61.6
+    }
+  },
+  {
+    "id": "071ff092-b954-4275-8168-c41ce3d6151d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55.2
+    }
+  },
+  {
+    "id": "12e9d2ef-12a6-42d9-a628-5577a51c928b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 111
+    }
+  },
+  {
+    "id": "2a9f2bdc-cfac-4490-a90b-2e45c2b4f976",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7.3
+    }
+  },
+  {
+    "id": "651f70af-c603-4c7a-91f2-743e6d5eb9e7",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8
+    }
+  },
+  {
+    "id": "6a22adba-16e1-43b2-bb1c-bb3da2a503f1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.4
+    }
+  },
+  {
+    "id": "a2f37a1c-3f02-42dc-aff3-9146174d3be0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.7
+    }
+  },
+  {
+    "id": "93387e20-8eef-4309-91d2-c9dad8e10d86",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "f0d9b615-72b4-480f-8c64-8a7fcf0199d0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.9
+    }
+  },
+  {
+    "id": "adfaf598-1edb-4f67-8b0f-2837be958521",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "834243b3-7296-4b1c-a855-7ce1cb63749a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "7b556ddd-e38f-4d4f-a0de-17b05f64884e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.1
+    }
+  },
+  {
+    "id": "5cd03038-74fd-4c52-8058-af9e65dc5f9e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.4
+    }
+  },
+  {
+    "id": "16c3eb39-8c71-471c-b47d-9adee62f4788",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.6
+    }
+  },
+  {
+    "id": "6fa5bf22-a5ed-4fe8-bdcf-af4a69cd425a",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 16.6
+    }
+  },
+  {
+    "id": "9f9080fa-a819-4f08-bfa3-9c539444d39d",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.4
+    }
+  },
+  {
+    "id": "a57c6362-1332-4d99-9e5e-212f9d656978",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20
+    }
+  },
+  {
+    "id": "aaaaa5f3-de24-49e8-baa7-a80c2f21d8c1",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 26.4
+    }
+  },
+  {
+    "id": "bdf1dbda-f67e-4914-899b-eda63da7f321",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 37.2
+    }
+  },
+  {
+    "id": "1407920a-7e91-4b41-bc8f-ffbd14454aa2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 49.6
+    }
+  },
+  {
+    "id": "3853ba07-617b-44f8-9e26-abcd85727dc2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 121.6
+    }
+  },
+  {
+    "id": "3cdf8697-da75-4c3f-827e-2e264e58f93e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 123.2
+    }
+  },
+  {
+    "id": "94f24a65-77cd-4726-834e-e6b09c4c2e7f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 110.4
+    }
+  },
+  {
+    "id": "1cf9e79d-ffcf-4780-a7bb-d4476c72cb03",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 222
+    }
+  },
+  {
+    "id": "32e11012-6b17-4fa9-a870-2381fbc95463",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.65
+    }
+  },
+  {
+    "id": "55c249dc-6e45-4f04-b42e-8a921202fea5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4
+    }
+  },
+  {
+    "id": "e865159d-d682-4139-930b-c7427f2c2c80",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.5
+    }
+  },
+  {
+    "id": "c06a7719-3ecb-4b60-a1df-856408f07b16",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4.6
+    }
+  },
+  {
+    "id": "1a6e057f-42d6-4aae-b70e-6419b86525f4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5
+    }
+  },
+  {
+    "id": "2a378024-52bf-4257-bb70-5c43efc66995",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6.6
+    }
+  },
+  {
+    "id": "b0a22bd0-3d7d-4763-b5ef-c85ba06d6cad",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10
+    }
+  },
+  {
+    "id": "ffabc56c-827b-4804-a38e-798bced01120",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11.4
+    }
+  },
+  {
+    "id": "f462d657-fd5e-40f6-8510-6451ce1e15a8",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.4
+    }
+  },
+  {
+    "id": "0c37ceb9-fc9f-4cfd-af56-7513b3413e6b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29.6
+    }
+  },
+  {
+    "id": "6803cf8d-35fd-4620-9eab-796bf5dcabdf",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 33.6
+    }
+  },
+  {
+    "id": "556f1095-513a-418c-b2ad-b570cfd7301e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 57
+    }
+  },
+  {
+    "id": "29d671b3-4c45-4e91-aa12-5a4b907f0cf5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.2
+    }
+  },
+  {
+    "id": "cd9bafa0-9462-4045-abf6-df040aa72a35",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3.35
+    }
+  },
+  {
+    "id": "2ad84f8d-7631-4742-9480-db0a646c3294",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.2
+    }
+  },
+  {
+    "id": "db1f024f-a995-4405-9b14-6dc567252a4f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.5
+    }
+  },
+  {
+    "id": "a4cf48b4-d896-4229-b630-84369f1c0d2e",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.6
+    }
+  },
+  {
+    "id": "0623a816-d4d0-4911-8f2b-17aba2fa7a61",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1.6
+    }
+  },
+  {
+    "id": "afc747b5-9934-4bf7-aa24-50b731ae6c1c",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.1
+    }
+  },
+  {
+    "id": "31274012-d70b-4832-acf2-909484a3ad91",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.2
+    }
+  },
+  {
+    "id": "8afdf587-1184-4d8e-a8e5-ed07031dbf00",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2.3
+    }
+  },
+  {
+    "id": "fdae9cb7-76cd-4767-ad81-351fd4f8c5d4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 454
+    }
+  },
+  {
+    "id": "4788586c-5902-458a-9e4e-b3e6b98cefe9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 876
+    }
+  },
+  {
+    "id": "acba82a9-31fd-4bbb-a895-8603a6ee9053",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "674db86f-6933-4ef0-9208-396e78d5c329",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 584
+    }
+  },
+  {
+    "id": "15bdb160-d13a-42de-a608-547b90e50fd9",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
+    "id": "c86666ad-8383-4cae-9d99-02a445b9eee6",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 292
+    }
+  },
+  {
     "id": "3b6f0c64-c17b-4be6-8630-a32ad8d86892",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
@@ -64870,6 +85410,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "2866a4a4-b0ae-40b2-85eb-2d7be66eef67",
+    "codigo": "4.1.01.21.0013",
+    "descricao": "TAXAS E ANUIDADES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 952.3399999999999
+    }
+  },
+  {
     "id": "d7625ddb-1ba1-444b-b582-469fc927c45a",
     "codigo": "4.1.01.21.0020",
     "descricao": "OUTROS CUSTOS OPERACIONAIS",
@@ -65047,6 +85607,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 98998.37
+    }
+  },
+  {
+    "id": "3d062fa4-8d23-49e5-b376-39a42231d23f",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OUTRAS DESPESAS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 104.22
     }
   },
   {
@@ -65303,6 +85883,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {}
+  },
+  {
+    "id": "6cf8bc1a-5973-490b-ab9c-be8e15605b1d",
+    "codigo": "4.2.01.02.0003",
+    "descricao": "RATEIO DE MOTOS, VEICULOS E CAMINHOES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5049.07
+    }
   },
   {
     "id": "087cce5b-641d-4629-b766-bcc308ea06b4",
@@ -65565,6 +86165,444 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "9bd8f859-c674-4b58-b2ae-93b13e39f092",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -70421.45
+    }
+  },
+  {
+    "id": "42eceb9c-53b5-464d-83bb-88bdb3fc5ef7",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -52300.66
+    }
+  },
+  {
+    "id": "f23132cb-84ba-40be-81f5-bbb8b354087e",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -145664.55
+    }
+  },
+  {
+    "id": "e5131ef8-fb3c-4429-b4d4-89d990cdcd67",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -119489.19
+    }
+  },
+  {
+    "id": "c277816a-d8a5-4ef2-a828-c891675417ca",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -55490.94
+    }
+  },
+  {
+    "id": "8054358b-0a6b-4dfb-9a31-1f36bc0e6e24",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -21523.03
+    }
+  },
+  {
+    "id": "bd24f883-82d1-40e1-af85-4f9698740819",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {}
+  },
+  {
+    "id": "4131812c-62f3-43de-9756-8ac32e948eb7",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -26172.61
+    }
+  },
+  {
+    "id": "988d888e-6971-4718-9318-675350b61a58",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -9772.84
+    }
+  },
+  {
+    "id": "893ad305-16a4-4e99-91d8-13fe079157ab",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -145192.04
+    }
+  },
+  {
+    "id": "ef982fb6-ff13-41f4-a941-8145f26515a2",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -27158.52
+    }
+  },
+  {
+    "id": "f8797634-f789-4948-984f-9ad166f59115",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -145789.66
+    }
+  },
+  {
+    "id": "fd2fb130-0b45-40dc-a598-61c6558f478c",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE SAL",
+    "centroCusto": "RATEIO FABRICA SAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -621.75
+    }
+  },
+  {
+    "id": "7fdccbd6-775a-4ee1-aded-d5afa6b7e791",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -15466.720000000001
+    }
+  },
+  {
+    "id": "498bd20d-f123-4df2-8d79-be5620294b0c",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -8543.45
+    }
+  },
+  {
+    "id": "c7a585af-1f9c-4366-880b-935cc4e99363",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -77639.96
+    }
+  },
+  {
+    "id": "29706419-5105-47ab-8bd3-073fa68017bd",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -38654.46
+    }
+  },
+  {
+    "id": "208422b5-63ee-46ce-96cf-1811e345f56f",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -10610.85
+    }
+  },
+  {
+    "id": "7bdff594-3093-43bf-a634-fe747dfb1233",
+    "codigo": "4.2.01.02.0011",
+    "descricao": "( - ) TRANSFERENCIA DE CUSTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": -37560.67
+    }
+  },
+  {
+    "id": "856a837c-15fe-43b5-93b0-20633906f741",
+    "codigo": "4.2.01.02.0016",
+    "descricao": "RATEIO CANTINA ADMINISTRACAO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 54.86
+    }
+  },
+  {
+    "id": "1051f694-2320-49d4-861b-eb30ec40bab7",
+    "codigo": "4.2.01.02.0016",
+    "descricao": "RATEIO CANTINA ADMINISTRACAO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 411.45
+    }
+  },
+  {
+    "id": "857b5d2f-323c-44e0-843f-2c37eddab7f2",
+    "codigo": "4.2.01.02.0016",
+    "descricao": "RATEIO CANTINA ADMINISTRACAO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 576.02
+    }
+  },
+  {
     "id": "f02b17a4-1213-45d6-a4d3-062488212498",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
@@ -65822,6 +86860,286 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 320.18
+    }
+  },
+  {
+    "id": "7ac9707b-244f-4723-b005-4ea923ab6ff4",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 351.31
+    }
+  },
+  {
+    "id": "6e1b713b-d113-4c3b-9db7-8c15ac964053",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 538
+    }
+  },
+  {
+    "id": "e96ca220-697d-4f9b-a69d-2a4299ad7a32",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 445.57
+    }
+  },
+  {
+    "id": "4b217fff-91be-4c10-893e-398069d0e426",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.13
+    }
+  },
+  {
+    "id": "c4ecb565-d3cd-4fe8-b55c-4625098223e8",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 125.39
+    }
+  },
+  {
+    "id": "2c4cf526-1e9a-4cb6-913b-7cbb6aad2a66",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 94.26
+    }
+  },
+  {
+    "id": "8675648c-d684-43ee-83e9-ae12e09102fb",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 63.13
+    }
+  },
+  {
+    "id": "37174b7c-e2bf-4f38-8f73-b88ad697716f",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 95.17
+    }
+  },
+  {
+    "id": "a1480f53-5585-42ad-91fd-0e6ea979f201",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 63.13
+    }
+  },
+  {
+    "id": "d37c5276-28ad-426b-9dbe-5befedb98939",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 282.77
+    }
+  },
+  {
+    "id": "4eb11e67-07f2-4e4c-b6eb-3840bc73b690",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 127.17000000000002
+    }
+  },
+  {
+    "id": "ac005d49-71b9-4c32-af19-ba4d0f9ac029",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 95.17
+    }
+  },
+  {
+    "id": "5384f286-42f6-47d0-807d-af3840d07aa0",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 125.39
+    }
+  },
+  {
+    "id": "da499d9f-1c85-4f10-8826-c7881efe804a",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 31.13
     }
   },
   {
@@ -66145,6 +87463,66 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "068b26ec-0cda-46d6-a1d1-f28b3a54a0b4",
+    "codigo": "4.2.01.02.0022",
+    "descricao": "RATEIO PORTARIA E VIGILANCIA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20744.69
+    }
+  },
+  {
+    "id": "b60396cd-ae4f-4324-9b6d-8c5abb6afa87",
+    "codigo": "4.2.01.02.0022",
+    "descricao": "RATEIO PORTARIA E VIGILANCIA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 10573.15
+    }
+  },
+  {
+    "id": "b813d17d-dcab-46fb-91ab-9a848418917e",
+    "codigo": "4.2.01.02.0023",
+    "descricao": "RATEIO CARRETAS FORRAGEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 915.78
+    }
+  },
+  {
     "id": "26260649-913a-4cfa-a75f-31beeb6803f9",
     "codigo": "4.2.01.02.0024",
     "descricao": "RATEIO OFICINA",
@@ -66285,6 +87663,46 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "0069ec90-1bcc-4c04-9319-f1489cfd1619",
+    "codigo": "4.2.01.02.0024",
+    "descricao": "RATEIO OFICINA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 55546.94
+    }
+  },
+  {
+    "id": "7bb9bce7-dda4-4209-a70d-15a74da1ac78",
+    "codigo": "4.2.01.02.0026",
+    "descricao": "RATEIO ENFARDADEIRAS DE CAPIM",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 425.68
+    }
+  },
+  {
     "id": "bdcb4fc9-f3ed-4535-a187-d2a5c0d863b0",
     "codigo": "4.2.01.02.0027",
     "descricao": "PALHA DE MILHO LG",
@@ -66419,6 +87837,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
+    "id": "b6f7390e-2b67-4e3e-b27d-199a3d158e29",
+    "codigo": "4.2.01.02.0027",
+    "descricao": "PALHA DE MILHO LG",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3256.67
+    }
+  },
+  {
     "id": "088fbd30-48be-4318-aa57-62b4e3c89355",
     "codigo": "4.2.01.02.0028",
     "descricao": "RATEIO GRADES ARADORAS",
@@ -66456,6 +87894,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 322.98
+    }
+  },
+  {
+    "id": "d10d7f69-dd24-4f3d-9394-383dedc4a39e",
+    "codigo": "4.2.01.02.0029",
+    "descricao": "RATEIO SUBSOLADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4112.889999999999
     }
   },
   {
@@ -66619,6 +88077,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "5a70a8a5-a8e7-42d3-901c-bf13212be419",
+    "codigo": "4.2.01.02.0030",
+    "descricao": "RATEIO TRATORES PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2107.14
+    }
+  },
+  {
     "id": "298479fa-f260-423a-94e6-a40f18ae78f1",
     "codigo": "4.2.01.02.0033",
     "descricao": "RATEIO ROCADEIRAS",
@@ -66656,6 +88134,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150.25
+    }
+  },
+  {
+    "id": "b0404db5-3581-4941-b5e0-4483206ce350",
+    "codigo": "4.2.01.02.0033",
+    "descricao": "RATEIO ROCADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 8126.969999999999
     }
   },
   {
@@ -66959,6 +88457,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "f760ca26-9611-4096-93db-99906330b68b",
+    "codigo": "4.2.01.02.0034",
+    "descricao": "RATEIO CARRETAS AGRICOLAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4765.16
+    }
+  },
+  {
     "id": "4362b6d8-08f4-4326-8836-9dc483bf31b8",
     "codigo": "4.2.01.02.0035",
     "descricao": "RATEIO TRATORES LEVES",
@@ -67259,6 +88777,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "70ac2c1b-46b8-4247-86b5-793353a9119e",
+    "codigo": "4.2.01.02.0035",
+    "descricao": "RATEIO TRATORES LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "34-OL LATEX TOCANTINS LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27119.230000000003
+    }
+  },
+  {
     "id": "1e91d5b1-8758-448d-a3f3-f521e4de5548",
     "codigo": "4.2.01.02.0036",
     "descricao": "RATEIO TRATORES MEDIOS",
@@ -67476,6 +89014,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72724.82
+    }
+  },
+  {
+    "id": "4b3663c0-b5c3-4219-a132-15df6e093b22",
+    "codigo": "4.2.01.02.0036",
+    "descricao": "RATEIO TRATORES MEDIOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 11682.64
     }
   },
   {
@@ -67817,6 +89375,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
+    "id": "e4243ff4-a92e-4b95-aa40-41bf781ac04d",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 179.71
+    }
+  },
+  {
     "id": "f70cb9da-b8e0-4030-99d8-457f9546b256",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
@@ -68035,6 +89613,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
+    "id": "af2072b3-2d83-47ef-b032-f3cda87d1dde",
+    "codigo": "4.2.01.02.0038",
+    "descricao": "RATEIO VEICULOS PESADOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 118.42
+    }
+  },
+  {
     "id": "902f3649-683a-4f71-93b0-1e236bc89729",
     "codigo": "4.2.01.02.0039",
     "descricao": "RATEIO REBOQUE",
@@ -68251,6 +89849,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {}
+  },
+  {
+    "id": "ee999c74-cfba-4c87-8bb7-6cfb23942086",
+    "codigo": "4.2.01.02.0039",
+    "descricao": "RATEIO REBOQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 19.9
+    }
   },
   {
     "id": "0d5a7312-3383-411d-abd8-32d1b33e301c",
@@ -68673,6 +90291,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "44430647-1d8d-405e-8bff-983cf60867db",
+    "codigo": "4.2.01.02.0044",
+    "descricao": "RATEIO FABRICA RACAO E SAL",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "FABRICA DE RACAO",
+    "centroCusto": "RATEIO FABRICA RACAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "FABRICA RACAO/SAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 26226.11
+    }
+  },
+  {
     "id": "6cfd2e29-632d-456d-9579-853b56d3c428",
     "codigo": "4.2.01.02.0045",
     "descricao": "RATEIO CARRETAS TANQUE",
@@ -68810,6 +90448,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 181.1
+    }
+  },
+  {
+    "id": "0b584413-c631-4c3b-89a1-98837ea62b65",
+    "codigo": "4.2.01.02.0045",
+    "descricao": "RATEIO CARRETAS TANQUE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2178.5699999999997
     }
   },
   {
@@ -69133,6 +90791,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "ad3b0bde-4812-4d33-8269-e69463cd3257",
+    "codigo": "4.2.01.02.0047",
+    "descricao": "RATEIO PULVERIZADORES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 53290.3
+    }
+  },
+  {
     "id": "d6e2d383-c7f7-4860-82f3-b7ba4572a6b2",
     "codigo": "4.2.01.02.0048",
     "descricao": "RATEIO SEMEADORAS",
@@ -69153,6 +90831,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "473b05ad-93bf-4bc9-aaaf-59dcc39f48b8",
+    "codigo": "4.2.01.02.0048",
+    "descricao": "RATEIO SEMEADORAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 3222.08
+    }
+  },
+  {
     "id": "ffb52389-8cda-451b-b975-a798c985f4b7",
     "codigo": "4.2.01.02.0050",
     "descricao": "RATEIO PLANTADEIRAS",
@@ -69170,6 +90868,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1228.68
+    }
+  },
+  {
+    "id": "82d658b4-060c-46ba-ae46-6f6565248424",
+    "codigo": "4.2.01.02.0050",
+    "descricao": "RATEIO PLANTADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 56206.09
     }
   },
   {
@@ -69753,6 +91471,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "6ccafe33-5af9-4e81-b9f5-d0ff222a5656",
+    "codigo": "4.2.01.02.0052",
+    "descricao": "RATEIO OUTROS IMPLEMENTOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6385.2
+    }
+  },
+  {
     "id": "e5cdbf08-0fc4-4c0f-bf92-746fc7a6787b",
     "codigo": "4.2.01.02.0053",
     "descricao": "RATEIO TRATO DE GADO",
@@ -69810,6 +91548,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4846.49
+    }
+  },
+  {
+    "id": "8f35a528-b0ca-48a5-a3d2-33e11c324d8f",
+    "codigo": "4.2.01.02.0057",
+    "descricao": "RATEIO GUINCHOS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO IMPLEMENTOS AGRICOLAS - OCIOSOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 514.25
     }
   },
   {
@@ -69893,6 +91651,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "53291d2c-87fa-42a2-b258-ec25a20fd1df",
+    "codigo": "4.2.01.02.0058",
+    "descricao": "RATEIO COLHEITADEIRAS",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 97755.15
+    }
+  },
+  {
     "id": "2aa24305-4b2e-495a-b692-2c746be09237",
     "codigo": "4.2.01.02.0059",
     "descricao": "RATEIO AREAS IRRIGADAS LAGUNA",
@@ -69930,6 +91708,26 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5551.35
+    }
+  },
+  {
+    "id": "3e52e7ec-0fe1-4e9d-88f5-52a88526b4e3",
+    "codigo": "4.2.01.02.0061",
+    "descricao": "RATEIO TRATORES DE ESTEIRA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MECANIZACAO AGRICOLA - OCIOSA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 7000.39
     }
   },
   {
@@ -70213,6 +92011,286 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "1bd43a69-dce3-44d1-8037-a3920170f667",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 98.22
+    }
+  },
+  {
+    "id": "55453e59-a73b-4f4d-a76c-d281d2c45f1d",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 147.15
+    }
+  },
+  {
+    "id": "cdf8daeb-c3d5-43d9-9c7f-098811309677",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 79.69
+    }
+  },
+  {
+    "id": "4839341a-0131-4a81-9961-444e99430431",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.46
+    }
+  },
+  {
+    "id": "d186cbaf-e499-4fbb-8af4-04b7d28992b7",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 27.57
+    }
+  },
+  {
+    "id": "414d5f7a-c210-4215-9150-207663779108",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.68
+    }
+  },
+  {
+    "id": "1b6faf89-1b47-408d-9552-ff8c345dac5e",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.11
+    }
+  },
+  {
+    "id": "9f2d5058-8f85-4c12-802b-6685edb949f9",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.42
+    }
+  },
+  {
+    "id": "d551099d-84ae-4cf4-9e52-aa56d715c5ae",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 30.770000000000003
+    }
+  },
+  {
+    "id": "108f0917-c9ec-43af-835e-2f001756c574",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 21.42
+    }
+  },
+  {
+    "id": "96616d0c-f3fe-417c-9524-6f4e5e241f55",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 18.46
+    }
+  },
+  {
+    "id": "63e90974-254e-4f22-961b-6357443de559",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.68
+    }
+  },
+  {
+    "id": "654058a0-5730-4996-a162-bdebafb1dfed",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 82.71
+    }
+  },
+  {
+    "id": "e6b07678-e3c4-4897-a2ff-2c1ebcf49103",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9.11
+    }
+  },
+  {
     "id": "6584e72d-10f3-45aa-b54e-5eb29def633b",
     "codigo": "4.2.01.02.0066",
     "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
@@ -70490,6 +92568,306 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 685.88
+    }
+  },
+  {
+    "id": "63e5637b-d1fb-464b-b4f6-b2508a896d40",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE MEDIO (TRUCO/TOCO)",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 70.03000000000002
+    }
+  },
+  {
+    "id": "235941b1-4821-47ad-aaf4-537c05b6dc69",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS MEDIAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 151.24
+    }
+  },
+  {
+    "id": "06f9101e-6020-406b-9b65-404f9410093c",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS LEVES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 389.91
+    }
+  },
+  {
+    "id": "22d619eb-1c75-4cba-af73-90ffa2b95e86",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO MAQUINAS PESADAS",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 168.22
+    }
+  },
+  {
+    "id": "7f699a56-1349-4c17-a1aa-95e221ab72ce",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE LEVE",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.45
+    }
+  },
+  {
+    "id": "1b5d9125-d369-40f6-89e6-75033fea322a",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRATO DE GADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 130.72
+    }
+  },
+  {
+    "id": "88f93f43-25ee-456f-acc1-17c787d39a07",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO PULVERIZADORES AUTOPROPELIDO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 98.25
+    }
+  },
+  {
+    "id": "fc7b3684-aa34-4b75-b1ca-29d56f29a056",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "MECANIZADO",
+    "centroCusto": "RATEIO TRANSPORTE PESADO (CAVALO)",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "MECANIZADO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 65.82000000000001
+    }
+  },
+  {
+    "id": "a18c2925-3b02-4ebc-aba9-086b27f45d14",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ALMOXARIFADO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.589999999999996
+    }
+  },
+  {
+    "id": "17862f5e-f40c-44be-bdb0-6f41587869be",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO DE MAQUINAS E CAMINHOES",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 69.96000000000001
+    }
+  },
+  {
+    "id": "f53a4266-7ef4-4b0c-b81d-73d4a98ebbfb",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO ELETRICA",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 36.59
+    }
+  },
+  {
+    "id": "e91ed5d4-0a3d-478a-a075-d7331cf1aeca",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO PREDIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 65.82000000000001
+    }
+  },
+  {
+    "id": "bdc1a006-8d7d-417c-b685-f2c72029c056",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "BORRACHARIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 32.45
+    }
+  },
+  {
+    "id": "026a0afd-0f1e-4f31-9bae-efe047248b69",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "MANUTENCAO INDUSTRIAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 294.78999999999996
+    }
+  },
+  {
+    "id": "2356267d-455d-4a73-b94e-22eda857c284",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "OFICINA GERAL",
+    "centroCusto": "RATEIO MANUTENCAO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "divisao": "OFICINA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 130.72
     }
   }
 ];
