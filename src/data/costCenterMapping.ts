@@ -546,5 +546,85 @@ export const COST_CENTER_MAPPING = {
   "UNIDADE DE RECEPCAO DE GRAOS": {
     "centroCusto": "UNIDADE DE RECEPCAO DE GRAOS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZACAO DE CANA-DE-ACUCAR": {
+    "centroCusto": "COMERCIALIZACAO DE CANA-DE-ACUCAR",
+    "unidadeNegocio": "CANA"
+  },
+  "VERA CRUZ - T211": {
+    "centroCusto": "VERA CRUZ - T211",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CANA SOCA/FAZ. VERA CRUZ": {
+    "centroCusto": "CANA SOCA/FAZ. VERA CRUZ",
+    "unidadeNegocio": "CANA"
+  },
+  "RATEIO CANA": {
+    "centroCusto": "RATEIO CANA",
+    "unidadeNegocio": "CANA"
+  },
+  "RADIO SOCIEDADE VERA CRUZ LTDA": {
+    "centroCusto": "RADIO SOCIEDADE VERA CRUZ LTDA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ASSOCIA€AO CLASSISTA ESPORTIVA SEMENTE UNIAO": {
+    "centroCusto": "ASSOCIA€AO CLASSISTA ESPORTIVA SEMENTE UNIAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZA€AO DE TOUROS": {
+    "centroCusto": "COMERCIALIZA€AO DE TOUROS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "SEM_CODCCUTO": {
+    "centroCusto": "SEM_CODCCUTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "LEILAO DE TOUROS NELORE OL": {
+    "centroCusto": "LEILAO DE TOUROS NELORE OL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "M6656 - PULVERIZADOR AUTOPROPELIDO II SP 250 CIH": {
+    "centroCusto": "M6656 - PULVERIZADOR AUTOPROPELIDO II SP 250 CIH",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "VIGILANCIA": {
+    "centroCusto": "VIGILANCIA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PINTURA DE PAREDES E LOGOS FABRICA DE RACAO": {
+    "centroCusto": "PINTURA DE PAREDES E LOGOS FABRICA DE RACAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO AREAS IRRIGADAS LAGUNA": {
+    "centroCusto": "RATEIO AREAS IRRIGADAS LAGUNA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F7T0 - LAVRINHA - T0": {
+    "centroCusto": "F7T0 - LAVRINHA - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ALMOXARIFADO": {
+    "centroCusto": "ALMOXARIFADO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZACAO DE GRAOS": {
+    "centroCusto": "COMERCIALIZACAO DE GRAOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMERCIALIZACAO DE SEMENTES": {
+    "centroCusto": "COMERCIALIZACAO DE SEMENTES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO AREAS PRODUTIVAS": {
+    "centroCusto": "RATEIO AREAS PRODUTIVAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ÁREAS PRODUTIVAS": {
+    "centroCusto": "ÁREAS PRODUTIVAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "M26 - TRATOR MF 95 X": {
+    "centroCusto": "M26 - TRATOR MF 95 X",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };

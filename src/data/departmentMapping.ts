@@ -1333,5 +1333,25 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "COVOA - PECUÁRIA",
     "unidadeNegocio": "PECUARIA",
     "divisao": "PECUARIA"
+  },
+  "JOIA - PECUÁRA": {
+    "nomedepto": "JOIA - PECUÁRA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "JOIA - SOJA": {
+    "nomedepto": "JOIA - SOJA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "BANDEIRANTES - SERINGAL": {
+    "nomedepto": "BANDEIRANTES - SERINGAL",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
+  },
+  "MECANIZADO": {
+    "nomedepto": "MECANIZADO",
+    "unidadeNegocio": "MECANIZADO",
+    "divisao": "MECANIZADO"
   }
 };
