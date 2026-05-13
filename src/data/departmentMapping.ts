@@ -1303,5 +1303,35 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "Veículos - Logistica",
     "unidadeNegocio": "Veículos - Logistica",
     "divisao": "LOGÍSTICA"
+  },
+  "PORTEIRAS - PECUÁRIA": {
+    "nomedepto": "PORTEIRAS - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "UNIÃO - PECUÁRIA": {
+    "nomedepto": "UNIÃO - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "VERA CRUZ - PECUÁRIA": {
+    "nomedepto": "VERA CRUZ - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "BANDEIRANTES - PECUÁRIA": {
+    "nomedepto": "BANDEIRANTES - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "JOIA - PECUÁRIA": {
+    "nomedepto": "JOIA - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "COVOA - PECUÁRIA": {
+    "nomedepto": "COVOA - PECUÁRIA",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
   }
 };
