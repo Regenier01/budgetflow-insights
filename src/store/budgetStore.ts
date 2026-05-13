@@ -82,6 +82,11 @@ export const getDefaultRealizadoFilterMonth = (
 const normalizeKey = (str: string) => 
   str.toUpperCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+const isDespesaTributariaCode = (codigo: string | undefined) => {
+  const normalized = String(codigo || '').trim();
+  return normalized.startsWith('3.4.03.01') || normalized.startsWith('3.4.03.02');
+};
+
 export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey | null {
   if (!divisao) return null;
   const norm = normalizeKey(divisao);
@@ -110,7 +115,7 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   if (conta === '3.1.02.03.0001') return 'SERINGAL';
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
-  if (conta.startsWith('3.4.03.02')) return 'DESP_ADM_TRIB';
+  if (isDespesaTributariaCode(conta)) return 'DESP_ADM_TRIB';
 
   // 3. Tenta pelo Mapeamento de Departamento
   const deptInfo = (DEPARTMENT_MAPPING as Record<string, MappingValue>)[depto];
@@ -391,7 +396,12 @@ const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
 });
 
 const INITIAL_ACCOUNTS_TEMPLATE = INITIAL_ACCOUNTS.map(cloneAccountEntry);
-const buildFreshInitialAccounts = () => INITIAL_ACCOUNTS_TEMPLATE.map(cloneAccountEntry);
+const normalizeInitialAccountActivity = (account: AccountEntry): AccountEntry =>
+  isDespesaTributariaCode(account.codigo) || isDespesaTributariaCode(account.grupoContabilN9)
+    ? { ...account, atividade: 'DESP_ADM_TRIB' }
+    : account;
+const buildFreshInitialAccounts = () =>
+  INITIAL_ACCOUNTS_TEMPLATE.map(cloneAccountEntry).map(normalizeInitialAccountActivity);
 const normalizeMatch = (value: string | undefined) =>
   String(value || '')
     .toUpperCase()

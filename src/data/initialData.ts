@@ -19348,6 +19348,366 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "realizado": {}
   },
   {
+    "id": "981e27d6-234e-4f74-ad56-ffcb4c743aa5",
+    "codigo": "3.4.03.01.0004",
+    "descricao": "IPTU",
+    "tipo": "D",
+    "codigoPai": "3.4.03.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO DEPARTAMENTOS",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.01-IMPOSTOS INDIRETOS",
+    "nomeProduto": "IPTU / ITU 039397",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 14665.85
+    }
+  },
+  {
+    "id": "3d82fde7-5d77-46ab-b963-3131723b639b",
+    "codigo": "3.4.03.01.0006",
+    "descricao": "IOF",
+    "tipo": "D",
+    "codigoPai": "3.4.03.01",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "SEM_CODCCUTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.01-IMPOSTOS INDIRETOS",
+    "nomeProduto": "IOF",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 5.86
+    }
+  },
+  {
+    "id": "41833964-dada-4aa7-b3d3-018d48351d4e",
+    "codigo": "3.4.03.02.0004",
+    "descricao": "MULTAS FISCAIS NAO DEDUTIVEIS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "MULTAS NAO DEDUTIVEIS 099423",
+    "divisao": "GOTEJO - PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2125.56
+    }
+  },
+  {
+    "id": "8628b1f2-c7f1-46e1-a178-3d163806a07d",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "DEPARTAMENTO JURIDICO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 4729.85
+    }
+  },
+  {
+    "id": "e6bf5e30-ead0-42ee-a871-718a24ece1e4",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "DIRETORIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 269.8
+    }
+  },
+  {
+    "id": "d54d160d-3071-4d4e-b76e-bfa4f4a97f1e",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO DESENVOLVIMENTO HUMANO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1500
+    }
+  },
+  {
+    "id": "4fd3c641-9112-4c73-bcbf-44b0d32ab759",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO DEPARTAMENTOS",
+    "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 279.86
+    }
+  },
+  {
+    "id": "c82e71e0-bc1b-463e-bf36-be953bce7031",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO FINANCEIRO",
+    "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 1578
+    }
+  },
+  {
+    "id": "05af5b09-c039-4779-89f5-9ae36a4487e4",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO INFORMACAO E TECNOLOGIA",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 622.49
+    }
+  },
+  {
+    "id": "c81651e4-1555-459f-b8ae-41f8d6593482",
+    "codigo": "3.4.03.02.0005",
+    "descricao": "TAXAS DIVERSAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "MARKETING INTERNO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "TAXAS, MENSALIDADES OU ANUIDADE 000019",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 227.51
+    }
+  },
+  {
+    "id": "9bacf421-a7e6-42ad-88d0-b9135be59051",
+    "codigo": "3.4.03.02.0007",
+    "descricao": "PIS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "CERNAMBY VIRGEM",
+    "divisao": "VERA CRUZ - SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 6390.28
+    }
+  },
+  {
+    "id": "f15b5360-4494-49f6-ae40-f0d2e46059a2",
+    "codigo": "3.4.03.02.0007",
+    "descricao": "PIS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO DEPARTAMENTOS",
+    "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "PIS SOBRE FATURAMENTO  039391",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 416.72
+    }
+  },
+  {
+    "id": "6f1b4363-3d40-47f7-84e5-36e9b997ac4b",
+    "codigo": "3.4.03.02.0007",
+    "descricao": "PIS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "SEM_CODCCUTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "PIS SOBRE FATURAMENTO  039391",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 9825.81
+    }
+  },
+  {
+    "id": "70529196-f961-44fa-af66-b9f77f102ea2",
+    "codigo": "3.4.03.02.0007",
+    "descricao": "PIS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "XXXX",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 20.2
+    }
+  },
+  {
+    "id": "abd02fb0-3a94-409e-88fe-6c7338996a83",
+    "codigo": "3.4.03.02.0008",
+    "descricao": "COFINS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "ALMOXARIFADO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "XXXX",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 93.02
+    }
+  },
+  {
+    "id": "a1fdf969-f251-49f4-8c38-ce2b4d4c6fbb",
+    "codigo": "3.4.03.02.0008",
+    "descricao": "COFINS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "SEM_CODCCUTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "COFINS SOBRE FATURAMENTO  039393",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 59628.27
+    }
+  },
+  {
+    "id": "05fc9bb7-ebc8-42de-88cd-785a31c0c997",
+    "codigo": "3.4.03.02.0008",
+    "descricao": "COFINS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "DESP_ADM_TRIB",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO DEPARTAMENTOS",
+    "coligada": "2-PLANAGRI S.A.",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "COFINS SOBRE FATURAMENTO  039393",
+    "divisao": "ADMINISTRACAO",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 2181.34
+    }
+  },
+  {
+    "id": "6f3eb904-5413-41ef-b828-0ed63267ec0a",
+    "codigo": "3.4.03.02.0008",
+    "descricao": "COFINS S/ OUTRAS RECEITAS",
+    "tipo": "D",
+    "codigoPai": "3.4.03.02",
+    "nivel": 5,
+    "atividade": "SERINGAL",
+    "departamento": "ADMINISTRACAO",
+    "centroCusto": "RATEIO SERINGAL",
+    "coligada": "18-OL LATEX LTDA",
+    "grupoContabil": "3",
+    "grupoContabilN9": "3.4.03.02-OUTRAS DESPESAS TRIBUTARIAS",
+    "nomeProduto": "CERNAMBY VIRGEM",
+    "divisao": "VERA CRUZ - SERINGAL",
+    "orcado": {},
+    "realizado": {
+      "2026-04": 29493.620000000003
+    }
+  },
+  {
     "id": "f973c832-e613-4bdf-88da-8a70de679891",
     "codigo": "3.4.04.01.0001",
     "descricao": "JUROS S/ EMPRESTIMOS E FINACIAMENTOS",
