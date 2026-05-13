@@ -6,7 +6,7 @@ import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 interface Props {
-  selectedMonth: MonthKey | 'all';
+  selectedMonth: MonthKey[] | 'all';
 }
 
 export function RevenueSummary({ selectedMonth }: Props) {

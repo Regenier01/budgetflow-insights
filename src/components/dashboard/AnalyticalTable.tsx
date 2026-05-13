@@ -6,9 +6,9 @@ import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
-  selectedMonth: MonthKey | 'all';
-  costCenterFilter?: string;
-  departmentFilter?: string;
+  selectedMonth: MonthKey[] | 'all';
+  costCenterFilter?: string[];
+  departmentFilter?: string[];
   tipoFilter?: ('R' | 'C' | 'D')[];
   entryFilter?: (entry: AccountEntry) => boolean;
   title?: string;
@@ -123,21 +123,34 @@ export function AnalyticalTable({
   let filtered = accounts.filter(
     (a) => a.nivel === 5 && (!atividadeFilter || a.atividade === atividadeFilter)
   );
-  
-  if (costCenterFilter) filtered = filtered.filter(a => a.centroCusto === costCenterFilter);
-  if (departmentFilter) filtered = filtered.filter(a => a.departamento === departmentFilter);
+
+  if (costCenterFilter && costCenterFilter.length > 0) {
+    filtered = filtered.filter(
+      (a) => a.centroCusto !== undefined && costCenterFilter.includes(a.centroCusto)
+    );
+  }
+  if (departmentFilter && departmentFilter.length > 0) {
+    filtered = filtered.filter(
+      (a) => a.departamento !== undefined && departmentFilter.includes(a.departamento)
+    );
+  }
   if (tipoFilter) filtered = filtered.filter(a => tipoFilter.includes(a.tipo));
   if (entryFilter) filtered = filtered.filter(entryFilter);
 
+  const isAllMonths = selectedMonth === 'all' || selectedMonth.length === 0;
+  const monthList = isAllMonths ? [] : (selectedMonth as MonthKey[]);
+
+  const valueForMonths = (values: Record<string, number>) => {
+    if (isAllMonths) {
+      return Object.values(values).reduce((sum, v) => sum + v, 0);
+    }
+    return monthList.reduce((sum, m) => sum + (values[m] || 0), 0);
+  };
+
   // Flat entries for spreadsheet view
   const flatEntries: FlatEntry[] = filtered.map(a => {
-    const orc = selectedMonth === 'all' 
-      ? Object.values(a.orcado).reduce((sum, v) => sum + v, 0)
-      : a.orcado[selectedMonth] || 0;
-    
-    const real = selectedMonth === 'all'
-      ? Object.values(a.realizado).reduce((sum, v) => sum + v, 0)
-      : a.realizado[selectedMonth] || 0;
+    const orc = valueForMonths(a.orcado);
+    const real = valueForMonths(a.realizado);
 
     return {
       id: a.id,
@@ -157,13 +170,8 @@ export function AnalyticalTable({
   const root = new Map<string, Node>();
 
   filtered.forEach(a => {
-    const orc = selectedMonth === 'all' 
-      ? Object.values(a.orcado).reduce((sum, v) => sum + v, 0)
-      : a.orcado[selectedMonth] || 0;
-    
-    const real = selectedMonth === 'all'
-      ? Object.values(a.realizado).reduce((sum, v) => sum + v, 0)
-      : a.realizado[selectedMonth] || 0;
+    const orc = valueForMonths(a.orcado);
+    const real = valueForMonths(a.realizado);
 
     if (orc === 0 && real === 0) return;
 

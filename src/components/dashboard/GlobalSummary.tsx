@@ -12,8 +12,11 @@ import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/e
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 interface Props {
-  selectedMonth: MonthKey | 'all';
+  selectedMonth: MonthKey[] | 'all';
 }
+
+const isAllMonthsSelection = (selection: MonthKey[] | 'all') =>
+  selection === 'all' || selection.length === 0;
 
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
 const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
@@ -241,7 +244,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (activityKey !== 'AGRICOLA' || !isAgricolaUnidadeRecepConta4Entry(a))
     );
 
-    if (activityKey !== 'DESP_ADM_TRIB' || selectedMonth !== 'all') {
+    if (activityKey !== 'DESP_ADM_TRIB' || !isAllMonthsSelection(selectedMonth)) {
       return totals;
     }
 

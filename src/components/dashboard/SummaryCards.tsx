@@ -7,10 +7,10 @@ import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 const RECEITAS_GREEN = '#038779';
 
 interface Props {
-  selectedMonth: MonthKey | 'all';
+  selectedMonth: MonthKey[] | 'all';
   atividadeFilter?: AtividadeKey;
-  costCenterFilter?: string;
-  departmentFilter?: string;
+  costCenterFilter?: string[];
+  departmentFilter?: string[];
   tipoFilter?: string[];
   entryFilter?: (entry: AccountEntry) => boolean;
 }
@@ -25,19 +25,26 @@ export function SummaryCards({
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
+  const isAllMonths = selectedMonth === 'all' || selectedMonth.length === 0;
+  const monthList = isAllMonths ? [] : (selectedMonth as MonthKey[]);
+
   const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
     entries.reduce((sum, entry) => {
-      if (selectedMonth === 'all') {
+      if (isAllMonths) {
         return sum + Object.values(entry[field]).reduce((acc: number, value: number) => acc + value, 0);
       }
-      return sum + (entry[field][selectedMonth] || 0);
+      return sum + monthList.reduce((acc, m) => acc + (entry[field][m] || 0), 0);
     }, 0);
 
-  const leafAccounts = accounts.filter(a => 
-    a.nivel === 5 && 
+  const leafAccounts = accounts.filter(a =>
+    a.nivel === 5 &&
     (!atividadeFilter || a.atividade === atividadeFilter) &&
-    (!costCenterFilter || a.centroCusto === costCenterFilter) &&
-    (!departmentFilter || a.departamento === departmentFilter) &&
+    (!costCenterFilter ||
+      costCenterFilter.length === 0 ||
+      (a.centroCusto !== undefined && costCenterFilter.includes(a.centroCusto))) &&
+    (!departmentFilter ||
+      departmentFilter.length === 0 ||
+      (a.departamento !== undefined && departmentFilter.includes(a.departamento))) &&
     (!entryFilter || entryFilter(a))
   );
 

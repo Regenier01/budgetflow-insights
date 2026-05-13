@@ -1,16 +1,17 @@
 import { RevenueSummary } from '@/components/dashboard/RevenueSummary';
 import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
 import { DollarSign } from 'lucide-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { MultiSelect } from '@/components/ui/multi-select';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
 import { useMemo, useState } from 'react';
 
 export default function Dashboard() {
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => {
+  const [selectedMonths, setSelectedMonths] = useState<MonthKey[]>(() => {
     const s = useBudgetStore.getState();
-    return getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches) ?? 'all';
+    const fallback = getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches);
+    return fallback ? [fallback] : [];
   });
 
   const availableMonths = useMemo(() => {
@@ -22,6 +23,11 @@ export default function Dashboard() {
 
     return MONTHS.filter((month) => monthSet.has(month.key));
   }, [accounts]);
+
+  const monthOptions = useMemo(
+    () => availableMonths.map((month) => ({ value: month.key, label: month.label })),
+    [availableMonths]
+  );
 
   return (
     <div className="space-y-12 pb-20">
@@ -37,19 +43,14 @@ export default function Dashboard() {
         </div>
         <div className="sticky top-20 z-40 -mx-2 rounded-xl bg-[#fdfcfb]/95 px-2 py-2 backdrop-blur supports-[backdrop-filter]:bg-[#fdfcfb]/80">
           <div className="w-full sm:w-[280px]">
-            <Select value={selectedMonth} onValueChange={(value) => setSelectedMonth(value as MonthKey | 'all')}>
-              <SelectTrigger className="bg-white border-slate-200 shadow-sm font-semibold text-slate-700">
-                <SelectValue placeholder="Selecione o período" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">Consolidado Geral</SelectItem>
-                {availableMonths.map((month) => (
-                  <SelectItem key={month.key} value={month.key}>
-                    {month.label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <MultiSelect
+              options={monthOptions}
+              selected={selectedMonths}
+              onChange={(next) => setSelectedMonths(next as MonthKey[])}
+              placeholder="Selecione o período"
+              allLabel="Consolidado Geral"
+              triggerClassName="bg-white border-slate-200 shadow-sm font-semibold text-slate-700"
+            />
           </div>
         </div>
       </div>
@@ -59,7 +60,7 @@ export default function Dashboard() {
           <div className="h-6 w-1.5 bg-orange-500 rounded-full" />
           <h2 className="text-xl font-black text-primary uppercase tracking-tight">CUSTOS</h2>
         </div>
-        <GlobalSummary selectedMonth={selectedMonth} />
+        <GlobalSummary selectedMonth={selectedMonths} />
       </section>
 
       <section className="space-y-8 pt-6">
@@ -73,7 +74,7 @@ export default function Dashboard() {
             Orçado vs Realizado
           </div>
         </div>
-        <RevenueSummary selectedMonth={selectedMonth} />
+        <RevenueSummary selectedMonth={selectedMonths} />
       </section>
     </div>
   );

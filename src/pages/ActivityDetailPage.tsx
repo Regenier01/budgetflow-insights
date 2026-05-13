@@ -2,6 +2,7 @@ import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { useState, useMemo, useEffect } from 'react';
 import AnalyticalTable from '@/components/dashboard/AnalyticalTable';
 import { SummaryCards } from '@/components/dashboard/SummaryCards';
+import { MultiSelect } from '@/components/ui/multi-select';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ATIVIDADES, MONTHS, type MonthKey } from '@/types/budget';
 import type { AccountEntry } from '@/types/budget';
@@ -109,24 +110,29 @@ const getAgricolaCultureFromRealizado = (entry: AccountEntry) => {
   return getAgricolaCultureFromDescription(entry.descricao);
 };
 
-const hasOrcadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
-  if (selectedMonth === 'all') {
+type MonthSelection = MonthKey[] | 'all';
+
+const isAllMonthsSelection = (selection: MonthSelection): selection is 'all' =>
+  selection === 'all' || selection.length === 0;
+
+const hasOrcadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthSelection) => {
+  if (isAllMonthsSelection(selectedMonth)) {
     return Object.values(entry.orcado).some((value) => value !== 0);
   }
-  return (entry.orcado[selectedMonth] || 0) !== 0;
+  return selectedMonth.some((m) => (entry.orcado[m] || 0) !== 0);
 };
 
-const hasRealizadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
-  if (selectedMonth === 'all') {
+const hasRealizadoValueForMonth = (entry: AccountEntry, selectedMonth: MonthSelection) => {
+  if (isAllMonthsSelection(selectedMonth)) {
     return Object.values(entry.realizado).some((value) => value !== 0);
   }
-  return (entry.realizado[selectedMonth] || 0) !== 0;
+  return selectedMonth.some((m) => (entry.realizado[m] || 0) !== 0);
 };
 
 const matchesAgricolaCulture = (
   entry: AccountEntry,
   culture: string,
-  selectedMonth: MonthKey | 'all'
+  selectedMonth: MonthSelection
 ) => {
   const normalizedCulture = normalizeText(culture);
   const orcadoCulture = getAgricolaCultureFromOrcado(entry);
@@ -264,14 +270,16 @@ const combineEntryFilters = (
 };
 
 const ENCARGOS_SUMMARY_TIPO_FILTER: Array<'R' | 'C' | 'D'> = ['R', 'C', 'D'];
-const hasEntryValueForMonth = (entry: AccountEntry, selectedMonth: MonthKey | 'all') => {
-  if (selectedMonth === 'all') {
+const hasEntryValueForMonth = (entry: AccountEntry, selectedMonth: MonthSelection) => {
+  if (isAllMonthsSelection(selectedMonth)) {
     const totalOrcado = Object.values(entry.orcado).reduce((sum, value) => sum + value, 0);
     const totalRealizado = Object.values(entry.realizado).reduce((sum, value) => sum + value, 0);
     return totalOrcado !== 0 || totalRealizado !== 0;
   }
 
-  return (entry.orcado[selectedMonth] || 0) !== 0 || (entry.realizado[selectedMonth] || 0) !== 0;
+  return selectedMonth.some(
+    (m) => (entry.orcado[m] || 0) !== 0 || (entry.realizado[m] || 0) !== 0
+  );
 };
 
 export default function ActivityDetailPage() {
@@ -283,13 +291,18 @@ export default function ActivityDetailPage() {
   const navigate = useNavigate();
   const initialDepartment = searchParams.get('departamento');
   const accounts = useBudgetStore((s) => s.accounts);
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey | 'all'>(() => {
+  const [selectedMonths, setSelectedMonths] = useState<MonthKey[]>(() => {
     const s = useBudgetStore.getState();
-    return getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches) ?? 'all';
+    const fallback = getDefaultRealizadoFilterMonth(s.accounts, s.importedRealizadoBatches);
+    return fallback ? [fallback] : [];
   });
-  const [selectedCC, setSelectedCC] = useState<string | 'all'>('all');
-  const [selectedDept, setSelectedDept] = useState<string | 'all'>(initialDepartment || 'all');
+  const [selectedCCs, setSelectedCCs] = useState<string[]>([]);
+  const [selectedDepts, setSelectedDepts] = useState<string[]>(
+    initialDepartment ? [initialDepartment] : []
+  );
   const [selectedCulture, setSelectedCulture] = useState<string | 'all'>('all');
+  const selectedMonth: MonthKey[] = selectedMonths;
+  const isMonthAll = selectedMonths.length === 0;
   
   const isOutrasReceitasEventuais = id === 'OUTRAS_RECEITAS_EVENTUAIS';
   const isDespesasComVendas = id === 'DESPESAS_COM_VENDAS';
@@ -307,8 +320,10 @@ export default function ActivityDetailPage() {
   const isDespesasComVendasAgricolaSubview = isDespesasComVendas && subview === 'agricola';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
-  const activeCostCenterFilter =
-    shouldApplyCostCenterFilter && selectedCC !== 'all' ? selectedCC : undefined;
+  const activeCostCenterFilter: string[] | undefined =
+    shouldApplyCostCenterFilter && selectedCCs.length > 0 ? selectedCCs : undefined;
+  const activeDepartmentFilter: string[] | undefined =
+    selectedDepts.length > 0 ? selectedDepts : undefined;
   const shouldApplyCultureFilter = isAgricola;
   const activeCultureFilter =
     shouldApplyCultureFilter && selectedCulture !== 'all' ? selectedCulture : undefined;
@@ -418,8 +433,12 @@ export default function ActivityDetailPage() {
         (entry) =>
           entry.nivel === 5 &&
           (!atividade?.key || entry.atividade === atividade.key) &&
-          (!activeCostCenterFilter || entry.centroCusto === activeCostCenterFilter) &&
-          (selectedDept === 'all' || entry.departamento === selectedDept) &&
+          (!activeCostCenterFilter ||
+            (entry.centroCusto !== undefined &&
+              activeCostCenterFilter.includes(entry.centroCusto))) &&
+          (!activeDepartmentFilter ||
+            (entry.departamento !== undefined &&
+              activeDepartmentFilter.includes(entry.departamento))) &&
           (!activeCultureFilter ||
             matchesAgricolaCulture(entry, activeCultureFilter, selectedMonth)) &&
           (!activityLevelEntryFilter || activityLevelEntryFilter(entry))
@@ -428,7 +447,7 @@ export default function ActivityDetailPage() {
       accounts,
       atividade?.key,
       activeCostCenterFilter,
-      selectedDept,
+      activeDepartmentFilter,
       activeCultureFilter,
       activityLevelEntryFilter,
       selectedMonth,
@@ -437,10 +456,10 @@ export default function ActivityDetailPage() {
 
   const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
     entries.reduce((sum, entry) => {
-      if (selectedMonth === 'all') {
+      if (isMonthAll) {
         return sum + Object.values(entry[field]).reduce((acc, value) => acc + value, 0);
       }
-      return sum + (entry[field][selectedMonth] || 0);
+      return sum + selectedMonths.reduce((acc, m) => acc + (entry[field][m] || 0), 0);
     }, 0);
 
   const receitaBrutaEntries = filteredLeafAccounts.filter(
@@ -477,10 +496,10 @@ export default function ActivityDetailPage() {
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
-        if (selectedMonth === 'all') {
+        if (isMonthAll) {
           return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
         }
-        return acc + (entry[field][selectedMonth] || 0);
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
       }, 0);
 
     const baseLeaves = accounts.filter(
@@ -539,7 +558,7 @@ export default function ActivityDetailPage() {
     const rawCusOrc = sum(custosEntries, 'orcado');
     const cusReal = sum(custosEntries, 'realizado');
     const cusOrc =
-      isAdmTrib && selectedMonth === 'all'
+      isAdmTrib && isMonthAll
         ? rawCusOrc - DESP_ADM_BUDGET_ADJUSTMENT
         : rawCusOrc;
 
@@ -573,10 +592,10 @@ export default function ActivityDetailPage() {
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
-        if (selectedMonth === 'all') {
+        if (isMonthAll) {
           return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
         }
-        return acc + (entry[field][selectedMonth] || 0);
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
       }, 0);
 
     const pastoOrc = sum(pastoEntries, 'orcado');
@@ -615,10 +634,10 @@ export default function ActivityDetailPage() {
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
-        if (selectedMonth === 'all') {
+        if (isMonthAll) {
           return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
         }
-        return acc + (entry[field][selectedMonth] || 0);
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
       }, 0);
 
     const laizaOrc = sum(laizaEntries, 'orcado');
@@ -631,7 +650,7 @@ export default function ActivityDetailPage() {
     const totalOrcRaw = laizaOrc + raileneOrc + tributariaOrc;
     const totalRealRaw = laizaReal + raileneReal + tributariaReal;
     const totalOrc =
-      selectedMonth === 'all'
+      isMonthAll
         ? totalOrcRaw - DESP_ADM_BUDGET_ADJUSTMENT
         : totalOrcRaw;
     const totalReal = totalRealRaw;
@@ -671,10 +690,10 @@ export default function ActivityDetailPage() {
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
-        if (selectedMonth === 'all') {
+        if (isMonthAll) {
           return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
         }
-        return acc + (entry[field][selectedMonth] || 0);
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
       }, 0);
 
     const geralOrc = sum(agricolaGeralEntries, 'orcado');
@@ -705,10 +724,10 @@ export default function ActivityDetailPage() {
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
-        if (selectedMonth === 'all') {
+        if (isMonthAll) {
           return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
         }
-        return acc + (entry[field][selectedMonth] || 0);
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
       }, 0);
 
     const pecuariaOrc = sum(pecuariaEntries, 'orcado');
@@ -914,8 +933,12 @@ export default function ActivityDetailPage() {
             entry.nivel === 5 &&
             (!atividade?.key || entry.atividade === atividade.key) &&
             (!activityLevelEntryFilterBase || activityLevelEntryFilterBase(entry)) &&
-            (!activeCostCenterFilter || entry.centroCusto === activeCostCenterFilter) &&
-            (selectedDept === 'all' || entry.departamento === selectedDept) &&
+            (!activeCostCenterFilter ||
+              (entry.centroCusto !== undefined &&
+                activeCostCenterFilter.includes(entry.centroCusto))) &&
+            (!activeDepartmentFilter ||
+              (entry.departamento !== undefined &&
+                activeDepartmentFilter.includes(entry.departamento))) &&
             hasEntryValueForMonth(entry, selectedMonth)
         )
         .flatMap((entry) => {
@@ -941,7 +964,7 @@ export default function ActivityDetailPage() {
     atividade?.key,
     activityLevelEntryFilterBase,
     activeCostCenterFilter,
-    selectedDept,
+    activeDepartmentFilter,
     selectedMonth,
   ]);
 
@@ -1033,16 +1056,20 @@ export default function ActivityDetailPage() {
     (isAdmTrib && resolvedTipoView === 'custos' && !subview && Boolean(admTribSummary));
 
   useEffect(() => {
-    if (selectedDept !== 'all' && !availableDepts.includes(selectedDept)) {
-      setSelectedDept('all');
+    if (selectedDepts.length === 0) return;
+    const stillAvailable = selectedDepts.filter((dept) => availableDepts.includes(dept));
+    if (stillAvailable.length !== selectedDepts.length) {
+      setSelectedDepts(stillAvailable);
     }
-  }, [availableDepts, selectedDept]);
+  }, [availableDepts, selectedDepts]);
 
   useEffect(() => {
-    if (selectedCC !== 'all' && !availableCostCenters.includes(selectedCC)) {
-      setSelectedCC('all');
+    if (selectedCCs.length === 0) return;
+    const stillAvailable = selectedCCs.filter((cc) => availableCostCenters.includes(cc));
+    if (stillAvailable.length !== selectedCCs.length) {
+      setSelectedCCs(stillAvailable);
     }
-  }, [availableCostCenters, selectedCC]);
+  }, [availableCostCenters, selectedCCs]);
 
   useEffect(() => {
     if (selectedCulture !== 'all' && !availableCultures.includes(selectedCulture)) {
@@ -1085,35 +1112,33 @@ export default function ActivityDetailPage() {
           <div className="flex justify-end px-4 sm:px-8">
             <div className="flex flex-wrap items-center justify-end gap-3">
               {!isGeneralTotalsView && (
-                <Select value={selectedDept} onValueChange={(v) => setSelectedDept(v)}>
-                  <SelectTrigger className="w-[200px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
-                    <SelectValue placeholder="Departamento" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all" className="font-semibold">Todos Departamentos</SelectItem>
-                    {availableDepts.map((dept) => (
-                      <SelectItem key={dept} value={dept}>
-                        {isPecuaria && subview === 'confinamento'
-                          ? formatConfinamentoDepartmentLabel(dept)
-                          : dept}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <MultiSelect
+                  className="w-[200px]"
+                  triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
+                  placeholder="Departamento"
+                  allLabel="Todos Departamentos"
+                  options={availableDepts.map((dept) => ({
+                    value: dept,
+                    label:
+                      isPecuaria && subview === 'confinamento'
+                        ? formatConfinamentoDepartmentLabel(dept)
+                        : dept,
+                  }))}
+                  selected={selectedDepts}
+                  onChange={setSelectedDepts}
+                />
               )}
 
               {!isGeneralTotalsView && shouldApplyCostCenterFilter && (
-                <Select value={selectedCC} onValueChange={(v) => setSelectedCC(v)}>
-                  <SelectTrigger className="w-[200px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
-                    <SelectValue placeholder="Centro de Custo" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all" className="font-semibold">Todos Centros de Custo</SelectItem>
-                    {availableCostCenters.map((cc) => (
-                      <SelectItem key={cc} value={cc}>{cc}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <MultiSelect
+                  className="w-[200px]"
+                  triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
+                  placeholder="Centro de Custo"
+                  allLabel="Todos Centros de Custo"
+                  options={availableCostCenters.map((cc) => ({ value: cc, label: cc }))}
+                  selected={selectedCCs}
+                  onChange={setSelectedCCs}
+                />
               )}
 
               {!isGeneralTotalsView && shouldApplyCultureFilter && (
@@ -1130,17 +1155,16 @@ export default function ActivityDetailPage() {
                 </Select>
               )}
 
-              <Select value={selectedMonth} onValueChange={(v) => setSelectedMonth(v as MonthKey | 'all')}>
-                <SelectTrigger className="w-[160px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
-                  <SelectValue placeholder="Período" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all" className="font-semibold">Acumulado 2026/27</SelectItem>
-                  {MONTHS.map((m) => (
-                    <SelectItem key={m.key} value={m.key}>{m.label}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <MultiSelect
+                className="w-[180px]"
+                triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
+                placeholder="Período"
+                allLabel="Acumulado 2026/27"
+                align="end"
+                options={MONTHS.map((m) => ({ value: m.key, label: m.label }))}
+                selected={selectedMonths}
+                onChange={(next) => setSelectedMonths(next as MonthKey[])}
+              />
             </div>
           </div>
         </div>
@@ -1194,7 +1218,7 @@ export default function ActivityDetailPage() {
                       onClick: () => navigate(buildHubPath('receitas')),
                       accentColor: 'emerald',
                     })}
-                  {renderSummaryCard(onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
+                  {renderSummaryCard(isEncargos ? 'Encargos' : onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
                     onClick: () => navigate(buildHubPath('custos')),
                     accentColor: 'amber',
                   })}
@@ -1276,8 +1300,8 @@ export default function ActivityDetailPage() {
             </div>
             <AnalyticalTable
               selectedMonth={selectedMonth}
-              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+              costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+              departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
               entryFilter={combineEntryFilters(
                 activityLevelEntryFilter,
                 (entry) => isOutrasReceitasEventuaisCode(entry.codigo),
@@ -1297,8 +1321,8 @@ export default function ActivityDetailPage() {
             </div>
             <AnalyticalTable
               selectedMonth={selectedMonth}
-              costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+              costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+              departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
               entryFilter={activityLevelEntryFilter}
               title="Detalhamento de Rateios"
               subtitle="Departamentos selecionados"
@@ -1318,7 +1342,7 @@ export default function ActivityDetailPage() {
               atividadeFilter={atividade.key}
               selectedMonth={selectedMonth}
               costCenterFilter={activeCostCenterFilter}
-              departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+              departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
               tipoFilter={['R']}
               entryFilter={combineEntryFilters(
                 activityLevelEntryFilter,
@@ -1333,7 +1357,7 @@ export default function ActivityDetailPage() {
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={activeCostCenterFilter}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   tipoFilter={['D']}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
@@ -1378,8 +1402,8 @@ export default function ActivityDetailPage() {
               </div>
               <AnalyticalTable
                 selectedMonth={selectedMonth}
-                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                 tipoFilter={['C', 'D']}
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
@@ -1413,8 +1437,8 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable 
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     (entry) => isDespesaFinanceiraAccount(entry),
@@ -1435,8 +1459,8 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable 
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     (entry) => isReceitaFinanceiraAccount(entry),
@@ -1459,8 +1483,8 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable 
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   tipoFilter={['C']}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
@@ -1491,8 +1515,8 @@ export default function ActivityDetailPage() {
                       <AnalyticalTable
                         atividadeFilter={atividade.key}
                         selectedMonth={selectedMonth}
-                        costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                        departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                        costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                        departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                         tipoFilter={['D']}
                         entryFilter={combineEntryFilters(
                           activityLevelEntryFilter,
@@ -1518,8 +1542,8 @@ export default function ActivityDetailPage() {
                     <AnalyticalTable
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
-                      costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                      departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                      costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                      departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
@@ -1536,8 +1560,8 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable 
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1560,8 +1584,8 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['C', 'D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1589,7 +1613,7 @@ export default function ActivityDetailPage() {
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={activeCostCenterFilter}
-                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                 tipoFilter={['R']}
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
@@ -1604,7 +1628,7 @@ export default function ActivityDetailPage() {
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
                     costCenterFilter={activeCostCenterFilter}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1648,8 +1672,8 @@ export default function ActivityDetailPage() {
               <AnalyticalTable 
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
-                costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                 tipoFilter={['C']}
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
@@ -1679,8 +1703,8 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1697,8 +1721,8 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1715,8 +1739,8 @@ export default function ActivityDetailPage() {
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                    departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                     tipoFilter={['D']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
@@ -1733,8 +1757,8 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable 
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   tipoFilter={['D']}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
@@ -1757,8 +1781,8 @@ export default function ActivityDetailPage() {
                 <AnalyticalTable
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCC === 'all' ? undefined : selectedCC}
-                  departmentFilter={selectedDept === 'all' ? undefined : selectedDept}
+                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
                     isConfinamentoEntry,

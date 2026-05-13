@@ -146,14 +146,31 @@ export function dateToMonthKey(raw: string | number | Date | undefined): MonthKe
   return `${y}-${m}` as MonthKey;
 }
 
+/**
+ * Seleção de meses para filtros. Pode ser:
+ * - 'all': literal indicando todos os meses;
+ * - MonthKey: um único mês (compatibilidade);
+ * - MonthKey[]: vários meses (vazio também significa "todos").
+ */
+export type MonthSelection = MonthKey | 'all' | readonly MonthKey[];
+
 export function sumValuesByMonth(
   values: Record<string, number>,
-  selectedMonth: MonthKey | 'all'
+  selectedMonth: MonthSelection
 ) {
   if (selectedMonth === 'all') {
     return Object.values(values).reduce((sum, v) => sum + v, 0);
   }
-  return values[selectedMonth] || 0;
+  if (Array.isArray(selectedMonth)) {
+    if (selectedMonth.length === 0) {
+      return Object.values(values).reduce((sum, v) => sum + v, 0);
+    }
+    return selectedMonth.reduce<number>(
+      (sum, month) => sum + (values[month] || 0),
+      0
+    );
+  }
+  return values[selectedMonth as MonthKey] || 0;
 }
 
 const rowValue = (value: unknown): string | undefined => {
