@@ -142,6 +142,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
     activityKey?: string;
   }) => {
     const isPositive = diff > 0;
+    const diffPctVsOrc =
+      Math.abs(orc) < 1e-9 ? null : (diff / Math.abs(orc)) * 100;
     const isClickable = !!activityKey;
 
     return (
@@ -188,12 +190,28 @@ export function GlobalSummary({ selectedMonth }: Props) {
           </div>
           <div
             className={cn(
-              "py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1",
+              "py-4 text-[13px] font-semibold tabular-nums flex flex-wrap items-center justify-center gap-2",
               isPositive ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
-            {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
-            {fmt(diff)}
+            <span className="inline-flex items-center gap-1">
+              {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+              {fmt(diff)}
+            </span>
+            <span
+              className={cn(
+                'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
+                diffPctVsOrc == null
+                  ? 'text-slate-400'
+                  : isPositive
+                    ? 'text-emerald-700'
+                    : 'text-rose-700'
+              )}
+            >
+              {diffPctVsOrc == null
+                ? '—'
+                : `${diffPctVsOrc >= 0 ? '+' : ''}${diffPctVsOrc.toFixed(1)}%`}
+            </span>
           </div>
         </div>
       </div>

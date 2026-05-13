@@ -749,6 +749,8 @@ export default function ActivityDetailPage() {
   ) => {
     const { isMain = false, onClick, accentColor = 'orange' } = options || {};
     const difference = Math.abs(data.orc) - Math.abs(data.real);
+    const diffPctVsOrc =
+      Math.abs(data.orc) < 1e-9 ? null : (difference / Math.abs(data.orc)) * 100;
     const isPositiveDifference = difference >= 0;
     const isEmerald = accentColor === 'emerald';
     const isAmber = accentColor === 'amber';
@@ -800,16 +802,32 @@ export default function ActivityDetailPage() {
           </div>
           <div
             className={cn(
-              'py-4 text-[13px] font-semibold tabular-nums flex items-center justify-center gap-1',
+              'py-4 text-[13px] font-semibold tabular-nums flex flex-wrap items-center justify-center gap-2',
               isPositiveDifference ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
             )}
           >
-            {isPositiveDifference ? (
-              <TrendingUp className="h-3.5 w-3.5" />
-            ) : (
-              <TrendingDown className="h-3.5 w-3.5" />
-            )}
-            {fmtDecimal(difference)}
+            <span className="inline-flex items-center gap-1">
+              {isPositiveDifference ? (
+                <TrendingUp className="h-3.5 w-3.5" />
+              ) : (
+                <TrendingDown className="h-3.5 w-3.5" />
+              )}
+              {fmtDecimal(difference)}
+            </span>
+            <span
+              className={cn(
+                'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
+                diffPctVsOrc == null
+                  ? 'text-slate-400'
+                  : isPositiveDifference
+                    ? 'text-emerald-700'
+                    : 'text-rose-700'
+              )}
+            >
+              {diffPctVsOrc == null
+                ? '—'
+                : `${diffPctVsOrc >= 0 ? '+' : ''}${diffPctVsOrc.toFixed(1)}%`}
+            </span>
           </div>
         </div>
       </div>
