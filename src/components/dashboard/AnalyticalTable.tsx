@@ -7,6 +7,7 @@ import {
   CONFINAMENTO_DIARIA_ORCADO,
   CONFINAMENTO_DIARIA_REALIZADO,
 } from '@/data/confinamentoDiarias';
+import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -20,6 +21,8 @@ interface Props {
   accentColor?: string;
   /** Custos confinamento: Diária O/R (planilha Diarias.xlsx, um mês por célula — sem somar meses) */
   showDiariaColumns?: boolean;
+  /** Custos pecuária pasto: P/Cabeça O/R (Diarias/CustoPcabeça.xlsx; um mês por coluna — `npm run pcabeca:import`) */
+  showPCabecaColumns?: boolean;
 }
 
 interface Node {
@@ -113,11 +116,13 @@ export function AnalyticalTable({
   subtitle = "N9 → Conta → Produto",
   accentColor = "orange",
   showDiariaColumns = false,
+  showPCabecaColumns = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
   const ta = resolveTableAccent(accentColor);
+  const extraMetricCols = (showDiariaColumns ? 2 : 0) + (showPCabecaColumns ? 2 : 0);
 
   // Tabela de receitas (tipoFilter exclusivamente 'R'): variação = realizado − orçado;
   // favorável (verde) quando real > orçado.
@@ -261,6 +266,20 @@ export function AnalyticalTable({
   const diariaRealResolved: number | null =
     singleMonthForDiaria == null ? null : (CONFINAMENTO_DIARIA_REALIZADO[singleMonthForDiaria] ?? null);
 
+  const singleMonthForPCabeca: MonthKey | null =
+    showPCabecaColumns &&
+    selectedMonth !== 'all' &&
+    Array.isArray(selectedMonth) &&
+    selectedMonth.length === 1
+      ? selectedMonth[0]
+      : null;
+
+  const pcabecaOrcResolved: number | null =
+    singleMonthForPCabeca == null ? null : (PASTO_PCABECA_ORCADO[singleMonthForPCabeca] ?? null);
+
+  const pcabecaRealResolved: number | null =
+    singleMonthForPCabeca == null ? null : (PASTO_PCABECA_REALIZADO[singleMonthForPCabeca] ?? null);
+
   const fmtDiaria = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'currency',
@@ -320,10 +339,12 @@ export function AnalyticalTable({
               {showBudget && node.orc ? fmtCurrency(node.orc) : '-'}
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
+            {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
+            {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className={cn(
               "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
               isPositive ? "text-emerald-600" : "text-rose-600"
@@ -391,16 +412,22 @@ export function AnalyticalTable({
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-4 w-[120px]">Diária O</th>
                 )}
+                {showPCabecaColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">P/Cabeça O</th>
+                )}
                 <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-4 w-[120px]">Diária R</th>
+                )}
+                {showPCabecaColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">P/Cabeça R</th>
                 )}
                 <th className="text-right py-3 px-4 w-[150px]">Variação</th>
               </tr>
             </thead>
             <tbody>
               {root.size > 0 ? renderNodes(root) : (
-                <tr><td colSpan={showDiariaColumns ? 6 : 4} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
+                <tr><td colSpan={4 + extraMetricCols} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
             </tbody>
             {root.size > 0 && (() => {
@@ -415,9 +442,13 @@ export function AnalyticalTable({
                     <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaOrcResolved)}
+                    {showPCabecaColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaOrcResolved)}
                     <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaRealResolved)}
+                    {showPCabecaColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaRealResolved)}
                     <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
                         <div className="flex flex-wrap items-center justify-end gap-2">
@@ -453,9 +484,15 @@ export function AnalyticalTable({
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Diária O</th>
                 )}
+                {showPCabecaColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">P/Cabeça O</th>
+                )}
                 <th className="text-right py-3 px-3 w-[120px]">Realizado</th>
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Diária R</th>
+                )}
+                {showPCabecaColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">P/Cabeça R</th>
                 )}
                 <th className="text-right py-3 px-3 w-[120px]">Variação</th>
               </tr>
@@ -473,8 +510,10 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
                     <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(entry.orc || entry.real) ? (
                         <div className="flex flex-wrap items-center justify-end gap-2">
@@ -491,7 +530,7 @@ export function AnalyticalTable({
                   </tr>
                 );
               }) : (
-                <tr><td colSpan={showDiariaColumns ? 10 : 8} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
+                <tr><td colSpan={8 + extraMetricCols} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
             </tbody>
             {flatEntries.length > 0 && (() => {
@@ -506,9 +545,13 @@ export function AnalyticalTable({
                     <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaOrcResolved)}
+                    {showPCabecaColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaOrcResolved)}
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaRealResolved)}
+                    {showPCabecaColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaRealResolved)}
                     <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
                         <div className="flex flex-wrap items-center justify-end gap-2">
