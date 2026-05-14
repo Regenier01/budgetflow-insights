@@ -121,13 +121,13 @@ export function RevenueSummary({ selectedMonth }: Props) {
         className={cn(
           "border overflow-hidden rounded-2xl transition-all duration-300 bg-white",
           isMain
-            ? "mb-10 border-revenue/30 shadow-xl ring-1 ring-revenue/15"
-            : "border-slate-100 shadow-sm hover:shadow-md hover:border-revenue/30 group",
+            ? "mb-10 border-dashboard-green/30 shadow-xl ring-1 ring-dashboard-green/15"
+            : "border-slate-100 shadow-sm hover:shadow-md hover:border-dashboard-green/30 group",
           isClickable && "cursor-pointer active:scale-[0.99]"
         )}
       >
         <div className={cn(
-          "py-4 px-5 flex items-center justify-between bg-revenue text-revenue-foreground"
+          "py-4 px-5 flex items-center justify-between bg-dashboard-green text-white"
         )}>
           <span className={cn(
             "font-semibold text-[13px]"
@@ -135,7 +135,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
             {title}
           </span>
           {isClickable ? (
-            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-revenue group-hover:bg-revenue/10 transition-colors">
+            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-dashboard-green group-hover:bg-dashboard-green/10 transition-colors">
               <ArrowRight className="h-4 w-4" />
             </div>
           ) : (
@@ -161,7 +161,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2",
-              isFavorable ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
+              isFavorable ? "text-dashboard-green bg-dashboard-green/10" : "text-rose-600 bg-rose-50/50"
             )}
           >
             <span className="inline-flex items-center gap-1">
@@ -174,7 +174,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
                 diffPctVsOrc == null
                   ? 'text-slate-400'
                   : isFavorable
-                    ? 'text-emerald-700'
+                    ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
             >

@@ -43,8 +43,8 @@ export function BudgetChart({ tipoFilter }: Props) {
                 }}
               />
               <Legend />
-              <Bar dataKey="Orçado" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="Realizado" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Orçado" fill="#038779" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Realizado" fill="#FF7E00" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

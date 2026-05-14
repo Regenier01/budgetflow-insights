@@ -34,8 +34,8 @@ export default function Dashboard() {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="text-5xl font-black tracking-tight uppercase">
-            <span className="text-primary">Orçado X</span>{' '}
-            <span className="text-orange-500">Realizado</span>
+            <span className="text-dashboard-green">Orçado X</span>{' '}
+            <span className="text-dashboard-orange">Realizado</span>
           </h1>
           <p className="text-slate-400 font-semibold text-lg leading-relaxed">
             Safra 26/27
@@ -57,8 +57,8 @@ export default function Dashboard() {
 
       <section className="space-y-6">
         <div className="flex items-center gap-3 px-1">
-          <div className="h-6 w-1.5 bg-orange-500 rounded-full" />
-          <h2 className="text-xl font-black text-primary uppercase tracking-tight">CUSTOS</h2>
+          <div className="h-6 w-1.5 bg-dashboard-orange rounded-full" />
+          <h2 className="text-xl font-black text-dashboard-green uppercase tracking-tight">CUSTOS</h2>
         </div>
         <GlobalSummary selectedMonth={selectedMonths} />
       </section>
@@ -66,11 +66,11 @@ export default function Dashboard() {
       <section className="space-y-8 pt-6">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-3">
-            <div className="h-6 w-1.5 bg-revenue rounded-full" />
-            <h2 className="text-2xl font-black text-revenue uppercase tracking-tight">RECEITAS</h2>
+            <div className="h-6 w-1.5 bg-dashboard-green rounded-full" />
+            <h2 className="text-2xl font-black text-dashboard-green uppercase tracking-tight">RECEITAS</h2>
           </div>
           <div className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase bg-white border border-slate-100 shadow-sm px-3 py-1.5 rounded-full">
-            <DollarSign className="h-3.5 w-3.5 text-revenue" />
+            <DollarSign className="h-3.5 w-3.5 text-dashboard-green" />
             Orçado vs Realizado
           </div>
         </div>

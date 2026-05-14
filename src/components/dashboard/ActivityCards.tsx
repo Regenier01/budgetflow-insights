@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ATIVIDADES, MONTHS } from '@/types/budget';
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid } from 'recharts';
 import { TrendingUp, TrendingDown, Target } from 'lucide-react';
 
 export function ActivityCards() {
@@ -46,10 +46,10 @@ export function ActivityCards() {
             key={ativ.key} 
             className="flex flex-col border-none shadow-lg overflow-hidden bg-white rounded-2xl"
           >
-            <CardHeader className="pb-4 bg-primary text-white">
+            <CardHeader className="pb-4 bg-dashboard-green text-white">
               <CardTitle className="text-[11px] font-black uppercase tracking-[0.2em] flex items-center justify-between">
                 <span>Evolução: {ativ.label}</span>
-                <Target className="h-4 w-4 text-orange-400" />
+                <Target className="h-4 w-4 text-dashboard-orange" />
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 pt-6 flex-1">
@@ -64,17 +64,17 @@ export function ActivityCards() {
                 </div>
                 <div className={cn(
                   "rounded-xl p-4 border",
-                  isHigher ? 'bg-emerald-50 border-emerald-100' : 'bg-rose-50 border-rose-100'
+                  isHigher ? 'bg-dashboard-green/10 border-dashboard-green/25' : 'bg-rose-50 border-rose-100'
                 )}>
                   <p className={cn(
                     "text-[9px] uppercase tracking-widest font-black mb-1",
-                    isHigher ? 'text-emerald-600' : 'text-rose-600'
+                    isHigher ? 'text-dashboard-green' : 'text-rose-600'
                   )}>Variação</p>
                   <div className="flex items-center gap-1">
-                    {isHigher ? <TrendingUp className="h-3.5 w-3.5 text-emerald-600" /> : <TrendingDown className="h-3.5 w-3.5 text-rose-600" />}
+                    {isHigher ? <TrendingUp className="h-3.5 w-3.5 text-dashboard-green" /> : <TrendingDown className="h-3.5 w-3.5 text-rose-600" />}
                     <p className={cn(
                       "text-sm font-mono font-black",
-                      isHigher ? 'text-emerald-700' : 'text-rose-700'
+                      isHigher ? 'text-dashboard-green' : 'text-rose-700'
                     )}>
                       {variance >= 0 ? '+' : ''}{variance.toFixed(1)}%
                     </p>
@@ -99,7 +99,7 @@ export function ActivityCards() {
                       tick={{ fontSize: 10, fontWeight: 700, fill: '#94a3b8' }} 
                     />
                     <Tooltip
-                      cursor={{ fill: '#fff7ed' }}
+                      cursor={{ fill: 'rgba(255, 126, 0, 0.08)' }}
                       contentStyle={{
                         background: '#ffffff',
                         border: 'none',
@@ -109,8 +109,8 @@ export function ActivityCards() {
                         fontWeight: 800
                       }}
                     />
-                    <Bar dataKey="Orçado" fill="#062d24" radius={[4, 4, 0, 0]} barSize={12} />
-                    <Bar dataKey="Realizado" fill="#f97316" radius={[4, 4, 0, 0]} barSize={12} />
+                    <Bar dataKey="Orçado" fill="#038779" radius={[4, 4, 0, 0]} barSize={12} />
+                    <Bar dataKey="Realizado" fill="#FF7E00" radius={[4, 4, 0, 0]} barSize={12} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

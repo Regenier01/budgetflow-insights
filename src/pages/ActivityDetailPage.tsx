@@ -28,8 +28,11 @@ import {
   CONFINAMENTO_DIARIA_REALIZADO,
 } from '@/data/confinamentoDiarias';
 import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
+import {
+  SERINGAL_CUSTO_PKG_ORCADO,
+  SERINGAL_CUSTO_PKG_REALIZADO,
+} from '@/data/seringalCustoPpKg';
 
-const RECEITAS_GREEN = '#038779';
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
 
 const RATEIO_DEPARTMENTS = [
@@ -318,6 +321,7 @@ export default function ActivityDetailPage() {
   const isEncargos = atividade?.key === 'ENCARGOS';
   const isAgricola = atividade?.key === 'AGRICOLA';
   const isPecuaria = atividade?.key === 'PECUARIA';
+  const isSeringal = atividade?.key === 'SERINGAL';
   const isAdmTribLaizaSubview = isAdmTrib && subview === 'laiza';
   const isAdmTribRaileneSubview = isAdmTrib && subview === 'railene';
   const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
@@ -528,6 +532,17 @@ export default function ActivityDetailPage() {
         orcExtra: CONFINAMENTO_DIARIA_ORCADO[m] ?? null,
         realExtra: CONFINAMENTO_DIARIA_REALIZADO[m] ?? null,
       },
+    };
+  }, [pecuariaCardMetricMonth]);
+
+  const seringalSummaryCardExtras = useMemo(() => {
+    if (pecuariaCardMetricMonth == null) {
+      return { orcExtra: null as number | null, realExtra: null as number | null };
+    }
+    const m = pecuariaCardMetricMonth;
+    return {
+      orcExtra: SERINGAL_CUSTO_PKG_ORCADO[m] ?? null,
+      realExtra: SERINGAL_CUSTO_PKG_REALIZADO[m] ?? null,
     };
   }, [pecuariaCardMetricMonth]);
 
@@ -803,9 +818,12 @@ export default function ActivityDetailPage() {
         orcExtra: number | null;
         realExtra: number | null;
       };
+      /** Hub Seringal: Custo P/KG O/R (CustoKg.xlsx), um mês no filtro — não somar meses. */
+      seringalPkgMetrics?: { orcExtra: number | null; realExtra: number | null };
     }
   ) => {
-    const { isMain = false, onClick, accentColor = 'orange', pecuariaMetrics } = options || {};
+    const { isMain = false, onClick, accentColor = 'orange', pecuariaMetrics, seringalPkgMetrics } =
+      options || {};
     const isRevenueStyle = accentColor === 'emerald';
     const difference = isRevenueStyle
       ? data.real - data.orc
@@ -814,19 +832,41 @@ export default function ActivityDetailPage() {
       Math.abs(data.orc) < 1e-9 ? null : (difference / Math.abs(data.orc)) * 100;
     const isPositiveDifference = difference >= 0;
     const isEmerald = accentColor === 'emerald';
-    const isAmber = accentColor === 'amber';
-    const bgColor = isAmber ? 'bg-amber-500' : isEmerald ? '' : 'bg-orange-500';
-    const hoverBorder = isAmber ? 'hover:border-amber-200' : isEmerald ? 'hover:border-emerald-200' : 'hover:border-orange-200';
-    const iconColor = isAmber ? 'text-amber-500' : isEmerald ? '' : 'text-orange-500';
-    const iconHover = isAmber ? 'group-hover:bg-amber-100' : isEmerald ? 'group-hover:bg-emerald-100' : 'group-hover:bg-orange-100';
+    const bgColor = isEmerald ? '' : 'bg-dashboard-orange';
+    const hoverBorder = isEmerald
+      ? 'hover:border-dashboard-green/30'
+      : 'hover:border-dashboard-orange/35';
+    const iconColor = isEmerald ? '' : 'text-dashboard-orange';
+    const iconHover = isEmerald
+      ? 'group-hover:bg-dashboard-green/10'
+      : 'group-hover:bg-dashboard-orange/15';
 
-    const metricLabels =
-      pecuariaMetrics?.kind === 'confinamento'
-        ? { orc: 'Diária O', real: 'Diária R' }
-        : pecuariaMetrics?.kind === 'pasto'
-          ? { orc: 'P/Cabeça O', real: 'P/Cabeça R' }
-          : null;
-    const gridColsClass = pecuariaMetrics ? 'grid-cols-5' : 'grid-cols-3';
+    const hubExtraColumns = pecuariaMetrics
+      ? pecuariaMetrics.kind === 'confinamento'
+        ? {
+            labelOrc: 'Diária O',
+            labelReal: 'Diária R',
+            orcExtra: pecuariaMetrics.orcExtra,
+            realExtra: pecuariaMetrics.realExtra,
+          }
+        : {
+            labelOrc: 'P/Cabeça O',
+            labelReal: 'P/Cabeça R',
+            orcExtra: pecuariaMetrics.orcExtra,
+            realExtra: pecuariaMetrics.realExtra,
+          }
+      : seringalPkgMetrics
+        ? {
+            labelOrc: 'Custo P/KG O',
+            labelReal: 'Custo P/KG R',
+            orcExtra: seringalPkgMetrics.orcExtra,
+            realExtra: seringalPkgMetrics.realExtra,
+          }
+        : null;
+    /** Colunas centrais (P/Cabeça, Diária, Custo P/KG) mais estreitas que Orçado/Realizado/Diferença. */
+    const gridColsClass = hubExtraColumns
+      ? 'grid-cols-[minmax(0,1.05fr)_minmax(4.75rem,0.34fr)_minmax(0,1.05fr)_minmax(4.75rem,0.34fr)_minmax(7.75rem,0.95fr)]'
+      : 'grid-cols-3';
 
     return (
       <div
@@ -840,18 +880,19 @@ export default function ActivityDetailPage() {
         )}
       >
         <div
-          className={cn('py-4 px-5 flex items-center justify-between text-white', bgColor)}
-          style={isEmerald ? { backgroundColor: RECEITAS_GREEN } : undefined}
+          className={cn(
+            'py-4 px-5 flex items-center justify-between text-white',
+            isEmerald ? 'bg-dashboard-green' : bgColor
+          )}
         >
           <span className="font-semibold text-[13px]">{title}</span>
           {onClick && (
             <div
               className={cn(
                 'h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center transition-colors',
-                iconColor,
+                isEmerald ? 'text-dashboard-green' : iconColor,
                 iconHover
               )}
-              style={isEmerald ? { color: RECEITAS_GREEN } : undefined}
             >
               <ArrowRight className="h-4 w-4" />
             </div>
@@ -863,17 +904,17 @@ export default function ActivityDetailPage() {
           <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
             Orçado
           </div>
-          {metricLabels && (
-            <div className="py-2 text-[11px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight px-1">
-              {metricLabels.orc}
+          {hubExtraColumns && (
+            <div className="py-1.5 px-0.5 text-[9px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight">
+              {hubExtraColumns.labelOrc}
             </div>
           )}
           <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
             Realizado
           </div>
-          {metricLabels && (
-            <div className="py-2 text-[11px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight px-1">
-              {metricLabels.real}
+          {hubExtraColumns && (
+            <div className="py-1.5 px-0.5 text-[9px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight">
+              {hubExtraColumns.labelReal}
             </div>
           )}
           <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
@@ -882,9 +923,9 @@ export default function ActivityDetailPage() {
           <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
             {fmtDecimal(data.orc)}
           </div>
-          {pecuariaMetrics && (
-            <div className="py-4 text-[12px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white px-1">
-              {fmtPecuariaMetricCell(pecuariaMetrics.orcExtra) ?? (
+          {hubExtraColumns && (
+            <div className="py-2.5 px-0.5 text-[10px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white leading-tight">
+              {fmtPecuariaMetricCell(hubExtraColumns.orcExtra) ?? (
                 <span className="text-slate-400">-</span>
               )}
             </div>
@@ -892,9 +933,9 @@ export default function ActivityDetailPage() {
           <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
             {fmtDecimal(data.real)}
           </div>
-          {pecuariaMetrics && (
-            <div className="py-4 text-[12px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white px-1">
-              {fmtPecuariaMetricCell(pecuariaMetrics.realExtra) ?? (
+          {hubExtraColumns && (
+            <div className="py-2.5 px-0.5 text-[10px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white leading-tight">
+              {fmtPecuariaMetricCell(hubExtraColumns.realExtra) ?? (
                 <span className="text-slate-400">-</span>
               )}
             </div>
@@ -902,7 +943,7 @@ export default function ActivityDetailPage() {
           <div
             className={cn(
               'py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
-              isPositiveDifference ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
+              isPositiveDifference ? 'text-dashboard-green bg-dashboard-green/10' : 'text-rose-600 bg-rose-50/50'
             )}
           >
             <span className="inline-flex items-center gap-1">
@@ -919,7 +960,7 @@ export default function ActivityDetailPage() {
                 diffPctVsOrc == null
                   ? 'text-slate-400'
                   : isPositiveDifference
-                    ? 'text-emerald-700'
+                    ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
             >
@@ -1338,6 +1379,7 @@ export default function ActivityDetailPage() {
                   {renderSummaryCard(isEncargos ? 'Encargos' : onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
                     onClick: () => navigate(buildHubPath('custos')),
                     accentColor: 'amber',
+                    ...(isSeringal ? { seringalPkgMetrics: seringalSummaryCardExtras } : {}),
                   })}
                 </div>
               )}
@@ -1630,6 +1672,7 @@ export default function ActivityDetailPage() {
                   accentColor="orange"
                   showDiariaColumns={isPecuaria && subview === 'confinamento'}
                   showPCabecaColumns={isPecuaria && subview === 'pasto'}
+                  showPpKgColumns={isSeringal}
                 />
               </div>
 
@@ -1708,7 +1751,7 @@ export default function ActivityDetailPage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <h2 className="text-xl font-bold text-slate-900">Pecuária Confinamento</h2>
-                    <div className="text-[10px] font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-2 py-1 rounded border border-amber-100">
+                    <div className="text-[10px] font-bold text-dashboard-orange uppercase tracking-widest bg-dashboard-orange/10 px-2 py-1 rounded border border-dashboard-orange/25">
                       Confinamento
                     </div>
                   </div>
@@ -1821,6 +1864,7 @@ export default function ActivityDetailPage() {
                 accentColor="orange"
                 showDiariaColumns={isPecuaria && subview === 'confinamento'}
                 showPCabecaColumns={isPecuaria && subview === 'pasto'}
+                showPpKgColumns={isSeringal}
               />
             </div>
 
@@ -1907,7 +1951,7 @@ export default function ActivityDetailPage() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-bold text-slate-900">Pecuária Confinamento</h2>
-                  <div className="text-[10px] font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-2 py-1 rounded border border-amber-100">
+                  <div className="text-[10px] font-bold text-dashboard-orange uppercase tracking-widest bg-dashboard-orange/10 px-2 py-1 rounded border border-dashboard-orange/25">
                     Confinamento
                   </div>
                 </div>

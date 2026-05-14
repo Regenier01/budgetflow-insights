@@ -69,6 +69,11 @@ export default {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
         },
+        /** Paleta fixa da página Dashboard (verde #038779, laranja #FF7E00) */
+        dashboard: {
+          green: "#038779",
+          orange: "#FF7E00",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

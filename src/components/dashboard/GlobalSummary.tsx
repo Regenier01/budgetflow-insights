@@ -151,13 +151,13 @@ export function GlobalSummary({ selectedMonth }: Props) {
           "border overflow-hidden rounded-2xl transition-all duration-300 bg-white",
           isMain 
             ? "mb-10 border-primary/20 shadow-xl ring-1 ring-primary/5" 
-            : "border-slate-100 shadow-sm hover:shadow-md hover:border-orange-200 group",
+            : "border-slate-100 shadow-sm hover:shadow-md hover:border-dashboard-orange/35 group",
           isClickable && "cursor-pointer active:scale-[0.99]"
         )}
       >
         <div className={cn(
           "py-4 px-5 flex items-center justify-between",
-          isMain ? "bg-orange-500 text-white" : "bg-orange-500 text-white"
+          isMain ? "bg-dashboard-orange text-white" : "bg-dashboard-orange text-white"
         )}>
           <span className={cn(
             "font-semibold text-[13px]"
@@ -165,7 +165,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
             {title}
           </span>
           {isClickable && (
-            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-100 transition-colors">
+            <div className="h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center text-dashboard-orange group-hover:bg-dashboard-orange/15 transition-colors">
               <ArrowRight className="h-4 w-4" />
             </div>
           )}
@@ -187,7 +187,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2",
-              isPositive ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
+              isPositive ? "text-dashboard-green bg-dashboard-green/10" : "text-rose-600 bg-rose-50/50"
             )}
           >
             <span className="inline-flex items-center gap-1">
@@ -200,7 +200,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
                 diffPctVsOrc == null
                   ? 'text-slate-400'
                   : isPositive
-                    ? 'text-emerald-700'
+                    ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
             >

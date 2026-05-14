@@ -4,8 +4,6 @@ import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
-const RECEITAS_GREEN = '#038779';
-
 interface Props {
   selectedMonth: MonthKey[] | 'all';
   atividadeFilter?: AtividadeKey;
@@ -119,10 +117,10 @@ export function SummaryCards({
 
   const resolveHeaderClass = (color: string) =>
     color === 'emerald'
-      ? 'text-white'
+      ? 'bg-dashboard-green text-white'
       : color === 'orange'
-        ? 'bg-orange-500 text-white'
-        : 'bg-primary text-primary-foreground';
+        ? 'bg-dashboard-orange text-white'
+        : 'bg-dashboard-green text-white';
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -148,17 +146,15 @@ export function SummaryCards({
             <CardHeader className={cn(
               "flex flex-row items-center justify-between pb-3 space-y-0",
               resolveHeaderClass(cardColor)
-            )}
-            style={cardColor === 'emerald' ? { backgroundColor: RECEITAS_GREEN } : undefined}>
+            )}>
               <CardTitle className="text-[13px] font-semibold">
                 {c.title}
               </CardTitle>
               <div className={cn(
                 "p-2 rounded-lg bg-white/90",
-                cardColor === 'emerald' ? "" :
-                cardColor === 'orange' ? "text-orange-500" : "text-primary"
-              )}
-              style={cardColor === 'emerald' ? { color: RECEITAS_GREEN } : undefined}>
+                cardColor === 'emerald' ? "text-dashboard-green" :
+                cardColor === 'orange' ? "text-dashboard-orange" : "text-dashboard-green"
+              )}>
                 <c.icon className="h-4 w-4" />
               </div>
             </CardHeader>
@@ -168,7 +164,7 @@ export function SummaryCards({
               <div className="flex items-center gap-2 mt-3">
                 <div className={cn(
                   "flex items-center gap-0.5 text-[13px] font-semibold px-2 py-0.5 rounded-full",
-                  isPositive ? "bg-emerald-50/80 text-emerald-600" : "bg-rose-50/80 text-rose-600"
+                  isPositive ? "bg-dashboard-green/15 text-dashboard-green" : "bg-rose-50/80 text-rose-600"
                 )}>
                   {isPositive ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
                   {Math.abs(diffPct).toFixed(1)}%

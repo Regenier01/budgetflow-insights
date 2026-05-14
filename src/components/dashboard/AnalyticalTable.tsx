@@ -8,6 +8,10 @@ import {
   CONFINAMENTO_DIARIA_REALIZADO,
 } from '@/data/confinamentoDiarias';
 import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
+import {
+  SERINGAL_CUSTO_PKG_ORCADO,
+  SERINGAL_CUSTO_PKG_REALIZADO,
+} from '@/data/seringalCustoPpKg';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -23,6 +27,8 @@ interface Props {
   showDiariaColumns?: boolean;
   /** Custos pecuária pasto: P/Cabeça O/R (Diarias/CustoPcabeça.xlsx; um mês por coluna — `npm run pcabeca:import`) */
   showPCabecaColumns?: boolean;
+  /** Custos seringal: Custo P/KG O/R (Diarias/CustoKg.xlsx; um mês por coluna — `npm run seringal:custokg:import`) */
+  showPpKgColumns?: boolean;
 }
 
 interface Node {
@@ -47,14 +53,14 @@ interface FlatEntry {
 
 const TABLE_ACCENTS = {
   emerald: {
-    titleBar: 'bg-revenue',
+    titleBar: 'bg-dashboard-green',
     subtitle: 'text-white/75',
-    thead: 'bg-revenue text-white font-semibold border-b border-black/15',
-    tfoot: 'bg-revenue/10 border-t-2 border-revenue/30',
-    hoverL0: 'bg-white hover:bg-revenue/10',
-    hoverL1: 'bg-slate-100/70 hover:bg-revenue/15',
-    flatHover: 'hover:bg-revenue/10',
-    chevronOpen: 'bg-revenue text-white',
+    thead: 'bg-dashboard-green text-white font-semibold border-b border-black/15',
+    tfoot: 'bg-dashboard-green/10 border-t-2 border-dashboard-green/30',
+    hoverL0: 'bg-white hover:bg-dashboard-green/10',
+    hoverL1: 'bg-slate-100/70 hover:bg-dashboard-green/15',
+    flatHover: 'hover:bg-dashboard-green/10',
+    chevronOpen: 'bg-dashboard-green text-white',
   },
   sky: {
     titleBar: 'bg-sky-600',
@@ -77,14 +83,14 @@ const TABLE_ACCENTS = {
     chevronOpen: 'bg-red-600 text-white',
   },
   orange: {
-    titleBar: 'bg-primary',
-    subtitle: 'text-orange-400',
-    thead: 'bg-orange-500 text-white font-semibold border-b border-orange-600',
-    tfoot: 'bg-orange-50 border-t-2 border-orange-200',
-    hoverL0: 'bg-white hover:bg-orange-50/40',
-    hoverL1: 'bg-slate-100/70 hover:bg-orange-50/70',
-    flatHover: 'hover:bg-orange-50/40',
-    chevronOpen: 'bg-orange-500 text-white',
+    titleBar: 'bg-dashboard-green',
+    subtitle: 'text-dashboard-orange',
+    thead: 'bg-dashboard-orange text-white font-semibold border-b border-black/20',
+    tfoot: 'bg-dashboard-orange/10 border-t-2 border-dashboard-orange/30',
+    hoverL0: 'bg-white hover:bg-dashboard-orange/10',
+    hoverL1: 'bg-slate-100/70 hover:bg-dashboard-orange/15',
+    flatHover: 'hover:bg-dashboard-orange/10',
+    chevronOpen: 'bg-dashboard-orange text-white',
   },
   amber: {
     titleBar: 'bg-amber-600',
@@ -101,7 +107,8 @@ const TABLE_ACCENTS = {
 type TableAccentKey = keyof typeof TABLE_ACCENTS;
 
 function resolveTableAccent(accentColor: string): (typeof TABLE_ACCENTS)[TableAccentKey] {
-  if (accentColor in TABLE_ACCENTS) return TABLE_ACCENTS[accentColor as TableAccentKey];
+  const normalized = accentColor === 'amber' ? 'orange' : accentColor;
+  if (normalized in TABLE_ACCENTS) return TABLE_ACCENTS[normalized as TableAccentKey];
   return TABLE_ACCENTS.orange;
 }
 
@@ -117,12 +124,14 @@ export function AnalyticalTable({
   accentColor = "orange",
   showDiariaColumns = false,
   showPCabecaColumns = false,
+  showPpKgColumns = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
   const ta = resolveTableAccent(accentColor);
-  const extraMetricCols = (showDiariaColumns ? 2 : 0) + (showPCabecaColumns ? 2 : 0);
+  const extraMetricCols =
+    (showDiariaColumns ? 2 : 0) + (showPCabecaColumns ? 2 : 0) + (showPpKgColumns ? 2 : 0);
 
   // Tabela de receitas (tipoFilter exclusivamente 'R'): variação = realizado − orçado;
   // favorável (verde) quando real > orçado.
@@ -280,6 +289,20 @@ export function AnalyticalTable({
   const pcabecaRealResolved: number | null =
     singleMonthForPCabeca == null ? null : (PASTO_PCABECA_REALIZADO[singleMonthForPCabeca] ?? null);
 
+  const singleMonthForPpKg: MonthKey | null =
+    showPpKgColumns &&
+    selectedMonth !== 'all' &&
+    Array.isArray(selectedMonth) &&
+    selectedMonth.length === 1
+      ? selectedMonth[0]
+      : null;
+
+  const ppKgOrcResolved: number | null =
+    singleMonthForPpKg == null ? null : (SERINGAL_CUSTO_PKG_ORCADO[singleMonthForPpKg] ?? null);
+
+  const ppKgRealResolved: number | null =
+    singleMonthForPpKg == null ? null : (SERINGAL_CUSTO_PKG_REALIZADO[singleMonthForPpKg] ?? null);
+
   const fmtDiaria = (v: number) =>
     new Intl.NumberFormat('pt-BR', {
       style: 'currency',
@@ -340,14 +363,16 @@ export function AnalyticalTable({
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
+            {showPpKgColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
               {node.real ? fmtCurrency(node.real) : '-'}
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
+            {showPpKgColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className={cn(
               "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
-              isPositive ? "text-emerald-600" : "text-rose-600"
+              isPositive ? "text-dashboard-green" : "text-rose-600"
             )}>
               {showBudget && (node.orc || node.real) ? (
                 <div className="flex flex-nowrap items-center justify-end gap-2">
@@ -355,7 +380,7 @@ export function AnalyticalTable({
                     {diff > 0 ? '+' : ''}
                     {fmtCurrency(diff)}
                   </span>
-                  {variationPctBadge(node.orc, diff, isPositive ? 'text-emerald-700' : 'text-rose-700')}
+                  {variationPctBadge(node.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
                 </div>
               ) : (
                 '-'
@@ -415,12 +440,18 @@ export function AnalyticalTable({
                 {showPCabecaColumns && (
                   <th className="text-right py-3 px-4 w-[120px]">P/Cabeça O</th>
                 )}
+                {showPpKgColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">Custo P/KG O</th>
+                )}
                 <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-4 w-[120px]">Diária R</th>
                 )}
                 {showPCabecaColumns && (
                   <th className="text-right py-3 px-4 w-[120px]">P/Cabeça R</th>
+                )}
+                {showPpKgColumns && (
+                  <th className="text-right py-3 px-4 w-[120px]">Custo P/KG R</th>
                 )}
                 <th className="text-right py-3 px-4 w-[150px]">Variação</th>
               </tr>
@@ -444,12 +475,16 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaOrcResolved)}
                     {showPCabecaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaOrcResolved)}
+                    {showPpKgColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', ppKgOrcResolved)}
                     <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaRealResolved)}
                     {showPCabecaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaRealResolved)}
-                    <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
+                    {showPpKgColumns &&
+                      renderDiariaTd('py-4 px-4 text-[13px] text-right', ppKgRealResolved)}
+                    <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
                         <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
@@ -459,7 +494,7 @@ export function AnalyticalTable({
                           {variationPctBadge(
                             totalOrc,
                             totalDiff,
-                            isTotalPositive ? 'text-emerald-700' : 'text-rose-700'
+                            isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
                           )}
                         </div>
                       ) : (
@@ -487,12 +522,18 @@ export function AnalyticalTable({
                 {showPCabecaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">P/Cabeça O</th>
                 )}
+                {showPpKgColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">Custo P/KG O</th>
+                )}
                 <th className="text-right py-3 px-3 w-[120px]">Realizado</th>
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Diária R</th>
                 )}
                 {showPCabecaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">P/Cabeça R</th>
+                )}
+                {showPpKgColumns && (
+                  <th className="text-right py-3 px-3 w-[100px]">Custo P/KG R</th>
                 )}
                 <th className="text-right py-3 px-3 w-[120px]">Variação</th>
               </tr>
@@ -511,17 +552,19 @@ export function AnalyticalTable({
                     <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
-                    <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-emerald-600" : "text-rose-600")}>
+                    {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-dashboard-green" : "text-rose-600")}>
                       {(entry.orc || entry.real) ? (
                         <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
                             {diff > 0 ? '+' : ''}
                             {fmtCurrency(diff)}
                           </span>
-                          {variationPctBadge(entry.orc, diff, isPositive ? 'text-emerald-700' : 'text-rose-700')}
+                          {variationPctBadge(entry.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
                         </div>
                       ) : (
                         '-'
@@ -547,12 +590,16 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaOrcResolved)}
                     {showPCabecaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaOrcResolved)}
+                    {showPpKgColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgOrcResolved)}
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaRealResolved)}
                     {showPCabecaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaRealResolved)}
-                    <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
+                    {showPpKgColumns &&
+                      renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgRealResolved)}
+                    <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
                         <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
@@ -562,7 +609,7 @@ export function AnalyticalTable({
                           {variationPctBadge(
                             totalOrc,
                             totalDiff,
-                            isTotalPositive ? 'text-emerald-700' : 'text-rose-700'
+                            isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
                           )}
                         </div>
                       ) : (
