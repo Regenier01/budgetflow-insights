@@ -48,7 +48,7 @@ export function AppLayout({ children }: { children: ReactNode }) {
             <div className="bg-orange-500 p-1.5 rounded-lg shadow-inner">
               <BarChart3 className="h-5 w-5 text-white" />
             </div>
-            <span className="hidden md:inline uppercase tracking-tighter text-lg">Vera Cruz <span className="text-orange-400">BI</span></span>
+            <span className="hidden md:inline uppercase tracking-tighter text-lg">Grupo Otavio Lage <span className="text-orange-400">BI</span></span>
           </Link>
           
           <nav className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-1">
