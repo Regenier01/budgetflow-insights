@@ -350,7 +350,7 @@ export function AnalyticalTable({
               isPositive ? "text-emerald-600" : "text-rose-600"
             )}>
               {showBudget && (node.orc || node.real) ? (
-                <div className="flex flex-wrap items-center justify-end gap-2">
+                <div className="flex flex-nowrap items-center justify-end gap-2">
                   <span>
                     {diff > 0 ? '+' : ''}
                     {fmtCurrency(diff)}
@@ -451,7 +451,7 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaRealResolved)}
                     <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
-                        <div className="flex flex-wrap items-center justify-end gap-2">
+                        <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
                             {totalDiff > 0 ? '+' : ''}
                             {fmtCurrency(totalDiff)}
@@ -516,7 +516,7 @@ export function AnalyticalTable({
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(entry.orc || entry.real) ? (
-                        <div className="flex flex-wrap items-center justify-end gap-2">
+                        <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
                             {diff > 0 ? '+' : ''}
                             {fmtCurrency(diff)}
@@ -554,7 +554,7 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaRealResolved)}
                     <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-emerald-600" : "text-rose-600")}>
                       {(totalOrc || totalReal) ? (
-                        <div className="flex flex-wrap items-center justify-end gap-2">
+                        <div className="flex flex-nowrap items-center justify-end gap-2">
                           <span>
                             {totalDiff > 0 ? '+' : ''}
                             {fmtCurrency(totalDiff)}

@@ -23,6 +23,11 @@ import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import NotFound from './NotFound';
+import {
+  CONFINAMENTO_DIARIA_ORCADO,
+  CONFINAMENTO_DIARIA_REALIZADO,
+} from '@/data/confinamentoDiarias';
+import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
 
 const RECEITAS_GREEN = '#038779';
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
@@ -492,6 +497,40 @@ export default function ActivityDetailPage() {
       maximumFractionDigits: 2,
     }).format(v);
 
+  /** Mesmo critério da abertura analítica: um único mês no filtro; acumulado ou vários meses → “-”. */
+  const pecuariaCardMetricMonth: MonthKey | null =
+    !isMonthAll && selectedMonths.length === 1 ? selectedMonths[0] : null;
+
+  const fmtPecuariaMetricCell = (v: number | null) =>
+    v != null
+      ? new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'BRL',
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }).format(v)
+      : null;
+
+  const pecuariaSummaryCardExtras = useMemo(() => {
+    if (pecuariaCardMetricMonth == null) {
+      return {
+        pasto: { orcExtra: null as number | null, realExtra: null as number | null },
+        confinamento: { orcExtra: null as number | null, realExtra: null as number | null },
+      };
+    }
+    const m = pecuariaCardMetricMonth;
+    return {
+      pasto: {
+        orcExtra: PASTO_PCABECA_ORCADO[m] ?? null,
+        realExtra: PASTO_PCABECA_REALIZADO[m] ?? null,
+      },
+      confinamento: {
+        orcExtra: CONFINAMENTO_DIARIA_ORCADO[m] ?? null,
+        realExtra: CONFINAMENTO_DIARIA_REALIZADO[m] ?? null,
+      },
+    };
+  }, [pecuariaCardMetricMonth]);
+
   const activityHubSummary = useMemo(() => {
     if (!atividade?.key) return null;
 
@@ -754,9 +793,19 @@ export default function ActivityDetailPage() {
   const renderSummaryCard = (
     title: string,
     data: { orc: number; real: number },
-    options?: { isMain?: boolean; onClick?: () => void; accentColor?: string }
+    options?: {
+      isMain?: boolean;
+      onClick?: () => void;
+      accentColor?: string;
+      /** Colunas extras alinhadas à abertura (P/Cabeça ou Diária), só preenchidas com um mês no filtro. */
+      pecuariaMetrics?: {
+        kind: 'pasto' | 'confinamento';
+        orcExtra: number | null;
+        realExtra: number | null;
+      };
+    }
   ) => {
-    const { isMain = false, onClick, accentColor = 'orange' } = options || {};
+    const { isMain = false, onClick, accentColor = 'orange', pecuariaMetrics } = options || {};
     const isRevenueStyle = accentColor === 'emerald';
     const difference = isRevenueStyle
       ? data.real - data.orc
@@ -770,6 +819,14 @@ export default function ActivityDetailPage() {
     const hoverBorder = isAmber ? 'hover:border-amber-200' : isEmerald ? 'hover:border-emerald-200' : 'hover:border-orange-200';
     const iconColor = isAmber ? 'text-amber-500' : isEmerald ? '' : 'text-orange-500';
     const iconHover = isAmber ? 'group-hover:bg-amber-100' : isEmerald ? 'group-hover:bg-emerald-100' : 'group-hover:bg-orange-100';
+
+    const metricLabels =
+      pecuariaMetrics?.kind === 'confinamento'
+        ? { orc: 'Diária O', real: 'Diária R' }
+        : pecuariaMetrics?.kind === 'pasto'
+          ? { orc: 'P/Cabeça O', real: 'P/Cabeça R' }
+          : null;
+    const gridColsClass = pecuariaMetrics ? 'grid-cols-5' : 'grid-cols-3';
 
     return (
       <div
@@ -800,21 +857,51 @@ export default function ActivityDetailPage() {
             </div>
           )}
         </div>
-        <div className="grid grid-cols-3 text-center border-y border-slate-200 bg-slate-100/70">
-          <div className="py-2 text-[12px] font-semibold text-slate-700">Orçado</div>
-          <div className="py-2 text-[12px] font-semibold text-slate-700">Realizado</div>
+        <div
+          className={cn('grid text-center border-y border-slate-200 bg-slate-100/70', gridColsClass)}
+        >
+          <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
+            Orçado
+          </div>
+          {metricLabels && (
+            <div className="py-2 text-[11px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight px-1">
+              {metricLabels.orc}
+            </div>
+          )}
+          <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
+            Realizado
+          </div>
+          {metricLabels && (
+            <div className="py-2 text-[11px] font-semibold text-slate-700 border-r border-slate-200/80 leading-tight px-1">
+              {metricLabels.real}
+            </div>
+          )}
           <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
         </div>
-        <div className="grid grid-cols-3 text-center items-center">
+        <div className={cn('grid text-center items-center', gridColsClass)}>
           <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
             {fmtDecimal(data.orc)}
           </div>
+          {pecuariaMetrics && (
+            <div className="py-4 text-[12px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white px-1">
+              {fmtPecuariaMetricCell(pecuariaMetrics.orcExtra) ?? (
+                <span className="text-slate-400">-</span>
+              )}
+            </div>
+          )}
           <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
             {fmtDecimal(data.real)}
           </div>
+          {pecuariaMetrics && (
+            <div className="py-4 text-[12px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white px-1">
+              {fmtPecuariaMetricCell(pecuariaMetrics.realExtra) ?? (
+                <span className="text-slate-400">-</span>
+              )}
+            </div>
+          )}
           <div
             className={cn(
-              'py-4 text-[13px] font-semibold tabular-nums flex flex-wrap items-center justify-center gap-2',
+              'py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
               isPositiveDifference ? 'text-emerald-600 bg-emerald-50/50' : 'text-rose-600 bg-rose-50/50'
             )}
           >
@@ -1263,10 +1350,12 @@ export default function ActivityDetailPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {renderSummaryCard('Pasto', pecuariaSummary.pasto, {
               onClick: () => navigate(buildActivityPath('PECUARIA', { subview: 'pasto' })),
+              pecuariaMetrics: { kind: 'pasto', ...pecuariaSummaryCardExtras.pasto },
             })}
             {renderSummaryCard('Confinamento', pecuariaSummary.confinamento, {
               onClick: () => navigate(buildActivityPath('PECUARIA', { subview: 'confinamento' })),
               accentColor: 'amber',
+              pecuariaMetrics: { kind: 'confinamento', ...pecuariaSummaryCardExtras.confinamento },
             })}
           </div>
         </div>

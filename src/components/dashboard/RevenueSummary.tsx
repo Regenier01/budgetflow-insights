@@ -160,7 +160,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           </div>
           <div
             className={cn(
-              "py-4 text-[13px] font-semibold tabular-nums flex flex-wrap items-center justify-center gap-2",
+              "py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2",
               isFavorable ? "text-emerald-600 bg-emerald-50/50" : "text-rose-600 bg-rose-50/50"
             )}
           >
