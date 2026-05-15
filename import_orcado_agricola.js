@@ -52,6 +52,18 @@ const MONTH_LABEL_MAP = {
   'MAR/27': '2027-03',
 };
 
+const PECUARIA_ORCADO_GRUPO_CONTABIL_N9 = {
+  '1': '4.1.01.01-CUSTO DE PESSOAL',
+  '2': '4.1.01.11-CUSTOS RURAIS',
+  '3': '4.1.01.02-SERVICOS DE TERCEIROS',
+  '4': '4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS',
+  '5': '4.2.01.02-RATEIO DE CUSTOS',
+  '6': '4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES',
+  '7': '4.1.01.21-OUTROS CUSTOS OPERACIONAIS',
+  '8': '4.1.01.06-DESPESAS DE VIAGENS',
+  '9': '4.1.01.03-LOCACOES',
+};
+
 function normalizeText(value) {
   return String(value || '')
     .toUpperCase()
@@ -151,6 +163,50 @@ function validateAgricolaFileNames(files) {
   );
 }
 
+function isAgricolaCustosCascadeFile(fileName) {
+  const department = parseDepartmentFromFilename(fileName);
+  const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
+  if (AGRICOLA_FILE_NAME_EXCEPTIONS.has(normalizedDepartment)) return false;
+  if (normalizedDepartment.includes('SERINGAL')) return false;
+  return /^[^-]+-\s*[^-]+$/.test(department);
+}
+
+function resolvePecuariaOrcadoGrupoContabilN9(raw) {
+  if (typeof raw === 'number' && Number.isFinite(raw)) {
+    const n = Math.trunc(raw);
+    if (n >= 1 && n <= 9 && Math.abs(raw - n) < 1e-9) {
+      return PECUARIA_ORCADO_GRUPO_CONTABIL_N9[String(n)] || '';
+    }
+  }
+  const s = String(raw ?? '').trim();
+  if (!s) return '';
+  if (/^[1-9]$/.test(s)) return PECUARIA_ORCADO_GRUPO_CONTABIL_N9[s] || '';
+  return '';
+}
+
+function extractGrupoN9FourLevels(value) {
+  const s = String(value ?? '').trim();
+  if (!s) return '';
+  const head = (s.split(/[-\s]/)[0] || '').trim() || s;
+  const match = head.match(/^\d(?:\.\d{1,4})+/);
+  if (!match) return '';
+  const parts = match[0].split('.');
+  if (parts.length <= 4) return match[0];
+  return parts.slice(0, 4).join('.');
+}
+
+function resolveGrupoDescricao(grupoLabel, rawDesc) {
+  const fromColC = String(rawDesc ?? '').trim();
+  if (fromColC) return fromColC;
+  const label = String(grupoLabel ?? '').trim();
+  const dashIdx = label.indexOf('-');
+  if (dashIdx >= 0) {
+    const afterDash = label.slice(dashIdx + 1).trim();
+    if (afterDash) return afterDash;
+  }
+  return label;
+}
+
 function parseBudgetSheet(filePath) {
   const workbook = XLSX.readFile(filePath, { cellDates: true });
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
@@ -167,21 +223,62 @@ function parseBudgetSheet(filePath) {
 
   const grouped = new Map();
   for (const row of rows.slice(1)) {
-    const rawGroup = String(row[0] ?? '').trim();
-    if (!rawGroup) continue;
-    const grupoContabil = rawGroup.split('-')[0]?.trim() || rawGroup;
-    if (!grupoContabil) continue;
+    const colA = row[0];
+    if (colA === undefined || colA === null || String(colA).trim() === '') continue;
+
+    const labelFromCod = resolvePecuariaOrcadoGrupoContabilN9(colA);
+    const grupoLabel = labelFromCod || String(colA).trim();
+    let grupoN9 = extractGrupoN9FourLevels(grupoLabel);
+    if (!grupoN9) continue;
+
+    const contaContabil = String(row[1] ?? '').trim();
+    const rawDesc = String(row[2] ?? '').trim();
+    const hasConta = /^\d\.\d+\.\d+/.test(contaContabil);
+
+    let scope;
+    let descricaoContabil;
+    let contaOut;
+    let descMatchKey;
+    if (!hasConta) {
+      scope = 'grupo';
+      descricaoContabil = resolveGrupoDescricao(grupoLabel, rawDesc);
+      contaOut = undefined;
+      descMatchKey = '__GRUPO__';
+    } else {
+      scope = 'descricao';
+      const fromConta = extractGrupoN9FourLevels(contaContabil);
+      if (fromConta) grupoN9 = fromConta;
+      descricaoContabil = (rawDesc || contaContabil).trim();
+      contaOut = contaContabil;
+      descMatchKey = normalizeText(rawDesc || contaContabil);
+    }
 
     for (const { index, month } of monthColumns) {
       const value = parseNumber(row[index]);
-      const key = `${grupoContabil}::${month}`;
-      grouped.set(key, (grouped.get(key) || 0) + value);
+      const k = `${grupoN9}|${scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      const nextVal = (prev?.value || 0) + value;
+      grouped.set(k, {
+        value: nextVal,
+        scope,
+        descricaoContabil,
+        contaContabil: contaOut,
+      });
     }
   }
 
-  return Array.from(grouped.entries()).map(([key, value]) => {
-    const [grupoContabil, month] = key.split('::');
-    return { grupoContabil, month, value };
+  return Array.from(grouped.entries()).map(([key, bucket]) => {
+    const month = key.split('|').pop();
+    const grupoContabil = key.split('|')[0];
+    const out = {
+      grupoContabil,
+      month,
+      value: bucket.value,
+      agricolaOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+    };
+    if (bucket.contaContabil) out.contaContabil = bucket.contaContabil;
+    return out;
   });
 }
 
@@ -198,16 +295,22 @@ function readExistingBatches() {
   }
 }
 
+/**
+ * Lotes gerados por import_orcado_agricola.js (Fazenda - Cultura, cascata grupo → descrição).
+ * UNIDADE RECEPÇÃO DE GRAOS e demais formatos legados permanecem intactos.
+ */
+function isAgricolaOrcaCustosBatch(batch) {
+  if (normalizeText(batch.atividade) !== 'AGRICOLA') return false;
+  if (!batch.rows || batch.rows.length === 0) return false;
+  const dept = normalizeText(batch.departamento).replace(/\s+/g, ' ').trim();
+  if (AGRICOLA_FILE_NAME_EXCEPTIONS.has(dept)) return false;
+  if (!/^[^-]+-\s*[^-]+$/.test(batch.departamento)) return false;
+  if (batch.rows.some((r) => r.agricolaOrcadoScope)) return true;
+  return batch.rows.every((r) => String(r.grupoContabil || '').startsWith('4.'));
+}
+
 function mergeAgricolaBatches(existingBatches, agricolaBatches) {
-  const agricolaKeys = new Set(
-    agricolaBatches.map((batch) => `${normalizeText(batch.atividade)}::${normalizeText(batch.departamento)}`)
-  );
-
-  const preserved = existingBatches.filter((batch) => {
-    const key = `${normalizeText(batch.atividade)}::${normalizeText(batch.departamento)}`;
-    return !agricolaKeys.has(key);
-  });
-
+  const preserved = existingBatches.filter((batch) => !isAgricolaOrcaCustosBatch(batch));
   return [...preserved, ...agricolaBatches];
 }
 
@@ -218,6 +321,11 @@ export interface OrcadoGrupoMonthValue {
   grupoContabil: string;
   month: MonthKey;
   value: number;
+  descricaoContabil?: string;
+  pecuariaOrcadoScope?: 'grupo' | 'descricao';
+  agricolaOrcadoScope?: 'grupo' | 'descricao';
+  seringalOrcadoScope?: 'grupo' | 'descricao';
+  contaContabil?: string;
 }
 
 export interface OrcadoImportBatch {
@@ -242,7 +350,12 @@ function run() {
   }
   validateAgricolaFileNames(files);
 
-  const agricolaBatches = files.map((fileName) => ({
+  const cascadeFiles = files.filter((fileName) => isAgricolaCustosCascadeFile(fileName));
+  if (cascadeFiles.length === 0) {
+    throw new Error(`Nenhum arquivo Fazenda - Cultura encontrado em "${targetDir}".`);
+  }
+
+  const agricolaBatches = cascadeFiles.map((fileName) => ({
     fileName,
     departamento: parseDepartmentFromFilename(fileName),
     atividade: FIXED_ATIVIDADE,
@@ -252,7 +365,7 @@ function run() {
   const mergedBatches = mergeAgricolaBatches(readExistingBatches(), agricolaBatches);
   writeFileSync(OUTPUT_FILE, buildOutputSource(mergedBatches));
   console.log(
-    `Importacao Agricola concluida: ${agricolaBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
+    `Importacao Agricola (custos cascata) concluida: ${agricolaBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
     `Total de lotes no arquivo: ${mergedBatches.length}.`
   );
 }

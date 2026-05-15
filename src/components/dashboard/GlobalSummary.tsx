@@ -1,6 +1,7 @@
 import {
   useBudgetStore,
   sumValuesByMonth,
+  isSyntheticOrcadoImportEntry,
 } from '@/store/budgetStore';
 import { ATIVIDADES, type MonthKey } from '@/types/budget';
 import { cn } from '@/lib/utils';
@@ -91,11 +92,10 @@ export function GlobalSummary({ selectedMonth }: Props) {
     const normalizedCC = normalizeText(centroCusto);
     return allowed.some((item) => normalizeText(item) === normalizedCC);
   };
-  const isSyntheticOrcadoEntry = (entry: (typeof accounts)[number]) => entry.id.includes('::ORCADO::');
   const isRateioDeCustosGroup = (entry: (typeof accounts)[number]) =>
     normalizeText(entry.grupoContabilN9).includes('4.2.01.02-RATEIO DE CUSTOS');
   const isAllowedEntryForCustos = (activityKey: string, entry: (typeof accounts)[number]) =>
-    isSyntheticOrcadoEntry(entry) ||
+    isSyntheticOrcadoImportEntry(entry) ||
     isRateioDeCustosGroup(entry) ||
     isAllowedCentroCustoForCustos(activityKey, entry.centroCusto);
 

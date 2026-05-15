@@ -23,6 +23,15 @@ import {
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import {
+  tryParsePecuariaOrcadoBudgetRow,
+  resolvePecuariaOrcadoGrupoDescricao,
+} from '@/data/pecuariaOrcadoGrupoContabilCodes';
+import {
+  isReceitaPecuariaOrcadoBatch,
+  isReceitaPecuariaOrcadoWorkbook,
+  receitaPecuariaOrcadoScopeKey,
+} from '@/data/receitaPecuariaOrcado';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
 const validMonthKeys = new Set(MONTHS.map((month) => month.key));
 type MappingValue = { divisao?: string; unidadeNegocio?: string };
@@ -182,6 +191,13 @@ export function sumValuesByMonth(
 export function receitaLiquidaFromBrutaEDeducoes(bruta: number, deducoes: number): number {
   return bruta - Math.abs(deducoes);
 }
+
+/** Orçado importado: grupo (`SYN::ORCADO::`), descrição pecuária/agrícola/seringal (`SYN::ORCADOPEC::` / `AG` / `SER`). */
+export const isSyntheticOrcadoImportEntry = (entry: Pick<AccountEntry, 'id'>) =>
+  entry.id.includes('::ORCADO::') ||
+  entry.id.includes('::ORCADOPEC::') ||
+  entry.id.includes('::ORCADOAG::') ||
+  entry.id.includes('::ORCADOSER::');
 
 const rowValue = (value: unknown): string | undefined => {
   const parsed = String(value || '').trim();
@@ -371,8 +387,9 @@ const uploadOrcadoScopeKey = (atividade: OrcadoImportAtividadeKey, departamento:
 const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
   (rows.find((row) => validMonthKeys.has(row.month as MonthKey))?.month as MonthKey) || MONTHS[0].key;
 
-const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] =>
-  [
+const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] => {
+  const seenReceitaPecuariaScopes = new Set<string>();
+  const rawBatches = [
     ...ORCADO_IMPORT_BATCHES,
     ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES,
     ...ORCADO_RECEITA_LATEX_IMPORT_BATCHES,
@@ -381,7 +398,15 @@ const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches
       ...batch,
       departamento: batch.cultura,
     })),
-  ].map((batch) => {
+  ].filter((batch) => {
+    if (!isReceitaPecuariaOrcadoBatch(batch)) return true;
+    const scopeKey = receitaPecuariaOrcadoScopeKey(batch.departamento);
+    if (seenReceitaPecuariaScopes.has(scopeKey)) return false;
+    seenReceitaPecuariaScopes.add(scopeKey);
+    return true;
+  });
+
+  return rawBatches.map((batch) => {
     const period = getBatchFallbackPeriod(batch.rows);
     return {
       key: uploadOrcadoBatchKey(period, batch.fileName, batch.atividade, batch.departamento),
@@ -393,6 +418,7 @@ const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches
       importedAt: new Date(0).toISOString(),
     };
   });
+};
 
 const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   ...account,
@@ -680,10 +706,269 @@ const accountMatchesGrupoContabil = (account: AccountEntry, grupoCode: string): 
   return account.codigo === grupoCode || account.codigo.startsWith(`${grupoCode}.`);
 };
 
-const aggregateOrcadoRows = (
+type PecuariaOrcadoAggBucket = {
+  value: number;
+  scope: 'grupo' | 'descricao';
+  descricaoContabil: string;
+  contaContabil?: string;
+};
+
+const aggregatePecuariaCustosOrcadoRows = (
   rows: ExcelRow[],
   fallbackPeriod: MonthKey
 ): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  const grouped = new Map<string, PecuariaOrcadoAggBucket>();
+
+  rows.forEach((row) => {
+    const rawRow = row as Record<string, unknown>;
+    const parsed = tryParsePecuariaOrcadoBudgetRow(rawRow);
+    if (!parsed) return;
+
+    const descMatchKey =
+      parsed.scope === 'grupo'
+        ? '__GRUPO__'
+        : normalizeMatch(parsed.descricaoContabil || parsed.contaContabil);
+    const descLabel =
+      parsed.scope === 'grupo'
+        ? resolvePecuariaOrcadoGrupoDescricao(parsed.grupoContabilLabel, parsed.descricaoContabil)
+        : (parsed.descricaoContabil || parsed.contaContabil).trim() || parsed.contaContabil;
+
+    const bump = (month: MonthKey, amount: number) => {
+      const k = `${parsed.grupoN9}|${parsed.scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      if (prev) {
+        prev.value += amount;
+      } else {
+        grouped.set(k, {
+          value: amount,
+          scope: parsed.scope,
+          descricaoContabil: descLabel,
+          contaContabil: parsed.scope === 'descricao' ? parsed.contaContabil : undefined,
+        });
+      }
+    };
+
+    let hasPivotMonth = false;
+    Object.entries(rawRow).forEach(([header, cellValue]) => {
+      const month = parseMonthFromHeader(header);
+      if (!month) return;
+      hasPivotMonth = true;
+      bump(month, parseNumeric(cellValue));
+    });
+
+    if (!hasPivotMonth) {
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      bump(month, parseNumeric(row.SALDO));
+    }
+  });
+
+  const entries: OrcadoGrupoMonthValue[] = Array.from(grouped.entries()).map(([key, bucket]) => {
+    const [, , , month] = key.split('|');
+    return {
+      grupoContabil: key.split('|')[0]!,
+      month: month as MonthKey,
+      value: bucket.value,
+      pecuariaOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+      contaContabil: bucket.contaContabil,
+    };
+  });
+
+  return { entries, atividadeFromRows: 'PECUARIA', departamentoFromRows: null };
+};
+
+const AGRICOLA_CUSTOS_CULTURE_FILE_PATTERN = /^[^-]+-\s*[^-]+$/;
+
+const isAgricolaCustosCascadeFileName = (fileName: string): boolean => {
+  const department = fileName
+    .replace(/\.(xlsx|xls|csv)$/i, '')
+    .replace(/^ORCAMENTO\s+/i, '')
+    .replace(/^ORÇAMENTO\s+/i, '')
+    .trim();
+  const normalized = normalizeMatch(department);
+  if (normalized.includes('RECEPCAO') && normalized.includes('GRAO')) return false;
+  if (normalized.includes('PECUARIA')) return false;
+  if (normalized.includes('SERINGAL')) return false;
+  return AGRICOLA_CUSTOS_CULTURE_FILE_PATTERN.test(department);
+};
+
+const SERINGAL_CUSTOS_FILE_PATTERN = /^[^-]+\s*-\s*SERINGAL$/i;
+
+const isSeringalCustosCascadeFileName = (fileName: string): boolean => {
+  const department = fileName
+    .replace(/\.(xlsx|xls|csv)$/i, '')
+    .replace(/^ORCAMENTO\s+/i, '')
+    .replace(/^ORÇAMENTO\s+/i, '')
+    .trim();
+  const normalized = normalizeMatch(department).replace(/\s+/g, ' ').trim();
+  return SERINGAL_CUSTOS_FILE_PATTERN.test(normalized);
+};
+
+const aggregateAgricolaCustosOrcadoRows = (
+  rows: ExcelRow[],
+  fallbackPeriod: MonthKey
+): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  const grouped = new Map<string, PecuariaOrcadoAggBucket>();
+
+  rows.forEach((row) => {
+    const rawRow = row as Record<string, unknown>;
+    const parsed = tryParsePecuariaOrcadoBudgetRow(rawRow);
+    if (!parsed) return;
+
+    const descMatchKey =
+      parsed.scope === 'grupo'
+        ? '__GRUPO__'
+        : normalizeMatch(parsed.descricaoContabil || parsed.contaContabil);
+    const descLabel =
+      parsed.scope === 'grupo'
+        ? resolvePecuariaOrcadoGrupoDescricao(parsed.grupoContabilLabel, parsed.descricaoContabil)
+        : (parsed.descricaoContabil || parsed.contaContabil).trim() || parsed.contaContabil;
+
+    const bump = (month: MonthKey, amount: number) => {
+      const k = `${parsed.grupoN9}|${parsed.scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      if (prev) {
+        prev.value += amount;
+      } else {
+        grouped.set(k, {
+          value: amount,
+          scope: parsed.scope,
+          descricaoContabil: descLabel,
+          contaContabil: parsed.scope === 'descricao' ? parsed.contaContabil : undefined,
+        });
+      }
+    };
+
+    let hasPivotMonth = false;
+    Object.entries(rawRow).forEach(([header, cellValue]) => {
+      const month = parseMonthFromHeader(header);
+      if (!month) return;
+      hasPivotMonth = true;
+      bump(month, parseNumeric(cellValue));
+    });
+
+    if (!hasPivotMonth) {
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      bump(month, parseNumeric(row.SALDO));
+    }
+  });
+
+  const entries: OrcadoGrupoMonthValue[] = Array.from(grouped.entries()).map(([key, bucket]) => {
+    const [, , , month] = key.split('|');
+    return {
+      grupoContabil: key.split('|')[0]!,
+      month: month as MonthKey,
+      value: bucket.value,
+      agricolaOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+      contaContabil: bucket.contaContabil,
+    };
+  });
+
+  return { entries, atividadeFromRows: 'AGRICOLA', departamentoFromRows: null };
+};
+
+const aggregateSeringalCustosOrcadoRows = (
+  rows: ExcelRow[],
+  fallbackPeriod: MonthKey
+): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  const grouped = new Map<string, PecuariaOrcadoAggBucket>();
+
+  rows.forEach((row) => {
+    const rawRow = row as Record<string, unknown>;
+    const parsed = tryParsePecuariaOrcadoBudgetRow(rawRow);
+    if (!parsed) return;
+
+    const descMatchKey =
+      parsed.scope === 'grupo'
+        ? '__GRUPO__'
+        : normalizeMatch(parsed.descricaoContabil || parsed.contaContabil);
+    const descLabel =
+      parsed.scope === 'grupo'
+        ? resolvePecuariaOrcadoGrupoDescricao(parsed.grupoContabilLabel, parsed.descricaoContabil)
+        : (parsed.descricaoContabil || parsed.contaContabil).trim() || parsed.contaContabil;
+
+    const bump = (month: MonthKey, amount: number) => {
+      const k = `${parsed.grupoN9}|${parsed.scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      if (prev) {
+        prev.value += amount;
+      } else {
+        grouped.set(k, {
+          value: amount,
+          scope: parsed.scope,
+          descricaoContabil: descLabel,
+          contaContabil: parsed.scope === 'descricao' ? parsed.contaContabil : undefined,
+        });
+      }
+    };
+
+    let hasPivotMonth = false;
+    Object.entries(rawRow).forEach(([header, cellValue]) => {
+      const month = parseMonthFromHeader(header);
+      if (!month) return;
+      hasPivotMonth = true;
+      bump(month, parseNumeric(cellValue));
+    });
+
+    if (!hasPivotMonth) {
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      bump(month, parseNumeric(row.SALDO));
+    }
+  });
+
+  const entries: OrcadoGrupoMonthValue[] = Array.from(grouped.entries()).map(([key, bucket]) => {
+    const [, , , month] = key.split('|');
+    return {
+      grupoContabil: key.split('|')[0]!,
+      month: month as MonthKey,
+      value: bucket.value,
+      seringalOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+      contaContabil: bucket.contaContabil,
+    };
+  });
+
+  return { entries, atividadeFromRows: 'SERINGAL', departamentoFromRows: null };
+};
+
+const isAgricolaCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boolean => {
+  if (!isAgricolaCustosCascadeFileName(fileName)) return false;
+  return rows.some((row) => tryParsePecuariaOrcadoBudgetRow(row as Record<string, unknown>) !== null);
+};
+
+const isSeringalCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boolean => {
+  if (!isSeringalCustosCascadeFileName(fileName)) return false;
+  return rows.some((row) => tryParsePecuariaOrcadoBudgetRow(row as Record<string, unknown>) !== null);
+};
+
+const isPecuariaCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boolean => {
+  if (isReceitaPecuariaOrcadoWorkbook(rows)) return false;
+  if (isAgricolaCustosCascadeFileName(fileName)) return false;
+  if (isSeringalCustosCascadeFileName(fileName)) return false;
+  if (rows.some((row) => tryParsePecuariaOrcadoBudgetRow(row as Record<string, unknown>) !== null)) {
+    return true;
+  }
+  const base = fileName.replace(/\.(xlsx|xls|csv)$/i, '').trim();
+  if (!normalizeMatch(base).includes('PECUARIA')) return false;
+  return rows.length > 0 && rows.every((r) => !String(r?.NOMEDEPTO || '').trim());
+};
+
+const aggregateOrcadoRows = (
+  rows: ExcelRow[],
+  fallbackPeriod: MonthKey,
+  fileName = ''
+): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  if (isAgricolaCustosOrcadoWorkbook(rows, fileName)) {
+    return aggregateAgricolaCustosOrcadoRows(rows, fallbackPeriod);
+  }
+  if (isSeringalCustosOrcadoWorkbook(rows, fileName)) {
+    return aggregateSeringalCustosOrcadoRows(rows, fallbackPeriod);
+  }
+  if (isPecuariaCustosOrcadoWorkbook(rows, fileName)) {
+    return aggregatePecuariaCustosOrcadoRows(rows, fallbackPeriod);
+  }
+
   const grouped = new Map<string, number>();
   const atividadeCounts: Partial<Record<AtividadeKey, number>> = {};
   const departamentoCounts = new Map<string, number>();
@@ -863,9 +1148,10 @@ const getOrCreateStandaloneOrcadoAnchor = (
     atividade: OrcadoImportAtividadeKey;
     departamento: string;
     isOutrasReceitasImport: boolean;
+    descricaoOverride?: string;
   }
 ): AccountEntry => {
-  const { normalizedGrupo, atividade, departamento, isOutrasReceitasImport } = ctx;
+  const { normalizedGrupo, atividade, departamento, isOutrasReceitasImport, descricaoOverride } = ctx;
   const atividadeKey = isOutrasReceitasImport ? 'OUTRAS_RECEITAS' : atividade;
   const id = `SYN::ORCADO::${atividadeKey}::${normalizeLooseMatch(departamento)}::${normalizedGrupo}`;
   const existing = nextAccounts.find((a) => a.id === id);
@@ -880,7 +1166,7 @@ const getOrCreateStandaloneOrcadoAnchor = (
   const leaf: AccountEntry = {
     id,
     codigo: leafCodigo,
-    descricao: `Orçado — grupo ${normalizedGrupo}`,
+    descricao: descricaoOverride?.trim() || `Orçado — grupo ${normalizedGrupo}`,
     tipo,
     codigoPai,
     nivel: 5,
@@ -904,6 +1190,7 @@ const applyOrcadoRowsToAccounts = (
 ) => {
   const nextAccounts = baseAccounts.map(cloneAccountEntry);
   let count = 0;
+  const replaceReceitaPecuariaOrcado = isReceitaPecuariaOrcadoBatch({ atividade, rows });
   const isOutrasReceitasImport = atividade === 'OUTRAS_RECEITAS_EVENTUAIS';
   const normalizedImportedDept = normalizeLooseMatch(departamento);
   const isAdministrativeImport = atividade === 'DESP_ADM_TRIB';
@@ -931,6 +1218,60 @@ const applyOrcadoRowsToAccounts = (
   rows.forEach((row) => {
     const normalizedGrupo = extractGrupoCode(row.grupoContabil);
     if (!normalizedGrupo) return;
+
+    const cascadeScope = row.pecuariaOrcadoScope ?? row.agricolaOrcadoScope ?? row.seringalOrcadoScope;
+
+    if (cascadeScope === 'grupo') {
+      const anchor = getOrCreateStandaloneOrcadoAnchor(nextAccounts, {
+        normalizedGrupo,
+        atividade,
+        departamento,
+        isOutrasReceitasImport,
+        descricaoOverride: row.descricaoContabil,
+      });
+      anchor.orcado[row.month] = (anchor.orcado[row.month] || 0) + row.value;
+      count++;
+      return;
+    }
+
+    if (cascadeScope === 'descricao') {
+      const descLoose = normalizeLooseMatch(row.descricaoContabil || row.contaContabil || 'ITEM');
+      const descIdPrefix = row.seringalOrcadoScope
+        ? 'SYN::ORCADOSER::'
+        : row.agricolaOrcadoScope
+          ? 'SYN::ORCADOAG::'
+          : 'SYN::ORCADOPEC::';
+      const id = `${descIdPrefix}${normalizeLooseMatch(departamento)}::${normalizedGrupo}::${descLoose}`;
+      let anchor = nextAccounts.find((a) => a.id === id);
+      if (!anchor) {
+        const conta = (row.contaContabil || '').trim();
+        const leafCodigo =
+          conta && /^\d\.\d+\.\d+/.test(conta) ? conta : syntheticLeafCodigoForOrcado(normalizedGrupo);
+        const resolvedAct: AtividadeKey = isOutrasReceitasImport ? 'PECUARIA' : (atividade as AtividadeKey);
+        const tipo = inferTipoFromConta(leafCodigo);
+        ensureSyntheticParentChain(nextAccounts, leafCodigo, resolvedAct, tipo);
+        const codigoPai = leafCodigo.includes('.') ? leafCodigo.split('.').slice(0, -1).join('.') : null;
+        anchor = {
+          id,
+          codigo: leafCodigo,
+          descricao: (row.descricaoContabil || conta || 'Orçado').trim(),
+          tipo,
+          codigoPai,
+          nivel: 5,
+          atividade: resolvedAct,
+          departamento,
+          centroCusto: departamento,
+          grupoContabil: grupoContabilFilterDigit(normalizedGrupo),
+          grupoContabilN9: normalizedGrupo,
+          orcado: {},
+          realizado: {},
+        };
+        nextAccounts.push(anchor);
+      }
+      anchor.orcado[row.month] = (anchor.orcado[row.month] || 0) + row.value;
+      count++;
+      return;
+    }
 
     const strictCandidates = nextAccounts.filter(
       (account) =>
@@ -1036,7 +1377,11 @@ const applyOrcadoRowsToAccounts = (
     const orderedCandidates = [...anchorCandidates].sort(compareCandidatePriority);
 
     const anchorAccount = orderedCandidates[0];
-    anchorAccount.orcado[row.month] = row.value;
+    if (replaceReceitaPecuariaOrcado) {
+      anchorAccount.orcado[row.month] = row.value;
+    } else {
+      anchorAccount.orcado[row.month] = (anchorAccount.orcado[row.month] || 0) + row.value;
+    }
 
     count++;
   });
@@ -1137,12 +1482,17 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       importedOrcadoBatches,
     } = get();
     const fileInfo = parseOrcadoFileInfo(fileName);
-    const aggregated = aggregateOrcadoRows(rows, fallbackPeriod);
+    const pecuariaCustosWorkbook = isPecuariaCustosOrcadoWorkbook(rows, fileName);
+    const agricolaCustosWorkbook = isAgricolaCustosOrcadoWorkbook(rows, fileName);
+    const seringalCustosWorkbook = isSeringalCustosOrcadoWorkbook(rows, fileName);
+    const aggregated = aggregateOrcadoRows(rows, fallbackPeriod, fileName);
     const mappingAtividade =
       mapDivisaoToAtividade(findDepartmentMappingByName(fileInfo.departamento)?.divisao) || null;
-    const resolvedAtividade =
-      mappingAtividade ||
-      (fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : aggregated.atividadeFromRows || fileInfo.atividade);
+    const isReceitaPecuariaImport = isReceitaPecuariaOrcadoWorkbook(rows);
+    const resolvedAtividade = isReceitaPecuariaImport
+      ? 'PECUARIA'
+      : mappingAtividade ||
+        (fileInfo.atividade !== 'DESP_ADM_TRIB' ? fileInfo.atividade : aggregated.atividadeFromRows || fileInfo.atividade);
     const resolvedDepartamento =
       resolvedAtividade === 'PECUARIA'
         ? normalizeDepartmentToPecuaria(fileInfo.departamento)
@@ -1164,21 +1514,24 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       new Set(effectiveRowDepartments.map((dept) => canonicalDepartmentKey(dept)).filter((dept) => Boolean(dept)))
     );
 
-    if (effectiveRowDepartments.length === 0) {
-      throw new Error(
-        `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`
-      );
-    }
-    const strictMatch =
-      effectiveRowDepartments.length === 1 && effectiveRowDepartments[0] === normalizedResolvedDepartamento;
-    const canonicalMatch =
-      canonicalRowDepartments.length === 1 && canonicalRowDepartments[0] === canonicalResolvedDepartamento;
-    if (!strictMatch && !canonicalMatch) {
-      throw new Error(
-        `Importacao do orcado "${fileName}" invalida: NOMEDEPTO deve corresponder ao nome do arquivo.`
-      );
+    if (!pecuariaCustosWorkbook && !agricolaCustosWorkbook && !seringalCustosWorkbook) {
+      if (effectiveRowDepartments.length === 0) {
+        throw new Error(
+          `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`
+        );
+      }
+      const strictMatch =
+        effectiveRowDepartments.length === 1 && effectiveRowDepartments[0] === normalizedResolvedDepartamento;
+      const canonicalMatch =
+        canonicalRowDepartments.length === 1 && canonicalRowDepartments[0] === canonicalResolvedDepartamento;
+      if (!strictMatch && !canonicalMatch) {
+        throw new Error(
+          `Importacao do orcado "${fileName}" invalida: NOMEDEPTO deve corresponder ao nome do arquivo.`
+        );
+      }
     }
 
+    const currentReceitaPecuariaScopeKey = receitaPecuariaOrcadoScopeKey(resolvedDepartamento);
     const currentScopeKey = uploadOrcadoScopeKey(resolvedAtividade, resolvedDepartamento);
     const currentKey = uploadOrcadoBatchKey(
       fallbackPeriod,
@@ -1186,15 +1539,6 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       resolvedAtividade,
       resolvedDepartamento
     );
-
-    console.log('[Orçado] Import:', {
-      fileName,
-      atividade: resolvedAtividade,
-      departamento: resolvedDepartamento,
-      excelRows: rows.length,
-      aggregatedEntries: aggregated.entries.length,
-      sampleEntries: aggregated.entries.slice(0, 3),
-    });
 
     const nextBatch = {
       key: currentKey,
@@ -1209,6 +1553,9 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     const nextOrcadoBatches = [
       ...importedOrcadoBatches.filter((batch) => {
         if (batch.key === currentKey) return false;
+        if (isReceitaPecuariaImport && isReceitaPecuariaOrcadoBatch(batch)) {
+          return receitaPecuariaOrcadoScopeKey(batch.departamento) !== currentReceitaPecuariaScopeKey;
+        }
         const batchScopeKey = uploadOrcadoScopeKey(batch.atividade, batch.departamento);
         return batchScopeKey !== currentScopeKey;
       }),
@@ -1237,16 +1584,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       }
     });
 
-    const totalOrcadoApplied = rebuiltAccounts
-      .filter((a) => a.nivel === 5)
-      .reduce((sum, a) => sum + Object.values(a.orcado).reduce((s, v) => s + v, 0), 0);
-    console.log('[Orçado] Resultado:', {
-      currentBatchCount,
-      totalAccounts: rebuiltAccounts.length,
-      totalOrcadoApplied,
-    });
-
     set({ accounts: normalizeReceitaRealizadoSigns(rebuiltAccounts), importedOrcadoBatches: nextOrcadoBatches });
     return currentBatchCount;
-  }
+  },
 }));

@@ -12,6 +12,10 @@ import {
   SERINGAL_CUSTO_PKG_ORCADO,
   SERINGAL_CUSTO_PKG_REALIZADO,
 } from '@/data/seringalCustoPpKg';
+import {
+  extractGrupoN9FourLevels,
+  getPecuariaGrupoContabilN9DisplayLabel,
+} from '@/data/pecuariaOrcadoGrupoContabilCodes';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -29,6 +33,11 @@ interface Props {
   showPCabecaColumns?: boolean;
   /** Custos seringal: Custo P/KG O/R (Diarias/CustoKg.xlsx; um mês por coluna — `npm run seringal:custokg:import`) */
   showPpKgColumns?: boolean;
+  /**
+   * Pecuária custo orçado: cascata Grupo Contábil → Descrição Contábil (sem nível produto no orçamento).
+   * Realizado continua podendo exibir produto abaixo da descrição.
+   */
+  costHierarchyMode?: 'default' | 'grupo_descricao';
 }
 
 interface Node {
@@ -125,6 +134,7 @@ export function AnalyticalTable({
   showDiariaColumns = false,
   showPCabecaColumns = false,
   showPpKgColumns = false,
+  costHierarchyMode = 'default',
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -210,35 +220,126 @@ export function AnalyticalTable({
 
   const root = new Map<string, Node>();
 
-  filtered.forEach(a => {
-    const orc = valueForMonths(a.orcado);
-    const real = valueForMonths(a.realizado);
-
-    if (orc === 0 && real === 0) return;
-
+  /** Alinha orçado sintético e realizado no mesmo nó N9 (prefixo 4 níveis vs rótulo completo), só na cascata pecuária. */
+  const n9KeyForHierarchy = (a: AccountEntry): string => {
+    if (costHierarchyMode === 'grupo_descricao') {
+      const fromG = extractGrupoN9FourLevels(a.grupoContabilN9);
+      if (fromG) return fromG;
+      const fromC = extractGrupoN9FourLevels(a.codigo);
+      if (fromC) return fromC;
+    }
     let n9 = a.grupoContabilN9 || 'Outras Categorias';
     if (!n9.match(/^\d+\.\d+\.\d+/)) {
       const prefix = a.codigo.split('.').slice(0, 3).join('.');
       n9 = `${prefix} - ${n9}`;
     }
-    
+    return n9;
+  };
+
+  /** Conta contábil “folha” (≥5 segmentos) para fundir orçado granular e realizado na cascata pecuária. */
+  const LEAF_CONTA_PATTERN = /^\d(?:\.\d+){4,}$/;
+
+  const childKeyForHierarchy = (a: AccountEntry): string => {
     const desc = a.descricao || 'Sem Descrição';
-    const accountLabel = `${a.codigo} - ${desc}`;
+    if (costHierarchyMode !== 'grupo_descricao') {
+      return `${a.codigo} - ${desc}`;
+    }
+    if (a.id.startsWith('SYN::ORCADO::')) {
+      return '__GRUPO_ORC__';
+    }
+    const cod = String(a.codigo || '').trim();
+    if (
+      a.id.startsWith('SYN::ORCADOPEC::') ||
+      a.id.startsWith('SYN::ORCADOAG::') ||
+      a.id.startsWith('SYN::ORCADOSER::') ||
+      LEAF_CONTA_PATTERN.test(cod)
+    ) {
+      return `conta::${cod}`;
+    }
+    return `desc::${desc}`;
+  };
+
+  const childDisplayNameGrupoDescricao = (a: AccountEntry, key: string): string => {
+    if (key === '__GRUPO_ORC__') {
+      return (a.descricao || 'Consolidado no grupo (orçado)').trim();
+    }
+    if (key.startsWith('conta::')) {
+      const cod = key.slice('conta::'.length);
+      const d = (a.descricao || '').trim();
+      return d ? `${cod} — ${d}` : cod;
+    }
+    return (a.descricao || 'Sem Descrição').trim();
+  };
+
+  const accountLabelForHierarchy = (a: AccountEntry, childKey: string): string => {
+    const desc = a.descricao || 'Sem Descrição';
+    if (costHierarchyMode !== 'grupo_descricao') {
+      return `${a.codigo} - ${desc}`;
+    }
+    return childDisplayNameGrupoDescricao(a, childKey);
+  };
+
+  const treeSource =
+    costHierarchyMode === 'grupo_descricao'
+      ? [...filtered].sort((a, b) => {
+          const rank = (x: AccountEntry) =>
+            x.id.startsWith('SYN::ORCADOPEC::') ||
+            x.id.startsWith('SYN::ORCADOAG::') ||
+            x.id.startsWith('SYN::ORCADOSER::')
+              ? 0
+              : LEAF_CONTA_PATTERN.test(String(x.codigo || '').trim()) && !x.id.startsWith('SYN::ORCADO::')
+                ? 1
+                : x.id.startsWith('SYN::ORCADO::')
+                  ? 2
+                  : 3;
+          return rank(a) - rank(b);
+        })
+      : filtered;
+
+  treeSource.forEach((a) => {
+    const orc = valueForMonths(a.orcado);
+    const real = valueForMonths(a.realizado);
+
+    if (orc === 0 && real === 0) return;
+
+    const n9 = n9KeyForHierarchy(a);
+
+    const desc = a.descricao || 'Sem Descrição';
+    const childKey = childKeyForHierarchy(a);
+    const accountLabel =
+      costHierarchyMode === 'grupo_descricao'
+        ? accountLabelForHierarchy(a, childKey)
+        : `${a.codigo} - ${desc}`;
     const prod = a.nomeProduto?.trim();
 
-    if (!root.has(n9)) root.set(n9, { name: n9, orc: 0, real: 0, children: new Map() });
+    if (!root.has(n9)) {
+      root.set(n9, {
+        name:
+          costHierarchyMode === 'grupo_descricao'
+            ? getPecuariaGrupoContabilN9DisplayLabel(n9, a.grupoContabilN9)
+            : n9,
+        orc: 0,
+        real: 0,
+        children: new Map(),
+      });
+    }
     const nodeN9 = root.get(n9)!;
     nodeN9.orc += orc;
     nodeN9.real += real;
-
-    if (!nodeN9.children.has(accountLabel)) {
-      nodeN9.children.set(accountLabel, { name: accountLabel, orc: 0, real: 0, children: new Map() });
+    if (costHierarchyMode === 'grupo_descricao') {
+      const cand = getPecuariaGrupoContabilN9DisplayLabel(n9, a.grupoContabilN9);
+      const score = (s: string) => (s.includes('-') ? 1_000_000 : 0) + s.length;
+      if (score(cand) > score(nodeN9.name)) nodeN9.name = cand;
     }
-    const nodeAccount = nodeN9.children.get(accountLabel)!;
+
+    if (!nodeN9.children.has(childKey)) {
+      nodeN9.children.set(childKey, { name: accountLabel, orc: 0, real: 0, children: new Map() });
+    }
+    const nodeAccount = nodeN9.children.get(childKey)!;
     nodeAccount.orc += orc;
     nodeAccount.real += real;
 
-    if (!prod) return;
+    if (!prod || costHierarchyMode === 'grupo_descricao') return;
 
     if (!nodeAccount.children.has(prod)) {
       nodeAccount.children.set(prod, { name: prod, orc: 0, real: 0, children: new Map() });
@@ -325,7 +426,8 @@ export function AnalyticalTable({
       const isExpanded = expanded.has(currentPath);
       const hasChildren = node.children.size > 0;
       
-      const showBudget = level === 0;
+      const showBudget =
+        level === 0 || (costHierarchyMode === 'grupo_descricao' && level === 1);
       const diff = computeDiff(node.orc, node.real);
       const isPositive = isDiffFavorable(diff);
 

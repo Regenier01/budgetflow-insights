@@ -3,9 +3,8 @@ import { basename, join } from 'path';
 import XLSX from 'xlsx';
 
 const OUTPUT_FILE = 'src/data/orcadoImportData.ts';
-const DEFAULT_ORCADO_DIR = join('Orçado', 'Orça-Pecuária');
-const DEPARTMENT_MAPPING_FILE = 'src/data/departmentMapping.ts';
-const FIXED_ATIVIDADE = 'PECUARIA';
+const DEFAULT_ORCADO_DIR = join('Orçado', 'Orça-Seringal');
+const FIXED_ATIVIDADE = 'SERINGAL';
 
 const MONTH_KEYS = new Set([
   '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09',
@@ -53,16 +52,24 @@ const MONTH_LABEL_MAP = {
   'MAR/27': '2027-03',
 };
 
+const PECUARIA_ORCADO_GRUPO_CONTABIL_N9 = {
+  '1': '4.1.01.01-CUSTO DE PESSOAL',
+  '2': '4.1.01.11-CUSTOS RURAIS',
+  '3': '4.1.01.02-SERVICOS DE TERCEIROS',
+  '4': '4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS',
+  '5': '4.2.01.02-RATEIO DE CUSTOS',
+  '6': '4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES',
+  '7': '4.1.01.21-OUTROS CUSTOS OPERACIONAIS',
+  '8': '4.1.01.06-DESPESAS DE VIAGENS',
+  '9': '4.1.01.03-LOCACOES',
+};
+
 function normalizeText(value) {
   return String(value || '')
     .toUpperCase()
     .trim()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
-}
-
-function normalizeLoose(value) {
-  return normalizeText(value).replace(/[^A-Z0-9]+/g, ' ').trim();
 }
 
 function parseMonthKey(headerCell) {
@@ -119,7 +126,7 @@ function parseNumber(value) {
   } else if (hasDot) {
     normalized = dotAsThousandsPattern.test(cleaned)
       ? cleaned.replace(/\./g, '')
-      : cleaned;
+      : normalized;
   }
 
   const parsed = Number(normalized);
@@ -127,60 +134,34 @@ function parseNumber(value) {
 }
 
 function parseDepartmentFromFilename(fileName) {
-  const rawName = fileName.replace(/\.xlsx$/i, '').replace(/\.xls$/i, '');
-  return rawName.replace(/^ORCAMENTO\s+/i, '').replace(/^ORÇAMENTO\s+/i, '').trim();
+  return fileName
+    .replace(/\.xlsx$/i, '')
+    .replace(/\.xls$/i, '')
+    .replace(/^ORCAMENTO\s+/i, '')
+    .replace(/^ORÇAMENTO\s+/i, '')
+    .trim();
 }
 
-function extractPecuariaDepartments() {
-  if (!existsSync(DEPARTMENT_MAPPING_FILE)) return [];
-  const source = readFileSync(DEPARTMENT_MAPPING_FILE, 'utf-8');
-  const departments = [];
-  const entryPattern = /"([^"]+)"\s*:\s*\{[\s\S]*?"divisao"\s*:\s*"([^"]+)"/g;
-
-  let match;
-  while ((match = entryPattern.exec(source)) !== null) {
-    const departmentName = match[1];
-    const divisao = match[2];
-    if (!normalizeText(divisao).includes('PECUARIA')) continue;
-    departments.push(departmentName);
-  }
-
-  return departments;
-}
-
-function validatePecuariaFileNames(files) {
-  const allowedDepartments = extractPecuariaDepartments();
-  const allowedNormalized = new Set(allowedDepartments.map((name) => normalizeLoose(name)));
-
-  const invalidFiles = files
-    .map((fileName) => ({
-      fileName,
-      departmentName: parseDepartmentFromFilename(fileName),
-    }))
-    .filter(({ departmentName }) => !allowedNormalized.has(normalizeLoose(departmentName)));
+function validateSeringalFileNames(files) {
+  const invalidFiles = files.filter((fileName) => {
+    const department = parseDepartmentFromFilename(fileName);
+    const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
+    return !/^[^-]+\s*-\s*SERINGAL$/.test(normalizedDepartment);
+  });
 
   if (invalidFiles.length === 0) return;
 
-  const sampleAllowed = allowedDepartments.slice(0, 20).join(', ');
   throw new Error(
-    `Arquivo(s) invalido(s) para pecuaria: ` +
-      `${invalidFiles.map((item) => `"${item.fileName}"`).join(', ')}. ` +
-      `O nome do arquivo (sem extensao) deve ser igual a um departamento de Pecuaria do dashboard. ` +
-      `Exemplos validos: ${sampleAllowed}${allowedDepartments.length > 20 ? ', ...' : ''}`
+    `Arquivo(s) invalido(s) para seringal: ${invalidFiles.map((fileName) => `"${fileName}"`).join(', ')}. ` +
+      `Use o padrao "NOME - SERINGAL", exemplo: "COVOA - SERINGAL.xlsx".`
   );
 }
 
-const PECUARIA_ORCADO_GRUPO_CONTABIL_N9 = {
-  '1': '4.1.01.01-CUSTO DE PESSOAL',
-  '2': '4.1.01.11-CUSTOS RURAIS',
-  '3': '4.1.01.02-SERVICOS DE TERCEIROS',
-  '4': '4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS',
-  '5': '4.2.01.02-RATEIO DE CUSTOS',
-  '6': '4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES',
-  '7': '4.1.01.21-OUTROS CUSTOS OPERACIONAIS',
-  '8': '4.1.01.06-DESPESAS DE VIAGENS',
-  '9': '4.1.01.03-LOCACOES',
-};
+function isSeringalCustosCascadeFile(fileName) {
+  const department = parseDepartmentFromFilename(fileName);
+  const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
+  return /^[^-]+\s*-\s*SERINGAL$/.test(normalizedDepartment);
+}
 
 function resolvePecuariaOrcadoGrupoContabilN9(raw) {
   if (typeof raw === 'number' && Number.isFinite(raw)) {
@@ -285,7 +266,7 @@ function parseBudgetSheet(filePath) {
       grupoContabil,
       month,
       value: bucket.value,
-      pecuariaOrcadoScope: bucket.scope,
+      seringalOrcadoScope: bucket.scope,
       descricaoContabil: bucket.descricaoContabil,
     };
     if (bucket.contaContabil) out.contaContabil = bucket.contaContabil;
@@ -306,22 +287,14 @@ function readExistingBatches() {
   }
 }
 
-/**
- * Lotes gerados por import_orcado_pecuaria.js (custos 4.x ou linhas com pecuariaOrcadoScope).
- * Despesa com vendas (ex.: 3.4.02) permanece no array — não passa por este pipeline.
- */
-function isPecuariaOrcaCustosBatch(batch) {
-  if (normalizeText(batch.atividade) !== 'PECUARIA') return false;
-  if (!batch.rows || batch.rows.length === 0) return false;
-  const fn = normalizeText(batch.fileName || '');
-  if (fn.includes('DESP') && fn.includes('VENDAS')) return false;
-  if (batch.rows.some((r) => r.pecuariaOrcadoScope)) return true;
-  return batch.rows.every((r) => String(r.grupoContabil || '').startsWith('4.'));
+/** Lotes de custo seringal em ORCADO_IMPORT_BATCHES (receita latex fica em arquivo separado). */
+function isSeringalOrcaCustosBatch(batch) {
+  return normalizeText(batch.atividade) === 'SERINGAL';
 }
 
-function mergePecuariaBatches(existingBatches, pecuariaBatches) {
-  const preserved = existingBatches.filter((batch) => !isPecuariaOrcaCustosBatch(batch));
-  return [...preserved, ...pecuariaBatches];
+function mergeSeringalBatches(existingBatches, seringalBatches) {
+  const preserved = existingBatches.filter((batch) => !isSeringalOrcaCustosBatch(batch));
+  return [...preserved, ...seringalBatches];
 }
 
 function buildOutputSource(batches) {
@@ -333,6 +306,8 @@ export interface OrcadoGrupoMonthValue {
   value: number;
   descricaoContabil?: string;
   pecuariaOrcadoScope?: 'grupo' | 'descricao';
+  agricolaOrcadoScope?: 'grupo' | 'descricao';
+  seringalOrcadoScope?: 'grupo' | 'descricao';
   contaContabil?: string;
 }
 
@@ -356,19 +331,24 @@ function run() {
   if (files.length === 0) {
     throw new Error(`Nenhum arquivo Excel encontrado em "${targetDir}".`);
   }
-  validatePecuariaFileNames(files);
+  validateSeringalFileNames(files);
 
-  const pecuariaBatches = files.map((fileName) => ({
+  const cascadeFiles = files.filter((fileName) => isSeringalCustosCascadeFile(fileName));
+  if (cascadeFiles.length === 0) {
+    throw new Error(`Nenhum arquivo Fazenda - Seringal encontrado em "${targetDir}".`);
+  }
+
+  const seringalBatches = cascadeFiles.map((fileName) => ({
     fileName,
     departamento: parseDepartmentFromFilename(fileName),
     atividade: FIXED_ATIVIDADE,
     rows: parseBudgetSheet(join(targetDir, fileName)),
   }));
 
-  const mergedBatches = mergePecuariaBatches(readExistingBatches(), pecuariaBatches);
+  const mergedBatches = mergeSeringalBatches(readExistingBatches(), seringalBatches);
   writeFileSync(OUTPUT_FILE, buildOutputSource(mergedBatches));
   console.log(
-    `Importacao Pecuaria concluida: ${pecuariaBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
+    `Importacao Seringal (custos cascata) concluida: ${seringalBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
     `Total de lotes no arquivo: ${mergedBatches.length}.`
   );
 }

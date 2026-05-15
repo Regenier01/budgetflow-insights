@@ -11,6 +11,7 @@ import {
   calculateEncargosTotals,
   getDefaultRealizadoFilterMonth,
   receitaLiquidaFromBrutaEDeducoes,
+  isSyntheticOrcadoImportEntry,
 } from '@/store/budgetStore';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
@@ -204,6 +205,8 @@ const isPecuariaDepartmentOption = (departamento?: string) => {
     normalized === 'CENTRO COMERCIAL DE TOUROS' ||
     normalized === 'CONFINAMENTO' ||
     normalized === 'CONFINAMENTO - TRANSPORTE DE GADO' ||
+    normalized === 'CODORA' ||
+    normalized === 'CODORA PECUARIA' ||
     /^[^-]+ - PECUARIA$/.test(normalized)
   );
 };
@@ -233,7 +236,7 @@ const isAllowedCentroCustoForCustos = (atividadeKey: string | undefined, centroC
   return allowed.some((item) => normalizeText(item) === normalizedCC);
 };
 
-const isSyntheticOrcadoEntry = (entry: AccountEntry) => entry.id.includes('::ORCADO::');
+const isSyntheticOrcadoEntry = (entry: AccountEntry) => isSyntheticOrcadoImportEntry(entry);
 const isRateioDeCustosGroup = (entry: AccountEntry) =>
   normalizeText(entry.grupoContabilN9).includes('4.2.01.02-RATEIO DE CUSTOS');
 
@@ -1669,10 +1672,20 @@ export default function ActivityDetailPage() {
                     (entry) => isAllowedEntryForCustos(atividade?.key, entry),
                   )}
                   title="Detalhamento de Custos"
+                  subtitle={
+                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal
+                      ? 'Grupo Contábil → Descrição Contábil'
+                      : 'N9 → Conta → Produto'
+                  }
                   accentColor="orange"
                   showDiariaColumns={isPecuaria && subview === 'confinamento'}
                   showPCabecaColumns={isPecuaria && subview === 'pasto'}
                   showPpKgColumns={isSeringal}
+                  costHierarchyMode={
+                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal
+                      ? 'grupo_descricao'
+                      : 'default'
+                  }
                 />
               </div>
 
@@ -1766,8 +1779,9 @@ export default function ActivityDetailPage() {
                       isConfinamentoEntry,
                     )}
                     title="Detalhamento Pecuária Confinamento"
-                    subtitle="Depto. Confinamento e centros de custo relacionados"
+                    subtitle="Grupo Contábil → Descrição Contábil"
                     accentColor="amber"
+                    costHierarchyMode="grupo_descricao"
                   />
                 </div>
               )}

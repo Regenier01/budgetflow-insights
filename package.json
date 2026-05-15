@@ -21,6 +21,7 @@
     "orcado:import:adm": "node import_orcado_despesas_adm.js",
     "orcado:import:pecuaria": "node import_orcado_pecuaria.js",
     "orcado:import:agricola": "node import_orcado_agricola.js",
+    "orcado:import:seringal": "node import_orcado_seringal.js",
     "orcado:import:tributarias": "node import_orcado_despesas_tributarias.js",
     "orcado:import:encargos": "node import_orcado_encargos.js",
     "orcado:import:desp-vendas": "node import_orcado_despesas_vendas.js",
