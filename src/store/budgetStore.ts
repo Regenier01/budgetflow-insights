@@ -26,7 +26,12 @@ import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import {
   tryParsePecuariaOrcadoBudgetRow,
   resolvePecuariaOrcadoGrupoDescricao,
+  getPecuariaGrupoContabilN9DisplayLabel,
 } from '@/data/pecuariaOrcadoGrupoContabilCodes';
+import {
+  getDespAdmGrupoContabilN9DisplayLabel,
+  tryParseDespAdmOrcadoBudgetRow,
+} from '@/data/despAdmOrcadoGrupoContabilCodes';
 import {
   isReceitaPecuariaOrcadoBatch,
   isReceitaPecuariaOrcadoWorkbook,
@@ -192,12 +197,13 @@ export function receitaLiquidaFromBrutaEDeducoes(bruta: number, deducoes: number
   return bruta - Math.abs(deducoes);
 }
 
-/** Orçado importado: grupo (`SYN::ORCADO::`), descrição pecuária/agrícola/seringal (`SYN::ORCADOPEC::` / `AG` / `SER`). */
+/** Orçado importado: grupo (`SYN::ORCADO::`), descrição pecuária/agrícola/seringal/adm (`PEC` / `AG` / `SER` / `ADM`). */
 export const isSyntheticOrcadoImportEntry = (entry: Pick<AccountEntry, 'id'>) =>
   entry.id.includes('::ORCADO::') ||
   entry.id.includes('::ORCADOPEC::') ||
   entry.id.includes('::ORCADOAG::') ||
-  entry.id.includes('::ORCADOSER::');
+  entry.id.includes('::ORCADOSER::') ||
+  entry.id.includes('::ORCADOADM::');
 
 const rowValue = (value: unknown): string | undefined => {
   const parsed = String(value || '').trim();
@@ -697,6 +703,17 @@ const extractGrupoCode = (value: string | undefined): string => {
   return match?.[0] || '';
 };
 
+const resolveOrcadoGrupoContabilN9Label = (row: OrcadoGrupoMonthValue): string => {
+  const raw = String(row.grupoContabil || '').trim();
+  const prefix = extractGrupoCode(raw);
+  if (!prefix) return raw;
+  if (raw.includes('-')) return raw;
+  if (row.despAdmOrcadoScope !== undefined) {
+    return getDespAdmGrupoContabilN9DisplayLabel(prefix, raw);
+  }
+  return getPecuariaGrupoContabilN9DisplayLabel(prefix, raw);
+};
+
 const accountMatchesGrupoContabil = (account: AccountEntry, grupoCode: string): boolean => {
   if (!grupoCode) return false;
   const accountGrupoN9Code = extractGrupoCode(account.grupoContabilN9);
@@ -711,6 +728,7 @@ type PecuariaOrcadoAggBucket = {
   scope: 'grupo' | 'descricao';
   descricaoContabil: string;
   contaContabil?: string;
+  grupoContabilLabel?: string;
 };
 
 const aggregatePecuariaCustosOrcadoRows = (
@@ -802,6 +820,12 @@ const isSeringalCustosCascadeFileName = (fileName: string): boolean => {
     .trim();
   const normalized = normalizeMatch(department).replace(/\s+/g, ' ').trim();
   return SERINGAL_CUSTOS_FILE_PATTERN.test(normalized);
+};
+
+const isDespAdmCustosCascadeFileName = (fileName: string): boolean => {
+  const { atividade, departamento } = parseOrcadoFileInfo(fileName);
+  if (atividade !== 'DESP_ADM_TRIB') return false;
+  return !normalizeMatch(departamento).includes('TRIBUT');
 };
 
 const aggregateAgricolaCustosOrcadoRows = (
@@ -932,6 +956,77 @@ const aggregateSeringalCustosOrcadoRows = (
   return { entries, atividadeFromRows: 'SERINGAL', departamentoFromRows: null };
 };
 
+const aggregateDespAdmCustosOrcadoRows = (
+  rows: ExcelRow[],
+  fallbackPeriod: MonthKey
+): { entries: OrcadoGrupoMonthValue[]; atividadeFromRows: AtividadeKey | null; departamentoFromRows: string | null } => {
+  const grouped = new Map<string, PecuariaOrcadoAggBucket>();
+
+  rows.forEach((row) => {
+    const rawRow = row as Record<string, unknown>;
+    const parsed = tryParseDespAdmOrcadoBudgetRow(rawRow);
+    if (!parsed) return;
+
+    const descMatchKey =
+      parsed.scope === 'grupo'
+        ? '__GRUPO__'
+        : normalizeMatch(parsed.descricaoContabil || parsed.contaContabil);
+    const descLabel =
+      parsed.scope === 'grupo'
+        ? resolvePecuariaOrcadoGrupoDescricao(parsed.grupoContabilLabel, parsed.descricaoContabil)
+        : (parsed.descricaoContabil || parsed.contaContabil).trim() || parsed.contaContabil;
+
+    const bump = (month: MonthKey, amount: number) => {
+      const k = `${parsed.grupoN9}|${parsed.scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      if (prev) {
+        prev.value += amount;
+      } else {
+        grouped.set(k, {
+          value: amount,
+          scope: parsed.scope,
+          descricaoContabil: descLabel,
+          contaContabil: parsed.scope === 'descricao' ? parsed.contaContabil : undefined,
+          grupoContabilLabel: parsed.grupoContabilLabel,
+        });
+      }
+    };
+
+    let hasPivotMonth = false;
+    Object.entries(rawRow).forEach(([header, cellValue]) => {
+      const month = parseMonthFromHeader(header);
+      if (!month) return;
+      hasPivotMonth = true;
+      bump(month, parseNumeric(cellValue));
+    });
+
+    if (!hasPivotMonth) {
+      const month = dateToMonthKey(row.DATA) || fallbackPeriod;
+      bump(month, parseNumeric(row.SALDO));
+    }
+  });
+
+  const entries: OrcadoGrupoMonthValue[] = Array.from(grouped.entries()).map(([key, bucket]) => {
+    const [, , , month] = key.split('|');
+    const grupoN9 = key.split('|')[0]!;
+    return {
+      grupoContabil: bucket.grupoContabilLabel || grupoN9,
+      month: month as MonthKey,
+      value: bucket.value,
+      despAdmOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+      contaContabil: bucket.contaContabil,
+    };
+  });
+
+  return { entries, atividadeFromRows: 'DESP_ADM_TRIB', departamentoFromRows: null };
+};
+
+const isDespAdmCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boolean => {
+  if (!isDespAdmCustosCascadeFileName(fileName)) return false;
+  return rows.some((row) => tryParseDespAdmOrcadoBudgetRow(row as Record<string, unknown>) !== null);
+};
+
 const isAgricolaCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boolean => {
   if (!isAgricolaCustosCascadeFileName(fileName)) return false;
   return rows.some((row) => tryParsePecuariaOrcadoBudgetRow(row as Record<string, unknown>) !== null);
@@ -946,6 +1041,7 @@ const isPecuariaCustosOrcadoWorkbook = (rows: ExcelRow[], fileName: string): boo
   if (isReceitaPecuariaOrcadoWorkbook(rows)) return false;
   if (isAgricolaCustosCascadeFileName(fileName)) return false;
   if (isSeringalCustosCascadeFileName(fileName)) return false;
+  if (isDespAdmCustosCascadeFileName(fileName)) return false;
   if (rows.some((row) => tryParsePecuariaOrcadoBudgetRow(row as Record<string, unknown>) !== null)) {
     return true;
   }
@@ -964,6 +1060,9 @@ const aggregateOrcadoRows = (
   }
   if (isSeringalCustosOrcadoWorkbook(rows, fileName)) {
     return aggregateSeringalCustosOrcadoRows(rows, fallbackPeriod);
+  }
+  if (isDespAdmCustosOrcadoWorkbook(rows, fileName)) {
+    return aggregateDespAdmCustosOrcadoRows(rows, fallbackPeriod);
   }
   if (isPecuariaCustosOrcadoWorkbook(rows, fileName)) {
     return aggregatePecuariaCustosOrcadoRows(rows, fallbackPeriod);
@@ -1145,13 +1244,15 @@ const getOrCreateStandaloneOrcadoAnchor = (
   nextAccounts: AccountEntry[],
   ctx: {
     normalizedGrupo: string;
+    grupoContabilN9Label: string;
     atividade: OrcadoImportAtividadeKey;
     departamento: string;
     isOutrasReceitasImport: boolean;
     descricaoOverride?: string;
   }
 ): AccountEntry => {
-  const { normalizedGrupo, atividade, departamento, isOutrasReceitasImport, descricaoOverride } = ctx;
+  const { normalizedGrupo, grupoContabilN9Label, atividade, departamento, isOutrasReceitasImport, descricaoOverride } =
+    ctx;
   const atividadeKey = isOutrasReceitasImport ? 'OUTRAS_RECEITAS' : atividade;
   const id = `SYN::ORCADO::${atividadeKey}::${normalizeLooseMatch(departamento)}::${normalizedGrupo}`;
   const existing = nextAccounts.find((a) => a.id === id);
@@ -1174,7 +1275,7 @@ const getOrCreateStandaloneOrcadoAnchor = (
     departamento,
     centroCusto: departamento,
     grupoContabil: grupoContabilFilterDigit(normalizedGrupo),
-    grupoContabilN9: normalizedGrupo,
+    grupoContabilN9: grupoContabilN9Label,
     orcado: {},
     realizado: {},
   };
@@ -1218,12 +1319,18 @@ const applyOrcadoRowsToAccounts = (
   rows.forEach((row) => {
     const normalizedGrupo = extractGrupoCode(row.grupoContabil);
     if (!normalizedGrupo) return;
+    const grupoContabilN9Label = resolveOrcadoGrupoContabilN9Label(row);
 
-    const cascadeScope = row.pecuariaOrcadoScope ?? row.agricolaOrcadoScope ?? row.seringalOrcadoScope;
+    const cascadeScope =
+      row.pecuariaOrcadoScope ??
+      row.agricolaOrcadoScope ??
+      row.seringalOrcadoScope ??
+      row.despAdmOrcadoScope;
 
     if (cascadeScope === 'grupo') {
       const anchor = getOrCreateStandaloneOrcadoAnchor(nextAccounts, {
         normalizedGrupo,
+        grupoContabilN9Label,
         atividade,
         departamento,
         isOutrasReceitasImport,
@@ -1236,11 +1343,13 @@ const applyOrcadoRowsToAccounts = (
 
     if (cascadeScope === 'descricao') {
       const descLoose = normalizeLooseMatch(row.descricaoContabil || row.contaContabil || 'ITEM');
-      const descIdPrefix = row.seringalOrcadoScope
-        ? 'SYN::ORCADOSER::'
-        : row.agricolaOrcadoScope
-          ? 'SYN::ORCADOAG::'
-          : 'SYN::ORCADOPEC::';
+      const descIdPrefix = row.despAdmOrcadoScope
+        ? 'SYN::ORCADOADM::'
+        : row.seringalOrcadoScope
+          ? 'SYN::ORCADOSER::'
+          : row.agricolaOrcadoScope
+            ? 'SYN::ORCADOAG::'
+            : 'SYN::ORCADOPEC::';
       const id = `${descIdPrefix}${normalizeLooseMatch(departamento)}::${normalizedGrupo}::${descLoose}`;
       let anchor = nextAccounts.find((a) => a.id === id);
       if (!anchor) {
@@ -1262,11 +1371,16 @@ const applyOrcadoRowsToAccounts = (
           departamento,
           centroCusto: departamento,
           grupoContabil: grupoContabilFilterDigit(normalizedGrupo),
-          grupoContabilN9: normalizedGrupo,
+          grupoContabilN9: grupoContabilN9Label,
           orcado: {},
           realizado: {},
         };
         nextAccounts.push(anchor);
+      } else if (
+        grupoContabilN9Label.includes('-') &&
+        !String(anchor.grupoContabilN9 || '').includes('-')
+      ) {
+        anchor.grupoContabilN9 = grupoContabilN9Label;
       }
       anchor.orcado[row.month] = (anchor.orcado[row.month] || 0) + row.value;
       count++;
@@ -1485,6 +1599,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
     const pecuariaCustosWorkbook = isPecuariaCustosOrcadoWorkbook(rows, fileName);
     const agricolaCustosWorkbook = isAgricolaCustosOrcadoWorkbook(rows, fileName);
     const seringalCustosWorkbook = isSeringalCustosOrcadoWorkbook(rows, fileName);
+    const despAdmCustosWorkbook = isDespAdmCustosOrcadoWorkbook(rows, fileName);
     const aggregated = aggregateOrcadoRows(rows, fallbackPeriod, fileName);
     const mappingAtividade =
       mapDivisaoToAtividade(findDepartmentMappingByName(fileInfo.departamento)?.divisao) || null;
@@ -1514,7 +1629,7 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       new Set(effectiveRowDepartments.map((dept) => canonicalDepartmentKey(dept)).filter((dept) => Boolean(dept)))
     );
 
-    if (!pecuariaCustosWorkbook && !agricolaCustosWorkbook && !seringalCustosWorkbook) {
+    if (!pecuariaCustosWorkbook && !agricolaCustosWorkbook && !seringalCustosWorkbook && !despAdmCustosWorkbook) {
       if (effectiveRowDepartments.length === 0) {
         throw new Error(
           `Importacao do orcado "${fileName}" invalida: coluna NOMEDEPTO ausente ou vazia.`

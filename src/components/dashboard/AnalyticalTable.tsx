@@ -16,6 +16,7 @@ import {
   extractGrupoN9FourLevels,
   getPecuariaGrupoContabilN9DisplayLabel,
 } from '@/data/pecuariaOrcadoGrupoContabilCodes';
+import { getDespAdmGrupoContabilN9DisplayLabel } from '@/data/despAdmOrcadoGrupoContabilCodes';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -221,10 +222,19 @@ export function AnalyticalTable({
   const root = new Map<string, Node>();
 
   /** Alinha orçado sintético e realizado no mesmo nó N9 (prefixo 4 níveis vs rótulo completo), só na cascata pecuária. */
+  const grupoContabilN9DisplayLabel = (n9: string, hint?: string | null) =>
+    n9.startsWith('3.4.')
+      ? getDespAdmGrupoContabilN9DisplayLabel(n9, hint)
+      : getPecuariaGrupoContabilN9DisplayLabel(n9, hint);
+
   const n9KeyForHierarchy = (a: AccountEntry): string => {
     if (costHierarchyMode === 'grupo_descricao') {
       const fromG = extractGrupoN9FourLevels(a.grupoContabilN9);
       if (fromG) return fromG;
+      // Orçado adm.: grupo vem da coluna A; não inferir pelo código da conta (ex. plano de saúde).
+      if (a.id.startsWith('SYN::ORCADOADM::')) {
+        return fromG || 'Outras Categorias';
+      }
       const fromC = extractGrupoN9FourLevels(a.codigo);
       if (fromC) return fromC;
     }
@@ -252,6 +262,7 @@ export function AnalyticalTable({
       a.id.startsWith('SYN::ORCADOPEC::') ||
       a.id.startsWith('SYN::ORCADOAG::') ||
       a.id.startsWith('SYN::ORCADOSER::') ||
+      a.id.startsWith('SYN::ORCADOADM::') ||
       LEAF_CONTA_PATTERN.test(cod)
     ) {
       return `conta::${cod}`;
@@ -285,7 +296,8 @@ export function AnalyticalTable({
           const rank = (x: AccountEntry) =>
             x.id.startsWith('SYN::ORCADOPEC::') ||
             x.id.startsWith('SYN::ORCADOAG::') ||
-            x.id.startsWith('SYN::ORCADOSER::')
+            x.id.startsWith('SYN::ORCADOSER::') ||
+            x.id.startsWith('SYN::ORCADOADM::')
               ? 0
               : LEAF_CONTA_PATTERN.test(String(x.codigo || '').trim()) && !x.id.startsWith('SYN::ORCADO::')
                 ? 1
@@ -316,7 +328,7 @@ export function AnalyticalTable({
       root.set(n9, {
         name:
           costHierarchyMode === 'grupo_descricao'
-            ? getPecuariaGrupoContabilN9DisplayLabel(n9, a.grupoContabilN9)
+            ? grupoContabilN9DisplayLabel(n9, a.grupoContabilN9)
             : n9,
         orc: 0,
         real: 0,
@@ -327,7 +339,7 @@ export function AnalyticalTable({
     nodeN9.orc += orc;
     nodeN9.real += real;
     if (costHierarchyMode === 'grupo_descricao') {
-      const cand = getPecuariaGrupoContabilN9DisplayLabel(n9, a.grupoContabilN9);
+      const cand = grupoContabilN9DisplayLabel(n9, a.grupoContabilN9);
       const score = (s: string) => (s.includes('-') ? 1_000_000 : 0) + s.length;
       if (score(cand) > score(nodeN9.name)) nodeN9.name = cand;
     }

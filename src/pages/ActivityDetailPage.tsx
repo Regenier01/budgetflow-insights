@@ -1673,7 +1673,7 @@ export default function ActivityDetailPage() {
                   )}
                   title="Detalhamento de Custos"
                   subtitle={
-                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal
+                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
                       ? 'Grupo Contábil → Descrição Contábil'
                       : 'N9 → Conta → Produto'
                   }
@@ -1682,7 +1682,7 @@ export default function ActivityDetailPage() {
                   showPCabecaColumns={isPecuaria && subview === 'pasto'}
                   showPpKgColumns={isSeringal}
                   costHierarchyMode={
-                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal
+                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
                       ? 'grupo_descricao'
                       : 'default'
                   }
@@ -1720,10 +1720,11 @@ export default function ActivityDetailPage() {
                         title={isAdmTribLaizaSubview ? 'DESPESAS - GERENCIA FINANCEIRO' : 'DESPESAS - GERENCIA RH'}
                         subtitle={
                           isAdmTribLaizaSubview
-                            ? 'Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
-                            : 'Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
+                            ? 'Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
+                            : 'Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
                         }
                         accentColor="orange"
+                        costHierarchyMode="grupo_descricao"
                       />
                     )}
                     <AnalyticalTable
@@ -1906,8 +1907,9 @@ export default function ActivityDetailPage() {
                       (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
                     )}
                     title="DESPESAS - GERENCIA FINANCEIRO"
-                    subtitle="Centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
+                    subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
                     accentColor="orange"
+                    costHierarchyMode="grupo_descricao"
                   />
                   <AnalyticalTable
                     atividadeFilter={atividade.key}
@@ -1924,8 +1926,9 @@ export default function ActivityDetailPage() {
                       (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
                     )}
                     title="DESPESAS - GERENCIA RH"
-                    subtitle="Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
+                    subtitle="Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
                     accentColor="orange"
+                    costHierarchyMode="grupo_descricao"
                   />
                   <AnalyticalTable
                     atividadeFilter={atividade.key}

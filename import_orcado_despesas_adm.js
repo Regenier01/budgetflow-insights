@@ -53,6 +53,18 @@ const MONTH_LABEL_MAP = {
   'MAR/27': '2027-03',
 };
 
+const PECUARIA_ORCADO_GRUPO_CONTABIL_N9 = {
+  '1': '4.1.01.01-CUSTO DE PESSOAL',
+  '2': '4.1.01.11-CUSTOS RURAIS',
+  '3': '4.1.01.02-SERVICOS DE TERCEIROS',
+  '4': '4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS',
+  '5': '4.2.01.02-RATEIO DE CUSTOS',
+  '6': '4.1.01.05-DEPRECIACOES, EXAUSTOES E AMORTIZACOES',
+  '7': '4.1.01.21-OUTROS CUSTOS OPERACIONAIS',
+  '8': '4.1.01.06-DESPESAS DE VIAGENS',
+  '9': '4.1.01.03-LOCACOES',
+};
+
 function normalizeText(value) {
   return String(value || '')
     .toUpperCase()
@@ -115,7 +127,7 @@ function parseNumber(value) {
   } else if (hasDot) {
     normalized = dotAsThousandsPattern.test(cleaned)
       ? cleaned.replace(/\./g, '')
-      : cleaned;
+      : normalized;
   }
 
   const parsed = Number(normalized);
@@ -123,9 +135,11 @@ function parseNumber(value) {
 }
 
 function parseDepartmentFromFilename(fileName) {
-  const rawName = normalizeText(fileName.replace(/\.xlsx$/i, '').replace(/\.xls$/i, ''));
-  return rawName
+  return fileName
+    .replace(/\.xlsx$/i, '')
+    .replace(/\.xls$/i, '')
     .replace(/^ORCAMENTO\s+/i, '')
+    .replace(/^ORÇAMENTO\s+/i, '')
     .trim();
 }
 
@@ -172,7 +186,44 @@ function validateAdministrativeFileNames(files) {
   );
 }
 
-function parseBudgetSheet(filePath) {
+function resolvePecuariaOrcadoGrupoContabilN9(raw) {
+  if (typeof raw === 'number' && Number.isFinite(raw)) {
+    const n = Math.trunc(raw);
+    if (n >= 1 && n <= 9 && Math.abs(raw - n) < 1e-9) {
+      return PECUARIA_ORCADO_GRUPO_CONTABIL_N9[String(n)] || '';
+    }
+  }
+  const s = String(raw ?? '').trim();
+  if (!s) return '';
+  if (/^[1-9]$/.test(s)) return PECUARIA_ORCADO_GRUPO_CONTABIL_N9[s] || '';
+  return '';
+}
+
+function extractGrupoN9FourLevels(value) {
+  const s = String(value ?? '').trim();
+  if (!s) return '';
+  const head = (s.split(/[-\s]/)[0] || '').trim() || s;
+  const match = head.match(/^\d(?:\.\d{1,4})+/);
+  if (!match) return '';
+  const parts = match[0].split('.');
+  if (parts.length <= 4) return match[0];
+  return parts.slice(0, 4).join('.');
+}
+
+function resolveGrupoDescricao(grupoLabel, rawDesc) {
+  const fromColC = String(rawDesc ?? '').trim();
+  if (fromColC) return fromColC;
+  const label = String(grupoLabel ?? '').trim();
+  const dashIdx = label.indexOf('-');
+  if (dashIdx >= 0) {
+    const afterDash = label.slice(dashIdx + 1).trim();
+    if (afterDash) return afterDash;
+  }
+  return label;
+}
+
+/** Cascata grupo → descrição (mesmo layout do orçado Seringal), sem nível produto. */
+function parseBudgetSheetCascade(filePath) {
   const workbook = XLSX.readFile(filePath, { cellDates: true });
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: null });
@@ -188,21 +239,62 @@ function parseBudgetSheet(filePath) {
 
   const grouped = new Map();
   for (const row of rows.slice(1)) {
-    const rawGroup = String(row[0] ?? '').trim();
-    if (!rawGroup) continue;
-    const grupoContabil = rawGroup.split('-')[0]?.trim() || rawGroup;
-    if (!grupoContabil) continue;
+    const colA = row[0];
+    if (colA === undefined || colA === null || String(colA).trim() === '') continue;
+
+    const labelFromCod = resolvePecuariaOrcadoGrupoContabilN9(colA);
+    const grupoLabel = labelFromCod || String(colA).trim();
+    let grupoN9 = extractGrupoN9FourLevels(grupoLabel);
+    if (!grupoN9) continue;
+
+    const contaContabil = String(row[1] ?? '').trim();
+    const rawDesc = String(row[2] ?? '').trim();
+    const hasConta = /^\d\.\d+\.\d+/.test(contaContabil);
+
+    let scope;
+    let descricaoContabil;
+    let contaOut;
+    let descMatchKey;
+    if (!hasConta) {
+      scope = 'grupo';
+      descricaoContabil = resolveGrupoDescricao(grupoLabel, rawDesc);
+      contaOut = undefined;
+      descMatchKey = '__GRUPO__';
+    } else {
+      scope = 'descricao';
+      // Agrupamento = coluna A (ex.: Custo de Pessoal); conta pode ter outro prefixo (ex.: 3.4.02.01.0010).
+      descricaoContabil = (rawDesc || contaContabil).trim();
+      contaOut = contaContabil;
+      descMatchKey = normalizeText(rawDesc || contaContabil);
+    }
 
     for (const { index, month } of monthColumns) {
       const value = parseNumber(row[index]);
-      const key = `${grupoContabil}::${month}`;
-      grouped.set(key, (grouped.get(key) || 0) + value);
+      const k = `${grupoN9}|${scope}|${descMatchKey}|${month}`;
+      const prev = grouped.get(k);
+      const nextVal = (prev?.value || 0) + value;
+      grouped.set(k, {
+        value: nextVal,
+        scope,
+        descricaoContabil,
+        contaContabil: contaOut,
+        grupoContabilLabel: grupoLabel,
+      });
     }
   }
 
-  return Array.from(grouped.entries()).map(([key, value]) => {
-    const [grupoContabil, month] = key.split('::');
-    return { grupoContabil, month, value };
+  return Array.from(grouped.entries()).map(([key, bucket]) => {
+    const month = key.split('|').pop();
+    const grupoN9 = key.split('|')[0];
+    const out = {
+      grupoContabil: bucket.grupoContabilLabel || grupoN9,
+      month,
+      value: bucket.value,
+      despAdmOrcadoScope: bucket.scope,
+      descricaoContabil: bucket.descricaoContabil,
+    };
+    if (bucket.contaContabil) out.contaContabil = bucket.contaContabil;
+    return out;
   });
 }
 
@@ -219,16 +311,14 @@ function readExistingBatches() {
   }
 }
 
+function isDespAdmAdministrativeBatch(batch) {
+  if (normalizeText(batch.atividade) !== 'DESP_ADM_TRIB') return false;
+  return !normalizeText(batch.departamento).includes('TRIBUT');
+}
+
+/** Substitui todo o orçado administrativo (não tributário) pelos arquivos da pasta atual. */
 function mergeAdministrativeBatches(existingBatches, adminBatches) {
-  const adminKeys = new Set(
-    adminBatches.map((batch) => `${normalizeText(batch.atividade)}::${normalizeText(batch.departamento)}`)
-  );
-
-  const preserved = existingBatches.filter((batch) => {
-    const key = `${normalizeText(batch.atividade)}::${normalizeText(batch.departamento)}`;
-    return !adminKeys.has(key);
-  });
-
+  const preserved = existingBatches.filter((batch) => !isDespAdmAdministrativeBatch(batch));
   return [...preserved, ...adminBatches];
 }
 
@@ -239,6 +329,12 @@ export interface OrcadoGrupoMonthValue {
   grupoContabil: string;
   month: MonthKey;
   value: number;
+  descricaoContabil?: string;
+  pecuariaOrcadoScope?: 'grupo' | 'descricao';
+  agricolaOrcadoScope?: 'grupo' | 'descricao';
+  seringalOrcadoScope?: 'grupo' | 'descricao';
+  despAdmOrcadoScope?: 'grupo' | 'descricao';
+  contaContabil?: string;
 }
 
 export interface OrcadoImportBatch {
@@ -267,14 +363,17 @@ function run() {
     fileName,
     departamento: parseDepartmentFromFilename(fileName),
     atividade: FIXED_ATIVIDADE,
-    rows: parseBudgetSheet(join(targetDir, fileName)),
+    rows: parseBudgetSheetCascade(join(targetDir, fileName)),
   }));
 
-  const mergedBatches = mergeAdministrativeBatches(readExistingBatches(), adminBatches);
+  const existingBatches = readExistingBatches();
+  const removedAdmin = existingBatches.filter(isDespAdmAdministrativeBatch).length;
+  const mergedBatches = mergeAdministrativeBatches(existingBatches, adminBatches);
   writeFileSync(OUTPUT_FILE, buildOutputSource(mergedBatches));
   console.log(
-    `Importacao ADM concluida: ${adminBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
-    `Total de lotes no arquivo: ${mergedBatches.length}.`
+    `Importacao ADM (custos cascata) concluida: ${adminBatches.length} arquivo(s) processado(s) de "${targetDir}". ` +
+      `${removedAdmin} lote(s) administrativo(s) anterior(es) substituido(s). ` +
+      `Total de lotes no arquivo: ${mergedBatches.length}.`
   );
 }
 
