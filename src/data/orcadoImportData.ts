@@ -8,7 +8,6 @@ export interface OrcadoGrupoMonthValue {
   pecuariaOrcadoScope?: 'grupo' | 'descricao';
   agricolaOrcadoScope?: 'grupo' | 'descricao';
   seringalOrcadoScope?: 'grupo' | 'descricao';
-  despAdmOrcadoScope?: 'grupo' | 'descricao';
   contaContabil?: string;
 }
 
@@ -41705,12041 +41704,6 @@ export const ORCADO_IMPORT_BATCHES: OrcadoImportBatch[] = [
     ]
   },
   {
-    "fileName": "BANDEIRANTES - SERINGAL.xlsx",
-    "departamento": "BANDEIRANTES - SERINGAL",
-    "atividade": "SERINGAL",
-    "rows": [
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 724852.1322768652,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 785265.0894083283,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 725014.5430336293,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 728569.1231332476,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 488836.2897228446,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 490596.79617958545,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 786768.9312721639,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 832695.5330038962,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 634800.7499603245,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 864755.6146537164,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 674694.4250996772,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 771261.8454241747,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 410952.23000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PPR",
-        "contaContabil": "4.1.01.01.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 502.16400000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 502.16400000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 502.16400000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 502.16400000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 502.16400000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 522.756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 65869.16583009566,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 15899.419939972366,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 15866.201065867259,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 15060.046428363457,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 46608.9624472668,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 11624.529999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 13248.739282192317,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 69063.46795739676,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 14922.764269441474,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 18397.54412136713,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 15298.271840092815,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 16768.384397353908,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "INTERNET",
-        "contaContabil": "4.1.01.02.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 202.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 202.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 202.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 202.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 202.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 210.89,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FRETES E CARRETOS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 42259.73,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 25759.420000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 16963.18,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 8998.94,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 8527.210000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 11457.1762,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 8733.72241,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 8417.96629,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 8723.707989999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 21179.18713,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 10776.41425,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 8871.53821,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 4653.969999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 4653.969999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 4742.4859,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 4742.4859,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 4742.4859,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 4844.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 4409.83521,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 4409.83521,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 4409.83521,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 4409.83521,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 4409.83521,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 2604.5604,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 4340.933999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 4340.933999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 4340.933999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 4572.390546,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 4572.390546,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 4732.825301999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-04",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-05",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-06",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-07",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-08",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-09",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-10",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-11",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-12",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-01",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-02",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-03",
-        "value": 129522.38,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 2281.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "0",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-04",
-        "value": 1798,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-05",
-        "value": 1798,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-06",
-        "value": 1878.9099999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-07",
-        "value": 1798,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-08",
-        "value": 1798,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-09",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-10",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-11",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-12",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-01",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-02",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-03",
-        "value": 1869.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TELEFONE",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 648,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 361119,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 44677.85999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 22234,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 29805.36,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 15272.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 1704.8,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 1335.6000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 14723.119999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 37387.43,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 43840.31999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 39519.020000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 26799.719999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 25792.219999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 8148.829999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 7648.829999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 7648.829999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 7648.829999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 7648.829999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 8368.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 8368.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 8368.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 8368.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 8461.76,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 8461.76,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 8741.12,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 38497.519550000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 37427.519550000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 38805.624795,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 38805.624795,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 39805.624795,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 38237.185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 38237.185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 39237.185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 39237.185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 37011.750544999995,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 27969.437991,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 41635.758035,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 1359.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 1359.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 1359.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 1359.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 1359.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 1399.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 1399.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 1399.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 1399.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 1415.8799999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 1415.8799999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 1465.56,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-04",
-        "value": 152157.3779646861,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-05",
-        "value": 156428.74296864413,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-06",
-        "value": 167911.43057124695,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-07",
-        "value": 173549.33635124695,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-08",
-        "value": 168786.89777124696,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-09",
-        "value": 170801.7663144729,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-10",
-        "value": 167306.20096685286,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-11",
-        "value": 236255.23268634288,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-12",
-        "value": 200873.61885887288,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-01",
-        "value": 152428.51381348426,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-02",
-        "value": 153117.95453740825,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-03",
-        "value": 161352.89919790823,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      }
-    ]
-  },
-  {
-    "fileName": "COVOA - SERINGAL.xlsx",
-    "departamento": "COVOA - SERINGAL",
-    "atividade": "SERINGAL",
-    "rows": [
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 255537.71016862232,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 274672.3562892641,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 253126.75592017124,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 275793.7549307741,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 210391.77295678097,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 162294.25973237157,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 233887.40285043773,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 206092.22191846283,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 223802.38657124178,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 270933.84993742773,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 321881.8344123594,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 350137.13256445725,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 296.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 296.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 296.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 296.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 296.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 308.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 19862.02934583774,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 5810.077427178949,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 6005.775274906531,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 5737.950960871341,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 5042.027564531252,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 4462.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 4719.247324247328,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 16063.166858119323,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 5618.251469347965,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 5937.862670282756,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 5750.235133065065,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 6209.290421764223,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 59.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 61.772000000000006,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 61.772000000000006,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 61.772000000000006,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 2716.55,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 2716.55,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 2716.55,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 2716.55,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 2716.55,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 2827.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 1613.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 1686.2328999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 1762.1133804999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 1762.1133804999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 1762.1133804999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 8179.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 1679.77,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 597.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 624.2934499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 624.2934499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 624.2934499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 624.2934499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 621.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 163.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 163.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 163.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 163.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 163.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 169.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 1866.6798250000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 1890.3997749999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 1890.3997749999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 1890.3997749999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 1890.3997749999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 1834.447,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 1834.447,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 1834.447,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 1834.447,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 1887.1618069999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 1887.1618069999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 1937.6690449999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 803.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 803.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 803.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 771.36,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 771.36,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 802.56,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 802.56,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 802.56,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 802.56,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 836,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 836,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 836,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-04",
-        "value": 12515.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-05",
-        "value": 12515.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-06",
-        "value": 12515.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-07",
-        "value": 12515.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-08",
-        "value": 12515.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-09",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-10",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-11",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-12",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-01",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-02",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-03",
-        "value": 13029,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 71.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 71.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 100,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 150,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 71.35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-04",
-        "value": 695.19,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-05",
-        "value": 695.19,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-06",
-        "value": 695.19,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-07",
-        "value": 695.19,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-08",
-        "value": 695.19,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-09",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-10",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-11",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-12",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-01",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-02",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-03",
-        "value": 723.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 603,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 142.72,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 6644,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 19048.4,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 24610.949999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 16960.78,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 11357.8,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 7553.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 10416.664999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 7588.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 11366.36,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 19809,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 13862.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 10679.16,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 3350.42,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 3465.1200000000003,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 3475.9835,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 3475.9835,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 3475.9835,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 3607.1400000000003,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 3607.1400000000003,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 3487.7400000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 3487.7400000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 3487.7400000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 3487.7400000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 3487.7400000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 13131.531,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 13287.1185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 13287.1185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 13287.1185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 13287.1185,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 18093.875999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 12873.444,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 12802.944,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 12802.944,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 13231.019423999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 13231.019423999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 13633.055832,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 434,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 434,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 434,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 434,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 434,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 451.79,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 2110.08,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 2185.44,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 2185.44,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 2185.44,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 2185.44,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 2274.7599999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 2274.7599999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 2196.3199999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 2196.3199999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 2196.3199999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 2196.3199999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 2196.3199999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-04",
-        "value": 48852.78900671138,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-05",
-        "value": 54880.00413707877,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-06",
-        "value": 56428.709470621296,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-07",
-        "value": 61998.4025786213,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-08",
-        "value": 57947.861978621295,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-09",
-        "value": 53143.003448078474,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-10",
-        "value": 54204.483140297474,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-11",
-        "value": 85004.27768296847,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-12",
-        "value": 68055.41487998747,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-01",
-        "value": 52477.8726496147,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-02",
-        "value": 58704.07712288154,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-03",
-        "value": 51523.41135790355,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO TRATORES LEVES",
-        "contaContabil": "4.2.01.02.0001"
-      }
-    ]
-  },
-  {
-    "fileName": "ESPLANADA - SERINGAL.xlsx",
-    "departamento": "ESPLANADA - SERINGAL",
-    "atividade": "SERINGAL",
-    "rows": [
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 153252.81098190183,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 161339.17124489983,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 153940.61159554066,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 148890.53576055868,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 113661.84346180482,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 82936.05936641817,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 152382.22519367552,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 117385.04951011586,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 132759.46536603506,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 173629.98107893532,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 192619.1175664533,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 215725.28057910566,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 802.51,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 802.51,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 802.51,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 802.51,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 802.51,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 835.41,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 8071.137129163005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 2887.539083202002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 2617.482669971787,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 2442.098467697612,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 1986.3744601491271,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 8704.67,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 1868.649211006672,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 7471.555792275451,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 2457.495746893064,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 2584.587437550456,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 2461.6916467694646,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 2762.372258759932,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
-        "contaContabil": "4.1.01.02.0009"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 160.502,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 167.082,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 167.082,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 167.082,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-04",
-        "value": 6785.61345,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-05",
-        "value": 6785.61345,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-06",
-        "value": 6785.61345,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-07",
-        "value": 6785.61345,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-08",
-        "value": 6785.61345,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-09",
-        "value": 6759.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-10",
-        "value": 6759.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-11",
-        "value": 6759.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-12",
-        "value": 6759.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-01",
-        "value": 7036.78524,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-02",
-        "value": 7036.78524,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-03",
-        "value": 7036.78524,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 910.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 910.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 910.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 910.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 910.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 948.23,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 606.46,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 633.7507,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 633.7507,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 633.7507,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 633.7507,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 3231.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 631.32,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 750.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 784.2620499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 784.2620499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 784.2620499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 784.2620499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 781.26,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 65.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 65.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 65.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 65.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 65.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 68.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 1425.34856,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 1425.34856,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 1425.34856,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 1425.34856,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 1425.34856,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 1444.616,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 1444.616,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 1444.616,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 1444.616,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 1480.188256,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 1480.188256,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 1536.6375219999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 564.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 564.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 564.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 527.24,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 527.24,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 548.8000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 548.8000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 548.8000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 548.8000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 588,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 588,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 588,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-04",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-05",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-06",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-07",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-08",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-09",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-10",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-11",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-12",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-01",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-02",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-03",
-        "value": 18446.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-04",
-        "value": 820.93,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-05",
-        "value": 820.93,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-06",
-        "value": 857.8718499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-07",
-        "value": 857.8718499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-08",
-        "value": 857.8718499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-09",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-10",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-11",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-12",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-01",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-02",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-03",
-        "value": 854.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 21,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 3364.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 8412.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 9339,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 7975.7,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 5585.8,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 22449.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 3280.605,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 3502.02,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 2829.42,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 4814.719999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 9913.4,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 4506.42,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 1428.85,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 1428.85,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 1324.48,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 1324.48,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 1324.48,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 1487.5300000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 1573.7100000000003,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 30.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 8284.16785,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 8357.52685,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 8357.52685,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 8357.52685,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 8357.52685,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 8846.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 8846.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 8772.96,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 8772.96,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 9065.66064,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 9065.66064,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 9167.780639999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 218.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 218.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 218.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 218.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 218.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 227.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 419.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 447.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 447.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 447.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 447.04,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 494.35999999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 494.35999999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 465.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 465.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 465.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 465.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 465.28,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-04",
-        "value": 36020.336015643334,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-05",
-        "value": 36626.16197343774,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-06",
-        "value": 37766.4354266249,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-07",
-        "value": 40142.2157201849,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-08",
-        "value": 37099.396713584894,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-09",
-        "value": 38487.23064258177,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-10",
-        "value": 39238.270642581774,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-11",
-        "value": 56700.50368245778,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-12",
-        "value": 47084.35237022178,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-01",
-        "value": 38465.871724716024,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-02",
-        "value": 38091.961181904706,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-03",
-        "value": 39891.34593173671,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
-        "contaContabil": "4.2.01.02.0001"
-      }
-    ]
-  },
-  {
-    "fileName": "PORTEIRAS - SERINGAL.xlsx",
-    "departamento": "PORTEIRAS - SERINGAL",
-    "atividade": "SERINGAL",
-    "rows": [
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 1278570.1531596081,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 1325365.699173957,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 1298678.1316904793,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 1223988.5013694048,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 1194226.593980239,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 1377271.7950236527,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 1321418.6573170982,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 1412169.8721664238,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 1145343.0536078615,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 1256300.739072041,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 1210967.8795534675,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 1381576.2654561861,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 547.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 684.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 547.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 547.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 547.69,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 570.15,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 570.15,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 570.15,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 593.5261499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 593.5261499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 593.5261499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 593.5261499999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 185278.03301766538,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 220330.72914298228,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 185020.6953762178,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 143616.54810578603,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 139307.04884550849,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 137603.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 140699.8757241106,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 227077.08301452943,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 143886.10487547482,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 151387.6640764355,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 150243.12105407548,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 153043.39512551142,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 109.53800000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 136.91600000000003,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 109.53800000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 109.53800000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 109.53800000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 114.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 114.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 114.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 118.70522999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 118.70522999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 118.70522999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 118.70522999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-04",
-        "value": 259.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-05",
-        "value": 259.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-06",
-        "value": 259.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-07",
-        "value": 259.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-08",
-        "value": 259.45,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-09",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-10",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-11",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-12",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-01",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-02",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-03",
-        "value": 270,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 14952.82,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 14952.82,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 14952.82,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 14952.82,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 14952.82,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 15565,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 5927.05,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 5927.05,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 5927.05,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 5927.05,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 130927.05,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 6423,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 6423,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 6423,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 6423,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 6686.343,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 6686.343,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 6686.343,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 10000,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 15000,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 15000,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 10000,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 4665.46,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 4856.27,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 4856.27,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 5055.3770700000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 5055.3770700000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 5055.3770700000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 4856.27,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 4856.27,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 534.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 534.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 534.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 534.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 534.59,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 579.3164999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 556.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 556.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 579.3164999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 579.3164999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 556.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 556.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 9342.019620000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 9342.019620000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 9342.019620000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 9342.019620000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 12720.314430000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 9294.533,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 9294.533,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 9294.533,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 9294.533,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 9565.318853,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 9565.318853,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 9843.671843,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 5588.48,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 2672.64,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 1333.76,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 985.6,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 3079.68,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 1402.6200000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 4894.71,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 2595.5699999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 2561.8300000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 3055.88,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 2077.4199999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 1413.1299999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-04",
-        "value": 131848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-05",
-        "value": 131848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-06",
-        "value": 131848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-07",
-        "value": 131848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-08",
-        "value": 131848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-09",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-10",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-11",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-12",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-01",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-02",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-03",
-        "value": 146848.37,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 1511.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-04",
-        "value": 2598.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-05",
-        "value": 2598.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-06",
-        "value": 2598.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-07",
-        "value": 2598.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-08",
-        "value": 2598.49,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-09",
-        "value": 2704,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-10",
-        "value": 2814.8639999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-11",
-        "value": 2814.8639999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-12",
-        "value": 2814.8639999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-01",
-        "value": 2814.8639999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-02",
-        "value": 2704,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-03",
-        "value": 2704,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 4000,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 440037.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 9450,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 3200,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 89590,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 101222.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 26067.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 25670,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 29676.8,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 12180,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 35728.3,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 27532.8,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 69040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 115086.47,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 91654.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 75551.90000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 12063.199999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 33046.399999999994,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 11682.4,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 12547.6,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 9677.6,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 11684.949999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 3684.6000000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 26782,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 8849.449999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 10478.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 6285.799999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 26053.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 118.17,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 59739.474890000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 59739.474890000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 59739.474890000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 59739.474890000005,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 34991.014934,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 51360.655000000006,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 56218.10500000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 56218.10500000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 56218.10500000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 58504.443145,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 58504.443145,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 60826.862095,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 1148,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 1148,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 1148,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 1148,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 1148,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 1195.07,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 1998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 2072,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 2072,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 2072,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 2072,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 2117.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 2117.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 2040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 2040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 2040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 2040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 2040.5,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-04",
-        "value": 249594.37030072394,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-05",
-        "value": 237622.66772072398,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-06",
-        "value": 332428.4511817239,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-07",
-        "value": 224284.57545072393,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-08",
-        "value": 218483.07306519657,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-09",
-        "value": 242858.13256534972,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-10",
-        "value": 259440.68430194972,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-11",
-        "value": 274129.07114760973,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-12",
-        "value": 294277.77241836314,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-01",
-        "value": 249076.15834715217,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-02",
-        "value": 257587.32610321217,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-03",
-        "value": 250728.96876249218,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      }
-    ]
-  },
-  {
-    "fileName": "VERA CRUZ - SERINGAL.xlsx",
-    "departamento": "VERA CRUZ - SERINGAL",
-    "atividade": "SERINGAL",
-    "rows": [
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-04",
-        "value": 22618.445513381506,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-05",
-        "value": 22667.944093553175,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-06",
-        "value": 22453.913991306534,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-07",
-        "value": 21134.968892017157,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-08",
-        "value": 16883.183793259144,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-09",
-        "value": 15063.02887136573,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-10",
-        "value": 34590.14726723102,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-11",
-        "value": 19905.26125522835,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2026-12",
-        "value": 21293.87480081027,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-01",
-        "value": 27471.892665075105,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-02",
-        "value": 29484.296165596916,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.01",
-        "month": "2027-03",
-        "value": 32408.13900522617,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SALARIOS E ORDENADOS",
-        "contaContabil": "4.1.01.01.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 50,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 52.25,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 52.25,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 52.25,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
-        "contaContabil": "4.1.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 808.5157354374255,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 809.6818748914563,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 809.9271499208398,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 778.8540582756273,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 683.4869495118841,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 653.6700000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 1760.0578400453246,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 1670.6283878815316,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 800.4628018362123,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 416.0680334577256,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 817.1753225074483,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 882.6048595462162,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
-        "contaContabil": "4.1.01.02.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-04",
-        "value": 10,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-09",
-        "value": 10.450000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2026-12",
-        "value": 10.450000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-01",
-        "value": 10.450000000000001,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.02",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENCARGOS INSS",
-        "contaContabil": "4.1.01.02.0030"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.03",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LOCACOES DE VEICULOS",
-        "contaContabil": "4.1.01.03.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 3,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 3.135,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 3.135,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 3.135,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 3.135,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 3.13,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
-        "contaContabil": "4.1.01.04.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 40.25,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 42.061249999999994,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 42.061249999999994,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 42.061249999999994,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 42.061249999999994,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 42.06,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
-        "contaContabil": "4.1.01.04.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 212.76,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 222.33419999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 222.33419999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 222.33419999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 222.33419999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 222.34,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
-        "contaContabil": "4.1.01.04.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 2.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 2.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 2.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 2.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 2.1,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 2.2,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
-        "contaContabil": "4.1.01.04.0004"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 150.65765,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 150.65765,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 150.65765,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 150.37775,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 150.37775,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 150.64999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 150.64999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 150.64999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 150.64999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 156.56014999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 156.56014999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 156.56014999999996,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
-        "contaContabil": "4.1.01.04.0005"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-04",
-        "value": 27.799999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-05",
-        "value": 27.799999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-06",
-        "value": 27.799999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-07",
-        "value": 27.799999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-08",
-        "value": 27.799999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-09",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-10",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-11",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2026-12",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-01",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-02",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.04",
-        "month": "2027-03",
-        "value": 29.049999999999997,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
-        "contaContabil": "4.1.01.04.0006"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-04",
-        "value": 4465.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-05",
-        "value": 4465.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-06",
-        "value": 4465.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-07",
-        "value": 4465.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-08",
-        "value": 4465.62,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-09",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-10",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-11",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2026-12",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-01",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-02",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.05",
-        "month": "2027-03",
-        "value": 4666.58,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "DEPRECIACOES",
-        "contaContabil": "4.1.01.05.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "PASSAGENS",
-        "contaContabil": "4.1.01.06.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "REFEICOES E ESTADIAS",
-        "contaContabil": "4.1.01.06.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-10",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.06",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
-        "contaContabil": "4.1.01.06.0010"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-04",
-        "value": 101,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-05",
-        "value": 101,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-06",
-        "value": 105.54499999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-07",
-        "value": 105.54499999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-08",
-        "value": 105.54499999999999,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-09",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-10",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-11",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2026-12",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-01",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-02",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.07",
-        "month": "2027-03",
-        "value": 105.54,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ENERGIA ELETRICA",
-        "contaContabil": "4.1.01.07.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 129.60000000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 0,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "ALIMENTACAO ANIMAL",
-        "contaContabil": "4.1.01.11.0001"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 7.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 7.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 7.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 7.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 7.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 16499.739999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 8.14,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "FERTILIZANTES",
-        "contaContabil": "4.1.01.11.0017"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-04",
-        "value": 1097.3,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-05",
-        "value": 847.3,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-06",
-        "value": 2614.5800000000004,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-07",
-        "value": 1256.66,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-08",
-        "value": 347.29999999999995,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-09",
-        "value": 6436.095,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-10",
-        "value": 1084.12,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-11",
-        "value": 364.665,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2026-12",
-        "value": 364.665,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-01",
-        "value": 601.86,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-02",
-        "value": 337.0595,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.11",
-        "month": "2027-03",
-        "value": 1293.115,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
-        "contaContabil": "4.1.01.11.0019"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 156.01000000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 156.01000000000002,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 156.4365,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 156.4365,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 156.4365,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 163.04999999999998,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CURSOS DE TREINAMENTO",
-        "contaContabil": "4.1.01.21.0002"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 35,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 36.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "CONTRIBUICOES E DOACOES",
-        "contaContabil": "4.1.01.21.0003"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 1085.905,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 1085.905,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 1093.49875,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 1093.49875,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 1093.49875,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 1134.65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "LANCHES E REFEICOES",
-        "contaContabil": "4.1.01.21.0012"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 16.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 16.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 16.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 16.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 16.03,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 16.75,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "TAXAS E ANUIDADES",
-        "contaContabil": "4.1.01.21.0013"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-04",
-        "value": 65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-05",
-        "value": 65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-06",
-        "value": 65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-07",
-        "value": 65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-08",
-        "value": 65,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-09",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-10",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-11",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2026-12",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-01",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-02",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.1.01.21",
-        "month": "2027-03",
-        "value": 67.9,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
-        "contaContabil": "4.1.01.21.0020"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-04",
-        "value": 2862.747463258055,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-05",
-        "value": 3020.2801931166555,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-06",
-        "value": 1745.631324123972,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-07",
-        "value": 3925.5525161239716,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-08",
-        "value": 2350.480546123972,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-09",
-        "value": 2500.7165838614974,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-10",
-        "value": 3936.824313861497,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-11",
-        "value": 5284.620749708015,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2026-12",
-        "value": 2915.6892581715174,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-01",
-        "value": 1913.2890518260165,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-02",
-        "value": 1822.3318619615047,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      },
-      {
-        "grupoContabil": "4.2.01.02",
-        "month": "2027-03",
-        "value": 1944.2385195159804,
-        "seringalOrcadoScope": "descricao",
-        "descricaoContabil": "RATEIO RECEBIDO",
-        "contaContabil": "4.2.01.02.0001"
-      }
-    ]
-  },
-  {
     "fileName": "COMPRAS.xlsx",
     "departamento": "COMPRAS",
     "atividade": "DESP_ADM_TRIB",
@@ -82855,6 +70819,12041 @@ export const ORCADO_IMPORT_BATCHES: OrcadoImportBatch[] = [
         "despAdmOrcadoScope": "descricao",
         "descricaoContabil": "Rateio Portaria e Vigilância",
         "contaContabil": "3.4.01.10.0058"
+      }
+    ]
+  },
+  {
+    "fileName": "BANDEIRANTES SERINGAL.xlsx",
+    "departamento": "BANDEIRANTES SERINGAL",
+    "atividade": "SERINGAL",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 724852.1322768652,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 785265.0894083283,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 725014.5430336293,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 728569.1231332476,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 488836.2897228446,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 490596.79617958545,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 786768.9312721639,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 832695.5330038962,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 634800.7499603245,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 864755.6146537164,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 674694.4250996772,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 771261.8454241747,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 410952.23000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PPR",
+        "contaContabil": "4.1.01.01.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 502.16400000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 502.16400000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 502.16400000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 502.16400000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 502.16400000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 522.756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 65869.16583009566,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 15899.419939972366,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 15866.201065867259,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 15060.046428363457,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 46608.9624472668,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 11624.529999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 13248.739282192317,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 69063.46795739676,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 14922.764269441474,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 18397.54412136713,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 15298.271840092815,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 16768.384397353908,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "INTERNET",
+        "contaContabil": "4.1.01.02.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 202.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 202.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 202.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 202.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 202.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 210.89,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FRETES E CARRETOS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 42259.73,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 25759.420000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 16963.18,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 8998.94,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 8527.210000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 11457.1762,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 8733.72241,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 8417.96629,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 8723.707989999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 21179.18713,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 10776.41425,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 8871.53821,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 4653.969999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 4653.969999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 4742.4859,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 4742.4859,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 4742.4859,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 4844.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 4409.83521,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 4409.83521,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 4409.83521,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 4409.83521,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 4409.83521,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 2604.5604,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 4340.933999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 4340.933999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 4340.933999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 4572.390546,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 4572.390546,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 4732.825301999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 129522.38,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 2281.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "0",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 1798,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 1798,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 1878.9099999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 1798,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 1798,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 1869.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TELEFONE",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 648,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 361119,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 44677.85999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 22234,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 29805.36,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 15272.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 1704.8,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 1335.6000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 14723.119999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 37387.43,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 43840.31999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 39519.020000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 26799.719999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 25792.219999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 8148.829999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 7648.829999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 7648.829999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 7648.829999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 7648.829999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 8368.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 8368.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 8368.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 8368.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 8461.76,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 8461.76,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 8741.12,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 38497.519550000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 37427.519550000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 38805.624795,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 38805.624795,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 39805.624795,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 38237.185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 38237.185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 39237.185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 39237.185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 37011.750544999995,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 27969.437991,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 41635.758035,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 1359.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 1359.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 1359.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 1359.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 1359.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 1399.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 1399.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 1399.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 1399.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 1415.8799999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 1415.8799999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 1465.56,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 152157.3779646861,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 156428.74296864413,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 167911.43057124695,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 173549.33635124695,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 168786.89777124696,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 170801.7663144729,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 167306.20096685286,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 236255.23268634288,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 200873.61885887288,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 152428.51381348426,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 153117.95453740825,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 161352.89919790823,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      }
+    ]
+  },
+  {
+    "fileName": "COVOA - SERINGAL.xlsx",
+    "departamento": "COVOA - SERINGAL",
+    "atividade": "SERINGAL",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 255537.71016862232,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 274672.3562892641,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 253126.75592017124,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 275793.7549307741,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 210391.77295678097,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 162294.25973237157,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 233887.40285043773,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 206092.22191846283,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 223802.38657124178,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 270933.84993742773,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 321881.8344123594,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 350137.13256445725,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 296.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 296.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 296.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 296.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 296.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 308.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 19862.02934583774,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 5810.077427178949,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 6005.775274906531,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 5737.950960871341,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 5042.027564531252,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 4462.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 4719.247324247328,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 16063.166858119323,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 5618.251469347965,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 5937.862670282756,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 5750.235133065065,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 6209.290421764223,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 59.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 61.772000000000006,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 61.772000000000006,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 61.772000000000006,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 2716.55,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 2716.55,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 2716.55,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 2716.55,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 2716.55,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 2827.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 1613.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 1686.2328999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 1762.1133804999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 1762.1133804999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 1762.1133804999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 8179.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 1679.77,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 597.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 624.2934499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 624.2934499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 624.2934499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 624.2934499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 621.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 163.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 163.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 163.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 163.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 163.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 169.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 1866.6798250000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 1890.3997749999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 1890.3997749999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 1890.3997749999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 1890.3997749999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 1834.447,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 1834.447,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 1834.447,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 1834.447,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 1887.1618069999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 1887.1618069999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 1937.6690449999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 803.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 803.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 803.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 771.36,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 771.36,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 802.56,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 802.56,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 802.56,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 802.56,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 836,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 836,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 836,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 12515.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 12515.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 12515.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 12515.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 12515.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 13029,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 71.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 71.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 100,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 150,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 71.35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 695.19,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 695.19,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 695.19,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 695.19,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 695.19,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 723.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 603,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 142.72,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 6644,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 19048.4,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 24610.949999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 16960.78,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 11357.8,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 7553.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 10416.664999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 7588.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 11366.36,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 19809,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 13862.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 10679.16,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 3350.42,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 3465.1200000000003,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 3475.9835,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 3475.9835,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 3475.9835,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 3607.1400000000003,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 3607.1400000000003,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 3487.7400000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 3487.7400000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 3487.7400000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 3487.7400000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 3487.7400000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 13131.531,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 13287.1185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 13287.1185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 13287.1185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 13287.1185,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 18093.875999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 12873.444,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 12802.944,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 12802.944,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 13231.019423999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 13231.019423999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 13633.055832,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 434,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 434,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 434,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 434,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 434,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 451.79,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 2110.08,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 2185.44,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 2185.44,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 2185.44,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 2185.44,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 2274.7599999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 2274.7599999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 2196.3199999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 2196.3199999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 2196.3199999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 2196.3199999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 2196.3199999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 48852.78900671138,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 54880.00413707877,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 56428.709470621296,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 61998.4025786213,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 57947.861978621295,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 53143.003448078474,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 54204.483140297474,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 85004.27768296847,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 68055.41487998747,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 52477.8726496147,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 58704.07712288154,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 51523.41135790355,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO TRATORES LEVES",
+        "contaContabil": "4.2.01.02.0001"
+      }
+    ]
+  },
+  {
+    "fileName": "ESPLANADA SERINGAL.xlsx",
+    "departamento": "ESPLANADA SERINGAL",
+    "atividade": "SERINGAL",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 153252.81098190183,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 161339.17124489983,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 153940.61159554066,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 148890.53576055868,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 113661.84346180482,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 82936.05936641817,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 152382.22519367552,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 117385.04951011586,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 132759.46536603506,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 173629.98107893532,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 192619.1175664533,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 215725.28057910566,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 802.51,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 802.51,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 802.51,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 802.51,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 802.51,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 835.41,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 8071.137129163005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 2887.539083202002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 2617.482669971787,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 2442.098467697612,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 1986.3744601491271,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 8704.67,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 1868.649211006672,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 7471.555792275451,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 2457.495746893064,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 2584.587437550456,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 2461.6916467694646,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 2762.372258759932,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HONORARIOS ESTAGIARIOS",
+        "contaContabil": "4.1.01.02.0009"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 160.502,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 167.082,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 167.082,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 167.082,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 6785.61345,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 6785.61345,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 6785.61345,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 6785.61345,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 6785.61345,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 6759.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 6759.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 6759.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 6759.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 7036.78524,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 7036.78524,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 7036.78524,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCAÇÕES DE MÁQUINAS AGRÍCOLAS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 910.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 910.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 910.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 910.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 910.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 948.23,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 606.46,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 633.7507,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 633.7507,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 633.7507,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 633.7507,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 3231.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 631.32,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 750.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 784.2620499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 784.2620499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 784.2620499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 784.2620499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 781.26,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 65.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 65.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 65.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 65.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 65.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 68.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 1425.34856,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 1425.34856,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 1425.34856,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 1425.34856,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 1425.34856,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 1444.616,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 1444.616,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 1444.616,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 1444.616,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 1480.188256,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 1480.188256,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 1536.6375219999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 564.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 564.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 564.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 527.24,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 527.24,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 548.8000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 548.8000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 548.8000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 548.8000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 588,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 588,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 588,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 18446.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 820.93,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 820.93,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 857.8718499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 857.8718499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 857.8718499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 854.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 21,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 3364.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 8412.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 9339,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 7975.7,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 5585.8,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 22449.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 3280.605,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 3502.02,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 2829.42,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 4814.719999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 9913.4,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 4506.42,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 1428.85,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 1428.85,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 1324.48,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 1324.48,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 1324.48,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 1487.5300000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 1573.7100000000003,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 30.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 8284.16785,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 8357.52685,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 8357.52685,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 8357.52685,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 8357.52685,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 8846.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 8846.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 8772.96,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 8772.96,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 9065.66064,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 9065.66064,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 9167.780639999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 218.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 218.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 218.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 218.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 218.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 227.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 419.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 447.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 447.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 447.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 447.04,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 494.35999999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 494.35999999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 465.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 465.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 465.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 465.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 465.28,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 36020.336015643334,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 36626.16197343774,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 37766.4354266249,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 40142.2157201849,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 37099.396713584894,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 38487.23064258177,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 39238.270642581774,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 56700.50368245778,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 47084.35237022178,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 38465.871724716024,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 38091.961181904706,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 39891.34593173671,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO OUTROS IMPLEMENTOS",
+        "contaContabil": "4.2.01.02.0001"
+      }
+    ]
+  },
+  {
+    "fileName": "PORTEIRAS - SERINGAL.xlsx",
+    "departamento": "PORTEIRAS - SERINGAL",
+    "atividade": "SERINGAL",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 1278570.1531596081,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 1325365.699173957,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 1298678.1316904793,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 1223988.5013694048,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 1194226.593980239,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 1377271.7950236527,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 1321418.6573170982,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 1412169.8721664238,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 1145343.0536078615,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 1256300.739072041,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 1210967.8795534675,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 1381576.2654561861,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 547.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 684.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 547.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 547.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 547.69,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 570.15,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 570.15,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 570.15,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 593.5261499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 593.5261499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 593.5261499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 593.5261499999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 185278.03301766538,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 220330.72914298228,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 185020.6953762178,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 143616.54810578603,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 139307.04884550849,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 137603.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 140699.8757241106,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 227077.08301452943,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 143886.10487547482,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 151387.6640764355,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 150243.12105407548,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 153043.39512551142,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 109.53800000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 136.91600000000003,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 109.53800000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 109.53800000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 109.53800000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 114.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 114.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 114.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 118.70522999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 118.70522999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 118.70522999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 118.70522999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 259.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 259.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 259.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 259.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 259.45,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 270,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 14952.82,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 14952.82,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 14952.82,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 14952.82,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 14952.82,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 15565,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 5927.05,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 5927.05,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 5927.05,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 5927.05,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 130927.05,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 6423,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 6423,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 6423,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 6423,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 6686.343,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 6686.343,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 6686.343,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 10000,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 15000,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 15000,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 10000,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 4665.46,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 4856.27,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 4856.27,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 5055.3770700000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 5055.3770700000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 5055.3770700000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 4856.27,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 4856.27,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 534.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 534.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 534.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 534.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 534.59,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 579.3164999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 556.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 556.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 579.3164999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 579.3164999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 556.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 556.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 9342.019620000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 9342.019620000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 9342.019620000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 9342.019620000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 12720.314430000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 9294.533,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 9294.533,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 9294.533,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 9294.533,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 9565.318853,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 9565.318853,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 9843.671843,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 5588.48,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 2672.64,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 1333.76,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 985.6,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 3079.68,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 1402.6200000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 4894.71,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 2595.5699999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 2561.8300000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 3055.88,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 2077.4199999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 1413.1299999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 131848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 131848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 131848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 131848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 131848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 146848.37,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 1511.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 2598.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 2598.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 2598.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 2598.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 2598.49,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 2704,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 2814.8639999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 2814.8639999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 2814.8639999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 2814.8639999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 2704,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 2704,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 4000,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 440037.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 9450,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 3200,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 89590,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 101222.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 26067.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 25670,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 29676.8,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 12180,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 35728.3,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 27532.8,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 69040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 115086.47,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 91654.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 75551.90000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 12063.199999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 33046.399999999994,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 11682.4,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 12547.6,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 9677.6,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 11684.949999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 3684.6000000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 26782,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 8849.449999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 10478.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 6285.799999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 26053.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 118.17,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 59739.474890000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 59739.474890000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 59739.474890000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 59739.474890000005,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 34991.014934,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 51360.655000000006,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 56218.10500000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 56218.10500000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 56218.10500000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 58504.443145,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 58504.443145,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 60826.862095,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 1148,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 1148,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 1148,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 1148,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 1148,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 1195.07,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 1998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 2072,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 2072,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 2072,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 2072,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 2117.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 2117.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 2040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 2040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 2040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 2040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 2040.5,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 249594.37030072394,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 237622.66772072398,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 332428.4511817239,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 224284.57545072393,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 218483.07306519657,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 242858.13256534972,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 259440.68430194972,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 274129.07114760973,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 294277.77241836314,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 249076.15834715217,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 257587.32610321217,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 250728.96876249218,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      }
+    ]
+  },
+  {
+    "fileName": "VERA CRUZ - SERINGAL.xlsx",
+    "departamento": "VERA CRUZ - SERINGAL",
+    "atividade": "SERINGAL",
+    "rows": [
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-04",
+        "value": 22618.445513381506,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-05",
+        "value": 22667.944093553175,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-06",
+        "value": 22453.913991306534,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-07",
+        "value": 21134.968892017157,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-08",
+        "value": 16883.183793259144,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-09",
+        "value": 15063.02887136573,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-10",
+        "value": 34590.14726723102,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-11",
+        "value": 19905.26125522835,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2026-12",
+        "value": 21293.87480081027,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-01",
+        "value": 27471.892665075105,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-02",
+        "value": 29484.296165596916,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.01",
+        "month": "2027-03",
+        "value": 32408.13900522617,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SALARIOS E ORDENADOS",
+        "contaContabil": "4.1.01.01.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 50,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 52.25,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 52.25,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 52.25,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PF",
+        "contaContabil": "4.1.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 808.5157354374255,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 809.6818748914563,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 809.9271499208398,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 778.8540582756273,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 683.4869495118841,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 653.6700000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 1760.0578400453246,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 1670.6283878815316,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 800.4628018362123,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 416.0680334577256,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 817.1753225074483,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 882.6048595462162,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "SERVICOS DE TERCEIROS PJ",
+        "contaContabil": "4.1.01.02.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-04",
+        "value": 10,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-09",
+        "value": 10.450000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2026-12",
+        "value": 10.450000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-01",
+        "value": 10.450000000000001,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.02",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENCARGOS INSS",
+        "contaContabil": "4.1.01.02.0030"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.03",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LOCACOES DE VEICULOS",
+        "contaContabil": "4.1.01.03.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 3,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 3.135,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 3.135,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 3.135,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 3.135,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 3.13,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "COMBUSTIVEIS E LUBRIFICANTES",
+        "contaContabil": "4.1.01.04.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 40.25,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 42.061249999999994,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 42.061249999999994,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 42.061249999999994,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 42.061249999999994,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 42.06,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PECAS, ACESSORIOS E MATERIAIS",
+        "contaContabil": "4.1.01.04.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 212.76,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 222.33419999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 222.33419999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 222.33419999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 222.33419999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 222.34,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS PARA MANUTENCAO E REFORMA",
+        "contaContabil": "4.1.01.04.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 2.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 2.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 2.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 2.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 2.1,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 2.2,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "IMPRESSOS E MATERIAIS DE EXPEDIENTE",
+        "contaContabil": "4.1.01.04.0004"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 150.65765,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 150.65765,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 150.65765,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 150.37775,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 150.37775,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 150.64999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 150.64999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 150.64999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 150.64999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 156.56014999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 156.56014999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 156.56014999999996,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+        "contaContabil": "4.1.01.04.0005"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-04",
+        "value": 27.799999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-05",
+        "value": 27.799999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-06",
+        "value": 27.799999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-07",
+        "value": 27.799999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-08",
+        "value": 27.799999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-09",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-10",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-11",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2026-12",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-01",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-02",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.04",
+        "month": "2027-03",
+        "value": 29.049999999999997,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERRAMENTAS DE TRABALHO",
+        "contaContabil": "4.1.01.04.0006"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-04",
+        "value": 4465.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-05",
+        "value": 4465.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-06",
+        "value": 4465.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-07",
+        "value": 4465.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-08",
+        "value": 4465.62,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-09",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-10",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-11",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2026-12",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-01",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-02",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.05",
+        "month": "2027-03",
+        "value": 4666.58,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "DEPRECIACOES",
+        "contaContabil": "4.1.01.05.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "PASSAGENS",
+        "contaContabil": "4.1.01.06.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "REFEICOES E ESTADIAS",
+        "contaContabil": "4.1.01.06.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-10",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.06",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTRAS DESPESAS DE VIAGENS",
+        "contaContabil": "4.1.01.06.0010"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-04",
+        "value": 101,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-05",
+        "value": 101,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-06",
+        "value": 105.54499999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-07",
+        "value": 105.54499999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-08",
+        "value": 105.54499999999999,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-09",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-10",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-11",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2026-12",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-01",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-02",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.07",
+        "month": "2027-03",
+        "value": 105.54,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ENERGIA ELETRICA",
+        "contaContabil": "4.1.01.07.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 129.60000000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 0,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "ALIMENTACAO ANIMAL",
+        "contaContabil": "4.1.01.11.0001"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 7.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 7.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 7.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 7.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 7.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 16499.739999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 8.14,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "FERTILIZANTES",
+        "contaContabil": "4.1.01.11.0017"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-04",
+        "value": 1097.3,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-05",
+        "value": 847.3,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-06",
+        "value": 2614.5800000000004,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-07",
+        "value": 1256.66,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-08",
+        "value": 347.29999999999995,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-09",
+        "value": 6436.095,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-10",
+        "value": 1084.12,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-11",
+        "value": 364.665,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2026-12",
+        "value": 364.665,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-01",
+        "value": 601.86,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-02",
+        "value": 337.0595,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.11",
+        "month": "2027-03",
+        "value": 1293.115,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "HERBICIDAS E DEFENSIVOS",
+        "contaContabil": "4.1.01.11.0019"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 156.01000000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 156.01000000000002,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 156.4365,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 156.4365,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 156.4365,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 163.04999999999998,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CURSOS DE TREINAMENTO",
+        "contaContabil": "4.1.01.21.0002"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 35,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 36.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "CONTRIBUICOES E DOACOES",
+        "contaContabil": "4.1.01.21.0003"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 1085.905,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 1085.905,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 1093.49875,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 1093.49875,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 1093.49875,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 1134.65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "LANCHES E REFEICOES",
+        "contaContabil": "4.1.01.21.0012"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 16.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 16.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 16.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 16.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 16.03,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 16.75,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "TAXAS E ANUIDADES",
+        "contaContabil": "4.1.01.21.0013"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-04",
+        "value": 65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-05",
+        "value": 65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-06",
+        "value": 65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-07",
+        "value": 65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-08",
+        "value": 65,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-09",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-10",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-11",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2026-12",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-01",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-02",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.1.01.21",
+        "month": "2027-03",
+        "value": 67.9,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "OUTROS CUSTOS OPERACIONAIS",
+        "contaContabil": "4.1.01.21.0020"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-04",
+        "value": 2862.747463258055,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-05",
+        "value": 3020.2801931166555,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-06",
+        "value": 1745.631324123972,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-07",
+        "value": 3925.5525161239716,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-08",
+        "value": 2350.480546123972,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-09",
+        "value": 2500.7165838614974,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-10",
+        "value": 3936.824313861497,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-11",
+        "value": 5284.620749708015,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2026-12",
+        "value": 2915.6892581715174,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-01",
+        "value": 1913.2890518260165,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-02",
+        "value": 1822.3318619615047,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
+      },
+      {
+        "grupoContabil": "4.2.01.02",
+        "month": "2027-03",
+        "value": 1944.2385195159804,
+        "seringalOrcadoScope": "descricao",
+        "descricaoContabil": "RATEIO RECEBIDO",
+        "contaContabil": "4.2.01.02.0001"
       }
     ]
   }

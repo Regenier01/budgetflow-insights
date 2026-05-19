@@ -142,25 +142,30 @@ function parseDepartmentFromFilename(fileName) {
     .trim();
 }
 
+const SERINGAL_CUSTOS_DEPARTMENT_PATTERN = /^[^-]+\s*(?:-\s*)?SERINGAL$/;
+
+function isSeringalCustosDepartmentName(departmentName) {
+  const normalizedDepartment = normalizeText(departmentName).replace(/\s+/g, ' ').trim();
+  return SERINGAL_CUSTOS_DEPARTMENT_PATTERN.test(normalizedDepartment);
+}
+
 function validateSeringalFileNames(files) {
   const invalidFiles = files.filter((fileName) => {
     const department = parseDepartmentFromFilename(fileName);
-    const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
-    return !/^[^-]+\s*-\s*SERINGAL$/.test(normalizedDepartment);
+    return !isSeringalCustosDepartmentName(department);
   });
 
   if (invalidFiles.length === 0) return;
 
   throw new Error(
     `Arquivo(s) invalido(s) para seringal: ${invalidFiles.map((fileName) => `"${fileName}"`).join(', ')}. ` +
-      `Use o padrao "NOME - SERINGAL", exemplo: "COVOA - SERINGAL.xlsx".`
+      `Use "NOME - SERINGAL" ou "NOME SERINGAL", exemplo: "COVOA - SERINGAL.xlsx" ou "BANDEIRANTES SERINGAL.xlsx".`
   );
 }
 
 function isSeringalCustosCascadeFile(fileName) {
   const department = parseDepartmentFromFilename(fileName);
-  const normalizedDepartment = normalizeText(department).replace(/\s+/g, ' ').trim();
-  return /^[^-]+\s*-\s*SERINGAL$/.test(normalizedDepartment);
+  return isSeringalCustosDepartmentName(department);
 }
 
 function resolvePecuariaOrcadoGrupoContabilN9(raw) {

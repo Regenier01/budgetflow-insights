@@ -58,4 +58,30 @@ describe('seringal orcado custos cascata (grupo → descrição, sem produto)', 
     expect(leaf!.nomeProduto).toBeUndefined();
     expect(isSyntheticOrcadoImportEntry(leaf!)).toBe(true);
   });
+
+  it.each([
+    ['BANDEIRANTES SERINGAL.xlsx', 'BANDEIRANTES SERINGAL'],
+    ['ESPLANADA SERINGAL.xlsx', 'ESPLANADA SERINGAL'],
+  ])('importa orçado seringal com nome "%s" (sem hífen)', (fileName, expectedDepartamento) => {
+    const rows: ExcelRow[] = [
+      {
+        GRUPO_CONTABIL: '4.1.01.02-SERVICOS DE TERCEIROS',
+        CONTA_CONTABIL: '4.1.01.02.0002',
+        'Descrição C. Contábil': 'SERVICOS DE TERCEIROS PJ',
+        'ABR/26': 50,
+      } as ExcelRow,
+    ];
+    const count = useBudgetStore.getState().importOrcadoExcelRows(rows, '2026-04', fileName);
+    expect(count).toBeGreaterThan(0);
+
+    const leaf = useBudgetStore
+      .getState()
+      .accounts.find(
+        (a) =>
+          a.id.startsWith('SYN::ORCADOSER::') && a.descricao === 'SERVICOS DE TERCEIROS PJ'
+      );
+    expect(leaf).toBeDefined();
+    expect(leaf!.departamento).toBe(expectedDepartamento);
+    expect(leaf!.orcado['2026-04']).toBe(50);
+  });
 });

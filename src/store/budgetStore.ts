@@ -810,7 +810,8 @@ const isAgricolaCustosCascadeFileName = (fileName: string): boolean => {
   return AGRICOLA_CUSTOS_CULTURE_FILE_PATTERN.test(department);
 };
 
-const SERINGAL_CUSTOS_FILE_PATTERN = /^[^-]+\s*-\s*SERINGAL$/i;
+/** "FAZENDA - SERINGAL" ou "FAZENDA SERINGAL" (ex.: Bandeirantes Seringal). */
+const SERINGAL_CUSTOS_FILE_PATTERN = /^[^-]+\s*(?:-\s*)?SERINGAL$/i;
 
 const isSeringalCustosCascadeFileName = (fileName: string): boolean => {
   const department = fileName
