@@ -147,15 +147,44 @@ export function AnalyticalTable({
   // Tabela de receitas (tipoFilter exclusivamente 'R'): variação = realizado − orçado;
   // favorável (verde) quando real > orçado.
   const isRevenueTable = tipoFilter?.length === 1 && tipoFilter[0] === 'R';
+  const isCostTable = tipoFilter?.length === 1 && tipoFilter[0] === 'C';
+  const isExpenseTable = tipoFilter?.length === 1 && tipoFilter[0] === 'D';
+  const sortByVariationPct = isCostTable || isExpenseTable;
+  /** Planilha de custos e despesas: só realizado, ordenado por valor (maiores no topo). */
+  const flatRealizadoOnly = isCostTable || isExpenseTable;
+  const flatRealOnlyMetricCols =
+    (showDiariaColumns ? 1 : 0) + (showPCabecaColumns ? 1 : 0) + (showPpKgColumns ? 1 : 0);
+  const flatSpreadsheetColSpan = flatRealizadoOnly ? 6 + flatRealOnlyMetricCols : 8 + extraMetricCols;
   const computeDiff = (orc: number, real: number) =>
     isRevenueTable ? real - orc : orc - real;
   const isDiffFavorable = (diff: number) => diff > 0;
 
   /** Percentual da variação em relação ao orçado (|orçado| como base). */
+  const variationPctValue = (orc: number, real: number): number | null => {
+    if (Math.abs(orc) < 1e-9) return null;
+    const diff = computeDiff(orc, real);
+    return (diff / Math.abs(orc)) * 100;
+  };
+
   const fmtDiffVsOrcPct = (orc: number, diff: number) => {
     if (Math.abs(orc) < 1e-9) return null;
     const pct = (diff / Math.abs(orc)) * 100;
     return `${pct > 0 ? '+' : ''}${pct.toFixed(1)}%`;
+  };
+
+  /** Custos e despesas: maiores |% variação| no topo; demais tabelas: maior |realizado|. */
+  const sortRankForNode = (orc: number, real: number) => {
+    if (sortByVariationPct) {
+      const pct = variationPctValue(orc, real);
+      return pct != null ? Math.abs(pct) : -1;
+    }
+    return Math.abs(real);
+  };
+
+  const compareByDisplayOrder = (orcA: number, realA: number, orcB: number, realB: number) => {
+    const rankDiff = sortRankForNode(orcB, realB) - sortRankForNode(orcA, realA);
+    if (rankDiff !== 0) return rankDiff;
+    return Math.abs(realB) - Math.abs(realA);
   };
 
   const variationPctBadge = (orc: number, diff: number, toneClass: string) => {
@@ -217,7 +246,13 @@ export function AnalyticalTable({
       real,
     };
   }).filter(e => e.orc !== 0 || e.real !== 0)
-    .sort((a, b) => Math.abs(b.real) - Math.abs(a.real));
+    .sort((a, b) =>
+      flatRealizadoOnly
+        ? Math.abs(b.real) - Math.abs(a.real) ||
+          Math.abs(b.orc) - Math.abs(a.orc) ||
+          String(a.conta).localeCompare(b.conta)
+        : compareByDisplayOrder(a.orc, a.real, b.orc, b.real)
+    );
 
   const root = new Map<string, Node>();
 
@@ -431,7 +466,9 @@ export function AnalyticalTable({
   );
 
   const renderNodes = (nodes: Map<string, Node>, pathPrefix: string = '', level: number = 0) => {
-    const sorted = Array.from(nodes.values()).sort((a, b) => Math.abs(b.real) - Math.abs(a.real));
+    const sorted = Array.from(nodes.values()).sort((a, b) =>
+      compareByDisplayOrder(a.orc, a.real, b.orc, b.real)
+    );
 
     return sorted.map(node => {
       const currentPath = `${pathPrefix}/${node.name}`;
@@ -629,27 +666,37 @@ export function AnalyticalTable({
                 <th className="text-left py-3 px-3">Conta</th>
                 <th className="text-left py-3 px-3">Descrição</th>
                 <th className="text-left py-3 px-3">Produto</th>
-                <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
-                {showDiariaColumns && (
+                {!flatRealizadoOnly && (
+                  <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
+                )}
+                {!flatRealizadoOnly && showDiariaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Diária O</th>
                 )}
-                {showPCabecaColumns && (
+                {!flatRealizadoOnly && showPCabecaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">P/Cabeça O</th>
                 )}
-                {showPpKgColumns && (
+                {!flatRealizadoOnly && showPpKgColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Custo P/KG O</th>
                 )}
                 <th className="text-right py-3 px-3 w-[120px]">Realizado</th>
                 {showDiariaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">Diária R</th>
+                  <th className="text-right py-3 px-3 w-[100px]">
+                    {flatRealizadoOnly ? 'Diária' : 'Diária R'}
+                  </th>
                 )}
                 {showPCabecaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">P/Cabeça R</th>
+                  <th className="text-right py-3 px-3 w-[100px]">
+                    {flatRealizadoOnly ? 'P/Cabeça' : 'P/Cabeça R'}
+                  </th>
                 )}
                 {showPpKgColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">Custo P/KG R</th>
+                  <th className="text-right py-3 px-3 w-[100px]">
+                    {flatRealizadoOnly ? 'Custo P/KG' : 'Custo P/KG R'}
+                  </th>
                 )}
-                <th className="text-right py-3 px-3 w-[120px]">Variação</th>
+                {!flatRealizadoOnly && (
+                  <th className="text-right py-3 px-3 w-[120px]">Variação</th>
+                )}
               </tr>
             </thead>
             <tbody>
@@ -663,31 +710,35 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-600 font-mono">{entry.conta}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700">{entry.descricao}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
-                    <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
-                    {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
-                    {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
-                    {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {!flatRealizadoOnly && (
+                      <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
+                    )}
+                    {!flatRealizadoOnly && showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {!flatRealizadoOnly && showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
+                    {!flatRealizadoOnly && showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
-                    <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-dashboard-green" : "text-rose-600")}>
-                      {(entry.orc || entry.real) ? (
-                        <div className="flex flex-nowrap items-center justify-end gap-2">
-                          <span>
-                            {diff > 0 ? '+' : ''}
-                            {fmtCurrency(diff)}
-                          </span>
-                          {variationPctBadge(entry.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
-                        </div>
-                      ) : (
-                        '-'
-                      )}
-                    </td>
+                    {!flatRealizadoOnly && (
+                      <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-dashboard-green" : "text-rose-600")}>
+                        {(entry.orc || entry.real) ? (
+                          <div className="flex flex-nowrap items-center justify-end gap-2">
+                            <span>
+                              {diff > 0 ? '+' : ''}
+                              {fmtCurrency(diff)}
+                            </span>
+                            {variationPctBadge(entry.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
+                          </div>
+                        ) : (
+                          '-'
+                        )}
+                      </td>
+                    )}
                   </tr>
                 );
               }) : (
-                <tr><td colSpan={8 + extraMetricCols} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
+                <tr><td colSpan={flatSpreadsheetColSpan} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
             </tbody>
             {flatEntries.length > 0 && (() => {
@@ -699,12 +750,14 @@ export function AnalyticalTable({
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
-                    <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
-                    {showDiariaColumns &&
+                    {!flatRealizadoOnly && (
+                      <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                    )}
+                    {!flatRealizadoOnly && showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaOrcResolved)}
-                    {showPCabecaColumns &&
+                    {!flatRealizadoOnly && showPCabecaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaOrcResolved)}
-                    {showPpKgColumns &&
+                    {!flatRealizadoOnly && showPpKgColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgOrcResolved)}
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
@@ -713,23 +766,25 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaRealResolved)}
                     {showPpKgColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgRealResolved)}
-                    <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
-                      {(totalOrc || totalReal) ? (
-                        <div className="flex flex-nowrap items-center justify-end gap-2">
-                          <span>
-                            {totalDiff > 0 ? '+' : ''}
-                            {fmtCurrency(totalDiff)}
-                          </span>
-                          {variationPctBadge(
-                            totalOrc,
-                            totalDiff,
-                            isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
-                          )}
-                        </div>
-                      ) : (
-                        '-'
-                      )}
-                    </td>
+                    {!flatRealizadoOnly && (
+                      <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
+                        {(totalOrc || totalReal) ? (
+                          <div className="flex flex-nowrap items-center justify-end gap-2">
+                            <span>
+                              {totalDiff > 0 ? '+' : ''}
+                              {fmtCurrency(totalDiff)}
+                            </span>
+                            {variationPctBadge(
+                              totalOrc,
+                              totalDiff,
+                              isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
+                            )}
+                          </div>
+                        ) : (
+                          '-'
+                        )}
+                      </td>
+                    )}
                   </tr>
                 </tfoot>
               );
