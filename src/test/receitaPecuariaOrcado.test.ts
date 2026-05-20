@@ -1,7 +1,13 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useBudgetStore } from '@/store/budgetStore';
+import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
 import { ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaGeneticaImportData';
+import {
+  isReceitaPecuariaGeneticaDepartment,
+  isReceitaPecuariaGeneticaReceitaEntry,
+  isReceitaPecuariaGeneticaConta,
+} from '@/data/receitaPecuariaGenetica';
 import {
   receitaPecuariaOrcadoScopeKey,
   tryParseReceitaPecuariaOrcadoBudgetRow,
@@ -69,6 +75,60 @@ describe('receita pecuária orçado (GRUPO_CONTABIL → CONTA → Descrição)',
       descricao: 'VENDA',
     });
     expect(afterSecond?.orcado['2026-04']).toBe(1000);
+  });
+
+  it('CENTRO COMERCIAL DE TOUROS tem custos Pecuária no escopo Genética', () => {
+    const geneticaCustos = INITIAL_ACCOUNTS.filter(
+      (a) =>
+        a.atividade === 'PECUARIA' &&
+        a.nivel === 5 &&
+        a.tipo === 'C' &&
+        isReceitaPecuariaGeneticaDepartment(a.departamento)
+    );
+    const regularCustos = INITIAL_ACCOUNTS.filter(
+      (a) =>
+        a.atividade === 'PECUARIA' &&
+        a.nivel === 5 &&
+        a.tipo === 'C' &&
+        !isReceitaPecuariaGeneticaDepartment(a.departamento)
+    );
+    expect(geneticaCustos.length).toBeGreaterThan(0);
+    expect(regularCustos.length).toBeGreaterThan(0);
+    expect(
+      geneticaCustos.every((a) => a.departamento === 'CENTRO COMERCIAL DE TOUROS')
+    ).toBe(true);
+  });
+
+  it('receita genética inclui contas 0002/0019/0017 e todo CENTRO COMERCIAL DE TOUROS', () => {
+    const matrizesBandeirantes = INITIAL_ACCOUNTS.find(
+      (a) =>
+        a.atividade === 'PECUARIA' &&
+        a.tipo === 'R' &&
+        a.codigo === '3.1.01.01.0002' &&
+        a.departamento === 'BANDEIRANTES - PECUÁRIA'
+    );
+    const tourosCentro = INITIAL_ACCOUNTS.find(
+      (a) =>
+        a.atividade === 'PECUARIA' &&
+        a.tipo === 'R' &&
+        a.codigo === '3.1.01.01.0003' &&
+        a.departamento === 'CENTRO COMERCIAL DE TOUROS'
+    );
+    const gadoBandeirantes = INITIAL_ACCOUNTS.find(
+      (a) =>
+        a.atividade === 'PECUARIA' &&
+        a.tipo === 'R' &&
+        a.codigo === '3.1.01.01.0001' &&
+        a.departamento === 'BANDEIRANTES - PECUÁRIA'
+    );
+
+    expect(matrizesBandeirantes).toBeDefined();
+    expect(tourosCentro).toBeDefined();
+    expect(gadoBandeirantes).toBeDefined();
+    expect(isReceitaPecuariaGeneticaReceitaEntry(matrizesBandeirantes!)).toBe(true);
+    expect(isReceitaPecuariaGeneticaReceitaEntry(tourosCentro!)).toBe(true);
+    expect(isReceitaPecuariaGeneticaReceitaEntry(gadoBandeirantes!)).toBe(false);
+    expect(isReceitaPecuariaGeneticaConta('3.1.01.01.0019')).toBe(true);
   });
 
   it('CENTRO COMERCIAL DE TOUROS fica no lote de Receitas Genética, não em Receitas', () => {

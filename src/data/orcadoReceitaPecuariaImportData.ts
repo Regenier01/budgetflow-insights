@@ -20,8 +20,8 @@ export interface OrcadoImportBatch {
 
 export const ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES: OrcadoImportBatch[] = [
   {
-    "fileName": "BANDEIRANTES - PECUARIA.xlsx",
-    "departamento": "BANDEIRANTES - PECUARIA",
+    "fileName": "BANDEIRANTES - PECUÁRIA.xlsx",
+    "departamento": "BANDEIRANTES - PECUÁRIA",
     "atividade": "PECUARIA",
     "rows": [
       {
@@ -123,8 +123,8 @@ export const ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES: OrcadoImportBatch[] = [
     ]
   },
   {
-    "fileName": "Confinamento.xlsx",
-    "departamento": "Confinamento",
+    "fileName": "CONFINAMENTO.xlsx",
+    "departamento": "CONFINAMENTO",
     "atividade": "PECUARIA",
     "rows": [
       {

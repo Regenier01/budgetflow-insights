@@ -8,7 +8,19 @@ const DEFAULT_ORCADO_DIR = join('Orçado_Receitas', 'Receita_Pecuaria');
 const FIXED_ATIVIDADE = 'PECUARIA';
 const RECEITA_GRUPO_PREFIX = '3.1.01';
 
-/** Planilhas do card Receitas Genética (fora do lote de Receitas pecuária). */
+/** Contas que vão para o lote Receitas Genética (em qualquer planilha de Receita_Pecuaria). */
+const RECEITA_GENETICA_CONTAS = new Set([
+  '3.1.01.01.0002',
+  '3.1.01.01.0019',
+  '3.1.01.01.0017',
+]);
+
+const isReceitaGeneticaOrcadoRow = (row) => {
+  const conta = String(row.contaContabil ?? '').trim();
+  return conta.length > 0 && RECEITA_GENETICA_CONTAS.has(conta);
+};
+
+/** Linhas só de grupo (sem conta) no arquivo CENTRO COMERCIAL seguem no lote genética. */
 const isReceitaGeneticaFile = (fileName) =>
   normalizeText(fileName.replace(/\.(xlsx|xls)$/i, '')) === 'CENTRO COMERCIAL DE TOUROS';
 
@@ -289,10 +301,17 @@ function run() {
       rows,
     };
 
-    if (isReceitaGeneticaFile(fileName)) {
-      receitaGeneticaBatches.push(batch);
-    } else {
-      receitaPecuariaBatches.push(batch);
+    const rowBelongsToGenetica = (row) =>
+      isReceitaGeneticaFile(fileName) || isReceitaGeneticaOrcadoRow(row);
+
+    const geneticaRows = rows.filter((row) => rowBelongsToGenetica(row));
+    const regularRows = rows.filter((row) => !rowBelongsToGenetica(row));
+
+    if (geneticaRows.length > 0) {
+      receitaGeneticaBatches.push({ ...batch, rows: geneticaRows });
+    }
+    if (regularRows.length > 0) {
+      receitaPecuariaBatches.push({ ...batch, rows: regularRows });
     }
   }
 

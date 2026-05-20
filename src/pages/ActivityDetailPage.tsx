@@ -33,7 +33,12 @@ import {
   SERINGAL_CUSTO_PKG_ORCADO,
   SERINGAL_CUSTO_PKG_REALIZADO,
 } from '@/data/seringalCustoPpKg';
-import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
+import {
+  isReceitaPecuariaGeneticaDepartment,
+  isReceitaPecuariaGeneticaReceitaEntry,
+  isReceitaPecuariaGeneticaDeducaoEntry,
+  isReceitaPecuariaGeneticaCustosEntry,
+} from '@/data/receitaPecuariaGenetica';
 
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
 
@@ -214,6 +219,15 @@ const isPecuariaDepartmentOption = (departamento?: string) => {
 const isPecuariaGeneticaDepartmentOption = (departamento?: string) =>
   isReceitaPecuariaGeneticaDepartment(departamento);
 
+const isPecuariaGeneticaReceitaDepartmentOption = (
+  departamento: string,
+  entries: AccountEntry[]
+) =>
+  isPecuariaGeneticaDepartmentOption(departamento) ||
+  entries.some(
+    (entry) => entry.departamento === departamento && isReceitaPecuariaGeneticaReceitaEntry(entry)
+  );
+
 const formatConfinamentoDepartmentLabel = (departamento: string) =>
   departamento.replace(/\s*-\s*PECUARIA$/i, '').trim();
 
@@ -335,6 +349,7 @@ export default function ActivityDetailPage() {
   const isDespesasComVendasPecuariaSubview = isDespesasComVendas && subview === 'pecuaria';
   const isDespesasComVendasAgricolaSubview = isDespesasComVendas && subview === 'agricola';
   const isPecuariaReceitasGeneticaSubview = isPecuaria && subview === 'genetica';
+  const isPecuariaCustosGeneticaSubview = isPecuaria && subview === 'custos-genetica';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter: string[] | undefined =
@@ -374,7 +389,9 @@ export default function ActivityDetailPage() {
         ? 'Rateios'
         : isPecuaria && subview === 'genetica'
           ? 'Pecuária — Receitas Genética'
-          : isPecuaria && subview === 'pasto'
+          : isPecuaria && subview === 'custos-genetica'
+            ? 'Pecuária — Custos Genética'
+            : isPecuaria && subview === 'pasto'
           ? 'Pecuária — Pasto'
           : isPecuaria && subview === 'confinamento'
             ? 'Pecuária — Confinamento'
@@ -432,13 +449,26 @@ export default function ActivityDetailPage() {
   const pecuariaReceitasScopeFilter =
     isPecuaria && resolvedTipoView === 'receitas'
       ? isPecuariaReceitasGeneticaSubview
-        ? (entry: AccountEntry) => isReceitaPecuariaGeneticaDepartment(entry.departamento)
-        : (entry: AccountEntry) => !isReceitaPecuariaGeneticaDepartment(entry.departamento)
+        ? (entry: AccountEntry) =>
+            entry.tipo === 'R'
+              ? isReceitaPecuariaGeneticaReceitaEntry(entry)
+              : isReceitaPecuariaGeneticaDeducaoEntry(entry)
+        : (entry: AccountEntry) =>
+            entry.tipo === 'R'
+              ? !isReceitaPecuariaGeneticaReceitaEntry(entry)
+              : !isReceitaPecuariaGeneticaDeducaoEntry(entry)
+      : undefined;
+  const pecuariaCustosScopeFilter =
+    isPecuaria && resolvedTipoView === 'custos'
+      ? isPecuariaCustosGeneticaSubview
+        ? (entry: AccountEntry) => isReceitaPecuariaGeneticaCustosEntry(entry)
+        : (entry: AccountEntry) => !isReceitaPecuariaGeneticaCustosEntry(entry)
       : undefined;
   const activityLevelEntryFilter = combineEntryFilters(
     activityLevelEntryFilterBase,
     cultureEntryFilter,
-    pecuariaReceitasScopeFilter
+    pecuariaReceitasScopeFilter,
+    pecuariaCustosScopeFilter
   );
 
   const isTributariaEntry = (entry: {
@@ -589,22 +619,22 @@ export default function ActivityDetailPage() {
     const receitasEntries = baseLeaves.filter((a) => a.tipo === 'R');
     const receitasGeneticaEntries =
       atividade.key === 'PECUARIA'
-        ? receitasEntries.filter((a) => isReceitaPecuariaGeneticaDepartment(a.departamento))
+        ? receitasEntries.filter((a) => isReceitaPecuariaGeneticaReceitaEntry(a))
         : [];
     const receitasRegularEntries =
       atividade.key === 'PECUARIA'
-        ? receitasEntries.filter((a) => !isReceitaPecuariaGeneticaDepartment(a.departamento))
+        ? receitasEntries.filter((a) => !isReceitaPecuariaGeneticaReceitaEntry(a))
         : receitasEntries;
     const deducoesEntries = baseLeaves.filter(
       (a) => a.tipo === 'D' && isReceitaDeductionEntry(a)
     );
     const deducoesGeneticaEntries =
       atividade.key === 'PECUARIA'
-        ? deducoesEntries.filter((a) => isReceitaPecuariaGeneticaDepartment(a.departamento))
+        ? deducoesEntries.filter((a) => isReceitaPecuariaGeneticaDeducaoEntry(a))
         : [];
     const deducoesRegularEntries =
       atividade.key === 'PECUARIA'
-        ? deducoesEntries.filter((a) => !isReceitaPecuariaGeneticaDepartment(a.departamento))
+        ? deducoesEntries.filter((a) => !isReceitaPecuariaGeneticaDeducaoEntry(a))
         : deducoesEntries;
 
     // Custos/Despesas — para Encargos usa filtro financeiro; para AdmTrib remove rateio/conta4/marketing
@@ -667,8 +697,18 @@ export default function ActivityDetailPage() {
             sum(deducoesGeneticaEntries, 'realizado')
           )
         : 0;
-    const rawCusOrc = sum(custosEntries, 'orcado');
-    const cusReal = sum(custosEntries, 'realizado');
+    const custosGeneticaEntries =
+      atividade.key === 'PECUARIA'
+        ? custosEntries.filter((a) => isReceitaPecuariaGeneticaCustosEntry(a))
+        : [];
+    const custosRegularEntries =
+      atividade.key === 'PECUARIA'
+        ? custosEntries.filter((a) => !isReceitaPecuariaGeneticaCustosEntry(a))
+        : custosEntries;
+    const rawCusOrc = sum(custosRegularEntries, 'orcado');
+    const cusReal = sum(custosRegularEntries, 'realizado');
+    const cusGeneticaOrc = sum(custosGeneticaEntries, 'orcado');
+    const cusGeneticaReal = sum(custosGeneticaEntries, 'realizado');
     const cusOrc =
       isAdmTrib && isMonthAll
         ? rawCusOrc - DESP_ADM_BUDGET_ADJUSTMENT
@@ -678,9 +718,13 @@ export default function ActivityDetailPage() {
       receitas: { orc: recOrc, real: recReal },
       receitasGenetica: { orc: recGeneticaOrc, real: recGeneticaReal },
       custos: { orc: cusOrc, real: cusReal },
+      custosGenetica: { orc: cusGeneticaOrc, real: cusGeneticaReal },
       total: isAdmTrib
         ? { orc: cusOrc, real: cusReal }
-        : { orc: recOrc + recGeneticaOrc - cusOrc, real: recReal + recGeneticaReal - cusReal },
+        : {
+            orc: recOrc + recGeneticaOrc - cusOrc - cusGeneticaOrc,
+            real: recReal + recGeneticaReal - cusReal - cusGeneticaReal,
+          },
     };
   }, [accounts, atividade?.key, selectedMonth, isEncargos, isAdmTrib, isAgricola]);
 
@@ -697,6 +741,7 @@ export default function ActivityDetailPage() {
         !isRendasOperacionaisEntry(a) &&
         !isDespesaComVendasCode(a.codigo) &&
         !isReceitaDeductionEntry(a) &&
+        !isReceitaPecuariaGeneticaCustosEntry(a) &&
         (a.tipo !== 'C' || isAllowedEntryForCustos('PECUARIA', a))
     );
 
@@ -1212,13 +1257,28 @@ export default function ActivityDetailPage() {
           )
           .map((entry) => entry.departamento)
           .filter((dept): dept is string => Boolean(dept))
-          .filter((dept) =>
-            isPecuariaReceitasGeneticaSubview
-              ? isPecuariaGeneticaDepartmentOption(dept)
-              : isPecuaria
-                ? isPecuariaDepartmentOption(dept) && !isReceitaPecuariaGeneticaDepartment(dept)
-                : true
-          )
+          .filter((dept) => {
+            if (isPecuariaCustosGeneticaSubview) return isPecuariaGeneticaDepartmentOption(dept);
+            if (isPecuariaReceitasGeneticaSubview) {
+              return isPecuariaGeneticaReceitaDepartmentOption(
+                dept,
+                accounts.filter(
+                  (entry) =>
+                    entry.nivel === 5 &&
+                    entry.atividade === 'PECUARIA' &&
+                    entry.tipo === 'R' &&
+                    isReceitaPecuariaGeneticaReceitaEntry(entry)
+                )
+              );
+            }
+            if (isPecuaria && resolvedTipoView === 'receitas') {
+              return isPecuariaDepartmentOption(dept);
+            }
+            if (isPecuaria) {
+              return isPecuariaDepartmentOption(dept) && !isPecuariaGeneticaDepartmentOption(dept);
+            }
+            return true;
+          })
           .filter((dept) => !shouldHideAgricolaReceitaDepartment(dept, isAgricola, resolvedTipoView))
       )
     ).sort();
@@ -1230,6 +1290,7 @@ export default function ActivityDetailPage() {
     selectedMonth,
     isPecuaria,
     isPecuariaReceitasGeneticaSubview,
+    isPecuariaCustosGeneticaSubview,
     isAgricola,
     resolvedTipoView,
   ]);
@@ -1326,7 +1387,7 @@ export default function ActivityDetailPage() {
                 navigate(
                   isDespesasComVendas
                     ? buildActivityPath('DESPESAS_COM_VENDAS')
-                    : isPecuariaReceitasGeneticaSubview
+                    : isPecuariaReceitasGeneticaSubview || isPecuariaCustosGeneticaSubview
                       ? `/atividade/${atividade!.key}?tipo=todos${returnTo ? `&returnTo=${encodeURIComponent(returnTo)}` : ''}`
                       : buildActivityPath(atividade!.key)
                 )
@@ -1450,25 +1511,35 @@ export default function ActivityDetailPage() {
                     accentColor: 'amber',
                   })}
                 </div>
+              ) : isPecuaria && !onlyDespesas ? (
+                <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+                  {renderSummaryCard('Receitas', activityHubSummary.receitas, {
+                    onClick: () => navigate(buildHubPath('receitas')),
+                    accentColor: 'emerald',
+                  })}
+                  {renderSummaryCard('Custos', activityHubSummary.custos, {
+                    onClick: () => navigate(buildHubPath('custos')),
+                    accentColor: 'amber',
+                  })}
+                  {renderSummaryCard('Receitas Genética', activityHubSummary.receitasGenetica, {
+                    onClick: () => navigate(buildHubPathWithSubview('receitas', 'genetica')),
+                    accentColor: 'emerald',
+                  })}
+                  {renderSummaryCard('Custos Genética', activityHubSummary.custosGenetica, {
+                    onClick: () => navigate(buildHubPathWithSubview('custos', 'custos-genetica')),
+                    accentColor: 'amber',
+                  })}
+                </div>
               ) : (
                 <div
                   className={cn(
                     'grid gap-6',
-                    onlyDespesas
-                      ? 'grid-cols-1'
-                      : isPecuaria
-                        ? 'grid-cols-1 md:grid-cols-3'
-                        : 'grid-cols-1 md:grid-cols-2'
+                    onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'
                   )}
                 >
                   {!onlyDespesas &&
                     renderSummaryCard('Receitas', activityHubSummary.receitas, {
                       onClick: () => navigate(buildHubPath('receitas')),
-                      accentColor: 'emerald',
-                    })}
-                  {isPecuaria &&
-                    renderSummaryCard('Receitas Genética', activityHubSummary.receitasGenetica, {
-                      onClick: () => navigate(buildHubPathWithSubview('receitas', 'genetica')),
                       accentColor: 'emerald',
                     })}
                   {renderSummaryCard(isEncargos ? 'Encargos' : onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
@@ -1611,7 +1682,7 @@ export default function ActivityDetailPage() {
               tipoFilter={['R']}
               entryFilter={combineEntryFilters(
                 activityLevelEntryFilter,
-                (entry) => isReceitaPecuariaGeneticaDepartment(entry.departamento),
+                (entry) => isReceitaPecuariaGeneticaReceitaEntry(entry),
                 (entry) => !isOutrasReceitasEventuaisCode(entry.codigo),
               )}
               title="Detalhamento de Receitas Genética"
@@ -1683,6 +1754,54 @@ export default function ActivityDetailPage() {
               </>
             )}
           </div>
+        ) : resolvedTipoView === 'custos' && isPecuariaCustosGeneticaSubview ? (
+          <>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Abertura de Custos Genética</h2>
+                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                  Saídas
+                </div>
+              </div>
+              <AnalyticalTable
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={activeCostCenterFilter}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                tipoFilter={['C']}
+                entryFilter={combineEntryFilters(
+                  activityLevelEntryFilter,
+                  (entry) => isAllowedEntryForCustos(atividade?.key, entry),
+                )}
+                title="Detalhamento de Custos Genética"
+                subtitle="Grupo Contábil → Descrição Contábil"
+                accentColor="orange"
+                costHierarchyMode="grupo_descricao"
+              />
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                  Saídas
+                </div>
+              </div>
+              <AnalyticalTable
+                atividadeFilter={atividade.key}
+                selectedMonth={selectedMonth}
+                costCenterFilter={activeCostCenterFilter}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                tipoFilter={['D']}
+                entryFilter={combineEntryFilters(
+                  activityLevelEntryFilter,
+                  (entry) => !isReceitaDeductionEntry(entry),
+                )}
+                title="Detalhamento de Despesas"
+                accentColor="orange"
+              />
+            </div>
+          </>
         ) : resolvedTipoView === 'custos' ? (
           // Mostrar apenas Custos/Despesas
           isDespesasComVendas ? (
