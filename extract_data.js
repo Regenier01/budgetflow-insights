@@ -66,6 +66,14 @@ function mergeAccounts(existing, incoming, { replaceRealizado } = {}) {
           match.realizado[month] = (match.realizado[month] || 0) + value;
         }
       }
+      for (const [month, value] of Object.entries(newAcc.quantidade || {})) {
+        if (!match.quantidade) match.quantidade = {};
+        if (replaceRealizado) {
+          match.quantidade[month] = value;
+        } else {
+          match.quantidade[month] = (match.quantidade[month] || 0) + value;
+        }
+      }
       for (const [month, value] of Object.entries(newAcc.orcado || {})) {
         match.orcado[month] = (match.orcado[month] || 0) + value;
       }
@@ -108,7 +116,13 @@ function stripRealizadoMonthsFromAccounts(accounts, monthsToStrip) {
     for (const m of monthsToStrip) {
       delete next[m];
     }
-    return { ...acc, realizado: next };
+    const q = acc.quantidade || {};
+    const nextQ = { ...q };
+    for (const m of monthsToStrip) {
+      delete nextQ[m];
+    }
+    const quantidade = Object.keys(nextQ).length > 0 ? nextQ : undefined;
+    return { ...acc, realizado: next, quantidade };
   });
 }
 
@@ -714,9 +728,17 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping, options =
 
     if (isNaN(saldo)) saldo = 0;
 
+    const rawQuantidade = getValue(row, 'QUANTIDADE');
+    let quantidade = 0;
+    if (typeof rawQuantidade === 'number') quantidade = rawQuantidade;
+    else if (typeof rawQuantidade === 'string') {
+      quantidade = Number(rawQuantidade.replace(/\./g, '').replace(',', '.'));
+    }
+    if (isNaN(quantidade)) quantidade = 0;
+
     // Ignorar valores zerados para evitar criar contas vazias (no modo replace-realizado incremental, zero zera o mês)
 
-    if (saldo === 0 && !includeZeroSaldo) continue;
+    if (saldo === 0 && quantidade === 0 && !includeZeroSaldo) continue;
 
 
 
@@ -766,12 +788,18 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping, options =
     if (existing) {
 
       existing.saldo[monthKey] = (existing.saldo[monthKey] || 0) + saldo;
+      if (quantidade !== 0) {
+        if (!existing.quantidade) existing.quantidade = {};
+        existing.quantidade[monthKey] = (existing.quantidade[monthKey] || 0) + quantidade;
+      }
 
     } else {
 
       aggregated.set(aggKey, {
 
         saldo: { [monthKey]: saldo },
+
+        quantidade: quantidade !== 0 ? { [monthKey]: quantidade } : undefined,
 
         descricao: String(getValue(row, 'DESCRICAO_CONTABIL') || conta),
 
@@ -894,6 +922,8 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping, options =
       orcado: {},
 
       realizado: data.saldo,
+
+      ...(data.quantidade ? { quantidade: data.quantidade } : {}),
 
     });
 

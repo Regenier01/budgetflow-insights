@@ -18,6 +18,8 @@ export interface AccountEntry {
   isInvalidMapping?: boolean;
   orcado: Record<string, number>; // { "2026-04": 1000, ... }
   realizado: Record<string, number>;
+  /** Quantidade do realizado por mês (coluna QUANTIDADE da planilha). */
+  quantidade?: Record<string, number>;
 }
 
 /** Raw row from the standard Excel upload */

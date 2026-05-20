@@ -430,6 +430,7 @@ const cloneAccountEntry = (account: AccountEntry): AccountEntry => ({
   ...account,
   orcado: { ...account.orcado },
   realizado: { ...account.realizado },
+  quantidade: account.quantidade ? { ...account.quantidade } : undefined,
 });
 
 /** Créditos de receita vêm negativos na planilha; consolidamos como valores positivos no app. */
@@ -1124,6 +1125,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     const conta = String(row.CONTA_CONTABIL || '').trim();
     if (!conta) return;
     const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
+    const rowQuantidade = typeof row.QUANTIDADE === 'number' ? row.QUANTIDADE : 0;
     const month = dateToMonthKey(row.DATA) || fallbackPeriod;
     const rowAtividade = resolveAtividadeFromRow(row);
     const rowDept = rowValue(row.NOMEDEPTO);
@@ -1150,6 +1152,10 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     if (existing) {
       const delta = realizadoDeltaForTipo(existing.tipo, saldo);
       existing.realizado[month] = (existing.realizado[month] || 0) + delta;
+      if (rowQuantidade !== 0) {
+        if (!existing.quantidade) existing.quantidade = {};
+        existing.quantidade[month] = (existing.quantidade[month] || 0) + rowQuantidade;
+      }
       if (!existing.departamento) existing.departamento = rowDept;
       if (!existing.centroCusto) existing.centroCusto = rowCC;
       if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
@@ -1179,6 +1185,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
       coligada: rowColigada,
       orcado: {},
       realizado: { [month]: realizadoDeltaForTipo(base.tipo, saldo) },
+      ...(rowQuantidade !== 0 ? { quantidade: { [month]: rowQuantidade } } : {}),
     };
 
     newAccounts.push(newEntry);

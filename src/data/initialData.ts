@@ -19,6 +19,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -1057715.6600000001
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -39,6 +42,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -1477760.21
+    },
+    "quantidade": {
+      "2026-04": 295
     }
   },
   {
@@ -59,6 +65,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -1028160
+    },
+    "quantidade": {
+      "2026-04": 216
     }
   },
   {
@@ -79,6 +88,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -174370
+    },
+    "quantidade": {
+      "2026-04": 47
     }
   },
   {
@@ -99,6 +111,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -88385.34
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -119,6 +134,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -58033.579999999994
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -139,6 +157,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -37595.14
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -159,6 +180,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -29625.93
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -179,6 +203,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -246999.9
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -199,6 +226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -56400
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -219,6 +249,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -49600
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -239,6 +272,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -25862.4
+    },
+    "quantidade": {
+      "2026-04": 143680
     }
   },
   {
@@ -299,6 +335,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -35000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -319,6 +358,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -3330000
+    },
+    "quantidade": {
+      "2026-04": 1898080
     }
   },
   {
@@ -339,6 +381,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -1665000
+    },
+    "quantidade": {
+      "2026-04": 1373580
     }
   },
   {
@@ -359,6 +404,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -4377828.000000001
+    },
+    "quantidade": {
+      "2026-04": 2567063.5
     }
   },
   {
@@ -379,6 +427,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -68672
+    },
+    "quantidade": {
+      "2026-04": 37120
     }
   },
   {
@@ -399,6 +450,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -2000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -419,6 +473,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -3421711.0300000003
+    },
+    "quantidade": {
+      "2026-04": 1869241
     }
   },
   {
@@ -439,6 +496,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -1270015.2
+    },
+    "quantidade": {
+      "2026-04": 675540
     }
   },
   {
@@ -459,6 +519,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -447654.70999999996
+    },
+    "quantidade": {
+      "2026-04": 3162.9669999999996
     }
   },
   {
@@ -479,6 +542,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -747603.21
+    },
+    "quantidade": {
+      "2026-04": 5282.295
     }
   },
   {
@@ -499,6 +565,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -11059.16
+    },
+    "quantidade": {
+      "2026-04": 80.34
     }
   },
   {
@@ -519,6 +588,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -30975.96
+    },
+    "quantidade": {
+      "2026-04": 218.865
     }
   },
   {
@@ -539,6 +611,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -5977
+    },
+    "quantidade": {
+      "2026-04": 56.233000000000004
     }
   },
   {
@@ -559,6 +634,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -20460.13
+    },
+    "quantidade": {
+      "2026-04": 96.71799999999999
     }
   },
   {
@@ -579,6 +657,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -3995941.2499999995
+    },
+    "quantidade": {
+      "2026-04": 613602
     }
   },
   {
@@ -599,6 +680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -609903.96
+    },
+    "quantidade": {
+      "2026-04": 93041
     }
   },
   {
@@ -619,6 +703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -560290.3699999999
+    },
+    "quantidade": {
+      "2026-04": 88501
     }
   },
   {
@@ -639,6 +726,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -139939.74
+    },
+    "quantidade": {
+      "2026-04": 20242
     }
   },
   {
@@ -659,6 +749,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -3246152.09
+    },
+    "quantidade": {
+      "2026-04": 490131
     }
   },
   {
@@ -739,6 +832,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -2500
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -759,6 +855,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 389538.26
+    },
+    "quantidade": {
+      "2026-04": 490131
     }
   },
   {
@@ -859,6 +958,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16792.77
+    },
+    "quantidade": {
+      "2026-04": 20242
     }
   },
   {
@@ -879,6 +981,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2752.22
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -899,6 +1004,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64482.619999999995
+    },
+    "quantidade": {
+      "2026-04": 88500
     }
   },
   {
@@ -919,6 +1027,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3609.21
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -939,6 +1050,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 479512.94999999995
+    },
+    "quantidade": {
+      "2026-04": 613602
     }
   },
   {
@@ -959,6 +1073,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 69579.27
+    },
+    "quantidade": {
+      "2026-04": 93040
     }
   },
   {
@@ -979,6 +1096,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8066.530000000001
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -1019,6 +1139,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 511.45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1039,6 +1162,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3120.66
+    },
+    "quantidade": {
+      "2026-04": 20242
     }
   },
   {
@@ -1059,6 +1185,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 670.71
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1079,6 +1208,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89109.49
+    },
+    "quantidade": {
+      "2026-04": 613602
     }
   },
   {
@@ -1099,6 +1231,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11983.02
+    },
+    "quantidade": {
+      "2026-04": 88500
     }
   },
   {
@@ -1119,6 +1254,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12930.15
+    },
+    "quantidade": {
+      "2026-04": 93040
     }
   },
   {
@@ -1139,6 +1277,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72389.17
+    },
+    "quantidade": {
+      "2026-04": 490131
     }
   },
   {
@@ -1179,6 +1320,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 146.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1199,6 +1343,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85698.43000000001
+    },
+    "quantidade": {
+      "2026-04": 490131
     }
   },
   {
@@ -1219,6 +1366,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 605.49
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1239,6 +1389,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3694.41
+    },
+    "quantidade": {
+      "2026-04": 20242
     }
   },
   {
@@ -1259,6 +1412,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 794.03
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1279,6 +1435,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105492.84999999999
+    },
+    "quantidade": {
+      "2026-04": 613602
     }
   },
   {
@@ -1359,6 +1518,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.72
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1399,6 +1561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 131.19
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1419,6 +1584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 800.46
+    },
+    "quantidade": {
+      "2026-04": 20242
     }
   },
   {
@@ -1439,6 +1607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 172.04
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -1459,6 +1630,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22856.780000000002
+    },
+    "quantidade": {
+      "2026-04": 613602
     }
   },
   {
@@ -1479,6 +1653,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18568.01
+    },
+    "quantidade": {
+      "2026-04": 490131
     }
   },
   {
@@ -3599,6 +3776,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4036.24
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -3619,6 +3799,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2018.12
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -3639,6 +3822,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3027.18
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -3659,6 +3845,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2018.12
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -3679,6 +3868,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2018.12
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -6419,6 +6611,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4386.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6439,6 +6634,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2600
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6459,6 +6657,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4460
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -6479,6 +6680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60084.939999999995
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -6499,6 +6703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6519,6 +6726,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1500
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6539,6 +6749,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58900
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -6559,6 +6772,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12989.529999999999
+    },
+    "quantidade": {
+      "2026-04": 614
     }
   },
   {
@@ -6579,6 +6795,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18683.34
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -6599,6 +6818,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15610.82
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -6619,6 +6841,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4425.73
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -6639,6 +6864,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6659,6 +6887,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 250
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6679,6 +6910,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40482.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6699,6 +6933,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6719,6 +6956,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -6739,6 +6979,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1500
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -6759,6 +7002,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50985.479999999996
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -6779,6 +7025,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 170.62
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6799,6 +7048,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.72
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -6819,6 +7071,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.35
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -6839,6 +7094,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.72
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -6859,6 +7117,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.28
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -6879,6 +7140,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 500.4
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -6899,6 +7163,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6919,6 +7186,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 179.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6939,6 +7209,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 236
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -6959,6 +7232,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 399.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -6979,6 +7255,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1494.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -6999,6 +7278,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.67
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7019,6 +7301,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7039,6 +7324,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -7059,6 +7347,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.86
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -7079,6 +7370,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 103.66
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7099,6 +7393,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 279.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7119,6 +7416,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 450
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7139,6 +7439,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 79.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7159,6 +7462,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 489
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -7179,6 +7485,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 548.4
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -7199,6 +7508,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100
+    },
+    "quantidade": {
+      "2026-04": 0.455
     }
   },
   {
@@ -7219,6 +7531,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7239,6 +7554,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 123.72
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -7259,6 +7577,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7279,6 +7600,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7299,6 +7623,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111.68
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7319,6 +7646,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 69.67
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -7339,6 +7669,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63.84
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -7359,6 +7692,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 491.26
+    },
+    "quantidade": {
+      "2026-04": 58
     }
   },
   {
@@ -7379,6 +7715,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 500.08
+    },
+    "quantidade": {
+      "2026-04": 47
     }
   },
   {
@@ -7399,6 +7738,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.47
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7419,6 +7761,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.66
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7439,6 +7784,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -7459,6 +7807,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7479,6 +7830,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.56
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -7499,6 +7853,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114.15
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7519,6 +7876,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.16
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -7539,6 +7899,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114.15
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7559,6 +7922,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.370000000000005
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -7579,6 +7945,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 101
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7599,6 +7968,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -7619,6 +7991,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 185
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7639,6 +8014,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6200000000000003
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -7659,6 +8037,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -4.68
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7679,6 +8060,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.1
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -7699,6 +8083,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.22
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7719,6 +8106,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.390000000000004
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -7739,6 +8129,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -7759,6 +8152,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -7779,6 +8175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240.61
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -7799,6 +8198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.730000000000004
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -7819,6 +8221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7839,6 +8244,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.02
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -7859,6 +8267,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 125.10000000000002
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -7879,6 +8290,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 157.98000000000002
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -7899,6 +8313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.81
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -7919,6 +8336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -7939,6 +8359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.5
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -7959,6 +8382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.5
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -7979,6 +8405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -7999,6 +8428,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8019,6 +8451,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8039,6 +8474,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8059,6 +8497,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8079,6 +8520,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8099,6 +8543,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -8119,6 +8566,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.6
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -8139,6 +8589,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.7
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -8159,6 +8612,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.7
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -8179,6 +8635,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8199,6 +8658,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8219,6 +8681,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.5
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -8239,6 +8704,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.6
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -8259,6 +8727,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8279,6 +8750,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8299,6 +8773,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8319,6 +8796,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8339,6 +8819,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8359,6 +8842,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8379,6 +8865,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8399,6 +8888,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8419,6 +8911,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8439,6 +8934,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8459,6 +8957,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8479,6 +8980,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8499,6 +9003,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8519,6 +9026,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8539,6 +9049,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.58
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -8559,6 +9072,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8579,6 +9095,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8599,6 +9118,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -8619,6 +9141,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.399999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -8639,6 +9164,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -8659,6 +9187,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.959999999999997
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -8679,6 +9210,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.160000000000004
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -8699,6 +9233,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -8719,6 +9256,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -8739,6 +9279,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.880000000000001
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -8759,6 +9302,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.66
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8779,6 +9325,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8799,6 +9348,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.10000000000001
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -8819,6 +9371,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8839,6 +9394,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.04
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8859,6 +9417,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -8879,6 +9440,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 164
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8899,6 +9463,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -8919,6 +9486,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.88
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -8939,6 +9509,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -8959,6 +9532,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -8979,6 +9555,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -8999,6 +9578,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9019,6 +9601,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9039,6 +9624,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -9059,6 +9647,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9079,6 +9670,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9099,6 +9693,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9119,6 +9716,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -9139,6 +9739,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9159,6 +9762,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9179,6 +9785,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9199,6 +9808,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -9219,6 +9831,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9239,6 +9854,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -9259,6 +9877,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9279,6 +9900,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -9299,6 +9923,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9319,6 +9946,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9339,6 +9969,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9359,6 +9992,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -9379,6 +10015,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9399,6 +10038,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9419,6 +10061,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9439,6 +10084,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9459,6 +10107,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9479,6 +10130,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9499,6 +10153,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9519,6 +10176,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9539,6 +10199,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9559,6 +10222,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9579,6 +10245,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.38
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9599,6 +10268,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.29
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9619,6 +10291,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.3
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -9639,6 +10314,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.85
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9659,6 +10337,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.09
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9679,6 +10360,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.85
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -9699,6 +10383,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.72
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -9719,6 +10406,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10019,6 +10709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1516.32
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10039,6 +10732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2100
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10059,6 +10755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 597
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10079,6 +10778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1499
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10099,6 +10801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 500
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10119,6 +10824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10139,6 +10847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.05
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10159,6 +10870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 459.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10179,6 +10893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 377.83
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10199,6 +10916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20504.64
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10219,6 +10939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.51
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10239,6 +10962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.93
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10259,6 +10985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.76
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10279,6 +11008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 260.36
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10299,6 +11031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2000
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -10319,6 +11054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63264.19
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -10339,6 +11077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1154.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10359,6 +11100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 581.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10379,6 +11123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12575
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -10399,6 +11146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 138.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10419,6 +11169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 282.27
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10439,6 +11192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 246.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10459,6 +11215,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100.77
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10479,6 +11238,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.549999999999997
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -10499,6 +11261,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -10519,6 +11284,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10539,6 +11307,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10559,6 +11330,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10579,6 +11353,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10599,6 +11376,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10619,6 +11399,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10639,6 +11422,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10659,6 +11445,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10679,6 +11468,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -10699,6 +11491,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10719,6 +11514,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10739,6 +11537,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10759,6 +11560,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -10779,6 +11583,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -10799,6 +11606,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -10819,6 +11629,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -10839,6 +11652,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -10859,6 +11675,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10879,6 +11698,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -10899,6 +11721,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -10919,6 +11744,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.2
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -10939,6 +11767,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -10959,6 +11790,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.2
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -10979,6 +11813,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.8
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -10999,6 +11836,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -11019,6 +11859,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 211.8
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -11039,6 +11882,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 214.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -11059,6 +11905,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 199.2
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -11079,6 +11928,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 390
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -11099,6 +11951,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.4
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11119,6 +11974,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.450000000000003
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11139,6 +11997,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11159,6 +12020,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11179,6 +12043,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.800000000000001
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11199,6 +12066,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.2
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11219,6 +12089,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.2
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11239,6 +12112,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.2
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11259,6 +12135,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.399999999999999
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11279,6 +12158,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -11299,6 +12181,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.1
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -11319,6 +12204,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1752
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -11339,6 +12227,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1460
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -11359,6 +12250,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 876
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11379,6 +12273,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11399,6 +12296,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1168
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -11419,6 +12319,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11439,6 +12342,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.95
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11459,6 +12365,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11479,6 +12388,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.8
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11499,6 +12411,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.799999999999999
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -11519,6 +12434,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -11539,6 +12457,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.799999999999997
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11559,6 +12480,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -11579,6 +12503,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -11599,6 +12526,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -11619,6 +12549,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -11639,6 +12572,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -11659,6 +12595,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 168
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -11679,6 +12618,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11699,6 +12641,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.05
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11719,6 +12664,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11739,6 +12687,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11759,6 +12710,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.4000000000000004
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11779,6 +12733,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11799,6 +12756,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.800000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11819,6 +12779,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.800000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11839,6 +12802,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.199999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11859,6 +12825,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6000000000000005
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -11879,6 +12848,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.8999999999999995
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -11899,6 +12871,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11919,6 +12894,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -11939,6 +12917,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -11959,6 +12940,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -11979,6 +12963,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -11999,6 +12986,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12019,6 +13009,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12039,6 +13032,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12059,6 +13055,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12079,6 +13078,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -12099,6 +13101,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12119,6 +13124,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12139,6 +13147,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12159,6 +13170,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12179,6 +13193,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12199,6 +13216,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12219,6 +13239,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12239,6 +13262,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12259,6 +13285,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12279,6 +13308,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12299,6 +13331,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12319,6 +13354,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12339,6 +13377,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12359,6 +13400,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12379,6 +13423,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12399,6 +13446,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12419,6 +13469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12439,6 +13492,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12459,6 +13515,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12479,6 +13538,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12499,6 +13561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12519,6 +13584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -12539,6 +13607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -12559,6 +13630,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12579,6 +13653,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12599,6 +13676,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12619,6 +13699,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12639,6 +13722,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12659,6 +13745,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12679,6 +13768,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12699,6 +13791,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.0600000000000005
+    },
+    "quantidade": {
+      "2026-04": 2.175
     }
   },
   {
@@ -12719,6 +13814,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.97
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -12739,6 +13837,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.239999999999995
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -12759,6 +13860,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12779,6 +13883,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 193
+    },
+    "quantidade": {
+      "2026-04": 3.5091
     }
   },
   {
@@ -12799,6 +13906,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12819,6 +13929,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 297.6
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -12839,6 +13952,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12859,6 +13975,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12879,6 +13998,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12899,6 +14021,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12919,6 +14044,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -12939,6 +14067,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12959,6 +14090,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12979,6 +14113,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 269
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -12999,6 +14136,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.96
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13019,6 +14159,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.88
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -13039,6 +14182,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 143.76
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -13059,6 +14205,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 208.44
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -13079,6 +14228,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13099,6 +14251,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.48
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -13119,6 +14274,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.78
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13139,6 +14297,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5941.870000000001
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -13159,6 +14320,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13179,6 +14343,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13199,6 +14366,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13219,6 +14389,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13239,6 +14412,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13259,6 +14435,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13279,6 +14458,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13299,6 +14481,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13319,6 +14504,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13339,6 +14527,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13359,6 +14550,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -13379,6 +14573,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13399,6 +14596,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13419,6 +14619,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13439,6 +14642,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13459,6 +14665,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13479,6 +14688,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13499,6 +14711,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13519,6 +14734,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13539,6 +14757,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13559,6 +14780,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13579,6 +14803,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -13598,6 +14825,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "ADMINISTRACAO",
     "orcado": {},
     "realizado": {
+      "2026-04": 1
+    },
+    "quantidade": {
       "2026-04": 1
     }
   },
@@ -13619,6 +14849,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -13639,6 +14872,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13659,6 +14895,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13679,6 +14918,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13699,6 +14941,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -13719,6 +14964,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -13739,6 +14987,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13759,6 +15010,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -13779,6 +15033,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -13799,6 +15056,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13819,6 +15079,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13839,6 +15102,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13859,6 +15125,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13879,6 +15148,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13899,6 +15171,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13919,6 +15194,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13939,6 +15217,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13959,6 +15240,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -13979,6 +15263,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -13999,6 +15286,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -14019,6 +15309,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14039,6 +15332,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14059,6 +15355,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14079,6 +15378,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14099,6 +15401,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14119,6 +15424,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14139,6 +15447,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 182.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14159,6 +15470,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 184.8
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14179,6 +15493,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 333
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -14199,6 +15516,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -14219,6 +15539,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14239,6 +15562,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14259,6 +15585,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14279,6 +15608,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14299,6 +15631,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14319,6 +15654,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14339,6 +15677,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14359,6 +15700,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14379,6 +15723,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.3
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14399,6 +15746,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14419,6 +15769,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14439,6 +15792,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14459,6 +15815,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14479,6 +15838,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14499,6 +15861,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14519,6 +15884,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14539,6 +15907,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14559,6 +15930,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 182.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14579,6 +15953,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 184.8
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -14599,6 +15976,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 333
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -14619,6 +15999,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14639,6 +16022,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14659,6 +16045,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14679,6 +16068,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14699,6 +16091,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14719,6 +16114,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14739,6 +16137,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14759,6 +16160,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14779,6 +16183,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14799,6 +16206,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.3
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14819,6 +16229,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -14839,6 +16252,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14859,6 +16275,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -14879,6 +16298,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95.4
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -14899,6 +16321,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 48
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -14919,6 +16344,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.390000000000001
+    },
+    "quantidade": {
+      "2026-04": 1.845
     }
   },
   {
@@ -14939,6 +16367,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.98
+    },
+    "quantidade": {
+      "2026-04": 0.65
     }
   },
   {
@@ -14959,6 +16390,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.57
+    },
+    "quantidade": {
+      "2026-04": 0.43
     }
   },
   {
@@ -14979,6 +16413,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.66
+    },
+    "quantidade": {
+      "2026-04": 1.525
     }
   },
   {
@@ -14999,6 +16436,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.74
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -15119,6 +16559,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1430.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -15139,6 +16582,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 290.7
+    },
+    "quantidade": {
+      "2026-04": 1710
     }
   },
   {
@@ -15159,6 +16605,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 559
+    },
+    "quantidade": {
+      "2026-04": 650
     }
   },
   {
@@ -15179,6 +16628,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 712.8
+    },
+    "quantidade": {
+      "2026-04": 648
     }
   },
   {
@@ -15199,6 +16651,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 786.76
+    },
+    "quantidade": {
+      "2026-04": 884
     }
   },
   {
@@ -15219,6 +16674,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 955.65
+    },
+    "quantidade": {
+      "2026-04": 1385
     }
   },
   {
@@ -16099,6 +17557,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 428.84000000000003
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -16119,6 +17580,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 842.67
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -16139,6 +17603,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 410.62
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -16159,6 +17626,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 410.62
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -16179,6 +17649,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1951.4299999999998
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -16199,6 +17672,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -16219,6 +17695,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.31
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16239,6 +17718,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.31
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16259,6 +17741,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16279,6 +17764,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16299,6 +17787,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16319,6 +17810,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16339,6 +17833,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16359,6 +17856,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -16879,6 +18379,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.87
+    },
+    "quantidade": {
+      "2026-04": 0.899
     }
   },
   {
@@ -16899,6 +18402,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17281,6 +18787,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 878.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17625,6 +19134,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 766.66
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -17663,6 +19175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7881.02
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -17683,6 +19198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 350
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -17703,6 +19221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17723,6 +19244,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 600
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17743,6 +19267,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5268.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17763,6 +19290,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 260
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17783,6 +19313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8238
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -17803,6 +19336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13869.485
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17823,6 +19359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13869.485
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17843,6 +19382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33477.86
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -17863,6 +19405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58479
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -17901,6 +19446,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17921,6 +19469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 161.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17941,6 +19492,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 741
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -17961,6 +19515,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.19
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -17981,6 +19538,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.43
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -18001,6 +19561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.98
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -18021,6 +19584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 900
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -18041,6 +19607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4500
+    },
+    "quantidade": {
+      "2026-04": 1000
     }
   },
   {
@@ -18079,6 +19648,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -18098,6 +19670,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 5
+    },
+    "quantidade": {
       "2026-04": 5
     }
   },
@@ -18263,6 +19838,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.85
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -18283,6 +19861,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 152
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18381,6 +19962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1823
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -18401,6 +19985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195.34
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -18421,6 +20008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 157.02
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -18441,6 +20031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2873.6099999999997
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18461,6 +20054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -18481,6 +20077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -18501,6 +20100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18521,6 +20123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18541,6 +20146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18561,6 +20169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18581,6 +20192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -18979,6 +20593,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -18999,6 +20616,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -19019,6 +20639,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -19057,6 +20680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -19077,6 +20703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5361.88
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -19365,6 +20994,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14665.85
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -19405,6 +21037,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2125.56
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -19425,6 +21060,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4729.85
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -19445,6 +21083,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 269.8
+    },
+    "quantidade": {
+      "2026-04": 314
     }
   },
   {
@@ -19465,6 +21106,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1500
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -19485,6 +21129,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 279.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -19505,6 +21152,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1578
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -19525,6 +21175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 622.49
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -19545,6 +21198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 227.51
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -19565,6 +21221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6390.28
+    },
+    "quantidade": {
+      "2026-04": 181540
     }
   },
   {
@@ -19705,6 +21364,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29493.620000000003
+    },
+    "quantidade": {
+      "2026-04": 181540
     }
   },
   {
@@ -19785,6 +21447,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11313.689999999999
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -20357,6 +22022,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -70000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -26949,6 +28617,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.81
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -26969,6 +28640,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 129.37
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -26989,6 +28663,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.65
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -27009,6 +28686,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27029,6 +28709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27049,6 +28732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27069,6 +28755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 288
+    },
+    "quantidade": {
+      "2026-04": 300
     }
   },
   {
@@ -27089,6 +28778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 66.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27109,6 +28801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -27129,6 +28824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -27149,6 +28847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27169,6 +28870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -27189,6 +28893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27209,6 +28916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -27229,6 +28939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -27249,6 +28962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -27269,6 +28985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -27289,6 +29008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -27309,6 +29031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -27329,6 +29054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 586.34
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -28489,6 +30217,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3027.18
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -28509,6 +30240,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2783.69
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -28529,6 +30263,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4327.85
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -28549,6 +30286,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1009.06
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -28569,6 +30309,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1009.06
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -28589,6 +30332,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2018.12
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -28609,6 +30355,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1009.06
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -34602,6 +36351,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1754.3899999999999
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34622,6 +36374,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34135.46
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -34642,6 +36397,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39528.82
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -34662,6 +36420,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19311.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -34682,6 +36443,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1220.58
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -34702,6 +36466,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 626.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34722,6 +36489,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20322.550000000003
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34742,6 +36512,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32090.640000000003
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -34762,6 +36535,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9470
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34782,6 +36558,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30469.75
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -34802,6 +36581,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1625
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -34822,6 +36604,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12597.41
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -34842,6 +36627,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2440.91
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34862,6 +36650,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8863.43
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -34882,6 +36673,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41828.34
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -34902,6 +36696,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1142.75
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -34922,6 +36719,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -34942,6 +36742,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 250
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -34962,6 +36765,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81.68
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -34982,6 +36788,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35002,6 +36811,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35022,6 +36834,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35042,6 +36857,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35062,6 +36880,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35082,6 +36903,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28712.18
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35102,6 +36926,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1038.83
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -35122,6 +36949,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 436.31
+    },
+    "quantidade": {
+      "2026-04": 168
     }
   },
   {
@@ -35142,6 +36972,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 244.13
+    },
+    "quantidade": {
+      "2026-04": 54
     }
   },
   {
@@ -35162,6 +36995,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 500
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35182,6 +37018,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35202,6 +37041,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 290.22
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -35222,6 +37064,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5635.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35242,6 +37087,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5039.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35262,6 +37110,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24675.3
+    },
+    "quantidade": {
+      "2026-04": 529
     }
   },
   {
@@ -35282,6 +37133,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35302,6 +37156,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1815
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35322,6 +37179,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1479.67
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35342,6 +37202,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6599.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35382,6 +37245,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117651.14999999998
+    },
+    "quantidade": {
+      "2026-04": 23
     }
   },
   {
@@ -35402,6 +37268,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2309.68
+    },
+    "quantidade": {
+      "2026-04": 86
     }
   },
   {
@@ -35422,6 +37291,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4018.41
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35442,6 +37314,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2027-01": 1996.5
+    },
+    "quantidade": {
+      "2027-01": 1
     }
   },
   {
@@ -35462,6 +37337,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 161451.57000000004
+    },
+    "quantidade": {
+      "2026-04": 5270
     }
   },
   {
@@ -35482,6 +37360,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11864.75
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -35502,6 +37383,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1155.63
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -35522,6 +37406,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1090
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35542,6 +37429,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13274.91
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35562,6 +37452,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6043.9400000000005
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35582,6 +37475,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28505
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35602,6 +37498,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3248.85
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35622,6 +37521,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13494.189999999999
+    },
+    "quantidade": {
+      "2026-04": 298
     }
   },
   {
@@ -35642,6 +37544,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1625.78
+    },
+    "quantidade": {
+      "2026-04": 80
     }
   },
   {
@@ -35662,6 +37567,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15852.73
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35682,6 +37590,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26771.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35702,6 +37613,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 509.25
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35742,6 +37656,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147212.38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35762,6 +37679,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80212.79
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35782,6 +37702,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4977.64
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35802,6 +37725,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2631.75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35822,6 +37748,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38004.83
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35842,6 +37771,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 157644.13999999998
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -35862,6 +37794,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31915.46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35882,6 +37817,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 952.87
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -35902,6 +37840,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1185.19
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35922,6 +37863,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2482.92
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35942,6 +37886,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53125.23
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35962,6 +37909,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -35982,6 +37932,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 600
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36002,6 +37955,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2223.37
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36022,6 +37978,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1479.67
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36042,6 +38001,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 526.25
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36062,6 +38024,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 311.25
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36082,6 +38047,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2527.5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -36102,6 +38070,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18932
+    },
+    "quantidade": {
+      "2026-04": 9.5
     }
   },
   {
@@ -36122,6 +38093,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 943.72
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36142,6 +38116,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2649.1400000000003
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36162,6 +38139,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1100
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36182,6 +38162,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 300.86
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36202,6 +38185,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 800
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36222,6 +38208,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 990
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36242,6 +38231,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11457.85
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -36262,6 +38254,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1804.43
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -36282,6 +38277,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 69.96
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36302,6 +38300,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 629.62
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36322,6 +38323,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36342,6 +38346,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 357.75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36362,6 +38369,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11200
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36382,6 +38392,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3375
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36402,6 +38415,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36422,6 +38438,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36442,6 +38461,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 250
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36462,6 +38484,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3277.8199999999997
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36482,6 +38507,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 689.15
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36502,6 +38530,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 156.35999999999999
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36522,6 +38553,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 277.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36542,6 +38576,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2187
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36562,6 +38599,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 235.52
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36582,6 +38622,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36602,6 +38645,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36622,6 +38668,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9238.17
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -36642,6 +38691,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1805
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36662,6 +38714,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 798
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36682,6 +38737,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2257.84
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36702,6 +38760,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3041.41
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36722,6 +38783,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 213.94
+    },
+    "quantidade": {
+      "2026-04": 30.006
     }
   },
   {
@@ -36742,6 +38806,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15000
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36782,6 +38849,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7260
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36802,6 +38872,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2583.3599999999997
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -36822,6 +38895,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 800
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36842,6 +38918,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1519.7099999999998
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -36862,6 +38941,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7171.92
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -36882,6 +38964,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 573.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -36902,6 +38987,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 695.76
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36922,6 +39010,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 272.25
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -36942,6 +39033,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 375
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36962,6 +39056,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -36982,6 +39079,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15869.76
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -37002,6 +39102,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5640.11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37022,6 +39125,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 126923.57
+    },
+    "quantidade": {
+      "2026-04": 96.14
     }
   },
   {
@@ -37042,6 +39148,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9804.48
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37062,6 +39171,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20767.23
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37082,6 +39194,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150545.08
+    },
+    "quantidade": {
+      "2026-04": 716466.64
     }
   },
   {
@@ -37102,6 +39217,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25057.89
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -37122,6 +39240,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17186.18
+    },
+    "quantidade": {
+      "2026-04": 36862
     }
   },
   {
@@ -37142,6 +39263,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35499.979999999996
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -37162,6 +39286,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 171702.6
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -37182,6 +39309,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 192040.44
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -37202,6 +39332,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 226209.99
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -37222,6 +39355,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58689.74
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -37242,6 +39378,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 233744.37999999998
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -37262,6 +39401,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107910.37
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -37282,6 +39424,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 900.1700000000001
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -37322,6 +39467,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2286
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37342,6 +39490,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 350.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -37384,6 +39535,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6522.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37404,6 +39558,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 251774.36
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37424,6 +39581,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 167401.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37444,6 +39604,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 422605.04
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37464,6 +39627,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67063.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -37484,6 +39650,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5200
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37537,6 +39706,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95.28999999999999
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -37557,6 +39729,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.51
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37577,6 +39752,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.73
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -37597,6 +39775,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.2
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -37617,6 +39798,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37637,6 +39821,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -37657,6 +39844,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1450.6
+    },
+    "quantidade": {
+      "2026-04": 250.015
     }
   },
   {
@@ -37677,6 +39867,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 262.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -37697,6 +39890,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 612.49
+    },
+    "quantidade": {
+      "2026-04": 97
     }
   },
   {
@@ -37737,6 +39933,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 992.11
+    },
+    "quantidade": {
+      "2026-04": 174.36
     }
   },
   {
@@ -37757,6 +39956,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1308
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -37797,6 +39999,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21447.199999999997
+    },
+    "quantidade": {
+      "2026-04": 3320
     }
   },
   {
@@ -37817,6 +40022,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 310.25000000000006
+    },
+    "quantidade": {
+      "2026-04": 727
     }
   },
   {
@@ -37837,6 +40045,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.22
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -37857,6 +40068,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.3
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -37877,6 +40091,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.18
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -37897,6 +40114,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50254.409999999996
+    },
+    "quantidade": {
+      "2026-04": 8829.36
     }
   },
   {
@@ -37937,6 +40157,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 419.4
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -37957,6 +40180,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2990.98
+    },
+    "quantidade": {
+      "2026-04": 463
     }
   },
   {
@@ -37977,6 +40203,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12261.08
+    },
+    "quantidade": {
+      "2026-04": 1898
     }
   },
   {
@@ -37997,6 +40226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3561.99
+    },
+    "quantidade": {
+      "2026-04": 500.28
     }
   },
   {
@@ -38017,6 +40249,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38037,6 +40272,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38075,6 +40313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2557.44
+    },
+    "quantidade": {
+      "2026-04": 384
     }
   },
   {
@@ -38095,6 +40336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38115,6 +40359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 541.95
+    },
+    "quantidade": {
+      "2026-04": 70.69800000000001
     }
   },
   {
@@ -38135,6 +40382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 504
+    },
+    "quantidade": {
+      "2026-04": 80
     }
   },
   {
@@ -38155,6 +40405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82.05000000000001
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38195,6 +40448,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38215,6 +40471,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.72
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38235,6 +40494,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95.58000000000001
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -38255,6 +40517,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 62.64
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -38275,6 +40540,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38295,6 +40563,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38315,6 +40586,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75.4
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38335,6 +40609,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 739.76
+    },
+    "quantidade": {
+      "2026-04": 130.01
     }
   },
   {
@@ -38355,6 +40632,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2719.8199999999997
+    },
+    "quantidade": {
+      "2026-04": 439.39
     }
   },
   {
@@ -38375,6 +40655,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.48
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38395,6 +40678,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.16
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -38415,6 +40701,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.28
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -38435,6 +40724,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.45
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38455,6 +40747,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38475,6 +40770,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38495,6 +40793,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.68
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38515,6 +40816,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.82
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -38535,6 +40839,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.9
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38555,6 +40862,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.9
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38575,6 +40885,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38595,6 +40908,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.82
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38615,6 +40931,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.27
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -38635,6 +40954,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -38655,6 +40977,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.72
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38675,6 +41000,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -38695,6 +41023,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.2
+    },
+    "quantidade": {
+      "2026-04": 470
     }
   },
   {
@@ -38715,6 +41046,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.17
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -38735,6 +41069,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -38755,6 +41092,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -38775,6 +41115,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -38795,6 +41138,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.71
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38815,6 +41161,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38835,6 +41184,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.12
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38855,6 +41207,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.85
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -38875,6 +41230,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -38895,6 +41253,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.53
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -38914,6 +41275,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUARIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 10
+    },
+    "quantidade": {
       "2026-04": 10
     }
   },
@@ -38935,6 +41299,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38955,6 +41322,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.34
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -38975,6 +41345,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.43
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -38995,6 +41368,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.61
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39015,6 +41391,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.61
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39035,6 +41414,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.92
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -39055,6 +41437,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39075,6 +41460,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.14
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39095,6 +41483,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.34
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39115,6 +41506,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.34
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39135,6 +41529,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.74
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39155,6 +41552,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 420
     }
   },
   {
@@ -39175,6 +41575,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.78
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39195,6 +41598,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.78
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39215,6 +41621,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.45
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -39235,6 +41644,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.45
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -39255,6 +41667,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.05
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39275,6 +41690,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.52
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -39295,6 +41713,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.72
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39315,6 +41736,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.25
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -39335,6 +41759,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.09
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39355,6 +41782,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.63
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39375,6 +41805,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.78
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39395,6 +41828,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39415,6 +41851,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.59
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39435,6 +41874,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -39455,6 +41897,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.59
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -39475,6 +41920,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -39495,6 +41943,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39515,6 +41966,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39535,6 +41989,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -39555,6 +42012,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.12
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39575,6 +42035,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -39595,6 +42058,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -39615,6 +42081,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -39635,6 +42104,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.89
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -39655,6 +42127,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.63
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -39675,6 +42150,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39695,6 +42173,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 69.6
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -39715,6 +42196,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -39735,6 +42219,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -39775,6 +42262,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1500
     }
   },
   {
@@ -39795,6 +42285,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39815,6 +42308,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75.51
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39835,6 +42331,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75.9
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -39855,6 +42354,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 79.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -39875,6 +42377,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39895,6 +42400,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85.35
+    },
+    "quantidade": {
+      "2026-04": 99
     }
   },
   {
@@ -39915,6 +42423,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.88
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -39935,6 +42446,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 632.4
+    },
+    "quantidade": {
+      "2026-04": 170
     }
   },
   {
@@ -39955,6 +42469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.64
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39975,6 +42492,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.17
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -39995,6 +42515,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 113.61
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40015,6 +42538,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 113.85
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40035,6 +42561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 115.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40055,6 +42584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117.2
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -40075,6 +42607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 1500
     }
   },
   {
@@ -40095,6 +42630,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 167.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40115,6 +42653,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 169.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -40135,6 +42676,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 188
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -40155,6 +42699,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195.67
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40175,6 +42722,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 212.4
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -40195,6 +42745,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 218.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -40215,6 +42768,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 640.69
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -40235,6 +42791,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 257.16
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -40255,6 +42814,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 333.78
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40275,6 +42837,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 368.28
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40295,6 +42860,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 369.62
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40315,6 +42883,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 406.59
+    },
+    "quantidade": {
+      "2026-04": 5.89
     }
   },
   {
@@ -40335,6 +42906,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 407.05
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -40355,6 +42929,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 427.5
+    },
+    "quantidade": {
+      "2026-04": 150
     }
   },
   {
@@ -40375,6 +42952,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 475
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40395,6 +42975,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 479.6
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -40415,6 +42998,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 526.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40435,6 +43021,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 626.17
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40455,6 +43044,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 651.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40475,6 +43067,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 734.8
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -40495,6 +43090,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 760
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -40515,6 +43113,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 798.52
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40535,6 +43136,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1440
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40555,6 +43159,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1855
+    },
+    "quantidade": {
+      "2026-04": 500
     }
   },
   {
@@ -40575,6 +43182,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -40595,6 +43205,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.57
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40615,6 +43228,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.44
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -40635,6 +43251,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.22
+    },
+    "quantidade": {
+      "2026-04": 75
     }
   },
   {
@@ -40654,6 +43273,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 1
+    },
+    "quantidade": {
       "2026-04": 1
     }
   },
@@ -40675,6 +43297,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.26
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40695,6 +43320,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.0600000000000005
+    },
+    "quantidade": {
+      "2026-04": 29
     }
   },
   {
@@ -40715,6 +43343,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.43
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -40735,6 +43366,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -40755,6 +43389,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.9
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -40775,6 +43412,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40795,6 +43435,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40815,6 +43458,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -40835,6 +43481,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.28
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -40855,6 +43504,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.85
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -40875,6 +43527,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.25
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -40895,6 +43550,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -40915,6 +43573,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.23
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40935,6 +43596,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.27
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -40955,6 +43619,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.94
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -40975,6 +43642,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.13
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -40995,6 +43665,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.62
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41015,6 +43688,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.56
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -41035,6 +43711,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.21
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -41055,6 +43734,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.27
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -41075,6 +43757,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.88
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -41095,6 +43780,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.96
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -41115,6 +43803,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.02
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41135,6 +43826,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41155,6 +43849,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -41175,6 +43872,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.27
+    },
+    "quantidade": {
+      "2026-04": 1.9869999999999999
     }
   },
   {
@@ -41195,6 +43895,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.28
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41215,6 +43918,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.3
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -41235,6 +43941,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.33
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41255,6 +43964,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.739999999999995
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -41275,6 +43987,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41295,6 +44010,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.62
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41315,6 +44033,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.88
+    },
+    "quantidade": {
+      "2026-04": 2.6
     }
   },
   {
@@ -41335,6 +44056,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41355,6 +44079,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 62.42999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -41375,6 +44102,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41395,6 +44125,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.69
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41415,6 +44148,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.8
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -41435,6 +44171,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.22
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41455,6 +44194,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.54
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41475,6 +44217,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.22
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41495,6 +44240,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.12
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41515,6 +44263,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41535,6 +44286,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41555,6 +44309,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 233.92
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -41575,6 +44332,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.88
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -41595,6 +44355,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.28
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -41615,6 +44378,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41635,6 +44401,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.28
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41655,6 +44424,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 47.02
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41675,6 +44447,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.97
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -41695,6 +44470,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41715,6 +44493,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -41735,6 +44516,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41755,6 +44539,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41775,6 +44562,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.31
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -41795,6 +44585,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 77.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41815,6 +44608,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 93.92
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41835,6 +44631,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41855,6 +44654,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 101.32
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41875,6 +44677,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.54
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41895,6 +44700,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130.52
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41915,6 +44723,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 137.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -41935,6 +44746,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 140.66
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -41955,6 +44769,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 151.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -41975,6 +44792,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 151.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -41995,6 +44815,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 455.46
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -42015,6 +44838,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 154.96
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42035,6 +44861,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 156
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42055,6 +44884,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 180.6
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -42075,6 +44907,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 180.6
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -42095,6 +44930,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 216
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42115,6 +44953,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 248
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42135,6 +44976,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 259.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42155,6 +44999,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 272.48
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42175,6 +45022,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 324
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -42195,6 +45045,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 339.04
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42215,6 +45068,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 374.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42235,6 +45091,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 475
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42255,6 +45114,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 784.8
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -42275,6 +45137,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 825.82
+    },
+    "quantidade": {
+      "2026-04": 99
     }
   },
   {
@@ -42295,6 +45160,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5200
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -42315,6 +45183,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7618.4
+    },
+    "quantidade": {
+      "2026-04": 1424
     }
   },
   {
@@ -42335,6 +45206,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.52
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -42355,6 +45229,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.55
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -42375,6 +45252,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.37
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -42395,6 +45275,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42415,6 +45298,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42435,6 +45321,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42455,6 +45344,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.75
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -42475,6 +45367,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.9
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -42495,6 +45390,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 562.75
+    },
+    "quantidade": {
+      "2026-04": 57.6
     }
   },
   {
@@ -42535,6 +45433,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 550
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42555,6 +45456,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42575,6 +45479,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95.84
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42595,6 +45502,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95.83
+    },
+    "quantidade": {
+      "2026-04": 41
     }
   },
   {
@@ -42615,6 +45525,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42635,6 +45548,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -42655,6 +45571,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.89
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42675,6 +45594,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 178.22
+    },
+    "quantidade": {
+      "2026-04": 78
     }
   },
   {
@@ -42695,6 +45617,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.02
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42715,6 +45640,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 98.1
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -42735,6 +45663,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42755,6 +45686,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 153
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42775,6 +45709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 218.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42795,6 +45732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.87
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -42815,6 +45755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 214.62
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -42835,6 +45778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42855,6 +45801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.7
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -42875,6 +45824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.86
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -42895,6 +45847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.86
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -42915,6 +45870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -42935,6 +45893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 513
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -42955,6 +45916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 894.6
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -42975,6 +45939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 127.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -42995,6 +45962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 255.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -43015,6 +45985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -43035,6 +46008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 220
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43055,6 +46031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 220
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43075,6 +46054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 365
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43095,6 +46077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 365
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43115,6 +46100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.35
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -43135,6 +46123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43155,6 +46146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -43175,6 +46169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43195,6 +46192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 175
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -43215,6 +46215,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 145
+    },
+    "quantidade": {
+      "2026-04": 3.6
     }
   },
   {
@@ -43235,6 +46238,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 838.2
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -43255,6 +46261,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 850
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -43275,6 +46284,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.8
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -43295,6 +46307,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43315,6 +46330,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43335,6 +46353,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -43355,6 +46376,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43375,6 +46399,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -43395,6 +46422,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43415,6 +46445,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.84
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43435,6 +46468,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3335.36
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -43473,6 +46509,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -43493,6 +46532,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -43513,6 +46555,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.25
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -43533,6 +46578,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43553,6 +46601,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43573,6 +46624,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43593,6 +46647,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -43613,6 +46670,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 250
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43633,6 +46693,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 550
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43653,6 +46716,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 439.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -43673,6 +46739,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 598
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43693,6 +46762,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 708
+    },
+    "quantidade": {
+      "2026-04": 120
     }
   },
   {
@@ -43713,6 +46785,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2470
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -43733,6 +46808,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 460
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -43753,6 +46831,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43773,6 +46854,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.08
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -43793,6 +46877,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43813,6 +46900,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43833,6 +46923,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 199.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43853,6 +46946,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 314.28
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43873,6 +46969,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 649.76
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -43893,6 +46992,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -32.45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -43913,6 +47015,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -43933,6 +47038,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.64
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -43953,6 +47061,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.71
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -43973,6 +47084,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -43993,6 +47107,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.94
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44013,6 +47130,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.96
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -44033,6 +47153,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -44053,6 +47176,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44073,6 +47199,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -44093,6 +47222,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.43
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -44113,6 +47245,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.28
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -44133,6 +47268,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 120
     }
   },
   {
@@ -44153,6 +47291,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.92
+    },
+    "quantidade": {
+      "2026-04": 91
     }
   },
   {
@@ -44173,6 +47314,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.85
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44193,6 +47337,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -44213,6 +47360,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.04
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -44233,6 +47383,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.18
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44253,6 +47406,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.52
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -44273,6 +47429,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -44293,6 +47452,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.37
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44313,6 +47475,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -44333,6 +47498,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -44353,6 +47521,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.7
+    },
+    "quantidade": {
+      "2026-04": 110
     }
   },
   {
@@ -44373,6 +47544,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.4
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -44393,6 +47567,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.6
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -44413,6 +47590,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -44433,6 +47613,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.25
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -44453,6 +47636,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.37
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -44473,6 +47659,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -44493,6 +47682,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.05
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44513,6 +47705,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.95
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -44533,6 +47728,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.28
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44553,6 +47751,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -44573,6 +47774,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.3
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -44593,6 +47797,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.28
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44613,6 +47820,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 68.48
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44633,6 +47843,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.92
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44653,6 +47866,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44673,6 +47889,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44693,6 +47912,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44713,6 +47935,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.91
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44733,6 +47958,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.87
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44753,6 +47981,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.48
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44773,6 +48004,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 275.34999999999997
+    },
+    "quantidade": {
+      "2026-04": 45
     }
   },
   {
@@ -44793,6 +48027,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -44813,6 +48050,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.86
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44833,6 +48073,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.64
+    },
+    "quantidade": {
+      "2026-04": 300
     }
   },
   {
@@ -44853,6 +48096,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44873,6 +48119,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -44893,6 +48142,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -44913,6 +48165,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.37
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -44933,6 +48188,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 136.14000000000001
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -44953,6 +48211,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.6
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -44973,6 +48234,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.74
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -44993,6 +48257,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 47.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -45013,6 +48280,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45033,6 +48303,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -45053,6 +48326,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45073,6 +48349,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 66.41
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -45093,6 +48372,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45113,6 +48395,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 215.6
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -45133,6 +48418,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106.72
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45153,6 +48441,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 115.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45173,6 +48464,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130.68
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -45193,6 +48487,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 146.16
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -45213,6 +48510,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 153
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45233,6 +48533,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 163.32
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -45253,6 +48556,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 163.35
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -45273,6 +48579,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 170.36
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -45293,6 +48602,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210.54
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45313,6 +48625,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 213.21
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45333,6 +48648,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 256.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45353,6 +48671,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 288
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45373,6 +48694,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 313.1
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -45393,6 +48717,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 721.38
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45413,6 +48740,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 444.08
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -45433,6 +48763,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 479.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45453,6 +48786,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 485
+    },
+    "quantidade": {
+      "2026-04": 500
     }
   },
   {
@@ -45473,6 +48809,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 564.93
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45493,6 +48832,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 618.73
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -45513,6 +48855,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1376.12
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45533,6 +48878,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 806.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45553,6 +48901,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2072.63
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45573,6 +48924,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -45593,6 +48947,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.4
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -45613,6 +48970,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.52
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -45633,6 +48993,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.53
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -45653,6 +49016,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.86
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45673,6 +49039,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.86
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45693,6 +49062,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45713,6 +49085,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.29
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45733,6 +49108,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.72
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45753,6 +49131,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.05
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -45773,6 +49154,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45793,6 +49177,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -45813,6 +49200,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.92
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45833,6 +49223,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45853,6 +49246,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45873,6 +49269,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -45893,6 +49292,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.24
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45913,6 +49315,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45933,6 +49338,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45953,6 +49361,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45973,6 +49384,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.56
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -45993,6 +49407,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.93
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46013,6 +49430,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -46033,6 +49453,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.46
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46053,6 +49476,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.05
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -46073,6 +49499,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.69
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46093,6 +49522,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.59
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -46113,6 +49545,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.59
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -46133,6 +49568,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46153,6 +49591,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.64
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -46173,6 +49614,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.88
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -46193,6 +49637,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -46213,6 +49660,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.68
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46233,6 +49683,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.7
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -46253,6 +49706,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.29
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46273,6 +49729,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.13
+    },
+    "quantidade": {
+      "2026-04": 0.5
     }
   },
   {
@@ -46293,6 +49752,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.84
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -46313,6 +49775,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 71.28
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -46333,6 +49798,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 76.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46353,6 +49821,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 189.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -46373,6 +49844,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46393,6 +49867,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120.9
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -46413,6 +49890,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 148.8
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -46433,6 +49913,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 155
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46453,6 +49936,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 175.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46473,6 +49959,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 241.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46493,6 +49982,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 324.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46513,6 +50005,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 372.07
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46533,6 +50028,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 611.88
+    },
+    "quantidade": {
+      "2026-04": 3.374
     }
   },
   {
@@ -46553,6 +50051,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 661.92
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -46573,6 +50074,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1164.8
+    },
+    "quantidade": {
+      "2026-04": 35
     }
   },
   {
@@ -46593,6 +50097,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 340
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46613,6 +50120,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 930
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -46633,6 +50143,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 309.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46653,6 +50166,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1600
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -46673,6 +50189,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -46693,6 +50212,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46713,6 +50235,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 102.05
+    },
+    "quantidade": {
+      "2026-04": 0.7
     }
   },
   {
@@ -46733,6 +50258,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 450
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -46753,6 +50281,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 311.58
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -46773,6 +50304,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46793,6 +50327,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46813,6 +50350,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -46833,6 +50373,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46853,6 +50396,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -46873,6 +50419,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46893,6 +50442,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -46913,6 +50465,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -46933,6 +50488,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 135
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46953,6 +50511,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 175
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46973,6 +50534,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -46993,6 +50557,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47012,6 +50579,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUARIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 4
+    },
+    "quantidade": {
       "2026-04": 4
     }
   },
@@ -47033,6 +50603,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47053,6 +50626,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47073,6 +50649,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47093,6 +50672,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47113,6 +50695,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47133,6 +50718,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -47153,6 +50741,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47173,6 +50764,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6900.5
+    },
+    "quantidade": {
+      "2026-04": 74
     }
   },
   {
@@ -47193,6 +50787,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -47213,6 +50810,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3379
+    },
+    "quantidade": {
+      "2026-04": 109
     }
   },
   {
@@ -47233,6 +50833,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47253,6 +50856,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -47273,6 +50879,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 408
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -47293,6 +50902,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47313,6 +50925,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47333,6 +50948,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47353,6 +50971,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1063.78
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47373,6 +50994,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -47393,6 +51017,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.24
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -47413,6 +51040,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -47433,6 +51063,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47453,6 +51086,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80.34
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47473,6 +51109,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 223.33
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47493,6 +51132,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.43
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47513,6 +51155,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 544.7
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -47533,6 +51178,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1106.4
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -47553,6 +51201,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1111.25
+    },
+    "quantidade": {
+      "2026-04": 635
     }
   },
   {
@@ -47573,6 +51224,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1219.9
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -47593,6 +51247,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1780.1
+    },
+    "quantidade": {
+      "2026-04": 35
     }
   },
   {
@@ -47613,6 +51270,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -47633,6 +51293,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -47653,6 +51316,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 840.48
+    },
+    "quantidade": {
+      "2026-04": 408
     }
   },
   {
@@ -47673,6 +51339,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 975.84
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -47693,6 +51362,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 309.92
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -47713,6 +51385,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 320
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -47733,6 +51408,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 541.53
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -47753,6 +51431,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 780
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -47773,6 +51454,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1796.2
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -47793,6 +51477,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 129.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47813,6 +51500,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.16
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -47833,6 +51523,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 385
+    },
+    "quantidade": {
+      "2026-04": 350
     }
   },
   {
@@ -47853,6 +51546,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -47873,6 +51569,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.9
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -47893,6 +51592,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.12
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -47913,6 +51615,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1501.6399999999999
+    },
+    "quantidade": {
+      "2026-04": 10.3
     }
   },
   {
@@ -47933,6 +51638,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3920
+    },
+    "quantidade": {
+      "2026-04": 25.5
     }
   },
   {
@@ -47953,6 +51661,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -47973,6 +51684,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.88
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -47993,6 +51707,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.299999999999999
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -48013,6 +51730,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.33
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -48033,6 +51753,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48053,6 +51776,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.76
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -48073,6 +51799,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 202.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -48093,6 +51822,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3397.44
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -48113,6 +51845,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10593.72
+    },
+    "quantidade": {
+      "2026-04": 603
     }
   },
   {
@@ -48133,6 +51868,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 680
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48153,6 +51891,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2484.43
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -48173,6 +51914,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.68
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48193,6 +51937,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48213,6 +51960,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.72
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48233,6 +51983,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 861
+    },
+    "quantidade": {
+      "2026-04": 114.8
     }
   },
   {
@@ -48253,6 +52006,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 389.90000000000003
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -48273,6 +52029,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 630
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -48293,6 +52052,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.19
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -48313,6 +52075,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.21
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -48333,6 +52098,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.58
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -48353,6 +52121,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.52
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48373,6 +52144,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -48393,6 +52167,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.54
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -48413,6 +52190,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1396.44
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -48433,6 +52213,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16646
+    },
+    "quantidade": {
+      "2026-04": 29
     }
   },
   {
@@ -48453,6 +52236,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 653.04
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -48473,6 +52259,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.95
+    },
+    "quantidade": {
+      "2026-04": 1.4
     }
   },
   {
@@ -48493,6 +52282,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.97
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -48513,6 +52305,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.09
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -48533,6 +52328,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.5
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -48553,6 +52351,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48573,6 +52374,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.36
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48593,6 +52397,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48613,6 +52420,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 202.4
+    },
+    "quantidade": {
+      "2026-04": 36.8
     }
   },
   {
@@ -48633,6 +52443,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1651
+    },
+    "quantidade": {
+      "2026-04": 254
     }
   },
   {
@@ -48653,6 +52466,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 294
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -48673,6 +52489,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 128.7
+    },
+    "quantidade": {
+      "2026-04": 33
     }
   },
   {
@@ -48693,6 +52512,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 279
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -48713,6 +52535,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 310
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48733,6 +52558,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 146
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48753,6 +52581,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 531.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48773,6 +52604,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.43
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48793,6 +52627,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48813,6 +52650,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42766.59
+    },
+    "quantidade": {
+      "2026-04": 182.99
     }
   },
   {
@@ -48833,6 +52673,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48853,6 +52696,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48873,6 +52719,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -48893,6 +52742,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48913,6 +52765,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48933,6 +52788,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 68.2
+    },
+    "quantidade": {
+      "2026-04": 22
     }
   },
   {
@@ -48953,6 +52811,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -48973,6 +52834,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -48993,6 +52857,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49013,6 +52880,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49033,6 +52903,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49053,6 +52926,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1200
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -49073,6 +52949,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49093,6 +52972,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 329.36
+    },
+    "quantidade": {
+      "2026-04": 92
     }
   },
   {
@@ -49113,6 +52995,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.56
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49133,6 +53018,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147.6
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -49153,6 +53041,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147.6
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -49173,6 +53064,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49193,6 +53087,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 261
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -49213,6 +53110,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49233,6 +53133,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49253,6 +53156,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49273,6 +53179,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49293,6 +53202,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -49313,6 +53225,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49333,6 +53248,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49353,6 +53271,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49373,6 +53294,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49393,6 +53317,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49413,6 +53340,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49433,6 +53363,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49453,6 +53386,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49473,6 +53409,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 481
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49493,6 +53432,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -49513,6 +53455,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.31
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49533,6 +53478,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120.28
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49553,6 +53501,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 124.76
+    },
+    "quantidade": {
+      "2026-04": 35
     }
   },
   {
@@ -49573,6 +53524,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 138.83
+    },
+    "quantidade": {
+      "2026-04": 31
     }
   },
   {
@@ -49593,6 +53547,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 141.66
+    },
+    "quantidade": {
+      "2026-04": 31
     }
   },
   {
@@ -49613,6 +53570,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 161.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -49633,6 +53593,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 167.99
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49653,6 +53616,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 191.66
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -49673,6 +53639,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 194.95
+    },
+    "quantidade": {
+      "2026-04": 27
     }
   },
   {
@@ -49693,6 +53662,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 219.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49713,6 +53685,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 228.67
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -49733,6 +53708,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 449.31
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49753,6 +53731,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.45
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -49773,6 +53754,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49793,6 +53777,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.19
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49813,6 +53800,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.66
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -49833,6 +53823,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49853,6 +53846,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.23
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -49873,6 +53869,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.66
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -49893,6 +53892,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195.02
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -49913,6 +53915,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 95
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -49933,6 +53938,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49953,6 +53961,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -49973,6 +53984,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -49993,6 +54007,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50013,6 +54030,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -50033,6 +54053,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.95
+    },
+    "quantidade": {
+      "2026-04": 300
     }
   },
   {
@@ -50053,6 +54076,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -50073,6 +54099,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 115.6
+    },
+    "quantidade": {
+      "2026-04": 3.6
     }
   },
   {
@@ -50093,6 +54122,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 140
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50113,6 +54145,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 511.05
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -50133,6 +54168,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 865.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50153,6 +54191,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 129.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50173,6 +54214,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 259.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -50193,6 +54237,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.02
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50213,6 +54260,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 115.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -50233,6 +54283,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.23
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -50253,6 +54306,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50273,6 +54329,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.63
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -50293,6 +54352,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82.65
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -50313,6 +54375,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50333,6 +54398,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50353,6 +54421,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 199
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50373,6 +54444,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.73
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50393,6 +54467,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 191.54
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -50413,6 +54490,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -50433,6 +54513,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 294
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -50453,6 +54536,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50473,6 +54559,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.28
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -50493,6 +54582,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -50513,6 +54605,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 98.07
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -50533,6 +54628,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.9
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50553,6 +54651,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.87
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50573,6 +54674,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -50593,6 +54697,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.3
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -50613,6 +54720,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50633,6 +54743,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50653,6 +54766,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 87.12
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -50673,6 +54789,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 140.1
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50693,6 +54812,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 159.6
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -50713,6 +54835,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.36
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -50733,6 +54858,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.28
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -50753,6 +54881,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 140.1
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50773,6 +54904,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 630.6999999999999
+    },
+    "quantidade": {
+      "2026-04": 70
     }
   },
   {
@@ -50793,6 +54927,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.94
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -50813,6 +54950,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84.7
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50833,6 +54973,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 212.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -50853,6 +54996,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 280.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -50873,6 +55019,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -50893,6 +55042,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50913,6 +55065,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 135
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -50933,6 +55088,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -50953,6 +55111,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50973,6 +55134,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -50993,6 +55157,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -51013,6 +55180,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.68
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51033,6 +55203,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.18
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51053,6 +55226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.84
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -51073,6 +55249,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.66
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -51093,6 +55272,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.1
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51113,6 +55295,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51133,6 +55318,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51153,6 +55341,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.54
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -51173,6 +55364,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.76
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -51193,6 +55387,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.86
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -51213,6 +55410,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51233,6 +55433,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51253,6 +55456,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.54
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -51273,6 +55479,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -51293,6 +55502,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63.52
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51313,6 +55525,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51333,6 +55548,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 83.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -51353,6 +55571,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.8
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -51373,6 +55594,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.6
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -51393,6 +55617,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 458
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -51413,6 +55640,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51433,6 +55663,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -51453,6 +55686,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -51473,6 +55709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -51493,6 +55732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 175
+    },
+    "quantidade": {
+      "2026-04": 500
     }
   },
   {
@@ -51513,6 +55755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 141.64
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -51533,6 +55778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -51553,6 +55801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.02
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51573,6 +55824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 71.97
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -51593,6 +55847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.92
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51613,6 +55870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51633,6 +55893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51653,6 +55916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -51673,6 +55939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.4
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -51693,6 +55962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 76.8
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -51713,6 +55985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 152.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -51733,6 +56008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.400000000000002
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -51753,6 +56031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.1
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -51773,6 +56054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51793,6 +56077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51813,6 +56100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51833,6 +56123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51853,6 +56146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -51873,6 +56169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.5
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -51893,6 +56192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51913,6 +56215,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -51933,6 +56238,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -51953,6 +56261,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.8
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -51973,6 +56284,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -51993,6 +56307,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52013,6 +56330,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -52033,6 +56353,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -52053,6 +56376,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 73.5
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -52073,6 +56399,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 73.5
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -52093,6 +56422,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52113,6 +56445,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52133,6 +56468,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52153,6 +56491,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52173,6 +56514,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107.7
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -52193,6 +56537,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -52213,6 +56560,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 122.7
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -52233,6 +56583,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52253,6 +56606,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52273,6 +56629,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52293,6 +56652,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 94.5
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -52313,6 +56675,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 457.2
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -52333,6 +56698,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52353,6 +56721,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52373,6 +56744,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52393,6 +56767,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52413,6 +56790,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52433,6 +56813,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52453,6 +56836,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52473,6 +56859,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52493,6 +56882,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 109.4
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -52513,6 +56905,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -52533,6 +56928,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52553,6 +56951,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52573,6 +56974,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52593,6 +56997,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52613,6 +57020,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.37
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -52633,6 +57043,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52653,6 +57066,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52673,6 +57089,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52693,6 +57112,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52713,6 +57135,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -52733,6 +57158,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52753,6 +57181,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -52773,6 +57204,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.77
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52793,6 +57227,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52813,6 +57250,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.27
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52833,6 +57273,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.98
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -52853,6 +57296,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52873,6 +57319,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52893,6 +57342,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.36
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52913,6 +57365,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.63
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52933,6 +57388,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52953,6 +57411,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -52973,6 +57434,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -52993,6 +57457,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -53013,6 +57480,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -53033,6 +57503,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.97
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53053,6 +57526,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.04
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -53073,6 +57549,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.4
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53093,6 +57572,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.63
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53113,6 +57595,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.88
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -53133,6 +57618,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -53173,6 +57661,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 48.1
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53193,6 +57684,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.17
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53213,6 +57707,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.45
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -53233,6 +57730,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 62.25
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -53253,6 +57753,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85.8
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -53273,6 +57776,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.46
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53293,6 +57799,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 192
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -53313,6 +57822,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 197.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53333,6 +57845,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -53353,6 +57868,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 252.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -53373,6 +57891,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 270.36
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -53393,6 +57914,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 308.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53413,6 +57937,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 428.76
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -53433,6 +57960,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 617.3
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53453,6 +57983,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.899999999999999
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -53473,6 +58006,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.11
+    },
+    "quantidade": {
+      "2026-04": 2.449
     }
   },
   {
@@ -53493,6 +58029,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.50000000000001
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -53513,6 +58052,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.07
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53533,6 +58075,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.370000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53553,6 +58098,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 254.62
+    },
+    "quantidade": {
+      "2026-04": 57
     }
   },
   {
@@ -53573,6 +58121,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -53593,6 +58144,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.3
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53613,6 +58167,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -53633,6 +58190,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.74
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -53653,6 +58213,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -53673,6 +58236,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53693,6 +58259,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -53713,6 +58282,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53733,6 +58305,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 48
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53753,6 +58328,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.04
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -53773,6 +58351,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53793,6 +58374,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.61
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53813,6 +58397,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -53833,6 +58420,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.17
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -53853,6 +58443,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -53873,6 +58466,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -53893,6 +58489,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 86.88
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -53913,6 +58512,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.6
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -53933,6 +58535,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.5
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -53953,6 +58558,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 204.16
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -53973,6 +58581,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -53993,6 +58604,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.62
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -54013,6 +58627,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -54033,6 +58650,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.8
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -54053,6 +58673,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 77.21
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -54073,6 +58696,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -54093,6 +58719,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -54113,6 +58742,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 109.2
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -54133,6 +58765,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -54153,6 +58788,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -54173,6 +58811,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 159.12
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -54193,6 +58834,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54213,6 +58857,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54233,6 +58880,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -54253,6 +58903,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54273,6 +58926,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54293,6 +58949,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54313,6 +58972,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54333,6 +58995,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54353,6 +59018,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -54373,6 +59041,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -54393,6 +59064,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -54413,6 +59087,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114.25
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -54433,6 +59110,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 157.45
+    },
+    "quantidade": {
+      "2026-04": 143
     }
   },
   {
@@ -54453,6 +59133,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 355
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -54473,6 +59156,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 397.6
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -54493,6 +59179,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 497
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -54513,6 +59202,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 497
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -54533,6 +59225,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 596.4
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -54553,6 +59248,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 639
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -54573,6 +59271,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 639
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -54593,6 +59294,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.44
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -54613,6 +59317,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.25
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54633,6 +59340,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.8
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -54653,6 +59363,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.5
+    },
+    "quantidade": {
+      "2026-04": 55
     }
   },
   {
@@ -54673,6 +59386,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 259.35
+    },
+    "quantidade": {
+      "2026-04": 105
     }
   },
   {
@@ -54693,6 +59409,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -54713,6 +59432,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -54733,6 +59455,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.24
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -54753,6 +59478,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -54773,6 +59501,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 156
+    },
+    "quantidade": {
+      "2026-04": 39
     }
   },
   {
@@ -54793,6 +59524,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 360
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -54813,6 +59547,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54833,6 +59570,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54853,6 +59593,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.4
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -54873,6 +59616,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -54893,6 +59639,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.4
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -54913,6 +59662,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -54933,6 +59685,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.35
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -54953,6 +59708,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.17
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -54973,6 +59731,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 144.57
+    },
+    "quantidade": {
+      "2026-04": 31
     }
   },
   {
@@ -54993,6 +59754,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.66
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -55013,6 +59777,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.56
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -55033,6 +59800,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.7
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -55053,6 +59823,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -55073,6 +59846,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -55093,6 +59869,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55113,6 +59892,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55133,6 +59915,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55153,6 +59938,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -55173,6 +59961,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.4
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55193,6 +59984,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75.6
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55213,6 +60007,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -55233,6 +60030,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -55253,6 +60053,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 699.5
+    },
+    "quantidade": {
+      "2026-04": 350
     }
   },
   {
@@ -55273,6 +60076,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1172
+    },
+    "quantidade": {
+      "2026-04": 400
     }
   },
   {
@@ -55293,6 +60099,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 231
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -55313,6 +60122,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -55333,6 +60145,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.31
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -55353,6 +60168,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.08
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -55373,6 +60191,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.66
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -55393,6 +60214,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55413,6 +60237,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.92
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -55433,6 +60260,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -55453,6 +60283,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117.6
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55473,6 +60306,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.2
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55493,6 +60329,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1291.75
+    },
+    "quantidade": {
+      "2026-04": 27
     }
   },
   {
@@ -55513,6 +60352,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 47.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55533,6 +60375,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55553,6 +60398,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 176.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55573,6 +60421,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 189
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55593,6 +60444,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 189
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -55613,6 +60467,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55633,6 +60490,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -55653,6 +60513,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55673,6 +60536,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -55693,6 +60559,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55713,6 +60582,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55733,6 +60605,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55753,6 +60628,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -55773,6 +60651,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55793,6 +60674,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -55813,6 +60697,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 207.9
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55833,6 +60720,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 472.5
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -55853,6 +60743,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 529.2
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55873,6 +60766,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 793.8
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55893,6 +60789,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 850.5
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55913,6 +60812,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 850.5
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -55933,6 +60835,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 661.5
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55953,6 +60858,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 661.5
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -55973,6 +60881,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -55993,6 +60904,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -56013,6 +60927,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -56033,6 +60950,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 325
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -56053,6 +60973,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -56073,6 +60996,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -56093,6 +61019,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.2
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56113,6 +61042,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.200000000000003
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56133,6 +61065,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56153,6 +61088,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -56173,6 +61111,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -56193,6 +61134,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.60000000000001
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56213,6 +61157,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56233,6 +61180,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56253,6 +61203,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 134.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56273,6 +61226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 139.8
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -56293,6 +61249,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 163.6
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -56313,6 +61272,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6000000000000005
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56333,6 +61295,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -56353,6 +61318,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.799999999999997
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56373,6 +61341,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56393,6 +61364,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56413,6 +61387,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56433,6 +61410,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56453,6 +61433,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.9
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56473,6 +61456,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.9
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56493,6 +61479,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -56513,6 +61502,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -56533,6 +61525,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -56553,6 +61548,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -56573,6 +61571,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56593,6 +61594,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56613,6 +61617,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56633,6 +61640,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56653,6 +61663,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56673,6 +61686,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -56693,6 +61709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56713,6 +61732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56733,6 +61755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56753,6 +61778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56773,6 +61801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56793,6 +61824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56813,6 +61847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56833,6 +61870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56853,6 +61893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56873,6 +61916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56893,6 +61939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56913,6 +61962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -56933,6 +61985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.8
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56953,6 +62008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.800000000000004
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56973,6 +62031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.9
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -56993,6 +62054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.3
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -57013,6 +62077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -57033,6 +62100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 47.5
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -57053,6 +62123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57073,6 +62146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57093,6 +62169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -57113,6 +62192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -57133,6 +62215,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57153,6 +62238,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57173,6 +62261,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57193,6 +62284,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57213,6 +62307,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57233,6 +62330,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57253,6 +62353,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57273,6 +62376,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57293,6 +62399,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57313,6 +62422,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57333,6 +62445,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -57353,6 +62468,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -57373,6 +62491,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 142.45
+    },
+    "quantidade": {
+      "2026-04": 55
     }
   },
   {
@@ -57393,6 +62514,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 213
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57413,6 +62537,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57433,6 +62560,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.3000000000000003
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57453,6 +62583,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.62
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57473,6 +62606,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57493,6 +62629,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.399999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57513,6 +62652,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57533,6 +62675,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.5
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57553,6 +62698,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57573,6 +62721,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -57593,6 +62744,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -57613,6 +62767,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -57633,6 +62790,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.79
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57653,6 +62813,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.45
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -57673,6 +62836,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.64
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -57693,6 +62859,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.8
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -57713,6 +62882,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.39
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57733,6 +62905,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57753,6 +62928,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -57773,6 +62951,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57793,6 +62974,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57813,6 +62997,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 78.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -57833,6 +63020,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -57853,6 +63043,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2922
+    },
+    "quantidade": {
+      "2026-04": 150
     }
   },
   {
@@ -57873,6 +63066,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -11.440000000000001
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -57893,6 +63089,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -57913,6 +63112,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -57933,6 +63135,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57953,6 +63158,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57973,6 +63181,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -57993,6 +63204,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -58013,6 +63227,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58033,6 +63250,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58053,6 +63273,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58073,6 +63296,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58093,6 +63319,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58113,6 +63342,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58133,6 +63365,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58153,6 +63388,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58173,6 +63411,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58193,6 +63434,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.16
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58213,6 +63457,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58233,6 +63480,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58253,6 +63503,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58273,6 +63526,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58293,6 +63549,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58313,6 +63572,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58333,6 +63595,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -58353,6 +63618,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58373,6 +63641,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58393,6 +63664,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58413,6 +63687,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58433,6 +63710,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.5
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -58453,6 +63733,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -58473,6 +63756,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.41
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -58493,6 +63779,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.2
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58513,6 +63802,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.95
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -58533,6 +63825,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58553,6 +63848,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58573,6 +63871,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58593,6 +63894,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58613,6 +63917,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.9
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58633,6 +63940,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.8
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -58653,6 +63963,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72.8
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -58673,6 +63986,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 222.75
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -58693,6 +64009,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58713,6 +64032,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58733,6 +64055,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58753,6 +64078,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58773,6 +64101,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58793,6 +64124,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58813,6 +64147,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58833,6 +64170,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58853,6 +64193,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.72
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58873,6 +64216,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.19
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58893,6 +64239,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.85
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -58913,6 +64262,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -58933,6 +64285,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -58953,6 +64308,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -58973,6 +64331,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2360
+    },
+    "quantidade": {
+      "2026-04": 244
     }
   },
   {
@@ -58993,6 +64354,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 246.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -59013,6 +64377,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 252.8
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -59033,6 +64400,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59053,6 +64423,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 155
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -59073,6 +64446,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59093,6 +64469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59113,6 +64492,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59133,6 +64515,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59153,6 +64538,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 133.88
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59173,6 +64561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 141.48
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59193,6 +64584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 83.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59213,6 +64607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59233,6 +64630,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 86.8
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -59253,6 +64653,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -59273,6 +64676,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.43
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59293,6 +64699,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.69
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59313,6 +64722,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.88
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59333,6 +64745,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59353,6 +64768,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.91
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59373,6 +64791,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59393,6 +64814,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.49
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59413,6 +64837,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.94
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -59433,6 +64860,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 200.82
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -59453,6 +64883,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.21
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -59473,6 +64906,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 965.46
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -59493,6 +64929,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 83.51
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59513,6 +64952,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 87.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59533,6 +64975,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.76
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59553,6 +64998,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 163.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59573,6 +65021,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59593,6 +65044,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 310
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -59633,6 +65087,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59653,6 +65110,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59673,6 +65133,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.34
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -59693,6 +65156,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 162
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -59713,6 +65179,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.68
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -59733,6 +65202,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 349.75
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -59753,6 +65225,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3240
+    },
+    "quantidade": {
+      "2026-04": 180
     }
   },
   {
@@ -59773,6 +65248,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 282.75
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -59793,6 +65271,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 263.7
+    },
+    "quantidade": {
+      "2026-04": 90
     }
   },
   {
@@ -59813,6 +65294,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1167.46
+    },
+    "quantidade": {
+      "2026-04": 62
     }
   },
   {
@@ -59833,6 +65317,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 128.9
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -59853,6 +65340,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 145.73
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -59873,6 +65363,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 0.125
     }
   },
   {
@@ -59893,6 +65386,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 170
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59913,6 +65409,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -59933,6 +65432,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2250
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -59953,6 +65455,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2550
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -59973,6 +65478,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2550
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -59993,6 +65501,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.5
+    },
+    "quantidade": {
+      "2026-04": 35
     }
   },
   {
@@ -60013,6 +65524,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 208.9
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -60033,6 +65547,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 620
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -60053,6 +65570,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.24
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60073,6 +65593,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.7
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -60093,6 +65616,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -60113,6 +65639,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 366.1
+    },
+    "quantidade": {
+      "2026-04": 70
     }
   },
   {
@@ -60133,6 +65662,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.08
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -60153,6 +65685,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60173,6 +65708,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60193,6 +65731,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60213,6 +65754,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60233,6 +65777,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.7
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60253,6 +65800,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60273,6 +65823,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 229.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -60293,6 +65846,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60313,6 +65869,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.97
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60333,6 +65892,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60353,6 +65915,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.48
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60373,6 +65938,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60393,6 +65961,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60413,6 +65984,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.19
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60433,6 +66007,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60453,6 +66030,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.47
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60473,6 +66053,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60492,6 +66075,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "OFICINA",
     "orcado": {},
     "realizado": {
+      "2026-04": 2
+    },
+    "quantidade": {
       "2026-04": 2
     }
   },
@@ -60513,6 +66099,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 159.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -60533,6 +66122,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 450
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60553,6 +66145,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 243
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60573,6 +66168,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60593,6 +66191,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.53
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -60613,6 +66214,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -60633,6 +66237,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23.28
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -60653,6 +66260,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1020
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -61428,6 +67038,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1957.52
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -61448,6 +67061,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 579
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -61468,6 +67084,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 180
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61488,6 +67107,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 325
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61508,6 +67130,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 400
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -61528,6 +67153,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 315
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -61548,6 +67176,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 200
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61568,6 +67199,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2935
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61588,6 +67222,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2969.12
+    },
+    "quantidade": {
+      "2026-04": 109
     }
   },
   {
@@ -61641,6 +67278,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4720.68
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -61661,6 +67301,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 686.6600000000001
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -61681,6 +67324,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18679.109999999997
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -61701,6 +67347,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 374
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -61721,6 +67370,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2027-01": 145.3
+    },
+    "quantidade": {
+      "2027-01": 1
     }
   },
   {
@@ -61741,6 +67393,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1288.51
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -61761,6 +67416,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32576.31
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61781,6 +67439,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2237.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61801,6 +67462,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1803.26
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -61821,6 +67485,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 885.09
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61841,6 +67508,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.55
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61861,6 +67531,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 419.17
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61881,6 +67554,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3711.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61901,6 +67577,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 358.16
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61921,6 +67600,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 85.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61941,6 +67623,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112.47
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -61961,6 +67646,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -61981,6 +67669,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 190.53
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -62034,6 +67725,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 168677.25
+    },
+    "quantidade": {
+      "2026-04": 3325
     }
   },
   {
@@ -62054,6 +67748,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14430.000000000002
+    },
+    "quantidade": {
+      "2026-04": 250
     }
   },
   {
@@ -62074,6 +67771,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43509.8
+    },
+    "quantidade": {
+      "2026-04": 874
     }
   },
   {
@@ -62094,6 +67794,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1120.8
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -62114,6 +67817,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 463.68
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -62134,6 +67840,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25581.769999999997
+    },
+    "quantidade": {
+      "2026-04": 374
     }
   },
   {
@@ -62154,6 +67863,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16695
+    },
+    "quantidade": {
+      "2026-04": 318
     }
   },
   {
@@ -62174,6 +67886,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34697.92
+    },
+    "quantidade": {
+      "2026-04": 464
     }
   },
   {
@@ -62194,6 +67909,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44356
+    },
+    "quantidade": {
+      "2026-04": 650
     }
   },
   {
@@ -62214,6 +67932,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 73672.5
+    },
+    "quantidade": {
+      "2026-04": 1551
     }
   },
   {
@@ -62234,6 +67955,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4527.26
+    },
+    "quantidade": {
+      "2026-04": 106
     }
   },
   {
@@ -62254,6 +67978,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 815.0799999999999
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -62274,6 +68001,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75.33
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -62294,6 +68024,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 116.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -62314,6 +68047,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112499.86
+    },
+    "quantidade": {
+      "2026-04": 1826
     }
   },
   {
@@ -62334,6 +68070,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 156799.68
+    },
+    "quantidade": {
+      "2026-04": 4206
     }
   },
   {
@@ -62354,6 +68093,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9841.6
+    },
+    "quantidade": {
+      "2026-04": 160
     }
   },
   {
@@ -62374,6 +68116,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 288.3
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -62394,6 +68139,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40254.659999999996
+    },
+    "quantidade": {
+      "2026-04": 783
     }
   },
   {
@@ -62414,6 +68162,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61532.86
+    },
+    "quantidade": {
+      "2026-04": 361958
     }
   },
   {
@@ -62434,6 +68185,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 198648.72
+    },
+    "quantidade": {
+      "2026-04": 91967
     }
   },
   {
@@ -62454,6 +68208,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 198880.77
+    },
+    "quantidade": {
+      "2026-04": 288233
     }
   },
   {
@@ -62474,6 +68231,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 387669.7
+    },
+    "quantidade": {
+      "2026-04": 352427
     }
   },
   {
@@ -62494,6 +68254,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 419518.56
+    },
+    "quantidade": {
+      "2026-04": 511608
     }
   },
   {
@@ -62514,6 +68277,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 539529.57
+    },
+    "quantidade": {
+      "2026-04": 606213
     }
   },
   {
@@ -62534,6 +68300,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 628076.92
+    },
+    "quantidade": {
+      "2026-04": 730322
     }
   },
   {
@@ -62554,6 +68323,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 676996.32
+    },
+    "quantidade": {
+      "2026-04": 236712
     }
   },
   {
@@ -62574,6 +68346,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 259.47
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -62594,6 +68369,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -8169.12
+    },
+    "quantidade": {
+      "2026-04": 1098
     }
   },
   {
@@ -62614,6 +68392,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -5541.24
+    },
+    "quantidade": {
+      "2026-04": 1514
     }
   },
   {
@@ -62634,6 +68415,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -62654,6 +68438,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3594.5
+    },
+    "quantidade": {
+      "2026-04": 350
     }
   },
   {
@@ -62674,6 +68461,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1407
+    },
+    "quantidade": {
+      "2026-04": 525
     }
   },
   {
@@ -62694,6 +68484,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 308
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -62714,6 +68507,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1156.25
+    },
+    "quantidade": {
+      "2026-04": 125
     }
   },
   {
@@ -62734,6 +68530,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2730
+    },
+    "quantidade": {
+      "2026-04": 2275
     }
   },
   {
@@ -62754,6 +68553,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 370
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -62774,6 +68576,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 382.5
+    },
+    "quantidade": {
+      "2026-04": 225
     }
   },
   {
@@ -62794,6 +68599,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11808
+    },
+    "quantidade": {
+      "2026-04": 1200
     }
   },
   {
@@ -62814,6 +68622,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3841.2
+    },
+    "quantidade": {
+      "2026-04": 1940
     }
   },
   {
@@ -62834,6 +68645,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 619.5
+    },
+    "quantidade": {
+      "2026-04": 350
     }
   },
   {
@@ -62854,6 +68668,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1560
+    },
+    "quantidade": {
+      "2026-04": 650
     }
   },
   {
@@ -62874,6 +68691,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12783.6
+    },
+    "quantidade": {
+      "2026-04": 1060
     }
   },
   {
@@ -62894,6 +68714,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32048
+    },
+    "quantidade": {
+      "2026-04": 3600
     }
   },
   {
@@ -62914,6 +68737,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 137.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -62934,6 +68760,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2314
+    },
+    "quantidade": {
+      "2026-04": 650
     }
   },
   {
@@ -62954,6 +68783,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2109.4700000000003
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -62974,6 +68806,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 917.4000000000001
+    },
+    "quantidade": {
+      "2026-04": 22
     }
   },
   {
@@ -62994,6 +68829,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.87
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63014,6 +68852,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.4
+    },
+    "quantidade": {
+      "2026-04": 184
     }
   },
   {
@@ -63034,6 +68875,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.08
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -63054,6 +68898,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.94
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -63074,6 +68921,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 637
+    },
+    "quantidade": {
+      "2026-04": 364
     }
   },
   {
@@ -63094,6 +68944,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.11
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63114,6 +68967,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 639.21
+    },
+    "quantidade": {
+      "2026-04": 39
     }
   },
   {
@@ -63134,6 +68990,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 528.51
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63154,6 +69013,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3469.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -63174,6 +69036,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.46
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63194,6 +69059,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63214,6 +69082,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3049.5
+    },
+    "quantidade": {
+      "2026-04": 1425
     }
   },
   {
@@ -63234,6 +69105,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 792.36
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63254,6 +69128,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4221.799999999999
+    },
+    "quantidade": {
+      "2026-04": 101
     }
   },
   {
@@ -63274,6 +69151,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1728.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -63294,6 +69174,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6708.45
+    },
+    "quantidade": {
+      "2026-04": 35
     }
   },
   {
@@ -63314,6 +69197,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 432.2
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -63334,6 +69220,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -63354,6 +69243,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 432
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -63374,6 +69266,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 767.32
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -63394,6 +69289,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1779.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -63414,6 +69312,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 981.2
+    },
+    "quantidade": {
+      "2026-04": 220
     }
   },
   {
@@ -63434,6 +69335,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.38
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63454,6 +69358,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63474,6 +69381,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.98
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -63494,6 +69404,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 135
+    },
+    "quantidade": {
+      "2026-04": 225
     }
   },
   {
@@ -63514,6 +69427,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 250.14
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -63534,6 +69450,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10826.5
+    },
+    "quantidade": {
+      "2026-04": 2950
     }
   },
   {
@@ -63554,6 +69473,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63574,6 +69496,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -63594,6 +69519,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.86
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63614,6 +69542,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.92
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -63634,6 +69565,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.42999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63654,6 +69588,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.17
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63674,6 +69611,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.04
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -63694,6 +69634,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63714,6 +69657,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.4
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -63734,6 +69680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36.85
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -63754,6 +69703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 97.51
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63774,6 +69726,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 136.26
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63794,6 +69749,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.86
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -63814,6 +69772,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -63834,6 +69795,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.24
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -63854,6 +69818,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 484.96
+    },
+    "quantidade": {
+      "2026-04": 55
     }
   },
   {
@@ -63874,6 +69841,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64.35
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -63894,6 +69864,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 252.63
+    },
+    "quantidade": {
+      "2026-04": 37
     }
   },
   {
@@ -63914,6 +69887,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 191.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63934,6 +69910,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2057.88
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -63954,6 +69933,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -63974,6 +69956,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.39
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -63994,6 +69979,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.23
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -64014,6 +70002,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.16
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -64034,6 +70025,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.12
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -64054,6 +70048,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 270.9
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -64074,6 +70071,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 174.6
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -64094,6 +70094,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.93
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -64114,6 +70117,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.35
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -64134,6 +70140,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -64154,6 +70163,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -64174,6 +70186,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 132.75
+    },
+    "quantidade": {
+      "2026-04": 225
     }
   },
   {
@@ -64194,6 +70209,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 990
+    },
+    "quantidade": {
+      "2026-04": 450
     }
   },
   {
@@ -64214,6 +70232,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -64234,6 +70255,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 872
+    },
+    "quantidade": {
+      "2026-04": 400
     }
   },
   {
@@ -64254,6 +70278,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 892
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -64274,6 +70301,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 429.3
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -64294,6 +70324,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 958.65
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -64314,6 +70347,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -64334,6 +70370,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -64354,6 +70393,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 158.4
+    },
+    "quantidade": {
+      "2026-04": 96
     }
   },
   {
@@ -64374,6 +70416,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.01
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -64394,6 +70439,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 440.67999999999995
+    },
+    "quantidade": {
+      "2026-04": 23
     }
   },
   {
@@ -64414,6 +70462,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 445.4
+    },
+    "quantidade": {
+      "2026-04": 68
     }
   },
   {
@@ -64434,6 +70485,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 830
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -64454,6 +70508,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1126.98
+    },
+    "quantidade": {
+      "2026-04": 54
     }
   },
   {
@@ -64474,6 +70531,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 753.6
+    },
+    "quantidade": {
+      "2026-04": 96
     }
   },
   {
@@ -64494,6 +70554,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1477.1100000000001
+    },
+    "quantidade": {
+      "2026-04": 157
     }
   },
   {
@@ -64514,6 +70577,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13884.24
+    },
+    "quantidade": {
+      "2026-04": 102
     }
   },
   {
@@ -64534,6 +70600,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13046.399999999998
+    },
+    "quantidade": {
+      "2026-04": 6040
     }
   },
   {
@@ -64554,6 +70623,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32039.64
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -64574,6 +70646,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55565.16
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -64594,6 +70669,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32989.2
+    },
+    "quantidade": {
+      "2026-04": 148
     }
   },
   {
@@ -64614,6 +70692,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1756.5
+    },
+    "quantidade": {
+      "2026-04": 2975
     }
   },
   {
@@ -64634,6 +70715,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12453.1
+    },
+    "quantidade": {
+      "2026-04": 3670
     }
   },
   {
@@ -64654,6 +70738,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 200
     }
   },
   {
@@ -64674,6 +70761,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.7
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -64694,6 +70784,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 255.04
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -64714,6 +70807,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 164.7
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -64734,6 +70830,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 103.47
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -64754,6 +70853,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -64774,6 +70876,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.72
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -64794,6 +70899,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 109.55000000000001
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -64814,6 +70922,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.74
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -64834,6 +70945,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40.08
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -64854,6 +70968,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 353.70000000000005
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -64874,6 +70991,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 588
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -64894,6 +71014,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 115.76
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -64914,6 +71037,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130.2
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -64934,6 +71060,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 186.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -64954,6 +71083,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1574.52
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -64974,6 +71106,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3469.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -64994,6 +71129,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 635.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -65014,6 +71152,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -65034,6 +71175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.63
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -65054,6 +71198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 137.96
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -65074,6 +71221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 208.4
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -65094,6 +71244,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 216.84
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -65114,6 +71267,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1815.2
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -65134,6 +71290,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 828.9
+    },
+    "quantidade": {
+      "2026-04": 45
     }
   },
   {
@@ -65154,6 +71313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 957.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -65174,6 +71336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1855.92
+    },
+    "quantidade": {
+      "2026-04": 44
     }
   },
   {
@@ -65194,6 +71359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1938.21
+    },
+    "quantidade": {
+      "2026-04": 69
     }
   },
   {
@@ -65214,6 +71382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2032.8
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -65234,6 +71405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2554.92
+    },
+    "quantidade": {
+      "2026-04": 47
     }
   },
   {
@@ -65254,6 +71428,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3557
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -65274,6 +71451,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4954.95
+    },
+    "quantidade": {
+      "2026-04": 91
     }
   },
   {
@@ -65294,6 +71474,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 390.6
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65314,6 +71497,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 398.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65334,6 +71520,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 406.2
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65354,6 +71543,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 416
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65374,6 +71566,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 417.6
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65394,6 +71589,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 470
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65414,6 +71612,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 476
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65434,6 +71635,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 493.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65454,6 +71658,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 609.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65474,6 +71681,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 688.6
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65494,6 +71704,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 726.4
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -65514,6 +71727,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 753.4
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65534,6 +71750,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 784
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -65554,6 +71773,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 800
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65574,6 +71796,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 889.2
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -65594,6 +71819,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 970.2
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -65614,6 +71842,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 987.6
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -65634,6 +71865,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1089
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -65654,6 +71888,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1110.72
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -65674,6 +71911,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1165.2
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65694,6 +71934,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1299
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65714,6 +71957,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1350
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65734,6 +71980,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1361.4
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65754,6 +72003,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1414.8
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65774,6 +72026,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1448.4
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -65794,6 +72049,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1481.4
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65814,6 +72072,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1481.4
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65834,6 +72095,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1681.8
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -65854,6 +72118,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1800
+    },
+    "quantidade": {
+      "2026-04": 80
     }
   },
   {
@@ -65874,6 +72141,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1815
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -65894,6 +72164,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2019.5
+    },
+    "quantidade": {
+      "2026-04": 70
     }
   },
   {
@@ -65914,6 +72187,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2268.25
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -65934,6 +72210,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2450.88
+    },
+    "quantidade": {
+      "2026-04": 92
     }
   },
   {
@@ -65954,6 +72233,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2552.58
+    },
+    "quantidade": {
+      "2026-04": 87
     }
   },
   {
@@ -65974,6 +72256,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2758.8
+    },
+    "quantidade": {
+      "2026-04": 110
     }
   },
   {
@@ -65994,6 +72279,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2962.8
+    },
+    "quantidade": {
+      "2026-04": 120
     }
   },
   {
@@ -66014,6 +72302,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3167
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -66034,6 +72325,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3476.8
+    },
+    "quantidade": {
+      "2026-04": 160
     }
   },
   {
@@ -66054,6 +72348,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3934.92
+    },
+    "quantidade": {
+      "2026-04": 132
     }
   },
   {
@@ -66074,6 +72371,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3939.6
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -66094,6 +72394,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3950.4
+    },
+    "quantidade": {
+      "2026-04": 160
     }
   },
   {
@@ -66114,6 +72417,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3950.4
+    },
+    "quantidade": {
+      "2026-04": 160
     }
   },
   {
@@ -66134,6 +72440,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4444.2
+    },
+    "quantidade": {
+      "2026-04": 180
     }
   },
   {
@@ -66154,6 +72463,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5172
+    },
+    "quantidade": {
+      "2026-04": 300
     }
   },
   {
@@ -66174,6 +72486,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20410.54
+    },
+    "quantidade": {
+      "2026-04": 173
     }
   },
   {
@@ -66194,6 +72509,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 850
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -66214,6 +72532,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 698.39
+    },
+    "quantidade": {
+      "2026-04": 77
     }
   },
   {
@@ -66234,6 +72555,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -66254,6 +72578,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -66274,6 +72601,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1879.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -66294,6 +72624,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1879.8
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -66314,6 +72647,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14250
+    },
+    "quantidade": {
+      "2026-04": 60000
     }
   },
   {
@@ -66334,6 +72670,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 166.2
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -66354,6 +72693,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 490
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -66374,6 +72716,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 774.58
+    },
+    "quantidade": {
+      "2026-04": 65.2
     }
   },
   {
@@ -66394,6 +72739,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 0.08
+    },
+    "quantidade": {
+      "2026-04": 0.003
     }
   },
   {
@@ -66414,6 +72762,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.8
+    },
+    "quantidade": {
+      "2026-04": 1.215
     }
   },
   {
@@ -66434,6 +72785,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3089.92
+    },
+    "quantidade": {
+      "2026-04": 363.52
     }
   },
   {
@@ -66454,6 +72808,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2176.2
+    },
+    "quantidade": {
+      "2026-04": 195
     }
   },
   {
@@ -66474,6 +72831,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2365
+    },
+    "quantidade": {
+      "2026-04": 500
     }
   },
   {
@@ -66494,6 +72854,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2387.25
+    },
+    "quantidade": {
+      "2026-04": 75
     }
   },
   {
@@ -66514,6 +72877,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3423.12
+    },
+    "quantidade": {
+      "2026-04": 204
     }
   },
   {
@@ -66534,6 +72900,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5227.52
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -66554,6 +72923,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16320
+    },
+    "quantidade": {
+      "2026-04": 4000
     }
   },
   {
@@ -66574,6 +72946,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43344
+    },
+    "quantidade": {
+      "2026-04": 25200
     }
   },
   {
@@ -66594,6 +72969,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 136400
+    },
+    "quantidade": {
+      "2026-04": 44000
     }
   },
   {
@@ -66614,6 +72992,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -67.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -66634,6 +73015,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114.46000000000001
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -66654,6 +73038,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.46
+    },
+    "quantidade": {
+      "2026-04": 5.2
     }
   },
   {
@@ -66674,6 +73061,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 565.6
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -66694,6 +73084,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60234.4
+    },
+    "quantidade": {
+      "2026-04": 680
     }
   },
   {
@@ -66714,6 +73107,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10629.6
+    },
+    "quantidade": {
+      "2026-04": 120
     }
   },
   {
@@ -66734,6 +73130,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 588.8
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -66754,6 +73153,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.050000000000004
+    },
+    "quantidade": {
+      "2026-04": 1.3
     }
   },
   {
@@ -66774,6 +73176,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2657.6
+    },
+    "quantidade": {
+      "2026-04": 80
     }
   },
   {
@@ -66794,6 +73199,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3148
+    },
+    "quantidade": {
+      "2026-04": 80
     }
   },
   {
@@ -66814,6 +73222,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5443.2
+    },
+    "quantidade": {
+      "2026-04": 360
     }
   },
   {
@@ -66834,6 +73245,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18589.2
+    },
+    "quantidade": {
+      "2026-04": 840
     }
   },
   {
@@ -66854,6 +73268,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5400
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -66874,6 +73291,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -66894,6 +73314,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1833.7
+    },
+    "quantidade": {
+      "2026-04": 70
     }
   },
   {
@@ -66914,6 +73337,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2975.28
+    },
+    "quantidade": {
+      "2026-04": 117
     }
   },
   {
@@ -66934,6 +73360,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 214.65
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -66954,6 +73383,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7926.1
+    },
+    "quantidade": {
+      "2026-04": 455
     }
   },
   {
@@ -66974,6 +73406,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12057.06
+    },
+    "quantidade": {
+      "2026-04": 23
     }
   },
   {
@@ -66994,6 +73429,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 608
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -67014,6 +73452,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4785
+    },
+    "quantidade": {
+      "2026-04": 150
     }
   },
   {
@@ -67034,6 +73475,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7237.39
+    },
+    "quantidade": {
+      "2026-04": 17.73
     }
   },
   {
@@ -67054,6 +73498,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9767.7
+    },
+    "quantidade": {
+      "2026-04": 30
     }
   },
   {
@@ -67074,6 +73521,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 883.5
+    },
+    "quantidade": {
+      "2026-04": 31
     }
   },
   {
@@ -67094,6 +73544,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 561.96
+    },
+    "quantidade": {
+      "2026-04": 21.23
     }
   },
   {
@@ -67114,6 +73567,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.56
+    },
+    "quantidade": {
+      "2026-04": 1.03
     }
   },
   {
@@ -67134,6 +73590,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112.8
+    },
+    "quantidade": {
+      "2026-04": 3.76
     }
   },
   {
@@ -67154,6 +73613,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 267.69
+    },
+    "quantidade": {
+      "2026-04": 3.15
     }
   },
   {
@@ -67174,6 +73636,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 715.02
+    },
+    "quantidade": {
+      "2026-04": 26.22
     }
   },
   {
@@ -67194,6 +73659,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6072.49
+    },
+    "quantidade": {
+      "2026-04": 23.22
     }
   },
   {
@@ -67214,6 +73682,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5286.85
+    },
+    "quantidade": {
+      "2026-04": 112.75
     }
   },
   {
@@ -67234,6 +73705,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 383.08000000000004
+    },
+    "quantidade": {
+      "2026-04": 20.215
     }
   },
   {
@@ -67254,6 +73728,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2137.7
+    },
+    "quantidade": {
+      "2026-04": 78.39
     }
   },
   {
@@ -67274,6 +73751,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8062.13
+    },
+    "quantidade": {
+      "2026-04": 75.886
     }
   },
   {
@@ -67294,6 +73774,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 815
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -67314,6 +73797,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.42
+    },
+    "quantidade": {
+      "2026-04": 2.608
     }
   },
   {
@@ -67334,6 +73820,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 317.64
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -67354,6 +73843,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 200.48
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -67374,6 +73866,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 202.86
+    },
+    "quantidade": {
+      "2026-04": 10.705
     }
   },
   {
@@ -67394,6 +73889,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 538.68
+    },
+    "quantidade": {
+      "2026-04": 30.87
     }
   },
   {
@@ -67414,6 +73912,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1141.29
+    },
+    "quantidade": {
+      "2026-04": 81
     }
   },
   {
@@ -67434,6 +73935,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107.94
+    },
+    "quantidade": {
+      "2026-04": 5.696
     }
   },
   {
@@ -67454,6 +73958,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 780.05
+    },
+    "quantidade": {
+      "2026-04": 15.001
     }
   },
   {
@@ -67474,6 +73981,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6890
+    },
+    "quantidade": {
+      "2026-04": 260
     }
   },
   {
@@ -67494,6 +74004,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12830.69
+    },
+    "quantidade": {
+      "2026-04": 93.6
     }
   },
   {
@@ -67514,6 +74027,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3484.8
+    },
+    "quantidade": {
+      "2026-04": 180
     }
   },
   {
@@ -67534,6 +74050,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 418.11999999999995
+    },
+    "quantidade": {
+      "2026-04": 1.1239999999999999
     }
   },
   {
@@ -67554,6 +74073,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2383.8
+    },
+    "quantidade": {
+      "2026-04": 60
     }
   },
   {
@@ -67574,6 +74096,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1335.6899999999998
+    },
+    "quantidade": {
+      "2026-04": 40.5
     }
   },
   {
@@ -67594,6 +74119,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2040
+    },
+    "quantidade": {
+      "2026-04": 100
     }
   },
   {
@@ -67614,6 +74142,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5449.87
+    },
+    "quantidade": {
+      "2026-04": 227
     }
   },
   {
@@ -67634,6 +74165,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4960.700000000001
+    },
+    "quantidade": {
+      "2026-04": 34.5
     }
   },
   {
@@ -67654,6 +74188,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": -961
+    },
+    "quantidade": {
+      "2026-04": 160
     }
   },
   {
@@ -67674,6 +74211,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 170.16
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -67694,6 +74234,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 340.32
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -67714,6 +74257,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31080.57
+    },
+    "quantidade": {
+      "2026-04": 216.23000000000002
     }
   },
   {
@@ -67734,6 +74280,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.58
+    },
+    "quantidade": {
+      "2026-04": 1.449
     }
   },
   {
@@ -67754,6 +74303,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.29
+    },
+    "quantidade": {
+      "2026-04": 0.33999999999999997
     }
   },
   {
@@ -67774,6 +74326,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 408
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -67794,6 +74349,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 693.6
+    },
+    "quantidade": {
+      "2026-04": 34
     }
   },
   {
@@ -67814,6 +74372,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 302.56
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -67834,6 +74395,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 560.34
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -68016,6 +74580,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68036,6 +74603,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68056,6 +74626,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1220.5
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -68076,6 +74649,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.44
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68096,6 +74672,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68116,6 +74695,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68189,6 +74771,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 75
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68209,6 +74794,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.74
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68229,6 +74817,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.36
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -68249,6 +74840,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.68
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68269,6 +74863,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68289,6 +74886,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 69.53
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68309,6 +74909,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.53
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68329,6 +74932,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.17
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68349,6 +74955,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.98
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68369,6 +74978,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 62.62
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68389,6 +75001,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.76
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68409,6 +75024,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68429,6 +75047,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68449,6 +75070,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 43.8
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68469,6 +75093,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 316.70000000000005
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -68489,6 +75116,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68509,6 +75139,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 463.68
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -68529,6 +75162,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.94
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68549,6 +75185,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.879999999999995
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -68569,6 +75208,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.88
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68589,6 +75231,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.86
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68609,6 +75254,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -68629,6 +75277,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.29
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68649,6 +75300,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68669,6 +75323,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.69999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68689,6 +75346,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68709,6 +75369,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 271.5
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -68729,6 +75392,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147.60000000000002
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68749,6 +75415,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 149.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68769,6 +75438,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.04
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68789,6 +75461,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114.28
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68809,6 +75484,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 783.12
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -68829,6 +75507,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68849,6 +75530,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.44
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68869,6 +75553,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.46
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68889,6 +75576,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.76
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -68909,6 +75599,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.2
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -68929,6 +75622,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.349999999999998
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -68949,6 +75645,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.690000000000005
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -68969,6 +75668,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.46
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -68989,6 +75691,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.3
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -69009,6 +75714,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 152.66000000000003
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -69029,6 +75737,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69049,6 +75760,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69069,6 +75783,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 42.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69089,6 +75806,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 163.16
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69109,6 +75829,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.52
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69129,6 +75852,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 102.10000000000001
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -69149,6 +75875,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.48
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -69169,6 +75898,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.31
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -69189,6 +75921,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195.78000000000003
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -69209,6 +75944,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.350000000000001
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -69229,6 +75967,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.26
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69249,6 +75990,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.26
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69269,6 +76013,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69289,6 +76036,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 86.83
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69309,6 +76059,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69329,6 +76082,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107.99
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69349,6 +76105,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.04
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69369,6 +76128,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69389,6 +76151,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.74
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69409,6 +76174,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.94
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69429,6 +76197,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 245.3
+    },
+    "quantidade": {
+      "2026-04": 223
     }
   },
   {
@@ -69449,6 +76220,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69469,6 +76243,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69489,6 +76266,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69509,6 +76289,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 78.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69529,6 +76312,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69549,6 +76335,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69569,6 +76358,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69589,6 +76381,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 192.38
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69609,6 +76404,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 288.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69629,6 +76427,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 322.84000000000003
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69649,6 +76450,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 304
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69669,6 +76473,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 379.24
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69689,6 +76496,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 380
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69709,6 +76519,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 683.8299999999999
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69729,6 +76542,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 499.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69749,6 +76565,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 667.42
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69769,6 +76588,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69789,6 +76611,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69809,6 +76634,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69829,6 +76657,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 100.9
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69849,6 +76680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1691.4299999999998
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69869,6 +76703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 301.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69889,6 +76726,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69909,6 +76749,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69929,6 +76772,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 352.24
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69949,6 +76795,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 337.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -69969,6 +76818,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 400.79999999999995
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -69989,6 +76841,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 415.92
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70009,6 +76864,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 866.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70029,6 +76887,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 549.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70049,6 +76910,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 549.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70069,6 +76933,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.14
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70089,6 +76956,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.32
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70109,6 +76979,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 109
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70129,6 +77002,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 109
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70149,6 +77025,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 278
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70169,6 +77048,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 278
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70189,6 +77071,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -70209,6 +77094,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 455.16
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -70229,6 +77117,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 71.09
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70249,6 +77140,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 273.6
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -70269,6 +77163,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1516.8
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -70289,6 +77186,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 401.84
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -70309,6 +77209,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 354.88000000000005
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -70329,6 +77232,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1601.6899999999991
+    },
+    "quantidade": {
+      "2026-04": 47
     }
   },
   {
@@ -70349,6 +77255,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.64
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70369,6 +77278,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1195.9600000000003
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -70389,6 +77301,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 454.1400000000001
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -70409,6 +77324,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96.52999999999996
+    },
+    "quantidade": {
+      "2026-04": 25
     }
   },
   {
@@ -70429,6 +77347,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.66
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -70449,6 +77370,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81.77
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -70469,6 +77393,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 129.21
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -70489,6 +77416,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 196.38999999999996
+    },
+    "quantidade": {
+      "2026-04": 22
     }
   },
   {
@@ -70509,6 +77439,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1370.7300000000005
+    },
+    "quantidade": {
+      "2026-04": 34
     }
   },
   {
@@ -70529,6 +77462,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 800.0900000000001
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -70549,6 +77485,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 647.3200000000002
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -70569,6 +77508,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 613.1999999999999
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -70589,6 +77531,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 538.32
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -70609,6 +77554,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 589.29
+    },
+    "quantidade": {
+      "2026-04": 13
     }
   },
   {
@@ -70629,6 +77577,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1022.17
+    },
+    "quantidade": {
+      "2026-04": 23
     }
   },
   {
@@ -70649,6 +77600,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105.94
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70669,6 +77623,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 158.76999999999998
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70689,6 +77646,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 179.56
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70709,6 +77669,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82
+    },
+    "quantidade": {
+      "2026-04": 50
     }
   },
   {
@@ -70729,6 +77692,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 375.6899999999998
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -70749,6 +77715,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 93.38999999999999
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -70769,6 +77738,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 760.3799999999999
+    },
+    "quantidade": {
+      "2026-04": 19
     }
   },
   {
@@ -70789,6 +77761,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -70809,6 +77784,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.27
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70829,6 +77807,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -70849,6 +77830,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 143.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -70869,6 +77853,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 285.27
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -70889,6 +77876,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -70909,6 +77899,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 248.34000000000006
+    },
+    "quantidade": {
+      "2026-04": 34
     }
   },
   {
@@ -70929,6 +77922,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 68.69999999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -70949,6 +77945,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 101.84
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -70969,6 +77968,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 213.54000000000002
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -70989,6 +77991,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.44
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -71009,6 +78014,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 53.88
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -71029,6 +78037,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.92
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -71049,6 +78060,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1878.8099999999988
+    },
+    "quantidade": {
+      "2026-04": 41
     }
   },
   {
@@ -71069,6 +78083,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.599999999999998
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71089,6 +78106,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 99.15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71109,6 +78129,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 73.07
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71129,6 +78152,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 144.99
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71149,6 +78175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 336.72
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -71169,6 +78198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71189,6 +78221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 393.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -71209,6 +78244,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 288.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -71229,6 +78267,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 603.36
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -71249,6 +78290,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 222.83999999999995
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -71269,6 +78313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 235.53000000000003
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71289,6 +78336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.82
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71309,6 +78359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71329,6 +78382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.85
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71349,6 +78405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.51
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71369,6 +78428,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.03
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71389,6 +78451,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 76.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71409,6 +78474,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147.98000000000002
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -71429,6 +78497,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1102.8
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -71449,6 +78520,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 492
+    },
+    "quantidade": {
+      "2026-04": 300
     }
   },
   {
@@ -71469,6 +78543,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 294.08
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -71489,6 +78566,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 603.65
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -71509,6 +78589,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 497.72
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -71529,6 +78612,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71549,6 +78635,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.94
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71569,6 +78658,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.58
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -71589,6 +78681,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.56
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -71609,6 +78704,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.36
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71629,6 +78727,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.36
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -71649,6 +78750,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71669,6 +78773,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.06
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71689,6 +78796,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 306
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71709,6 +78819,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.98
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71729,6 +78842,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.79
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71749,6 +78865,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.06
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -71769,6 +78888,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.18
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -71789,6 +78911,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 17.96
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -71809,6 +78934,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 150
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71829,6 +78957,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.89
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71849,6 +78980,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 124.24
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71869,6 +79003,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 126.96
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71889,6 +79026,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81.58
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71909,6 +79049,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.95
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71929,6 +79072,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.93
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71949,6 +79095,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.98
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71969,6 +79118,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.79
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -71989,6 +79141,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.86
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72009,6 +79164,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 282.27
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72049,6 +79207,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 484.15
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72069,6 +79230,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72089,6 +79253,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56.25
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72127,6 +79294,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 618.75
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -72147,6 +79317,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.07
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72167,6 +79340,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.06
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72187,6 +79363,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1603.2
+    },
+    "quantidade": {
+      "2026-04": 1002
     }
   },
   {
@@ -72207,6 +79386,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 297.5
+    },
+    "quantidade": {
+      "2026-04": 175
     }
   },
   {
@@ -72227,6 +79409,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1197
+    },
+    "quantidade": {
+      "2026-04": 665
     }
   },
   {
@@ -72247,6 +79432,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1091.05
+    },
+    "quantidade": {
+      "2026-04": 11
     }
   },
   {
@@ -72267,6 +79455,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 512.3299999999999
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -72287,6 +79478,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1192
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -72307,6 +79501,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 379.59999999999997
+    },
+    "quantidade": {
+      "2026-04": 136
     }
   },
   {
@@ -72327,6 +79524,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 736.32
+    },
+    "quantidade": {
+      "2026-04": 98
     }
   },
   {
@@ -72346,6 +79546,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUARIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 117
+    },
+    "quantidade": {
       "2026-04": 117
     }
   },
@@ -72367,6 +79570,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112
+    },
+    "quantidade": {
+      "2026-04": 140
     }
   },
   {
@@ -72387,6 +79593,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72407,6 +79616,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72427,6 +79639,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72447,6 +79662,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72467,6 +79685,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72487,6 +79708,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72507,6 +79731,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72527,6 +79754,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72547,6 +79777,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72567,6 +79800,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -72587,6 +79823,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72607,6 +79846,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72627,6 +79869,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72647,6 +79892,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72667,6 +79915,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72687,6 +79938,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72707,6 +79961,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72727,6 +79984,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72747,6 +80007,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72767,6 +80030,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72787,6 +80053,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -72807,6 +80076,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72827,6 +80099,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -72847,6 +80122,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72867,6 +80145,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -72887,6 +80168,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72907,6 +80191,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -72927,6 +80214,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -72947,6 +80237,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -72967,6 +80260,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -72987,6 +80283,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -73007,6 +80306,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73027,6 +80329,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73047,6 +80352,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73067,6 +80375,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73087,6 +80398,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73107,6 +80421,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73127,6 +80444,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73147,6 +80467,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73167,6 +80490,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73187,6 +80513,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73207,6 +80536,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73227,6 +80559,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73247,6 +80582,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73267,6 +80605,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73287,6 +80628,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73307,6 +80651,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73327,6 +80674,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 34.92
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -73347,6 +80697,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73367,6 +80720,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73387,6 +80743,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73407,6 +80766,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -73427,6 +80789,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73447,6 +80812,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73467,6 +80835,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73487,6 +80858,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73507,6 +80881,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73527,6 +80904,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73547,6 +80927,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73567,6 +80950,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73587,6 +80973,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73607,6 +80996,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -73627,6 +81019,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -73647,6 +81042,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73667,6 +81065,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.4
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -73687,6 +81088,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -73707,6 +81111,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73727,6 +81134,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -73747,6 +81157,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45.6
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -73767,6 +81180,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -73787,6 +81203,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 118.4
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -73807,6 +81226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 134.4
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -73827,6 +81249,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 228
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -73847,6 +81272,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73867,6 +81295,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73887,6 +81318,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73907,6 +81341,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73927,6 +81364,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73947,6 +81387,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73967,6 +81410,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -73987,6 +81433,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74007,6 +81456,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74027,6 +81479,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -74047,6 +81502,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74067,6 +81525,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 94.5
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74087,6 +81548,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96.6
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -74107,6 +81571,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 105
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -74127,6 +81594,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 138.6
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74147,6 +81617,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -74167,6 +81640,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 239.4
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -74187,6 +81663,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 617.4
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -74207,6 +81686,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 621.6
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -74227,6 +81709,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 705.6
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -74247,6 +81732,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1197
+    },
+    "quantidade": {
+      "2026-04": 63
     }
   },
   {
@@ -74267,6 +81755,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 76.65
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74287,6 +81778,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 84
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74307,6 +81801,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.2
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74327,6 +81824,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.35
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74347,6 +81847,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25.2
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74367,6 +81870,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.5
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74387,6 +81893,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74407,6 +81916,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74427,6 +81939,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.1
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74447,6 +81962,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.2
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -74467,6 +81985,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 48.3
+    },
+    "quantidade": {
+      "2026-04": 21
     }
   },
   {
@@ -74487,6 +82008,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.599999999999998
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74507,6 +82031,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.9
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74527,6 +82054,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74547,6 +82077,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74567,6 +82100,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.300000000000004
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74587,6 +82123,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 52.800000000000004
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -74607,6 +82146,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.199999999999996
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -74627,6 +82169,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74647,6 +82192,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -74667,6 +82215,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74687,6 +82238,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74707,6 +82261,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74727,6 +82284,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -74747,6 +82307,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -74767,6 +82330,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -74787,6 +82353,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -74807,6 +82376,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -74827,6 +82399,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74847,6 +82422,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74867,6 +82445,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74887,6 +82468,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74907,6 +82491,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74927,6 +82514,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74947,6 +82537,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74967,6 +82560,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -74987,6 +82583,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -75007,6 +82606,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -75027,6 +82629,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -75047,6 +82652,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107.3
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75067,6 +82675,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.39999999999999
+    },
+    "quantidade": {
+      "2026-04": 96
     }
   },
   {
@@ -75087,6 +82698,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 120
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -75107,6 +82721,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 158.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75127,6 +82744,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 238.6
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -75147,6 +82767,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 707.5999999999999
+    },
+    "quantidade": {
+      "2026-04": 48
     }
   },
   {
@@ -75167,6 +82790,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 794.4000000000001
+    },
+    "quantidade": {
+      "2026-04": 96
     }
   },
   {
@@ -75187,6 +82813,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1365
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -75207,6 +82836,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 87.60000000000001
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75227,6 +82859,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75247,6 +82882,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 76.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75267,6 +82905,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 80.39999999999999
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -75287,6 +82928,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 149.23
+    },
+    "quantidade": {
+      "2026-04": 2.5
     }
   },
   {
@@ -75307,6 +82951,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 40
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -75327,6 +82974,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -75347,6 +82997,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -75367,6 +83020,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -75387,6 +83043,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -75407,6 +83066,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -75427,6 +83089,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1168
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -75447,6 +83112,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -75467,6 +83135,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2044
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -75487,6 +83158,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 371
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -75507,6 +83181,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 436.88
+    },
+    "quantidade": {
+      "2026-04": 154
     }
   },
   {
@@ -75527,6 +83204,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 895.5
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -75546,6 +83226,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "PECUÁRIA",
     "orcado": {},
     "realizado": {
+      "2026-04": 780
+    },
+    "quantidade": {
       "2026-04": 780
     }
   },
@@ -75567,6 +83250,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 888
+    },
+    "quantidade": {
+      "2026-04": 555
     }
   },
   {
@@ -75587,6 +83273,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 117
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75607,6 +83296,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 119.6
+    },
+    "quantidade": {
+      "2026-04": 104
     }
   },
   {
@@ -75627,6 +83319,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -75647,6 +83342,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 171.6
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75667,6 +83365,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 260
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -75687,6 +83388,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 764.4
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -75707,6 +83411,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 776.59
+    },
+    "quantidade": {
+      "2026-04": 105
     }
   },
   {
@@ -75727,6 +83434,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 873.6
+    },
+    "quantidade": {
+      "2026-04": 104
     }
   },
   {
@@ -75747,6 +83457,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1482
+    },
+    "quantidade": {
+      "2026-04": 78
     }
   },
   {
@@ -75767,6 +83480,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 94.9
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75787,6 +83503,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75807,6 +83526,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 83.2
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75827,6 +83549,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 87.1
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75847,6 +83572,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 31.2
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75867,6 +83595,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75887,6 +83618,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.6
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75907,6 +83641,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.6
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75927,6 +83664,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 54.6
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75947,6 +83687,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.2
+    },
+    "quantidade": {
+      "2026-04": 52
     }
   },
   {
@@ -75967,6 +83710,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.8
+    },
+    "quantidade": {
+      "2026-04": 26
     }
   },
   {
@@ -75987,6 +83733,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 156
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -76007,6 +83756,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2920
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -76027,6 +83779,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 298.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76047,6 +83802,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76067,6 +83825,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -76087,6 +83848,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 25
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -76107,6 +83871,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76127,6 +83894,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -76147,6 +83917,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -76167,6 +83940,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -76187,6 +83963,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 148
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -76207,6 +83986,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 168
+    },
+    "quantidade": {
+      "2026-04": 20
     }
   },
   {
@@ -76227,6 +84009,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 285
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -76247,6 +84032,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.25
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76267,6 +84055,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76287,6 +84078,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76307,6 +84101,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.75
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76327,6 +84124,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76347,6 +84147,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76367,6 +84170,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76387,6 +84193,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76407,6 +84216,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76427,6 +84239,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11
+    },
+    "quantidade": {
+      "2026-04": 10
     }
   },
   {
@@ -76447,6 +84262,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.5
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -76467,6 +84285,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 599.5
+    },
+    "quantidade": {
+      "2026-04": 7
     }
   },
   {
@@ -76487,6 +84308,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -76507,6 +84331,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1164.82
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -76527,6 +84354,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 639
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76547,6 +84377,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 653.2
+    },
+    "quantidade": {
+      "2026-04": 568
     }
   },
   {
@@ -76567,6 +84400,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 710
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -76587,6 +84423,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 937.2
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76607,6 +84446,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1420
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -76627,6 +84469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1647.12
+    },
+    "quantidade": {
+      "2026-04": 574
     }
   },
   {
@@ -76647,6 +84492,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4174.8
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -76667,6 +84515,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4203.2
+    },
+    "quantidade": {
+      "2026-04": 568
     }
   },
   {
@@ -76687,6 +84538,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4771.2
+    },
+    "quantidade": {
+      "2026-04": 568
     }
   },
   {
@@ -76707,6 +84561,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8094
+    },
+    "quantidade": {
+      "2026-04": 426
     }
   },
   {
@@ -76727,6 +84584,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 518.3
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76747,6 +84607,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 568
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76767,6 +84630,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 454.4
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76787,6 +84653,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 475.7
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76807,6 +84676,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 170.4
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76827,6 +84699,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 213
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76847,6 +84722,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 227.2
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76867,6 +84745,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 227.2
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76887,6 +84768,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 298.2
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76907,6 +84791,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 312.4
+    },
+    "quantidade": {
+      "2026-04": 284
     }
   },
   {
@@ -76927,6 +84814,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 326.6
+    },
+    "quantidade": {
+      "2026-04": 142
     }
   },
   {
@@ -76947,6 +84837,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 240
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -76967,6 +84860,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1445
+    },
+    "quantidade": {
+      "2026-04": 850
     }
   },
   {
@@ -76987,6 +84883,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1680
+    },
+    "quantidade": {
+      "2026-04": 240
     }
   },
   {
@@ -77007,6 +84906,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3600
+    },
+    "quantidade": {
+      "2026-04": 360
     }
   },
   {
@@ -77027,6 +84929,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5850
+    },
+    "quantidade": {
+      "2026-04": 3250
     }
   },
   {
@@ -77047,6 +84952,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 134.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77067,6 +84975,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 140.7
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77087,6 +84998,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 50.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77107,6 +85021,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 63
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77127,6 +85044,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77147,6 +85067,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77167,6 +85090,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77187,6 +85113,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.4
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -77207,6 +85136,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 96.6
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -77227,6 +85159,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 541.36
+    },
+    "quantidade": {
+      "2026-04": 191
     }
   },
   {
@@ -77247,6 +85182,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 897.1500000000001
+    },
+    "quantidade": {
+      "2026-04": 15
     }
   },
   {
@@ -77267,6 +85205,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 689.85
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77287,6 +85228,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 756
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77307,6 +85251,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 850.5
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77327,6 +85274,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 869.4
+    },
+    "quantidade": {
+      "2026-04": 756
     }
   },
   {
@@ -77347,6 +85297,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 945
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -77367,6 +85320,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1247.4
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77387,6 +85343,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1890
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -77407,6 +85366,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2487
+    },
+    "quantidade": {
+      "2026-04": 876
     }
   },
   {
@@ -77427,6 +85389,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5556.6
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -77447,6 +85412,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5594.4
+    },
+    "quantidade": {
+      "2026-04": 756
     }
   },
   {
@@ -77467,6 +85435,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6350.4
+    },
+    "quantidade": {
+      "2026-04": 756
     }
   },
   {
@@ -77487,6 +85458,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10773
+    },
+    "quantidade": {
+      "2026-04": 567
     }
   },
   {
@@ -77507,6 +85481,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 604.8
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77527,6 +85504,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 633.15
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77547,6 +85527,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 226.8
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77567,6 +85550,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 283.5
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77587,6 +85573,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 302.4
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77607,6 +85596,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 302.4
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77627,6 +85619,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 396.9
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77647,6 +85642,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 415.8
+    },
+    "quantidade": {
+      "2026-04": 378
     }
   },
   {
@@ -77667,6 +85665,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 434.7
+    },
+    "quantidade": {
+      "2026-04": 189
     }
   },
   {
@@ -77687,6 +85688,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77707,6 +85711,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77727,6 +85734,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77747,6 +85757,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -77767,6 +85780,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -77787,6 +85803,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77807,6 +85826,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -77827,6 +85849,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -77847,6 +85872,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -77867,6 +85895,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -77887,6 +85918,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 67.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -77907,6 +85941,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 114
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -77927,6 +85964,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77947,6 +85987,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77967,6 +86010,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -77987,6 +86033,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78007,6 +86056,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78027,6 +86079,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78047,6 +86102,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78067,6 +86125,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -78087,6 +86148,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78107,6 +86171,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 153.3
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -78127,6 +86194,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 168
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -78147,6 +86217,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 189
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -78167,6 +86240,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 193.2
+    },
+    "quantidade": {
+      "2026-04": 168
     }
   },
   {
@@ -78187,6 +86263,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 210
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -78207,6 +86286,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 277.20000000000005
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -78227,6 +86309,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 420
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -78247,6 +86332,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1234.8000000000002
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -78267,6 +86355,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1243.1999999999998
+    },
+    "quantidade": {
+      "2026-04": 168
     }
   },
   {
@@ -78287,6 +86378,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1411.1999999999998
+    },
+    "quantidade": {
+      "2026-04": 168
     }
   },
   {
@@ -78307,6 +86401,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2394
+    },
+    "quantidade": {
+      "2026-04": 126
     }
   },
   {
@@ -78327,6 +86424,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2390.8
+    },
+    "quantidade": {
+      "2026-04": 40
     }
   },
   {
@@ -78347,6 +86447,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 420
+    },
+    "quantidade": {
+      "2026-04": 84
     }
   },
   {
@@ -78366,6 +86469,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "divisao": "SERINGAL",
     "orcado": {},
     "realizado": {
+      "2026-04": 6179
+    },
+    "quantidade": {
       "2026-04": 6179
     }
   },
@@ -78387,6 +86493,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5958.4
+    },
+    "quantidade": {
+      "2026-04": 3724
     }
   },
   {
@@ -78407,6 +86516,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.7
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78427,6 +86539,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 72
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78447,6 +86562,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 81
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78467,6 +86585,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 82.8
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -78487,6 +86608,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -78507,6 +86631,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 118.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78527,6 +86654,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 180
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -78547,6 +86677,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 205.2
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -78567,6 +86700,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 529.2
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -78587,6 +86723,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 532.8
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -78607,6 +86746,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 604.8
+    },
+    "quantidade": {
+      "2026-04": 72
     }
   },
   {
@@ -78627,6 +86769,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1026
+    },
+    "quantidade": {
+      "2026-04": 54
     }
   },
   {
@@ -78647,6 +86792,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.6
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78667,6 +86815,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.3
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78687,6 +86838,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.6
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78707,6 +86861,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78727,6 +86884,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78747,6 +86907,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78767,6 +86930,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78787,6 +86953,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.6
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -78807,6 +86976,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.4
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -78827,6 +86999,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18104
+    },
+    "quantidade": {
+      "2026-04": 62
     }
   },
   {
@@ -78847,6 +87022,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4964
+    },
+    "quantidade": {
+      "2026-04": 17
     }
   },
   {
@@ -78867,6 +87045,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -78887,6 +87068,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1460
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -78907,6 +87091,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4088
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -78927,6 +87114,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -78947,6 +87137,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3306.17
+    },
+    "quantidade": {
+      "2026-04": 161
     }
   },
   {
@@ -78967,6 +87160,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 195.39
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -78987,6 +87183,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -79007,6 +87206,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 35.6
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79027,6 +87229,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.6
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79047,6 +87252,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.2
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79067,6 +87275,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.2
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79087,6 +87298,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 65.8
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79107,6 +87321,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70.4
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -79127,6 +87344,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 73.6
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79147,6 +87367,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79167,6 +87390,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.599999999999998
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -79187,6 +87413,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -79207,6 +87436,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.599999999999994
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79227,6 +87459,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -79247,6 +87482,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 68.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -79267,6 +87505,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 176.39999999999998
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -79287,6 +87528,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 177.60000000000002
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -79307,6 +87551,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 201.60000000000002
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -79327,6 +87574,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 342
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -79347,6 +87597,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79367,6 +87620,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79387,6 +87643,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.200000000000003
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79407,6 +87666,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79427,6 +87689,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.199999999999999
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79447,6 +87712,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79467,6 +87735,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79487,6 +87758,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79507,6 +87781,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79527,6 +87804,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.200000000000001
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -79547,6 +87827,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.799999999999999
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -79567,6 +87850,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 134.2
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79587,6 +87873,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 147.2
+    },
+    "quantidade": {
+      "2026-04": 128
     }
   },
   {
@@ -79607,6 +87896,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 160
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -79627,6 +87919,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 211.2
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79647,6 +87942,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 300.4
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -79667,6 +87965,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 392.79999999999995
+    },
+    "quantidade": {
+      "2026-04": 128
     }
   },
   {
@@ -79687,6 +87988,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 968.8000000000001
+    },
+    "quantidade": {
+      "2026-04": 64
     }
   },
   {
@@ -79707,6 +88011,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 980.8
+    },
+    "quantidade": {
+      "2026-04": 128
     }
   },
   {
@@ -79727,6 +88034,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 907.1999999999999
+    },
+    "quantidade": {
+      "2026-04": 128
     }
   },
   {
@@ -79747,6 +88057,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1782
+    },
+    "quantidade": {
+      "2026-04": 96
     }
   },
   {
@@ -79767,6 +88080,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 116.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79787,6 +88103,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 128
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79807,6 +88126,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 102.4
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79827,6 +88149,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 107.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 32
     }
   },
   {
@@ -79847,6 +88172,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -79867,6 +88195,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -79887,6 +88218,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -79907,6 +88241,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -79927,6 +88264,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -79947,6 +88287,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -79967,6 +88310,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -79987,6 +88333,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80007,6 +88356,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80027,6 +88379,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80047,6 +88402,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80067,6 +88425,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80087,6 +88448,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80107,6 +88471,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80127,6 +88494,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80147,6 +88517,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80167,6 +88540,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80187,6 +88563,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80207,6 +88586,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80227,6 +88609,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -80247,6 +88632,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80267,6 +88655,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80287,6 +88678,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80307,6 +88701,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -80327,6 +88724,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80347,6 +88747,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -80367,6 +88770,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80387,6 +88793,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -80407,6 +88816,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80427,6 +88839,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -80447,6 +88862,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80467,6 +88885,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80487,6 +88908,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80507,6 +88931,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80527,6 +88954,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80547,6 +88977,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80567,6 +89000,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80587,6 +89023,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80607,6 +89046,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80627,6 +89069,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80647,6 +89092,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -80667,6 +89115,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -80687,6 +89138,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80707,6 +89161,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -80727,6 +89184,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -80747,6 +89207,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80767,6 +89230,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -80787,6 +89253,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -80807,6 +89276,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 182.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -80827,6 +89299,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 184.8
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -80847,6 +89322,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -80867,6 +89345,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 333
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -80887,6 +89368,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80907,6 +89391,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80927,6 +89414,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80947,6 +89437,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80967,6 +89460,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -80987,6 +89483,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81007,6 +89506,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81027,6 +89529,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81047,6 +89552,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.3
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81067,6 +89575,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -81087,6 +89598,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81107,6 +89621,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81127,6 +89644,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 27.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -81147,6 +89667,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -81167,6 +89690,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81187,6 +89713,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.8
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -81207,6 +89736,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 74.4
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -81227,6 +89759,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 182.4
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -81247,6 +89782,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 184.8
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -81267,6 +89805,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 165.6
+    },
+    "quantidade": {
+      "2026-04": 24
     }
   },
   {
@@ -81287,6 +89828,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 333
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -81307,6 +89851,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 21.9
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81327,6 +89874,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81347,6 +89897,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.2
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81367,6 +89920,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.1
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81387,6 +89943,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81407,6 +89966,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.7
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81427,6 +89989,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81447,6 +90012,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81467,6 +90035,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.3
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81487,6 +90058,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -81507,6 +90081,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.8
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -81527,6 +90104,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81547,6 +90127,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.4
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -81567,6 +90150,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -81587,6 +90173,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.4
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81607,6 +90196,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 83
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -81627,6 +90219,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 112.6
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -81647,6 +90242,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 274.6
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -81667,6 +90265,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 278.4
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -81687,6 +90288,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 242.4
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -81707,6 +90311,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 498
+    },
+    "quantidade": {
+      "2026-04": 27
     }
   },
   {
@@ -81727,6 +90334,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.85
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81747,6 +90357,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81767,6 +90380,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.8
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81787,6 +90403,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.15
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81807,6 +90426,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.8
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81827,6 +90449,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81847,6 +90472,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.4
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81867,6 +90495,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.4
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81887,6 +90518,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.4
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81907,6 +90541,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.8
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -81927,6 +90564,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.7
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81947,6 +90587,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.4
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81967,6 +90610,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.3
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -81987,6 +90633,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.399999999999999
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82007,6 +90656,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.399999999999999
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82027,6 +90679,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.7
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82047,6 +90702,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.799999999999997
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -82067,6 +90725,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.700000000000003
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82087,6 +90748,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.849999999999994
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82107,6 +90771,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 36
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82127,6 +90794,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 39.1
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82147,6 +90817,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -82167,6 +90840,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 45
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -82187,6 +90863,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 59.400000000000006
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82207,6 +90886,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 87.2
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -82227,6 +90909,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 106.60000000000001
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -82247,6 +90932,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 268.6
+    },
+    "quantidade": {
+      "2026-04": 18
     }
   },
   {
@@ -82267,6 +90955,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 271.2
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -82287,6 +90978,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 278.4
+    },
+    "quantidade": {
+      "2026-04": 36
     }
   },
   {
@@ -82307,6 +91001,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 507
+    },
+    "quantidade": {
+      "2026-04": 27
     }
   },
   {
@@ -82327,6 +91024,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.799999999999997
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82347,6 +91047,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.150000000000002
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82367,6 +91070,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1168
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -82387,6 +91093,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -82407,6 +91116,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -82427,6 +91139,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -82447,6 +91162,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -82467,6 +91185,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -82487,6 +91208,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.95
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82507,6 +91231,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82527,6 +91254,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.8
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82547,6 +91277,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.799999999999999
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -82567,6 +91300,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -82587,6 +91323,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 19.799999999999997
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82607,6 +91346,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.6
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -82627,6 +91369,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 41.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -82647,6 +91392,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 90.19999999999999
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -82667,6 +91415,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 91.2
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -82687,6 +91438,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 88.80000000000001
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -82707,6 +91461,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 168
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82727,6 +91484,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.600000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82747,6 +91507,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10.05
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82767,6 +91530,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.4
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82787,6 +91553,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82807,6 +91576,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.800000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82827,6 +91599,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.800000000000001
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82847,6 +91622,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.2
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82867,6 +91645,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6000000000000005
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -82887,6 +91668,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.8999999999999995
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -82907,6 +91691,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.88
+    },
+    "quantidade": {
+      "2026-04": 0.5
     }
   },
   {
@@ -82927,6 +91714,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 162
+    },
+    "quantidade": {
+      "2026-04": 9
     }
   },
   {
@@ -82947,6 +91737,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 89.4
+    },
+    "quantidade": {
+      "2026-04": 1.5
     }
   },
   {
@@ -82967,6 +91760,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13
+    },
+    "quantidade": {
+      "2026-04": 5
     }
   },
   {
@@ -82987,6 +91783,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 14.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83007,6 +91806,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83027,6 +91829,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 12.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83047,6 +91852,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83067,6 +91875,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83087,6 +91898,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83107,6 +91921,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83127,6 +91944,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83147,6 +91967,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83167,6 +91990,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -83187,6 +92013,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83207,6 +92036,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 58.1
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83227,6 +92059,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 64.4
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -83247,6 +92082,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 70
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -83267,6 +92105,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 92.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83287,6 +92128,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 130.2
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -83307,6 +92151,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 173.6
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -83327,6 +92174,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 425.6
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -83347,6 +92197,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 431.2
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -83367,6 +92220,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 386.4
+    },
+    "quantidade": {
+      "2026-04": 56
     }
   },
   {
@@ -83387,6 +92243,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 777
+    },
+    "quantidade": {
+      "2026-04": 42
     }
   },
   {
@@ -83407,6 +92266,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 51.1
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83427,6 +92289,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 56
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83447,6 +92312,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 44.8
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83467,6 +92335,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 46.9
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83487,6 +92358,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 15.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83507,6 +92381,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20.3
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83527,6 +92404,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83547,6 +92427,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 22.4
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83567,6 +92450,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 28.7
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83587,6 +92473,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 30.8
+    },
+    "quantidade": {
+      "2026-04": 28
     }
   },
   {
@@ -83607,6 +92496,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 32.2
+    },
+    "quantidade": {
+      "2026-04": 14
     }
   },
   {
@@ -83627,6 +92519,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83647,6 +92542,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -83667,6 +92565,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83687,6 +92588,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83707,6 +92611,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83727,6 +92634,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -83747,6 +92657,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -83767,6 +92680,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -83787,6 +92703,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -83807,6 +92726,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -83827,6 +92749,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83847,6 +92772,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83867,6 +92795,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83887,6 +92818,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83907,6 +92841,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83927,6 +92864,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83947,6 +92887,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83967,6 +92910,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -83987,6 +92933,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84007,6 +92956,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84027,6 +92979,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84047,6 +93002,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84067,6 +93025,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 9.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84087,6 +93048,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84107,6 +93071,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 13.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84127,6 +93094,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84147,6 +93117,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 24.8
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84167,6 +93140,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 60.8
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84187,6 +93163,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 61.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84207,6 +93186,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 55.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84227,6 +93209,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 111
+    },
+    "quantidade": {
+      "2026-04": 6
     }
   },
   {
@@ -84247,6 +93232,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 7.3
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84267,6 +93255,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 8
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84287,6 +93278,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84307,6 +93301,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.7
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84327,6 +93324,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84347,6 +93347,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.9
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84367,6 +93370,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84387,6 +93393,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84407,6 +93416,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.1
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84427,6 +93439,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84447,6 +93462,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84467,6 +93485,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 16.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84487,6 +93508,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 18.4
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -84507,6 +93531,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 20
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84527,6 +93554,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 26.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84547,6 +93577,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 37.2
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84567,6 +93600,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 49.6
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -84587,6 +93623,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 121.6
+    },
+    "quantidade": {
+      "2026-04": 8
     }
   },
   {
@@ -84607,6 +93646,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 123.2
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -84627,6 +93669,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 110.4
+    },
+    "quantidade": {
+      "2026-04": 16
     }
   },
   {
@@ -84647,6 +93692,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 222
+    },
+    "quantidade": {
+      "2026-04": 12
     }
   },
   {
@@ -84667,6 +93715,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.65
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84687,6 +93738,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84707,6 +93761,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84727,6 +93784,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 4.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84747,6 +93807,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84767,6 +93830,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 6.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84787,6 +93853,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84807,6 +93876,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 11.4
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84827,6 +93899,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.4
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -84847,6 +93922,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 29.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84867,6 +93945,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 33.6
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -84887,6 +93968,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -84907,6 +93991,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84927,6 +94014,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3.35
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84947,6 +94037,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.2
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84967,6 +94060,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.5
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -84987,6 +94083,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85007,6 +94106,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1.6
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85027,6 +94129,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.1
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85047,6 +94152,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.2
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -85067,6 +94175,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 2.3
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85087,6 +94198,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 454
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -85107,6 +94221,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 876
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -85127,6 +94244,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85147,6 +94267,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 584
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -85167,6 +94290,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85187,6 +94313,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 292
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85207,6 +94336,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1376.8600000000001
+    },
+    "quantidade": {
+      "2026-04": 4
     }
   },
   {
@@ -85227,6 +94359,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 23419.84
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -85247,6 +94382,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 193.57
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85267,6 +94405,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 5257.99
+    },
+    "quantidade": {
+      "2026-04": 921
     }
   },
   {
@@ -85287,6 +94428,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 10495.17
+    },
+    "quantidade": {
+      "2026-04": 225
     }
   },
   {
@@ -85307,6 +94451,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 38.64
+    },
+    "quantidade": {
+      "2026-04": 2
     }
   },
   {
@@ -85327,6 +94474,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 57.95
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -85347,6 +94497,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 1446
+    },
+    "quantidade": {
+      "2026-04": 31
     }
   },
   {
@@ -85367,6 +94520,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 3000
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85387,6 +94543,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 384
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85407,6 +94566,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 108.39
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {
@@ -85427,6 +94589,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 952.3399999999999
+    },
+    "quantidade": {
+      "2026-04": 3
     }
   },
   {
@@ -85627,6 +94792,9 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-04": 104.22
+    },
+    "quantidade": {
+      "2026-04": 1
     }
   },
   {

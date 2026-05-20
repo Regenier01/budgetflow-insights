@@ -61,6 +61,7 @@ interface FlatEntry {
   grupoContabil?: string;
   documento?: string;
   produto?: string;
+  quantidade?: number;
   orc: number;
   real: number;
 }
@@ -345,11 +346,17 @@ export function AnalyticalTable({
   const isCostTable = tipoFilter?.length === 1 && tipoFilter[0] === 'C';
   const isExpenseTable = tipoFilter?.length === 1 && tipoFilter[0] === 'D';
   const sortByVariationPct = isCostTable || isExpenseTable;
+  /** Planilha de receitas das atividades: coluna QUANTIDADE (planilha realizado). */
+  const showQuantidadeColumn = isRevenueTable;
   /** Planilha de custos, despesas e receitas: só realizado, ordenado por valor (maiores no topo). */
   const flatRealizadoOnly = isCostTable || isExpenseTable || isRevenueTable;
   const flatRealOnlyMetricCols =
     (showDiariaColumns ? 1 : 0) + (showPCabecaColumns ? 1 : 0) + (showPpKgColumns ? 1 : 0);
-  const flatSpreadsheetColSpan = flatRealizadoOnly ? 6 + flatRealOnlyMetricCols : 8 + extraMetricCols;
+  const flatSpreadsheetColSpan =
+    (flatRealizadoOnly ? 6 : 8) +
+    (showQuantidadeColumn ? 1 : 0) +
+    flatRealOnlyMetricCols +
+    (flatRealizadoOnly ? 0 : extraMetricCols);
   const computeDiff = (orc: number, real: number) =>
     isRevenueTable ? real - orc : orc - real;
   const isDiffFavorable = (diff: number) => diff > 0;
@@ -426,6 +433,9 @@ export function AnalyticalTable({
   const fmtCurrency = (v: number) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
+  const fmtQuantidade = (v: number) =>
+    new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(v);
+
   // Lançamentos da visão Planilha (antes dos filtros por coluna)
   const flatEntriesAll: FlatEntry[] = useMemo(
     () =>
@@ -433,6 +443,7 @@ export function AnalyticalTable({
         .map((a) => {
           const orc = valueForMonths(a.orcado);
           const real = valueForMonths(a.realizado);
+          const qty = a.quantidade ? valueForMonths(a.quantidade) : 0;
           return {
             id: a.id,
             departamento: a.departamento,
@@ -442,6 +453,7 @@ export function AnalyticalTable({
             grupoContabil: a.grupoContabilN9,
             documento: a.centroCusto,
             produto: a.nomeProduto,
+            quantidade: qty !== 0 ? qty : undefined,
             orc,
             real,
           };
@@ -943,6 +955,9 @@ export function AnalyticalTable({
                   selected={spreadsheetFilters.produto}
                   onChange={(next) => setSpreadsheetColumnFilter('produto', next)}
                 />
+                {showQuantidadeColumn && (
+                  <th className="text-right py-3 px-3 w-[110px]">Quantidade</th>
+                )}
                 {!flatRealizadoOnly && (
                   <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
                 )}
@@ -993,6 +1008,11 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-600 font-mono">{entry.conta}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700">{entry.descricao}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
+                    {showQuantidadeColumn && (
+                      <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">
+                        {entry.quantidade != null ? fmtQuantidade(entry.quantidade) : '-'}
+                      </td>
+                    )}
                     {!flatRealizadoOnly && (
                       <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
                     )}
@@ -1027,6 +1047,7 @@ export function AnalyticalTable({
             {flatEntries.length > 0 && (() => {
               const totalOrc = flatEntries.reduce((sum, e) => sum + e.orc, 0);
               const totalReal = flatEntries.reduce((sum, e) => sum + e.real, 0);
+              const totalQuantidade = flatEntries.reduce((sum, e) => sum + (e.quantidade ?? 0), 0);
               const totalDiff = computeDiff(totalOrc, totalReal);
               const isTotalPositive = isDiffFavorable(totalDiff);
               return (
@@ -1042,6 +1063,11 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', pcabecaOrcResolved)}
                     {!flatRealizadoOnly && showPpKgColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgOrcResolved)}
+                    {showQuantidadeColumn && (
+                      <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">
+                        {totalQuantidade ? fmtQuantidade(totalQuantidade) : '-'}
+                      </td>
+                    )}
                     <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaRealResolved)}
