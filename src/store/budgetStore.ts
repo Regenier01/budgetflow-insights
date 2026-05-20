@@ -10,6 +10,7 @@ import {
 import { INITIAL_ACCOUNTS } from '@/data/initialData';
 import { ORCADO_IMPORT_BATCHES, type OrcadoGrupoMonthValue } from '@/data/orcadoImportData';
 import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
+import { ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaGeneticaImportData';
 import { ORCADO_RECEITA_LATEX_IMPORT_BATCHES } from '@/data/orcadoReceitaLatexImportData';
 import { ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES } from '@/data/orcadoReceitaAgricolaImportData';
 import { ORCADO_RECEITA_CANA_IMPORT_BATCHES } from '@/data/orcadoReceitaCanaImportData';
@@ -39,6 +40,11 @@ import {
   resolveReceitaPecuariaOrcadoGrupoDescricao,
   tryParseReceitaPecuariaOrcadoBudgetRow,
 } from '@/data/receitaPecuariaOrcado';
+import {
+  isReceitaPecuariaGeneticaDepartment,
+  isReceitaPecuariaGeneticaOrcadoBatch,
+  receitaPecuariaGeneticaOrcadoScopeKey,
+} from '@/data/receitaPecuariaGenetica';
 const LAST_UPLOADED_PERIOD_STORAGE_KEY = 'budgetflow:lastUploadedPeriod';
 const validMonthKeys = new Set(MONTHS.map((month) => month.key));
 type MappingValue = { divisao?: string; unidadeNegocio?: string };
@@ -397,9 +403,11 @@ const getBatchFallbackPeriod = (rows: OrcadoGrupoMonthValue[]): MonthKey =>
 
 const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches'] => {
   const seenReceitaPecuariaScopes = new Set<string>();
+  const seenReceitaPecuariaGeneticaScopes = new Set<string>();
   const rawBatches = [
     ...ORCADO_IMPORT_BATCHES,
     ...ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES,
+    ...ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES,
     ...ORCADO_RECEITA_LATEX_IMPORT_BATCHES,
     ...ORCADO_RECEITA_CANA_IMPORT_BATCHES,
     ...ORCADO_RECEITA_AGRICOLA_IMPORT_BATCHES.map((batch) => ({
@@ -407,6 +415,12 @@ const buildInitialImportedOrcadoBatches = (): BudgetState['importedOrcadoBatches
       departamento: batch.cultura,
     })),
   ].filter((batch) => {
+    if (isReceitaPecuariaGeneticaOrcadoBatch(batch)) {
+      const scopeKey = receitaPecuariaGeneticaOrcadoScopeKey(batch.departamento);
+      if (seenReceitaPecuariaGeneticaScopes.has(scopeKey)) return false;
+      seenReceitaPecuariaGeneticaScopes.add(scopeKey);
+      return true;
+    }
     if (!isReceitaPecuariaOrcadoBatch(batch)) return true;
     const scopeKey = receitaPecuariaOrcadoScopeKey(batch.departamento);
     if (seenReceitaPecuariaScopes.has(scopeKey)) return false;
@@ -1737,7 +1751,9 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       }
     }
 
-    const currentReceitaPecuariaScopeKey = receitaPecuariaOrcadoScopeKey(resolvedDepartamento);
+    const currentReceitaPecuariaScopeKey = isReceitaPecuariaGeneticaDepartment(resolvedDepartamento)
+      ? receitaPecuariaGeneticaOrcadoScopeKey(resolvedDepartamento)
+      : receitaPecuariaOrcadoScopeKey(resolvedDepartamento);
     const currentScopeKey = uploadOrcadoScopeKey(resolvedAtividade, resolvedDepartamento);
     const currentKey = uploadOrcadoBatchKey(
       fallbackPeriod,
@@ -1760,7 +1776,10 @@ export const useBudgetStore = create<BudgetState>((set, get) => ({
       ...importedOrcadoBatches.filter((batch) => {
         if (batch.key === currentKey) return false;
         if (isReceitaPecuariaImport && isReceitaPecuariaOrcadoBatch(batch)) {
-          return receitaPecuariaOrcadoScopeKey(batch.departamento) !== currentReceitaPecuariaScopeKey;
+          const batchScopeKey = isReceitaPecuariaGeneticaDepartment(batch.departamento)
+            ? receitaPecuariaGeneticaOrcadoScopeKey(batch.departamento)
+            : receitaPecuariaOrcadoScopeKey(batch.departamento);
+          return batchScopeKey !== currentReceitaPecuariaScopeKey;
         }
         const batchScopeKey = uploadOrcadoScopeKey(batch.atividade, batch.departamento);
         return batchScopeKey !== currentScopeKey;

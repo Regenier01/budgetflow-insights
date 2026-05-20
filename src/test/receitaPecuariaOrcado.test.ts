@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useBudgetStore } from '@/store/budgetStore';
 import { ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaImportData';
+import { ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES } from '@/data/orcadoReceitaPecuariaGeneticaImportData';
 import {
   receitaPecuariaOrcadoScopeKey,
   tryParseReceitaPecuariaOrcadoBudgetRow,
@@ -70,8 +71,21 @@ describe('receita pecuária orçado (GRUPO_CONTABIL → CONTA → Descrição)',
     expect(afterSecond?.orcado['2026-04']).toBe(1000);
   });
 
+  it('CENTRO COMERCIAL DE TOUROS fica no lote de Receitas Genética, não em Receitas', () => {
+    expect(
+      ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES.some(
+        (batch) => batch.fileName === 'CENTRO COMERCIAL DE TOUROS.xlsx'
+      )
+    ).toBe(false);
+    expect(
+      ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES.some(
+        (batch) => batch.fileName === 'CENTRO COMERCIAL DE TOUROS.xlsx'
+      )
+    ).toBe(true);
+  });
+
   it('upload substitui lote embutido do mesmo departamento', () => {
-    const bakedIn = ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES.find(
+    const bakedIn = ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES.find(
       (batch) => batch.fileName === 'CENTRO COMERCIAL DE TOUROS.xlsx'
     );
     expect(bakedIn).toBeDefined();

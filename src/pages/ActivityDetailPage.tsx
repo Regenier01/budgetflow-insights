@@ -33,6 +33,7 @@ import {
   SERINGAL_CUSTO_PKG_ORCADO,
   SERINGAL_CUSTO_PKG_REALIZADO,
 } from '@/data/seringalCustoPpKg';
+import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
 
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
 
@@ -202,7 +203,6 @@ const isPecuariaDepartmentOption = (departamento?: string) => {
   const normalized = normalizeText(departamento);
   if (!normalized) return false;
   return (
-    normalized === 'CENTRO COMERCIAL DE TOUROS' ||
     normalized === 'CONFINAMENTO' ||
     normalized === 'CONFINAMENTO - TRANSPORTE DE GADO' ||
     normalized === 'CODORA' ||
@@ -210,6 +210,9 @@ const isPecuariaDepartmentOption = (departamento?: string) => {
     /^[^-]+ - PECUARIA$/.test(normalized)
   );
 };
+
+const isPecuariaGeneticaDepartmentOption = (departamento?: string) =>
+  isReceitaPecuariaGeneticaDepartment(departamento);
 
 const formatConfinamentoDepartmentLabel = (departamento: string) =>
   departamento.replace(/\s*-\s*PECUARIA$/i, '').trim();
@@ -331,6 +334,7 @@ export default function ActivityDetailPage() {
   const isAgricolaGeralSubview = isAgricola && subview === 'geral';
   const isDespesasComVendasPecuariaSubview = isDespesasComVendas && subview === 'pecuaria';
   const isDespesasComVendasAgricolaSubview = isDespesasComVendas && subview === 'agricola';
+  const isPecuariaReceitasGeneticaSubview = isPecuaria && subview === 'genetica';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter: string[] | undefined =
@@ -368,7 +372,9 @@ export default function ActivityDetailPage() {
       ? 'Despesas com Vendas'
       : isRateios
         ? 'Rateios'
-        : isPecuaria && subview === 'pasto'
+        : isPecuaria && subview === 'genetica'
+          ? 'Pecuária — Receitas Genética'
+          : isPecuaria && subview === 'pasto'
           ? 'Pecuária — Pasto'
           : isPecuaria && subview === 'confinamento'
             ? 'Pecuária — Confinamento'
@@ -423,7 +429,17 @@ export default function ActivityDetailPage() {
     admTribSubFilter,
     despesasComVendasSubFilter
   );
-  const activityLevelEntryFilter = combineEntryFilters(activityLevelEntryFilterBase, cultureEntryFilter);
+  const pecuariaReceitasScopeFilter =
+    isPecuaria && resolvedTipoView === 'receitas'
+      ? isPecuariaReceitasGeneticaSubview
+        ? (entry: AccountEntry) => isReceitaPecuariaGeneticaDepartment(entry.departamento)
+        : (entry: AccountEntry) => !isReceitaPecuariaGeneticaDepartment(entry.departamento)
+      : undefined;
+  const activityLevelEntryFilter = combineEntryFilters(
+    activityLevelEntryFilterBase,
+    cultureEntryFilter,
+    pecuariaReceitasScopeFilter
+  );
 
   const isTributariaEntry = (entry: {
     grupoContabil?: string;
@@ -571,9 +587,25 @@ export default function ActivityDetailPage() {
 
     // Receitas (R) — exclui deduções tributárias (vão como redutor) e contas de "outras receitas"
     const receitasEntries = baseLeaves.filter((a) => a.tipo === 'R');
+    const receitasGeneticaEntries =
+      atividade.key === 'PECUARIA'
+        ? receitasEntries.filter((a) => isReceitaPecuariaGeneticaDepartment(a.departamento))
+        : [];
+    const receitasRegularEntries =
+      atividade.key === 'PECUARIA'
+        ? receitasEntries.filter((a) => !isReceitaPecuariaGeneticaDepartment(a.departamento))
+        : receitasEntries;
     const deducoesEntries = baseLeaves.filter(
       (a) => a.tipo === 'D' && isReceitaDeductionEntry(a)
     );
+    const deducoesGeneticaEntries =
+      atividade.key === 'PECUARIA'
+        ? deducoesEntries.filter((a) => isReceitaPecuariaGeneticaDepartment(a.departamento))
+        : [];
+    const deducoesRegularEntries =
+      atividade.key === 'PECUARIA'
+        ? deducoesEntries.filter((a) => !isReceitaPecuariaGeneticaDepartment(a.departamento))
+        : deducoesEntries;
 
     // Custos/Despesas — para Encargos usa filtro financeiro; para AdmTrib remove rateio/conta4/marketing
     let custosEntries: AccountEntry[];
@@ -612,15 +644,29 @@ export default function ActivityDetailPage() {
     const recOrc = isAdmTrib
       ? 0
       : receitaLiquidaFromBrutaEDeducoes(
-          sum(receitasEntries, 'orcado'),
-          sum(deducoesEntries, 'orcado')
+          sum(receitasRegularEntries, 'orcado'),
+          sum(deducoesRegularEntries, 'orcado')
         );
     const recReal = isAdmTrib
       ? 0
       : receitaLiquidaFromBrutaEDeducoes(
-          sum(receitasEntries, 'realizado'),
-          sum(deducoesEntries, 'realizado')
+          sum(receitasRegularEntries, 'realizado'),
+          sum(deducoesRegularEntries, 'realizado')
         );
+    const recGeneticaOrc =
+      atividade.key === 'PECUARIA'
+        ? receitaLiquidaFromBrutaEDeducoes(
+            sum(receitasGeneticaEntries, 'orcado'),
+            sum(deducoesGeneticaEntries, 'orcado')
+          )
+        : 0;
+    const recGeneticaReal =
+      atividade.key === 'PECUARIA'
+        ? receitaLiquidaFromBrutaEDeducoes(
+            sum(receitasGeneticaEntries, 'realizado'),
+            sum(deducoesGeneticaEntries, 'realizado')
+          )
+        : 0;
     const rawCusOrc = sum(custosEntries, 'orcado');
     const cusReal = sum(custosEntries, 'realizado');
     const cusOrc =
@@ -630,10 +676,11 @@ export default function ActivityDetailPage() {
 
     return {
       receitas: { orc: recOrc, real: recReal },
+      receitasGenetica: { orc: recGeneticaOrc, real: recGeneticaReal },
       custos: { orc: cusOrc, real: cusReal },
       total: isAdmTrib
         ? { orc: cusOrc, real: cusReal }
-        : { orc: recOrc - cusOrc, real: recReal - cusReal },
+        : { orc: recOrc + recGeneticaOrc - cusOrc, real: recReal + recGeneticaReal - cusReal },
     };
   }, [accounts, atividade?.key, selectedMonth, isEncargos, isAdmTrib, isAgricola]);
 
@@ -823,10 +870,18 @@ export default function ActivityDetailPage() {
       };
       /** Hub Seringal: Custo P/KG O/R (CustoKg.xlsx), um mês no filtro — não somar meses. */
       seringalPkgMetrics?: { orcExtra: number | null; realExtra: number | null };
+      /** Exibe traços no lugar dos valores (card reservado para dados futuros). */
+      emptyValues?: boolean;
     }
   ) => {
-    const { isMain = false, onClick, accentColor = 'orange', pecuariaMetrics, seringalPkgMetrics } =
-      options || {};
+    const {
+      isMain = false,
+      onClick,
+      accentColor = 'orange',
+      pecuariaMetrics,
+      seringalPkgMetrics,
+      emptyValues = false,
+    } = options || {};
     const isRevenueStyle = accentColor === 'emerald';
     const difference = isRevenueStyle
       ? data.real - data.orc
@@ -924,7 +979,11 @@ export default function ActivityDetailPage() {
         </div>
         <div className={cn('grid text-center items-center', gridColsClass)}>
           <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
-            {fmtDecimal(data.orc)}
+            {emptyValues ? (
+              <span className="text-slate-400">—</span>
+            ) : (
+              fmtDecimal(data.orc)
+            )}
           </div>
           {hubExtraColumns && (
             <div className="py-2.5 px-0.5 text-[10px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white leading-tight">
@@ -934,7 +993,11 @@ export default function ActivityDetailPage() {
             </div>
           )}
           <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
-            {fmtDecimal(data.real)}
+            {emptyValues ? (
+              <span className="text-slate-400">—</span>
+            ) : (
+              fmtDecimal(data.real)
+            )}
           </div>
           {hubExtraColumns && (
             <div className="py-2.5 px-0.5 text-[10px] font-medium border-r border-slate-200 tabular-nums text-slate-600 bg-white leading-tight">
@@ -946,28 +1009,33 @@ export default function ActivityDetailPage() {
           <div
             className={cn(
               'py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
-              isPositiveDifference ? 'text-dashboard-green bg-dashboard-green/10' : 'text-rose-600 bg-rose-50/50'
+              emptyValues
+                ? 'text-slate-400 bg-slate-50/80'
+                : isPositiveDifference
+                  ? 'text-dashboard-green bg-dashboard-green/10'
+                  : 'text-rose-600 bg-rose-50/50'
             )}
           >
             <span className="inline-flex items-center gap-1">
-              {isPositiveDifference ? (
-                <TrendingUp className="h-3.5 w-3.5" />
-              ) : (
-                <TrendingDown className="h-3.5 w-3.5" />
-              )}
-              {fmtDecimal(difference)}
+              {!emptyValues &&
+                (isPositiveDifference ? (
+                  <TrendingUp className="h-3.5 w-3.5" />
+                ) : (
+                  <TrendingDown className="h-3.5 w-3.5" />
+                ))}
+              {emptyValues ? '—' : fmtDecimal(difference)}
             </span>
             <span
               className={cn(
                 'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
-                diffPctVsOrc == null
+                emptyValues || diffPctVsOrc == null
                   ? 'text-slate-400'
                   : isPositiveDifference
                     ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
             >
-              {diffPctVsOrc == null
+              {emptyValues || diffPctVsOrc == null
                 ? '—'
                 : `${diffPctVsOrc >= 0 ? '+' : ''}${diffPctVsOrc.toFixed(1)}%`}
             </span>
@@ -1083,6 +1151,7 @@ export default function ActivityDetailPage() {
     activityLevelEntryFilter,
     summaryEntryFilter,
     isAgricola,
+    isPecuaria,
   ]);
 
   const availableCultures = useMemo(() => {
@@ -1143,7 +1212,13 @@ export default function ActivityDetailPage() {
           )
           .map((entry) => entry.departamento)
           .filter((dept): dept is string => Boolean(dept))
-          .filter((dept) => (isPecuaria ? isPecuariaDepartmentOption(dept) : true))
+          .filter((dept) =>
+            isPecuariaReceitasGeneticaSubview
+              ? isPecuariaGeneticaDepartmentOption(dept)
+              : isPecuaria
+                ? isPecuariaDepartmentOption(dept) && !isReceitaPecuariaGeneticaDepartment(dept)
+                : true
+          )
           .filter((dept) => !shouldHideAgricolaReceitaDepartment(dept, isAgricola, resolvedTipoView))
       )
     ).sort();
@@ -1154,6 +1229,7 @@ export default function ActivityDetailPage() {
     filterEntriesForSelectors,
     selectedMonth,
     isPecuaria,
+    isPecuariaReceitasGeneticaSubview,
     isAgricola,
     resolvedTipoView,
   ]);
@@ -1250,7 +1326,9 @@ export default function ActivityDetailPage() {
                 navigate(
                   isDespesasComVendas
                     ? buildActivityPath('DESPESAS_COM_VENDAS')
-                    : buildActivityPath(atividade!.key)
+                    : isPecuariaReceitasGeneticaSubview
+                      ? `/atividade/${atividade!.key}?tipo=todos${returnTo ? `&returnTo=${encodeURIComponent(returnTo)}` : ''}`
+                      : buildActivityPath(atividade!.key)
                 )
               }
               className="flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-semibold mb-2 transition-colors"
@@ -1373,10 +1451,24 @@ export default function ActivityDetailPage() {
                   })}
                 </div>
               ) : (
-                <div className={cn('grid gap-6', onlyDespesas ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
+                <div
+                  className={cn(
+                    'grid gap-6',
+                    onlyDespesas
+                      ? 'grid-cols-1'
+                      : isPecuaria
+                        ? 'grid-cols-1 md:grid-cols-3'
+                        : 'grid-cols-1 md:grid-cols-2'
+                  )}
+                >
                   {!onlyDespesas &&
                     renderSummaryCard('Receitas', activityHubSummary.receitas, {
                       onClick: () => navigate(buildHubPath('receitas')),
+                      accentColor: 'emerald',
+                    })}
+                  {isPecuaria &&
+                    renderSummaryCard('Receitas Genética', activityHubSummary.receitasGenetica, {
+                      onClick: () => navigate(buildHubPathWithSubview('receitas', 'genetica')),
                       accentColor: 'emerald',
                     })}
                   {renderSummaryCard(isEncargos ? 'Encargos' : onlyDespesas ? 'Despesas' : 'Custos', activityHubSummary.custos, {
@@ -1445,8 +1537,8 @@ export default function ActivityDetailPage() {
         </div>
       ) : (
         <>
-          <SummaryCards 
-            selectedMonth={selectedMonth} 
+          <SummaryCards
+            selectedMonth={selectedMonth}
             atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
             costCenterFilter={activeCostCenterFilter}
             departmentFilter={activeDepartmentFilter}
@@ -1501,6 +1593,31 @@ export default function ActivityDetailPage() {
               title="Detalhamento de Rateios"
               subtitle="Departamentos selecionados"
               accentColor="sky"
+            />
+          </div>
+        ) : resolvedTipoView === 'receitas' && isPecuariaReceitasGeneticaSubview ? (
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-slate-900">Abertura de Receitas Genética</h2>
+              <div className="text-[10px] font-bold text-revenue uppercase tracking-widest bg-revenue/10 px-2 py-1 rounded border border-revenue/25">
+                Entradas
+              </div>
+            </div>
+            <AnalyticalTable
+              atividadeFilter={atividade.key}
+              selectedMonth={selectedMonth}
+              costCenterFilter={activeCostCenterFilter}
+              departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+              tipoFilter={['R']}
+              entryFilter={combineEntryFilters(
+                activityLevelEntryFilter,
+                (entry) => isReceitaPecuariaGeneticaDepartment(entry.departamento),
+                (entry) => !isOutrasReceitasEventuaisCode(entry.codigo),
+              )}
+              title="Detalhamento de Receitas Genética"
+              subtitle="Grupo Contábil → Descrição Contábil"
+              accentColor="emerald"
+              costHierarchyMode="grupo_descricao"
             />
           </div>
         ) : resolvedTipoView === 'receitas' ? (

@@ -3,9 +3,14 @@ import { basename, join } from 'path';
 import XLSX from 'xlsx';
 
 const OUTPUT_FILE = 'src/data/orcadoReceitaPecuariaImportData.ts';
+const GENETICA_OUTPUT_FILE = 'src/data/orcadoReceitaPecuariaGeneticaImportData.ts';
 const DEFAULT_ORCADO_DIR = join('Orçado_Receitas', 'Receita_Pecuaria');
 const FIXED_ATIVIDADE = 'PECUARIA';
 const RECEITA_GRUPO_PREFIX = '3.1.01';
+
+/** Planilhas do card Receitas Genética (fora do lote de Receitas pecuária). */
+const isReceitaGeneticaFile = (fileName) =>
+  normalizeText(fileName.replace(/\.(xlsx|xls)$/i, '')) === 'CENTRO COMERCIAL DE TOUROS';
 
 const MONTH_KEYS = new Set([
   '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09',
@@ -232,7 +237,7 @@ function parseDepartmentFromFilename(fileName) {
     .trim();
 }
 
-function buildOutputSource(batches) {
+function buildOutputSource(batches, exportName) {
   return `import type { AtividadeKey, MonthKey } from '@/types/budget';
 
 type OrcadoImportAtividadeKey = AtividadeKey;
@@ -253,7 +258,7 @@ export interface OrcadoImportBatch {
   rows: OrcadoGrupoMonthValue[];
 }
 
-export const ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES: OrcadoImportBatch[] = ${JSON.stringify(batches, null, 2)};\n`;
+export const ${exportName}: OrcadoImportBatch[] = ${JSON.stringify(batches, null, 2)};\n`;
 }
 
 function run() {
@@ -267,25 +272,39 @@ function run() {
     throw new Error(`Nenhum arquivo Excel encontrado em "${targetDir}".`);
   }
 
-  const receitaPecuariaBatches = files.map((fileName) => {
+  const receitaPecuariaBatches = [];
+  const receitaGeneticaBatches = [];
+
+  for (const fileName of files) {
     const rows = aggregateBudgetSheetByMonthAndGroup(join(targetDir, fileName)).sort((a, b) => {
       const ka = `${a.grupoContabil}|${a.pecuariaOrcadoScope}|${a.descricaoContabil}|${a.month}`;
       const kb = `${b.grupoContabil}|${b.pecuariaOrcadoScope}|${b.descricaoContabil}|${b.month}`;
       return ka.localeCompare(kb);
     });
 
-    return {
+    const batch = {
       fileName,
       departamento: parseDepartmentFromFilename(fileName),
       atividade: FIXED_ATIVIDADE,
       rows,
     };
-  });
 
-  writeFileSync(OUTPUT_FILE, buildOutputSource(receitaPecuariaBatches));
+    if (isReceitaGeneticaFile(fileName)) {
+      receitaGeneticaBatches.push(batch);
+    } else {
+      receitaPecuariaBatches.push(batch);
+    }
+  }
+
+  writeFileSync(OUTPUT_FILE, buildOutputSource(receitaPecuariaBatches, 'ORCADO_RECEITA_PECUARIA_IMPORT_BATCHES'));
+  writeFileSync(
+    GENETICA_OUTPUT_FILE,
+    buildOutputSource(receitaGeneticaBatches, 'ORCADO_RECEITA_PECUARIA_GENETICA_IMPORT_BATCHES')
+  );
   console.log(
     `Importacao Receita Pecuaria concluida: ${files.length} arquivo(s) processado(s) de "${targetDir}". ` +
-    `Arquivo gerado: "${OUTPUT_FILE}" com ${receitaPecuariaBatches.length} lote(s).`
+      `Receitas: "${OUTPUT_FILE}" (${receitaPecuariaBatches.length} lote(s)); ` +
+      `Genetica: "${GENETICA_OUTPUT_FILE}" (${receitaGeneticaBatches.length} lote(s)).`
   );
 }
 
