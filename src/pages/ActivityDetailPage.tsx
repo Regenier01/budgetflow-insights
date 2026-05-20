@@ -1523,7 +1523,9 @@ export default function ActivityDetailPage() {
                 (entry) => !isOutrasReceitasEventuaisCode(entry.codigo),
               )}
               title="Detalhamento de Receitas"
+              subtitle={isPecuaria ? 'Grupo Contábil → Descrição Contábil' : undefined}
               accentColor="emerald"
+              costHierarchyMode={isPecuaria ? 'grupo_descricao' : 'default'}
             />
             {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
               <>
@@ -1809,7 +1811,9 @@ export default function ActivityDetailPage() {
                   (entry) => !isOutrasReceitasEventuaisCode(entry.codigo),
                 )}
                 title="Detalhamento de Receitas"
+                subtitle={isPecuaria ? 'Grupo Contábil → Descrição Contábil' : undefined}
                 accentColor="emerald"
+                costHierarchyMode={isPecuaria ? 'grupo_descricao' : 'default'}
               />
               {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
                 <>
