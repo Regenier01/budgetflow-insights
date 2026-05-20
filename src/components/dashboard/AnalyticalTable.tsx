@@ -1,7 +1,11 @@
-import { useState, Fragment } from 'react';
-import { ChevronRight, Table, ListTree } from 'lucide-react';
+import { useState, Fragment, useMemo } from 'react';
+import { ChevronRight, Table, ListTree, ChevronDown, Search } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 import {
   CONFINAMENTO_DIARIA_ORCADO,
@@ -122,6 +126,196 @@ function resolveTableAccent(accentColor: string): (typeof TABLE_ACCENTS)[TableAc
   return TABLE_ACCENTS.orange;
 }
 
+/** Filtros por coluna só na visão Planilha (independente dos filtros globais do dashboard). */
+type SpreadsheetFilterKey =
+  | 'departamento'
+  | 'centroCusto'
+  | 'conta'
+  | 'descricao'
+  | 'produto'
+  | 'realizado';
+
+type SpreadsheetColumnFilters = Partial<Record<SpreadsheetFilterKey, Set<string>>>;
+
+const SPREADSHEET_FILTER_EMPTY = '(Vazio)';
+
+function spreadsheetCellValue(
+  key: SpreadsheetFilterKey,
+  entry: FlatEntry,
+  fmtCurrency: (v: number) => string
+): string {
+  switch (key) {
+    case 'departamento':
+      return entry.departamento?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'centroCusto':
+      return entry.centroCusto?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'conta':
+      return entry.conta?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'descricao':
+      return entry.descricao?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'produto':
+      return entry.produto?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'realizado':
+      return fmtCurrency(entry.real);
+  }
+}
+
+function passesSpreadsheetColumnFilters(
+  entry: FlatEntry,
+  filters: SpreadsheetColumnFilters,
+  fmtCurrency: (v: number) => string
+): boolean {
+  for (const key of Object.keys(filters) as SpreadsheetFilterKey[]) {
+    const allowed = filters[key];
+    if (!allowed || allowed.size === 0) continue;
+    if (!allowed.has(spreadsheetCellValue(key, entry, fmtCurrency))) return false;
+  }
+  return true;
+}
+
+function SpreadsheetColumnFilter({
+  label,
+  align = 'left',
+  options,
+  selected,
+  onChange,
+}: {
+  label: string;
+  align?: 'left' | 'right';
+  options: string[];
+  selected: Set<string> | undefined;
+  onChange: (next: Set<string> | undefined) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState('');
+  const isActive = selected !== undefined;
+  const normalizedSearch = search.trim().toLowerCase();
+  const visibleOptions = normalizedSearch
+    ? options.filter((o) => o.toLowerCase().includes(normalizedSearch))
+    : options;
+
+  const isChecked = (value: string) => !selected || selected.has(value);
+
+  const toggleValue = (value: string, checked: boolean) => {
+    if (!selected) {
+      if (checked) return;
+      const next = new Set(options);
+      next.delete(value);
+      onChange(next.size === options.length ? undefined : next);
+      return;
+    }
+    const next = new Set(selected);
+    if (checked) next.add(value);
+    else next.delete(value);
+    if (next.size === 0 || next.size === options.length) onChange(undefined);
+    else onChange(next);
+  };
+
+  const selectAll = () => onChange(undefined);
+  const clearFilter = () => onChange(undefined);
+
+  return (
+    <th
+      className={cn(
+        'py-3 px-3 font-semibold',
+        align === 'right' ? 'text-right' : 'text-left'
+      )}
+    >
+      <div
+        className={cn(
+          'inline-flex items-center gap-0.5',
+          align === 'right' && 'justify-end w-full'
+        )}
+      >
+        <span>{label}</span>
+        <Popover open={open} onOpenChange={setOpen}>
+          <PopoverTrigger asChild>
+            <button
+              type="button"
+              aria-label={`Filtrar coluna ${label}`}
+              className={cn(
+                'inline-flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors',
+                isActive
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-white/75 hover:bg-white/15 hover:text-white'
+              )}
+            >
+              <ChevronDown className="h-3 w-3" strokeWidth={2.5} />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent
+            align={align === 'right' ? 'end' : 'start'}
+            className="w-64 p-0"
+            onOpenAutoFocus={(e) => e.preventDefault()}
+          >
+            <div className="border-b px-3 py-2">
+              <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                Filtrar: {label}
+              </p>
+              <div className="relative mt-2">
+                <Search className="absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+                <Input
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Buscar..."
+                  className="h-8 pl-8 text-xs"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-between gap-2 border-b px-3 py-1.5">
+              <button
+                type="button"
+                onClick={selectAll}
+                className="text-[11px] font-medium text-slate-600 hover:text-slate-900"
+              >
+                Selecionar todos
+              </button>
+              <button
+                type="button"
+                onClick={clearFilter}
+                className="text-[11px] font-medium text-slate-500 hover:text-slate-800"
+              >
+                Limpar
+              </button>
+            </div>
+            <div className="max-h-52 overflow-y-auto py-1">
+              {visibleOptions.length === 0 ? (
+                <p className="px-3 py-4 text-center text-xs text-slate-400">Nenhum valor encontrado</p>
+              ) : (
+                visibleOptions.map((value) => (
+                  <label
+                    key={value}
+                    className="flex cursor-pointer items-center gap-2 px-3 py-1.5 hover:bg-slate-50"
+                  >
+                    <Checkbox
+                      checked={isChecked(value)}
+                      onCheckedChange={(c) => toggleValue(value, c === true)}
+                    />
+                    <span className="truncate text-xs text-slate-700" title={value}>
+                      {value}
+                    </span>
+                  </label>
+                ))
+              )}
+            </div>
+            <div className="border-t p-2">
+              <Button
+                type="button"
+                size="sm"
+                variant="secondary"
+                className="h-8 w-full text-xs"
+                onClick={() => setOpen(false)}
+              >
+                Aplicar
+              </Button>
+            </div>
+          </PopoverContent>
+        </Popover>
+      </div>
+    </th>
+  );
+}
+
 export function AnalyticalTable({ 
   atividadeFilter, 
   selectedMonth, 
@@ -140,6 +334,7 @@ export function AnalyticalTable({
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'hierarchy' | 'flat'>('hierarchy');
+  const [spreadsheetFilters, setSpreadsheetFilters] = useState<SpreadsheetColumnFilters>({});
   const ta = resolveTableAccent(accentColor);
   const extraMetricCols =
     (showDiariaColumns ? 2 : 0) + (showPCabecaColumns ? 2 : 0) + (showPpKgColumns ? 2 : 0);
@@ -150,8 +345,8 @@ export function AnalyticalTable({
   const isCostTable = tipoFilter?.length === 1 && tipoFilter[0] === 'C';
   const isExpenseTable = tipoFilter?.length === 1 && tipoFilter[0] === 'D';
   const sortByVariationPct = isCostTable || isExpenseTable;
-  /** Planilha de custos e despesas: só realizado, ordenado por valor (maiores no topo). */
-  const flatRealizadoOnly = isCostTable || isExpenseTable;
+  /** Planilha de custos, despesas e receitas: só realizado, ordenado por valor (maiores no topo). */
+  const flatRealizadoOnly = isCostTable || isExpenseTable || isRevenueTable;
   const flatRealOnlyMetricCols =
     (showDiariaColumns ? 1 : 0) + (showPCabecaColumns ? 1 : 0) + (showPpKgColumns ? 1 : 0);
   const flatSpreadsheetColSpan = flatRealizadoOnly ? 6 + flatRealOnlyMetricCols : 8 + extraMetricCols;
@@ -228,31 +423,91 @@ export function AnalyticalTable({
     return monthList.reduce((sum, m) => sum + (values[m] || 0), 0);
   };
 
-  // Flat entries for spreadsheet view
-  const flatEntries: FlatEntry[] = filtered.map(a => {
-    const orc = valueForMonths(a.orcado);
-    const real = valueForMonths(a.realizado);
+  const fmtCurrency = (v: number) =>
+    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
-    return {
-      id: a.id,
-      departamento: a.departamento,
-      centroCusto: a.centroCusto,
-      conta: a.codigo,
-      descricao: a.descricao,
-      grupoContabil: a.grupoContabilN9,
-      documento: a.centroCusto,
-      produto: a.nomeProduto,
-      orc,
-      real,
-    };
-  }).filter(e => e.orc !== 0 || e.real !== 0)
-    .sort((a, b) =>
-      flatRealizadoOnly
-        ? Math.abs(b.real) - Math.abs(a.real) ||
-          Math.abs(b.orc) - Math.abs(a.orc) ||
-          String(a.conta).localeCompare(b.conta)
-        : compareByDisplayOrder(a.orc, a.real, b.orc, b.real)
+  // Lançamentos da visão Planilha (antes dos filtros por coluna)
+  const flatEntriesAll: FlatEntry[] = useMemo(
+    () =>
+      filtered
+        .map((a) => {
+          const orc = valueForMonths(a.orcado);
+          const real = valueForMonths(a.realizado);
+          return {
+            id: a.id,
+            departamento: a.departamento,
+            centroCusto: a.centroCusto,
+            conta: a.codigo,
+            descricao: a.descricao,
+            grupoContabil: a.grupoContabilN9,
+            documento: a.centroCusto,
+            produto: a.nomeProduto,
+            orc,
+            real,
+          };
+        })
+        .filter((e) => e.orc !== 0 || e.real !== 0)
+        .sort((a, b) =>
+          flatRealizadoOnly
+            ? Math.abs(b.real) - Math.abs(a.real) ||
+              Math.abs(b.orc) - Math.abs(a.orc) ||
+              String(a.conta).localeCompare(b.conta)
+            : compareByDisplayOrder(a.orc, a.real, b.orc, b.real)
+        ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- valueForMonths depende de selectedMonth/isAllMonths
+    [filtered, selectedMonth, flatRealizadoOnly, isRevenueTable, isCostTable, isExpenseTable]
+  );
+
+  const spreadsheetFilterOptions = useMemo(() => {
+    const keys: SpreadsheetFilterKey[] = [
+      'departamento',
+      'centroCusto',
+      'conta',
+      'descricao',
+      'produto',
+      'realizado',
+    ];
+    const result = {} as Record<SpreadsheetFilterKey, string[]>;
+    for (const key of keys) {
+      const unique = new Set<string>();
+      for (const entry of flatEntriesAll) {
+        unique.add(spreadsheetCellValue(key, entry, fmtCurrency));
+      }
+      const list = Array.from(unique);
+      if (key === 'realizado') {
+        list.sort((a, b) => {
+          const parse = (s: string) => {
+            const n = Number(
+              s.replace(/[^\d,-]/g, '').replace(/\./g, '').replace(',', '.')
+            );
+            return Number.isFinite(n) ? Math.abs(n) : 0;
+          };
+          return parse(b) - parse(a);
+        });
+      } else {
+        list.sort((a, b) => a.localeCompare(b, 'pt-BR'));
+      }
+      result[key] = list;
+    }
+    return result;
+  }, [flatEntriesAll]);
+
+  const flatEntries: FlatEntry[] = useMemo(() => {
+    const hasColumnFilters = Object.values(spreadsheetFilters).some((s) => s && s.size > 0);
+    if (!hasColumnFilters) return flatEntriesAll;
+    return flatEntriesAll.filter((e) =>
+      passesSpreadsheetColumnFilters(e, spreadsheetFilters, fmtCurrency)
     );
+  }, [flatEntriesAll, spreadsheetFilters]);
+
+  const setSpreadsheetColumnFilter = (key: SpreadsheetFilterKey, next: Set<string> | undefined) => {
+    setSpreadsheetFilters((prev) => {
+      const copy = { ...prev };
+      if (next === undefined) delete copy[key];
+      else copy[key] = next;
+      return copy;
+    });
+  };
 
   const root = new Map<string, Node>();
 
@@ -404,9 +659,6 @@ export function AnalyticalTable({
       return next;
     });
   };
-
-  const fmtCurrency = (v: number) =>
-    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
   /** Um único mês no filtro: usa a coluna daquele mês na planilha; vários meses ou “todos” → não soma, mostra “-”. */
   const singleMonthForDiaria: MonthKey | null =
@@ -661,11 +913,36 @@ export function AnalyticalTable({
           <table className="w-full border-collapse">
             <thead>
               <tr className={cn(ta.thead, 'text-[12px]')}>
-                <th className="text-left py-3 px-3">Departamento</th>
-                <th className="text-left py-3 px-3">Centro de Custo</th>
-                <th className="text-left py-3 px-3">Conta</th>
-                <th className="text-left py-3 px-3">Descrição</th>
-                <th className="text-left py-3 px-3">Produto</th>
+                <SpreadsheetColumnFilter
+                  label="Departamento"
+                  options={spreadsheetFilterOptions.departamento}
+                  selected={spreadsheetFilters.departamento}
+                  onChange={(next) => setSpreadsheetColumnFilter('departamento', next)}
+                />
+                <SpreadsheetColumnFilter
+                  label="Centro de Custo"
+                  options={spreadsheetFilterOptions.centroCusto}
+                  selected={spreadsheetFilters.centroCusto}
+                  onChange={(next) => setSpreadsheetColumnFilter('centroCusto', next)}
+                />
+                <SpreadsheetColumnFilter
+                  label="Conta"
+                  options={spreadsheetFilterOptions.conta}
+                  selected={spreadsheetFilters.conta}
+                  onChange={(next) => setSpreadsheetColumnFilter('conta', next)}
+                />
+                <SpreadsheetColumnFilter
+                  label="Descrição"
+                  options={spreadsheetFilterOptions.descricao}
+                  selected={spreadsheetFilters.descricao}
+                  onChange={(next) => setSpreadsheetColumnFilter('descricao', next)}
+                />
+                <SpreadsheetColumnFilter
+                  label="Produto"
+                  options={spreadsheetFilterOptions.produto}
+                  selected={spreadsheetFilters.produto}
+                  onChange={(next) => setSpreadsheetColumnFilter('produto', next)}
+                />
                 {!flatRealizadoOnly && (
                   <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
                 )}
@@ -678,7 +955,13 @@ export function AnalyticalTable({
                 {!flatRealizadoOnly && showPpKgColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">Custo P/KG O</th>
                 )}
-                <th className="text-right py-3 px-3 w-[120px]">Realizado</th>
+                <SpreadsheetColumnFilter
+                  label="Realizado"
+                  align="right"
+                  options={spreadsheetFilterOptions.realizado}
+                  selected={spreadsheetFilters.realizado}
+                  onChange={(next) => setSpreadsheetColumnFilter('realizado', next)}
+                />
                 {showDiariaColumns && (
                   <th className="text-right py-3 px-3 w-[100px]">
                     {flatRealizadoOnly ? 'Diária' : 'Diária R'}
