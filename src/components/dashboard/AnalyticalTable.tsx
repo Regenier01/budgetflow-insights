@@ -168,7 +168,8 @@ function passesSpreadsheetColumnFilters(
 ): boolean {
   for (const key of Object.keys(filters) as SpreadsheetFilterKey[]) {
     const allowed = filters[key];
-    if (!allowed || allowed.size === 0) continue;
+    if (!allowed) continue;
+    if (allowed.size === 0) return false;
     if (!allowed.has(spreadsheetCellValue(key, entry, fmtCurrency))) return false;
   }
   return true;
@@ -195,7 +196,11 @@ function SpreadsheetColumnFilter({
     ? options.filter((o) => o.toLowerCase().includes(normalizedSearch))
     : options;
 
-  const isChecked = (value: string) => !selected || selected.has(value);
+  const isChecked = (value: string) => {
+    if (!selected) return true;
+    if (selected.size === 0) return false;
+    return selected.has(value);
+  };
 
   const toggleValue = (value: string, checked: boolean) => {
     if (!selected) {
@@ -208,12 +213,13 @@ function SpreadsheetColumnFilter({
     const next = new Set(selected);
     if (checked) next.add(value);
     else next.delete(value);
-    if (next.size === 0 || next.size === options.length) onChange(undefined);
+    if (next.size === 0) onChange(new Set());
+    else if (next.size === options.length) onChange(undefined);
     else onChange(next);
   };
 
   const selectAll = () => onChange(undefined);
-  const clearFilter = () => onChange(undefined);
+  const clearFilter = () => onChange(new Set());
 
   return (
     <th
@@ -505,7 +511,7 @@ export function AnalyticalTable({
   }, [flatEntriesAll]);
 
   const flatEntries: FlatEntry[] = useMemo(() => {
-    const hasColumnFilters = Object.values(spreadsheetFilters).some((s) => s && s.size > 0);
+    const hasColumnFilters = Object.values(spreadsheetFilters).some((s) => s !== undefined);
     if (!hasColumnFilters) return flatEntriesAll;
     return flatEntriesAll.filter((e) =>
       passesSpreadsheetColumnFilters(e, spreadsheetFilters, fmtCurrency)
