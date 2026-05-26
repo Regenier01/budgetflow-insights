@@ -24,6 +24,7 @@ import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import NotFound from './NotFound';
+import { HeaderFiltersSlot } from '@/components/layout/HeaderFilters';
 import {
   CONFINAMENTO_DIARIA_ORCADO,
   CONFINAMENTO_DIARIA_REALIZADO,
@@ -342,6 +343,8 @@ export default function ActivityDetailPage() {
   const isAgricola = atividade?.key === 'AGRICOLA';
   const isPecuaria = atividade?.key === 'PECUARIA';
   const isSeringal = atividade?.key === 'SERINGAL';
+  const hideAberturaDespesasPanel = isPecuaria || isAgricola || isSeringal;
+  const hideAberturaCustosPanel = isAdmTrib;
   const isAdmTribLaizaSubview = isAdmTrib && subview === 'laiza';
   const isAdmTribRaileneSubview = isAdmTrib && subview === 'railene';
   const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
@@ -1397,6 +1400,69 @@ export default function ActivityDetailPage() {
 
   return (
     <div className="space-y-8 pb-10">
+      <HeaderFiltersSlot>
+        <div className="flex items-center gap-2">
+          {!isGeneralTotalsView && (
+            <MultiSelect
+              className="w-[min(200px,28vw)]"
+              triggerClassName="h-9 border-orange-500 bg-orange-500 text-xs shadow-sm font-semibold text-white hover:bg-orange-500/90"
+              placeholder="Departamento"
+              allLabel="Todos Departamentos"
+              options={availableDepts.map((dept) => ({
+                value: dept,
+                label:
+                  isPecuaria && subview === 'confinamento'
+                    ? formatConfinamentoDepartmentLabel(dept)
+                    : dept,
+              }))}
+              selected={selectedDepts}
+              onChange={setSelectedDepts}
+            />
+          )}
+
+          {!isGeneralTotalsView && shouldApplyCostCenterFilter && (
+            <MultiSelect
+              className="w-[min(200px,28vw)]"
+              triggerClassName="h-9 border-orange-500 bg-orange-500 text-xs shadow-sm font-semibold text-white hover:bg-orange-500/90"
+              placeholder="Centro de Custo"
+              allLabel="Todos Centros de Custo"
+              options={availableCostCenters.map((cc) => ({ value: cc, label: cc }))}
+              selected={selectedCCs}
+              onChange={setSelectedCCs}
+            />
+          )}
+
+          {!isGeneralTotalsView && shouldApplyCultureFilter && (
+            <Select value={selectedCulture} onValueChange={(v) => setSelectedCulture(v)}>
+              <SelectTrigger className="h-9 w-[min(200px,28vw)] border-orange-500 bg-orange-500 text-xs shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
+                <SelectValue placeholder="Cultura" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all" className="font-semibold">
+                  Todas Culturas
+                </SelectItem>
+                {availableCultures.map((culture) => (
+                  <SelectItem key={culture} value={culture}>
+                    {culture}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
+
+          <MultiSelect
+            className="w-[min(160px,24vw)]"
+            triggerClassName="h-9 border-orange-500 bg-orange-500 text-xs shadow-sm font-semibold text-white hover:bg-orange-500/90"
+            placeholder="Período"
+            allLabel="Acumulado 2026/27"
+            align="end"
+            options={MONTHS.map((m) => ({ value: m.key, label: m.label }))}
+            selected={selectedMonths}
+            onChange={(next) => setSelectedMonths(next as MonthKey[])}
+          />
+        </div>
+      </HeaderFiltersSlot>
+
       <div className="flex flex-col gap-4">
         <div>
           {(isPecuaria || isAgricola || isAdmTrib || isDespesasComVendas) && subview && (
@@ -1425,68 +1491,6 @@ export default function ActivityDetailPage() {
           </h1>
           <p className="text-sm text-slate-500 font-medium">Análise granular de orçado vs realizado por categoria contábil</p>
         </div>
-        
-        <div className="fixed inset-x-0 top-16 z-40 py-3">
-          <div className="flex justify-end px-4 sm:px-8">
-            <div className="flex flex-wrap items-center justify-end gap-3">
-              {!isGeneralTotalsView && (
-                <MultiSelect
-                  className="w-[200px]"
-                  triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
-                  placeholder="Departamento"
-                  allLabel="Todos Departamentos"
-                  options={availableDepts.map((dept) => ({
-                    value: dept,
-                    label:
-                      isPecuaria && subview === 'confinamento'
-                        ? formatConfinamentoDepartmentLabel(dept)
-                        : dept,
-                  }))}
-                  selected={selectedDepts}
-                  onChange={setSelectedDepts}
-                />
-              )}
-
-              {!isGeneralTotalsView && shouldApplyCostCenterFilter && (
-                <MultiSelect
-                  className="w-[200px]"
-                  triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
-                  placeholder="Centro de Custo"
-                  allLabel="Todos Centros de Custo"
-                  options={availableCostCenters.map((cc) => ({ value: cc, label: cc }))}
-                  selected={selectedCCs}
-                  onChange={setSelectedCCs}
-                />
-              )}
-
-              {!isGeneralTotalsView && shouldApplyCultureFilter && (
-                <Select value={selectedCulture} onValueChange={(v) => setSelectedCulture(v)}>
-                  <SelectTrigger className="w-[220px] border-orange-500 bg-orange-500 shadow-sm font-semibold text-white [&>span]:text-white [&>svg]:text-white">
-                    <SelectValue placeholder="Cultura" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all" className="font-semibold">Todas Culturas</SelectItem>
-                    {availableCultures.map((culture) => (
-                      <SelectItem key={culture} value={culture}>{culture}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-
-              <MultiSelect
-                className="w-[180px]"
-                triggerClassName="border-orange-500 bg-orange-500 shadow-sm font-semibold text-white hover:bg-orange-500/90"
-                placeholder="Período"
-                allLabel="Acumulado 2026/27"
-                align="end"
-                options={MONTHS.map((m) => ({ value: m.key, label: m.label }))}
-                selected={selectedMonths}
-                onChange={(next) => setSelectedMonths(next as MonthKey[])}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="h-[84px]" />
       </div>
 
       {tipoView === 'todos' &&
@@ -1798,27 +1802,29 @@ export default function ActivityDetailPage() {
               />
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-                  Saídas
+            {!hideAberturaDespesasPanel && (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                    Saídas
+                  </div>
                 </div>
+                <AnalyticalTable
+                  atividadeFilter={atividade.key}
+                  selectedMonth={selectedMonth}
+                  costCenterFilter={activeCostCenterFilter}
+                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                  tipoFilter={['D']}
+                  entryFilter={combineEntryFilters(
+                    activityLevelEntryFilter,
+                    (entry) => !isReceitaDeductionEntry(entry),
+                  )}
+                  title="Detalhamento de Despesas"
+                  accentColor="orange"
+                />
               </div>
-              <AnalyticalTable
-                atividadeFilter={atividade.key}
-                selectedMonth={selectedMonth}
-                costCenterFilter={activeCostCenterFilter}
-                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                tipoFilter={['D']}
-                entryFilter={combineEntryFilters(
-                  activityLevelEntryFilter,
-                  (entry) => !isReceitaDeductionEntry(entry),
-                )}
-                title="Detalhamento de Despesas"
-                accentColor="orange"
-              />
-            </div>
+            )}
           </>
         ) : resolvedTipoView === 'custos' ? (
           // Mostrar apenas Custos/Despesas
@@ -1903,58 +1909,89 @@ export default function ActivityDetailPage() {
             </>
           ) : (
             <>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
-                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-                    Saídas
+              {!hideAberturaCustosPanel && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
+                    <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                      Saídas
+                    </div>
                   </div>
+                  <AnalyticalTable 
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                    tipoFilter={['C']}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                      isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
+                      isAgricola
+                        ? (entry) =>
+                          isAgricolaFarmCultureDepartment(entry.departamento) ||
+                          isAgricolaUnidadeRecepConta4Entry(entry)
+                        : undefined,
+                      (entry) => isAllowedEntryForCustos(atividade?.key, entry),
+                    )}
+                    title="Detalhamento de Custos"
+                    subtitle={
+                      isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
+                        ? 'Grupo Contábil → Descrição Contábil'
+                        : 'N9 → Conta → Produto'
+                    }
+                    accentColor="orange"
+                    showDiariaColumns={isPecuaria && subview === 'confinamento'}
+                    showPCabecaColumns={isPecuaria && subview === 'pasto'}
+                    showPpKgColumns={isSeringal}
+                    costHierarchyMode={
+                      isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
+                        ? 'grupo_descricao'
+                        : 'default'
+                    }
+                  />
                 </div>
-                <AnalyticalTable 
-                  atividadeFilter={atividade.key}
-                  selectedMonth={selectedMonth}
-                  costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                  departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                  tipoFilter={['C']}
-                  entryFilter={combineEntryFilters(
-                    activityLevelEntryFilter,
-                    isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
-                    isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
-                    isAgricola
-                      ? (entry) =>
-                        isAgricolaFarmCultureDepartment(entry.departamento) ||
-                        isAgricolaUnidadeRecepConta4Entry(entry)
-                      : undefined,
-                    (entry) => isAllowedEntryForCustos(atividade?.key, entry),
-                  )}
-                  title="Detalhamento de Custos"
-                  subtitle={
-                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
-                      ? 'Grupo Contábil → Descrição Contábil'
-                      : 'N9 → Conta → Produto'
-                  }
-                  accentColor="orange"
-                  showDiariaColumns={isPecuaria && subview === 'confinamento'}
-                  showPCabecaColumns={isPecuaria && subview === 'pasto'}
-                  showPpKgColumns={isSeringal}
-                  costHierarchyMode={
-                    isPecuaria || (isAgricola && isAgricolaGeralSubview) || isSeringal || isAdmTrib
-                      ? 'grupo_descricao'
-                      : 'default'
-                  }
-                />
-              </div>
+              )}
 
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-                    Saídas
+              {!hideAberturaDespesasPanel && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+                    <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                      Saídas
+                    </div>
                   </div>
-                </div>
-                {isAdmTrib ? (
-                  <div className="space-y-6">
-                    {(isAdmTribLaizaSubview || isAdmTribRaileneSubview) && (
+                  {isAdmTrib ? (
+                    <div className="space-y-6">
+                      {(isAdmTribLaizaSubview || isAdmTribRaileneSubview) && (
+                        <AnalyticalTable
+                          atividadeFilter={atividade.key}
+                          selectedMonth={selectedMonth}
+                          costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                          departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                          tipoFilter={['D']}
+                          entryFilter={combineEntryFilters(
+                            activityLevelEntryFilter,
+                            (entry) => isNonRateioDepartment(entry.departamento),
+                            (entry) => !isConta4Entry(entry),
+                            (entry) => !isTributariaEntry(entry),
+                            (entry) => !isReceitaDeductionEntry(entry),
+                            isAdmTribLaizaSubview
+                              ? (entry) => isDespesasLaizaCostCenter(entry.centroCusto)
+                              : isAdmTribRaileneSubview
+                                ? (entry) => isDespesasRaileneCostCenter(entry.centroCusto)
+                                : undefined,
+                          )}
+                          title={isAdmTribLaizaSubview ? 'DESPESAS - GERENCIA FINANCEIRO' : 'DESPESAS - GERENCIA RH'}
+                          subtitle={
+                            isAdmTribLaizaSubview
+                              ? 'Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
+                              : 'Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
+                          }
+                          accentColor="orange"
+                          costHierarchyMode="grupo_descricao"
+                        />
+                      )}
                       <AnalyticalTable
                         atividadeFilter={atividade.key}
                         selectedMonth={selectedMonth}
@@ -1965,25 +2002,15 @@ export default function ActivityDetailPage() {
                           activityLevelEntryFilter,
                           (entry) => isNonRateioDepartment(entry.departamento),
                           (entry) => !isConta4Entry(entry),
-                          (entry) => !isTributariaEntry(entry),
-                          (entry) => !isReceitaDeductionEntry(entry),
-                          isAdmTribLaizaSubview
-                            ? (entry) => isDespesasLaizaCostCenter(entry.centroCusto)
-                            : isAdmTribRaileneSubview
-                              ? (entry) => isDespesasRaileneCostCenter(entry.centroCusto)
-                              : undefined,
+                          (entry) => isTributariaEntry(entry),
                         )}
-                        title={isAdmTribLaizaSubview ? 'DESPESAS - GERENCIA FINANCEIRO' : 'DESPESAS - GERENCIA RH'}
-                        subtitle={
-                          isAdmTribLaizaSubview
-                            ? 'Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
-                            : 'Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
-                        }
+                        title="Abertura de Despesas Tributárias"
+                        subtitle="Despesas tributárias"
                         accentColor="orange"
-                        costHierarchyMode="grupo_descricao"
                       />
-                    )}
-                    <AnalyticalTable
+                    </div>
+                  ) : (
+                    <AnalyticalTable 
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
                       costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -1991,31 +2018,14 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
-                        (entry) => isNonRateioDepartment(entry.departamento),
-                        (entry) => !isConta4Entry(entry),
-                        (entry) => isTributariaEntry(entry),
+                        (entry) => !isReceitaDeductionEntry(entry),
                       )}
-                      title="Abertura de Despesas Tributárias"
-                      subtitle="Despesas tributárias"
+                      title="Detalhamento de Despesas"
                       accentColor="orange"
                     />
-                  </div>
-                ) : (
-                  <AnalyticalTable 
-                    atividadeFilter={atividade.key}
-                    selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                    tipoFilter={['D']}
-                    entryFilter={combineEntryFilters(
-                      activityLevelEntryFilter,
-                      (entry) => !isReceitaDeductionEntry(entry),
-                    )}
-                    title="Detalhamento de Despesas"
-                    accentColor="orange"
-                  />
-                )}
-              </div>
+                  )}
+                </div>
+              )}
 
               {isPecuaria && !subview && (
                 <div className="space-y-4">
@@ -2109,118 +2119,122 @@ export default function ActivityDetailPage() {
               )}
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
-                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-                  Saídas
+            {!hideAberturaCustosPanel && (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-xl font-bold text-slate-900">Abertura de Custos</h2>
+                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                    Saídas
+                  </div>
                 </div>
-              </div>
-              <AnalyticalTable 
-                atividadeFilter={atividade.key}
-                selectedMonth={selectedMonth}
-                costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                tipoFilter={['C']}
-                entryFilter={combineEntryFilters(
-                  activityLevelEntryFilter,
-                  isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
-                  isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
-                  isAgricola
-                    ? (entry) =>
-                      isAgricolaFarmCultureDepartment(entry.departamento) ||
-                      isAgricolaUnidadeRecepConta4Entry(entry)
-                    : undefined,
-                  (entry) => isAllowedEntryForCustos(atividade?.key, entry),
-                )}
-                title="Detalhamento de Custos"
-                accentColor="orange"
-                showDiariaColumns={isPecuaria && subview === 'confinamento'}
-                showPCabecaColumns={isPecuaria && subview === 'pasto'}
-                showPpKgColumns={isSeringal}
-              />
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
-                <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
-                  Saídas
-                </div>
-              </div>
-              {isAdmTrib ? (
-                <div className="space-y-6">
-                  <AnalyticalTable
-                    atividadeFilter={atividade.key}
-                    selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                    tipoFilter={['D']}
-                    entryFilter={combineEntryFilters(
-                      activityLevelEntryFilter,
-                      (entry) => isNonRateioDepartment(entry.departamento),
-                      (entry) => !isConta4Entry(entry),
-                      (entry) => !isTributariaEntry(entry),
-                      (entry) => !isReceitaDeductionEntry(entry),
-                      (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
-                    )}
-                    title="DESPESAS - GERENCIA FINANCEIRO"
-                    subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
-                    accentColor="orange"
-                    costHierarchyMode="grupo_descricao"
-                  />
-                  <AnalyticalTable
-                    atividadeFilter={atividade.key}
-                    selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                    tipoFilter={['D']}
-                    entryFilter={combineEntryFilters(
-                      activityLevelEntryFilter,
-                      (entry) => isNonRateioDepartment(entry.departamento),
-                      (entry) => !isConta4Entry(entry),
-                      (entry) => !isTributariaEntry(entry),
-                      (entry) => !isReceitaDeductionEntry(entry),
-                      (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
-                    )}
-                    title="DESPESAS - GERENCIA RH"
-                    subtitle="Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
-                    accentColor="orange"
-                    costHierarchyMode="grupo_descricao"
-                  />
-                  <AnalyticalTable
-                    atividadeFilter={atividade.key}
-                    selectedMonth={selectedMonth}
-                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
-                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                    tipoFilter={['D']}
-                    entryFilter={combineEntryFilters(
-                      activityLevelEntryFilter,
-                      (entry) => isNonRateioDepartment(entry.departamento),
-                      (entry) => !isConta4Entry(entry),
-                      (entry) => isTributariaEntry(entry),
-                    )}
-                    title="Abertura de Despesas Tributárias"
-                    subtitle="Despesas tributárias"
-                    accentColor="orange"
-                  />
-                </div>
-              ) : (
                 <AnalyticalTable 
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
                   departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
-                  tipoFilter={['D']}
+                  tipoFilter={['C']}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
-                    (entry) => !isReceitaDeductionEntry(entry),
+                    isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                    isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
+                    isAgricola
+                      ? (entry) =>
+                        isAgricolaFarmCultureDepartment(entry.departamento) ||
+                        isAgricolaUnidadeRecepConta4Entry(entry)
+                      : undefined,
+                    (entry) => isAllowedEntryForCustos(atividade?.key, entry),
                   )}
-                  title="Detalhamento de Despesas"
+                  title="Detalhamento de Custos"
                   accentColor="orange"
+                  showDiariaColumns={isPecuaria && subview === 'confinamento'}
+                  showPCabecaColumns={isPecuaria && subview === 'pasto'}
+                  showPpKgColumns={isSeringal}
                 />
-              )}
-            </div>
+              </div>
+            )}
+
+            {!hideAberturaDespesasPanel && (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-xl font-bold text-slate-900">Abertura de Despesas</h2>
+                  <div className="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-orange-50 px-2 py-1 rounded border border-orange-100">
+                    Saídas
+                  </div>
+                </div>
+                {isAdmTrib ? (
+                  <div className="space-y-6">
+                    <AnalyticalTable
+                      atividadeFilter={atividade.key}
+                      selectedMonth={selectedMonth}
+                      costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                      departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                      tipoFilter={['D']}
+                      entryFilter={combineEntryFilters(
+                        activityLevelEntryFilter,
+                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => !isConta4Entry(entry),
+                        (entry) => !isTributariaEntry(entry),
+                        (entry) => !isReceitaDeductionEntry(entry),
+                        (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
+                      )}
+                      title="DESPESAS - GERENCIA FINANCEIRO"
+                      subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
+                      accentColor="orange"
+                      costHierarchyMode="grupo_descricao"
+                    />
+                    <AnalyticalTable
+                      atividadeFilter={atividade.key}
+                      selectedMonth={selectedMonth}
+                      costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                      departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                      tipoFilter={['D']}
+                      entryFilter={combineEntryFilters(
+                        activityLevelEntryFilter,
+                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => !isConta4Entry(entry),
+                        (entry) => !isTributariaEntry(entry),
+                        (entry) => !isReceitaDeductionEntry(entry),
+                        (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
+                      )}
+                      title="DESPESAS - GERENCIA RH"
+                      subtitle="Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
+                      accentColor="orange"
+                      costHierarchyMode="grupo_descricao"
+                    />
+                    <AnalyticalTable
+                      atividadeFilter={atividade.key}
+                      selectedMonth={selectedMonth}
+                      costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                      departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                      tipoFilter={['D']}
+                      entryFilter={combineEntryFilters(
+                        activityLevelEntryFilter,
+                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => !isConta4Entry(entry),
+                        (entry) => isTributariaEntry(entry),
+                      )}
+                      title="Abertura de Despesas Tributárias"
+                      subtitle="Despesas tributárias"
+                      accentColor="orange"
+                    />
+                  </div>
+                ) : (
+                  <AnalyticalTable 
+                    atividadeFilter={atividade.key}
+                    selectedMonth={selectedMonth}
+                    costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
+                    departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                    tipoFilter={['D']}
+                    entryFilter={combineEntryFilters(
+                      activityLevelEntryFilter,
+                      (entry) => !isReceitaDeductionEntry(entry),
+                    )}
+                    title="Detalhamento de Despesas"
+                    accentColor="orange"
+                  />
+                )}
+              </div>
+            )}
 
             {isPecuaria && !subview && (
               <div className="space-y-4">

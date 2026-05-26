@@ -45,6 +45,14 @@ interface Props {
   costHierarchyMode?: 'default' | 'grupo_descricao';
 }
 
+/** Barra de título fixa (abaixo do header do app). */
+const ACTIVITY_TITLE_STICKY =
+  'sticky z-40 top-16 bg-white shadow-[0_4px_12px_rgba(0,0,0,0.1)]';
+/** Cabeçalho de colunas fixo logo abaixo da barra de título (~4rem). */
+const ACTIVITY_THEAD_STICKY =
+  'sticky z-30 top-32 shadow-[0_2px_8px_rgba(0,0,0,0.08)]';
+const TABLE_LAYOUT = 'w-full border-collapse table-fixed';
+
 interface Node {
   name: string;
   orc: number;
@@ -377,7 +385,11 @@ export function AnalyticalTable({
   const fmtDiffVsOrcPct = (orc: number, diff: number) => {
     if (Math.abs(orc) < 1e-9) return null;
     const pct = (diff / Math.abs(orc)) * 100;
-    return `${pct > 0 ? '+' : ''}${pct.toFixed(1)}%`;
+    const sign = pct > 0 ? '+' : '';
+    const abs = Math.abs(pct);
+    if (abs >= 10_000) return `${sign}${(pct / 1000).toFixed(0)}k%`;
+    if (abs >= 1000) return `${sign}${pct.toFixed(0)}%`;
+    return `${sign}${pct.toFixed(1)}%`;
   };
 
   /** Custos e despesas: maiores |% variação| no topo; demais tabelas: maior |realizado|. */
@@ -399,13 +411,41 @@ export function AnalyticalTable({
     const text = fmtDiffVsOrcPct(orc, diff);
     return (
       <span
+        title={text ?? undefined}
         className={cn(
-          'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-1.5 py-0.5 text-[11px] font-semibold tabular-nums',
+          'inline-flex max-w-full shrink-0 items-center justify-end rounded border border-slate-200/90 bg-white px-1.5 py-0.5 text-[11px] font-semibold leading-none tabular-nums whitespace-nowrap',
           text ? toneClass : 'text-slate-400'
         )}
       >
         {text ?? '—'}
       </span>
+    );
+  };
+
+  const fmtSignedCurrency = (v: number) =>
+    new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+      maximumFractionDigits: 0,
+      signDisplay: 'exceptZero',
+    }).format(v);
+
+  const renderVariationCell = (
+    orc: number,
+    real: number,
+    diff: number,
+    isPositive: boolean
+  ) => {
+    if (!orc && !real) return <>-</>;
+    const tone = isPositive ? 'text-dashboard-green' : 'text-rose-600';
+    const badgeTone = isPositive ? 'text-dashboard-green' : 'text-rose-700';
+    return (
+      <div className="flex min-w-0 flex-col items-end justify-center gap-1 leading-tight">
+        <span className={cn('text-[12px] font-semibold tabular-nums whitespace-nowrap', tone)}>
+          {fmtSignedCurrency(diff)}
+        </span>
+        {variationPctBadge(orc, diff, badgeTone)}
+      </div>
     );
   };
 
@@ -791,21 +831,8 @@ export function AnalyticalTable({
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPpKgColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
-            <td className={cn(
-              "text-right py-3 px-4 text-[13px] font-semibold tabular-nums",
-              isPositive ? "text-dashboard-green" : "text-rose-600"
-            )}>
-              {showBudget && (node.orc || node.real) ? (
-                <div className="flex flex-nowrap items-center justify-end gap-2">
-                  <span>
-                    {diff > 0 ? '+' : ''}
-                    {fmtCurrency(diff)}
-                  </span>
-                  {variationPctBadge(node.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
-                </div>
-              ) : (
-                '-'
-              )}
+            <td className="overflow-hidden text-right py-3 px-3 align-middle">
+              {showBudget ? renderVariationCell(node.orc, node.real, diff, isPositive) : '-'}
             </td>
           </tr>
           {isExpanded && hasChildren && renderNodes(node.children, currentPath, level + 1)}
@@ -814,70 +841,144 @@ export function AnalyticalTable({
     });
   };
 
+  const titleBarControls = (
+    <>
+      <h3 className="text-sm font-black text-white uppercase tracking-[0.2em]">{title}</h3>
+      <div className="flex items-center gap-3">
+        <div className="flex items-center bg-slate-800/50 rounded-lg p-1">
+          <button
+            onClick={() => setViewMode('hierarchy')}
+            className={cn(
+              'flex items-center gap-2 px-3 py-1.5 rounded-md text-[11px] font-semibold transition-all',
+              viewMode === 'hierarchy'
+                ? 'bg-white text-slate-900 shadow-sm'
+                : 'text-slate-400 hover:text-white'
+            )}
+          >
+            <ListTree className="h-3.5 w-3.5" />
+            Hierárquico
+          </button>
+          <button
+            onClick={() => setViewMode('flat')}
+            className={cn(
+              'flex items-center gap-2 px-3 py-1.5 rounded-md text-[11px] font-semibold transition-all',
+              viewMode === 'flat'
+                ? 'bg-white text-slate-900 shadow-sm'
+                : 'text-slate-400 hover:text-white'
+            )}
+          >
+            <Table className="h-3.5 w-3.5" />
+            Planilha
+          </button>
+        </div>
+        <span className={cn('text-[10px] font-bold uppercase tracking-widest', ta.subtitle)}>{subtitle}</span>
+      </div>
+    </>
+  );
+
+  const hierarchyHeaderRow = (
+    <tr className="text-[13px]">
+      <th className="text-left py-3 px-4">Classificação Contábil</th>
+      <th className="text-right py-3 px-4 w-[150px]">Orçado</th>
+      {showDiariaColumns && <th className="text-right py-3 px-4 w-[120px]">Diária O</th>}
+      {showPCabecaColumns && <th className="text-right py-3 px-4 w-[120px]">P/Cabeça O</th>}
+      {showPpKgColumns && <th className="text-right py-3 px-4 w-[120px]">Custo P/KG O</th>}
+      <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
+      {showDiariaColumns && <th className="text-right py-3 px-4 w-[120px]">Diária R</th>}
+      {showPCabecaColumns && <th className="text-right py-3 px-4 w-[120px]">P/Cabeça R</th>}
+      {showPpKgColumns && <th className="text-right py-3 px-4 w-[120px]">Custo P/KG R</th>}
+      <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Variação</th>
+    </tr>
+  );
+
+  const flatHeaderRow = (
+    <tr className="text-[12px]">
+      <SpreadsheetColumnFilter
+        label="Departamento"
+        options={spreadsheetFilterOptions.departamento}
+        selected={spreadsheetFilters.departamento}
+        onChange={(next) => setSpreadsheetColumnFilter('departamento', next)}
+      />
+      <SpreadsheetColumnFilter
+        label="Centro de Custo"
+        options={spreadsheetFilterOptions.centroCusto}
+        selected={spreadsheetFilters.centroCusto}
+        onChange={(next) => setSpreadsheetColumnFilter('centroCusto', next)}
+      />
+      <SpreadsheetColumnFilter
+        label="Conta"
+        options={spreadsheetFilterOptions.conta}
+        selected={spreadsheetFilters.conta}
+        onChange={(next) => setSpreadsheetColumnFilter('conta', next)}
+      />
+      <SpreadsheetColumnFilter
+        label="Descrição"
+        options={spreadsheetFilterOptions.descricao}
+        selected={spreadsheetFilters.descricao}
+        onChange={(next) => setSpreadsheetColumnFilter('descricao', next)}
+      />
+      <SpreadsheetColumnFilter
+        label="Produto"
+        options={spreadsheetFilterOptions.produto}
+        selected={spreadsheetFilters.produto}
+        onChange={(next) => setSpreadsheetColumnFilter('produto', next)}
+      />
+      {showQuantidadeColumn && <th className="text-right py-3 px-3 w-[110px]">Quantidade</th>}
+      {!flatRealizadoOnly && <th className="text-right py-3 px-3 w-[120px]">Orçado</th>}
+      {!flatRealizadoOnly && showDiariaColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">Diária O</th>
+      )}
+      {!flatRealizadoOnly && showPCabecaColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">P/Cabeça O</th>
+      )}
+      {!flatRealizadoOnly && showPpKgColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">Custo P/KG O</th>
+      )}
+      <SpreadsheetColumnFilter
+        label="Realizado"
+        align="right"
+        options={spreadsheetFilterOptions.realizado}
+        selected={spreadsheetFilters.realizado}
+        onChange={(next) => setSpreadsheetColumnFilter('realizado', next)}
+      />
+      {showDiariaColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">
+          {flatRealizadoOnly ? 'Diária' : 'Diária R'}
+        </th>
+      )}
+      {showPCabecaColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">
+          {flatRealizadoOnly ? 'P/Cabeça' : 'P/Cabeça R'}
+        </th>
+      )}
+      {showPpKgColumns && (
+        <th className="text-right py-3 px-3 w-[100px]">
+          {flatRealizadoOnly ? 'Custo P/KG' : 'Custo P/KG R'}
+        </th>
+      )}
+      {!flatRealizadoOnly && (
+        <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Variação</th>
+      )}
+    </tr>
+  );
+
+  const tableHeader = (
+    <thead className={cn(ACTIVITY_THEAD_STICKY, ta.thead)}>
+      {viewMode === 'hierarchy' ? hierarchyHeaderRow : flatHeaderRow}
+    </thead>
+  );
+
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
-      <div className={cn('px-6 py-4 flex items-center justify-between', ta.titleBar)}>
-        <h3 className="text-sm font-black text-white uppercase tracking-[0.2em]">{title}</h3>
-        <div className="flex items-center gap-3">
-          <div className="flex items-center bg-slate-800/50 rounded-lg p-1">
-            <button
-              onClick={() => setViewMode('hierarchy')}
-              className={cn(
-                "flex items-center gap-2 px-3 py-1.5 rounded-md text-[11px] font-semibold transition-all",
-                viewMode === 'hierarchy' 
-                  ? "bg-white text-slate-900 shadow-sm" 
-                  : "text-slate-400 hover:text-white"
-              )}
-            >
-              <ListTree className="h-3.5 w-3.5" />
-              Hierárquico
-            </button>
-            <button
-              onClick={() => setViewMode('flat')}
-              className={cn(
-                "flex items-center gap-2 px-3 py-1.5 rounded-md text-[11px] font-semibold transition-all",
-                viewMode === 'flat' 
-                  ? "bg-white text-slate-900 shadow-sm" 
-                  : "text-slate-400 hover:text-white"
-              )}
-            >
-              <Table className="h-3.5 w-3.5" />
-              Planilha
-            </button>
-          </div>
-          <span className={cn('text-[10px] font-bold uppercase tracking-widest', ta.subtitle)}>{subtitle}</span>
+    <div className="bg-white rounded-2xl shadow-lg border border-slate-100">
+      <div className={ACTIVITY_TITLE_STICKY}>
+        <div className={cn('px-6 py-4 flex items-center justify-between', ta.titleBar)}>
+          {titleBarControls}
         </div>
       </div>
-      <div className="overflow-x-auto">
-        {viewMode === 'hierarchy' ? (
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className={cn(ta.thead, 'text-[13px]')}>
-                <th className="text-left py-3 px-4">Classificação Contábil</th>
-                <th className="text-right py-3 px-4 w-[150px]">Orçado</th>
-                {showDiariaColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">Diária O</th>
-                )}
-                {showPCabecaColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">P/Cabeça O</th>
-                )}
-                {showPpKgColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">Custo P/KG O</th>
-                )}
-                <th className="text-right py-3 px-4 w-[150px]">Realizado</th>
-                {showDiariaColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">Diária R</th>
-                )}
-                {showPCabecaColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">P/Cabeça R</th>
-                )}
-                {showPpKgColumns && (
-                  <th className="text-right py-3 px-4 w-[120px]">Custo P/KG R</th>
-                )}
-                <th className="text-right py-3 px-4 w-[150px]">Variação</th>
-              </tr>
-            </thead>
-            <tbody>
+      {viewMode === 'hierarchy' ? (
+        <table className={TABLE_LAYOUT}>
+          {tableHeader}
+          <tbody>
               {root.size > 0 ? renderNodes(root) : (
                 <tr><td colSpan={4 + extraMetricCols} className="py-20 text-center text-sm font-medium text-slate-300">Nenhum dado disponível para este filtro.</td></tr>
               )}
@@ -905,105 +1006,18 @@ export function AnalyticalTable({
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaRealResolved)}
                     {showPpKgColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', ppKgRealResolved)}
-                    <td className={cn("text-right py-4 px-4 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
-                      {(totalOrc || totalReal) ? (
-                        <div className="flex flex-nowrap items-center justify-end gap-2">
-                          <span>
-                            {totalDiff > 0 ? '+' : ''}
-                            {fmtCurrency(totalDiff)}
-                          </span>
-                          {variationPctBadge(
-                            totalOrc,
-                            totalDiff,
-                            isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
-                          )}
-                        </div>
-                      ) : (
-                        '-'
-                      )}
+                    <td className="overflow-hidden text-right py-4 px-3 align-middle">
+                      {renderVariationCell(totalOrc, totalReal, totalDiff, isTotalPositive)}
                     </td>
                   </tr>
                 </tfoot>
               );
             })()}
-          </table>
-        ) : (
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className={cn(ta.thead, 'text-[12px]')}>
-                <SpreadsheetColumnFilter
-                  label="Departamento"
-                  options={spreadsheetFilterOptions.departamento}
-                  selected={spreadsheetFilters.departamento}
-                  onChange={(next) => setSpreadsheetColumnFilter('departamento', next)}
-                />
-                <SpreadsheetColumnFilter
-                  label="Centro de Custo"
-                  options={spreadsheetFilterOptions.centroCusto}
-                  selected={spreadsheetFilters.centroCusto}
-                  onChange={(next) => setSpreadsheetColumnFilter('centroCusto', next)}
-                />
-                <SpreadsheetColumnFilter
-                  label="Conta"
-                  options={spreadsheetFilterOptions.conta}
-                  selected={spreadsheetFilters.conta}
-                  onChange={(next) => setSpreadsheetColumnFilter('conta', next)}
-                />
-                <SpreadsheetColumnFilter
-                  label="Descrição"
-                  options={spreadsheetFilterOptions.descricao}
-                  selected={spreadsheetFilters.descricao}
-                  onChange={(next) => setSpreadsheetColumnFilter('descricao', next)}
-                />
-                <SpreadsheetColumnFilter
-                  label="Produto"
-                  options={spreadsheetFilterOptions.produto}
-                  selected={spreadsheetFilters.produto}
-                  onChange={(next) => setSpreadsheetColumnFilter('produto', next)}
-                />
-                {showQuantidadeColumn && (
-                  <th className="text-right py-3 px-3 w-[110px]">Quantidade</th>
-                )}
-                {!flatRealizadoOnly && (
-                  <th className="text-right py-3 px-3 w-[120px]">Orçado</th>
-                )}
-                {!flatRealizadoOnly && showDiariaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">Diária O</th>
-                )}
-                {!flatRealizadoOnly && showPCabecaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">P/Cabeça O</th>
-                )}
-                {!flatRealizadoOnly && showPpKgColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">Custo P/KG O</th>
-                )}
-                <SpreadsheetColumnFilter
-                  label="Realizado"
-                  align="right"
-                  options={spreadsheetFilterOptions.realizado}
-                  selected={spreadsheetFilters.realizado}
-                  onChange={(next) => setSpreadsheetColumnFilter('realizado', next)}
-                />
-                {showDiariaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">
-                    {flatRealizadoOnly ? 'Diária' : 'Diária R'}
-                  </th>
-                )}
-                {showPCabecaColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">
-                    {flatRealizadoOnly ? 'P/Cabeça' : 'P/Cabeça R'}
-                  </th>
-                )}
-                {showPpKgColumns && (
-                  <th className="text-right py-3 px-3 w-[100px]">
-                    {flatRealizadoOnly ? 'Custo P/KG' : 'Custo P/KG R'}
-                  </th>
-                )}
-                {!flatRealizadoOnly && (
-                  <th className="text-right py-3 px-3 w-[120px]">Variação</th>
-                )}
-              </tr>
-            </thead>
-            <tbody>
+        </table>
+      ) : (
+        <table className={TABLE_LAYOUT}>
+          {tableHeader}
+          <tbody>
               {flatEntries.length > 0 ? flatEntries.map((entry) => {
                 const diff = computeDiff(entry.orc, entry.real);
                 const isPositive = isDiffFavorable(diff);
@@ -1030,18 +1044,8 @@ export function AnalyticalTable({
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {!flatRealizadoOnly && (
-                      <td className={cn("text-right py-2.5 px-3 text-[12px] font-semibold tabular-nums", isPositive ? "text-dashboard-green" : "text-rose-600")}>
-                        {(entry.orc || entry.real) ? (
-                          <div className="flex flex-nowrap items-center justify-end gap-2">
-                            <span>
-                              {diff > 0 ? '+' : ''}
-                              {fmtCurrency(diff)}
-                            </span>
-                            {variationPctBadge(entry.orc, diff, isPositive ? 'text-dashboard-green' : 'text-rose-700')}
-                          </div>
-                        ) : (
-                          '-'
-                        )}
+                      <td className="overflow-hidden text-right py-2.5 px-3 align-middle">
+                        {renderVariationCell(entry.orc, entry.real, diff, isPositive)}
                       </td>
                     )}
                   </tr>
@@ -1082,31 +1086,16 @@ export function AnalyticalTable({
                     {showPpKgColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', ppKgRealResolved)}
                     {!flatRealizadoOnly && (
-                      <td className={cn("text-right py-4 px-3 text-[13px] font-semibold tabular-nums", isTotalPositive ? "text-dashboard-green" : "text-rose-600")}>
-                        {(totalOrc || totalReal) ? (
-                          <div className="flex flex-nowrap items-center justify-end gap-2">
-                            <span>
-                              {totalDiff > 0 ? '+' : ''}
-                              {fmtCurrency(totalDiff)}
-                            </span>
-                            {variationPctBadge(
-                              totalOrc,
-                              totalDiff,
-                              isTotalPositive ? 'text-dashboard-green' : 'text-rose-700'
-                            )}
-                          </div>
-                        ) : (
-                          '-'
-                        )}
+                      <td className="overflow-hidden text-right py-4 px-3 align-middle">
+                        {renderVariationCell(totalOrc, totalReal, totalDiff, isTotalPositive)}
                       </td>
                     )}
                   </tr>
                 </tfoot>
               );
             })()}
-          </table>
-        )}
-      </div>
+        </table>
+      )}
     </div>
   );
 }
