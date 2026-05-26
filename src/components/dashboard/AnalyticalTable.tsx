@@ -21,6 +21,12 @@ import {
   getPecuariaGrupoContabilN9DisplayLabel,
 } from '@/data/pecuariaOrcadoGrupoContabilCodes';
 import { getDespAdmGrupoContabilN9DisplayLabel } from '@/data/despAdmOrcadoGrupoContabilCodes';
+import {
+  budgetDifference,
+  budgetDifferencePctVsOrc,
+  isBudgetDifferenceFavorable,
+  type BudgetVariationKind,
+} from '@/lib/budgetVariation';
 
 interface Props {
   atividadeFilter?: AtividadeKey;
@@ -354,9 +360,9 @@ export function AnalyticalTable({
   const extraMetricCols =
     (showDiariaColumns ? 2 : 0) + (showPCabecaColumns ? 2 : 0) + (showPpKgColumns ? 2 : 0);
 
-  // Tabela de receitas (tipoFilter exclusivamente 'R'): variação = realizado − orçado;
-  // favorável (verde) quando real > orçado.
-  const isRevenueTable = tipoFilter?.length === 1 && tipoFilter[0] === 'R';
+  const isRevenueTable =
+    (tipoFilter?.length === 1 && tipoFilter[0] === 'R') || accentColor === 'emerald';
+  const variationKind: BudgetVariationKind = isRevenueTable ? 'revenue' : 'cost';
   const isCostTable = tipoFilter?.length === 1 && tipoFilter[0] === 'C';
   const isExpenseTable = tipoFilter?.length === 1 && tipoFilter[0] === 'D';
   const sortByVariationPct = isCostTable || isExpenseTable;
@@ -371,20 +377,19 @@ export function AnalyticalTable({
     (showQuantidadeColumn ? 1 : 0) +
     flatRealOnlyMetricCols +
     (flatRealizadoOnly ? 0 : extraMetricCols);
-  const computeDiff = (orc: number, real: number) =>
-    isRevenueTable ? real - orc : orc - real;
-  const isDiffFavorable = (diff: number) => diff > 0;
+  const computeDiff = (orc: number, real: number) => budgetDifference(real, orc);
+  const isDiffFavorable = (diff: number) =>
+    isBudgetDifferenceFavorable(diff, variationKind);
 
-  /** Percentual da variação em relação ao orçado (|orçado| como base). */
+  /** Percentual da diferença em relação ao orçado (|orçado| como base). */
   const variationPctValue = (orc: number, real: number): number | null => {
-    if (Math.abs(orc) < 1e-9) return null;
     const diff = computeDiff(orc, real);
-    return (diff / Math.abs(orc)) * 100;
+    return budgetDifferencePctVsOrc(diff, orc);
   };
 
   const fmtDiffVsOrcPct = (orc: number, diff: number) => {
-    if (Math.abs(orc) < 1e-9) return null;
-    const pct = (diff / Math.abs(orc)) * 100;
+    const pct = budgetDifferencePctVsOrc(diff, orc);
+    if (pct == null) return null;
     const sign = pct > 0 ? '+' : '';
     const abs = Math.abs(pct);
     if (abs >= 10_000) return `${sign}${(pct / 1000).toFixed(0)}k%`;
@@ -887,7 +892,7 @@ export function AnalyticalTable({
       {showDiariaColumns && <th className="text-right py-3 px-4 w-[120px]">Diária R</th>}
       {showPCabecaColumns && <th className="text-right py-3 px-4 w-[120px]">P/Cabeça R</th>}
       {showPpKgColumns && <th className="text-right py-3 px-4 w-[120px]">Custo P/KG R</th>}
-      <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Variação</th>
+      <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Diferença</th>
     </tr>
   );
 
@@ -957,7 +962,7 @@ export function AnalyticalTable({
         </th>
       )}
       {!flatRealizadoOnly && (
-        <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Variação</th>
+        <th className="text-right py-3 px-3 w-[172px] min-w-[172px]">Diferença</th>
       )}
     </tr>
   );

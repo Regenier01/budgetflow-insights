@@ -23,6 +23,12 @@ import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
 import { ArrowRight, TrendingUp, TrendingDown, ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  budgetDifference,
+  budgetDifferencePctVsOrc,
+  isBudgetDifferenceFavorable,
+  type BudgetVariationKind,
+} from '@/lib/budgetVariation';
 import NotFound from './NotFound';
 import { HeaderFiltersSlot } from '@/components/layout/HeaderFilters';
 import {
@@ -920,6 +926,8 @@ export default function ActivityDetailPage() {
       seringalPkgMetrics?: { orcExtra: number | null; realExtra: number | null };
       /** Exibe traços no lugar dos valores (card reservado para dados futuros). */
       emptyValues?: boolean;
+      /** Receita/resultado: + = verde. Custo: + = vermelho. Padrão: emerald → receita, demais → custo. */
+      variationKind?: BudgetVariationKind;
     }
   ) => {
     const {
@@ -929,14 +937,14 @@ export default function ActivityDetailPage() {
       pecuariaMetrics,
       seringalPkgMetrics,
       emptyValues = false,
+      variationKind: variationKindOption,
     } = options || {};
     const isRevenueStyle = accentColor === 'emerald';
-    const difference = isRevenueStyle
-      ? data.real - data.orc
-      : Math.abs(data.orc) - Math.abs(data.real);
-    const diffPctVsOrc =
-      Math.abs(data.orc) < 1e-9 ? null : (difference / Math.abs(data.orc)) * 100;
-    const isPositiveDifference = difference >= 0;
+    const variationKind: BudgetVariationKind =
+      variationKindOption ?? (isRevenueStyle ? 'revenue' : 'cost');
+    const difference = budgetDifference(data.real, data.orc);
+    const diffPctVsOrc = budgetDifferencePctVsOrc(difference, data.orc);
+    const isFavorable = isBudgetDifferenceFavorable(difference, variationKind);
     const isEmerald = accentColor === 'emerald';
     const bgColor = isEmerald ? '' : 'bg-dashboard-orange';
     const hoverBorder = isEmerald
@@ -1059,14 +1067,14 @@ export default function ActivityDetailPage() {
               'py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
               emptyValues
                 ? 'text-slate-400 bg-slate-50/80'
-                : isPositiveDifference
+                : isFavorable
                   ? 'text-dashboard-green bg-dashboard-green/10'
                   : 'text-rose-600 bg-rose-50/50'
             )}
           >
             <span className="inline-flex items-center gap-1">
               {!emptyValues &&
-                (isPositiveDifference ? (
+                (isFavorable ? (
                   <TrendingUp className="h-3.5 w-3.5" />
                 ) : (
                   <TrendingDown className="h-3.5 w-3.5" />
@@ -1078,7 +1086,7 @@ export default function ActivityDetailPage() {
                 'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
                 emptyValues || diffPctVsOrc == null
                   ? 'text-slate-400'
-                  : isPositiveDifference
+                  : isFavorable
                     ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
@@ -1527,7 +1535,10 @@ export default function ActivityDetailPage() {
               {!isPecuaria &&
                 !isAgricola &&
                 atividade?.key !== 'SERINGAL' &&
-                renderSummaryCard(`Total ${atividade.label}`, activityTotalData, { isMain: true })}
+                renderSummaryCard(`Total ${atividade.label}`, activityTotalData, {
+                  isMain: true,
+                  variationKind: isAdmTrib ? 'cost' : 'result',
+                })}
               {isAdmTrib && admTribSummary ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {renderSummaryCard('DESPESAS - GERENCIA FINANCEIRO', admTribSummary.laiza, {

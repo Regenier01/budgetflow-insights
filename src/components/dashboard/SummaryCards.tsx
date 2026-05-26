@@ -2,6 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TrendingUp, TrendingDown, DollarSign, Target, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 import { useBudgetStore } from '@/store/budgetStore';
 import { cn } from '@/lib/utils';
+import {
+  budgetDifference,
+  budgetDifferencePctVsOrc,
+  isBudgetDifferenceFavorable,
+  type BudgetVariationKind,
+} from '@/lib/budgetVariation';
 import type { MonthKey, AtividadeKey, AccountEntry } from '@/types/budget';
 
 interface Props {
@@ -126,20 +132,11 @@ export function SummaryCards({
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((c) => {
         const cardColor = resolveCardColor(c.color, c.tipo);
-        const isPositive =
-          c.tipo === 'R'
-            ? c.real > c.orc
-            : c.tipo === 'RESULTADO'
-              ? c.real > c.orc
-              : c.orc - c.real > 0;
-        const diffPct =
-          c.orc === 0
-            ? 0
-            : c.tipo === 'R'
-              ? ((c.real - c.orc) / Math.abs(c.orc)) * 100
-              : c.tipo === 'RESULTADO'
-                ? ((c.real - c.orc) / Math.abs(c.orc || 1)) * 100
-                : ((c.orc - c.real) / Math.abs(c.orc)) * 100;
+        const diff = budgetDifference(c.real, c.orc);
+        const variationKind: BudgetVariationKind =
+          c.tipo === 'R' ? 'revenue' : c.tipo === 'RESULTADO' ? 'result' : 'cost';
+        const isFavorable = isBudgetDifferenceFavorable(diff, variationKind);
+        const diffPct = budgetDifferencePctVsOrc(diff, c.orc) ?? 0;
 
         return (
           <Card key={c.title} className="overflow-hidden border border-slate-200 shadow-sm bg-white group">
@@ -164,9 +161,9 @@ export function SummaryCards({
               <div className="flex items-center gap-2 mt-3">
                 <div className={cn(
                   "flex items-center gap-0.5 text-[13px] font-semibold px-2 py-0.5 rounded-full",
-                  isPositive ? "bg-dashboard-green/15 text-dashboard-green" : "bg-rose-50/80 text-rose-600"
+                  isFavorable ? "bg-dashboard-green/15 text-dashboard-green" : "bg-rose-50/80 text-rose-600"
                 )}>
-                  {isPositive ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
+                  {isFavorable ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
                   {Math.abs(diffPct).toFixed(1)}%
                 </div>
                 <span className="text-[13px] font-medium text-slate-600">vs Orçado</span>

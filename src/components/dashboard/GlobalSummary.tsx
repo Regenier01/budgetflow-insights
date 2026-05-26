@@ -9,6 +9,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown } from 'lucide-react';
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
+import {
+  budgetDifference,
+  budgetDifferencePctVsOrc,
+  isBudgetDifferenceFavorable,
+} from '@/lib/budgetVariation';
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
@@ -137,9 +142,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    const isPositive = diff > 0;
-    const diffPctVsOrc =
-      Math.abs(orc) < 1e-9 ? null : (diff / Math.abs(orc)) * 100;
+    const isFavorable = isBudgetDifferenceFavorable(diff, 'cost');
+    const diffPctVsOrc = budgetDifferencePctVsOrc(diff, orc);
     const isClickable = !!activityKey;
 
     return (
@@ -187,11 +191,11 @@ export function GlobalSummary({ selectedMonth }: Props) {
           <div
             className={cn(
               "py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2",
-              isPositive ? "text-dashboard-green bg-dashboard-green/10" : "text-rose-600 bg-rose-50/50"
+              isFavorable ? "text-dashboard-green bg-dashboard-green/10" : "text-rose-600 bg-rose-50/50"
             )}
           >
             <span className="inline-flex items-center gap-1">
-              {isPositive ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+              {isFavorable ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
               {fmt(diff)}
             </span>
             <span
@@ -199,7 +203,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
                 'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
                 diffPctVsOrc == null
                   ? 'text-slate-400'
-                  : isPositive
+                  : isFavorable
                     ? 'text-dashboard-green'
                     : 'text-rose-700'
               )}
@@ -293,7 +297,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         title="Total Consolidado de Custos das Operações"
         orc={consolidatedOrc}
         real={consolidatedReal}
-        diff={consolidatedOrc - consolidatedReal}
+        diff={budgetDifference(consolidatedReal, consolidatedOrc)}
         isMain
       />
 
@@ -307,7 +311,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
               activityKey={ativ.key}
               orc={stats.orc}
               real={stats.real}
-              diff={stats.orc - stats.real}
+              diff={budgetDifference(stats.real, stats.orc)}
             />
           );
         })}
@@ -316,7 +320,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
           activityKey="DESPESAS_COM_VENDAS"
           orc={despesasComVendas.orc}
           real={despesasComVendas.real}
-          diff={despesasComVendas.orc - despesasComVendas.real}
+          diff={budgetDifference(despesasComVendas.real, despesasComVendas.orc)}
         />
       </div>
     </div>

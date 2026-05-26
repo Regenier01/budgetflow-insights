@@ -24,6 +24,7 @@ import {
 import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { budgetDifference } from '@/lib/budgetVariation';
 import {
   tryParsePecuariaOrcadoBudgetRow,
   resolvePecuariaOrcadoGrupoDescricao,
@@ -236,7 +237,7 @@ export function calculateGlobalTotals(accounts: AccountEntry[]) {
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
     }
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtividade: AtividadeKey) {
@@ -253,7 +254,7 @@ export function calculateTotalsByDivisao(accounts: AccountEntry[], filterAtivida
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
     }
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 // Função para calcular totais de Despesas Financeiras
@@ -271,7 +272,7 @@ export function calculateDespesasFinanceirasTotals(accounts: AccountEntry[]) {
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
     }
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 // Função para calcular totais de Receitas Financeiras
@@ -289,7 +290,7 @@ export function calculateReceitasFinanceirasTotals(accounts: AccountEntry[]) {
       real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
     }
   });
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 // Função para calcular totais gerais de Encargos (Despesas + Receitas - valor bruto)
@@ -303,7 +304,10 @@ export function calculateEncargosTotals(accounts: AccountEntry[]) {
     total: {
       orc: despesas.orc + receitas.orc,
       real: despesas.real + receitas.real,
-      diff: (despesas.orc + receitas.orc) - (despesas.real + receitas.real)
+      diff: budgetDifference(
+        despesas.real + receitas.real,
+        despesas.orc + receitas.orc
+      ),
     }
   };
 }
@@ -324,7 +328,7 @@ export function calculateDespesasComVendasTotals(accounts: AccountEntry[]) {
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
 
-  return { orc, real, diff: orc - real };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 // Função para calcular totais de Receitas por Atividade
@@ -340,7 +344,7 @@ export function calculateRevenueByAtividade(accounts: AccountEntry[], atividade:
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: real - orc };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 // Função para calcular totais consolidados de Receitas (todas as atividades)
@@ -355,7 +359,7 @@ export function calculateGlobalRevenueTotals(accounts: AccountEntry[]) {
     orc += Object.values(a.orcado).reduce((sum, v) => sum + v, 0);
     real += Object.values(a.realizado).reduce((sum, v) => sum + v, 0);
   });
-  return { orc, real, diff: real - orc };
+  return { orc, real, diff: budgetDifference(real, orc) };
 }
 
 interface BudgetState {

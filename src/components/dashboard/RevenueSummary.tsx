@@ -5,6 +5,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
+import {
+  budgetDifference,
+  budgetDifferencePctVsOrc,
+  isBudgetDifferenceFavorable,
+} from '@/lib/budgetVariation';
 
 interface Props {
   selectedMonth: MonthKey[] | 'all';
@@ -76,7 +81,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
     return {
       orc: liqOrc,
       real: liqReal,
-      diff: liqReal - liqOrc,
+      diff: budgetDifference(liqReal, liqOrc),
     };
   };
 
@@ -107,10 +112,8 @@ export function RevenueSummary({ selectedMonth }: Props) {
     isMain?: boolean;
     activityKey?: string;
   }) => {
-    // Variação = realizado − orçado: positivo quando a receita superou o orçado (verde).
-    const isFavorable = diff > 0;
-    const diffPctVsOrc =
-      Math.abs(orc) < 1e-9 ? null : (diff / Math.abs(orc)) * 100;
+    const isFavorable = isBudgetDifferenceFavorable(diff, 'revenue');
+    const diffPctVsOrc = budgetDifferencePctVsOrc(diff, orc);
     const isClickable = !!activityKey;
 
     return (
@@ -148,7 +151,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
         <div className="grid grid-cols-3 text-center border-y border-slate-200 bg-slate-100/70">
           <div className="py-2 text-[12px] font-semibold text-slate-700">Orçado</div>
           <div className="py-2 text-[12px] font-semibold text-slate-700">Realizado</div>
-          <div className="py-2 text-[12px] font-semibold text-slate-700">Variação</div>
+          <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
         </div>
 
         <div className="grid grid-cols-3 text-center items-center">
@@ -226,7 +229,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
         title="Consolidado Geral de Receita Líquida"
         orc={global.orc}
         real={global.real}
-        diff={global.real - global.orc}
+        diff={budgetDifference(global.real, global.orc)}
         isMain
       />
 
@@ -252,7 +255,7 @@ export function RevenueSummary({ selectedMonth }: Props) {
           activityKey="OUTRAS_RECEITAS_EVENTUAIS"
           orc={outrasReceitasEventuais.orc}
           real={outrasReceitasEventuais.real}
-          diff={outrasReceitasEventuais.real - outrasReceitasEventuais.orc}
+          diff={budgetDifference(outrasReceitasEventuais.real, outrasReceitasEventuais.orc)}
         />
       </div>
     </div>
