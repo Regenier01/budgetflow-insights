@@ -17,6 +17,7 @@ import {
 import { isDespesaFinanceiraAccount, isReceitaFinanceiraAccount } from '@/data/encargosAccounts';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isRendasOperacionaisEntry } from '@/data/rendasOperacionaisAccounts';
+import { isRateioDepartmentForEntry } from '@/data/rateiosColigadas';
 
 interface Props {
   selectedMonth: MonthKey[] | 'all';
@@ -56,20 +57,8 @@ export function GlobalSummary({ selectedMonth }: Props) {
     );
   };
 
-  const RATEIO_DEPARTMENTS = [
-    'OFICINA GERAL',
-    'FABRICA DE RACAO',
-    'FABRICA DE SAL',
-    'MECANIZADO',
-    'LOGISTICA',
-    'ALMOXARIFADO',
-  ] as const;
-
-  const isRateioDepartment = (departamento?: string) => {
-    if (!departamento) return false;
-    const normalized = normalizeText(departamento);
-    return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
-  };
+  const isRateioDepartment = (entry: (typeof accounts)[number]) =>
+    isRateioDepartmentForEntry(entry);
 
   const isConta4AdministracaoEntry = (entry: (typeof accounts)[number]) =>
     entry.codigo.trim().startsWith('4') && normalizeText(entry.departamento) === 'ADMINISTRACAO';
@@ -252,7 +241,7 @@ export function GlobalSummary({ selectedMonth }: Props) {
         (!shouldExcludeReceitaDeductions || !isReceitaDeductionEntry(a)) &&
         (a.tipo !== 'C' || isAllowedEntryForCustos(activityKey, a)) &&
         (activityKey !== 'DESP_ADM_TRIB' ||
-          (!isRateioDepartment(a.departamento) &&
+          (!isRateioDepartment(a) &&
             !isConta4Entry(a) &&
             isNotMarketingInternoCostCenter(a.centroCusto))) &&
         (activityKey !== 'AGRICOLA' ||

@@ -55,7 +55,8 @@ function mergeAccounts(existing, incoming, { replaceRealizado } = {}) {
       a.atividade === newAcc.atividade &&
       (a.departamento || '') === (newAcc.departamento || '') &&
       (a.centroCusto || '') === (newAcc.centroCusto || '') &&
-      (a.nomeProduto || '') === (newAcc.nomeProduto || '')
+      (a.nomeProduto || '') === (newAcc.nomeProduto || '') &&
+      (a.coligada || '') === (newAcc.coligada || '')
     );
 
     if (match) {
@@ -778,8 +779,10 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping, options =
 
     const mapped = mapAtividade(row, departmentMapping, costCenterMapping, conta);
 
-    // Incluir departamento e centro de custo na chave para agregação correta
-    const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}|${depto}|${centroCusto}`;
+    const coligada = getValue(row, 'COLIGADA') ? String(getValue(row, 'COLIGADA')).trim() : '';
+
+    // Incluir departamento, centro de custo e coligada na chave para agregação correta
+    const aggKey = `${conta}|${nomeProduto}|${mapped.atividade}|${depto}|${centroCusto}|${coligada}`;
 
     const monthKey = dateToMonthKey(getValue(row, 'DATA')) || fallbackMonth;
 
@@ -807,7 +810,7 @@ function processBudgetRows(rows, departmentMapping, costCenterMapping, options =
 
         centroCusto: getValue(row, 'NOMECUSTO') ? String(getValue(row, 'NOMECUSTO')).trim() : undefined,
 
-        coligada: getValue(row, 'COLIGADA') ? String(getValue(row, 'COLIGADA')) : undefined,
+        coligada: coligada || undefined,
 
         divisao: mapped.divisao,
 

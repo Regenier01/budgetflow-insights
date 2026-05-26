@@ -1241,7 +1241,8 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
         (a.centroCusto || '') === (rowCC || '') &&
         (a.grupoContabil || '') === (rowGrupo || '') &&
         (a.grupoContabilN9 || '') === (rowGrupoN9 || '') &&
-        (a.nomeProduto || '') === (rowProduto || '')
+        (a.nomeProduto || '') === (rowProduto || '') &&
+        (a.coligada || '') === (rowColigada || '')
     );
 
     if (existing) {

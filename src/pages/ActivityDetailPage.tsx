@@ -46,17 +46,19 @@ import {
   isReceitaPecuariaGeneticaDeducaoEntry,
   isReceitaPecuariaGeneticaCustosEntry,
 } from '@/data/receitaPecuariaGenetica';
+import {
+  isExcludedFromRateios,
+  isRateioDepartmentForEntry,
+  isRateioDepartmentForSubview,
+  matchesRateioColigadaSubview,
+  parseRateioColigadaSubview,
+  RATEIO_COLIGADA_GROUPS,
+  rateioColigadaSubviewFilter,
+  type RateioColigadaSubview,
+} from '@/data/rateiosColigadas';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const DESP_ADM_BUDGET_ADJUSTMENT = 216000;
-
-const RATEIO_DEPARTMENTS = [
-  'OFICINA GERAL',
-  'FABRICA DE RACAO',
-  'FABRICA DE SAL',
-  'MECANIZADO',
-  'LOGISTICA',
-  'ALMOXARIFADO',
-] as const;
 
 const normalizeText = (value?: string) =>
   (value || '')
@@ -65,13 +67,21 @@ const normalizeText = (value?: string) =>
     .toUpperCase()
     .trim();
 
-const isRateioDepartment = (departamento?: string) => {
+const isRateioDepartment = (departamento?: string, subview?: RateioColigadaSubview | null) => {
   if (!departamento) return false;
+  if (subview) return isRateioDepartmentForSubview(departamento, subview);
   const normalized = normalizeText(departamento);
-  return RATEIO_DEPARTMENTS.some((item) => normalizeText(item) === normalized);
+  return (
+    isRateioDepartmentForSubview(departamento, 'vera-cruz') ||
+    isRateioDepartmentForSubview(departamento, 'ol-latex')
+  ) && Boolean(normalized);
 };
 
-const isNonRateioDepartment = (departamento?: string) => !isRateioDepartment(departamento);
+const isNonRateioDepartment = (departamento?: string, coligada?: string) => {
+  if (!departamento) return true;
+  if (coligada) return !isRateioDepartmentForEntry({ departamento, coligada });
+  return !isRateioDepartment(departamento);
+};
 const isConta4Entry = (entry: AccountEntry) => entry.codigo.trim().startsWith('4');
 const isConta4AdministracaoEntry = (entry: AccountEntry) =>
   entry.codigo.trim().startsWith('4') && normalizeText(entry.departamento) === 'ADMINISTRACAO';
@@ -352,6 +362,7 @@ export default function ActivityDetailPage() {
   const isOutrasReceitasEventuais = id === 'OUTRAS_RECEITAS_EVENTUAIS';
   const isDespesasComVendas = id === 'DESPESAS_COM_VENDAS';
   const isRateios = id === 'RATEIOS';
+  const rateioColigadaSubview = isRateios ? parseRateioColigadaSubview(subview) : null;
   const atividade = ATIVIDADES.find(a => a.key === id);
   const isAdmTrib = atividade?.key === 'DESP_ADM_TRIB';
   const isEncargos = atividade?.key === 'ENCARGOS';
@@ -413,9 +424,13 @@ export default function ActivityDetailPage() {
         ? 'Desp. com Vendas Agrícola'
         : isDespesasComVendas
       ? 'Despesas com Vendas'
-      : isRateios
-        ? 'Rateios'
-        : isPecuaria && subview === 'genetica'
+      : isRateios && rateioColigadaSubview === 'vera-cruz'
+        ? 'Rateios — Vera Cruz'
+        : isRateios && rateioColigadaSubview === 'ol-latex'
+          ? 'Rateios — OL Latex'
+          : isRateios
+            ? 'Rateios'
+            : isPecuaria && subview === 'genetica'
           ? 'Pecuária — Receitas Genética'
           : isPecuaria && subview === 'custos-genetica'
             ? 'Pecuária — Custos Genética'
@@ -438,8 +453,9 @@ export default function ActivityDetailPage() {
     ? undefined
     : isRateios
       ? (entry: AccountEntry) =>
-        (isRateioDepartment(entry.departamento) || isConta4AdministracaoEntry(entry)) &&
-        !isOutrasReceitasEventuaisCode(entry.codigo)
+        (isRateioDepartmentForEntry(entry) || isConta4AdministracaoEntry(entry)) &&
+        !isOutrasReceitasEventuaisCode(entry.codigo) &&
+        !isExcludedFromRateios(entry)
       : (entry: AccountEntry) =>
         !isOutrasReceitasEventuaisCode(entry.codigo) &&
         !isRendasOperacionaisEntry(entry) &&
@@ -470,12 +486,15 @@ export default function ActivityDetailPage() {
         ? (entry: AccountEntry) => isDespesasVendasAgricolaDepartment(entry.departamento)
         : undefined;
 
+  const rateiosColigadaSubFilter = rateioColigadaSubviewFilter(rateioColigadaSubview);
+
   const activityLevelEntryFilterBase = combineEntryFilters(
     baseActivityFilter,
     pecuariaSubFilter,
     agricolaSubFilter,
     admTribSubFilter,
-    despesasComVendasSubFilter
+    despesasComVendasSubFilter,
+    rateiosColigadaSubFilter
   );
   const pecuariaReceitasScopeFilter =
     isPecuaria && resolvedTipoView === 'receitas'
@@ -678,7 +697,7 @@ export default function ActivityDetailPage() {
       custosEntries = baseLeaves.filter(
         (a) =>
           (a.tipo === 'C' || a.tipo === 'D') &&
-          isNonRateioDepartment(a.departamento) &&
+          isNonRateioDepartment(a.departamento, a.coligada) &&
           !isConta4Entry(a) &&
           isNotMarketingInternoCostCenter(a.centroCusto)
       );
@@ -807,7 +826,7 @@ export default function ActivityDetailPage() {
         a.nivel === 5 &&
         a.atividade === 'DESP_ADM_TRIB' &&
         a.tipo === 'D' &&
-        isNonRateioDepartment(a.departamento) &&
+        isNonRateioDepartment(a.departamento, a.coligada) &&
         !isConta4Entry(a) &&
         !isOutrasReceitasEventuaisCode(a.codigo) &&
         !isRendasOperacionaisEntry(a) &&
@@ -936,6 +955,47 @@ export default function ActivityDetailPage() {
       total: { orc: pecuariaOrc + agricolaOrc, real: pecuariaReal + agricolaReal },
     };
   }, [accounts, isDespesasComVendas, selectedMonth]);
+
+  const rateiosColigadaHubSummary = useMemo(() => {
+    if (!isRateios) return null;
+
+    const rateioLeaves = accounts.filter(
+      (entry) =>
+        entry.nivel === 5 &&
+        (isRateioDepartmentForEntry(entry) || isConta4AdministracaoEntry(entry)) &&
+        !isOutrasReceitasEventuaisCode(entry.codigo) &&
+        !isExcludedFromRateios(entry)
+    );
+
+    const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
+      entries.reduce((acc, entry) => {
+        if (isMonthAll) {
+          return acc + Object.values(entry[field]).reduce((s, v) => s + v, 0);
+        }
+        return acc + selectedMonths.reduce((s, m) => s + (entry[field][m] || 0), 0);
+      }, 0);
+
+    const veraCruzEntries = rateioLeaves.filter((entry) =>
+      matchesRateioColigadaSubview(entry, 'vera-cruz')
+    );
+    const olLatexEntries = rateioLeaves.filter((entry) =>
+      matchesRateioColigadaSubview(entry, 'ol-latex')
+    );
+
+    const veraCruzOrc = sum(veraCruzEntries, 'orcado');
+    const veraCruzReal = sum(veraCruzEntries, 'realizado');
+    const olLatexOrc = sum(olLatexEntries, 'orcado');
+    const olLatexReal = sum(olLatexEntries, 'realizado');
+
+    return {
+      veraCruz: { orc: veraCruzOrc, real: veraCruzReal },
+      olLatex: { orc: olLatexOrc, real: olLatexReal },
+      total: {
+        orc: veraCruzOrc + olLatexOrc,
+        real: veraCruzReal + olLatexReal,
+      },
+    };
+  }, [accounts, isRateios, selectedMonth]);
 
   const renderSummaryCard = (
     title: string,
@@ -1204,7 +1264,7 @@ export default function ActivityDetailPage() {
       ? (entry) => entry.tipo !== 'C' || isAllowedEntryForCustos(atividade?.key, entry)
       : undefined,
     resolvedTipoView === 'custos' && !isDespesasComVendas && !isEncargos && isAdmTrib
-      ? (entry) => isNonRateioDepartment(entry.departamento) && !isConta4Entry(entry)
+      ? (entry) => isNonRateioDepartment(entry.departamento, entry.coligada) && !isConta4Entry(entry)
       : undefined,
     resolvedTipoView === 'custos' &&
     !isDespesasComVendas &&
@@ -1466,7 +1526,12 @@ export default function ActivityDetailPage() {
       !subview &&
       Boolean(despesasComVendasSummary)) ||
     (isAgricola && resolvedTipoView === 'custos' && !subview && Boolean(agricolaSummary)) ||
-    (isAdmTrib && resolvedTipoView === 'custos' && !subview && Boolean(admTribSummary));
+    (isAdmTrib && resolvedTipoView === 'custos' && !subview && Boolean(admTribSummary)) ||
+    (isRateios &&
+      tipoView === 'todos' &&
+      !rateioColigadaSubview &&
+      !initialDepartment &&
+      Boolean(rateiosColigadaHubSummary));
 
   useEffect(() => {
     if (selectedDepts.length === 0) return;
@@ -1574,6 +1639,15 @@ export default function ActivityDetailPage() {
             >
               <ArrowLeft className="h-4 w-4" />
               Voltar para {isPecuaria ? 'Pecuária' : isAgricola ? 'Agrícola' : isDespesasComVendas ? 'Despesas com Vendas' : 'Desp. Adm. e Tributárias'}
+            </button>
+          )}
+          {isRateios && rateioColigadaSubview && (
+            <button
+              onClick={() => navigate(buildActivityPath('RATEIOS'))}
+              className="flex items-center gap-1 text-sm text-sky-600 hover:text-sky-700 font-semibold mb-2 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Voltar para escolha de coligada
             </button>
           )}
           <div className="flex items-center gap-2 mb-1">
@@ -1686,6 +1760,28 @@ export default function ActivityDetailPage() {
             })}
           </div>
         </div>
+      ) : isRateios &&
+        tipoView === 'todos' &&
+        !rateioColigadaSubview &&
+        !initialDepartment &&
+        rateiosColigadaHubSummary ? (
+        <div className="space-y-6">
+          {renderSummaryCard('Total Rateios', rateiosColigadaHubSummary.total, { isMain: true })}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {renderSummaryCard(
+              RATEIO_COLIGADA_GROUPS[0].label,
+              rateiosColigadaHubSummary.veraCruz,
+              {
+                onClick: () => navigate(buildActivityPath('RATEIOS', { subview: 'vera-cruz' })),
+                accentColor: 'sky',
+              }
+            )}
+            {renderSummaryCard(RATEIO_COLIGADA_GROUPS[1].label, rateiosColigadaHubSummary.olLatex, {
+              onClick: () => navigate(buildActivityPath('RATEIOS', { subview: 'ol-latex' })),
+              accentColor: 'sky',
+            })}
+          </div>
+        </div>
       ) : isDespesasComVendas && resolvedTipoView === 'custos' && !subview && despesasComVendasSummary ? (
         <div className="space-y-6">
           {renderSummaryCard('Total Despesas com Vendas', despesasComVendasSummary.total, { isMain: true })}
@@ -1736,6 +1832,29 @@ export default function ActivityDetailPage() {
         </div>
       ) : (
         <>
+          {isRateios && (
+            <Tabs
+              value={rateioColigadaSubview ?? 'hub'}
+              onValueChange={(value) => {
+                const params = new URLSearchParams(searchParams);
+                if (value === 'hub') params.delete('subview');
+                else params.set('subview', value);
+                if (returnTo) params.set('returnTo', returnTo);
+                navigate(`/atividade/RATEIOS?${params.toString()}`);
+              }}
+            >
+              <TabsList className="mb-4 h-auto w-full max-w-3xl flex-wrap justify-start gap-1 bg-slate-100/80 p-1">
+                <TabsTrigger value="hub" className="text-xs sm:text-sm">
+                  Visão geral
+                </TabsTrigger>
+                {RATEIO_COLIGADA_GROUPS.map((group) => (
+                  <TabsTrigger key={group.subview} value={group.subview} className="text-xs sm:text-sm">
+                    {group.shortLabel}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </Tabs>
+          )}
           <SummaryCards
             selectedMonth={selectedMonth}
             atividadeFilter={isOutrasReceitasEventuais || isRateios ? undefined : atividade?.key}
@@ -1779,12 +1898,13 @@ export default function ActivityDetailPage() {
               accentColor="emerald"
             />
           </div>
-        ) : isRateios ? (
+        ) : isRateios && (rateioColigadaSubview || initialDepartment) ? (
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-900">Abertura de Rateios</h2>
               <div className="text-[10px] font-bold text-sky-600 uppercase tracking-widest bg-sky-50 px-2 py-1 rounded border border-sky-100">
-                Departamentos
+                {RATEIO_COLIGADA_GROUPS.find((g) => g.subview === rateioColigadaSubview)?.shortLabel ??
+                  'Coligada'}
               </div>
             </div>
             <AnalyticalTable
@@ -2044,7 +2164,7 @@ export default function ActivityDetailPage() {
                     tipoFilter={['C']}
                     entryFilter={combineEntryFilters(
                       activityLevelEntryFilter,
-                      isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                      isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento, entry.coligada) : undefined,
                       isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
                       isAgricola
                         ? (entry) =>
@@ -2093,7 +2213,7 @@ export default function ActivityDetailPage() {
                           tipoFilter={['D']}
                           entryFilter={combineEntryFilters(
                             activityLevelEntryFilter,
-                            (entry) => isNonRateioDepartment(entry.departamento),
+                            (entry) => isNonRateioDepartment(entry.departamento, entry.coligada),
                             (entry) => !isConta4Entry(entry),
                             (entry) => !isTributariaEntry(entry),
                             (entry) => !isReceitaDeductionEntry(entry),
@@ -2122,7 +2242,7 @@ export default function ActivityDetailPage() {
                         tipoFilter={['D']}
                         entryFilter={combineEntryFilters(
                           activityLevelEntryFilter,
-                          (entry) => isNonRateioDepartment(entry.departamento),
+                          (entry) => isNonRateioDepartment(entry.departamento, entry.coligada),
                           (entry) => !isConta4Entry(entry),
                           (entry) => isTributariaEntry(entry),
                         )}
@@ -2262,7 +2382,7 @@ export default function ActivityDetailPage() {
                   tipoFilter={['C']}
                   entryFilter={combineEntryFilters(
                     activityLevelEntryFilter,
-                    isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento) : undefined,
+                    isAdmTrib ? (entry) => isNonRateioDepartment(entry.departamento, entry.coligada) : undefined,
                     isAdmTrib ? (entry) => !isConta4Entry(entry) : undefined,
                     isAgricola
                       ? (entry) =>
@@ -2299,7 +2419,7 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
-                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => isNonRateioDepartment(entry.departamento, entry.coligada),
                         (entry) => !isConta4Entry(entry),
                         (entry) => !isTributariaEntry(entry),
                         (entry) => !isReceitaDeductionEntry(entry),
@@ -2319,7 +2439,7 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
-                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => isNonRateioDepartment(entry.departamento, entry.coligada),
                         (entry) => !isConta4Entry(entry),
                         (entry) => !isTributariaEntry(entry),
                         (entry) => !isReceitaDeductionEntry(entry),
@@ -2339,7 +2459,7 @@ export default function ActivityDetailPage() {
                       tipoFilter={['D']}
                       entryFilter={combineEntryFilters(
                         activityLevelEntryFilter,
-                        (entry) => isNonRateioDepartment(entry.departamento),
+                        (entry) => isNonRateioDepartment(entry.departamento, entry.coligada),
                         (entry) => !isConta4Entry(entry),
                         (entry) => isTributariaEntry(entry),
                       )}
