@@ -1177,6 +1177,21 @@ export default function ActivityDetailPage() {
     if (resolvedTipoView === 'custos') {
       return combineEntryFilters(
         summaryEntryFilter,
+        isEncargos
+          ? undefined
+          : (entry) => {
+              if (entry.tipo === 'R') return false;
+              if (isAdmTrib) {
+                return (
+                  (entry.tipo === 'C' && isAllowedEntryForCustos(atividade?.key, entry)) ||
+                  (entry.tipo === 'D' && !isReceitaDeductionEntry(entry))
+                );
+              }
+              return (
+                (entry.tipo === 'C' && isAllowedEntryForCustos(atividade?.key, entry)) ||
+                (entry.tipo === 'D' && !isReceitaDeductionEntry(entry))
+              );
+            },
         isAgricola
           ? (entry) =>
             isAgricolaFarmCultureDepartment(entry.departamento) ||
@@ -1197,6 +1212,9 @@ export default function ActivityDetailPage() {
     summaryEntryFilter,
     isAgricola,
     isPecuaria,
+    isEncargos,
+    isAdmTrib,
+    atividade?.key,
   ]);
 
   const availableCultures = useMemo(() => {
