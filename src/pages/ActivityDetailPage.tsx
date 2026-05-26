@@ -194,6 +194,15 @@ const isAgricolaUnidadeRecepConta4Entry = (entry: AccountEntry) => {
   );
 };
 
+const isAgricola2025CostCenterEntry = (entry: Pick<AccountEntry, 'centroCusto'>) =>
+  normalizeText(entry.centroCusto).includes('2025');
+
+const isAgricola2025CostCenterCC = (centroCusto?: string) =>
+  normalizeText(centroCusto).includes('2025');
+
+const isAgricola2026CostCenterCC = (centroCusto?: string) =>
+  normalizeText(centroCusto).includes('2026');
+
 const CONFINAMENTO_COST_CENTERS = [
   'RATEIO CONFINAMENTO',
   'CONFINAMENTO - TRANSPORTE DE GADO',
@@ -354,12 +363,22 @@ export default function ActivityDetailPage() {
   const isAdmTribLaizaSubview = isAdmTrib && subview === 'laiza';
   const isAdmTribRaileneSubview = isAdmTrib && subview === 'railene';
   const isAgricolaUnidadeRecepSubview = isAgricola && subview === 'unidade-recep';
-  const isAgricolaGeralSubview = isAgricola && subview === 'geral';
+  const isAgricolaGeral2025Subview = isAgricola && subview === 'geral-2025';
+  const isAgricolaGeralSubview = isAgricola && (subview === 'geral' || subview === 'geral-2025');
+  const isAgricolaPlanning2025 = false;
   const isDespesasComVendasPecuariaSubview = isDespesasComVendas && subview === 'pecuaria';
   const isDespesasComVendasAgricolaSubview = isDespesasComVendas && subview === 'agricola';
   const isPecuariaReceitasGeneticaSubview = isPecuaria && subview === 'genetica';
   const isPecuariaCustosGeneticaSubview = isPecuaria && subview === 'custos-genetica';
   const resolvedTipoView = isDespesasComVendas ? 'custos' : tipoView;
+  const agricola2025FieldFilter =
+    resolvedTipoView === 'custos' && isAgricolaGeralSubview
+      ? (entry: AccountEntry, field: 'orcado' | 'realizado') => {
+          const is2025CostCenter = isAgricola2025CostCenterEntry(entry);
+          if (field === 'orcado') return !isAgricolaGeral2025Subview;
+          return is2025CostCenter ? isAgricolaGeral2025Subview : !isAgricolaGeral2025Subview;
+        }
+      : undefined;
   const shouldApplyCostCenterFilter = resolvedTipoView !== 'receitas';
   const activeCostCenterFilter: string[] | undefined =
     shouldApplyCostCenterFilter && selectedCCs.length > 0 ? selectedCCs : undefined;
@@ -408,7 +427,9 @@ export default function ActivityDetailPage() {
               ? 'Desp. Adm. e Tributárias — DESPESAS - GERENCIA FINANCEIRO'
               : isAdmTrib && subview === 'railene'
                 ? 'Desp. Adm. e Tributárias — DESPESAS - GERENCIA RH'
-            : isAgricola && subview === 'geral'
+            : isAgricola && subview === 'geral-2025'
+              ? 'Agricola - 2025'
+              : isAgricola && subview === 'geral'
               ? 'Agrícola'
               : isAgricola && subview === 'unidade-recep'
                 ? 'AGRICOLA / UNIDADE RECEP'
@@ -430,7 +451,8 @@ export default function ActivityDetailPage() {
       ? isConfinamentoEntry
       : undefined;
 
-  const agricolaSubFilter = resolvedTipoView === 'custos' && isAgricola && subview === 'geral'
+  const agricolaSubFilter =
+    resolvedTipoView === 'custos' && isAgricola && (subview === 'geral' || subview === 'geral-2025')
     ? (entry: AccountEntry) => !isAgricolaUnidadeRecepConta4Entry(entry)
     : resolvedTipoView === 'custos' && isAgricola && subview === 'unidade-recep'
       ? isAgricolaUnidadeRecepConta4Entry
@@ -854,6 +876,10 @@ export default function ActivityDetailPage() {
 
     const unidadeRecepEntries = agricolaLeaves.filter((a) => isAgricolaUnidadeRecepConta4Entry(a));
     const agricolaGeralEntries = agricolaLeaves.filter((a) => !isAgricolaUnidadeRecepConta4Entry(a));
+    const agricola2025Entries = agricolaGeralEntries.filter((a) => isAgricola2025CostCenterEntry(a));
+    const agricolaGeralSem2025Entries = agricolaGeralEntries.filter(
+      (a) => !isAgricola2025CostCenterEntry(a)
+    );
 
     const sum = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
       entries.reduce((acc, entry) => {
@@ -864,14 +890,16 @@ export default function ActivityDetailPage() {
       }, 0);
 
     const geralOrc = sum(agricolaGeralEntries, 'orcado');
-    const geralReal = sum(agricolaGeralEntries, 'realizado');
+    const geralReal = sum(agricolaGeralSem2025Entries, 'realizado');
+    const geral2025Real = sum(agricola2025Entries, 'realizado');
     const recepOrc = sum(unidadeRecepEntries, 'orcado');
     const recepReal = sum(unidadeRecepEntries, 'realizado');
 
     return {
       geral: { orc: geralOrc, real: geralReal },
+      geral2025: { orc: 0, real: geral2025Real },
       unidadeRecep: { orc: recepOrc, real: recepReal },
-      total: { orc: geralOrc + recepOrc, real: geralReal + recepReal },
+      total: { orc: geralOrc + recepOrc, real: geralReal + geral2025Real + recepReal },
     };
   }, [accounts, isAgricola, selectedMonth]);
 
@@ -926,6 +954,10 @@ export default function ActivityDetailPage() {
       seringalPkgMetrics?: { orcExtra: number | null; realExtra: number | null };
       /** Exibe traços no lugar dos valores (card reservado para dados futuros). */
       emptyValues?: boolean;
+      /** Exibe 0,00 em orçado, realizado e diferença. */
+      zeroedValues?: boolean;
+      /** Card menor (ex.: planejamento 2025 abaixo do painel principal). */
+      compact?: boolean;
       /** Receita/resultado: + = verde. Custo: + = vermelho. Padrão: emerald → receita, demais → custo. */
       variationKind?: BudgetVariationKind;
     }
@@ -937,14 +969,20 @@ export default function ActivityDetailPage() {
       pecuariaMetrics,
       seringalPkgMetrics,
       emptyValues = false,
+      zeroedValues = false,
+      compact = false,
       variationKind: variationKindOption,
     } = options || {};
     const isRevenueStyle = accentColor === 'emerald';
     const variationKind: BudgetVariationKind =
       variationKindOption ?? (isRevenueStyle ? 'revenue' : 'cost');
-    const difference = budgetDifference(data.real, data.orc);
-    const diffPctVsOrc = budgetDifferencePctVsOrc(difference, data.orc);
-    const isFavorable = isBudgetDifferenceFavorable(difference, variationKind);
+    const displayOrc = zeroedValues ? 0 : data.orc;
+    const displayReal = zeroedValues ? 0 : data.real;
+    const difference = zeroedValues ? 0 : budgetDifference(data.real, data.orc);
+    const diffPctVsOrc = zeroedValues ? 0 : budgetDifferencePctVsOrc(difference, data.orc);
+    const isFavorable = zeroedValues
+      ? true
+      : isBudgetDifferenceFavorable(difference, variationKind);
     const isEmerald = accentColor === 'emerald';
     const bgColor = isEmerald ? '' : 'bg-dashboard-orange';
     const hoverBorder = isEmerald
@@ -986,7 +1024,8 @@ export default function ActivityDetailPage() {
       <div
         onClick={onClick}
         className={cn(
-          'border overflow-hidden rounded-2xl transition-all duration-300 bg-white',
+          'border overflow-hidden transition-all duration-300 bg-white',
+          compact ? 'rounded-xl max-w-sm' : 'rounded-2xl',
           isMain
             ? 'border-primary/20 shadow-xl ring-1 ring-primary/5'
             : cn('border-slate-100 shadow-sm hover:shadow-md group', hoverBorder),
@@ -995,27 +1034,34 @@ export default function ActivityDetailPage() {
       >
         <div
           className={cn(
-            'py-4 px-5 flex items-center justify-between text-white',
+            'flex items-center justify-between text-white',
+            compact ? 'py-2.5 px-4' : 'py-4 px-5',
             isEmerald ? 'bg-dashboard-green' : bgColor
           )}
         >
-          <span className="font-semibold text-[13px]">{title}</span>
+          <span className={cn('font-semibold', compact ? 'text-[11px]' : 'text-[13px]')}>{title}</span>
           {onClick && (
             <div
               className={cn(
-                'h-7 w-7 rounded-full bg-white shadow-sm flex items-center justify-center transition-colors',
+                'rounded-full bg-white shadow-sm flex items-center justify-center transition-colors',
+                compact ? 'h-6 w-6' : 'h-7 w-7',
                 isEmerald ? 'text-dashboard-green' : iconColor,
                 iconHover
               )}
             >
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className={compact ? 'h-3.5 w-3.5' : 'h-4 w-4'} />
             </div>
           )}
         </div>
         <div
           className={cn('grid text-center border-y border-slate-200 bg-slate-100/70', gridColsClass)}
         >
-          <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
+          <div
+            className={cn(
+              'font-semibold text-slate-700 border-r border-slate-200/80',
+              compact ? 'py-1.5 text-[10px]' : 'py-2 text-[12px]'
+            )}
+          >
             Orçado
           </div>
           {hubExtraColumns && (
@@ -1023,7 +1069,12 @@ export default function ActivityDetailPage() {
               {hubExtraColumns.labelOrc}
             </div>
           )}
-          <div className="py-2 text-[12px] font-semibold text-slate-700 border-r border-slate-200/80">
+          <div
+            className={cn(
+              'font-semibold text-slate-700 border-r border-slate-200/80',
+              compact ? 'py-1.5 text-[10px]' : 'py-2 text-[12px]'
+            )}
+          >
             Realizado
           </div>
           {hubExtraColumns && (
@@ -1031,14 +1082,26 @@ export default function ActivityDetailPage() {
               {hubExtraColumns.labelReal}
             </div>
           )}
-          <div className="py-2 text-[12px] font-semibold text-slate-700">Diferença</div>
+          <div
+            className={cn(
+              'font-semibold text-slate-700',
+              compact ? 'py-1.5 text-[10px]' : 'py-2 text-[12px]'
+            )}
+          >
+            Diferença
+          </div>
         </div>
         <div className={cn('grid text-center items-center', gridColsClass)}>
-          <div className="py-4 text-[13px] font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white">
+          <div
+            className={cn(
+              'font-medium border-r border-slate-200 tabular-nums text-slate-700 bg-white',
+              compact ? 'py-2.5 text-[12px]' : 'py-4 text-[13px]'
+            )}
+          >
             {emptyValues ? (
               <span className="text-slate-400">—</span>
             ) : (
-              fmtDecimal(data.orc)
+              fmtDecimal(displayOrc)
             )}
           </div>
           {hubExtraColumns && (
@@ -1048,11 +1111,16 @@ export default function ActivityDetailPage() {
               )}
             </div>
           )}
-          <div className="py-4 text-[13px] font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white">
+          <div
+            className={cn(
+              'font-semibold border-r border-slate-200 tabular-nums text-slate-800 bg-white',
+              compact ? 'py-2.5 text-[12px]' : 'py-4 text-[13px]'
+            )}
+          >
             {emptyValues ? (
               <span className="text-slate-400">—</span>
             ) : (
-              fmtDecimal(data.real)
+              fmtDecimal(displayReal)
             )}
           </div>
           {hubExtraColumns && (
@@ -1064,36 +1132,43 @@ export default function ActivityDetailPage() {
           )}
           <div
             className={cn(
-              'py-4 text-[13px] font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
+              'font-semibold tabular-nums flex flex-nowrap items-center justify-center gap-2',
+              compact ? 'py-2.5 text-[12px] gap-1.5' : 'py-4 text-[13px] gap-2',
               emptyValues
                 ? 'text-slate-400 bg-slate-50/80'
-                : isFavorable
-                  ? 'text-dashboard-green bg-dashboard-green/10'
-                  : 'text-rose-600 bg-rose-50/50'
+                : zeroedValues
+                  ? 'text-slate-500 bg-slate-50/80'
+                  : isFavorable
+                    ? 'text-dashboard-green bg-dashboard-green/10'
+                    : 'text-rose-600 bg-rose-50/50'
             )}
           >
             <span className="inline-flex items-center gap-1">
               {!emptyValues &&
+                !zeroedValues &&
                 (isFavorable ? (
-                  <TrendingUp className="h-3.5 w-3.5" />
+                  <TrendingUp className={compact ? 'h-3 w-3' : 'h-3.5 w-3.5'} />
                 ) : (
-                  <TrendingDown className="h-3.5 w-3.5" />
+                  <TrendingDown className={compact ? 'h-3 w-3' : 'h-3.5 w-3.5'} />
                 ))}
               {emptyValues ? '—' : fmtDecimal(difference)}
             </span>
             <span
               className={cn(
-                'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white px-2 py-0.5 text-[11px] font-semibold tabular-nums',
-                emptyValues || diffPctVsOrc == null
+                'inline-flex shrink-0 items-center rounded-md border border-slate-200/90 bg-white font-semibold tabular-nums',
+                compact ? 'px-1.5 py-0.5 text-[10px]' : 'px-2 py-0.5 text-[11px]',
+                emptyValues || (!zeroedValues && diffPctVsOrc == null)
                   ? 'text-slate-400'
-                  : isFavorable
-                    ? 'text-dashboard-green'
-                    : 'text-rose-700'
+                  : zeroedValues
+                    ? 'text-slate-500'
+                    : isFavorable
+                      ? 'text-dashboard-green'
+                      : 'text-rose-700'
               )}
             >
-              {emptyValues || diffPctVsOrc == null
+              {emptyValues || (!zeroedValues && diffPctVsOrc == null)
                 ? '—'
-                : `${diffPctVsOrc >= 0 ? '+' : ''}${diffPctVsOrc.toFixed(1)}%`}
+                : `${(diffPctVsOrc ?? 0) >= 0 ? '+' : ''}${(diffPctVsOrc ?? 0).toFixed(1)}%`}
             </span>
           </div>
         </div>
@@ -1342,6 +1417,12 @@ export default function ActivityDetailPage() {
             (cc) =>
               !(isAgricola && resolvedTipoView === 'custos' && isAgricolaFarmCultureDepartment(cc))
           )
+          .filter((cc) => {
+            if (!(isAgricola && resolvedTipoView === 'custos')) return true;
+            if (!subview || subview === 'geral') return !isAgricola2025CostCenterCC(cc);
+            if (subview === 'geral-2025') return !isAgricola2026CostCenterCC(cc);
+            return true;
+          })
       )
     );
 
@@ -1621,14 +1702,23 @@ export default function ActivityDetailPage() {
       ) : isAgricola && resolvedTipoView === 'custos' && !subview && agricolaSummary ? (
         <div className="space-y-6">
           {renderSummaryCard('Total Agrícola', agricolaSummary.total, { isMain: true })}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {renderSummaryCard('Agrícola', agricolaSummary.geral, {
-              onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'geral' })),
-            })}
-            {renderSummaryCard('AGRICOLA / UNIDADE RECEP', agricolaSummary.unidadeRecep, {
-              onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'unidade-recep' })),
-              accentColor: 'amber',
-            })}
+          <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-stretch">
+              {renderSummaryCard('Agrícola', agricolaSummary.geral, {
+                onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'geral' })),
+              })}
+              {renderSummaryCard('AGRICOLA / UNIDADE RECEP', agricolaSummary.unidadeRecep, {
+                onClick: () =>
+                  navigate(buildActivityPath('AGRICOLA', { subview: 'unidade-recep' })),
+                accentColor: 'amber',
+              })}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {renderSummaryCard('Agricola - 2025', agricolaSummary.geral2025, {
+                onClick: () => navigate(buildActivityPath('AGRICOLA', { subview: 'geral-2025' })),
+                compact: true,
+              })}
+            </div>
           </div>
         </div>
       ) : isAdmTrib && resolvedTipoView === 'custos' && !subview && admTribSummary ? (
@@ -1653,6 +1743,8 @@ export default function ActivityDetailPage() {
             departmentFilter={activeDepartmentFilter}
             entryFilter={summaryEntryFilter}
             tipoFilter={summaryTipoFilter}
+            fieldFilter={agricola2025FieldFilter}
+            forceZeroValues={isAgricolaPlanning2025}
             receitaLiquidaOverride={
               resolvedTipoView === 'receitas' &&
               atividade?.key &&
@@ -1674,6 +1766,7 @@ export default function ActivityDetailPage() {
               </div>
             </div>
             <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
               selectedMonth={selectedMonth}
               costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
               departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
@@ -1695,6 +1788,7 @@ export default function ActivityDetailPage() {
               </div>
             </div>
             <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
               selectedMonth={selectedMonth}
               costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
               departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
@@ -1713,6 +1807,7 @@ export default function ActivityDetailPage() {
               </div>
             </div>
             <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
               atividadeFilter={atividade.key}
               selectedMonth={selectedMonth}
               costCenterFilter={activeCostCenterFilter}
@@ -1738,7 +1833,8 @@ export default function ActivityDetailPage() {
                 Entradas
               </div>
             </div>
-            <AnalyticalTable 
+            <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
               atividadeFilter={atividade.key}
               selectedMonth={selectedMonth}
               costCenterFilter={activeCostCenterFilter}
@@ -1756,6 +1852,7 @@ export default function ActivityDetailPage() {
             {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
               <>
                 <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={activeCostCenterFilter}
@@ -1802,6 +1899,7 @@ export default function ActivityDetailPage() {
                 </div>
               </div>
               <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={activeCostCenterFilter}
@@ -1827,6 +1925,7 @@ export default function ActivityDetailPage() {
                   </div>
                 </div>
                 <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={activeCostCenterFilter}
@@ -1853,6 +1952,7 @@ export default function ActivityDetailPage() {
                 </div>
               </div>
               <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                 selectedMonth={selectedMonth}
                 costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
                 departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
@@ -1886,7 +1986,8 @@ export default function ActivityDetailPage() {
                     Saídas
                   </div>
                 </div>
-                <AnalyticalTable 
+                <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -1908,7 +2009,8 @@ export default function ActivityDetailPage() {
                     Entradas
                   </div>
                 </div>
-                <AnalyticalTable 
+                <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -1933,7 +2035,8 @@ export default function ActivityDetailPage() {
                       Saídas
                     </div>
                   </div>
-                  <AnalyticalTable 
+                  <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
                     costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -1965,6 +2068,7 @@ export default function ActivityDetailPage() {
                         ? 'grupo_descricao'
                         : 'default'
                     }
+                    fieldFilter={agricola2025FieldFilter}
                   />
                 </div>
               )}
@@ -1981,6 +2085,7 @@ export default function ActivityDetailPage() {
                     <div className="space-y-6">
                       {(isAdmTribLaizaSubview || isAdmTribRaileneSubview) && (
                         <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                           atividadeFilter={atividade.key}
                           selectedMonth={selectedMonth}
                           costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2009,6 +2114,7 @@ export default function ActivityDetailPage() {
                         />
                       )}
                       <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                         atividadeFilter={atividade.key}
                         selectedMonth={selectedMonth}
                         costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2026,7 +2132,8 @@ export default function ActivityDetailPage() {
                       />
                     </div>
                   ) : (
-                    <AnalyticalTable 
+                    <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
                       costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2052,6 +2159,7 @@ export default function ActivityDetailPage() {
                     </div>
                   </div>
                   <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
                     costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2080,7 +2188,8 @@ export default function ActivityDetailPage() {
                   Entradas
                 </div>
               </div>
-              <AnalyticalTable 
+              <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={activeCostCenterFilter}
@@ -2098,6 +2207,7 @@ export default function ActivityDetailPage() {
               {!isOutrasReceitasEventuais && !isRateios && !isDespesasComVendas && (
                 <>
                   <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
                     costCenterFilter={activeCostCenterFilter}
@@ -2143,7 +2253,8 @@ export default function ActivityDetailPage() {
                     Saídas
                   </div>
                 </div>
-                <AnalyticalTable 
+                <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2180,6 +2291,7 @@ export default function ActivityDetailPage() {
                 {isAdmTrib ? (
                   <div className="space-y-6">
                     <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
                       costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2199,6 +2311,7 @@ export default function ActivityDetailPage() {
                       costHierarchyMode="grupo_descricao"
                     />
                     <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
                       costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2218,6 +2331,7 @@ export default function ActivityDetailPage() {
                       costHierarchyMode="grupo_descricao"
                     />
                     <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                       atividadeFilter={atividade.key}
                       selectedMonth={selectedMonth}
                       costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2235,7 +2349,8 @@ export default function ActivityDetailPage() {
                     />
                   </div>
                 ) : (
-                  <AnalyticalTable 
+                  <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                     atividadeFilter={atividade.key}
                     selectedMonth={selectedMonth}
                     costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}
@@ -2261,6 +2376,7 @@ export default function ActivityDetailPage() {
                   </div>
                 </div>
                 <AnalyticalTable
+              forceZeroValues={isAgricolaPlanning2025}
                   atividadeFilter={atividade.key}
                   selectedMonth={selectedMonth}
                   costCenterFilter={selectedCCs.length > 0 ? selectedCCs : undefined}

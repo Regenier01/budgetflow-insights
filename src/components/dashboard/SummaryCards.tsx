@@ -17,8 +17,11 @@ interface Props {
   departmentFilter?: string[];
   tipoFilter?: string[];
   entryFilter?: (entry: AccountEntry) => boolean;
+  fieldFilter?: (entry: AccountEntry, field: 'orcado' | 'realizado') => boolean;
   /** Quando informado (ex.: visão receitas na atividade), o card de receitas e o total refletem receita líquida (R + deduções), alinhado ao consolidado e à caixa "Receita líquida". */
   receitaLiquidaOverride?: { orc: number; real: number };
+  /** Exibe todos os totais como zero (planejamento sem dados importados). */
+  forceZeroValues?: boolean;
 }
 
 export function SummaryCards({
@@ -28,7 +31,9 @@ export function SummaryCards({
   departmentFilter,
   tipoFilter,
   entryFilter,
+  fieldFilter,
   receitaLiquidaOverride,
+  forceZeroValues = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
 
@@ -37,6 +42,7 @@ export function SummaryCards({
 
   const sumEntries = (entries: AccountEntry[], field: 'orcado' | 'realizado') =>
     entries.reduce((sum, entry) => {
+      if (fieldFilter && !fieldFilter(entry, field)) return sum;
       if (isAllMonths) {
         return sum + Object.values(entry[field]).reduce((acc: number, value: number) => acc + value, 0);
       }
@@ -85,6 +91,17 @@ export function SummaryCards({
     ? receitaLiquidaOverride.real
     : sumEntries(scopedAccounts, 'realizado');
 
+  const displayReceitaOrc = forceZeroValues ? 0 : receitaOrc;
+  const displayReceitaReal = forceZeroValues ? 0 : receitaReal;
+  const displayCustoOrc = forceZeroValues ? 0 : custoOrc;
+  const displayCustoReal = forceZeroValues ? 0 : custoReal;
+  const displayDespesaOrc = forceZeroValues ? 0 : despesaOrc;
+  const displayDespesaReal = forceZeroValues ? 0 : despesaReal;
+  const displayResultadoOrc = forceZeroValues ? 0 : resultadoOrc;
+  const displayResultadoReal = forceZeroValues ? 0 : resultadoReal;
+  const displayTotalOrc = forceZeroValues ? 0 : totalOrc;
+  const displayTotalReal = forceZeroValues ? 0 : totalReal;
+
   const fmt = (v: number) =>
     new Intl.NumberFormat('pt-BR', { 
       style: 'currency', 
@@ -95,17 +112,17 @@ export function SummaryCards({
   const receitaCardTitle = useLiquidaCard ? 'Receita líquida' : 'Receitas';
 
   const allCards = [
-    { title: receitaCardTitle, orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
-    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
-    { title: 'Resultado', orc: resultadoOrc, real: resultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
+    { title: receitaCardTitle, orc: displayReceitaOrc, real: displayReceitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: 'Custos', orc: displayCustoOrc, real: displayCustoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
+    { title: 'Despesas', orc: displayDespesaOrc, real: displayDespesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
+    { title: 'Resultado', orc: displayResultadoOrc, real: displayResultadoReal, icon: Target, color: 'primary', tipo: 'RESULTADO' },
   ];
 
   const scopedCards = [
-    { title: receitaCardTitle, orc: receitaOrc, real: receitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
-    { title: 'Custos', orc: custoOrc, real: custoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
-    { title: 'Despesas', orc: despesaOrc, real: despesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
-    { title: 'Total da Abertura', orc: totalOrc, real: totalReal, icon: Target, color: 'primary', tipo: 'TOTAL' },
+    { title: receitaCardTitle, orc: displayReceitaOrc, real: displayReceitaReal, icon: TrendingUp, color: 'emerald', tipo: 'R' },
+    { title: 'Custos', orc: displayCustoOrc, real: displayCustoReal, icon: DollarSign, color: 'orange', tipo: 'C' },
+    { title: 'Despesas', orc: displayDespesaOrc, real: displayDespesaReal, icon: TrendingDown, color: 'orange', tipo: 'D' },
+    { title: 'Total da Abertura', orc: displayTotalOrc, real: displayTotalReal, icon: Target, color: 'primary', tipo: 'TOTAL' },
   ];
 
   const cards = tipoFilter

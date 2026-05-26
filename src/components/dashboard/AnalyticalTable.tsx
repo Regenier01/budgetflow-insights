@@ -35,6 +35,7 @@ interface Props {
   departmentFilter?: string[];
   tipoFilter?: ('R' | 'C' | 'D')[];
   entryFilter?: (entry: AccountEntry) => boolean;
+  fieldFilter?: (entry: AccountEntry, field: 'orcado' | 'realizado') => boolean;
   title?: string;
   subtitle?: string;
   accentColor?: string;
@@ -49,6 +50,8 @@ interface Props {
    * Realizado continua podendo exibir produto abaixo da descrição.
    */
   costHierarchyMode?: 'default' | 'grupo_descricao';
+  /** Mantém a estrutura da abertura, exibindo orçado/realizado zerados (planejamento). */
+  forceZeroValues?: boolean;
 }
 
 /** Barra de título fixa (abaixo do header do app). */
@@ -344,6 +347,7 @@ export function AnalyticalTable({
   departmentFilter,
   tipoFilter,
   entryFilter,
+  fieldFilter,
   title = "Abertura Analítica",
   subtitle = "N9 → Conta → Produto",
   accentColor = "orange",
@@ -351,6 +355,7 @@ export function AnalyticalTable({
   showPCabecaColumns = false,
   showPpKgColumns = false,
   costHierarchyMode = 'default',
+  forceZeroValues = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -441,7 +446,7 @@ export function AnalyticalTable({
     diff: number,
     isPositive: boolean
   ) => {
-    if (!orc && !real) return <>-</>;
+    if (!forceZeroValues && !orc && !real) return <>-</>;
     const tone = isPositive ? 'text-dashboard-green' : 'text-rose-600';
     const badgeTone = isPositive ? 'text-dashboard-green' : 'text-rose-700';
     return (
@@ -474,7 +479,13 @@ export function AnalyticalTable({
   const isAllMonths = selectedMonth === 'all' || selectedMonth.length === 0;
   const monthList = isAllMonths ? [] : (selectedMonth as MonthKey[]);
 
-  const valueForMonths = (values: Record<string, number>) => {
+  const valueForMonths = (
+    entry: AccountEntry,
+    field: 'orcado' | 'realizado',
+    values: Record<string, number>
+  ) => {
+    if (fieldFilter && !fieldFilter(entry, field)) return 0;
+    if (forceZeroValues) return 0;
     if (isAllMonths) {
       return Object.values(values).reduce((sum, v) => sum + v, 0);
     }
@@ -484,6 +495,9 @@ export function AnalyticalTable({
   const fmtCurrency = (v: number) =>
     new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(v);
 
+  const fmtOrcCell = (v: number) => (forceZeroValues || v !== 0 ? fmtCurrency(v) : '-');
+  const fmtRealCell = (v: number) => (forceZeroValues || v !== 0 ? fmtCurrency(v) : '-');
+
   const fmtQuantidade = (v: number) =>
     new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(v);
 
@@ -492,9 +506,13 @@ export function AnalyticalTable({
     () =>
       filtered
         .map((a) => {
-          const orc = valueForMonths(a.orcado);
-          const real = valueForMonths(a.realizado);
-          const qty = a.quantidade ? valueForMonths(a.quantidade) : 0;
+          const orc = valueForMonths(a, 'orcado', a.orcado);
+          const real = valueForMonths(a, 'realizado', a.realizado);
+          const qty = a.quantidade
+            ? isAllMonths
+              ? Object.values(a.quantidade).reduce((sum, v) => sum + v, 0)
+              : monthList.reduce((sum, m) => sum + (a.quantidade?.[m] || 0), 0)
+            : 0;
           return {
             id: a.id,
             departamento: a.departamento,
@@ -509,7 +527,7 @@ export function AnalyticalTable({
             real,
           };
         })
-        .filter((e) => e.orc !== 0 || e.real !== 0)
+        .filter((e) => forceZeroValues || e.orc !== 0 || e.real !== 0)
         .sort((a, b) =>
           flatRealizadoOnly
             ? Math.abs(b.real) - Math.abs(a.real) ||
@@ -662,10 +680,10 @@ export function AnalyticalTable({
       : filtered;
 
   treeSource.forEach((a) => {
-    const orc = valueForMonths(a.orcado);
-    const real = valueForMonths(a.realizado);
+    const orc = valueForMonths(a, 'orcado', a.orcado);
+    const real = valueForMonths(a, 'realizado', a.realizado);
 
-    if (orc === 0 && real === 0) return;
+    if (!forceZeroValues && orc === 0 && real === 0) return;
 
     const n9 = n9KeyForHierarchy(a);
 
@@ -825,13 +843,13 @@ export function AnalyticalTable({
               </div>
             </td>
             <td className="text-right py-3 px-4 text-[13px] text-slate-600 tabular-nums">
-              {showBudget && node.orc ? fmtCurrency(node.orc) : '-'}
+              {showBudget ? fmtOrcCell(node.orc) : '-'}
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPpKgColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             <td className="text-right py-3 px-4 text-[13px] font-semibold text-slate-800 tabular-nums">
-              {node.real ? fmtCurrency(node.real) : '-'}
+              {fmtRealCell(node.real)}
             </td>
             {showDiariaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
             {showPCabecaColumns && renderDiariaTd('text-right py-3 px-4 text-[13px]', null)}
@@ -997,14 +1015,14 @@ export function AnalyticalTable({
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
                     <td className="py-4 px-4 text-[13px] text-slate-700">Total Consolidado</td>
-                    <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                    <td className="text-right py-4 px-4 text-[13px] text-slate-700 tabular-nums">{fmtOrcCell(totalOrc)}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaOrcResolved)}
                     {showPCabecaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', pcabecaOrcResolved)}
                     {showPpKgColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', ppKgOrcResolved)}
-                    <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                    <td className="text-right py-4 px-4 text-[13px] text-slate-800 tabular-nums">{fmtRealCell(totalReal)}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-4 text-[13px] text-right', diariaRealResolved)}
                     {showPCabecaColumns &&
@@ -1039,12 +1057,12 @@ export function AnalyticalTable({
                       </td>
                     )}
                     {!flatRealizadoOnly && (
-                      <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{entry.orc ? fmtCurrency(entry.orc) : '-'}</td>
+                      <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">{fmtOrcCell(entry.orc)}</td>
                     )}
                     {!flatRealizadoOnly && showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {!flatRealizadoOnly && showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {!flatRealizadoOnly && showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
-                    <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{entry.real ? fmtCurrency(entry.real) : '-'}</td>
+                    <td className="text-right py-2.5 px-3 text-[12px] font-semibold text-slate-800 tabular-nums">{fmtRealCell(entry.real)}</td>
                     {showDiariaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPCabecaColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
                     {showPpKgColumns && renderDiariaTd('text-right py-2.5 px-3 text-[12px]', null)}
@@ -1070,7 +1088,7 @@ export function AnalyticalTable({
                   <tr>
                     <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
                     {!flatRealizadoOnly && (
-                      <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{totalOrc ? fmtCurrency(totalOrc) : '-'}</td>
+                      <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{fmtOrcCell(totalOrc)}</td>
                     )}
                     {!flatRealizadoOnly && showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaOrcResolved)}
@@ -1083,7 +1101,7 @@ export function AnalyticalTable({
                         {totalQuantidade ? fmtQuantidade(totalQuantidade) : '-'}
                       </td>
                     )}
-                    <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{totalReal ? fmtCurrency(totalReal) : '-'}</td>
+                    <td className="text-right py-4 px-3 text-[13px] text-slate-800 tabular-nums">{fmtRealCell(totalReal)}</td>
                     {showDiariaColumns &&
                       renderDiariaTd('py-4 px-3 text-[13px] text-right', diariaRealResolved)}
                     {showPCabecaColumns &&
