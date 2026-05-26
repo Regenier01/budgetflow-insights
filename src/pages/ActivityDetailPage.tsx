@@ -1330,6 +1330,10 @@ export default function ActivityDetailPage() {
           )
           .map((entry) => entry.centroCusto)
           .filter((cc): cc is string => Boolean(cc))
+          .filter(
+            (cc) =>
+              !(isAgricola && resolvedTipoView === 'custos' && isAgricolaFarmCultureDepartment(cc))
+          )
       )
     );
 
@@ -1355,6 +1359,7 @@ export default function ActivityDetailPage() {
     resolvedTipoView,
     selectedMonth,
     isPecuaria,
+    isAgricola,
     subview,
   ]);
 

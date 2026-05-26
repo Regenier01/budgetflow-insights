@@ -1,8 +1,16 @@
 import * as React from 'react';
 import * as PopoverPrimitive from '@radix-ui/react-popover';
-import { Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown, Search } from 'lucide-react';
 
+import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
+
+const normalizeForSearch = (value: string) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
 
 export interface MultiSelectOption {
   value: string;
@@ -21,6 +29,9 @@ interface MultiSelectProps {
   triggerClassName?: string;
   contentClassName?: string;
   align?: 'start' | 'center' | 'end';
+  /** Exibe campo de busca para filtrar as opções da lista. */
+  searchable?: boolean;
+  searchPlaceholder?: string;
 }
 
 /**
@@ -38,9 +49,36 @@ export function MultiSelect({
   triggerClassName,
   contentClassName,
   align = 'start',
+  searchable = true,
+  searchPlaceholder = 'Filtrar...',
 }: MultiSelectProps) {
+  const [open, setOpen] = React.useState(false);
+  const [search, setSearch] = React.useState('');
+  const searchInputRef = React.useRef<HTMLInputElement>(null);
   const selectedSet = React.useMemo(() => new Set(selected), [selected]);
   const isAll = selected.length === 0;
+
+  const filteredOptions = React.useMemo(() => {
+    const query = normalizeForSearch(search);
+    if (!query) return options;
+    return options.filter(
+      (opt) =>
+        normalizeForSearch(opt.label).includes(query) ||
+        normalizeForSearch(opt.value).includes(query)
+    );
+  }, [options, search]);
+
+  React.useEffect(() => {
+    if (open && searchable) {
+      const id = window.setTimeout(() => searchInputRef.current?.focus(), 0);
+      return () => window.clearTimeout(id);
+    }
+  }, [open, searchable]);
+
+  const handleOpenChange = (next: boolean) => {
+    setOpen(next);
+    if (!next) setSearch('');
+  };
 
   const triggerLabel = React.useMemo(() => {
     if (isAll) return allLabel;
@@ -82,7 +120,7 @@ export function MultiSelect({
 
   return (
     <div className={className}>
-      <PopoverPrimitive.Root>
+      <PopoverPrimitive.Root open={open} onOpenChange={handleOpenChange}>
         <PopoverPrimitive.Trigger asChild>
           <button
             type="button"
@@ -109,6 +147,25 @@ export function MultiSelect({
             <div className="border-b border-slate-100 px-2 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-400">
               Ctrl+clique para múltiplos
             </div>
+            {searchable && (
+              <div
+                className="border-b border-slate-100 px-2 py-2"
+                onPointerDown={(event) => event.stopPropagation()}
+              >
+                <div className="relative">
+                  <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+                  <Input
+                    ref={searchInputRef}
+                    type="search"
+                    value={search}
+                    onChange={(event) => setSearch(event.target.value)}
+                    placeholder={searchPlaceholder}
+                    className="h-8 pl-7 text-xs"
+                    onKeyDown={(event) => event.stopPropagation()}
+                  />
+                </div>
+              </div>
+            )}
             <div className="max-h-72 overflow-y-auto py-1">
               <button
                 type="button"
@@ -123,25 +180,31 @@ export function MultiSelect({
                 </span>
                 {allLabel}
               </button>
-              {options.map((option) => {
-                const isSelected = selectedSet.has(option.value);
-                return (
-                  <button
-                    key={option.value}
-                    type="button"
-                    onClick={(event) => toggleItem(option.value, event)}
-                    className={cn(
-                      'relative flex w-full cursor-pointer select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none hover:bg-accent hover:text-accent-foreground',
-                      isSelected && 'bg-accent/40 font-medium text-slate-900'
-                    )}
-                  >
-                    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
-                      {isSelected && <Check className="h-4 w-4" />}
-                    </span>
-                    <span className="truncate text-left">{option.label}</span>
-                  </button>
-                );
-              })}
+              {filteredOptions.length === 0 ? (
+                <p className="px-3 py-2 text-center text-xs text-slate-500">
+                  Nenhum resultado para &quot;{search}&quot;
+                </p>
+              ) : (
+                filteredOptions.map((option) => {
+                  const isSelected = selectedSet.has(option.value);
+                  return (
+                    <button
+                      key={option.value}
+                      type="button"
+                      onClick={(event) => toggleItem(option.value, event)}
+                      className={cn(
+                        'relative flex w-full cursor-pointer select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none hover:bg-accent hover:text-accent-foreground',
+                        isSelected && 'bg-accent/40 font-medium text-slate-900'
+                      )}
+                    >
+                      <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+                        {isSelected && <Check className="h-4 w-4" />}
+                      </span>
+                      <span className="truncate text-left">{option.label}</span>
+                    </button>
+                  );
+                })
+              )}
             </div>
           </PopoverPrimitive.Content>
         </PopoverPrimitive.Portal>
