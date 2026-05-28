@@ -2231,6 +2231,7 @@ export default function ActivityDetailPage() {
                           }
                           accentColor="orange"
                           costHierarchyMode="grupo_descricao"
+                        uppercaseLabels
                         />
                       )}
                       <AnalyticalTable
@@ -2249,6 +2250,7 @@ export default function ActivityDetailPage() {
                         title="Abertura de Despesas Tributárias"
                         subtitle="Despesas tributárias"
                         accentColor="orange"
+                        uppercaseLabels
                       />
                     </div>
                   ) : (
@@ -2429,6 +2431,7 @@ export default function ActivityDetailPage() {
                       subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
                       accentColor="orange"
                       costHierarchyMode="grupo_descricao"
+                      uppercaseLabels
                     />
                     <AnalyticalTable
               forceZeroValues={isAgricolaPlanning2025}
@@ -2449,6 +2452,7 @@ export default function ActivityDetailPage() {
                       subtitle="Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
                       accentColor="orange"
                       costHierarchyMode="grupo_descricao"
+                      uppercaseLabels
                     />
                     <AnalyticalTable
               forceZeroValues={isAgricolaPlanning2025}
@@ -2466,6 +2470,7 @@ export default function ActivityDetailPage() {
                       title="Abertura de Despesas Tributárias"
                       subtitle="Despesas tributárias"
                       accentColor="orange"
+                      uppercaseLabels
                     />
                   </div>
                 ) : (

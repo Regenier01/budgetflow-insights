@@ -52,6 +52,8 @@ interface Props {
   costHierarchyMode?: 'default' | 'grupo_descricao';
   /** Mantém a estrutura da abertura, exibindo orçado/realizado zerados (planejamento). */
   forceZeroValues?: boolean;
+  /** Aplica caixa alta apenas na exibição dos rótulos. */
+  uppercaseLabels?: boolean;
 }
 
 /** Barra de título fixa (abaixo do header do app). */
@@ -356,6 +358,7 @@ export function AnalyticalTable({
   showPpKgColumns = false,
   costHierarchyMode = 'default',
   forceZeroValues = false,
+  uppercaseLabels = false,
 }: Props) {
   const accounts = useBudgetStore((s) => s.accounts);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -835,6 +838,7 @@ export function AnalyticalTable({
                 ) : <div className="w-5 shrink-0" />}
                 <span className={cn(
                   "truncate tracking-tight",
+                  uppercaseLabels && "uppercase",
                   level === 0 ? "text-[13px] font-semibold text-slate-700" :
                   level === 1 ? "text-[12px] font-medium text-slate-700" : "text-[12px] text-slate-500 font-medium"
                 )}>
@@ -1049,7 +1053,9 @@ export function AnalyticalTable({
                     <td className="py-2.5 px-3 text-[12px] text-slate-700 font-medium">{entry.departamento || '-'}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-600">{entry.centroCusto || '-'}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-600 font-mono">{entry.conta}</td>
-                    <td className="py-2.5 px-3 text-[12px] text-slate-700">{entry.descricao}</td>
+                    <td className={cn("py-2.5 px-3 text-[12px] text-slate-700", uppercaseLabels && "uppercase")}>
+                      {entry.descricao}
+                    </td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
                     {showQuantidadeColumn && (
                       <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">
