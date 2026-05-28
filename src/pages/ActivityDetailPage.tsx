@@ -306,7 +306,6 @@ const MARKETING_INTERNO_CC = 'MARKETING INTERNO';
 const isNotMarketingInternoCostCenter = (centroCusto?: string) =>
   normalizeText(centroCusto) !== MARKETING_INTERNO_CC;
 const DESPESAS_RAILENE_COST_CENTERS = [
-  'GOVERNANCIA CORPORATIVA',
   'RATEIO DESENVOLVIMENTO HUMANO',
   'MARKETING INTERNO',
   'ORGANIZACAO PREDIAL',
@@ -2226,8 +2225,8 @@ export default function ActivityDetailPage() {
                           title={isAdmTribLaizaSubview ? 'DESPESAS - GERENCIA FINANCEIRO' : 'DESPESAS - GERENCIA RH'}
                           subtitle={
                             isAdmTribLaizaSubview
-                              ? 'Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
-                              : 'Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
+                              ? 'Grupo Contábil → Descrição Contábil · centros administrativos (exceto Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)'
+                              : 'Grupo Contábil → Descrição Contábil · Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal'
                           }
                           accentColor="orange"
                           costHierarchyMode="grupo_descricao"
@@ -2428,7 +2427,7 @@ export default function ActivityDetailPage() {
                         (entry) => isDespesasLaizaCostCenter(entry.centroCusto),
                       )}
                       title="DESPESAS - GERENCIA FINANCEIRO"
-                      subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Governancia, Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
+                      subtitle="Grupo Contábil → Descrição Contábil · centros administrativos (exceto Rateio DH, Marketing Interno, Organizacao Predial e Pessoal)"
                       accentColor="orange"
                       costHierarchyMode="grupo_descricao"
                       uppercaseLabels
@@ -2449,7 +2448,7 @@ export default function ActivityDetailPage() {
                         (entry) => isDespesasRaileneCostCenter(entry.centroCusto),
                       )}
                       title="DESPESAS - GERENCIA RH"
-                      subtitle="Grupo Contábil → Descrição Contábil · Governancia Corporativa, Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
+                      subtitle="Grupo Contábil → Descrição Contábil · Rateio Desenvolvimento Humano, Marketing Interno, Organizacao Predial e Pessoal"
                       accentColor="orange"
                       costHierarchyMode="grupo_descricao"
                       uppercaseLabels
