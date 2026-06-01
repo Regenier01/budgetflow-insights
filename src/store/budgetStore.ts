@@ -110,6 +110,49 @@ const isDespesaTributariaCode = (codigo: string | undefined) => {
   return normalized.startsWith('3.4.03.01') || normalized.startsWith('3.4.03.02');
 };
 
+const RATEIO_SERINGAL_COST_CENTER = 'RATEIO SERINGAL';
+
+/** PIS/COFINS do Seringal (CC rateio) devem ir para deduções de receita, não despesa tributária adm. */
+const isSeringalRateioReceitaImpostoContext = (account: Pick<AccountEntry, 'centroCusto' | 'atividade' | 'divisao'>) => {
+  if (normalizeKey(account.centroCusto || '') !== RATEIO_SERINGAL_COST_CENTER) return false;
+  if (account.atividade === 'SERINGAL') return true;
+  return mapDivisaoToAtividade(account.divisao) === 'SERINGAL';
+};
+
+const SERINGAL_TRIBUTARIA_TO_RECEITA_IMPOSTO: Record<string, { codigo: string; codigoPai: string; descricao: string; grupoContabilN9: string }> = {
+  '3.4.03.02.0007': {
+    codigo: '3.2.01.01.0004',
+    codigoPai: '3.2.01.01',
+    descricao: 'PIS S/ FATURAMENTO',
+    grupoContabilN9: '3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA',
+  },
+  '3.4.03.02.0008': {
+    codigo: '3.2.01.01.0003',
+    codigoPai: '3.2.01.01',
+    descricao: 'COFINS S/ FATURAMENTO',
+    grupoContabilN9: '3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA',
+  },
+};
+
+const remapSeringalRateioTributariaToReceitaImposto = (account: AccountEntry): AccountEntry => {
+  if (!isSeringalRateioReceitaImpostoContext(account)) return account;
+  const remap = SERINGAL_TRIBUTARIA_TO_RECEITA_IMPOSTO[String(account.codigo || '').trim()];
+  if (!remap) return account;
+  const deptFromDivisao =
+    account.departamento && normalizeKey(account.departamento) !== 'ADMINISTRACAO'
+      ? account.departamento
+      : account.divisao && mapDivisaoToAtividade(account.divisao) === 'SERINGAL'
+        ? account.divisao
+        : account.departamento;
+  return {
+    ...account,
+    ...remap,
+    atividade: 'SERINGAL',
+    departamento: deptFromDivisao,
+    divisao: 'SERINGAL',
+  };
+};
+
 export function mapDivisaoToAtividade(divisao: string | undefined): AtividadeKey | null {
   if (!divisao) return null;
   const norm = normalizeKey(divisao);
@@ -138,7 +181,11 @@ export function resolveAtividadeFromRow(row: ExcelRow): AtividadeKey {
   if (conta === '3.1.02.03.0001') return 'SERINGAL';
   if (conta.startsWith('3.1.02.01')) return 'AGRICOLA';
   if (conta.startsWith('3.1.02.02')) return 'CANA';
-  if (isDespesaTributariaCode(conta)) return 'DESP_ADM_TRIB';
+  if (isDespesaTributariaCode(conta)) {
+    if (normalizeKey(cc) === RATEIO_SERINGAL_COST_CENTER) return 'SERINGAL';
+    if (mapDivisaoToAtividade(divisao) === 'SERINGAL') return 'SERINGAL';
+    return 'DESP_ADM_TRIB';
+  }
 
   // 3. Tenta pelo Mapeamento de Departamento
   const deptInfo = (DEPARTMENT_MAPPING as Record<string, MappingValue>)[depto];
@@ -468,10 +515,19 @@ const realizadoDeltaForTipo = (tipo: AccountEntry['tipo'], saldo: number) =>
   tipo === 'R' ? Math.abs(saldo) : saldo;
 
 const INITIAL_ACCOUNTS_TEMPLATE = INITIAL_ACCOUNTS.map(cloneAccountEntry);
-const normalizeInitialAccountActivity = (account: AccountEntry): AccountEntry =>
-  isDespesaTributariaCode(account.codigo) || isDespesaTributariaCode(account.grupoContabilN9)
-    ? { ...account, atividade: 'DESP_ADM_TRIB' }
-    : account;
+const normalizeInitialAccountActivity = (account: AccountEntry): AccountEntry => {
+  const remapped = remapSeringalRateioTributariaToReceitaImposto(account);
+  if (isSeringalRateioReceitaImpostoContext(remapped)) {
+    return { ...remapped, atividade: 'SERINGAL' };
+  }
+  if (
+    isDespesaTributariaCode(remapped.codigo) ||
+    isDespesaTributariaCode(remapped.grupoContabilN9)
+  ) {
+    return { ...remapped, atividade: 'DESP_ADM_TRIB' };
+  }
+  return remapped;
+};
 const buildFreshInitialAccounts = () =>
   INITIAL_ACCOUNTS_TEMPLATE.map(cloneAccountEntry).map(normalizeInitialAccountActivity);
 const normalizeMatch = (value: string | undefined) =>
@@ -1217,12 +1273,11 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
   let count = 0;
 
   rows.forEach(row => {
-    const conta = String(row.CONTA_CONTABIL || '').trim();
-    if (!conta) return;
+    const contaRaw = String(row.CONTA_CONTABIL || '').trim();
+    if (!contaRaw) return;
     const saldo = typeof row.SALDO === 'number' ? row.SALDO : 0;
     const rowQuantidade = typeof row.QUANTIDADE === 'number' ? row.QUANTIDADE : 0;
     const month = dateToMonthKey(row.DATA) || fallbackPeriod;
-    const rowAtividade = resolveAtividadeFromRow(row);
     const rowDept = rowValue(row.NOMEDEPTO);
     const rowCC = rowValue(row.NOMECUSTO);
     const rowGrupo = rowValue(row.GRUPOCONTABIL);
@@ -1232,15 +1287,36 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
     const rowColigada = rowValue(row.COLIGADA);
     const rowDescricao = rowValue(row.DESCRICAO_CONTABIL);
+    const shaped = remapSeringalRateioTributariaToReceitaImposto({
+      id: '',
+      codigo: contaRaw,
+      descricao: rowDescricao,
+      tipo: 'D',
+      codigoPai: null,
+      nivel: 5,
+      atividade: resolveAtividadeFromRow(row),
+      departamento: rowDept,
+      centroCusto: rowCC,
+      divisao: rowDivisao,
+      grupoContabil: rowGrupo,
+      grupoContabilN9: rowGrupoN9,
+      orcado: {},
+      realizado: {},
+    });
+    const conta = shaped.codigo;
+    const rowAtividade = shaped.atividade;
+    const rowDeptResolved = shaped.departamento || rowDept;
+    const rowGrupoN9Resolved = shaped.grupoContabilN9 || rowGrupoN9;
+    const rowDescricaoResolved = shaped.descricao || rowDescricao;
 
     const existing = newAccounts.find(
       (a) =>
         a.codigo === conta &&
         a.atividade === rowAtividade &&
-        (a.departamento || '') === (rowDept || '') &&
+        (a.departamento || '') === (rowDeptResolved || '') &&
         (a.centroCusto || '') === (rowCC || '') &&
         (a.grupoContabil || '') === (rowGrupo || '') &&
-        (a.grupoContabilN9 || '') === (rowGrupoN9 || '') &&
+        (a.grupoContabilN9 || '') === (rowGrupoN9Resolved || '') &&
         (a.nomeProduto || '') === (rowProduto || '') &&
         (a.coligada || '') === (rowColigada || '')
     );
@@ -1252,10 +1328,10 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
         if (!existing.quantidade) existing.quantidade = {};
         existing.quantidade[month] = (existing.quantidade[month] || 0) + rowQuantidade;
       }
-      if (!existing.departamento) existing.departamento = rowDept;
+      if (!existing.departamento) existing.departamento = rowDeptResolved;
       if (!existing.centroCusto) existing.centroCusto = rowCC;
       if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
-      if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9;
+      if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9Resolved;
       if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
       if (!existing.divisao) existing.divisao = rowDivisao;
       if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
@@ -1270,11 +1346,11 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     const newEntry: AccountEntry = {
       ...base,
       id: `${base.id}-${count}-${newAccounts.length}`,
-      descricao: rowDescricao || base.descricao,
-      departamento: rowDept,
+      descricao: rowDescricaoResolved || base.descricao,
+      departamento: rowDeptResolved,
       centroCusto: rowCC,
       grupoContabil: rowGrupo,
-      grupoContabilN9: rowGrupoN9,
+      grupoContabilN9: rowGrupoN9Resolved,
       nomeProduto: rowProduto,
       divisao: rowDivisao,
       unidadeNegocio: rowUnidadeNegocio,
