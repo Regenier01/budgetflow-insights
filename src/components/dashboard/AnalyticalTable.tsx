@@ -80,6 +80,7 @@ interface FlatEntry {
   grupoContabil?: string;
   documento?: string;
   produto?: string;
+  complemento?: string;
   quantidade?: number;
   orc: number;
   real: number;
@@ -150,9 +151,9 @@ function resolveTableAccent(accentColor: string): (typeof TABLE_ACCENTS)[TableAc
 type SpreadsheetFilterKey =
   | 'departamento'
   | 'centroCusto'
-  | 'conta'
   | 'descricao'
   | 'produto'
+  | 'complemento'
   | 'realizado';
 
 type SpreadsheetColumnFilters = Partial<Record<SpreadsheetFilterKey, Set<string>>>;
@@ -169,12 +170,12 @@ function spreadsheetCellValue(
       return entry.departamento?.trim() || SPREADSHEET_FILTER_EMPTY;
     case 'centroCusto':
       return entry.centroCusto?.trim() || SPREADSHEET_FILTER_EMPTY;
-    case 'conta':
-      return entry.conta?.trim() || SPREADSHEET_FILTER_EMPTY;
     case 'descricao':
       return entry.descricao?.trim() || SPREADSHEET_FILTER_EMPTY;
     case 'produto':
       return entry.produto?.trim() || SPREADSHEET_FILTER_EMPTY;
+    case 'complemento':
+      return entry.complemento?.trim() || SPREADSHEET_FILTER_EMPTY;
     case 'realizado':
       return fmtCurrency(entry.real);
   }
@@ -376,13 +377,16 @@ export function AnalyticalTable({
   const sortByVariationPct = isCostTable || isExpenseTable;
   /** Planilha de receitas das atividades: coluna QUANTIDADE (planilha realizado). */
   const showQuantidadeColumn = isRevenueTable;
+  /** Planilha de custos e despesas administrativas: coluna COMPLEMENTO (planilha realizado). */
+  const showComplementoColumn = isCostTable || isExpenseTable;
   /** Planilha de custos, despesas e receitas: só realizado, ordenado por valor (maiores no topo). */
   const flatRealizadoOnly = isCostTable || isExpenseTable || isRevenueTable;
   const flatRealOnlyMetricCols =
     (showDiariaColumns ? 1 : 0) + (showPCabecaColumns ? 1 : 0) + (showPpKgColumns ? 1 : 0);
   const flatSpreadsheetColSpan =
-    (flatRealizadoOnly ? 6 : 8) +
+    (flatRealizadoOnly ? 5 : 7) +
     (showQuantidadeColumn ? 1 : 0) +
+    (showComplementoColumn ? 1 : 0) +
     flatRealOnlyMetricCols +
     (flatRealizadoOnly ? 0 : extraMetricCols);
   const computeDiff = (orc: number, real: number) => budgetDifference(real, orc);
@@ -525,6 +529,7 @@ export function AnalyticalTable({
             grupoContabil: a.grupoContabilN9,
             documento: a.centroCusto,
             produto: a.nomeProduto,
+            complemento: a.complemento,
             quantidade: qty !== 0 ? qty : undefined,
             orc,
             real,
@@ -546,9 +551,9 @@ export function AnalyticalTable({
     const keys: SpreadsheetFilterKey[] = [
       'departamento',
       'centroCusto',
-      'conta',
       'descricao',
       'produto',
+      ...(showComplementoColumn ? (['complemento'] as const) : []),
       'realizado',
     ];
     const result = {} as Record<SpreadsheetFilterKey, string[]>;
@@ -574,7 +579,7 @@ export function AnalyticalTable({
       result[key] = list;
     }
     return result;
-  }, [flatEntriesAll]);
+  }, [flatEntriesAll, showComplementoColumn]);
 
   const flatEntries: FlatEntry[] = useMemo(() => {
     const hasColumnFilters = Object.values(spreadsheetFilters).some((s) => s !== undefined);
@@ -933,12 +938,6 @@ export function AnalyticalTable({
         onChange={(next) => setSpreadsheetColumnFilter('centroCusto', next)}
       />
       <SpreadsheetColumnFilter
-        label="Conta"
-        options={spreadsheetFilterOptions.conta}
-        selected={spreadsheetFilters.conta}
-        onChange={(next) => setSpreadsheetColumnFilter('conta', next)}
-      />
-      <SpreadsheetColumnFilter
         label="Descrição"
         options={spreadsheetFilterOptions.descricao}
         selected={spreadsheetFilters.descricao}
@@ -950,6 +949,14 @@ export function AnalyticalTable({
         selected={spreadsheetFilters.produto}
         onChange={(next) => setSpreadsheetColumnFilter('produto', next)}
       />
+      {showComplementoColumn && (
+        <SpreadsheetColumnFilter
+          label="Complemento"
+          options={spreadsheetFilterOptions.complemento ?? []}
+          selected={spreadsheetFilters.complemento}
+          onChange={(next) => setSpreadsheetColumnFilter('complemento', next)}
+        />
+      )}
       {showQuantidadeColumn && <th className="text-right py-3 px-3 w-[110px]">Quantidade</th>}
       {!flatRealizadoOnly && <th className="text-right py-3 px-3 w-[120px]">Orçado</th>}
       {!flatRealizadoOnly && showDiariaColumns && (
@@ -1052,11 +1059,13 @@ export function AnalyticalTable({
                   <tr key={entry.id} className={cn('border-b border-slate-200 transition-colors', ta.flatHover)}>
                     <td className="py-2.5 px-3 text-[12px] text-slate-700 font-medium">{entry.departamento || '-'}</td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-600">{entry.centroCusto || '-'}</td>
-                    <td className="py-2.5 px-3 text-[12px] text-slate-600 font-mono">{entry.conta}</td>
                     <td className={cn("py-2.5 px-3 text-[12px] text-slate-700", uppercaseLabels && "uppercase")}>
                       {entry.descricao}
                     </td>
                     <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.produto || '-'}</td>
+                    {showComplementoColumn && (
+                      <td className="py-2.5 px-3 text-[12px] text-slate-500">{entry.complemento || '-'}</td>
+                    )}
                     {showQuantidadeColumn && (
                       <td className="text-right py-2.5 px-3 text-[12px] text-slate-600 tabular-nums">
                         {entry.quantidade != null ? fmtQuantidade(entry.quantidade) : '-'}
@@ -1092,7 +1101,12 @@ export function AnalyticalTable({
               return (
                 <tfoot className={cn(ta.tfoot, 'font-semibold')}>
                   <tr>
-                    <td className="py-4 px-3 text-[13px] text-slate-700" colSpan={5}>Total Consolidado ({flatEntries.length} registros)</td>
+                    <td
+                      className="py-4 px-3 text-[13px] text-slate-700"
+                      colSpan={4 + (showComplementoColumn ? 1 : 0)}
+                    >
+                      Total Consolidado ({flatEntries.length} registros)
+                    </td>
                     {!flatRealizadoOnly && (
                       <td className="text-right py-4 px-3 text-[13px] text-slate-700 tabular-nums">{fmtOrcCell(totalOrc)}</td>
                     )}

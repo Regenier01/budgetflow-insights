@@ -1283,6 +1283,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
     const rowGrupo = rowValue(row.GRUPOCONTABIL);
     const rowGrupoN9 = rowValue(row.GRUPOCONTABILN9);
     const rowProduto = rowValue(row.NOMEPRODUTO);
+    const rowComplemento = rowValue(row.COMPLEMENTO);
     const rowDivisao = rowValue(row.DIVISAO);
     const rowUnidadeNegocio = rowValue(row.UNIDADE_DE_NEGOCIO);
     const rowColigada = rowValue(row.COLIGADA);
@@ -1318,6 +1319,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
         (a.grupoContabil || '') === (rowGrupo || '') &&
         (a.grupoContabilN9 || '') === (rowGrupoN9Resolved || '') &&
         (a.nomeProduto || '') === (rowProduto || '') &&
+        (a.complemento || '') === (rowComplemento || '') &&
         (a.coligada || '') === (rowColigada || '')
     );
 
@@ -1333,6 +1335,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
       if (!existing.grupoContabil) existing.grupoContabil = rowGrupo;
       if (!existing.grupoContabilN9) existing.grupoContabilN9 = rowGrupoN9Resolved;
       if (!existing.nomeProduto) existing.nomeProduto = rowProduto;
+      if (!existing.complemento) existing.complemento = rowComplemento;
       if (!existing.divisao) existing.divisao = rowDivisao;
       if (!existing.unidadeNegocio) existing.unidadeNegocio = rowUnidadeNegocio;
       if (!existing.coligada) existing.coligada = rowColigada;
@@ -1352,6 +1355,7 @@ const applyRowsToAccounts = (baseAccounts: AccountEntry[], rows: ExcelRow[], fal
       grupoContabil: rowGrupo,
       grupoContabilN9: rowGrupoN9Resolved,
       nomeProduto: rowProduto,
+      complemento: rowComplemento,
       divisao: rowDivisao,
       unidadeNegocio: rowUnidadeNegocio,
       coligada: rowColigada,

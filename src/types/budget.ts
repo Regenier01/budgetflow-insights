@@ -13,6 +13,8 @@ export interface AccountEntry {
   grupoContabil?: string;
   grupoContabilN9?: string;
   nomeProduto?: string;
+  /** Complemento do lançamento (coluna COMPLEMENTO da planilha realizado). */
+  complemento?: string;
   divisao?: string;
   unidadeNegocio?: string;
   isInvalidMapping?: boolean;
