@@ -45,6 +45,7 @@ export const ACTIVITY_CC_MAPPING = {
     "RATEIO CANA",
     "RATEIO DEPARTAMENTOS",
     "RATEIO FINANCEIRO",
+    "SEM_CODCCUTO",
     "VERA CRUZ - T211"
   ],
   "SERINGAL": [

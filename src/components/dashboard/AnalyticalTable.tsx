@@ -377,8 +377,8 @@ export function AnalyticalTable({
   const sortByVariationPct = isCostTable || isExpenseTable;
   /** Planilha de receitas das atividades: coluna QUANTIDADE (planilha realizado). */
   const showQuantidadeColumn = isRevenueTable;
-  /** Planilha de custos e despesas administrativas: coluna COMPLEMENTO (planilha realizado). */
-  const showComplementoColumn = isCostTable || isExpenseTable;
+  /** Planilha de custos, despesas e receitas: coluna COMPLEMENTO (planilha realizado). */
+  const showComplementoColumn = isCostTable || isExpenseTable || isRevenueTable;
   /** Planilha de custos, despesas e receitas: só realizado, ordenado por valor (maiores no topo). */
   const flatRealizadoOnly = isCostTable || isExpenseTable || isRevenueTable;
   const flatRealOnlyMetricCols =
