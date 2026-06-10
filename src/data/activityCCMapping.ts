@@ -50,6 +50,7 @@ export const ACTIVITY_CC_MAPPING = {
     "VERA CRUZ - T211"
   ],
   "SERINGAL": [
+    "RATEIO DEPARTAMENTOS",
     "RATEIO SERINGAL"
   ],
   "DESP_ADM_TRIB": [
