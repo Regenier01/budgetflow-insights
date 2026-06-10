@@ -1353,5 +1353,10 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "MECANIZADO",
     "unidadeNegocio": "MECANIZADO",
     "divisao": "MECANIZADO"
+  },
+  "BAND SERINGAL TOCANTINS SANDOLANDIA": {
+    "nomedepto": "BAND SERINGAL TOCANTINS SANDOLANDIA",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   }
 };
