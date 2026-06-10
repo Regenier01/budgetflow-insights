@@ -698,5 +698,17 @@ export const COST_CENTER_MAPPING = {
   "MANUTENCAO PREDIAL": {
     "centroCusto": "MANUTENCAO PREDIAL",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO EDUCANDO A MENTE": {
+    "centroCusto": "PROJETO EDUCANDO A MENTE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "M12280 - FIAT STRADA FREEDOM CD 1.3 FLEX 8V 4P": {
+    "centroCusto": "M12280 - FIAT STRADA FREEDOM CD 1.3 FLEX 8V 4P",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F50T0 -  FAZENDA UNIÃO - T0": {
+    "centroCusto": "F50T0 -  FAZENDA UNIÃO - T0",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };

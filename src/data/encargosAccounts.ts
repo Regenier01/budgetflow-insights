@@ -33,7 +33,8 @@ export const DESPESAS_FINANCEIRAS = [
   '3.4.04.01.0021',
   '3.4.04.01.0022',
   '3.4.04.01.0023',
-  '3.4.04.01.0024'
+  '3.4.04.01.0024',
+  '3.4.04.01.0025'
 ];
 
 // Contas de Encargos Financeiras - Receitas (3.4.04.05)
