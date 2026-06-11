@@ -1013,6 +1013,8 @@ export default function ActivityDetailPage() {
       seringalPkgMetrics?: { orcExtra: number | null; realExtra: number | null };
       /** Exibe traços no lugar dos valores (card reservado para dados futuros). */
       emptyValues?: boolean;
+      /** Apenas o cabeçalho colorido com seta (sem tabela Orçado/Realizado). */
+      headerOnly?: boolean;
       /** Exibe 0,00 em orçado, realizado e diferença. */
       zeroedValues?: boolean;
       /** Card menor (ex.: planejamento 2025 abaixo do painel principal). */
@@ -1028,6 +1030,7 @@ export default function ActivityDetailPage() {
       pecuariaMetrics,
       seringalPkgMetrics,
       emptyValues = false,
+      headerOnly = false,
       zeroedValues = false,
       compact = false,
       variationKind: variationKindOption,
@@ -1112,6 +1115,8 @@ export default function ActivityDetailPage() {
             </div>
           )}
         </div>
+        {!headerOnly && (
+        <>
         <div
           className={cn('grid text-center border-y border-slate-200 bg-slate-100/70', gridColsClass)}
         >
@@ -1231,6 +1236,8 @@ export default function ActivityDetailPage() {
             </span>
           </div>
         </div>
+        </>
+        )}
       </div>
     );
   };
@@ -1681,6 +1688,12 @@ export default function ActivityDetailPage() {
             if (returnTo) params.set('returnTo', returnTo);
             return `/atividade/${atividade.key}?${params.toString()}`;
           };
+          const buildEstoquePath = () => {
+            const params = new URLSearchParams();
+            if (returnTo) params.set('returnTo', returnTo);
+            const query = params.toString();
+            return `/atividade/PECUARIA/estoque${query ? `?${query}` : ''}`;
+          };
           const onlyDespesas = isAdmTrib || isEncargos;
           const activityTotalData =
             isAdmTrib && admTribSummary ? admTribSummary.total : activityHubSummary.total;
@@ -1721,6 +1734,12 @@ export default function ActivityDetailPage() {
                     onClick: () => navigate(buildHubPathWithSubview('custos', 'custos-genetica')),
                     accentColor: 'amber',
                   })}
+                  <div className="md:col-span-2">
+                    {renderSummaryCard('Estoque', { orc: 0, real: 0 }, {
+                      onClick: () => navigate(buildEstoquePath()),
+                      headerOnly: true,
+                    })}
+                  </div>
                 </div>
               ) : (
                 <div

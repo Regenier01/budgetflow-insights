@@ -29,7 +29,8 @@
     "orcado:import:receitas-pecuaria": "node import_orcado_receitas_pecuaria.js",
     "orcado:import:receitas-latex": "node import_orcado_receitas_latex.js",
     "orcado:import:receitas-agricola": "node import_orcado_receitas_agricola.js",
-    "orcado:import:receitas-cana": "node import_orcado_receitas_cana.js"
+    "orcado:import:receitas-cana": "node import_orcado_receitas_cana.js",
+    "estoque:import": "node import_estoque.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

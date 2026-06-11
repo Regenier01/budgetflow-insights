@@ -21,5 +21,6 @@ export const CONFINAMENTO_DIARIA_ORCADO: Partial<Record<MonthKey, number>> = {
 };
 
 export const CONFINAMENTO_DIARIA_REALIZADO: Partial<Record<MonthKey, number>> = {
-  "2026-04": 12.569965922191114
+  "2026-04": 12.569965922191114,
+  "2026-05": 10.3315616023901
 };

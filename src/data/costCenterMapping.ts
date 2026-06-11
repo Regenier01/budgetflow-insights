@@ -710,5 +710,73 @@ export const COST_CENTER_MAPPING = {
   "F50T0 -  FAZENDA UNIÃO - T0": {
     "centroCusto": "F50T0 -  FAZENDA UNIÃO - T0",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MEDICINA E SEGURANCA DO TRABALHO": {
+    "centroCusto": "MEDICINA E SEGURANCA DO TRABALHO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO VIGILANTES ROTATIVOS": {
+    "centroCusto": "RATEIO VIGILANTES ROTATIVOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA DE INTEGRIDADE": {
+    "centroCusto": "PROGRAMA DE INTEGRIDADE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO PONTO": {
+    "centroCusto": "RATEIO PONTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO MENSALIDADE APP": {
+    "centroCusto": "PROJETO MENSALIDADE APP",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO COMEMORACAO GPTW": {
+    "centroCusto": "PROJETO COMEMORACAO GPTW",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO DIA DAS MAES": {
+    "centroCusto": "PROJETO DIA DAS MAES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CANTINA ADMINISTRACAO": {
+    "centroCusto": "CANTINA ADMINISTRACAO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO ANIVERSARIANTES DO MES 2025/2026": {
+    "centroCusto": "PROJETO ANIVERSARIANTES DO MES 2025/2026",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO PESQUISA DE CLIMA": {
+    "centroCusto": "PROJETO PESQUISA DE CLIMA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO ONBOARDING SEM CAMISETA": {
+    "centroCusto": "PROJETO ONBOARDING SEM CAMISETA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO JEITO OL - ENTUSIASMO E VERDADE": {
+    "centroCusto": "PROJETO JEITO OL - ENTUSIASMO E VERDADE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO MATERIAIS PPR": {
+    "centroCusto": "PROJETO MATERIAIS PPR",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO ACADEMIA DE LIDERES": {
+    "centroCusto": "PROJETO ACADEMIA DE LIDERES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO PROGRAMA BEM VIVER": {
+    "centroCusto": "PROJETO PROGRAMA BEM VIVER",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "TORNO": {
+    "centroCusto": "TORNO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MECANIZADO": {
+    "centroCusto": "MECANIZADO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
