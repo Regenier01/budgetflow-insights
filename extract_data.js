@@ -2,7 +2,7 @@ import XLSX from 'xlsx';
 
 import ExcelJS from 'exceljs';
 
-import { writeFileSync, readFileSync, readdirSync, existsSync, createReadStream, statSync } from 'fs';
+import { writeFileSync, readFileSync, readdirSync, existsSync, createReadStream, statSync, renameSync, unlinkSync } from 'fs';
 
 import { join } from 'path';
 
@@ -42,8 +42,43 @@ function loadCache() {
   return null;
 }
 
+function sleepSync(ms) {
+  const end = Date.now() + ms;
+  while (Date.now() < end) { /* aguarda lock liberar */ }
+}
+
+/** Gravação resiliente no Windows: arquivo temp + rename, com retentativas. */
+function writeFileRobust(filePath, content, { retries = 12, delayMs = 1000 } = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const tmpPath = `${filePath}.${process.pid}.${randomUUID()}.tmp`;
+    try {
+      writeFileSync(tmpPath, content, 'utf8');
+      try {
+        if (existsSync(filePath)) unlinkSync(filePath);
+      } catch (_) {
+        // Destino pode estar bloqueado; rename ainda pode funcionar.
+      }
+      renameSync(tmpPath, filePath);
+      return;
+    } catch (err) {
+      lastError = err;
+      try {
+        if (existsSync(tmpPath)) unlinkSync(tmpPath);
+      } catch (_) {}
+      if (attempt < retries) {
+        console.warn(
+          `Gravacao de ${filePath} falhou (tentativa ${attempt}/${retries}): ${err.code || err.message}. Aguardando ${delayMs}ms...`
+        );
+        sleepSync(delayMs);
+      }
+    }
+  }
+  throw lastError;
+}
+
 function saveCache(data) {
-  writeFileSync(CACHE_FILE, JSON.stringify(data));
+  writeFileRobust(CACHE_FILE, JSON.stringify(data));
 }
 
 function mergeAccounts(existing, incoming, { replaceRealizado } = {}) {
@@ -468,15 +503,16 @@ async function run() {
   saveCache({ accounts, departmentMapping, costCenterMapping });
   console.log('Cache salvo em .data-cache.json');
 
-  // Escrita dos arquivos de saída
+  // Escrita dos arquivos de saída (initialData primeiro: arquivos menores disparam o TS server do IDE)
+  console.log('Gravando src/data/initialData.ts...');
+  writeFileRobust(
+    'src/data/initialData.ts',
+    `import type { AccountEntry } from '@/types/budget';\n\nexport const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null, 2)};`
+  );
 
-  writeFileSync('src/data/departmentMapping.ts', `export const DEPARTMENT_MAPPING = ${JSON.stringify(departmentMapping, null, 2)};`);
-
-  writeFileSync('src/data/costCenterMapping.ts', `export const COST_CENTER_MAPPING = ${JSON.stringify(costCenterMapping, null, 2)};`);
-
-  writeFileSync('src/data/activityCCMapping.ts', `export const ACTIVITY_CC_MAPPING = ${JSON.stringify(finalCCMap, null, 2)};`);
-
-  writeFileSync('src/data/initialData.ts', `import type { AccountEntry } from '@/types/budget';\n\nexport const INITIAL_ACCOUNTS: AccountEntry[] = ${JSON.stringify(accounts, null, 2)};`);
+  writeFileRobust('src/data/departmentMapping.ts', `export const DEPARTMENT_MAPPING = ${JSON.stringify(departmentMapping, null, 2)};`);
+  writeFileRobust('src/data/costCenterMapping.ts', `export const COST_CENTER_MAPPING = ${JSON.stringify(costCenterMapping, null, 2)};`);
+  writeFileRobust('src/data/activityCCMapping.ts', `export const ACTIVITY_CC_MAPPING = ${JSON.stringify(finalCCMap, null, 2)};`);
 
   
   if (incrementalMode) {
