@@ -798,5 +798,13 @@ export const COST_CENTER_MAPPING = {
   "PROJETO GINASTICA LABORAL": {
     "centroCusto": "PROJETO GINASTICA LABORAL",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "M6961 - SEMEADORA ARTICULADA FLEXXA 20300": {
+    "centroCusto": "M6961 - SEMEADORA ARTICULADA FLEXXA 20300",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "ADIANTAMENTOS A FUNCIONARIOS": {
+    "centroCusto": "ADIANTAMENTOS A FUNCIONARIOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
