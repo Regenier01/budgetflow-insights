@@ -778,5 +778,25 @@ export const COST_CENTER_MAPPING = {
   "MECANIZADO": {
     "centroCusto": "MECANIZADO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MECANIZADO - TRATO DE GADO": {
+    "centroCusto": "MECANIZADO - TRATO DE GADO",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "PROJETO DIA DAS MULHERES": {
+    "centroCusto": "PROJETO DIA DAS MULHERES",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA CULTIVANDO TALENTOS": {
+    "centroCusto": "PROGRAMA CULTIVANDO TALENTOS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA LEGADO": {
+    "centroCusto": "PROGRAMA LEGADO",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "PROJETO GINASTICA LABORAL": {
+    "centroCusto": "PROJETO GINASTICA LABORAL",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
