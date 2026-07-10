@@ -806,5 +806,9 @@ export const COST_CENTER_MAPPING = {
   "ADIANTAMENTOS A FUNCIONARIOS": {
     "centroCusto": "ADIANTAMENTOS A FUNCIONARIOS",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "COMPRA DE GADO": {
+    "centroCusto": "COMPRA DE GADO",
+    "unidadeNegocio": "PECUÁRIA"
   }
 };
