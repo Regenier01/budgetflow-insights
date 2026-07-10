@@ -8,6 +8,12 @@ export interface EstoqueCategoria {
   custoMedio: number;
 }
 
+export interface EstoqueRecria {
+  categoria: string;
+  quantidade: number;
+  custoMedio: number;
+}
+
 export interface EstoqueInsumo {
   nome: string;
   quantidadeKg: number;
@@ -24,5 +30,6 @@ export interface EstoquePecuariaSnapshot {
   departamentos: EstoqueDepartamento[];
   categorias: EstoqueCategoria[];
   insumos: EstoqueInsumo[];
+  recria: EstoqueRecria[];
   totalQuantidadeDepartamentos: number;
 }

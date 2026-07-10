@@ -21,5 +21,6 @@ export const SERINGAL_CUSTO_PKG_ORCADO: Partial<Record<MonthKey, number>> = {
 
 export const SERINGAL_CUSTO_PKG_REALIZADO: Partial<Record<MonthKey, number>> = {
   "2026-04": 2.8419728136781184,
-  "2026-05": 3.1693450343524985
+  "2026-05": 3.1693450343524985,
+  "2026-06": 3.3854432983166687
 };

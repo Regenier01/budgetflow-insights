@@ -106,6 +106,7 @@ export function parseEstoqueRows(rows) {
   const departamentos = [];
   const categorias = [];
   const insumos = [];
+  const recria = [];
 
   for (let i = 1; i < rows.length; i++) {
     const row = rows[i] ?? [];
@@ -134,11 +135,24 @@ export function parseEstoqueRows(rows) {
       const insumo = parseInsumoBlock(rows, i);
       if (insumo) insumos.push(insumo);
     }
+    if (marker === 'CATEGORIA' && normalizeText(rows[i]?.[7]) === 'QTDE') {
+      let j = i + 1;
+      while (j < rows.length) {
+        const cat = String(rows[j]?.[6] ?? '').trim();
+        if (!cat) break;
+        const qtde = parseNumber(rows[j]?.[7]);
+        const custoMedio = parseNumber(rows[j]?.[8]);
+        if (qtde != null && custoMedio != null) {
+          recria.push({ categoria: cat, quantidade: qtde, custoMedio });
+        }
+        j++;
+      }
+    }
   }
 
   const totalQuantidadeDepartamentos = departamentos.reduce((sum, item) => sum + item.quantidade, 0);
 
-  return { departamentos, categorias, insumos, totalQuantidadeDepartamentos };
+  return { departamentos, categorias, insumos, recria, totalQuantidadeDepartamentos };
 }
 
 function parseWorkbook(buffer, meta) {

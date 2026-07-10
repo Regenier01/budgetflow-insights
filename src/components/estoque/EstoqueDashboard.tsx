@@ -130,6 +130,42 @@ function CategoriasTable({ snapshot }: { snapshot: EstoquePecuariaSnapshot }) {
   );
 }
 
+function RecriaTable({ snapshot }: { snapshot: EstoquePecuariaSnapshot }) {
+  if (!snapshot.recria || snapshot.recria.length === 0) return null;
+
+  return (
+    <table className={ESTOQUE_TABLE}>
+      <colgroup>
+        <col />
+        <col style={{ width: '120px' }} />
+        <col style={{ width: '120px' }} />
+      </colgroup>
+      <thead>
+        <tr>
+          <th className={cn(TH_CELL, 'text-left', TD_DIVIDER)}>Categoria</th>
+          <th className={cn(TH_CELL, 'text-right', TD_DIVIDER)}>Quantidade</th>
+          <th className={cn(TH_CELL, 'text-right')}>Custo Médio</th>
+        </tr>
+      </thead>
+      <tbody>
+        {snapshot.recria.map((row, rowIndex) => (
+          <tr key={row.categoria} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-slate-100/80'}>
+            <td className={cn(TD_BORDER, TD_DIVIDER, 'px-2.5 py-1.5 font-medium text-slate-800')}>
+              {row.categoria}
+            </td>
+            <td className={cn(TD_BORDER, TD_DIVIDER, TD_NUMBER, 'px-2 py-1.5 text-right')}>
+              {fmtEstoqueNumber(row.quantidade)}
+            </td>
+            <td className={cn(TD_BORDER, TD_NUMBER, 'px-2 py-1.5 text-right')}>
+              {fmtEstoqueCurrency(row.custoMedio)}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
 export function EstoqueDashboard() {
   const snapshots = ESTOQUE_PECUARIA_SNAPSHOTS;
   const [selectedMesKey, setSelectedMesKey] = useState(
@@ -192,6 +228,17 @@ export function EstoqueDashboard() {
             <CategoriasTable snapshot={snapshot} />
           </div>
         </div>
+
+        {snapshot.recria && snapshot.recria.length > 0 && (
+          <div className="w-full max-w-[min(100%,32rem)] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+            <p className="border-b border-slate-100 bg-slate-50/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">
+              Recria — {snapshot.mesLabel}
+            </p>
+            <div className="p-2">
+              <RecriaTable snapshot={snapshot} />
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="max-w-3xl overflow-hidden rounded-lg border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
