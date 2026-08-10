@@ -85,8 +85,8 @@ export default function Dashboard() {
               </Button>
               <span className="text-[11px] font-medium text-slate-400">
                 {exportCutoffLabel
-                  ? `Orçado e realizado consolidados de Abr/26 até ${exportCutoffLabel} (independente do período selecionado acima)`
-                  : 'Consolidado da safra completa (independente do período selecionado acima)'}
+                  ? `Custos e despesas (sem receitas), consolidados de Abr/26 até ${exportCutoffLabel} (independente do período selecionado acima)`
+                  : 'Custos e despesas (sem receitas), consolidado da safra completa (independente do período selecionado acima)'}
               </span>
             </div>
           </div>
