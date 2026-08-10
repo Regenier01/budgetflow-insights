@@ -2,7 +2,12 @@ import * as XLSX from 'xlsx';
 import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
-export type DeviationExportAreaKey = AtividadeKey | 'OUTRAS_RECEITAS_EVENTUAIS';
+export type DeviationExportAreaKey =
+  | Exclude<AtividadeKey, 'DESP_ADM_TRIB'>
+  | 'OUTRAS_RECEITAS_EVENTUAIS'
+  | 'DESP_ADM_TRIB_FINANCEIRO'
+  | 'DESP_ADM_TRIB_RH'
+  | 'DESP_ADM_TRIB_TRIBUTARIAS';
 
 export interface DeviationGroupRow {
   grupoContabil: string;
@@ -42,15 +47,89 @@ export interface DeviationExportData {
   cutoffMonth: MonthKey | null;
 }
 
-/** Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de atividade). */
-const EXPORT_AREAS: { key: DeviationExportAreaKey; label: string; sheetLabel: string }[] = [
-  { key: 'PECUARIA', label: 'Pecuária', sheetLabel: 'Pecuária' },
-  { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola' },
-  { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal' },
-  { key: 'CANA', label: 'Cana', sheetLabel: 'Cana' },
-  { key: 'DESP_ADM_TRIB', label: 'Despesas Administrativas e Tributárias', sheetLabel: 'Adm e Tributárias' },
-  { key: 'ENCARGOS', label: 'Encargos Financeiros', sheetLabel: 'Encargos' },
-  { key: 'OUTRAS_RECEITAS_EVENTUAIS', label: 'Outras Receitas Eventuais', sheetLabel: 'Outras Receitas' },
+interface AreaSource {
+  key: DeviationExportAreaKey;
+  label: string;
+  sheetLabel: string;
+  /** Seleciona os lançamentos (nível 5) desta área/sub-área. */
+  match: (entry: AccountEntry) => boolean;
+}
+
+const normalizeMatchText = (value?: string) =>
+  (value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toUpperCase()
+    .trim();
+
+/** Mesmo critério de "Despesas Tributárias" usado na página de Despesas Adm. e Tributárias do dashboard. */
+const isTributariaGroupEntry = (entry: Pick<AccountEntry, 'grupoContabil' | 'grupoContabilN9'>): boolean => {
+  const grupo = normalizeMatchText(entry.grupoContabil);
+  const grupoN9 = normalizeMatchText(entry.grupoContabilN9);
+  return (
+    grupo.startsWith('3.4.03.01') ||
+    grupo.startsWith('3.4.03.02') ||
+    grupoN9.startsWith('3.4.03.01') ||
+    grupoN9.startsWith('3.4.03.02')
+  );
+};
+
+/** Mesmos centros de custo da "Gerência RH" (Railene) usados na página de Despesas Adm. e Tributárias do dashboard. */
+const DESPESAS_GERENCIA_RH_COST_CENTERS = [
+  'RATEIO DESENVOLVIMENTO HUMANO',
+  'MARKETING INTERNO',
+  'ORGANIZACAO PREDIAL',
+  'PESSOAL',
+];
+const isGerenciaRhCostCenter = (centroCusto?: string) =>
+  DESPESAS_GERENCIA_RH_COST_CENTERS.some((item) => normalizeMatchText(item) === normalizeMatchText(centroCusto));
+
+const isNotOutrasReceitas = (entry: Pick<AccountEntry, 'codigo'>) => !isOutrasReceitasEventuaisCode(entry.codigo);
+
+/**
+ * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
+ * atividade). Despesas Administrativas e Tributárias é dividida em 3 sub-áreas, replicando a
+ * separação por gerência (Financeiro / RH) e Despesas Tributárias já exibida na página da
+ * atividade — cada lançamento cai em exatamente uma delas.
+ */
+const EXPORT_AREAS: AreaSource[] = [
+  { key: 'PECUARIA', label: 'Pecuária', sheetLabel: 'Pecuária', match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) },
+  { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
+  { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },
+  { key: 'CANA', label: 'Cana', sheetLabel: 'Cana', match: (a) => a.atividade === 'CANA' && isNotOutrasReceitas(a) },
+  {
+    key: 'DESP_ADM_TRIB_FINANCEIRO',
+    label: 'Despesas Administrativas — Gerência Financeiro',
+    sheetLabel: 'Adm - Financeiro',
+    match: (a) =>
+      a.atividade === 'DESP_ADM_TRIB' &&
+      isNotOutrasReceitas(a) &&
+      !isTributariaGroupEntry(a) &&
+      !isGerenciaRhCostCenter(a.centroCusto),
+  },
+  {
+    key: 'DESP_ADM_TRIB_RH',
+    label: 'Despesas Administrativas — Gerência RH',
+    sheetLabel: 'Adm - RH',
+    match: (a) =>
+      a.atividade === 'DESP_ADM_TRIB' &&
+      isNotOutrasReceitas(a) &&
+      !isTributariaGroupEntry(a) &&
+      isGerenciaRhCostCenter(a.centroCusto),
+  },
+  {
+    key: 'DESP_ADM_TRIB_TRIBUTARIAS',
+    label: 'Despesas Tributárias',
+    sheetLabel: 'Desp. Tributárias',
+    match: (a) => a.atividade === 'DESP_ADM_TRIB' && isNotOutrasReceitas(a) && isTributariaGroupEntry(a),
+  },
+  { key: 'ENCARGOS', label: 'Encargos Financeiros', sheetLabel: 'Encargos', match: (a) => a.atividade === 'ENCARGOS' },
+  {
+    key: 'OUTRAS_RECEITAS_EVENTUAIS',
+    label: 'Outras Receitas Eventuais',
+    sheetLabel: 'Outras Receitas',
+    match: (a) => isOutrasReceitasEventuaisCode(a.codigo),
+  },
 ];
 
 const GRUPO_CODE_PATTERN = /^\d+(\.\d+){2,}/;
@@ -81,20 +160,12 @@ function sumMonths(values: Record<string, number>, includedMonths: Set<MonthKey>
   return sum;
 }
 
-function entriesForArea(accounts: AccountEntry[], areaKey: DeviationExportAreaKey): AccountEntry[] {
-  const leaves = accounts.filter((a) => a.nivel === 5);
-  if (areaKey === 'OUTRAS_RECEITAS_EVENTUAIS') {
-    return leaves.filter((a) => isOutrasReceitasEventuaisCode(a.codigo));
-  }
-  return leaves.filter((a) => a.atividade === areaKey && !isOutrasReceitasEventuaisCode(a.codigo));
-}
-
 function buildAreaData(
   accounts: AccountEntry[],
-  area: { key: DeviationExportAreaKey; label: string; sheetLabel: string },
+  area: AreaSource,
   includedMonths: Set<MonthKey> | null
 ): DeviationAreaData {
-  const entries = entriesForArea(accounts, area.key);
+  const entries = accounts.filter((a) => a.nivel === 5 && area.match(a));
   const groups = new Map<string, { orcado: number; realizado: number }>();
   const lancamentos: DeviationLancamentoRow[] = [];
 

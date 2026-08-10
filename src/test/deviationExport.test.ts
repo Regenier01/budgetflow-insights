@@ -72,7 +72,7 @@ describe('buildDeviationExportData', () => {
     ]);
   });
 
-  it('separa contas de Outras Receitas Eventuais da área original, sem duplicar valores', () => {
+  it('separa contas de Outras Receitas Eventuais das sub-áreas de Adm/Tributárias, sem duplicar valores', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'DESP_ADM_TRIB',
@@ -85,12 +85,54 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas } = buildDeviationExportData(accounts);
-    const admTrib = areas.find((a) => a.key === 'DESP_ADM_TRIB')!;
+    const admTribAreas = areas.filter((a) => a.key.startsWith('DESP_ADM_TRIB'));
     const outras = areas.find((a) => a.key === 'OUTRAS_RECEITAS_EVENTUAIS')!;
 
-    expect(admTrib.groupRows).toHaveLength(0);
+    expect(admTribAreas.every((a) => a.groupRows.length === 0)).toBe(true);
     expect(outras.groupRows).toHaveLength(1);
     expect(outras.groupRows[0]).toMatchObject({ orcado: 300, realizado: 250, diferenca: -50 });
+  });
+
+  it('divide Despesas Administrativas e Tributárias em Gerência Financeiro, Gerência RH e Tributárias, sem perder nem duplicar lançamentos', () => {
+    const accounts: AccountEntry[] = [
+      // Tributária: grupo contábil 3.4.03.01/02, independente do centro de custo.
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.03.01-IMPOSTOS MUNICIPAIS',
+        centroCusto: 'ADMINISTRACAO',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 110 },
+      }),
+      // Gerência RH: centro de custo da lista Railene, fora do grupo tributário.
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.01-CUSTO DE PESSOAL',
+        centroCusto: 'PESSOAL',
+        orcado: { '2026-04': 200 },
+        realizado: { '2026-04': 190 },
+      }),
+      // Gerência Financeiro: tudo que não é tributária nem centro de custo Railene (catch-all).
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.02-SERVICOS DE TERCEIROS',
+        centroCusto: 'DIRETORIA',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const financeiro = areas.find((a) => a.key === 'DESP_ADM_TRIB_FINANCEIRO')!;
+    const rh = areas.find((a) => a.key === 'DESP_ADM_TRIB_RH')!;
+    const tributarias = areas.find((a) => a.key === 'DESP_ADM_TRIB_TRIBUTARIAS')!;
+
+    expect(tributarias.groupRows).toMatchObject([{ orcado: 100, realizado: 110 }]);
+    expect(rh.groupRows).toMatchObject([{ orcado: 200, realizado: 190 }]);
+    expect(financeiro.groupRows).toMatchObject([{ orcado: 300, realizado: 280 }]);
+
+    // Nenhum lançamento perdido nem contado duas vezes entre as 3 sub-áreas.
+    const totalLancamentos = financeiro.lancamentos.length + rh.lancamentos.length + tributarias.lancamentos.length;
+    expect(totalLancamentos).toBe(accounts.length);
   });
 
   it('ignora entradas que não são folha (nível 5) e as com orçado e realizado zerados', () => {
@@ -181,7 +223,7 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas } = buildDeviationExportData(accounts);
-    const admTrib = areas.find((a) => a.key === 'DESP_ADM_TRIB')!;
+    const admTrib = areas.find((a) => a.key === 'DESP_ADM_TRIB_RH')!;
 
     expect(admTrib.lancamentos).toHaveLength(1);
     expect(admTrib.lancamentos[0]).toMatchObject({
