@@ -4,7 +4,7 @@ import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
 
 export type DeviationExportAreaKey =
-  | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA'>
+  | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA' | 'CANA' | 'ENCARGOS'>
   | 'DESP_ADM_TRIB_FINANCEIRO'
   | 'DESP_ADM_TRIB_RH'
   | 'DESP_ADM_TRIB_TRIBUTARIAS'
@@ -109,11 +109,11 @@ const isPecuariaGeneticaEntry = (entry: Pick<AccountEntry, 'departamento'>): boo
 
 /**
  * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
- * atividade). Pecuária é dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade —
- * Genética e Confinamento saem primeiro do total, o resto cai em Pasto), e Despesas
- * Administrativas e Tributárias em 3 sub-áreas (Gerência Financeiro / RH / Despesas Tributárias),
- * replicando as mesmas separações já exibidas nas páginas das atividades — cada lançamento cai em
- * exatamente uma sub-área.
+ * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária é
+ * dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade — Genética e Confinamento
+ * saem primeiro do total, o resto cai em Pasto), e Despesas Administrativas e Tributárias em 3
+ * sub-áreas (Gerência Financeiro / RH / Despesas Tributárias), replicando as mesmas separações já
+ * exibidas nas páginas das atividades — cada lançamento cai em exatamente uma sub-área.
  */
 const EXPORT_AREAS: AreaSource[] = [
   {
@@ -138,7 +138,6 @@ const EXPORT_AREAS: AreaSource[] = [
   },
   { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
   { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },
-  { key: 'CANA', label: 'Cana', sheetLabel: 'Cana', match: (a) => a.atividade === 'CANA' && isNotOutrasReceitas(a) },
   {
     key: 'DESP_ADM_TRIB_FINANCEIRO',
     label: 'Despesas Administrativas — Gerência Financeiro',
@@ -165,7 +164,6 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Desp. Tributárias',
     match: (a) => a.atividade === 'DESP_ADM_TRIB' && isNotOutrasReceitas(a) && isTributariaGroupEntry(a),
   },
-  { key: 'ENCARGOS', label: 'Encargos Financeiros', sheetLabel: 'Encargos', match: (a) => a.atividade === 'ENCARGOS' },
 ];
 
 const GRUPO_CODE_PATTERN = /^\d+(\.\d+){2,}/;

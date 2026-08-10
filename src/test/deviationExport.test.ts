@@ -172,15 +172,38 @@ describe('buildDeviationExportData', () => {
         realizado: { '2026-04': 200 },
       }),
       baseAccount({
-        atividade: 'CANA',
-        grupoContabilN9: '3.4.02.02-GRUPO CANA',
+        atividade: 'AGRICOLA',
+        grupoContabilN9: '3.4.02.02-GRUPO AGRICOLA',
         orcado: { '2026-04': 100 },
         realizado: { '2026-04': 1100 },
       }),
     ];
 
     const { resumoGeral } = buildDeviationExportData(accounts);
-    expect(resumoGeral.map((r) => r.area)).toEqual(['Cana', 'Seringal']);
+    expect(resumoGeral.map((r) => r.area)).toEqual(['Agrícola', 'Seringal']);
+  });
+
+  it('não exporta Cana nem Encargos Financeiros — ficaram de fora do relatório', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'CANA',
+        grupoContabilN9: '3.4.02.02-GRUPO CANA',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 200 },
+      }),
+      baseAccount({
+        atividade: 'ENCARGOS',
+        grupoContabilN9: '3.4.04.01-DESPESAS FINANCEIRAS',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 200 },
+      }),
+    ];
+
+    const { areas, resumoGeral } = buildDeviationExportData(accounts);
+
+    expect(areas.some((a) => a.label.toLowerCase().includes('cana'))).toBe(false);
+    expect(areas.some((a) => a.label.toLowerCase().includes('encargos'))).toBe(false);
+    expect(resumoGeral).toHaveLength(0);
   });
 
   it('consolida orçado e realizado apenas até o mês de corte, ignorando meses futuros em ambos os lados', () => {
