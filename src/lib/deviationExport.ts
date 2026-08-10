@@ -1,12 +1,16 @@
 import * as XLSX from 'xlsx';
 import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
 
 export type DeviationExportAreaKey =
-  | Exclude<AtividadeKey, 'DESP_ADM_TRIB'>
+  | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA' | 'CANA' | 'ENCARGOS'>
   | 'DESP_ADM_TRIB_FINANCEIRO'
   | 'DESP_ADM_TRIB_RH'
-  | 'DESP_ADM_TRIB_TRIBUTARIAS';
+  | 'DESP_ADM_TRIB_TRIBUTARIAS'
+  | 'PECUARIA_PASTO'
+  | 'PECUARIA_CONFINAMENTO'
+  | 'PECUARIA_GENETICA';
 
 export interface DeviationGroupRow {
   grupoContabil: string;
@@ -85,17 +89,55 @@ const isGerenciaRhCostCenter = (centroCusto?: string) =>
 
 const isNotOutrasReceitas = (entry: Pick<AccountEntry, 'codigo'>) => !isOutrasReceitasEventuaisCode(entry.codigo);
 
+/** Mesmos centros de custo/departamento de "Confinamento" usados na página de Pecuária do dashboard. */
+const CONFINAMENTO_COST_CENTERS = [
+  'RATEIO CONFINAMENTO',
+  'CONFINAMENTO - TRANSPORTE DE GADO',
+  'CONFINAMENTO - TRANSPORTE DE INSUMOS',
+  'MANUTENCAO SISTEMA IRRIGACAO - CUSTO CONFINAMENTO',
+  'RECRIA GOTEJO CONFINAMENTO',
+];
+const isConfinamentoEntry = (entry: Pick<AccountEntry, 'departamento' | 'centroCusto'>): boolean => {
+  const dept = normalizeMatchText(entry.departamento);
+  const cc = normalizeMatchText(entry.centroCusto);
+  return dept === 'CONFINAMENTO' || CONFINAMENTO_COST_CENTERS.some((item) => normalizeMatchText(item) === cc);
+};
+
+/** Mesmo critério de "Custos Genética" usado na página de Pecuária do dashboard (departamento CENTRO COMERCIAL DE TOUROS). */
+const isPecuariaGeneticaEntry = (entry: Pick<AccountEntry, 'departamento'>): boolean =>
+  isReceitaPecuariaGeneticaDepartment(entry.departamento);
+
 /**
  * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
- * atividade). Despesas Administrativas e Tributárias é dividida em 3 sub-áreas, replicando a
- * separação por gerência (Financeiro / RH) e Despesas Tributárias já exibida na página da
- * atividade — cada lançamento cai em exatamente uma delas.
+ * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária é
+ * dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade — Genética e Confinamento
+ * saem primeiro do total, o resto cai em Pasto), e Despesas Administrativas e Tributárias em 3
+ * sub-áreas (Gerência Financeiro / RH / Despesas Tributárias), replicando as mesmas separações já
+ * exibidas nas páginas das atividades — cada lançamento cai em exatamente uma sub-área.
  */
 const EXPORT_AREAS: AreaSource[] = [
-  { key: 'PECUARIA', label: 'Pecuária', sheetLabel: 'Pecuária', match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) },
+  {
+    key: 'PECUARIA_GENETICA',
+    label: 'Pecuária — Genética',
+    sheetLabel: 'Pecuária - Genet.',
+    match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && isPecuariaGeneticaEntry(a),
+  },
+  {
+    key: 'PECUARIA_CONFINAMENTO',
+    label: 'Pecuária — Confinamento',
+    sheetLabel: 'Pecuária - Confin',
+    match: (a) =>
+      a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && isConfinamentoEntry(a),
+  },
+  {
+    key: 'PECUARIA_PASTO',
+    label: 'Pecuária — Pasto',
+    sheetLabel: 'Pecuária - Pasto',
+    match: (a) =>
+      a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && !isConfinamentoEntry(a),
+  },
   { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
   { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },
-  { key: 'CANA', label: 'Cana', sheetLabel: 'Cana', match: (a) => a.atividade === 'CANA' && isNotOutrasReceitas(a) },
   {
     key: 'DESP_ADM_TRIB_FINANCEIRO',
     label: 'Despesas Administrativas — Gerência Financeiro',
@@ -122,7 +164,6 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Desp. Tributárias',
     match: (a) => a.atividade === 'DESP_ADM_TRIB' && isNotOutrasReceitas(a) && isTributariaGroupEntry(a),
   },
-  { key: 'ENCARGOS', label: 'Encargos Financeiros', sheetLabel: 'Encargos', match: (a) => a.atividade === 'ENCARGOS' },
 ];
 
 const GRUPO_CODE_PATTERN = /^\d+(\.\d+){2,}/;
