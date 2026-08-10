@@ -35,7 +35,7 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas } = buildDeviationExportData(accounts);
-    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
 
     expect(pecuaria.groupRows).toHaveLength(1);
     expect(pecuaria.groupRows[0]).toMatchObject({
@@ -104,7 +104,7 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas, resumoGeral } = buildDeviationExportData(accounts);
-    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
 
     expect(pecuaria.groupRows).toMatchObject([{ grupoContabil: '4.1.01.11-CUSTOS RURAIS', orcado: 300, realizado: 280 }]);
     expect(resumoGeral.some((r) => r.grupoContabil.includes('VENDA DE BOVINOS'))).toBe(false);
@@ -195,7 +195,7 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas } = buildDeviationExportData(accounts, '2026-06');
-    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
 
     // Orçado deve somar só Abr+Mai+Jun (300), não a safra inteira (500).
     expect(pecuaria.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285, diferenca: -15 });
@@ -212,8 +212,52 @@ describe('buildDeviationExportData', () => {
     ];
 
     const { areas } = buildDeviationExportData(accounts, null);
-    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
     expect(pecuaria.groupRows[0]).toMatchObject({ orcado: 500, realizado: 90 });
+  });
+
+  it('divide Pecuária em Pasto e Confinamento por departamento/centro de custo, sem perder nem duplicar lançamentos', () => {
+    const accounts: AccountEntry[] = [
+      // Confinamento: departamento CONFINAMENTO.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'CONFINAMENTO',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 90 },
+      }),
+      // Confinamento: centro de custo da lista, departamento diferente.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'JOIA - PECUARIA',
+        centroCusto: 'RATEIO CONFINAMENTO',
+        orcado: { '2026-04': 150 },
+        realizado: { '2026-04': 140 },
+      }),
+      // Pasto: nem departamento nem centro de custo de confinamento (catch-all).
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'JOIA - PECUARIA',
+        centroCusto: 'RATEIO GADO GERAL',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const pasto = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+    const confinamento = areas.find((a) => a.key === 'PECUARIA_CONFINAMENTO')!;
+
+    expect(confinamento.groupRows).toMatchObject([{ orcado: 250, realizado: 230 }]);
+    expect(pasto.groupRows).toMatchObject([{ orcado: 300, realizado: 280 }]);
+
+    const totalLancamentos = pasto.lancamentos.length + confinamento.lancamentos.length;
+    expect(totalLancamentos).toBe(accounts.length);
   });
 
   it('abertura (lançamentos) usa a granularidade e as colunas da visão Planilha do dashboard, só com realizado', () => {
