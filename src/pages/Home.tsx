@@ -111,7 +111,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <div className="flex items-baseline gap-1">
             <span className="text-5xl sm:text-6xl font-black text-orange-500 italic tracking-tighter">
-              LAGE
+              LAGES
             </span>
           </div>
           <span className="text-[10px] sm:text-xs font-semibold tracking-[0.4em] text-primary/80 uppercase">
