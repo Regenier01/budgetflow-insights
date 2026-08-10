@@ -1,6 +1,7 @@
 import * as XLSX from 'xlsx';
 import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
+import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
 
 export type DeviationExportAreaKey =
   | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA'>
@@ -8,7 +9,8 @@ export type DeviationExportAreaKey =
   | 'DESP_ADM_TRIB_RH'
   | 'DESP_ADM_TRIB_TRIBUTARIAS'
   | 'PECUARIA_PASTO'
-  | 'PECUARIA_CONFINAMENTO';
+  | 'PECUARIA_CONFINAMENTO'
+  | 'PECUARIA_GENETICA';
 
 export interface DeviationGroupRow {
   grupoContabil: string;
@@ -101,25 +103,38 @@ const isConfinamentoEntry = (entry: Pick<AccountEntry, 'departamento' | 'centroC
   return dept === 'CONFINAMENTO' || CONFINAMENTO_COST_CENTERS.some((item) => normalizeMatchText(item) === cc);
 };
 
+/** Mesmo critério de "Custos Genética" usado na página de Pecuária do dashboard (departamento CENTRO COMERCIAL DE TOUROS). */
+const isPecuariaGeneticaEntry = (entry: Pick<AccountEntry, 'departamento'>): boolean =>
+  isReceitaPecuariaGeneticaDepartment(entry.departamento);
+
 /**
  * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
- * atividade). Pecuária é dividida em Pasto e Confinamento, e Despesas Administrativas e
- * Tributárias em 3 sub-áreas (Gerência Financeiro / RH / Despesas Tributárias), replicando as
- * mesmas separações já exibidas nas páginas das atividades — cada lançamento cai em exatamente
- * uma sub-área.
+ * atividade). Pecuária é dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade —
+ * Genética e Confinamento saem primeiro do total, o resto cai em Pasto), e Despesas
+ * Administrativas e Tributárias em 3 sub-áreas (Gerência Financeiro / RH / Despesas Tributárias),
+ * replicando as mesmas separações já exibidas nas páginas das atividades — cada lançamento cai em
+ * exatamente uma sub-área.
  */
 const EXPORT_AREAS: AreaSource[] = [
   {
-    key: 'PECUARIA_PASTO',
-    label: 'Pecuária — Pasto',
-    sheetLabel: 'Pecuária - Pasto',
-    match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isConfinamentoEntry(a),
+    key: 'PECUARIA_GENETICA',
+    label: 'Pecuária — Genética',
+    sheetLabel: 'Pecuária - Genet.',
+    match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && isPecuariaGeneticaEntry(a),
   },
   {
     key: 'PECUARIA_CONFINAMENTO',
     label: 'Pecuária — Confinamento',
     sheetLabel: 'Pecuária - Confin',
-    match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && isConfinamentoEntry(a),
+    match: (a) =>
+      a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && isConfinamentoEntry(a),
+  },
+  {
+    key: 'PECUARIA_PASTO',
+    label: 'Pecuária — Pasto',
+    sheetLabel: 'Pecuária - Pasto',
+    match: (a) =>
+      a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && !isConfinamentoEntry(a),
   },
   { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
   { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },

@@ -260,6 +260,52 @@ describe('buildDeviationExportData', () => {
     expect(totalLancamentos).toBe(accounts.length);
   });
 
+  it('divide Pecuária em Genética, Confinamento e Pasto por departamento, sem perder nem duplicar lançamentos', () => {
+    const accounts: AccountEntry[] = [
+      // Genética: departamento CENTRO COMERCIAL DE TOUROS, mesmo que o centro de custo pareça confinamento.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'CENTRO COMERCIAL DE TOUROS',
+        centroCusto: 'RATEIO CONFINAMENTO',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 90 },
+      }),
+      // Confinamento: departamento CONFINAMENTO.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'CONFINAMENTO',
+        orcado: { '2026-04': 150 },
+        realizado: { '2026-04': 140 },
+      }),
+      // Pasto: nem Genética nem Confinamento (catch-all).
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        departamento: 'JOIA - PECUARIA',
+        centroCusto: 'RATEIO GADO GERAL',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const genetica = areas.find((a) => a.key === 'PECUARIA_GENETICA')!;
+    const confinamento = areas.find((a) => a.key === 'PECUARIA_CONFINAMENTO')!;
+    const pasto = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+
+    expect(genetica.groupRows).toMatchObject([{ orcado: 100, realizado: 90 }]);
+    expect(confinamento.groupRows).toMatchObject([{ orcado: 150, realizado: 140 }]);
+    expect(pasto.groupRows).toMatchObject([{ orcado: 300, realizado: 280 }]);
+
+    const totalLancamentos = genetica.lancamentos.length + confinamento.lancamentos.length + pasto.lancamentos.length;
+    expect(totalLancamentos).toBe(accounts.length);
+  });
+
   it('abertura (lançamentos) usa a granularidade e as colunas da visão Planilha do dashboard, só com realizado', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
