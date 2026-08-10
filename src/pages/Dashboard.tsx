@@ -1,10 +1,13 @@
 import { RevenueSummary } from '@/components/dashboard/RevenueSummary';
 import { GlobalSummary } from '@/components/dashboard/GlobalSummary';
-import { DollarSign } from 'lucide-react';
+import { DollarSign, FileSpreadsheet } from 'lucide-react';
 import { MultiSelect } from '@/components/ui/multi-select';
+import { Button } from '@/components/ui/button';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
+import { exportDeviationAnalysisWorkbook } from '@/lib/deviationExport';
 import { useMemo, useState } from 'react';
+import { toast } from 'sonner';
 
 export default function Dashboard() {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -29,6 +32,15 @@ export default function Dashboard() {
     [availableMonths]
   );
 
+  const handleExportDesvios = () => {
+    try {
+      exportDeviationAnalysisWorkbook(accounts);
+      toast.success('Análise de desvios exportada com sucesso');
+    } catch {
+      toast.error('Erro ao gerar o Excel de análise de desvios');
+    }
+  };
+
   return (
     <div className="space-y-12 pb-20">
       <div className="flex flex-col gap-4">
@@ -42,15 +54,30 @@ export default function Dashboard() {
           </p>
         </div>
         <div className="sticky top-20 z-40 -mx-2 rounded-xl bg-[#fdfcfb]/95 px-2 py-2 backdrop-blur supports-[backdrop-filter]:bg-[#fdfcfb]/80">
-          <div className="w-full sm:w-[280px]">
-            <MultiSelect
-              options={monthOptions}
-              selected={selectedMonths}
-              onChange={(next) => setSelectedMonths(next as MonthKey[])}
-              placeholder="Selecione o período"
-              allLabel="Consolidado Geral"
-              triggerClassName="bg-white border-slate-200 shadow-sm font-semibold text-slate-700"
-            />
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="w-full sm:w-[280px]">
+              <MultiSelect
+                options={monthOptions}
+                selected={selectedMonths}
+                onChange={(next) => setSelectedMonths(next as MonthKey[])}
+                placeholder="Selecione o período"
+                allLabel="Consolidado Geral"
+                triggerClassName="bg-white border-slate-200 shadow-sm font-semibold text-slate-700"
+              />
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              <Button
+                onClick={handleExportDesvios}
+                variant="outline"
+                className="gap-2 border-slate-200 bg-white font-semibold text-slate-700 shadow-sm hover:bg-slate-50"
+              >
+                <FileSpreadsheet className="h-4 w-4" />
+                Exportar Análise de Desvios
+              </Button>
+              <span className="text-[11px] font-medium text-slate-400">
+                Consolidado da safra completa (independente do período selecionado acima)
+              </span>
+            </div>
           </div>
         </div>
       </div>
