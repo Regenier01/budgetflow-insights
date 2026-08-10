@@ -72,8 +72,27 @@ describe('buildDeviationExportData', () => {
     ]);
   });
 
-  it('separa contas de Outras Receitas Eventuais das sub-áreas de Adm/Tributárias, sem duplicar valores', () => {
+  it('exclui contas de receita (tipo R) de todas as áreas — o export é só de custos e despesas', () => {
     const accounts: AccountEntry[] = [
+      // Receita: não deve aparecer em nenhuma área.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'R',
+        codigo: '3.1.01.01.0001',
+        grupoContabilN9: '3.1.01.01-VENDA DE BOVINOS',
+        orcado: { '2026-04': 5000 },
+        realizado: { '2026-04': 4800 },
+      }),
+      // Custo na mesma área: deve aparecer normalmente.
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        codigo: '4.1.01.11.0001',
+        grupoContabilN9: '4.1.01.11-CUSTOS RURAIS',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+      // Outras Receitas Eventuais: código de receita, também deve ficar de fora.
       baseAccount({
         atividade: 'DESP_ADM_TRIB',
         tipo: 'R',
@@ -84,13 +103,12 @@ describe('buildDeviationExportData', () => {
       }),
     ];
 
-    const { areas } = buildDeviationExportData(accounts);
-    const admTribAreas = areas.filter((a) => a.key.startsWith('DESP_ADM_TRIB'));
-    const outras = areas.find((a) => a.key === 'OUTRAS_RECEITAS_EVENTUAIS')!;
+    const { areas, resumoGeral } = buildDeviationExportData(accounts);
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
 
-    expect(admTribAreas.every((a) => a.groupRows.length === 0)).toBe(true);
-    expect(outras.groupRows).toHaveLength(1);
-    expect(outras.groupRows[0]).toMatchObject({ orcado: 300, realizado: 250, diferenca: -50 });
+    expect(pecuaria.groupRows).toMatchObject([{ grupoContabil: '4.1.01.11-CUSTOS RURAIS', orcado: 300, realizado: 280 }]);
+    expect(resumoGeral.some((r) => r.grupoContabil.includes('VENDA DE BOVINOS'))).toBe(false);
+    expect(resumoGeral.some((r) => r.grupoContabil.includes('RECEITAS EVENTUAIS'))).toBe(false);
   });
 
   it('divide Despesas Administrativas e Tributárias em Gerência Financeiro, Gerência RH e Tributárias, sem perder nem duplicar lançamentos', () => {

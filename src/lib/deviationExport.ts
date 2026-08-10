@@ -4,7 +4,6 @@ import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 export type DeviationExportAreaKey =
   | Exclude<AtividadeKey, 'DESP_ADM_TRIB'>
-  | 'OUTRAS_RECEITAS_EVENTUAIS'
   | 'DESP_ADM_TRIB_FINANCEIRO'
   | 'DESP_ADM_TRIB_RH'
   | 'DESP_ADM_TRIB_TRIBUTARIAS';
@@ -124,12 +123,6 @@ const EXPORT_AREAS: AreaSource[] = [
     match: (a) => a.atividade === 'DESP_ADM_TRIB' && isNotOutrasReceitas(a) && isTributariaGroupEntry(a),
   },
   { key: 'ENCARGOS', label: 'Encargos Financeiros', sheetLabel: 'Encargos', match: (a) => a.atividade === 'ENCARGOS' },
-  {
-    key: 'OUTRAS_RECEITAS_EVENTUAIS',
-    label: 'Outras Receitas Eventuais',
-    sheetLabel: 'Outras Receitas',
-    match: (a) => isOutrasReceitasEventuaisCode(a.codigo),
-  },
 ];
 
 const GRUPO_CODE_PATTERN = /^\d+(\.\d+){2,}/;
@@ -165,7 +158,8 @@ function buildAreaData(
   area: AreaSource,
   includedMonths: Set<MonthKey> | null
 ): DeviationAreaData {
-  const entries = accounts.filter((a) => a.nivel === 5 && area.match(a));
+  // Só custos e despesas (tipo 'C'/'D'); contas de receita ficam de fora, como pedido.
+  const entries = accounts.filter((a) => a.nivel === 5 && a.tipo !== 'R' && area.match(a));
   const groups = new Map<string, { orcado: number; realizado: number }>();
   const lancamentos: DeviationLancamentoRow[] = [];
 
@@ -217,10 +211,11 @@ function buildAreaData(
 }
 
 /**
- * Agrega os lançamentos (nível 5, "folha") por Área x Grupo Contábil. Orçado e realizado são
- * somados no mesmo intervalo de meses (até `cutoffMonth`, inclusive) para comparar períodos
- * equivalentes — por padrão, o último mês com realizado importado. Função pura, sem geração de
- * arquivo — usada pelo writer abaixo e testável isoladamente.
+ * Agrega os lançamentos (nível 5, "folha") por Área x Grupo Contábil — apenas custos e despesas
+ * (tipo 'C'/'D'); contas de receita não entram nesta análise. Orçado e realizado são somados no
+ * mesmo intervalo de meses (até `cutoffMonth`, inclusive) para comparar períodos equivalentes —
+ * por padrão, o último mês com realizado importado. Função pura, sem geração de arquivo — usada
+ * pelo writer abaixo e testável isoladamente.
  */
 export function buildDeviationExportData(
   accounts: AccountEntry[],
@@ -285,10 +280,11 @@ function sumRows(rows: DeviationGroupRow[]) {
 const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === month)?.label ?? month;
 
 /**
- * Gera e baixa o Excel de análise de desvios: uma aba "Resumo Geral" (todos os grupos de todas
- * as áreas, ordenados pelo maior |desvio|) e, por área, uma aba de resumo por grupo contábil
- * (Total Orçado / Total Realizado / Diferença / Justificativa) + uma aba de abertura com os
- * lançamentos (mesma granularidade da visão "Planilha" do dashboard) que compõem cada grupo.
+ * Gera e baixa o Excel de análise de desvios de custos e despesas (contas de receita não entram):
+ * uma aba "Resumo Geral" (todos os grupos de todas as áreas, ordenados pelo maior |desvio|) e,
+ * por área, uma aba de resumo por grupo contábil (Total Orçado / Total Realizado / Diferença /
+ * Justificativa) + uma aba de abertura com os lançamentos (mesma granularidade da visão
+ * "Planilha" do dashboard) que compõem cada grupo.
  *
  * Orçado e realizado são consolidados no mesmo intervalo de meses (por padrão, até o último mês
  * com realizado importado) para que a diferença reflita um período comparável nos dois lados.
@@ -375,7 +371,7 @@ export function exportDeviationAnalysisWorkbook(
   }
 
   const periodSuffix = cutoffMonth ? `ate_${cutoffMonth}` : 'consolidado';
-  const resolvedFileName = fileName ?? `Analise_Desvios_Orcamentario_${periodSuffix}.xlsx`;
+  const resolvedFileName = fileName ?? `Analise_Desvios_Custos_${periodSuffix}.xlsx`;
   XLSX.writeFile(wb, resolvedFileName);
 }
 
