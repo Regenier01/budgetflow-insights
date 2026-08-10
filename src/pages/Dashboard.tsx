@@ -5,7 +5,7 @@ import { MultiSelect } from '@/components/ui/multi-select';
 import { Button } from '@/components/ui/button';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
-import { exportDeviationAnalysisWorkbook } from '@/lib/deviationExport';
+import { exportDeviationAnalysisWorkbook, resolveLatestRealizadoMonth } from '@/lib/deviationExport';
 import { useMemo, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -32,10 +32,8 @@ export default function Dashboard() {
     [availableMonths]
   );
 
-  const exportCutoffMonth = useMemo(
-    () => getDefaultRealizadoFilterMonth(accounts, useBudgetStore.getState().importedRealizadoBatches),
-    [accounts]
-  );
+  // Último mês com realizado importado (sem limiar de materialidade — reflete exatamente até onde há dado).
+  const exportCutoffMonth = useMemo(() => resolveLatestRealizadoMonth(accounts), [accounts]);
 
   const exportCutoffLabel = exportCutoffMonth
     ? MONTHS.find((m) => m.key === exportCutoffMonth)?.label
@@ -43,7 +41,7 @@ export default function Dashboard() {
 
   const handleExportDesvios = () => {
     try {
-      exportDeviationAnalysisWorkbook(accounts, exportCutoffMonth);
+      exportDeviationAnalysisWorkbook(accounts);
       toast.success('Análise de desvios exportada com sucesso');
     } catch {
       toast.error('Erro ao gerar o Excel de análise de desvios');

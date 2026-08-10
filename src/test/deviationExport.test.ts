@@ -224,6 +224,55 @@ describe('buildDeviationExportData', () => {
     expect(pecuaria.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285, diferenca: -15 });
   });
 
+  it('detecta automaticamente o corte como o último mês com realizado — sem limiar de materialidade', () => {
+    const accountsAteJunho: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100 },
+        realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100 },
+      }),
+    ];
+
+    const semJulho = buildDeviationExportData(accountsAteJunho);
+    expect(semJulho.cutoffMonth).toBe('2026-06');
+    const pastoSemJulho = semJulho.areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+    // Orçado só até Jun (300), mesmo o orçamento já tendo valor lançado para Jul.
+    expect(pastoSemJulho.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285 });
+
+    // Assim que aparece realizado em Julho — mesmo um valor pequeno — o corte deve acompanhar, sem limiar de materialidade.
+    const accountsComJulho: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100 },
+        realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100, '2026-07': 1 },
+      }),
+    ];
+
+    const comJulho = buildDeviationExportData(accountsComJulho);
+    expect(comJulho.cutoffMonth).toBe('2026-07');
+    const pastoComJulho = comJulho.areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+    expect(pastoComJulho.groupRows[0]).toMatchObject({ orcado: 400, realizado: 286 });
+  });
+
+  it('ignora um resíduo isolado num mês futuro (ex.: ruído de seed) separado por um bloco de meses zerados', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100 },
+        // Abr, Mai, Jun com dado real; Jul-Dez zerados; um resíduo isolado aparece em Jan/27.
+        realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100, '2027-01': 5 },
+      }),
+    ];
+
+    const { cutoffMonth, areas } = buildDeviationExportData(accounts);
+    expect(cutoffMonth).toBe('2026-06');
+    const pasto = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+    expect(pasto.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285 });
+  });
+
   it('sem mês de corte, consolida todos os meses (comportamento "consolidado geral")', () => {
     const accounts: AccountEntry[] = [
       baseAccount({

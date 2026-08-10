@@ -177,6 +177,32 @@ function resolveGrupoContabilLabel(entry: Pick<AccountEntry, 'grupoContabilN9' |
   return prefix ? `${prefix} - ${entry.descricao || 'Sem Descrição'}` : entry.descricao || 'Sem Grupo Contábil';
 }
 
+/**
+ * Último mês da sequência contínua de meses com realizado, a partir do início da safra — sem
+ * limiar de materialidade (qualquer valor diferente de zero conta): se há dado em Abr-Jun, o
+ * corte é Jun; assim que passar a existir dado em Jul, o corte acompanha e passa a ser Jul
+ * automaticamente. Exige continuidade (para no primeiro mês zerado) para não confundir um
+ * lançamento perdido/residual em um mês futuro (ex.: ruído de importação/seed) com o real avanço
+ * do período — realizado é lançado em ordem cronológica, então um mês isolado com dado muito à
+ * frente de um bloco de meses zerados não é "o mês mais recente com dado", é ruído.
+ */
+export function resolveLatestRealizadoMonth(accounts: AccountEntry[]): MonthKey | null {
+  const monthsWithData = new Set<MonthKey>();
+  for (const a of accounts) {
+    if (a.nivel !== 5) continue;
+    for (const [month, value] of Object.entries(a.realizado)) {
+      if (Number(value) || 0) monthsWithData.add(month as MonthKey);
+    }
+  }
+
+  let cutoff: MonthKey | null = null;
+  for (const month of MONTHS) {
+    if (!monthsWithData.has(month.key)) break;
+    cutoff = month.key;
+  }
+  return cutoff;
+}
+
 /** Meses a somar (orçado e realizado): até `cutoff` (inclusive) para comparar o mesmo período nos dois lados; `null` = todos os meses da safra. */
 function resolveIncludedMonths(cutoff: MonthKey | null | undefined): Set<MonthKey> | null {
   if (!cutoff) return null;
@@ -254,22 +280,25 @@ function buildAreaData(
 /**
  * Agrega os lançamentos (nível 5, "folha") por Área x Grupo Contábil — apenas custos e despesas
  * (tipo 'C'/'D'); contas de receita não entram nesta análise. Orçado e realizado são somados no
- * mesmo intervalo de meses (até `cutoffMonth`, inclusive) para comparar períodos equivalentes —
- * por padrão, o último mês com realizado importado. Função pura, sem geração de arquivo — usada
- * pelo writer abaixo e testável isoladamente.
+ * mesmo intervalo de meses (até `cutoffMonth`, inclusive) para comparar períodos equivalentes.
+ * Quando `cutoffMonth` não é informado (`undefined`), é detectado automaticamente como o último
+ * mês com realizado importado nos dados — passe `null` explicitamente para forçar o consolidado
+ * da safra inteira, sem corte algum. Função pura, sem geração de arquivo — usada pelo writer
+ * abaixo e testável isoladamente.
  */
 export function buildDeviationExportData(
   accounts: AccountEntry[],
   cutoffMonth?: MonthKey | null
 ): DeviationExportData {
-  const includedMonths = resolveIncludedMonths(cutoffMonth);
+  const resolvedCutoff = cutoffMonth === undefined ? resolveLatestRealizadoMonth(accounts) : cutoffMonth;
+  const includedMonths = resolveIncludedMonths(resolvedCutoff);
   const areas = EXPORT_AREAS.map((area) => buildAreaData(accounts, area, includedMonths));
 
   const resumoGeral: DeviationResumoGeralRow[] = areas
     .flatMap((area) => area.groupRows.map((g) => ({ area: area.label, ...g })))
     .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
 
-  return { areas, resumoGeral, cutoffMonth: cutoffMonth ?? null };
+  return { areas, resumoGeral, cutoffMonth: resolvedCutoff };
 }
 
 const SHEET_FORBIDDEN_CHARS = /[:\\/?*[\]]/g;
@@ -327,15 +356,17 @@ const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === mon
  * Justificativa) + uma aba de abertura com os lançamentos (mesma granularidade da visão
  * "Planilha" do dashboard) que compõem cada grupo.
  *
- * Orçado e realizado são consolidados no mesmo intervalo de meses (por padrão, até o último mês
- * com realizado importado) para que a diferença reflita um período comparável nos dois lados.
+ * Orçado e realizado são consolidados no mesmo intervalo de meses — por padrão, detectado
+ * automaticamente como o último mês com realizado importado nos dados (passe `cutoffMonth: null`
+ * para forçar o consolidado da safra inteira) — para que a diferença reflita um período
+ * comparável nos dois lados.
  */
 export function exportDeviationAnalysisWorkbook(
   accounts: AccountEntry[],
   cutoffMonth?: MonthKey | null,
   fileName?: string
 ): void {
-  const { areas, resumoGeral } = buildDeviationExportData(accounts, cutoffMonth);
+  const { areas, resumoGeral, cutoffMonth: resolvedCutoff } = buildDeviationExportData(accounts, cutoffMonth);
   const wb = XLSX.utils.book_new();
   const usedNames = new Set<string>();
 
@@ -411,7 +442,7 @@ export function exportDeviationAnalysisWorkbook(
     );
   }
 
-  const periodSuffix = cutoffMonth ? `ate_${cutoffMonth}` : 'consolidado';
+  const periodSuffix = resolvedCutoff ? `ate_${resolvedCutoff}` : 'consolidado';
   const resolvedFileName = fileName ?? `Analise_Desvios_Custos_${periodSuffix}.xlsx`;
   XLSX.writeFile(wb, resolvedFileName);
 }
