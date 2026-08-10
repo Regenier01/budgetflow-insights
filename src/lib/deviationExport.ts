@@ -1,5 +1,5 @@
 import * as XLSX from 'xlsx';
-import type { AccountEntry, AtividadeKey } from '@/types/budget';
+import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 
 export type DeviationExportAreaKey = AtividadeKey | 'OUTRAS_RECEITAS_EVENTUAIS';
@@ -11,15 +11,16 @@ export interface DeviationGroupRow {
   diferenca: number;
 }
 
+/** Um lançamento na mesma granularidade exibida na visão "Planilha" do dashboard (departamento, centro de custo, descrição, produto, complemento). */
 export interface DeviationLancamentoRow {
   grupoContabil: string;
-  conta: string;
-  descricao: string;
   departamento: string;
   centroCusto: string;
-  orcado: number;
+  descricao: string;
+  produto: string;
+  complemento: string;
+  quantidade: number | null;
   realizado: number;
-  diferenca: number;
 }
 
 export interface DeviationAreaData {
@@ -37,6 +38,8 @@ export interface DeviationResumoGeralRow extends DeviationGroupRow {
 export interface DeviationExportData {
   areas: DeviationAreaData[];
   resumoGeral: DeviationResumoGeralRow[];
+  /** Último mês incluído na consolidação (orçado e realizado); null = todos os meses da safra. */
+  cutoffMonth: MonthKey | null;
 }
 
 /** Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de atividade). */
@@ -61,8 +64,21 @@ function resolveGrupoContabilLabel(entry: Pick<AccountEntry, 'grupoContabilN9' |
   return prefix ? `${prefix} - ${entry.descricao || 'Sem Descrição'}` : entry.descricao || 'Sem Grupo Contábil';
 }
 
-function sumAllMonths(values: Record<string, number>): number {
-  return Object.values(values).reduce((sum, v) => sum + (Number(v) || 0), 0);
+/** Meses a somar (orçado e realizado): até `cutoff` (inclusive) para comparar o mesmo período nos dois lados; `null` = todos os meses da safra. */
+function resolveIncludedMonths(cutoff: MonthKey | null | undefined): Set<MonthKey> | null {
+  if (!cutoff) return null;
+  const idx = MONTHS.findIndex((m) => m.key === cutoff);
+  if (idx === -1) return null;
+  return new Set(MONTHS.slice(0, idx + 1).map((m) => m.key));
+}
+
+function sumMonths(values: Record<string, number>, includedMonths: Set<MonthKey> | null): number {
+  let sum = 0;
+  for (const [month, value] of Object.entries(values)) {
+    if (includedMonths && !includedMonths.has(month as MonthKey)) continue;
+    sum += Number(value) || 0;
+  }
+  return sum;
 }
 
 function entriesForArea(accounts: AccountEntry[], areaKey: DeviationExportAreaKey): AccountEntry[] {
@@ -75,15 +91,16 @@ function entriesForArea(accounts: AccountEntry[], areaKey: DeviationExportAreaKe
 
 function buildAreaData(
   accounts: AccountEntry[],
-  area: { key: DeviationExportAreaKey; label: string; sheetLabel: string }
+  area: { key: DeviationExportAreaKey; label: string; sheetLabel: string },
+  includedMonths: Set<MonthKey> | null
 ): DeviationAreaData {
   const entries = entriesForArea(accounts, area.key);
   const groups = new Map<string, { orcado: number; realizado: number }>();
   const lancamentos: DeviationLancamentoRow[] = [];
 
   for (const entry of entries) {
-    const orcado = sumAllMonths(entry.orcado);
-    const realizado = sumAllMonths(entry.realizado);
+    const orcado = sumMonths(entry.orcado, includedMonths);
+    const realizado = sumMonths(entry.realizado, includedMonths);
     if (orcado === 0 && realizado === 0) continue;
 
     const grupoContabil = resolveGrupoContabilLabel(entry);
@@ -92,16 +109,20 @@ function buildAreaData(
     agg.realizado += realizado;
     groups.set(grupoContabil, agg);
 
-    lancamentos.push({
-      grupoContabil,
-      conta: entry.codigo,
-      descricao: entry.descricao || '',
-      departamento: entry.departamento || '',
-      centroCusto: entry.centroCusto || '',
-      orcado,
-      realizado,
-      diferenca: realizado - orcado,
-    });
+    // Abertura: mesma granularidade e colunas da visão "Planilha" já exibida no dashboard.
+    if (realizado !== 0) {
+      const quantidade = entry.quantidade ? sumMonths(entry.quantidade, includedMonths) : 0;
+      lancamentos.push({
+        grupoContabil,
+        departamento: entry.departamento || '',
+        centroCusto: entry.centroCusto || '',
+        descricao: entry.descricao || '',
+        produto: entry.nomeProduto || '',
+        complemento: entry.complemento || '',
+        quantidade: quantidade !== 0 ? quantidade : null,
+        realizado,
+      });
+    }
   }
 
   const groupRows: DeviationGroupRow[] = Array.from(groups.entries())
@@ -113,29 +134,35 @@ function buildAreaData(
     }))
     .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
 
+  // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, maior |Realizado| primeiro (igual à Planilha do dashboard).
   const groupRank = new Map(groupRows.map((g, i) => [g.grupoContabil, i]));
   lancamentos.sort((a, b) => {
     const rankDiff = (groupRank.get(a.grupoContabil) ?? 0) - (groupRank.get(b.grupoContabil) ?? 0);
     if (rankDiff !== 0) return rankDiff;
-    return Math.abs(b.diferenca) - Math.abs(a.diferenca);
+    return Math.abs(b.realizado) - Math.abs(a.realizado);
   });
 
   return { key: area.key, label: area.label, sheetLabel: area.sheetLabel, groupRows, lancamentos };
 }
 
 /**
- * Agrega os lançamentos (nível 5, "folha") por Área x Grupo Contábil, consolidando todos os
- * meses (sempre o período completo, independentemente de filtros de tela). Função pura,
- * sem geração de arquivo — usada pelo writer abaixo e testável isoladamente.
+ * Agrega os lançamentos (nível 5, "folha") por Área x Grupo Contábil. Orçado e realizado são
+ * somados no mesmo intervalo de meses (até `cutoffMonth`, inclusive) para comparar períodos
+ * equivalentes — por padrão, o último mês com realizado importado. Função pura, sem geração de
+ * arquivo — usada pelo writer abaixo e testável isoladamente.
  */
-export function buildDeviationExportData(accounts: AccountEntry[]): DeviationExportData {
-  const areas = EXPORT_AREAS.map((area) => buildAreaData(accounts, area));
+export function buildDeviationExportData(
+  accounts: AccountEntry[],
+  cutoffMonth?: MonthKey | null
+): DeviationExportData {
+  const includedMonths = resolveIncludedMonths(cutoffMonth);
+  const areas = EXPORT_AREAS.map((area) => buildAreaData(accounts, area, includedMonths));
 
   const resumoGeral: DeviationResumoGeralRow[] = areas
     .flatMap((area) => area.groupRows.map((g) => ({ area: area.label, ...g })))
     .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
 
-  return { areas, resumoGeral };
+  return { areas, resumoGeral, cutoffMonth: cutoffMonth ?? null };
 }
 
 const SHEET_FORBIDDEN_CHARS = /[:\\/?*[\]]/g;
@@ -157,12 +184,12 @@ function sanitizeSheetName(name: string, used: Set<string>): string {
 function buildSheet(
   headers: string[],
   rows: (string | number)[][],
-  currencyCols: number[]
+  numberCols: number[]
 ): XLSX.WorkSheet {
   const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
   const range = XLSX.utils.decode_range(ws['!ref']!);
   for (let r = 1; r <= range.e.r; r++) {
-    for (const c of currencyCols) {
+    for (const c of numberCols) {
       const addr = XLSX.utils.encode_cell({ r, c });
       const cell = ws[addr];
       if (cell && typeof cell.v === 'number') {
@@ -170,7 +197,7 @@ function buildSheet(
       }
     }
   }
-  ws['!cols'] = headers.map((_, i) => ({ wch: currencyCols.includes(i) ? 16 : 30 }));
+  ws['!cols'] = headers.map((_, i) => ({ wch: numberCols.includes(i) ? 16 : 30 }));
   ws['!autofilter'] = {
     ref: XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: 0, c: headers.length - 1 } }),
   };
@@ -184,14 +211,23 @@ function sumRows(rows: DeviationGroupRow[]) {
   );
 }
 
+const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === month)?.label ?? month;
+
 /**
  * Gera e baixa o Excel de análise de desvios: uma aba "Resumo Geral" (todos os grupos de todas
  * as áreas, ordenados pelo maior |desvio|) e, por área, uma aba de resumo por grupo contábil
  * (Total Orçado / Total Realizado / Diferença / Justificativa) + uma aba de abertura com os
- * lançamentos que compõem cada grupo.
+ * lançamentos (mesma granularidade da visão "Planilha" do dashboard) que compõem cada grupo.
+ *
+ * Orçado e realizado são consolidados no mesmo intervalo de meses (por padrão, até o último mês
+ * com realizado importado) para que a diferença reflita um período comparável nos dois lados.
  */
-export function exportDeviationAnalysisWorkbook(accounts: AccountEntry[], fileName?: string): void {
-  const { areas, resumoGeral } = buildDeviationExportData(accounts);
+export function exportDeviationAnalysisWorkbook(
+  accounts: AccountEntry[],
+  cutoffMonth?: MonthKey | null,
+  fileName?: string
+): void {
+  const { areas, resumoGeral } = buildDeviationExportData(accounts, cutoffMonth);
   const wb = XLSX.utils.book_new();
   const usedNames = new Set<string>();
 
@@ -238,18 +274,27 @@ export function exportDeviationAnalysisWorkbook(accounts: AccountEntry[], fileNa
 
     const lancRows: (string | number)[][] = area.lancamentos.map((l) => [
       l.grupoContabil,
-      l.conta,
-      l.descricao,
       l.departamento,
       l.centroCusto,
-      l.orcado,
+      l.descricao,
+      l.produto,
+      l.complemento,
+      l.quantidade ?? '',
       l.realizado,
-      l.diferenca,
     ]);
     const lancSheet = buildSheet(
-      ['Grupo Contábil', 'Conta', 'Descrição', 'Departamento', 'Centro de Custo', 'Orçado', 'Realizado', 'Diferença'],
+      [
+        'Grupo Contábil',
+        'Departamento',
+        'Centro de Custo',
+        'Descrição',
+        'Produto',
+        'Complemento',
+        'Quantidade',
+        'Realizado',
+      ],
       lancRows,
-      [5, 6, 7]
+      [6, 7]
     );
     XLSX.utils.book_append_sheet(
       wb,
@@ -258,6 +303,9 @@ export function exportDeviationAnalysisWorkbook(accounts: AccountEntry[], fileNa
     );
   }
 
-  const resolvedFileName = fileName ?? `Analise_Desvios_Orcamentario_${new Date().toISOString().slice(0, 10)}.xlsx`;
+  const periodSuffix = cutoffMonth ? `ate_${cutoffMonth}` : 'consolidado';
+  const resolvedFileName = fileName ?? `Analise_Desvios_Orcamentario_${periodSuffix}.xlsx`;
   XLSX.writeFile(wb, resolvedFileName);
 }
+
+export { monthLabel as deviationExportMonthLabel };

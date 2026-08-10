@@ -122,4 +122,77 @@ describe('buildDeviationExportData', () => {
     const { resumoGeral } = buildDeviationExportData(accounts);
     expect(resumoGeral.map((r) => r.area)).toEqual(['Cana', 'Seringal']);
   });
+
+  it('consolida orçado e realizado apenas até o mês de corte, ignorando meses futuros em ambos os lados', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        // Orçado cobre a safra inteira (Abr a Dez), realizado só existe até Jun.
+        orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100, '2026-12': 100 },
+        realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts, '2026-06');
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+
+    // Orçado deve somar só Abr+Mai+Jun (300), não a safra inteira (500).
+    expect(pecuaria.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285, diferenca: -15 });
+  });
+
+  it('sem mês de corte, consolida todos os meses (comportamento "consolidado geral")', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        orcado: { '2026-04': 100, '2027-03': 400 },
+        realizado: { '2026-04': 90 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts, null);
+    const pecuaria = areas.find((a) => a.key === 'PECUARIA')!;
+    expect(pecuaria.groupRows[0]).toMatchObject({ orcado: 500, realizado: 90 });
+  });
+
+  it('abertura (lançamentos) usa a granularidade e as colunas da visão Planilha do dashboard, só com realizado', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.01-RATEIO DESENVOLVIMENTO HUMANO',
+        descricao: 'PPR',
+        departamento: 'ADMINISTRACAO',
+        centroCusto: 'RATEIO DESENVOLVIMENTO HUMANO',
+        nomeProduto: 'PPR',
+        complemento: '001.02.01.001',
+        orcado: { '2026-04': 0 },
+        realizado: { '2026-04': 177735 },
+      }),
+      // Entrada só de orçado sintético (sem realizado): não deve virar linha na abertura.
+      baseAccount({
+        id: 'SYN::ORCADO::1',
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.01-RATEIO DESENVOLVIMENTO HUMANO',
+        descricao: 'Orçado agregado',
+        orcado: { '2026-04': 5000 },
+        realizado: {},
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const admTrib = areas.find((a) => a.key === 'DESP_ADM_TRIB')!;
+
+    expect(admTrib.lancamentos).toHaveLength(1);
+    expect(admTrib.lancamentos[0]).toMatchObject({
+      departamento: 'ADMINISTRACAO',
+      centroCusto: 'RATEIO DESENVOLVIMENTO HUMANO',
+      descricao: 'PPR',
+      produto: 'PPR',
+      complemento: '001.02.01.001',
+      realizado: 177735,
+    });
+    expect(admTrib.lancamentos[0]).not.toHaveProperty('orcado');
+    expect(admTrib.lancamentos[0]).not.toHaveProperty('conta');
+  });
 });

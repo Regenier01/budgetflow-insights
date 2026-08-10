@@ -32,9 +32,18 @@ export default function Dashboard() {
     [availableMonths]
   );
 
+  const exportCutoffMonth = useMemo(
+    () => getDefaultRealizadoFilterMonth(accounts, useBudgetStore.getState().importedRealizadoBatches),
+    [accounts]
+  );
+
+  const exportCutoffLabel = exportCutoffMonth
+    ? MONTHS.find((m) => m.key === exportCutoffMonth)?.label
+    : null;
+
   const handleExportDesvios = () => {
     try {
-      exportDeviationAnalysisWorkbook(accounts);
+      exportDeviationAnalysisWorkbook(accounts, exportCutoffMonth);
       toast.success('Análise de desvios exportada com sucesso');
     } catch {
       toast.error('Erro ao gerar o Excel de análise de desvios');
@@ -75,7 +84,9 @@ export default function Dashboard() {
                 Exportar Análise de Desvios
               </Button>
               <span className="text-[11px] font-medium text-slate-400">
-                Consolidado da safra completa (independente do período selecionado acima)
+                {exportCutoffLabel
+                  ? `Orçado e realizado consolidados de Abr/26 até ${exportCutoffLabel} (independente do período selecionado acima)`
+                  : 'Consolidado da safra completa (independente do período selecionado acima)'}
               </span>
             </div>
           </div>
