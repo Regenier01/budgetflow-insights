@@ -25,6 +25,7 @@ import { isDespesaComVendasCode } from '@/data/despesasComVendasAccounts';
 import { isDespesasComVendasConsolidatedScopeDepartment } from '@/data/despesasComVendasDepartments';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { budgetDifference } from '@/lib/budgetVariation';
+import { resolveLatestRealizadoMonth } from '@/lib/deviationExport';
 import {
   tryParsePecuariaOrcadoBudgetRow,
   resolvePecuariaOrcadoGrupoDescricao,
@@ -62,31 +63,12 @@ export const getLastUploadedPeriod = (): MonthKey | null => {
   return stored && validMonthKeys.has(stored as MonthKey) ? (stored as MonthKey) : null;
 };
 
-/** Ignora meses com realizado residual (ex.: seed) frente ao mês dominante. */
-const REALIZADO_MONTH_MATERIALITY_RATIO = 0.02;
-
-const latestRealizadoMonthFromAggregates = (accounts: AccountEntry[]): MonthKey | null => {
-  const monthTotals = new Map<string, number>();
-  for (const account of accounts) {
-    for (const [month, v] of Object.entries(account.realizado)) {
-      if (!validMonthKeys.has(month as MonthKey)) continue;
-      monthTotals.set(month, (monthTotals.get(month) || 0) + Math.abs(Number(v) || 0));
-    }
-  }
-  if (monthTotals.size === 0) return null;
-  const maxSum = Math.max(...monthTotals.values());
-  if (maxSum === 0) return null;
-  const threshold = maxSum * REALIZADO_MONTH_MATERIALITY_RATIO;
-  const candidates = [...monthTotals.entries()]
-    .filter(([, t]) => t >= threshold)
-    .map(([m]) => m as MonthKey)
-    .sort();
-  return candidates.length ? candidates[candidates.length - 1]! : null;
-};
-
 /**
  * Mês inicial do filtro: último período importado em realizado (quando houver lotes),
- * senão o último mês com volume material em realizado (evita vencer por ruído em meses futuros no seed).
+ * senão o último mês da sequência contínua de meses com realizado a partir do início da safra
+ * (mesmo critério usado no corte do Relatório de Análise de Desvios Orçamentária — ver
+ * `resolveLatestRealizadoMonth` em `lib/deviationExport.ts`), para acompanhar o período mais
+ * recente com dado real, mesmo quando ele é pequeno (ex.: mês recém-fechado com poucos lançamentos).
  */
 export const getDefaultRealizadoFilterMonth = (
   accounts: AccountEntry[],
@@ -98,7 +80,7 @@ export const getDefaultRealizadoFilterMonth = (
     );
     return sorted[sorted.length - 1]!.period;
   }
-  return latestRealizadoMonthFromAggregates(accounts);
+  return resolveLatestRealizadoMonth(accounts);
 };
 
 // Função auxiliar para normalizar strings de busca
