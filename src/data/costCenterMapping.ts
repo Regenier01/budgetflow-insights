@@ -822,5 +822,9 @@ export const COST_CENTER_MAPPING = {
   "PREMIO SER HUMANO": {
     "centroCusto": "PREMIO SER HUMANO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2474": {
+    "centroCusto": "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2474",
+    "unidadeNegocio": "AGRÍCOLA - SORGO"
   }
 };
