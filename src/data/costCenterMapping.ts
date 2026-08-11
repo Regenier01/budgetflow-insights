@@ -810,5 +810,17 @@ export const COST_CENTER_MAPPING = {
   "COMPRA DE GADO": {
     "centroCusto": "COMPRA DE GADO",
     "unidadeNegocio": "PECUÁRIA"
+  },
+  "PROJETO DIA DOS PAIS": {
+    "centroCusto": "PROJETO DIA DOS PAIS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA SEMENTINHA": {
+    "centroCusto": "PROGRAMA SEMENTINHA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PREMIO SER HUMANO": {
+    "centroCusto": "PREMIO SER HUMANO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
