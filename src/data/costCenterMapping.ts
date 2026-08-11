@@ -826,5 +826,9 @@ export const COST_CENTER_MAPPING = {
   "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2474": {
     "centroCusto": "F9T30 SORGO SEMENTE A DEFINIR SORGO 02/2025 Ciclo:2474",
     "unidadeNegocio": "AGRÍCOLA - SORGO"
+  },
+  "M12088 - FIAT STRADA FREEDOM CD 1.3  FLEX": {
+    "centroCusto": "M12088 - FIAT STRADA FREEDOM CD 1.3  FLEX",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
