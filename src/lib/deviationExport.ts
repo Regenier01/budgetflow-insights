@@ -1,4 +1,4 @@
-import * as XLSX from 'xlsx';
+import ExcelJS from 'exceljs';
 import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
@@ -56,6 +56,8 @@ interface AreaSource {
   sheetLabel: string;
   /** Seleciona os lançamentos (nível 5) desta área/sub-área. */
   match: (entry: AccountEntry) => boolean;
+  /** Prefixos de código de grupo contábil a excluir desta área (ex.: '3.' para descartar grupos duplicados de outra classificação). */
+  excludeGrupoContabilPrefixes?: string[];
 }
 
 const normalizeMatchText = (value?: string) =>
@@ -109,7 +111,10 @@ const isPecuariaGeneticaEntry = (entry: Pick<AccountEntry, 'departamento'>): boo
 
 /**
  * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
- * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária é
+ * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária,
+ * Agrícola e Seringal descartam grupos contábeis com código iniciado em "3." (classificação
+ * duplicada dos mesmos custos); Despesas Administrativas Gerência Financeiro e Gerência RH
+ * descartam os iniciados em "4." pelo mesmo motivo. Pecuária é
  * dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade — Genética e Confinamento
  * saem primeiro do total, o resto cai em Pasto), e Despesas Administrativas e Tributárias em 3
  * sub-áreas (Gerência Financeiro / RH / Despesas Tributárias), replicando as mesmas separações já
@@ -121,6 +126,7 @@ const EXPORT_AREAS: AreaSource[] = [
     label: 'Pecuária — Genética',
     sheetLabel: 'Pecuária - Genet.',
     match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && isPecuariaGeneticaEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
   {
     key: 'PECUARIA_CONFINAMENTO',
@@ -128,6 +134,7 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Pecuária - Confin',
     match: (a) =>
       a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && isConfinamentoEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
   {
     key: 'PECUARIA_PASTO',
@@ -135,9 +142,22 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Pecuária - Pasto',
     match: (a) =>
       a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && !isConfinamentoEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
-  { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
-  { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },
+  {
+    key: 'AGRICOLA',
+    label: 'Agrícola',
+    sheetLabel: 'Agrícola',
+    match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a),
+    excludeGrupoContabilPrefixes: ['3.'],
+  },
+  {
+    key: 'SERINGAL',
+    label: 'Seringal',
+    sheetLabel: 'Seringal',
+    match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a),
+    excludeGrupoContabilPrefixes: ['3.'],
+  },
   {
     key: 'DESP_ADM_TRIB_FINANCEIRO',
     label: 'Despesas Administrativas — Gerência Financeiro',
@@ -147,6 +167,7 @@ const EXPORT_AREAS: AreaSource[] = [
       isNotOutrasReceitas(a) &&
       !isTributariaGroupEntry(a) &&
       !isGerenciaRhCostCenter(a.centroCusto),
+    excludeGrupoContabilPrefixes: ['4.'],
   },
   {
     key: 'DESP_ADM_TRIB_RH',
@@ -157,6 +178,7 @@ const EXPORT_AREAS: AreaSource[] = [
       isNotOutrasReceitas(a) &&
       !isTributariaGroupEntry(a) &&
       isGerenciaRhCostCenter(a.centroCusto),
+    excludeGrupoContabilPrefixes: ['4.'],
   },
   {
     key: 'DESP_ADM_TRIB_TRIBUTARIAS',
@@ -231,11 +253,13 @@ function buildAreaData(
   const lancamentos: DeviationLancamentoRow[] = [];
 
   for (const entry of entries) {
+    const grupoContabil = resolveGrupoContabilLabel(entry);
+    if (area.excludeGrupoContabilPrefixes?.some((prefix) => grupoContabil.startsWith(prefix))) continue;
+
     const orcado = sumMonths(entry.orcado, includedMonths);
     const realizado = sumMonths(entry.realizado, includedMonths);
     if (orcado === 0 && realizado === 0) continue;
 
-    const grupoContabil = resolveGrupoContabilLabel(entry);
     const agg = groups.get(grupoContabil) ?? { orcado: 0, realizado: 0 };
     agg.orcado += orcado;
     agg.realizado += realizado;
@@ -317,27 +341,66 @@ function sanitizeSheetName(name: string, used: Set<string>): string {
   return candidate;
 }
 
-function buildSheet(
+const HEADER_FILL: ExcelJS.Fill = {
+  type: 'pattern',
+  pattern: 'solid',
+  fgColor: { argb: 'FFED7D31' },
+};
+
+const THIN_BORDER: Partial<ExcelJS.Borders> = {
+  top: { style: 'thin', color: { argb: 'FF000000' } },
+  left: { style: 'thin', color: { argb: 'FF000000' } },
+  bottom: { style: 'thin', color: { argb: 'FF000000' } },
+  right: { style: 'thin', color: { argb: 'FF000000' } },
+};
+
+/** Adiciona uma aba com cabeçalho laranja em negrito, bordas em todas as células e a última linha (total) em negrito. */
+function addSheet(
+  wb: ExcelJS.Workbook,
+  sheetName: string,
   headers: string[],
   rows: (string | number)[][],
-  numberCols: number[]
-): XLSX.WorkSheet {
-  const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
-  const range = XLSX.utils.decode_range(ws['!ref']!);
-  for (let r = 1; r <= range.e.r; r++) {
-    for (const c of numberCols) {
-      const addr = XLSX.utils.encode_cell({ r, c });
-      const cell = ws[addr];
-      if (cell && typeof cell.v === 'number') {
-        cell.z = '#,##0.00';
+  numberCols: number[],
+  totalRow = false
+): void {
+  const ws = wb.addWorksheet(sheetName);
+  ws.columns = headers.map((header, i) => ({ header, width: numberCols.includes(i) ? 16 : 30 }));
+
+  const headerRow = ws.getRow(1);
+  headerRow.eachCell((cell) => {
+    cell.fill = HEADER_FILL;
+    cell.font = { bold: true, color: { argb: 'FF000000' } };
+    cell.border = THIN_BORDER;
+  });
+
+  rows.forEach((rowValues, i) => {
+    const isTotal = totalRow && i === rows.length - 1;
+    const row = ws.addRow(rowValues);
+    row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+      cell.border = THIN_BORDER;
+      if (isTotal) cell.font = { bold: true };
+      if (numberCols.includes(colNumber - 1) && typeof cell.value === 'number') {
+        cell.numFmt = '#,##0.00';
       }
-    }
-  }
-  ws['!cols'] = headers.map((_, i) => ({ wch: numberCols.includes(i) ? 16 : 30 }));
-  ws['!autofilter'] = {
-    ref: XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: 0, c: headers.length - 1 } }),
-  };
-  return ws;
+    });
+  });
+
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
+}
+
+async function downloadWorkbook(wb: ExcelJS.Workbook, fileName: string): Promise<void> {
+  const buffer = await wb.xlsx.writeBuffer();
+  const blob = new Blob([buffer], {
+    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 function sumRows(rows: DeviationGroupRow[]) {
@@ -361,13 +424,13 @@ const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === mon
  * para forçar o consolidado da safra inteira) — para que a diferença reflita um período
  * comparável nos dois lados.
  */
-export function exportDeviationAnalysisWorkbook(
+export async function exportDeviationAnalysisWorkbook(
   accounts: AccountEntry[],
   cutoffMonth?: MonthKey | null,
   fileName?: string
-): void {
+): Promise<void> {
   const { areas, resumoGeral, cutoffMonth: resolvedCutoff } = buildDeviationExportData(accounts, cutoffMonth);
-  const wb = XLSX.utils.book_new();
+  const wb = new ExcelJS.Workbook();
   const usedNames = new Set<string>();
 
   const totalGeral = sumRows(resumoGeral);
@@ -387,12 +450,14 @@ export function exportDeviationAnalysisWorkbook(
     totalGeral.realizado - totalGeral.orcado,
     '',
   ]);
-  const resumoGeralSheet = buildSheet(
+  addSheet(
+    wb,
+    sanitizeSheetName('Resumo Geral', usedNames),
     ['Área', 'Grupo Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
     resumoGeralRows,
-    [2, 3, 4]
+    [2, 3, 4],
+    true
   );
-  XLSX.utils.book_append_sheet(wb, resumoGeralSheet, sanitizeSheetName('Resumo Geral', usedNames));
 
   for (const area of areas) {
     const totals = sumRows(area.groupRows);
@@ -404,12 +469,14 @@ export function exportDeviationAnalysisWorkbook(
       '',
     ]);
     resumoRows.push(['TOTAL', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
-    const resumoSheet = buildSheet(
+    addSheet(
+      wb,
+      sanitizeSheetName(`${area.sheetLabel} - Resumo`, usedNames),
       ['Grupo Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
       resumoRows,
-      [1, 2, 3]
+      [1, 2, 3],
+      true
     );
-    XLSX.utils.book_append_sheet(wb, resumoSheet, sanitizeSheetName(`${area.sheetLabel} - Resumo`, usedNames));
 
     const lancRows: (string | number)[][] = area.lancamentos.map((l) => [
       l.grupoContabil,
@@ -421,7 +488,9 @@ export function exportDeviationAnalysisWorkbook(
       l.quantidade ?? '',
       l.realizado,
     ]);
-    const lancSheet = buildSheet(
+    addSheet(
+      wb,
+      sanitizeSheetName(`${area.sheetLabel} - Lançamentos`, usedNames),
       [
         'Grupo Contábil',
         'Departamento',
@@ -435,16 +504,11 @@ export function exportDeviationAnalysisWorkbook(
       lancRows,
       [6, 7]
     );
-    XLSX.utils.book_append_sheet(
-      wb,
-      lancSheet,
-      sanitizeSheetName(`${area.sheetLabel} - Lançamentos`, usedNames)
-    );
   }
 
   const periodSuffix = resolvedCutoff ? `ate_${resolvedCutoff}` : 'consolidado';
   const resolvedFileName = fileName ?? `Analise_Desvios_Custos_${periodSuffix}.xlsx`;
-  XLSX.writeFile(wb, resolvedFileName);
+  await downloadWorkbook(wb, resolvedFileName);
 }
 
 export { monthLabel as deviationExportMonthLabel };

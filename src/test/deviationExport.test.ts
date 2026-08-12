@@ -20,15 +20,15 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
-        codigo: '3.4.03.01.0001',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
+        codigo: '4.1.03.01.0001',
         orcado: { '2026-04': 1000, '2026-05': 500 },
         realizado: { '2026-04': 1200, '2026-05': 400 },
       }),
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
-        codigo: '3.4.03.01.0002',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
+        codigo: '4.1.03.01.0002',
         orcado: { '2026-04': 200 },
         realizado: { '2026-04': 100 },
       }),
@@ -39,7 +39,7 @@ describe('buildDeviationExportData', () => {
 
     expect(pecuaria.groupRows).toHaveLength(1);
     expect(pecuaria.groupRows[0]).toMatchObject({
-      grupoContabil: '3.4.03.01-DESPESAS COM PESSOAL',
+      grupoContabil: '4.1.03.01-DESPESAS COM PESSOAL',
       orcado: 1700,
       realizado: 1700,
       diferenca: 0,
@@ -51,13 +51,13 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'AGRICOLA',
-        grupoContabilN9: '3.4.01.01-GRUPO PEQUENO',
+        grupoContabilN9: '4.1.01.01-GRUPO PEQUENO',
         orcado: { '2026-04': 100 },
         realizado: { '2026-04': 110 },
       }),
       baseAccount({
         atividade: 'AGRICOLA',
-        grupoContabilN9: '3.4.01.02-GRUPO GRANDE',
+        grupoContabilN9: '4.1.01.02-GRUPO GRANDE',
         orcado: { '2026-04': 1000 },
         realizado: { '2026-04': 5000 },
       }),
@@ -67,8 +67,8 @@ describe('buildDeviationExportData', () => {
     const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
 
     expect(agricola.groupRows.map((g) => g.grupoContabil)).toEqual([
-      '3.4.01.02-GRUPO GRANDE',
-      '3.4.01.01-GRUPO PEQUENO',
+      '4.1.01.02-GRUPO GRANDE',
+      '4.1.01.01-GRUPO PEQUENO',
     ]);
   });
 
@@ -167,13 +167,13 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'SERINGAL',
-        grupoContabilN9: '3.4.02.01-GRUPO SERINGAL',
+        grupoContabilN9: '4.1.02.01-GRUPO SERINGAL',
         orcado: { '2026-04': 100 },
         realizado: { '2026-04': 200 },
       }),
       baseAccount({
         atividade: 'AGRICOLA',
-        grupoContabilN9: '3.4.02.02-GRUPO AGRICOLA',
+        grupoContabilN9: '4.1.02.02-GRUPO AGRICOLA',
         orcado: { '2026-04': 100 },
         realizado: { '2026-04': 1100 },
       }),
@@ -210,7 +210,7 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
         // Orçado cobre a safra inteira (Abr a Dez), realizado só existe até Jun.
         orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100, '2026-12': 100 },
         realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100 },
@@ -228,7 +228,7 @@ describe('buildDeviationExportData', () => {
     const accountsAteJunho: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
         orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100 },
         realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100 },
       }),
@@ -244,7 +244,7 @@ describe('buildDeviationExportData', () => {
     const accountsComJulho: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
         orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100 },
         realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100, '2026-07': 1 },
       }),
@@ -260,7 +260,7 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
         orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100 },
         // Abr, Mai, Jun com dado real; Jul-Dez zerados; um resíduo isolado aparece em Jan/27.
         realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100, '2027-01': 5 },
@@ -277,7 +277,7 @@ describe('buildDeviationExportData', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         atividade: 'PECUARIA',
-        grupoContabilN9: '3.4.03.01-DESPESAS COM PESSOAL',
+        grupoContabilN9: '4.1.03.01-DESPESAS COM PESSOAL',
         orcado: { '2026-04': 100, '2027-03': 400 },
         realizado: { '2026-04': 90 },
       }),
@@ -416,5 +416,93 @@ describe('buildDeviationExportData', () => {
     });
     expect(admTrib.lancamentos[0]).not.toHaveProperty('orcado');
     expect(admTrib.lancamentos[0]).not.toHaveProperty('conta');
+  });
+
+  it('descarta grupos contábeis "3." em Pecuária, Agrícola e Seringal — ficam só os grupos "4." (evita duplicidade)', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '3.4.02.01-CUSTO DE PESSOAL',
+        departamento: 'JOIA - PECUARIA',
+        orcado: { '2026-04': 500 },
+        realizado: { '2026-04': 450 },
+      }),
+      baseAccount({
+        atividade: 'PECUARIA',
+        tipo: 'C',
+        grupoContabilN9: '4.1.01.01-CUSTO DE PESSOAL',
+        departamento: 'JOIA - PECUARIA',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 90 },
+      }),
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'D',
+        grupoContabilN9: '3.4.02.02-SERVICOS DE TERCEIROS',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+      baseAccount({
+        atividade: 'SERINGAL',
+        tipo: 'D',
+        grupoContabilN9: '3.2.01.01-IMPOSTOS SOBRE RECEITA BRUTA',
+        orcado: { '2026-04': 200 },
+        realizado: { '2026-04': 190 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const pasto = areas.find((a) => a.key === 'PECUARIA_PASTO')!;
+    const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
+    const seringal = areas.find((a) => a.key === 'SERINGAL')!;
+
+    expect(pasto.groupRows).toMatchObject([{ grupoContabil: '4.1.01.01-CUSTO DE PESSOAL', orcado: 100, realizado: 90 }]);
+    expect(agricola.groupRows).toHaveLength(0);
+    expect(seringal.groupRows).toHaveLength(0);
+  });
+
+  it('descarta grupos contábeis "4." em Despesas Administrativas Gerência Financeiro e Gerência RH — ficam só os grupos "3."', () => {
+    const accounts: AccountEntry[] = [
+      // Gerência Financeiro (catch-all): um grupo "3." válido e um "4." que deve ser descartado.
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.02-SERVICOS DE TERCEIROS',
+        centroCusto: 'DIRETORIA',
+        orcado: { '2026-04': 300 },
+        realizado: { '2026-04': 280 },
+      }),
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '4.1.01.02-SERVICOS DE TERCEIROS',
+        centroCusto: 'DIRETORIA',
+        orcado: { '2026-04': 500 },
+        realizado: { '2026-04': 450 },
+      }),
+      // Gerência RH: mesma regra.
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '3.4.01.01-CUSTO DE PESSOAL',
+        centroCusto: 'PESSOAL',
+        orcado: { '2026-04': 200 },
+        realizado: { '2026-04': 190 },
+      }),
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB',
+        grupoContabilN9: '4.1.01.01-CUSTO DE PESSOAL',
+        centroCusto: 'PESSOAL',
+        orcado: { '2026-04': 700 },
+        realizado: { '2026-04': 650 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const financeiro = areas.find((a) => a.key === 'DESP_ADM_TRIB_FINANCEIRO')!;
+    const rh = areas.find((a) => a.key === 'DESP_ADM_TRIB_RH')!;
+
+    expect(financeiro.groupRows).toMatchObject([
+      { grupoContabil: '3.4.01.02-SERVICOS DE TERCEIROS', orcado: 300, realizado: 280 },
+    ]);
+    expect(rh.groupRows).toMatchObject([{ grupoContabil: '3.4.01.01-CUSTO DE PESSOAL', orcado: 200, realizado: 190 }]);
   });
 });
