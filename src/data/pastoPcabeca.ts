@@ -23,5 +23,6 @@ export const PASTO_PCABECA_ORCADO: Partial<Record<MonthKey, number>> = {
 export const PASTO_PCABECA_REALIZADO: Partial<Record<MonthKey, number>> = {
   "2026-04": 109.16935630099728,
   "2026-05": 97.91825185293366,
-  "2026-06": 133.66864852052305
+  "2026-06": 133.66864852052305,
+  "2026-07": 126.04780949985326
 };
