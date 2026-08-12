@@ -56,6 +56,8 @@ interface AreaSource {
   sheetLabel: string;
   /** Seleciona os lançamentos (nível 5) desta área/sub-área. */
   match: (entry: AccountEntry) => boolean;
+  /** Prefixos de código de grupo contábil a excluir desta área (ex.: '3.' para descartar grupos duplicados de outra classificação). */
+  excludeGrupoContabilPrefixes?: string[];
 }
 
 const normalizeMatchText = (value?: string) =>
@@ -109,7 +111,10 @@ const isPecuariaGeneticaEntry = (entry: Pick<AccountEntry, 'departamento'>): boo
 
 /**
  * Áreas do export, na mesma divisão usada pelo restante do dashboard (tiles da Home / páginas de
- * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária é
+ * atividade) — exceto Cana e Encargos Financeiros, que não entram neste relatório. Pecuária,
+ * Agrícola e Seringal descartam grupos contábeis com código iniciado em "3." (classificação
+ * duplicada dos mesmos custos); Despesas Administrativas Gerência Financeiro e Gerência RH
+ * descartam os iniciados em "4." pelo mesmo motivo. Pecuária é
  * dividida em Genética, Confinamento e Pasto (nessa ordem de prioridade — Genética e Confinamento
  * saem primeiro do total, o resto cai em Pasto), e Despesas Administrativas e Tributárias em 3
  * sub-áreas (Gerência Financeiro / RH / Despesas Tributárias), replicando as mesmas separações já
@@ -121,6 +126,7 @@ const EXPORT_AREAS: AreaSource[] = [
     label: 'Pecuária — Genética',
     sheetLabel: 'Pecuária - Genet.',
     match: (a) => a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && isPecuariaGeneticaEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
   {
     key: 'PECUARIA_CONFINAMENTO',
@@ -128,6 +134,7 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Pecuária - Confin',
     match: (a) =>
       a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && isConfinamentoEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
   {
     key: 'PECUARIA_PASTO',
@@ -135,9 +142,22 @@ const EXPORT_AREAS: AreaSource[] = [
     sheetLabel: 'Pecuária - Pasto',
     match: (a) =>
       a.atividade === 'PECUARIA' && isNotOutrasReceitas(a) && !isPecuariaGeneticaEntry(a) && !isConfinamentoEntry(a),
+    excludeGrupoContabilPrefixes: ['3.'],
   },
-  { key: 'AGRICOLA', label: 'Agrícola', sheetLabel: 'Agrícola', match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a) },
-  { key: 'SERINGAL', label: 'Seringal', sheetLabel: 'Seringal', match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a) },
+  {
+    key: 'AGRICOLA',
+    label: 'Agrícola',
+    sheetLabel: 'Agrícola',
+    match: (a) => a.atividade === 'AGRICOLA' && isNotOutrasReceitas(a),
+    excludeGrupoContabilPrefixes: ['3.'],
+  },
+  {
+    key: 'SERINGAL',
+    label: 'Seringal',
+    sheetLabel: 'Seringal',
+    match: (a) => a.atividade === 'SERINGAL' && isNotOutrasReceitas(a),
+    excludeGrupoContabilPrefixes: ['3.'],
+  },
   {
     key: 'DESP_ADM_TRIB_FINANCEIRO',
     label: 'Despesas Administrativas — Gerência Financeiro',
@@ -147,6 +167,7 @@ const EXPORT_AREAS: AreaSource[] = [
       isNotOutrasReceitas(a) &&
       !isTributariaGroupEntry(a) &&
       !isGerenciaRhCostCenter(a.centroCusto),
+    excludeGrupoContabilPrefixes: ['4.'],
   },
   {
     key: 'DESP_ADM_TRIB_RH',
@@ -157,6 +178,7 @@ const EXPORT_AREAS: AreaSource[] = [
       isNotOutrasReceitas(a) &&
       !isTributariaGroupEntry(a) &&
       isGerenciaRhCostCenter(a.centroCusto),
+    excludeGrupoContabilPrefixes: ['4.'],
   },
   {
     key: 'DESP_ADM_TRIB_TRIBUTARIAS',
@@ -231,11 +253,13 @@ function buildAreaData(
   const lancamentos: DeviationLancamentoRow[] = [];
 
   for (const entry of entries) {
+    const grupoContabil = resolveGrupoContabilLabel(entry);
+    if (area.excludeGrupoContabilPrefixes?.some((prefix) => grupoContabil.startsWith(prefix))) continue;
+
     const orcado = sumMonths(entry.orcado, includedMonths);
     const realizado = sumMonths(entry.realizado, includedMonths);
     if (orcado === 0 && realizado === 0) continue;
 
-    const grupoContabil = resolveGrupoContabilLabel(entry);
     const agg = groups.get(grupoContabil) ?? { orcado: 0, realizado: 0 };
     agg.orcado += orcado;
     agg.realizado += realizado;
