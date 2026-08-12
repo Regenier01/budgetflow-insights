@@ -39,9 +39,9 @@ export default function Dashboard() {
     ? MONTHS.find((m) => m.key === exportCutoffMonth)?.label
     : null;
 
-  const handleExportDesvios = () => {
+  const handleExportDesvios = async () => {
     try {
-      exportDeviationAnalysisWorkbook(accounts);
+      await exportDeviationAnalysisWorkbook(accounts);
       toast.success('Análise de desvios exportada com sucesso');
     } catch {
       toast.error('Erro ao gerar o Excel de análise de desvios');
