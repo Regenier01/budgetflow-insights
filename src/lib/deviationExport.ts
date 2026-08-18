@@ -19,9 +19,10 @@ export interface DeviationGroupRow {
   diferenca: number;
 }
 
-/** Um lançamento na mesma granularidade exibida na visão "Planilha" do dashboard (departamento, centro de custo, descrição, produto, complemento). */
+/** Um lançamento na mesma granularidade exibida na visão "Planilha" do dashboard (departamento, centro de custo, descrição, produto, complemento), aberto por mês. */
 export interface DeviationLancamentoRow {
   grupoContabil: string;
+  mes: MonthKey;
   departamento: string;
   centroCusto: string;
   descricao: string;
@@ -265,18 +266,22 @@ function buildAreaData(
     agg.realizado += realizado;
     groups.set(grupoContabil, agg);
 
-    // Abertura: mesma granularidade e colunas da visão "Planilha" já exibida no dashboard.
-    if (realizado !== 0) {
-      const quantidade = entry.quantidade ? sumMonths(entry.quantidade, includedMonths) : 0;
+    // Abertura: mesma granularidade e colunas da visão "Planilha" já exibida no dashboard, uma linha por mês com realizado.
+    for (const month of MONTHS) {
+      if (includedMonths && !includedMonths.has(month.key)) continue;
+      const monthRealizado = Number(entry.realizado[month.key]) || 0;
+      if (monthRealizado === 0) continue;
+      const monthQuantidade = entry.quantidade ? Number(entry.quantidade[month.key]) || 0 : 0;
       lancamentos.push({
         grupoContabil,
+        mes: month.key,
         departamento: entry.departamento || '',
         centroCusto: entry.centroCusto || '',
         descricao: entry.descricao || '',
         produto: entry.nomeProduto || '',
         complemento: entry.complemento || '',
-        quantidade: quantidade !== 0 ? quantidade : null,
-        realizado,
+        quantidade: monthQuantidade !== 0 ? monthQuantidade : null,
+        realizado: monthRealizado,
       });
     }
   }
@@ -290,11 +295,14 @@ function buildAreaData(
     }))
     .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
 
-  // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, maior |Realizado| primeiro (igual à Planilha do dashboard).
+  // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, em ordem cronológica de mês e, no mesmo mês, maior |Realizado| primeiro (igual à Planilha do dashboard).
   const groupRank = new Map(groupRows.map((g, i) => [g.grupoContabil, i]));
+  const monthIndex = new Map(MONTHS.map((m, i) => [m.key, i]));
   lancamentos.sort((a, b) => {
     const rankDiff = (groupRank.get(a.grupoContabil) ?? 0) - (groupRank.get(b.grupoContabil) ?? 0);
     if (rankDiff !== 0) return rankDiff;
+    const monthDiff = (monthIndex.get(a.mes) ?? 0) - (monthIndex.get(b.mes) ?? 0);
+    if (monthDiff !== 0) return monthDiff;
     return Math.abs(b.realizado) - Math.abs(a.realizado);
   });
 
@@ -480,6 +488,7 @@ export async function exportDeviationAnalysisWorkbook(
 
     const lancRows: (string | number)[][] = area.lancamentos.map((l) => [
       l.grupoContabil,
+      monthLabel(l.mes),
       l.departamento,
       l.centroCusto,
       l.descricao,
@@ -493,6 +502,7 @@ export async function exportDeviationAnalysisWorkbook(
       sanitizeSheetName(`${area.sheetLabel} - Lançamentos`, usedNames),
       [
         'Grupo Contábil',
+        'Mês',
         'Departamento',
         'Centro de Custo',
         'Descrição',
@@ -502,7 +512,7 @@ export async function exportDeviationAnalysisWorkbook(
         'Realizado',
       ],
       lancRows,
-      [6, 7]
+      [7, 8]
     );
   }
 
