@@ -44,7 +44,9 @@ describe('buildDeviationExportData', () => {
       realizado: 1700,
       diferenca: 0,
     });
-    expect(pecuaria.lancamentos).toHaveLength(2);
+    // 3 linhas: o primeiro lançamento abre em Abr + Mai (2 meses com realizado), o segundo só em Abr.
+    expect(pecuaria.lancamentos).toHaveLength(3);
+    expect(pecuaria.lancamentos.map((l) => l.mes)).toEqual(['2026-04', '2026-04', '2026-05']);
   });
 
   it('ordena os grupos de cada área pelo maior desvio absoluto', () => {
@@ -407,6 +409,7 @@ describe('buildDeviationExportData', () => {
 
     expect(admTrib.lancamentos).toHaveLength(1);
     expect(admTrib.lancamentos[0]).toMatchObject({
+      mes: '2026-04',
       departamento: 'ADMINISTRACAO',
       centroCusto: 'RATEIO DESENVOLVIMENTO HUMANO',
       descricao: 'PPR',
