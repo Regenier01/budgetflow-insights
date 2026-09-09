@@ -830,5 +830,25 @@ export const COST_CENTER_MAPPING = {
   "M12088 - FIAT STRADA FREEDOM CD 1.3  FLEX": {
     "centroCusto": "M12088 - FIAT STRADA FREEDOM CD 1.3  FLEX",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO ACADEMIA DE LIDERES 2026/2027": {
+    "centroCusto": "PROJETO ACADEMIA DE LIDERES 2026/2027",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA DE ESTAGIO RAIZES DO FUTURO": {
+    "centroCusto": "PROGRAMA DE ESTAGIO RAIZES DO FUTURO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO CARTOES DE ANIVERSARIO": {
+    "centroCusto": "PROJETO CARTOES DE ANIVERSARIO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO DIA DO TRABALHADOR": {
+    "centroCusto": "PROJETO DIA DO TRABALHADOR",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO TRATO": {
+    "centroCusto": "RATEIO TRATO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
