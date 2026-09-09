@@ -1,0 +1,188 @@
+[33mbbba199[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m MUDANÇA-ORÇA-PEC
+[33m5967a03[m RATEIOS-OK
+[33m8689bc6[m Merge pull request #9 from Regenier01/claude/git-repo-setup-check-jphhig
+[33me40c73e[m Adiciona coluna de Mês nos lançamentos do Excel de análise de desvios
+[33m009af41[m Merge pull request #8 from Regenier01/claude/verificar-novos-commits-2svflj
+[33m86e53e9[m Descarta grupos contábeis duplicados no relatório de desvios
+[33m4439921[m Estiliza o Excel de análise de desvios com exceljs
+[33m86d77f7[m Merge pull request #7 from Regenier01/claude/verificar-novos-commits-2svflj
+[33m5bee317[m Altera texto da tela inicial de LAGES para LAGE
+[33m28b49f8[m FINAL
+[33m5e6943d[m RECEITAS-OK
+[33mbc176ab[m DESPESASTRIBUT+CUSTOS-OK
+[33mf4a9a8f[m SERING+ENCARG-OK
+[33m60e460f[m AGRIC-OK
+[33mb3e634d[m CUSTOS-PEC-OK
+[33ma1a53ef[m CUSTOS-PEC
+[33m7d2faac[m RATEIOS
+[33md31a980[m Corrige detecção automática do último mês realizado no filtro de data (#6)
+[33mfee999f[m Detecta automaticamente o período do Excel de desvios pelos dados
+[33m3ee28f7[m DESP-ADM-07
+[33m4ae3900[m Divide Pecuária em Genética, Confinamento e Pasto no Excel de análise de desvios
+[33m4b651d0[m Restringe o Excel de análise de desvios a custos e despesas
+[33m0703678[m Adiciona exportação de Excel com análise de desvios orçamentários
+[33m110208f[m Corrigir texto da tela inicial de LAGE para LAGES (#1)
+[33ma6c3e2a[m FINALIZADO
+[33m5415618[m CUSTOS-OK
+[33mee1e873[m CUSTOS-OK
+[33mc8a774d[m RECEITAS-OK
+[33m090fb07[m CUSTOS/DESPESAS-OK
+[33mfc641f7[m RATEIOS-06
+[33ma954bfb[m QUASE-OK
+[33m975df08[m CUST-AGRIC-OK
+[33m5ea70e0[m CUST-SERING-OK
+[33ma4aa0d1[m RECEITAS+IMPOST-OK
+[33m5d8f33d[m RECEITAS-OK
+[33ma10a7a3[m DESP-VENDAS+ENCARG-OK
+[33m11c1b1a[m DESP-TRIBUT-OK
+[33ma3b0b2a[m CANA+DESPADM-OK
+[33m37395ba[m CUSTOS-AGRIC-05-OK
+[33m0b6a8a6[m CUSTOS-SERING-05-OK
+[33m7b71d34[m CUSTOS-PEC-05-OK
+[33m2855901[m COLUNA-COMPLEMENTO
+[33mdcf9a9c[m DESP.TRIBUT/PARA-SERING
+[33m169c98f[m GOVER_CORPO_OK
+[33mdecca56[m FONTE_DESPESASADM
+[33m1989c63[m SEPARACAO_RATEIOS_1_18-34
+[33m0cc42e5[m SEPARACAO_2025-2026-AGRIC
+[33ma190a04[m AJUSTES-SINAISVARIACAO
+[33ma054093[m AJUSTES-LAYOUT-OK
+[33m857c05d[m AJUSTES-LAYOUT
+[33m653e047[m FILTRO-SERINGAL
+[33m08c8082[m ORÇA-SERINGAL-OK
+[33md8b1f42[m PECUÁRIA-OK
+[33mc8d66d9[m RECEITA-GENÉTICA-PEC-OK
+[33mb6cee1e[m RECEITAS-PEC-OK
+[33m0ed4d5b[m AJUSTES-LAYOUT-AJUSTESLAYOUT
+[33m6179a24[m AJUSTES-LAYOUT-QTDERECEITAS
+[33mb8b2e7b[m AJUSTES-LAYOUT-LEONARDOPEDIU
+[33m5fdbdb7[m AJUSTES-LAYOUT
+[33m097a1f5[m AJUSTES-LAYOUT
+[33mf7db4b5[m FORMATO-ORÇADO-DESPESASADM-OK
+[33m7a14ea7[m FORMATO-ORÇADO-OK
+[33m10180e3[m icones
+[33mcf89c40[m ajusterateios
+[33mede3fe9[m custop/kg seringal+ cores-ok
+[33m774ca63[m percentuais-dolado
+[33m0410fca[m ajuste
+[33m26f2d1a[m custo/cabeça
+[33mb527c97[m sinalreceitasok
+[33m81831d4[m %variacao
+[33mbe8136f[m diarias-ok
+[33m632e71e[m realizado-rateios
+[33m338742c[m realizado-desptribut
+[33m688455f[m atualizacao-filtros
+[33m2ed1c34[m correcoes-realizado-ok1
+[33m0b3c1f5[m correcoes-realizado-ok
+[33mfd779cc[m realizado-OK?
+[33mef744ee[m realizado-custosok
+[33m9f67422[m realizado-pecuaria-certo
+[33m30d3b9c[m MUDANÇA ANCORAS ORÇADO
+[33mab6f389[m IMPORTS ORÇADO FINALIZADO
+[33mf53b182[m AJUSTE-LAYOUT
+[33mbcec4d5[m ORÇA-RECEITAS_AGRICOLA
+[33m352778b[m ORÇA-RECEITAS_SERINGAL
+[33mbb66120[m ORÇA-RECEITAS_PECUARIA
+[33ma141660[m ORÇA-OUTRAS.RECEITAS
+[33me7a0e5d[m ATT-LAYOUT
+[33m96a4b65[m DESP.VENDAS-ORÇA
+[33m9b35f42[m DESP.VENDAS-ORÇA
+[33m3a60a70[m ENCARGOS-ORÇA
+[33mf03fb86[m ORÇA-DESP-TRIBUT-OK
+[33md872453[m AGRICOLA-ORÇA OK
+[33mcd97294[m AGRICOLA-ORÇA
+[33md173ac2[m AGRICOLA-ORÇA
+[33m34e6f14[m QUASELA
+[33m3321d6d[m QUASELA
+[33mc619784[m TOPI
+[33m71fb345[m TOPI
+[33m9f0d004[m Adicionou cards Resumo por tipo
+[33me49438a[m Changes
+[33m52aaaf2[m Changes
+[33m2319cae[m Criou página inicial tipo dashboard
+[33m2563bef[m Changes
+[33m87b0207[m Changes
+[33mca4eb79[m Changes
+[33m2a0a731[m Changes
+[33mf9238d3[m ORÇA-PEC
+[33m153deea[m ORÇA-PEC
+[33m8046b18[m ORÇA-PEC
+[33mee10d65[m ORÇA-DESPESAS.ADM-FINAL
+[33m993cf6f[m ORÇA-DESPESAS.ADM
+[33mc75b5c8[m Custos-Seringal
+[33m6e8daba[m FOI PORRRR4
+[33m88d681a[m 20.04
+[33macdebce[m Corrigiu mapeamento dos meses
+[33mdd12e92[m Changes
+[33maf1ac95[m Corrigiu erro de build e dados
+[33m5e00a68[m Changes
+[33m1f410b3[m Changes
+[33m61e74b6[m ORÇADO
+[33m679454e[m BEM TOP
+[33m53c0ab6[m BEM TOP
+[33m2157c4e[m BEM TOP
+[33m0f75f89[m BEM TOP
+[33m4531385[m BEM TOP
+[33m17cf6fc[m 17.04
+[33m3cd48e6[m 17.04
+[33mc144353[m 17.04
+[33mb6aa934[m 17.04
+[33md90202d[m 17.04
+[33m2d8ddfc[m 17.04
+[33mcc2ba2b[m AGORA
+[33m01715f8[m AGORA
+[33m06b7080[m AGORA
+[33md2af384[m AGORA
+[33m54a2a00[m AGORA
+[33m5f34cbd[m cursor-PREMIUM2
+[33mfb5ce68[m cursor-PREMIUM2
+[33m0ba9450[m cursor-PREMIUM2
+[33mad83b9a[m cursor-PREMIUM2
+[33m4913360[m cursor-PREMIUM2
+[33mfda1762[m cursor-PREMIUM2
+[33mebab02b[m cursor-PREMIUM2
+[33m8bfcea4[m cursor-PREMIUM2
+[33mb169afa[m cursor-PREMIUM2
+[33m9eb4947[m cursor-PREMIUM
+[33m99ad170[m windSurf-IHULL
+[33med565bf[m windSurf-IHULL
+[33m2d7df85[m windSurf-IHULL
+[33m42e677e[m windSurf-IHULL
+[33m029e700[m windSurf-IHULL
+[33mc039bad[m windSurf-IHULL
+[33m96ad254[m windSurf-IHULL
+[33mc0fc1d8[m windSurf-IHULL
+[33m36c45ce[m windSurf-IHULL
+[33mc53af25[m windSurf-IHULL
+[33md972609[m windSurf-IHULL
+[33m3f743c0[m windSurf-IHULL
+[33ma216b60[m windSurf-FOI EMMM
+[33m9148382[m windSurf-14.04
+[33m8a31cc0[m Corrigiu filtro por conta contábil
+[33m9bbf10f[m Changes
+[33ma77f73e[m Work in progress
+[33m264a43f[m windSurf-14.04
+[33m4485050[m windSurf-DEPTOS
+[33m9cdf9ce[m windSurf-DEPTOS
+[33m972de60[m Merge branch 'main' of https://github.com/Regenier01/budgetflow-insights
+[33m1514f6d[m windSurf-DEPTOS
+[33mbfbaca4[m Corrigiu duplicação de orçado
+[33mf3dd01f[m Corrigir filtro por Departamento
+[33m380551e[m windSurf-DEPTOS
+[33m9155523[m windSurf-DEPTOS
+[33m614f521[m windSurf-DEPTOS
+[33m84531f3[m windSurf-SPFC11
+[33ma374e56[m windSurf-SPFC11
+[33mcbf6a00[m windSurf-SPFC9
+[33m6ad5d79[m windSurf-SPFC9
+[33mc14e87a[m windSurf-SPFC9
+[33m78139ae[m windSurf-SPFC9
+[33m9b3eed7[m windSurf-SÓCONF
+[33m175bf2d[m windSurf-SPFC6
+[33mf6165f6[m windSurf-SPFC6
+[33m782ef11[m windSurf-SPFC6
+[33m184754a[m windSurf-SPFC6
+[33m38b4942[m windSurf-SPFC6
+[33m0df7ae6[m windSurf-SPFC6
+[33mc450d87[m windSurf-SPFC6
+[33m91947e1[m windSurf-SPFC6
