@@ -850,5 +850,13 @@ export const COST_CENTER_MAPPING = {
   "RATEIO TRATO": {
     "centroCusto": "RATEIO TRATO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "F9T20 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2501": {
+    "centroCusto": "F9T20 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2501",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2500": {
+    "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2500",
+    "unidadeNegocio": "AGRÍCOLA - SOJA"
   }
 };
