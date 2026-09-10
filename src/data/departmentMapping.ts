@@ -1363,5 +1363,10 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "LAVRINHA - MILHO",
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
+  },
+  "SAO CARLOS": {
+    "nomedepto": "SAO CARLOS",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   }
 };

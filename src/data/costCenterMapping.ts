@@ -862,5 +862,25 @@ export const COST_CENTER_MAPPING = {
   "SEM_CENTROCUSTO": {
     "centroCusto": "SEM_CENTROCUSTO",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "SEM_CCUSTO": {
+    "centroCusto": "SEM_CCUSTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "APOIO PECUARIA": {
+    "centroCusto": "APOIO PECUARIA",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "LOTEAMENTO PALMEIRAS": {
+    "centroCusto": "LOTEAMENTO PALMEIRAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "SOLO VERDE": {
+    "centroCusto": "SOLO VERDE",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CONDOMINIO AGROPECUARIO FERRADURA": {
+    "centroCusto": "CONDOMINIO AGROPECUARIO FERRADURA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
