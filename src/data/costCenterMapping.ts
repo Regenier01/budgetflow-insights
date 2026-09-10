@@ -858,5 +858,9 @@ export const COST_CENTER_MAPPING = {
   "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2500": {
     "centroCusto": "F7T100 SOJA COMERCIAL A DEFINIR SOJA 10/2026 Ciclo:2500",
     "unidadeNegocio": "AGRÍCOLA - SOJA"
+  },
+  "SEM_CENTROCUSTO": {
+    "centroCusto": "SEM_CENTROCUSTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
