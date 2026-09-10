@@ -1358,5 +1358,10 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "BAND SERINGAL TOCANTINS SANDOLANDIA",
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
+  },
+  "LAVRINHA - MILHO": {
+    "nomedepto": "LAVRINHA - MILHO",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   }
 };
