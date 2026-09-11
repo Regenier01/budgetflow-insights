@@ -372,5 +372,131 @@ export const ESTOQUE_PECUARIA_SNAPSHOTS: EstoquePecuariaSnapshot[] = [
     ],
     "totalQuantidadeDepartamentos": 43597,
     "sourceFile": "Estoque 07.2026.xlsx"
+  },
+  {
+    "fileName": "Estoque 08.2026.xlsx",
+    "mesKey": "2026-08",
+    "mesLabel": "agosto/2026",
+    "mesShort": "Ago",
+    "departamentos": [
+      {
+        "departamento": "Fazenda Vera Cruz - Furnas",
+        "quantidade": 905
+      },
+      {
+        "departamento": "Confinamento",
+        "quantidade": 22349
+      },
+      {
+        "departamento": "Fazenda Porteiras",
+        "quantidade": 78
+      },
+      {
+        "departamento": "Fazenda Codora",
+        "quantidade": 603
+      },
+      {
+        "departamento": "Fazenda Jóia Bonópolis",
+        "quantidade": 6334
+      },
+      {
+        "departamento": "Fazenda Covoá",
+        "quantidade": 4
+      },
+      {
+        "departamento": "Fazenda Bandeirantes",
+        "quantidade": 4783
+      },
+      {
+        "departamento": "Fazenda Jóia Mutunópolis",
+        "quantidade": 6235
+      },
+      {
+        "departamento": "Centro Comercial de Touros",
+        "quantidade": 395
+      },
+      {
+        "departamento": "Fazenda União",
+        "quantidade": 459
+      },
+      {
+        "departamento": "Fazenda Canadá",
+        "quantidade": 1056
+      },
+      {
+        "departamento": "Fazenda Aroeira",
+        "quantidade": 582
+      }
+    ],
+    "categorias": [
+      {
+        "categoria": "MATRIZES",
+        "custoMedio": 2373.427327712773
+      },
+      {
+        "categoria": "REPRODUTORES",
+        "custoMedio": 6914.685253199015
+      },
+      {
+        "categoria": "BEZERROS ATÉ 1 ANO",
+        "custoMedio": 4408.0644800051
+      },
+      {
+        "categoria": "BEZERRAS ATÉ 1 ANO",
+        "custoMedio": 3833.187348481709
+      },
+      {
+        "categoria": "BEZERROS DE 1 A 2 ANOS",
+        "custoMedio": 4679.307021510084
+      },
+      {
+        "categoria": "BEZERRAS DE 1 A 2 ANOS",
+        "custoMedio": 2945.0174291824337
+      },
+      {
+        "categoria": "NOVILHOS DE 24 A 36 MESES",
+        "custoMedio": 5270.556403494391
+      },
+      {
+        "categoria": "NOVILHAS DE 24 A 36 MESES",
+        "custoMedio": 4397.168405895721
+      },
+      {
+        "categoria": "NOVILHOS + 36 MESES",
+        "custoMedio": 8919.16819695462
+      },
+      {
+        "categoria": "CONFINAMENTO",
+        "custoMedio": 5634.975381836114
+      }
+    ],
+    "insumos": [
+      {
+        "nome": "Palha de milho",
+        "quantidadeKg": 1101091,
+        "valorTotal": 1015789.52,
+        "precoKg": 0.9225300361187223
+      },
+      {
+        "nome": "Grãos Reidratados",
+        "quantidadeKg": 9295014,
+        "valorTotal": 5630964.99,
+        "precoKg": 0.6058048960442663
+      }
+    ],
+    "recria": [
+      {
+        "categoria": "MACHO RECRIA",
+        "quantidade": 14825,
+        "custoMedio": 4607.883537323338
+      },
+      {
+        "categoria": "FEMEA RECRIA",
+        "quantidade": 4131,
+        "custoMedio": 3741.1791493090295
+      }
+    ],
+    "totalQuantidadeDepartamentos": 43783,
+    "sourceFile": "Estoque 08.2026.xlsx"
   }
 ];
