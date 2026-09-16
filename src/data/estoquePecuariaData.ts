@@ -473,9 +473,9 @@ export const ESTOQUE_PECUARIA_SNAPSHOTS: EstoquePecuariaSnapshot[] = [
     "insumos": [
       {
         "nome": "Palha de milho",
-        "quantidadeKg": 1101091,
+        "quantidadeKg": 6908753.74,
         "valorTotal": 1015789.52,
-        "precoKg": 0.9225300361187223
+        "precoKg": 0.14702934251641164
       },
       {
         "nome": "Grãos Reidratados",

@@ -11,7 +11,7 @@ import {
   CONFINAMENTO_DIARIA_ORCADO,
   CONFINAMENTO_DIARIA_REALIZADO,
 } from '@/data/confinamentoDiarias';
-import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
+import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO, PASTO_PCABECA_POR_FAZENDA, } from '@/data/pastoPcabeca';
 import {
   SERINGAL_CUSTO_PKG_ORCADO,
   SERINGAL_CUSTO_PKG_REALIZADO,
@@ -772,11 +772,40 @@ export function AnalyticalTable({
       ? selectedMonth[0]
       : null;
 
-  const pcabecaOrcResolved: number | null =
-    singleMonthForPCabeca == null ? null : (PASTO_PCABECA_ORCADO[singleMonthForPCabeca] ?? null);
+const normalizeFarmName = (value: string) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toUpperCase()
+    .replace(/\s*-\s*PECUARIA$/, '')
+    .trim();
 
-  const pcabecaRealResolved: number | null =
-    singleMonthForPCabeca == null ? null : (PASTO_PCABECA_REALIZADO[singleMonthForPCabeca] ?? null);
+const selectedPastoFarm =
+  departmentFilter?.length === 1 ? departmentFilter[0] : null;
+
+const selectedFarmMetrics = selectedPastoFarm
+  ? Object.entries(PASTO_PCABECA_POR_FAZENDA).find(
+      ([farm]) =>
+        normalizeFarmName(farm) === normalizeFarmName(selectedPastoFarm)
+    )?.[1]
+  : null;
+
+const useGeneralPCabeca =
+  !departmentFilter || departmentFilter.length === 0;
+
+const pcabecaOrcResolved: number | null =
+  singleMonthForPCabeca == null
+    ? null
+    : useGeneralPCabeca
+      ? PASTO_PCABECA_ORCADO[singleMonthForPCabeca] ?? null
+      : selectedFarmMetrics?.orcado[singleMonthForPCabeca] ?? null;
+
+const pcabecaRealResolved: number | null =
+  singleMonthForPCabeca == null
+    ? null
+    : useGeneralPCabeca
+      ? PASTO_PCABECA_REALIZADO[singleMonthForPCabeca] ?? null
+      : selectedFarmMetrics?.realizado[singleMonthForPCabeca] ?? null;
 
   const singleMonthForPpKg: MonthKey | null =
     showPpKgColumns &&
