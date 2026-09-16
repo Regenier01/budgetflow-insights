@@ -27,3 +27,11 @@ export const PASTO_PCABECA_REALIZADO: Partial<Record<MonthKey, number>> = {
   "2026-07": 126.04780949985326,
   "2026-08": 126.3703970327517
 };
+
+export type PastoPcabecaFazendaSeries = {
+  orcado: Partial<Record<MonthKey, number>>;
+  realizado: Partial<Record<MonthKey, number>>;
+};
+
+/** Preenchido por npm run pcabeca:import a partir da aba FAZENDAS. */
+export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries> = {};
