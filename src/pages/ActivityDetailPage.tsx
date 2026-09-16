@@ -35,7 +35,11 @@ import {
   CONFINAMENTO_DIARIA_ORCADO,
   CONFINAMENTO_DIARIA_REALIZADO,
 } from '@/data/confinamentoDiarias';
-import { PASTO_PCABECA_ORCADO, PASTO_PCABECA_REALIZADO } from '@/data/pastoPcabeca';
+import {
+  PASTO_PCABECA_ORCADO,
+  PASTO_PCABECA_REALIZADO,
+  PASTO_PCABECA_POR_FAZENDA,
+} from '@/data/pastoPcabeca';
 import {
   SERINGAL_CUSTO_PKG_ORCADO,
   SERINGAL_CUSTO_PKG_REALIZADO,
@@ -621,17 +625,27 @@ export default function ActivityDetailPage() {
       };
     }
     const m = pecuariaCardMetricMonth;
+    const selectedPastoFarm = selectedDepts.length === 1 ? selectedDepts[0] : null;
+    const selectedFarmMetrics = selectedPastoFarm
+      ? PASTO_PCABECA_POR_FAZENDA[selectedPastoFarm]
+      : null;
+    const useGeneralPastoMetric = selectedDepts.length === 0;
+
     return {
       pasto: {
-        orcExtra: PASTO_PCABECA_ORCADO[m] ?? null,
-        realExtra: PASTO_PCABECA_REALIZADO[m] ?? null,
+        orcExtra: useGeneralPastoMetric
+          ? PASTO_PCABECA_ORCADO[m] ?? null
+          : selectedFarmMetrics?.orcado[m] ?? null,
+        realExtra: useGeneralPastoMetric
+          ? PASTO_PCABECA_REALIZADO[m] ?? null
+          : selectedFarmMetrics?.realizado[m] ?? null,
       },
       confinamento: {
         orcExtra: CONFINAMENTO_DIARIA_ORCADO[m] ?? null,
         realExtra: CONFINAMENTO_DIARIA_REALIZADO[m] ?? null,
       },
     };
-  }, [pecuariaCardMetricMonth]);
+  }, [pecuariaCardMetricMonth, selectedDepts]);
 
   const seringalSummaryCardExtras = useMemo(() => {
     if (pecuariaCardMetricMonth == null) {
