@@ -1,14 +1,14 @@
 /**
- * Lê Diarias/CustoPcabeça.xlsx (linha 1 = meses col. B–M, linha 2 = orçado, linha 3 = realizado)
- * e gera src/data/pastoPcabeca.ts.
+ * Lê Diarias/CustoPcabeça.xlsx e gera src/data/pastoPcabeca.ts.
  *
- * A leitura da primeira aba (GERAL) permanece exatamente no formato legado.
- * Opcionalmente, a aba FAZENDAS é lida em blocos no formato:
- *   linha de cabeçalho: Fazenda | [vazio] | abr/26 | ... | mar/27
- *   linha Orçado:       Fazenda | Orçado  | valor  | ...
- *   linha Realizado:    Fazenda | Realizado | valor | ...
+ * A primeira aba (GERAL) mantém exatamente a leitura legada:
+ * linha 1 = meses B–M, linha 2 = orçado, linha 3 = realizado.
  *
- * Regra: um valor por mês (não somar entre meses) — igual Diarias.xlsx do confinamento.
+ * A aba FAZENDAS aceita tanto:
+ * 1) Fazenda | Orçado/Realizado | abr/26 ... mar/27
+ * 2) blocos com o nome da fazenda no cabeçalho e Orçado/Realizado nas linhas abaixo.
+ *
+ * Regra: um valor por mês (não somar entre meses).
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { join } from 'path';
@@ -59,13 +59,13 @@ const normalizeText = (value) =>
     .trim()
     .toUpperCase();
 
-/** Só a aba FAZENDAS aceita também cabeçalho textual no formato abr/26. */
 function monthKeyFromFazendasHeader(cell) {
   const legacy = monthKeyFromHeader(cell);
   if (legacy) return legacy;
   if (typeof cell !== 'string') return null;
 
-  const match = normalizeText(cell).match(/^([A-Z]{3})\/(\d{2}|\d{4})$/);
+  const normalized = normalizeText(cell).replace(/\s+/g, '');
+  const match = normalized.match(/^([A-Z]{3})[\/-](\d{2}|\d{4})$/);
   if (!match) return null;
 
   const month = PT_MONTHS[match[1]];
@@ -74,6 +74,45 @@ function monthKeyFromFazendasHeader(cell) {
   const year = match[2].length === 2 ? 2000 + parsedYear : parsedYear;
   const key = `${year}-${String(month).padStart(2, '0')}`;
   return MONTH_KEYS.has(key) ? key : null;
+}
+
+function parseType(value) {
+  const normalized = normalizeText(value);
+  if (normalized === 'ORCADO') return 'orcado';
+  if (normalized === 'REALIZADO') return 'realizado';
+  return null;
+}
+
+function isGenericLabel(value) {
+  const normalized = normalizeText(value);
+  return (
+    !normalized ||
+    normalized === 'FAZENDA' ||
+    normalized === 'FAZENDAS' ||
+    normalized === 'TIPO' ||
+    normalized === 'ORCADO' ||
+    normalized === 'REALIZADO'
+  );
+}
+
+function findMonthColumns(row) {
+  const columns = [];
+  for (let c = 0; c < row.length; c++) {
+    const month = monthKeyFromFazendasHeader(row[c]);
+    if (month) columns.push({ column: c, month });
+  }
+  return columns;
+}
+
+function findFarmLabel(row, maxColumn = row.length) {
+  for (let c = 0; c < Math.min(maxColumn, row.length); c++) {
+    const value = row[c];
+    if (typeof value !== 'string') continue;
+    const trimmed = value.trim();
+    if (!trimmed || isGenericLabel(trimmed) || monthKeyFromFazendasHeader(trimmed)) continue;
+    return trimmed;
+  }
+  return null;
 }
 
 function setFarmMonthValue(target, farm, type, month, value, excelRow) {
@@ -96,37 +135,59 @@ function parseFazendasSheet(sheet) {
     defval: null,
   });
   const fazendas = {};
+  let activeHeader = null;
 
   for (let r = 0; r < rows.length; r++) {
     const row = rows[r] || [];
-    const farm = typeof row[0] === 'string' ? row[0].trim() : '';
-    const typeLabel = normalizeText(row[1]);
-    const type = typeLabel === 'ORCADO' ? 'orcado' : typeLabel === 'REALIZADO' ? 'realizado' : null;
-    if (!farm || !type) continue;
+    const monthColumns = findMonthColumns(row);
 
-    let headerRow = null;
-    for (let hr = r - 1; hr >= Math.max(0, r - 3); hr--) {
-      const candidate = rows[hr] || [];
-      const candidateFarm = typeof candidate[0] === 'string' ? candidate[0].trim() : '';
-      const hasMonth = candidate.slice(2).some((cell) => monthKeyFromFazendasHeader(cell));
-      if (candidateFarm === farm && hasMonth) {
-        headerRow = candidate;
+    // Cabeçalho de bloco ou cabeçalho global de meses.
+    if (monthColumns.length > 0) {
+      const firstMonthColumn = monthColumns[0].column;
+      activeHeader = {
+        monthColumns,
+        farm: findFarmLabel(row, firstMonthColumn),
+        excelRow: r + 1,
+      };
+      continue;
+    }
+
+    let type = null;
+    let typeColumn = -1;
+    for (let c = 0; c < row.length; c++) {
+      const parsed = parseType(row[c]);
+      if (parsed) {
+        type = parsed;
+        typeColumn = c;
         break;
       }
     }
+    if (!type) continue;
 
-    if (!headerRow) {
-      throw new Error(`Cabeçalho de meses não encontrado para ${farm} antes da linha ${r + 1}.`);
+    if (!activeHeader || activeHeader.monthColumns.length === 0) {
+      throw new Error(
+        `Linha ${r + 1} contém ${type === 'orcado' ? 'Orçado' : 'Realizado'}, mas nenhum cabeçalho de meses foi encontrado antes dela.`
+      );
     }
 
-    for (let c = 2; c < Math.max(headerRow.length, row.length); c++) {
-      const month = monthKeyFromFazendasHeader(headerRow[c]);
-      if (!month) continue;
-      const value = row[c];
+    // Formato em tabela: a própria linha repete a fazenda.
+    // Formato em bloco: usa a fazenda identificada no cabeçalho imediatamente anterior.
+    const firstMonthColumn = activeHeader.monthColumns[0].column;
+    const explicitFarm = findFarmLabel(row, Math.max(firstMonthColumn, typeColumn + 1));
+    const farm = explicitFarm || activeHeader.farm;
+
+    if (!farm) {
+      throw new Error(
+        `Não foi possível identificar a fazenda da linha ${r + 1} (${type === 'orcado' ? 'Orçado' : 'Realizado'}).`
+      );
+    }
+
+    for (const { column, month } of activeHeader.monthColumns) {
+      const value = row[column];
       if (value == null || value === '') continue;
       if (typeof value !== 'number' || Number.isNaN(value)) {
         throw new Error(
-          `Valor inválido em FAZENDAS: ${farm}, ${type}, ${month} (linha ${r + 1}).`
+          `Valor inválido em FAZENDAS: ${farm}, ${type}, ${month} (linha ${r + 1}, coluna ${column + 1}).`
         );
       }
       setFarmMonthValue(fazendas, farm, type, month, value, r + 1);
@@ -170,8 +231,19 @@ function main() {
     if (r && typeof r.v === 'number' && !Number.isNaN(r.v)) realizado[mk] = r.v;
   }
 
-  const fazendasSheetName = wb.SheetNames.find((name) => normalizeText(name) === 'FAZENDAS');
-  const fazendas = parseFazendasSheet(fazendasSheetName ? wb.Sheets[fazendasSheetName] : undefined);
+  const fazendasSheetName = wb.SheetNames.find((name) => normalizeText(name).includes('FAZENDA'));
+  if (!fazendasSheetName) {
+    throw new Error(
+      `Aba FAZENDAS não encontrada em ${input}. Abas disponíveis: ${wb.SheetNames.join(', ')}`
+    );
+  }
+
+  const fazendas = parseFazendasSheet(wb.Sheets[fazendasSheetName]);
+  if (Object.keys(fazendas).length === 0) {
+    throw new Error(
+      `A aba ${fazendasSheetName} foi encontrada, mas nenhuma fazenda foi reconhecida. Verifique se existem linhas Orçado/Realizado e cabeçalhos de mês entre abr/26 e mar/27.`
+    );
+  }
 
   const fmt = (obj) => JSON.stringify(obj, null, 2);
 
@@ -198,6 +270,7 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
   console.log(
     `Escrito ${OUT} (${Object.keys(orcado).length} orç., ${Object.keys(realizado).length} real., ${Object.keys(fazendas).length} fazendas) a partir de ${input}`
   );
+  console.log(`Fazendas importadas: ${Object.keys(fazendas).join(', ')}`);
 }
 
 main();
