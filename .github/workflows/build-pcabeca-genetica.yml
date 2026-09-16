@@ -1,0 +1,39 @@
+name: Build P/Cabeca Genetica
+
+on:
+  push:
+    branches:
+      - chatgpt/pcabeca-genetica
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/pcabeca-genetica
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify genetics wiring
+        shell: python
+        run: |
+          from pathlib import Path
+          page = Path('src/pages/ActivityDetailPage.tsx').read_text(encoding='utf-8')
+          data = Path('src/data/pastoPcabeca.ts').read_text(encoding='utf-8')
+          title = 'title="Detalhamento de Custos Genética"'
+          assert page.count(title) == 1
+          pos = page.index(title)
+          start = page.rfind('<AnalyticalTable', 0, pos)
+          end = page.index('/>', pos) + 2
+          block = page[start:end]
+          assert "departmentFilter={selectedDepts.length > 0 ? selectedDepts : ['CENTRO COMERCIAL DE TOUROS']}" in block
+          assert 'showPCabecaColumns' in block
+          assert '"CENTRO COMERCIAL DE TOUROS"' in data
+          assert '"orcado"' in data and '"realizado"' in data
+      - run: npm run build
