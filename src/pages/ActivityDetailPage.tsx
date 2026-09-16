@@ -2055,7 +2055,7 @@ export default function ActivityDetailPage() {
                 atividadeFilter={atividade.key}
                 selectedMonth={selectedMonth}
                 costCenterFilter={activeCostCenterFilter}
-                departmentFilter={selectedDepts.length > 0 ? selectedDepts : undefined}
+                departmentFilter={selectedDepts.length > 0 ? selectedDepts : ['CENTRO COMERCIAL DE TOUROS']}
                 tipoFilter={['C']}
                 entryFilter={combineEntryFilters(
                   activityLevelEntryFilter,
@@ -2064,6 +2064,7 @@ export default function ActivityDetailPage() {
                 title="Detalhamento de Custos Genética"
                 subtitle="Grupo Contábil → Descrição Contábil"
                 accentColor="orange"
+                showPCabecaColumns
                 costHierarchyMode="grupo_descricao"
               />
             </div>
