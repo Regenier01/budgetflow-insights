@@ -661,7 +661,7 @@ describe('buildDeviationExportData', () => {
     const { workbook } = buildDeviationAnalysisWorkbook(accounts);
     const sheetNames = workbook.worksheets.map((sheet) => sheet.name);
 
-    expect(sheetNames).toContain('Resumo por Atividade');
+    expect(sheetNames).toContain('Resumo Total por Atividade');
     expect(sheetNames).toContain('FAZENDA A');
     expect(sheetNames).toContain('FAZENDA B');
 
