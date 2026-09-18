@@ -19,6 +19,16 @@ export interface DeviationGroupRow {
   diferenca: number;
 }
 
+export interface DeviationDescriptionRow extends DeviationGroupRow {
+  descricaoContabil: string;
+}
+
+export interface DeviationDepartmentData {
+  departamento: string;
+  groupRows: DeviationGroupRow[];
+  descriptionRows: DeviationDescriptionRow[];
+}
+
 /** Um lançamento na mesma granularidade exibida na visão "Planilha" do dashboard (departamento, centro de custo, descrição, produto, complemento), aberto por mês. */
 export interface DeviationLancamentoRow {
   grupoContabil: string;
@@ -37,6 +47,7 @@ export interface DeviationAreaData {
   label: string;
   sheetLabel: string;
   groupRows: DeviationGroupRow[];
+  departments: DeviationDepartmentData[];
   lancamentos: DeviationLancamentoRow[];
 }
 
@@ -251,6 +262,13 @@ function buildAreaData(
   // Só custos e despesas (tipo 'C'/'D'); contas de receita ficam de fora, como pedido.
   const entries = accounts.filter((a) => a.nivel === 5 && a.tipo !== 'R' && area.match(a));
   const groups = new Map<string, { orcado: number; realizado: number }>();
+  const departments = new Map<
+    string,
+    {
+      groups: Map<string, { orcado: number; realizado: number }>;
+      descriptions: Map<string, DeviationDescriptionRow>;
+    }
+  >();
   const lancamentos: DeviationLancamentoRow[] = [];
 
   for (const entry of entries) {
@@ -265,6 +283,34 @@ function buildAreaData(
     agg.orcado += orcado;
     agg.realizado += realizado;
     groups.set(grupoContabil, agg);
+
+    // A mesma base usada no total da atividade também alimenta os departamentos.
+    // Entradas sem departamento ficam explícitas para que nenhuma parcela seja perdida na reconciliação.
+    const departamento = entry.departamento?.trim() || 'Sem Departamento';
+    const descricaoContabil = entry.descricao?.trim() || 'Sem Descrição Contábil';
+    const dept = departments.get(departamento) ?? {
+      groups: new Map<string, { orcado: number; realizado: number }>(),
+      descriptions: new Map<string, DeviationDescriptionRow>(),
+    };
+
+    const deptGroup = dept.groups.get(grupoContabil) ?? { orcado: 0, realizado: 0 };
+    deptGroup.orcado += orcado;
+    deptGroup.realizado += realizado;
+    dept.groups.set(grupoContabil, deptGroup);
+
+    const descriptionKey = `${grupoContabil}\u0000${descricaoContabil}`;
+    const deptDescription = dept.descriptions.get(descriptionKey) ?? {
+      grupoContabil,
+      descricaoContabil,
+      orcado: 0,
+      realizado: 0,
+      diferenca: 0,
+    };
+    deptDescription.orcado += orcado;
+    deptDescription.realizado += realizado;
+    deptDescription.diferenca = deptDescription.realizado - deptDescription.orcado;
+    dept.descriptions.set(descriptionKey, deptDescription);
+    departments.set(departamento, dept);
 
     // Abertura: mesma granularidade e colunas da visão "Planilha" já exibida no dashboard, uma linha por mês com realizado.
     for (const month of MONTHS) {
@@ -295,6 +341,37 @@ function buildAreaData(
     }))
     .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
 
+  const departmentRows: DeviationDepartmentData[] = Array.from(departments.entries())
+    .map(([departamento, data]) => {
+      const deptGroupRows: DeviationGroupRow[] = Array.from(data.groups.entries())
+        .map(([grupoContabil, v]) => ({
+          grupoContabil,
+          orcado: v.orcado,
+          realizado: v.realizado,
+          diferenca: v.realizado - v.orcado,
+        }))
+        .sort((a, b) => Math.abs(b.diferenca) - Math.abs(a.diferenca));
+
+      const groupRank = new Map(deptGroupRows.map((g, i) => [g.grupoContabil, i]));
+      const descriptionRows = Array.from(data.descriptions.values()).sort((a, b) => {
+        const rankDiff = (groupRank.get(a.grupoContabil) ?? 0) - (groupRank.get(b.grupoContabil) ?? 0);
+        if (rankDiff !== 0) return rankDiff;
+        const diff = Math.abs(b.diferenca) - Math.abs(a.diferenca);
+        if (diff !== 0) return diff;
+        return a.descricaoContabil.localeCompare(b.descricaoContabil, 'pt-BR');
+      });
+
+      return { departamento, groupRows: deptGroupRows, descriptionRows };
+    })
+    .sort((a, b) => {
+      const totalA = sumRows(a.groupRows);
+      const totalB = sumRows(b.groupRows);
+      const deviationDiff =
+        Math.abs(totalB.realizado - totalB.orcado) - Math.abs(totalA.realizado - totalA.orcado);
+      if (deviationDiff !== 0) return deviationDiff;
+      return a.departamento.localeCompare(b.departamento, 'pt-BR');
+    });
+
   // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, em ordem cronológica de mês e, no mesmo mês, maior |Realizado| primeiro (igual à Planilha do dashboard).
   const groupRank = new Map(groupRows.map((g, i) => [g.grupoContabil, i]));
   const monthIndex = new Map(MONTHS.map((m, i) => [m.key, i]));
@@ -306,7 +383,14 @@ function buildAreaData(
     return Math.abs(b.realizado) - Math.abs(a.realizado);
   });
 
-  return { key: area.key, label: area.label, sheetLabel: area.sheetLabel, groupRows, lancamentos };
+  return {
+    key: area.key,
+    label: area.label,
+    sheetLabel: area.sheetLabel,
+    groupRows,
+    departments: departmentRows,
+    lancamentos,
+  };
 }
 
 /**
@@ -369,7 +453,8 @@ function addSheet(
   headers: string[],
   rows: (string | number)[][],
   numberCols: number[],
-  totalRow = false
+  totalRow = false,
+  boldRows: Set<number> = new Set()
 ): void {
   const ws = wb.addWorksheet(sheetName);
   ws.columns = headers.map((header, i) => ({ header, width: numberCols.includes(i) ? 16 : 30 }));
@@ -383,10 +468,11 @@ function addSheet(
 
   rows.forEach((rowValues, i) => {
     const isTotal = totalRow && i === rows.length - 1;
+    const isBold = isTotal || boldRows.has(i);
     const row = ws.addRow(rowValues);
     row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
       cell.border = THIN_BORDER;
-      if (isTotal) cell.font = { bold: true };
+      if (isBold) cell.font = { bold: true };
       if (numberCols.includes(colNumber - 1) && typeof cell.value === 'number') {
         cell.numFmt = '#,##0.00';
       }
@@ -420,105 +506,167 @@ function sumRows(rows: DeviationGroupRow[]) {
 
 const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === month)?.label ?? month;
 
+const RECONCILIATION_TOLERANCE = 0.005;
+
+const nearlyEqual = (a: number, b: number) => Math.abs(a - b) <= RECONCILIATION_TOLERANCE;
+
 /**
- * Gera e baixa o Excel de análise de desvios de custos e despesas (contas de receita não entram):
- * uma aba "Resumo Geral" (todos os grupos de todas as áreas, ordenados pelo maior |desvio|) e,
- * por área, uma aba de resumo por grupo contábil (Total Orçado / Total Realizado / Diferença /
- * Justificativa) + uma aba de abertura com os lançamentos (mesma granularidade da visão
- * "Planilha" do dashboard) que compõem cada grupo.
+ * Confere a integridade da base antes de montar o arquivo.
+ * A exportação falha de forma explícita se qualquer departamento/descrição perder ou duplicar valor.
+ */
+export function validateDeviationExportData(data: DeviationExportData): void {
+  for (const area of data.areas) {
+    const areaTotals = sumRows(area.groupRows);
+    const departmentTotals = area.departments.reduce(
+      (acc, department) => {
+        const totals = sumRows(department.groupRows);
+        acc.orcado += totals.orcado;
+        acc.realizado += totals.realizado;
+        return acc;
+      },
+      { orcado: 0, realizado: 0 }
+    );
+
+    if (
+      !nearlyEqual(areaTotals.orcado, departmentTotals.orcado) ||
+      !nearlyEqual(areaTotals.realizado, departmentTotals.realizado)
+    ) {
+      throw new Error(`Falha de reconciliação na atividade "${area.label}": total diferente da soma dos departamentos.`);
+    }
+
+    for (const department of area.departments) {
+      for (const group of department.groupRows) {
+        const descriptions = department.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil);
+        const descriptionTotals = sumRows(descriptions);
+
+        if (
+          !nearlyEqual(group.orcado, descriptionTotals.orcado) ||
+          !nearlyEqual(group.realizado, descriptionTotals.realizado)
+        ) {
+          throw new Error(
+            `Falha de reconciliação no departamento "${department.departamento}", grupo "${group.grupoContabil}".`
+          );
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Monta o workbook da análise de custos sem efetuar download.
  *
- * Orçado e realizado são consolidados no mesmo intervalo de meses — por padrão, detectado
- * automaticamente como o último mês com realizado importado nos dados (passe `cutoffMonth: null`
- * para forçar o consolidado da safra inteira) — para que a diferença reflita um período
- * comparável nos dois lados.
+ * Estrutura:
+ * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
+ * 2) uma aba por departamento, detalhando Grupo Contábil -> Descrição Contábil.
+ *
+ * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
+ */
+export function buildDeviationAnalysisWorkbook(
+  accounts: AccountEntry[],
+  cutoffMonth?: MonthKey | null
+): { workbook: ExcelJS.Workbook; data: DeviationExportData } {
+  const data = buildDeviationExportData(accounts, cutoffMonth);
+  validateDeviationExportData(data);
+  const wb = new ExcelJS.Workbook();
+  const usedNames = new Set<string>();
+
+  const summaryRows: (string | number)[][] = [];
+  const summaryBoldRows = new Set<number>();
+
+  for (const area of data.areas) {
+    if (area.groupRows.length === 0) continue;
+
+    const areaTotals = sumRows(area.groupRows);
+    summaryBoldRows.add(summaryRows.length);
+    summaryRows.push([
+      area.label,
+      'TOTAL DA ATIVIDADE',
+      areaTotals.orcado,
+      areaTotals.realizado,
+      areaTotals.realizado - areaTotals.orcado,
+      '',
+    ]);
+
+    for (const department of area.departments) {
+      const totals = sumRows(department.groupRows);
+      summaryRows.push([
+        area.label,
+        department.departamento,
+        totals.orcado,
+        totals.realizado,
+        totals.realizado - totals.orcado,
+        '',
+      ]);
+    }
+  }
+
+  addSheet(
+    wb,
+    sanitizeSheetName('Resumo Total por Atividade', usedNames),
+    ['Atividade', 'Departamento', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+    summaryRows,
+    [2, 3, 4],
+    false,
+    summaryBoldRows
+  );
+
+  for (const area of data.areas) {
+    for (const department of area.departments) {
+      const rows: (string | number)[][] = [];
+      const boldRows = new Set<number>();
+
+      for (const group of department.groupRows) {
+        boldRows.add(rows.length);
+        rows.push([group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
+
+        for (const description of department.descriptionRows.filter(
+          (row) => row.grupoContabil === group.grupoContabil
+        )) {
+          rows.push([
+            '',
+            `↳ ${description.descricaoContabil}`,
+            description.orcado,
+            description.realizado,
+            description.diferenca,
+            '',
+          ]);
+        }
+      }
+
+      const totals = sumRows(department.groupRows);
+      rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
+
+      addSheet(
+        wb,
+        sanitizeSheetName(department.departamento, usedNames),
+        ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+        rows,
+        [2, 3, 4],
+        true,
+        boldRows
+      );
+    }
+  }
+
+  return { workbook: wb, data };
+}
+
+/**
+ * Gera e baixa o Excel de análise de desvios de custos e despesas.
+ *
+ * O período continua sendo detectado automaticamente de Abr/26 até o último mês contínuo com
+ * realizado. A seleção de período do dashboard não interfere no arquivo.
  */
 export async function exportDeviationAnalysisWorkbook(
   accounts: AccountEntry[],
   cutoffMonth?: MonthKey | null,
   fileName?: string
 ): Promise<void> {
-  const { areas, resumoGeral, cutoffMonth: resolvedCutoff } = buildDeviationExportData(accounts, cutoffMonth);
-  const wb = new ExcelJS.Workbook();
-  const usedNames = new Set<string>();
-
-  const totalGeral = sumRows(resumoGeral);
-  const resumoGeralRows: (string | number)[][] = resumoGeral.map((g) => [
-    g.area,
-    g.grupoContabil,
-    g.orcado,
-    g.realizado,
-    g.diferenca,
-    '',
-  ]);
-  resumoGeralRows.push([
-    'TOTAL GERAL',
-    '',
-    totalGeral.orcado,
-    totalGeral.realizado,
-    totalGeral.realizado - totalGeral.orcado,
-    '',
-  ]);
-  addSheet(
-    wb,
-    sanitizeSheetName('Resumo Geral', usedNames),
-    ['Área', 'Grupo Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
-    resumoGeralRows,
-    [2, 3, 4],
-    true
-  );
-
-  for (const area of areas) {
-    const totals = sumRows(area.groupRows);
-    const resumoRows: (string | number)[][] = area.groupRows.map((g) => [
-      g.grupoContabil,
-      g.orcado,
-      g.realizado,
-      g.diferenca,
-      '',
-    ]);
-    resumoRows.push(['TOTAL', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
-    addSheet(
-      wb,
-      sanitizeSheetName(`${area.sheetLabel} - Resumo`, usedNames),
-      ['Grupo Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
-      resumoRows,
-      [1, 2, 3],
-      true
-    );
-
-    const lancRows: (string | number)[][] = area.lancamentos.map((l) => [
-      l.grupoContabil,
-      monthLabel(l.mes),
-      l.departamento,
-      l.centroCusto,
-      l.descricao,
-      l.produto,
-      l.complemento,
-      l.quantidade ?? '',
-      l.realizado,
-    ]);
-    addSheet(
-      wb,
-      sanitizeSheetName(`${area.sheetLabel} - Lançamentos`, usedNames),
-      [
-        'Grupo Contábil',
-        'Mês',
-        'Departamento',
-        'Centro de Custo',
-        'Descrição',
-        'Produto',
-        'Complemento',
-        'Quantidade',
-        'Realizado',
-      ],
-      lancRows,
-      [7, 8]
-    );
-  }
-
-  const periodSuffix = resolvedCutoff ? `ate_${resolvedCutoff}` : 'consolidado';
+  const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, cutoffMonth);
+  const periodSuffix = data.cutoffMonth ? `ate_${data.cutoffMonth}` : 'consolidado';
   const resolvedFileName = fileName ?? `Analise_Desvios_Custos_${periodSuffix}.xlsx`;
-  await downloadWorkbook(wb, resolvedFileName);
+  await downloadWorkbook(workbook, resolvedFileName);
 }
 
 export { monthLabel as deviationExportMonthLabel };

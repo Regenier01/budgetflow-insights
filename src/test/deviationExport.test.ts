@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildDeviationExportData } from '@/lib/deviationExport';
+import { buildDeviationAnalysisWorkbook, buildDeviationExportData } from '@/lib/deviationExport';
 import type { AccountEntry } from '@/types/budget';
 
 const baseAccount = (overrides: Partial<AccountEntry>): AccountEntry => ({
@@ -508,4 +508,175 @@ describe('buildDeviationExportData', () => {
     ]);
     expect(rh.groupRows).toMatchObject([{ grupoContabil: '3.4.01.01-CUSTO DE PESSOAL', orcado: 200, realizado: 190 }]);
   });
+  it('separa cada atividade por departamento sem alterar os totais da base', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0001',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA A',
+        descricao: 'Adubo',
+        orcado: { '2026-04': 100, '2026-05': 200 },
+        realizado: { '2026-04': 120, '2026-05': 180 },
+      }),
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0002',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA B',
+        descricao: 'Defensivos',
+        orcado: { '2026-04': 300, '2026-05': 400 },
+        realizado: { '2026-04': 290, '2026-05': 410 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
+
+    expect(agricola.departments.map((d) => d.departamento).sort()).toEqual(['FAZENDA A', 'FAZENDA B']);
+
+    const totalArea = agricola.groupRows.reduce(
+      (acc, row) => ({ orcado: acc.orcado + row.orcado, realizado: acc.realizado + row.realizado }),
+      { orcado: 0, realizado: 0 }
+    );
+    const totalDepartamentos = agricola.departments.reduce(
+      (acc, department) => {
+        for (const row of department.groupRows) {
+          acc.orcado += row.orcado;
+          acc.realizado += row.realizado;
+        }
+        return acc;
+      },
+      { orcado: 0, realizado: 0 }
+    );
+
+    expect(totalDepartamentos).toEqual(totalArea);
+    expect(totalArea).toEqual({ orcado: 1000, realizado: 1000 });
+  });
+
+  it('detalha departamento em grupo contábil -> descrição contábil usando a mesma base do total', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0001',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA A',
+        descricao: 'Adubo',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 90 },
+      }),
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0002',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA A',
+        descricao: 'Defensivos',
+        orcado: { '2026-04': 200 },
+        realizado: { '2026-04': 250 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts);
+    const department = areas.find((a) => a.key === 'AGRICOLA')!.departments[0];
+
+    expect(department.groupRows).toMatchObject([
+      { grupoContabil: '4.1.01.01-CUSTOS RURAIS', orcado: 300, realizado: 340, diferenca: 40 },
+    ]);
+    expect(department.descriptionRows).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          grupoContabil: '4.1.01.01-CUSTOS RURAIS',
+          descricaoContabil: 'Adubo',
+          orcado: 100,
+          realizado: 90,
+          diferenca: -10,
+        }),
+        expect.objectContaining({
+          grupoContabil: '4.1.01.01-CUSTOS RURAIS',
+          descricaoContabil: 'Defensivos',
+          orcado: 200,
+          realizado: 250,
+          diferenca: 50,
+        }),
+      ])
+    );
+
+    const descriptionsTotal = department.descriptionRows.reduce(
+      (acc, row) => ({ orcado: acc.orcado + row.orcado, realizado: acc.realizado + row.realizado }),
+      { orcado: 0, realizado: 0 }
+    );
+    expect(descriptionsTotal).toEqual({ orcado: 300, realizado: 340 });
+  });
+
+  it('mantém a regra de período de abril até o último mês contínuo com realizado também nas abas por departamento', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0001',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA A',
+        descricao: 'Adubo',
+        orcado: { '2026-04': 100, '2026-05': 100, '2026-06': 100, '2026-07': 100 },
+        realizado: { '2026-04': 90, '2026-05': 95, '2026-06': 100, '2027-01': 999 },
+      }),
+    ];
+
+    const { cutoffMonth, areas } = buildDeviationExportData(accounts);
+    const department = areas.find((a) => a.key === 'AGRICOLA')!.departments[0];
+
+    expect(cutoffMonth).toBe('2026-06');
+    expect(department.groupRows[0]).toMatchObject({ orcado: 300, realizado: 285 });
+    expect(department.descriptionRows[0]).toMatchObject({ orcado: 300, realizado: 285 });
+  });
+
+  it('gera uma aba de resumo por atividade e uma aba para cada departamento', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0001',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA A',
+        descricao: 'Adubo',
+        orcado: { '2026-04': 100 },
+        realizado: { '2026-04': 90 },
+      }),
+      baseAccount({
+        atividade: 'AGRICOLA',
+        tipo: 'C',
+        codigo: '4.1.01.01.0002',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'FAZENDA B',
+        descricao: 'Defensivos',
+        orcado: { '2026-04': 200 },
+        realizado: { '2026-04': 250 },
+      }),
+    ];
+
+    const { workbook } = buildDeviationAnalysisWorkbook(accounts);
+    const sheetNames = workbook.worksheets.map((sheet) => sheet.name);
+
+    expect(sheetNames).toContain('Resumo Total por Atividade');
+    expect(sheetNames).toContain('FAZENDA A');
+    expect(sheetNames).toContain('FAZENDA B');
+
+    const fazendaA = workbook.getWorksheet('FAZENDA A')!;
+    expect(fazendaA.getRow(1).values).toEqual([
+      undefined,
+      'Grupo Contábil',
+      'Descrição Contábil',
+      'Total Orçado',
+      'Total Realizado',
+      'Diferença',
+      'Justificativa',
+    ]);
+    expect(fazendaA.getCell('A2').value).toBe('4.1.01.01-CUSTOS RURAIS');
+    expect(fazendaA.getCell('B3').value).toBe('↳ Adubo');
+  });
+
 });
