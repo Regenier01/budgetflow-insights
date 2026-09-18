@@ -506,6 +506,53 @@ function sumRows(rows: DeviationGroupRow[]) {
 
 const monthLabel = (month: MonthKey): string => MONTHS.find((m) => m.key === month)?.label ?? month;
 
+const RECONCILIATION_TOLERANCE = 0.005;
+
+const nearlyEqual = (a: number, b: number) => Math.abs(a - b) <= RECONCILIATION_TOLERANCE;
+
+/**
+ * Confere a integridade da base antes de montar o arquivo.
+ * A exportação falha de forma explícita se qualquer departamento/descrição perder ou duplicar valor.
+ */
+export function validateDeviationExportData(data: DeviationExportData): void {
+  for (const area of data.areas) {
+    const areaTotals = sumRows(area.groupRows);
+    const departmentTotals = area.departments.reduce(
+      (acc, department) => {
+        const totals = sumRows(department.groupRows);
+        acc.orcado += totals.orcado;
+        acc.realizado += totals.realizado;
+        return acc;
+      },
+      { orcado: 0, realizado: 0 }
+    );
+
+    if (
+      !nearlyEqual(areaTotals.orcado, departmentTotals.orcado) ||
+      !nearlyEqual(areaTotals.realizado, departmentTotals.realizado)
+    ) {
+      throw new Error(`Falha de reconciliação na atividade "${area.label}": total diferente da soma dos departamentos.`);
+    }
+
+    for (const department of area.departments) {
+      for (const group of department.groupRows) {
+        const descriptions = department.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil);
+        const descriptionTotals = sumRows(descriptions);
+
+        if (
+          !nearlyEqual(group.orcado, descriptionTotals.orcado) ||
+          !nearlyEqual(group.realizado, descriptionTotals.realizado)
+        ) {
+          throw new Error(
+            `Falha de reconciliação no departamento "${department.departamento}", grupo "${group.grupoContabil}".`
+          );
+        }
+      }
+    }
+  }
+}
+
+
 /**
  * Monta o workbook da análise de custos sem efetuar download.
  *
@@ -520,6 +567,7 @@ export function buildDeviationAnalysisWorkbook(
   cutoffMonth?: MonthKey | null
 ): { workbook: ExcelJS.Workbook; data: DeviationExportData } {
   const data = buildDeviationExportData(accounts, cutoffMonth);
+  validateDeviationExportData(data);
   const wb = new ExcelJS.Workbook();
   const usedNames = new Set<string>();
 
@@ -555,7 +603,7 @@ export function buildDeviationAnalysisWorkbook(
 
   addSheet(
     wb,
-    sanitizeSheetName('Resumo por Atividade', usedNames),
+    sanitizeSheetName('Resumo Total por Atividade', usedNames),
     ['Atividade', 'Departamento', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
     summaryRows,
     [2, 3, 4],
