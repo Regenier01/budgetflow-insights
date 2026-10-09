@@ -1368,5 +1368,30 @@ export const DEPARTMENT_MAPPING = {
     "nomedepto": "SAO CARLOS",
     "unidadeNegocio": "AGRICOLA",
     "divisao": "AGRICOLA"
+  },
+  "TRANSPORTE DE GADO CONFINAMENTO": {
+    "nomedepto": "TRANSPORTE DE GADO CONFINAMENTO",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "TRANSPORTE DE INSUMOS CONFINAMENTO": {
+    "nomedepto": "TRANSPORTE DE INSUMOS CONFINAMENTO",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "COMERCIALIZA€AO DE TOUROS": {
+    "nomedepto": "COMERCIALIZA€AO DE TOUROS",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "COMERCIALIZACAO DE GRAOS": {
+    "nomedepto": "COMERCIALIZACAO DE GRAOS",
+    "unidadeNegocio": "PECUARIA",
+    "divisao": "PECUARIA"
+  },
+  "VALE DO IMBÉ": {
+    "nomedepto": "VALE DO IMBÉ",
+    "unidadeNegocio": "AGRICOLA",
+    "divisao": "AGRICOLA"
   }
 };

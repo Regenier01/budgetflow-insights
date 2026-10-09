@@ -882,5 +882,45 @@ export const COST_CENTER_MAPPING = {
   "CONDOMINIO AGROPECUARIO FERRADURA": {
     "centroCusto": "CONDOMINIO AGROPECUARIO FERRADURA",
     "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO SETEMBRO AMARELO": {
+    "centroCusto": "PROJETO SETEMBRO AMARELO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROJETO SIPAT": {
+    "centroCusto": "PROJETO SIPAT",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "PROGRAMA PODCAST PODE PROSEAR": {
+    "centroCusto": "PROGRAMA PODCAST PODE PROSEAR",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CAVALO MECÂNICO VW 25420 CONSTELLATION M6263": {
+    "centroCusto": "CAVALO MECÂNICO VW 25420 CONSTELLATION M6263",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "CUSTO PESSOAL COLHEITADEIRAS": {
+    "centroCusto": "CUSTO PESSOAL COLHEITADEIRAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "MANUTENCAO PLACAS SOLARES OFICINA": {
+    "centroCusto": "MANUTENCAO PLACAS SOLARES OFICINA",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "TRANSPORTE DE GADO CONFINAMENTO": {
+    "centroCusto": "TRANSPORTE DE GADO CONFINAMENTO",
+    "unidadeNegocio": "PECUÁRIA"
+  },
+  "TRANSPORTE DE INSUMOS CONFINAMENTO": {
+    "centroCusto": "TRANSPORTE DE INSUMOS CONFINAMENTO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "RATEIO VIGILANCIA E APOIO": {
+    "centroCusto": "RATEIO VIGILANCIA E APOIO",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
+  },
+  "DESPESAS FINANCEIRAS": {
+    "centroCusto": "DESPESAS FINANCEIRAS",
+    "unidadeNegocio": "NÃO IDENTIFICADO"
   }
 };
