@@ -260508,6 +260508,132 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "6d84a363-a417-4724-bb2f-2def2c26c8f4",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 74.17
+    }
+  },
+  {
+    "id": "6dc8bcb7-4ba6-4550-aa7f-5e0966e8c6d9",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 2132.12
+    }
+  },
+  {
+    "id": "f34c0e8b-04a5-4e6d-99b3-ddf203a6ba44",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "GRATIFICACAO",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1079.92
+    }
+  },
+  {
+    "id": "f7aab426-ca2e-49d9-8e24-dd70ea9332f9",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUDA DE CUSTO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 200
+    }
+  },
+  {
+    "id": "4e0406d3-95d1-4465-b9de-26bfe512cffa",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIARIA - VIAGEM",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 17
+    }
+  },
+  {
+    "id": "3a0aa369-4f50-49df-be09-0ef676112ee2",
+    "codigo": "4.1.01.01.0001",
+    "descricao": "SALARIOS E ORDENADOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "DIAS TRABALHADOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 12584.71
+    }
+  },
+  {
     "id": "61d174bc-788d-4fdc-b26a-d3a5ff7491cb",
     "codigo": "4.1.01.01.0002",
     "descricao": "HORAS EXTRAS",
@@ -266169,6 +266295,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "22ab1a9e-e621-4586-9847-ab59a627acd2",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - HORA EXTRA",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 70.43
+    }
+  },
+  {
+    "id": "af8adfc2-3bcb-4d80-8311-d4c176d7ef95",
+    "codigo": "4.1.01.01.0002",
+    "descricao": "HORAS EXTRAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "HORA EXTRA100%",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 293.46
+    }
+  },
+  {
     "id": "37524514-b032-44e6-8a1e-2c3a735fdf63",
     "codigo": "4.1.01.01.0003",
     "descricao": "PPR",
@@ -271203,6 +271371,69 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "a0e08f70-89f6-4a8f-8d8d-0e00bb1ccfaa",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CARGO DE CONFIANCA",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 5033.89
+    }
+  },
+  {
+    "id": "54765c1d-26d0-43ad-9df0-1ae6102251e7",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "COMISSAO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 11209.46
+    }
+  },
+  {
+    "id": "f7232c6e-2bd1-4522-8055-278124de9da5",
+    "codigo": "4.1.01.01.0004",
+    "descricao": "COMISSOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "D.S.R. - COMISSOES",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1868.24
+    }
+  },
+  {
     "id": "5ae7140c-dfc8-4eb3-bfbe-9e7e4be014e7",
     "codigo": "4.1.01.01.0005",
     "descricao": "FERIAS",
@@ -273783,6 +274014,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "7e5969d0-8b3c-47f7-9333-4ca176e03a82",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 421.06
+    }
+  },
+  {
+    "id": "56c49ae0-58d6-4b1e-86aa-c4a14465980d",
+    "codigo": "4.1.01.01.0005",
+    "descricao": "FERIAS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 4341.45
+    }
+  },
+  {
     "id": "457ec2d8-065f-4f07-ab66-a5ce18a62ae0",
     "codigo": "4.1.01.01.0006",
     "descricao": "13o SALARIO",
@@ -276360,6 +276633,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 672.96
+    }
+  },
+  {
+    "id": "1a054616-0a1b-4e0e-b636-b1ed283dd6ed",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 298
+    }
+  },
+  {
+    "id": "35d9f4d1-5106-4400-a4e2-30bc34e1ae34",
+    "codigo": "4.1.01.01.0006",
+    "descricao": "13o SALARIO",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 2558.03
     }
   },
   {
@@ -283508,6 +283823,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "fd147239-6a1b-48c0-96d5-f42e560ad917",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 3.18
+    }
+  },
+  {
+    "id": "31b97a43-a6aa-4b45-a2bb-bafb27f6240c",
+    "codigo": "4.1.01.01.0009",
+    "descricao": "SEGURO DE VIDA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "SEGURO VIDA",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 25.29
+    }
+  },
+  {
     "id": "941edb6c-dfab-4218-97cd-f0bb30a19dc1",
     "codigo": "4.1.01.01.0010",
     "descricao": "PLANO DE SAUDE",
@@ -286185,6 +286542,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": -134.02
+    }
+  },
+  {
+    "id": "eaafde32-5196-48e0-910e-61dfba556d22",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 134.02
+    }
+  },
+  {
+    "id": "1cb15035-4793-454a-a88d-5cbd3379d2a3",
+    "codigo": "4.1.01.01.0010",
+    "descricao": "PLANO DE SAUDE",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PLANO PLAMHEG PAGA PELA EMPRESA",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 596.38
     }
   },
   {
@@ -300873,6 +301272,195 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 490.84
+    }
+  },
+  {
+    "id": "ea8c028e-9473-4658-89da-7dc8b41272f3",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 21.21
+    }
+  },
+  {
+    "id": "c72c3245-3b4d-4dd8-a160-dd73a8c567ab",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1008.41
+    }
+  },
+  {
+    "id": "59294c2f-bccc-4b5e-96cb-c92db0f5b76f",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 84.04
+    }
+  },
+  {
+    "id": "4b8e72c2-dffa-43d7-b568-2fa48f33dcfe",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 118.74
+    }
+  },
+  {
+    "id": "0cdfb940-c90c-4ba4-8f7f-68395d8d2aa9",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTE PROVISAO FERIAS ENCARGOS INSS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": -0.01
+    }
+  },
+  {
+    "id": "24c571d4-9930-4596-8950-66d6fecfea49",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "FAP",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": -3.03
+    }
+  },
+  {
+    "id": "89132faf-4f70-4fba-a3dc-2d11cee7fa1d",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "I.N.S.S. - FOLHA PAGAMENTO (5,2%)",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 8656.35
+    }
+  },
+  {
+    "id": "c2ca3238-4d9c-4794-b969-79b0cd8dba59",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - I.N.S.S. (2,7%)",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 721.36
+    }
+  },
+  {
+    "id": "f1665a52-c90b-4a59-ad9f-d845f0bb0929",
+    "codigo": "4.1.01.01.0030",
+    "descricao": "ENCARGOS INSS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO FERIAS - I.N.S.S. (2,7%)",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1224.29
     }
   },
   {
@@ -316219,6 +316807,195 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 13.48
+    }
+  },
+  {
+    "id": "4a4e8758-c6c5-4d92-915b-9a7b021d26c5",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": -170.65
+    }
+  },
+  {
+    "id": "85f2a71f-2e4c-4541-ab85-3a51d6fb1c88",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 33.68
+    }
+  },
+  {
+    "id": "295e2c40-8bf4-444c-ae58-b53a83b4a7c6",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 286.07
+    }
+  },
+  {
+    "id": "89d35125-6c2b-4337-bdfa-71c9e0354d0a",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 23.84
+    }
+  },
+  {
+    "id": "3352e77a-f441-4e11-bc42-71fda4a7bcfd",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROV ENC FGTS 13 SALARIO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 0.01
+    }
+  },
+  {
+    "id": "63cf4b0b-1f86-476a-a147-0c7d4df6ec15",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "AJUSTES PROVISAO ENCARGOS FERIAS FGTS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 0.01
+    }
+  },
+  {
+    "id": "a42d5448-7f26-4768-ba81-13ba0919632c",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "BAIXA INSS ABONO FERIAS 2,7% FERIAS MES",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 347.32
+    }
+  },
+  {
+    "id": "844a83a4-686c-4955-8426-93dcf3b4aadb",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "F.G.T.S. - FOLHA PAGAMENTO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 2455.71
+    }
+  },
+  {
+    "id": "063f1a80-03fd-46f5-8847-61e2d4fb5e58",
+    "codigo": "4.1.01.01.0031",
+    "descricao": "ENCARGOS FGTS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.01",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.01-CUSTO DE PESSOAL",
+    "nomeProduto": "PROVISAO 13 SALARIO - F.G.T.S.",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 204.64
     }
   },
   {
@@ -364889,6 +365666,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "2836d398-3fe0-4f29-8df4-5b7d50a0be92",
+    "codigo": "4.1.01.02.0009",
+    "descricao": "HONORARIOS ESTAGIARIOS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.02-SERVICOS DE TERCEIROS",
+    "nomeProduto": "BOLSA COMPLEM. EDUCACIONAL",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1890.62
+    }
+  },
+  {
     "id": "05d54723-b4ae-4c7b-8a0c-3f5be4942f13",
     "codigo": "4.1.01.02.0012",
     "descricao": "COMISSOES E CORRETAGENS PJ",
@@ -378158,6 +378956,54 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     },
     "quantidade": {
       "2026-09": 1
+    }
+  },
+  {
+    "id": "97666a61-43f2-4e02-86ad-26462a76f068",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "complemento": "RASPAGEM CURRAL CONFINAMENTO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 7665.62
+    },
+    "quantidade": {
+      "2026-09": 1443.62
+    }
+  },
+  {
+    "id": "882f26d0-3232-40be-a1ad-2e6dcee3c4b4",
+    "codigo": "4.1.01.04.0001",
+    "descricao": "COMBUSTIVEIS E LUBRIFICANTES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "OLEO DIESEL S500 CLASSE B 8% BIODIESEL",
+    "complemento": "RASPAGEM PISCINA CONFINAMENTO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 13016.140000000001
+    },
+    "quantidade": {
+      "2026-09": 2451.2499999999995
     }
   },
   {
@@ -547899,6 +548745,198 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     },
     "quantidade": {
       "2026-09": 2
+    }
+  },
+  {
+    "id": "5917e752-7660-4fef-b0cb-67a272b8381b",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "AMACIANTE",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 14.25
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "fb5b75e8-fc52-4320-b956-7ea8c92a7a66",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "CREME DENTAL 90G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 10.83
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "ae3b1e1e-356b-4cc6-96ea-cd70eac98b33",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "DESINFETANTE 2 L",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 14.07
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "a4da9b85-9c2d-4129-b4d7-7ae61cfeeb11",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "ESPONJA DE LA DE ACO 8 X 1 60G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 4.35
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "e5f591ee-33aa-4630-b47a-994b8dfdc663",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "PAPEL HIGIENICO 4 X 1 DUETO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 7.23
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "30d4cfd8-cc5a-46ce-89c7-05fb903dc628",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM BARRA 5 X 1",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 14.43
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "0bb26129-2812-4100-8d73-710fc82f16c2",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABAO EM PO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 21.66
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "026f6bb8-885e-4b99-b2fe-298f48d531da",
+    "codigo": "4.1.01.04.0005",
+    "descricao": "MATERIAIS DE CONSERVACAO E LIMPEZA",
+    "tipo": "C",
+    "codigoPai": "4.1.01.04",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.04-MANUTENCAO E CONSERVACAO DE BENS",
+    "nomeProduto": "SABONETE 90GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 9.36
+    },
+    "quantidade": {
+      "2026-09": 6
     }
   },
   {
@@ -1006291,6 +1007329,582 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "c4e8c043-8542-485f-884a-65a6888faaae",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 1168
+    },
+    "quantidade": {
+      "2026-09": 4
+    }
+  },
+  {
+    "id": "b56cb099-8866-449a-a645-eb4250f9cb28",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CARTAO ALIMENTACAO",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 584
+    },
+    "quantidade": {
+      "2026-09": 2
+    }
+  },
+  {
+    "id": "d5e5dae7-f27d-4ad3-adc2-15ed2c516212",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LANCHES E REFEIÇÕES",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 962.26
+    },
+    "quantidade": {
+      "2026-09": 5
+    }
+  },
+  {
+    "id": "a545c219-7636-4e35-b4e6-c4f92a9761f0",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACHOCOLATADO EM PO 200G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 7.59
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "6000e9bf-34bb-41c1-8bb5-cfc5acfcdc5f",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ACUCAR",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 33.72
+    },
+    "quantidade": {
+      "2026-09": 12
+    }
+  },
+  {
+    "id": "0c220fc2-445d-4691-bfe6-8bf0ca5faf09",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "ARROZ PCT 5 KGS TIPO 1",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 173.16
+    },
+    "quantidade": {
+      "2026-09": 9
+    }
+  },
+  {
+    "id": "d71187cf-43a7-4ebe-9b83-f55f229934d5",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA AGUA E SAL 400 GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 11.55
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "10a920a6-12df-47f3-a0f2-83cd752cd289",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 115GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 12.63
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "bc8aa18e-f576-47db-84cf-df7ab945cef4",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "BOLACHA DE DOCE 400GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 4.32
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "7e927a7f-59f5-47f1-9d49-b6154ecf3480",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "CAFE MOIDO PCT 250 GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 68.55
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "516c2393-599a-4a99-ba6f-6af8a7547102",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "EXTRATO DE TOMATE 340G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 35.34
+    },
+    "quantidade": {
+      "2026-09": 6
+    }
+  },
+  {
+    "id": "63dee798-785d-4c74-a21f-02bf8dc013e3",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FARINHA DE MANDIOCA 500 GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 5.58
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "a35dbf4d-248e-4550-b0cf-70d83cdb7b41",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FEIJAO TIPO 1",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 108.48
+    },
+    "quantidade": {
+      "2026-09": 12
+    }
+  },
+  {
+    "id": "d610e67b-ebb9-4232-aabf-a774db95dfd2",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "FLOCAO DE MILHO 500 GR CUSCUZ",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 4.86
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "a10c1093-1e7c-4968-ad82-3e19eb72d740",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GELATINA",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 7.2
+    },
+    "quantidade": {
+      "2026-09": 6
+    }
+  },
+  {
+    "id": "0437f79f-f133-48ee-a878-16becfa0a674",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "GOIABADA 300 G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 9.03
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "7bcf9d98-8701-4301-b6f0-620f4a1b595b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "LEITE EM PO INTEGRAL 200 GRAMAS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 22.38
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "2d175731-071f-45db-a36f-bcc9b872d215",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "MACARRAO 500 GRS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 11.52
+    },
+    "quantidade": {
+      "2026-09": 6
+    }
+  },
+  {
+    "id": "030567dc-f863-4414-ae01-59ec52d37032",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OLEO DE SOJA 900ML",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 84.96
+    },
+    "quantidade": {
+      "2026-09": 12
+    }
+  },
+  {
+    "id": "797285cc-df5d-4d68-9e49-1a3d643f7339",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SAL COMUM PARA CESTA BÁSICA",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 5.4
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "a7d4cc34-4a07-408c-8405-8ac2e34adc74",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SARDINHA EM MOLHO DE TOMATE",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 16.23
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "98b19a9a-0f11-477f-a38c-b12d058048aa",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "SUCO ADOÇADO 140G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 21.6
+    },
+    "quantidade": {
+      "2026-09": 12
+    }
+  },
+  {
+    "id": "63bebb9d-ec74-4f4c-bdf2-adb81d7a1594",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TAPIOCA 500 GR",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 11.91
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
+    "id": "06002f6c-5840-4b14-a58e-9aada1ef4f8b",
+    "codigo": "4.1.01.21.0012",
+    "descricao": "LANCHES E REFEICOES",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "TEMPERO COMPLETO 300G",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 6.51
+    },
+    "quantidade": {
+      "2026-09": 3
+    }
+  },
+  {
     "id": "35971232-eb8a-4a12-9742-0fcc05e86984",
     "codigo": "4.1.01.21.0013",
     "descricao": "TAXAS E ANUIDADES",
@@ -1013455,6 +1015069,30 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     },
     "quantidade": {
       "2026-09": 2
+    }
+  },
+  {
+    "id": "cb1fd1c8-fad5-4f65-9401-f8bb4f014af9",
+    "codigo": "4.1.01.21.0020",
+    "descricao": "OUTROS CUSTOS OPERACIONAIS",
+    "tipo": "C",
+    "codigoPai": "4.1.01.21",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.1.01.21-OUTROS CUSTOS OPERACIONAIS",
+    "nomeProduto": "OUTRAS DESPESAS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 3500
+    },
+    "quantidade": {
+      "2026-09": 5
     }
   },
   {
@@ -1026551,6 +1028189,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "2dd96ab1-eafb-4bf9-80fe-9ac1f4e01d6a",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": -6.29
+    }
+  },
+  {
+    "id": "def5e035-5f2d-4ae1-9f0c-c13ce4ad68ca",
+    "codigo": "4.2.01.02.0017",
+    "descricao": "RATEIO CONFRATERNIZACOES E EVENTOS COM C",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS TRANSFERIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": -25.16
+    }
+  },
+  {
     "id": "f84ae257-b3ce-409f-89b2-9e2b9c9508d3",
     "codigo": "4.2.01.02.0018",
     "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
@@ -1030808,6 +1032488,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 108.02
+    }
+  },
+  {
+    "id": "06bda3f3-7396-42f2-b625-75a1fcff302f",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 36.01
+    }
+  },
+  {
+    "id": "c5753abe-1dc8-4bb0-8ea4-ea912a965438",
+    "codigo": "4.2.01.02.0018",
+    "descricao": "RATEIO MEDICINA E SEGURANCA DO TRABALHO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 144.03
     }
   },
   {
@@ -1044930,6 +1046652,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     }
   },
   {
+    "id": "7ae449e4-a095-4f3a-a52b-9df42ed9d1a7",
+    "codigo": "4.2.01.02.0037",
+    "descricao": "RATEIO VEICULOS LEVES",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 13279.9
+    }
+  },
+  {
     "id": "89be7306-14cf-49cf-94ec-69db74f19752",
     "codigo": "4.2.01.02.0038",
     "descricao": "RATEIO VEICULOS PESADOS",
@@ -1048627,6 +1050370,27 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 52954.46
+    }
+  },
+  {
+    "id": "b232ac7a-8fc1-4bee-abd8-3f4dca07de3c",
+    "codigo": "4.2.01.02.0042",
+    "descricao": "RATEIO SUPERVISAO PECUARIA",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 3416.42
     }
   },
   {
@@ -1065731,6 +1067495,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 17.27
+    }
+  },
+  {
+    "id": "8f6ce9ff-9205-4767-86c2-e5972a1969ad",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 5.76
+    }
+  },
+  {
+    "id": "8b698431-84d8-42e3-9e29-caa0e3a46ffd",
+    "codigo": "4.2.01.02.0064",
+    "descricao": "RATEIO PROGRAMA DE INTEGRIDADE",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 23.03
     }
   },
   {
@@ -1095844,6 +1097650,48 @@ export const INITIAL_ACCOUNTS: AccountEntry[] = [
     "orcado": {},
     "realizado": {
       "2026-09": 6.27
+    }
+  },
+  {
+    "id": "4b7e8c4b-dfc0-444a-9928-12e0b8f552bc",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "CONFINAMENTO",
+    "centroCusto": "RATEIO CONFINAMENTO",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "CUSTO PESSOAL PALHA DE MILHO LG",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 10.5
+    }
+  },
+  {
+    "id": "fd07d87a-7125-444f-874c-0205173b42d7",
+    "codigo": "4.2.01.02.0066",
+    "descricao": "RATEIO PROJETOS DESENVOLVIMENTO HUMANO",
+    "tipo": "C",
+    "codigoPai": "4.2.01.02",
+    "nivel": 5,
+    "atividade": "PECUARIA",
+    "departamento": "SUPERVISAO PECUARIA",
+    "centroCusto": "RATEIO GADO GERAL",
+    "coligada": "1-VERA CRUZ AGROPECUARIA LTDA",
+    "grupoContabil": "4",
+    "grupoContabilN9": "4.2.01.02-RATEIO DE CUSTOS",
+    "nomeProduto": "CUSTOS RECEBIDOS",
+    "complemento": "COMPRA DE GADO",
+    "divisao": "PECUÁRIA",
+    "orcado": {},
+    "realizado": {
+      "2026-09": 41.650000000000006
     }
   }
 ];
