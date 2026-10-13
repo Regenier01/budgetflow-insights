@@ -273,7 +273,7 @@ function buildAreaData(
 
   for (const entry of entries) {
     const grupoContabil = resolveGrupoContabilLabel(entry);
-    if (area.excludeGrupoContabilPrefixes?.some((prefix) => grupoContabil.startsWith(prefix))) continue;
+    // Filtrar pela conta original, não pelo código do grupo N9: isto preserva os orçamentos sintéticos.\n    if (area.excludeGrupoContabilPrefixes?.some((prefix) => entry.codigo.trim().startsWith(prefix))) continue;
 
     const orcado = sumMonths(entry.orcado, includedMonths);
     const realizado = sumMonths(entry.realizado, includedMonths);
@@ -479,7 +479,7 @@ function addSheet(
     });
   });
 
-  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
+  ws.views = [{ state: 'frozen', ySplit: 1 }];\n  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
 }
 
 async function downloadWorkbook(wb: ExcelJS.Workbook, fileName: string): Promise<void> {
@@ -558,7 +558,7 @@ export function validateDeviationExportData(data: DeviationExportData): void {
  *
  * Estrutura:
  * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
- * 2) uma aba por departamento, detalhando Grupo Contábil -> Descrição Contábil.
+ * 2) para cada departamento: uma aba Resumo e outra Abertura, com todos os lançamentos do realizado.
  *
  * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
  */
@@ -611,40 +611,44 @@ export function buildDeviationAnalysisWorkbook(
     summaryBoldRows
   );
 
+  // Cada departamento possui DUAS abas próprias: resumo e abertura analítica dos lançamentos.
+  // Prefixar pela área impede colisões quando nomes de departamento se repetem em áreas distintas.
   for (const area of data.areas) {
     for (const department of area.departments) {
       const rows: (string | number)[][] = [];
       const boldRows = new Set<number>();
-
       for (const group of department.groupRows) {
         boldRows.add(rows.length);
         rows.push([group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
-
         for (const description of department.descriptionRows.filter(
           (row) => row.grupoContabil === group.grupoContabil
         )) {
-          rows.push([
-            '',
-            `↳ ${description.descricaoContabil}`,
-            description.orcado,
-            description.realizado,
-            description.diferenca,
-            '',
-          ]);
+          rows.push(['', `↳ ${description.descricaoContabil}`, description.orcado, description.realizado, description.diferenca, '']);
         }
       }
-
       const totals = sumRows(department.groupRows);
       rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
-
+      const sheetBase = `${area.sheetLabel} - ${department.departamento}`;
       addSheet(
-        wb,
-        sanitizeSheetName(department.departamento, usedNames),
+        wb, sanitizeSheetName(`${sheetBase} - Resumo`, usedNames),
         ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
-        rows,
-        [2, 3, 4],
-        true,
-        boldRows
+        rows, [2, 3, 4], true, boldRows
+      );
+
+      const opening = area.lancamentos.filter((l) => (l.departamento.trim() || 'Sem Departamento') === department.departamento);
+      const detailRows: (string | number)[][] = opening.map((l) => [
+        l.grupoContabil, monthLabel(l.mes), l.centroCusto, l.descricao,
+        l.produto, l.complemento, l.quantidade ?? '', l.realizado,
+      ]);
+      const openingTotal = opening.reduce((sum, l) => sum + l.realizado, 0);
+      if (!nearlyEqual(openingTotal, totals.realizado)) {
+        throw new Error(`Falha na abertura do departamento "${department.departamento}" da área "${area.label}": realizado não concilia com resumo.`);
+      }
+      detailRows.push(['TOTAL REALIZADO', '', '', '', '', '', '', openingTotal]);
+      addSheet(
+        wb, sanitizeSheetName(`${sheetBase} - Abertura`, usedNames),
+        ['Grupo Contábil', 'Mês', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'],
+        detailRows, [6, 7], true
       );
     }
   }
