@@ -696,4 +696,52 @@ describe('buildDeviationExportData', () => {
     expect(workbook.worksheets[2].name).toContain('Abertura');
   });
 
+  it('mantém orçamento importado adm com N9 3.4.02 e conta artificial, como o resumo do dashboard', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        id: 'SYN::ORCADOADM::PESSOAL::SAUDE',
+        codigo: '4.1.99.99.0001',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        centroCusto: 'PESSOAL',
+        departamento: 'ADMINISTRACAO',
+        grupoContabilN9: '3.4.02.01-PLANO DE SAUDE',
+        orcado: { '2026-04': 1200 },
+      }),
+      baseAccount({
+        id: 'SYN::ORCADOADM::FINANCEIRO::SERVICOS',
+        codigo: '4.1.99.99.0002',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        centroCusto: 'DIRETORIA',
+        departamento: 'ADMINISTRACAO',
+        grupoContabilN9: '3.4.02.02-SERVICOS',
+        orcado: { '2026-04': 2100 },
+      }),
+      baseAccount({
+        codigo: '3.4.01.01.0001',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        centroCusto: 'PESSOAL',
+        grupoContabilN9: '3.4.01.01-PESSOAL',
+        realizado: { '2026-04': 1100 },
+      }),
+      baseAccount({
+        codigo: '3.4.01.02.0001',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        centroCusto: 'DIRETORIA',
+        grupoContabilN9: '3.4.01.02-SERVICOS',
+        realizado: { '2026-04': 1900 },
+      }),
+    ];
+    const { areas } = buildDeviationExportData(accounts, '2026-04');
+    const sum = (key: string, field: 'orcado' | 'realizado') =>
+      areas.find((area) => area.key === key)!.groupRows.reduce((total, row) => total + row[field], 0);
+    expect(sum('DESP_ADM_TRIB_RH', 'orcado')).toBe(1200);
+    expect(sum('DESP_ADM_TRIB_RH', 'realizado')).toBe(1100);
+    expect(sum('DESP_ADM_TRIB_FINANCEIRO', 'orcado')).toBe(2100);
+    expect(sum('DESP_ADM_TRIB_FINANCEIRO', 'realizado')).toBe(1900);
+  });
+
 });

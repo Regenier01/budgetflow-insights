@@ -101,12 +101,9 @@ const DESPESAS_GERENCIA_RH_COST_CENTERS = [
 const isGerenciaRhCostCenter = (centroCusto?: string) =>
   DESPESAS_GERENCIA_RH_COST_CENTERS.some((item) => normalizeMatchText(item) === normalizeMatchText(centroCusto));
 
-/** Importações de orçamento possuem CC sintético igual ao departamento informado no arquivo. */
+/** Mesmo critério do resumo de despesas administrativas: RH pelos centros de custo; demais, Financeiro. */
 const isGerenciaRhEntry = (entry: AccountEntry): boolean =>
-  isGerenciaRhCostCenter(entry.centroCusto) ||
-  (entry.id.includes('::ORCADO') && /(?:RECURSOS HUMANOS|GERENCIA RH|GERENCIA DE RH|PESSOAL|DESENVOLVIMENTO HUMANO|MARKETING INTERNO)/.test(
-    normalizeMatchText(entry.departamento) + ' ' + normalizeMatchText(entry.centroCusto)
-  ));
+  isGerenciaRhCostCenter(entry.centroCusto);
 
 const isSyntheticBudget = (entry: AccountEntry): boolean => entry.id.includes('::ORCADO');
 
@@ -114,11 +111,10 @@ const isSyntheticBudget = (entry: AccountEntry): boolean => entry.id.includes(':
 const isExcludedExportEntry = (entry: AccountEntry, prefixes?: string[]): boolean => {
   if (!prefixes?.length) return false;
   // Código sintético da importação não identifica duplicidade do realizado.
-  if (isSyntheticBudget(entry)) {
-    // Orçamento importado usa identificador artificial: selecionar pelo grupo contábil N9.
-    const n9 = (entry.grupoContabilN9 || '').trim();
-    return prefixes.includes('3.') ? !n9.startsWith('4.') : prefixes.includes('4.') ? !n9.startsWith('3.4.01') : false;
-  }
+  // O orçamento importado usa código artificial e pode ter N9 3.4.02
+  // mesmo quando sua classificação gerencial é 3.4.01 (conforme dashboard).
+  // Não descartar esse orçamento pelo código sintético nem pelo N9.
+  if (isSyntheticBudget(entry)) return false;
   const source = entry.codigo.trim();
   // A conta efetivamente contabilizada prevalece sobre a apresentação do N9.
   if (prefixes.includes('4.') && !source.startsWith('3.4.01')) return true;
