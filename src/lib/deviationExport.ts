@@ -114,8 +114,15 @@ const isSyntheticBudget = (entry: AccountEntry): boolean => entry.id.includes(':
 const isExcludedExportEntry = (entry: AccountEntry, prefixes?: string[]): boolean => {
   if (!prefixes?.length) return false;
   // Código sintético da importação não identifica duplicidade do realizado.
-  if (isSyntheticBudget(entry)) return false;
+  if (isSyntheticBudget(entry)) {
+    // Orçamento importado usa identificador artificial: selecionar pelo grupo contábil N9.
+    const n9 = (entry.grupoContabilN9 || '').trim();
+    return prefixes.includes('3.') ? !n9.startsWith('4.') : prefixes.includes('4.') ? !n9.startsWith('3.4.01') : false;
+  }
   const source = entry.codigo.trim();
+  // A conta efetivamente contabilizada prevalece sobre a apresentação do N9.
+  if (prefixes.includes('4.') && !source.startsWith('3.4.01')) return true;
+  if (prefixes.includes('3.') && !source.startsWith('4.')) return true;
   return prefixes.some((prefix) => source.startsWith(prefix));
 };
 
@@ -291,7 +298,8 @@ function buildAreaData(
 
   for (const entry of entries) {
     const grupoContabil = resolveGrupoContabilLabel(entry);
-    // Filtrar pela conta original, não pelo código do grupo N9: isto preserva os orçamentos sintéticos.\n    if (isExcludedExportEntry(entry, area.excludeGrupoContabilPrefixes)) continue;
+    // Filtrar pela conta original, preservando os orçamentos sintéticos.
+    if (isExcludedExportEntry(entry, area.excludeGrupoContabilPrefixes)) continue;
 
     const orcado = sumMonths(entry.orcado, includedMonths);
     const realizado = sumMonths(entry.realizado, includedMonths);
