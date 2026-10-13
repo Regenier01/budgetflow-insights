@@ -479,7 +479,7 @@ function addSheet(
     });
   });
 
-  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };\n  ws.views = [{ state: 'frozen', ySplit: 1 }];\n  ws.getColumn(headers.length).width = numberCols.includes(headers.length - 1) ? 18 : 42;
 }
 
 async function downloadWorkbook(wb: ExcelJS.Workbook, fileName: string): Promise<void> {
@@ -558,7 +558,7 @@ export function validateDeviationExportData(data: DeviationExportData): void {
  *
  * Estrutura:
  * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
- * 2) uma aba por departamento, detalhando Grupo Contábil -> Descrição Contábil.
+ * 2) uma aba de resumo por atividade; 3) uma aba de abertura de lançamentos por atividade.
  *
  * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
  */
@@ -611,41 +611,41 @@ export function buildDeviationAnalysisWorkbook(
     summaryBoldRows
   );
 
+  // Uma aba de resumo e uma abertura de lançamentos por atividade.
+  // Departamento é coluna, em vez de produzir várias abas com nomes repetidos.
   for (const area of data.areas) {
+    if (!area.groupRows.length) continue;
+    const rows: (string | number)[][] = [];
+    const boldRows = new Set<number>();
     for (const department of area.departments) {
-      const rows: (string | number)[][] = [];
-      const boldRows = new Set<number>();
-
+      const deptTotal = sumRows(department.groupRows);
+      boldRows.add(rows.length);
+      rows.push([department.departamento, 'TOTAL DO DEPARTAMENTO', '', deptTotal.orcado, deptTotal.realizado, deptTotal.realizado - deptTotal.orcado, '']);
       for (const group of department.groupRows) {
         boldRows.add(rows.length);
-        rows.push([group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
-
-        for (const description of department.descriptionRows.filter(
-          (row) => row.grupoContabil === group.grupoContabil
-        )) {
-          rows.push([
-            '',
-            `↳ ${description.descricaoContabil}`,
-            description.orcado,
-            description.realizado,
-            description.diferenca,
-            '',
-          ]);
+        rows.push([department.departamento, group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
+        for (const desc of department.descriptionRows.filter((d) => d.grupoContabil === group.grupoContabil)) {
+          rows.push([department.departamento, '', desc.descricaoContabil, desc.orcado, desc.realizado, desc.diferenca, '']);
         }
       }
+    }
+    const total = sumRows(area.groupRows);
+    rows.push(['TOTAL DA ATIVIDADE', '', '', total.orcado, total.realizado, total.realizado - total.orcado, '']);
+    addSheet(wb, sanitizeSheetName(area.sheetLabel, usedNames),
+      ['Departamento', 'Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+      rows, [3, 4, 5], true, boldRows);
 
-      const totals = sumRows(department.groupRows);
-      rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
-
-      addSheet(
-        wb,
-        sanitizeSheetName(department.departamento, usedNames),
-        ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
-        rows,
-        [2, 3, 4],
-        true,
-        boldRows
-      );
+    const openingTotal = area.lancamentos.reduce((acc, row) => acc + row.realizado, 0);
+    if (!nearlyEqual(openingTotal, total.realizado)) {
+      throw new Error(`Abertura de lançamentos de "${area.label}" não confere com o total realizado do resumo.`);
+    }
+    if (area.lancamentos.length) {
+      addSheet(wb, sanitizeSheetName(`Abertura - ${area.sheetLabel}`, usedNames),
+        ['Grupo Contábil', 'Mês', 'Departamento', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'],
+        area.lancamentos.map((row) => [
+          row.grupoContabil, monthLabel(row.mes), row.departamento, row.centroCusto,
+          row.descricao, row.produto, row.complemento, row.quantidade ?? '', row.realizado,
+        ]), [7, 8]);
     }
   }
 
