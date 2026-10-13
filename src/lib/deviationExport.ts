@@ -113,9 +113,9 @@ const isSyntheticBudget = (entry: AccountEntry): boolean => entry.id.includes(':
 /** No orçamento importado o grupo de classificação vem do N9, não da conta sintética. */
 const isExcludedExportEntry = (entry: AccountEntry, prefixes?: string[]): boolean => {
   if (!prefixes?.length) return false;
-  const source = isSyntheticBudget(entry)
-    ? (entry.grupoContabilN9 || entry.codigo).trim()
-    : entry.codigo.trim();
+  // Código sintético da importação não identifica duplicidade do realizado.
+  if (isSyntheticBudget(entry)) return false;
+  const source = entry.codigo.trim();
   return prefixes.some((prefix) => source.startsWith(prefix));
 };
 
@@ -577,7 +577,7 @@ export function validateDeviationExportData(data: DeviationExportData): void {
  *
  * Estrutura:
  * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
- * 2) uma aba por atividade com departamentos, grupos, contas e abertura de lançamentos.
+ * 2) para cada departamento, uma aba Resumo e uma aba Abertura.
  *
  * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
  */
@@ -630,49 +630,46 @@ export function buildDeviationAnalysisWorkbook(
     summaryBoldRows
   );
 
-  // Uma guia por atividade. Departamentos e centros de custo são seções da mesma guia;
-  // o detalhamento dos lançamentos fica logo abaixo, sem multiplicar abas.
+  // Cada departamento possui DUAS abas próprias: resumo e abertura analítica dos lançamentos.
+  // Prefixar pela área impede colisões quando nomes de departamento se repetem em áreas distintas.
   for (const area of data.areas) {
-    if (!area.departments.length) continue;
-    const rows: (string | number)[][] = [];
-    const boldRows = new Set<number>();
     for (const department of area.departments) {
-      const totals = sumRows(department.groupRows);
-      boldRows.add(rows.length);
-      rows.push(['DEPARTAMENTO', department.departamento, '', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
+      const rows: (string | number)[][] = [];
+      const boldRows = new Set<number>();
       for (const group of department.groupRows) {
         boldRows.add(rows.length);
-        rows.push(['GRUPO', department.departamento, group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
-        for (const description of department.descriptionRows.filter((r) => r.grupoContabil === group.grupoContabil)) {
-          rows.push(['CONTA', department.departamento, group.grupoContabil, description.descricaoContabil,
-            description.orcado, description.realizado, description.diferenca, '']);
+        rows.push([group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
+        for (const description of department.descriptionRows.filter(
+          (row) => row.grupoContabil === group.grupoContabil
+        )) {
+          rows.push(['', `↳ ${description.descricaoContabil}`, description.orcado, description.realizado, description.diferenca, '']);
         }
       }
-      const opening = area.lancamentos.filter((l) =>
-        (l.departamento.trim() || 'Sem Departamento') === department.departamento);
+      const totals = sumRows(department.groupRows);
+      rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
+      const sheetBase = `${area.sheetLabel} - ${department.departamento}`;
+      addSheet(
+        wb, sanitizeSheetName(`${sheetBase} - Resumo`, usedNames),
+        ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+        rows, [2, 3, 4], true, boldRows
+      );
+
+      const opening = area.lancamentos.filter((l) => (l.departamento.trim() || 'Sem Departamento') === department.departamento);
+      const detailRows: (string | number)[][] = opening.map((l) => [
+        l.grupoContabil, monthLabel(l.mes), l.centroCusto, l.descricao,
+        l.produto, l.complemento, l.quantidade ?? '', l.realizado,
+      ]);
       const openingTotal = opening.reduce((sum, l) => sum + l.realizado, 0);
       if (!nearlyEqual(openingTotal, totals.realizado)) {
-        throw new Error(`A abertura de "${department.departamento}" não concilia com o realizado de "${area.label}".`);
+        throw new Error(`Falha na abertura do departamento "${department.departamento}" da área "${area.label}": realizado não concilia com resumo.`);
       }
-      boldRows.add(rows.length);
-      rows.push(['ABERTURA DOS LANÇAMENTOS', department.departamento, '', '', '', openingTotal, '', '']);
-      for (const l of opening) {
-        rows.push(['LANÇAMENTO', department.departamento, l.grupoContabil,
-          `${monthLabel(l.mes)} | ${l.centroCusto} | ${l.descricao} | ${l.produto} | ${l.complemento} | Qtd: ${l.quantidade ?? '-'}`,
-          '', l.realizado, '', '']);
-      }
-      rows.push(['', '', '', '', '', '', '', '']);
+      detailRows.push(['TOTAL REALIZADO', '', '', '', '', '', '', openingTotal]);
+      addSheet(
+        wb, sanitizeSheetName(`${sheetBase} - Abertura`, usedNames),
+        ['Grupo Contábil', 'Mês', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'],
+        detailRows, [6, 7], true
+      );
     }
-    const areaTotals = sumRows(area.groupRows);
-    boldRows.add(rows.length);
-    rows.push(['TOTAL DA ATIVIDADE', area.label, '', '', areaTotals.orcado, areaTotals.realizado,
-      areaTotals.realizado - areaTotals.orcado, '']);
-    addSheet(wb, sanitizeSheetName(area.sheetLabel, usedNames),
-      ['Nível', 'Departamento', 'Grupo Contábil', 'Descrição / Abertura', 'Orçado', 'Realizado', 'Diferença', 'Justificativa'],
-      rows, [4, 5, 6], true, boldRows);
-    const ws = wb.worksheets[wb.worksheets.length - 1];
-    ws.getColumn(4).width = 80;
-    ws.getColumn(2).width = 32;
   }
 
   return { workbook: wb, data };

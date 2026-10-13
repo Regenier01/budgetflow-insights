@@ -649,15 +649,13 @@ describe('buildDeviationExportData', () => {
     ];
     const { workbook } = buildDeviationAnalysisWorkbook(accounts);
     const sheets = workbook.worksheets;
-    expect(sheets).toHaveLength(2); // Geral + uma guia da atividade agrícola
-    expect(sheets.map((s) => s.name)).toEqual(['Resumo Total por Atividade', 'Agrícola']);
-    const agricola = sheets[1];
-    expect(agricola.getCell('E2').value).toBe(100);
-    expect(agricola.getCell('F2').value).toBe(90);
-    const rows = agricola.getColumn(1).values.map((v) => String(v ?? ''));
-    expect(rows.filter((v) => v === 'DEPARTAMENTO')).toHaveLength(2);
-    expect(rows.filter((v) => v === 'ABERTURA DOS LANÇAMENTOS')).toHaveLength(2);
-    expect(rows.filter((v) => v === 'LANÇAMENTO')).toHaveLength(2);
+    expect(sheets).toHaveLength(5); // Geral + resumo e abertura por departamento
+    const resumoA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Resumo'))!;
+    const aberturaA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Abertura'))!;
+    expect(resumoA.getCell('C2').value).toBe(100);
+    expect(resumoA.getCell('D2').value).toBe(90);
+    expect(aberturaA.getCell('H2').value).toBe(90);
+    expect(aberturaA.getCell('H3').value).toBe(90);
   });
 
   it('preserva orçado financeiro e RH mesmo com rótulo N9 começando por 4', () => {
@@ -693,7 +691,9 @@ describe('buildDeviationExportData', () => {
     const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
     const rh = data.areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!;
     expect(rh.groupRows[0]).toMatchObject({ orcado: 3500, realizado: 3150, diferenca: -350 });
-    expect(workbook.worksheets.map((sheet) => sheet.name)).toEqual(['Resumo Total por Atividade', 'Adm - RH']);
+    expect(workbook.worksheets).toHaveLength(3);
+    expect(workbook.worksheets[1].name).toContain('Resumo');
+    expect(workbook.worksheets[2].name).toContain('Abertura');
   });
 
 });
