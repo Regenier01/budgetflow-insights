@@ -479,7 +479,8 @@ function addSheet(
     });
   });
 
-  ws.views = [{ state: 'frozen', ySplit: 1 }];\n  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
+  ws.views = [{ state: 'frozen', ySplit: 1 }];
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: headers.length } };
 }
 
 async function downloadWorkbook(wb: ExcelJS.Workbook, fileName: string): Promise<void> {
