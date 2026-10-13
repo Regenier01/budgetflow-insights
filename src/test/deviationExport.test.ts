@@ -634,49 +634,43 @@ describe('buildDeviationExportData', () => {
     expect(department.descriptionRows[0]).toMatchObject({ orcado: 300, realizado: 285 });
   });
 
-  it('gera uma aba de resumo por atividade e uma aba para cada departamento', () => {
+  it('gera resumo e abertura por departamento, conciliados e sem repetir lançamentos', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
-        atividade: 'AGRICOLA',
-        tipo: 'C',
-        codigo: '4.1.01.01.0001',
-        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
-        departamento: 'FAZENDA A',
-        descricao: 'Adubo',
-        orcado: { '2026-04': 100 },
-        realizado: { '2026-04': 90 },
+        atividade: 'AGRICOLA', tipo: 'C', codigo: '4.1.01.01.0001',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS', departamento: 'FAZENDA A',
+        descricao: 'Adubo', orcado: { '2026-04': 100 }, realizado: { '2026-04': 90 },
       }),
       baseAccount({
-        atividade: 'AGRICOLA',
-        tipo: 'C',
-        codigo: '4.1.01.01.0002',
-        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
-        departamento: 'FAZENDA B',
-        descricao: 'Defensivos',
-        orcado: { '2026-04': 200 },
-        realizado: { '2026-04': 250 },
+        atividade: 'AGRICOLA', tipo: 'C', codigo: '4.1.01.01.0002',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS', departamento: 'FAZENDA B',
+        descricao: 'Defensivos', orcado: { '2026-04': 200 }, realizado: { '2026-04': 250 },
       }),
     ];
-
     const { workbook } = buildDeviationAnalysisWorkbook(accounts);
-    const sheetNames = workbook.worksheets.map((sheet) => sheet.name);
+    const sheets = workbook.worksheets;
+    expect(sheets).toHaveLength(5); // Geral + resumo/abertura de cada departamento
+    expect(new Set(sheets.map((sheet) => sheet.name.toLowerCase())).size).toBe(5);
+    const resumoA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Resumo'))!;
+    const aberturaA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Abertura'))!;
+    expect(resumoA.getCell('C2').value).toBe(100);
+    expect(resumoA.getCell('D2').value).toBe(90);
+    expect(aberturaA.getCell('H2').value).toBe(90);
+    expect(aberturaA.getCell('H3').value).toBe(90);
+  });
 
-    expect(sheetNames).toContain('Resumo Total por Atividade');
-    expect(sheetNames).toContain('FAZENDA A');
-    expect(sheetNames).toContain('FAZENDA B');
-
-    const fazendaA = workbook.getWorksheet('FAZENDA A')!;
-    expect(fazendaA.getRow(1).values).toEqual([
-      undefined,
-      'Grupo Contábil',
-      'Descrição Contábil',
-      'Total Orçado',
-      'Total Realizado',
-      'Diferença',
-      'Justificativa',
-    ]);
-    expect(fazendaA.getCell('A2').value).toBe('4.1.01.01-CUSTOS RURAIS');
-    expect(fazendaA.getCell('B3').value).toBe('↳ Adubo');
+  it('preserva orçado financeiro e RH mesmo com rótulo N9 começando por 4', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({ codigo: '3.4.01.01.0001', departamento: 'ADMINISTRACAO',
+        centroCusto: 'GERENCIA FINANCEIRA', grupoContabilN9: '4.1.99.01-AGRUPAMENTO',
+        orcado: { '2026-04': 700 }, realizado: { '2026-04': 650 } }),
+      baseAccount({ codigo: '3.4.01.01.0002', departamento: 'RECURSOS HUMANOS',
+        centroCusto: 'PESSOAL', grupoContabilN9: '4.1.99.01-AGRUPAMENTO',
+        orcado: { '2026-04': 200 }, realizado: { '2026-04': 210 } }),
+    ];
+    const { areas } = buildDeviationExportData(accounts, '2026-04');
+    expect(areas.find((area) => area.key === 'DESP_ADM_TRIB_FINANCEIRO')!.groupRows[0].orcado).toBe(700);
+    expect(areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!.groupRows[0].orcado).toBe(200);
   });
 
 });
