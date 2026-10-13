@@ -649,14 +649,15 @@ describe('buildDeviationExportData', () => {
     ];
     const { workbook } = buildDeviationAnalysisWorkbook(accounts);
     const sheets = workbook.worksheets;
-    expect(sheets).toHaveLength(5); // Geral + resumo/abertura de cada departamento
-    expect(new Set(sheets.map((sheet) => sheet.name.toLowerCase())).size).toBe(5);
-    const resumoA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Resumo'))!;
-    const aberturaA = sheets.find((sheet) => sheet.name.includes('FAZENDA A') && sheet.name.includes('Abertura'))!;
-    expect(resumoA.getCell('C2').value).toBe(100);
-    expect(resumoA.getCell('D2').value).toBe(90);
-    expect(aberturaA.getCell('H2').value).toBe(90);
-    expect(aberturaA.getCell('H3').value).toBe(90);
+    expect(sheets).toHaveLength(2); // Geral + uma guia da atividade agrícola
+    expect(sheets.map((s) => s.name)).toEqual(['Resumo Total por Atividade', 'Agrícola']);
+    const agricola = sheets[1];
+    expect(agricola.getCell('E2').value).toBe(100);
+    expect(agricola.getCell('F2').value).toBe(90);
+    const rows = agricola.getColumn(1).values.map((v) => String(v ?? ''));
+    expect(rows.filter((v) => v === 'DEPARTAMENTO')).toHaveLength(2);
+    expect(rows.filter((v) => v === 'ABERTURA DOS LANÇAMENTOS')).toHaveLength(2);
+    expect(rows.filter((v) => v === 'LANÇAMENTO')).toHaveLength(2);
   });
 
   it('preserva orçado financeiro e RH mesmo com rótulo N9 começando por 4', () => {
@@ -671,6 +672,28 @@ describe('buildDeviationExportData', () => {
     const { areas } = buildDeviationExportData(accounts, '2026-04');
     expect(areas.find((area) => area.key === 'DESP_ADM_TRIB_FINANCEIRO')!.groupRows[0].orcado).toBe(700);
     expect(areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!.groupRows[0].orcado).toBe(200);
+  });
+
+  it('preserva orçamento sintético na classificação correta e gera só atividades com dados', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        id: 'SYN::ORCADOADM::PESSOAL::3.4.01.01::SALARIOS',
+        atividade: 'DESP_ADM_TRIB', tipo: 'D', codigo: '4.1.01.01.9999',
+        grupoContabilN9: '3.4.01.01-CUSTOS COM PESSOAL',
+        departamento: 'RECURSOS HUMANOS', centroCusto: 'PESSOAL',
+        orcado: { '2026-04': 3500 }, realizado: {},
+      }),
+      baseAccount({
+        atividade: 'DESP_ADM_TRIB', tipo: 'D', codigo: '3.4.01.01.0001',
+        grupoContabilN9: '3.4.01.01-CUSTOS COM PESSOAL',
+        departamento: 'RECURSOS HUMANOS', centroCusto: 'PESSOAL',
+        orcado: {}, realizado: { '2026-04': 3150 },
+      }),
+    ];
+    const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
+    const rh = data.areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!;
+    expect(rh.groupRows[0]).toMatchObject({ orcado: 3500, realizado: 3150, diferenca: -350 });
+    expect(workbook.worksheets.map((sheet) => sheet.name)).toEqual(['Resumo Total por Atividade', 'Adm - RH']);
   });
 
 });
