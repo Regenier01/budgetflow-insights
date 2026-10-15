@@ -691,9 +691,10 @@ describe('buildDeviationExportData', () => {
     const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
     const rh = data.areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!;
     expect(rh.groupRows[0]).toMatchObject({ orcado: 3500, realizado: 3150, diferenca: -350 });
-    // Geral + resumo geral RH/Financeiro (só RH tem dado aqui) + resumo e abertura por centro de custo.
+    // Geral + resumo geral de RH (só RH tem dado aqui — Financeiro não gera aba) + resumo e abertura por centro de custo.
     expect(workbook.worksheets).toHaveLength(4);
-    expect(workbook.worksheets[1].name).toContain('Geral RH e Financeiro');
+    expect(workbook.worksheets[1].name).toContain('Geral RH');
+    expect(workbook.worksheets.some((sheet) => sheet.name.includes('Geral Financeiro'))).toBe(false);
     expect(workbook.worksheets[2].name).toContain('Resumo');
     expect(workbook.worksheets[3].name).toContain('Abertura');
   });
@@ -779,13 +780,13 @@ describe('buildDeviationExportData', () => {
 
     // Um único departamento/centro de custo na saída — PESSOAL —, não dois.
     expect(rh.departments).toHaveLength(1);
-    expect(rh.departments[0].departamento).toBe('PESSOAL');
+    expect(rh.departments[0].departamento).toBe('Pessoal');
     expect(rh.departments[0].groupRows).toMatchObject([{ orcado: 120000, realizado: 118500 }]);
 
     // O workbook reconcilia (não lança erro de divergência entre resumo e abertura).
     const { workbook } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
     const resumoSheet = workbook.worksheets.find(
-      (sheet) => sheet.name.includes('PESSOAL') && sheet.name.includes('Resumo')
+      (sheet) => sheet.name.includes('Pessoal') && sheet.name.includes('Resumo')
     )!;
     expect(resumoSheet.getCell('C2').value).toBe(120000);
     expect(resumoSheet.getCell('D2').value).toBe(118500);
@@ -829,7 +830,7 @@ describe('buildDeviationExportData', () => {
     expect(seringal.departments[0].departamento).toBe('SERINGAL NORTE');
   });
 
-  it('cria uma aba de resumo geral de Despesas Administrativas unindo todos os centros de custo de RH e de Financeiro separadamente', () => {
+  it('cria uma aba de resumo geral por sub-área de Despesas Administrativas (Financeiro e RH em abas separadas), unindo os centros de custo de cada uma', () => {
     const accounts: AccountEntry[] = [
       baseAccount({
         codigo: '3.4.01.01.0001', atividade: 'DESP_ADM_TRIB', tipo: 'D',
@@ -862,13 +863,21 @@ describe('buildDeviationExportData', () => {
       ])
     );
 
-    const resumoGeralSheet = workbook.worksheets.find((sheet) => sheet.name.includes('Geral RH e Financeiro'))!;
-    expect(resumoGeralSheet).toBeDefined();
-    const rows = resumoGeralSheet.getSheetValues();
-    const flat = rows.flat().filter(Boolean);
-    expect(flat).toContain('Gerência RH');
-    expect(flat).toContain('Gerência Financeiro');
-    expect(flat.some((v) => typeof v === 'string' && v.includes('Salários'))).toBe(true);
+    const resumoGeralRhSheet = workbook.worksheets.find((sheet) => sheet.name.includes('Geral RH'))!;
+    expect(resumoGeralRhSheet).toBeDefined();
+    const rhFlat = resumoGeralRhSheet.getSheetValues().flat().filter(Boolean);
+    expect(rhFlat).toContain('TOTAL GERÊNCIA RH');
+    expect(rhFlat.some((v) => typeof v === 'string' && v.includes('Salários'))).toBe(true);
+    expect(rhFlat.some((v) => typeof v === 'string' && v.includes('PPR'))).toBe(true);
+
+    const resumoGeralFinanceiroSheet = workbook.worksheets.find((sheet) => sheet.name.includes('Geral Financeiro'))!;
+    expect(resumoGeralFinanceiroSheet).toBeDefined();
+    const financeiroFlat = resumoGeralFinanceiroSheet.getSheetValues().flat().filter(Boolean);
+    expect(financeiroFlat).toContain('TOTAL GERÊNCIA FINANCEIRO');
+    expect(financeiroFlat.some((v) => typeof v === 'string' && v.includes('Consultoria'))).toBe(true);
+    // As duas abas ficam separadas — uma não contém dado da outra.
+    expect(rhFlat.some((v) => typeof v === 'string' && v.includes('Consultoria'))).toBe(false);
+    expect(financeiroFlat.some((v) => typeof v === 'string' && v.includes('Salários'))).toBe(false);
   });
 
 });
