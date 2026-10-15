@@ -3,6 +3,7 @@ import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/t
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
 import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
+import { resolveCostCenterDisplayLabel } from '@/data/costCenterDisplayNames';
 
 export type DeviationExportAreaKey =
   | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA' | 'CANA' | 'ENCARGOS'>
@@ -371,7 +372,7 @@ function buildAreaData(
       ? departmentFieldLabel
       : departmentField === 'departamento'
         ? resolveDepartmentDisplayLabel(entry, rawGroupValue)
-        : rawGroupValue;
+        : resolveCostCenterDisplayLabel(rawGroupValue);
     const descricaoContabil = entry.descricao?.trim() || 'Sem Descrição Contábil';
     const dept = departments.get(departamento) ?? {
       groups: new Map<string, { orcado: number; realizado: number }>(),
@@ -747,45 +748,37 @@ export function buildDeviationAnalysisWorkbook(
     summaryBoldRows
   );
 
-  // Resumo geral de Despesas Administrativas, unindo todos os centros de custo de cada sub-área
-  // (Gerência RH e Gerência Financeiro) num único bloco por grupo/descrição contábil — separado da
-  // visão por centro de custo que já existe nas abas individuais abaixo.
-  const ADM_RESUMO_GERAL_SECTIONS: Array<{ key: DeviationExportAreaKey; label: string }> = [
-    { key: 'DESP_ADM_TRIB_RH', label: 'Gerência RH' },
-    { key: 'DESP_ADM_TRIB_FINANCEIRO', label: 'Gerência Financeiro' },
+  // Resumo geral de Despesas Administrativas, uma aba por sub-área (Gerência Financeiro e Gerência
+  // RH), unindo todos os centros de custo da sub-área num único bloco por grupo/descrição contábil —
+  // separado da visão por centro de custo que já existe nas abas individuais abaixo.
+  const ADM_RESUMO_GERAL_SECTIONS: Array<{ key: DeviationExportAreaKey; label: string; sheetName: string }> = [
+    { key: 'DESP_ADM_TRIB_FINANCEIRO', label: 'Gerência Financeiro', sheetName: 'Adm - Geral Financeiro' },
+    { key: 'DESP_ADM_TRIB_RH', label: 'Gerência RH', sheetName: 'Adm - Geral RH' },
   ];
-  const admResumoGeralRows: (string | number)[][] = [];
-  const admResumoGeralBoldRows = new Set<number>();
-  let hasAdmResumoGeral = false;
   for (const section of ADM_RESUMO_GERAL_SECTIONS) {
     const area = data.areas.find((a) => a.key === section.key);
     if (!area || area.groupRows.length === 0) continue;
-    hasAdmResumoGeral = true;
+
+    const rows: (string | number)[][] = [];
+    const boldRows = new Set<number>();
     for (const group of area.groupRows) {
-      admResumoGeralBoldRows.add(admResumoGeralRows.length);
-      admResumoGeralRows.push([section.label, group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
+      boldRows.add(rows.length);
+      rows.push([group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
       for (const description of area.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil)) {
-        admResumoGeralRows.push([
-          '', '', `↳ ${description.descricaoContabil}`, description.orcado, description.realizado, description.diferenca, '',
-        ]);
+        rows.push(['', `↳ ${description.descricaoContabil}`, description.orcado, description.realizado, description.diferenca, '']);
       }
     }
-    const sectionTotals = sumRows(area.groupRows);
-    admResumoGeralBoldRows.add(admResumoGeralRows.length);
-    admResumoGeralRows.push([
-      `TOTAL ${section.label.toUpperCase()}`, '', '', sectionTotals.orcado, sectionTotals.realizado,
-      sectionTotals.realizado - sectionTotals.orcado, '',
-    ]);
-  }
-  if (hasAdmResumoGeral) {
+    const totals = sumRows(area.groupRows);
+    rows.push([`TOTAL ${section.label.toUpperCase()}`, '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
+
     addSheet(
       wb,
-      sanitizeSheetName('Adm - Geral RH e Financeiro', usedNames),
-      ['Área', 'Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
-      admResumoGeralRows,
-      [3, 4, 5],
-      false,
-      admResumoGeralBoldRows
+      sanitizeSheetName(section.sheetName, usedNames),
+      ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+      rows,
+      [2, 3, 4],
+      true,
+      boldRows
     );
   }
 
