@@ -2,6 +2,7 @@ import ExcelJS from 'exceljs';
 import { MONTHS, type AccountEntry, type AtividadeKey, type MonthKey } from '@/types/budget';
 import { isOutrasReceitasEventuaisCode } from '@/data/outrasRendasAccounts';
 import { isReceitaPecuariaGeneticaDepartment } from '@/data/receitaPecuariaGenetica';
+import { DEPARTMENT_MAPPING } from '@/data/departmentMapping';
 
 export type DeviationExportAreaKey =
   | Exclude<AtividadeKey, 'DESP_ADM_TRIB' | 'PECUARIA' | 'CANA' | 'ENCARGOS'>
@@ -53,6 +54,8 @@ export interface DeviationAreaData {
   label: string;
   sheetLabel: string;
   groupRows: DeviationGroupRow[];
+  /** Grupo Contábil -> Descrição Contábil agregado na área inteira (todos os departamentos/centros de custo somados). */
+  descriptionRows: DeviationDescriptionRow[];
   departments: DeviationDepartmentData[];
   lancamentos: DeviationLancamentoRow[];
 }
@@ -93,6 +96,34 @@ const normalizeMatchText = (value?: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toUpperCase()
     .trim();
+
+/**
+ * Índice (nome do departamento normalizado -> unidade de negócio) a partir da mesma base de
+ * mapeamento já usada no resto do sistema (data/departmentMapping.ts, usada em budgetStore.ts para
+ * classificar a atividade na importação). Pecuária, Agrícola e Seringal têm departamentos que são
+ * códigos de talhão/safra (ex.: "F4T12 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398"),
+ * ilegíveis como nome de aba — a unidade de negócio ("JÓIA - PASTAGEM") é o nome que o sistema já
+ * usa para agrupar esses códigos de forma legível.
+ */
+const DEPARTMENT_UNIDADE_NEGOCIO_INDEX = new Map<string, string>();
+for (const [nomeDepto, info] of Object.entries(DEPARTMENT_MAPPING as Record<string, { unidadeNegocio?: string }>)) {
+  const unidadeNegocio = info?.unidadeNegocio?.trim();
+  if (!unidadeNegocio) continue;
+  const key = normalizeMatchText(nomeDepto);
+  if (key && !DEPARTMENT_UNIDADE_NEGOCIO_INDEX.has(key)) {
+    DEPARTMENT_UNIDADE_NEGOCIO_INDEX.set(key, unidadeNegocio);
+  }
+}
+
+/**
+ * Nome legível do departamento para a aba/resumo: prioriza a unidade de negócio já importada junto
+ * do lançamento (coluna UNIDADE_DE_NEGOCIO do realizado); quando ausente (ex.: orçado sintético),
+ * cai para a mesma base de mapeamento; sem nenhum dos dois, mantém o valor bruto.
+ */
+const resolveDepartmentDisplayLabel = (entry: AccountEntry, rawDepartamento: string): string =>
+  entry.unidadeNegocio?.trim() ||
+  DEPARTMENT_UNIDADE_NEGOCIO_INDEX.get(normalizeMatchText(rawDepartamento)) ||
+  rawDepartamento;
 
 /** Mesmo critério de "Despesas Tributárias" usado na página de Despesas Adm. e Tributárias do dashboard. */
 const isTributariaGroupEntry = (entry: Pick<AccountEntry, 'grupoContabil' | 'grupoContabilN9'>): boolean => {
@@ -303,6 +334,9 @@ function buildAreaData(
   // Só custos e despesas (tipo 'C'/'D'); contas de receita ficam de fora, como pedido.
   const entries = accounts.filter((a) => a.nivel === 5 && a.tipo !== 'R' && area.match(a));
   const groups = new Map<string, { orcado: number; realizado: number }>();
+  // Mesma descrição contábil agregada na área inteira (todos os departamentos/centros de custo
+  // somados), para a aba de resumo geral que une as sub-áreas administrativas.
+  const areaDescriptions = new Map<string, DeviationDescriptionRow>();
   const departments = new Map<
     string,
     {
@@ -330,7 +364,14 @@ function buildAreaData(
 
     // A mesma base usada no total da atividade também alimenta os departamentos/centros de custo.
     // Entradas sem valor nesse campo ficam explícitas para que nenhuma parcela seja perdida na reconciliação.
-    const departamento = entry[departmentField]?.trim() || departmentFieldLabel;
+    const rawGroupValue = entry[departmentField]?.trim();
+    // Centro de custo (Adm. e Tributárias) já é um nome curto e legível — só departamento
+    // (Pecuária/Agrícola/Seringal) tem códigos de talhão/safra que precisam do nome amigável.
+    const departamento = !rawGroupValue
+      ? departmentFieldLabel
+      : departmentField === 'departamento'
+        ? resolveDepartmentDisplayLabel(entry, rawGroupValue)
+        : rawGroupValue;
     const descricaoContabil = entry.descricao?.trim() || 'Sem Descrição Contábil';
     const dept = departments.get(departamento) ?? {
       groups: new Map<string, { orcado: number; realizado: number }>(),
@@ -355,6 +396,18 @@ function buildAreaData(
     deptDescription.diferenca = deptDescription.realizado - deptDescription.orcado;
     dept.descriptions.set(descriptionKey, deptDescription);
     departments.set(departamento, dept);
+
+    const areaDescription = areaDescriptions.get(descriptionKey) ?? {
+      grupoContabil,
+      descricaoContabil,
+      orcado: 0,
+      realizado: 0,
+      diferenca: 0,
+    };
+    areaDescription.orcado += orcado;
+    areaDescription.realizado += realizado;
+    areaDescription.diferenca = areaDescription.realizado - areaDescription.orcado;
+    areaDescriptions.set(descriptionKey, areaDescription);
 
     // Abertura: mesma granularidade e colunas da visão "Planilha" já exibida no dashboard, uma linha por mês com realizado.
     for (const month of MONTHS) {
@@ -419,8 +472,18 @@ function buildAreaData(
       return a.departamento.localeCompare(b.departamento, 'pt-BR');
     });
 
-  // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, em ordem cronológica de mês e, no mesmo mês, maior |Realizado| primeiro (igual à Planilha do dashboard).
+  // Descrições agregadas na área inteira (todos os departamentos/centros de custo somados), no mesmo
+  // ranking de maior desvio do resumo — alimenta a aba de resumo geral que une as sub-áreas administrativas.
   const groupRank = new Map(groupRows.map((g, i) => [g.grupoContabil, i]));
+  const descriptionRows: DeviationDescriptionRow[] = Array.from(areaDescriptions.values()).sort((a, b) => {
+    const rankDiff = (groupRank.get(a.grupoContabil) ?? 0) - (groupRank.get(b.grupoContabil) ?? 0);
+    if (rankDiff !== 0) return rankDiff;
+    const diff = Math.abs(b.diferenca) - Math.abs(a.diferenca);
+    if (diff !== 0) return diff;
+    return a.descricaoContabil.localeCompare(b.descricaoContabil, 'pt-BR');
+  });
+
+  // Abertura: agrupada pelo mesmo ranking de maior desvio do resumo; dentro do grupo, em ordem cronológica de mês e, no mesmo mês, maior |Realizado| primeiro (igual à Planilha do dashboard).
   const monthIndex = new Map(MONTHS.map((m, i) => [m.key, i]));
   lancamentos.sort((a, b) => {
     const rankDiff = (groupRank.get(a.grupoContabil) ?? 0) - (groupRank.get(b.grupoContabil) ?? 0);
@@ -435,6 +498,7 @@ function buildAreaData(
     label: area.label,
     sheetLabel: area.sheetLabel,
     groupRows,
+    descriptionRows,
     departments: departmentRows,
     lancamentos,
   };
@@ -593,6 +657,19 @@ export function validateDeviationExportData(data: DeviationExportData): void {
       throw new Error(`Falha de reconciliação na atividade "${area.label}": total diferente da soma dos departamentos.`);
     }
 
+    for (const group of area.groupRows) {
+      const descriptions = area.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil);
+      const descriptionTotals = sumRows(descriptions);
+      if (
+        !nearlyEqual(group.orcado, descriptionTotals.orcado) ||
+        !nearlyEqual(group.realizado, descriptionTotals.realizado)
+      ) {
+        throw new Error(
+          `Falha de reconciliação na atividade "${area.label}", grupo "${group.grupoContabil}": total diferente da soma das descrições.`
+        );
+      }
+    }
+
     for (const department of area.departments) {
       for (const group of department.groupRows) {
         const descriptions = department.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil);
@@ -669,6 +746,48 @@ export function buildDeviationAnalysisWorkbook(
     false,
     summaryBoldRows
   );
+
+  // Resumo geral de Despesas Administrativas, unindo todos os centros de custo de cada sub-área
+  // (Gerência RH e Gerência Financeiro) num único bloco por grupo/descrição contábil — separado da
+  // visão por centro de custo que já existe nas abas individuais abaixo.
+  const ADM_RESUMO_GERAL_SECTIONS: Array<{ key: DeviationExportAreaKey; label: string }> = [
+    { key: 'DESP_ADM_TRIB_RH', label: 'Gerência RH' },
+    { key: 'DESP_ADM_TRIB_FINANCEIRO', label: 'Gerência Financeiro' },
+  ];
+  const admResumoGeralRows: (string | number)[][] = [];
+  const admResumoGeralBoldRows = new Set<number>();
+  let hasAdmResumoGeral = false;
+  for (const section of ADM_RESUMO_GERAL_SECTIONS) {
+    const area = data.areas.find((a) => a.key === section.key);
+    if (!area || area.groupRows.length === 0) continue;
+    hasAdmResumoGeral = true;
+    for (const group of area.groupRows) {
+      admResumoGeralBoldRows.add(admResumoGeralRows.length);
+      admResumoGeralRows.push([section.label, group.grupoContabil, '', group.orcado, group.realizado, group.diferenca, '']);
+      for (const description of area.descriptionRows.filter((row) => row.grupoContabil === group.grupoContabil)) {
+        admResumoGeralRows.push([
+          '', '', `↳ ${description.descricaoContabil}`, description.orcado, description.realizado, description.diferenca, '',
+        ]);
+      }
+    }
+    const sectionTotals = sumRows(area.groupRows);
+    admResumoGeralBoldRows.add(admResumoGeralRows.length);
+    admResumoGeralRows.push([
+      `TOTAL ${section.label.toUpperCase()}`, '', '', sectionTotals.orcado, sectionTotals.realizado,
+      sectionTotals.realizado - sectionTotals.orcado, '',
+    ]);
+  }
+  if (hasAdmResumoGeral) {
+    addSheet(
+      wb,
+      sanitizeSheetName('Adm - Geral RH e Financeiro', usedNames),
+      ['Área', 'Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+      admResumoGeralRows,
+      [3, 4, 5],
+      false,
+      admResumoGeralBoldRows
+    );
+  }
 
   // Cada departamento possui DUAS abas próprias: resumo e abertura analítica dos lançamentos.
   // Prefixar pela área impede colisões quando nomes de departamento se repetem em áreas distintas.

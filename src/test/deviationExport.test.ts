@@ -691,9 +691,11 @@ describe('buildDeviationExportData', () => {
     const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
     const rh = data.areas.find((area) => area.key === 'DESP_ADM_TRIB_RH')!;
     expect(rh.groupRows[0]).toMatchObject({ orcado: 3500, realizado: 3150, diferenca: -350 });
-    expect(workbook.worksheets).toHaveLength(3);
-    expect(workbook.worksheets[1].name).toContain('Resumo');
-    expect(workbook.worksheets[2].name).toContain('Abertura');
+    // Geral + resumo geral RH/Financeiro (só RH tem dado aqui) + resumo e abertura por centro de custo.
+    expect(workbook.worksheets).toHaveLength(4);
+    expect(workbook.worksheets[1].name).toContain('Geral RH e Financeiro');
+    expect(workbook.worksheets[2].name).toContain('Resumo');
+    expect(workbook.worksheets[3].name).toContain('Abertura');
   });
 
   it('mantém orçamento importado adm com N9 3.4.02 e conta artificial, como o resumo do dashboard', () => {
@@ -787,6 +789,86 @@ describe('buildDeviationExportData', () => {
     )!;
     expect(resumoSheet.getCell('C2').value).toBe(120000);
     expect(resumoSheet.getCell('D2').value).toBe(118500);
+  });
+
+  it('usa a unidade de negócio (base de mapeamento do sistema) como nome do departamento, unindo códigos de talhão diferentes da mesma unidade', () => {
+    const accounts: AccountEntry[] = [
+      // Dois códigos de talhão (departamento) distintos, mesma unidade de negócio no mapeamento (JÓIA - PASTAGEM).
+      baseAccount({
+        codigo: '4.1.01.01.0001', atividade: 'AGRICOLA', tipo: 'C',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'F4T12 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398',
+        descricao: 'Adubo', orcado: { '2026-04': 100 }, realizado: { '2026-04': 90 },
+      }),
+      baseAccount({
+        codigo: '4.1.01.01.0002', atividade: 'AGRICOLA', tipo: 'C',
+        grupoContabilN9: '4.1.01.01-CUSTOS RURAIS',
+        departamento: 'F4T124 - PASTAGEM - A DEFINIR PASTAGEM - 02/2021 CL:2398',
+        descricao: 'Defensivos', orcado: { '2026-04': 200 }, realizado: { '2026-04': 180 },
+      }),
+    ];
+    const { areas } = buildDeviationExportData(accounts, '2026-04');
+    const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
+
+    expect(agricola.departments).toHaveLength(1);
+    expect(agricola.departments[0].departamento).toBe('JÓIA - PASTAGEM');
+    expect(agricola.departments[0].groupRows).toMatchObject([{ orcado: 300, realizado: 270 }]);
+  });
+
+  it('prioriza a unidade de negócio do próprio lançamento (coluna importada) sobre a base de mapeamento', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        codigo: '4.1.01.01.0001', atividade: 'SERINGAL', tipo: 'C',
+        grupoContabilN9: '4.1.05.01-INSUMOS SERINGAL', departamento: 'QUALQUER CODIGO DE TALHAO',
+        unidadeNegocio: 'SERINGAL NORTE', descricao: 'Fertilizante',
+        orcado: { '2026-04': 100 }, realizado: { '2026-04': 90 },
+      }),
+    ];
+    const { areas } = buildDeviationExportData(accounts, '2026-04');
+    const seringal = areas.find((a) => a.key === 'SERINGAL')!;
+    expect(seringal.departments[0].departamento).toBe('SERINGAL NORTE');
+  });
+
+  it('cria uma aba de resumo geral de Despesas Administrativas unindo todos os centros de custo de RH e de Financeiro separadamente', () => {
+    const accounts: AccountEntry[] = [
+      baseAccount({
+        codigo: '3.4.01.01.0001', atividade: 'DESP_ADM_TRIB', tipo: 'D',
+        grupoContabilN9: '3.4.01.01-CUSTO DE PESSOAL', centroCusto: 'PESSOAL',
+        descricao: 'Salários', orcado: { '2026-04': 100000 }, realizado: { '2026-04': 98000 },
+      }),
+      baseAccount({
+        codigo: '3.4.01.01.0002', atividade: 'DESP_ADM_TRIB', tipo: 'D',
+        grupoContabilN9: '3.4.01.01-RATEIO DESENVOLVIMENTO HUMANO', centroCusto: 'RATEIO DESENVOLVIMENTO HUMANO',
+        descricao: 'PPR', orcado: { '2026-04': 15000 }, realizado: { '2026-04': 15500 },
+      }),
+      baseAccount({
+        codigo: '3.4.01.02.0001', atividade: 'DESP_ADM_TRIB', tipo: 'D',
+        grupoContabilN9: '3.4.01.02-SERVICOS DE TERCEIROS', centroCusto: 'DIRETORIA',
+        descricao: 'Consultoria', orcado: { '2026-04': 20000 }, realizado: { '2026-04': 21000 },
+      }),
+    ];
+    const { workbook, data } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
+    const rh = data.areas.find((a) => a.key === 'DESP_ADM_TRIB_RH')!;
+    // Resumo geral da área soma os dois centros de custo (PESSOAL e RATEIO DESENVOLVIMENTO HUMANO).
+    const rhTotals = rh.groupRows.reduce(
+      (acc, row) => ({ orcado: acc.orcado + row.orcado, realizado: acc.realizado + row.realizado }),
+      { orcado: 0, realizado: 0 }
+    );
+    expect(rhTotals).toEqual({ orcado: 115000, realizado: 113500 });
+    expect(rh.descriptionRows).toMatchObject(
+      expect.arrayContaining([
+        expect.objectContaining({ descricaoContabil: 'Salários', orcado: 100000, realizado: 98000 }),
+        expect.objectContaining({ descricaoContabil: 'PPR', orcado: 15000, realizado: 15500 }),
+      ])
+    );
+
+    const resumoGeralSheet = workbook.worksheets.find((sheet) => sheet.name.includes('Geral RH e Financeiro'))!;
+    expect(resumoGeralSheet).toBeDefined();
+    const rows = resumoGeralSheet.getSheetValues();
+    const flat = rows.flat().filter(Boolean);
+    expect(flat).toContain('Gerência RH');
+    expect(flat).toContain('Gerência Financeiro');
+    expect(flat.some((v) => typeof v === 'string' && v.includes('Salários'))).toBe(true);
   });
 
 });
