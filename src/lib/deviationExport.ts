@@ -107,19 +107,21 @@ const isGerenciaRhEntry = (entry: AccountEntry): boolean =>
 
 const isSyntheticBudget = (entry: AccountEntry): boolean => entry.id.includes('::ORCADO');
 
-/** No orçamento importado o grupo de classificação vem do N9, não da conta sintética. */
+/**
+ * A duplicidade de classificação é decidida pelo grupo contábil (N9), que é o mesmo critério usado
+ * no restante do dashboard para separar "3." de "4.". A conta (`codigo`) só entra como critério de
+ * desempate quando o próprio N9 veio com o prefixo "errado" por um artefato de importação (orçado
+ * sintético com código artificial) — nesse caso a conta efetivamente contabilizada prevalece, para
+ * não descartar orçado/realizado legítimo só porque o rótulo N9 está trocado.
+ */
 const isExcludedExportEntry = (entry: AccountEntry, prefixes?: string[]): boolean => {
   if (!prefixes?.length) return false;
-  // Código sintético da importação não identifica duplicidade do realizado.
-  // O orçamento importado usa código artificial e pode ter N9 3.4.02
-  // mesmo quando sua classificação gerencial é 3.4.01 (conforme dashboard).
-  // Não descartar esse orçamento pelo código sintético nem pelo N9.
   if (isSyntheticBudget(entry)) return false;
-  const source = entry.codigo.trim();
-  // A conta efetivamente contabilizada prevalece sobre a apresentação do N9.
-  if (prefixes.includes('4.') && !source.startsWith('3.4.01')) return true;
-  if (prefixes.includes('3.') && !source.startsWith('4.')) return true;
-  return prefixes.some((prefix) => source.startsWith(prefix));
+  const grupoN9 = (entry.grupoContabilN9 || '').trim();
+  const codigo = entry.codigo.trim();
+  if (prefixes.includes('4.') && grupoN9.startsWith('4.') && !codigo.startsWith('3.4.01')) return true;
+  if (prefixes.includes('3.') && grupoN9.startsWith('3.') && !codigo.startsWith('4.')) return true;
+  return false;
 };
 
 const isNotOutrasReceitas = (entry: Pick<AccountEntry, 'codigo'>) => !isOutrasReceitasEventuaisCode(entry.codigo);
@@ -442,6 +444,17 @@ export function buildDeviationExportData(
 const SHEET_FORBIDDEN_CHARS = /[:\\/?*[\]]/g;
 const SHEET_NAME_MAX_LEN = 31;
 
+/**
+ * Monta "<base> - <sufixo>" truncando só a base quando necessário, para que o sufixo ("Resumo" /
+ * "Abertura") nunca seja cortado pelo limite de 31 caracteres do Excel — nome de departamento longo
+ * não pode fazer as duas abas perderem a identificação de qual é qual.
+ */
+function sheetNameWithSuffix(base: string, suffix: string): string {
+  const cleanedBase = base.replace(SHEET_FORBIDDEN_CHARS, '').trim();
+  const maxBaseLen = Math.max(SHEET_NAME_MAX_LEN - suffix.length, 1);
+  return `${cleanedBase.slice(0, maxBaseLen)}${suffix}`;
+}
+
 function sanitizeSheetName(name: string, used: Set<string>): string {
   const base = name.replace(SHEET_FORBIDDEN_CHARS, '').trim().slice(0, SHEET_NAME_MAX_LEN) || 'Planilha';
   let candidate = base;
@@ -653,7 +666,7 @@ export function buildDeviationAnalysisWorkbook(
       rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
       const sheetBase = `${area.sheetLabel} - ${department.departamento}`;
       addSheet(
-        wb, sanitizeSheetName(`${sheetBase} - Resumo`, usedNames),
+        wb, sanitizeSheetName(sheetNameWithSuffix(sheetBase, ' - Resumo'), usedNames),
         ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
         rows, [2, 3, 4], true, boldRows
       );
@@ -669,7 +682,7 @@ export function buildDeviationAnalysisWorkbook(
       }
       detailRows.push(['TOTAL REALIZADO', '', '', '', '', '', '', openingTotal]);
       addSheet(
-        wb, sanitizeSheetName(`${sheetBase} - Abertura`, usedNames),
+        wb, sanitizeSheetName(sheetNameWithSuffix(sheetBase, ' - Abertura'), usedNames),
         ['Grupo Contábil', 'Mês', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'],
         detailRows, [6, 7], true
       );
