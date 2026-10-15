@@ -744,4 +744,49 @@ describe('buildDeviationExportData', () => {
     expect(sum('DESP_ADM_TRIB_FINANCEIRO', 'realizado')).toBe(1900);
   });
 
+  it('abre Despesas Administrativas e Tributárias por centro de custo, não por departamento — orçado sintético herda um "departamento" diferente do realizado, mas o mesmo centro de custo', () => {
+    const accounts: AccountEntry[] = [
+      // Realizado: departamento real da folha (ADMINISTRACAO), centro de custo PESSOAL.
+      baseAccount({
+        codigo: '3.4.01.01.0001',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        departamento: 'ADMINISTRACAO',
+        centroCusto: 'PESSOAL',
+        grupoContabilN9: '3.4.01.01-CUSTO DE PESSOAL',
+        descricao: 'Salários',
+        realizado: { '2026-04': 118500 },
+      }),
+      // Orçado importado: mesmo centro de custo (PESSOAL), mas "departamento" sintético vindo do
+      // nome do arquivo importado — não bate com o departamento do realizado acima.
+      baseAccount({
+        id: 'SYN::ORCADOADM::PESSOAL::SALARIOS',
+        codigo: '4.1.99.99.0001',
+        atividade: 'DESP_ADM_TRIB',
+        tipo: 'D',
+        departamento: 'GERENCIA RH - IMPORTACAO',
+        centroCusto: 'PESSOAL',
+        grupoContabilN9: '3.4.01.01-CUSTO DE PESSOAL',
+        descricao: 'Salários (orçado)',
+        orcado: { '2026-04': 120000 },
+      }),
+    ];
+
+    const { areas } = buildDeviationExportData(accounts, '2026-04');
+    const rh = areas.find((a) => a.key === 'DESP_ADM_TRIB_RH')!;
+
+    // Um único departamento/centro de custo na saída — PESSOAL —, não dois.
+    expect(rh.departments).toHaveLength(1);
+    expect(rh.departments[0].departamento).toBe('PESSOAL');
+    expect(rh.departments[0].groupRows).toMatchObject([{ orcado: 120000, realizado: 118500 }]);
+
+    // O workbook reconcilia (não lança erro de divergência entre resumo e abertura).
+    const { workbook } = buildDeviationAnalysisWorkbook(accounts, '2026-04');
+    const resumoSheet = workbook.worksheets.find(
+      (sheet) => sheet.name.includes('PESSOAL') && sheet.name.includes('Resumo')
+    )!;
+    expect(resumoSheet.getCell('C2').value).toBe(120000);
+    expect(resumoSheet.getCell('D2').value).toBe(118500);
+  });
+
 });
