@@ -40,6 +40,12 @@ export interface DeviationLancamentoRow {
   complemento: string;
   quantidade: number | null;
   realizado: number;
+  /**
+   * Chave de agrupamento (com fallback já aplicado) usada para encaixar este lançamento na aba de
+   * departamento/centro de custo correta — igual a `departamento` ou a `centroCusto` conforme
+   * `AreaSource.departmentField` da área. Não é renderizada no Excel.
+   */
+  departmentGroupKey: string;
 }
 
 export interface DeviationAreaData {
@@ -70,6 +76,15 @@ interface AreaSource {
   match: (entry: AccountEntry) => boolean;
   /** Prefixos de código de grupo contábil a excluir desta área (ex.: '3.' para descartar grupos duplicados de outra classificação). */
   excludeGrupoContabilPrefixes?: string[];
+  /**
+   * Campo da conta usado para abrir a área em "departamentos" (abas Resumo/Abertura). Padrão
+   * 'departamento'. Despesas Administrativas e Tributárias não são organizadas por departamento —
+   * são organizadas por centro de custo (é por ele que o orçado importado é vinculado ao realizado,
+   * conforme a mesma regra usada na importação em budgetStore.ts); usar 'departamento' aqui faz o
+   * orçado (que herda um departamento diferente do realizado) cair numa aba e o realizado em outra,
+   * zerando um dos dois lados em cada aba.
+   */
+  departmentField?: 'departamento' | 'centroCusto';
 }
 
 const normalizeMatchText = (value?: string) =>
@@ -203,6 +218,7 @@ const EXPORT_AREAS: AreaSource[] = [
       !isTributariaGroupEntry(a) &&
       !isGerenciaRhEntry(a),
     excludeGrupoContabilPrefixes: ['4.'],
+    departmentField: 'centroCusto',
   },
   {
     key: 'DESP_ADM_TRIB_RH',
@@ -214,12 +230,14 @@ const EXPORT_AREAS: AreaSource[] = [
       !isTributariaGroupEntry(a) &&
       isGerenciaRhEntry(a),
     excludeGrupoContabilPrefixes: ['4.'],
+    departmentField: 'centroCusto',
   },
   {
     key: 'DESP_ADM_TRIB_TRIBUTARIAS',
     label: 'Despesas Tributárias',
     sheetLabel: 'Desp. Tributárias',
     match: (a) => a.atividade === 'DESP_ADM_TRIB' && isNotOutrasReceitas(a) && isTributariaGroupEntry(a),
+    departmentField: 'centroCusto',
   },
 ];
 
@@ -293,6 +311,8 @@ function buildAreaData(
     }
   >();
   const lancamentos: DeviationLancamentoRow[] = [];
+  const departmentField = area.departmentField ?? 'departamento';
+  const departmentFieldLabel = departmentField === 'centroCusto' ? 'Sem Centro de Custo' : 'Sem Departamento';
 
   for (const entry of entries) {
     const grupoContabil = resolveGrupoContabilLabel(entry);
@@ -308,9 +328,9 @@ function buildAreaData(
     agg.realizado += realizado;
     groups.set(grupoContabil, agg);
 
-    // A mesma base usada no total da atividade também alimenta os departamentos.
-    // Entradas sem departamento ficam explícitas para que nenhuma parcela seja perdida na reconciliação.
-    const departamento = entry.departamento?.trim() || 'Sem Departamento';
+    // A mesma base usada no total da atividade também alimenta os departamentos/centros de custo.
+    // Entradas sem valor nesse campo ficam explícitas para que nenhuma parcela seja perdida na reconciliação.
+    const departamento = entry[departmentField]?.trim() || departmentFieldLabel;
     const descricaoContabil = entry.descricao?.trim() || 'Sem Descrição Contábil';
     const dept = departments.get(departamento) ?? {
       groups: new Map<string, { orcado: number; realizado: number }>(),
@@ -347,6 +367,9 @@ function buildAreaData(
         mes: month.key,
         departamento: entry.departamento || '',
         centroCusto: entry.centroCusto || '',
+        // Mesma chave (já com fallback) usada para abrir em departamentos/centros de custo acima,
+        // para o filtro por aba em buildDeviationAnalysisWorkbook continuar batendo com o agrupamento.
+        departmentGroupKey: departamento,
         descricao: entry.descricao || '',
         produto: entry.nomeProduto || '',
         complemento: entry.complemento || '',
@@ -640,7 +663,7 @@ export function buildDeviationAnalysisWorkbook(
   addSheet(
     wb,
     sanitizeSheetName('Resumo Total por Atividade', usedNames),
-    ['Atividade', 'Departamento', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
+    ['Atividade', 'Departamento / Centro de Custo', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
     summaryRows,
     [2, 3, 4],
     false,
@@ -671,7 +694,7 @@ export function buildDeviationAnalysisWorkbook(
         rows, [2, 3, 4], true, boldRows
       );
 
-      const opening = area.lancamentos.filter((l) => (l.departamento.trim() || 'Sem Departamento') === department.departamento);
+      const opening = area.lancamentos.filter((l) => l.departmentGroupKey === department.departamento);
       const detailRows: (string | number)[][] = opening.map((l) => [
         l.grupoContabil, monthLabel(l.mes), l.centroCusto, l.descricao,
         l.produto, l.complemento, l.quantidade ?? '', l.realizado,
