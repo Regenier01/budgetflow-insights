@@ -128,6 +128,9 @@ const resolveDepartmentDisplayLabel = (entry: AccountEntry, rawDepartamento: str
   if (normalizedDepartment === 'JOIA - PECUARIA' || normalizedDepartment === 'JOIA - PECUARA') {
     return 'JOIA - PECUÁRIA';
   }
+  if (normalizedDepartment === 'BANDEIRANTES - PECUARIA') {
+    return 'BANDEIRANTES - PECUÁRIA';
+  }
   return (
     entry.unidadeNegocio?.trim() ||
     DEPARTMENT_UNIDADE_NEGOCIO_INDEX.get(normalizedDepartment) ||
