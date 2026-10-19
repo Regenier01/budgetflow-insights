@@ -684,7 +684,7 @@ export function validateDeviationExportData(data: DeviationExportData): void {
  *
  * Estrutura:
  * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
- * 2) para cada departamento, uma única aba contendo Resumo e Abertura.
+ * 2) para cada departamento, uma única aba de Resumo, sem abertura analítica.
  *
  * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
  */
@@ -771,7 +771,7 @@ export function buildDeviationAnalysisWorkbook(
     );
   }
 
-  // Uma guia por departamento: resumo e abertura na mesma planilha.
+  // Uma guia de resumo por departamento; sem abas ou linhas de abertura analítica.
   // Nomes são preservados quando compatíveis com o Excel (máximo 31 caracteres
   // e unicidade entre guias). Em colisões, o Excel exige um sufixo numérico.
   for (const area of data.areas) {
@@ -796,40 +796,7 @@ export function buildDeviationAnalysisWorkbook(
         rows, [2, 3, 4], true, boldRows
       );
 
-      const opening = area.lancamentos.filter((l) => l.departmentGroupKey === department.departamento);
-      const detailRows: (string | number)[][] = opening.map((l) => [
-        l.grupoContabil, monthLabel(l.mes), l.centroCusto, l.descricao,
-        l.produto, l.complemento, l.quantidade ?? '', l.realizado,
-      ]);
-      const openingTotal = opening.reduce((sum, l) => sum + l.realizado, 0);
-      if (!nearlyEqual(openingTotal, totals.realizado)) {
-        throw new Error(`Falha na abertura do departamento "${department.departamento}" da área "${area.label}": realizado não concilia com resumo.`);
-      }
-      detailRows.push(['TOTAL REALIZADO', '', '', '', '', '', '', openingTotal]);
 
-      const ws = wb.getWorksheet(sheetName)!;
-      ws.addRow([]);
-      const titleRow = ws.addRow(['ABERTURA ANALÍTICA']);
-      titleRow.font = { bold: true };
-      const detailHeaders = ['Grupo Contábil', 'Mês', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'];
-      const openingHeader = ws.addRow(detailHeaders);
-      openingHeader.eachCell((cell) => {
-        cell.fill = HEADER_FILL;
-        cell.font = { bold: true, color: { argb: 'FF000000' } };
-        cell.border = THIN_BORDER;
-      });
-      detailRows.forEach((values, index) => {
-        const row = ws.addRow(values);
-        row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
-          cell.border = THIN_BORDER;
-          if (index === detailRows.length - 1) cell.font = { bold: true };
-          if ((colNumber === 7 || colNumber === 8) && typeof cell.value === 'number') {
-            cell.numFmt = '#,##0.00';
-          }
-        });
-      });
-      ws.getColumn(7).width = 16;
-      ws.getColumn(8).width = 16;
     }
   }
 
