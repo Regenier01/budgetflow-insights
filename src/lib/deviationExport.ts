@@ -532,17 +532,6 @@ export function buildDeviationExportData(
 const SHEET_FORBIDDEN_CHARS = /[:\\/?*[\]]/g;
 const SHEET_NAME_MAX_LEN = 31;
 
-/**
- * Monta "<base> - <sufixo>" truncando só a base quando necessário, para que o sufixo ("Resumo" /
- * "Abertura") nunca seja cortado pelo limite de 31 caracteres do Excel — nome de departamento longo
- * não pode fazer as duas abas perderem a identificação de qual é qual.
- */
-function sheetNameWithSuffix(base: string, suffix: string): string {
-  const cleanedBase = base.replace(SHEET_FORBIDDEN_CHARS, '').trim();
-  const maxBaseLen = Math.max(SHEET_NAME_MAX_LEN - suffix.length, 1);
-  return `${cleanedBase.slice(0, maxBaseLen)}${suffix}`;
-}
-
 function sanitizeSheetName(name: string, used: Set<string>): string {
   const base = name.replace(SHEET_FORBIDDEN_CHARS, '').trim().slice(0, SHEET_NAME_MAX_LEN) || 'Planilha';
   let candidate = base;
@@ -695,7 +684,7 @@ export function validateDeviationExportData(data: DeviationExportData): void {
  *
  * Estrutura:
  * 1) "Resumo por Atividade": total de cada atividade/subárea e abertura por departamento;
- * 2) para cada departamento, uma aba Resumo e uma aba Abertura.
+ * 2) para cada departamento, uma única aba de Resumo, sem abertura analítica.
  *
  * A base, exclusões e período são exatamente os mesmos usados pelo consolidado anterior.
  */
@@ -782,8 +771,9 @@ export function buildDeviationAnalysisWorkbook(
     );
   }
 
-  // Cada departamento possui DUAS abas próprias: resumo e abertura analítica dos lançamentos.
-  // Prefixar pela área impede colisões quando nomes de departamento se repetem em áreas distintas.
+  // Uma guia de resumo por departamento; sem abas ou linhas de abertura analítica.
+  // Nomes são preservados quando compatíveis com o Excel (máximo 31 caracteres
+  // e unicidade entre guias). Em colisões, o Excel exige um sufixo numérico.
   for (const area of data.areas) {
     for (const department of area.departments) {
       const rows: (string | number)[][] = [];
@@ -799,28 +789,14 @@ export function buildDeviationAnalysisWorkbook(
       }
       const totals = sumRows(department.groupRows);
       rows.push(['TOTAL DO DEPARTAMENTO', '', totals.orcado, totals.realizado, totals.realizado - totals.orcado, '']);
-      const sheetBase = `${area.sheetLabel} - ${department.departamento}`;
+      const sheetName = sanitizeSheetName(department.departamento, usedNames);
       addSheet(
-        wb, sanitizeSheetName(sheetNameWithSuffix(sheetBase, ' - Resumo'), usedNames),
+        wb, sheetName,
         ['Grupo Contábil', 'Descrição Contábil', 'Total Orçado', 'Total Realizado', 'Diferença', 'Justificativa'],
         rows, [2, 3, 4], true, boldRows
       );
 
-      const opening = area.lancamentos.filter((l) => l.departmentGroupKey === department.departamento);
-      const detailRows: (string | number)[][] = opening.map((l) => [
-        l.grupoContabil, monthLabel(l.mes), l.centroCusto, l.descricao,
-        l.produto, l.complemento, l.quantidade ?? '', l.realizado,
-      ]);
-      const openingTotal = opening.reduce((sum, l) => sum + l.realizado, 0);
-      if (!nearlyEqual(openingTotal, totals.realizado)) {
-        throw new Error(`Falha na abertura do departamento "${department.departamento}" da área "${area.label}": realizado não concilia com resumo.`);
-      }
-      detailRows.push(['TOTAL REALIZADO', '', '', '', '', '', '', openingTotal]);
-      addSheet(
-        wb, sanitizeSheetName(sheetNameWithSuffix(sheetBase, ' - Abertura'), usedNames),
-        ['Grupo Contábil', 'Mês', 'Centro de Custo', 'Descrição Contábil', 'Produto', 'Complemento', 'Quantidade', 'Realizado'],
-        detailRows, [6, 7], true
-      );
+
     }
   }
 
