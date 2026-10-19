@@ -5,7 +5,7 @@ import { MultiSelect } from '@/components/ui/multi-select';
 import { Button } from '@/components/ui/button';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
-import { exportDeviationAnalysisWorkbook, resolveLatestRealizadoMonth } from '@/lib/deviationExport';
+import { exportDeviationAnalysisWorkbook } from '@/lib/deviationExport';
 import { useMemo, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -32,19 +32,25 @@ export default function Dashboard() {
     [availableMonths]
   );
 
-  // Último mês com realizado importado (sem limiar de materialidade — reflete exatamente até onde há dado).
-  const exportCutoffMonth = useMemo(() => resolveLatestRealizadoMonth(accounts), [accounts]);
-
-  const exportCutoffLabel = exportCutoffMonth
-    ? MONTHS.find((m) => m.key === exportCutoffMonth)?.label
-    : null;
-
+  // Recorte temporário exclusivo do Excel de Análise de Desvios: setembro/2026.
+  // Não altera os dados originais nem os filtros e cálculos do dashboard.
   const handleExportDesvios = async () => {
     try {
-      await exportDeviationAnalysisWorkbook(accounts);
-      toast.success('Análise de desvios exportada com sucesso');
+      const month: MonthKey = '2026-09';
+      const septemberAccounts = accounts.map((account) => ({
+        ...account,
+        orcado: { [month]: account.orcado[month] ?? 0 },
+        realizado: { [month]: account.realizado[month] ?? 0 },
+        quantidade: account.quantidade ? { [month]: account.quantidade[month] ?? 0 } : undefined,
+      }));
+      await exportDeviationAnalysisWorkbook(
+        septemberAccounts,
+        month,
+        'Analise_Desvios_Custos_09_2026.xlsx'
+      );
+      toast.success('Análise de desvios de setembro/2026 exportada com sucesso');
     } catch {
-      toast.error('Erro ao gerar o Excel de análise de desvios');
+      toast.error('Erro ao gerar o Excel de análise de desvios de setembro/2026');
     }
   };
 
@@ -82,9 +88,7 @@ export default function Dashboard() {
                 Exportar Análise de Desvios
               </Button>
               <span className="text-[11px] font-medium text-slate-400">
-                {exportCutoffLabel
-                  ? `Custos e despesas (sem receitas), consolidados de Abr/26 até ${exportCutoffLabel} (independente do período selecionado acima)`
-                  : 'Custos e despesas (sem receitas), consolidado da safra completa (independente do período selecionado acima)'}
+                Custos e despesas (sem receitas): somente Set/26, orçado e realizado (independente do período selecionado acima)
               </span>
             </div>
           </div>
