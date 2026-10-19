@@ -121,10 +121,19 @@ for (const [nomeDepto, info] of Object.entries(DEPARTMENT_MAPPING as Record<stri
  * do lançamento (coluna UNIDADE_DE_NEGOCIO do realizado); quando ausente (ex.: orçado sintético),
  * cai para a mesma base de mapeamento; sem nenhum dos dois, mantém o valor bruto.
  */
-const resolveDepartmentDisplayLabel = (entry: AccountEntry, rawDepartamento: string): string =>
-  entry.unidadeNegocio?.trim() ||
-  DEPARTMENT_UNIDADE_NEGOCIO_INDEX.get(normalizeMatchText(rawDepartamento)) ||
-  rawDepartamento;
+const resolveDepartmentDisplayLabel = (entry: AccountEntry, rawDepartamento: string): string => {
+  // Este departamento tem unidade de negócio genérica "PECUARIA" no mapeamento.
+  // Preservar o nome original na exportação para não agrupá-lo como "PECUARIA".
+  const normalizedDepartment = normalizeMatchText(rawDepartamento);
+  if (normalizedDepartment === 'JOIA - PECUARIA' || normalizedDepartment === 'JOIA - PECUARA') {
+    return 'JOIA - PECUÁRIA';
+  }
+  return (
+    entry.unidadeNegocio?.trim() ||
+    DEPARTMENT_UNIDADE_NEGOCIO_INDEX.get(normalizedDepartment) ||
+    rawDepartamento
+  );
+};
 
 /** Mesmo critério de "Despesas Tributárias" usado na página de Despesas Adm. e Tributárias do dashboard. */
 const isTributariaGroupEntry = (entry: Pick<AccountEntry, 'grupoContabil' | 'grupoContabilN9'>): boolean => {
