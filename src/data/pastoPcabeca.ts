@@ -26,7 +26,8 @@ export const PASTO_PCABECA_REALIZADO: Partial<Record<MonthKey, number>> = {
   "2026-06": 133.66864852052305,
   "2026-07": 126.04780949985326,
   "2026-08": 126.3703970327517,
-  "2026-09": 176.91467583592535
+  "2026-09": 176.91467583592535,
+  "2026-10": 118.12071370172654
 };
 
 export type PastoPcabecaFazendaSeries = {
@@ -56,7 +57,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 231.90587172538392,
       "2026-07": 167.01511476021645,
       "2026-08": 128.70144260924107,
-      "2026-09": 223.59673891429708
+      "2026-09": 223.59673891429708,
+      "2026-10": 133.22832909245122
     }
   },
   "PORTEIRAS - PECUÁRIA": {
@@ -80,7 +82,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 247.75,
       "2026-07": 136.6,
       "2026-08": 218.28205128205127,
-      "2026-09": 238.9125
+      "2026-09": 238.9125,
+      "2026-10": 175.58536585365854
     }
   },
   "CODORA": {
@@ -104,7 +107,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 117.36343852013057,
       "2026-07": 219.5174506828528,
       "2026-08": 160.22056384742953,
-      "2026-09": 119.3921200750469
+      "2026-09": 119.3921200750469,
+      "2026-10": 37.7262969588551
     }
   },
   "JOIA - PECUÁRIA": {
@@ -128,7 +132,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 146.52121951219513,
       "2026-07": 195.64478493112173,
       "2026-08": 206.3482791285128,
-      "2026-09": 115.79728070175439
+      "2026-09": 115.79728070175439,
+      "2026-10": 121.0181020296215
     }
   },
   "COVOA - PECUÁRIA": {
@@ -152,7 +157,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 225.95652173913044,
       "2026-07": 57.24375,
       "2026-08": 6028.25,
-      "2026-09": 108.83898305084746
+      "2026-09": 108.83898305084746,
+      "2026-10": 619.390625
     }
   },
   "VERA CRUZ - PECUÁRIA": {
@@ -176,7 +182,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 69.33074107959744,
       "2026-07": 61.728559176672384,
       "2026-08": 132.17016574585637,
-      "2026-09": 172.21099887766553
+      "2026-09": 172.21099887766553,
+      "2026-10": 71.27165685449958
     }
   },
   "UNIÃO - PECUÁRIA": {
@@ -200,7 +207,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 158.3521897810219,
       "2026-07": 145.67883211678833,
       "2026-08": 173.3747276688453,
-      "2026-09": 860.5076452599388
+      "2026-09": 860.5076452599388,
+      "2026-10": 316.16831683168317
     }
   },
   "CANADÁ - PECUÁRIA": {
@@ -224,7 +232,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 79.76127819548873,
       "2026-07": 48.90360169491525,
       "2026-08": 106.04545454545455,
-      "2026-09": 441.63174603174605
+      "2026-09": 441.63174603174605,
+      "2026-10": 178.24761904761905
     }
   },
   "GOTEJO - PECUÁRIA": {
@@ -248,7 +257,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 0,
       "2026-07": 0,
       "2026-08": 0,
-      "2026-09": 0
+      "2026-09": 0,
+      "2026-10": 0
     }
   },
   "CENTRO COMERCIAL DE TOUROS": {
@@ -272,7 +282,8 @@ export const PASTO_PCABECA_POR_FAZENDA: Record<string, PastoPcabecaFazendaSeries
       "2026-06": 2744.061403508772,
       "2026-07": 1122.5745856353592,
       "2026-08": 664.159493670886,
-      "2026-09": 443.4333023255814
+      "2026-09": 443.4333023255814,
+      "2026-10": 520.7682783018868
     }
   }
 };
