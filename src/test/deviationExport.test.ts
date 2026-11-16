@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { buildDeviationAnalysisWorkbook, buildDeviationExportData } from '@/lib/deviationExport';
+import {
+  buildDeviationAnalysisWorkbook,
+  buildDeviationExportData,
+  isolateDeviationMonth,
+  resolveDeviationConsolidatedPeriod,
+} from '@/lib/deviationExport';
 import type { AccountEntry } from '@/types/budget';
 
 const baseAccount = (overrides: Partial<AccountEntry>): AccountEntry => ({
@@ -880,4 +885,42 @@ describe('buildDeviationExportData', () => {
     expect(financeiroFlat.some((v) => typeof v === 'string' && v.includes('Salários'))).toBe(false);
   });
 
+});
+describe('fluxos de exportação mensal e consolidado', () => {
+  const accounts: AccountEntry[] = [
+    baseAccount({
+      atividade: 'AGRICOLA',
+      grupoContabilN9: '4.1.01.01-INSUMOS',
+      codigo: '4.1.01.01.0001',
+      orcado: { '2026-04': 100, '2026-09': 300, '2026-10': 400, '2026-11': 999 },
+      realizado: { '2026-04': 110, '2026-05': 50, '2026-06': 60, '2026-07': 70, '2026-08': 80, '2026-09': 320, '2026-10': 450 },
+      quantidade: { '2026-09': 3, '2026-10': 4 },
+    }),
+  ];
+
+  it('mensal: isola somente o mês informado, sem alterar as contas originais', () => {
+    const isolated = isolateDeviationMonth(accounts, '2026-10');
+    expect(isolated[0].orcado).toEqual({ '2026-10': 400 });
+    expect(isolated[0].realizado).toEqual({ '2026-10': 450 });
+    expect(isolated[0].quantidade).toEqual({ '2026-10': 4 });
+    expect(accounts[0].realizado['2026-09']).toBe(320);
+
+    const { areas } = buildDeviationExportData(isolated, '2026-10');
+    const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
+    expect(agricola.groupRows[0]).toMatchObject({ orcado: 400, realizado: 450 });
+  });
+
+  it('consolidado: de Abr/26 até o último mês contínuo com realizado, orçado no mesmo intervalo', () => {
+    const period = resolveDeviationConsolidatedPeriod(accounts);
+    expect(period).toEqual({ startMonth: '2026-04', endMonth: '2026-10' });
+
+    const { areas } = buildDeviationExportData(accounts, period!.endMonth);
+    const agricola = areas.find((a) => a.key === 'AGRICOLA')!;
+    // Nov/26 (999 orçado) fica fora do consolidado.
+    expect(agricola.groupRows[0]).toMatchObject({ orcado: 800, realizado: 1140 });
+  });
+
+  it('consolidado: retorna null quando não há realizado', () => {
+    expect(resolveDeviationConsolidatedPeriod([baseAccount({ orcado: { '2026-04': 10 } })])).toBeNull();
+  });
 });

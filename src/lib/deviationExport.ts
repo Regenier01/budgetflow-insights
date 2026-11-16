@@ -832,4 +832,67 @@ export async function exportDeviationAnalysisWorkbook(
   await downloadWorkbook(workbook, resolvedFileName);
 }
 
+/** "2026-10" -> "10_2026", usado nos nomes de arquivo. */
+const monthFileToken = (month: MonthKey): string => {
+  const [year, mm] = month.split('-');
+  return `${mm}_${year}`;
+};
+
+/**
+ * Recorte de um único mês: cada conta passa a ter apenas orçado/realizado/quantidade daquele mês.
+ * Não altera as contas originais (gera cópias rasas com novos mapas de meses).
+ */
+export function isolateDeviationMonth(accounts: AccountEntry[], month: MonthKey): AccountEntry[] {
+  return accounts.map((account) => ({
+    ...account,
+    orcado: { [month]: account.orcado[month] ?? 0 },
+    realizado: { [month]: account.realizado[month] ?? 0 },
+    quantidade: account.quantidade ? { [month]: account.quantidade[month] ?? 0 } : undefined,
+  }));
+}
+
+export interface DeviationConsolidatedPeriod {
+  startMonth: MonthKey;
+  endMonth: MonthKey;
+}
+
+/**
+ * Período do consolidado: do início da safra (Abr/26) até o último mês contínuo com realizado
+ * (mesmo critério de `resolveLatestRealizadoMonth`). `null` quando ainda não há realizado.
+ */
+export function resolveDeviationConsolidatedPeriod(accounts: AccountEntry[]): DeviationConsolidatedPeriod | null {
+  const endMonth = resolveLatestRealizadoMonth(accounts);
+  if (!endMonth) return null;
+  return { startMonth: MONTHS[0].key, endMonth };
+}
+
+/**
+ * Fluxo MENSAL: exporta somente o mês informado (orçado e realizado do mês), independente
+ * dos demais meses e do período selecionado no dashboard.
+ */
+export async function exportDeviationAnalysisMonthWorkbook(
+  accounts: AccountEntry[],
+  month: MonthKey
+): Promise<void> {
+  const { workbook } = buildDeviationAnalysisWorkbook(isolateDeviationMonth(accounts, month), month);
+  await downloadWorkbook(workbook, `Analise_Desvios_Custos_${monthFileToken(month)}.xlsx`);
+}
+
+/**
+ * Fluxo CONSOLIDADO: acumula orçado e realizado de Abr/26 até o último mês com realizado
+ * (ambos os lados no mesmo intervalo). Usa as contas completas, sem passar pelo recorte mensal.
+ */
+export async function exportDeviationAnalysisConsolidatedWorkbook(
+  accounts: AccountEntry[]
+): Promise<DeviationConsolidatedPeriod> {
+  const period = resolveDeviationConsolidatedPeriod(accounts);
+  if (!period) {
+    throw new Error('Não há meses com realizado para gerar o consolidado.');
+  }
+  const { workbook } = buildDeviationAnalysisWorkbook(accounts, period.endMonth);
+  const fileName = `Analise_Desvios_Custos_Consolidado_${monthFileToken(period.startMonth)}_a_${monthFileToken(period.endMonth)}.xlsx`;
+  await downloadWorkbook(workbook, fileName);
+  return period;
+}
+
 export { monthLabel as deviationExportMonthLabel };
