@@ -5,9 +5,17 @@ import { MultiSelect } from '@/components/ui/multi-select';
 import { Button } from '@/components/ui/button';
 import { MONTHS, type MonthKey } from '@/types/budget';
 import { useBudgetStore, getDefaultRealizadoFilterMonth } from '@/store/budgetStore';
-import { exportDeviationAnalysisWorkbook } from '@/lib/deviationExport';
+import {
+  deviationExportMonthLabel,
+  exportDeviationAnalysisConsolidatedWorkbook,
+  exportDeviationAnalysisMonthWorkbook,
+  resolveDeviationConsolidatedPeriod,
+} from '@/lib/deviationExport';
 import { useMemo, useState } from 'react';
 import { toast } from 'sonner';
+
+/** Mês exportado pelo botão mensal da Análise de Desvios. */
+const DEVIATION_MONTHLY_EXPORT_MONTH: MonthKey = '2026-10';
 
 export default function Dashboard() {
   const accounts = useBudgetStore((s) => s.accounts);
@@ -32,25 +40,45 @@ export default function Dashboard() {
     [availableMonths]
   );
 
-  // Recorte temporário exclusivo do Excel de Análise de Desvios: setembro/2026.
+  const [exportingMonth, setExportingMonth] = useState(false);
+  const [exportingConsolidated, setExportingConsolidated] = useState(false);
+
+  const consolidatedPeriod = useMemo(() => resolveDeviationConsolidatedPeriod(accounts), [accounts]);
+  const consolidatedPeriodLabel = consolidatedPeriod
+    ? `${deviationExportMonthLabel(consolidatedPeriod.startMonth)} a ${deviationExportMonthLabel(consolidatedPeriod.endMonth)}`
+    : null;
+  const monthlyExportLabel = deviationExportMonthLabel(DEVIATION_MONTHLY_EXPORT_MONTH);
+
+  // Fluxo MENSAL do Excel de Análise de Desvios: somente o mês fixado em DEVIATION_MONTHLY_EXPORT_MONTH.
   // Não altera os dados originais nem os filtros e cálculos do dashboard.
-  const handleExportDesvios = async () => {
+  const handleExportDesviosMes = async () => {
+    if (exportingMonth) return;
+    setExportingMonth(true);
     try {
-      const month: MonthKey = '2026-09';
-      const septemberAccounts = accounts.map((account) => ({
-        ...account,
-        orcado: { [month]: account.orcado[month] ?? 0 },
-        realizado: { [month]: account.realizado[month] ?? 0 },
-        quantidade: account.quantidade ? { [month]: account.quantidade[month] ?? 0 } : undefined,
-      }));
-      await exportDeviationAnalysisWorkbook(
-        septemberAccounts,
-        month,
-        'Analise_Desvios_Custos_09_2026.xlsx'
+      await exportDeviationAnalysisMonthWorkbook(accounts, DEVIATION_MONTHLY_EXPORT_MONTH);
+      toast.success(`Análise de desvios de ${monthlyExportLabel} exportada com sucesso`);
+    } catch (error) {
+      console.error(error);
+      toast.error(`Erro ao gerar o Excel de análise de desvios de ${monthlyExportLabel}`);
+    } finally {
+      setExportingMonth(false);
+    }
+  };
+
+  // Fluxo CONSOLIDADO: Abr/26 até o último mês com realizado, independente do fluxo mensal.
+  const handleExportDesviosConsolidado = async () => {
+    if (exportingConsolidated) return;
+    setExportingConsolidated(true);
+    try {
+      const period = await exportDeviationAnalysisConsolidatedWorkbook(accounts);
+      toast.success(
+        `Análise de desvios consolidada (${deviationExportMonthLabel(period.startMonth)} a ${deviationExportMonthLabel(period.endMonth)}) exportada com sucesso`
       );
-      toast.success('Análise de desvios de setembro/2026 exportada com sucesso');
-    } catch {
-      toast.error('Erro ao gerar o Excel de análise de desvios de setembro/2026');
+    } catch (error) {
+      console.error(error);
+      toast.error('Erro ao gerar o Excel consolidado de análise de desvios');
+    } finally {
+      setExportingConsolidated(false);
     }
   };
 
@@ -79,16 +107,30 @@ export default function Dashboard() {
               />
             </div>
             <div className="flex flex-col items-end gap-1">
-              <Button
-                onClick={handleExportDesvios}
-                variant="outline"
-                className="gap-2 border-slate-200 bg-white font-semibold text-slate-700 shadow-sm hover:bg-slate-50"
-              >
-                <FileSpreadsheet className="h-4 w-4" />
-                Exportar Análise de Desvios
-              </Button>
-              <span className="text-[11px] font-medium text-slate-400">
-                Custos e despesas (sem receitas): somente Set/26, orçado e realizado (independente do período selecionado acima)
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <Button
+                  onClick={handleExportDesviosMes}
+                  disabled={exportingMonth}
+                  variant="outline"
+                  className="gap-2 border-slate-200 bg-white font-semibold text-slate-700 shadow-sm hover:bg-slate-50"
+                >
+                  <FileSpreadsheet className="h-4 w-4" />
+                  {exportingMonth ? 'Gerando...' : `Exportar Análise de Desvios (${monthlyExportLabel})`}
+                </Button>
+                <Button
+                  onClick={handleExportDesviosConsolidado}
+                  disabled={exportingConsolidated || !consolidatedPeriod}
+                  variant="outline"
+                  className="gap-2 border-slate-200 bg-white font-semibold text-slate-700 shadow-sm hover:bg-slate-50"
+                >
+                  <FileSpreadsheet className="h-4 w-4" />
+                  {exportingConsolidated ? 'Gerando...' : 'Exportar Consolidado'}
+                </Button>
+              </div>
+              <span className="text-right text-[11px] font-medium text-slate-400">
+                Custos e despesas (sem receitas), orçado e realizado, independente do período selecionado acima.
+                <br />
+                Mensal: somente {monthlyExportLabel} · Consolidado: {consolidatedPeriodLabel ?? 'sem realizado disponível'}
               </span>
             </div>
           </div>
